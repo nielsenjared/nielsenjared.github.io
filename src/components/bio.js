@@ -28,12 +28,15 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.{' '}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
-            </p>
+          When we force code to act out of the ordinary… that’s where the magic happens. That’s when we make art.
+          {' '}
+          <a
+            href="https://twitter.com/jarednielsen"
+            target="_blank"
+            rel="noopener">
+            @jarednielsen
+          </a>
+        </p>
           </div>
         )
       }}
@@ -43,7 +46,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar:file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar:file(absolutePath: { regex: "/jared-nielsen.png/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
           ...GatsbyImageSharpFixed
