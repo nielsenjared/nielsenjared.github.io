@@ -68,5 +68,5 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-.blend1
-.blend2
+*.blend1
+*.blend2
