@@ -3,8 +3,7 @@ title: Advice for Coding Bootcamp Students
 date: "2018-12-17"
 description: Considering a coding bootcamp? Already enrolled? Here’s my advice for coding bootcamp students to ensure a successful career transition.
 ---
-
-![Advice for Coding Bootcamp Students]()
+![Advice for Coding Bootcamp Students](./jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png)
 
 I’m an entirely self-taught developer. It was a long and circuitous journey to get from noob to pro. I wish the coding bootcamp model existed when I was learning, primarily to focus my efforts and secondarily to plug me into a network. It’s not for everyone, but I’ve seen that it works. I currently teach a coding bootcamp at a prominent university, and after graduating six cohorts in full stack web development and data visualization, I’ve observed a few things that set successful students apart. Here is my advice for coding bootcamp students.
 
