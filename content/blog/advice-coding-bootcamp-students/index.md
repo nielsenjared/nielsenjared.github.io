@@ -177,3 +177,5 @@ They are more important than any code you will write during the coding bootcamp.
 Ask yourself if a life in code is right for you. The majority of my students successfully make career transitions. Unfortunately, there are those who realize too late that they made the wrong decision. A coding bootcamp is costly in both time and money, so do your homework. Be sure that you understand the difference between UX/UI, full stack web development, and data visualization (or whatever it is you are learning). Do preliminary research into the language(s) you will be learning and the career paths it will afford you. Is this what you really want to do? You don’t have to learn to code to be successful. But you still need to `add`, `commit` and `push` to get where you want to be.
 
 Good luck!
+
+[repo](https://github.com/nielsenjared/nielsenjared.github.io/tree/develop/content/blog/advice-coding-bootcamp-students)
