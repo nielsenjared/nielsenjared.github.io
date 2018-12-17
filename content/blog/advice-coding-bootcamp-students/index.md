@@ -7,6 +7,8 @@ description: Considering a coding bootcamp? Already enrolled? Here’s my advice
 
 I teach a coding bootcamp at a prominent university. After graduating six cohorts and more than 100 individuals in full stack web development and data visualization, I’ve observed a few things that set successful students apart. Here is my advice for coding bootcamp students.
 
+_Many thanks to all of my students for teaching me, as well, and for your feedback in writing this post._
+
 _Disclaimer & disclosure: These views are my own and do not necessarily reflect those of my employer._
 
 ![Advice for Coding Bootcamp Students](./jared-nielsen-advice-coding-bootcamp-students-skills-plusplus.png)
