@@ -5,13 +5,13 @@ description: Considering a coding bootcamp? Already enrolled? Here’s my advice
 ---
 ![Advice for Coding Bootcamp Students](./jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png)
 
-I’m an entirely self-taught developer. It was a long and circuitous journey to get from noob to pro. I wish the coding bootcamp model existed when I was learning, primarily to focus my efforts and secondarily to plug me into a network. It’s not for everyone, but I’ve seen that it works. I currently teach a coding bootcamp at a prominent university, and after graduating six cohorts in full stack web development and data visualization, I’ve observed a few things that set successful students apart. Here is my advice for coding bootcamp students.
+I teach a coding bootcamp at a prominent university. After graduating six cohorts and more than 100 individuals in full stack web development and data visualization, I’ve observed a few things that set successful students apart. Here is my advice for coding bootcamp students.
 
 _Disclaimer & disclosure: These views are my own and do not necessarily reflect those of my employer._
 
 ![Advice for Coding Bootcamp Students](./jared-nielsen-advice-coding-bootcamp-students-skills-plusplus.png)
 
-##Add
+## Add
 To your resume you will be adding the hard skills of your tech stack, but more importantly, you will be adding the soft skills of teamwork and translation. These are the tools of your new trade. Keep them sharp.
 
 ### ...To Your Skill Set
@@ -45,9 +45,9 @@ Let the bug bite you.
 This is how you build a portfolio that will set you apart from all other coding bootcamp students. You want to show off more than hangman or a to-do list.
 
 ### ...To Your Network
-This is where I see a lot of stronger students fail. They generally arrive with some programming background and are frustrated with their peers who are beginners. They choose to work alone, depriving themselves of the most important assets and lessons a bootcamp provides: the people.
-
 It doesn't take savvy students long to realize that what they are really paying for is not the codebase, but their colleagues.
+
+This is where I see a lot of stronger students fail. They generally arrive with some programming background and are frustrated with their peers who are beginners. They choose to work alone, depriving themselves of the most important assets and lessons a bootcamp provides: the people.
 
 This is the beginning of your professional network.
 
@@ -171,7 +171,9 @@ Don't forget to care for yourself.
 
 Sleep. Eat well. Exercise. Take breaks.
 
-That last point is extremely important. You are still a person in the world.
+That last point is extremely important.
+
+You are still a person in the world.
 
 Tend to your relationships.
 
@@ -182,6 +184,6 @@ They are more important than any code you will write during the coding bootcamp.
 ![Advice for Coding Bootcamp Students](./jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png)
 
 ## Final Piece of Advice for Coding Bootcamp Students
-Ask yourself if a life in code is right for you. The majority of my students successfully make career transitions. Unfortunately, there are those who realize too late that they made the wrong decision. A coding bootcamp is costly in both time and money, so do your homework. Be sure that you understand the difference between UX/UI, full stack web development, and data visualization (or whatever it is you are learning). Do preliminary research into the language(s) you will be learning and the career paths it will afford you. Is this what you really want to do? You don’t have to learn to code to be successful. But you still need to `add`, `commit` and `push` to get where you want to be.
+Ask yourself if a life in code is right for you. The majority of my students successfully make career transitions. Unfortunately, there are those who realize too late that they made the wrong decision. A coding bootcamp is costly in both time and money, so do your homework. Be sure that you understand the difference between UX/UI, full stack web development, and data visualization (or whatever the topic). Do preliminary research into the language(s) you will be learning and the career paths it will afford you. Is this what you really want to do? You don’t have to learn to code to be successful. But you still need to `add`, `commit` and `push` to get where you want to be.
 
 Good luck!
