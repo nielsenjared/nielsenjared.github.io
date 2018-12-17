@@ -1,8 +1,11 @@
 ---
 title: How to Deploy a GatsbyJS Blog on GitHub Pages as a User Site
-date: "2018-12-24"
-description: Deploying a GatsbyJS blog on GitHub Pages for your user site requires additional configuration. Here's how to deploy.
+date: "2018-11-26"
+description: Hosting a GatsbyJS blog on GitHub Pages for your user site requires additional configuration. Here's how to deploy.
 ---
+
+![How to Deploy a GatsbyJS Blog on GitHub Pages as a User Site](.image.png)
+
 GatsbyJS is a great option for a static site generator, even if you're unfamiliar with React. It's very easy to use, super snappy, and has a robust ecosystem. Plus: there's the added of bonus of working with React! Win win win! To deploy a GatsbyJS blog as a User site on GitHub Pages requires some minor additional configurations. According to the docs, [your personal User site on GitHub Pages repository must be deployed from `master` branch](https://help.github.com/articles/user-organization-and-project-pages/#user-and-organization-pages-sites). This creates an issue for us (no pun intended). When we run `build` our `master` branch will be cluttered with files (not to mention entirely transformed). The solution is to work locally from a `develop` branch and use `gh-pages` to deploy to `master` on remote.
 
 ## Install GatsbyJS and Create a New Blog
@@ -38,7 +41,7 @@ If you run `git branch`, you will notice you don't have a `master` branch anymor
 git push -u origin develop
 ```
 
-## Configure gh-pages to Deploy Your GatsbyJS Blog to GitHub Pages as a User Site
+## Install & Configure gh-pages
 Install [`gh-pages`](https://www.npmjs.com/package/gh-pages):
 
 ```sh
@@ -47,7 +50,7 @@ npm install gh-pages --save-dev
 
 To your `package.json`, add the following script:
 
-```sh
+```js
 {
     "scripts": {
         ...
@@ -64,7 +67,7 @@ To deploy, run:
 npm run deploy
 ```
 
-## Customizing Your GatsbyJS Blog
+## Customize Your GatsbyJS Blog
 [Kyle Mathews](https://twitter.com/kylemathews) is a swell guy, but it's not his blog anymore. You will want to customize it...
 
 * In `assets`, add your own profile picture. You can replace the current `.jpg` with your own and use the same name, or, if you choose a different file name (or format), you will need to edit the GraphQL query in `src/components/bio.js`.
@@ -80,7 +83,7 @@ npm run deploy
 
 
 ## Draft Branches
-When I'm working on a draft for a blog post, I create a new branch and after I'm ready to publish, I merge it with develop, then add/commit/push and `npm run deploy`.
+When I'm working on a draft for a blog post, I create a new branch and after I'm ready to publish, I merge it with `develop`, then add/commit/push and `npm run deploy`.
 
 ## Using a Custom Domain Name with GitHub Pages
 If you own and want to use a custom domain name with your personal GitHub Pages, the set up is fairly easy, but different depending on your DNS provider. I refer you to the GitHub Help article on [Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) for your specific situation.
