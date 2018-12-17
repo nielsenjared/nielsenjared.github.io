@@ -9,6 +9,8 @@ I’m an entirely self-taught developer. It was a long and circuitous journey to
 
 _Disclaimer & disclosure: These views are my own and do not necessarily reflect those of my employer._
 
+![Advice for Coding Bootcamp Students](./jared-nielsen-advice-coding-bootcamp-students-skills-plusplus.png)
+
 ##Add
 To your resume you will be adding the hard skills of your tech stack, but more importantly, you will be adding the soft skills of teamwork and translation. These are the tools of your new trade. Keep them sharp.
 
@@ -56,6 +58,8 @@ Build community.
 Learn how to work on a team.
 
 Better yet, learn how to lead a team.
+
+![Advice for Coding Bootcamp Students](./jared-nielsen-advice-coding-bootcamp-students-settimeout-tolearn-everyday.png)
 
 ## Commit
 Many of my best students were those who struggled with the basics in the beginning. What set them apart was commitment. The bootcamp was do or die for them. They were going to succeed no matter what. The students who most often fail are those who arrive with an ‘academic’ mindset, approaching the bootcamp like a college course, concerned only with a grade and doing the bare minimum to earn it. Yes, the certificate is important, but more important is knowledge acquisition. You are not just committing to a bootcamp for _x_ number of months. You are committing to a new life for _y_ number of years.
@@ -117,6 +121,8 @@ Use these [heuristics to cultivate a problem-solving mindset](http://jarednielse
 
 Remember that everyone learns at different rates for different things. Don’t compare yourself to your peers, only to your personal progress. Bootcamp is a means, not an end. You are now a lifelong learner.
 
+![Advice for Coding Bootcamp Students](./jared-nielsen-advice-coding-bootcamp-students-constant-effort-returns-success.png)
+
 ## Push
 My most successful students begin with the end in mind and are continually building their portfolios, fine-tuning their resumes, and applying for jobs before they feel ready. Even so, leaving the nest and returning to the real world will feel scary.
 
@@ -173,9 +179,9 @@ They are more important than any code you will write during the coding bootcamp.
 
 (The added bonus to taking breaks is that insights into tricky problems will present themselves out of the blue. But don’t let your friends and family know that’s the truth of the matter 😜)
 
+![Advice for Coding Bootcamp Students](./jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png)
+
 ## Final Piece of Advice for Coding Bootcamp Students
 Ask yourself if a life in code is right for you. The majority of my students successfully make career transitions. Unfortunately, there are those who realize too late that they made the wrong decision. A coding bootcamp is costly in both time and money, so do your homework. Be sure that you understand the difference between UX/UI, full stack web development, and data visualization (or whatever it is you are learning). Do preliminary research into the language(s) you will be learning and the career paths it will afford you. Is this what you really want to do? You don’t have to learn to code to be successful. But you still need to `add`, `commit` and `push` to get where you want to be.
 
 Good luck!
-
-[repo](https://github.com/nielsenjared/nielsenjared.github.io/tree/develop/content/blog/advice-coding-bootcamp-students)
