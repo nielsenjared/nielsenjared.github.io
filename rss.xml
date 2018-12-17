@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 17 Dec 2018 10:30:36 GMT</lastBuildDate><item><title><![CDATA[Advice for Coding Bootcamp Students]]></title><description><![CDATA[I’m an entirely self-taught developer. It was a long and circuitous journey to get from noob to pro. I wish the coding bootcamp model…]]></description><link>http://jarednielsen.com/advice-coding-bootcamp-students/</link><guid isPermaLink="false">http://jarednielsen.com/advice-coding-bootcamp-students/</guid><pubDate>Mon, 17 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 17 Dec 2018 11:37:51 GMT</lastBuildDate><item><title><![CDATA[Advice for Coding Bootcamp Students]]></title><description><![CDATA[I’m an entirely self-taught developer. It was a long and circuitous journey to get from noob to pro. I wish the coding bootcamp model…]]></description><link>http://jarednielsen.com/advice-coding-bootcamp-students/</link><guid isPermaLink="false">http://jarednielsen.com/advice-coding-bootcamp-students/</guid><pubDate>Mon, 17 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/cb2a79eb498ddca90cba5ec2beb86734/417af/jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png&quot;
@@ -36,6 +36,42 @@
     &lt;/p&gt;
 &lt;p&gt;I’m an entirely self-taught developer. It was a long and circuitous journey to get from noob to pro. I wish the coding bootcamp model existed when I was learning, primarily to focus my efforts and secondarily to plug me into a network. It’s not for everyone, but I’ve seen that it works. I currently teach a coding bootcamp at a prominent university, and after graduating six cohorts in full stack web development and data visualization, I’ve observed a few things that set successful students apart. Here is my advice for coding bootcamp students.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Disclaimer &amp;#x26; disclosure: These views are my own and do not necessarily reflect those of my employer.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/200d221ee76946a7fdcf651b695d73d4/417af/jared-nielsen-advice-coding-bootcamp-students-skills-plusplus.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeElEQVQoz82SywqAIBRE+//fcxeI0r5NGpmvqaQkQkRDooHBQb3HZ+e9R0t3nwKfimP3XApEoujE1u/wkBAChBBQSsE5x8AZ+nECkyuWWSYXzAKdc1BKQWsNY0xolbW7XcjFwGtivLdYGMLZg/ojN3/lvP7yD994A44JZ+JU+yHRAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Advice for Coding Bootcamp Students&quot;
+        title=&quot;&quot;
+        src=&quot;/static/200d221ee76946a7fdcf651b695d73d4/fb8a0/jared-nielsen-advice-coding-bootcamp-students-skills-plusplus.png&quot;
+        srcset=&quot;/static/200d221ee76946a7fdcf651b695d73d4/1a291/jared-nielsen-advice-coding-bootcamp-students-skills-plusplus.png 148w,
+/static/200d221ee76946a7fdcf651b695d73d4/2bc4a/jared-nielsen-advice-coding-bootcamp-students-skills-plusplus.png 295w,
+/static/200d221ee76946a7fdcf651b695d73d4/fb8a0/jared-nielsen-advice-coding-bootcamp-students-skills-plusplus.png 590w,
+/static/200d221ee76946a7fdcf651b695d73d4/526de/jared-nielsen-advice-coding-bootcamp-students-skills-plusplus.png 885w,
+/static/200d221ee76946a7fdcf651b695d73d4/fa2eb/jared-nielsen-advice-coding-bootcamp-students-skills-plusplus.png 1180w,
+/static/200d221ee76946a7fdcf651b695d73d4/417af/jared-nielsen-advice-coding-bootcamp-students-skills-plusplus.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;h2&gt;Add&lt;/h2&gt;
 &lt;p&gt;To your resume you will be adding the hard skills of your tech stack, but more importantly, you will be adding the soft skills of teamwork and translation. These are the tools of your new trade. Keep them sharp.&lt;/p&gt;
 &lt;h3&gt;…To Your Skill Set&lt;/h3&gt;
@@ -62,6 +98,42 @@
 &lt;p&gt;Build community.&lt;/p&gt;
 &lt;p&gt;Learn how to work on a team.&lt;/p&gt;
 &lt;p&gt;Better yet, learn how to lead a team.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c958a28fb26c4abf40a53df25e467814/417af/jared-nielsen-advice-coding-bootcamp-students-settimeout-tolearn-everyday.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAwElEQVQoz72RywqDMBBF8/+/02XXhXYjdudSrQ1USooYaxJNToO46pOC7YULk5vkTMKIEAJLWvwE6KOZAz/700Xv/XMgsybonR6TzxK1GVmfNJvzlW30SrbslGF/6SkOFfJ4pKoqiqKgrmustUgpybKMPM9J05QkSSjLEq01wvqAsiP96NGD5xwbNC7WLmZ9j3MOY0ysTYQ5hmGIa0vXdbRtO0GUUjRNM50V334phPB2b/kpM3V85edDCn994dLAG4QzYtvWEu/qAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Advice for Coding Bootcamp Students&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c958a28fb26c4abf40a53df25e467814/fb8a0/jared-nielsen-advice-coding-bootcamp-students-settimeout-tolearn-everyday.png&quot;
+        srcset=&quot;/static/c958a28fb26c4abf40a53df25e467814/1a291/jared-nielsen-advice-coding-bootcamp-students-settimeout-tolearn-everyday.png 148w,
+/static/c958a28fb26c4abf40a53df25e467814/2bc4a/jared-nielsen-advice-coding-bootcamp-students-settimeout-tolearn-everyday.png 295w,
+/static/c958a28fb26c4abf40a53df25e467814/fb8a0/jared-nielsen-advice-coding-bootcamp-students-settimeout-tolearn-everyday.png 590w,
+/static/c958a28fb26c4abf40a53df25e467814/526de/jared-nielsen-advice-coding-bootcamp-students-settimeout-tolearn-everyday.png 885w,
+/static/c958a28fb26c4abf40a53df25e467814/fa2eb/jared-nielsen-advice-coding-bootcamp-students-settimeout-tolearn-everyday.png 1180w,
+/static/c958a28fb26c4abf40a53df25e467814/417af/jared-nielsen-advice-coding-bootcamp-students-settimeout-tolearn-everyday.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;h2&gt;Commit&lt;/h2&gt;
 &lt;p&gt;Many of my best students were those who struggled with the basics in the beginning. What set them apart was commitment. The bootcamp was do or die for them. They were going to succeed no matter what. The students who most often fail are those who arrive with an ‘academic’ mindset, approaching the bootcamp like a college course, concerned only with a grade and doing the bare minimum to earn it. Yes, the certificate is important, but more important is knowledge acquisition. You are not just committing to a bootcamp for &lt;em&gt;x&lt;/em&gt; number of months. You are committing to a new life for &lt;em&gt;y&lt;/em&gt; number of years.&lt;/p&gt;
 &lt;h3&gt;…To The Time Required&lt;/h3&gt;
@@ -98,6 +170,42 @@
 &lt;/ol&gt;
 &lt;p&gt;(If your instructor isn’t using a similar approach with you on day one, drop out immediately. He or she is wasting your time and money.)&lt;/p&gt;
 &lt;p&gt;Remember that everyone learns at different rates for different things. Don’t compare yourself to your peers, only to your personal progress. Bootcamp is a means, not an end. You are now a lifelong learner.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c239241300776dee79de884b606003f9/417af/jared-nielsen-advice-coding-bootcamp-students-constant-effort-returns-success.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2UlEQVQoz7WS20oDMRCG9/3fSbwRKYIgiFCkCIKl9qLWbrIxh8l8TtfWVru96yZ8hOSfQyaTRlW5JM04AeuOvQC21rNO21FNP2br1AdkYOyddEizKSon50VLrzVhWVhcd8yvOtxrorQzwtuE+H6P+CXekm+cw3tHWlXiWpjJC7fhjof4yE2Y8JSmTMMzrnM0EpW4kh6JVmYJ1PJFTS0q2TJDypls1Gx3MMyST9nQ1pYPWeOqp0ghpzxc8v8i/xZ8eMdjE93ZjdDln54esv/uON/lHk4Y8R9ekG8hnGSl7+BuKgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Advice for Coding Bootcamp Students&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c239241300776dee79de884b606003f9/fb8a0/jared-nielsen-advice-coding-bootcamp-students-constant-effort-returns-success.png&quot;
+        srcset=&quot;/static/c239241300776dee79de884b606003f9/1a291/jared-nielsen-advice-coding-bootcamp-students-constant-effort-returns-success.png 148w,
+/static/c239241300776dee79de884b606003f9/2bc4a/jared-nielsen-advice-coding-bootcamp-students-constant-effort-returns-success.png 295w,
+/static/c239241300776dee79de884b606003f9/fb8a0/jared-nielsen-advice-coding-bootcamp-students-constant-effort-returns-success.png 590w,
+/static/c239241300776dee79de884b606003f9/526de/jared-nielsen-advice-coding-bootcamp-students-constant-effort-returns-success.png 885w,
+/static/c239241300776dee79de884b606003f9/fa2eb/jared-nielsen-advice-coding-bootcamp-students-constant-effort-returns-success.png 1180w,
+/static/c239241300776dee79de884b606003f9/417af/jared-nielsen-advice-coding-bootcamp-students-constant-effort-returns-success.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;h2&gt;Push&lt;/h2&gt;
 &lt;p&gt;My most successful students begin with the end in mind and are continually building their portfolios, fine-tuning their resumes, and applying for jobs before they feel ready. Even so, leaving the nest and returning to the real world will feel scary.&lt;/p&gt;
 &lt;h3&gt;…To Master&lt;/h3&gt;
@@ -128,10 +236,45 @@
 &lt;p&gt;Tend to your relationships.&lt;/p&gt;
 &lt;p&gt;They are more important than any code you will write during the coding bootcamp.&lt;/p&gt;
 &lt;p&gt;(The added bonus to taking breaks is that insights into tricky problems will present themselves out of the blue. But don’t let your friends and family know that’s the truth of the matter 😜)&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cb2a79eb498ddca90cba5ec2beb86734/417af/jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA0ElEQVQoz71SywqDMBD0/3+jf1Eo3goe2lq06NmC4EVsSTSN2UwTJb4QetEuDMtOwjCZjae1xpbw9hUEeiwuwWLBu9nVXNCRNApPiwyniGZc27ZDl1KOgpZsghSvwwn8eDW4gPt3UJLhxhT8guNcfpAWJfJnhjh+IEmSDkEQIAxDRFGEPM+hlDIOrYNaQJVvEBcg1nSAkKhaQiUVhHEujAvGGOq6hhCic8Y577rl7Nnw5LXSfTAuoDFj3edFJoJpdznusGW32RUsp1/1h3+4Ab7Gk2GQYce2VgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Advice for Coding Bootcamp Students&quot;
+        title=&quot;&quot;
+        src=&quot;/static/cb2a79eb498ddca90cba5ec2beb86734/fb8a0/jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png&quot;
+        srcset=&quot;/static/cb2a79eb498ddca90cba5ec2beb86734/1a291/jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png 148w,
+/static/cb2a79eb498ddca90cba5ec2beb86734/2bc4a/jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png 295w,
+/static/cb2a79eb498ddca90cba5ec2beb86734/fb8a0/jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png 590w,
+/static/cb2a79eb498ddca90cba5ec2beb86734/526de/jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png 885w,
+/static/cb2a79eb498ddca90cba5ec2beb86734/fa2eb/jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png 1180w,
+/static/cb2a79eb498ddca90cba5ec2beb86734/417af/jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;h2&gt;Final Piece of Advice for Coding Bootcamp Students&lt;/h2&gt;
 &lt;p&gt;Ask yourself if a life in code is right for you. The majority of my students successfully make career transitions. Unfortunately, there are those who realize too late that they made the wrong decision. A coding bootcamp is costly in both time and money, so do your homework. Be sure that you understand the difference between UX/UI, full stack web development, and data visualization (or whatever it is you are learning). Do preliminary research into the language(s) you will be learning and the career paths it will afford you. Is this what you really want to do? You don’t have to learn to code to be successful. But you still need to &lt;code class=&quot;language-text&quot;&gt;add&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;commit&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;push&lt;/code&gt; to get where you want to be.&lt;/p&gt;
-&lt;p&gt;Good luck!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/nielsenjared/nielsenjared.github.io/tree/develop/content/blog/advice-coding-bootcamp-students&quot;&gt;repo&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Teach Adults to Code]]></title><description><![CDATA[My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah. Though the technologies were primitive…]]></description><link>http://jarednielsen.com/teach-adults-code/</link><guid isPermaLink="false">http://jarednielsen.com/teach-adults-code/</guid><pubDate>Mon, 10 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;Good luck!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Teach Adults to Code]]></title><description><![CDATA[My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah. Though the technologies were primitive…]]></description><link>http://jarednielsen.com/teach-adults-code/</link><guid isPermaLink="false">http://jarednielsen.com/teach-adults-code/</guid><pubDate>Mon, 10 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/58f3affa86516d8d73953a19d9f3fa58/417af/jared-nielsen-teach-adults-code-duck.png&quot;
