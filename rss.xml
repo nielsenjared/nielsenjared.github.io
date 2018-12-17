@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 17 Dec 2018 13:32:38 GMT</lastBuildDate><item><title><![CDATA[Advice for Coding Bootcamp Students]]></title><description><![CDATA[I teach a coding bootcamp at a prominent university. After graduating six cohorts and more than 100 individuals in full stack web…]]></description><link>http://jarednielsen.com/advice-coding-bootcamp-students/</link><guid isPermaLink="false">http://jarednielsen.com/advice-coding-bootcamp-students/</guid><pubDate>Mon, 17 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 17 Dec 2018 13:39:53 GMT</lastBuildDate><item><title><![CDATA[Advice for Coding Bootcamp Students]]></title><description><![CDATA[I teach a coding bootcamp at a prominent university. After graduating six cohorts and more than 100 individuals in full stack web…]]></description><link>http://jarednielsen.com/advice-coding-bootcamp-students/</link><guid isPermaLink="false">http://jarednielsen.com/advice-coding-bootcamp-students/</guid><pubDate>Mon, 17 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/cb2a79eb498ddca90cba5ec2beb86734/417af/jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png&quot;
@@ -79,15 +79,12 @@
 &lt;p&gt;Every day.&lt;/p&gt;
 &lt;p&gt;You’re like, “What’s the real world application of checking whether or not a string is a palindrome?”&lt;/p&gt;
 &lt;p&gt;Algorithms provide a bounded environment in which to exercise (and acquire) programming chops. Unlike projects, which may take days or weeks, algorithms, in the best case, take only a few minutes, in the worst, a few hours.&lt;/p&gt;
-&lt;p&gt;Think of it in terms of training for a marathon. A runner doesn’t show up on race day and expect to win. There were countless ‘pointless’ hours on treadmills and tracks in preparation for the event.&lt;/p&gt;
-&lt;p&gt;You don’t need to be a mathematical whiz but you do need to feel comfortable thinking through the solution to a problem using a programming language. When applying for jobs, most of my students are given coding challenges. These challenges are basically algorithms or data structures disguised as story problems. If you can see through the noise, you can quickly implement an elegant solution.&lt;/p&gt;
+&lt;p&gt;A marathon runner doesn’t show up on race day and expect to win. There were countless ‘pointless’ hours on treadmills and tracks in preparation for the event. When applying for jobs, most of my students are given coding challenges. These challenges are basically algorithms or data structures disguised as story problems. If you can see through the noise, you can quickly implement an elegant solution.&lt;/p&gt;
 &lt;p&gt;Practice makes practice.&lt;/p&gt;
 &lt;h3&gt;…To Your Portfolio&lt;/h3&gt;
 &lt;p&gt;Start your own projects.&lt;/p&gt;
-&lt;p&gt;Now.&lt;/p&gt;
-&lt;p&gt;With what you know.&lt;/p&gt;
 &lt;p&gt;Don’t wait until you feel ready. When you finally do feel ready, it will be too late.&lt;/p&gt;
-&lt;p&gt;Don’t limit yourself to the homework and group projects assigned during the course. My most successful students started their own side projects and explored technology and concepts that we didn’t have time to cover in class. They got obsessed.&lt;/p&gt;
+&lt;p&gt;My most successful students started their own side projects and explored technology and concepts that we didn’t have time to cover in class. They got obsessed.&lt;/p&gt;
 &lt;p&gt;Let the bug bite you.&lt;/p&gt;
 &lt;p&gt;This is how you build a portfolio that will set you apart from all other coding bootcamp students. You want to show off more than hangman or a to-do list.&lt;/p&gt;
 &lt;h3&gt;…To Your Network&lt;/h3&gt;
@@ -135,7 +132,7 @@
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;h2&gt;Commit&lt;/h2&gt;
-&lt;p&gt;Many of my best students were those who struggled with the basics in the beginning. What set them apart was commitment. The bootcamp was do or die for them. They were going to succeed no matter what. The students who most often fail are those who arrive with an ‘academic’ mindset, approaching the bootcamp like a college course, concerned only with a grade and doing the bare minimum to earn it. Yes, the certificate is important, but more important is knowledge acquisition. You are not just committing to a bootcamp for &lt;em&gt;x&lt;/em&gt; number of months. You are committing to a new life for &lt;em&gt;y&lt;/em&gt; number of years.&lt;/p&gt;
+&lt;p&gt;Many of my best students were those who struggled with the basics in the beginning. What set them apart was commitment. The bootcamp was do or die. They were going to succeed no matter what. The students who most often fail are those who arrive with an ‘academic’ mindset, approaching the bootcamp like a college course, concerned only with the grade and doing the bare minimum to earn it. Yes, the certificate is important, but more important is knowledge acquisition. You are not just committing to a bootcamp for &lt;em&gt;x&lt;/em&gt; number of months. You are committing to a new life for &lt;em&gt;y&lt;/em&gt; number of years.&lt;/p&gt;
 &lt;h3&gt;…To The Time Required&lt;/h3&gt;
 &lt;p&gt;It’s hard enough to survive the day-to-day, especially if you have a family and a job, but it’s imperative that you find a way to carve out large blocks of time everyday to do deep work in the zone. Adapt your schedule to your flow. Establish a routine and stick to it.&lt;/p&gt;
 &lt;p&gt;It’s only a few months. Put your old life on hold so you can start a new one.&lt;/p&gt;
@@ -150,7 +147,7 @@
 &lt;p&gt;You’re only hurting yourself.&lt;/p&gt;
 &lt;p&gt;A certificate and a glossy portfolio might get your foot in the door for an interview, but what are you going to do when they ask you technical questions?&lt;/p&gt;
 &lt;p&gt;I promise you the answer is not &lt;code class=&quot;language-text&quot;&gt;CTRL+C/CTRL+V&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;When searching for a solution and you find it in the docs or on Stack, don’t copy/paste it. Type it out. Use your fingers to put it in your brainstem. Do your best to understand what is happening under the hood. You can get by simply using examples, but you will benefit in the long run by taking the time to understand why it works.&lt;/p&gt;
+&lt;p&gt;When searching for a solution and you find it in the docs or on Stack, don’t copy/paste it. Type it out. Do your best to understand what is happening under the hood. You can get by simply using examples, but you will benefit in the long run by taking the time to understand why it works.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/RTFM&quot;&gt;RTFM&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It’s fantastic.&lt;/p&gt;
 &lt;h3&gt;…To a Growth Mindset&lt;/h3&gt;
@@ -223,8 +220,6 @@
 &lt;p&gt;The skills you carry from your previous career, coupled with your newly acquired technical chops, make you invaluable and highly desirable to a particular employer.&lt;/p&gt;
 &lt;p&gt;You fill a very specific niche.&lt;/p&gt;
 &lt;p&gt;Build bridges between worlds.&lt;/p&gt;
-&lt;p&gt;Become a translator.&lt;/p&gt;
-&lt;p&gt;Your past is your future. Push it!&lt;/p&gt;
 &lt;h3&gt;…Yourself&lt;/h3&gt;
 &lt;p&gt;Like writing a function, it’s up to you to determine the output of your experience.&lt;/p&gt;
 &lt;p&gt;Push yourself.&lt;/p&gt;
