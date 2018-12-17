@@ -23,22 +23,16 @@ You’re like, “What’s the real world application of checking whether or not
 
 Algorithms provide a bounded environment in which to exercise (and acquire) programming chops. Unlike projects, which may take days or weeks, algorithms, in the best case, take only a few minutes, in the worst, a few hours.
 
-Think of it in terms of training for a marathon. A runner doesn't show up on race day and expect to win. There were countless ‘pointless’ hours on treadmills and tracks in preparation for the event.
-
-You don’t need to be a mathematical whiz but you do need to feel comfortable thinking through the solution to a problem using a programming language. When applying for jobs, most of my students are given coding challenges. These challenges are basically algorithms or data structures disguised as story problems. If you can see through the noise, you can quickly implement an elegant solution.
+A marathon runner doesn't show up on race day and expect to win. There were countless ‘pointless’ hours on treadmills and tracks in preparation for the event. When applying for jobs, most of my students are given coding challenges. These challenges are basically algorithms or data structures disguised as story problems. If you can see through the noise, you can quickly implement an elegant solution.
 
 Practice makes practice.
 
 ### ...To Your Portfolio
 Start your own projects.
 
-Now.
-
-With what you know.
-
 Don’t wait until you feel ready. When you finally do feel ready, it will be too late.
 
-Don’t limit yourself to the homework and group projects assigned during the course. My most successful students started their own side projects and explored technology and concepts that we didn't have time to cover in class. They got obsessed.
+My most successful students started their own side projects and explored technology and concepts that we didn't have time to cover in class. They got obsessed.
 
 Let the bug bite you.
 
@@ -62,7 +56,7 @@ Better yet, learn how to lead a team.
 ![Advice for Coding Bootcamp Students](./jared-nielsen-advice-coding-bootcamp-students-settimeout-tolearn-everyday.png)
 
 ## Commit
-Many of my best students were those who struggled with the basics in the beginning. What set them apart was commitment. The bootcamp was do or die for them. They were going to succeed no matter what. The students who most often fail are those who arrive with an ‘academic’ mindset, approaching the bootcamp like a college course, concerned only with a grade and doing the bare minimum to earn it. Yes, the certificate is important, but more important is knowledge acquisition. You are not just committing to a bootcamp for _x_ number of months. You are committing to a new life for _y_ number of years.
+Many of my best students were those who struggled with the basics in the beginning. What set them apart was commitment. The bootcamp was do or die. They were going to succeed no matter what. The students who most often fail are those who arrive with an ‘academic’ mindset, approaching the bootcamp like a college course, concerned only with the grade and doing the bare minimum to earn it. Yes, the certificate is important, but more important is knowledge acquisition. You are not just committing to a bootcamp for _x_ number of months. You are committing to a new life for _y_ number of years.
 
 ### ...To The Time Required
 It’s hard enough to survive the day-to-day, especially if you have a family and a job, but it’s imperative that you find a way to carve out large blocks of time everyday to do deep work in the zone. Adapt your schedule to your flow. Establish a routine and stick to it.
@@ -90,7 +84,7 @@ A certificate and a glossy portfolio might get your foot in the door for an inte
 
 I promise you the answer is not `CTRL+C/CTRL+V`.
 
-When searching for a solution and you find it in the docs or on Stack, don’t copy/paste it. Type it out. Use your fingers to put it in your brainstem. Do your best to understand what is happening under the hood. You can get by simply using examples, but you will benefit in the long run by taking the time to understand why it works.
+When searching for a solution and you find it in the docs or on Stack, don’t copy/paste it. Type it out. Do your best to understand what is happening under the hood. You can get by simply using examples, but you will benefit in the long run by taking the time to understand why it works.
 
 [RTFM](https://en.wikipedia.org/wiki/RTFM).
 
@@ -153,10 +147,6 @@ The skills you carry from your previous career, coupled with your newly acquired
 You fill a very specific niche.
 
 Build bridges between worlds.
-
-Become a translator.
-
-Your past is your future. Push it!
 
 ### ...Yourself
 Like writing a function, it’s up to you to determine the output of your experience.
