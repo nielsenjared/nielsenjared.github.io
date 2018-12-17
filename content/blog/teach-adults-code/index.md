@@ -2,8 +2,6 @@
 title: How to Teach Adults to Code
 date: "2018-12-10"
 description: When we teach adults to code, we ensure success by cultivating a growth mindset with problem-solving heuristics, articulate language and fun.
-image: '../../static/jarednielsen-teach-adults-code-duck-1200x627.png'
-
 ---
 ![How to Teach Adults to Code: Rubber Duck](./jared-nielsen-teach-adults-code-duck.png)
 
