@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 17 Dec 2018 14:21:41 GMT</lastBuildDate><item><title><![CDATA[Advice for Coding Bootcamp Students]]></title><description><![CDATA[I teach a coding bootcamp at a prominent university. After graduating six cohorts and more than 100 individuals in full stack web…]]></description><link>http://jarednielsen.com/advice-coding-bootcamp-students/</link><guid isPermaLink="false">http://jarednielsen.com/advice-coding-bootcamp-students/</guid><pubDate>Mon, 17 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 07 Jan 2019 18:51:53 GMT</lastBuildDate><item><title><![CDATA[How to Install NVIDIA Cuda Toolkit on Linux for Blender 2.8 Cycles]]></title><description><![CDATA[Installing the NVIDIA Cuda Toolkit on Linux for Blender Cycles rendering is actually easy and straightforward. Unfortunately, the NVIDIA…]]></description><link>http://jarednielsen.com/install-nvidia-cuda-linux-blender-cycles/</link><guid isPermaLink="false">http://jarednielsen.com/install-nvidia-cuda-linux-blender-cycles/</guid><pubDate>Mon, 07 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Installing the NVIDIA Cuda Toolkit on Linux for Blender Cycles rendering is actually easy and straightforward. Unfortunately, the NVIDIA documentation is not so easy or straightforward. I wrote this article primarily as a reference for myself as this is a process I have done before and will definitely do again. I hope you also find it useful.&lt;/p&gt;
+&lt;p&gt;If you have any edits or feedback, please let me know &lt;a href=&quot;https://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Download the NVIDIA CUDA Toolkit&lt;/h2&gt;
+&lt;p&gt;Navigate to the &lt;a href=&quot;https://developer.nvidia.com/cuda-downloads&quot;&gt;NVIDIA CUDA Toolkit download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Select the following (if you’re running an Ubuntu-based distro, such as Linux Mint 64bit):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Linux&lt;/li&gt;
+&lt;li&gt;x86_64&lt;/li&gt;
+&lt;li&gt;Ubuntu, latest version (18.04)&lt;/li&gt;
+&lt;li&gt;deb [local]&lt;/li&gt;
+&lt;li&gt;Download&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Install the NVIDIA CUDA Toolkit&lt;/h2&gt;
+&lt;p&gt;After the installer finishes downloading, run the following commands from the command line, replacing &lt;code class=&quot;language-text&quot;&gt;&amp;lt;version&amp;gt;&lt;/code&gt; with your version of CUDA (you can skip the first command if the .deb file opens after it finishes downloading):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;sudo dpkg -i cuda-repo-&amp;lt;version&amp;gt;.deb
+sudo apt-key add /var/cuda-repo-&amp;lt;version&amp;gt;/7fa2af80.pub
+sudo apt-get update
+sudo apt-get install cuda&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As the installation process nears completion, you will see a message:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;*****************************************************************************
+*** Reboot your computer and verify that the NVIDIA graphics driver can   ***
+*** be loaded.                                                            ***
+*****************************************************************************&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So,&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;reboot&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Post-Installation Actions&lt;/h2&gt;
+&lt;p&gt;After rebooting, check to see if the NVIDIA daemon is running:&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;systemctl status nvidia-persistenced&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If you get the error message:&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Failed to start NVIDIA Persistence Daemon.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Reboot and try again.&lt;/p&gt;
+&lt;p&gt;If you encounter any issues, consult the &lt;a href=&quot;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#post-installation-actions&quot;&gt;post-installation actions documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Configure NVIDIA CUDA Toolkit on Linux for Blender 2.8 Cycles&lt;/h2&gt;
+&lt;p&gt;If you haven’t already, &lt;a href=&quot;https://www.blender.org/download/&quot;&gt;download Blender&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Open Blender and under Edit, select Preferences.&lt;/p&gt;
+&lt;p&gt;In the Preferences panel select System menu option and within it, General.&lt;/p&gt;
+&lt;p&gt;Under Cycles Compute Device, select CUDA.&lt;/p&gt;
+&lt;p&gt;You can now close the Preferences panel and render away!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Advice for Coding Bootcamp Students]]></title><description><![CDATA[I teach a coding bootcamp at a prominent university. After graduating six cohorts and more than 100 individuals in full stack web…]]></description><link>http://jarednielsen.com/advice-coding-bootcamp-students/</link><guid isPermaLink="false">http://jarednielsen.com/advice-coding-bootcamp-students/</guid><pubDate>Mon, 17 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/cb2a79eb498ddca90cba5ec2beb86734/417af/jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png&quot;
