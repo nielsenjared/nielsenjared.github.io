@@ -1,7 +1,7 @@
 ---
 title: Object-Relational Mapping
 date: "2019-01-21"
-description: Do you use an ORM? D
+description:
 ---
 ![Object-Relational Mapping](./jared-nielsen-object-relational-mapping.png)
 
@@ -9,30 +9,23 @@ description: Do you use an ORM? D
 
 If you're just learning web development, the transition to an ORM and/or MVC framework can be challenging. This tutorial will walk you through the implementation of a simple ORM to help you understand how a full-featured object-relational mapper, such as Sequelize, works under-the-hood, and how you can easily integrate it into a Model-View-Controller architecture.
 
-* To build a basic ORM to perform CRUD commands on a local MySQL database.
+In this tutorial we will build a basic ORM to perform CRUD commands with a MySQL database.
 
 
 ## Object-Relational Mapping
 
-Briefly explain ORM and why it is useful:
+**What is ORM?** Object Relational Mapping is a design system that maps an object-oriented programming language (such as JavaScript) to a relational database (such as MySQL).
 
-  * Object Relational Mapping is a design system that maps an object-oriented programming language (such as JavaScript) to a relational database (such as MySQL).
+**Why is it useful?** Object Relational Mapping allows us (developers) to interface with a database with reusable methods and allows us to use other SQL databases without needing to rewrite the entire codebase and instead only update the ORM.
 
-  * Object Relational Mapping is central to the Model component in MVC frameworks.
-
-  * Object Relational Mapping allows us (developers) to interface with a database with reusable methods and allows us to use other SQL databases without needing to rewrite the entire codebase and instead only update the ORM.
-
- will return to the topic of ORM later in class. But first, Promises.
 
 ## Promises, Promises
 
-Both Sequelize and Mongoose tout themselves as Promise-based ORM/ODMs.
+Both Sequelize and Mongoose tout themselves as Promise-based ORM/ODMs. In order to understand ORM, we need a baseline understanding of Promises.
 
+@TODO: promises
 
-
-
-
-
+For a deeper-dive, read my related article to [Learn JavaScript Promises and Promise Methods](http://jarednielsen.com/javascript-promises/).
 
 
 ### 3. Students Do: All The Cats (10 mins)

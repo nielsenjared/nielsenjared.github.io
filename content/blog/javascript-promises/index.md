@@ -5,7 +5,7 @@ description: Resolve to learn how JavaScript Promises work this year. This tutor
 ---
 ![Learn JavaScript Promises and Promise Methods: Fingers Crossed](./jared-nielsen-javascript-promises.png)
 
-If you've used jQuery's AJAX, the fetch API, or Axios for HTTP requests, you've used JavaScript Promises. When you're first learning web development, you immediately use Promise-based APIs and libraries without even knowing how callbacks work. At some point you grokked callbacks, but there's a good chance you never doubled back to learn JavaScript Promises. This year, resolve to learn how the Promise object works. (See what I did there?)
+If you've used jQuery's AJAX, the fetch API, or Axios for HTTP requests, you've used JavaScript Promises. When you're first learning web development, you immediately use Promise-based APIs and libraries without even knowing how callbacks work. At some point you grokked callbacks, but there's a good chance you never doubled back to learn JavaScript Promises. This year, resolve to learn how the Promise object works. (See what I did there?) In this tutorial, you will learn how to use the Promise object as well as the `resolve`, `reject`, `finally`, `all` and `race` Promise methods.
 
 **What's a Promise?** A JavaScript Promise is an object that will produce a value at some point in the future. A Promise doesn't promise to be fulfilled. It only promises that it will finish execution. But first, a quick refresher (a callback?) on callbacks. We'll return to Promises. I promise.
 
