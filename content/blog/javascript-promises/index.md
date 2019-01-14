@@ -5,11 +5,9 @@ description: Resolve to learn how JavaScript Promises work this year. This tutor
 ---
 ![JavaScript Promises: Fingers Crossed](./jared-nielsen-javascript-promises.png)
 
-If you've used jQuery's AJAX, the fetch API, or Axios for HTTP requests, you've used JavaScript Promises. When you're first learning web development, you immediately use Promise-based APIs and libraries without first even knowing how callbacks work. At some point you grok callbacks, but there's a good chance you never doubled back to learn JavaScript Promises. Make a resolve this year to learn how the Promise object works. (See what I did there?)
+If you've used jQuery's AJAX, the fetch API, or Axios for HTTP requests, you've used JavaScript Promises. When you're first learning web development, you immediately use Promise-based APIs and libraries without even knowing how callbacks work. At some point you grokked callbacks, but there's a good chance you never doubled back to learn JavaScript Promises. This year, resolve to learn how the Promise object works. (See what I did there?)
 
-What's a Promise? A JavaScript Promise is an object that will produce a value at some point in the future. A Promise doesn't promise to be fulfilled. It only promises that it will finish execution.
-
-But first, a quick refresher (a callback?) on callbacks. We'll return to Promises. I promise.
+What's a Promise? A JavaScript Promise is an object that will produce a value at some point in the future. A Promise doesn't promise to be fulfilled. It only promises that it will finish execution. But first, a quick refresher (a callback?) on callbacks. We'll return to Promises. I promise.
 
 
 ## Callbacks
@@ -79,7 +77,7 @@ We are now on the brink of callback hell. Why?
 
 We are building a pyramid of doom! Our code is becoming harder to understand (and ultimately harder to manage). Fortunately for us (developers), ES6 introduced a means for addressing callback hell: Promises.
 
-## JavaScript Promises, Promises
+## JavaScript Promises Promises
 
 Using the Promise object, we can omit the callback(s) and instead refactor `asynchronousEmulator` to return a new Promise object:
 
@@ -345,11 +343,11 @@ In the snippet below, we generate a random number in the `setTimeout` functions 
 const rand = () => Math.floor(Math.random() * 1000);
 
 const tortoise = new Promise(function(resolve, reject) {
-  setTimeout(resolve, rand(), 'Slow and steady!');
+  setTimeout(resolve, rand(), '🐢');
 });
 
 const hare = new Promise(function(resolve, reject) {
-  setTimeout(resolve, rand(), 'Hare today!');
+  setTimeout(resolve, rand(), '🐇');
 });
 
 Promise.race([
@@ -360,8 +358,8 @@ Promise.race([
 });
 ```
 
-## It's Settled: Resolve to Use Promises
-
+## It's Settled: JavaScript Promises FTW!
+You didn't reject learning JavaScript Promises and Promise methods! If you found this article useful, consider sharing it. If you have any feedback, let me know [@jarednielsen](https://twitter.com/jarednielsen)
 
 
 ## (Re)Sources
