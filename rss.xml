@@ -1,4 +1,104 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Jan 2019 05:15:27 GMT</lastBuildDate><item><title><![CDATA[Learn JavaScript Promises and Promise Methods]]></title><description><![CDATA[If you’ve used jQuery’s AJAX, the fetch API, or Axios for HTTP requests, you’ve used JavaScript Promises. When you’re first learning web…]]></description><link>http://jarednielsen.com/javascript-promises/</link><guid isPermaLink="false">http://jarednielsen.com/javascript-promises/</guid><pubDate>Mon, 14 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 21 Jan 2019 20:47:10 GMT</lastBuildDate><item><title><![CDATA[How to Configure Full-Stack Development Environment for Linux]]></title><description><![CDATA[My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each…]]></description><link>http://jarednielsen.com/full-stack-linux/</link><guid isPermaLink="false">http://jarednielsen.com/full-stack-linux/</guid><pubDate>Mon, 21 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each upgrade I need to reinstall all of my tools. This article is primarily a reference for myself as this is something I’ve done before and will definitely do again. I hope you also find it useful. If you have any feedback, let me know &lt;a href=&quot;http://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Git&lt;/h2&gt;
+&lt;p&gt;Perhaps most important is version-control. Being Linux, it’s a one-liner.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt install git-all&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then generate your keys and add them to &lt;a href=&quot;https://github.com/settings/keys&quot;&gt;GitHub&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ssh-keygen -t rsa -b 4096 -C &amp;quot;your_email@example.com&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Follow the prompts, then run:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;eval &amp;quot;$(ssh-agent -s)&amp;quot;
+ssh-add ~/.ssh/id_rsa&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;IDE&lt;/h2&gt;
+&lt;h3&gt;Atom&lt;/h3&gt;
+&lt;p&gt;All the cool kids are using VSCode, but Atom is still my favorite. You can’t teach an old dev new tricks.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://atom.io/&quot;&gt;https://atom.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download the .deb&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Alternatively, you can &lt;a href=&quot;https://flight-manual.atom.io/getting-started/sections/installing-atom/&quot;&gt;install it from the command line following the instructions here&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;VSCode&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://code.visualstudio.com/Download&quot;&gt;https://code.visualstudio.com/Download&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Node.js&lt;/h2&gt;
+&lt;p&gt;You’ll want to &lt;a href=&quot;https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions&quot;&gt;download the latest version of Node&lt;/a&gt;. The command you then run will be similar to the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The terminal will prompt you to run the following command:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt-get install -y nodejs&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Optionally, install&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt-get install -y build-essential&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;MySQL&lt;/h2&gt;
+&lt;p&gt;Installing MySQL on Linux is a breeze, but I always get the same permission error, so I added the solution below.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt-get install mysql-server
+service mysql start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you get &lt;code&gt;ERROR 1698 (28000): Access denied for user &apos;root&apos;@&apos;localhost&apos;&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo mysql -u root
+
+mysql&amp;gt; USE mysql;
+mysql&amp;gt; UPDATE user SET plugin=&amp;#39;mysql_native_password&amp;#39; WHERE User=&amp;#39;root&amp;#39;;
+mysql&amp;gt; FLUSH PRIVILEGES;
+mysql&amp;gt; exit;
+
+service mysql restart&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;OR create a new user:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo mysql -u root
+
+mysql&amp;gt; USE mysql;
+mysql&amp;gt; CREATE USER &amp;#39;YOUR_SYSTEM_USER&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;&amp;#39;;
+mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO &amp;#39;YOUR_SYSTEM_USER&amp;#39;@&amp;#39;localhost&amp;#39;;
+mysql&amp;gt; UPDATE user SET plugin=&amp;#39;auth_socket&amp;#39; WHERE User=&amp;#39;YOUR_SYSTEM_USER&amp;#39;;
+mysql&amp;gt; FLUSH PRIVILEGES;
+mysql&amp;gt; exit;
+
+service mysql restart&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;MySQL GUI&lt;/h3&gt;
+&lt;p&gt;I generally prefer the command prompt when working with databases, but sometimes a GUI is helpful.  &lt;/p&gt;
+&lt;h4&gt;Workbench&lt;/h4&gt;
+&lt;p&gt;It’s buggy in different ways on every platform, but still widely used. &lt;a href=&quot;https://www.mysql.com/products/workbench/&quot;&gt;Download Workbench here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You will be prompted for your Linux distro. To see it, run the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;lsb_release -a&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That might not be helpful if you’re using a derivative distro like Mint, so try:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cat /etc/*release&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;DBeaver&lt;/h4&gt;
+&lt;p&gt;Alternatively, try &lt;a href=&quot;https://dbeaver.io/&quot;&gt;DBeaver&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;MongoDB&lt;/h2&gt;
+&lt;p&gt;Installing MongoDB via .deb packages is also easy. The following commands are current at the time of this writing (2019/01), but you may want to &lt;a href=&quot;https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#install-mongodb-community-edition-using-deb-packages&quot;&gt;consult the documentation for changes or instructions for your specific distribution&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+
+echo &amp;quot;deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse&amp;quot; | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+
+sudo apt-get update
+
+sudo apt-get install -y mongodb-org&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then run:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo service mongod start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Mongo GUI&lt;/h3&gt;
+&lt;h4&gt;Robot3T&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://robomongo.org/download&quot;&gt;Download Robo3T here.&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Bonus&lt;/h2&gt;
+&lt;p&gt;Other tools I find useful and necessary, but aren’t &lt;em&gt;necessarily&lt;/em&gt; web development:&lt;/p&gt;
+&lt;h3&gt;Slack&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://slack.com/downloads/linux&quot;&gt;https://slack.com/downloads/linux&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Chrome&lt;/h3&gt;
+&lt;p&gt;I prefer Firefox which ships with Mint, but gotta have this, too
+&lt;a href=&quot;https://www.google.com/chrome/&quot;&gt;https://www.google.com/chrome/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Dropbox&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.dropbox.com/install-linux&quot;&gt;https://www.dropbox.com/install-linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I often find myself needing to do minor photo or graphics work. Inkscape and GIMP are great (and free) Adobe alternatives.&lt;/p&gt;
+&lt;h3&gt;Inkscape&lt;/h3&gt;
+&lt;p&gt; &lt;code&gt;sudo apt-get install inkscape&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;GIMP&lt;/h3&gt;
+&lt;p&gt;Ships with Mint, but if your distro doesn’t include it:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo add-apt-repository ppa:otto-kesselgulasch/gimp
+sudo apt update
+sudo apt install gimp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;(Re)Sources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/&quot;&gt;Generating a new SSH key and adding it to the ssh-agent&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost&quot;&gt;ERROR 1698 (28000): Access denied for user ‘root’@‘localhost’
+&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Learn JavaScript Promises and Promise Methods]]></title><description><![CDATA[If you’ve used jQuery’s AJAX, the fetch API, or Axios for HTTP requests, you’ve used JavaScript Promises. When you’re first learning web…]]></description><link>http://jarednielsen.com/javascript-promises/</link><guid isPermaLink="false">http://jarednielsen.com/javascript-promises/</guid><pubDate>Mon, 14 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/1a709fcb9db0b565a66715b8dfa576b8/417af/jared-nielsen-javascript-promises.png&quot;
@@ -18,7 +118,7 @@
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;JavaScript Promises: Fingers Crossed&quot;
+        alt=&quot;Learn JavaScript Promises and Promise Methods: Fingers Crossed&quot;
         title=&quot;&quot;
         src=&quot;/static/1a709fcb9db0b565a66715b8dfa576b8/fb8a0/jared-nielsen-javascript-promises.png&quot;
         srcset=&quot;/static/1a709fcb9db0b565a66715b8dfa576b8/1a291/jared-nielsen-javascript-promises.png 148w,
@@ -34,8 +134,8 @@
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;If you’ve used jQuery’s AJAX, the fetch API, or Axios for HTTP requests, you’ve used JavaScript Promises. When you’re first learning web development, you immediately use Promise-based APIs and libraries without even knowing how callbacks work. At some point you grokked callbacks, but there’s a good chance you never doubled back to learn JavaScript Promises. This year, resolve to learn how the Promise object works. (See what I did there?)&lt;/p&gt;
-&lt;p&gt;What’s a Promise? A JavaScript Promise is an object that will produce a value at some point in the future. A Promise doesn’t promise to be fulfilled. It only promises that it will finish execution. But first, a quick refresher (a callback?) on callbacks. We’ll return to Promises. I promise.&lt;/p&gt;
+&lt;p&gt;If you’ve used jQuery’s AJAX, the fetch API, or Axios for HTTP requests, you’ve used JavaScript Promises. When you’re first learning web development, you immediately use Promise-based APIs and libraries without even knowing how callbacks work. At some point you grokked callbacks, but there’s a good chance you never doubled back to learn JavaScript Promises. This year, resolve to learn how the Promise object works. (See what I did there?) In this tutorial, you will learn how to use the Promise object as well as the &lt;code&gt;resolve&lt;/code&gt;, &lt;code&gt;reject&lt;/code&gt;, &lt;code&gt;finally&lt;/code&gt;, &lt;code&gt;all&lt;/code&gt; and &lt;code&gt;race&lt;/code&gt; Promise methods.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What’s a Promise?&lt;/strong&gt; A JavaScript Promise is an object that will produce a value at some point in the future. A Promise doesn’t promise to be fulfilled. It only promises that it will finish execution. But first, a quick refresher (a callback?) on callbacks. We’ll return to Promises. I promise.&lt;/p&gt;
 &lt;h2&gt;Callbacks&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;What is a callback?&lt;/strong&gt; A callback is a function that is called after a previously called function finishes execution.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Why are callbacks useful in JavaScript?&lt;/strong&gt; We use callbacks to handle asynchronous tasks, such as API calls or database queries.&lt;/p&gt;
