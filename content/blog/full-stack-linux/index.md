@@ -1,40 +1,41 @@
 ---
 title: How to Configure Full-Stack Development Environment for Linux
-date: "2018-12-31"
-description:
+date: "2019-01-21"
+description: A quick reference for setting up a full-stack development environment on Linux, including instructions for Git, Node.js, MySQL, MongoDB and more.
 ---
-My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each upgrade I need to reinstall all of my tools. This article is primarily a reference for myself as this is something I’ve done before and will definitely do again. I hope you also find it useful.
+My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each upgrade I need to reinstall all of my tools. This article is primarily a reference for myself as this is something I’ve done before and will definitely do again. I hope you also find it useful. If you have any feedback, let me know [@jarednielsen](http://twitter.com/jarednielsen).
 
 ## Git
 Perhaps most important is version-control. Being Linux, it’s a one-liner.
-
 ```
 sudo apt install git-all
 ```
 
-Then generate your keys and add them to (GitHub)]https://github.com/settings/keys]:
-
+Then generate your keys and add them to [GitHub](https://github.com/settings/keys):
 ```
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
 Follow the prompts, then run:
-
 ```
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ```
 
 ## IDE
+
+### Atom
 All the cool kids are using VSCode, but Atom is still my favorite. You can’t teach an old dev new tricks.
 * [https://atom.io/](https://atom.io/)
 * Download the .deb
 
 Alternatively, you can [install it from the command line following the instructions here](https://flight-manual.atom.io/getting-started/sections/installing-atom/)
 
-## Node
-You’ll want to [download the latest version of Node](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions). The command you then run will be similar to the following:
+### VSCode
+https://code.visualstudio.com/Download
 
+## Node.js
+You’ll want to [download the latest version of Node](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions). The command you then run will be similar to the following:
 ```
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 ```
@@ -82,10 +83,10 @@ service mysql restart
 ```
 
 ### MySQL GUI
-I generally prefer the command line when working with databases, but sometimes I like a GUI.  
+I generally prefer the command prompt when working with databases, but sometimes a GUI is helpful.  
 
 #### Workbench
-It’s buggy in different ways on every platform, but still widely used. [You can download Workbench here.](https://www.mysql.com/products/workbench/)
+It’s buggy in different ways on every platform, but still widely used. [Download Workbench here.](https://www.mysql.com/products/workbench/)
 
 You will be prompted for your Linux distro. To see it, run the following:
 ```
@@ -125,7 +126,8 @@ Other tools I find useful and necessary, but aren’t _necessarily_ web developm
 ### Slack
 [https://slack.com/downloads/linux](https://slack.com/downloads/linux)
 
-### Chrome (I prefer Firefox which ships with Mint, but gotta have Chrome, too)
+### Chrome
+I prefer Firefox which ships with Mint, but gotta have this, too
 [https://www.google.com/chrome/](https://www.google.com/chrome/)
 
 ### Dropbox

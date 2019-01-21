@@ -1,22 +1,48 @@
 ---
-title: Object-Relational Mapping
-date: "2019-01-21"
+title: What is ORM? Object-Relational Mapping in JavaScript FTW
+date: "2018-12-31"
 description:
 ---
 ![Object-Relational Mapping](./jared-nielsen-object-relational-mapping.png)
 
 @TODO: introduction
 
-If you're just learning web development, the transition to an ORM and/or MVC framework can be challenging. This tutorial will walk you through the implementation of a simple ORM to help you understand how a full-featured object-relational mapper, such as Sequelize, works under-the-hood, and how you can easily integrate it into a Model-View-Controller architecture.
-
-In this tutorial we will build a basic ORM to perform CRUD commands with a MySQL database.
-
+If you're just learning web development, the transition to an ORM and/or MVC framework can be challenging. This tutorial will walk you through a simple implementation of object-relational mapping to help you better understand how a full-featured JavaScript ORM, such as Sequelize, works under-the-hood, and how you can easily integrate it into a Model-View-Controller architecture.
 
 ## Object-Relational Mapping
 
 **What is ORM?** Object Relational Mapping is a design system that maps an object-oriented programming language (such as JavaScript) to a relational database (such as MySQL).
 
-**Why is it useful?** Object Relational Mapping allows us (developers) to interface with a database with reusable methods and allows us to use other SQL databases without needing to rewrite the entire codebase and instead only update the ORM.
+**Why is it useful?** Object Relational Mapping allows us (developers) to separate concerns in our application with reusable methods for database queries. The added, and perhaps most important, benefit of this separation of concerns is that we can easily use other SQL databases without needing to rewrite the entire code-base and instead only make minor changes to the ORM.
+
+**Why is it challenging?**
+> Essentially what you are doing is synchronizing between two quite different representations of data, one in the relational database, and the other in-memory.
+
+While researching this article, I encountered many references to ORMs as the 'Vietnam of Software Development'. This phrase can be traced back to a Ted Neward who describes it in detail on his [blog](http://blogs.tedneward.com/post/the-vietnam-of-computer-science/):
+
+> Although it may seem trite to say it, Object/Relational Mapping is the Vietnam of Computer Science. It represents a quagmire which starts well, gets more complicated as time passes, and before long entraps its users in a commitment that has no clear demarcation point, no clear win conditions, and no clear exit strategy.
+
+@TODO
+
+For another nuanced perspective on the problem, read [OrmHate](https://martinfowler.com/bliki/OrmHate.html) by Martin Fowler.
+
+In a 2016 article, [Should I Or Should I Not Use ORM?](https://medium.com/@mithunsasidharan/should-i-or-should-i-not-use-orm-4c3742a639ce), Mithun Sasidharan describes a different middle-ground between the two camps: choose the approach that is most appropriate for your application. He lists several questions to ask when making this decision, but we can distill it down to two:
+
+* Are your data access patterns going to be simple? Use an ORM
+* Is speed your priority? Don't use an ORM
+
+In a recent article, [Why you should avoid ORMS (with examples in Node.js)](https://blog.logrocket.com/why-you-should-avoid-orms-with-examples-in-node-js-e0baab73fa5), Thomas Hunter II makes the case for a middle-ground between hand-written database drivers and third-party ORMs: query builders, such as [knex](https://www.npmjs.com/package/knex). The reasons he outlines are:
+
+* ORMs are very complex.
+* ORMs are inefficient.
+* ORMs don't do everything.
+
+While the above is true for a full-featured ORM, Sasidharan outlines several benefits:
+
+* ORMs facilitate model implementation
+* ORMs result in a smaller code-base
+* ORMs enable a aster start-up time
+
 
 
 ## Promises, Promises
@@ -28,22 +54,9 @@ Both Sequelize and Mongoose tout themselves as Promise-based ORM/ODMs. In order 
 For a deeper-dive, read my related article to [Learn JavaScript Promises and Promise Methods](http://jarednielsen.com/javascript-promises/).
 
 
-### 3. Students Do: All The Cats (10 mins)
+## All The Cats Are Undefined
 
-* See [13-Stu_All-The-Cats/README.md](#) for instructions
-
-* In this activity, students will solve an issue with asynchronicity using a Promise.
-
-* This is a straightforward activity, but students still struggling to understand callbacks may find it challenging to understand the problem and implement a solution with a Promise. If students seem stuck, refer them to the files in the previous activity.
-
-
-### 4. Everyone Do: All The Cats Review (5 mins)
-
-* Ask students to post their solutions in Slack. Select one and call on other students to explain snippets. As students explain the code, reiterate (while rephrasing their explanations) the following points:
-
-  - What was the problem? We logged our variable, `allTheCats`, before the database query resolved, which returned `undefined`.
-
-* The solution to the problem is to refactor `all()` to return a Promise encapsulating our query.
+@TODO:
 
 ```js
 function all(){
@@ -69,25 +82,11 @@ all()
     console.log(err);
   });
 ```
-* Answer any questions before introducing the next activity.
 
 
-### 5. Students Do: Promises Promises (10 mins)
+## CRUD
 
-* See [14-Stu_Promises-Promises/README.md](#) for instructions
-
-* In this activity, students will add `create` and `update` functions to their `server.js` files utilizing Promises.
-
-* The solution to this activity is straightforward, but if students are struggling, refer them back to previous Handlebars activities where they used CRUD methods, then encourage them to encapsulate those methods in a Promise and modify as needed to query their database.
-
-
-### 6. Everyone Do: Promises Promises Review (10 mins)
-
-* Ask students to post their solutions in Slack. Select one solution and call on someone other than the author to explain the `create` function. Then call on another student to explain the `update` function. As students explain the code, reiterate (while rephrasing their explanations) the following points:
-
-* Our `create` and `udpate` functions are very similar to the `all` function we created in the previous activity with the exception that these two receive arguments.
-
-* The `create` function receives `name` and `sleepy` arguments and inserts their values into their corresponding columns using SQL prepared statements. The order in which we pass our arguments to our query method is important to ensure the values are inserted into the correct columns.
+Implementing our remaining CRUD methods is straightforward:
 
 ```js
 // create new cat with name and sleepy values
@@ -145,42 +144,25 @@ update(true, 1)
 
   * For a humorous explanation of SQL injection, refer students to this [xkcd](https://xkcd.com/327/) comic.
 
-  * If students have further questions, refer them to the Wikipedia articles on [SQL Injection](https://en.wikipedia.org/wiki/SQL_injection) and [Prepared statements](https://en.wikipedia.org/wiki/Prepared_statement).
+  * [SQL Injection](https://en.wikipedia.org/wiki/SQL_injection)
+  * [Prepared statements](https://en.wikipedia.org/wiki/Prepared_statement).
 
 
-### 7. Instructor Do: Models (15 mins)
+## Models
 
-* See [15-Ins_Models](#)
+  - What is the M in MVC? The M in MVC is Model.
 
-* Activities 15 through 18 are crucial for students to understand MVC framework, especially in regards to data flow. Before walking students through building a model, lead a brief discussion on the topic.
+  - Why is it called the Model? The Model is so named because it defines the architecture, or shape, of the database. You could say it "models" the data.
 
-* Ask students the following questions:
+  - What does the Model do? The Model is responsible for managing the dynamic data structure of an application.
 
-  - What is the M in MVC?
+  - How does it interact with the other two components, View and Controller? The Model receives user input from the controller and returns data to be rendered in the View.
 
-  - Why is it called the Model?
+* [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 
-  - What does the Model do?
+One of the primary reasons for using the MVC framework is the [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). You will be demonstrating how to modularize the Model by separating the database queries from the controller logic in `server.js`.
 
-  - How does it interact with the other two components, View and Controller?
 
-* If students struggle, guide them towards these answers:
-
-  - The M in MVC is Model.
-
-  - The Model is so named because it defines the architecture, or shape, of the database. You could say it "models" the data.
-
-  - The Model is responsible for managing the dynamic data structure of an application.
-
-  - The Model receives user input from the controller and returns data to be rendered in the View.
-
-* If students have further questions, refer them to the Wikipedia article on [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
-
-* Remind students that one of the primary reasons for using the MVC framework is the separation of concerns. You will be demonstrating how to modularize the Model by separating the database queries from the controller logic in `server.js`.
-
-  - If students have further questions, refer them to the Wikipedia article on [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns).
-
-* If you are comfortable doing so, live code the refactoring of the application in the Unsolved folder and explain each step as you proceed. If you are not comfortable live coding, walk students through the files in the Solved folder. Either way, explain the following:
 
   * At the root level of the directory, we create a folder `db` and move the two `.sql` files into it. This is common practice for keeping an application organized.
 
@@ -213,14 +195,7 @@ update(true, 1)
 * Additionally, students will create a new model, `dogs`, and call its methods from `server.js`.
 
 
-### 9. Everyone Do: Models Review (10 mins)
-
-* If you are comfortable doing so, call on students to live code the solution using your laptop. Alternatively, ask students to Slack individual files to #class-instruction and piece together the solution using files from different authors. This will help reinforce the usefulness of modularity in the MVC framework by demonstrating that components can be completed by a team of developers. This is also an opportunity to debug in front of the class if there are discrepancies between files.
-
-* Answer any questions. If students ask about the dog model, `dog.js`, and its implementation, use it as a segue into the next demo.
-
-
-### 10. Instructor Do: ORM (15 mins)
+## ORM 
 
 * See [17-Ins_ORM](#)
 
@@ -322,3 +297,6 @@ this.delete = function(id) {
 ```
 
 @TODO: Finish ORM
+
+(Re)Sources
+* [OrmHate](https://martinfowler.com/bliki/OrmHate.html)
