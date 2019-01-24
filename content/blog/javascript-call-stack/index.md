@@ -20,7 +20,7 @@ function one() {
 one();
 ```
 
-@TODO run on linux
+@TODO run on linux and update log
 ```sh
 Trace
     at three (/Users/jarednielsen/apps/app.js:4:15)
