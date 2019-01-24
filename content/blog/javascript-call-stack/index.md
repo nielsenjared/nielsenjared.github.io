@@ -1,6 +1,6 @@
 ---
 title: Learn JavaScript Call Stack,
-date: "2019-01-28"
+date: "2019-02-04"
 description:
 ---
 ![Call Stack](./jared-nielsen-javascript-call-stack.png)
@@ -46,4 +46,4 @@ Trace
 
 ## (Re)Sources
 * https://hungryturtlecode.com/tutorials/console-trace/
-* ``
+* 
