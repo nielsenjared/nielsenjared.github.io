@@ -34,3 +34,16 @@ Trace
     at Function.Module._load (internal/modules/cjs/loader.js:529:3)
     at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
 ```
+
+
+
+
+
+
+
+
+
+
+## (Re)Sources
+* https://hungryturtlecode.com/tutorials/console-trace/
+* ``
