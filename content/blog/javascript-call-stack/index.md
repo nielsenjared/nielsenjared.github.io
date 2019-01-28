@@ -5,19 +5,29 @@ description:
 ---
 ![Call Stack](./jared-nielsen-javascript-call-stack.png)
 
-https://developer.mozilla.org/en-US/docs/Web/API/Console/trace
+
+
+
+
+The call stack works with a stack as well as with a queue. It's the queue that handles the asynchronous stuff.
+
+JavaScript is single-threaded, which means it is blocking, which means if we run a function that will take some time to return, everything else has to wait for that function. In other languages, you would use multiple threads or processes to handle this situation.
+
+
+
+
 
 ```js
-function one() {
-  function two() {
-    function three() {
+function first() {
+  function second() {
+    function third() {
       console.trace();
     }
-    three();
+    third();
   }
-  two();
+  second();
 }
-one();
+first();
 ```
 
 @TODO run on linux and update log
@@ -35,6 +45,11 @@ Trace
     at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
 ```
 
+Here's our stack trace. What's happening here?
+
+When `one()`
+That anonymous object on the 4th line is our module itself, the global namespace.
+
 
 
 
@@ -46,4 +61,4 @@ Trace
 
 ## (Re)Sources
 * https://hungryturtlecode.com/tutorials/console-trace/
-* 
+* https://developer.mozilla.org/en-US/docs/Web/API/Console/trace

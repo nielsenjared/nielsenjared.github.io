@@ -10,7 +10,7 @@ Common analogies for stacks are books, dishes, or cafeteria trays.
 
 ## Last In, First Out (LIFO)
 
-Just like a stack of turtles, to get at the bottom of the stack, you need to take everything off the top.
+Just like a stack of penguins, to get at the bottom of the stack, you need to take everything off the top.
 
 ## Stack Operations
 
