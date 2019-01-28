@@ -1,15 +1,13 @@
 ---
 title: Learn Git Workflow Basics
 date: "2019-01-28"
-description:
+description: Whether you're learning full stack web development, machine learning or something else entirely, you're going to need to learn Git workflow basics.
 ---
-
-@TODO: Introduction
-Regardless of what language or stack you're learning, there's a good chance you're going to need to learn Git. This tutorial will walk you through the basics of Git workflow. In this tutorial, you will learn:
+Whether you're learning full stack web development, data visualization or something else entirely, you're going to need to learn Git workflow basics. This tutorial will walk you through the following:
 
 * Initializing a Git repository
-* Adding a Remote
-* The Three Phases of Git
+* Adding a Remote Origin
+* The Three Phases of Git Workflow
 * Working Backwards with Checkout, Revert and Reset
 
 Subsequent tutorials will cover:
