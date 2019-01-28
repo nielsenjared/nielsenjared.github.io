@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 28 Jan 2019 17:07:40 GMT</lastBuildDate><item><title><![CDATA[Learn Git Workflow Basics]]></title><description><![CDATA[@TODO: Introduction
-Regardless of what language or stack you’re learning, there’s a good chance you’re going to need to learn Git. This…]]></description><link>http://jarednielsen.com/learn-git-workflow-basics/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-workflow-basics/</guid><pubDate>Mon, 28 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;@TODO: Introduction
-Regardless of what language or stack you’re learning, there’s a good chance you’re going to need to learn Git. This tutorial will walk you through the basics of Git workflow. In this tutorial, you will learn:&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 28 Jan 2019 18:39:15 GMT</lastBuildDate><item><title><![CDATA[Learn Git Workflow Basics]]></title><description><![CDATA[Whether you’re learning full stack web development, data visualization or something else entirely, you’re going to need to learn Git…]]></description><link>http://jarednielsen.com/learn-git-workflow-basics/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-workflow-basics/</guid><pubDate>Mon, 28 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Whether you’re learning full stack web development, data visualization or something else entirely, you’re going to need to learn Git workflow basics. This tutorial will walk you through the following:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Initializing a Git repository&lt;/li&gt;
-&lt;li&gt;Adding a Remote&lt;/li&gt;
-&lt;li&gt;The Three Phases of Git&lt;/li&gt;
+&lt;li&gt;Adding a Remote Origin&lt;/li&gt;
+&lt;li&gt;The Three Phases of Git Workflow &lt;/li&gt;
 &lt;li&gt;Working Backwards with Checkout, Revert and Reset&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Subsequent tutorials will cover:&lt;/p&gt;
