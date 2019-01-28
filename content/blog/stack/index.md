@@ -1,6 +1,6 @@
 ---
 title: Data Structures && JavaScript: Stacks and Stack Algorithms
-date: "2019-01-28"
+date: "2019-02-04"
 description:
 ---
 
@@ -22,6 +22,31 @@ Just like a stack of turtles, to get at the bottom of the stack, you need to tak
 A classic interview problem is implementing a stack with an array. Let's do it!
 
 @TODO Stack with constructor
+```js
+function Stack() {
+  this.dataStore = [];
+
+  this.top = 0;
+  this.push = push;
+  this.pop = pop;
+  this.peek = peek;
+  this.clear = clear;
+  this.length = length;
+  }
+
+  function push(element) { this.dataStore[this.top++] = element;
+  }
+  function peek() {
+  return this.dataStore[this.top-1];
+  }
+  function pop() {
+  return this.dataStore[--this.top];
+  }
+  function clear() { this.top = 0;
+  }
+  function length() { return this.top;
+  }
+```
 
 J4F, let's do it in ES6:
 
