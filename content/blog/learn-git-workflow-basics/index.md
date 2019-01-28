@@ -3,6 +3,9 @@ title: Learn Git Workflow Basics
 date: "2019-01-28"
 description: Whether you're learning full stack web development, machine learning or something else entirely, you're going to need to learn Git workflow basics.
 ---
+
+![Learn Git Workflow Basics: Git Logo](./jared-nielsen-learn-git-workflow-basics.png)
+
 Whether you're learning full stack web development, data visualization or something else entirely, you're going to need to learn Git workflow basics. This tutorial will walk you through the following:
 
 * Initializing a Git repository
