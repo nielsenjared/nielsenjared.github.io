@@ -28,27 +28,33 @@ cd git-basics
 ```
 From within your new git-basics directory, run:
 
-`git init`
+```
+git init
+```
 
 This is the git command short for initialize. Your terminal output will state something to this effect:
 
-`Initialized empty Git repository in /Users/jarednielsen/apps/git-basics/.git/`
+```
+Initialized empty Git repository in /Users/jarednielsen/apps/git-basics/.git/
+```
 
 Before we forget, let’s add our remote repository. **What’s a remote repository?** If you are currently working locally on your repository, the remote is your repository hosted on a third party server allowing your collaborators to access your project.
 
 On GitHub.com, create a new repo and name it git-basics, but don’t initialize with a README. Copy the URL to your new repo and from the command line run:
 
-`git remote add origin <URL-to-your-repo>`
+```
+git remote add origin <URL-to-your-repo>
+```
 
 You won’t get a response from Git. But if you want to verify that your remote was added run:
 
-`git remote -v`
+```
+git remote -v
+```
 
 It will list your origin twice, once for (fetch) and once for (push). This is like saying ‘When we fetch, it will be from this origin” and “When we push it will be to this origin”.
 
-TODO Explain the difference between fetch and pull
-
-## Git Workflow Basics
+## Git Workflow Phases
 
 We can break the git workflow down to three phases:
 1. Working directory
@@ -68,7 +74,9 @@ To summarize:
 
 To see this in action, run:
 
-`git status`
+```
+git status
+```
 
 The Terminal output will be something like
 
@@ -80,7 +88,9 @@ nothing to commit (create/copy files and use "git add" to track)
 
 As you can see, there’s nothing to commit. Let’s change that.
 
-`touch index.html`
+```
+touch index.html
+```
 
 Open the the new file with your IDE and add boilerplate HTML:
 ```
@@ -97,7 +107,9 @@ Open the the new file with your IDE and add boilerplate HTML:
 ```
 Save index.html and add it to the repo:
 
-`git add index.html`
+```
+git add index.html
+```
 
 You won’t get a response at Terminal. Run git status again and your output should be:
 ```
@@ -113,7 +125,9 @@ Changes to be committed:
 
 Terminal is suggesting you commit index.html. Let’s not do that yet. Let’s make some changes to it first. In the <body> of your index.html, add a header:
 
-`<h1>I love Git!</h1>`
+```
+<h1>I love Git!</h1>
+```
 
 Then save. Now run git status. The output should be:
 ```
@@ -135,11 +149,15 @@ Changes not staged for commit:
 
 Git is telling us that index.html has been modified. Neato! Let’s take a look at those changes. At the command line, run
 
-`git diff`
+```
+git diff
+```
 
 The above command displays all the differences in your repo. If you only want to investigate one file, do so like this:
 
-`git diff index.html`
+```
+git diff index.html
+```
 
 Either way, your Terminal output should be something similar to this:
 ```
@@ -159,15 +177,21 @@ index f540bc6..10dbac0 100644
 
 The text highlighted in green is what we just added. Let’s add those changes
 
-`git add index.html`
+```
+git add index.html
+```
 
 Now when we run git diff:
 
-`git diff`
+```
+git diff
+```
 
 No diff. Why? We added our changes in the working directory to our staging area. But if we run git status, we still see that there are changes to commit. So… let’s do it.
 
-`git commit`
+```
+git commit
+```
 
 Your Terminal window will change and present you with a block of text like the following and some stats about the file(s) you are committing:
 
@@ -188,11 +212,15 @@ You will notice that the top of your Terminal window now reads `vi - git commit`
 
 Let’s add a message:
 
-`Added h1 to index.html`
+```
+Added h1 to index.html
+```
 
 When you begin typing you will notice that `-- INSERT --` appears at the bottom of the screen. When you finish typing your message press ESC. You are no longer in _write_ mode, but _read_ mode. To save your changes and exit vi type a colon immediately followed by an ‘x’ and hit Return:
 
-`:x`
+```
+:x
+````
 
 Run git status again and
 ```
@@ -202,7 +230,9 @@ nothing to commit, working tree clean
 
 If you are using a Unix-based OS and want to learn more about vi:
 
-`man vi`
+```
+man vi
+```
 
 (Press q to exit)
 
@@ -210,7 +240,9 @@ We can avoid using vi if we add a message _flag_ to our commit command. Flags ar
 
 To index.html, add a title in the head:
 
-`<title>Learning Git Basics</title>`
+```
+<title>Learning Git Basics</title>
+```
 
 Save your changes and run:
 
@@ -224,7 +256,9 @@ When we use the message flag, the message we pass it must be in quotes.
 ## Working Backwards
 Let’s add another file.
 
-`touch style.css`
+```
+touch style.css
+```
 
 Add some garish style to our new stylesheet:
  ```
@@ -235,35 +269,49 @@ body {
 
 To index.html, add:
 
-`<link rel="stylesheet" type="text/css" href="style.css"> `
+```
+<link rel="stylesheet" type="text/css" href="style.css">
+```
 
 We can add multiple files to staging in one command, like so:
 
-`git add index.html style.css`
+```
+git add index.html style.css
+```
 
 Commit these changes:
 
-`git commit -m "Added style"`
+```
+git commit -m "Added style"
+```
 
 Then run:
 
-`git log`
+```
+git log
+```
 
 (Press q to exit.)
 
 Your Terminal output will list your repo commits in descending order, with most recent at the top. It will be prepended with a line that reads something like this:
 
-`commit e11a83fa4ac06a7382c8ea7d367ecaf229cf6891 (HEAD -> master)`
+```
+commit e11a83fa4ac06a7382c8ea7d367ecaf229cf6891 (HEAD -> master)
+```
 
 That long string of alphanumeric characters is the hash Git uses to track your commit(s). But what is (HEAD -> master)?
 
 The HEAD is the commit you are currently working on. This will generally be your most recent commit. To see the HEAD commit, run:
 
-`git show HEAD`
+```
+git show HEAD
+```
 
 Let’s rollback to an earlier commit. Run `git log` again and copy the long string of characters associated with an earlier commit. For example:
 
-`git checkout 3ba7fe39eb5c0fd2de8a933e618aef1a3d67d49e`
+```
+git checkout 3ba7fe39eb5c0fd2de8a933e618aef1a3d67d49e
+```
 
 Your Terminal output will be something similar to:
 ```
@@ -285,18 +333,24 @@ Note that git alerts us that we are in 'detached HEAD' state. This will be impor
 
 Now take a look at index.html. It should look a little different than last time. Run
 
-`git show HEAD`
+```
+git show HEAD
+```
 
 Your Terminal will output the changes that were associated with that commit.
 
 To switch back, run:
 
-`git checkout master`
+```
+git checkout master
+```
 
 ### Revert
 We can _checkout_ earlier commits, but we can also revert and reset to earlier commits, too. To index.html, under your `<h1>` add:
 
-`<h2>Learning Revert</h2>`
+```
+<h2>Learning Revert</h2>
+```
 
 Then run:
 ```
@@ -307,7 +361,9 @@ git log
 
 You can see in the log that we have a “Learning revert” commit. Now run:
 
-`git revert HEAD`
+```
+git revert HEAD
+```
 
 Your Terminal will output something similar:
 ```
@@ -316,15 +372,16 @@ Revert "Learning revert"
 This reverts commit 19c9bef19686bedc9d7e14f044e4aeb5396ff771.
 ```
 
-You can edit the message if you want. Otherwise, commit the change by entering:
-`:x`
+You can edit the message if you want. Otherwise, commit the change by entering: `:x`
 
 Now take a look at index.html. It _reverted_ to the previous commit. But if you run `git log`, you will see that we created a new commit from the previous commit.
 
 ### Reset
 To index.html, under your `<h1>` add:
 
-`<h2>Learning Reset</h2>`
+```
+<h2>Learning Reset</h2>
+```
 
 Then run
 ```
@@ -334,13 +391,19 @@ git log
 ```
 
 Our HEAD is now at our latest commit, “Learning reset”. Copy the SHA hash for our very first commit and paste it into this command:
-`git reset --hard 3ba7fe39eb5c0fd2de8a933e618aef1a3d67d49e`
+```
+git reset --hard 3ba7fe39eb5c0fd2de8a933e618aef1a3d67d49e
+```
 
 Your Terminal output will read something like:
-`HEAD is now at 3ba7fe3 Added h1 to index.html`
+```
+HEAD is now at 3ba7fe3 Added h1 to index.html
+```
 
 Run:
-`git log`
+```
+git log
+```
 
 You just rolled back your project to a previous commit.
 
@@ -348,7 +411,9 @@ You just rolled back your project to a previous commit.
 https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
 
 If you want to delete a file, you need to tell Git to stop tracking it. You can delete and remove it from Git with one command:
-`git rm <file-name>`
+```
+git rm <file-name>
+```
 
 If you're a cowboy and you shoot first and ask questions later, you will still need to remove the file from Git.
 ```
