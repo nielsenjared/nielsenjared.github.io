@@ -1,4 +1,256 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 21 Jan 2019 20:53:32 GMT</lastBuildDate><item><title><![CDATA[How to Configure Full-Stack Development Environment for Linux]]></title><description><![CDATA[My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each…]]></description><link>http://jarednielsen.com/full-stack-development-linux/</link><guid isPermaLink="false">http://jarednielsen.com/full-stack-development-linux/</guid><pubDate>Mon, 21 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each upgrade I need to reinstall all of my tools. This article is primarily a reference for myself as this is something I’ve done before and will definitely do again. I hope you also find it useful. If you have any feedback, let me know &lt;a href=&quot;http://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 28 Jan 2019 17:07:40 GMT</lastBuildDate><item><title><![CDATA[Learn Git Workflow Basics]]></title><description><![CDATA[@TODO: Introduction
+Regardless of what language or stack you’re learning, there’s a good chance you’re going to need to learn Git. This…]]></description><link>http://jarednielsen.com/learn-git-workflow-basics/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-workflow-basics/</guid><pubDate>Mon, 28 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;@TODO: Introduction
+Regardless of what language or stack you’re learning, there’s a good chance you’re going to need to learn Git. This tutorial will walk you through the basics of Git workflow. In this tutorial, you will learn:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Initializing a Git repository&lt;/li&gt;
+&lt;li&gt;Adding a Remote&lt;/li&gt;
+&lt;li&gt;The Three Phases of Git&lt;/li&gt;
+&lt;li&gt;Working Backwards with Checkout, Revert and Reset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Subsequent tutorials will cover:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/learn-git-workflow-centralized&quot;&gt;Learn Git Workflow Centralized&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/learn-git-workflow-branches&quot;&gt;Learn Git Workflow Branches&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/learn-git-workflow-forks&quot;&gt;Learn Git Workflow Forks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Initializing a Git Repository&lt;/h2&gt;
+&lt;p&gt;Let’s create a local repository. From the command line:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;mkdir git-basics
+cd git-basics&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;From within your new git-basics directory, run:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This is the git command short for initialize. Your terminal output will state something to this effect:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Initialized empty Git repository in /Users/jarednielsen/apps/git-basics/.git/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Before we forget, let’s add our remote repository. &lt;strong&gt;What’s a remote repository?&lt;/strong&gt; If you are currently working locally on your repository, the remote is your repository hosted on a third party server allowing your collaborators to access your project.&lt;/p&gt;
+&lt;p&gt;On GitHub.com, create a new repo and name it git-basics, but don’t initialize with a README. Copy the URL to your new repo and from the command line run:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git remote add origin &amp;#x3C;URL-to-your-repo&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You won’t get a response from Git. But if you want to verify that your remote was added run:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git remote -v&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It will list your origin twice, once for (fetch) and once for (push). This is like saying ‘When we fetch, it will be from this origin” and “When we push it will be to this origin”.&lt;/p&gt;
+&lt;p&gt;TODO Explain the difference between fetch and pull&lt;/p&gt;
+&lt;h2&gt;Git Workflow Basics&lt;/h2&gt;
+&lt;p&gt;We can break the git workflow down to three phases:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Working directory&lt;/li&gt;
+&lt;li&gt;Staging Area&lt;/li&gt;
+&lt;li&gt;Repository&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The Working Directory is where you are currently in your file tree. It’s where, you, well, work, creating and editing files.&lt;/p&gt;
+&lt;p&gt;The Staging Area is where you store changes and additions for the next commit.&lt;/p&gt;
+&lt;p&gt;The Repository is a permanent record of the development of your project.&lt;/p&gt;
+&lt;p&gt;To summarize:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You work.&lt;/li&gt;
+&lt;li&gt;You add your work to the staging area.&lt;/li&gt;
+&lt;li&gt;You commit your staged work to the repository.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To see this in action, run:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git status&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The Terminal output will be something like&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;On branch master
+Initial commit
+nothing to commit (create/copy files and use &amp;quot;git add&amp;quot; to track)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As you can see, there’s nothing to commit. Let’s change that.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;touch index.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Open the the new file with your IDE and add boilerplate HTML:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Save index.html and add it to the repo:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git add index.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You won’t get a response at Terminal. Run git status again and your output should be:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use &amp;quot;git rm --cached &amp;lt;file&amp;gt;...&amp;quot; to unstage)
+
+	new file:   index.html&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Terminal is suggesting you commit index.html. Let’s not do that yet. Let’s make some changes to it first. In the &lt;body&gt; of your index.html, add a header:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;#x3C;h1&gt;I love Git!&amp;#x3C;/h1&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then save. Now run git status. The output should be:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use &amp;quot;git rm --cached &amp;lt;file&amp;gt;...&amp;quot; to unstage)
+
+	new file:   index.html
+
+Changes not staged for commit:
+  (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to update what will be committed)
+  (use &amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot; to discard changes in working directory)
+
+	modified:   index.html&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Git is telling us that index.html has been modified. Neato! Let’s take a look at those changes. At the command line, run&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git diff&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The above command displays all the differences in your repo. If you only want to investigate one file, do so like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git diff index.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Either way, your Terminal output should be something similar to this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;diff --git a/index.html b/index.html
+index f540bc6..10dbac0 100644
+--- a/index.html
++++ b/index.html
+@@ -5,6 +5,6 @@
+     &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
+   &amp;lt;/head&amp;gt;
+   &amp;lt;body&amp;gt;
+-
++    &amp;lt;h1&amp;gt;I love Git!&amp;lt;/h1&amp;gt;
+   &amp;lt;/body&amp;gt;
+ &amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The text highlighted in green is what we just added. Let’s add those changes&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git add index.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now when we run git diff:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git diff&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;No diff. Why? We added our changes in the working directory to our staging area. But if we run git status, we still see that there are changes to commit. So… let’s do it.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git commit&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Your Terminal window will change and present you with a block of text like the following and some stats about the file(s) you are committing:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Please enter the commit message for your changes. Lines starting
+# with &amp;#39;#&amp;#39; will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#       modified:   index.html
+#
+~
+~
+~&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You will notice that the top of your Terminal window now reads &lt;code&gt;vi - git commit&lt;/code&gt;. It may also read &lt;code&gt;vim&lt;/code&gt;. You are currently in edit mode using the vi (or vim) editor, built-in to your Terminal. vi allows you to edit files directly in your Terminal without needing to open those files in an IDE.&lt;/p&gt;
+&lt;p&gt;Let’s add a message:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Added h1 to index.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;When you begin typing you will notice that &lt;code&gt;-- INSERT --&lt;/code&gt; appears at the bottom of the screen. When you finish typing your message press ESC. You are no longer in &lt;em&gt;write&lt;/em&gt; mode, but &lt;em&gt;read&lt;/em&gt; mode. To save your changes and exit vi type a colon immediately followed by an ‘x’ and hit Return:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;:x&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Run git status again and&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;On branch master
+nothing to commit, working tree clean&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you are using a Unix-based OS and want to learn more about vi:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;man vi&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;(Press q to exit)&lt;/p&gt;
+&lt;p&gt;We can avoid using vi if we add a message &lt;em&gt;flag&lt;/em&gt; to our commit command. Flags are options that we can pass to a command. Each command will have different flags available for us to use. As we did above, you can see the flags associated with a command by opening its manual in the Terminal using the &lt;code&gt;man&lt;/code&gt; command. You will also sometimes see flags referred to as switches.&lt;/p&gt;
+&lt;p&gt;To index.html, add a title in the head:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;#x3C;title&gt;Learning Git Basics&amp;#x3C;/title&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Save your changes and run:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git add index.html
+git commit -m “Added title”&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When we use the message flag, the message we pass it must be in quotes.&lt;/p&gt;
+&lt;h2&gt;Working Backwards&lt;/h2&gt;
+&lt;p&gt;Let’s add another file.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;touch style.css&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Add some garish style to our new stylesheet:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;body {
+ background-color: red;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To index.html, add:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;#x3C;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;We can add multiple files to staging in one command, like so:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git add index.html style.css&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Commit these changes:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git commit -m &quot;Added style&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then run:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git log&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;(Press q to exit.)&lt;/p&gt;
+&lt;p&gt;Your Terminal output will list your repo commits in descending order, with most recent at the top. It will be prepended with a line that reads something like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;commit e11a83fa4ac06a7382c8ea7d367ecaf229cf6891 (HEAD -&gt; master)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;That long string of alphanumeric characters is the hash Git uses to track your commit(s). But what is (HEAD -&gt; master)?&lt;/p&gt;
+&lt;p&gt;The HEAD is the commit you are currently working on. This will generally be your most recent commit. To see the HEAD commit, run:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git show HEAD&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Let’s rollback to an earlier commit. Run &lt;code&gt;git log&lt;/code&gt; again and copy the long string of characters associated with an earlier commit. For example:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git checkout 3ba7fe39eb5c0fd2de8a933e618aef1a3d67d49e&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Your Terminal output will be something similar to:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Note: checking out &amp;#39;3ba7fe39eb5c0fd2de8a933e618aef1a3d67d49e&amp;#39;.
+
+You are in &amp;#39;detached HEAD&amp;#39; state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b &amp;lt;new-branch-name&amp;gt;
+
+HEAD is now at 3ba7fe3... Added h1 to index.html&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note that git alerts us that we are in ‘detached HEAD’ state. This will be important later when you begin branching.&lt;/p&gt;
+&lt;p&gt;Now take a look at index.html. It should look a little different than last time. Run&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git show HEAD&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Your Terminal will output the changes that were associated with that commit.&lt;/p&gt;
+&lt;p&gt;To switch back, run:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Revert&lt;/h3&gt;
+&lt;p&gt;We can &lt;em&gt;checkout&lt;/em&gt; earlier commits, but we can also revert and reset to earlier commits, too. To index.html, under your &lt;code&gt;&amp;#x3C;h1&gt;&lt;/code&gt; add:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;#x3C;h2&gt;Learning Revert&amp;#x3C;/h2&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then run:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git add index.html
+git commit -m “Learning revert”
+git log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can see in the log that we have a “Learning revert” commit. Now run:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git revert HEAD&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Your Terminal will output something similar:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Revert &amp;quot;Learning revert&amp;quot;
+
+This reverts commit 19c9bef19686bedc9d7e14f044e4aeb5396ff771.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can edit the message if you want. Otherwise, commit the change by entering:
+&lt;code&gt;:x&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now take a look at index.html. It &lt;em&gt;reverted&lt;/em&gt; to the previous commit. But if you run &lt;code&gt;git log&lt;/code&gt;, you will see that we created a new commit from the previous commit.&lt;/p&gt;
+&lt;h3&gt;Reset&lt;/h3&gt;
+&lt;p&gt;To index.html, under your &lt;code&gt;&amp;#x3C;h1&gt;&lt;/code&gt; add:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;#x3C;h2&gt;Learning Reset&amp;#x3C;/h2&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then run&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git add index.html
+git commit -m “Learning reset”
+git log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our HEAD is now at our latest commit, “Learning reset”. Copy the SHA hash for our very first commit and paste it into this command:
+&lt;code&gt;git reset --hard 3ba7fe39eb5c0fd2de8a933e618aef1a3d67d49e&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Your Terminal output will read something like:
+&lt;code&gt;HEAD is now at 3ba7fe3 Added h1 to index.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Run:
+&lt;code&gt;git log&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You just rolled back your project to a previous commit.&lt;/p&gt;
+&lt;h2&gt;Removing Files&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository&quot;&gt;https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you want to delete a file, you need to tell Git to stop tracking it. You can delete and remove it from Git with one command:
+&lt;code&gt;git rm &amp;#x3C;file-name&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If you’re a cowboy and you shoot first and ask questions later, you will still need to remove the file from Git.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;rm &amp;lt;file-name&amp;gt;
+git rm &amp;lt;file-name&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you want to stop tracking a file, but still want to keep it:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git rm --cached &amp;lt;file-name&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is useful if you forgot to add a file to your &lt;code&gt;.gitignore&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Git Workflow Basics: What Did We Learn?&lt;/h2&gt;
+&lt;p&gt;In this Git Workflow Basics tutorial, we learned:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;git init&lt;/li&gt;
+&lt;li&gt;git remote&lt;/li&gt;
+&lt;li&gt;git status&lt;/li&gt;
+&lt;li&gt;git add&lt;/li&gt;
+&lt;li&gt;git commit&lt;/li&gt;
+&lt;li&gt;git diff&lt;/li&gt;
+&lt;li&gt;git log&lt;/li&gt;
+&lt;li&gt;git show&lt;/li&gt;
+&lt;li&gt;git checkout&lt;/li&gt;
+&lt;li&gt;git revert&lt;/li&gt;
+&lt;li&gt;git reset&lt;/li&gt;
+&lt;li&gt;git rm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But there’s one last command we need to complete the three phases of the Git workflow:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git push&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will push your files to the &lt;code&gt;remote&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now that you know the basics, it’s time to learn collaborative workflows. Join us in the next tutorial &lt;a href=&quot;/learn-git-workflow-centralized&quot;&gt;Learn Git Workflow Centralized&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;(Re)Sources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control&quot;&gt;https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.atlassian.com/git&quot;&gt;https://www.atlassian.com/git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;http://rogerdudler.github.io/git-guide/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How to Configure Full-Stack Development Environment for Linux]]></title><description><![CDATA[My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each…]]></description><link>http://jarednielsen.com/full-stack-development-linux/</link><guid isPermaLink="false">http://jarednielsen.com/full-stack-development-linux/</guid><pubDate>Mon, 21 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each upgrade I need to reinstall all of my tools. This article is primarily a reference for myself as this is something I’ve done before and will definitely do again. I hope you also find it useful. If you have any feedback, let me know &lt;a href=&quot;http://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Git&lt;/h2&gt;
 &lt;p&gt;Perhaps most important is version-control. Being Linux, it’s a one-liner.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt install git-all&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
