@@ -3,7 +3,10 @@ title: Learn Git Workflow Basics
 date: "2019-01-28"
 description: Whether you're learning full stack web development, machine learning or something else entirely, you're going to need to learn Git workflow basics.
 ---
-Whether you're learning full stack web development, data visualization or something else entirely, you're going to need to learn Git workflow basics. This tutorial will walk you through the following:
+
+![Learn Git Workflow Basics: Git Logo](./jared-nielsen-learn-git-workflow-basics.png)
+
+Whether you're learning full stack web development, machine learning or something else entirely, you're going to need to learn Git workflow basics. This tutorial will walk you through the following:
 
 * Initializing a Git repository
 * Adding a Remote Origin
@@ -35,7 +38,11 @@ This is the git command short for initialize. Your terminal output will state so
 Initialized empty Git repository in /Users/jarednielsen/apps/git-basics/.git/
 ```
 
-Before we forget, let’s add our remote repository. **What’s a remote repository?** If you are currently working locally on your repository, the remote is your repository hosted on a third party server allowing your collaborators to access your project.
+Before we forget, let’s add our remote repository.
+
+**What’s a remote repository?**
+
+If you are currently working locally on your repository, the remote is your repository hosted on a third party server allowing your collaborators to access your project.
 
 On GitHub.com, create a new repo and name it git-basics, but don’t initialize with a README. Copy the URL to your new repo and from the command line run:
 
@@ -442,7 +449,7 @@ In this Git Workflow Basics tutorial, we learned:
 * git reset
 * git rm
 
-But there's one last command we need to complete the three phases of the Git workflow:
+But there's one last command we need in order to complete the three phases of the Git workflow:
 
 ```
 git push
@@ -454,5 +461,4 @@ Now that you know the basics, it's time to learn collaborative workflows. Join u
 
 ## (Re)Sources
 * https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
-* https://www.atlassian.com/git
 * http://rogerdudler.github.io/git-guide/
