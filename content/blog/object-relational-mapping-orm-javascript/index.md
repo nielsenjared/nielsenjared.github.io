@@ -1,37 +1,39 @@
 ---
-title: What is ORM? Object-Relational Mapping in JavaScript FTW
+title: What is Object-Relational Mapping? Roll-Your-Own ORM with JavaScript
 date: "2018-12-31"
 description:
 ---
-![Object-Relational Mapping](./jared-nielsen-object-relational-mapping.png)
+![Object-Relational Mapping](./jared-nielsen-object-relational-mapping-orm-javascript.png)
 
 @TODO: introduction
 
 If you're just learning web development, the transition to an ORM and/or MVC framework can be challenging. This tutorial will walk you through a simple implementation of object-relational mapping to help you better understand how a full-featured JavaScript ORM, such as Sequelize, works under-the-hood, and how you can easily integrate it into a Model-View-Controller architecture.
 
-## Object-Relational Mapping
+## What is Object-Relational Mapping?
 
-**What is ORM?** Object Relational Mapping is a design system that maps an object-oriented programming language (such as JavaScript) to a relational database (such as MySQL).
+According to [Wikipedia](https://en.wikipedia.org/wiki/Object-relational_mapping), Object-Relational Mapping is:
 
-**Why is it useful?** Object Relational Mapping allows us (developers) to separate concerns in our application with reusable methods for database queries. The added, and perhaps most important, benefit of this separation of concerns is that we can easily use other SQL databases without needing to rewrite the entire code-base and instead only make minor changes to the ORM.
+>... a programming technique for converting data between incompatible type systems using object-oriented programming languages.
 
-**Why is it challenging?**
+According to Martin Fowler in [OrmHate](https://martinfowler.com/bliki/OrmHate.html)
 > Essentially what you are doing is synchronizing between two quite different representations of data, one in the relational database, and the other in-memory.
 
-While researching this article, I encountered many references to ORMs as the 'Vietnam of Software Development'. This phrase can be traced back to a Ted Neward who describes it in detail on his [blog](http://blogs.tedneward.com/post/the-vietnam-of-computer-science/):
+What does this mean for us as Node developers? In JavaScript, with the exception of primitive data types, everything is an object. The first problem for us is that SQL database management systems only store _scalar_ values. Scalar variables can only hold one value at a time, unlike arrays or objects. So in the case of using a SQL DBMS, that means strings or integers. Lucky for us, there are npm packages such as [mysql](@TODO) and [mysql2](@TODO) that handle this translation and return our queries in JSON format. But that's only half the battle. The other half is writing methods that allow us to query our database in our _native_ language and not that of the SQL DBMS.
+
+
+
+Object Relational Mapping is useful as it allows us (the developers) to separate concerns in our application with reusable methods for database queries. The added, and perhaps most important, benefit of this separation of concerns is that we can easily use other SQL databases without needing to rewrite the entire code-base and instead only make minor changes to the ORM.
+
+While researching this article, I encountered many references to ORMs as the 'Vietnam of Software Development'. This phrase can be traced back to a conference presentation by Ted Neward who describes it in detail on his [blog](http://blogs.tedneward.com/post/the-vietnam-of-computer-science/):
 
 > Although it may seem trite to say it, Object/Relational Mapping is the Vietnam of Computer Science. It represents a quagmire which starts well, gets more complicated as time passes, and before long entraps its users in a commitment that has no clear demarcation point, no clear win conditions, and no clear exit strategy.
-
-@TODO
-
-For another nuanced perspective on the problem, read [OrmHate](https://martinfowler.com/bliki/OrmHate.html) by Martin Fowler.
 
 In a 2016 article, [Should I Or Should I Not Use ORM?](https://medium.com/@mithunsasidharan/should-i-or-should-i-not-use-orm-4c3742a639ce), Mithun Sasidharan describes a different middle-ground between the two camps: choose the approach that is most appropriate for your application. He lists several questions to ask when making this decision, but we can distill it down to two:
 
 * Are your data access patterns going to be simple? Use an ORM
 * Is speed your priority? Don't use an ORM
 
-In a recent article, [Why you should avoid ORMS (with examples in Node.js)](https://blog.logrocket.com/why-you-should-avoid-orms-with-examples-in-node-js-e0baab73fa5), Thomas Hunter II makes the case for a middle-ground between hand-written database drivers and third-party ORMs: query builders, such as [knex](https://www.npmjs.com/package/knex). The reasons he outlines are:
+In a recent article, [Why you should avoid ORMs (with examples in Node.js)](https://blog.logrocket.com/why-you-should-avoid-orms-with-examples-in-node-js-e0baab73fa5), Thomas Hunter II makes the case for a middle-ground between hand-written database drivers and third-party ORMs: query builders, such as [knex](https://www.npmjs.com/package/knex). The reasons he outlines are:
 
 * ORMs are very complex.
 * ORMs are inefficient.
@@ -41,13 +43,13 @@ While the above is true for a full-featured ORM, Sasidharan outlines several ben
 
 * ORMs facilitate model implementation
 * ORMs result in a smaller code-base
-* ORMs enable a aster start-up time
+* ORMs enable faster start-up time
 
-
+@TODO
 
 ## Promises, Promises
 
-Both Sequelize and Mongoose tout themselves as Promise-based ORM/ODMs. In order to understand ORM, we need a baseline understanding of Promises.
+Both Sequelize and Mongoose tout themselves as Promise-based ORM/ODMs. In order to understand object-relational mapping, we need a baseline understanding of Promises.
 
 @TODO
 
@@ -129,7 +131,7 @@ ordinalNumbers();
 
 For a deeper-dive, read my related article to [Learn JavaScript Promises and Promise Methods](http://jarednielsen.com/javascript-promises/).
 
-## Database
+## Setup The MySQL Database
 
 We'll use the following schema and seeds.
 
