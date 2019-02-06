@@ -1,13 +1,17 @@
 ---
 title: What is Object-Relational Mapping? Roll-Your-Own ORM with JavaScript
-date: "2018-12-31"
-description:
+date: "2019-02-18"
+description: This tutorial will walk you through a simple implementation of object-relational mapping to help you better understand how a full-featured JavaScript ORM, such as Sequelize, works under-the-hood.
 ---
 ![Object-Relational Mapping](./jared-nielsen-object-relational-mapping-orm-javascript.png)
 
-@TODO: introduction
+Understanding object-relational mapping can be challenging when you're first learning web development. In this tutorial, you will roll-your-own ORM with JavaScript to help you better understand how full-featured object-relational mapping, such as Sequelize, works under-the-hood.
 
-If you're just learning web development, the transition to an ORM and/or MVC framework can be challenging. This tutorial will walk you through a simple implementation of object-relational mapping to help you better understand how a full-featured JavaScript ORM, such as Sequelize, works under-the-hood, and how you can easily integrate it into a Model-View-Controller architecture.
+You will learn:
+* What is Object-Relational Mapping?
+* How to use Promises to handle asynchronous database queries
+* Models and how to use implement them
+* How to implement a simple, Promise-based ORM with JavaScript
 
 ## What is Object-Relational Mapping?
 
@@ -15,20 +19,22 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Object-relational_mapping
 
 >... a programming technique for converting data between incompatible type systems using object-oriented programming languages.
 
-According to Martin Fowler in [OrmHate](https://martinfowler.com/bliki/OrmHate.html)
+Martin Fowler gives us a more nuanced answer in [OrmHate](https://martinfowler.com/bliki/OrmHate.html):
 > Essentially what you are doing is synchronizing between two quite different representations of data, one in the relational database, and the other in-memory.
 
-What does this mean for us as Node developers? In JavaScript, with the exception of primitive data types, everything is an object. The first problem for us is that SQL database management systems only store _scalar_ values. Scalar variables can only hold one value at a time, unlike arrays or objects. So in the case of using a SQL DBMS, that means strings or integers. Lucky for us, there are npm packages such as [mysql](@TODO) and [mysql2](@TODO) that handle this translation and return our queries in JSON format. But that's only half the battle. The other half is writing methods that allow us to query our database in our _native_ language and not that of the SQL DBMS.
+What does this mean for us as Node.js developers?
 
+The first problem for us is that SQL database management systems only store _scalar_ values. In JavaScript, with the exception of primitive data types, everything is an object. Unlike objects, scalar variables can only hold one value at a time. So in the case of using a SQL Database Management System (DBMS), that means strings or integers. Lucky for us, there are [npm packages](https://www.npmjs.com/search?q=sql) such as [mysql](https://www.npmjs.com/package/mysql) and [mysql2](https://www.npmjs.com/package/mysql2) that return our queries in JSON format. But that's only half the battle.
 
+The other half of the problem is writing methods that allow us to query our database in our _native_ language and not that of the SQL DBMS. Object Relational Mapping is useful as it allows us to separate concerns in our application with reusable methods for database queries. The added, and perhaps most important, benefit of this separation of concerns is that we can easily use other SQL databases without needing to rewrite the entire code-base and instead only make minor changes to the ORM.
 
-Object Relational Mapping is useful as it allows us (the developers) to separate concerns in our application with reusable methods for database queries. The added, and perhaps most important, benefit of this separation of concerns is that we can easily use other SQL databases without needing to rewrite the entire code-base and instead only make minor changes to the ORM.
+## War is Never a Lasting Solution
 
-While researching this article, I encountered many references to ORMs as the 'Vietnam of Software Development'. This phrase can be traced back to a conference presentation by Ted Neward who describes it in detail on his [blog](http://blogs.tedneward.com/post/the-vietnam-of-computer-science/):
+While researching this article, I encountered many references to ORMs as the 'Vietnam of Computer Science'. This phrase can be traced back to a conference presentation by Ted Neward who describes it in detail on his [blog](http://blogs.tedneward.com/post/the-vietnam-of-computer-science/):
 
-> Although it may seem trite to say it, Object/Relational Mapping is the Vietnam of Computer Science. It represents a quagmire which starts well, gets more complicated as time passes, and before long entraps its users in a commitment that has no clear demarcation point, no clear win conditions, and no clear exit strategy.
+> Object/Relational Mapping [...] represents a quagmire which starts well, gets more complicated as time passes, and before long entraps its users in a commitment that has no clear demarcation point, no clear win conditions, and no clear exit strategy.
 
-In a 2016 article, [Should I Or Should I Not Use ORM?](https://medium.com/@mithunsasidharan/should-i-or-should-i-not-use-orm-4c3742a639ce), Mithun Sasidharan describes a different middle-ground between the two camps: choose the approach that is most appropriate for your application. He lists several questions to ask when making this decision, but we can distill it down to two:
+As on the battlefield, there are two fierce, opinionated sides of the object-relational mapping debate: those in favor of, and those against, ORMs. In a 2016 article, [Should I Or Should I Not Use ORM?](https://medium.com/@mithunsasidharan/should-i-or-should-i-not-use-orm-4c3742a639ce), Mithun Sasidharan describes a different middle-ground between the two camps: choose the approach that is most appropriate for your application. He lists several questions to ask when making this decision, but we can distill it down to two:
 
 * Are your data access patterns going to be simple? Use an ORM
 * Is speed your priority? Don't use an ORM
@@ -39,21 +45,21 @@ In a recent article, [Why you should avoid ORMs (with examples in Node.js)](http
 * ORMs are inefficient.
 * ORMs don't do everything.
 
-While the above is true for a full-featured ORM, Sasidharan outlines several benefits:
+While the above is true for a full-featured ORM, Sasidharan outlines several counterpointing benefits to using an ORM:
 
 * ORMs facilitate model implementation
 * ORMs result in a smaller code-base
 * ORMs enable faster start-up time
 
-@TODO
+Enough history and debate. Let's get building!
 
 ## Promises, Promises
 
-Both Sequelize and Mongoose tout themselves as Promise-based ORM/ODMs. In order to understand object-relational mapping, we need a baseline understanding of Promises.
+Sequelize touts itself as a Promise-based ORM. In order to understand object-relational mapping, we need a baseline understanding of Promises.
 
-@TODO
+### Asynchronous
 
-We have asynchronous code.
+Let's declare a function, `asynchronousEmulator`, to emulate asynchronous database queries. The function generates a random number and passes it to `setTimeout`.
 
 ```js
 function asynchronousEmulator(num){
@@ -62,7 +68,10 @@ function asynchronousEmulator(num){
       console.log(num);
   }, rand);
 }
+```
 
+Next, let's declare a second function, `ordinalNumbers`, and make three calls to asynchronousEmulator.
+```js
 function ordinalNumbers(){
   asynchronousEmulator("First");
   asynchronousEmulator("Second");
@@ -72,9 +81,11 @@ function ordinalNumbers(){
 ordinalNumbers();
 ```
 
+We would expect `ordinalNumbers` to log each number as it is written, but when we run this from the command line, the ordinal numbers are logged out of sequence. (Unless they are in sequence! 🤯)
+
 ### Callbacks
 
-We use callbacks to handle asynchronicity.
+We can fix this by passing our `asynchronousEmulator` a function, `cb`, in addition to a string. When `setTimout` finishes executing, it will then call our function `cb()`. We refactor `ordinalNumbers` so that each call to `asynchronousEmulator` takes a second argument, an anonymous function. That's our callback! Each anonymous function (except for the last) calls `asynchronousEmulator`.
 ```js
 function asynchronousEmulator(num, cb){
   const rand = Math.floor(Math.random() * 1000)
@@ -101,6 +112,8 @@ But we are now on the brink of callback hell!
 
 ### Promises
 
+Using the Promise object, we can omit the callback(s) and instead refactor `asynchronousEmulator` to return a new Promise object:
+
 ```js
 function asynchronousEmulator(num){
   return new Promise(function(resolve, reject){
@@ -112,7 +125,13 @@ function asynchronousEmulator(num){
      }, rand);
   });
 }
+```
+A Promise is an object (which is why we use the `new` keyword) that manages the eventual resolution (or failure) of an asynchronous task. A Promise only promises to end.
 
+We pass our Promise a function (the executor) with two parameters, `resolve` and `reject`. The `resolve` will be called if the Promise is fulfilled (i.e., the execution is successful). The `reject` function will be called if the Promise fails (i.e., there is an error).
+
+We then need to refactor ordinalNumbers to use `.then()` and `.catch()` rather than callbacks:
+```js
 function ordinalNumbers(){
   asynchronousEmulator("First")
   .then(function(){
@@ -128,17 +147,18 @@ function ordinalNumbers(){
 
 ordinalNumbers();
 ```
+We chain `.then()` and `.catch()` functions to our Promise invocation. We can chain as many as we want, effectively adding multiple callbacks to our Promise object. `.then()` handles the successful resolution of our Promise. `.catch()` handles the failure, or rejection, of our Promise.
 
-For a deeper-dive, read my related article to [Learn JavaScript Promises and Promise Methods](http://jarednielsen.com/javascript-promises/).
+For a deeper-dive, read my related article to [Learn JavaScript Promises and Promise Methods](/javascript-promises/).
 
 ## Setup The MySQL Database
 
-We'll use the following schema and seeds.
+Throughout this tutorial we will work with MySQL and the mysql npm package to build a simple Node app for a vet to track pets and owners. We'll use the following schema and seeds:
 
 ```
-DROP DATABASE IF EXISTS petshop_db;
-CREATE DATABASE petshop_db;
-USE petshop_db;
+DROP DATABASE IF EXISTS vet_db;
+CREATE DATABASE vet_db;
+USE vet_db;
 
 CREATE TABLE cats
 (
@@ -149,9 +169,7 @@ CREATE TABLE cats
 	desexed BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
-```
 
-```
 INSERT INTO cats (pet_name, pet_age, pet_sex, desexed)
 VALUES  ('Tommy', 12, "Male", false),
         ('Whiskers', 2, "Female", true),
@@ -159,16 +177,14 @@ VALUES  ('Tommy', 12, "Male", false),
 ;
 ```
 
-
 ## All The Cats Are Undefined
 
-Install our dependency:
+Let's build a simple Node application for querying our database. Make a new directory and install our only dependency:
 ```
 npm install mysql
 ```
 
-Then setup a connection to our database:
-
+Then create a `server.js` file and setup a connection to our database:
 ```js
 const mysql = require("mysql");
 
@@ -177,7 +193,7 @@ const connection = mysql.createConnection({
   port: 3306,
   user: "root",
   password: "",
-  database: "petshopDB"
+  database: "vet_db"
 });
 
 connection.connect(function(err) {
@@ -256,10 +272,9 @@ Connected as id 6
     desexed: 1 } ]
 ```
 
-## CRUD
+## CRUD: Cat Read Update Delete
 
 Implementing our remaining CRUD methods is straightforward:
-
 ```js
 // create new cat with name and sleepy values
 function create(name, age, sex, fixed){
@@ -275,6 +290,7 @@ function create(name, age, sex, fixed){
 ```
 
 We call `create`:
+@TODO
 ```
 
 
@@ -317,8 +333,7 @@ OkPacket {
     desexed: 0 } ]
 ```
 
-@TODO UD methods
-
+Our `update` method:
 ```js
 // update cat sleepy value by id
 function update(desexed, id){
@@ -332,6 +347,7 @@ function update(desexed, id){
   })
 }
 ```
+
 We call `update` like so:
 
 ```js
@@ -343,6 +359,7 @@ update(true, 1)
     console.log(err);
   });
 ```
+
 The results of our query will be something like:
 ```
 Connected as id 8
@@ -396,8 +413,10 @@ OkPacket {
     desexed: 0 } ]
 
 ```
-@TODO add Primus link
-Notice that Tommy is now fixed. No longer the stud bull! Also notice that we have two Keyboard cats because we ran the `create` method again. Let's address that with a `destroy` method. ("Destroy" sounds extreme, but `delete` is a reserved keyword in JavaScript.)
+
+Notice that Tommy is now fixed. [No longer the stud bull!](https://www.youtube.com/watch?v=r4OhIU-PmB8)
+
+Also notice that we have two Keyboard cats because we ran the `create` method again. Let's address that with a `destroy` method. ("Destroy" sounds extreme, but `delete` is a reserved keyword in JavaScript.)
 
 ```js
 function destroy(id){
@@ -422,14 +441,6 @@ destroy(5)
     console.log(err);
   });
 ```
-
-@TODO address prepared statements
-Rather than use template literals or string concatenation to insert function arguments in our SQL statements we want to use prepared statements to protect our application from attack via SQL injection.
-
-For a humorous explanation of SQL injection: [xkcd](https://xkcd.com/327/)
-
-  * [SQL Injection](https://en.wikipedia.org/wiki/SQL_injection)
-  * [Prepared statements](https://en.wikipedia.org/wiki/Prepared_statement).
 
 ## Model Pets
 
@@ -866,12 +877,16 @@ db.Owner.all()
 ```
 
 
-@TODO: Finish ORM
+@TODO: create table
 
 
 
 
-@TODO: refactor as class
+## @TODO conclusion
 
-(Re)Sources
+Wow! Are you still with me? This tutorial is { ... } lines long, so I will stop here and pick up in a subsequent post. Stay tuned for the gripping conclusion,
+
+I Promise it will be good.
+
+## (Re)Sources
 * [OrmHate](https://martinfowler.com/bliki/OrmHate.html)
