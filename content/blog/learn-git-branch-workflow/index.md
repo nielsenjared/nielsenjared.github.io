@@ -1,35 +1,38 @@
 ---
 title: Learn Git Branch Workflow
 date: "2019-02-11"
-description:
+description: The Git branch workflow allows developers to create branches of a project to test new features and fix bugs without modifying code in production. In this tutorial, you will learn Git branch workflow basics and best practices.
 ---
-@TODO image
-@TODO introduction
-One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features. When you initialize a new repository, a master branch is created by default. Git allows you to create branches that _stem_ from the _trunk_ of your project.
 
-This tutorial is divided into two parts. The first walks you through the basics of a Git branch workflow. The second part is designed for collaborating with a partner using the Git branch workflow. You don't need a partner to follow along, but you won't be able to complete all of the operations unless you configure two separate Github accounts.
+One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs without modifying the code in production. Each repository has at least one if not more branches. When you initialize a new repository, a master branch is created by default. Git allows you to create branches that _stem_ from the _trunk_ of your project. A branch, at its core (no pun intended), is a unique series of code changes with a unique name. Your branch name should be descriptive, so that you and your collaborators can easily infer the work being done.
 
-## @TODO
+You will learn:
+* How to create and checkout a branch
+* How to merge branches
+* How to delete branches
+* How to push a branch to a remote origin
+* How to open a pull request
+* How to resolve conflicts using the Git branch workflow
 
-A branch, at its core (no pun intended), is a unique series of code changes with a unique name. Each repository has at least one if not more branches.
+This tutorial is divided into two parts. The first part walks you through the basics of a Git branch workflow. The second part is designed for collaborating with a partner using the Git branch workflow. You don't need a partner to follow along, but you won't be able to complete all of the operations unless you configure two separate Github accounts.
 
-There's only one rule: anything in the master branch is always deployable.
+Can't find a partner? Hit me up [@jarednielsen](https;//twitter.com/jarednielsen)
 
-Because of this, it's extremely important that your new branch is created off of master when working on a feature or a fix. Your branch name should be descriptive (e.g., refactor-authentication, user-content-cache-key, make-retina-avatars), so that others can see what is being worked on.
-
-## @TODO
+## Initializing a Repository
 
 On [GitHub.com](https://github.com), create a new repository `git-workflow-branching`
 
 Initialize with a `README`
 
-On the landing page of your repository, note that you have 1 branch. If you click on this, you will see that your one branch is named ‘master’.
+On the landing page of your repository, note that you have 1 branch named _master_.
 
 From the command line,
 ```
 git clone <URL to git-workflow-branching>
 cd git-workflow-branching
 ```
+
+## Git Branch Workflow
 
 Run the following command to see all your branches:
 ```
@@ -41,7 +44,7 @@ The output will be:
 * master
 ```
 
-By default, the first branch is called "master". The asterisk alerts us to which branch we are currently in.
+By default, the first branch is called `master`. The asterisk alerts us to which branch we are currently in. There's one very important rule in the Git branch workflow: anything in the `master` branch is always deployable. Because of this, it's extremely important that your new branch is created off of master when working on a feature or a fix.
 
 To create a new branch, named `dev`, type the following:
 ```
@@ -105,7 +108,6 @@ git pull
 
 _Why?_
 
-Two reasons:
 1. So you know where you are and you don’t start working in the wrong branch.
 2. So your local repo is up to date with the remote.
 
@@ -114,6 +116,8 @@ So what’s the habit you’re going to make?
 git checkout master
 git pull
 ```
+
+## Merging Branches
 
 Now, switch to your dev branch if you’re not already there.
 ```
@@ -164,6 +168,8 @@ Now push to the remote:
 ```
 git push
 ```
+
+## Pull Requests
 
 Back at GitHub.com, you will see that `index.html` is now in our remote repository. But we still only have one branch. Our `dev` branch didn’t push.
 
@@ -229,7 +235,7 @@ You should only have master. Verify that it is in fact removed from your remote 
 
 Cool beans? Now find a friend.
 
-##
+## Collaborative Git Workflow with Branches
 
 ### Partner 1
 
@@ -403,4 +409,6 @@ git checkout master
 git pull
 ```
 
-@TODO conclusion
+## Learn Git Fork & Pull Request Workflow
+
+In the next tutorial you will learn how to use branches when working with a forked repository.
