@@ -1,4 +1,217 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 04 Feb 2019 19:52:07 GMT</lastBuildDate><item><title><![CDATA[Learn Git Workflow Centralized Collaboration]]></title><description><![CDATA[The most powerful, and sometimes powerfully frustrating, aspect of Git is the collaborative workflow it enables. In order to  really  learn…]]></description><link>http://jarednielsen.com/learn-git-workflow-centralized/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-workflow-centralized/</guid><pubDate>Mon, 04 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The most powerful, and sometimes powerfully frustrating, aspect of Git is the collaborative workflow it enables. In order to &lt;em&gt;really&lt;/em&gt; learn Git workflow, you need to work through conflict, which means you need to work with a team. This tutorial introduces the centralized model for collaboration and is designed for two to work through together.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Sat, 09 Feb 2019 13:40:07 GMT</lastBuildDate><item><title><![CDATA[Learn Git Branch Workflow]]></title><description><![CDATA[One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs…]]></description><link>http://jarednielsen.com/learn-git-branch-workflow/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-branch-workflow/</guid><pubDate>Mon, 11 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs without modifying the code in production. Each repository has at least one if not more branches. When you initialize a new repository, a master branch is created by default. Git allows you to create branches that &lt;em&gt;stem&lt;/em&gt; from the &lt;em&gt;trunk&lt;/em&gt; of your project. A branch, at its core (no pun intended), is a unique series of code changes with a unique name. Your branch name should be descriptive, so that you and your collaborators can easily infer the work being done.&lt;/p&gt;
+&lt;p&gt;You will learn:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How to create and checkout a branch&lt;/li&gt;
+&lt;li&gt;How to merge branches&lt;/li&gt;
+&lt;li&gt;How to delete branches&lt;/li&gt;
+&lt;li&gt;How to push a branch to a remote origin&lt;/li&gt;
+&lt;li&gt;How to open a pull request&lt;/li&gt;
+&lt;li&gt;How to resolve conflicts using the Git branch workflow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This tutorial is divided into two parts. The first part walks you through the basics of a Git branch workflow. The second part is designed for collaborating with a partner using the Git branch workflow. You don’t need a partner to follow along, but you won’t be able to complete all of the operations unless you configure two separate Github accounts.&lt;/p&gt;
+&lt;p&gt;Can’t find a partner? Hit me up &lt;a href=&quot;https;//twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Initializing a Repository&lt;/h2&gt;
+&lt;p&gt;On &lt;a href=&quot;https://github.com&quot;&gt;GitHub.com&lt;/a&gt;, create a new repository &lt;code&gt;git-workflow-branching&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Initialize with a &lt;code&gt;README&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;On the landing page of your repository, note that you have 1 branch named &lt;em&gt;master&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;From the command line,&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git clone &amp;lt;URL to git-workflow-branching&amp;gt;
+cd git-workflow-branching&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Git Branch Workflow&lt;/h2&gt;
+&lt;p&gt;Run the following command to see all your branches:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git branch&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The output will be:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;* master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;By default, the first branch is called &lt;code&gt;master&lt;/code&gt;. The asterisk alerts us to which branch we are currently in. There’s one very important rule in the Git branch workflow: anything in the &lt;code&gt;master&lt;/code&gt; branch is always deployable. Because of this, it’s extremely important that your new branch is created off of master when working on a feature or a fix.&lt;/p&gt;
+&lt;p&gt;To create a new branch, named &lt;code&gt;dev&lt;/code&gt;, type the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout -b dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You’ll receive this message:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Switched to a new branch &amp;#39;dev&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And if you run &lt;code&gt;git branch&lt;/code&gt; again the output will be:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;* dev
+  master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code&gt;git checkout&lt;/code&gt; command lets you navigate between the branches created by &lt;code&gt;git branch&lt;/code&gt;. Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch. Think of it as a way to select which line of development you’re working on. The &lt;code&gt;-b&lt;/code&gt; flag allows you to simultaneously checkout and create a branch. You can also create a branch using&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git branch &amp;lt;name-of-branch&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This does not ‘checkout’ the branch, though. Try it.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git branch test
+git branch&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Your output should be:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;* dev
+  master
+  test&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You are still working in the &lt;code&gt;dev&lt;/code&gt; branch, even though you created a new branch &lt;code&gt;test&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To delete a branch:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git branch -d test&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Verify that test is gone&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git branch&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can switch back and forth between your two branches, by using the &lt;code&gt;git checkout&lt;/code&gt; command:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout master
+git checkout dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Every time you begin working on your project, run&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout master
+git pull&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Every time!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Why?&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;So you know where you are and you don’t start working in the wrong branch.&lt;/li&gt;
+&lt;li&gt;So your local repo is up to date with the remote.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So what’s the habit you’re going to make?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout master
+git pull&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Merging Branches&lt;/h2&gt;
+&lt;p&gt;Now, switch to your dev branch if you’re not already there.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Create a new file&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;touch index.html&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Add and commit the file&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git add index.html
+git commit -m “Add index”&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The new file is now committed to our dev branch.&lt;/p&gt;
+&lt;p&gt;Run &lt;code&gt;ls&lt;/code&gt; to view all files in the dev branch.&lt;/p&gt;
+&lt;p&gt;Switch to your master branch&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And list (&lt;code&gt;ls&lt;/code&gt;) all files.&lt;/p&gt;
+&lt;p&gt;What’s missing?&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;index.html.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Let’s merge the file from &lt;code&gt;dev&lt;/code&gt; into our &lt;code&gt;master&lt;/code&gt; branch.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git merge dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The merge command does what? You guessed it. For educational purposes, let’s verify that &lt;code&gt;index.html&lt;/code&gt; was in fact merged from &lt;code&gt;dev&lt;/code&gt; to &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ls&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Yo la tengo!&lt;/p&gt;
+&lt;p&gt;What does Fast-forward mean? When we merged our &lt;code&gt;dev&lt;/code&gt; branch it was ahead of our &lt;code&gt;master&lt;/code&gt; branch, so Git &lt;em&gt;fast-forwarded&lt;/em&gt; our &lt;code&gt;master&lt;/code&gt; branch to catch up to the changes we merged from &lt;code&gt;dev&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now push to the remote:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git push&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Pull Requests&lt;/h2&gt;
+&lt;p&gt;Back at GitHub.com, you will see that &lt;code&gt;index.html&lt;/code&gt; is now in our remote repository. But we still only have one branch. Our &lt;code&gt;dev&lt;/code&gt; branch didn’t push.&lt;/p&gt;
+&lt;p&gt;Back at the Terminal, switch to your &lt;code&gt;dev&lt;/code&gt; branch.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Add a new file&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;touch server.js
+git add server.js
+git commit -m “server.js”&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you run git push, you will receive this error:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;fatal: The current branch dev has no upstream branch.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To push the current branch and set the remote as upstream, use&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git push --set-upstream origin dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;While the solution this prompt offers works, it isn’t best practice for our workflow model. Instead, we only need to push our new branch to our origin:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git push origin dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Go back to your repo on GitHub.com. You will see that you now have two branches, Using the &lt;strong&gt;Branch&lt;/strong&gt; toggle, you can switch back and forth between your branches and see the changes that exist between them.&lt;/p&gt;
+&lt;p&gt;Either click the green &lt;strong&gt;Compare &amp;#x26; pull request&lt;/strong&gt; button or select the branches tab and under your dev branch click &lt;strong&gt;New pull request&lt;/strong&gt;. This will route you to a page where you can compare the changes between branches and merge the two. Add a useful comment and click &lt;strong&gt;Create Pull Request&lt;/strong&gt;. You will be routed to another page where you can confirm the merge.&lt;/p&gt;
+&lt;p&gt;Return to the landing page for your repo and you will see that &lt;code&gt;server.js&lt;/code&gt; is now in your master branch.&lt;/p&gt;
+&lt;p&gt;Back at your Terminal, switch to your master branch.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And update your repo locally.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git pull&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Best practice with branches is to delete them once the work has been merged. First delete it remotely:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git push --delete origin dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then delete it locally. (Note: you can’t be in the branch you want to delete and if the branch is not &lt;em&gt;empty&lt;/em&gt;, you need to use the &lt;code&gt;-D&lt;/code&gt; switch.)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git branch -D dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git branch&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You should only have master. Verify that it is in fact removed from your remote repo.&lt;/p&gt;
+&lt;p&gt;Cool beans? Now find a friend.&lt;/p&gt;
+&lt;h2&gt;Collaborative Git Workflow with Branches&lt;/h2&gt;
+&lt;h3&gt;Partner 1&lt;/h3&gt;
+&lt;p&gt;In your master branch, create a &lt;code&gt;.gitignore&lt;/code&gt; for your project.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;touch .gitignore&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Don’t forget the &lt;code&gt;.&lt;/code&gt; at the beginning of the file name.&lt;/p&gt;
+&lt;p&gt;Open this in your IDE and add the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;node_modules&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Save, add, commit and push.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bfy.tw/2V2w&quot;&gt;What is .gitignore doing?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now that we are working with packages, your applications will always need a .gitignore.&lt;/p&gt;
+&lt;p&gt;On GitHub.com, under &lt;strong&gt;Settings&lt;/strong&gt;, select the Collaborators menu option in the left sidebar.&lt;/p&gt;
+&lt;p&gt;In the field in the Collaborators panel, search for your partners GitHub account and click &lt;strong&gt;Add collaborators&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This will send an email to your partner. Alternatively, you can select the &lt;strong&gt;Copy invite link&lt;/strong&gt; option and send it by other means.&lt;/p&gt;
+&lt;h3&gt;Partner 2&lt;/h3&gt;
+&lt;p&gt;Accept the invitation and clone your partner’s repo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;rm -rf git-workflow-branching
+git clone &amp;lt;URL-to-partners-git-workflow-branching&amp;gt;
+cd git-workflow-branching&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now create a branch called “new-feature”&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout -b new-feature&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Open &lt;code&gt;server.js&lt;/code&gt; in your IDE and add boilerplate Express app code:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; express &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;express&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; app &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;express&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;PORT&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  res&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;I love Git!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;PORT&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;App listening on PORT &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;PORT&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Save, add, and commit. When you run git push, you’re going to get this error:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;fatal: The current branch new-feature has no upstream branch.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To push the current branch and set the remote as upstream, use&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git push --set-upstream origin new-feature&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What do you need to do?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git push origin new-feature&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now go to GitHub.com. You will see that your branch, &lt;code&gt;new-feature&lt;/code&gt;, is now added to the remote repo. Make a pull request with a useful comment. Let your partner know you’ve made the pull request, but don’t merge it.&lt;/p&gt;
+&lt;h3&gt;Partner 1&lt;/h3&gt;
+&lt;p&gt;You should receive an email informing you that your partner made a pull request. Click the link in the email to review it on GitHub. Alternatively, navigate to the &lt;strong&gt;Pull requests&lt;/strong&gt; tab via the landing page of your repo. You will see this message:
+&lt;em&gt;This branch has no conflicts with the base branch&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So go ahead and merge the pull request.&lt;/p&gt;
+&lt;h3&gt;Partner 2&lt;/h3&gt;
+&lt;p&gt;Check your email. You should receive a notification that your pull request was merged. You can follow the link to see the details.&lt;/p&gt;
+&lt;h2&gt;Resolving Conflict in the Git Branch Workflow&lt;/h2&gt;
+&lt;h3&gt;Both Partners&lt;/h3&gt;
+&lt;p&gt;If only it was always this easy. Let’s make some conflict!&lt;/p&gt;
+&lt;p&gt;What are the first two things you need to do before working on a project?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout master
+git pull&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Partner 1&lt;/h3&gt;
+&lt;p&gt;Create a branch to work on:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout -b another-feature&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Open &lt;code&gt;server.js&lt;/code&gt; in your IDE and replace &lt;code&gt;res.send()&lt;/code&gt; in the GET method to &lt;code&gt;res.sendFile()&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  res&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sendFile&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;__dirname&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;index.html&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Don’t forget to add the path package to your app:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; path &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;path&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Save, add, commit, push.&lt;/p&gt;
+&lt;p&gt;Yup.&lt;/p&gt;
+&lt;p&gt;You need to add the upstream to remote.&lt;/p&gt;
+&lt;h3&gt;Partner 2&lt;/h3&gt;
+&lt;p&gt;Navigate to the repo on GitHub.com. In the Branches tab, under Active, you will see the new branch &lt;code&gt;another-feature&lt;/code&gt;. Click the &lt;strong&gt;New pull request&lt;/strong&gt; button. Towards the bottom of this page, you should see something like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;@@ -1,10 +1,11 @@
+
+var express = require(&amp;quot;express&amp;quot;);
++  var path = require(&amp;quot;path&amp;quot;);
+
+var app = express();
+var PORT = 3000;
+
+app.get(&amp;quot;/&amp;quot;, function(req, res) {
+-  res.send(&amp;quot;I love Git!&amp;quot;);
++  res.sendFile(path.join(__dirname, &amp;quot;index.html&amp;quot;));
+});
+
+app.listen(PORT, function() {&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Your partner’s changes and additions are highlighted in green and deleted code is highlighted in red. If you agree with what your partner did, leave a useful comment such as, “Nice! Now we need some HTML to serve!’, and create the pull request. On the next page, &lt;strong&gt;Merge and Confirm&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Nice! Now we need some HTML to serve!&lt;/p&gt;
+&lt;p&gt;On GitHub.com, navigate to your &lt;code&gt;index.html&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;Click the pencil icon to edit the blank file and copy/paste the following code into the editor:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&amp;lt;!DOCTYPE html&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;charset&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;utf-8&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;I love Git!&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Commit the changes by clicking the big green button at the bottom of the screen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Both Partners&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;What’s the first thing you do when sitting down to work on your application?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout master
+git pull&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Learn Git Fork &amp;#x26; Pull Request Workflow&lt;/h2&gt;
+&lt;p&gt;In the next tutorial you will learn how to use branches when working with a forked repository.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Git Workflow Centralized Collaboration]]></title><description><![CDATA[The most powerful, and sometimes powerfully frustrating, aspect of Git is the collaborative workflow it enables. In order to  really  learn…]]></description><link>http://jarednielsen.com/learn-git-workflow-centralized/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-workflow-centralized/</guid><pubDate>Mon, 04 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The most powerful, and sometimes powerfully frustrating, aspect of Git is the collaborative workflow it enables. In order to &lt;em&gt;really&lt;/em&gt; learn Git workflow, you need to work through conflict, which means you need to work with a team. This tutorial introduces the centralized model for collaboration and is designed for two to work through together.&lt;/p&gt;
 &lt;p&gt;You will learn:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Adding Collaborators to a New Repository&lt;/li&gt;
