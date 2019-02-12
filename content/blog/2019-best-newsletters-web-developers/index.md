@@ -47,7 +47,7 @@ This understated missive is excellent in its lean curation of high-level, langua
 
 ## [Weekend Reads](https://labnotes.org/)
 
-Last but not least, the newsletter that equips me with memes for Monday. It’s a humorous mix of Twitter posts, videos and GIFs (mostly) related to web development.
+Last but not least, the newsletter that equips me with memes for Monday. It’s a humorous mix of tweets, videos and GIFs (mostly) related to web development.
 
 ## 📰 Best Newsletters for Web Developers?
 
