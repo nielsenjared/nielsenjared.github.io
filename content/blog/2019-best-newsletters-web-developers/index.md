@@ -37,9 +37,9 @@ Pointer tends to address concerns related to management, both inter- and intra- 
 
 There is no urgency in reading this newsletter as it is all old news, but it is definitely in the need-to-know category. Each issue is a deep-dive into a ‘forgotten’ history of the web. The issues are always fascinating and always informative.
 
-## [Dense Discovery](https://www.densediscovery.com/)
+## [Mozilla Developer Newsletter](https://www.mozilla.org/en-US/newsletter/developer/)
 
-There are a number of frontend/design/UX/UI newsletters out there, but this relative newcomer is fast becoming my favorite for its critical perspective on the field delivered with a dose of humor.
+The _other_ MDN, this newsletter rounds out those listed above with links to resources noobs and pros on accessibility, privacy and performance. Bonus: developer tools tips (but for Firefox, naturally).
 
 ## [Programming Digest](https://programmingdigest.net/)
 
