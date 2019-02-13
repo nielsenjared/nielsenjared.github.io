@@ -1,5 +1,5 @@
 ---
-title: What is Object-Relational Mapping? Roll-Your-Own ORM with JavaScript
+title: What is Object-Relational Mapping? How to Roll-Your-Own JavaScript ORM
 date: "2019-02-18"
 description: This tutorial will walk you through a simple implementation of object-relational mapping to help you better understand how a full-featured JavaScript ORM, such as Sequelize, works under-the-hood.
 ---
@@ -26,7 +26,7 @@ What does this mean for us as Node.js developers?
 
 The first problem for us is that SQL database management systems only store _scalar_ values. In JavaScript, with the exception of primitive data types, everything is an object. Unlike objects, scalar variables can only hold one value at a time. So in the case of using a SQL Database Management System (DBMS), that means strings or integers. Lucky for us, there are [npm packages](https://www.npmjs.com/search?q=sql) such as [mysql](https://www.npmjs.com/package/mysql) and [mysql2](https://www.npmjs.com/package/mysql2) that return our queries in JSON format. But that's only half the battle.
 
-The other half of the problem is writing methods that allow us to query our database in our _native_ language and not that of the SQL DBMS. Object Relational Mapping is useful as it allows us to separate concerns in our application with reusable methods for database queries. The added, and perhaps most important, benefit of this separation of concerns is that we can easily use other SQL databases without needing to rewrite the entire code-base and instead only make minor changes to the ORM.
+The other half of the problem is writing methods that allow us to query our database in our _native_ language (JavaScript) and not that of the SQL DBMS. Object Relational Mapping is useful as it allows us to separate concerns in our application with reusable methods for database queries. The added, and perhaps most important, benefit of this separation of concerns is that we can easily use other SQL databases without needing to rewrite the entire code-base and instead only make minor changes to the ORM.
 
 ## War is Never a Lasting Solution
 
@@ -290,9 +290,14 @@ function create(name, age, sex, fixed){
 ```
 
 We call `create`:
-@TODO
-```
-
+```js
+create("Keyboard", 7, "female", false)
+  .then(function(data){
+    console.log(data);
+  })
+  .catch(function(err){
+    console.log(err);
+  });
 
 ```
 The results will be something similar to:
@@ -442,23 +447,15 @@ destroy(5)
   });
 ```
 
-## Model Pets
+## ORM + Architectural Patterns
 
-  - What is the M in MVC? The M in MVC is Model.
+There are many established conventions when implementing an [architectural pattern](https://en.wikipedia.org/wiki/Architectural_pattern) in a web application. [MVC, or Model View Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller), for example, is (was?) very popular among web developers. Whatever pattern you choose, it will most likely implement a _model_ layer.
 
-  - Why is it called the Model? The Model is so named because it defines the architecture, or shape, of the database. You could say it "models" the data.
+Why is it called the Model? The Model is so named because it defines the shape of the database. You could say it "models" the data. The Model is also responsible for managing the data structure in your application.
 
-  - What does the Model do? The Model is responsible for managing the dynamic data structure of an application.
+As discussed above, one of the primary reasons for using an architectural pattern is the [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). We will implement and modularize the Model by separating the database queries from the controller logic in `server.js`.
 
-  - How does it interact with the other two components, View and Controller? The Model receives user input from the controller and returns data to be rendered in the View.
-
-* [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
-
-One of the primary reasons for using the MVC framework is the [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). We will modularize the Model by separating the database queries from the controller logic in `server.js`.
-
-@TODO graphic of directory structure
-
-At the root level of the directory, we create a folder `db` and move the two `.sql` files into it. This is common practice for keeping an application organized.
+At the root level of the directory, we create a folder `db` and move the two `.sql` files into it. This is common practice for keeping an application organized as it signals to other developers that in this folder lies files related to the database.
 
 Again, at the root level of the directory, we create a folder, `config`, and inside `config` we create a file `connection.js`. This is also common practice for keeping an application organized and is the location where other configuration files will be stored.
 
@@ -497,7 +494,6 @@ From `server.js`, cut the `all`, `create`, `update` and `destroy` functions and 
 
 Now convert the functions in the `cat` object to object methods and export `cat`. **Don't forget the commas!**
 
-@TODO cat model
 ```js
 const connection = require('../config/connection.js');
 
@@ -548,68 +544,64 @@ const cat = {
 }
 
 module.exports = cat;
-
 ```
 
 In `server.js`, require `./models/cat.js` and modify the calls to `all`, `create`, and `update` to invoke the imported object methods.
 
 ```js
-const connection = require('../config/connection.js');
+const cat = require('./models/cat.js');
 
-const cat = {
-  all: function(){
-    const sql = "SELECT * FROM cats";
+cat.all()  
+  .then(function(data){
+    console.log(data);
+  })
+  .catch(function(err){
+    console.log(err);
+  });
 
-    return new Promise(function(resolve, reject){
-      connection.query(sql, function(err, data) {
-        if (err) reject(err);
-        resolve(data);
-      });
-    })
-  },
+cat.create("Keyboard", 7, "female", false)
+  .then(function(data){
+    console.log(data);
+  })
+  .catch(function(err){
+    console.log(err);
+  });
 
-  create: function(name, age, sex, fixed){
-    const sql = `INSERT INTO cats (pet_name, pet_age, pet_sex, desexed) VALUES (?, ?, ?, ?)`;
+cat.update(true, 1)
+  .then(function(data){
+    console.log(data);
+  })
+  .catch(function(err){
+    console.log(err);
+  });
 
-    return new Promise(function(resolve, reject){
-      connection.query(sql, [name, age, sex, fixed], function(err, data) {
-        if (err) reject(err);
-        resolve(data);
-      });
-    })
-  },
+cat.destroy(5)
+  .then(function(data){
+    console.log(data);
+  })
+  .catch(function(err){
+    console.log(err);
+  });
+```
 
-  update: function(desexed, id){
-    const sql = `UPDATE cats SET desexed = ? WHERE id = ?`;
-
-    return new Promise(function(resolve, reject){
-      connection.query(sql, [desexed, id], function(err, data) {
-        if (err) reject(err);
-        resolve(data);
-      });
-    })
-  },
-
-  destroy: function(id){
-    const sql = `DELETE FROM cats WHERE id = ?`;
-
-    return new Promise(function(resolve, reject){
-      connection.query(sql, [id], function(err, data) {
-        if (err) reject(err);
-        resolve(data);
-      });
-    })
-  }
-}
-
-module.exports = cat;
+Your directory structure should now look like this:
+```
+/config
+  |_ connection.js
+.gitignore
+/models
+  |_ cat.js
+/db
+  |_ schema.sql
+  |_ seeds.sql
+server.js
 ```
 
 Run `server.js` to verify that everything works.
 
-Unless our vet specializes in cats, we will want models for other species. We _could_ copy the `cat.js` file, rename it, and all appropriate references to `dog`, _but_, that would not be DRY. What's the solution? You guessed it.
+Unless our vet specializes in cats, we will want models for other species. We _could_ copy the `cat.js` file, rename it, and all appropriate references to `dog`, _but_, that would not be DRY. What's the solution? You guessed it. Object-relational mapping.
 
-## Object Relational Mapping
+## ORM
 
 If we read the Sequelize source code, we will see that it is class-based. Classes in JavaScript are syntactic sugar on constructors, so, for the time-being we will work with constructors then later translate our ORM to classes.
 
@@ -621,17 +613,11 @@ A constructor creates an object.
 
 A relational database.
 
-**So what do you think Object Relational Mapping is?**
+**So what is Object Relational Mapping?**
 
-[Object Relational Mapping](https://en.wikipedia.org/wiki/Object-relational_mapping) is mapping database functionality and structure to an object.
+Mapping database functionality and structure to an object.
 
-**What do you think the benefits of ORMs are?**
-
-  * ORMs allow developers to create reusable functions to query a relational database using their programming language.
-
-  * ORMs allow developers to migrate to a different database architecture without needing to change the entire codebase, only the functionality of the ORM.
-
-  * ORMs also provide more security as developers are not writing queries in their code and instead rely on the ORM to make queries.
+Let's do it.
 
 In the `config` folder create a new file, `orm.js`, and require `connection.js`.
 
@@ -639,9 +625,7 @@ Next, in `orm.js` create a constructor function, `ORM`, with a parameter `table`
 
 Cut the methods from `cat.js` and paste them inside the `ORM` constructor.
 
-Refactor the object methods into constructor methods using `this` and replace all references to the `cats` table with `this.table`.
-
-**Don't forget to change the `:` to `=`!**
+Refactor the object methods into constructor methods using `this` and replace all references to the `cats` table with `this.table`. **Don't forget to change the `:` to `=`!**
 
 Then export the ORM: `module.exports = ORM;`
 
@@ -701,7 +685,6 @@ const ORM = function(table){
 module.exports = ORM;
 ```
 
-@TODO !!!
 Lastly, refactor the `cat.js` model to reflect the code below, respectively:
 
 ```js
@@ -714,9 +697,9 @@ module.exports = cat;
 
 Note that we didn't change anything in `server.js`. Run it now to verify that everything works.
 
-## Dogs && Cats
+## Model Pets
 
-We have a few options now for extending our ORM. If we wanted to keep it as is, we could rename `cat.js` to `index.js` and create a new ORM, `dog`, then export both of them in an object, `db`. That would look like this:
+We have a few options now for extending our ORM. If we wanted to keep it as is, we could rename `cat.js` to `index.js` and create a new ORM, `dog`, then export both of them in an object. That would look like this:
 
 ```js
 const ORM = require('../config/orm.js');
@@ -811,7 +794,7 @@ connected as id 16
     desexed: 1 } ]
 ```
 
-## @TODO header!
+## Refactoring Custom Object-Relational Mapping for Variable Table Structures
 
 This approach is all fine and good if our tables have similar structures. But what if our tables differ? Let's create an owners table.
 
@@ -876,17 +859,15 @@ db.Owner.all()
   });
 ```
 
-
 @TODO: create table
+## Refactoring Object-Relational Mapping to Create Tables Through the Model
+
+@TODO
 
 
+## The End?
 
-
-## @TODO conclusion
-
-Wow! Are you still with me? This tutorial is { ... } lines long, so I will stop here and pick up in a subsequent post. Stay tuned for the gripping conclusion,
-
-I Promise it will be good.
+Wow! Are you still with me? This tutorial is nearly 1000 lines long, so I will stop here and pick up in a subsequent post. Stay tuned for the gripping conclusion. I Promise it will be good.
 
 ## (Re)Sources
 * [OrmHate](https://martinfowler.com/bliki/OrmHate.html)
