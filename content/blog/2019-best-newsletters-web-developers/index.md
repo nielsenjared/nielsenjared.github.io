@@ -3,6 +3,8 @@ title: Best Newsletters for Web Developers in 2019
 date: "2018-12-24"
 description: Here is a list of the best newsletters for web developers in 2019. By best I mean my favorite.
 ---
+![Best Newsletters for Web Developers in 2019](./jared-nielsen-2019-best-newsletters-web-developers.png)
+
 Here is a list of the best newsletters for web developers in 2019.
 
 By best I mean _my favorite_.
