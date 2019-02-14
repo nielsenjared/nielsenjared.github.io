@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 14 Feb 2019 13:02:53 GMT</lastBuildDate><item><title><![CDATA[Learn Git Branch Workflow]]></title><description><![CDATA[One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs…]]></description><link>http://jarednielsen.com/learn-git-branch-workflow/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-branch-workflow/</guid><pubDate>Mon, 11 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs without modifying the code in production. Each repository has at least one if not more branches. When you initialize a new repository, a master branch is created by default. Git allows you to create branches that &lt;em&gt;stem&lt;/em&gt; from the &lt;em&gt;trunk&lt;/em&gt; of your project. A branch, at its core (no pun intended), is a unique series of code changes with a unique name. Your branch name should be descriptive, so that you and your collaborators can easily infer the work being done.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 14 Feb 2019 13:31:52 GMT</lastBuildDate><item><title><![CDATA[Learn Git Branch Workflow]]></title><description><![CDATA[One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs…]]></description><link>http://jarednielsen.com/learn-git-branch-workflow/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-branch-workflow/</guid><pubDate>Mon, 11 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs without modifying the code in production. Each repository has at least one if not more branches. When you initialize a new repository, a master branch is created by default. Git allows you to create branches that &lt;em&gt;stem&lt;/em&gt; from the &lt;em&gt;trunk&lt;/em&gt; of your project. A branch, at its core (no pun intended), is a unique series of code changes with a unique name. Your branch name should be descriptive, so that you and your collaborators can easily infer the work being done.&lt;/p&gt;
 &lt;p&gt;You will learn:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;How to create and checkout a branch&lt;/li&gt;
@@ -1099,7 +1099,43 @@ sudo apt-get install cuda&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Open Blender and under Edit, select Preferences.&lt;/p&gt;
 &lt;p&gt;In the Preferences panel select System menu option and within it, General.&lt;/p&gt;
 &lt;p&gt;Under Cycles Compute Device, select CUDA.&lt;/p&gt;
-&lt;p&gt;You can now close the Preferences panel and render away!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Best Newsletters for Web Developers in 2019]]></title><description><![CDATA[Here is a list of the best newsletters for web developers in 2019. By best I mean  my favorite . Of the many great newsletters available for…]]></description><link>http://jarednielsen.com/2019-best-newsletters-web-developers/</link><guid isPermaLink="false">http://jarednielsen.com/2019-best-newsletters-web-developers/</guid><pubDate>Mon, 24 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Here is a list of the best newsletters for web developers in 2019.&lt;/p&gt;
+&lt;p&gt;You can now close the Preferences panel and render away!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Best Newsletters for Web Developers in 2019]]></title><description><![CDATA[Here is a list of the best newsletters for web developers in 2019. By best I mean  my favorite . Of the many great newsletters available for…]]></description><link>http://jarednielsen.com/2019-best-newsletters-web-developers/</link><guid isPermaLink="false">http://jarednielsen.com/2019-best-newsletters-web-developers/</guid><pubDate>Mon, 24 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c8adcb53fd48c2d60fec47993bfb6f3a/417af/jared-nielsen-2019-best-newsletters-web-developers.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAACl0lEQVQ4y3WTXUiTURjHV9EHeBdF4EVEdVEXXQhdRRddVNB1RJEQ3RldBCEGXQR9STqUMoVBVK6GZqmlZsyZycySlGQ6Z7M2GWnT13SZH1v78Jxf7/vu3dxyPS8P5/Ce8/zOc87zf0xkmtRcGnN1XBHJ+fg8HKmH9WWw/T7sssCxBijqgEtvwfcruU9ITNnAHDD7OHJHNawrQ+bXIA9akefakZe7kHWjkBB6HhpMM1MmTBquwbRlYRtBbCxH5FUgdlsQJ54jiuyIsj6EP4RMha6sJmJak50B49mYetwd2HIX9jyE0+1wpRfeBLKeSGqZaa5mqsVmXVk7SYd5QkzuNTN4tBJv4SNcJXUMlzbjsjrwTPgYHhqm0+5gdnom/fQpy76yMIBnXhMsqKKtpZWpnwp/SLAQDxNlhR/fJ+np6eFlyyvm1RU9NKAW7ekIXHBkAA2YnA0jt1UhDttYdProfedECU7rW/zffAwMDBAJRwi4v7J0sxtONCK33oMN5bDJbABlBtA7B5sr8B6vJuGaIh5apvFFI9ZaK81NzXjcaiYJVUmPnSyZrql3LEWqrr93XmUGUCaBIhyDfAuuQ2bmRyYIBiaYURRi0Vg6S++QB7+li6jpug6S+x7ARQc0jf1TZbVKuvqsowT2m+m4beVTfQdf3n/G83EQt7Ofsb4hOhtaeVJcgXJeFXerHxmJ5yiKzjR0qFn/FIvFduYKG1AOVKHsNKMUVKOctLFwq5tl1ySxjAbTGyEhcujQqHbaVAlxqg3Oqjq80Qcfgqtrmsw0/WmxhmcDjXdMFygUQZZ0I9V+lbVuZHAx+V/7tAbQYzBGufbKaXAqwzYfXHUmx3A83UlZPS9lVnhuYMpsHqgZhN/RVdh/QCn7C0jLOmxDM2lXAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Best Newsletters for Web Developers in 2019&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c8adcb53fd48c2d60fec47993bfb6f3a/fb8a0/jared-nielsen-2019-best-newsletters-web-developers.png&quot;
+        srcset=&quot;/static/c8adcb53fd48c2d60fec47993bfb6f3a/1a291/jared-nielsen-2019-best-newsletters-web-developers.png 148w,
+/static/c8adcb53fd48c2d60fec47993bfb6f3a/2bc4a/jared-nielsen-2019-best-newsletters-web-developers.png 295w,
+/static/c8adcb53fd48c2d60fec47993bfb6f3a/fb8a0/jared-nielsen-2019-best-newsletters-web-developers.png 590w,
+/static/c8adcb53fd48c2d60fec47993bfb6f3a/526de/jared-nielsen-2019-best-newsletters-web-developers.png 885w,
+/static/c8adcb53fd48c2d60fec47993bfb6f3a/fa2eb/jared-nielsen-2019-best-newsletters-web-developers.png 1180w,
+/static/c8adcb53fd48c2d60fec47993bfb6f3a/417af/jared-nielsen-2019-best-newsletters-web-developers.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Here is a list of the best newsletters for web developers in 2019.&lt;/p&gt;
 &lt;p&gt;By best I mean &lt;em&gt;my favorite&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Of the many great newsletters available for web developers, these are the 10 that I find give me a well-rounded perspective on current trends and must-know developments in our field with minimal redundancy and maximal entertainment value.&lt;/p&gt;
 &lt;h2&gt;Hacker Newsletter&lt;/h2&gt;
