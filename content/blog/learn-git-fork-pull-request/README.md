@@ -1,0 +1,1 @@
+mogrify -crop 1900x1050+5+102 *.png
