@@ -859,15 +859,67 @@ db.Owner.all()
   });
 ```
 
-@TODO: create table
-## Refactoring Object-Relational Mapping to Create Tables Through the Model
+## Refactoring Object-Relational Mapping to Create Tables via Model Instantiation
 
-@TODO
+If we want our ORM to have functionality similar to Sequelize and other third-party object-relational mapping libraries, we need the ability to create our tables through our model instantiation. That's going to require some refactoring, though. Let's do it!
 
 
-## The End?
+Let's begin by refactoring `orm.js`:
 
-Wow! Are you still with me? This tutorial is nearly 1000 lines long, so I will stop here and pick up in a subsequent post. Stay tuned for the gripping conclusion. I Promise it will be good.
+```js
+const connection = require('../config/connection.js');
+
+function ORM(table, cols){
+  this.table = table;
+  this.cols = cols;
+}
+
+ORM.prototype.sync = function(){
+  const columns = (cols) => Object.keys(cols).map(key => `${key} ${cols[key]}`);
+
+  const createTableSQL =`
+    CREATE TABLE ${this.table} (
+      id INT AUTO_INCREMENT NOT NULL,
+      ${columns(this.cols).join(',')},
+      PRIMARY KEY (id)
+    )`;
+
+  //@TODO: convert to Promises
+  return new Promise(function(resolve, reject) {
+      connection.query(createTableSQL, function(err, data){
+        if (err) reject(err);
+        resolve(data);
+      });
+  });
+};
+
+module.exports = ORM;
+```
+
+We can then refactor the `Cat` call (pun intended) in `cat.js` to take an additional argument, an object, where the properties are our column names and the values are the SQL data types:
+```js
+const ORM = require('../config/orm.js');
+
+const Cat = new ORM("cats", {
+  pet_name: "VARCHAR(30) NOT NULL",
+  pet_age: "INTEGER(2)",
+  pet_sex: "VARCHAR(6)",
+  desexed: "BOOLEAN DEFAULT false"
+});
+
+module.exports = Cat;
+```
+
+But when we run `server.js` we get an error:
+
+```
+TypeError: Cat.all is not a function
+```
+Why?
+
+## The Cat is Undefined
+
+Wow! Are you still with me? This tutorial is clocking in near 1000 lines, so I will stop here and pick up in a subsequent post. Stay tuned for the gripping conclusion. I Promise it will be good.
 
 ## (Re)Sources
 * [OrmHate](https://martinfowler.com/bliki/OrmHate.html)
