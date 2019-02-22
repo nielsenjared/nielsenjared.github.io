@@ -1,13 +1,12 @@
 ---
 title: Learn Git Fork & Pull Request Workflow
 date: "2019-02-25"
-description: Meta description!
+description: Whether you are working with open-source or private repositories, you will want to learn the Git fork and pull request workflow. This tutorial will walk you through a real-world example.
 ---
 
-@TODO image
-@TODO introduction
+![Learn Git Fork & Pull Request Workflow](./jared-nielsen-learn-git-fork-pull-request)
 
-The biggest difference between Git fork and pull request workflow and [Git branch workflow](./learn-git-branch-workflow) is that in forking you are working on your own copy of the project and not within the project. You push changes to your fork without changing the original project and then propose your changes to the original project via pull requests.
+Whether you are working with open-source or private repositories, you will want to learn the Git fork and pull request workflow. The biggest difference between Git fork and pull request workflow and [Git branch workflow](./learn-git-branch-workflow) is that in forking you are working on your own copy of the project and not within the project. You push changes to your fork without changing the original project and then propose changes to the original project via pull requests.
 
 ## Learn Git Fork & Pull Request Workflow: Real World Example
 
@@ -15,18 +14,18 @@ This blog is built with [GatsbyJS](https://www.gatsbyjs.org/), which is a fantas
 
 ![](./images/jared-nielsen-fork-pull-request-01.png)
 
-A feature I wanted was the ability to add custom meta descriptions for SEO and Open Graph, to get this result:
+A feature I wanted was the ability to add custom meta descriptions for SEO and Open Graph:
 
 ![](./images/jared-nielsen-fork-pull-request-02.png)
 
 This tutorial will walk you through the steps I took to implement this functionality in my blog and open a pull request on the GatsbyJS repository. You can view the PR at [https://github.com/gatsbyjs/gatsby/pull/11936](https://github.com/gatsbyjs/gatsby/pull/11936
 )
-s
+
 ## Fork the Repository
 
 Navigate to the repository you want to fork. If this is your first fork, congrats! Hit the 'Fork' button in the upper right. You will be treated to a delightful animation and redirected back to your account. Note that now the repository is prepended with your username, with a link pointing to the source of the fork just below it.
 
-@TODOD
+@TODO
 ![](./images/jared-nielsen-fork-pull-request-03.png)
 
 Now clone your fork.
@@ -84,8 +83,6 @@ Also note the diff below the form to review your file changes before submitting 
 Write a descriptive title and a brief, articulate explanation of the pull request.
 
 Click `Submit` and your pull request will be added to the queue. You can always return to your PR to edit its title and description. And, if after submitting, you need to make an edit to the PR, just add, commit and push the changes to your fork origin and they will automatically be updated in the upstream.
-
-## @TODO conclusion
 
 ## (Re)Sources
 
