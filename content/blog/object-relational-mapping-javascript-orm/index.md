@@ -10,7 +10,7 @@ Understanding object-relational mapping can be challenging when you're first lea
 You will learn:
 * What is Object-Relational Mapping?
 * How to use Promises to handle asynchronous database queries
-* Models and how to use implement them
+* Models and how to implement them
 * How to implement a simple, Promise-based ORM with JavaScript
 
 ## What is Object-Relational Mapping?
@@ -601,7 +601,7 @@ Run `server.js` to verify that everything works.
 
 Unless our vet specializes in cats, we will want models for other species. We _could_ copy the `cat.js` file, rename it, and all appropriate references to `dog`, _but_, that would not be DRY. What's the solution? You guessed it. Object-relational mapping.
 
-## ORM
+## What is ORM?
 
 If we read the Sequelize source code, we will see that it is class-based. Classes in JavaScript are syntactic sugar on constructors, so, for the time-being we will work with constructors then later translate our ORM to classes.
 
