@@ -863,7 +863,6 @@ db.Owner.all()
 
 If we want our ORM to have functionality similar to Sequelize and other third-party object-relational mapping libraries, we need the ability to create our tables through our model instantiation. That's going to require some refactoring, though. Let's do it!
 
-
 Let's begin by refactoring `orm.js`:
 
 ```js
@@ -915,11 +914,9 @@ But when we run `server.js` we get an error:
 ```
 TypeError: Cat.all is not a function
 ```
+
 Why?
 
 ## The Cat is Undefined
 
 Wow! Are you still with me? This tutorial is clocking in near 1000 lines, so I will stop here and pick up in a subsequent post. Stay tuned for the gripping conclusion. I Promise it will be good.
-
-## (Re)Sources
-* [OrmHate](https://martinfowler.com/bliki/OrmHate.html)
