@@ -2,9 +2,10 @@
 title: Learn Git Workflow Centralized Collaboration
 date: "2019-02-04"
 description: In order to learn Git workflow, you need to work with a team. This tutorial introduces the centralized model for collaboration and is designed for two to work through together.
+keywords: ["learn git", "git", "git workflow", "git collaboration"]
 ---
 
-The most powerful, and sometimes powerfully frustrating, aspect of Git is the collaborative workflow it enables. In order to _really_ learn Git workflow, you need to work through conflict, which means you need to work with a team. This tutorial introduces the centralized model for collaboration and is designed for two to work through together.
+The most powerful, and sometimes powerfully frustrating, aspect of Git is the collaborative workflow it enables. In order to _really_ learn Git workflow, you need to work through conflict, which means you need to work with a team. This tutorial introduces the centralized model for collaboration and is designed for two to work through together. If you're just joining us, you may want to [Learn Git Workflow Basics](/learn-git-workflow-basics/)
 
 You will learn:
 * Adding Collaborators to a New Repository
@@ -15,6 +16,7 @@ You will learn:
 You don't necessarily need a partner to follow along, but you won't be able to perform all of the operations without a collaborator unless you configure two profiles to switch between.
 
 Can't find a partner? Hit me up [@jarednielsen](https;//twitter.com/jarednielsen)
+
 
 ## Initialize a Repository and Add Collaborators
 
@@ -261,7 +263,7 @@ Delete this repository or create a new one, swap roles, and go through this proc
 
 ## Learn Git Workflow, From Centralized to Branching
 
-One of the most useful, but potentially confusing, aspects of git is the ability for developers to create branches of a project to test new features. In the next article, we will [learn git branching workflow](./{...}).
+One of the most useful, but potentially confusing, aspects of git is the ability for developers to create branches of a project to test new features. In the next article, we will [Learn Git Branch Workflow](/learn-git-branch-workflow/).
 
 ## (Re)Sourcess
 * http://rogerdudler.github.io/git-guide/

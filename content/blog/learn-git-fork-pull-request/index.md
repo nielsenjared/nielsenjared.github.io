@@ -2,11 +2,18 @@
 title: Learn Git Fork & Pull Request Workflow
 date: "2019-02-25"
 description: Whether you are working with open-source or private repositories, you will want to learn the Git fork and pull request workflow. This tutorial will walk you through a real-world example.
+keywords: ["git", "git fork", "git pull request"]
 ---
 
 ![Learn Git Fork & Pull Request Workflow](./images/jared-nielsen-learn-git-fork-pull-request.png)
 
-Whether you are working with open-source or private repositories, you will want to learn the Git fork and pull request workflow. The biggest difference between a Git fork and pull request workflow and a [Git branch workflow](./learn-git-branch-workflow) is that in forking you are working on your own copy of the project and not within the project. You push changes to your fork without changing the original project and then propose changes to the original project via pull requests.
+Whether you are working with open-source or private repositories, you will want to learn the Git fork and pull request workflow. The biggest difference between a Git fork and pull request workflow and a [Git branch workflow](/learn-git-branch-workflow) is that in forking you are working on your own copy of the project and not within the project. You push changes to your fork without changing the original project and then propose changes to the original project via pull requests.
+
+This is the final tutorial in a series. If you're just joining us, you may want to:
+
+* [Learn Git Workflow Basics](/learn-git-workflow-basics)
+* [Learn Git Workflow Centralized Collaboration](/learn-git-workflow-centralized)
+* [Learn Git Branch Workflow](/learn-git-branch-workflow)
 
 ## Learn Git Fork & Pull Request Workflow: Real World Example
 

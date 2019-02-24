@@ -2,11 +2,12 @@
 title: Learn Git Branch Workflow
 date: "2019-02-11"
 description: The Git branch workflow allows developers to create branches of a project to test new features and fix bugs without modifying code in production. In this tutorial, you will learn Git branch workflow basics and best practices.
+keywords: ["learn git", "git", "git workflow", "git branch"]
 ---
 
-One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs without modifying the code in production. Each repository has at least one if not more branches. When you initialize a new repository, a master branch is created by default. Git allows you to create branches that _stem_ from the _trunk_ of your project. A branch, at its core (no pun intended), is a unique series of code changes with a unique name. Your branch name should be descriptive, so that you and your collaborators can easily infer the work being done.
+One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs without modifying the code in production. Each repository has at least one if not more branches. When you initialize a new repository, a master branch is created by default. Git allows you to create branches that _stem_ from the _trunk_ of your project. A branch, at its core (no pun intended), is a unique series of code changes with a unique name. Your branch name should be descriptive, so that you and your collaborators can easily infer the work being done. If you're just joining us, you may want to [Learn Git Workflow Basics](/learn-git-workflow-basics/) or [Learn Git Workflow Centralized Collaboration](/learn-git-workflow-centralized)
 
-You will learn:
+In this tutorial, you will learn:
 * How to create and checkout a branch
 * How to merge branches
 * How to delete branches
@@ -411,4 +412,4 @@ git pull
 
 ## Learn Git Fork & Pull Request Workflow
 
-In the next tutorial you will learn how to use branches when working with a forked repository.
+In the next tutorial you will [Learn Git Fork & Pull Request Workflow](/learn-git-fork-pull-request/).

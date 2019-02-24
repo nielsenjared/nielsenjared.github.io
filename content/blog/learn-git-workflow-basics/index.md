@@ -2,6 +2,7 @@
 title: Learn Git Workflow Basics
 date: "2019-01-28"
 description: Whether you're learning full stack web development, machine learning or something else entirely, you're going to need to learn Git workflow basics.
+keywords: ["learn git", "git", "git workflow", "git basics"]
 ---
 
 ![Learn Git Workflow Basics: Git Logo](./jared-nielsen-learn-git-workflow-basics.png)
@@ -15,9 +16,9 @@ Whether you're learning full stack web development, machine learning or somethin
 
 Subsequent tutorials will cover:
 
-* [Learn Git Workflow Centralized](/learn-git-workflow-centralized)
-* [Learn Git Workflow Branches](/learn-git-workflow-branches)
-* [Learn Git Workflow Forks](/learn-git-workflow-forks)
+* [Learn Git Workflow Centralized Collaboration](/learn-git-workflow-centralized)
+* [Learn Git Branch Workflow](/learn-git-branch-workflow)
+* [Learn Git Fork & Pull Request Workflow](/learn-git-fork-pull-request)
 
 
 ## Initializing a Git Repository
@@ -457,7 +458,7 @@ git push
 
 This will push your files to the `remote`.
 
-Now that you know the basics, it's time to learn collaborative workflows. Join us in the next tutorial [Learn Git Workflow Centralized](/learn-git-workflow-centralized).
+Now that you know the basics, it's time to learn collaborative workflows. See you in the next tutorial [Learn Git Workflow Centralized Collaboration](/learn-git-workflow-centralized).
 
 ## (Re)Sources
 * https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
