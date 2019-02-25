@@ -1,10 +1,332 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 22 Feb 2019 12:55:01 GMT</lastBuildDate><item><title><![CDATA[What is Object-Relational Mapping? How to Roll-Your-Own JavaScript ORM]]></title><description><![CDATA[Understanding object-relational mapping can be challenging when you’re first learning web development. In this tutorial, you will roll-your…]]></description><link>http://jarednielsen.com/object-relational-mapping-javascript-orm/</link><guid isPermaLink="false">http://jarednielsen.com/object-relational-mapping-javascript-orm/</guid><pubDate>Mon, 18 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;./jared-nielsen-object-relational-mapping-orm-javascript.png&quot; alt=&quot;Object-Relational Mapping&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 25 Feb 2019 13:21:24 GMT</lastBuildDate><item><title><![CDATA[Learn Git Fork & Pull Request Workflow]]></title><description><![CDATA[Whether you are working with open-source or private repositories, you will want to learn the Git fork and pull request workflow. The biggest…]]></description><link>http://jarednielsen.com/learn-git-fork-pull-request/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-fork-pull-request/</guid><pubDate>Mon, 25 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8c92973b63a9e08187420e6773ed6737/417af/jared-nielsen-learn-git-fork-pull-request.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAAB5UlEQVQ4y4WUTW/TQBCG+9P4HUj8B+CKeoAzlwrBKbmjBgFCPaSorSKaNqgqXyGgtiKloUkTJ2maOG4+Ku88jL3GSdvY7Hrt2fXu62dmZ73EfBGxLTQF8Q1ibH8iU1wZMtEavo/qzbJ0SzB6SrjItqA/xOOcC0Yysu8lEhRJEZwTI6DbOoBqhysMXemFbaK9cJqZ45sTvUUYuBmay2+RR2/geYG+08Chp3wuZqqCrYGlj0gTCcMJJhJcr8DDHJONbzjjJo50GCkpK1vwZA0pVWPSRMJ/wzHlygbts2MadGlNmnp3cV9vY+6/hMKRnZ8maGMs9qn18kWe094v/uh2tFSswYCaqeM9XoXLq9jtZJeZxcQddulk3lEbHtPd3Wf0apdBroDzLMfZTincqOASSXXZ0vlqty9O6T/I4mby6t4hnOiW/K5RGZY5UOap5mW8Jo0w+FoQQa/tMF5eVfHZkoa6vk+FI7+q42YWorQ8jCece8i9LPK9jk1Ln4oc8lE+cyL1WVb8lzBI6KCz/gPuZpA7T6HphXlYNHuU+KRWP/H4LXQ5tB1N3mwR1sr44qurZTalyFd+qrNmYfwWH70bZzkoNY3ee/nAJjtK2r1Gl0p4TUzsdo/9EduyR54CX6QSCyT9bf4CjHSGu/u5ew0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Learn Git Fork &amp; Pull Request Workflow&quot;
+        title=&quot;&quot;
+        src=&quot;/static/8c92973b63a9e08187420e6773ed6737/fb8a0/jared-nielsen-learn-git-fork-pull-request.png&quot;
+        srcset=&quot;/static/8c92973b63a9e08187420e6773ed6737/1a291/jared-nielsen-learn-git-fork-pull-request.png 148w,
+/static/8c92973b63a9e08187420e6773ed6737/2bc4a/jared-nielsen-learn-git-fork-pull-request.png 295w,
+/static/8c92973b63a9e08187420e6773ed6737/fb8a0/jared-nielsen-learn-git-fork-pull-request.png 590w,
+/static/8c92973b63a9e08187420e6773ed6737/526de/jared-nielsen-learn-git-fork-pull-request.png 885w,
+/static/8c92973b63a9e08187420e6773ed6737/fa2eb/jared-nielsen-learn-git-fork-pull-request.png 1180w,
+/static/8c92973b63a9e08187420e6773ed6737/417af/jared-nielsen-learn-git-fork-pull-request.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Whether you are working with open-source or private repositories, you will want to learn the Git fork and pull request workflow. The biggest difference between a Git fork and pull request workflow and a &lt;a href=&quot;/learn-git-branch-workflow&quot;&gt;Git branch workflow&lt;/a&gt; is that in forking you are working on your own copy of the project and not within the project. You push changes to your fork without changing the original project and then propose changes to the original project via pull requests.&lt;/p&gt;
+&lt;p&gt;This is the final tutorial in a series. If you’re just joining us, you may want to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/learn-git-workflow-basics&quot;&gt;Learn Git Workflow Basics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/learn-git-workflow-centralized&quot;&gt;Learn Git Workflow Centralized Collaboration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/learn-git-branch-workflow&quot;&gt;Learn Git Branch Workflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Learn Git Fork &amp;#x26; Pull Request Workflow: Real World Example&lt;/h2&gt;
+&lt;p&gt;This blog is built with &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;GatsbyJS&lt;/a&gt;, which is a fantastic React-based static site generator, but still very much in development. By default, GatsbyJS generates an excerpt from the first &lt;em&gt;x&lt;/em&gt; number of characters in your post, which is not always ideal:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a7646cc8aa2d16dd6afab9a4b1227592/f753a/jared-nielsen-learn-git-fork-pull-request-01.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 575px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 17.391304347826086%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAl0lEQVQI143M6xKCIBCGYe//+upHpXLykCKgFSCSfaF2ATHzzLuzs0NWixaENZBmQqdGdHrC0wXM7w/meLDLCh9X/POyfnzh2mrc7gaXRuNca5T9hFI+UKRuTpXe60PAkoTEWgvnHLz3u22OMSIbjQGjBLUQqDiHYPRXlvYUjBDQskAlODgXyPMCIt0OwwApZaqCUoft0y8D8uOieW3UkAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Slack without Open Graph&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a7646cc8aa2d16dd6afab9a4b1227592/f753a/jared-nielsen-learn-git-fork-pull-request-01.png&quot;
+        srcset=&quot;/static/a7646cc8aa2d16dd6afab9a4b1227592/aeb91/jared-nielsen-learn-git-fork-pull-request-01.png 148w,
+/static/a7646cc8aa2d16dd6afab9a4b1227592/71e95/jared-nielsen-learn-git-fork-pull-request-01.png 295w,
+/static/a7646cc8aa2d16dd6afab9a4b1227592/f753a/jared-nielsen-learn-git-fork-pull-request-01.png 575w&quot;
+        sizes=&quot;(max-width: 575px) 100vw, 575px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;A feature I wanted was the ability to add custom meta descriptions for SEO and Open Graph:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9055986c39c0a8f2092d05e0dfbda4f0/f753a/jared-nielsen-learn-git-fork-pull-request-02.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 575px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 17.391304347826086%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAf0lEQVQI142JWQ4CIRBEuf/5/HEBGhidJqYBwy6jI3oCX6qSlypm1BX0iuQteaQQa2/bPl7v/Q/Y6uLx5uU9njEcFrrYcMKHi2Ubz96/mbTWaq0ppVJqLiXnPH2MwRwRCK4BFq1BCKOUUaDVHJT4wTmXMB+JaL0PfjYEIuq9fwAQ1qiWkFrSygAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Slack with Open Graph&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9055986c39c0a8f2092d05e0dfbda4f0/f753a/jared-nielsen-learn-git-fork-pull-request-02.png&quot;
+        srcset=&quot;/static/9055986c39c0a8f2092d05e0dfbda4f0/aeb91/jared-nielsen-learn-git-fork-pull-request-02.png 148w,
+/static/9055986c39c0a8f2092d05e0dfbda4f0/71e95/jared-nielsen-learn-git-fork-pull-request-02.png 295w,
+/static/9055986c39c0a8f2092d05e0dfbda4f0/f753a/jared-nielsen-learn-git-fork-pull-request-02.png 575w&quot;
+        sizes=&quot;(max-width: 575px) 100vw, 575px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;This tutorial will walk you through the steps I took to implement this functionality in my blog and open a pull request on the GatsbyJS repository. You can view the PR at &lt;a href=&quot;https://github.com/gatsbyjs/gatsby/pull/11936&quot;&gt;https://github.com/gatsbyjs/gatsby/pull/11936&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Fork the Repository&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d2cb79eea91000798d0c92919bb9b0fa/47884/jared-nielsen-learn-git-fork-pull-request-03.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 55.263157894736835%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABfUlEQVQoz5WSy07DMBBF86OsYQNC0CdtoC+xgJ9iwWd0AQLUQp5O4kfsJJexS2hRQSpRRmMrM8f3TuzNb+/gTxbwpwuMJ3OMbmboj6eUFxiMrtEdjNEbjimPcH7Zx3lviM7xGe6PTnFzcoGLKx+d/hW6Qx8jfwYPvzxcaNCLmtZVs8k2mrbggwFPH4A0e71eXdfYDW0MYsaQZgxxmiBMEgRpjpAVEEpSjSI6nWaazYFV9aPfa5oGbcAVGIThK6J4hTwPoHUGpRJISeDoDXG8xnOwxMPyEUwWrmeXsQdUpcbLOkHGS0QpR8Q44kxClPSNHIqyQSoU3lhEe70PbL23QFPVSIpNIeccqbVPIaVATfbaSSqCVm6/7XUz/A0YZsrtORdgWY4sL5zyXSVcyMOBq0RRtk2C1GXIC+7WUpVbIB12EFCbGgGzCoGCLCcpc1CbhbB/eQs0hypM+dcMvxRayxautXZX41+WK2p4ZyXljWWrzM5RSElA8225+EPhJ0XYQVFE7nCxAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Fork a Repository&quot;
+        title=&quot;&quot;
+        src=&quot;/static/d2cb79eea91000798d0c92919bb9b0fa/fb8a0/jared-nielsen-learn-git-fork-pull-request-03.png&quot;
+        srcset=&quot;/static/d2cb79eea91000798d0c92919bb9b0fa/1a291/jared-nielsen-learn-git-fork-pull-request-03.png 148w,
+/static/d2cb79eea91000798d0c92919bb9b0fa/2bc4a/jared-nielsen-learn-git-fork-pull-request-03.png 295w,
+/static/d2cb79eea91000798d0c92919bb9b0fa/fb8a0/jared-nielsen-learn-git-fork-pull-request-03.png 590w,
+/static/d2cb79eea91000798d0c92919bb9b0fa/526de/jared-nielsen-learn-git-fork-pull-request-03.png 885w,
+/static/d2cb79eea91000798d0c92919bb9b0fa/fa2eb/jared-nielsen-learn-git-fork-pull-request-03.png 1180w,
+/static/d2cb79eea91000798d0c92919bb9b0fa/08f6a/jared-nielsen-learn-git-fork-pull-request-03.png 1770w,
+/static/d2cb79eea91000798d0c92919bb9b0fa/47884/jared-nielsen-learn-git-fork-pull-request-03.png 1900w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Navigate to the repository you want to fork. If this is your first fork, congrats! Hit the &lt;strong&gt;Fork&lt;/strong&gt; button in the upper right. You will be treated to a delightful animation and redirected back to your account. Note that now the repository is prepended with your username, with a link pointing to the source of the fork just below it.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6f74d4d07f9d329aff479bbb8d415fa7/47884/jared-nielsen-learn-git-fork-pull-request-04.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 55.263157894736835%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABhUlEQVQoz5VRy07DMBDsv3IHKrWkD1KhVqgSF278BJ/AkR/gwoELh5a+aPNybMexkwzrNIkKBaSuNNqN7J3MjFuT6R3cmwlG41sMByNMzi7wMJji/nwEp+2gO3DR7Q1x1b/GZadHcNCmbtFxhujQme3dvouhO0YLh6Vz4OUd4u0D8nUBiBSnVivPczQoCqSJQrjeIIlDMB4iZgGiOKaZQ6cSxiRAYZCZHCbb72VZRtjPrYJIatjKiwxBtEYQriD4ji4yGB0iVQE8b4Eo2mA+e8Xz0yPYdlvuHHIcEapUY7bc4dPnJYJYwWOkWuaQlABXBbYew3yxpJ+oY8Lae02oyYoX77PjQiCMGKmNwMi21qa0ZStRGlk117tlhj8JbS5+QygRsbiBMaZRIujMZtfsVvu/Eq4DVT5QrdBCSImU4jgkNIeE/ylcEaHJ9kvWbq3Q2rY2TyK0GTKpy1nIpCLipUobQVHdlUny3fJfhFbBOkypWxUCfhDCJ5UxF+Wj1JY5fRtzTPgFm9hABU2JQT8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Clone a Forked Repository&quot;
+        title=&quot;&quot;
+        src=&quot;/static/6f74d4d07f9d329aff479bbb8d415fa7/fb8a0/jared-nielsen-learn-git-fork-pull-request-04.png&quot;
+        srcset=&quot;/static/6f74d4d07f9d329aff479bbb8d415fa7/1a291/jared-nielsen-learn-git-fork-pull-request-04.png 148w,
+/static/6f74d4d07f9d329aff479bbb8d415fa7/2bc4a/jared-nielsen-learn-git-fork-pull-request-04.png 295w,
+/static/6f74d4d07f9d329aff479bbb8d415fa7/fb8a0/jared-nielsen-learn-git-fork-pull-request-04.png 590w,
+/static/6f74d4d07f9d329aff479bbb8d415fa7/526de/jared-nielsen-learn-git-fork-pull-request-04.png 885w,
+/static/6f74d4d07f9d329aff479bbb8d415fa7/fa2eb/jared-nielsen-learn-git-fork-pull-request-04.png 1180w,
+/static/6f74d4d07f9d329aff479bbb8d415fa7/08f6a/jared-nielsen-learn-git-fork-pull-request-04.png 1770w,
+/static/6f74d4d07f9d329aff479bbb8d415fa7/47884/jared-nielsen-learn-git-fork-pull-request-04.png 1900w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Now clone your fork.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git clone git@github.com:&amp;lt;your-user-name&amp;gt;/gatsby&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Add Upstream&lt;/h2&gt;
+&lt;p&gt;When working with a forked repository, you will want and need to pull changes from the original repo to keep your fork up-to-date. If the original repository is “the source”, then, to use a water-based analogy, we could say that it is “upstream”, which is what we’ll do:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git remote add upstream git@github.com:gatsbyjs/gatsby.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When you work on the project in the future, simply checkout master and fetch and merge upstream.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git checkout master
+git fetch upstream
+git merge upstream/master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Get to Work: Checkout a Branch&lt;/h2&gt;
+&lt;p&gt;When working on a fork to which you intend to create pull requests, you will want to keep the &lt;code&gt;master&lt;/code&gt; branch up-to-date and separate from the work you are doing in order to mirror the upstream and minimize conflicts. In this example, I created a branch &lt;code&gt;meta-description&lt;/code&gt; as that was the feature I was implementing:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git checkout -b meta-description&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Work on your feature or bug fix, then add, commit and push to your remote origin.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git push origin meta-description&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When submitting a pull request, you won’t push directly to the upstream. Instead, you will push your branch to your remote fork and from there open a PR.&lt;/p&gt;
+&lt;h2&gt;Opening a Pull Request&lt;/h2&gt;
+&lt;p&gt;After pushing your branch to your remote origin, navigate back to your fork of the repository on GitHub. You should be presented with a notification reporting the title of your recently pushed branch and a GitHub green button to &lt;strong&gt;Compare &amp;#x26; pull request&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ba5d587806fe2f55717358419e884b62/47884/jared-nielsen-learn-git-fork-pull-request-05.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 55.263157894736835%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABqUlEQVQoz5WS207jMBCG+8ggCi2EQKFIK+3T8ABcgoALYLWCchKUFuiBtmniUw528jN207JikXYZaWR7MvPln7ErzR8/4Tf24O/sYbPRhLe9izWvgbrfRN3bwmrdc75W38TySg1L5HZdrtZQrW2gSt+qNcpZ9+H5u6jgC+MiAc+AAt+3Sp7nWHhRIKXgVHCoyQRsMAIfjhG9BWCvI+hOD+bxBWgPgF6ITCWuxhgDUzIqBQWcWz2Ggq0HsF+HUHen0O1rFM93KLq/UQxvkAT3yHgbrcExjo73oc6uAJm4TuacP4BkSQbT6SM4ucDbYxssGMEoDi0F0jEpvnmAoB/enp/i5PwAsktq85mYBXDeuz1YS2nt9QPw7gjB5ROmrQ4mtEZPY6QiQ0yeRCk4DTn7VOtmWEYWQa1zTKR2e5mlCKV0zpREqjXy8qqkUjBafwDL+r8UappjwFOXIIREFDGE5IxxN/x5a0rF7vy1wk/A/jSh+ykgrTqCRQQTtFdx7G7S5gqpKPc/gcNw9hxs0TSMHNCCORcEnCmU3wFGMivnFDsYI5AF2rn9q+V3Mc47YcQKQs4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Clone a Forked Repository&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ba5d587806fe2f55717358419e884b62/fb8a0/jared-nielsen-learn-git-fork-pull-request-05.png&quot;
+        srcset=&quot;/static/ba5d587806fe2f55717358419e884b62/1a291/jared-nielsen-learn-git-fork-pull-request-05.png 148w,
+/static/ba5d587806fe2f55717358419e884b62/2bc4a/jared-nielsen-learn-git-fork-pull-request-05.png 295w,
+/static/ba5d587806fe2f55717358419e884b62/fb8a0/jared-nielsen-learn-git-fork-pull-request-05.png 590w,
+/static/ba5d587806fe2f55717358419e884b62/526de/jared-nielsen-learn-git-fork-pull-request-05.png 885w,
+/static/ba5d587806fe2f55717358419e884b62/fa2eb/jared-nielsen-learn-git-fork-pull-request-05.png 1180w,
+/static/ba5d587806fe2f55717358419e884b62/08f6a/jared-nielsen-learn-git-fork-pull-request-05.png 1770w,
+/static/ba5d587806fe2f55717358419e884b62/47884/jared-nielsen-learn-git-fork-pull-request-05.png 1900w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Click that button and you will be routed to a new page on the upstream repository with a form to enter a title and a description for your pull request. Note that your commit message will be auto-populated in the title field, but you can change it.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8d01f50b0bf3e3bd2f233df1dc129d83/47884/jared-nielsen-learn-git-fork-pull-request-06.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 55.263157894736835%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABiElEQVQoz5WSy07DMBBF88eAKEqgrcqjYsEfsWfLjj8AJeTRJH4lju30MjZEhCobLF15lNw5Ho8nenh8wvZ2j+3dHpvbB2x294g3d7jZ7ZGsd1jFa1wlm7CfXca4WCU4X8WkBJfxDVbJ+ttzvcV6e48IC6vrNLQZccT/VzSOI+YyxiCvSnykKdIsBxcSQpL8rnpwpTGQxzoHR/I5zv3mR8fjEZNCdZSUFQUOrEXdsKCWcTQth6R/TCj0eggwR4B5vtcCsEOZlwHiq5NKUczAuUDX99CDoZgOaWtYa0POH+D8/hO01xrZZxGAqusJ2oW45XSIFKiZRMO7cMXTgqI5bProAR9phiIvUJUVykONtuHoBfVPDRjJN878i8B5hf5qGcHyosKBeqdkj3f+ief0Ba/l2+RenILoFOZ3Y2zoj/9kfvqkrUYuKggjMVAf/aOc9m8R6I2HuoWkWfSx1t9j4qzDvCR/oO/hPHcR6E1MKjSMXrdl4YWtdWHW/JhoGhkuBKq6+VPltL4A0z1AStYK3bQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Submitting a Pull Request&quot;
+        title=&quot;&quot;
+        src=&quot;/static/8d01f50b0bf3e3bd2f233df1dc129d83/fb8a0/jared-nielsen-learn-git-fork-pull-request-06.png&quot;
+        srcset=&quot;/static/8d01f50b0bf3e3bd2f233df1dc129d83/1a291/jared-nielsen-learn-git-fork-pull-request-06.png 148w,
+/static/8d01f50b0bf3e3bd2f233df1dc129d83/2bc4a/jared-nielsen-learn-git-fork-pull-request-06.png 295w,
+/static/8d01f50b0bf3e3bd2f233df1dc129d83/fb8a0/jared-nielsen-learn-git-fork-pull-request-06.png 590w,
+/static/8d01f50b0bf3e3bd2f233df1dc129d83/526de/jared-nielsen-learn-git-fork-pull-request-06.png 885w,
+/static/8d01f50b0bf3e3bd2f233df1dc129d83/fa2eb/jared-nielsen-learn-git-fork-pull-request-06.png 1180w,
+/static/8d01f50b0bf3e3bd2f233df1dc129d83/08f6a/jared-nielsen-learn-git-fork-pull-request-06.png 1770w,
+/static/8d01f50b0bf3e3bd2f233df1dc129d83/47884/jared-nielsen-learn-git-fork-pull-request-06.png 1900w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Also note the diff below the form to review your file changes before submitting your PR, which I recommend you do to ensure no errata found its way into your commit.&lt;/p&gt;
+&lt;p&gt;Write a descriptive title and a brief, articulate explanation of the pull request.&lt;/p&gt;
+&lt;p&gt;Click &lt;strong&gt;Create Pull Request&lt;/strong&gt; and your pull request will be added to the queue. You can always return to your PR to edit its title and description. And, if after submitting, you need to make an edit to the PR, just add, commit and push the changes to your fork origin and they will automatically be updated in the upstream.&lt;/p&gt;
+&lt;h2&gt;(Re)Sources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://gist.github.com/Chaser324/ce0505fbed06b947d962&quot;&gt;GitHub Standard Fork &amp;#x26; Pull Request Workflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[What is Object-Relational Mapping? How to Roll-Your-Own JavaScript ORM]]></title><description><![CDATA[Understanding object-relational mapping can be challenging when you’re first learning web development. In this tutorial, you will roll-your…]]></description><link>http://jarednielsen.com/object-relational-mapping-javascript-orm/</link><guid isPermaLink="false">http://jarednielsen.com/object-relational-mapping-javascript-orm/</guid><pubDate>Mon, 18 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2db3058bef122daad1fd5ac8270975ce/417af/jared-nielsen-object-relational-mapping-javascript-orm.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACO0lEQVQ4y32TS2vUUBTHA34AXelaip/AhStFkIKL6q4ggls/gAiCdCkjuOhCFCsWpEufjIgPfFRBBKug0oHSdqbamTSZJE4zyWSSmWSS/LzJmGk6M/Ukl5vcx+/cc87/SgiL45isz9rwf34siqK0ZZbNJSb9D7AzDlEYEgQBnU4Hz/PodrsDaH79nsDMojDCj3u0uh5208K2bRzHScFjgcNHzsM918N0Wyhfytg/f9HstGkLmB/4u0LOm5QH5WF2q4Vl6JT+2Jwo6GjHbkLbJV0R7+Sy1+vh+36ahpbYI40LNcmPqht0zDqXP7aRnrW5MlmEq0WagmY1TEzTpNFooOs6qqoiyzLVanX8Cb2uj72tsbRusa+oc6g+x5H723w/PIv3uYTaMtHUOoqipKBarZa25F/Kx58Be5HofYdzLyOkUpEH7iK3VyImpz/B1C22HBO52ockQE3T0mIloUvDsDCBEfF1SyT4TYWTPBk4PPo8YGHiDsH8WzaaOnVZSfMWCkmNFCXTW5xmHI6/FpMbC3y4OEN4eo5g+i7fTt3j3YECwcQMhqIRxrvFPZDNQHNx/3RNBw4uL7PfneXs0+tMPbrGmYcFzj8ucOHFDS69mscxrf4eUekRHQ68/HuSdxOLFVHTH9i8dyosbq+x5Mr8xhejo5rNvqVhYebDTiXUsJFXK6iVTVH+IAlAVC13m4Zu1pgq9xck4YtgqOsaq+traEJvWVoGJ8qcj7spw+DMq2EYlMvlVMB73fe8/QXxTmnUw9xL3QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Object-Relational Mapping&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2db3058bef122daad1fd5ac8270975ce/fb8a0/jared-nielsen-object-relational-mapping-javascript-orm.png&quot;
+        srcset=&quot;/static/2db3058bef122daad1fd5ac8270975ce/1a291/jared-nielsen-object-relational-mapping-javascript-orm.png 148w,
+/static/2db3058bef122daad1fd5ac8270975ce/2bc4a/jared-nielsen-object-relational-mapping-javascript-orm.png 295w,
+/static/2db3058bef122daad1fd5ac8270975ce/fb8a0/jared-nielsen-object-relational-mapping-javascript-orm.png 590w,
+/static/2db3058bef122daad1fd5ac8270975ce/526de/jared-nielsen-object-relational-mapping-javascript-orm.png 885w,
+/static/2db3058bef122daad1fd5ac8270975ce/fa2eb/jared-nielsen-object-relational-mapping-javascript-orm.png 1180w,
+/static/2db3058bef122daad1fd5ac8270975ce/417af/jared-nielsen-object-relational-mapping-javascript-orm.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;Understanding object-relational mapping can be challenging when you’re first learning web development. In this tutorial, you will roll-your-own ORM with JavaScript to help you better understand how full-featured object-relational mapping, such as Sequelize, works under-the-hood.&lt;/p&gt;
 &lt;p&gt;You will learn:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;What is Object-Relational Mapping?&lt;/li&gt;
 &lt;li&gt;How to use Promises to handle asynchronous database queries&lt;/li&gt;
-&lt;li&gt;Models and how to use implement them&lt;/li&gt;
+&lt;li&gt;Models and how to implement them&lt;/li&gt;
 &lt;li&gt;How to implement a simple, Promise-based ORM with JavaScript&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;What is Object-Relational Mapping?&lt;/h2&gt;
@@ -480,7 +802,7 @@ cat&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
 server.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Run &lt;code&gt;server.js&lt;/code&gt; to verify that everything works.&lt;/p&gt;
 &lt;p&gt;Unless our vet specializes in cats, we will want models for other species. We &lt;em&gt;could&lt;/em&gt; copy the &lt;code&gt;cat.js&lt;/code&gt; file, rename it, and all appropriate references to &lt;code&gt;dog&lt;/code&gt;, &lt;em&gt;but&lt;/em&gt;, that would not be DRY. What’s the solution? You guessed it. Object-relational mapping.&lt;/p&gt;
-&lt;h2&gt;ORM&lt;/h2&gt;
+&lt;h2&gt;What is ORM?&lt;/h2&gt;
 &lt;p&gt;If we read the Sequelize source code, we will see that it is class-based. Classes in JavaScript are syntactic sugar on constructors, so, for the time-being we will work with constructors then later translate our ORM to classes.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What does a constructor function do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;A constructor creates an object.&lt;/p&gt;
@@ -727,8 +1049,44 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;TypeError: Cat.all is not a function&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Why?&lt;/p&gt;
 &lt;h2&gt;The Cat is Undefined&lt;/h2&gt;
-&lt;p&gt;Wow! Are you still with me? This tutorial is clocking in near 1000 lines, so I will stop here and pick up in a subsequent post. Stay tuned for the gripping conclusion. I Promise it will be good.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Git Branch Workflow]]></title><description><![CDATA[One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs…]]></description><link>http://jarednielsen.com/learn-git-branch-workflow/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-branch-workflow/</guid><pubDate>Mon, 11 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs without modifying the code in production. Each repository has at least one if not more branches. When you initialize a new repository, a master branch is created by default. Git allows you to create branches that &lt;em&gt;stem&lt;/em&gt; from the &lt;em&gt;trunk&lt;/em&gt; of your project. A branch, at its core (no pun intended), is a unique series of code changes with a unique name. Your branch name should be descriptive, so that you and your collaborators can easily infer the work being done.&lt;/p&gt;
-&lt;p&gt;You will learn:&lt;/p&gt;
+&lt;p&gt;Wow! Are you still with me? This tutorial is clocking in near 1000 lines, so I will stop here and pick up in a subsequent post. Stay tuned for the gripping conclusion. I Promise it will be good.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Git Branch Workflow]]></title><description><![CDATA[One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs…]]></description><link>http://jarednielsen.com/learn-git-branch-workflow/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-branch-workflow/</guid><pubDate>Mon, 11 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f2b3f4b69ef3aa8c24ee02a354242176/417af/jared-nielsen-learn-git-branch-workflow.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAABbUlEQVQ4y5WUy0sCURTG/TuDIIjatAgKWlTQY9My6LXoAUGLilBTooePQKIUNKKXUhY9iBaVEdGYmXN+3XHUJhxn7MDhXu755pvvO/fMeLAJETOte2tWz+3C0wyZtaY71OsIGykofINWdMfZElrXt084uIOVE5hKwHwK0k/OpLaWjXjRYOsSdlSup2EyDn3b0L0B8XsTo0u97YYKgxnwnauHlcLNC5hRCgfC0BWEnk141pqwrFeKj++mokDaUCmKWJhLwkRcGIoKg2GjFfJHpaPC5w+I3UDqATKqZ3u3wnRC8KsXZF8MxULkiuYJX/MwEoVeZW0sJoSywtIRRLI6y8dCmxeSD00qrBYXD6HDb1yCMKzIvWdC4LRAp7/E6C7ki+LeQyvgvQDj+wap0O4TWtegZVXoDwnXuTKy1nNXy1XgV8ns5YKav9mklG87pzUmc7Ss14BSyd+9WfuHZes8WofX7Tu2JXT72ziRGfEDs9CDfYBy5LYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Learn Git Branch Workflow&quot;
+        title=&quot;&quot;
+        src=&quot;/static/f2b3f4b69ef3aa8c24ee02a354242176/fb8a0/jared-nielsen-learn-git-branch-workflow.png&quot;
+        srcset=&quot;/static/f2b3f4b69ef3aa8c24ee02a354242176/1a291/jared-nielsen-learn-git-branch-workflow.png 148w,
+/static/f2b3f4b69ef3aa8c24ee02a354242176/2bc4a/jared-nielsen-learn-git-branch-workflow.png 295w,
+/static/f2b3f4b69ef3aa8c24ee02a354242176/fb8a0/jared-nielsen-learn-git-branch-workflow.png 590w,
+/static/f2b3f4b69ef3aa8c24ee02a354242176/526de/jared-nielsen-learn-git-branch-workflow.png 885w,
+/static/f2b3f4b69ef3aa8c24ee02a354242176/fa2eb/jared-nielsen-learn-git-branch-workflow.png 1180w,
+/static/f2b3f4b69ef3aa8c24ee02a354242176/417af/jared-nielsen-learn-git-branch-workflow.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs without modifying the code in production. Each repository has at least one if not more branches. When you initialize a new repository, a master branch is created by default. Git allows you to create branches that &lt;em&gt;stem&lt;/em&gt; from the &lt;em&gt;trunk&lt;/em&gt; of your project. A branch, at its core (no pun intended), is a unique series of code changes with a unique name. Your branch name should be descriptive, so that you and your collaborators can easily infer the work being done. If you’re just joining us, you may want to &lt;a href=&quot;/learn-git-workflow-basics/&quot;&gt;Learn Git Workflow Basics&lt;/a&gt; or &lt;a href=&quot;/learn-git-workflow-centralized&quot;&gt;Learn Git Workflow Centralized Collaboration&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this tutorial, you will learn:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;How to create and checkout a branch&lt;/li&gt;
 &lt;li&gt;How to merge branches&lt;/li&gt;
@@ -940,7 +1298,43 @@ app.listen(PORT, function() {&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout master
 git pull&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;Learn Git Fork &amp;#x26; Pull Request Workflow&lt;/h2&gt;
-&lt;p&gt;In the next tutorial you will learn how to use branches when working with a forked repository.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Git Workflow Centralized Collaboration]]></title><description><![CDATA[The most powerful, and sometimes powerfully frustrating, aspect of Git is the collaborative workflow it enables. In order to  really  learn…]]></description><link>http://jarednielsen.com/learn-git-workflow-centralized/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-workflow-centralized/</guid><pubDate>Mon, 04 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The most powerful, and sometimes powerfully frustrating, aspect of Git is the collaborative workflow it enables. In order to &lt;em&gt;really&lt;/em&gt; learn Git workflow, you need to work through conflict, which means you need to work with a team. This tutorial introduces the centralized model for collaboration and is designed for two to work through together.&lt;/p&gt;
+&lt;p&gt;In the next tutorial you will &lt;a href=&quot;/learn-git-fork-pull-request/&quot;&gt;Learn Git Fork &amp;#x26; Pull Request Workflow&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Git Workflow Centralized Collaboration]]></title><description><![CDATA[The most powerful, and sometimes powerfully frustrating, aspect of Git is the collaborative workflow it enables. In order to  really  learn…]]></description><link>http://jarednielsen.com/learn-git-workflow-centralized/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-workflow-centralized/</guid><pubDate>Mon, 04 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b0005f7362086433794d01fd47c5f4b7/417af/jared-nielsen-learn-git-workflow-centralized.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAABhElEQVQ4y42USUsDQRCF8+9cogYJKHjNQfHkxYsLggjq1YuKFxEPgrgbFTdE3EVExR1XyMEFUcQFkqnP6sQJE9LJpIamGrrm9XuvqQpgCfn/vHsnvZOsGm8EbGC2vRuOD2jAD8zkZ76444N3fjOAbaBWQDe/8E2UW7rYo15WqWOFQTnlR+KpOpEsIjklG7Bpbhjlih45pIE1amSOIsbp1AsS4lhtsTJMqKBhzunnmCHO6GCXiCxSqVeEmaFEJpTro/lBawuQbLwa4ZJZlTvGNQfyxILcM8gpq/JItUTVhv0koJGdE9A1OsYn7ezQzGbSww2J0SKb1LJMo6wTkmna2PYHdA9e1b8ISwxwQp/KLmeKoExSoTmksouYSNphyh0/ye7hkT5LkzIsY5IqlVilXE2ulBnCMsuFvKVU5WPoZflFnFa2KFVAs4K6ipWZAZuXuwwwX8lO+rWFRR7o1gcwnvUq7wverO2ZAxBrkV/7+faytzjhGQqOZ0gU1Mv5po1Ypo0t/gBhHXii+zHjogAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Learn Git Workflow Centralized Collaboration&quot;
+        title=&quot;&quot;
+        src=&quot;/static/b0005f7362086433794d01fd47c5f4b7/fb8a0/jared-nielsen-learn-git-workflow-centralized.png&quot;
+        srcset=&quot;/static/b0005f7362086433794d01fd47c5f4b7/1a291/jared-nielsen-learn-git-workflow-centralized.png 148w,
+/static/b0005f7362086433794d01fd47c5f4b7/2bc4a/jared-nielsen-learn-git-workflow-centralized.png 295w,
+/static/b0005f7362086433794d01fd47c5f4b7/fb8a0/jared-nielsen-learn-git-workflow-centralized.png 590w,
+/static/b0005f7362086433794d01fd47c5f4b7/526de/jared-nielsen-learn-git-workflow-centralized.png 885w,
+/static/b0005f7362086433794d01fd47c5f4b7/fa2eb/jared-nielsen-learn-git-workflow-centralized.png 1180w,
+/static/b0005f7362086433794d01fd47c5f4b7/417af/jared-nielsen-learn-git-workflow-centralized.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;The most powerful, and sometimes powerfully frustrating, aspect of Git is the collaborative workflow it enables. In order to &lt;em&gt;really&lt;/em&gt; learn Git workflow, you need to work through conflict, which means you need to work with a team. This tutorial introduces the centralized model for collaboration and is designed for two to work through together. If you’re just joining us, you may want to &lt;a href=&quot;/learn-git-workflow-basics/&quot;&gt;Learn Git Workflow Basics&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You will learn:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Adding Collaborators to a New Repository&lt;/li&gt;
@@ -1093,7 +1487,7 @@ Automatic merge failed; fix conflicts and then commit the result.&lt;/code&gt;&l
 &lt;h3&gt;Both Partners&lt;/h3&gt;
 &lt;p&gt;Delete this repository or create a new one, swap roles, and go through this process again.&lt;/p&gt;
 &lt;h2&gt;Learn Git Workflow, From Centralized to Branching&lt;/h2&gt;
-&lt;p&gt;One of the most useful, but potentially confusing, aspects of git is the ability for developers to create branches of a project to test new features. In the next article, we will &lt;a href=&quot;./%7B...%7D&quot;&gt;learn git branching workflow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One of the most useful, but potentially confusing, aspects of git is the ability for developers to create branches of a project to test new features. In the next article, we will &lt;a href=&quot;/learn-git-branch-workflow/&quot;&gt;Learn Git Branch Workflow&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;(Re)Sourcess&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;http://rogerdudler.github.io/git-guide/&lt;/a&gt;&lt;/li&gt;
@@ -1143,9 +1537,9 @@ Automatic merge failed; fix conflicts and then commit the result.&lt;/code&gt;&l
 &lt;/ul&gt;
 &lt;p&gt;Subsequent tutorials will cover:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/learn-git-workflow-centralized&quot;&gt;Learn Git Workflow Centralized&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/learn-git-workflow-branches&quot;&gt;Learn Git Workflow Branches&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/learn-git-workflow-forks&quot;&gt;Learn Git Workflow Forks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/learn-git-workflow-centralized&quot;&gt;Learn Git Workflow Centralized Collaboration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/learn-git-branch-workflow&quot;&gt;Learn Git Branch Workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/learn-git-fork-pull-request&quot;&gt;Learn Git Fork &amp;#x26; Pull Request Workflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Initializing a Git Repository&lt;/h2&gt;
 &lt;p&gt;Let’s create a local repository. From the command line:&lt;/p&gt;
@@ -1378,7 +1772,7 @@ git rm &amp;lt;file-name&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;But there’s one last command we need in order to complete the three phases of the Git workflow:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git push&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This will push your files to the &lt;code&gt;remote&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Now that you know the basics, it’s time to learn collaborative workflows. Join us in the next tutorial &lt;a href=&quot;/learn-git-workflow-centralized&quot;&gt;Learn Git Workflow Centralized&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now that you know the basics, it’s time to learn collaborative workflows. See you in the next tutorial &lt;a href=&quot;/learn-git-workflow-centralized&quot;&gt;Learn Git Workflow Centralized Collaboration&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;(Re)Sources&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control&quot;&gt;https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control&lt;/a&gt;&lt;/li&gt;
