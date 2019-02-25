@@ -5,6 +5,8 @@ description: In order to learn Git workflow, you need to work with a team. This 
 keywords: ["learn git", "git", "git workflow", "git collaboration"]
 ---
 
+![Learn Git Workflow Centralized Collaboration](./jared-nielsen-learn-git-workflow-centralized.png)
+
 The most powerful, and sometimes powerfully frustrating, aspect of Git is the collaborative workflow it enables. In order to _really_ learn Git workflow, you need to work through conflict, which means you need to work with a team. This tutorial introduces the centralized model for collaboration and is designed for two to work through together. If you're just joining us, you may want to [Learn Git Workflow Basics](/learn-git-workflow-basics/)
 
 You will learn:

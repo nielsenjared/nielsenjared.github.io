@@ -5,6 +5,9 @@ description: The Git branch workflow allows developers to create branches of a p
 keywords: ["learn git", "git", "git workflow", "git branch"]
 ---
 
+
+![Learn Git Branch Workflow](./jared-nielsen-learn-git-branch-workflow.png)
+
 One of the most useful aspects of Git is the ability for developers to create branches of a project to test new features and fix bugs without modifying the code in production. Each repository has at least one if not more branches. When you initialize a new repository, a master branch is created by default. Git allows you to create branches that _stem_ from the _trunk_ of your project. A branch, at its core (no pun intended), is a unique series of code changes with a unique name. Your branch name should be descriptive, so that you and your collaborators can easily infer the work being done. If you're just joining us, you may want to [Learn Git Workflow Basics](/learn-git-workflow-basics/) or [Learn Git Workflow Centralized Collaboration](/learn-git-workflow-centralized)
 
 In this tutorial, you will learn:
