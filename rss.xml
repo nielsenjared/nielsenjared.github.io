@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 25 Feb 2019 13:21:24 GMT</lastBuildDate><item><title><![CDATA[Learn Git Fork & Pull Request Workflow]]></title><description><![CDATA[Whether you are working with open-source or private repositories, you will want to learn the Git fork and pull request workflow. The biggest…]]></description><link>http://jarednielsen.com/learn-git-fork-pull-request/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-fork-pull-request/</guid><pubDate>Mon, 25 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 26 Feb 2019 13:26:36 GMT</lastBuildDate><item><title><![CDATA[Learn Git Fork & Pull Request Workflow]]></title><description><![CDATA[Whether you are working with open-source or private repositories, you will want to learn the Git fork and pull request workflow. The biggest…]]></description><link>http://jarednielsen.com/learn-git-fork-pull-request/</link><guid isPermaLink="false">http://jarednielsen.com/learn-git-fork-pull-request/</guid><pubDate>Mon, 25 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/8c92973b63a9e08187420e6773ed6737/417af/jared-nielsen-learn-git-fork-pull-request.png&quot;
@@ -1777,7 +1777,43 @@ git rm &amp;lt;file-name&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control&quot;&gt;https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;http://rogerdudler.github.io/git-guide/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How to Configure Full-Stack Development Environment for Linux]]></title><description><![CDATA[My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each…]]></description><link>http://jarednielsen.com/full-stack-development-linux/</link><guid isPermaLink="false">http://jarednielsen.com/full-stack-development-linux/</guid><pubDate>Mon, 21 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each upgrade I need to reinstall all of my tools. This article is primarily a reference for myself as this is something I’ve done before and will definitely do again. I hope you also find it useful. If you have any feedback, let me know &lt;a href=&quot;http://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How to Configure Full-Stack Development Environment for Linux]]></title><description><![CDATA[My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each…]]></description><link>http://jarednielsen.com/full-stack-development-linux/</link><guid isPermaLink="false">http://jarednielsen.com/full-stack-development-linux/</guid><pubDate>Mon, 21 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2582e89d2a5b5338658aab805dd34843/417af/jared-nielsen-full-stack-development-linux.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACxElEQVQ4y2NgwANOnDgBppfuPMTw8PBGBt6f/xlSk4IYwYLz/rMwzPnHAmbP/Q/BuEBvtiWYrnRkYJg8oYdx9apVLNMXrWCa01zKDDVAkHHOXwOGOf85UAzEZ+ilelas4g39rWoCc7+4AV2ozDH/NzPQECa4QRgGQm05NdEFzO0oNee4cvm82tFjxypOHj86e/b6Xc1KqqrnJawCPDBsmvMPzaA5IMP+gWmz2rlsIOEp4bw21uaGv4yMTf+bmZr8Nzc2/C8sIfuLzSzEn+HQfw2GmT9igHrzgFgGag4jwpkgG+b+Z0a2lK9odbiQovrnwEC/73EpGT/M05uuijccXsyw8P9khjl/VwHV3wDijUDMi+plZL8DDWWd89MHGEaL9KYdu7l384wfm+ZV/p84dc7f+KSU/9xOqdsY1v5fyDDr102gIyqBvnIG6uFBmAN34X9uIBvkhS1ARXeA/PNcc78vP3zu8pu0rKxfCspqX3VMzB9xVO4/w7Dk/yKgdwOBBmoA1QtgRshcoGFz/tcD8QugohNAPJ9p3r9Sht6fVvElVd0dvf1vJ06Z/sPC3f8rW/LcFSw7/5syTPuiAvQ2J4phSF5mhboOFMDBwDSmxTDhPxdISt7S1VVAWumnmoryfwkxsV8M6r6pDP//C9ixMzAhIoIBGqn/0cPvHyc89QOBITeDj3l49sWKRXtfTprQ/2fluk3vlm/eNudEOIMISL6op5kRM6fMgYchWJLHPp4hHsT4/5+D2Shgo4Sk5H9bC9P/5hYW/52cnP57ujq8a03XEQMpKYzQZwQnNQwAT4cQQxn7nrExLPgfwTj53U2GwJYiBgm9aqBwGhDrA7E2A1EA2dlz/ysDvb6FYf7/WQxn/yuhK/3/P41IAyEJnBWIE4D8cwyz//gyNZwDpzEuPVdWfg4WRl5eXiZBQUFIwufjwzAGAJzETHd5gDTkAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;How to Configure Full Stack Development Environment for Linux: Penguins&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2582e89d2a5b5338658aab805dd34843/fb8a0/jared-nielsen-full-stack-development-linux.png&quot;
+        srcset=&quot;/static/2582e89d2a5b5338658aab805dd34843/1a291/jared-nielsen-full-stack-development-linux.png 148w,
+/static/2582e89d2a5b5338658aab805dd34843/2bc4a/jared-nielsen-full-stack-development-linux.png 295w,
+/static/2582e89d2a5b5338658aab805dd34843/fb8a0/jared-nielsen-full-stack-development-linux.png 590w,
+/static/2582e89d2a5b5338658aab805dd34843/526de/jared-nielsen-full-stack-development-linux.png 885w,
+/static/2582e89d2a5b5338658aab805dd34843/fa2eb/jared-nielsen-full-stack-development-linux.png 1180w,
+/static/2582e89d2a5b5338658aab805dd34843/417af/jared-nielsen-full-stack-development-linux.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each upgrade I need to reinstall all of my tools. This article is primarily a reference for myself as this is something I’ve done before and will definitely do again. I hope you also find it useful. If you have any feedback, let me know &lt;a href=&quot;http://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Git&lt;/h2&gt;
 &lt;p&gt;Perhaps most important is version-control. Being Linux, it’s a one-liner.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt install git-all&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -2185,7 +2221,43 @@ Promise&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise&quot;&gt;Promise&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises&quot;&gt;Using Promises&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://callbackhell.com/&quot;&gt;callbackhell.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How to Install NVIDIA Cuda Toolkit on Linux for Blender 2.8 Cycles]]></title><description><![CDATA[Installing the NVIDIA Cuda Toolkit on Linux for Blender Cycles rendering is actually easy and straightforward. Unfortunately, the NVIDIA…]]></description><link>http://jarednielsen.com/install-nvidia-cuda-linux-blender-cycles/</link><guid isPermaLink="false">http://jarednielsen.com/install-nvidia-cuda-linux-blender-cycles/</guid><pubDate>Mon, 07 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Installing the NVIDIA Cuda Toolkit on Linux for Blender Cycles rendering is actually easy and straightforward. Unfortunately, the NVIDIA documentation is not so easy or straightforward. I wrote this article primarily as a reference for myself as this is a process I have done before and will definitely do again. I hope you also find it useful.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How to Install NVIDIA Cuda Toolkit on Linux for Blender 2.8 Cycles]]></title><description><![CDATA[Installing the NVIDIA Cuda Toolkit on Linux for Blender Cycles rendering is actually easy and straightforward. Unfortunately, the NVIDIA…]]></description><link>http://jarednielsen.com/install-nvidia-cuda-linux-blender-cycles/</link><guid isPermaLink="false">http://jarednielsen.com/install-nvidia-cuda-linux-blender-cycles/</guid><pubDate>Mon, 07 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bdefe49beffcbd38c401869d54ee3396/417af/jared-nielsen-install-nvidia-cuda-linux-blender-cycles.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAADpUlEQVQ4y3VUDUxTVxQ+pVgprQUrKC1gRy1QLK+FFgpYOgZBxRVwZgMkw0UTMf4mhLlkxCVGjJVNTZZtEjYjaAxxlriJrlvGJhqVAeo2Zcvq2PiRv0AMYz9u00rvt9c+ByzOk5x3z/3uOV/Oee+7j+AwEQqN5Dc4UiQoSlbRY8OAiGZi7VoCQHhFRtiaLWCHVYT4NfSEgXMSsouEeGXJPLY9S4aQfZIxAnnfNSp+wQHJlO3FsAlTTsi/NfeazPS/hqy9/9mz/MpIZOUvZqXRkb7jphy8TOEg0vCu5j1kvCdv3q+vpor9uZNNGoIlR+ApCptDmlkjZQQRHGky5CdG+Wy2TV57qBlWMnovXNhwr+WjvR3dG3d/5VmzjicN6qeLol2oCBrXNPO1UfSQiyfoCh6TvcW7n2yrZR1bb0xnm3Sl4OK2g5TWu67Tzd+MuDH4+x1c/bMOl8br8Mm35YfpKQYtT4oKhwi0X8yO6eNg1sX6qrnN4yer37vx6aE29+ARtNx9nbUPf+D7cqh++trAx2gfO4pz31Ufq79tc3iOrJLiOXXYoyTdfISWzPmCu2lmc39H8ZbR/p/gHvwQrt7a6ct9p3xtffXsfL+TfTZU52vzNOLcaC2cQxZ4DuamgxaFPtBwkcjJkAtkljKCpkrkLU8VP9TrgyEvNPS5zrR03m6fdHXV4uz39bg+1oovRt6B685+uG6++bfTs3ri7R9SDqJ4qdpXFZvA3o/R84ryvzr+Ea0jFrInQO5TlUUifL2Bh5/5a9tLGVOvcdvc7n0Nl3pbcPrnGpxvra0fLl1l73hjiQGmdBUKuWxmMuXCsZxXwI45I1ujhbVKGN13KDHftyfO5o+HT53d1fujB43DxWj+PHcLSJ6EtfGF3oKkXKZfUYNn7ZtZQcoiqDcsQKJGRFBnEtLCBQ1mLJSCU0axkmXKqcqdAfBWR1fD6MQQTvzxApqu5LpAVm6yLFXLKrhklGtsrFJrYc5UaaCh7KU8oXS10F3agllxU0zwfcNGmT/++mZPaeeNq1cO9DguN1zMq/RjjwymMpZpMkNnsrNGkoALkrNYiWR25HShQ2QoiBkjZvCBoydmcygtcO0exISFQLlMgZX6COgNFpgTxFgeEYUExfwnCdMWB4TOErQ0rRLu9q1rHSL/T2HMTkHleF6EWKWc6RcqAvn2FcFISRZjZ6YwmeZpirfGUVd3dyDuHPmNrree4UEIZ/K8YCa1y4Sul8zWxAjrP6LWqchC4HKKAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Suzanne&quot;
+        title=&quot;&quot;
+        src=&quot;/static/bdefe49beffcbd38c401869d54ee3396/fb8a0/jared-nielsen-install-nvidia-cuda-linux-blender-cycles.png&quot;
+        srcset=&quot;/static/bdefe49beffcbd38c401869d54ee3396/1a291/jared-nielsen-install-nvidia-cuda-linux-blender-cycles.png 148w,
+/static/bdefe49beffcbd38c401869d54ee3396/2bc4a/jared-nielsen-install-nvidia-cuda-linux-blender-cycles.png 295w,
+/static/bdefe49beffcbd38c401869d54ee3396/fb8a0/jared-nielsen-install-nvidia-cuda-linux-blender-cycles.png 590w,
+/static/bdefe49beffcbd38c401869d54ee3396/526de/jared-nielsen-install-nvidia-cuda-linux-blender-cycles.png 885w,
+/static/bdefe49beffcbd38c401869d54ee3396/fa2eb/jared-nielsen-install-nvidia-cuda-linux-blender-cycles.png 1180w,
+/static/bdefe49beffcbd38c401869d54ee3396/417af/jared-nielsen-install-nvidia-cuda-linux-blender-cycles.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Installing the NVIDIA Cuda Toolkit on Linux for Blender Cycles rendering is actually easy and straightforward. Unfortunately, the NVIDIA documentation is not so easy or straightforward. I wrote this article primarily as a reference for myself as this is a process I have done before and will definitely do again. I hope you also find it useful.&lt;/p&gt;
 &lt;p&gt;If you have any edits or feedback, please let me know &lt;a href=&quot;https://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Download the NVIDIA CUDA Toolkit&lt;/h2&gt;
 &lt;p&gt;Navigate to the &lt;a href=&quot;https://developer.nvidia.com/cuda-downloads&quot;&gt;NVIDIA CUDA Toolkit download page&lt;/a&gt;&lt;/p&gt;
