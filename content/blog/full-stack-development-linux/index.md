@@ -3,6 +3,9 @@ title: How to Configure Full-Stack Development Environment for Linux
 date: "2019-01-21"
 description: A quick reference for setting up a full-stack development environment on Linux, including instructions for Git, Node.js, MySQL, MongoDB and more.
 ---
+
+![How to Configure Full Stack Development Environment for Linux: Penguins](./jared-nielsen-full-stack-development-linux.png)
+
 My preferred development environment is Linux and my preferred approach to upgrading my distro is a clean install. This means with each upgrade I need to reinstall all of my tools. This article is primarily a reference for myself as this is something I’ve done before and will definitely do again. I hope you also find it useful. If you have any feedback, let me know [@jarednielsen](http://twitter.com/jarednielsen).
 
 ## Git

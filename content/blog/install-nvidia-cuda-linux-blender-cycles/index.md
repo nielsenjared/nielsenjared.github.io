@@ -4,6 +4,9 @@ date: "2019-01-07"
 description: Installing the NVIDIA Cuda Toolkit on Linux for Blender Cycles rendering is straightforward and much easier than the official documentation leads you to believe.
 ---
 
+
+![Suzanne](/jared-nielsen-install-nvidia-cuda-linux-blender-cycles.png)
+
 Installing the NVIDIA Cuda Toolkit on Linux for Blender Cycles rendering is actually easy and straightforward. Unfortunately, the NVIDIA documentation is not so easy or straightforward. I wrote this article primarily as a reference for myself as this is a process I have done before and will definitely do again. I hope you also find it useful.
 
 If you have any edits or feedback, please let me know [@jarednielsen](https://twitter.com/jarednielsen).
