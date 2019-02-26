@@ -2,8 +2,12 @@
 title: Atom & VSCode Key Binding Map & Configurations
 date: "2019-03-04"
 description: Gonna learn this VSCode thing all the kids are talking about so I made a map of key bindings to reference.
+keywords: ["atom", "vscode", "key binding"]
 ---
-Gonna learn this VSCode thing all the kids are talking about so I made a map of key bindings to reference plus some basic config stuff. 
+
+![Atom VSCode Key Binding Map](/jared-nielsen-atom-vscode-key-binding-map.png)
+
+Gonna learn this VSCode thing all the kids are talking about so I made a map of key bindings to reference plus some basic config stuff. I hope you find it useful. It's a work-in-progress, so if you find any errors or omissions, let me know [@jarednielsen](https://twitter.com/jarednielsen) 
 
 ## Frequently Used Keyboard Shortcuts
 
@@ -12,11 +16,11 @@ Gonna learn this VSCode thing all the kids are talking about so I made a map of 
 | Preferences/Settings   | `cmd-,`            | `ctrl-,`              | `cmd-,`        | `ctrl-,`             |
 | Command Palette        | `shift-cmd-p`      | `shift-ctrl-p`        | `shift-cmd-p`  | `shift-ctrl-p`       |
 | Open File (Fuzzy)      | `cmd-p` or `cmd-t` | `ctrl-p` or `ctrl-t`  | `cmd-p`        | `ctrl-p`             |
-| Browse Open Files      | `cmd-b`            | `ctrl-b`              |                |                      |
+| Browse Open Files      | `cmd-b`            | `ctrl-b`              | ?              | ?                    |
 | Markdown Preview       | `ctrl-shift-m`     | `ctrl-shift-m`        | `shift-cmd-v`  | `ctrl-shift-v`       |
 | Toggle Tree View       | `cmd-\ `           | `ctrl-\ `              | `cmd-b`       | `ctrl-b`             |
-| Toggle Developer Tools | `opt-cmd-i`        | `ctrl-alt-i`          |                |                      |
-| Key Binding Resolver   | `cmd-.`            | `ctrl-.`              | `cmd-k cmd-s`  | `ctrl-k ctrl-s`      |  
+| Toggle Developer Tools | `opt-cmd-i`        | `ctrl-alt-i`          | ?              | ?                    |
+| Key Binding Resolver   | `cmd-.`            | `ctrl-.`              | `cmd-k cmd-s`  | `ctrl-k` then `s`    |  
 
 ## Window & File Management
 | Command             | Atom Apple         | Atom Windows/Linux    | VSCode Apple   | VSCode Windows/Linux |
@@ -24,22 +28,22 @@ Gonna learn this VSCode thing all the kids are talking about so I made a map of 
 | New File            | `cmd-n`            | `ctrl-n`              | `cmd-n`        | `ctrl-n`             |
 | New Window          | `shift-cmd-n`      | `ctrl-shift-n`        | `cmd-shift-n`  | `ctrl-shift-n`       |
 | Open                | `cmd-o`            | `ctrl-o`              | `cmd-o`        | `ctrl-o`             |
-| Open Folder         | `cmd-shift-o`      | `ctrl-shift-o`        |                |                      |
+| Open Folder         | `cmd-shift-o`      | `ctrl-shift-o`        | ?              | ?                    |
 | Save                | `cmd-s`            | `ctrl-s`              | `cmd-s`        | `ctrl-s`             |
 | Save As             | `shift-cmd-s`      | `ctrl-shift-s`        | `cmd-shift-s`  | `ctrl-shift-s`       |
-| Save All            | `alt-cmd-s`        |                       | `cmd-opt-s`    | `ctrl-k s`           |
-| Close Tab           | `cmd-w`            | `ctrl-w`              | `cmd-w`        | `ctrl-F4`            |
-| Close Window        | `shift-cmd-w`      | `ctrl-shift-w`        | `cmd-w`        |                      |
+| Save All            | `alt-cmd-s`        |                       | `cmd-opt-s`    | ?                    |
+| Close Tab           | `cmd-w`            | `ctrl-w`              | `cmd-w`        | `ctrl-w`             |
+| Close Window        | `shift-cmd-w`      | `ctrl-shift-w`        | `cmd-w`        | `ctrl-shift-w`       |
 | Split Window        | `cmd-k` then `up/down/left/right`| `ctrl-k` then `up/down/left/right`| `cmd-\ `| `ctrl-\ `|
-| Focus Pane          | `cmd-k cmd-up/down/left/right`| `ctrl-k ctrl-up/down/left/right`| `cmd-k cmd-left/right`| `ctrl-k ctrl-left/right`|
+| Focus Pane          | `cmd-k cmd-up/down/left/right`| `ctrl-k ctrl-up/down/left/right`| `cmd-k cmd-left/right`| `ctrl-k` then `left/right`|
 | Toggle full screen  | `ctrl-cmd-f`       | `F11`                 | `ctrl-cmd-f`   | `F11`                |
-| Reveal Current File in Tree|`cmd-shift-\ `|                      | `cmd-k r`      | `ctrl-k r`           |
+| Reveal Current File in Tree|`cmd-shift-\ `|                      | `cmd-k r`      | `ctrl-k r` @TODO: custom Linux command |
 | Cycle Tabs          | `cmd-Shift-[` & `cmd-Shift-]`| `ctrl-Shift-[` & `ctrl-Shift-]`| `ctrl-shift-m tab`| `ctrl-m tab`|
 
 ## Editing
 | Command               | Atom Apple          | Atom Windows/Linux    | VSCode Apple           | VSCode Windows/Linux    |
 | -------               | -------             | -------               | -------                | -------                 |
-| Duplicate Lines       | `shift-cmd-d`       | `ctrl-shift-d`        | `opt-shift-up/down`    | `shift-alt-up/down`     |
+| Duplicate Lines       | `shift-cmd-d`       | `ctrl-shift-d`        | `opt-shift-up/down`    | `shift-alt-up/down` @TODO: custom Linux command     |
 | Delete Line           | `ctrl-shift-k`      | `ctrl-shift-k`        | `cmd-shift-k`          | `ctrl-shift-k`          |
 | Move Line Up          | `ctrl-cmd-up`       | `ctrl-up`             | `opt-up`               | `alt-up`                |
 | Move Line Down        | `ctrl-cmd-down`     | `ctrl-down`           | `opt-down`             | `alt-down`              |
@@ -54,11 +58,12 @@ Gonna learn this VSCode thing all the kids are talking about so I made a map of 
 | Column Selection      | `ctrl-shift-up/down`| `ctrl-alt-up/down`    | `shift-opt-cmd-up/down`| `shift-alt-up/down` OR `ctrl-shift-up/down`|
 | Select Same Words     | `cmd-d`             | `ctrl-d`              | `cmd-F2`               | `ctrl-F2`               |
 | Undo Selection        | `cmd-u`             | `ctrl-u`              | `cmd-u`                | `ctrl-u`                |
-| Select All The Same Words At Once | `cmd-ctrl-g`| `alt-F3`          |                        |                         |
+| Select All The Same Words At Once | `cmd-ctrl-g`| `alt-F3`          | ?                      | ?                       |
 | Show Symbols Palette  | `cmd-r`             | `ctrl-r`              | `cmd-t`                | `ctrl-t`                |
-| Show auto-completions | `ctrl-space`        | `ctrl-space`          |                        |                         |
+| Show auto-completions | `ctrl-space`        | `ctrl-space`          | ?                      | ?                       |
 | Fold/Unfold sections of code | `option-cmd-[` & `option-cmd-]`| `ctrl-shift-[` & `ctrl-shift-]`| `option-cmd-[` & `option-cmd-]`| `ctrl-shift-[` & `ctrl-shift-]`|
-| Open Link             | `ctrl-shift-o`      |                       |                        |                         |
+| Open Link             | `ctrl-shift-o`      | ?                     | ?                      | ?                       |
+
 
 ## Opening Files from the Command Line
 
