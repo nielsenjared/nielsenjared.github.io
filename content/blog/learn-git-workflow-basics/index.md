@@ -1,6 +1,6 @@
 ---
 title: Learn Git Workflow Basics
-date: "2019-01-28"
+date: "2019-02-04"
 description: Whether you're learning full stack web development, machine learning or something else entirely, you're going to need to learn Git workflow basics.
 keywords: ["learn git", "git", "git workflow", "git basics"]
 ---

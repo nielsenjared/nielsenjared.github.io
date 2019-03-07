@@ -1,13 +1,13 @@
 ---
 title: Atom & VSCode Key Binding Map & Configurations
-date: "2019-03-04"
+date: "2019-01-28"
 description: Gonna learn this VSCode thing all the kids are talking about so I made a map of key bindings to reference.
 keywords: ["atom", "vscode", "key binding"]
 ---
 
 ![Atom VSCode Key Binding Map](/jared-nielsen-atom-vscode-key-binding-map.png)
 
-Gonna learn this VSCode thing all the kids are talking about so I made a map of key bindings to reference plus some basic config stuff. I hope you find it useful. It's a work-in-progress, so if you find any errors or omissions, let me know [@jarednielsen](https://twitter.com/jarednielsen) 
+Gonna learn this VSCode thing all the kids are talking about so I made a map of key bindings to reference plus some basic config stuff. I hope you find it useful. It's a work-in-progress, so if you find any errors or omissions, let me know [@jarednielsen](https://twitter.com/jarednielsen)
 
 ## Frequently Used Keyboard Shortcuts
 

@@ -1,6 +1,6 @@
 ---
 title: Learn Git Branch Workflow
-date: "2019-02-11"
+date: "2019-02-18"
 description: The Git branch workflow allows developers to create branches of a project to test new features and fix bugs without modifying code in production. In this tutorial, you will learn Git branch workflow basics and best practices.
 keywords: ["learn git", "git", "git workflow", "git branch"]
 ---

@@ -1,6 +1,6 @@
 ---
 title: What is Object-Relational Mapping? How to Roll-Your-Own JavaScript ORM
-date: "2019-02-18"
+date: "2018-12-31"
 description: This tutorial will walk you through a simple implementation of object-relational mapping to help you better understand how a full-featured JavaScript ORM, such as Sequelize, works under-the-hood.
 ---
 ![Object-Relational Mapping](./jared-nielsen-object-relational-mapping-javascript-orm.png)

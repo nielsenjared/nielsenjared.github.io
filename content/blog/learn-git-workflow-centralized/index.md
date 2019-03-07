@@ -1,6 +1,6 @@
 ---
 title: Learn Git Workflow Centralized Collaboration
-date: "2019-02-04"
+date: "2019-02-11"
 description: In order to learn Git workflow, you need to work with a team. This tutorial introduces the centralized model for collaboration and is designed for two to work through together.
 keywords: ["learn git", "git", "git workflow", "git collaboration"]
 ---
