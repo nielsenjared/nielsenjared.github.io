@@ -2,6 +2,7 @@
 title: Advice for Coding Bootcamp Students
 date: "2018-12-17"
 description: Considering a coding bootcamp? Already enrolled? Here’s my advice for coding bootcamp students to ensure a successful career transition.
+keywords: ["coding", "coding bootcamp"]
 ---
 ![Advice for Coding Bootcamp Students](./jared-nielsen-advice-coding-bootcamp-students-success-push-yourself.png)
 
