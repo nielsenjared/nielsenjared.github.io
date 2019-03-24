@@ -18,7 +18,7 @@ Arrays in (most) programming languages cannot store different data types.
 
 In JavaScript, (almost) everything is an object, including arrays. The JavaScript array object contains property/value pairs where the property name corresponds with the array index. You guessed it. Because it’s an object, the property name is a string and not an integer. Because they are objects, they are not as efficient as arrays in other languages.
 
-Can store different data types but best practice is to not
+Can store different data types but best practice is to not.
 @TODO: Why?
 
 * Arrays in JavaScript
@@ -36,14 +36,14 @@ const empty = [];
 ```
 Or,
 ```js
-const
+const full = ["this", "that", "the other"];
 ```
 
 
 
 ### Array Constructor
 
-There's also the Array constructor, but, as we will see here, it can be problematic:
+There's also the Array constructor, but, as we will see below, it can be problematic:
 ```js
 const nums = new Array(1,2,3);
 
@@ -52,7 +52,8 @@ console.log(nums[0]); //returns 1
 console.log(nums.length); // returns 3
 ```
 
-But if we run the following:
+We clearly and obviously created an array with three elements. But if we run the following:
+
 ```js
 const numnums = new Array(4);
 
@@ -67,18 +68,106 @@ Maddening! What's inside `numnums`?
 console.log(numnums);
 ```
 
-It will return:
+... returns:
 ```
 [ <4 empty items> ]
 ```
 
-@TODO: explain ^
+Passing only one numerical argument to the Array constructor will return an array with a corresponding number of empty elements, whereas passing multiple integers will create an array containing each argument.
+
 
 ### Array.of()
 
-Array.of()
-Introduced in ES6 to address the issue of passing types to the Array constructor
-https://stackoverflow.com/questions/31686360/what-is-the-use-case-for-javascripts-es6-array-of
+Fortunately for us, `Array.of()` was introduced in ES6 to bring some sanity to array instantiation and address the issue of passing types to the Array constructor.
+
+```js
+const numbers = Array.of(4);
+
+console.log(numbers); // returns [4]
+```
+
+
+## Shallow & Deep Copies
+
+
+
+```js
+const nums = [1, 2, 3];
+
+const numnums = nums;
+
+nums[0] = "The shallow end...";
+
+console.log(numnums[0]); //returns "The shallow end..."
+```
+
+Arr! Not what we want. Assigning the value of a new array an existing array creates a _shallow_ copy. The new array is only a reference to the original. It gets worse...
+
+```js
+const nums = [1, 2, 3];
+
+const numnums = nums;
+
+numnums[0] = "... of the gene pool.";
+
+console.log(nums[0]); //returns "... of the gene pool."
+```
+
+@TODO: Why?
+
+To avoid this situation, we need to make a _deep_ copy. We have a few options available to us.
+
+### for
+@TODO
+```js
+for (var i = 0; i < nums.length; ++i) {
+  numnums[i] = nums[i];
+}
+```
+
+### slice()
+
+The old school approach is using the `slice()` method to create a deep copy of an array.
+
+```js
+const nums = [1, 2, 3];
+
+const numnums = nums.slice();
+
+nums[0] = "The shallow end...";
+
+console.log(numnums[0]); //returns 1
+```
+
+### Spread
+
+The ES6y approach is to use the spread operator:
+
+```js
+const nums = [1, 2, 3];
+
+const numnums = [...nums];
+
+nums[0] = "The shallow end...";
+
+console.log(numnums[0]); //returns 1
+```
+
+
+### from()
+
+```js
+const nums = [1, 2, 3];
+
+const numnums = Array.from(nums);
+
+nums[0] = "The shallow end...";
+
+console.log(numnums[0]); //returns 1
+```
+
+
+
 
 
 ## Array Methods
@@ -103,3 +192,12 @@ I’m going to assume you are familiar with push and pop, but maybe not unshift 
 
 
 ## Array Interview Questions
+
+
+
+
+## (Re)Sources
+* [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+* [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+* [Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+*
