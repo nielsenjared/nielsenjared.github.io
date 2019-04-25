@@ -4,27 +4,25 @@ title: Learn JavaScript Data Structures: Arrays
 
 ![](./image.png)
 
-##
+@TODO introduction
 
-* What is an array?
+An array is the simplest data structure. It is a sequential collection of elements each identified by index. In JavaScript, (almost) everything is an object, including arrays. The JavaScript Array object contains property/value pairs where the property name corresponds with the array index. You guessed it. Because it’s an object, the property name is a string and not an integer. Because they are objects, they are not as efficient as arrays in other languages.
 
-The simplest data structure.
+Arrays in [statically typed programming languages](https://en.wikipedia.org/wiki/Type_system) cannot store different data types. Because JavaScript is a dynamically typed language and arrays are objects, we _can_ store different data types in them, but that doesn't mean we _should_.
 
-A sequential collection of elements each identified by index.
+🥇 Best practice is to limit our arrays to one data type. Why? Arrays are classically defined as [_a systematic arrangement of similar objects](https://en.wikipedia.org/wiki/Array) and if we declare an array containing multiple data types, there is no obvious structure, which may be fine if we are very careful about not mutating the array as it is used throughout an application, but what happens if we aren't? It should be immediately apparent in this example:
 
-* What is the difference between arrays in JavaScript and other languages?
+```js
+var bad = [1, "two", {}, true];
 
-Arrays in (most) programming languages cannot store different data types. Can store different data types but best practice is to not.
-@TODO: Why?
+var best = {
+  number: 1,
+  string: "two",
+  object: {},
+  bool: true
+}
+```
 
-In JavaScript, (almost) everything is an object, including arrays. The JavaScript Array object contains property/value pairs where the property name corresponds with the array index. You guessed it. Because it’s an object, the property name is a string and not an integer. Because they are objects, they are not as efficient as arrays in other languages.
-
-
-
-* Arrays in JavaScript
-Basics
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Description
 
 ## Creating Arrays
 
@@ -194,7 +192,7 @@ console.log(numnums[0]); //returns 1
 ```
 
 
-## Array Methods
+## Array Mutator Methods
 I’m going to assume you are familiar with push and pop, but maybe not unshift and shift, which add and remove elements at the beginning of an array, respectively.
 
 ### unshift
@@ -211,6 +209,7 @@ console.log(nums); // returns [4, 5, 6, 1, 2, 3]
 
 ### shift
 
+As `unshift()` is to `push()`, `shift()` is to `pop()`. This method will _shift_ the array one index.
 
 ```js
 nums.shift();
@@ -219,23 +218,26 @@ console.log(nums); // returns [5, 6, 1, 2, 3]
 ```
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 ## Array Interview Questions
 
+Find the missing number in a given integer array of 1 to 100
+Find the duplicate number on a given integer array
+Find the largest and smallest number in an unsorted integer array
+Find all pairs of an integer array whose sum is equal to a given number
+Find duplicate numbers in an array if it contains multiple duplicates
+How are duplicates removed from a given array in Java
+How is an integer array sorted in place using the quicksort algorithm
+Remove duplicates from an array in place
+How do you reverse an array in place in Java
+How are duplicates removed from an array without using any library
+
+<!-- Find the second minimum element of an array -->
+First non-repeating integers in an array
+Merge two sorted arrays
+Rearrange positive and negative values in an array
 
 
 
