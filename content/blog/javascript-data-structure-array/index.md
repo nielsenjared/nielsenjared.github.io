@@ -10,7 +10,7 @@ An array is the simplest data structure. It is a sequential collection of elemen
 
 Arrays in [statically typed programming languages](https://en.wikipedia.org/wiki/Type_system) cannot store different data types. Because JavaScript is a dynamically typed language and arrays are objects, we _can_ store different data types in them, but that doesn't mean we _should_.
 
-🥇 Best practice is to limit our arrays to one data type. Why? Arrays are classically defined as [_a systematic arrangement of similar objects](https://en.wikipedia.org/wiki/Array) and if we declare an array containing multiple data types, there is no obvious structure, which may be fine if we are very careful about not mutating the array as it is used throughout an application, but what happens if we aren't? It should be immediately apparent in this example:
+🥇 Best practice is to limit our arrays to one data type. Why? Arrays are classically defined as [a systematic arrangement of similar objects](https://en.wikipedia.org/wiki/Array) and if we declare an array containing multiple data types, there is no obvious structure, which may be fine if we are very careful about not mutating the array as it is used throughout an application, but what happens if we aren't? It should be immediately apparent in this example:
 
 ```js
 var bad = [1, "two", {}, true];
@@ -85,7 +85,7 @@ const numnums = new Array("4");
 console.log(numnums); //returns [ '4' ]
 ```
 
-If we were to use the Array constructor without type-checking, there's a possibility that we would create an array containing a one string, rather than an array of empty elements.
+If we were to use the Array constructor without type-checking, there's a possibility that we would create an array containing a string, rather than an array of empty elements.
 
 ### Array.of()
 
@@ -209,7 +209,7 @@ console.log(nums); // returns [4, 5, 6, 1, 2, 3]
 
 ### shift
 
-As `unshift()` is to `push()`, `shift()` is to `pop()`. This method will _shift_ the array one index.
+As `unshift()` is to `push()`, `shift()` is to `pop()`. This method will _shift_ the array one index by removing the first item.
 
 ```js
 nums.shift();
