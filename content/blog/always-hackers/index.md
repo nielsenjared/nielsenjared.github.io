@@ -129,3 +129,23 @@ We can see the massive disconnect from raw nature to our interconnected consumpt
 Whether we consider ourselves artists, creatives or developers, we have a responsibility to consider the ecological implications of our work. What are the resources that our product will draw upon? Furthermore, does the product itself further the divide between subject and object, Nature and Society? Does it add yet another layer of abstraction to the technological stack? Or does it enlighten and reveal to us a truth about our situatedness in an environment.
 
 ## The STEAM Rainbow
+
+I graduated UC Irvine in 2009, at the bottom of the Great Recession (https://en.wikipedia.org/wiki/Great_Recession). It was a bad time to have a terminal humanities degree. I was lucky to walk into a job at NHM whereas many of my peers struggled for years to make ends meet.
+
+During the financial crisis, two complementary trends gained steam (pun intended): the STEM pipeline and the Maker movement.
+
+Obama inherited the mess and pushed STEM curriculum as a means for economic recovery.
+
+“Learn to code” was the rallying cry.
+
+Hacker- and Maker-spaces sprung up across the country. { non-linear site of public education. It is an assemblage of ideas, under constant reevaluation }. Museums and libraries clamored to get on board, too, and carved out space for labs. { non-linear site of public education. It is an assemblage of ideas, under constant reevaluation }
+
+Shortly after starting at the Natural History Museum, I convinced my brother to not only move to Los Angeles, but to give Linux a try. As a web developer, Linux greatly improved his workflow. We began to collaborate on projects and developed The Hello World Program (http://www.thehelloworldprogram.com/), an educational and entertaining webseries teaching computer science basics.
+
+What was missing from all of this rhetoric was joy and humor: thus was born The Hello World Program.
+
+My brother and I who both worked with technology, were wary of this rhetoric.
+
+The STEM pipeline was greasing the wheels of capital and the lubricant was American students.
+
+We initially wanted to produce the series entirely with free, open source software. But after investigating all of the available NLEs and DAWs we realized that our fidelity to FOSS would leave us devoting more time to troubleshooting than to production. That said, we produced all of our media entirely on Linux-based machines. All of the motion graphics were produced using a combination of Blender, Synfig, Krita, GIMP and Inkscape. Our audio was processed with Audacity and Ardour. Our video was edited with Lightworks and our music composed in Bitwig.
