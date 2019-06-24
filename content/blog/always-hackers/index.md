@@ -150,4 +150,4 @@ We initially wanted to produce the series entirely with free, open source softwa
 
 ## Terminal Humanities Degree
 
-I used to consider my MFA a liability. 
+I used to consider my MFA a liability. While the Studio Arts graduate program at UC Irvine _is_ terrible, the rest of the university is world-class. If the arts faculty bothered to show up for class, they would simply "facilitate a discussion" and leave as quickly as possible. I took a page from their book and began skipping the required classes and instead auditing lectures across the bridge.
