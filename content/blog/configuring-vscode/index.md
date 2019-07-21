@@ -8,7 +8,7 @@ My first code editor was TextEdit. Then I learned about this thing called Vim an
 
 
 
-I love to embed emojis in my Markdown, so this was the first, and most important, package I installed: 
+I love to embed emojis in my Markdown, so this was the first, and perhaps most important, package I installed: 
 
 [emojisense](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)
 
@@ -21,4 +21,13 @@ I write a lot of Markdown files. Stock VSCode accepts suggestions when you press
 
 Configure Intellisense 
 https://code.visualstudio.com/docs/editor/intellisense
+
+
+## Open in Browser
+
+You can find it here
+https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser
+
+Or you can copy/paste this into Quick Open
+ext install techer.open-in-browser
 
