@@ -37,13 +37,13 @@ Gonna learn this VSCode thing all the kids are talking about so I made a map of 
 | Split Window        | `cmd-k` then `up/down/left/right`| `ctrl-k` then `up/down/left/right`| `cmd-\ `| `ctrl-\ `|
 | Focus Pane          | `cmd-k cmd-up/down/left/right`| `ctrl-k ctrl-up/down/left/right`| `cmd-k cmd-left/right`| `ctrl-k` then `left/right`|
 | Toggle full screen  | `ctrl-cmd-f`       | `F11`                 | `ctrl-cmd-f`   | `F11`                |
-| Reveal Current File in Tree|`cmd-shift-\ `|                      | `cmd-k r`      | `ctrl-k r` @TODO: custom Linux command |
+| Reveal Current File in Tree|`cmd-shift-\ `|                      | `cmd-k r`      | `ctrl-k r`           |
 | Cycle Tabs          | `cmd-Shift-[` & `cmd-Shift-]`| `ctrl-Shift-[` & `ctrl-Shift-]`| `ctrl-shift-m tab`| `ctrl-m tab`|
 
 ## Editing
 | Command               | Atom Apple          | Atom Windows/Linux    | VSCode Apple           | VSCode Windows/Linux    |
 | -------               | -------             | -------               | -------                | -------                 |
-| Duplicate Lines       | `shift-cmd-d`       | `ctrl-shift-d`        | `opt-shift-up/down`    | `shift-alt-up/down` @TODO: custom Linux command     |
+| Duplicate Lines       | `shift-cmd-d`       | `ctrl-shift-d`        | `opt-shift-up/down`    | `ctrl+c` (empty selection)|
 | Delete Line           | `ctrl-shift-k`      | `ctrl-shift-k`        | `cmd-shift-k`          | `ctrl-shift-k`          |
 | Move Line Up          | `ctrl-cmd-up`       | `ctrl-up`             | `opt-up`               | `alt-up`                |
 | Move Line Down        | `ctrl-cmd-down`     | `ctrl-down`           | `opt-down`             | `alt-down`              |
