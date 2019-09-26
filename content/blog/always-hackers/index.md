@@ -83,24 +83,23 @@ Though FOSS may have its limits, it’s so much more interesting to be engaged i
 >“The future emerges directly from the objects we design.”
 Tim Morton, “Being Ecological”
 
-After graduate school, I took a job as an Exhibit Technician at the Natural History Museum in Los Angeles. One of my many duties was to update and repair ailing exhibits. Many of our installations were powered by PureData, which is open source and cross-platform, so when and where possible I would revive the lagging Windows PC with a minty fresh installation of Linux. Many of our mechanical installations were built on PICChips so I swapped out the dusty microcontrollers with new Arduinos, writing and troubleshooting the new scripts in crawl spaces and back rooms with a Linux-powered laptop. Our exhibits were instructing the public on the preservation of the natural world while behind the scenes my team and I were quietly working to preserve the technical infrastructure that enabled their experience. My biggest project at the museum was overseeing the installation of a scale-model of Downtown Los Angeles. It was a delicate operation and to ease the minds of vested interests, I created an animation in Blender explaining the procedure. It was a proud moment both for me and for FOSS.
+After graduate school, I took a job as an Exhibit Technician at the [Natural History Museum in Los Angeles](https://nhm.org/). One of my many duties was to update and repair ailing exhibits. Many of our installations were powered by [PureData](https://puredata.info/), which is open source and cross-platform, so when and where possible I would revive the lagging Windows PC with a minty fresh installation of Linux. Many of our mechanical installations were built on PICChips so I swapped out the dusty microcontrollers with new Arduinos, writing and troubleshooting the new scripts in crawl spaces and back rooms with a Linux-powered laptop. Our exhibits were instructing the public on the preservation of the natural world while behind the scenes my team and I were quietly working to preserve the technical infrastructure that enabled their experience. My biggest project at the museum was overseeing the installation of a [scale-model of downtown Los Angeles](https://nhm.org/experience-nhm/exhibitions-natural-history-museum/becoming-los-angeles). It was a delicate operation and to ease the minds of vested interests, I created an animation in Blender explaining the procedure. It was a proud moment both for me and for FOSS.
 
 { insert Blender build https://www.youtube.com/watch?v=mlsYzXhz7mg }
 
 Open source software (and hardware) are steps towards "sustainability" for several reasons:
 
-* **economical**: for a cash-strapped institution like the Natural History Museum, not spending on proprietary tools is a small step to staying out of the red. Furthermore, a number of the systems installed in exhibits were rendered null when the company behind them went belly up. No documentation. No access. No choice but to start over, which is costly, especially at scale.
+1. Economical: for a cash-strapped institution like the Natural History Museum, not spending on proprietary tools is a small step to staying out of the red. Furthermore, a number of the systems installed in exhibits were rendered null when the company behind them went belly up. No documentation. No access. No choice but to start over, which is costly, especially at scale.
 
-* **environmental**: if you can open it and repair it, you will keep it (out of the landfill) longer
+2. Environmental: if you can open it and repair it, you will keep it (out of the landfill) longer.
 
-* **political**: being (mostly) free and accessible to anyone with a computer (and an internet connection), it breaks the digital divide and circumnavigates the issue of software/intellectual property piracy. Additionally, it models new forms of community through bottom-up emergence and active participation from its users
+3. Political: being (mostly) free and accessible to anyone with a computer (and an internet connection), it breaks the digital divide and circumnavigates the issue of software/intellectual property piracy. Additionally, it models new forms of community through bottom-up emergence and active participation from its users.
 
-But what I’m most interested in is a _post-sustainable_ future.
+But what I’m most interested in is a _post-sustainable_ future. It's more than a matter of simply 'greening' our media. We need a _rethinking_ of media. Our drive to build the future is destroying it.
 
-> “All that language about efficiency and sustainability is about competing for scarce highly toxic resources”.
-Tim Morton, Being Ecological
 
-It's more than a matter of simply 'greening' our media. We need a _rethinking_ of media. Our drive to build the future is destroying it.
+> “All that language about efficiency and sustainability is about competing for scarce highly toxic resources”. 
+> Tim Morton, _Being Ecological_
 
 @TODO Taleb quote
 
@@ -108,25 +107,24 @@ When you work with your hands, even if the materials are microcontrollers and wi
 
 If you don’t believe me, take up a hobby.
 
-Every action is ecological. Every developer intuitively knows this even if we refuse to entertain it. We work against the limits of our hardware, but it is also our hardware that allows us to do what we do. How much RAM do I need? Do we render this client-side or server? The data we collect must be stored somewhere. There is no ‘cloud’. The servers are on the ground, maybe even undersea. More like a ‘fog’.
+Every action is ecological. Every developer intuitively knows this even if we refuse to entertain it. We work against the limits of our hardware, but it is also our hardware that allows us to do what we do. How much RAM do I need? Do we render this client-side or server? The data we collect must be stored somewhere. There is no ‘cloud’. The servers are on the ground, maybe even undersea. More like a ‘fog’. I previously discussed my Linux rig as an assemblage of components. We can extend that thinking one step further. Understanding that my computer is composed of objects that are manufactured in parts around the globe, from materials that were drawn from the earth, I cannot call this computer _mine_ without mining. The materials that compose it were extracted from the ground by individuals in far off places and assembled by individuals in other far off places. How do we get from raw materials to computers in our pockets? 
 
-I previously discussed my Linux rig as an assemblage of components. We can extend that thinking one step further. Understanding that my computer is composed of objects that are manufactured in parts around the globe, from materials that were drawn from the earth. I cannot call this computer mine without mining. The materials that compose it were extracted from the ground by individuals in far off places. A YouTube video streams from a server powered by the burning of fossil fuels, in the worst case scenario, and hydro or methane in the best. That server is most likely one of many in a climate controlled farm. Building my own computer(s) led me to consider the ecological implications of our technological infrastructure. Mountains of e-waste.
+* nature
+* laws of physics
+* lumped circuit abstraction
+* digital abstraction
+* logic gate abstraction
+* memory abstraction
+* finite-state machine abstraction
+* microprocessor abstraction
+* assembly language abstraction
+* programming language abstraction
+* cat videos
 
-Nature
-laws of physics
-lumped circuit abstraction
-digital abstraction
-logic gate abstraction
-memory abstraction
-finite-state machine abstraction
-microprocessor abstraction
-assembly language abstraction
-programming language abstraction
-cat videos
-
-We can see the massive disconnect from raw nature to our interconnected consumption. Very few of us understand, let alone are aware, of the layers of abstraction between the means and the end.
+We can see the massive disconnect from nature to our interconnected consumption. Very few of us understand, let alone are aware, of the layers of abstraction between the means and the end. 
 
 Whether we consider ourselves artists, creatives or developers, we have a responsibility to consider the ecological implications of our work. What are the resources that our product will draw upon? Furthermore, does the product itself further the divide between subject and object, Nature and Society? Does it add yet another layer of abstraction to the technological stack? Or does it enlighten and reveal to us a truth about our situatedness in an environment.
+
 
 ## The STEAM Rainbow
 
@@ -136,10 +134,13 @@ I graduated UC Irvine in 2009, at the bottom of [The Great Recession](https://en
 
 >The maker culture is a contemporary culture or subculture representing a technology-based extension of DIY culture[citation needed] that intersects with hacker culture (which is less concerned with physical objects as it focuses on software) and revels in the creation of new devices as well as tinkering with existing ones. The maker culture in general supports open-source hardware. Typical interests enjoyed by the maker culture include engineering-oriented pursuits such as electronics, robotics, 3-D printing, and the use of Computer Numeric Control tools, as well as more traditional activities such as metalworking, woodworking, and, mainly, its predecessor, the traditional arts and crafts. The subculture stresses a cut-and-paste approach to standardized hobbyist technologies, and encourages cookbook re-use of designs published on websites and maker-oriented publications.[1][2] There is a strong focus on using and learning practical skills and applying them to reference designs. (https://en.wikipedia.org/wiki/Maker_culture)
 
-Obama inherited the mess and pushed STEM curriculum as a means for economic recovery. “Learn to code” was the rallying cry. Hacker- and Maker-spaces sprung up across the country. { non-linear site of public education. It is an assemblage of ideas, under constant reevaluation }. Museums and libraries clamored to get on board, too, and carved out space for labs. { non-linear site of public education. It is an assemblage of ideas, under constant reevaluation }
+Obama inherited an economic mess and pushed STEM curriculum as a means for recovery. “Learn to code” was the rallying cry. Hacker- and Maker-spaces sprung up across the country. { non-linear site of public education. It is an assemblage of ideas, under constant reevaluation }. Museums and libraries clamored to get on board, too, and carved out space for labs. { non-linear site of public education. It is an assemblage of ideas, under constant reevaluation }
 
-Shortly after starting at the Natural History Museum, I convinced my brother to not only move to Los Angeles, but to give Linux a try. As a web developer, Linux greatly improved his workflow.
+@TODO what is the STEAM rainbow?
 
+
+
+Shortly after starting at the Natural History Museum, I convinced my brother to not only move to Los Angeles, but to give Linux a try. As a web developer, Linux greatly improved his workflow and as a human being, Los Angeles greatly improved his quality of life. 
 
 My brother and I who both worked with technology, were wary of this rhetoric.
 The STEM pipeline was greasing the wheels of capital and the lubricant was American students.
@@ -148,6 +149,11 @@ We began to collaborate on projects and developed The Hello World Program (http:
 
 We initially wanted to produce the series entirely with free, open source software. But after investigating all of the available NLEs and DAWs we realized that our fidelity to FOSS would leave us devoting more time to troubleshooting than to production. That said, we produced all of our media entirely on Linux-based machines. All of the motion graphics were produced using a combination of Blender, Synfig, Krita, GIMP and Inkscape. Our audio was processed with Audacity and Ardour. Our video was edited with Lightworks and our music composed in Bitwig.
 
+
+
 ## Terminal Humanities Degree
+
+> The challenge in modern life and education still remains to reintegrate poetry and physics, art and chemistry, music and biology, dance and sociology, and every other possible combination of aesthetic and analytical knowledge, to foster people who feel that they want to know and know that they want to feel.
+> Robert and Michele Root-Bernstein, _Sparks of Genius_
 
 I used to consider my MFA a liability. While the Studio Arts graduate program at UC Irvine _is_ terrible, the rest of the university is world-class. If the arts faculty bothered to show up for class, they would simply "facilitate a discussion" and leave as quickly as possible. I took a page from their book and began skipping the required classes and instead auditing lectures across the bridge.
