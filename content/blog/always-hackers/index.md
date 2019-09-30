@@ -169,6 +169,10 @@ Computationalism conceives of language (and mind) as structured according to fin
 
 ## The Role of Pleasure in Programming
 
+“Something in our human genes is deeply moved by the fuzziness and ambiguity of language; then why fight it?” 
+Taleb, “Fooled By Randomness” pg. 75
+
+
 Time flies like an arrow; 
 fruit flies like a banana.
 
