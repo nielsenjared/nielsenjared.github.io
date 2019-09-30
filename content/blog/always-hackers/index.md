@@ -128,26 +128,23 @@ Whether we consider ourselves artists, creatives or developers, we have a respon
 
 ## The STEAM Rainbow
 
-I graduated UC Irvine in 2009, at the bottom of [The Great Recession](https://en.wikipedia.org/wiki/Great_Recession). It was a bad time to have a terminal humanities degree. I was lucky to walk into a job at NHM whereas many of my peers struggled for years to make ends meet. During the financial crisis, two complementary trends gained steam (pun intended): the STEM pipeline and the Maker movement.
+I graduated UC Irvine in 2009, at the bottom of [The Great Recession](https://en.wikipedia.org/wiki/Great_Recession). It was a bad time to have a terminal humanities degree. I was lucky to walk into a job at the Natural History Museum whereas many of my peers struggled for years to make ends meet. Shortly after starting at the NHM, I convinced my brother to not only move to Los Angeles, but to give Linux a try. As a web developer, Linux greatly improved his workflow and as a human being, Los Angeles greatly improved his quality of life. 
+
+During the financial crisis, two complementary trends gained steam (pun intended): the STEM pipeline and the Maker movement.
 
 >The STEM pipeline is a term used to describe the educational pathway for students in the STEM fields, (science, technology, engineering, and mathematics). The start and end of this STEM pipeline are disputed, but it is often considered to begin in early education and extend into graduation or an adult career in STEM. (Wikipedia https://en.wikipedia.org/wiki/STEM_pipeline)
 
 >The maker culture is a contemporary culture or subculture representing a technology-based extension of DIY culture[citation needed] that intersects with hacker culture (which is less concerned with physical objects as it focuses on software) and revels in the creation of new devices as well as tinkering with existing ones. The maker culture in general supports open-source hardware. Typical interests enjoyed by the maker culture include engineering-oriented pursuits such as electronics, robotics, 3-D printing, and the use of Computer Numeric Control tools, as well as more traditional activities such as metalworking, woodworking, and, mainly, its predecessor, the traditional arts and crafts. The subculture stresses a cut-and-paste approach to standardized hobbyist technologies, and encourages cookbook re-use of designs published on websites and maker-oriented publications.[1][2] There is a strong focus on using and learning practical skills and applying them to reference designs. (https://en.wikipedia.org/wiki/Maker_culture)
 
-Obama inherited an economic mess and pushed STEM curriculum as a means for recovery. “Learn to code” was the rallying cry. Hacker- and Maker-spaces sprung up across the country. { non-linear site of public education. It is an assemblage of ideas, under constant reevaluation }. Museums and libraries clamored to get on board, too, and carved out space for labs. { non-linear site of public education. It is an assemblage of ideas, under constant reevaluation }
+Obama inherited an economic mess and pushed STEM curriculum as a means for recovery. “Learn to code” was the rallying cry. Hacker- and Maker-spaces sprung up across the country. Museums and libraries clamored to get on board, too, and carved out space for labs. My brother and I who both worked with technology, were wary of this rhetoric. The STEM pipeline was greasing the wheels of capital and the lubricant was the American mind. 
 
 @TODO what is the STEAM rainbow?
 
+We began to collaborate on projects and developed [The Hello World Program](http://www.thehelloworldprogram.com/), an educational and entertaining webseries teaching computer science basics. We initially wanted to produce the series entirely with free, open source software. But after investigating all of the available NLEs and DAWs we realized that our fidelity to FOSS would leave us devoting more time to troubleshooting than to production. That said, we produced all of our media entirely on Linux-based machines. All of the motion graphics were produced using a combination of Blender, Synfig, Krita, GIMP and Inkscape. Our audio was processed with Audacity and Ardour. Our video was edited with Lightworks and our music composed in Bitwig.
 
 
-Shortly after starting at the Natural History Museum, I convinced my brother to not only move to Los Angeles, but to give Linux a try. As a web developer, Linux greatly improved his workflow and as a human being, Los Angeles greatly improved his quality of life. 
+The importance of humanities in the STEM era: natural language. 
 
-My brother and I who both worked with technology, were wary of this rhetoric.
-The STEM pipeline was greasing the wheels of capital and the lubricant was American students.
-What was missing from all of this rhetoric was joy and humor.
-We began to collaborate on projects and developed The Hello World Program (http://www.thehelloworldprogram.com/), an educational and entertaining webseries teaching computer science basics.
-
-We initially wanted to produce the series entirely with free, open source software. But after investigating all of the available NLEs and DAWs we realized that our fidelity to FOSS would leave us devoting more time to troubleshooting than to production. That said, we produced all of our media entirely on Linux-based machines. All of the motion graphics were produced using a combination of Blender, Synfig, Krita, GIMP and Inkscape. Our audio was processed with Audacity and Ardour. Our video was edited with Lightworks and our music composed in Bitwig.
 
 
 
@@ -157,3 +154,37 @@ We initially wanted to produce the series entirely with free, open source softwa
 > Robert and Michele Root-Bernstein, _Sparks of Genius_
 
 I used to consider my MFA a liability. While the Studio Arts graduate program at UC Irvine _is_ terrible, the rest of the university is world-class. If the arts faculty bothered to show up for class, they would simply "facilitate a discussion" and leave as quickly as possible. I took a page from their book and began skipping the required classes and instead auditing lectures across the bridge.
+
+The problem with the humanities is the human. How about object studies? How about material, energy, information? Anything but the human. The focus should not be on humans, but on human relationships with objects, with environments. In this manner, technology, science, easily mesh with art and literature.
+
+
+As our world is increasingly structured around formal languages, translation becomes a very valuable skill. 
+
+As our world becomes more and more dependent on digital technologies and driven by data analysis, the humantiies becomes more and mroe important as a means to think outside the rigid constraints of formal languages and binaries. 
+
+Liberal arts are an escape from the trap of computational thinking. 
+
+Computationalism conceives of language (and mind) as structured according to finite, rational logic. It rejects and attempts to eliminate the infinite capabilities of language.
+
+
+## The Role of Pleasure in Programming
+
+Time flies like an arrow; 
+fruit flies like a banana.
+
+t = [ i**2 for i in range(10)]
+
+“Code flounders on ambiguity, while literature thrives on it”. [Auerbach 77]
+
+https://en.wikipedia.org/wiki/Pun
+https://en.wikipedia.org/wiki/Idiom
+https://en.wikipedia.org/wiki/English-language_idioms
+https://en.wikipedia.org/wiki/Programming_idiom
+
+
+
+To paraphrase Papert, what is the role of pleasure in programming? Punning, ‘condensation’, wit. 
+
+Writing, “identifying”, elegant code solutions “gives the situation a quality of punning, of ‘condensation’ at least somewhat like that which Freud sees as fundamental to the efectiveness of wit. The attractiveness and plausibility of this suggestion comes from the possibiity of seeing condensation in very many mathemtical situations. Indeed, the very central idea of abstract mathematics could be seen as condensation: The ‘abstract’ description simultaneously signifies very different ‘concrete’ things. Does this allow us to conjecture that mathematics shares more with jokes, dreams, and hysteria than is commonly recognized? … Taken to its extreme, this line of thinking leads us to see mathematics, even in its detail, as an acting out of something else: The actors may be mathematical objects, but the plot is spelled out in other terms” [Papert 199-200]
+
+
