@@ -78,6 +78,7 @@ Your computer is not a black box. It is not sealed off from you. I will pick on 
 
 Though FOSS may have its limits, it’s so much more interesting to be engaged in the process, and, where FOSS software works, it works so much better than its proprietary counterpart. Before I left Utah for greener pastures, I worked for many years as a wilderness survival instructor. Using FOSS tools is not dissimilar. Starting a fire with a bow-drill and compiling a software package from source are two open technologies on a long, fascinating continuum.
 
+
 ## Towards an Ecological Media Ecology
 
 >“The future emerges directly from the objects we design.”
@@ -150,7 +151,7 @@ I used to consider my MFA a liability. While the Studio Arts graduate program at
 
 The problem with the humanities is the human. How about object studies? How about material, energy, information? Anything but the human. The focus should not be on humans, but on human relationships with objects, with environments. In this manner, technology, science, easily mesh with art and literature.
 
-The importance of humanities in the STEM era: natural language. As our world is increasingly structured around formal languages, translation becomes a very valuable skill. As our world becomes more and more dependent on digital technologies and driven by data analysis, the humantiies becomes more and mroe important as a means to think outside the rigid constraints of formal languages and binaries. Liberal arts are an escape from the trap of computational thinking. 
+The importance of humanities in the STEM era: natural language. As our world is increasingly structured around formal languages, translation becomes a very valuable skill. As our world becomes more and more dependent on digital technologies and driven by data analysis, the humantiies becomes more and mroe important as a means to think outside the rigid constraints of formal languages and binaries. Liberal arts are an escape from the trap of computational thinking. The concepts we need to teach our young (and old) learners are critical thinking skills, skills that translate across disciplines.
 
 @TODO
 The mind is not rational. Rationalism is an extraction, a distillation, or a delimitting of intensive processes. The feedback loop established between me and my computer returns a balance between rationalism (the machine) and ineffable processes. It is a negotiation. I cannot make my computer do everything I want it to. I do not have complete mastery over it. In fact, if one feels one has attained mastery over one's computer, one has willingly submitted oneself to the limitations of computer logic. It's not that the computer is doing what you tell it. It's that the computer is allowing you to feel mastery while keeping you well within its confines. The illusion of the queen bee. She is not in control. She is actually at the service and mercy of the hive.
@@ -182,6 +183,46 @@ https://en.wikipedia.org/wiki/Programming_idiom
 
 To paraphrase Papert, what is the role of pleasure in programming? Punning, ‘condensation’, wit. 
 
-Writing, “identifying”, elegant code solutions “gives the situation a quality of punning, of ‘condensation’ at least somewhat like that which Freud sees as fundamental to the efectiveness of wit. The attractiveness and plausibility of this suggestion comes from the possibiity of seeing condensation in very many mathemtical situations. Indeed, the very central idea of abstract mathematics could be seen as condensation: The ‘abstract’ description simultaneously signifies very different ‘concrete’ things. Does this allow us to conjecture that mathematics shares more with jokes, dreams, and hysteria than is commonly recognized? … Taken to its extreme, this line of thinking leads us to see mathematics, even in its detail, as an acting out of something else: The actors may be mathematical objects, but the plot is spelled out in other terms” [Papert 199-200]
+>Writing, “identifying”, elegant code solutions “gives the situation a quality of punning, of ‘condensation’ at least somewhat like that which Freud sees as fundamental to the efectiveness of wit. The attractiveness and plausibility of this suggestion comes from the possibiity of seeing condensation in very many mathemtical situations. Indeed, the very central idea of abstract mathematics could be seen as condensation: The ‘abstract’ description simultaneously signifies very different ‘concrete’ things. Does this allow us to conjecture that mathematics shares more with jokes, dreams, and hysteria than is commonly recognized? … Taken to its extreme, this line of thinking leads us to see mathematics, even in its detail, as an acting out of something else: The actors may be mathematical objects, but the plot is spelled out in other terms” [Papert 199-200]
+
+
+
+This is why paradox is so entertaining and interesting if we recognize it. We have no choice but to exist in a paradoxical situation. We are born into paradox. Our world is built on paradox. Modern art. Poetry. The language of paradox. Historically poetry was a means for communicating a history or a moral. At some point it, Romantic, Enlightenment, it broke off, became meta-poetry. It became the mirror reflecting the division between Nature and Society, no longer integrated into our daily practices, but something set aside in a separate sphere to be appreciated, most often, by those who could afford leisure and subsequently most responsible for the division.
+
+
+## Technological Continuum
+
+Flint knapping, fire-making, { … }: these primitive technologies underwent the same laboratory rigor of prototyping and iteration in order to perfect their {...} and technique.
+
+Technology exists on a continuum. The line drawn from the stone axe to the smartphone is not so long. Digital technology and media exist on equal footing. 
+
+@TODO my career path: iterative; feedback loops of science and art, nature and society
+
+
+## We Are Strange Loops
+
+Every technology is a hybrid. Tools are cool because we take an object and use it to accomplish something we couldn't do on our own. Then we take and combine that object with another object and create a new tool that then allows to accomplish even more. So on and so forth. Tools are also cool because someone invented (or discovered) any given tool. At some point in history there was a need or desire to do something and someone fabricated a device to accomplish this end. Then later someone else built upon that invention to either modify, hone, perfect, advance the capabilities of that tool. A long process of trial and error. Problem solving. Tools are the embodiment of an answer to a problem or series of problems.
+
+I interact with objects which interact with me which changes my interactions with objects. 
+
+Constantly modifying the loops.    
+
+We evolved in loops. We are our extensions. Humans would not exist otherwise. The loop of the stone axe, an early machine. The loop of the first humans uses stones as weapons and tools. The first machines. Stone-throwing machines. There was no break between then and now. We are still stone-throwing machines though we have smartphones in our pockets. The smartphone creates a very strange loop. Geographical effects. We are unaware of all of the loops in which we participate with our smartphone. Wifi, carrier networks, geo-data, the elaborate infrastructure that allows me find a nearby coffee shop with the Yelp app. It's not just one loop, it's a multitide of loops. But that was always the case. The stone-throwing wasn't just one loop, but many.
+
+We evolved in loops. Abiogenesis, “the natural process by which life arose from non-living matter such as simple organic compounds”, sometimes referred to as primordial soup. In this case, a primordial loop of objects and subjects emerging from the early machines, such as the loop of the human and the stone. There was no break between then and now. We are still stone-throwing machines though we have smartphones in our pockets.
+
+The stone-throwing machine is a complex multiplicity of loops between the eyes and the arm, calculating the distance between the stone and its target, the weight of the stone and the exertion necessary to propel it, the shift in parallax as the target flees, and on and on. Today our hunter-gatherer extensions are compressed into smarthphones, an elaborate infrastructure of loops that allows me to make geographical calculations when finding a nearby lunch spot with the Yelp app.
+
+Loops within loops. Constant cycling hybridization as I interact with my environment and it interacts with me. Even now, as I write, the loop of the keyboard pushing back against my fingers, limiting the speed at which I am able to type, which affects the input of my thoughts as they are represented to me on the monitor, nested within the larger loop of the network to which my comptuer is connected and the power plant delivering electricity on which it runs. Not to mention the fluctuations in light and temperature mixed with the caffeine affecting my brain chemistry which alters the speed, if not the quality, of the input as I write.
+
+
+
+
+## In the Beginning was the Command Line
+
+The hacker, the maker, the DIYer, the tinkerer, teaching him or herself electronics, taking apart gadgets to see how they work, making conscious decision to perform all computer activity via open source software, these are not only scientific, but political actions. It is choosing an open, democratic future. It is embracing and erasing the dividing line between Object Pole and the Subject Pole. it is a hybrid practice. it is also not a hybrid practice. It is simply a practice. it is not new. Humans have been engaging with their environments in this manner since The Dawn. We Have Never Been Modern but We Have Always Been Hackers.
+
+
+
 
 
