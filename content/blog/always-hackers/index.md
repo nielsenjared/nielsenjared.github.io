@@ -141,14 +141,13 @@ Jay and I began to collaborate on projects and developed [The Hello World Progra
 > The challenge in modern life and education still remains to reintegrate poetry and physics, art and chemistry, music and biology, dance and sociology, and every other possible combination of aesthetic and analytical knowledge, to foster people who feel that they want to know and know that they want to feel.
 > Robert and Michele Root-Bernstein, _Sparks of Genius_
 
-I used to consider my MFA a liability. While the Studio Arts graduate program at UC Irvine _is_ terrible, the rest of the university is world-class. If the arts faculty bothered to show up for class, they would simply "facilitate a discussion" and leave as quickly as possible. I took a page from their book and began skipping the required classes and instead audited lectures across the bridge in the critical theory department. 
+I used to consider my MFA a liability. While the Studio Arts graduate program at UC Irvine _is_ terrible, the rest of the university is world-class. If the arts faculty bothered to show up for class, they would simply "facilitate a discussion" and leave as quickly as possible to beat traffic back to their hovels in Hollywood. I took a page from their book and began skipping the required classes and instead audited lectures across the bridge in the critical theory department. 
 
-The importance of humanities in the STEM era: natural language. As our world is increasingly structured around formal languages, dependent on digital technologies, and driven by data analysis, translation becomes a very valuable skill. The humantiies become a means to think outside the rigid constraints of formal languages. Liberal arts are an escape from the trap of computational thinking. The concepts we need to teach our young (and old) learners are critical thinking skills, skills that translate across disciplines.
+@TODO name drop [Ackbar Abbas](https://www.faculty.uci.edu/profile.cfm?faculty_id=5392)
 
-Perhaps the problem with the humanities is the _human_. How about object studies? How about material, energy, information? Anything but the human. The focus should not be on humans, but on human relationships with objects, with environments. In this manner, technology, science, easily mesh with art and literature.
+As our world is increasingly structured around formal languages, dependent on digital technologies, and driven by data analysis, translation becomes a very valuable skill. The humantiies are a means to think outside the rigid constraints of formal languages; liberal arts are an escape from the trap of computational thinking. The concepts we need to teach our young (and old) learners are critical thinking skills, skills that translate across disciplines. 
 
-@TODO
-The mind is not rational. Rationalism is an extraction, a distillation, or a delimitting of intensive processes. The feedback loop established between me and my computer returns a balance between rationalism (the machine) and ineffable processes. It is a negotiation. I cannot make my computer do everything I want it to. I do not have complete mastery over it. In fact, if one feels one has attained mastery over one's computer, one has willingly submitted oneself to the limitations of computer logic. It's not that the computer is doing what you tell it. It's that the computer is allowing you to feel mastery while keeping you well within its confines. The illusion of the queen bee. She is not in control. She is actually at the service and mercy of the hive.
+Perhaps the problem with the humanities is the _human_. How about _assemblages_ ? 
 
 
 ## The Role of Pleasure in Programming
@@ -194,6 +193,9 @@ Technology exists on a continuum. The line drawn from the stone axe to the smart
 
 
 ## We Are Strange Loops
+
+@TODO
+The mind is not rational. Rationalism is an extraction, a distillation, or a delimitting of intensive processes. The feedback loop established between me and my computer returns a balance between rationalism (the machine) and ineffable processes. It is a negotiation. I cannot make my computer do everything I want it to. I do not have complete mastery over it. In fact, if one feels one has attained mastery over one's computer, one has willingly submitted oneself to the limitations of computer logic. It's not that the computer is doing what you tell it. It's that the computer is allowing you to feel mastery while keeping you well within its confines. The illusion of the queen bee. She is not in control. She is actually at the service and mercy of the hive.
 
 Every technology is a hybrid. Tools are cool because we take an object and use it to accomplish something we couldn't do on our own. Then we take and combine that object with another object and create a new tool that then allows to accomplish even more. So on and so forth. Tools are also cool because someone invented (or discovered) any given tool. At some point in history there was a need or desire to do something and someone fabricated a device to accomplish this end. Then later someone else built upon that invention to either modify, hone, perfect, advance the capabilities of that tool. A long process of trial and error. Problem solving. Tools are the embodiment of an answer to a problem or series of problems.
 
