@@ -141,52 +141,18 @@ Jay and I began to collaborate on projects and developed [The Hello World Progra
 > The challenge in modern life and education still remains to reintegrate poetry and physics, art and chemistry, music and biology, dance and sociology, and every other possible combination of aesthetic and analytical knowledge, to foster people who feel that they want to know and know that they want to feel.
 > Robert and Michele Root-Bernstein, _Sparks of Genius_
 
-I used to consider my MFA a liability. While the Studio Arts graduate program at UC Irvine _is_ terrible, the rest of the university is world-class. If the arts faculty bothered to show up for class, they would simply "facilitate a discussion" and leave as quickly as possible. I took a page from their book and began skipping the required classes and instead audited lectures across the bridge in the critical theory department. 
+I used to consider my MFA a liability. While the Studio Arts graduate program at UC Irvine _is_ terrible, the rest of the university is world-class. If the arts faculty bothered to show up for class, they would simply "facilitate a discussion" and leave as quickly as possible to beat traffic back to their hovels in Hollywood. I took a page from their book and began skipping the required classes and instead audited lectures across the bridge in the critical theory department. 
 
-The importance of humanities in the STEM era: natural language. As our world is increasingly structured around formal languages, dependent on digital technologies, and driven by data analysis, translation becomes a very valuable skill. The humantiies become a means to think outside the rigid constraints of formal languages. Liberal arts are an escape from the trap of computational thinking. The concepts we need to teach our young (and old) learners are critical thinking skills, skills that translate across disciplines.
+@TODO name drop [Ackbar Abbas](https://www.faculty.uci.edu/profile.cfm?faculty_id=5392)
 
-Perhaps the problem with the humanities is the _human_. How about object studies? How about material, energy, information? Anything but the human. The focus should not be on humans, but on human relationships with objects, with environments. In this manner, technology, science, easily mesh with art and literature.
+As our world is increasingly structured around formal languages, dependent on digital technologies, and driven by data analysis, translation becomes a very valuable skill. The humantiies are a means to think outside the rigid constraints of formal languages; liberal arts are an escape from the trap of computational thinking. The concepts we need to teach our young (and old) learners are critical thinking skills, skills that translate across disciplines. 
 
-@TODO
-The mind is not rational. Rationalism is an extraction, a distillation, or a delimitting of intensive processes. The feedback loop established between me and my computer returns a balance between rationalism (the machine) and ineffable processes. It is a negotiation. I cannot make my computer do everything I want it to. I do not have complete mastery over it. In fact, if one feels one has attained mastery over one's computer, one has willingly submitted oneself to the limitations of computer logic. It's not that the computer is doing what you tell it. It's that the computer is allowing you to feel mastery while keeping you well within its confines. The illusion of the queen bee. She is not in control. She is actually at the service and mercy of the hive.
-
-
-## The Role of Pleasure in Programming
-
->“Something in our human genes is deeply moved by the fuzziness and ambiguity of language; then why fight it?” 
->Taleb, “Fooled By Randomness” pg. 75
-
-```md
-Time flies like an arrow; 
-fruit flies like a banana.
-```
-
-```python
-t = [i**2 for i in range(10)]
-```
-
-
-“Code flounders on ambiguity, while literature thrives on it”. [Auerbach 77]
-
-https://en.wikipedia.org/wiki/Pun
-https://en.wikipedia.org/wiki/Idiom
-https://en.wikipedia.org/wiki/English-language_idioms
-https://en.wikipedia.org/wiki/Programming_idiom
-
-
-
-To paraphrase Papert, what is the role of pleasure in programming? Punning, ‘condensation’, wit. 
-
->Writing, “identifying”, elegant code solutions “gives the situation a quality of punning, of ‘condensation’ at least somewhat like that which Freud sees as fundamental to the efectiveness of wit. The attractiveness and plausibility of this suggestion comes from the possibiity of seeing condensation in very many mathemtical situations. Indeed, the very central idea of abstract mathematics could be seen as condensation: The ‘abstract’ description simultaneously signifies very different ‘concrete’ things. Does this allow us to conjecture that mathematics shares more with jokes, dreams, and hysteria than is commonly recognized? … Taken to its extreme, this line of thinking leads us to see mathematics, even in its detail, as an acting out of something else: The actors may be mathematical objects, but the plot is spelled out in other terms” [Papert 199-200]
-
-
-
-This is why paradox is so entertaining and interesting if we recognize it. We have no choice but to exist in a paradoxical situation. We are born into paradox. Our world is built on paradox. Modern art. Poetry. The language of paradox. Historically poetry was a means for communicating a history or a moral. At some point it, Romantic, Enlightenment, it broke off, became meta-poetry. It became the mirror reflecting the division between Nature and Society, no longer integrated into our daily practices, but something set aside in a separate sphere to be appreciated, most often, by those who could afford leisure and subsequently most responsible for the division.
+Perhaps the problem with the humanities is the _human_. How about _assemblages_ or _objects_? 
 
 
 ## Technological Continuum
 
-Flint knapping, fire-making, { … }: these primitive technologies underwent the same laboratory rigor of prototyping and iteration in order to perfect their {...} and technique.
+Flint knapping, fire-making, basket weaving: these primitive technologies underwent the same (if not more) rigor of prototyping and iteration in order to perfect their product and technique.
 
 Technology exists on a continuum. The line drawn from the stone axe to the smartphone is not so long. Digital technology and media exist on equal footing. 
 
@@ -194,6 +160,9 @@ Technology exists on a continuum. The line drawn from the stone axe to the smart
 
 
 ## We Are Strange Loops
+
+@TODO
+The mind is not rational. Rationalism is an extraction, a distillation, or a delimitting of intensive processes. The feedback loop established between me and my computer returns a balance between rationalism (the machine) and ineffable processes. It is a negotiation. I cannot make my computer do everything I want it to. I do not have complete mastery over it. In fact, if one feels one has attained mastery over one's computer, one has willingly submitted oneself to the limitations of computer logic. It's not that the computer is doing what you tell it. It's that the computer is allowing you to feel mastery while keeping you well within its confines. The illusion of the queen bee. She is not in control. She is actually at the service and mercy of the hive.
 
 Every technology is a hybrid. Tools are cool because we take an object and use it to accomplish something we couldn't do on our own. Then we take and combine that object with another object and create a new tool that then allows to accomplish even more. So on and so forth. Tools are also cool because someone invented (or discovered) any given tool. At some point in history there was a need or desire to do something and someone fabricated a device to accomplish this end. Then later someone else built upon that invention to either modify, hone, perfect, advance the capabilities of that tool. A long process of trial and error. Problem solving. Tools are the embodiment of an answer to a problem or series of problems.
 
