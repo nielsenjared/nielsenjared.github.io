@@ -147,36 +147,25 @@ I used to consider my MFA a liability. While the Studio Arts graduate program at
 
 As our world is increasingly structured around formal languages, dependent on digital technologies, and driven by data analysis, translation becomes a very valuable skill. The humantiies are a means to think outside the rigid constraints of formal languages; liberal arts are an escape from the trap of computational thinking. The concepts we need to teach our young (and old) learners are critical thinking skills, skills that translate across disciplines. 
 
-Perhaps the problem with the humanities is the _human_. How about _assemblages_ or _objects_? 
+The feedback loop established between me and my computer returns a balance between rationalism (the machine) and ineffable processes. It is a negotiation. I cannot make my computer do everything I want it to. I do not have complete mastery over it. In fact, if one feels one has attained mastery over one's computer, one has willingly submitted oneself to the limitations of computer logic. It's not that the computer is doing what you tell it. It's that the computer is allowing you to feel mastery while keeping you well within its confines. 
+
+Perhaps the problem with the humanities is the _human_. How about _assemblages_ and/or _objects_? 
 
 
 ## Technological Continuum
 
-Flint knapping, fire-making, basket weaving: these primitive technologies underwent the same (if not more) rigor of prototyping and iteration in order to perfect their product and technique.
-
-Technology exists on a continuum. The line drawn from the stone axe to the smartphone is not so long. Digital technology and media exist on equal footing. 
-
-@TODO my career path: iterative; feedback loops of science and art, nature and society
+Technology exists on a continuum. The line drawn from the stone axe to the smartphone is not so long. Flint knapping, fire-making, basket weaving: these primitive technologies underwent the same (if not more) rigor of prototyping and iteration in order to perfect their product and technique. A long process of trial and error. Our technologies are the solutions to historical problems. Every technology is a hybrid, an assemblage of answers to earlier questions.
 
 
 ## We Are Strange Loops
 
-@TODO
-The mind is not rational. Rationalism is an extraction, a distillation, or a delimitting of intensive processes. The feedback loop established between me and my computer returns a balance between rationalism (the machine) and ineffable processes. It is a negotiation. I cannot make my computer do everything I want it to. I do not have complete mastery over it. In fact, if one feels one has attained mastery over one's computer, one has willingly submitted oneself to the limitations of computer logic. It's not that the computer is doing what you tell it. It's that the computer is allowing you to feel mastery while keeping you well within its confines. The illusion of the queen bee. She is not in control. She is actually at the service and mercy of the hive.
+We evolved in loops. We are our extensions. There was no break between the first humans use of stone tools and now. We are still stone-throwing machinic assemblages, though we have smartphones in our pockets. We are unaware of all of the loops in which we participate with our smartphone: wifi, carrier networks, geo-data, the elaborate infrastructure that allows me to find a nearby coffee shop and post pictures of my handcrafted cappuccino. It's not just one loop, it's a multitide of loops. But that was always the case. The stone-throwing wasn't just one loop, but many.
 
-Every technology is a hybrid. Tools are cool because we take an object and use it to accomplish something we couldn't do on our own. Then we take and combine that object with another object and create a new tool that then allows to accomplish even more. So on and so forth. Tools are also cool because someone invented (or discovered) any given tool. At some point in history there was a need or desire to do something and someone fabricated a device to accomplish this end. Then later someone else built upon that invention to either modify, hone, perfect, advance the capabilities of that tool. A long process of trial and error. Problem solving. Tools are the embodiment of an answer to a problem or series of problems.
-
-I interact with objects which interact with me which changes my interactions with objects. 
-
-Constantly modifying the loops.    
-
-We evolved in loops. We are our extensions. Humans would not exist otherwise. The loop of the stone axe, an early machine. The loop of the first humans uses stones as weapons and tools. The first machines. Stone-throwing machines. There was no break between then and now. We are still stone-throwing machines though we have smartphones in our pockets. The smartphone creates a very strange loop. Geographical effects. We are unaware of all of the loops in which we participate with our smartphone. Wifi, carrier networks, geo-data, the elaborate infrastructure that allows me find a nearby coffee shop with the Yelp app. It's not just one loop, it's a multitide of loops. But that was always the case. The stone-throwing wasn't just one loop, but many.
-
-We evolved in loops. Abiogenesis, “the natural process by which life arose from non-living matter such as simple organic compounds”, sometimes referred to as primordial soup. In this case, a primordial loop of objects and subjects emerging from the early machines, such as the loop of the human and the stone. There was no break between then and now. We are still stone-throwing machines though we have smartphones in our pockets.
-
-The stone-throwing machine is a complex multiplicity of loops between the eyes and the arm, calculating the distance between the stone and its target, the weight of the stone and the exertion necessary to propel it, the shift in parallax as the target flees, and on and on. Today our hunter-gatherer extensions are compressed into smarthphones, an elaborate infrastructure of loops that allows me to make geographical calculations when finding a nearby lunch spot with the Yelp app.
+The stone-throwing machine is a complex multiplicity of loops between the eyes and the arm, calculating the distance between the stone and its target, the weight of the stone and the exertion necessary to propel it, the shift in parallax as the target flees, and on and on. Today our hunter-gatherer extensions are compressed into smarthphones, an elaborate infrastructure of loops that allows me to make geographical calculations when finding a nearby coffee shop.
 
 Loops within loops. Constant cycling hybridization as I interact with my environment and it interacts with me. Even now, as I write, the loop of the keyboard pushing back against my fingers, limiting the speed at which I am able to type, which affects the input of my thoughts as they are represented to me on the monitor, nested within the larger loop of the network to which my comptuer is connected and the power plant delivering electricity on which it runs. Not to mention the fluctuations in light and temperature mixed with the caffeine affecting my brain chemistry which alters the speed, if not the quality, of the input as I write.
+
+We interact with objects which interact with us which alters our subsequent interactions. 
 
 
 ## We Have Always Been Hackers
