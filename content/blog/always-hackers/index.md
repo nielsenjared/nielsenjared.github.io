@@ -124,6 +124,14 @@ Every action is ecological. Every developer intuitively knows this even if we re
 
 We can see the massive disconnect from nature to our interconnected consumption. Very few of us understand, let alone are aware, of the layers of abstraction between the means and the end. 
 
+We evolved in loops. We are our extensions. There was no break between the first humans use of stone tools and now. We are still stone-throwing machinic assemblages, though we have smartphones in our pockets. We are unaware of all of the loops in which we participate with our smartphone: wifi, carrier networks, geo-data, the elaborate infrastructure that allows me to find a nearby coffee shop and post pictures of my handcrafted cappuccino. It's not just one loop, it's a multitide of loops. But that was always the case. The stone-throwing wasn't just one loop, but many.
+
+The stone-throwing machine is a complex multiplicity of loops between the eyes and the arm, calculating the distance between the stone and its target, the weight of the stone and the exertion necessary to propel it, the shift in parallax as the target flees, and on and on. Today our hunter-gatherer extensions are compressed into smarthphones, an elaborate infrastructure of loops that allows me to make geographical calculations when finding a nearby coffee shop.
+
+Loops within loops. Constant cycling hybridization as I interact with my environment and it interacts with me. Even now, as I write, the loop of the keyboard pushing back against my fingers, limiting the speed at which I am able to type, which affects the input of my thoughts as they are represented to me on the monitor, nested within the larger loop of the network to which my comptuer is connected and the power plant delivering electricity on which it runs. Not to mention the fluctuations in light and temperature mixed with the caffeine affecting my brain chemistry which alters the speed, if not the quality, of the input as I write.
+
+We interact with objects which interact with us which alters our subsequent interactions. 
+
 Whether we consider ourselves artists, creatives or developers, we have a responsibility to consider the ecological implications of our work. What are the resources that our product will draw upon? Furthermore, does the product itself further the divide between subject and object, Nature and Society? Does it add yet another layer of abstraction to the technological stack? Or does it enlighten and reveal to us a truth about our situatedness in an environment.
 
 
@@ -136,41 +144,27 @@ During the financial crisis, two complementary trends gained steam (pun intended
 Jay and I began to collaborate on projects and developed [The Hello World Program](http://www.thehelloworldprogram.com/), an educational and entertaining webseries teaching computer science basics. We initially wanted to produce the series entirely with free, open source software. But after investigating all of the available NLEs and DAWs we realized that our fidelity to FOSS would leave us devoting more time to troubleshooting than to production. That said, we produced all of our media entirely on Linux-based machines. All of the motion graphics were produced using a combination of Blender, Synfig, Krita, GIMP and Inkscape. Our audio was processed with Audacity and Ardour. Our video was edited with Lightworks and our music composed in Bitwig.
 
 
-## Terminal Humanities Degree
+## Terminal Humanities
 
 > The challenge in modern life and education still remains to reintegrate poetry and physics, art and chemistry, music and biology, dance and sociology, and every other possible combination of aesthetic and analytical knowledge, to foster people who feel that they want to know and know that they want to feel.
 > Robert and Michele Root-Bernstein, _Sparks of Genius_
 
-I used to consider my MFA a liability. While the Studio Arts graduate program at UC Irvine _is_ terrible, the rest of the university is world-class. If the arts faculty bothered to show up for class, they would simply "facilitate a discussion" and leave as quickly as possible to beat traffic back to their hovels in Hollywood. I took a page from their book and began skipping the required classes and instead audited lectures across the bridge in the critical theory department. 
-
-@TODO name drop [Ackbar Abbas](https://www.faculty.uci.edu/profile.cfm?faculty_id=5392)
+I used to consider my MFA a liability. While the Studio Arts graduate program at UC Irvine _is_ terrible, the rest of the university is world-class. If the arts faculty bothered to show up for class, they would simply "facilitate a discussion" and leave as quickly as possible to beat traffic back to their hovels in Hollywood. I took a page from their book and began skipping the required classes and instead audited lectures across the bridge in the critical theory department. My diploma is worthless, but the problem-solving skills I acquired are invaluable.
 
 As our world is increasingly structured around formal languages, dependent on digital technologies, and driven by data analysis, translation becomes a very valuable skill. The humantiies are a means to think outside the rigid constraints of formal languages; liberal arts are an escape from the trap of computational thinking. The concepts we need to teach our young (and old) learners are critical thinking skills, skills that translate across disciplines. 
 
 The feedback loop established between me and my computer returns a balance between rationalism (the machine) and ineffable processes. It is a negotiation. I cannot make my computer do everything I want it to. I do not have complete mastery over it. In fact, if one feels one has attained mastery over one's computer, one has willingly submitted oneself to the limitations of computer logic. It's not that the computer is doing what you tell it. It's that the computer is allowing you to feel mastery while keeping you well within its confines. 
 
-Perhaps the problem with the humanities is the _human_. How about _assemblages_ and/or _objects_? 
+Perhaps the problem with the humanities is the _human_. 
 
 
 ## Technological Continuum
 
-Technology exists on a continuum. The line drawn from the stone axe to the smartphone is not so long. Flint knapping, fire-making, basket weaving: these primitive technologies underwent the same (if not more) rigor of prototyping and iteration in order to perfect their product and technique. A long process of trial and error. Our technologies are the solutions to historical problems. Every technology is a hybrid, an assemblage of answers to earlier questions.
+The line drawn from the stone axe to the smartphone is not so long. Flint knapping, fire-making, basket weaving: these primitive technologies underwent the same (if not more) rigor of prototyping and iteration in order to perfect their product and technique. A long process of trial and error. Our technologies are the solutions to historical problems. Every technology is a hybrid, an assemblage of answers to earlier questions.
 
+The hacker, the maker, the DIYer, the tinkerer, teaching him or herself electronics, taking apart gadgets to see how they work, making conscious decision to perform all computer activity via open source software, these are not only scientific, but political actions. It is choosing an open, democratic future. It is embracing and erasing the dividing line between Object Pole and the Subject Pole. it is a hybrid practice. it is also not a hybrid practice. It is simply a practice. it is not new. Humans have been engaging with their environments in this manner since The Dawn. 
 
-## We Are Strange Loops
-
-We evolved in loops. We are our extensions. There was no break between the first humans use of stone tools and now. We are still stone-throwing machinic assemblages, though we have smartphones in our pockets. We are unaware of all of the loops in which we participate with our smartphone: wifi, carrier networks, geo-data, the elaborate infrastructure that allows me to find a nearby coffee shop and post pictures of my handcrafted cappuccino. It's not just one loop, it's a multitide of loops. But that was always the case. The stone-throwing wasn't just one loop, but many.
-
-The stone-throwing machine is a complex multiplicity of loops between the eyes and the arm, calculating the distance between the stone and its target, the weight of the stone and the exertion necessary to propel it, the shift in parallax as the target flees, and on and on. Today our hunter-gatherer extensions are compressed into smarthphones, an elaborate infrastructure of loops that allows me to make geographical calculations when finding a nearby coffee shop.
-
-Loops within loops. Constant cycling hybridization as I interact with my environment and it interacts with me. Even now, as I write, the loop of the keyboard pushing back against my fingers, limiting the speed at which I am able to type, which affects the input of my thoughts as they are represented to me on the monitor, nested within the larger loop of the network to which my comptuer is connected and the power plant delivering electricity on which it runs. Not to mention the fluctuations in light and temperature mixed with the caffeine affecting my brain chemistry which alters the speed, if not the quality, of the input as I write.
-
-We interact with objects which interact with us which alters our subsequent interactions. 
-
-
-## We Have Always Been Hackers
-
-The hacker, the maker, the DIYer, the tinkerer, teaching him or herself electronics, taking apart gadgets to see how they work, making conscious decision to perform all computer activity via open source software, these are not only scientific, but political actions. It is choosing an open, democratic future. It is embracing and erasing the dividing line between Object Pole and the Subject Pole. it is a hybrid practice. it is also not a hybrid practice. It is simply a practice. it is not new. Humans have been engaging with their environments in this manner since The Dawn. We Have Never Been Modern but We Have Always Been Hackers.
+We have never been modern but we have always been hackers.
 
 
 
