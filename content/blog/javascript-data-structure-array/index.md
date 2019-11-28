@@ -28,10 +28,12 @@ var best = {
 
 There are several approaches available for creating arrays. The first is array declaration with literals:
 
+
 ### Array Declaration
 ```js
 const empty = [];
 ```
+
 Or,
 ```js
 const full = ["this", "that", "the other"];
@@ -86,6 +88,7 @@ console.log(numnums); //returns [ '4' ]
 ```
 
 If we were to use the Array constructor without type-checking, there's a possibility that we would create an array containing a string, rather than an array of empty elements.
+
 
 ### Array.of()
 
@@ -148,6 +151,7 @@ for (var i = 0; i < nums.length; ++i) {
 
 But declaring an empty array is inelegant. We can use array methods to accomplish the same ends.
 
+
 ### slice()
 
 The old school approach is using the `slice()` method to create a deep copy of an array.
@@ -161,6 +165,7 @@ nums[0] = "The shallow end...";
 
 console.log(numnums[0]); //returns 1
 ```
+
 
 ### Spread
 
@@ -195,6 +200,7 @@ console.log(numnums[0]); //returns 1
 ## Array Mutator Methods
 I’m going to assume you are familiar with push and pop, but maybe not unshift and shift, which add and remove elements at the beginning of an array, respectively.
 
+
 ### unshift
 
 We can think of `unshift()` as the opposite of `push()`. The `push()` method adds items to _the end_ of an array. The `unshift()` method adds items to _the beginning_.
@@ -206,6 +212,7 @@ nums.unshift(4, 5, 6);
 
 console.log(nums); // returns [4, 5, 6, 1, 2, 3]
 ```
+
 
 ### shift
 
