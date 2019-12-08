@@ -11,7 +11,7 @@ By best I mean _my favorite_.
 
 Of the many great newsletters available for web developers, these are the 10 that I find give me a well-rounded perspective on current trends and must-know developments in our field with minimal redundancy and maximal entertainment value.
 
-This post is an update from my [Best Newsletters for Web Developers in 2019](http://jarednielsen.com/2019-best-newsletters-web-developers/). The changes? I removed [Pony Foo](https://ponyfoo.com/weekly). They took a month-long hiatus in November. While it is still one of the _best_ newsletters out there, I’m reluctant to recommend it it’s delivery won’t be consistent in 2020. I also removed [Python Weekly](https://www.pythonweekly.com/), not because it isn’t a great newsletter, but to make room for newsletters that are either more specific to web development. 
+_Note: This post is an update from my [Best Newsletters for Web Developers in 2019](http://jarednielsen.com/2019-best-newsletters-web-developers/). The changes? I removed [Pony Foo](https://ponyfoo.com/weekly) as they took a month-long hiatus in November. While it is still one of the_ best _newsletters out there, I’m reluctant to recommend it if its delivery won’t be consistent in 2020. I also removed [Python Weekly](https://www.pythonweekly.com/), not because it isn’t a great newsletter, but to make room for newsletters that are either more specific to web development._
 
 
 ## Best Newsletters for Web Developers in 2020
