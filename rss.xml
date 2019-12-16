@@ -1,4 +1,101 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Sun, 08 Dec 2019 17:10:09 GMT</lastBuildDate><item><title><![CDATA[Best Newsletters for Web Developers in 2020]]></title><description><![CDATA[Here is a list of the best newsletters for web developers in 2020. By best I mean  my favorite . Of the many great newsletters available for…]]></description><link>http://jarednielsen.com/2020-best-newsletters-web-developers/</link><guid isPermaLink="false">http://jarednielsen.com/2020-best-newsletters-web-developers/</guid><pubDate>Mon, 09 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 16 Dec 2019 23:30:19 GMT</lastBuildDate><item><title><![CDATA[Best Podcasts for Web Developers in 2020]]></title><description><![CDATA[Keeping up with the changing pace of technology is part and parcel of being a web developer. Listening to podcasts is a great way to stay…]]></description><link>http://jarednielsen.com/2020-best-podcasts-web-developers/</link><guid isPermaLink="false">http://jarednielsen.com/2020-best-podcasts-web-developers/</guid><pubDate>Mon, 16 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0b9c398e4429645f6ac7089a4f9ae8e1/417af/jared-nielsen-2020-best-podcasts-web-developers.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAAB/UlEQVQ4y42TQWsTURDH8zW8eBH8GoL4BaQHT3oRPJd+gN4shODJalswh1poSEMIKZtK1KJohNKDNklNiCQUta0bm7ZJ2yQmu2/+zuy+jbtkm/pgefvezPzef2bei8AbRMFZ8dy2gebw3/dbzycWYFNoXAT+4TPSsQX65QLIHEKZA+cjAfKajkKgAaBseoZz24GIIhJVbQX84f0uuxxppQLt2GOxkTF1kqqc3tSwHnNOL1D6XESjVnfW1LJcpWK3LkvZAw7JhUlAh9BptZFaS2E9u46ckXOhfT63qdPvqyuAA+U4Sr0kzSIrE+CnQgGv83m833zHh2qgpN27CiiF5lQkABfAwd53ZNJpZDJZJJIpbG9ta6Du+GASUG/SqQV1yMAzoPSlhgdLm7i5WMP1hTruziWw9bEEHDOUG0T/c22I6+goOCHs7OzjYaKMG8stXFv8iXtzSUTTDOxwP3p8G5ywSV32oH2ppXR7gCVjF7dfVPEoa2J6tYS1NzUIyfJAlwL9F1tukMX16RL2qyZmnhq49djA1LMCjGp7pIy07+SXop2VXn/4ZmJ2o4r7sVXcmY4iv/vD9VFK6wh7KT6od7LTdNsOmOefRPH2Vc5no4B9HOgbSqnRf/lrBfPPF7D8cgXdXn+UBQV54UC/wkqlglgshng8jkajEfAJG38B3ZpzqJfCyYkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Best Podcasts for Web Developers in 2020&quot;
+        title=&quot;&quot;
+        src=&quot;/static/0b9c398e4429645f6ac7089a4f9ae8e1/fb8a0/jared-nielsen-2020-best-podcasts-web-developers.png&quot;
+        srcset=&quot;/static/0b9c398e4429645f6ac7089a4f9ae8e1/1a291/jared-nielsen-2020-best-podcasts-web-developers.png 148w,
+/static/0b9c398e4429645f6ac7089a4f9ae8e1/2bc4a/jared-nielsen-2020-best-podcasts-web-developers.png 295w,
+/static/0b9c398e4429645f6ac7089a4f9ae8e1/fb8a0/jared-nielsen-2020-best-podcasts-web-developers.png 590w,
+/static/0b9c398e4429645f6ac7089a4f9ae8e1/526de/jared-nielsen-2020-best-podcasts-web-developers.png 885w,
+/static/0b9c398e4429645f6ac7089a4f9ae8e1/fa2eb/jared-nielsen-2020-best-podcasts-web-developers.png 1180w,
+/static/0b9c398e4429645f6ac7089a4f9ae8e1/417af/jared-nielsen-2020-best-podcasts-web-developers.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Keeping up with the changing pace of technology is part and parcel of being a web developer. Listening to podcasts is a great way to stay informed. Unless you are independently wealthy or a short sleeper, there aren’t enough hours in the day to listen to all of them. Here are the best podcasts for we developers in 2020. By best I mean my favorite. &lt;/p&gt;
+&lt;h2&gt;Criteria for Best Podcast&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;High-production value&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clear, clean and equalized audio&lt;/li&gt;
+&lt;li&gt;Edited for “easy listening”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Focused&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The standard podcast format unfortunately follows that of talk radio: the host, or hosts, chit chat and eventually * find their way to the theme of the episode. Protracted introductions charming or a good use of time.&lt;/li&gt;
+&lt;li&gt;The primary weak point of the interview format is lack of preparation on the part of the host(s). The interview * meanders while the host asks softball questions that get pat answers. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Relevant&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Topics are timely &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Best Podcasts for Web Developers in 2020&lt;/h2&gt;
+&lt;h3&gt;Syntax.fm&lt;/h3&gt;
+&lt;p&gt;If you only subscribe to one web development podcast, make it &lt;a href=&quot;https://syntax.fm/&quot;&gt;&lt;em&gt;Syntax&lt;/em&gt;&lt;/a&gt;. The production value is high, the pace is on point, and the hosts Wes Bos and Scott Tolinski, are charming. While it’s primarily focused on beginners, its coverage of emerging trends and technology will appeal to experienced developers, too. Scott and Wes use it as a platform to promote their courses, but they never sell too hard and their sponsorships are well-integrated into the show format.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://syntax.fm/&quot;&gt;Syntax&lt;/a&gt; | Where to begin? &lt;a href=&quot;https://syntax.fm/show/198/how-to-get-better-at-problem-solving&quot;&gt;How to Get Better at Problem Solving&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Front-end Happy Hour&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://frontendhappyhour.com/&quot;&gt;&lt;em&gt;Front-end Happy Hour&lt;/em&gt;&lt;/a&gt; follows a ‘‘roundtable’ format, composed of working professionals at top-tier organizations, talking shop over drinks. It’s like hanging out at the bar with the coworkers you wish you had. Quality production, good pace, and the drinking game adds another layer to the discussion. As the name suggests, its focus is primarily front-end web development.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://frontendhappyhour.com/&quot;&gt;Front-end Happy Hour&lt;/a&gt; | Where to begin? &lt;a href=&quot;https://frontendhappyhour.com/episodes/tech-lead-engineer-herding-cats-&amp;#x26;-drinks/&quot;&gt;Tech lead engineer - herding cats &amp;#x26; drinks&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;IRL&lt;/h3&gt;
+&lt;p&gt;Produced by &lt;a href=&quot;https://www.mozilla.org/en-US/&quot;&gt;Mozillla&lt;/a&gt; and hosted by &lt;a href=&quot;http://www.manoushz.com/&quot;&gt;Manoush Zomorodi&lt;/a&gt;, &lt;a href=&quot;https://irlpodcast.org/&quot;&gt;&lt;em&gt;IRL&lt;/em&gt;&lt;/a&gt; covers the big picture topics you &lt;em&gt;need&lt;/em&gt; to be thinking about, but probably aren’t because you’re busy building the Internet. Each episode is a critical investigation of the effects of the things we build on the people who use them.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://irlpodcast.org/&quot;&gt;IRL&lt;/a&gt; | Where to begin? &lt;a href=&quot;https://irlpodcast.org/season5/episode2/&quot;&gt;Democracy and the Internet&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;FTFY&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://fixedthatforyou.com/&quot;&gt;&lt;em&gt;Fixed That For You&lt;/em&gt;&lt;/a&gt; claims to be a show about “solving problems with data and algorithms”, but that is seriously underselling it. Each episode is an exploration of the clever and ingenious solutions discovered using computation to solve { … }. It’s not specifically for developers or related to web development, but it’s fascinating and very well-produced. &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://fixedthatforyou.com/&quot;&gt;FTFY&lt;/a&gt; | Where to begin? &lt;a href=&quot;https://fixedthatforyou.com/episodes/data-vs-running-while-blind/&quot;&gt;Data vs. Running While Blind&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Chats with Kent&lt;/h3&gt;
+&lt;p&gt;If I could be interviewed by anyone, my first choice would be Terry Gross. My second choice would be Kent C. Dodds. He &lt;em&gt;really&lt;/em&gt; listens to his guests. He’s modest, deferential, and honest about his knowledge gaps but smart AF. Kent quietly launched the first season of &lt;a href=&quot;https://kentcdodds.com/chats-with-kent-podcast/&quot;&gt;&lt;em&gt;Chats with Kent&lt;/em&gt;&lt;/a&gt; in August and quickly followed up with a second. Kent is a React developer, so much of the discussions are focused on that topic. But who isn’t, anymore? &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://kentcdodds.com/chats-with-kent-podcast/&quot;&gt;Chats with Kent&lt;/a&gt; | Where to begin? &lt;a href=&quot;https://kentcdodds.com/chats-with-kent-podcast/seasons/01/episodes/growing-your-skills-and-career-through-teaching-with-ali-spittel&quot;&gt;Growing Your Skills And Career Through Teaching - with Ali Spittel&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Function w/Anil Dash&lt;/h3&gt;
+&lt;p&gt;Similar to &lt;em&gt;IRL&lt;/em&gt;, &lt;a href=&quot;https://glitch.com/culture/function/&quot;&gt;&lt;em&gt;Function&lt;/em&gt;&lt;/a&gt; explores the societal impact(s) of the products and services we produce. Unlike &lt;em&gt;IRL&lt;/em&gt;, which is geared towards an audience of laypeople, and most likely due to the host, Anil Dash, being the CEO of &lt;a href=&quot;https://glitch.com/&quot;&gt;Glitch&lt;/a&gt;, &lt;em&gt;Function&lt;/em&gt; gets into the nuts &amp;#x26; bolts of &lt;em&gt;how&lt;/em&gt; this stuff works. &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://glitch.com/culture/function/&quot;&gt;Function&lt;/a&gt; | Where to begin? &lt;a href=&quot;https://glitch.com/culture/function-episode-16/&quot;&gt;American as Apple Pie: How Racism Gets Baked Into Technology&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Code[ish]&lt;/h3&gt;
+&lt;p&gt;Did you know Heroku produces a podcast? They do and it’s pretty good. The hosts of &lt;a href=&quot;https://www.heroku.com/podcasts/codeish&quot;&gt;&lt;em&gt;Code-ish&lt;/em&gt;&lt;/a&gt; interview industry leaders and working professionals, so you get insight into the nuts and bolts of web development from a wide range of perspectives. But because the hosts rotate episode to episode, quality is inconsistent and the interviews are sometimes rambling.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.heroku.com/podcasts/codeish&quot;&gt;Code-ish&lt;/a&gt; | Where to begin? &lt;a href=&quot;https://www.heroku.com/podcasts/codeish/42-how-to-prepare-for-coding-interviews&quot;&gt;How to Prepare for Coding Interviewsy&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;The Vanilla JavaScript Podcast&lt;/h3&gt;
+&lt;p&gt;Produced by Chris Ferdinandi, &lt;a href=&quot;https://vanillajspodcast.com/&quot;&gt;&lt;em&gt;The Vanilla JavaScript Podcast&lt;/em&gt;&lt;/a&gt; is &lt;em&gt;vanilla&lt;/em&gt; in production, as well. Its stripped-down, straight-forward production is surprisingly refreshing in the golden age of podcasts. There are two primary types of episodes: philosophical and technical. In the ‘philosophical’ episodes, Chris muses about cultural and ethical concerns related to web development. In ‘technical’ episodes, Chris describes &lt;em&gt;code&lt;/em&gt; and pulls it off. &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://vanillajspodcast.com&quot;&gt;https://vanillajspodcast.com&lt;/a&gt; | Where to begin? &lt;a href=&quot;https://vanillajspodcast.com/learning-to-code-and-gradual-improvements/&quot;&gt;Learning to code and gradual improvements&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Command_Line Heroes&lt;/h3&gt;
+&lt;p&gt;Produced by RedHat and host Saron Yitbarek, &lt;a href=&quot;https://www.redhat.com/en/command-line-heroes&quot;&gt;&lt;em&gt;Command Line Heroes&lt;/em&gt;&lt;/a&gt; explores the recent history of computer science. This is all the stuff I &lt;em&gt;want&lt;/em&gt; to know, but can’t make myself sit down and read, so it’s great to get it in an engaing audio format. The production value is top-notch and each episode features interviews with luminaries in the field.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.redhat.com/en/command-line-heroes&quot;&gt;Command Lines Heroes&lt;/a&gt; | Where to begin? &lt;a href=&quot;https://www.redhat.com/en/command-line-heroes/season-3/creating-javascript&quot;&gt;Creating JavaScript&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;iteration&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://iteration.simplecast.com/&quot;&gt;&lt;em&gt;iteration&lt;/em&gt;&lt;/a&gt; is probably the most developer-specific podcast on this list. Each episode goes in-depth into &lt;em&gt;how&lt;/em&gt; as well as the &lt;em&gt;why&lt;/em&gt; a given technology exists and works. &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://iteration.simplecast.com/&quot;&gt;iteration&lt;/a&gt; | Where to begin? &lt;a href=&quot;https://iteration.simplecast.com/episodes/s08e02&quot;&gt;The Git Episode&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Bonus&lt;/h2&gt;
+&lt;h3&gt;Late Night Linux&lt;/h3&gt;
+&lt;p&gt;Similar to &lt;em&gt;Front-End Happy Hour&lt;/em&gt;, &lt;a href=&quot;https://latenightlinux.com/&quot;&gt;&lt;em&gt;LNL&lt;/em&gt;&lt;/a&gt; is a ‘roundtable’ discussion of the news in Linux and open source technology. These are the sysadmins you wish you could hang out with. Yes, it’s Linux specific, but, if you’re a developer, why aren’t you using Linux yet?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://latenightlinux.com/&quot;&gt;Late Night Linux&lt;/a&gt; | Where to begin? The most recent episode!&lt;/p&gt;
+&lt;h3&gt;Should This Exist?&lt;/h3&gt;
+&lt;p&gt;Hosted by Flickr co-founder Caterina Fake, &lt;a href=&quot;https://shouldthisexist.com/&quot;&gt;&lt;em&gt;Should This Exist?&lt;/em&gt;&lt;/a&gt; falls in the same category as &lt;em&gt;IRL&lt;/em&gt; and &lt;em&gt;Function&lt;/em&gt; in that it investigates the effects of technology on our lives. The twist? It looks at those technologies &lt;em&gt;before&lt;/em&gt; they reshape our world.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://shouldthisexist.com/&quot;&gt;Should This Exist?&lt;/a&gt; | Where to begin? &lt;a href=&quot;https://shouldthisexist.com/internet/&quot;&gt;What Went Wrong with the World Wide Web - and How We Can Fix It&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Best Newsletters for Web Developers in 2020]]></title><description><![CDATA[Here is a list of the best newsletters for web developers in 2020. By best I mean  my favorite . Of the many great newsletters available for…]]></description><link>http://jarednielsen.com/2020-best-newsletters-web-developers/</link><guid isPermaLink="false">http://jarednielsen.com/2020-best-newsletters-web-developers/</guid><pubDate>Mon, 09 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/6b25f813139737b9a304d72d678aaeb9/417af/jared-nielsen-2020-best-newsletters-web-developers.png&quot;
