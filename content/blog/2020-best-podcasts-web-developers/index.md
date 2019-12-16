@@ -3,7 +3,7 @@ title: Best Podcasts for Web Developers in 2020
 date: "2019-12-16"
 description: Keeping up with the changing pace of technology is part and parcel of being a web developer. Listening to podcasts is a great way to stay informed. Unless you are independently wealthy or a short sleeper, there aren’t enough hours in the day to listen to all of them. Here are the best podcasts for we developers in 2020.
 ---
-![Best Newsletters for Web Developers in 2020](./jared-nielsen-2020-best-newsletters-web-developers.png)
+![Best Podcasts for Web Developers in 2020](./jared-nielsen-2020-best-podcasts-web-developers.png)
 
 Keeping up with the changing pace of technology is part and parcel of being a web developer. Listening to podcasts is a great way to stay informed. Unless you are independently wealthy or a short sleeper, there aren’t enough hours in the day to listen to all of them. Here are the best podcasts for we developers in 2020. By best I mean my favorite. 
 
