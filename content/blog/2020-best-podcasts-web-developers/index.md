@@ -35,8 +35,11 @@ If you only subscribe to one web development podcast, make it [_Syntax_](https:/
 ### IRL
 
 Produced by [Mozillla](https://www.mozilla.org/en-US/) and hosted by [Manoush Zomorodi](http://www.manoushz.com/), [_IRL_](https://irlpodcast.org/) covers the big picture topics you _need_ to be thinking about, but probably aren’t because you’re busy building the Internet. Each episode is a critical investigation of the effects of this thing we build on the people who use it _in real life_.
+<<<<<<< HEAD
 
 🎙️ [IRL](https://irlpodcast.org/) 
+=======
+>>>>>>> ba3d25e01957b0a9bc53f083b13406adbadb5487
 
 🥇 Where to begin? [Democracy and the Internet](https://irlpodcast.org/season5/episode2/)
 
@@ -59,8 +62,11 @@ If I could be interviewed by anyone, my first choice would be Terry Gross. My se
 ### Function w/Anil Dash
 
 Similar to _IRL_, [_Function_](https://glitch.com/culture/function/) explores the societal impact(s) of the products and services we produce. Unlike _IRL_, which is geared towards an audience of laypeople, and most likely due to the host, Anil Dash, being the CEO of [Glitch](https://glitch.com/), _Function_ gets into the nuts & bolts of _how_ this stuff works, not just _why_. 
+<<<<<<< HEAD
 
 🎙️ [Function](https://glitch.com/culture/function/) 
+=======
+>>>>>>> ba3d25e01957b0a9bc53f083b13406adbadb5487
 
 🥇 Where to begin? [American as Apple Pie: How Racism Gets Baked Into Technology](https://glitch.com/culture/function-episode-16/)
 
@@ -68,15 +74,22 @@ Similar to _IRL_, [_Function_](https://glitch.com/culture/function/) explores th
 
 Did you know Heroku produces a podcast? They do, and it’s pretty good. The hosts of [_Code-ish_](https://www.heroku.com/podcasts/codeish) interview industry leaders and working professionals, so you get insight into the nuts and bolts of web development from a wide range of perspectives. But, because the hosts rotate episode to episode, quality is inconsistent and the interviews are sometimes rambling.
 
+<<<<<<< HEAD
 🎙️ [Code-ish](https://www.heroku.com/podcasts/codeish) 
 
 🥇 Where to begin? [How to Prepare for Coding Interviews](https://www.heroku.com/podcasts/codeish/42-how-to-prepare-for-coding-interviews)
+=======
+[Code-ish](https://www.heroku.com/podcasts/codeish) | Where to begin? [How to Prepare for Coding Interviews](https://www.heroku.com/podcasts/codeish/42-how-to-prepare-for-coding-interviews)
+>>>>>>> ba3d25e01957b0a9bc53f083b13406adbadb5487
 
 ### The Vanilla JavaScript Podcast
 
 Produced by Chris Ferdinandi, [_The Vanilla JavaScript Podcast_](https://vanillajspodcast.com/) is _vanilla_ in production, as well. Its stripped-down, straight-forward production is surprisingly refreshing in the golden age of podcasts. There are two primary types of episodes: philosophical and technical. In the ‘philosophical’ episodes, Chris muses about cultural and ethical concerns related to web development. In ‘technical’ episodes, Chris describes _code_ and pulls it off!
+<<<<<<< HEAD
 
 🎙️ [The Vanilla JavaScript Podcast](https://vanillajspodcast.com)
+=======
+>>>>>>> ba3d25e01957b0a9bc53f083b13406adbadb5487
 
 🥇 Where to begin? [Learning to code and gradual improvements](https://vanillajspodcast.com/learning-to-code-and-gradual-improvements/)
 
@@ -111,8 +124,11 @@ Similar to _Front-End Happy Hour_, [_LNL_](https://latenightlinux.com/) is a ‘
 ### Should This Exist?
 
 Hosted by Flickr co-founder Caterina Fake, [_Should This Exist?_](https://shouldthisexist.com/) falls in the same category as _IRL_ and _Function_ in that it investigates the effects of technology on our lives. The twist? It looks at those technologies _before_ they reshape our lives.
+<<<<<<< HEAD
 
 🎙️ [Should This Exist?](https://shouldthisexist.com/)
+=======
+>>>>>>> ba3d25e01957b0a9bc53f083b13406adbadb5487
 
 🥇 Where to begin? [What Went Wrong with the World Wide Web - and How We Can Fix It](https://shouldthisexist.com/internet/)
 
