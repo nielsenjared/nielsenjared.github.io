@@ -97,3 +97,8 @@ Hosted by Flickr co-founder Caterina Fake, [_Should This Exist?_](https://should
 
 [Should This Exist?](https://shouldthisexist.com/) | Where to begin? [What Went Wrong with the World Wide Web - and How We Can Fix It](https://shouldthisexist.com/internet/)
 
+
+## Best Podcasts for Web Developers 
+
+What are your _best_ podcasts for web developers? Let me know on Twitter [@jarednielsen](https://twiter.com/jarednielsen)
+
