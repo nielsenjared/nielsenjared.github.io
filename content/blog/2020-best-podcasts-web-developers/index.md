@@ -13,8 +13,8 @@ Keeping up with the changing pace of technology is part and parcel of being a we
     * Clear, clean and equalized audio
     * Edited for “easy listening”
 * Focused
-    * The standard podcast format unfortunately follows that of talk radio: the host, or hosts, chit chat and eventually * find their way to the theme of the episode. Protracted introductions charming or a good use of time.
-    * The primary weak point of the interview format is lack of preparation on the part of the host(s). The interview * meanders while the host asks softball questions that get pat answers. 
+    * The standard podcast format unfortunately follows that of talk radio: the host, or hosts, chit chat and eventually find their way to the theme of the episode. Protracted introductions charming or a good use of time.
+    * The primary weak point of the interview format is lack of preparation on the part of the host(s). The interview meanders while the host asks softball questions that get pat answers. 
 * Relevant
     * Topics are timely 
 
@@ -35,13 +35,13 @@ If you only subscribe to one web development podcast, make it [_Syntax_](https:/
 
 ### IRL
 
-Produced by [Mozillla](https://www.mozilla.org/en-US/) and hosted by [Manoush Zomorodi](http://www.manoushz.com/), [_IRL_](https://irlpodcast.org/) covers the big picture topics you _need_ to be thinking about, but probably aren’t because you’re busy building the Internet. Each episode is a critical investigation of the effects of the things we build on the people who use them.
+Produced by [Mozillla](https://www.mozilla.org/en-US/) and hosted by [Manoush Zomorodi](http://www.manoushz.com/), [_IRL_](https://irlpodcast.org/) covers the big picture topics you _need_ to be thinking about, but probably aren’t because you’re busy building the Internet. Each episode is a critical investigation of the effects of the things we build on the people who use them, _in real life_.
 
 [IRL](https://irlpodcast.org/) | Where to begin? [Democracy and the Internet](https://irlpodcast.org/season5/episode2/)
 
 ### FTFY
 
-[_Fixed That For You_](https://fixedthatforyou.com/) claims to be a show about “solving problems with data and algorithms”, but that is seriously underselling it. Each episode is an exploration of the clever and ingenious solutions discovered using computation to solve { ... }. It’s not specifically for developers or related to web development, but it’s fascinating and very well-produced. 
+[_Fixed That For You_](https://fixedthatforyou.com/) claims to be a show about “solving problems with data and algorithms”, but that is seriously underselling it. Each episode is an exploration of the clever and ingenious solutions discovered to solve extraordinary obstacles using the power of computation. It’s not specifically related to web development, but it’s fascinating and very well-produced. 
 
 [FTFY](https://fixedthatforyou.com/) | Where to begin? [Data vs. Running While Blind](https://fixedthatforyou.com/episodes/data-vs-running-while-blind/)
 
