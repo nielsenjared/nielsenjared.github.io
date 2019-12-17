@@ -1,22 +1,17 @@
 ---
 title: Best Podcasts for Web Developers in 2020
 date: "2019-12-16"
-description: Keeping up with the changing pace of technology is part and parcel of being a web developer. Listening to podcasts is a great way to stay informed. Unless you are independently wealthy or a short sleeper, there aren’t enough hours in the day to listen to all of them. Here are the best podcasts for web developers in 2020.
+description: Keeping up with the changing pace of technology is part and parcel of being a web developer. Listening to podcasts is a great way to stay informed and give your eyes a break. Unless you are independently wealthy or a short sleeper, there aren’t enough hours in the day to listen to all of them. Here are the best podcasts for web developers in 2020.
 ---
 ![Best Podcasts for Web Developers in 2020](./jared-nielsen-2020-best-podcasts-web-developers.png)
 
-Keeping up with the changing pace of technology is part and parcel of being a web developer. Listening to podcasts is a great way to stay informed. Unless you are independently wealthy or a short sleeper, there aren’t enough hours in the day to listen to all of them. Here are the best podcasts for web developers in 2020. By best I mean my favorite. 
+Keeping up with the changing pace of technology is part and parcel of being a web developer. Listening to podcasts is a great way to stay informed and give your eyes a break. Unless you are independently wealthy or a short sleeper, there aren’t enough hours in the day to listen to all of them. Here are the best podcasts for web developers in 2020. By best I mean my favorite. 
 
 ## Criteria for Best Podcast
 
-* High-production value
-    * Clear, clean and equalized audio
-    * Edited for “easy listening”
-* Focused
-    * The standard podcast format unfortunately follows that of talk radio: the host, or hosts, chit chat and eventually find their way to the theme of the episode. Protracted introductions charming or a good use of time.
-    * The primary weak point of the interview format is lack of preparation on the part of the host(s). The interview meanders while the host asks softball questions that get pat answers. 
-* Relevant
-    * Topics are timely 
+* High-production value: The audio is clear and equalized, and edited for 'easy listening'.
+* Focused: The hosts don't spend _too_ much time chit-chatting, and get right to it, and are prepared with hard-hitting questions to keep an interview moving. 
+* Relevant: The topics are timely.
 
 
 ## Best Podcasts for Web Developers in 2020
@@ -35,13 +30,13 @@ If you only subscribe to one web development podcast, make it [_Syntax_](https:/
 
 ### IRL
 
-Produced by [Mozillla](https://www.mozilla.org/en-US/) and hosted by [Manoush Zomorodi](http://www.manoushz.com/), [_IRL_](https://irlpodcast.org/) covers the big picture topics you _need_ to be thinking about, but probably aren’t because you’re busy building the Internet. Each episode is a critical investigation of the effects of the things we build on the people who use them, _in real life_.
+Produced by [Mozillla](https://www.mozilla.org/en-US/) and hosted by [Manoush Zomorodi](http://www.manoushz.com/), [_IRL_](https://irlpodcast.org/) covers the big picture topics you _need_ to be thinking about, but probably aren’t because you’re busy building the Internet. Each episode is a critical investigation of the effects of this thing we build on the people who use it _in real life_.
 
 [IRL](https://irlpodcast.org/) | Where to begin? [Democracy and the Internet](https://irlpodcast.org/season5/episode2/)
 
 ### FTFY
 
-[_Fixed That For You_](https://fixedthatforyou.com/) claims to be a show about “solving problems with data and algorithms”, but that is seriously underselling it. Each episode is an exploration of the clever and ingenious solutions discovered to solve extraordinary obstacles using the power of computation. It’s not specifically related to web development, but it’s fascinating and very well-produced. 
+[_Fixed That For You_](https://fixedthatforyou.com/) claims to be a show about “solving problems with data and algorithms”, but that is seriously underselling it. Each episode is an exploration of the clever and ingenious solutions discovered to _fix_ extraordinary obstacles using the power of computation. It’s not specifically related to web development, but it’s fascinating and very well-produced. 
 
 [FTFY](https://fixedthatforyou.com/) | Where to begin? [Data vs. Running While Blind](https://fixedthatforyou.com/episodes/data-vs-running-while-blind/)
 
@@ -53,19 +48,19 @@ If I could be interviewed by anyone, my first choice would be Terry Gross. My se
 
 ### Function w/Anil Dash
 
-Similar to _IRL_, [_Function_](https://glitch.com/culture/function/) explores the societal impact(s) of the products and services we produce. Unlike _IRL_, which is geared towards an audience of laypeople, and most likely due to the host, Anil Dash, being the CEO of [Glitch](https://glitch.com/), _Function_ gets into the nuts & bolts of _how_ this stuff works. 
+Similar to _IRL_, [_Function_](https://glitch.com/culture/function/) explores the societal impact(s) of the products and services we produce. Unlike _IRL_, which is geared towards an audience of laypeople, and most likely due to the host, Anil Dash, being the CEO of [Glitch](https://glitch.com/), _Function_ gets into the nuts & bolts of _how_ this stuff works, not just _why_. 
 
 [Function](https://glitch.com/culture/function/) | Where to begin? [American as Apple Pie: How Racism Gets Baked Into Technology](https://glitch.com/culture/function-episode-16/)
 
 ### Code[ish]
 
-Did you know Heroku produces a podcast? They do and it’s pretty good. The hosts of [_Code-ish_](https://www.heroku.com/podcasts/codeish) interview industry leaders and working professionals, so you get insight into the nuts and bolts of web development from a wide range of perspectives. But because the hosts rotate episode to episode, quality is inconsistent and the interviews are sometimes rambling.
+Did you know Heroku produces a podcast? They do, and it’s pretty good. The hosts of [_Code-ish_](https://www.heroku.com/podcasts/codeish) interview industry leaders and working professionals, so you get insight into the nuts and bolts of web development from a wide range of perspectives. But, because the hosts rotate episode to episode, quality is inconsistent and the interviews are sometimes rambling.
 
-[Code-ish](https://www.heroku.com/podcasts/codeish) | Where to begin? [How to Prepare for Coding Interviewsy](https://www.heroku.com/podcasts/codeish/42-how-to-prepare-for-coding-interviews)
+[Code-ish](https://www.heroku.com/podcasts/codeish) | Where to begin? [How to Prepare for Coding Interviews](https://www.heroku.com/podcasts/codeish/42-how-to-prepare-for-coding-interviews)
 
 ### The Vanilla JavaScript Podcast
 
-Produced by Chris Ferdinandi, [_The Vanilla JavaScript Podcast_](https://vanillajspodcast.com/) is _vanilla_ in production, as well. Its stripped-down, straight-forward production is surprisingly refreshing in the golden age of podcasts. There are two primary types of episodes: philosophical and technical. In the ‘philosophical’ episodes, Chris muses about cultural and ethical concerns related to web development. In ‘technical’ episodes, Chris describes _code_ and pulls it off. 
+Produced by Chris Ferdinandi, [_The Vanilla JavaScript Podcast_](https://vanillajspodcast.com/) is _vanilla_ in production, as well. Its stripped-down, straight-forward production is surprisingly refreshing in the golden age of podcasts. There are two primary types of episodes: philosophical and technical. In the ‘philosophical’ episodes, Chris muses about cultural and ethical concerns related to web development. In ‘technical’ episodes, Chris describes _code_ and pulls it off!
 
 https://vanillajspodcast.com | Where to begin? [Learning to code and gradual improvements](https://vanillajspodcast.com/learning-to-code-and-gradual-improvements/)
 
@@ -93,7 +88,7 @@ Similar to _Front-End Happy Hour_, [_LNL_](https://latenightlinux.com/) is a ‘
 
 ### Should This Exist?
 
-Hosted by Flickr co-founder Caterina Fake, [_Should This Exist?_](https://shouldthisexist.com/) falls in the same category as _IRL_ and _Function_ in that it investigates the effects of technology on our lives. The twist? It looks at those technologies _before_ they reshape our world.
+Hosted by Flickr co-founder Caterina Fake, [_Should This Exist?_](https://shouldthisexist.com/) falls in the same category as _IRL_ and _Function_ in that it investigates the effects of technology on our lives. The twist? It looks at those technologies _before_ they reshape our lives.
 
 [Should This Exist?](https://shouldthisexist.com/) | Where to begin? [What Went Wrong with the World Wide Web - and How We Can Fix It](https://shouldthisexist.com/internet/)
 
