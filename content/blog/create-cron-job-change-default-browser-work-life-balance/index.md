@@ -4,7 +4,7 @@ date: "2019-12-23"
 description: Maintaining a healthy work-life balance is important when you're a developer. Especially if you work remote. When I set up a new development environment, I create a cron job to change the default browser between work and 'play' hours.
 keywords: ["cron job", "default browser"]
 ---
-![]()
+![](./jarednielsen-create-cron-job-change-default-browser-work-life-balance.png)
 
 Maintaining a healthy work-life balance is important when you're a developer. Especially if you work remote. When I set up a new development environment, I create a cron job to change the default browser between work hours and 'play' hours. I use Chrome professionally as much of my workflow is built around the Google ecosphere. But I use Firefox as my personal browser (and so should you) for several reasons, the most important being [Mozilla's emphasis on privacy](https://www.mozilla.org/en-US/privacy/principles/). 
 
