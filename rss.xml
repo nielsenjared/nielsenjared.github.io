@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Dec 2019 02:28:59 GMT</lastBuildDate><item><title><![CDATA[Best Podcasts for Web Developers in 2020]]></title><description><![CDATA[Keeping up with the changing pace of technology is part and parcel of being a web developer. Listening to podcasts is a great way to stay…]]></description><link>http://jarednielsen.com/2020-best-podcasts-web-developers/</link><guid isPermaLink="false">http://jarednielsen.com/2020-best-podcasts-web-developers/</guid><pubDate>Mon, 16 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 23 Dec 2019 21:25:08 GMT</lastBuildDate><item><title><![CDATA[Create a Cron Job to Change Default Browser for Work-Life Balance]]></title><description><![CDATA[Maintaining a healthy work-life balance is important when you’re a developer. Especially if you work remote. When I set up a new development…]]></description><link>http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</link><guid isPermaLink="false">http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</guid><pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f4bc32beaa1e71a3dc334938f5d1b7b0/417af/jarednielsen-create-cron-job-change-default-browser-work-life-balance.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAABCklEQVQ4y8WTvYrCQBDH87xX+AA2goWFreX50UUsVDhO0UbFQosUmihKINwLXHMoh4q783c12XxugorgJpNlZzK/ndnZ0fDiod37I8mZXHka6DpTaJYSt8WA5D0uxFtRlgQbBPGHgRTAOOcJYYzdbIzEWggJXdiHVClT1uHIcRDvKd1H89P1DH/7HaY/JoytBdu20e/1Ya4sfLU6cL5NVApdFPU51rYDJqL0I6QU4J5OKE10lNs1GNYCTV3HaDxCo1rHcrbBR76K3OcQvcEQZ3EMSqAqfK7I9qo7is/vP7s/5dtunPzCqSoc1sehkSrLamVflyQYKqCMNHknox0ShSEyP9R6L+/ltwEvTVeY4VC+RvcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen create cron job change default browser work life balance&quot;
+        title=&quot;&quot;
+        src=&quot;/static/f4bc32beaa1e71a3dc334938f5d1b7b0/fb8a0/jarednielsen-create-cron-job-change-default-browser-work-life-balance.png&quot;
+        srcset=&quot;/static/f4bc32beaa1e71a3dc334938f5d1b7b0/1a291/jarednielsen-create-cron-job-change-default-browser-work-life-balance.png 148w,
+/static/f4bc32beaa1e71a3dc334938f5d1b7b0/2bc4a/jarednielsen-create-cron-job-change-default-browser-work-life-balance.png 295w,
+/static/f4bc32beaa1e71a3dc334938f5d1b7b0/fb8a0/jarednielsen-create-cron-job-change-default-browser-work-life-balance.png 590w,
+/static/f4bc32beaa1e71a3dc334938f5d1b7b0/526de/jarednielsen-create-cron-job-change-default-browser-work-life-balance.png 885w,
+/static/f4bc32beaa1e71a3dc334938f5d1b7b0/fa2eb/jarednielsen-create-cron-job-change-default-browser-work-life-balance.png 1180w,
+/static/f4bc32beaa1e71a3dc334938f5d1b7b0/417af/jarednielsen-create-cron-job-change-default-browser-work-life-balance.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Maintaining a healthy work-life balance is important when you’re a developer. Especially if you work remote. When I set up a new development environment, I create a cron job to change the default browser between work hours and ‘play’ hours. I use Chrome professionally as much of my workflow is built around the Google ecosphere. But I use Firefox as my personal browser (and so should you) for several reasons, the most important being &lt;a href=&quot;https://www.mozilla.org/en-US/privacy/principles/&quot;&gt;Mozilla’s emphasis on privacy&lt;/a&gt;. &lt;/p&gt;
+&lt;h2&gt;How to Create a Cron Job to Change the Default Browser&lt;/h2&gt;
+&lt;p&gt;Here’s the snippet I use to create a cron job to change the default browser between 8:30AM and 5PM:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;30 8 * * 1-5 xdg-settings set default-web-browser google-chrome.desktop
+0 17 * * 1-5 xdg-settings set default-web-browser firefox.desktop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Cron jobs follow the ‘5 Star’ format: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;* * * * * &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;From left-to-right, each asterisk corresponds to the following: &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Minute (by the hour)&lt;/li&gt;
+&lt;li&gt;Hour (by 24-hour clock)&lt;/li&gt;
+&lt;li&gt;Day (of the month)&lt;/li&gt;
+&lt;li&gt;Month&lt;/li&gt;
+&lt;li&gt;Day(s) (of the week)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In my snippet above, the cron job I created will run at 8:30AM (30 8), but only on weekdays (1-5). This will set my default browser as Chrome.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;30 8 * * 1-5 xdg-settings set default-web-browser google-chrome.desktop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;At 5PM (0 17), the cron job will run and set my default browser back to Firefox.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;0 17 * * 1-5 xdg-settings set default-web-browser firefox.desktop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I leave the day of the month and the month at their default values (*).&lt;/p&gt;
+&lt;h2&gt;Create a Cron Job to Change Default Browser&lt;/h2&gt;
+&lt;p&gt;Creating a cron job on a Unix/Linux environment is easy. &lt;/p&gt;
+&lt;p&gt;To &lt;em&gt;list&lt;/em&gt; the cron job for the current user:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;crontab- l&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To &lt;em&gt;edit&lt;/em&gt; the cron job for the current user:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;crontab -e&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What are your work-life balance hacks? Let me know on Twitter &lt;a href=&quot;https://jarednielsen.com&quot;&gt;@jarednielsen&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Best Podcasts for Web Developers in 2020]]></title><description><![CDATA[Keeping up with the changing pace of technology is part and parcel of being a web developer. Listening to podcasts is a great way to stay…]]></description><link>http://jarednielsen.com/2020-best-podcasts-web-developers/</link><guid isPermaLink="false">http://jarednielsen.com/2020-best-podcasts-web-developers/</guid><pubDate>Mon, 16 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/42f63b519c492898624d8daacaa20594/417af/jared-nielsen-2020-best-podcasts-web-developers.png&quot;
