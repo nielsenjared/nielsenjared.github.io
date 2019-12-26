@@ -1,27 +1,16 @@
 ---
 title: Essential Scrum by Kenneth S. Rubin
 date: "2019-04-15"
-description: 
+description: Scrum is the most popular agile process, and Essential Scrum by Kenneth S. Rubin is arguably the most popular book on the topic. The problem that Scrum seeks to solve is how do we empower teams to identify and solve their own problems?
 keywords: ["agile", "scrum", "essential", "book summary"]
 ---
-![Essential Srum by Kenneth S. Rubin](./essential-scrum.jpg)
+![Essential Srum: A Practical Guide to the Most Popular Agile Process by Kenneth S. Rubin](./essential-scrum.jpg)
 
-
-@TODO introduction; what problem(s) does scrum solve?
-
-[Essential Scrum by Kenneth S. Rubin](https://amzn.to/39cryel) 
-
-## What Problems are Solved by Scrum?
-
-* 
-
-* 
-
+Scrum is the most popular agile process, and [Essential Scrum: A Practical Guide to the Most Popular Agile Process by Kenneth S. Rubin](https://amzn.to/39cryel) is arguably the most popular book on the topic. The problem that Scrum seeks to solve is how do we empower teams to identify and solve their own problems? The following book summary is a combination of my notes and quotes.
 
 _Note: Amazon links are affiliate._
 
-
-## Book Summary of _Essential Scrum_ by Kenneth S. Rubin
+## Book Summary of _Essential Scrum: A Practical Guide to the Most Popular Agile Process_ by Kenneth S. Rubin
 
 > Scrum is an agile approach for developing innovative products and services.
 
@@ -184,6 +173,6 @@ _Note: Amazon links are affiliate._
     * Scrum isn’t anti-documentation:
         * We adopt an economic perspective and carefully review which documents we create. 
 
-That’s the high-level conceptual framework of scrum. The remainder of the book discusses it’s implementation.
+## _Essential Scrum: A Practical Guide to the Most Popular Agile Process_ by Kenneth S. Rubin
 
-[Essential Scrum by Kenneth S. Rubin](https://amzn.to/39cryel) 
+This book summary captures the high-level, conceptual framework of Scrum. The remainder of the book discusses it’s implementation. If you're a technical manager or leader interested in implementing Scrum in your organization, I recommend reading [Essential Scrum: A Practical Guide to the Most Popular Agile Process by Kenneth S. Rubin](https://amzn.to/39cryel).
