@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 27 Dec 2019 13:54:29 GMT</lastBuildDate><item><title><![CDATA[Create a Cron Job to Change Default Browser for Work-Life Balance]]></title><description><![CDATA[Maintaining a healthy work-life balance is important when you’re a developer. Especially if you work remote. When I set up a new development…]]></description><link>http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</link><guid isPermaLink="false">http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</guid><pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 27 Dec 2019 17:12:42 GMT</lastBuildDate><item><title><![CDATA[Create a Cron Job to Change Default Browser for Work-Life Balance]]></title><description><![CDATA[Maintaining a healthy work-life balance is important when you’re a developer. Especially if you work remote. When I set up a new development…]]></description><link>http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</link><guid isPermaLink="false">http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</guid><pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/f4bc32beaa1e71a3dc334938f5d1b7b0/417af/jarednielsen-create-cron-job-change-default-browser-work-life-balance.png&quot;
@@ -807,7 +807,42 @@
 &lt;p&gt;The key to managing group dynamics is not technique but in understanding and managing your own emotional state and responses. If you aren’t managing your own state, no technique or strategy will help. When emotions are high, your team needs someone to stay outside the turmoil. That someone is you, the retrospective leader.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;&lt;em&gt;Agile Retrospectives: Making Good Teams Great&lt;/em&gt; by Esther Derby and Diana Larsen&lt;/h2&gt;
-&lt;p&gt;Agile retrospectives are an important problem-solving tool that help you identify which problems need to be solved. If you’re a technical manager or leader, I recommend reading &lt;a href=&quot;https://amzn.to/388Ocny&quot;&gt;&lt;em&gt;Agile Retrospectives: Making Good Teams Great&lt;/em&gt; by Esther Derby and Diana Larsen&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[We Have Always Been Hackers]]></title><description><![CDATA[From cave drawings and hand-carved flutes to CPUs and machine learning, we, humans, have always been hackers. Our evolution is technology…]]></description><link>http://jarednielsen.com/we-have-always-been-hackers/</link><guid isPermaLink="false">http://jarednielsen.com/we-have-always-been-hackers/</guid><pubDate>Mon, 01 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;jared-nielsen-we-have-always-been-hackers.png&quot; alt=&quot;We Have Always Been Hackers&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Agile retrospectives are an important problem-solving tool that help you identify which problems need to be solved. If you’re a technical manager or leader, I recommend reading &lt;a href=&quot;https://amzn.to/388Ocny&quot;&gt;&lt;em&gt;Agile Retrospectives: Making Good Teams Great&lt;/em&gt; by Esther Derby and Diana Larsen&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[We Have Always Been Hackers]]></title><description><![CDATA[From cave drawings and hand-carved flutes to CPUs and machine learning, we, humans, have always been hackers. Our evolution is technology…]]></description><link>http://jarednielsen.com/we-have-always-been-hackers/</link><guid isPermaLink="false">http://jarednielsen.com/we-have-always-been-hackers/</guid><pubDate>Mon, 01 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1501394391dc154b007a56bd94d3d9ba/417af/jarednielsen-we-have-always-been-hackers.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAACgElEQVQ4y3WU7UtTURzH97cE9aL3/QnRm97Um14YBII9gCKSD2BSkGyILwqKUEN7YsTSTDGHD2ShoTYfZtPZhOZyu7o5N2dOt7mHez6d693Y3ZYHzj2cw+/3ud/f73zvNWEYQpw+T1dxuhEks4J4RnAkZyILWVWP0eNESY42TEaYHlAM0mCRlCAqZ+xEh8bSyL1KKlfIK8IqgEaVWkIwBYEk7Mg1egIbhzAbFizGYDUm2D8RFVBTKUwvRQrh116Cr24/Lp+CLxTmu5JkeCuLPQTWhS0+rQTwxLUWiLNKLvZFkYqmPEFaLE9Zdq/x2tbPi5EZBvyC7uUotebn2BWpNIqsRJRUaDL2TwMeyB45ZUmjqwpDi16mdlQ6+6d49nGMN0G429lH1b0GhsOwGFHL+q4BCwd58uZhDkdE8NkVoHtiid7ZTQZ/+hhxLPNgxMXlq9doH3IwsAOhhGpwRUUP9d6tJ2DmL0wHjql92MHt+vu8G/xAVV0TNxrNtE746PLJmF3V4A4qFWojkzhk2znG7y99zHu82Fwhqi09XLl0gYvnz9Fg36TLfUyvJ004Veq/MqCql+z/QdJ6i9jL62wsjDOgQMc61Ezuc7O+GftbC6/mPMxHdJhaZuriLRd6mEuTyaTZjUaY3T6mo8+K2TpK41yCR9PbdL4fwvLNj9s5R3xPOcPYhgspnGurzZumumecuskgdwbd1Nic1I0FcPgPiIZDRPdjBruVA/MwNW8db1xgXoM2WW7zCrS4oHVVviRQklsB+8+np8u3/RG0OgXNSypNS4IWuba7VPxHuk1yavEiKxXmYWr+3HckeLIueCxVta3o4DapclQRJX8io1WM4x9+pFF/q1iHEgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;We Have Always Been Hackers&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1501394391dc154b007a56bd94d3d9ba/fb8a0/jarednielsen-we-have-always-been-hackers.png&quot;
+        srcset=&quot;/static/1501394391dc154b007a56bd94d3d9ba/1a291/jarednielsen-we-have-always-been-hackers.png 148w,
+/static/1501394391dc154b007a56bd94d3d9ba/2bc4a/jarednielsen-we-have-always-been-hackers.png 295w,
+/static/1501394391dc154b007a56bd94d3d9ba/fb8a0/jarednielsen-we-have-always-been-hackers.png 590w,
+/static/1501394391dc154b007a56bd94d3d9ba/526de/jarednielsen-we-have-always-been-hackers.png 885w,
+/static/1501394391dc154b007a56bd94d3d9ba/fa2eb/jarednielsen-we-have-always-been-hackers.png 1180w,
+/static/1501394391dc154b007a56bd94d3d9ba/417af/jarednielsen-we-have-always-been-hackers.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;From cave drawings and hand-carved flutes to CPUs and machine learning, we, humans, have always been hackers. Our evolution is technology. We didn’t appear in the Garden of Eden and, upon being cast out, grudgingly pick up hoe and axe. Did we evolve to use tools or did tools evolve us?&lt;/p&gt;
 &lt;h2&gt;In The Beginning Was The Command Line…&lt;/h2&gt;
 &lt;blockquote&gt;
