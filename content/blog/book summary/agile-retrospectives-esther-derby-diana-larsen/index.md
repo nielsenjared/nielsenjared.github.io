@@ -2,16 +2,16 @@
 title: Agile Retrospectives by Esther Derby and Diana Larsen
 date: "2019-04-08"
 description: The problem that agile retrospectives seeks to solve is how to solve problems. Let's get meta!
+keywords: ["agile", "retrospectives", "book summary"]
 ---
-![](agile-retrospectives.jpg)
+![Agile Retrospectives: Making Good Teams Great by Esther Derby and Diana Larsen](agile-retrospectives.jpg)
 
 
-Other than agile _itself_, perhaps the most important aspect of agile software development is the retrospective. This is where the iteration becomes recursive and folds the process back on itself. The problem that the retrospective seeks to solve is how to solve problems. [_Agile Retrospectives_ by Esther Derby and Diana Larsen](https://amzn.to/388Ocny) is widely viewed as the handbook on how to lead an agile retrospective. Below are notes and quotes from the book. Let’s get meta!
+Other than agile _itself_, perhaps the most important aspect of agile software development is the retrospective. This is where the iteration becomes recursive and folds the process back on itself. The problem that the retrospective seeks to solve is how to solve problems. [_Agile Retrospectives: Making Good Teams Great_ by Esther Derby and Diana Larsen](https://amzn.to/388Ocny) is widely viewed as the handbook on how to lead an agile retrospective. The following book summary is a combination of my notes and quotes. Let’s get meta!
 
 _Note: Amazon links are affiliate._
 
-
-## Notes and Quotes from _Agile Retrospectives: Making Good Teams Great_ by Esther Derby and Diana Larsen
+## Book Summary of _Agile Retrospectives: Making Good Teams Great_ by Esther Derby and Diana Larsen
 
 > When we say _retrospective_, here’s what we have in mind: a special meeting where the team gathers after completing an increment of work to inspect and adapt their methods and teamwork. Retrospectives enable whole-team learning, act as catalysts for change, and generate action. Retrospectives go beyond checklist project audits or perfunctory project closeouts. And, in contrast to traditional postmortems or project reviews, retrospectives focus not only on the development process, but on the team and team issues. And team issues are as challenging as technical issues--if not more so. 
 
@@ -88,9 +88,9 @@ Here’s a simple, four-step method to debrief almost any activity:
 
 > The key to managing group dynamics is not technique but in understanding and managing your own emotional state and responses. If you aren’t managing your own state, no technique or strategy will help. When emotions are high, your team needs someone to stay outside the turmoil. That someone is you, the retrospective leader.
 
-## _Agile Retrospectives_ by Esther Derby and Diana Larsen
+## _Agile Retrospectives: Making Good Teams Great_ by Esther Derby and Diana Larsen
 
-Agile retrospectives are an important problem-solving tool that help you identify which problems need to be solved. If you're a technical manager or leader, I recommend reading [_Agile Retrospectives_ by Esther Derby and Diana Larsen](https://amzn.to/388Ocny).
+Agile retrospectives are an important problem-solving tool that help you identify which problems need to be solved. If you're a technical manager or leader, I recommend reading [_Agile Retrospectives: Making Good Teams Great_ by Esther Derby and Diana Larsen](https://amzn.to/388Ocny).
 
 
 
