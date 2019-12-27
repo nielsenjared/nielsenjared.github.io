@@ -3,7 +3,7 @@ title: We Have Always Been Hackers
 date: "2019-04-01"
 description: From cave drawings and hand-carved flutes to CPUs and machine learning, we, humans, have always been hackers. Our evolution is technology. We didn't appear in the Garden of Eden and, upon being cast out, grudgingly pick up hoe and axe. Did we evolve to use tools or did tools evolve us?
 ---
-![We Have Always Been Hackers](jared-nielsen-we-have-always-been-hackers.png)
+![We Have Always Been Hackers](jarednielsen-we-have-always-been-hackers.png)
 
 From cave drawings and hand-carved flutes to CPUs and machine learning, we, humans, have always been hackers. Our evolution is technology. We didn't appear in the Garden of Eden and, upon being cast out, grudgingly pick up hoe and axe. Did we evolve to use tools or did tools evolve us?
 
