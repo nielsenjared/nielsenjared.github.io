@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 30 Dec 2019 16:19:37 GMT</lastBuildDate><item><title><![CDATA[How to Scaffold a Boilerplate MERN Application and Deploy to Heroku]]></title><description><![CDATA[There’s more than one way to scaffold a boilerplate MERN application and deploy it to Heroku. This method is straightforward and easy to…]]></description><link>http://jarednielsen.com/mern-deploy-heroku/</link><guid isPermaLink="false">http://jarednielsen.com/mern-deploy-heroku/</guid><pubDate>Mon, 30 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;./jarednielsen-mern-deploy-heroku.png&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 30 Dec 2019 16:51:48 GMT</lastBuildDate><item><title><![CDATA[How to Scaffold a Boilerplate MERN Application and Deploy to Heroku]]></title><description><![CDATA[There’s more than one way to scaffold a boilerplate MERN application and deploy it to Heroku. This method is straightforward and easy to…]]></description><link>http://jarednielsen.com/mern-deploy-heroku/</link><guid isPermaLink="false">http://jarednielsen.com/mern-deploy-heroku/</guid><pubDate>Mon, 30 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;./jarednielsen-mern-deploy-heroku.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;There’s more than one way to scaffold a boilerplate MERN application and deploy it to Heroku. This method is straightforward and easy to maintain. &lt;/p&gt;
 &lt;p&gt;The &lt;a href=&quot;https://github.com/nielsenjared/mern&quot;&gt;repository containing starter code is available on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Initialize Your Project with npm&lt;/h2&gt;
@@ -99,7 +99,121 @@ mongoose&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;p&gt;See also: &lt;a href=&quot;https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process&quot;&gt;https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Add, commit and push to Heroku. Verify that your app builds and is now live.&lt;/p&gt;
 &lt;p&gt;Happy routing!&lt;/p&gt;
-&lt;p&gt;The deployed application can be found &lt;a href=&quot;https://stormy-beach-74916.herokuapp.com/&quot;&gt;https://stormy-beach-74916.herokuapp.com/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Create a Cron Job to Change Default Browser for Work-Life Balance]]></title><description><![CDATA[Maintaining a healthy work-life balance is important when you’re a developer. Especially if you work remote. When I set up a new development…]]></description><link>http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</link><guid isPermaLink="false">http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</guid><pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;The deployed application can be found &lt;a href=&quot;https://stormy-beach-74916.herokuapp.com/&quot;&gt;https://stormy-beach-74916.herokuapp.com/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Cooking, Computer Science, and Activitsm? Fork Yeah!]]></title><description><![CDATA[If you want to get smart AF,  sign up for the Fork Yeah! newsletter . ESTRAGON: I can’t go on like this. VLADIMIR: That’s what you think…]]></description><link>http://jarednielsen.com/fork-yeah-cooking-computer-science-activism/</link><guid isPermaLink="false">http://jarednielsen.com/fork-yeah-cooking-computer-science-activism/</guid><pubDate>Fri, 27 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4459cd6292c9cdf707f0aa9d1980b270/ef9ea/jarednielsen-fork-yeah-venn.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAABPklEQVQoz42SzUrDQBCA+4i+iScFLz6CLyAoFQ9i6aH+lFjFgFrEg6hFPFUsVFpL0aRq/9Lsfk62SdmmtHUnk1l2Zr+Znd0M9tDRJz81tlqJ+jp2KHpaT0JVPDdeaz1DesQw3mVeFC2JluFWzJlsPBFtxQADtWCzwKTCAYxyI7y6L4shzt0Hh+VXul2fl2abXBAQmHi9pMIE2IShM6RHH7d6zsr+Ohura+y+7UimPpcS0oirWwo0RnrHEfj1Dsdenu2tC/LFKjfeFQU5vxMdQofj2IVHjgNM3m+oXddwXRfuTRspjDpsqlN+TGA4uZiFPbSzDkSyv1kqfoWvdoO91gHPwYPxhXLr1pYFQJ08C2Vu/FOkJOKIPvGYejJ6CZDpCg1UM6WJT+tZ2HyglTuySiSxdgz/BaY3pRPMg0XjD5iCVlHXBhciAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Fork Yeah! venn diagram: Cooking, Activism, Computer Science&quot;
+        title=&quot;&quot;
+        src=&quot;/static/4459cd6292c9cdf707f0aa9d1980b270/fb8a0/jarednielsen-fork-yeah-venn.png&quot;
+        srcset=&quot;/static/4459cd6292c9cdf707f0aa9d1980b270/1a291/jarednielsen-fork-yeah-venn.png 148w,
+/static/4459cd6292c9cdf707f0aa9d1980b270/2bc4a/jarednielsen-fork-yeah-venn.png 295w,
+/static/4459cd6292c9cdf707f0aa9d1980b270/fb8a0/jarednielsen-fork-yeah-venn.png 590w,
+/static/4459cd6292c9cdf707f0aa9d1980b270/526de/jarednielsen-fork-yeah-venn.png 885w,
+/static/4459cd6292c9cdf707f0aa9d1980b270/fa2eb/jarednielsen-fork-yeah-venn.png 1180w,
+/static/4459cd6292c9cdf707f0aa9d1980b270/08f6a/jarednielsen-fork-yeah-venn.png 1770w,
+/static/4459cd6292c9cdf707f0aa9d1980b270/ef9ea/jarednielsen-fork-yeah-venn.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you want to get smart AF, &lt;a href=&quot;http://eepurl.com/cDweO5&quot;&gt;sign up for the Fork Yeah! newsletter&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ESTRAGON: I can’t go on like this.&lt;/p&gt;
+&lt;p&gt;VLADIMIR: That’s what you think.&lt;/p&gt;
+&lt;p&gt;― Samuel Beckett, Waiting for Godot&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Are things as bad as they seem right now?&lt;/p&gt;
+&lt;p&gt;Breaking news is breaking my spirit.&lt;/p&gt;
+&lt;p&gt;Walls.&lt;/p&gt;
+&lt;p&gt;Bans.&lt;/p&gt;
+&lt;p&gt;Anger.&lt;/p&gt;
+&lt;p&gt;Fear.&lt;/p&gt;
+&lt;p&gt;Death.&lt;/p&gt;
+&lt;p&gt;But.&lt;/p&gt;
+&lt;p&gt;We can’t let politics distract us from the elephant in the room.&lt;/p&gt;
+&lt;p&gt;Life.&lt;/p&gt;
+&lt;p&gt;We must go on.&lt;/p&gt;
+&lt;p&gt;And so too our progeny.&lt;/p&gt;
+&lt;p&gt;2016 was the warmest year on record. 2019 was the second, following a sequence of record breaking annual temperatures.&lt;/p&gt;
+&lt;p&gt;It’s about to get hot AF.&lt;/p&gt;
+&lt;p&gt;I don’t know about you, but I like this planet. I don’t want to live on Mars. Moving across town is stressful enough.&lt;/p&gt;
+&lt;p&gt;So what do we do?&lt;/p&gt;
+&lt;p&gt;We get healthy.&lt;/p&gt;
+&lt;p&gt;Whether you plan to join the anarchists or run for office, you need a sharp mind and a strong body.&lt;/p&gt;
+&lt;p&gt;I don’t know how we’re going to un-fuck ourselves. I don’t have solutions to far-right populism or global warming.&lt;/p&gt;
+&lt;p&gt;I do know that we gotta eat.&lt;/p&gt;
+&lt;p&gt;And we can thrive on plants alone.&lt;/p&gt;
+&lt;p&gt;Livestock production is responsible for more greenhouse gas emissions than all forms of transportation combined.  &lt;/p&gt;
+&lt;p&gt;That’s right.&lt;/p&gt;
+&lt;p&gt;Planes, trains and automobiles are less bad than adorable burping poop-machines.&lt;/p&gt;
+&lt;p&gt;Numerous studies show that switching to a plant-based diet, or even eating within the recommended guidelines for meat consumption, will significantly reduce food-related greenhouse gas emissions.&lt;/p&gt;
+&lt;p&gt;And by significant, I’m talking 70% reduction for veganism.&lt;/p&gt;
+&lt;p&gt;That’s huge.&lt;/p&gt;
+&lt;p&gt;You know what else is huge?&lt;/p&gt;
+&lt;p&gt;The amount of water meat production sucks up. It takes approximately 4 million gallons of water to produce one ton of beef. One ton of vegetables, on the other hand, only requires somewhere between 50,000-100,000 gallons per ton, depending on the crop.&lt;/p&gt;
+&lt;p&gt;Maths.&lt;/p&gt;
+&lt;p&gt;Do them.&lt;/p&gt;
+&lt;p&gt;Unless you’ve been eating too much meat.&lt;/p&gt;
+&lt;p&gt;It’s our world.&lt;/p&gt;
+&lt;p&gt;If you don’t like where it’s going, fork it!&lt;/p&gt;
+&lt;p&gt;Start with food.&lt;/p&gt;
+&lt;p&gt;Feed that head.&lt;/p&gt;
+&lt;p&gt;The future needs smart cookies.&lt;/p&gt;
+&lt;p&gt;Gluten-free, sugar-free cookies with stamina and focus.&lt;/p&gt;
+&lt;p&gt;What does the future look like to you?&lt;/p&gt;
+&lt;p&gt;How are you eating your way there?&lt;/p&gt;
+&lt;p&gt;If you want to get smart AF, &lt;a href=&quot;http://eepurl.com/cDweO5&quot;&gt;sign up for the newsletter&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;What is Fork Yeah!?&lt;/h2&gt;
+&lt;p&gt;Fork Yeah! merges cooking, computer science and activism. If you’re not interested in any of those, you’re in the wrong place. Beat it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fork Yeah! recipes are gluten-free, sugar-free, soy-free and vegan.&lt;/li&gt;
+&lt;li&gt;Fork Yeah! recipes are curated to optimize energy stability and boost brain function so you can spend your precious time feeling alert and alive. No more peaks and valleys. No more crash and burn.&lt;/li&gt;
+&lt;li&gt;Fork Yeah! recipes are structured for speed and ease of preparation. The directions are written to maximize efficiency and readability without ambiguity.&lt;/li&gt;
+&lt;li&gt;Fork Yeah! recipes constitute a functional ecosystem so you won’t have a cupboard full of random ingredients. Collectively, they are organized for maximum return-on-investment.&lt;/li&gt;
+&lt;li&gt;Fork Yeah! will teach you how to make a recipe your own and make it better, or, fork it.  &lt;/li&gt;
+&lt;li&gt;Fork Yeah! dives into the science of cooking so you can make it an art.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fork Yeah! will make you smart AF (As Fork).&lt;/p&gt;
+&lt;p&gt;The idea is to learn to cook, not follow recipes.&lt;/p&gt;
+&lt;p&gt;Clone the book to your head.&lt;/p&gt;
+&lt;h2&gt;What is Git?&lt;/h2&gt;
+&lt;p&gt;Cooking is an art and a science. It’s a fundamental skill. It’s not hard. You don’t have to be a rockstar. You just need to know the basics.&lt;/p&gt;
+&lt;p&gt;Coding is an art and a science. In the 21st century, it’s a fundamental skill. It’s also not hard. You don’t have to be a rockstar. You just need to know the basics.&lt;/p&gt;
+&lt;p&gt;Git is a version control system. It is most commonly used to develop software.&lt;/p&gt;
+&lt;p&gt;Say you’re writing a program and you want to test a new feature. You could copy all of your files to a new folder, code the feature, test it, and if you like the result, copy/paste the changes back into the original files.&lt;/p&gt;
+&lt;p&gt;Or you could use Git.&lt;/p&gt;
+&lt;p&gt;Git tracks changes in files, allowing you to try new things easily and efficiently without commitment. Doing this is called branching. If you like what you see on the branch, you commit and merge the changes back to the trunk of the tree, or the master.&lt;/p&gt;
+&lt;p&gt;If you want to modify, improve, or pervert someone else’s project, you fork it, and make it your own.&lt;/p&gt;
+&lt;h2&gt;What is GitHub?&lt;/h2&gt;
+&lt;p&gt;GitHub is a web-based version of Git. You can store your files and projects in repositories, or repos. You can browse the projects of other developers and fork or clone them, which means to download it to your computer.&lt;/p&gt;
+&lt;p&gt;Fork Yeah! uses Github to host its recipes and its website.&lt;/p&gt;
+&lt;h2&gt;Do You Need to Learn to Code or Use Git?&lt;/h2&gt;
+&lt;p&gt;You don’t have to use Git or learn to code to get the most out of Fork Yeah!&lt;/p&gt;
+&lt;p&gt;But you’re dually badass if you do.&lt;/p&gt;
+&lt;p&gt;If you want to learn how to use Git and GitHub, start &lt;a href=&quot;https://guides.github.com/activities/hello-world/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to get smart AF, &lt;a href=&quot;http://eepurl.com/cDweO5&quot;&gt;sign up for the Fork Yeah! newsletter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Go Fork.&lt;/p&gt;
+&lt;p&gt;Do great things.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Create a Cron Job to Change Default Browser for Work-Life Balance]]></title><description><![CDATA[Maintaining a healthy work-life balance is important when you’re a developer. Especially if you work remote. When I set up a new development…]]></description><link>http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</link><guid isPermaLink="false">http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</guid><pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/f4bc32beaa1e71a3dc334938f5d1b7b0/417af/jarednielsen-create-cron-job-change-default-browser-work-life-balance.png&quot;
@@ -4490,7 +4604,14 @@ gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;So I Googled it: ‘How do Google maps work?’&lt;/p&gt;
 &lt;p&gt;The answer? JavaScript and nested directories of image tiles.&lt;/p&gt;
 &lt;p&gt;Through a bit more Google Fu, I found &lt;a href=&quot;http://leafletjs.com/&quot;&gt;Leaflet.js&lt;/a&gt;, “an open-source JavaScript library for mobile-friendly interactive maps”.&lt;/p&gt;
-&lt;p&gt;See the final project &lt;a href=&quot;http://jarednielsen.com/pictorial-st-louis/index.html&quot;&gt;Pictorial St. Louis story map&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;See for yourself! &lt;a href=&quot;http://jarednielsen.com/pictorial-st-louis/index.html&quot;&gt;Pictorial St. Louis&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the source code! &lt;a href=&quot;https://github.com/nielsenjared/pictorial-st-louis&quot;&gt;nielsenjared/pictorial-st-louis&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;Non-Geographical Image Maps with Leaflet.js&lt;/h2&gt;
 &lt;p&gt;Leaflet is refreshingly easy to use and lightweight. Take a look at &lt;a href=&quot;https://github.com/nielsenjared/pictorial-st-louis/blob/master/index.html&quot;&gt;&lt;code&gt;index.html&lt;/code&gt; in my GitHub repository&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The magic here is happening in the referenced JavaScript files, which are a bit more complicated because I’m using a non-geographical raster image rather than a pre-existing map. I found &lt;a href=&quot;https://commenthol.github.io/leaflet-rastercoords/&quot;&gt;leaflet-rastercoords&lt;/a&gt;, a project that simplifies using raster images as map tiles. (see also: &lt;a href=&quot;https://github.com/commenthol/leaflet-rastercoords&quot;&gt;Github repo&lt;/a&gt;).&lt;/p&gt;
@@ -4552,4 +4673,11 @@ gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This will generate a series of nested directories populated with image tiles in a new directory, ‘tiles’.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cd ..&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;That’s it! Open index.html in a browser.&lt;/p&gt;
-&lt;p&gt;See it live here: &lt;a href=&quot;http://jarednielsen.com/pictorial-st-louis/index.html&quot;&gt;http://jarednielsen.com/pictorial-st-louis/index.html&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;See for yourself! &lt;a href=&quot;http://jarednielsen.com/pictorial-st-louis/index.html&quot;&gt;Pictorial St. Louis&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the source code! &lt;a href=&quot;https://github.com/nielsenjared/pictorial-st-louis&quot;&gt;nielsenjared/pictorial-st-louis&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item></channel></rss>
