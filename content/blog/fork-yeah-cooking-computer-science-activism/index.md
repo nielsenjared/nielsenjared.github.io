@@ -1,11 +1,13 @@
 ---
 title: Cooking, Computer Science, and Activitsm? Fork Yeah!
-date: "2019-12-30   "
+date: "2019-12-27"
 description: Fork Yeah! merges cooking, computer science and activism. If you’re not interested in any of those, you’re in the wrong place. Beat it.
-keywords: ['vegan', 'fork', 'git', 'github']
+keywords: ['vegan', 'fork', 'git', 'github', 'cooking', 'computer science']
 ---
 
-![Fork Yeah venn diagram: Cooking, Activism, Computer Science](./jarednielsen-fork-yeah-venn.png)
+![Fork Yeah! venn diagram: Cooking, Activism, Computer Science](./jarednielsen-fork-yeah-venn.png)
+
+_If you want to get smart AF, [sign up for the Fork Yeah! newsletter](http://eepurl.com/cDweO5)._
 
 > ESTRAGON: I can't go on like this.
 >
@@ -94,6 +96,9 @@ What does the future look like to you?
 
 How are you eating your way there?
 
+If you want to get smart AF, [sign up for the newsletter](http://eepurl.com/cDweO5).
+
+
 ## What is Fork Yeah!?
 
 Fork Yeah! merges cooking, computer science and activism. If you’re not interested in any of those, you’re in the wrong place. Beat it.
@@ -139,7 +144,7 @@ But you’re dually badass if you do.
 
 If you want to learn how to use Git and GitHub, start [here](https://guides.github.com/activities/hello-world/).
 
-If you want to get smart, [sign up for the newsletter](http://eepurl.com/cDweO5).
+If you want to get smart AF, [sign up for the Fork Yeah! newsletter](http://eepurl.com/cDweO5).
 
 Go Fork.
 
