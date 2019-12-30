@@ -20,7 +20,9 @@ The answer? JavaScript and nested directories of image tiles.
 
 Through a bit more Google Fu, I found [Leaflet.js](http://leafletjs.com/), “an open-source JavaScript library for mobile-friendly interactive maps”.
 
-See the final project [Pictorial St. Louis story map](http://jarednielsen.com/pictorial-st-louis/index.html).
+* See for yourself! [Pictorial St. Louis](http://jarednielsen.com/pictorial-st-louis/index.html).
+
+* Download the source code! [nielsenjared/pictorial-st-louis](https://github.com/nielsenjared/pictorial-st-louis)
 
 ## Non-Geographical Image Maps with Leaflet.js
 
@@ -138,4 +140,6 @@ cd ..
 ```
 That’s it! Open index.html in a browser.
 
-See it live here: http://jarednielsen.com/pictorial-st-louis/index.html
+* See for yourself! [Pictorial St. Louis](http://jarednielsen.com/pictorial-st-louis/index.html).
+
+* Download the source code! [nielsenjared/pictorial-st-louis](https://github.com/nielsenjared/pictorial-st-louis)
