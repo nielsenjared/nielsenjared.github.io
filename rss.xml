@@ -1,4 +1,105 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 27 Dec 2019 17:12:42 GMT</lastBuildDate><item><title><![CDATA[Create a Cron Job to Change Default Browser for Work-Life Balance]]></title><description><![CDATA[Maintaining a healthy work-life balance is important when you’re a developer. Especially if you work remote. When I set up a new development…]]></description><link>http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</link><guid isPermaLink="false">http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</guid><pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 30 Dec 2019 16:19:37 GMT</lastBuildDate><item><title><![CDATA[How to Scaffold a Boilerplate MERN Application and Deploy to Heroku]]></title><description><![CDATA[There’s more than one way to scaffold a boilerplate MERN application and deploy it to Heroku. This method is straightforward and easy to…]]></description><link>http://jarednielsen.com/mern-deploy-heroku/</link><guid isPermaLink="false">http://jarednielsen.com/mern-deploy-heroku/</guid><pubDate>Mon, 30 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;./jarednielsen-mern-deploy-heroku.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;There’s more than one way to scaffold a boilerplate MERN application and deploy it to Heroku. This method is straightforward and easy to maintain. &lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/nielsenjared/mern&quot;&gt;repository containing starter code is available on GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Initialize Your Project with npm&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;mkdir mern
+cd mern
+npm init&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;During the init process you will be prompted to add a GitHub repository. Now would be a good time to make a new project on GitHub. Add the repo link to your package.json when prompted.&lt;/p&gt;
+&lt;h2&gt;Initialize Your Project with Git&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git init
+git remote add origin &amp;lt;URL-to-your-repo&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Add &lt;code&gt;node_modules&lt;/code&gt; to your &lt;code&gt;.gitignore&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Set Up a Simple Express Server&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;npm install express --save&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Add a server.js:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; express &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;express&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; app &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;express&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  res&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;PORT&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;PORT&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3001&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;PORT&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Start the server and navigate to localhost:3001 to verify that it works. You don’t need to use port 3001, but don’t use 3000. That’s the default for Create React App.&lt;/p&gt;
+&lt;h2&gt;Deploy to Heroku&lt;/h2&gt;
+&lt;p&gt;Do not wait until the last minute to deploy! Let’s deploy this now so we can test deployment periodically.&lt;/p&gt;
+&lt;p&gt;Update package.json:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&quot;test&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;echo \&quot;Error: no test specified\&quot; &amp;amp;&amp;amp; exit 1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&quot;start&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;node server.js&quot;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then log into Heroku via the command line and create a new app:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;heroku login
+heroku create&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Verify the creation of your Heroku app by running &lt;code&gt;git remote -v&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then run the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git add .
+git commit -m “First”
+git push -u origin master
+git push heroku master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Navigate to the URL provided to verify deployment.&lt;/p&gt;
+&lt;p&gt;In the future:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git add .
+git commit -m “Ch-ch-ch-changes…”
+git push heroku master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;MongoDB&lt;/h2&gt;
+&lt;p&gt;Log into Heroku.com and find your app. Under Resources, search for &lt;strong&gt;mLab&lt;/strong&gt; in the Add-ons input field and add it as a Provision. If there are no results, you need to add a credit card to your account. Don’t worry, it’s free.&lt;/p&gt;
+&lt;p&gt;Just for fun, under Settings, reveal your app config variables. There it is, our MongoDB environment variable, &lt;code&gt;MONGODB_URI&lt;/code&gt;. You will see how that is used below.&lt;/p&gt;
+&lt;p&gt;Install Mongoose:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;npm install --save mongoose`&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Add to server.js:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; mongoose &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;mongoose&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+mongoose&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MONGODB_URI&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;mongodb://localhost/mern&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    useNewUrlParser&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+    useUnifiedTopology&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Add &lt;code&gt;models&lt;/code&gt; and &lt;code&gt;routes&lt;/code&gt; directories to your app:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;mkdir models routes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To these add placeholder &lt;code&gt;index.js&lt;/code&gt; files:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;touch models/index.js routes/index.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;React&lt;/h2&gt;
+&lt;p&gt;Install Create React App if you don’t already have it:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm install -g create-react-app&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;From within your the root directory of your app, run&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;create-react-app client&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now let’s connect the front to the back using concurrently and a proxy:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save concurrently&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To the package.json in the root directory of your app, add two new scripts:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;test&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;echo \&quot;Error: no test specified\&quot; &amp;amp;&amp;amp; exit 1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;start&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;node server.js&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;client&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;npm run start --prefix client&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;dev&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;concurrently \&quot;npm run start\&quot; \&quot;npm run client\&quot;&quot;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To the package.json in your client directory, just below “private”, add:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;proxy&amp;quot;: &amp;quot;http://localhost:3001/&amp;quot;,&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;From here you will start your app from its root directory with:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm run dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will start both servers &lt;em&gt;concurrently&lt;/em&gt;. Try it!&lt;/p&gt;
+&lt;h2&gt;Heroku, Again&lt;/h2&gt;
+&lt;p&gt;Add the path package:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save path&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In server.js, replace the ‘Hello World!’ get route with the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;NODE_ENV&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;production&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;express&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;client/build&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; path &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;path&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;*&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    res&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sendFile&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;__dirname&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;client&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;build&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;index.html&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;All requests will be met with the &lt;code&gt;index.html&lt;/code&gt; file as a response. From there, you will use ReactRouter.&lt;/p&gt;
+&lt;p&gt;To the package.json in the root directory of your app, add one more script:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&quot;heroku-postbuild&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;NPM_CONFIG_PRODUCTION=false npm install --prefix client &amp;amp;&amp;amp; npm run build --prefix client&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;See also: &lt;a href=&quot;https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process&quot;&gt;https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Add, commit and push to Heroku. Verify that your app builds and is now live.&lt;/p&gt;
+&lt;p&gt;Happy routing!&lt;/p&gt;
+&lt;p&gt;The deployed application can be found &lt;a href=&quot;https://stormy-beach-74916.herokuapp.com/&quot;&gt;https://stormy-beach-74916.herokuapp.com/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Create a Cron Job to Change Default Browser for Work-Life Balance]]></title><description><![CDATA[Maintaining a healthy work-life balance is important when you’re a developer. Especially if you work remote. When I set up a new development…]]></description><link>http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</link><guid isPermaLink="false">http://jarednielsen.com/create-cron-job-change-default-browser-work-life-balance/</guid><pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/f4bc32beaa1e71a3dc334938f5d1b7b0/417af/jarednielsen-create-cron-job-change-default-browser-work-life-balance.png&quot;
@@ -4329,4 +4430,126 @@ gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://medium.freecodecamp.org/how-to-write-a-blog-using-gatsby-from-your-phone-e92a99851a04&quot;&gt;How to Use Gatsby to Create Your Blog and Work on It From Your Phone&lt;/a&gt; (h/t &lt;a href=&quot;https://medium.freecodecamp.org/@chen&quot;&gt;Hu Chen&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How to Make an Interactive Story Map Using Leaflet.js and Non-Geographical Images]]></title><description><![CDATA[I recently discovered the  Digital Collections  archived and made public by the Library of Congress. The collections range from historical…]]></description><link>http://jarednielsen.com/make-interactive-story-map-leaflet-non-geographical-images/</link><guid isPermaLink="false">http://jarednielsen.com/make-interactive-story-map-leaflet-non-geographical-images/</guid><pubDate>Mon, 22 May 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 69.47916666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAADJ0lEQVQozyWSa1PaeBTG8+m6L/bNznR2uxetVq0FuYZLGiEgdwi5CSEmQAJCsoRrQJFCJeAKqGurvUyrtdNO3+zWdjudfob+nX135sx5zvye8xzo7Sh52gm+3sevxtTVmL4YEi8H8Ysh/mZMfJildBXriO4jLXR1QL0/ZC6HyfNu5O2YfjnAn+9FoVc6QQeXUuGVquDUJLSctnHx1QJt2tlGK1swE1o2Lv6IwXcEYm3SjjRyrqRvgceNuyVs2gpB571YLmmocHYefyBS5jJ7U5TSlpaE5Km1quDaLWOZuGELN2iFh5N2WM7YcqRJE9ELnYJGKlZgzK28u5l3g9FhbaMhuhXOphWQ50OyLiJ6M3ygRRoi8qjiG6i+HLFWZmE5A794TEAzLQQ4JcascHAjj/Qrvv3aRpm1FlPmD0+ER+pGV8FGzXBDQk56+Nljgk8aSyysCu73R5kbMRu7f0OYdYJ9B61QV/bU8i416zgfkuN25GRAVAQnTxhBc7e8rmzBEmOVOefVYQp6rZOE/66SsbUk907Je6CFtSKq8Pb2NgL4N6OrXNLYlFCZsxfT1lYBAZgJbEGkrTfiyxGVwOZl1rYne4FnvR4ECFXB0VO8ndJ6MWWTGEs9j3SK68BLLeus8LBEW0Xa8kqnoWkzkCMMKgfXBGdNcO2VvdublhxpGFS8PdlTzbpw3yKIQOHs3bIHRMVGV8iNe3RgaVT1QyftMOlf4KL384RRZu1ArPKOImP6k7PtFFEeNxD+RQE3/J8/4bsLciX995LYoq76oL9qfh/8Mxdd2QwuZXFjW0SqvIONLEfR3+uCU6RMWXDeTWsM/WObMafDy0raFn04h5pu94ootC97Vud+8FhvA31ifT6OzudwQ8D5y+rcLS6yAqACrl+ZwFLQeUdOWfPkWomxuAw/BV2/tQQH9G5MDRVPv4TOmsGn3cSkGXrRx2fNQFdyP+slJo3QuBo47cT0CjZths724ue9xLQROqwHwYdDH6fktzP229P052Pm65PMl1P20zFzPSM/H9Og88+Uuj5OfTlN//d36vqI+TijPh3R/06oi378sh/7Du6Q65Z94IRqAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Pictorial St. Louis&quot;
+        title=&quot;&quot;
+        src=&quot;/static/97f8e47c42d99f2985178d193b4f87be/fb8a0/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images.png&quot;
+        srcset=&quot;/static/97f8e47c42d99f2985178d193b4f87be/1a291/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images.png 148w,
+/static/97f8e47c42d99f2985178d193b4f87be/2bc4a/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images.png 295w,
+/static/97f8e47c42d99f2985178d193b4f87be/fb8a0/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images.png 590w,
+/static/97f8e47c42d99f2985178d193b4f87be/526de/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images.png 885w,
+/static/97f8e47c42d99f2985178d193b4f87be/fa2eb/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images.png 1180w,
+/static/97f8e47c42d99f2985178d193b4f87be/08f6a/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images.png 1770w,
+/static/97f8e47c42d99f2985178d193b4f87be/ef9ea/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;p&gt;I recently discovered the &lt;a href=&quot;https://www.loc.gov/collections/&quot;&gt;Digital Collections&lt;/a&gt; archived and made public by the Library of Congress. The collections range from historical photographs and graphic arts to newspaper clippings and maps. I wanted to do something fun with one of these collections and learn some new technology at the same time. The &lt;a href=&quot;https://www.loc.gov/resource/g4164sm.gpm00001/?sp=1&quot;&gt;Pictorial St. Louis collection&lt;/a&gt; caught my eye.&lt;/p&gt;
+&lt;p&gt;What I found most interesting about this collection was the scope, the aerial perspective, and the detail of the drawing. I wanted to see all of the drawings stitched together in one large map. So I downloaded all 110 images, cropped and cleaned up the edges, then spliced them together in one massive file: 64000 x 20275 pixels. I could have gone slightly larger, but that was the limit of what the GPU on my laptop could handle. I need the file as large as possible so I would lose very little of the resolution for zooming in on details.&lt;/p&gt;
+&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 31.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsSAAALEgHS3X78AAAA7klEQVQY03WNua5GABSEvX9NFIjYtz/25ReJCKVYIuLm8gAahUKLO6G+U5yczJlvDqHruuM4lmX5vp8kSRzHiqJommbbNhb4QRAggNjnEQKGYcD3PI+QJMl1XZA4II0DXOxYME3TxBRFUVXVtwJ5nudRnec5AfIFvt9vGIZZllVVBRPdiIJhGIamaWQAC4IAp+u64zj2fSc4jiNJkmVZAIBlWX7f4icw7hFFUW8mTdOiKNZ1ve/7ui5imqa6rsuyjKII39CNCoQwUde27TiOfd/j27IsAF7sfkS827Zt8zwPw9A0ze+jn0fned7/6w9HjA1oSey7JwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;The compiled map image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/708649f53ef3fe842a0ad8983c4c453c/fb8a0/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images-compiled.png&quot;
+        srcset=&quot;/static/708649f53ef3fe842a0ad8983c4c453c/1a291/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images-compiled.png 148w,
+/static/708649f53ef3fe842a0ad8983c4c453c/2bc4a/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images-compiled.png 295w,
+/static/708649f53ef3fe842a0ad8983c4c453c/fb8a0/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images-compiled.png 590w,
+/static/708649f53ef3fe842a0ad8983c4c453c/526de/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images-compiled.png 885w,
+/static/708649f53ef3fe842a0ad8983c4c453c/fa2eb/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images-compiled.png 1180w,
+/static/708649f53ef3fe842a0ad8983c4c453c/08f6a/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images-compiled.png 1770w,
+/static/708649f53ef3fe842a0ad8983c4c453c/ef9ea/jarednielsen-make-interactive-story-map-leaflet-non-geographical-images-compiled.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;p&gt;I initially thought I would make a standalone app and I’ve done image processing in the past with Processing and openFrameworks, so I mocked up some tests in both of those, but neither was the right tool. Even a 5000 x 3500 px image was more than Processing could, well, process. And openFrameworks was the long-way to make something very simple. I wanted the drawing(s) to function like a map, with zoom and pan and no loss of resolution.&lt;/p&gt;
+&lt;p&gt;So I Googled it: ‘How do Google maps work?’&lt;/p&gt;
+&lt;p&gt;The answer? JavaScript and nested directories of image tiles.&lt;/p&gt;
+&lt;p&gt;Through a bit more Google Fu, I found &lt;a href=&quot;http://leafletjs.com/&quot;&gt;Leaflet.js&lt;/a&gt;, “an open-source JavaScript library for mobile-friendly interactive maps”.&lt;/p&gt;
+&lt;p&gt;See the final project &lt;a href=&quot;http://jarednielsen.com/pictorial-st-louis/index.html&quot;&gt;Pictorial St. Louis story map&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Non-Geographical Image Maps with Leaflet.js&lt;/h2&gt;
+&lt;p&gt;Leaflet is refreshingly easy to use and lightweight. Take a look at &lt;a href=&quot;https://github.com/nielsenjared/pictorial-st-louis/blob/master/index.html&quot;&gt;&lt;code&gt;index.html&lt;/code&gt; in my GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The magic here is happening in the referenced JavaScript files, which are a bit more complicated because I’m using a non-geographical raster image rather than a pre-existing map. I found &lt;a href=&quot;https://commenthol.github.io/leaflet-rastercoords/&quot;&gt;leaflet-rastercoords&lt;/a&gt;, a project that simplifies using raster images as map tiles. (see also: &lt;a href=&quot;https://github.com/commenthol/leaflet-rastercoords&quot;&gt;Github repo&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;“What’s the big deal with using non-geographical raster images as maps?”, you ask.&lt;/p&gt;
+&lt;p&gt;For a map to be useful, interactive and interesting, it needs to be big and feature zoom functionality. This is relatively easy to do with vector graphics, which are not really image files, but a set of instructions for how to draw shapes and lines, or with pre-existing tile libraries, like MapBox. Raster images, on the other hand, are bitmaps, which means every pixel of the image is assigned a value. So raster image files are generally much larger than vector image files because they contain more information. As I’m sure you are well aware, big images on a site take time to load, especially on a mobile device.&lt;/p&gt;
+&lt;h2&gt;Story Mapping with Leaflet.js&lt;/h2&gt;
+&lt;p&gt;While I was searching GitHub for ideas and examples of Leaflet projects, I found &lt;a href=&quot;https://github.com/jackdougherty/leaflet-storymap&quot;&gt;Jack Dougherty’s excellent storymap repo&lt;/a&gt; (If you want to learn more, check out his free book, Data Viz For All.) This was the perfect way to easily make Pictorial St Louis interactive, and most important, interesting, so I hacked leaflet-rastercoords together with leaflet-storymap.&lt;/p&gt;
+&lt;p&gt;Next I needed a story to tell. My first step was to Tweet at &lt;a href=&quot;https://twitter.com/LOCMaps&quot;&gt;LCMaps&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/STLMapRoom&quot;&gt;STLMapRoom&lt;/a&gt;…&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Hey &lt;a href=&quot;https://twitter.com/STLMapRoom?ref_src=twsrc%5Etfw&quot;&gt;@STLMapRoom&lt;/a&gt; I made a map using Dry&amp;#39;s 1875 drawings from &lt;a href=&quot;https://twitter.com/LOCMaps?ref_src=twsrc%5Etfw&quot;&gt;@LOCMaps&lt;/a&gt; Can anyone help me with context/background? &lt;a href=&quot;https://t.co/uMfmLZwYZV&quot;&gt;https://t.co/uMfmLZwYZV&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jared Nielsen (@jarednielsen) &lt;a href=&quot;https://twitter.com/jarednielsen/status/862307223334268929?ref_src=twsrc%5Etfw&quot;&gt;May 10, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;The LCMaps account referred me to the &lt;a href=&quot;https://www.loc.gov/rr/askalib/&quot;&gt;Ask a Librarian&lt;/a&gt; service provided by the Library of Congress. I submitted a question and three days later received a response with attached pdfs scanned from books providing history and context for both panoramic maps and the artist of Pictorial St. Louis, Camille N. Dry.&lt;/p&gt;
+&lt;p&gt;Then I spent a few days researching Dry and late 19th Century St. Louis. I found some excellent resources:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://lucasandgarrison.com/homepage/introduction/the-maps/&quot;&gt;Lucas and Garrison 1875&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.historyhappenshere.org/node/7694&quot;&gt;History Happens Here — The Missour History Museum’s Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.distilledhistory.com/&quot;&gt;Distilled History&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.stlouis-mo.gov/archive/neighborhood-histories-norbury-wayman/bissell/works4.htm&quot;&gt;City of St. Louis Archive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.flickr.com/photos/73762611@N00/5992654457&quot;&gt;Keen Delage via Flickr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It was then simply a matter of ‘writing’ a story and filling in the blanks in maps.geojson.&lt;/p&gt;
+&lt;h2&gt;DIY: Make an Interactive Story Map Using Leaflet.js and Non-Geographical Images&lt;/h2&gt;
+&lt;p&gt;Making your own story map with Leaflet.js and non-geographical images is super easy. The instructions below assume your are using a Unix-based command line.&lt;/p&gt;
+&lt;p&gt;Download or clone this repo: &lt;a href=&quot;https://github.com/nielsenjared/pictorial-st-louis&quot;&gt;https://github.com/nielsenjared/pictorial-st-louis&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;ImageMagick&lt;/h3&gt;
+&lt;p&gt;This approach is a bit ridiculous and convoluted, but it’s my quick-and-dirty workaround for the Github file size limit of 100MB (The full .png is ~900MB). You need to stitch together the complete map from the slices included in the maps directory and then slice that file into tiles.&lt;/p&gt;
+&lt;p&gt;I know.&lt;/p&gt;
+&lt;p&gt;If you don’t have it already, install ImageMagick:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;sudo apt-get install imagemagick&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Change into the maps directory:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cd maps&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And run&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;convert \( 01.png 02.png 03.png 04.png 05.png 06.png 07.png 08.png +append \) \
+ \( 09.png 10.png 11.png 12.png 13.png 14.png 15.png 16.png +append \) \
+ \( 17.png 18.png 19.png 20.png 21.png 22.png 23.png 24.png +append \) \
+ \( 25.png 26.png 27.png 28.png 29.png 30.png 31.png 32.png +append \) \
+\( 33.png 34.png 35.png 36.png 37.png 38.png 39.png 40.png +append \) \
+ -append ../map.png&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will generate map.png in the parent directory.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cd ..&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In case you’re interested, I spliced the original with this snippet:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;convert key.png -crop 8000x4055 %04d.png&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Making Tiles&lt;/h3&gt;
+&lt;p&gt;I used a Python script to create my raster tiles. &lt;a href=&quot;https://github.com/commenthol/gdal2tiles-leaflet&quot;&gt;https://github.com/commenthol/gdal2tiles-leaflet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;First, you will need to install GDAL:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt-get python-gdal&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Next, download or clone gdal2tiles.py:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git clone https://github.com/commenthol/gdal2tiles-leaflet.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The README explains how to determine optimal zoom level:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;echo “l(x/256)/l(2)” | bc -l&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Where ‘x’ is the width of the image you want to tile.&lt;/p&gt;
+&lt;p&gt;So in my case&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;echo “l(64000/256)/l(2)” | bc -l&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Returned&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;7.96578428466208704368&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Round up. Mine is 8.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cd gdal2*&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Next run&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;python gdal2tiles.py -l -p raster -z 0–8 -w none ../map.png ../tiles&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will generate a series of nested directories populated with image tiles in a new directory, ‘tiles’.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cd ..&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That’s it! Open index.html in a browser.&lt;/p&gt;
+&lt;p&gt;See it live here: &lt;a href=&quot;http://jarednielsen.com/pictorial-st-louis/index.html&quot;&gt;http://jarednielsen.com/pictorial-st-louis/index.html&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
