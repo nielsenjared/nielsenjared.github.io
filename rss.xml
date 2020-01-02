@@ -1,4 +1,766 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 30 Dec 2019 16:51:48 GMT</lastBuildDate><item><title><![CDATA[How to Scaffold a Boilerplate MERN Application and Deploy to Heroku]]></title><description><![CDATA[There’s more than one way to scaffold a boilerplate MERN application and deploy it to Heroku. This method is straightforward and easy to…]]></description><link>http://jarednielsen.com/mern-deploy-heroku/</link><guid isPermaLink="false">http://jarednielsen.com/mern-deploy-heroku/</guid><pubDate>Mon, 30 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;./jarednielsen-mern-deploy-heroku.png&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 02 Jan 2020 23:16:08 GMT</lastBuildDate><item><title><![CDATA[Create a GitHub Repository and Your First Commit]]></title><description><![CDATA[Software developers use GitHub repositories to host the code for their projects. We can create a GitHub repository for any purpose, like…]]></description><link>http://jarednielsen.com/fork-yeah-github-repository-commit/</link><guid isPermaLink="false">http://jarednielsen.com/fork-yeah-github-repository-commit/</guid><pubDate>Fri, 03 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;jarednielsen-forkyeah-github-repository-commit.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Software developers use GitHub repositories to host the code for their projects. We can create a GitHub repository for any purpose, like recipes! GitHub? More like GutHub? &lt;/p&gt;
+&lt;h2&gt;Create a GitHub Repository and Your First Commit&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dfe80beabed4e6e17c5869a7c0807426/417af/jarednielsen-forkyeah-github-repository-commit-00.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAACBUlEQVQoz1WRTWsTURSG51e4kIKaNmkzM8lMMh/5bDI1CTapUBTBjYgKIgrdBYulpVYKXZRWCi4CFfsXXAku3BRL6kpbC6YTOtRmUGw0HWnNfN/xTKap8fJwOPfc9z3nwMUCBO3HKZpLUkyCpDkywgOhaGwoFPUT1PkL/nN9Pt8geSlAXAwQYSaBUyzowQVgOM27UFyQ4obCLES4EpEYRDIafzIzV1lde1FZrbxcW1hc7n0FMMg8QkyCT49wKSHMJkHkVT5tfXYcxzQtiA1ZPp3UAQTY2QU8t+89uHv/4c1bdzK5UdgCJq9vVBFy/rRViPU9yfN4k10z0W0D0vTl0Wy+dOXq9XxxPDaco/n0+vuqphnNny3NsKX9r71md+2zHQAmnmGTApvI8qkRLi3EY7lnb1Yma0szWyuTX54vb76ioyk88s+P9QepAZzuIeJGgvYFqUGSef3u7a4i73wTa62DjZ2PA0HK00Psx2ksWxjLFkpCYUxwk/+AyqOJ8vT0/NTU3NPZhXL5cXH8Rr50LZMvggXANN0AVM1QOwnQ1nS1y5GifD/8JcmH2+Ledl3a/FBt/mgYFoInUGI2cgDLRpZtw5eYlu10DnJOD/ySZuiSvC//1luKcnJyDEUbIXBhhml1MA8ajdquKIp1TdPh+ei4rRomNGkqbQs6IgSrub0su2ux/gJ44UgRMTX1/wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 00&quot;
+        title=&quot;&quot;
+        src=&quot;/static/dfe80beabed4e6e17c5869a7c0807426/fb8a0/jarednielsen-forkyeah-github-repository-commit-00.png&quot;
+        srcset=&quot;/static/dfe80beabed4e6e17c5869a7c0807426/1a291/jarednielsen-forkyeah-github-repository-commit-00.png 148w,
+/static/dfe80beabed4e6e17c5869a7c0807426/2bc4a/jarednielsen-forkyeah-github-repository-commit-00.png 295w,
+/static/dfe80beabed4e6e17c5869a7c0807426/fb8a0/jarednielsen-forkyeah-github-repository-commit-00.png 590w,
+/static/dfe80beabed4e6e17c5869a7c0807426/526de/jarednielsen-forkyeah-github-repository-commit-00.png 885w,
+/static/dfe80beabed4e6e17c5869a7c0807426/fa2eb/jarednielsen-forkyeah-github-repository-commit-00.png 1180w,
+/static/dfe80beabed4e6e17c5869a7c0807426/417af/jarednielsen-forkyeah-github-repository-commit-00.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;If you don’t have one already, navigate to &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt; and create an account.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e1462bf49d6d990157d7e849fb281450/417af/jarednielsen-forkyeah-github-repository-commit-01.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAB2UlEQVQoz41Sz2sTQRTev9GD4KkShJBqY2piI5aCF6GQHhTBo2BvIt48Cb304sEcCrZQWixtiC00P3azs5nZ+fn5Zjab7sGWDjz27ce8733vfRN1uq/x8tUmmq0Oak+eoVZ7itW1dbTaXTTWWreGv7PafIHm83U8qHdRf/gWH1feIMLi7P/oo/d4C5uPGnj/7jMhDkpp3Odw5XA14SGPtC6Kvn3dw05jA716Gzvbn2CMRsoYpJTIKYwxyHiOmHHCVMC5EIRbaK2gpIBzFpEH/On/OkRv+wM67S3s7n6BR1kmIHIF39RaS3mOORekvMB8E+fcUqnPoxLgWYbziwGmcQJFHedCkpoc6VwGAk/olZZkfh3+G+op3CKWhDl1v74egXMvHYFQaRN2WRYVI4tA7tVVFRaEqBDSXv6OGebSFoaEkW4uhyloZyzjQV2h8A7CNE5xejJEljIYoSEEp+IUknZorAmqrKMmlvbpCoXBFGtvCFEh9K7NiFTR6Fbb0P0qHuB8coRh/AcJm+JsfIDflz9xNjrB6egQw+Q41NrAsVBYHal6JBHGZFTCJ8gVPRUlwURC/1MIyTGjvD+4RMrt/0cuXSodS5IZGSVvfczer+8HDBdjtVTpy/8B1VwuttN3X3wAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 01&quot;
+        title=&quot;&quot;
+        src=&quot;/static/e1462bf49d6d990157d7e849fb281450/fb8a0/jarednielsen-forkyeah-github-repository-commit-01.png&quot;
+        srcset=&quot;/static/e1462bf49d6d990157d7e849fb281450/1a291/jarednielsen-forkyeah-github-repository-commit-01.png 148w,
+/static/e1462bf49d6d990157d7e849fb281450/2bc4a/jarednielsen-forkyeah-github-repository-commit-01.png 295w,
+/static/e1462bf49d6d990157d7e849fb281450/fb8a0/jarednielsen-forkyeah-github-repository-commit-01.png 590w,
+/static/e1462bf49d6d990157d7e849fb281450/526de/jarednielsen-forkyeah-github-repository-commit-01.png 885w,
+/static/e1462bf49d6d990157d7e849fb281450/fa2eb/jarednielsen-forkyeah-github-repository-commit-01.png 1180w,
+/static/e1462bf49d6d990157d7e849fb281450/417af/jarednielsen-forkyeah-github-repository-commit-01.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;The primary purpose of GitHub is to create and host repositories. What’s a repository? We can think of a repository like a cookbook or a recipe box: it’s a place for us to store our recipes. &lt;/p&gt;
+&lt;p&gt;GitHub provides several different options for creating a new repository. The easiest to access is in the right side of the navbar. If you click the &lt;code&gt;+&lt;/code&gt; sign, the first option in the dropdown menu is &lt;code&gt;New repository&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/67cf1ddf94d5be60b422680ecc3ee6ef/417af/jarednielsen-forkyeah-github-repository-commit-02.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABzElEQVQoz42RTWsTURSG8+/8Aa4EFxIESSJpY6ZJsHRfSFfqulBxI+LKhSCI6MKFVpFSSmmp2JYW8qHJZCZz537N473TNJ2GIh7mHe7ce88z7zmnFLQfs9JZpb4cUL7/kHK5Rq3eYOlRi9qtu1Rvl6kEQa5qq3WhTptKp8XS8gr1epOqu19vBDSabUrM4tO7bbr31li9U+HJsxdg3fPmB+yew34fPh65S04fDrFv9+DzCcOdfSZ7RxSjpLXOF69fvWej0qL7oMnG+ibSQK8XM00UNhLY3zF2EGF6Ier7MXw75ezLDoODn3m+tZbMZpSMsfnG9tdduutPCZprPN96iXKHk0QiUunWBscnK8hnZdqQZbM9t/Aq+ZePJI75dXzCn9EYqSRxIkhTQZIkCJGilJonZdb3I0NqxWWFOacITNOUfn/gACI/jKaSSOgZhHnSpbwv5YHGXAF9D+dAqTgbRgh5cXkUSYZhim9JEVQESpXm0BuBk/GEw4NTzscjlBvEKJwydsMQQuQNX3To9U+HUkrCUchYxGhliJLU7SmXpF3/tHNq/q/k4sdVZIRT5crXzp1xurlkP6hrQyk6XEzwPfXO9IKzokz+M3sN+Bc36C8YQX8iCwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 02&quot;
+        title=&quot;&quot;
+        src=&quot;/static/67cf1ddf94d5be60b422680ecc3ee6ef/fb8a0/jarednielsen-forkyeah-github-repository-commit-02.png&quot;
+        srcset=&quot;/static/67cf1ddf94d5be60b422680ecc3ee6ef/1a291/jarednielsen-forkyeah-github-repository-commit-02.png 148w,
+/static/67cf1ddf94d5be60b422680ecc3ee6ef/2bc4a/jarednielsen-forkyeah-github-repository-commit-02.png 295w,
+/static/67cf1ddf94d5be60b422680ecc3ee6ef/fb8a0/jarednielsen-forkyeah-github-repository-commit-02.png 590w,
+/static/67cf1ddf94d5be60b422680ecc3ee6ef/526de/jarednielsen-forkyeah-github-repository-commit-02.png 885w,
+/static/67cf1ddf94d5be60b422680ecc3ee6ef/fa2eb/jarednielsen-forkyeah-github-repository-commit-02.png 1180w,
+/static/67cf1ddf94d5be60b422680ecc3ee6ef/417af/jarednielsen-forkyeah-github-repository-commit-02.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Alternatively, if we navigate to our &lt;code&gt;Repositories&lt;/code&gt; tab, we are presented with a green button that reads, &lt;code&gt;New&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f9b02ab948623738966f7a3efcfc71e0/417af/jarednielsen-forkyeah-github-repository-commit-03.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAA4klEQVQoz5WRy07DMBBF+7uFlJQ6oZB+KhtUsYCmjpXX2OOJbcbxBlpEyfXVSJZ85uVV8XyI3lfiqRJlVewP+a5cZ/ndw2O2FVkuUrzPd9+92RaifFmFnyKidhhVN1prwy1dwohYn+UIhmGiKck556/0C6y1OcuGUxhjFlcGgI/PU9v1Xd8PAJyLj0ZIpW7A3C2TBmPTOMdk9x+YF6aUYgrnoZe1TdaqRknZ1LXkystgbc3b6V22nKEFjUtgH3qEV3UcLMy3wJM6FyYXo/N/whR/1jNEU3yalsS7QvJ2ir6AvwCYfmpvrvJrQwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 03&quot;
+        title=&quot;&quot;
+        src=&quot;/static/f9b02ab948623738966f7a3efcfc71e0/fb8a0/jarednielsen-forkyeah-github-repository-commit-03.png&quot;
+        srcset=&quot;/static/f9b02ab948623738966f7a3efcfc71e0/1a291/jarednielsen-forkyeah-github-repository-commit-03.png 148w,
+/static/f9b02ab948623738966f7a3efcfc71e0/2bc4a/jarednielsen-forkyeah-github-repository-commit-03.png 295w,
+/static/f9b02ab948623738966f7a3efcfc71e0/fb8a0/jarednielsen-forkyeah-github-repository-commit-03.png 590w,
+/static/f9b02ab948623738966f7a3efcfc71e0/526de/jarednielsen-forkyeah-github-repository-commit-03.png 885w,
+/static/f9b02ab948623738966f7a3efcfc71e0/fa2eb/jarednielsen-forkyeah-github-repository-commit-03.png 1180w,
+/static/f9b02ab948623738966f7a3efcfc71e0/417af/jarednielsen-forkyeah-github-repository-commit-03.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;However you decide to create a repository, you will be routed to a page that allows you to fill in details about your project. The only thing that is required (&lt;code&gt;*&lt;/code&gt;) at this point is a name. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/872447cc9ecccbcb3503307bff173eee/417af/jarednielsen-forkyeah-github-repository-commit-04.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABVElEQVQoz5VSa0/CMBTl56rokIcP+HH+ABO/SfwEiTFGGbCtwNaur+NtB6NjmOhNTm5z256ee3o7o4cJHIb3YwzuHB5pPUHUH+GiG+Hy5hbd3uCIaICrqF+ju8/XvSGGozE6OBPGGLBtjoTlkFLiP9Gx1uIAR2SpKIRAvFwhzzlKUUIqBW00lMta+3Pn4DgahA4uCs6xShIUUkAYRZKprkyt4vROiEbLB8Kd4Fis10in79i8zJG/foB/p+AlRyFyryYkbrQcsNWbktrMMgaxKSBZgbIQkFp5P0vC3wgDhQoG6ZYIHQH5VpQSSu8v2uO5Xwl90W36L7bQb1/YzRdYZxnieAlOio099a5J3FLoD/nnycPZJ6azKRaMfEwZ+SYQPgzYVldthUGONcNT/IyYJ9Vc1mNF6k2VTdBuS2FYcLPmJqUa8IrMfwJl56Og8ZGUpTpP+ANMNEK/FmpBEwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 04&quot;
+        title=&quot;&quot;
+        src=&quot;/static/872447cc9ecccbcb3503307bff173eee/fb8a0/jarednielsen-forkyeah-github-repository-commit-04.png&quot;
+        srcset=&quot;/static/872447cc9ecccbcb3503307bff173eee/1a291/jarednielsen-forkyeah-github-repository-commit-04.png 148w,
+/static/872447cc9ecccbcb3503307bff173eee/2bc4a/jarednielsen-forkyeah-github-repository-commit-04.png 295w,
+/static/872447cc9ecccbcb3503307bff173eee/fb8a0/jarednielsen-forkyeah-github-repository-commit-04.png 590w,
+/static/872447cc9ecccbcb3503307bff173eee/526de/jarednielsen-forkyeah-github-repository-commit-04.png 885w,
+/static/872447cc9ecccbcb3503307bff173eee/fa2eb/jarednielsen-forkyeah-github-repository-commit-04.png 1180w,
+/static/872447cc9ecccbcb3503307bff173eee/417af/jarednielsen-forkyeah-github-repository-commit-04.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;This will be the Fork Yeah! repository, so I name it &lt;code&gt;forkyeah&lt;/code&gt;. You will notice two things: &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;I changed the owner from my account, &lt;code&gt;nielsenjared&lt;/code&gt;, to &lt;code&gt;forkyeah&lt;/code&gt;, which is an organization.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I selected the checkbox next to &lt;code&gt;Initialize this respository with a README&lt;/code&gt;. &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What’s a README? A README file is just that, a file that you should read. All good software projects include a README file to quickly get other developers oriented and up-to-speed.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9ca6dd705b55edfea7e89117eefb4318/417af/jarednielsen-forkyeah-github-repository-commit-05.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABAUlEQVQoz6VQy07DMBDM51ZQkVdpaH6QM+LKEXGwSHHixFm/dlmnSdUARUJMRmNlpfGMN9lVdVnVxf6Q3x/Sssr2NevNXT6xYN1ss802nTRb5vltWha7h4QuoLX+UAas9yEEpIDIQzB2BMM0ztEaCSHhggEsABiIwnbnXLwEmfEW9PgFq+Su18dW9Rqs43A01o9gG9kOPTyLl0fxFAjXyWcgvgkppB7AjxYHE5R2PXg1RhWqe22b00N+MhO1bffeHLkt5zL5DBEYF8BfrH/d7L2XUrJn6nFqsxSdf6+bOZGXYjwax2kUpk1Zh2DjhPlt23T56rnaHIiznPmb+a/4l/kTsiNqXk4EWJcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 05&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9ca6dd705b55edfea7e89117eefb4318/fb8a0/jarednielsen-forkyeah-github-repository-commit-05.png&quot;
+        srcset=&quot;/static/9ca6dd705b55edfea7e89117eefb4318/1a291/jarednielsen-forkyeah-github-repository-commit-05.png 148w,
+/static/9ca6dd705b55edfea7e89117eefb4318/2bc4a/jarednielsen-forkyeah-github-repository-commit-05.png 295w,
+/static/9ca6dd705b55edfea7e89117eefb4318/fb8a0/jarednielsen-forkyeah-github-repository-commit-05.png 590w,
+/static/9ca6dd705b55edfea7e89117eefb4318/526de/jarednielsen-forkyeah-github-repository-commit-05.png 885w,
+/static/9ca6dd705b55edfea7e89117eefb4318/fa2eb/jarednielsen-forkyeah-github-repository-commit-05.png 1180w,
+/static/9ca6dd705b55edfea7e89117eefb4318/417af/jarednielsen-forkyeah-github-repository-commit-05.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;After clicking the green &lt;code&gt;Create repository&lt;/code&gt; button, we’re routed to the landing page of our project. We can see that our repository contains one file, &lt;code&gt;README.md&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;What’s the &lt;code&gt;.md&lt;/code&gt; extension? That’s Markdown. &lt;/p&gt;
+&lt;p&gt;We also see that the contents of our README are displayed on the landing page. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fe9c47c6422eec22cf842430a15de710/417af/jarednielsen-forkyeah-github-repository-commit-06.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABSklEQVQoz41R207CQBDlb1VULlVI8av8C55MND7zhApGoPd278eZxTZtEeOkpyeZ2XN2ZnYQzBcIZgtMZyEm9yFGwZz4AWPi4e0UVy1cXI8Jox8eU27icXkzwXAUYHoXYoBeFEWJKJOopIGxDvTB0o8IwhiUQnpIrfFbDJxjEQmYSZhXEkIIj4pgyEQZDUvsssqzdzd8ke3BHQ3bSLMChzhFXlaQirokscwFiuUKh8cnlOsIr/sVlp/P1Ij15m19Y8jB/LaNsD3kSEuFrDJIhUG8z5G9vCP5iJEWCpskwTra+clqXWPYTnDESYqv3R5KaT+u1jyy4QkJzucc79R0G2l22DdkQRwnZKQ7h9kEjdB5/GlYMxsZWo2kDqQ+LpoXzjVFOaGszzP+1WH92rZ5/e6F1rVrZwz7yW7UojPVXuFk5HOod3aa75p+A7Q6QvqvYkowAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 06&quot;
+        title=&quot;&quot;
+        src=&quot;/static/fe9c47c6422eec22cf842430a15de710/fb8a0/jarednielsen-forkyeah-github-repository-commit-06.png&quot;
+        srcset=&quot;/static/fe9c47c6422eec22cf842430a15de710/1a291/jarednielsen-forkyeah-github-repository-commit-06.png 148w,
+/static/fe9c47c6422eec22cf842430a15de710/2bc4a/jarednielsen-forkyeah-github-repository-commit-06.png 295w,
+/static/fe9c47c6422eec22cf842430a15de710/fb8a0/jarednielsen-forkyeah-github-repository-commit-06.png 590w,
+/static/fe9c47c6422eec22cf842430a15de710/526de/jarednielsen-forkyeah-github-repository-commit-06.png 885w,
+/static/fe9c47c6422eec22cf842430a15de710/fa2eb/jarednielsen-forkyeah-github-repository-commit-06.png 1180w,
+/static/fe9c47c6422eec22cf842430a15de710/417af/jarednielsen-forkyeah-github-repository-commit-06.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;If we want to create new files, and we do, we click the &lt;code&gt;Create new file&lt;/code&gt; button.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/86519bb709c2e66cafde684022d2b52d/417af/jarednielsen-forkyeah-github-repository-commit-07.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAAlklEQVQoz+2OzQ6CQAyEeVyi6LL8beCpNbBhabutXYgRNPHoycmXHqaZzGSNG2o3VF1v295UXdkOpnZnU52uilXyoswLs7E5ysU2tnaZvMSjn+8egSJSjMwKiywLhgALgFpyVCYs/NRtmr33cwjj5AEJiQARQE+6RMhH7ZslUgrQWrE1K6uhn6SP5v1ufh/2/fsP/zL8AGhDbjU80o8UAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 07&quot;
+        title=&quot;&quot;
+        src=&quot;/static/86519bb709c2e66cafde684022d2b52d/fb8a0/jarednielsen-forkyeah-github-repository-commit-07.png&quot;
+        srcset=&quot;/static/86519bb709c2e66cafde684022d2b52d/1a291/jarednielsen-forkyeah-github-repository-commit-07.png 148w,
+/static/86519bb709c2e66cafde684022d2b52d/2bc4a/jarednielsen-forkyeah-github-repository-commit-07.png 295w,
+/static/86519bb709c2e66cafde684022d2b52d/fb8a0/jarednielsen-forkyeah-github-repository-commit-07.png 590w,
+/static/86519bb709c2e66cafde684022d2b52d/526de/jarednielsen-forkyeah-github-repository-commit-07.png 885w,
+/static/86519bb709c2e66cafde684022d2b52d/fa2eb/jarednielsen-forkyeah-github-repository-commit-07.png 1180w,
+/static/86519bb709c2e66cafde684022d2b52d/417af/jarednielsen-forkyeah-github-repository-commit-07.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;This will route us to a simple text editor where we need to specify the name of the file and its contents. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d214114159893117a237cb3becfa2625/417af/jarednielsen-forkyeah-github-repository-commit-08.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAAuUlEQVQoz82Q4Q6CMAyEeVyi6BwoBJ4a2NhGVzor0yhBJf7z8qVpul2uW3KumqJq8rKWl1rkpSwbUVR7ke+OjGTS7JRmIhInzEGeZVEl4SlSg201AE4ep4mIoRDG0TsHIwCPwlJJoEAPtdq2XWeM1dqA9x6RK8Ct5YroaanXZA5xw2BwjojJDCIPJpy1Sl6YQSm9vnR/FdE3s3Ou6/vwQRtma51SKu75s5l/yFprjPHvNt8wr4//1XwF1dNtB+WxK48AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 08&quot;
+        title=&quot;&quot;
+        src=&quot;/static/d214114159893117a237cb3becfa2625/fb8a0/jarednielsen-forkyeah-github-repository-commit-08.png&quot;
+        srcset=&quot;/static/d214114159893117a237cb3becfa2625/1a291/jarednielsen-forkyeah-github-repository-commit-08.png 148w,
+/static/d214114159893117a237cb3becfa2625/2bc4a/jarednielsen-forkyeah-github-repository-commit-08.png 295w,
+/static/d214114159893117a237cb3becfa2625/fb8a0/jarednielsen-forkyeah-github-repository-commit-08.png 590w,
+/static/d214114159893117a237cb3becfa2625/526de/jarednielsen-forkyeah-github-repository-commit-08.png 885w,
+/static/d214114159893117a237cb3becfa2625/fa2eb/jarednielsen-forkyeah-github-repository-commit-08.png 1180w,
+/static/d214114159893117a237cb3becfa2625/417af/jarednielsen-forkyeah-github-repository-commit-08.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Making ice cubes is the “Hello World” of cooking, so I create a recipe to do so. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/54d1a596303e8f2d743d62d79f206f85/417af/jarednielsen-forkyeah-github-repository-commit-09.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAAtUlEQVQoz51R0Q6CMAz0///Id3/CBxJ9MiYg6BxsvbazAg+4BRK5NMu27nbt9ZAWiDF674lIRFIBVc1uDssDM4cRe8hl+g/y9EJ3kC3HwE5lEKpz1XbdyzlZwVbZYHbv3iKY74QsqKgr73kYgu8HgO0jUZ0EeQreVBaVum3udf1onzZwAAEaMfdaOjmTNX0zDv54O12aa4JJ2dRtNfFV/3+UI1EPCpCIZDWavcQaWSEpjpuM/AG4ZYxBDB0jkgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 09&quot;
+        title=&quot;&quot;
+        src=&quot;/static/54d1a596303e8f2d743d62d79f206f85/fb8a0/jarednielsen-forkyeah-github-repository-commit-09.png&quot;
+        srcset=&quot;/static/54d1a596303e8f2d743d62d79f206f85/1a291/jarednielsen-forkyeah-github-repository-commit-09.png 148w,
+/static/54d1a596303e8f2d743d62d79f206f85/2bc4a/jarednielsen-forkyeah-github-repository-commit-09.png 295w,
+/static/54d1a596303e8f2d743d62d79f206f85/fb8a0/jarednielsen-forkyeah-github-repository-commit-09.png 590w,
+/static/54d1a596303e8f2d743d62d79f206f85/526de/jarednielsen-forkyeah-github-repository-commit-09.png 885w,
+/static/54d1a596303e8f2d743d62d79f206f85/fa2eb/jarednielsen-forkyeah-github-repository-commit-09.png 1180w,
+/static/54d1a596303e8f2d743d62d79f206f85/417af/jarednielsen-forkyeah-github-repository-commit-09.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;To save our file, we need to scroll down to the bottom of the screen where we can &lt;code&gt;Commit new file&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;What’s a commit? In order for GitHub to track our file and its change (and who made the changes), we need to &lt;em&gt;commit&lt;/em&gt; it to the repository.&lt;/p&gt;
+&lt;p&gt;Notice the placeholder text in the form field for the title of our commit: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Create ICE-CUBES.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We’re going to leave it at that and not add any additional text to our commit message.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ee80346581697aa03cdaa7de22b1b22f/417af/jarednielsen-forkyeah-github-repository-commit-10.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABW0lEQVQoz42Sy07DMBBF+7fQQl+BVi3fwp+whwUbJDYINiBRRJOGKnEefl/Gbkjd0iJGOpp4xr6eGacTTeeIJnOMJzOMLmcYRBPyVxhGU/T6Y3QDTs6GO3T7I8/p+Qi9QYTxxQwd7FlZVlgzgVpoaGNhGizluJCouPAIpXDIOtbSAcJ7Y1DUApxzCMJ5bQ2kVj7nobVX19jGWuxGsIX2ZUWJdJ0hp0qF0jClhMgrVHTRiuIFq/G4fMHt8qEVDzVaQWc2Yfh4/0KccRRcgT+vwO7fUN08oV4ylNpSuxpJwbDIUt+ZPxcKoqnMfubA9R3SRYpVltP8DFSSg78mvkJF1Wq9wZCwEmpbSOP9DFvBmNGLSBo8RxwnkFJuNv8Qjibgt2AQsMG3a0fr7cBd3L16yJ8VorlR0e8gqT1JbTlM8/ruOkVroWybO1rhfvCQHUvvn9tt+cicfP6fM/wG98xBw6lZdwoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 10&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ee80346581697aa03cdaa7de22b1b22f/fb8a0/jarednielsen-forkyeah-github-repository-commit-10.png&quot;
+        srcset=&quot;/static/ee80346581697aa03cdaa7de22b1b22f/1a291/jarednielsen-forkyeah-github-repository-commit-10.png 148w,
+/static/ee80346581697aa03cdaa7de22b1b22f/2bc4a/jarednielsen-forkyeah-github-repository-commit-10.png 295w,
+/static/ee80346581697aa03cdaa7de22b1b22f/fb8a0/jarednielsen-forkyeah-github-repository-commit-10.png 590w,
+/static/ee80346581697aa03cdaa7de22b1b22f/526de/jarednielsen-forkyeah-github-repository-commit-10.png 885w,
+/static/ee80346581697aa03cdaa7de22b1b22f/fa2eb/jarednielsen-forkyeah-github-repository-commit-10.png 1180w,
+/static/ee80346581697aa03cdaa7de22b1b22f/417af/jarednielsen-forkyeah-github-repository-commit-10.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;After we commit our new file, we are routed back to our landing page, where we see we now have two files in our repository: our &lt;code&gt;README.md&lt;/code&gt; and our &lt;code&gt;ICE-CUBES.md&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Notice to the right of the &lt;code&gt;ICE-CUBES.md&lt;/code&gt;, our placeholder commit message. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;jarednielsen-forkyeah-github-repository-commit-11.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;To view our newly create recipe, we simply click on its title.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6e0f879d364bfc47ede81193d8b18f8a/417af/jarednielsen-forkyeah-github-repository-commit-12.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAA3UlEQVQoz8VQ2W6DMBDkc6MmKgSSkPDLEaFcxt6zW+coqCpSnzoar9aWZ0c7yaGsirLKT5f98ZIWp+xYZUW5fc/fHtxvdtlml8aa2fXObVrkh3OiMzg3NQO6gEQkomxHNQBMPrjJA5IukaioPHGtm2sz1O3YDTZBPLIxICNrO7j6o2NZYOHcjd5UAQiIPZA1XxVpcL7tR+fDD+cZIIT61kze21Tmb9oagFZ4TUzMfd8jovUy4wsi8qv4HhSQBBKOgdlfYFteLAJ7X3N+BqESHSW6xtj18bgi/iv+T/wJ2jtsFah+AtYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 12&quot;
+        title=&quot;&quot;
+        src=&quot;/static/6e0f879d364bfc47ede81193d8b18f8a/fb8a0/jarednielsen-forkyeah-github-repository-commit-12.png&quot;
+        srcset=&quot;/static/6e0f879d364bfc47ede81193d8b18f8a/1a291/jarednielsen-forkyeah-github-repository-commit-12.png 148w,
+/static/6e0f879d364bfc47ede81193d8b18f8a/2bc4a/jarednielsen-forkyeah-github-repository-commit-12.png 295w,
+/static/6e0f879d364bfc47ede81193d8b18f8a/fb8a0/jarednielsen-forkyeah-github-repository-commit-12.png 590w,
+/static/6e0f879d364bfc47ede81193d8b18f8a/526de/jarednielsen-forkyeah-github-repository-commit-12.png 885w,
+/static/6e0f879d364bfc47ede81193d8b18f8a/fa2eb/jarednielsen-forkyeah-github-repository-commit-12.png 1180w,
+/static/6e0f879d364bfc47ede81193d8b18f8a/417af/jarednielsen-forkyeah-github-repository-commit-12.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Let’s edit a file. The README only contains the title of our repository, so let’s add a bit more there. Just like our &lt;code&gt;ICE-CUBES.md&lt;/code&gt; file above, click on &lt;code&gt;README.md&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/04d402707892946ca9845d679e93e7dd/417af/jarednielsen-forkyeah-github-repository-commit-13.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABMElEQVQoz61RW1KEMBDktuqqvFYUbuMRvIDf3sHHr1XiLrqChDzbSXiYhd3yx65qJjWZaXomQXpdIM0KJFmO+CpHmGQUC0TrG6wuE5x5PDmPiOEQI8rFjqcXMVZhimSdI8AMbcvw0Qi0XEIqBW0AbT+EjguwjtMdh9AahxAYY1yDpmjP5aZCWdXYfDbY1d/ohAbjimJPQdrV9gvl6zs0bK/2aHpBn7uGoWk7apbgUpMr6c42MkeB57sHPN7ek2UF693v3xO04DTOtqrAWOdcqz0HGtL+6KWEeHqDkXopCC9hoWhvdV1DSgnMijHUjDB9AfzsJDhGK6RoF0IZN7LbLzmzdzZnd8oH+n0HBM1kf3yk/qEwuTPmN6+9qRaC8ySWg+HY9bxvMfKSx/J/OPwv/ACZRkRVVopDmgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 13&quot;
+        title=&quot;&quot;
+        src=&quot;/static/04d402707892946ca9845d679e93e7dd/fb8a0/jarednielsen-forkyeah-github-repository-commit-13.png&quot;
+        srcset=&quot;/static/04d402707892946ca9845d679e93e7dd/1a291/jarednielsen-forkyeah-github-repository-commit-13.png 148w,
+/static/04d402707892946ca9845d679e93e7dd/2bc4a/jarednielsen-forkyeah-github-repository-commit-13.png 295w,
+/static/04d402707892946ca9845d679e93e7dd/fb8a0/jarednielsen-forkyeah-github-repository-commit-13.png 590w,
+/static/04d402707892946ca9845d679e93e7dd/526de/jarednielsen-forkyeah-github-repository-commit-13.png 885w,
+/static/04d402707892946ca9845d679e93e7dd/fa2eb/jarednielsen-forkyeah-github-repository-commit-13.png 1180w,
+/static/04d402707892946ca9845d679e93e7dd/417af/jarednielsen-forkyeah-github-repository-commit-13.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;For the time being, I’ll add a very brief description and the URL to sign up for the newsletter.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c99aa98ccf08f0d5a1360af2aae441ae/417af/jarednielsen-forkyeah-github-repository-commit-14.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAAqElEQVQoz+2P6wqDMAxGfVzZ3GrVWfSpvTdJb0t1A0U22P8dPigkPU2aVKotVVvUjXw0oqjzuhWluoricudITprlaSa2bBXOTVayVEnYMU66m4icM9Y57zk+BEQDQBjLPhxJgg/+TTfpfhgWDdO8WOs4xlgyEcR4+iOHyQDQD+PMNuCiNU/jFVhycZfIafIOvkQriKg1PwFEFunlrJ/4LJ/b37t/+Uf5Cb0hbTocdjhUAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 14&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c99aa98ccf08f0d5a1360af2aae441ae/fb8a0/jarednielsen-forkyeah-github-repository-commit-14.png&quot;
+        srcset=&quot;/static/c99aa98ccf08f0d5a1360af2aae441ae/1a291/jarednielsen-forkyeah-github-repository-commit-14.png 148w,
+/static/c99aa98ccf08f0d5a1360af2aae441ae/2bc4a/jarednielsen-forkyeah-github-repository-commit-14.png 295w,
+/static/c99aa98ccf08f0d5a1360af2aae441ae/fb8a0/jarednielsen-forkyeah-github-repository-commit-14.png 590w,
+/static/c99aa98ccf08f0d5a1360af2aae441ae/526de/jarednielsen-forkyeah-github-repository-commit-14.png 885w,
+/static/c99aa98ccf08f0d5a1360af2aae441ae/fa2eb/jarednielsen-forkyeah-github-repository-commit-14.png 1180w,
+/static/c99aa98ccf08f0d5a1360af2aae441ae/417af/jarednielsen-forkyeah-github-repository-commit-14.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;As before, scroll down to the bottom of the screen to commit the changes.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/417af/jarednielsen-forkyeah-github-repository-commit-15.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAApElEQVQoz81RQQ7CMAzb/1/EnU9wmbghoQ22wbq2cZKSsR1g1XrghOVDJcu1k1TpA6qa9pGr1X+YyyiZTWPgRzMI9anu+n4YHrKDUm0wP8fJGCJFwoaU9drO7H1wkwfYPhLVJZAXcjFZVJquvbbNvRuccwACNGKdNT/FatY0KyOmw+VY384JFsUWZekiuwf8So5EHhQgAck62nqJNbJCUnw/NuYX2xKMsMwTmmkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 15&quot;
+        title=&quot;&quot;
+        src=&quot;/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/fb8a0/jarednielsen-forkyeah-github-repository-commit-15.png&quot;
+        srcset=&quot;/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/1a291/jarednielsen-forkyeah-github-repository-commit-15.png 148w,
+/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/2bc4a/jarednielsen-forkyeah-github-repository-commit-15.png 295w,
+/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/fb8a0/jarednielsen-forkyeah-github-repository-commit-15.png 590w,
+/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/526de/jarednielsen-forkyeah-github-repository-commit-15.png 885w,
+/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/fa2eb/jarednielsen-forkyeah-github-repository-commit-15.png 1180w,
+/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/417af/jarednielsen-forkyeah-github-repository-commit-15.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;This time, however, let’s add our own commit message. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7f81a1a647e6f839053ba628409380b3/417af/jarednielsen-forkyeah-github-repository-commit-16.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAA4UlEQVQoz72RzW6DMBCE8/5v1HvPPTSXHkqipFJVDEFUNWB7154uP1ZIYhJOsfQZa7WMZ7wbyAohIH7n59R61Lt5quASjwWnbVkMCVY6JKJU0FvWCJJz+PzIkB8VikOOrtTo6hbGeXQT8WzJx2xpwbMoodx+oXjb4/f9iL+dQtMRGnNJK2DJ4XXRSOyWHfrwHC/0fsBPMPP9yLHI0qyqAj9K4VTV0FrDiWsjEQ0F+DVTnhc1NXj5fkVW7gF5KxInPezDwNg3G/f48/KUrbNorZXH58ERDSLjEHocSw+NpBz+A2OVZVwxM0XGAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 16&quot;
+        title=&quot;&quot;
+        src=&quot;/static/7f81a1a647e6f839053ba628409380b3/fb8a0/jarednielsen-forkyeah-github-repository-commit-16.png&quot;
+        srcset=&quot;/static/7f81a1a647e6f839053ba628409380b3/1a291/jarednielsen-forkyeah-github-repository-commit-16.png 148w,
+/static/7f81a1a647e6f839053ba628409380b3/2bc4a/jarednielsen-forkyeah-github-repository-commit-16.png 295w,
+/static/7f81a1a647e6f839053ba628409380b3/fb8a0/jarednielsen-forkyeah-github-repository-commit-16.png 590w,
+/static/7f81a1a647e6f839053ba628409380b3/526de/jarednielsen-forkyeah-github-repository-commit-16.png 885w,
+/static/7f81a1a647e6f839053ba628409380b3/fa2eb/jarednielsen-forkyeah-github-repository-commit-16.png 1180w,
+/static/7f81a1a647e6f839053ba628409380b3/417af/jarednielsen-forkyeah-github-repository-commit-16.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;After clicking &lt;code&gt;Commit changes&lt;/code&gt;, we are routed back to the rendered README. We can see that our changes are reflected in the browser. &lt;/p&gt;
+&lt;p&gt;Notice the alert message above our README stating that a new commit was made by me!&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6b0935e0c17bfe84aacdd593bc77ca37/417af/jarednielsen-forkyeah-github-repository-commit-17.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAA7klEQVQoz6VQi26DMAzkc9HWjVdbVj4ZVFJoSBw7iWdYkcqeqnY6nRQr58cl+7qp6qY8norDKauO+aHJqvrptVhYiqa7PN1l6YtovtaL56wq928J38EYqzRZ50MIkTlEEXaIFpyxgEi8RcKR44rurFql237s1SgtgILQUaDAV+PUoEPcYDN5nEAbACRAb92sQkdeioOeDOCXyXdAxMtlkOU/ntJb1heS90gi4Q9z23XnXmljr5NF8p9+xyWF782SEwBYayUeDSTXPmD2ghB9ZHGFJUj0M/28+UyOP6+9pshLqrdJS5cbf7v5UfzL/A6m5msW7qmdUAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 17&quot;
+        title=&quot;&quot;
+        src=&quot;/static/6b0935e0c17bfe84aacdd593bc77ca37/fb8a0/jarednielsen-forkyeah-github-repository-commit-17.png&quot;
+        srcset=&quot;/static/6b0935e0c17bfe84aacdd593bc77ca37/1a291/jarednielsen-forkyeah-github-repository-commit-17.png 148w,
+/static/6b0935e0c17bfe84aacdd593bc77ca37/2bc4a/jarednielsen-forkyeah-github-repository-commit-17.png 295w,
+/static/6b0935e0c17bfe84aacdd593bc77ca37/fb8a0/jarednielsen-forkyeah-github-repository-commit-17.png 590w,
+/static/6b0935e0c17bfe84aacdd593bc77ca37/526de/jarednielsen-forkyeah-github-repository-commit-17.png 885w,
+/static/6b0935e0c17bfe84aacdd593bc77ca37/fa2eb/jarednielsen-forkyeah-github-repository-commit-17.png 1180w,
+/static/6b0935e0c17bfe84aacdd593bc77ca37/417af/jarednielsen-forkyeah-github-repository-commit-17.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Back at our &lt;code&gt;forkyeah&lt;/code&gt; landing page, we see next to &lt;code&gt;README.md&lt;/code&gt; our commit message and a time.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/87d4a7a94f0a43ae7221d072a1be4e9f/417af/jarednielsen-forkyeah-github-repository-commit-18.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABFUlEQVQoz5VRTW+DMAztz622anx1peUP7jztussurVbWQjCEJE6cGRgTdCrSnp58sPzy7JfVNs2SNIt3h+j5ECRpuMu4PjxFPWOu60243gR9Dcd+9Bgk8Xa/8hNIKQvQyljrnCPviLiptGmVZmpEP8fKk6cRjTKKZ7XmSZYjYvcIOd+/QpZuMHOu6uZaVtC0ujMnrlKZSyEA2rfz+8v5ddhl4vwLotMX5EKJWuUFiEZL7ZiNtnWLn1B9XHO6K/b+IoCdjUHF4OX5BMTufoZ1RuOSuJXyeDyVpUBreecuNF5oZL/cfTHb1HUDABXUBbQc+028S2I3hEszH+5weAP/fNUE1lo+0VhiOvoRI8duCfvmkvi/+AY6JmjhmkrLJwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 18&quot;
+        title=&quot;&quot;
+        src=&quot;/static/87d4a7a94f0a43ae7221d072a1be4e9f/fb8a0/jarednielsen-forkyeah-github-repository-commit-18.png&quot;
+        srcset=&quot;/static/87d4a7a94f0a43ae7221d072a1be4e9f/1a291/jarednielsen-forkyeah-github-repository-commit-18.png 148w,
+/static/87d4a7a94f0a43ae7221d072a1be4e9f/2bc4a/jarednielsen-forkyeah-github-repository-commit-18.png 295w,
+/static/87d4a7a94f0a43ae7221d072a1be4e9f/fb8a0/jarednielsen-forkyeah-github-repository-commit-18.png 590w,
+/static/87d4a7a94f0a43ae7221d072a1be4e9f/526de/jarednielsen-forkyeah-github-repository-commit-18.png 885w,
+/static/87d4a7a94f0a43ae7221d072a1be4e9f/fa2eb/jarednielsen-forkyeah-github-repository-commit-18.png 1180w,
+/static/87d4a7a94f0a43ae7221d072a1be4e9f/417af/jarednielsen-forkyeah-github-repository-commit-18.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Notice the navigation bar just above our list of files. The first item is a link to the commit log. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/510886bf8add79222dde1419f4650a05/417af/jarednielsen-forkyeah-github-repository-commit-19.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABaUlEQVQoz42SW0/CQBCF+bcKCrQgBP6diQ/6anwSY+KLoITSblv3vnucbuXSxhonOT3pdPfrzOz2JvMlJrMl4tkC0c0Co3iGaLrEeDLHYBijf6aLq3FD/WEUdHkdYTCaIJ4u0EMrvpREahyEtrDOwXnA0YMMUmlwocClgjIGv0XPe08bHIIbC776gHx4hSw5ARSstdBaw5HX6xwC3SK8N+VrYBCt8VyjvH1GcrdCwUqqwsJYB6lNqGqXMhSFwNP2BffbR6q+hh8Z/gxYReXv6xQfTGBfcHzuGPa5QCEMcvpZJVYqbLIMb8mWgKd9R+B5ooqEFUjSHIraFUJCSBlcUdvG2iBLM1ZSNwo5zrAN5Jxjvd4gyxgMtayo3Wo27UranXUCDZ1eWZY0qxwsL5HSzCSd+M9O1CcSBvc38OCH0wrXxaNRmaWEsbVX+gcQ9TWpZmR88AB3dVUVLORtrU7gKenRFd535ZsfvgFwlkGOu0fgNgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 19&quot;
+        title=&quot;&quot;
+        src=&quot;/static/510886bf8add79222dde1419f4650a05/fb8a0/jarednielsen-forkyeah-github-repository-commit-19.png&quot;
+        srcset=&quot;/static/510886bf8add79222dde1419f4650a05/1a291/jarednielsen-forkyeah-github-repository-commit-19.png 148w,
+/static/510886bf8add79222dde1419f4650a05/2bc4a/jarednielsen-forkyeah-github-repository-commit-19.png 295w,
+/static/510886bf8add79222dde1419f4650a05/fb8a0/jarednielsen-forkyeah-github-repository-commit-19.png 590w,
+/static/510886bf8add79222dde1419f4650a05/526de/jarednielsen-forkyeah-github-repository-commit-19.png 885w,
+/static/510886bf8add79222dde1419f4650a05/fa2eb/jarednielsen-forkyeah-github-repository-commit-19.png 1180w,
+/static/510886bf8add79222dde1419f4650a05/417af/jarednielsen-forkyeah-github-repository-commit-19.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;This is the history of our project. We made three commits. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/833c872ac226bc01ab3f595ccf0ac933/417af/jarednielsen-forkyeah-github-repository-commit-21.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABNUlEQVQoz4WQiW7CMBBE+VxUUSCcgk+tWoQIgoQ4wSQ+1uu10y0VKkcRo9FIXul57O1M5svxfDmaLZLpoj+aDafLwXj+1k/OHnF2e8Nub/Dryzx5TybJeN5pr2QM1IZ8iCH+mGLkITi0gJwhxPZWnTa28awQwvZwStlFk4pmK5RosNL+aKgyVCgvFMVb/TVz10GU+7IWlSzlCZynEDkdekAva1WU8qH5SrLReXVSGhwzziMS2znOoJRtGvMUDm38os1HvVvrbGuz1HDmeyz2XmQksiBEeN5MRKtys5N5Xgvp1Nn6hIqPhTrqFmzrnsLoME8zpa216DECeGsdAFqDYDDeb/rhz7x4C04bayxY5jwBorRNpWtP9ALmlzte7kV8GXj3KdcrmWLwL2AGjLFE4cz+U3Wnb67nY9JbFQugAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 21&quot;
+        title=&quot;&quot;
+        src=&quot;/static/833c872ac226bc01ab3f595ccf0ac933/fb8a0/jarednielsen-forkyeah-github-repository-commit-21.png&quot;
+        srcset=&quot;/static/833c872ac226bc01ab3f595ccf0ac933/1a291/jarednielsen-forkyeah-github-repository-commit-21.png 148w,
+/static/833c872ac226bc01ab3f595ccf0ac933/2bc4a/jarednielsen-forkyeah-github-repository-commit-21.png 295w,
+/static/833c872ac226bc01ab3f595ccf0ac933/fb8a0/jarednielsen-forkyeah-github-repository-commit-21.png 590w,
+/static/833c872ac226bc01ab3f595ccf0ac933/526de/jarednielsen-forkyeah-github-repository-commit-21.png 885w,
+/static/833c872ac226bc01ab3f595ccf0ac933/fa2eb/jarednielsen-forkyeah-github-repository-commit-21.png 1180w,
+/static/833c872ac226bc01ab3f595ccf0ac933/417af/jarednielsen-forkyeah-github-repository-commit-21.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;If we click on the title of the most recent commit, we are routed to a page the shows us the changes that were made to the repository in this commit. Fork yeah!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Scaffold a Boilerplate MERN Application and Deploy to Heroku]]></title><description><![CDATA[There’s more than one way to scaffold a boilerplate MERN application and deploy it to Heroku. This method is straightforward and easy to…]]></description><link>http://jarednielsen.com/mern-deploy-heroku/</link><guid isPermaLink="false">http://jarednielsen.com/mern-deploy-heroku/</guid><pubDate>Mon, 30 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;./jarednielsen-mern-deploy-heroku.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;There’s more than one way to scaffold a boilerplate MERN application and deploy it to Heroku. This method is straightforward and easy to maintain. &lt;/p&gt;
 &lt;p&gt;The &lt;a href=&quot;https://github.com/nielsenjared/mern&quot;&gt;repository containing starter code is available on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Initialize Your Project with npm&lt;/h2&gt;
@@ -290,7 +1052,7 @@ mongoose&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAAB/UlEQVQ4y42TQWsTURDH8zW8eBH8GoL4BaQHT3oRPJd+gN4shODJalswh1poSEMIKZtK1KJohNKDNklNiCQUta0bm7ZJ2yQmu2/+zuy+jbtkm/pgefvezPzef2bei8AbRMFZ8dy2gebw3/dbzycWYFNoXAT+4TPSsQX65QLIHEKZA+cjAfKajkKgAaBseoZz24GIIhJVbQX84f0uuxxppQLt2GOxkTF1kqqc3tSwHnNOL1D6XESjVnfW1LJcpWK3LkvZAw7JhUlAh9BptZFaS2E9u46ckXOhfT63qdPvqyuAA+U4Sr0kzSIrE+CnQgGv83m833zHh2qgpN27CiiF5lQkABfAwd53ZNJpZDJZJJIpbG9ta6Du+GASUG/SqQV1yMAzoPSlhgdLm7i5WMP1hTruziWw9bEEHDOUG0T/c22I6+goOCHs7OzjYaKMG8stXFv8iXtzSUTTDOxwP3p8G5ywSV32oH2ppXR7gCVjF7dfVPEoa2J6tYS1NzUIyfJAlwL9F1tukMX16RL2qyZmnhq49djA1LMCjGp7pIy07+SXop2VXn/4ZmJ2o4r7sVXcmY4iv/vD9VFK6wh7KT6od7LTdNsOmOefRPH2Vc5no4B9HOgbSqnRf/lrBfPPF7D8cgXdXn+UBQV54UC/wkqlglgshng8jkajEfAJG38B3ZpzqJfCyYkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAACU0lEQVQ4y32TO2/TUBTH8zHYkBj4Fkh8ARYkRgYGBka6MgMSCwOVChILSwOpUmiVCBVol6aCVDSJU6FQWgQhUmM7dmI79nX8uPfPuXacFynHcc69vjq/87onJ5A+8jdAAE0waGDQOYNlMQy1mVdPddAPgDixghCppoX8R268hY8YKsF0WkmobTK43RTgqB5s1U20Q3tXZeC9cA6ayQRoi2AC7A9To4HuwqTXswKIEdl7Am6PHFCkoUof7HgaXRZhsqfHJAt1nKpDRrbmwdCH8FkEa+CgXmvg9OQUEeMYGgwjjYB6BBEtpLwINEI/SdPSXAztEQyjj0JhA1tb2yiVygQ9Q+wL+JoPaCGEz5fX0KKUuxIYpHWTNYspiBpFJoEHlQo+7Oxgb3cPnMoXSKBKQIoYy4BMREmEvdhPuulQypHL8efXb2wWi9h8+w75NxuofjkEZD+0II0wuAAoO5WlbQ0IeO4icjiO6i3cfvEJV9dOcHntDDcfr6OyrwAmkk7/c22yGkqJBYeBEfQwbUrcD/G50cadfBNXXvVw6XkHtx69xpNikzoMalA8vTbLIpTCSdt0wU3fJ6jspotnJQXXX37D3e0u7uePUfj4PRmEKAMtArNJmVxQUtJ3EMWAR3VsnWNltYxrD8u48XQXpZY1nZKLUp5A5xyk/P0fKh6UW1hZP8C91SLeN9upX87Hwc1MSrYQWS1FNp/junKOWVHbP9Fq1tPyJGdi7jyH/8isZ90wUWsoOPx6BI+xybmY5y0HZrWR0ul0UK1WoSgKTY2x1Nms/AU2AXJYO9+4SAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -384,7 +1146,7 @@ mongoose&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAACwElEQVQ4y4WUW0hUURSG5zV6ESLoJaggqCgKowtFWElBgVSCpD5EiRCERAVd0NAKlIiiKDQKjSCQAVPTzEYdRzMvM5OXcXQmb6mlYibkaN6ds7/WnJM2idWGn3PW2nv/Z+21//+YUIoFzI/Au/YLcxpM+2HKb8TBc9qidX6FieAxKZt8s9A+Bo0jUP8dXPLs+mFgRuN/w8TIDAxPG1HhAOpRJzz5hAogvROV248anDQgVagvEyjbEORLPrcPsj/D8x540QuSN5HVjY6iAbjXDg86UHfaIKkFElshVd6zeg2cbYQtJah1RbCmCLW9DLaV6jk2WkBiE4ludGR0wd021GWXbKxHRbxn9mgFo4ct+MKL8YUW4FtlZmZtAWyyoDa8hc2W39hTDuGVQni1Ga4J4cMOuNiEdrACjtTiPZSN+UI67WYHzc8qaX36Dk9mFY/j0vi2O1+qKkNtLdGrYqcVwmTf9RYhvOWBK0J6qQnOONHinZDgpvV8IfVeF9Yqm97eORS1DXYcdgfeky/lFC60E9WwQ8gC1UrVRFQL4TFJRtZATB3E2tGia4W4kY5Tr3C73dTU1WJ3OHA4HVjLrXwdHcYdZYZ9VWgHbEYPl+fBsly5YrMQ3vQYR071QpoXFSvEMQ5GY2yUZuThcTZjyyvBZXPSUFhNTkomfaFCuOI12i45bpiQrpZLWl+sn9BEQCa3P0Ky3GiKAXVDPpLsYSbByUh0ORORNnyRVsb2vmE6JAdCpIcr5XL2S9/iP8C5BkM2WkDYoj0sg4aIW3yonnFdl6pbhJwkHzhdD1F2qVp6e1zaESdx+RCqeljEL3v6J2FoynCL7pTxOcMhAWuJxZRmWFBJTt1v1zWpP0UFSnSqKoRs3qGLbaIChP6/eDPInwvxvOf9QVg0Z1rSkEr927Dz80usM/3xtwn+6yyVX2p+0fgJ+68d/O33MSUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAACzElEQVQ4y4WUWUhVURSG72v0FPnQS1BINFBQSD70UGJQEYpgIBkRlUXRSxQ0mRUZRYUNGFmGShPlgzctzcy52/Vqdr2aU5mmlZqJYoNznrO+1rknw8Rqwc8+6+y9f9Za5/+PAxF+YzysZ/MXxkwYMWDYsPOJe+akc4bgYGIM6aWvP6DpO/i+gLcPanRt6bcxavK/cPBlFHpG7OxRJ1xpRpLfgUKutiDODqRryIZWYbYPYhZ/RjI7wNmO3PsAN9vgznso7lbC1Fb8yFGyC03I5bdw/g0crcM48gpONUKaXkpR7PTBogIIfApzcpAgfV6aD0s0X5gHmjuIrcWPpBZIUKIDNbDLi4Q/hw1ejLBn9IZm0xucSc/cdDrn3+N94C1kQS4szkMU1sqKIlhdqoSHtIrDSpiole2rRkJLkHXPIKwM15pkCuPu471VTIWzhMr8Mm6kpZAUcZyxwGxYVmBXGVwIq0ogrk4J4xvgoJLur4ZtlUjMS9j7isHdHu5eSuV21n0+dHxk5McITqcTt68C75GHsLUKM9KNLFeyBU90FFpluFsJI9wQWQbR5bCpAtmoa4yPTxtzeZL9GI/vBe6qckorn+Ot9ZF0/Ro5Qee0PQ9GSBFizXD6A5jm1E+croQnG+yWT+vwzzRiRHtgczXuNTeI33IQV0IW7qMZlO6+Q/naVDICYqkJSIRZuZjB2vKqYpidA/Ny/R06LJlw9jUcr4cT9YiCk40MxHr5tsNFf0Qh5noXRHlhpXYyIwtzZiYEPERCdG47dER7qmzZmJawLe3lddkirvsKbQOIpcvWQTimVcfo4SiPv3IjwoVsr4SibsTdo+LvQzqGoHvYdovfKQNjtkMsa6nFxLQtKENjyEXVpWrSvyY22zotUbJxh062iViExl+8OcGfv3O9IBYMu5rJezbhVCHyb8OO709xzvHH32biX2eq91PtT4qfSN8XNN4NBQEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
