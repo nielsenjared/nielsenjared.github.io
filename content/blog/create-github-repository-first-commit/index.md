@@ -1,12 +1,12 @@
 ---
 title: Create a GitHub Repository and Your First Commit
 date: "2020-01-03"
-description: 
-keywords: ["GitHub", "repository", "commit"]
+description: Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes! 
+keywords: ["GitHub", "repository", "first commit"]
 ---
 ![](jarednielsen-forkyeah-github-repository-commit.png)
 
-Software developers use GitHub repositories to host the code for their projects. We can create a GitHub repository for any purpose, like recipes! GitHub? More like GutHub? 
+Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes! 
 
 ## Create a GitHub Repository and Your First Commit
 
@@ -16,13 +16,15 @@ If you don't have one already, navigate to [GitHub](https://github.com) and crea
 
 ![](jarednielsen-forkyeah-github-repository-commit-01.png)
 
-The primary purpose of GitHub is to create and host repositories. What's a repository? We can think of a repository like a cookbook or a recipe box: it's a place for us to store our recipes. 
+The primary purpose of GitHub is to create and host repositories, commonly referred to as _repos_.
+
+What's a repository? We can think of a repository like a cookbook or a recipe box: it's a place for us to store our recipes. 
 
 GitHub provides several different options for creating a new repository. The easiest to access is in the right side of the navbar. If you click the `+` sign, the first option in the dropdown menu is `New repository`. 
 
 ![](jarednielsen-forkyeah-github-repository-commit-02.png)
 
-Alternatively, if we navigate to our `Repositories` tab, we are presented with a green button that reads, `New`. 
+Alternatively, if we navigate to the `Repositories` tab from our profile page, we are presented with a green button that reads, `New`. 
 
 ![](jarednielsen-forkyeah-github-repository-commit-03.png)
 
@@ -48,7 +50,7 @@ We also see that the contents of our README are displayed on the landing page.
 
 ![](jarednielsen-forkyeah-github-repository-commit-06.png)
 
-If we want to create new files, and we do, we click the `Create new file` button.
+If we want to create new files, and we do, we click the `Create new file` button just above our list of files. 
 
 ![](jarednielsen-forkyeah-github-repository-commit-07.png)
 
@@ -62,7 +64,7 @@ Making ice cubes is the "Hello World" of cooking, so I create a recipe to do so.
 
 To save our file, we need to scroll down to the bottom of the screen where we can `Commit new file`. 
 
-What's a commit? In order for GitHub to track our file and its change (and who made the changes), we need to _commit_ it to the repository.
+What's a commit? In order for GitHub to track our file and any changes (and who made the changes), we need to _commit_ it to the repository.
 
 Notice the placeholder text in the form field for the title of our commit: 
 
@@ -76,7 +78,7 @@ We're going to leave it at that and not add any additional text to our commit me
 
 After we commit our new file, we are routed back to our landing page, where we see we now have two files in our repository: our `README.md` and our `ICE-CUBES.md`.
 
-Notice to the right of the `ICE-CUBES.md`, our placeholder commit message. 
+Notice our placeholder commit message to the right of the `ICE-CUBES.md`. 
 
 ![](jarednielsen-forkyeah-github-repository-commit-11.png)
 
@@ -102,7 +104,7 @@ This time, however, let's add our own commit message.
 
 After clicking `Commit changes`, we are routed back to the rendered README. We can see that our changes are reflected in the browser. 
 
-Notice the alert message above our README stating that a new commit was made by me!
+Notice the alert message above our README: a new commit was made by me!
 
 ![](jarednielsen-forkyeah-github-repository-commit-17.png)
 
@@ -119,6 +121,10 @@ This is the history of our project. We made three commits.
 ![](jarednielsen-forkyeah-github-repository-commit-21.png)
 
 If we click on the title of the most recent commit, we are routed to a page the shows us the changes that were made to the repository in this commit. Fork yeah!
+
+## Create a GitHub Repository and Your First Commit
+
+Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes! GitHub? More like GutHub. 
 
 
 
