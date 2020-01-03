@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 02 Jan 2020 23:16:08 GMT</lastBuildDate><item><title><![CDATA[Create a GitHub Repository and Your First Commit]]></title><description><![CDATA[Software developers use GitHub repositories to host the code for their projects. We can create a GitHub repository for any purpose, like…]]></description><link>http://jarednielsen.com/fork-yeah-github-repository-commit/</link><guid isPermaLink="false">http://jarednielsen.com/fork-yeah-github-repository-commit/</guid><pubDate>Fri, 03 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;jarednielsen-forkyeah-github-repository-commit.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Software developers use GitHub repositories to host the code for their projects. We can create a GitHub repository for any purpose, like recipes! GitHub? More like GutHub? &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 03 Jan 2020 12:22:57 GMT</lastBuildDate><item><title><![CDATA[Create a GitHub Repository and Your First Commit]]></title><description><![CDATA[Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose…]]></description><link>http://jarednielsen.com/create-github-repository-first-commit/</link><guid isPermaLink="false">http://jarednielsen.com/create-github-repository-first-commit/</guid><pubDate>Fri, 03 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;jarednielsen-forkyeah-github-repository-commit.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes! &lt;/p&gt;
 &lt;h2&gt;Create a GitHub Repository and Your First Commit&lt;/h2&gt;
 &lt;p&gt;
   &lt;a
@@ -74,7 +74,8 @@
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;The primary purpose of GitHub is to create and host repositories. What’s a repository? We can think of a repository like a cookbook or a recipe box: it’s a place for us to store our recipes. &lt;/p&gt;
+&lt;p&gt;The primary purpose of GitHub is to create and host repositories, commonly referred to as &lt;em&gt;repos&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;What’s a repository? We can think of a repository like a cookbook or a recipe box: it’s a place for us to store our recipes. &lt;/p&gt;
 &lt;p&gt;GitHub provides several different options for creating a new repository. The easiest to access is in the right side of the navbar. If you click the &lt;code&gt;+&lt;/code&gt; sign, the first option in the dropdown menu is &lt;code&gt;New repository&lt;/code&gt;. &lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -112,7 +113,7 @@
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;Alternatively, if we navigate to our &lt;code&gt;Repositories&lt;/code&gt; tab, we are presented with a green button that reads, &lt;code&gt;New&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Alternatively, if we navigate to the &lt;code&gt;Repositories&lt;/code&gt; tab from our profile page, we are presented with a green button that reads, &lt;code&gt;New&lt;/code&gt;. &lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -271,7 +272,7 @@
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;If we want to create new files, and we do, we click the &lt;code&gt;Create new file&lt;/code&gt; button.&lt;/p&gt;
+&lt;p&gt;If we want to create new files, and we do, we click the &lt;code&gt;Create new file&lt;/code&gt; button just above our list of files. &lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -383,7 +384,7 @@
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;To save our file, we need to scroll down to the bottom of the screen where we can &lt;code&gt;Commit new file&lt;/code&gt;. &lt;/p&gt;
-&lt;p&gt;What’s a commit? In order for GitHub to track our file and its change (and who made the changes), we need to &lt;em&gt;commit&lt;/em&gt; it to the repository.&lt;/p&gt;
+&lt;p&gt;What’s a commit? In order for GitHub to track our file and any changes (and who made the changes), we need to &lt;em&gt;commit&lt;/em&gt; it to the repository.&lt;/p&gt;
 &lt;p&gt;Notice the placeholder text in the form field for the title of our commit: &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Create ICE-CUBES.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;We’re going to leave it at that and not add any additional text to our commit message.&lt;/p&gt;
@@ -424,8 +425,43 @@
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;After we commit our new file, we are routed back to our landing page, where we see we now have two files in our repository: our &lt;code&gt;README.md&lt;/code&gt; and our &lt;code&gt;ICE-CUBES.md&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Notice to the right of the &lt;code&gt;ICE-CUBES.md&lt;/code&gt;, our placeholder commit message. &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;jarednielsen-forkyeah-github-repository-commit-11.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Notice our placeholder commit message to the right of the &lt;code&gt;ICE-CUBES.md&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cd74132805db63fcf8b829817bfe04fc/417af/jarednielsen-forkyeah-github-repository-commit-11.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3klEQVQoz52Q2W7CQAxF87kVbYEkEEH5XHgBQsaBDOOxZ8GkBQWlLOLq+CXKke84yYtFXvwI2XQ+yoq0WIwns89hJgxaPr7GVwaXj9/pNM1nSezkqI3SjOQkIUQvE6O1JBiD7Fy8TRLDX7z3m7Lagt5CUzdHyx5bLAfyUR007Jtwm87mEOoGtbFo2Z4d94sUOWizl0Hqbe6EiKCupeG5SAdmRzLeP5IRsSx3zBz/TXuCu7JB3FWV6x3m4j6WjVkuV1LwHVnerAD6b3t183q9IeL+f89lORUAKAVS4RX5BBzhan5+lASRAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit 11&quot;
+        title=&quot;&quot;
+        src=&quot;/static/cd74132805db63fcf8b829817bfe04fc/fb8a0/jarednielsen-forkyeah-github-repository-commit-11.png&quot;
+        srcset=&quot;/static/cd74132805db63fcf8b829817bfe04fc/1a291/jarednielsen-forkyeah-github-repository-commit-11.png 148w,
+/static/cd74132805db63fcf8b829817bfe04fc/2bc4a/jarednielsen-forkyeah-github-repository-commit-11.png 295w,
+/static/cd74132805db63fcf8b829817bfe04fc/fb8a0/jarednielsen-forkyeah-github-repository-commit-11.png 590w,
+/static/cd74132805db63fcf8b829817bfe04fc/526de/jarednielsen-forkyeah-github-repository-commit-11.png 885w,
+/static/cd74132805db63fcf8b829817bfe04fc/fa2eb/jarednielsen-forkyeah-github-repository-commit-11.png 1180w,
+/static/cd74132805db63fcf8b829817bfe04fc/417af/jarednielsen-forkyeah-github-repository-commit-11.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;To view our newly create recipe, we simply click on its title.&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -612,7 +648,7 @@
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;After clicking &lt;code&gt;Commit changes&lt;/code&gt;, we are routed back to the rendered README. We can see that our changes are reflected in the browser. &lt;/p&gt;
-&lt;p&gt;Notice the alert message above our README stating that a new commit was made by me!&lt;/p&gt;
+&lt;p&gt;Notice the alert message above our README: a new commit was made by me!&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -760,7 +796,9 @@
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;If we click on the title of the most recent commit, we are routed to a page the shows us the changes that were made to the repository in this commit. Fork yeah!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Scaffold a Boilerplate MERN Application and Deploy to Heroku]]></title><description><![CDATA[There’s more than one way to scaffold a boilerplate MERN application and deploy it to Heroku. This method is straightforward and easy to…]]></description><link>http://jarednielsen.com/mern-deploy-heroku/</link><guid isPermaLink="false">http://jarednielsen.com/mern-deploy-heroku/</guid><pubDate>Mon, 30 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;./jarednielsen-mern-deploy-heroku.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;If we click on the title of the most recent commit, we are routed to a page the shows us the changes that were made to the repository in this commit. Fork yeah!&lt;/p&gt;
+&lt;h2&gt;Create a GitHub Repository and Your First Commit&lt;/h2&gt;
+&lt;p&gt;Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes! GitHub? More like GutHub. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Scaffold a Boilerplate MERN Application and Deploy to Heroku]]></title><description><![CDATA[There’s more than one way to scaffold a boilerplate MERN application and deploy it to Heroku. This method is straightforward and easy to…]]></description><link>http://jarednielsen.com/mern-deploy-heroku/</link><guid isPermaLink="false">http://jarednielsen.com/mern-deploy-heroku/</guid><pubDate>Mon, 30 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;./jarednielsen-mern-deploy-heroku.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;There’s more than one way to scaffold a boilerplate MERN application and deploy it to Heroku. This method is straightforward and easy to maintain. &lt;/p&gt;
 &lt;p&gt;The &lt;a href=&quot;https://github.com/nielsenjared/mern&quot;&gt;repository containing starter code is available on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Initialize Your Project with npm&lt;/h2&gt;
