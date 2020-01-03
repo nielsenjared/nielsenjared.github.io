@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 03 Jan 2020 16:51:45 GMT</lastBuildDate><item><title><![CDATA[Create a GitHub Repository and Your First Commit]]></title><description><![CDATA[Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose…]]></description><link>http://jarednielsen.com/create-github-repository-first-commit/</link><guid isPermaLink="false">http://jarednielsen.com/create-github-repository-first-commit/</guid><pubDate>Fri, 03 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;jarednielsen-forkyeah-github-repository-commit.png&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 03 Jan 2020 16:54:16 GMT</lastBuildDate><item><title><![CDATA[Create a GitHub Repository and Your First Commit]]></title><description><![CDATA[Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose…]]></description><link>http://jarednielsen.com/create-github-repository-first-commit/</link><guid isPermaLink="false">http://jarednielsen.com/create-github-repository-first-commit/</guid><pubDate>Fri, 03 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/db639c6ad280895e1286f99ef543d095/417af/jarednielsen-forkyeah-github-repository-commit.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAACJElEQVQ4y42UX0hTURzHFz3lQxAJPdRT0UtQTxG9RG/1HiisB9+DpC3Nh0iht6hmC4Sa1IOZMGEuF0L0V6SZNmuoD2ox3HCLaToWbrrcdn6f7u7u/u9CBw6/c+75ns/9/bvXQv0QQXQjxa1SSDiB/NhAIglI/a05L90pWYspzFir8BYqEEHNR1HLcSS0CQsxxL+KrGxALl8DbQRWwSSahJk1mItBIAqTqzC+iAx9hZdzSGGteV8G1nsoVV6ylYYPP/k24MF57Tb3O+x86hsk93waBj4jg5p1B5GldXNgOcxCGNMRJnqcnD1xin0WCxZttrYc5PGVTpTjIzz1I94FSKRNgEa4Svdul+Swn4vHz3DVamXM46Hf0Y/NZuP8ydMEbg3CcBC1FC9H1ZjDamByjxXXBIf3t9B7p7csSafTHGs9grujD2Zj5KnkvGmVdaBxGJua5/K5C7S3tRGPx9lJ7/DQ4eDogUNMPXiha1QJ2LTKUoGKsR91j2Lvukkmk8Hn8+l5vH6pnd3NP5UeNQ25rpkLYzv0i3d2J9m9LKlUCpe1m9+LoaImryp3qpq8JoflPiwJR75Dz2vUiNZzLq1NZtdqXihV+uZAXWyEHIwi3eNI1yvo9CDPvqA0kKpu/DpY0y9FN5ks8mgSbowhdi9y9w2yvl2EKKlJjzmwIDDEzITB5i1OzTveLhefK6kU4L+AhZHT8vPEr3unz3vvtepkGv4qZuMfJt1MEMCtJXwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen forkyeah github repository commit&quot;
+        title=&quot;&quot;
+        src=&quot;/static/db639c6ad280895e1286f99ef543d095/fb8a0/jarednielsen-forkyeah-github-repository-commit.png&quot;
+        srcset=&quot;/static/db639c6ad280895e1286f99ef543d095/1a291/jarednielsen-forkyeah-github-repository-commit.png 148w,
+/static/db639c6ad280895e1286f99ef543d095/2bc4a/jarednielsen-forkyeah-github-repository-commit.png 295w,
+/static/db639c6ad280895e1286f99ef543d095/fb8a0/jarednielsen-forkyeah-github-repository-commit.png 590w,
+/static/db639c6ad280895e1286f99ef543d095/526de/jarednielsen-forkyeah-github-repository-commit.png 885w,
+/static/db639c6ad280895e1286f99ef543d095/fa2eb/jarednielsen-forkyeah-github-repository-commit.png 1180w,
+/static/db639c6ad280895e1286f99ef543d095/417af/jarednielsen-forkyeah-github-repository-commit.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes! &lt;/p&gt;
 &lt;h2&gt;Create a GitHub Repository and Your First Commit&lt;/h2&gt;
 &lt;p&gt;
