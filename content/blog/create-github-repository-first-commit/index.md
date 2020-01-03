@@ -4,7 +4,7 @@ date: "2020-01-03"
 description: Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes! 
 keywords: ["GitHub", "repository", "first commit"]
 ---
-![](jarednielsen-forkyeah-github-repository-commit.png)
+![](./jarednielsen-forkyeah-github-repository-commit.png)
 
 Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes! 
 
