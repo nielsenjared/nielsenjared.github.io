@@ -28,13 +28,13 @@ function Bio() {
               }}
             />
             <p>
-          When we force code to act out of the ordinary… that’s where the magic happens. That’s when we make art.
+          I write a weekly newsletter where I share articles about programming, problem solving and lifelong learning.
           {' '}
           <a
-            href="https://twitter.com/jarednielsen"
+            href="http://eepurl.com/cP8CMn"
             target="_blank"
             rel="noopener">
-            @jarednielsen
+            Join now
           </a>
         </p>
           </div>
