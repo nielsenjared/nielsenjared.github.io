@@ -33,7 +33,7 @@ class Index extends React.Component {
             <div id="mc_embed_signup_scroll">
         	    <label htmlFor="mce-EMAIL">
                 <h2>Programming is problem solving.</h2>
-                <p>I write a weekly newsletter where I share articles about programming, problem solving and lifelong learning.</p>
+                <p>I write a weekly newsletter about programming, problem solving and lifelong learning.</p>
               </label>
         	    <input
                 type="email"
