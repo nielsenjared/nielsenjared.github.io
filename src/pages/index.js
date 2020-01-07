@@ -1,16 +1,24 @@
 import React from 'react'
 import Layout from "../components/layout"
 
-// import Link from 'gatsby-link'
-// import banner from './forkyeah-banner.png';
-// import './index.css';
+import SEO from '../components/seo'
+
+
+import { Link, graphql } from 'gatsby'
+import banner from './jared-nielsen-banner.png';
+import './index.css';
 
 class Index extends React.Component {
 
   render() {
+    const { data } = this.props;
+    const siteTitle = data.site.siteMetadata.title
+
     return(
-      <Layout location={this.props.location}>
-        {/* <img src={banner} /> */}
+      <Layout location={this.props.location} title={siteTitle}>
+        <SEO title="All posts" keywords={['jared nielsen', 'problem solving']} />
+
+        <img src={banner} />
 
         <div id="mc_embed_signup">
           <form
@@ -20,20 +28,20 @@ class Index extends React.Component {
             name="mc-embedded-subscribe-form"
             className="validate"
             target="_blank"
-            novalidate
+            noValidate
           >
             <div id="mc_embed_signup_scroll">
         	    <label htmlFor="mce-EMAIL">
-                <h2>Fork your Inbox. It's good for you.</h2>
-                <p>Feed your head with gluten-free, sugar-free, vegan recipes delivered weekly.</p>
+                <h2>Programming is problem solving.</h2>
+                <p>I write a weekly newsletter where I share articles about programming, problem solving and lifelong learning.</p>
               </label>
         	    <input
                 type="email"
-                value={null}
+                value=""
                 name="EMAIL"
                 className="email"
                 id="mce-EMAIL"
-                placeholder="email address"
+                placeholder="Your email"
                 // required
               />
                 {/*for the bots*/}
@@ -44,21 +52,47 @@ class Index extends React.Component {
                    <input
                      type="text"
                      name="b_7bb2004f13affd3cd65365d9e_fdf24030be"
-                     tabindex="-1"
+                     tabIndex="-1"
                      value=""
                    />
                  </div>
               {/*for the peeps*/}
               <div className="clear">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" />
+                <input type="submit" value="Join now" name="subscribe" id="mc-embedded-subscribe" className="button" />
               </div>
             </div>
         </form>
-        <p style={{textAlign: "center"}}
-        >Skeptical? <a href="">View the archive.</a> Or <a href="https://github.com/forkyeah/forkyeah">go fork yourself.</a></p>
+        <p style={{textAlign: "center"}}>
+          Skeptical? Here's a sample: <a href="https://jarednielsen.com/teach-adults-code/">How To Teach Adults to Code</a>
+        </p>
         </div>
     </Layout>
     )
   }
 }
 export default Index;
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`
