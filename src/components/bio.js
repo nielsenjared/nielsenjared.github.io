@@ -28,7 +28,7 @@ function Bio() {
               }}
             />
             <p>
-          I write a weekly newsletter where I share articles about programming, problem solving and lifelong learning.
+          Want to level up your problem solving skill? I write a weekly newsletter where I share articles about programming, problem solving and lifelong learning.
           {' '}
           <a
             href="http://eepurl.com/cP8CMn"
