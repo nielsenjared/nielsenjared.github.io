@@ -1,7 +1,8 @@
 ---
 title: Programming is Problem Solving
 date: "2020-01-13"
-description: 
+description: Programming and problem solving are metacognitive activities. The key to success in both is learning how to think about thinking.
+keywords: ["programming", "problem solving", "thinking", "learning"]
 ---
 ![Programming is Problem Solving Rubber Duck](./jared-nielsen-teach-adults-code-duck.png)
 
