@@ -16,7 +16,7 @@ class Index extends React.Component {
 
     return(
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" keywords={['jared nielsen', 'problem solving']} />
+        <SEO title="Jared Nielsen" keywords={['jared nielsen', 'problem solving', 'programming', 'lifelong learning']} />
 
         <img src={banner} />
 

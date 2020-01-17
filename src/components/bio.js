@@ -28,7 +28,7 @@ function Bio() {
               }}
             />
             <p>
-          I write a weekly newsletter where I share articles about programming, problem solving and lifelong learning.
+          I write a weekly newsletter about programming, problem solving and lifelong learning.
           {' '}
           <a
             href="http://eepurl.com/cP8CMn"
