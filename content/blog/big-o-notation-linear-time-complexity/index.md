@@ -1,23 +1,26 @@
 ---
-title: What is Big O Notation? An Introduction Linear and Constant Time Complexity with JavaScript
-date: "2020-01-01"
-description:
-keywords: ["big o", "big o notation", "linear time", "constant time"]
+title: What is Big O Notation? Constant & Linear Time Complexity in JavaScript
+date: "2020-01-20"
+description: Big O notation is not a big deal. Learn the fundamentals of Big O notation, as well as constant and linear time complexity with examples in JavaScript.
+keywords: ["big o", "big o notation", "linear time", "time complexity", "javascript"]
 ---
-![](./jarednielsen-image-title.png)
 
-@TODO introduction
-Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. 
+![](./jarednielsen-big-o.png)
+
+Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you'll learn the fundamentals of Big O notation, as well as constant and linear time complexity with examples in JavaScript.
 
 _Note: Amazon links are affiliate._
 
+---
 This is the first in a series on Big O notation. If you want to stay in the loop, [sign up for my weekly newsletter, The Solution](http://eepurl.com/cP8CMn).
 
-
+---
 
 ## What Problem(s) Does Big O Notation Solve?
 
-Big O notation helps us answer the question, “Will it scale?” Big O notation also equips us with a shared language for discussing performance with other developers (and mathematicians!).
+* Big O notation helps us answer the question, “Will it scale?” 
+
+* Big O notation also equips us with a shared language for discussing performance with other developers (and mathematicians!).
 
 ## What is Big O Notation? 
 
@@ -38,9 +41,9 @@ You don’t need to be a math whiz to grok Big O, but there are a few basic conc
 
 If you recall from algebra, you worked with functions such as _f(x)_ and _g(x)_, and even did things like _f(g(x))_, where _f()_ and _g()_ were equations and _x_ was a numerical value (or another equation!) passed to the functions. 
 
-When we’re programming, we give our “equations” descriptive names (at least I hope you are), such as `isAuthenticated` and `calcuateMedian`, but we could also (please don’t) name them `f` and `g`. 
+When we’re programming, we give our “equations” descriptive names (at least I hope you are), such as `isAuthenticated` and `calcuateMedian`, but we could also name them `f` and `g` (please don’t). 
 
-Let’s say _f(x)_ is equal to _3x^2 + 12n - 6_.
+Let’s say _f(x)_ is equal to _3x^2 + 12x - 6_.
 
 We could say that the order of magnitude (rate of growth) of _f(x)_ is _O(n^2)_. (We’ll see why later.) 
 
@@ -55,7 +58,7 @@ For now.
 
 ## How Does Big O Notation Work? 
 
-With Big O notation, we want to measure the _worst-case runtime_. 
+Big O notation measures the _worst-case runtime_. 
 
 Why?
 
@@ -63,7 +66,7 @@ Because we don’t know what we don’t know.
 
 If we’re writing a search algorithm, we won’t always know the query ahead of time. If we’re writing a sorting algorithm, we won’t always know the dataset ahead of time. What if the query is the very last element or what if the dataset is a real mess. We want to know just how poorly our algorithm will perform.
 
-The worst-case scenario is also known as the “upper bound”. (Limits!)
+The worst-case scenario is also known as the “upper bound”. Limits again!
 
 You’re going to encounter a lot of tables like this: 
 
@@ -112,13 +115,15 @@ We’ll look at O(log n) later. Let’s begin with O(1), which will help us unde
 
 ### O(1): Constant Time
 
+![](./jarednielsen-big-o-constant-liberation.png)
+
 Say you’re working with an API that returns a users full name in an array, like so: 
 
 ```js
 [“Jared”, “Nielsen”];
 ```
 
-Your task is to get the users first name. Easy:
+Your task is to get the users first name. Easy, in JavaScript:
 
 ```js
 const getFirstName = data => {
@@ -129,7 +134,7 @@ const getFirstName = data => {
 
 No matter how many times you run your ‘algorithm’, it only needs to perform one operation to return the desired value. That’s O(1), or constant time.
 
-Here’s another example: 
+Here’s another JavaScript example: 
 
 ```js
 const isEven = num => num % 2 === 0;
@@ -137,7 +142,7 @@ const isEven = num => num % 2 === 0;
 
 Our algorithm checks whether or not a number is even or odd and will return true or false accordingly. It only needs to perform one operation. Again, O(1). 
 
-One more example. Say you are checking your application state to determine whether or not you need to render a specific alert by color code. You could do so with a series of conditional statements:
+Another example. Say you are checking your application state to determine whether or not you need to style an alert element with a specific color. You could do so with a series of conditional statements:
 
 ```js
 const alertColor = state => {
@@ -157,7 +162,7 @@ What is our best-case scenario for this algorithm? If `state` is equal to `dange
 
 Why? We’ll see in a moment. 
 
-If you find yourself writing a lot of conditional statements,  you may want to consider implementing a lookup table (LUT). 
+If you find yourself writing a lot of conditional statements, you may want to consider implementing a lookup table (LUT) using a JavaScript object. 
 
 ```js
 const alertTable = {
@@ -173,6 +178,9 @@ Our LUT is O(1). It only performs one operation, so its time complexity is const
 
 
 ### O(n): Linear Time
+
+![](./jarednielsen-big-o-linear-liberation.png)
+
 
 If O(1) performs only one computation regardless of the size of the input, what is O(n)?
 
@@ -245,6 +253,8 @@ Does O(n) scale?
 We can do better _and_ worse. 
 
 
-## Repeat Title for SEO
+## What is Big O Notation? Linear & Constant Time Complexity in JavaScript
 
-Stay tuned for part two of this series on Big O notation where we'll look at O(n^2).
+Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant and linear time complexity with examples in JavaScript.
+
+Stay tuned for part two of this series on Big O notation where we'll look at O(n^2), or quadratic time complexity.
