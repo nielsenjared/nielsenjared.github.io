@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Jan 2020 15:58:57 GMT</lastBuildDate><item><title><![CDATA[What is Big O Notation?]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-notation/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-notation/</guid><pubDate>Mon, 20 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Jan 2020 19:01:06 GMT</lastBuildDate><item><title><![CDATA[What is Big O Notation?]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-notation/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-notation/</guid><pubDate>Mon, 20 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/46f4775ef27b57ef4de82f39754f7827/2f950/jarednielsen-big-o.png&quot;
@@ -34,7 +34,7 @@
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation, as well as constant and linear time complexity with examples in JavaScript.&lt;/p&gt;
+&lt;p&gt;Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation, beginning with constant and linear time complexity with examples in JavaScript.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note: Amazon links are affiliate.&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;This is the first in a series on Big O notation. If you want to stay in the loop, &lt;a href=&quot;http://eepurl.com/cP8CMn&quot;&gt;sign up for my weekly newsletter, The Solution&lt;/a&gt;.&lt;/p&gt;
@@ -57,7 +57,7 @@
 &lt;p&gt;If you recall from algebra, you worked with functions such as &lt;em&gt;f(x)&lt;/em&gt; and &lt;em&gt;g(x)&lt;/em&gt;, and even did things like &lt;em&gt;f(g(x))&lt;/em&gt;, where &lt;em&gt;f()&lt;/em&gt; and &lt;em&gt;g()&lt;/em&gt; were equations and &lt;em&gt;x&lt;/em&gt; was a numerical value (or another equation!) passed to the functions. &lt;/p&gt;
 &lt;p&gt;When we’re programming, we give our “equations” descriptive names (at least I hope you are), such as &lt;code&gt;isAuthenticated&lt;/code&gt; and &lt;code&gt;calcuateMedian&lt;/code&gt;, but we could also name them &lt;code&gt;f&lt;/code&gt; and &lt;code&gt;g&lt;/code&gt; (please don’t). &lt;/p&gt;
 &lt;p&gt;Let’s say &lt;em&gt;f(x)&lt;/em&gt; is equal to &lt;em&gt;3x^2 + 12x - 6&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;We could say that the order of magnitude (rate of growth) of &lt;em&gt;f(x)&lt;/em&gt; is &lt;em&gt;O(n^2)&lt;/em&gt;. (We’ll see why later.) &lt;/p&gt;
+&lt;p&gt;We could say that the order of magnitude, or rate of growth, of &lt;em&gt;f(x)&lt;/em&gt; is &lt;em&gt;O(n^2)&lt;/em&gt;. We’ll see why later. &lt;/p&gt;
 &lt;p&gt;It’s more common to simply say “&lt;em&gt;f(x)&lt;/em&gt; is order of n^2”, or “&lt;em&gt;f(x)&lt;/em&gt; is Big O of n^2”.&lt;/p&gt;
 &lt;p&gt;That’s it! &lt;/p&gt;
 &lt;p&gt;Math time over.&lt;/p&gt;
