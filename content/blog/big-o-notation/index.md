@@ -1,8 +1,8 @@
 ---
-title: What is Big O Notation? Constant & Linear Time Complexity in JavaScript
+title: What is Big O Notation? 
 date: "2020-01-20"
-description: Big O notation is not a big deal. Learn the fundamentals of Big O notation, as well as constant and linear time complexity with examples in JavaScript.
-keywords: ["big o", "big o notation", "linear time", "time complexity", "javascript"]
+description: Big O notation is not a big deal. Learn the fundamentals of Big O notation, beginning with constant and linear time complexity with examples in JavaScript.
+keywords: ["big o", "big o notation"]
 ---
 
 ![](./jarednielsen-big-o.png)
@@ -20,7 +20,7 @@ This is the first in a series on Big O notation. If you want to stay in the loop
 
 * Big O notation helps us answer the question, “Will it scale?” 
 
-* Big O notation also equips us with a shared language for discussing performance with other developers (and mathematicians!).
+* Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!).
 
 ## What is Big O Notation? 
 
@@ -35,7 +35,7 @@ You will probably read or hear Big O referred to as asymptotic runtime, or [asym
 We use _order_ to evaluate the complexity of our algorithms.
 
 
-### Math O’Clock
+### 🧮 Math O’Clock
 
 You don’t need to be a math whiz to grok Big O, but there are a few basic concepts we need to cover to set you up for success.
 
