@@ -7,7 +7,7 @@ keywords: ["big o", "big o notation"]
 
 ![](./jarednielsen-big-o.png)
 
-Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you'll learn the fundamentals of Big O notation, as well as constant and linear time complexity with examples in JavaScript.
+Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you'll learn the fundamentals of Big O notation, beginning with constant and linear time complexity with examples in JavaScript.
 
 _Note: Amazon links are affiliate._
 
@@ -45,7 +45,7 @@ When we’re programming, we give our “equations” descriptive names (at leas
 
 Let’s say _f(x)_ is equal to _3x^2 + 12x - 6_.
 
-We could say that the order of magnitude (rate of growth) of _f(x)_ is _O(n^2)_. (We’ll see why later.) 
+We could say that the order of magnitude, or rate of growth, of _f(x)_ is _O(n^2)_. We’ll see why later. 
 
 It’s more common to simply say “_f(x)_ is order of n^2”, or “_f(x)_ is Big O of n^2”.
 
