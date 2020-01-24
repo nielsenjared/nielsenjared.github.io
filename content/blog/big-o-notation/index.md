@@ -1,8 +1,8 @@
 ---
-title: What is Big O Notation? 
+title: What is Big O Notation? The Superlative Guide
 date: "2020-01-20"
-description: Big O notation is not a big deal. Learn the fundamentals of Big O notation, beginning with constant and linear time complexity with examples in JavaScript.
-keywords: ["big o", "big o notation"]
+description: Big O notation is not a big deal. Learn the fundamentals of Big O notation, beginning with constant time complexity with examples in JavaScript.
+keywords: ["big o", "big o notation", "time complexity", "constant time"]
 ---
 
 ![](./jarednielsen-big-o.png)
@@ -22,6 +22,7 @@ This is the first in a series on Big O notation. If you want to stay in the loop
 
 * Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!).
 
+
 ## What is Big O Notation? 
 
 Big O is a notation for measuring the performance of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the _speed_ of an algorithm in seconds (or minutes!). We measure the _rate of growth_ of an algorithm in the number of operations it takes to complete. 
@@ -35,7 +36,7 @@ You will probably read or hear Big O referred to as asymptotic runtime, or [asym
 We use _order_ to evaluate the complexity of our algorithms.
 
 
-### 🧮 Math O’Clock
+### Math O’Clock 🧮 🕐 
 
 You don’t need to be a math whiz to grok Big O, but there are a few basic concepts we need to cover to set you up for success.
 
@@ -49,11 +50,9 @@ We could say that the order of magnitude, or rate of growth, of _f(x)_ is _O(n^2
 
 It’s more common to simply say “_f(x)_ is order of n^2”, or “_f(x)_ is Big O of n^2”.
 
-That’s it! 
-
 Math time over.
 
-For now.
+For now. 😀 
 
 
 ## How Does Big O Notation Work? 
@@ -113,7 +112,7 @@ In Big O notation, our first approach, brute force, is O(n), or linear time. Cre
 We’ll look at O(log n) later. Let’s begin with O(1), which will help us understand O(n).
 
 
-### O(1): Constant Time
+### O(1): Constant Time Complexity
 
 ![](./jarednielsen-big-o-constant-liberation.png)
 
@@ -160,7 +159,7 @@ const alertColor = state => {
 ```
 What is our best-case scenario for this algorithm? If `state` is equal to `danger`, we will only perform one operation and return. That would be O(1). What if `state` is not equal to `danger`? Then we perform multiple operations and the order of `alertColor()` is _n_. 
 
-Why? We’ll see in a moment. 
+Why? We’ll see in the next article. 
 
 If you find yourself writing a lot of conditional statements, you may want to consider implementing a lookup table (LUT) using a JavaScript object. 
 
@@ -174,87 +173,11 @@ const alertTable = {
 const alertColor = state => alertTable[state] || 'cornflowerblue';
 ```
 
-Our LUT is O(1). It only performs one operation, so its time complexity is constant regardless of the size of the lookup table. 
+Our LUT is O(1). It only performs one operation, so its time complexity is constant regardless of the size of the lookup table. 🤯 
 
 
-### O(n): Linear Time
-
-![](./jarednielsen-big-o-linear-liberation.png)
-
-
-If O(1) performs only one computation regardless of the size of the input, what is O(n)?
-
-For _n_ inputs, our algorithm will perform _n_ outputs. This is linear time complexity. 
-
-Why? 
-
-If we were to chart this on a graph, it would be a straight line.
-
-What if we calculated our operations for this algorithm and it was actually something like: 
-
-```
-2n + 5
-```
-
-That’s still just O(n). 
-
-With Big O, we drop the constants and the non-dominant terms. They don’t provide any meaningful additional information. O(n) and O(2n +5) are both linear. If you charted `2n + 5`, it would still be a straight line. That’s what we really want to know. 
-
-But what if our algorithm, say a search function, returns its parameter after one operation? Would that be O(1)? 
-
-No. It’s still O(n). 
-
-Why? 
-
-Remember, with Big O, we measure the _worst case scenario_. Because we don’t know what we don’t know, our default assumption for any algorithm is its worst-case scenario. In a worst case scenario, an O(n) algorithm needs to perform its specified operation on every value in the input. When making our Big O calculation, we want to know just how poorly an algorithm is going to perform. 
-
-Say, for example, we have an array of animals: 
-
-```js
-const animals = [“ocelot”, “octopus”, “opossum”, “orangutan”, “orca”, “oriole”, “oryx”, “osprey”];
-```
-
-And let’s say our task is to find the location of a specific animal in the array based on user input:
-
-```js
-for (let i = 0; i < animals.length; i++) {
-    if (animals[i] === userInput) {
-        return `Found ${userInput} at ${i}`;
-    };
-};
-```
-
-If our user searches for “ocelot”, how many computations are performed? 
-
-One. It’s the first item in our array, so our program will return. 
-
-But, if our user searches for “osprey”, how many computations are performed? 
-
-Eight. That’s our worst case scenario. For eight inputs, our algorithm will perform eight operations.
-
-What if our array contained 100 animals? 
-
-The worst-case scenario would be 100 operations. 
-
-What about 1,000?
-
-10,000?
-
-100,000?
-
-1,000,000?
-
-All O(n).
-
-You can see how linear complexity is fine for small datasets, but becomes a concern when the size of the input increases. 
-
-Does O(n) scale? 
-
-We can do better _and_ worse. 
-
-
-## What is Big O Notation? Linear & Constant Time Complexity in JavaScript
+## What is Big O Notation? 
 
 Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant and linear time complexity with examples in JavaScript.
 
-Stay tuned for part two of this series on Big O notation where we'll look at O(n^2), or quadratic time complexity.
+Stay tuned for part two of this series on Big O notation where we'll look at O(n), or linear time complexity.
