@@ -27,14 +27,17 @@ This is the first in a series on Big O notation. If you want to stay in the loop
 * Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!).
 
 
-## What is Big O Notation? A Quick Refresher
+## Quick Refreshers
+
+
+### What is Big O Notation? 
 
 Big O is a notation for measuring the performance of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the _speed_ of an algorithm in seconds (or minutes!). We measure the _rate of growth_ of an algorithm in the number of operations it takes to complete. 
 
 The O is short for “Order of magnitude”. So, if we’re discussing an algorithm with _O(n)_, we say its order of magnitude, or rate of growth, is _n_, or linear complexity. 
 
 
-## How Does Big O Notation Work? A Quick Refresher
+### How Does Big O Notation Work? 
 
 Big O notation measures the _worst-case runtime_. 
 
@@ -42,9 +45,9 @@ Why?
 
 Because we don’t know what we don’t know.
 
-If we’re writing a search algorithm, we won’t always know the query ahead of time. If we’re writing a sorting algorithm, we won’t always know the dataset ahead of time. What if the query is the very last element or what if the dataset is a real mess. We want to know just how poorly our algorithm will perform.
+If we’re writing a search algorithm, we won’t always know the query ahead of time. If we’re writing a sorting algorithm, we won’t always know the dataset ahead of time. We want to know just how poorly our algorithm will perform.
 
-The worst-case scenario is also known as the “upper bound”. Limits again!
+The worst-case scenario is also known as the “upper bound”. 
 
 Remember this table? 
 
@@ -59,16 +62,18 @@ Remember this table?
 | O(2^n)        | exponential       |       |
 | O(n!)         | factorial         | slow  |
 
-It lists common runtimes from fastest to slowest. We learned O(1) in [What is Big O Notation?](https://jarednielsen.com/big-o-notation/). We're going to skip O(log n) for the time being. It will be easier to understand after learning O(n), linear time complexity, and O(n^2), quadratic time complexity. 
+It lists common runtimes from fastest to slowest. 
 
-Let’s begin with a quick refreshser on O(1), constant time complexity.
+We learned O(1) in [What is Big O Notation?](https://jarednielsen.com/big-o-notation/). We're going to skip O(log n) for the time being. It will be easier to understand after learning O(n), linear time complexity, and O(n^2), quadratic time complexity. 
+
+Before getting into O(n), let’s begin with a quick refreshser on O(1), constant time complexity.
+
+## O(1): Constant Time Complexity 
 
 
-### O(1)
 
-@TODO
 
-### O(n): Linear Time Complexity
+## O(n): Linear Time Complexity
 
 If O(1) performs only one computation regardless of the size of the input, what is O(n)?
 
