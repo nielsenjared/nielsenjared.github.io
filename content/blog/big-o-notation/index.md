@@ -112,7 +112,7 @@ In Big O notation, our first approach, brute force, is O(n), or linear time. Cre
 We’ll look at O(log n) later. Let’s begin with O(1), which will help us understand O(n).
 
 
-### O(1): Constant Time Complexity
+## O(1): Constant Time Complexity
 
 ![](./jarednielsen-big-o-constant-liberation.png)
 
@@ -141,10 +141,10 @@ const isEven = num => num % 2 === 0;
 
 Our algorithm checks whether or not a number is even or odd and will return true or false accordingly. It only needs to perform one operation. Again, O(1). 
 
-Another example. Say you are checking your application state to determine whether or not you need to style an alert element with a specific color. You could do so with a series of conditional statements:
+One more example: Say you are checking your application state to determine whether or not you need to style an alert element with a specific color. You could do so with a series of conditional statements:
 
 ```js
-const alertColor = state => {
+const  = state => {
    if (state === 'danger') {
        return 'crimson';
    } else if (state === 'warning') {
@@ -155,25 +155,39 @@ const alertColor = state => {
        return 'cornflowerblue';
    };
 }
-
 ```
-What is our best-case scenario for this algorithm? If `state` is equal to `danger`, we will only perform one operation and return. That would be O(1). What if `state` is not equal to `danger`? Then we perform multiple operations and the order of `alertColor()` is _n_. 
 
-Why? We’ll see in the next article. 
+What is our _best-case scenario_ for this algorithm? 
 
-If you find yourself writing a lot of conditional statements, you may want to consider implementing a lookup table (LUT) using a JavaScript object. 
+If `state` is equal to `danger`, we will only perform one operation and return. 
+
+That would be O(1). 
+
+What if `state` is not equal to `danger`? What if `state` does not match any of our conditions? What is our worst-case scenario?
+
+It's still O(1).
+
+Why? 
+
+Even though we check multiple conditions before returning `cornflowerblue`, the order of magnitude, or rate of growth, is _constant_. The size of the input does not affect the number of operations performed. We know the upper bound, or worst-case scenario, in advance, and we know it will not change. 
+
+What if our function performs an operation in one of the conditions?
 
 ```js
-const alertTable = {
-   danger: 'crimson',
-   warning: 'orange',
-   success: 'chartreuse',
-};
- 
-const alertColor = state => alertTable[state] || 'cornflowerblue';
+const alertColor = state => {
+   if (state === 'danger') {
+       return 'crimson';
+   } else {
+       return pukeRainbows(state);
+   };
+}
 ```
 
-Our LUT is O(1). It only performs one operation, so its time complexity is constant regardless of the size of the lookup table. 🤯 
+Is it still O(1)? 
+
+It depends on what happens when we call `pukeRainbows()`.
+
+Why? We’ll see in the next article. 
 
 
 ## What is Big O Notation? 

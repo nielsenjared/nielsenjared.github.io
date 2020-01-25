@@ -1,7 +1,7 @@
 ---
-title: Big O Linear Time Complexity 
+title: Big O - Linear Time Complexity 
 date: "2020-01-27"
-description: Big O notation is not a big deal. Learn the fundamentals of Big O notation, beginning with constant and linear time complexity with examples in JavaScript.
+description: Big O notation is not a big deal. Learn the fundamentals of Big O linear time complexity with examples in JavaScript.
 keywords: ["big o", "big o notation", "linear time", "time complexity"]
 ---
 
@@ -64,13 +64,66 @@ Remember this table?
 
 It lists common runtimes from fastest to slowest. 
 
-We learned O(1) in [What is Big O Notation?](https://jarednielsen.com/big-o-notation/). We're going to skip O(log n) for the time being. It will be easier to understand after learning O(n), linear time complexity, and O(n^2), quadratic time complexity. 
+We learned O(1), or constant time complexity, in [What is Big O Notation?](https://jarednielsen.com/big-o-notation/). We're going to skip O(log n) for the time being. It will be easier to understand after learning O(n), linear time complexity, and O(n^2), quadratic time complexity. 
 
 Before getting into O(n), let’s begin with a quick refreshser on O(1), constant time complexity.
 
 ## O(1): Constant Time Complexity 
 
+Constant time compelxity, or O(1), is just that: constant. Regardless of the size of the input, the algorithm only needs to perform one operation to return an output.
 
+Here’s an example we used in the previous tutorial: 
+
+```js
+const isEven = num => num % 2 === 0;
+```
+
+Our algorithm checks whether or not a number is even or odd and will return true or false accordingly. It only needs to perform one operation regardless of the size of the number. 
+
+Say you’re working with an API that returns a users full name in an array, like so: 
+
+```js
+[“Jared”, “Nielsen”];
+```
+
+Your task is to get the users first name. Easy, in JavaScript:
+
+```js
+const getFirstName = data => {
+    return data[0];
+}
+
+```
+
+No matter how many times you run your ‘algorithm’, it only needs to perform one operation to return the desired value. That’s O(1), or constant time.
+
+@TODO 
+
+```js
+const grader = score => {
+   if (score < 60) {
+       return "Fail!";
+   } else if (num > 60) {
+       return "Pass!";
+   } else {
+       return "Living on the edge?";
+   };
+}
+```
+
+What is our _best-case scenario_ for this algorithm? 
+
+If `score` is less than 60, we will only perform one operation and return. 
+
+That would be O(1). 
+
+What is `score` is greater than or equal to 60? 
+
+It's still O(1).
+
+Why? 
+
+Even though we check multiple conditions before returning, the order of magnitude, or rate of growth, is _constant_. The size of the input does not affect the number of operations performed. We know the upper bound, or worst-case scenario, in advance, and we know it will not change. 
 
 
 ## O(n): Linear Time Complexity
@@ -126,7 +179,7 @@ for (let i = 0; i < animals.length; i++) {
 
 If our user searches for “ocelot”, how many computations are performed? 
 
-One. It’s the first item in our array, so our program will return. 
+One. It’s the first item in our array, so our program will return after one operation. 
 
 But, if our user searches for “osprey”, how many computations are performed? 
 
@@ -148,6 +201,8 @@ All O(n).
 
 You can see how linear complexity is fine for small datasets, but becomes a concern when the size of the input increases. 
 
+@TODO 
+
 Does O(n) scale? 
 
 We can do better _and_ worse. 
@@ -155,6 +210,4 @@ We can do better _and_ worse.
 
 ## What is Big O Notation? Linear & Constant Time Complexity in JavaScript
 
-Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O linear time complexity with examples in JavaScript.
-
-Stay tuned for part three of this series on Big O notation where we'll look at O(n^2), or quadratic time complexity.
+In this tutorial, you learned the fundamentals of Big O linear time complexity with examples in JavaScript. Stay tuned for part three of this series on Big O notation where we'll look at O(n^2), or quadratic time complexity.
