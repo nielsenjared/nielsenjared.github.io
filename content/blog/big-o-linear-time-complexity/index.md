@@ -1,5 +1,5 @@
 ---
-title: Big O - Linear Time Complexity 
+title: Big O Linear Time Complexity 
 date: "2020-01-27"
 description: Big O notation is not a big deal. Learn the fundamentals of Big O linear time complexity with examples in JavaScript.
 keywords: ["big o", "big o notation", "linear time", "time complexity"]
@@ -201,7 +201,7 @@ All O(n).
 
 You can see how linear complexity is fine for small datasets, but becomes a concern when the size of the input increases. 
 
-@TODO 
+@TODO conditional with O(n) and O(1)
 
 Does O(n) scale? 
 
