@@ -63,7 +63,7 @@ class Index extends React.Component {
             </div>
         </form>
         <p style={{textAlign: "center"}}>
-          Skeptical? Here's a sample: <a href="https://jarednielsen.com/teach-adults-code/">How To Teach Adults to Code</a>
+          Skeptical? Here's a sample: <a href="https://jarednielsen.com/programming-problem-solving/">Programming is Problem Solving</a>
         </p>
         </div>
     </Layout>
