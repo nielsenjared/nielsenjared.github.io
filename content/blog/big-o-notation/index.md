@@ -7,7 +7,7 @@ keywords: ["big o", "big o notation", "time complexity", "constant time"]
 
 ![](./jarednielsen-big-o.png)
 
-Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you'll learn the fundamentals of Big O notation, beginning with constant and linear time complexity with examples in JavaScript.
+Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you'll learn the fundamentals of Big O notation, beginning with constant time complexity with examples in JavaScript.
 
 _Note: Amazon links are affiliate._
 
