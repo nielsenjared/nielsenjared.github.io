@@ -27,9 +27,9 @@ If you're just joining us, you will want to start with the first article in this
 
 ### What is Big O Notation? 
 
-Big O is a notation for measuring the performance of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the _speed_ of an algorithm in seconds (or minutes!). We measure the _rate of growth_ of an algorithm in the number of operations it takes to complete. 
+Big O notation is a system for measuring the rate of growth of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the _speed_ of an algorithm in seconds (or minutes!). Instead, we measure the number of operations it takes to complete. 
 
-The O is short for “Order of magnitude”. So, if we’re discussing an algorithm with _O(n)_, we say its order of magnitude, or rate of growth, is _n_, or linear complexity. 
+The O is short for “Order of”. So, if we’re discussing an algorithm with _O(n)_, we say its _order of_, or rate of growth, is _n_, or linear complexity. 
 
 
 ### How Does Big O Notation Work? 
@@ -40,13 +40,13 @@ Why?
 
 Because we don’t know what we don’t know.
 
-If we’re writing a search algorithm, we won’t always know the query ahead of time. If we’re writing a sorting algorithm, we won’t always know the dataset ahead of time. We want to know just how poorly our algorithm will perform so we can plan accordingly. 
+So we need to know just how poorly our algorithm will perform so we can plan accordingly. 
 
 The worst-case scenario is also known as the “upper bound”. 
 
 Remember this table? 
 
-| O             | Run time          |       |
+| O             | Rate of growth    |       |
 |---            |---                |---    |
 | O(1)          | constant          | fast  |
 | O(log n)      | logarithmic       |       |
@@ -57,7 +57,7 @@ Remember this table?
 | O(2^n)        | exponential       |       |
 | O(n!)         | factorial         | slow  |
 
-It lists common runtimes from fastest to slowest. 
+It lists common orders, or rates of growth, from fastest to slowest. 
 
 We learned O(1), or constant time complexity, in [What is Big O Notation?](https://jarednielsen.com/big-o-notation/). We're going to skip O(log n) for the time being. It will be easier to understand after learning O(n), linear time complexity, and O(n^2), quadratic time complexity. 
 
@@ -65,7 +65,7 @@ Before getting into O(n), let’s begin with a quick refreshser on O(1), constan
 
 ### O(1): Constant Time Complexity 
 
-Constant time compelxity, or O(1), is just that: constant. Regardless of the size of the input, the algorithm only needs to perform one operation to return an output.
+Constant time compelxity, or O(1), is just that: constant. Regardless of the size of the input, the algorithm will always perform the same number of operations to return an output.
 
 Here’s an example we used in the previous tutorial: 
 
@@ -115,20 +115,24 @@ It's still O(1).
 
 Why? 
 
-Even though we check multiple conditions before returning, the order of magnitude, or rate of growth, is _constant_. The size of the input does not affect the number of operations performed. We know the _upper bound_, or worst-case scenario, in advance, and we know it will not change. 
+Even though we check multiple conditions before returning, the rate of growth is _constant_. We know the _upper bound_, or worst-case scenario, in advance, and we know it will not change. 
 
 
 ## O(n): Linear Time Complexity
 
-If O(1) performs only one computation regardless of the size of the input, what is O(n)?
+If O(1) performs the same number of computations regardless of the size of the input, what is O(n)?
 
-For _n_ inputs, our algorithm will perform _n_ outputs. This is linear time complexity. 
+The heading above gives it away. 
+
+This is linear time complexity. 
 
 Why? 
 
-If we were to chart this on a graph, what would it look like? 
+For _n_ inputs, our algorithm _might_ perform _n_ operations.
 
-A straight line.
+It might also perform _fewer_ than _n_ operations, but we don't know what we don't know so we calculate its upper bound, or worst-case scenario.
+
+How does O(1) differ from O(n)? 
 
 
 ### Math O'Clock 🧮 🕝 
@@ -166,49 +170,43 @@ What if we drop our coefficients entirely and simply chart _x_?
 
 Still a straight line. 
 
-What if charted `1`?
+What if we charted `1`?
 
 ![](./jarednielsen-big-o-linear-chart-1.png)
 
-Also still a straight line.
+Also a straight line.
 
 But!
 
-Because the value is _constant_, not variable, our line does not represent a rate of change, or growth, over time.
+Because the value is _constant_, not variable, our line does not represent a rate of change, or growth, over time. It's horizontal. It would be constant whether we charted 1, 10 or 1,000,000.
 
 Speaking of time, math o'clock is over. Back to Big O.
 
 _Charts made with [Desmos](https://www.desmos.com/calculator)_
 
 
-### Drop the Constant Terms
+## Drop the Constant Terms
 
-What if we calculated our operations for an algorithm and, rather than just `n`, it was actually something like: 
+Now forget everything you just saw. The only chart you need to think about is this [ubiquitous cheatsheet](https://www.bigocheatsheet.com) that you are going to see everywhere: 
 
-```
-2n + 1
-```
+![Big O Cheatsheet](big-o-cheatsheet.png)
 
-Would we then write O(2n + 1)?
+We want to think about our algorithms in the abstract, which means we need to drop the constant terms. They don’t provide any meaningful additional information. As we saw above, whether we chart `2n + 1` or just `n`, we still get a straight line. That’s what we really want to know. Multiplying by a constant value, in this example, `2`, influences the rate of growth of our algorithm by a constant amount. With or without it, the function is still a linear equation. 
 
-No. 
+We're not interested in the details. 
 
-That’s still just O(n). 
-
-Why?
-
-With Big O, we drop the constants and the non-dominant terms. They don’t provide any meaningful additional information. O(n) and O(2n +1) are both linear. As we saw above, if you chart `2n + 1`, it would still be a straight line. That’s what we really want to know. Multiplying by a constant value, in this example, `2`, influences the rate of growth of our algorithm by a constant amount. With or without it, the algorithm is still linear. 
+We're interested in the rate of growth so we can determine whether or not our algorithm is a sufficient solution for our problem or if we need to find a more efficient alternative.
 
 
-### Worst-Case Scenario
+## Big O & Worst-Case Scenario
 
-But what if our algorithm, say a search function, returns its parameter after one operation? Would that be O(1)? 
+What if our algorithm, say a search function, returns its parameter after one operation? Would that be O(1)?
 
 No. It’s still O(n). 
 
 Why? 
 
-Remember, with Big O, we measure the _worst case scenario_. Because we don’t know what we don’t know, our default assumption for any algorithm is its worst-case scenario. In a worst case scenario, an O(n) algorithm needs to perform its specified operation on every value in the input. When making our Big O calculation, we want to know just how poorly an algorithm is going to perform. 
+Remember, with Big O, we measure the _worst case scenario_. Because we don’t know what we don’t know, our default assumption for any algorithm is its upper bound. In a worst case scenario, an O(n) algorithm needs to perform its specified operation on every value in the input. When making our Big O calculation, we want to know just how poorly an algorithm is going to perform. 
 
 Say, for example, we have an array of animals: 
 
@@ -226,13 +224,15 @@ for (let i = 0; i < animals.length; i++) {
 };
 ```
 
-If our user searches for “ocelot”, how many computations are performed? 
+If our user searches for “ocelot”, how many operations are performed? 
 
 One. It’s the first item in our array, so our program will return after one operation. 
 
-But, if our user searches for “osprey”, how many computations are performed? 
+That _specific_ operation would be O(1).
 
-Eight. That’s our worst case scenario. For eight inputs, our algorithm will perform eight operations.
+But, if our user searches for “osprey”, how many operations are performed? 
+
+Eight. That’s our upper bound and worst case scenario. For eight inputs, our algorithm will perform eight operations.
 
 What if our array contained 100 animals? 
 
@@ -248,12 +248,14 @@ What about 1,000?
 
 All O(n).
 
-You can see how linear complexity is fine for small datasets, but becomes a concern when the size of the input increases. 
+You can see how linear complexity is fine for small datasets, but becomes a consideration when the size of the input increases. 
 
 
-### Drop Non-Dominant Terms 
+## Trick Questions
 
-What's the order of magnitude of this function? 
+### Big O & Conditional Statements 
+
+What's the order of this function? 
 
 ```js
 const lowerList = arr => {
@@ -269,15 +271,39 @@ If our condition is met, it will perform one operation, so it's constant, or O(1
 
 If our condition is not met, then we map our array and return it. The length of that array is unknown, but for every element in the array, we perform an operation, so it's linear, or O(n).
 
-That means our function is (1 + n). 
+That means our function is either O(1) or O(n). 
 
 Which of these is the worst-case scenario, or upper bound? 
 
 _n_
 
-This is considered our dominant term. We can drop `1`, and our algorithm is simply O(n).
 
-What would the worst-case scenario of O(n^2 + n) be?
+### Big O & Successive Iterations
+
+What if our algorithm performed multiple, successive iterations? 
+
+```js
+const forwardBack = (num) => {
+
+  for(let i = 0; i <= num; i+= 1){
+      console.log(i);
+  }
+
+  for(let i = num; i >= 0; i-= 1){
+      console.log(i);
+  }
+}
+```
+
+What is the order of this?
+
+It's still O(n).
+
+Were you tempted to calculate it as O(2n)? Because O(n) + O(n) = O(2n)?
+
+📝 Remember: drop the constants. We only want to know the _order of_ our function, which in this case is linear.
+
+But what if our algorithm uses nested iterations?
 
 We'll find out in the next tutorial.
 
@@ -289,3 +315,5 @@ Does O(n) scale?
 We can do better _and_ worse. 
 
 In this tutorial, you learned the fundamentals of Big O linear time complexity with examples in JavaScript. Stay tuned for part three of this series on Big O notation where we'll look at O(n^2), or quadratic time complexity.
+
+ _Big O thanks to [Rob Conery](https://twitter.com/robconery)_
