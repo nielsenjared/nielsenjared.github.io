@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Jan 2020 15:25:26 GMT</lastBuildDate><item><title><![CDATA[Big O Linear Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-linear-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-linear-time-complexity/</guid><pubDate>Mon, 27 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 30 Jan 2020 15:22:42 GMT</lastBuildDate><item><title><![CDATA[Big O Linear Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-linear-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-linear-time-complexity/</guid><pubDate>Mon, 27 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/78fee710d4128ef0ac5dd757a62375a7/2f950/jarednielsen-big-o-linear-liberation.png&quot;
@@ -46,20 +46,20 @@
 &lt;h2&gt;Quick Refreshers&lt;/h2&gt;
 &lt;p&gt;If you’re just joining us, you will want to start with the first article in this series, &lt;a href=&quot;https://jarednielsen.com/big-o-notation/&quot;&gt;What is Big O Notation?&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;What is Big O Notation?&lt;/h3&gt;
-&lt;p&gt;Big O is a notation for measuring the performance of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the &lt;em&gt;speed&lt;/em&gt; of an algorithm in seconds (or minutes!). We measure the &lt;em&gt;rate of growth&lt;/em&gt; of an algorithm in the number of operations it takes to complete. &lt;/p&gt;
-&lt;p&gt;The O is short for “Order of magnitude”. So, if we’re discussing an algorithm with &lt;em&gt;O(n)&lt;/em&gt;, we say its order of magnitude, or rate of growth, is &lt;em&gt;n&lt;/em&gt;, or linear complexity. &lt;/p&gt;
+&lt;p&gt;Big O notation is a system for measuring the rate of growth of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the &lt;em&gt;speed&lt;/em&gt; of an algorithm in seconds (or minutes!). Instead, we measure the number of operations it takes to complete. &lt;/p&gt;
+&lt;p&gt;The O is short for “Order of”. So, if we’re discussing an algorithm with &lt;em&gt;O(n)&lt;/em&gt;, we say its &lt;em&gt;order of&lt;/em&gt;, or rate of growth, is &lt;em&gt;n&lt;/em&gt;, or linear complexity. &lt;/p&gt;
 &lt;h3&gt;How Does Big O Notation Work?&lt;/h3&gt;
 &lt;p&gt;Big O notation measures the &lt;em&gt;worst-case runtime&lt;/em&gt;. &lt;/p&gt;
 &lt;p&gt;Why?&lt;/p&gt;
 &lt;p&gt;Because we don’t know what we don’t know.&lt;/p&gt;
-&lt;p&gt;If we’re writing a search algorithm, we won’t always know the query ahead of time. If we’re writing a sorting algorithm, we won’t always know the dataset ahead of time. We want to know just how poorly our algorithm will perform so we can plan accordingly. &lt;/p&gt;
+&lt;p&gt;So we need to know just how poorly our algorithm will perform so we can plan accordingly. &lt;/p&gt;
 &lt;p&gt;The worst-case scenario is also known as the “upper bound”. &lt;/p&gt;
 &lt;p&gt;Remember this table? &lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;O&lt;/th&gt;
-&lt;th&gt;Run time&lt;/th&gt;
+&lt;th&gt;Rate of growth&lt;/th&gt;
 &lt;th&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -106,11 +106,11 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;It lists common runtimes from fastest to slowest. &lt;/p&gt;
+&lt;p&gt;It lists common orders, or rates of growth, from fastest to slowest. &lt;/p&gt;
 &lt;p&gt;We learned O(1), or constant time complexity, in &lt;a href=&quot;https://jarednielsen.com/big-o-notation/&quot;&gt;What is Big O Notation?&lt;/a&gt;. We’re going to skip O(log n) for the time being. It will be easier to understand after learning O(n), linear time complexity, and O(n^2), quadratic time complexity. &lt;/p&gt;
 &lt;p&gt;Before getting into O(n), let’s begin with a quick refreshser on O(1), constant time complexity.&lt;/p&gt;
 &lt;h3&gt;O(1): Constant Time Complexity&lt;/h3&gt;
-&lt;p&gt;Constant time compelxity, or O(1), is just that: constant. Regardless of the size of the input, the algorithm only needs to perform one operation to return an output.&lt;/p&gt;
+&lt;p&gt;Constant time compelxity, or O(1), is just that: constant. Regardless of the size of the input, the algorithm will always perform the same number of operations to return an output.&lt;/p&gt;
 &lt;p&gt;Here’s an example we used in the previous tutorial: &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;isEven&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Our algorithm checks whether or not a number is even or odd and will return true or false accordingly. It only needs to perform one operation regardless of the size of the number. &lt;/p&gt;
@@ -135,13 +135,15 @@
 &lt;p&gt;What if &lt;code&gt;score&lt;/code&gt; is greater than or equal to 60? &lt;/p&gt;
 &lt;p&gt;It’s still O(1).&lt;/p&gt;
 &lt;p&gt;Why? &lt;/p&gt;
-&lt;p&gt;Even though we check multiple conditions before returning, the order of magnitude, or rate of growth, is &lt;em&gt;constant&lt;/em&gt;. The size of the input does not affect the number of operations performed. We know the &lt;em&gt;upper bound&lt;/em&gt;, or worst-case scenario, in advance, and we know it will not change. &lt;/p&gt;
+&lt;p&gt;Even though we check multiple conditions before returning, the rate of growth is &lt;em&gt;constant&lt;/em&gt;. We know the &lt;em&gt;upper bound&lt;/em&gt;, or worst-case scenario, in advance, and we know it will not change. &lt;/p&gt;
 &lt;h2&gt;O(n): Linear Time Complexity&lt;/h2&gt;
-&lt;p&gt;If O(1) performs only one computation regardless of the size of the input, what is O(n)?&lt;/p&gt;
-&lt;p&gt;For &lt;em&gt;n&lt;/em&gt; inputs, our algorithm will perform &lt;em&gt;n&lt;/em&gt; outputs. This is linear time complexity. &lt;/p&gt;
+&lt;p&gt;If O(1) performs the same number of computations regardless of the size of the input, what is O(n)?&lt;/p&gt;
+&lt;p&gt;The heading above gives it away. &lt;/p&gt;
+&lt;p&gt;This is linear time complexity. &lt;/p&gt;
 &lt;p&gt;Why? &lt;/p&gt;
-&lt;p&gt;If we were to chart this on a graph, what would it look like? &lt;/p&gt;
-&lt;p&gt;A straight line.&lt;/p&gt;
+&lt;p&gt;For &lt;em&gt;n&lt;/em&gt; inputs, our algorithm &lt;em&gt;might&lt;/em&gt; perform &lt;em&gt;n&lt;/em&gt; operations.&lt;/p&gt;
+&lt;p&gt;It might also perform &lt;em&gt;fewer&lt;/em&gt; than &lt;em&gt;n&lt;/em&gt; operations, but we don’t know what we don’t know so we calculate its upper bound, or worst-case scenario.&lt;/p&gt;
+&lt;p&gt;How does O(1) differ from O(n)? &lt;/p&gt;
 &lt;h3&gt;Math O’Clock 🧮 🕝&lt;/h3&gt;
 &lt;p&gt;Remember &lt;a href=&quot;https://en.wikipedia.org/wiki/Linear_equation&quot;&gt;linear equations&lt;/a&gt; from algebra? &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;y = mx + b&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -262,7 +264,7 @@ If we change our coefficients: &lt;/p&gt;
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;Still a straight line. &lt;/p&gt;
-&lt;p&gt;What if charted &lt;code&gt;1&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;What if we charted &lt;code&gt;1&lt;/code&gt;?&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -299,24 +301,57 @@ If we change our coefficients: &lt;/p&gt;
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;Also still a straight line.&lt;/p&gt;
+&lt;p&gt;Also a straight line.&lt;/p&gt;
 &lt;p&gt;But!&lt;/p&gt;
-&lt;p&gt;Because the value is &lt;em&gt;constant&lt;/em&gt;, not variable, our line does not represent a rate of change, or growth, over time.&lt;/p&gt;
+&lt;p&gt;Because the value is &lt;em&gt;constant&lt;/em&gt;, not variable, our line does not represent a rate of change, or growth, over time. It’s horizontal. It would be constant whether we charted 1, 10 or 1,000,000.&lt;/p&gt;
 &lt;p&gt;Speaking of time, math o’clock is over. Back to Big O.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Charts made with &lt;a href=&quot;https://www.desmos.com/calculator&quot;&gt;Desmos&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h3&gt;Drop the Constant Terms&lt;/h3&gt;
-&lt;p&gt;What if we calculated our operations for an algorithm and, rather than just &lt;code&gt;n&lt;/code&gt;, it was actually something like: &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2n + 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Would we then write O(2n + 1)?&lt;/p&gt;
-&lt;p&gt;No. &lt;/p&gt;
-&lt;p&gt;That’s still just O(n). &lt;/p&gt;
-&lt;p&gt;Why?&lt;/p&gt;
-&lt;p&gt;With Big O, we drop the constants and the non-dominant terms. They don’t provide any meaningful additional information. O(n) and O(2n +1) are both linear. As we saw above, if you chart &lt;code&gt;2n + 1&lt;/code&gt;, it would still be a straight line. That’s what we really want to know. Multiplying by a constant value, in this example, &lt;code&gt;2&lt;/code&gt;, influences the rate of growth of our algorithm by a constant amount. With or without it, the algorithm is still linear. &lt;/p&gt;
-&lt;h3&gt;Worst-Case Scenario&lt;/h3&gt;
-&lt;p&gt;But what if our algorithm, say a search function, returns its parameter after one operation? Would that be O(1)? &lt;/p&gt;
+&lt;h2&gt;Drop the Constant Terms&lt;/h2&gt;
+&lt;p&gt;Now forget everything you just saw. The only chart you need to think about is this &lt;a href=&quot;https://www.bigocheatsheet.com&quot;&gt;ubiquitous cheatsheet&lt;/a&gt; that you are going to see everywhere: &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9c24f10d0295ead7526e32d62fa2eac5/4117f/big-o-cheatsheet.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 63.15359477124183%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAACrUlEQVQoz1XRSUwTYRQH8I94Mh7UgyeN8WJijCfjtXZaynYQIXoyeDHRRG/GoMZAHDpMZyEIGBXFgxcTJVIENMFSkO5lWmQ1sQudQikpUFlmulra7zkDhITkHf75kl/ee99DpUIhHw5nAoFcKASRCI5Gc4HARs/7jdddG8ONCf8dYexe99B1i60ZojEsRkAU1QovQUxE2WQySZLRxsZkczNmmCxFrTU1ZRkG2tuB7wCuC/guaHsJXAcoj6wJaA7oNuh+CGO3UGZ9XTaZZKOxyHHA85ISWBaUzLJYDQxmd4tTpMLaoZOEgdvg0YL/moolmt4myT2Toii8hw8VqzIlfHwAjmqYIMCtB6EeZZJJmaYlksQct8MwyghKf3zAeBaYNlW+ewKWeuwlsKccPJVFpy7rqEXxYDBlMm3v4hxN52lawfuM5aH1BXS2wEADeHUg6HbshsTQ1dXvWmlEk3fWonlBSDHMHpYPFuYPzykQ4DHsOAypUd2WhciN67FbB746FJiaUrDU0pI3mZSFgef253z7GKx14Ndir/6frVy2EkoV7HrwGmDCAG4ChDp1502KShmN6VYqTyuX6FD/c7BBGbLo1WZ/EpJVmx4jik51VXBVgrMK7DUwXoXdN9Q7/6WMm+TzNMngNhY+3S85KvIujTyil36UZ0crSrZqcNSobEIPfg3MX4GFixA/A1vnVbzZyqw9I0s9T7HlZt6uV0DBZlA6w4wGQpchdgGSZ0E+BeljUDwCgADKMEZb0gkkJ9YmH90NvjLEhy/FbOcSvtOJuZPxwNHFSJm4giKr6E8CzcbRdAz9WkKCiLwiGp0vGxTQN/9xlMvkAlNWcaE/HOlbWPwSWOwNxT+HVnpDK/22yTdfraxr7sPv2MB0tH922TyzbJ5eNvuiZlewzycO/QeV1h5qGVp6JgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Big O Cheatsheet&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9c24f10d0295ead7526e32d62fa2eac5/b9e4f/big-o-cheatsheet.png&quot;
+        srcset=&quot;/static/9c24f10d0295ead7526e32d62fa2eac5/cf440/big-o-cheatsheet.png 148w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/d2d38/big-o-cheatsheet.png 295w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/b9e4f/big-o-cheatsheet.png 590w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/f9b6a/big-o-cheatsheet.png 885w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/2d849/big-o-cheatsheet.png 1180w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/4117f/big-o-cheatsheet.png 2448w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;We want to think about our algorithms in the abstract, which means we need to drop the constant terms. They don’t provide any meaningful additional information. As we saw above, whether we chart &lt;code&gt;2n + 1&lt;/code&gt; or just &lt;code&gt;n&lt;/code&gt;, we still get a straight line. That’s what we really want to know. Multiplying by a constant value, in this example, &lt;code&gt;2&lt;/code&gt;, influences the rate of growth of our algorithm by a constant amount. With or without it, the function is still a linear equation. &lt;/p&gt;
+&lt;p&gt;We’re not interested in the details. &lt;/p&gt;
+&lt;p&gt;We’re interested in the rate of growth so we can determine whether or not our algorithm is a sufficient solution for our problem or if we need to find a more efficient alternative.&lt;/p&gt;
+&lt;h2&gt;Big O &amp;#x26; Worst-Case Scenario&lt;/h2&gt;
+&lt;p&gt;What if our algorithm, say a search function, returns its parameter after one operation? Would that be O(1)?&lt;/p&gt;
 &lt;p&gt;No. It’s still O(n). &lt;/p&gt;
 &lt;p&gt;Why? &lt;/p&gt;
-&lt;p&gt;Remember, with Big O, we measure the &lt;em&gt;worst case scenario&lt;/em&gt;. Because we don’t know what we don’t know, our default assumption for any algorithm is its worst-case scenario. In a worst case scenario, an O(n) algorithm needs to perform its specified operation on every value in the input. When making our Big O calculation, we want to know just how poorly an algorithm is going to perform. &lt;/p&gt;
+&lt;p&gt;Remember, with Big O, we measure the &lt;em&gt;worst case scenario&lt;/em&gt;. Because we don’t know what we don’t know, our default assumption for any algorithm is its upper bound. In a worst case scenario, an O(n) algorithm needs to perform its specified operation on every value in the input. When making our Big O calculation, we want to know just how poorly an algorithm is going to perform. &lt;/p&gt;
 &lt;p&gt;Say, for example, we have an array of animals: &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; animals &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;“ocelot”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “octopus”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “opossum”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “orangutan”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “orca”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “oriole”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “oryx”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “osprey”&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;And let’s say our task is to find the location of a specific animal in the array based on user input:&lt;/p&gt;
@@ -325,10 +360,11 @@ If we change our coefficients: &lt;/p&gt;
         &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Found &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;userInput&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; at &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;i&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;If our user searches for “ocelot”, how many computations are performed? &lt;/p&gt;
+&lt;p&gt;If our user searches for “ocelot”, how many operations are performed? &lt;/p&gt;
 &lt;p&gt;One. It’s the first item in our array, so our program will return after one operation. &lt;/p&gt;
-&lt;p&gt;But, if our user searches for “osprey”, how many computations are performed? &lt;/p&gt;
-&lt;p&gt;Eight. That’s our worst case scenario. For eight inputs, our algorithm will perform eight operations.&lt;/p&gt;
+&lt;p&gt;That &lt;em&gt;specific&lt;/em&gt; operation would be O(1).&lt;/p&gt;
+&lt;p&gt;But, if our user searches for “osprey”, how many operations are performed? &lt;/p&gt;
+&lt;p&gt;Eight. That’s our upper bound and worst case scenario. For eight inputs, our algorithm will perform eight operations.&lt;/p&gt;
 &lt;p&gt;What if our array contained 100 animals? &lt;/p&gt;
 &lt;p&gt;The worst-case scenario would be 100 operations. &lt;/p&gt;
 &lt;p&gt;What about 1,000?&lt;/p&gt;
@@ -336,9 +372,10 @@ If we change our coefficients: &lt;/p&gt;
 &lt;p&gt;100,000?&lt;/p&gt;
 &lt;p&gt;1,000,000?&lt;/p&gt;
 &lt;p&gt;All O(n).&lt;/p&gt;
-&lt;p&gt;You can see how linear complexity is fine for small datasets, but becomes a concern when the size of the input increases. &lt;/p&gt;
-&lt;h3&gt;Drop Non-Dominant Terms&lt;/h3&gt;
-&lt;p&gt;What’s the order of magnitude of this function? &lt;/p&gt;
+&lt;p&gt;You can see how linear complexity is fine for small datasets, but becomes a consideration when the size of the input increases. &lt;/p&gt;
+&lt;h2&gt;Trick Questions&lt;/h2&gt;
+&lt;h3&gt;Big O &amp;#x26; Conditional Statements&lt;/h3&gt;
+&lt;p&gt;What’s the order of this function? &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;lowerList&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Nothing to be done&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -348,16 +385,32 @@ If we change our coefficients: &lt;/p&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;If our condition is met, it will perform one operation, so it’s constant, or O(1).&lt;/p&gt;
 &lt;p&gt;If our condition is not met, then we map our array and return it. The length of that array is unknown, but for every element in the array, we perform an operation, so it’s linear, or O(n).&lt;/p&gt;
-&lt;p&gt;That means our function is (1 + n). &lt;/p&gt;
+&lt;p&gt;That means our function is either O(1) or O(n). &lt;/p&gt;
 &lt;p&gt;Which of these is the worst-case scenario, or upper bound? &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;n&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This is considered our dominant term. We can drop &lt;code&gt;1&lt;/code&gt;, and our algorithm is simply O(n).&lt;/p&gt;
-&lt;p&gt;What would the worst-case scenario of O(n^2 + n) be?&lt;/p&gt;
+&lt;h3&gt;Big O &amp;#x26; Successive Iterations&lt;/h3&gt;
+&lt;p&gt;What if our algorithm performed multiple, successive iterations? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;forwardBack&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What is the order of this?&lt;/p&gt;
+&lt;p&gt;It’s still O(n).&lt;/p&gt;
+&lt;p&gt;Were you tempted to calculate it as O(2n)? Because O(n) + O(n) = O(2n)?&lt;/p&gt;
+&lt;p&gt;📝 Remember: drop the constants. We only want to know the &lt;em&gt;order of&lt;/em&gt; our function, which in this case is linear.&lt;/p&gt;
+&lt;p&gt;But what if our algorithm uses nested iterations?&lt;/p&gt;
 &lt;p&gt;We’ll find out in the next tutorial.&lt;/p&gt;
 &lt;h2&gt;Big O Linear Time Complexity in JavaScript&lt;/h2&gt;
 &lt;p&gt;Does O(n) scale? &lt;/p&gt;
 &lt;p&gt;We can do better &lt;em&gt;and&lt;/em&gt; worse. &lt;/p&gt;
-&lt;p&gt;In this tutorial, you learned the fundamentals of Big O linear time complexity with examples in JavaScript. Stay tuned for part three of this series on Big O notation where we’ll look at O(n^2), or quadratic time complexity.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[What is Big O Notation? The Superlative Guide]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-notation/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-notation/</guid><pubDate>Mon, 20 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;In this tutorial, you learned the fundamentals of Big O linear time complexity with examples in JavaScript. Stay tuned for part three of this series on Big O notation where we’ll look at O(n^2), or quadratic time complexity.&lt;/p&gt;
+&lt;p&gt; &lt;em&gt;Big O thanks to &lt;a href=&quot;https://twitter.com/robconery&quot;&gt;Rob Conery&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[What is Big O Notation? The Superlative Guide]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-notation/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-notation/</guid><pubDate>Mon, 20 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/46f4775ef27b57ef4de82f39754f7827/2f950/jarednielsen-big-o.png&quot;
