@@ -36,14 +36,14 @@
     </p>
 <p>Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation linear time complexity with examples in JavaScript.</p>
 <hr>
-<p>This is the first in a series on Big O notation. If you want to stay in the loop, <a href="http://eepurl.com/cP8CMn">sign up for my weekly newsletter, The Solution</a>.</p>
+<p>This is the second in a series on Big O notation. If you want to stay in the loop, <a href="http://eepurl.com/cP8CMn">sign up for my weekly newsletter, The Solution</a>.</p>
 <hr>
 <h2>What Problem(s) Does Big O Notation Solve?</h2>
 <ul>
 <li>Big O notation helps us answer the question, “Will it scale?” </li>
 <li>Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!).</li>
 </ul>
-<h2>Quick Refreshers</h2>
+<h2>Quick Refresher</h2>
 <p>If you’re just joining us, you will want to start with the first article in this series, <a href="https://jarednielsen.com/big-o-notation/">What is Big O Notation?</a></p>
 <h3>What is Big O Notation?</h3>
 <p>Big O notation is a system for measuring the rate of growth of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the <em>speed</em> of an algorithm in seconds (or minutes!). Instead, we measure the number of operations it takes to complete. </p>
@@ -52,15 +52,15 @@
 <p>Big O notation measures the <em>worst-case runtime</em>. </p>
 <p>Why?</p>
 <p>Because we don’t know what we don’t know.</p>
-<p>So we need to know just how poorly our algorithm will perform so we can plan accordingly. </p>
+<p>We need to know just how poorly our algorithm will perform so we can compare it to other solutions. </p>
 <p>The worst-case scenario is also known as the “upper bound”. </p>
 <p>Remember this table? </p>
 <table>
 <thead>
 <tr>
 <th>O</th>
+<th>Complexity</th>
 <th>Rate of growth</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -106,7 +106,7 @@
 </tr>
 </tbody>
 </table>
-<p>It lists common orders, or rates of growth, from fastest to slowest. </p>
+<p>It lists common orders from fastest to slowest. </p>
 <p>We learned O(1), or constant time complexity, in <a href="https://jarednielsen.com/big-o-notation/">What is Big O Notation?</a>. We’re going to skip O(log n) for the time being. It will be easier to understand after learning O(n), linear time complexity, and O(n^2), quadratic time complexity. </p>
 <p>Before getting into O(n), let’s begin with a quick refreshser on O(1), constant time complexity.</p>
 <h3>O(1): Constant Time Complexity</h3>
@@ -123,10 +123,10 @@
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">grader</span> <span class="token operator">=</span> <span class="token parameter">score</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
    <span class="token keyword">if</span> <span class="token punctuation">(</span>score <span class="token operator">&lt;</span> <span class="token number">60</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
        <span class="token keyword">return</span> <span class="token string">"Fail!"</span><span class="token punctuation">;</span>
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">></span> <span class="token number">60</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>score <span class="token operator">></span> <span class="token number">60</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
        <span class="token keyword">return</span> <span class="token string">"Pass!"</span><span class="token punctuation">;</span>
    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-       <span class="token keyword">return</span> <span class="token string">"Living on the edge?"</span><span class="token punctuation">;</span>
+       <span class="token keyword">return</span> <span class="token string">"Living on the edge!"</span><span class="token punctuation">;</span>
    <span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
 <p>What is our <em>best-case scenario</em> for this algorithm? </p>
@@ -137,10 +137,10 @@
 <p>Why? </p>
 <p>Even though we check multiple conditions before returning, the rate of growth is <em>constant</em>. We know the <em>upper bound</em>, or worst-case scenario, in advance, and we know it will not change. </p>
 <h2>O(n): Linear Time Complexity</h2>
-<p>If O(1) performs the same number of computations regardless of the size of the input, what is O(n)?</p>
+<p>If O(1) performs the same number of operations regardless of the size of the input, what is O(n)?</p>
 <p>The heading above gives it away. </p>
-<p>This is linear time complexity. </p>
-<p>Why? </p>
+<p>Why linear time complexity? </p>
+<p>The rate of growth scales in direct proportion to the input.</p>
 <p>For <em>n</em> inputs, our algorithm <em>might</em> perform <em>n</em> operations.</p>
 <p>It might also perform <em>fewer</em> than <em>n</em> operations, but we don’t know what we don’t know so we calculate its upper bound, or worst-case scenario.</p>
 <p>How does O(1) differ from O(n)? </p>
@@ -306,8 +306,9 @@ If we change our coefficients: </p>
 <p>Because the value is <em>constant</em>, not variable, our line does not represent a rate of change, or growth, over time. It’s horizontal. It would be constant whether we charted 1, 10 or 1,000,000.</p>
 <p>Speaking of time, math o’clock is over. Back to Big O.</p>
 <p><em>Charts made with <a href="https://www.desmos.com/calculator">Desmos</a></em></p>
-<h2>Drop the Constant Terms</h2>
-<p>Now forget everything you just saw. The only chart you need to think about is this <a href="https://www.bigocheatsheet.com">ubiquitous cheatsheet</a> that you are going to see everywhere: </p>
+<h2>Big O &#x26; Constant Terms</h2>
+<p>Now forget everything you just saw. </p>
+<p>The only chart you need to think about is this <a href="https://www.bigocheatsheet.com">ubiquitous cheatsheet</a> that you are going to see everywhere: </p>
 <p>
   <a
     class="gatsby-resp-image-link"
@@ -344,14 +345,16 @@ If we change our coefficients: </p>
   
   </a>
     </p>
-<p>We want to think about our algorithms in the abstract, which means we need to drop the constant terms. They don’t provide any meaningful additional information. As we saw above, whether we chart <code>2n + 1</code> or just <code>n</code>, we still get a straight line. That’s what we really want to know. Multiplying by a constant value, in this example, <code>2</code>, influences the rate of growth of our algorithm by a constant amount. With or without it, the function is still a linear equation. </p>
+<p>We want to think about our algorithms in the abstract, not in terms of a specific implementation. </p>
+<p>Why? </p>
+<p>We want to know the <em>order of</em> a function so we can determine whether or not our algorithm is a sufficient solution for our problem or if we need to find a more efficient alternative.</p>
 <p>We’re not interested in the details. </p>
-<p>We’re interested in the rate of growth so we can determine whether or not our algorithm is a sufficient solution for our problem or if we need to find a more efficient alternative.</p>
-<h2>Big O &#x26; Worst-Case Scenario</h2>
+<p>So we drop the constant terms. They don’t provide any meaningful additional information. As we saw above, whether we chart <code>2n + 1</code> or just <code>n</code>, we still get a linear rate of growth. </p>
+<h2>Big O &#x26; Upper Bound</h2>
 <p>What if our algorithm, say a search function, returns its parameter after one operation? Would that be O(1)?</p>
 <p>No. It’s still O(n). </p>
 <p>Why? </p>
-<p>Remember, with Big O, we measure the <em>worst case scenario</em>. Because we don’t know what we don’t know, our default assumption for any algorithm is its upper bound. In a worst case scenario, an O(n) algorithm needs to perform its specified operation on every value in the input. When making our Big O calculation, we want to know just how poorly an algorithm is going to perform. </p>
+<p>Remember, with Big O, we measure the <em>worst case scenario</em>. Because we don’t know what we don’t know, our assumption for any algorithm is its upper bound. In a worst case scenario, an O(n) algorithm needs to perform its specified operations on every value in the input. When making our time complexity calculation, we want to know just how poorly an algorithm is going to perform. </p>
 <p>Say, for example, we have an array of animals: </p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> animals <span class="token operator">=</span> <span class="token punctuation">[</span>“ocelot”<span class="token punctuation">,</span> “octopus”<span class="token punctuation">,</span> “opossum”<span class="token punctuation">,</span> “orangutan”<span class="token punctuation">,</span> “orca”<span class="token punctuation">,</span> “oriole”<span class="token punctuation">,</span> “oryx”<span class="token punctuation">,</span> “osprey”<span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre></div>
 <p>And let’s say our task is to find the location of a specific animal in the array based on user input:</p>
@@ -372,13 +375,13 @@ If we change our coefficients: </p>
 <p>100,000?</p>
 <p>1,000,000?</p>
 <p>All O(n).</p>
-<p>You can see how linear complexity is fine for small datasets, but becomes a consideration when the size of the input increases. </p>
+<p>You can see how linear complexity is fine for small inputs, but becomes a consideration when the size of the input increases. </p>
 <h2>Trick Questions</h2>
 <h3>Big O &#x26; Conditional Statements</h3>
 <p>What’s the order of this function? </p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">lowerList</span> <span class="token operator">=</span> <span class="token parameter">arr</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token string">"Nothing to be done"</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token string">'Nothing to be done'</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> arr<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">i</span> <span class="token operator">=></span> i<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
@@ -388,6 +391,9 @@ If we change our coefficients: </p>
 <p>That means our function is either O(1) or O(n). </p>
 <p>Which of these is the worst-case scenario, or upper bound? </p>
 <p><em>n</em></p>
+<p>We <em>could</em> calculate it as O(1) + O(n).</p>
+<p>But what is 1? </p>
+<p>A constant. So we drop it.</p>
 <h3>Big O &#x26; Successive Iterations</h3>
 <p>What if our algorithm performed multiple, successive iterations? </p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">forwardBack</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
@@ -403,7 +409,9 @@ If we change our coefficients: </p>
 <p>What is the order of this?</p>
 <p>It’s still O(n).</p>
 <p>Were you tempted to calculate it as O(2n)? Because O(n) + O(n) = O(2n)?</p>
-<p>📝 Remember: drop the constants. We only want to know the <em>order of</em> our function, which in this case is linear.</p>
+<p>What is 2? </p>
+<p>A constant. So we drop it.</p>
+<p>We only want to know the <em>order of</em> our function.</p>
 <p>But what if our algorithm uses nested iterations?</p>
 <p>We’ll find out in the next tutorial.</p>
 <h2>Big O Linear Time Complexity in JavaScript</h2>
