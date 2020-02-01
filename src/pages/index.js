@@ -34,6 +34,8 @@ class Index extends React.Component {
         	    <label htmlFor="mce-EMAIL">
                 <h2>Programming is problem solving.</h2>
                 <p>Want to level up your skills? I write a weekly newsletter about programming, problem solving and lifelong learning.</p>
+                <p>It's <em>The Solution</em>.</p>
+                <p>Look for it on Sundays.</p>
               </label>
         	    <input
                 type="email"
