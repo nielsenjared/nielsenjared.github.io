@@ -1,5 +1,5 @@
 ---
-title: What is Big O Notation? The Superlative Guide
+title: What is Big O Notation?
 date: "2020-01-20"
 description: Big O notation is not a big deal. Learn the fundamentals of Big O notation, beginning with constant time complexity with examples in JavaScript.
 keywords: ["big o", "big o notation", "time complexity", "constant time"]
@@ -27,7 +27,7 @@ This is the first in a series on Big O notation. If you want to stay in the loop
 
 Big O is a notation for measuring the performance of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the _speed_ of an algorithm in seconds (or minutes!). We measure the _rate of growth_ of an algorithm in the number of operations it takes to complete. 
 
-The O is short for “Order of magnitude”. So, if we’re discussing an algorithm with _O(n)_, we say its order of magnitude, or rate of growth, is _n_, or linear complexity. 
+The O is short for “Order of”. So, if we’re discussing an algorithm with _O(n)_, we say its order of, or rate of growth, is _n_, or linear complexity. 
 
 You will probably read or hear Big O referred to as asymptotic runtime, or [asymptotic computational complexity](https://en.wikipedia.org/wiki/Asymptotic_computational_complexity). This is a fancy way of describing the limits of a function. There is a branch of mathematics, [order theory](https://en.wikipedia.org/wiki/Order_theory), devoted to this topic. For our intents and purposes, _order_: 
 
@@ -46,7 +46,7 @@ When we’re programming, we give our “equations” descriptive names (at leas
 
 Let’s say _f(x)_ is equal to _3x^2 + 12x - 6_.
 
-We could say that the order of magnitude, or rate of growth, of _f(x)_ is _O(n^2)_. We’ll see why later. 
+We could say that the order of, or rate of growth, of _f(x)_ is _O(n^2)_. We’ll see why later. 
 
 It’s more common to simply say “_f(x)_ is order of n^2”, or “_f(x)_ is Big O of n^2”.
 
@@ -169,7 +169,7 @@ It's still O(1).
 
 Why? 
 
-Even though we check multiple conditions before returning `cornflowerblue`, the order of magnitude, or rate of growth, is _constant_. The size of the input does not affect the number of operations performed. We know the upper bound, or worst-case scenario, in advance, and we know it will not change. 
+Even though we check multiple conditions before returning `cornflowerblue`, the order of, or rate of growth, is _constant_. The size of the input does not affect the number of operations performed. We know the upper bound, or worst-case scenario, in advance, and we know it will not change. 
 
 What if our function performs an operation in one of the conditions?
 
