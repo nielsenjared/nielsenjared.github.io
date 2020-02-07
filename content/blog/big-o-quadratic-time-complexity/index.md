@@ -7,6 +7,7 @@ keywords: ["Big O", "quadratic", "time complexity"]
 
 ![](./jarednielsen-big-o-quadratic-time-complexity.png)
 
+
 Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation quadratic time complexity with examples in JavaScript.
 
 ---
@@ -21,25 +22,26 @@ This is the third in a series on Big O notation. If you want to stay in the loop
 
 ## Quick Refresher
 
-In the first part of this series, we looked at constant and linear time complexity, or O(1) and O(n). If you’re just joining us, you will want to start with that article, [What is Big O Notation?](https://jarednielsen.com/big-o-notation/)
+In the first twp parts of this series, we looked at constant and linear time complexity, or O(1) and O(n). If you’re just joining us, you will want to start with that article, [What is Big O Notation?](https://jarednielsen.com/big-o-notation/)
 
 
 ### What is Big O? 
 
 Big O notation is a system for measuring the rate of growth of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the speed of an algorithm in seconds (or minutes!). Instead, we measure the number of operations it takes to complete.
+
 The O is short for “Order of”. So, if we’re discussing an algorithm with O(n^2), we say its order of, or rate of growth, is n^2, or quadratic complexity.
 
 ### How Does Big O Work? 
 
-Big O notation measures the worst-case scenario.
+Big O notation measures the _worst-case scenario_.
 
 Why?
 
 Because we don’t know what we don’t know.
 
-We need to know just how poorly our algorithm will perform so we can compare it to other solutions.
+We need to know just how poorly our algorithm will perform so we can evaluate other solutions.
 
-The worst-case scenario is also known as the “upper bound”.
+The worst-case scenario is also known as the “upper bound”. When we say "upper bound", we mean the maximum number of operations performed by an algorithm.
 
 Remember this table?
 
@@ -54,7 +56,7 @@ Remember this table?
 | O(2^n)        | exponential   |       |
 | O(n!)         | factorial     | slow  |
 
-It lists common orders from fastest to slowest.
+It lists common orders by rate of growth, from fastest to slowest.
 
 We learned O(n), or linear time complexity, in [Big O Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity/). We’re going to skip O(log n), logarithmic complexity, for the time being. It will be easier to understand after learning O(n^2), quadratic time complexity.
 
@@ -85,11 +87,11 @@ O(n).
 
 Why? 
 
-It’s rate of growth scales in direct proportion to the input. As the input grows, so do the number of operations, linearly. Our function needs to perform the same number of operations for every input, so it is linear time complexity, or O(n). 
+It’s rate of growth scales in direct proportion to the input. As the input grows, so do the number of operations, linearly. Our function needs to perform the same number of operations for every input, so its time complexity is linear, or O(n). 
 
 Can we do better?
 
-We learned in [How to Sum Integers 1 to n](https://jarednielsen.com/sum-consecutive-integers/) a party trick discovered by Little Carl Friedrich Gauss. 
+We learned in [How to Sum Integers 1 to n](https://jarednielsen.com/sum-consecutive-integers/) a party trick discovered by Little Carl Friedrich Gauss: 
 
 ```
 n ( n + 1 ) / 2
@@ -107,12 +109,12 @@ O(1), or constant time.
 
 Why? 
 
-Regardless of the size of the input, our algorithm will perform the same, or a _constant_, number of operations. 
+Regardless of the size of the input, our algorithm will perform the same, or, a _constant_ number of operations. 
 
 
 ### Math O’Clock 🧮 🕝
 
-Quadratic is the fancy adjective used to describe _squaring_, or raising to the power of 2. 
+"Quadratic" is the fancy adjective used to describe _squaring_, or raising to the power of 2. 
 
 It’s from the Latin _quadrus_, which means, you guessed it, square.
 
@@ -120,9 +122,9 @@ What’s a square in math?
 
 The square of a number is the result of the number multiplied by itself. 
 
-Two to the power of two, or `2^2`, is the same as `2 * 2`, which is equal to 4.
+Two to the power of two, or `2^2`, is the same as `2 * 2`, or 4.
 
-Three to the power of 2, or `3^2`, is the same as `3 * 3`, which is equal to 9.
+Three to the power of 2, or `3^2`, is the same as `3 * 3`, or 9.
 
 You know this already.
 
@@ -241,17 +243,17 @@ Why would we _not_ do this?
 
 When using Big O to measure the rate of growth of our algorithms, what do we _really_ want to know? 
 
-The worst-case scenario.
+We want to know the _worst-case scenario_.
 
 Here, it’s `n^2`.
 
 This is the dominant term.
 
-We learned above that we drop constant terms. 
+We learned earlier that we drop constant terms. 
 
-We also drop `n`, the non-dominant term, because it doesn’t provide any meaningful additional information. Whether or not `n` influences the rate of growth of our algorithm is irrelevant. It's still quadratic.  
+We also drop `n`, the non-dominant term, because it doesn’t provide any meaningful additional information. Whether or not `n` influences the rate of growth of our algorithm is irrelevant. With or without it, our algorithm is still quadratic.  
 
-What we _really_ want to know is the _order of_ our function, not the details of its specific implementation. So the example above is O(n^2)
+What we _really_ want to know is the _order of_ our function, not the details of its specific implementation. So the example above is O(n^2).
 
 
 ### Iteration with Offset
@@ -322,9 +324,11 @@ We can calculate this with the following equation:
 n * ( n - 1 ) / 2
 ```
 
-We can simplify this. While it’s not exactly _square_, recall that in Big O, we’re not interested in the details. So we drop the constants and multiply the terms with a result of _n^2_.
+We can simplify this _mathemagically_. 
 
-Let’s visualize this. Imagine a function that logs the pairs of _i_ and _j_, with an output of the following: 
+While it’s not exactly _square_, recall that in Big O, we’re not interested in the details. So we drop the constants and multiply the terms with a result of _n^2_.
+
+Let’s visualize it: imagine a function that logs the pairs of _i_ and _j_, with an output of the following: 
 
 ```
 [
@@ -353,9 +357,9 @@ What does _that_ mean?
 
 Our function is comparing pairs, _i_ and _j_. 
 
-The total number of paris to compare is _i_ * _j_, or, because we are using the same input, _n_ * _n_, or _n^2_.
+The total number of pairs to compare is _i_ * _j_, or, because we are using the same input, _n_ * _n_, or _n^2_.
 
-But! We are only comparing pairs where _j_ is greater than _i_, roughly half of the total number of pairs. 
+But! We are only comparing pairs where _j_ is greater than _i_, which is approximately half of the total number of pairs. 
 
 We will never compare pairs where _j_ is less than _i_. 
 
@@ -365,7 +369,7 @@ Again, we can write this as:
 ( n * n ) / 2
 ```
 
-If we abstract away the details, it’s O(n^2).
+And again, if we abstract away the details, it’s O(n^2).
 
 
 ### Two Inputs
