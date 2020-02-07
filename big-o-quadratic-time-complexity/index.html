@@ -1,0 +1,497 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.a2b0a4210f454d4c17db.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}h1{font-size:2em!important}#mc_embed_signup form{text-align:center;padding:10px 0}.mc-field-group{display:inline-block}#mc_embed_signup input.email{font-family:Open Sans,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;font-size:15px;border:1px solid #abb0b2;border-radius:3px;color:#343434;background-color:#fff;box-sizing:border-box;height:32px;padding:0 .4em;display:inline-block;margin:0;width:350px;vertical-align:top}#mc_embed_signup label{display:block;font-size:16px;padding-bottom:10px;font-weight:700}#mc_embed_signup .clear{display:inline-block}#mc_embed_signup .button{font-size:13px;border:none;border-radius:3px;letter-spacing:.03em;color:#fff;background-color:#ff007f;box-sizing:border-box;height:32px;line-height:32px;padding:0 18px;display:inline-block;margin:0;-webkit-transition:all .23s ease-in-out 0s;transition:all .23s ease-in-out 0s}#mc_embed_signup .button:hover{background-color:#8000ff;cursor:pointer}#mc_embed_signup div#mce-responses{float:left;top:-1.4em;padding:0 .5em;overflow:hidden;width:90%;margin:0 5%;clear:both}#mc_embed_signup div.response{margin:1em 0;padding:1em .5em .5em 0;font-weight:700;float:left;top:-1.5em;z-index:1;width:80%}#mc_embed_signup #mce-error-response{display:none}#mc_embed_signup #mce-success-response{color:#529214;display:none}#mc_embed_signup label.error{display:block;float:none;width:auto;margin-left:1.05em;text-align:left;padding:.5em 0}@media (max-width:768px){#mc_embed_signup input.email{width:100%;margin-bottom:5px}#mc_embed_signup .clear{display:block;width:100%}#mc_embed_signup .button{width:100%;margin:0}}</style><meta name="generator" content="Gatsby 2.18.2"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=1659889846b630ce0576be754ef9c32d"/><title data-react-helmet="true">Big O Quadratic Time Complexity | jarednielsen.com</title><meta data-react-helmet="true" name="description" content="In this tutorial, you’ll learn the fundamentals of Big O notation quadratic time complexity with examples in JavaScript."/><meta data-react-helmet="true" property="og:title" content="Big O Quadratic Time Complexity"/><meta data-react-helmet="true" property="og:description" content="In this tutorial, you’ll learn the fundamentals of Big O notation quadratic time complexity with examples in JavaScript."/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Jared Nielsen"/><meta data-react-helmet="true" name="twitter:title" content="Big O Quadratic Time Complexity"/><meta data-react-helmet="true" name="twitter:description" content="In this tutorial, you’ll learn the fundamentals of Big O notation quadratic time complexity with examples in JavaScript."/><link as="script" rel="preload" href="/webpack-runtime-cb4336b6c4a9a05f98f0.js"/><link as="script" rel="preload" href="/styles-53d27243da94e1a00671.js"/><link as="script" rel="preload" href="/app-e83603a732b9346823e1.js"/><link as="script" rel="preload" href="/commons-246aa2cc16737a2f2814.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-2a9c5f72c2c9311faca6.js"/><link as="fetch" rel="preload" href="/page-data/big-o-quadratic-time-complexity/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">jarednielsen.com</a></h3><h1>Big O Quadratic Time Complexity</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">February 07, 2020</p><div><p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/0f44a78d663c3f1f67c6e65496e4a903/2f950/jarednielsen-big-o-quadratic-time-complexity.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABiUlEQVQoz8VSSS9EQRB+fxyRuJsQcSIxtgSxzBBjEBIScRAcLBHbCDJinZn3ut/W9emqfo3j3FRS6a79qyUgQyBjQETwJDK/eQ7KskIm8aFIIV7bQXbdcD6s8zE2V+CTUW6g59ah52vsBfP2CV1edklZ7kSuWKShF+vIG88wz01EpYkfQPwGjIAp3jpAq28QamIJaX0fcW0PSWVbbGq6imhkGunRGUw7RFzdgXn/ElvYU0Kyd+SKZblNmLqEaqqCaGYF6fE51Ngc9Owa8ssbsF2Vrf70Amqy4gLJIooTB2RqxYJYdnrrG3BLTPndI9r9wwgHRiWRnt9AengircQVO7OrO9vqpgtMEhucOiBDZcSruwVCTlj0zmQ+WjDNN/lnV/dQ4wvOUcdSnVHJvDIHwry8IuwdkjH4ZQpCrkZau8rMndAOP0J2+wDz1QIpBROG8vKWSTlf8/qO/KnpLoHjBKGs2/yeCLP/y/b/6L1NdG77wl4vCL2yuEMqGP7GhEUAdcEBdelI/5XwG1cjTDBk7s1BAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="jarednielsen big o quadratic time complexity"
+        title=""
+        src="/static/0f44a78d663c3f1f67c6e65496e4a903/b9e4f/jarednielsen-big-o-quadratic-time-complexity.png"
+        srcset="/static/0f44a78d663c3f1f67c6e65496e4a903/cf440/jarednielsen-big-o-quadratic-time-complexity.png 148w,
+/static/0f44a78d663c3f1f67c6e65496e4a903/d2d38/jarednielsen-big-o-quadratic-time-complexity.png 295w,
+/static/0f44a78d663c3f1f67c6e65496e4a903/b9e4f/jarednielsen-big-o-quadratic-time-complexity.png 590w,
+/static/0f44a78d663c3f1f67c6e65496e4a903/f9b6a/jarednielsen-big-o-quadratic-time-complexity.png 885w,
+/static/0f44a78d663c3f1f67c6e65496e4a903/2d849/jarednielsen-big-o-quadratic-time-complexity.png 1180w,
+/static/0f44a78d663c3f1f67c6e65496e4a903/2f950/jarednielsen-big-o-quadratic-time-complexity.png 1600w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation quadratic time complexity with examples in JavaScript.</p>
+<hr>
+<p>This is the third in a series on Big O notation. If you want to stay in the loop, <a href="http://eepurl.com/cP8CMn">sign up for my weekly newsletter, The Solution</a>.</p>
+<hr>
+<h2>What Problem(s) Does Big O Solve?</h2>
+<ul>
+<li>Big O notation helps us answer the question, “Will it scale?”</li>
+<li>Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!).</li>
+</ul>
+<h2>Quick Refresher</h2>
+<p>In the first twp parts of this series, we looked at constant and linear time complexity, or O(1) and O(n). If you’re just joining us, you will want to start with that article, <a href="https://jarednielsen.com/big-o-notation/">What is Big O Notation?</a></p>
+<h3>What is Big O?</h3>
+<p>Big O notation is a system for measuring the rate of growth of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the speed of an algorithm in seconds (or minutes!). Instead, we measure the number of operations it takes to complete.</p>
+<p>The O is short for “Order of”. So, if we’re discussing an algorithm with O(n^2), we say its order of, or rate of growth, is n^2, or quadratic complexity.</p>
+<h3>How Does Big O Work?</h3>
+<p>Big O notation measures the <em>worst-case scenario</em>.</p>
+<p>Why?</p>
+<p>Because we don’t know what we don’t know.</p>
+<p>We need to know just how poorly our algorithm will perform so we can evaluate other solutions.</p>
+<p>The worst-case scenario is also known as the “upper bound”. When we say “upper bound”, we mean the maximum number of operations performed by an algorithm.</p>
+<p>Remember this table?</p>
+<table>
+<thead>
+<tr>
+<th>O</th>
+<th>Complexity</th>
+<th>Rate of growth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O(1)</td>
+<td>constant</td>
+<td>fast</td>
+</tr>
+<tr>
+<td>O(log n)</td>
+<td>logarithmic</td>
+<td></td>
+</tr>
+<tr>
+<td>O(n)</td>
+<td>linear time</td>
+<td></td>
+</tr>
+<tr>
+<td>O(n * log n)</td>
+<td>log linear</td>
+<td></td>
+</tr>
+<tr>
+<td>O(n^2)</td>
+<td>quadratic</td>
+<td></td>
+</tr>
+<tr>
+<td>O(n^3)</td>
+<td>cubic</td>
+<td></td>
+</tr>
+<tr>
+<td>O(2^n)</td>
+<td>exponential</td>
+<td></td>
+</tr>
+<tr>
+<td>O(n!)</td>
+<td>factorial</td>
+<td>slow</td>
+</tr>
+</tbody>
+</table>
+<p>It lists common orders by rate of growth, from fastest to slowest.</p>
+<p>We learned O(n), or linear time complexity, in <a href="https://jarednielsen.com/big-o-linear-time-complexity/">Big O Linear Time Complexity</a>. We’re going to skip O(log n), logarithmic complexity, for the time being. It will be easier to understand after learning O(n^2), quadratic time complexity.</p>
+<p>Before getting into O(n^2), let’s begin with a review of O(1) and O(n), constant and linear time complexities.</p>
+<h3>O(1) vs. O(n): Constant and Linear Time Complexities</h3>
+<p>The following function finds the sum of an array of numbers.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">const</span> <span class="token function-variable function">sumHarder</span> <span class="token operator">=</span> <span class="token parameter">arr</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+   <span class="token keyword">let</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+   <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       sum <span class="token operator">+=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">return</span> sum<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">sumHarder</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>What’s the Big O? </p>
+<p>O(n).</p>
+<p>Why? </p>
+<p>It’s rate of growth scales in direct proportion to the input. As the input grows, so do the number of operations, linearly. Our function needs to perform the same number of operations for every input, so its time complexity is linear, or O(n). </p>
+<p>Can we do better?</p>
+<p>We learned in <a href="https://jarednielsen.com/sum-consecutive-integers/">How to Sum Integers 1 to n</a> a party trick discovered by Little Carl Friedrich Gauss: </p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">n ( n + 1 ) / 2</code></pre></div>
+<p>If we translate this equation to JavaScript:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">sumSmarter</span> <span class="token operator">=</span> <span class="token parameter">arr</span> <span class="token operator">=></span> arr<span class="token punctuation">.</span>length <span class="token operator">*</span> <span class="token punctuation">(</span>arr<span class="token punctuation">.</span>length <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span></code></pre></div>
+<p>What’s the order of our function now? </p>
+<p>O(1), or constant time.</p>
+<p>Why? </p>
+<p>Regardless of the size of the input, our algorithm will perform the same, or, a <em>constant</em> number of operations. </p>
+<h3>Math O’Clock 🧮 🕝</h3>
+<p>“Quadratic” is the fancy adjective used to describe <em>squaring</em>, or raising to the power of 2. </p>
+<p>It’s from the Latin <em>quadrus</em>, which means, you guessed it, square.</p>
+<p>What’s a square in math? </p>
+<p>The square of a number is the result of the number multiplied by itself. </p>
+<p>Two to the power of two, or <code>2^2</code>, is the same as <code>2 * 2</code>, or 4.</p>
+<p>Three to the power of 2, or <code>3^2</code>, is the same as <code>3 * 3</code>, or 9.</p>
+<p>You know this already.</p>
+<p>If we chart quadratic equations, we get a parabola: </p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/04cba4ffa57006b77f08562cd9821ad1/6ff5e/jarednielsen-big-o-quadratic-time-complexity-graph-x2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAABTklEQVQ4y41T2Y6DMBDj/3+yFVAqrhKghOth1o5qmlbLah+iydz2TJJM02TzPBul9948JXTvnJX3u1Vlab7rbIKPMcuyvGNfNuY/n88gEwXRScNMCX2B3VWVtU0TCoYm8K3r+o592dSEMqGRQZQ08FBfoY9taw7FZqANTWDbtu0jNs6nL1GHuGsoClllmdWgvAxDQBgnfyMU+vOCOAPoNnkeiqugEJ4W5DCpUHIOOqTogK68XD78WoDi4vywlDRNzWFGt9vN6rq2DjPj3fW9FUCXX682jKMVRWEVltTDnsP+eDysAYMMYxkwEvqZH7ZMGoIeD5iSBfZ9P/y8a5aiqvxAWW/qWzKYCNiVd9HUE/mOPyj/thQhJDpSE4J/LYUKg473h0Nd1ERZft4VJ9rKpy8RVG1LFBjMJZxR1teL8/+kzIIjtkvK8Xc7+3oC8QM7yu2OrYBLIwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="jarednielsen big o quadratic time complexity graph x2"
+        title=""
+        src="/static/04cba4ffa57006b77f08562cd9821ad1/b9e4f/jarednielsen-big-o-quadratic-time-complexity-graph-x2.png"
+        srcset="/static/04cba4ffa57006b77f08562cd9821ad1/cf440/jarednielsen-big-o-quadratic-time-complexity-graph-x2.png 148w,
+/static/04cba4ffa57006b77f08562cd9821ad1/d2d38/jarednielsen-big-o-quadratic-time-complexity-graph-x2.png 295w,
+/static/04cba4ffa57006b77f08562cd9821ad1/b9e4f/jarednielsen-big-o-quadratic-time-complexity-graph-x2.png 590w,
+/static/04cba4ffa57006b77f08562cd9821ad1/f9b6a/jarednielsen-big-o-quadratic-time-complexity-graph-x2.png 885w,
+/static/04cba4ffa57006b77f08562cd9821ad1/2d849/jarednielsen-big-o-quadratic-time-complexity-graph-x2.png 1180w,
+/static/04cba4ffa57006b77f08562cd9821ad1/6ff5e/jarednielsen-big-o-quadratic-time-complexity-graph-x2.png 1200w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>We’re only concerned with the right-side, or positive, values of our parabola because we can’t go back in time. </p>
+<p>Yet.</p>
+<p>Speaking of time, Math O’Clock is over.</p>
+<p>Back to Big O.</p>
+<h2>O(n^2): Quadratic Time Complexity</h2>
+<p>If an algorithm is in the order of O(n), or linear time complexity, the number of operations it performs scales in <em>direct</em> proportion to the input. </p>
+<p>What if an algorithm is O(n^2)?</p>
+<p>🔑 The number of operations it performs scales in proportion to the <em>square</em> of the input.</p>
+<p>What’s happening in this example? </p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> fruit <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"🍓"</span><span class="token punctuation">,</span> <span class="token string">"🍐"</span><span class="token punctuation">,</span> <span class="token string">"🍊"</span><span class="token punctuation">,</span> <span class="token string">"🍌"</span><span class="token punctuation">,</span> <span class="token string">"🍍"</span><span class="token punctuation">,</span> <span class="token string">"🍑"</span><span class="token punctuation">,</span> <span class="token string">"🍎"</span><span class="token punctuation">,</span> <span class="token string">"🍈"</span><span class="token punctuation">,</span> <span class="token string">"🍊"</span><span class="token punctuation">,</span> <span class="token string">"🍇"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">const</span> <span class="token function-variable function">matcher</span> <span class="token operator">=</span> <span class="token parameter">array</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+   <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+       <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+           <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">!==</span>j <span class="token operator">&amp;&amp;</span> array<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">===</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+               <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Match found at </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> and </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>j<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+           <span class="token punctuation">}</span>
+       <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">return</span> <span class="token string">'No matches found 😞'</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span></code></pre></div>
+<p>We declare an array of fruit and pass it to our <code>matcher()</code> function. Our <code>matcher()</code> function then iterates over our array. For each element in the array, we then iterate over the array again. If the array indices <em>are not</em> the same and the elements at the indices <em>are</em> the same, then we return the locations of the matched fruit. If no matches are found, we return disappointment. </p>
+<p>How many operations are performed? </p>
+<p>Our outer loop is performing <em>n</em> iterations. Our inner loop <em>also</em> performs <em>n</em> iterations. But it performs <em>n</em> iterations for <em>every iteration</em> of the outer loop. </p>
+<p>When <code>i</code> is 0, we iterate <code>j</code> 10 times. </p>
+<p>When <code>i</code> is 1, we iterate <code>j</code> 10 times.</p>
+<p>Etc.</p>
+<p>Rather than O(n) or O(n + n), this is O(n * n), or O(n^2).</p>
+<p>At this point, we are familiar with the following: O(1), O(n), and O(n^2). For comparison, this table outlines their growth by number of inputs:</p>
+<table>
+<thead>
+<tr>
+<th>Big O</th>
+<th># operations for 10 elements</th>
+<th># operations for 100 elements</th>
+<th># operations for 1000 elements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>O(1)</strong></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>O(N)</strong></td>
+<td>10</td>
+<td>100</td>
+<td>1000</td>
+</tr>
+<tr>
+<td><strong>O(N^2)</strong></td>
+<td>100</td>
+<td>10000</td>
+<td>1000000</td>
+</tr>
+</tbody>
+</table>
+<p>As we can see, O(n^2) isn’t great to begin with and only gets worse as the size of the input increases.</p>
+<p>Remember this chart?</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/9c24f10d0295ead7526e32d62fa2eac5/4117f/big-o-cheatsheet.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 63.15359477124183%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAACrUlEQVQoz1XRSUwTYRQH8I94Mh7UgyeN8WJijCfjtXZaynYQIXoyeDHRRG/GoMZAHDpMZyEIGBXFgxcTJVIENMFSkO5lWmQ1sQudQikpUFlmulra7zkDhITkHf75kl/ee99DpUIhHw5nAoFcKASRCI5Gc4HARs/7jdddG8ONCf8dYexe99B1i60ZojEsRkAU1QovQUxE2WQySZLRxsZkczNmmCxFrTU1ZRkG2tuB7wCuC/guaHsJXAcoj6wJaA7oNuh+CGO3UGZ9XTaZZKOxyHHA85ISWBaUzLJYDQxmd4tTpMLaoZOEgdvg0YL/moolmt4myT2Toii8hw8VqzIlfHwAjmqYIMCtB6EeZZJJmaYlksQct8MwyghKf3zAeBaYNlW+ewKWeuwlsKccPJVFpy7rqEXxYDBlMm3v4hxN52lawfuM5aH1BXS2wEADeHUg6HbshsTQ1dXvWmlEk3fWonlBSDHMHpYPFuYPzykQ4DHsOAypUd2WhciN67FbB746FJiaUrDU0pI3mZSFgef253z7GKx14Ndir/6frVy2EkoV7HrwGmDCAG4ChDp1502KShmN6VYqTyuX6FD/c7BBGbLo1WZ/EpJVmx4jik51VXBVgrMK7DUwXoXdN9Q7/6WMm+TzNMngNhY+3S85KvIujTyil36UZ0crSrZqcNSobEIPfg3MX4GFixA/A1vnVbzZyqw9I0s9T7HlZt6uV0DBZlA6w4wGQpchdgGSZ0E+BeljUDwCgADKMEZb0gkkJ9YmH90NvjLEhy/FbOcSvtOJuZPxwNHFSJm4giKr6E8CzcbRdAz9WkKCiLwiGp0vGxTQN/9xlMvkAlNWcaE/HOlbWPwSWOwNxT+HVnpDK/22yTdfraxr7sPv2MB0tH922TyzbJ5eNvuiZlewzycO/QeV1h5qGVp6JgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="big o cheatsheet"
+        title=""
+        src="/static/9c24f10d0295ead7526e32d62fa2eac5/b9e4f/big-o-cheatsheet.png"
+        srcset="/static/9c24f10d0295ead7526e32d62fa2eac5/cf440/big-o-cheatsheet.png 148w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/d2d38/big-o-cheatsheet.png 295w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/b9e4f/big-o-cheatsheet.png 590w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/f9b6a/big-o-cheatsheet.png 885w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/2d849/big-o-cheatsheet.png 1180w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/4117f/big-o-cheatsheet.png 2448w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>As we can see, O(n^2) is horrible.</p>
+<p>But it’s not the worst! </p>
+<h2>Calculating Complexity</h2>
+<p>The following are common pitfalls and gotchas when calculating Big O quadratic time complexity. </p>
+<h3>Drop Non-Dominant Terms</h3>
+<p>What’s happening in this contrived example?</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">summer</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">num<span class="token punctuation">,</span> t <span class="token operator">=</span> <span class="token boolean">false</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+   <span class="token keyword">let</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+ 
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>t <span class="token operator">===</span> <span class="token string">'quadratic'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+       <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+           <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+               sum <span class="token operator">+=</span> j<span class="token punctuation">;</span>
+           <span class="token punctuation">}</span>
+       <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>t <span class="token operator">===</span> <span class="token string">'linear'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+           sum <span class="token operator">+=</span> i<span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+       <span class="token keyword">return</span> num <span class="token operator">*</span> <span class="token punctuation">(</span>num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">return</span> sum<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>If our first condition is met, we run the nested iterations and the order of our function is O(n^2).</p>
+<p>If our second condition is met, we run one iteration and the order of our function is O(n).</p>
+<p>If neither of the conditions are met, our function is O(1). </p>
+<p>What is the <em>actual</em> order of our function? </p>
+<p>We <em>could</em> calculate this as O(n^2 + n + 1). </p>
+<p>Why would we <em>not</em> do this? </p>
+<p>When using Big O to measure the rate of growth of our algorithms, what do we <em>really</em> want to know? </p>
+<p>We want to know the <em>worst-case scenario</em>.</p>
+<p>Here, it’s <code>n^2</code>.</p>
+<p>This is the dominant term.</p>
+<p>We learned earlier that we drop constant terms. </p>
+<p>We also drop <code>n</code>, the non-dominant term, because it doesn’t provide any meaningful additional information. Whether or not <code>n</code> influences the rate of growth of our algorithm is irrelevant. With or without it, our algorithm is still quadratic.  </p>
+<p>What we <em>really</em> want to know is the <em>order of</em> our function, not the details of its specific implementation. So the example above is O(n^2).</p>
+<h3>Iteration with Offset</h3>
+<p>What happens if we make a small optimization to our <code>matcher()</code> algorithm?</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> fruit <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"🍓"</span><span class="token punctuation">,</span> <span class="token string">"🍐"</span><span class="token punctuation">,</span> <span class="token string">"🍊"</span><span class="token punctuation">,</span> <span class="token string">"🍌"</span><span class="token punctuation">,</span> <span class="token string">"🍍"</span><span class="token punctuation">,</span> <span class="token string">"🍑"</span><span class="token punctuation">,</span> <span class="token string">"🍎"</span><span class="token punctuation">,</span> <span class="token string">"🍈"</span><span class="token punctuation">,</span> <span class="token string">"🍊"</span><span class="token punctuation">,</span> <span class="token string">"🍇"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">const</span> <span class="token function-variable function">matcher</span> <span class="token operator">=</span> <span class="token parameter">array</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+   <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+       <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+           <span class="token keyword">if</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">===</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+               <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Match found at </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> and </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>j<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+           <span class="token punctuation">}</span>
+       <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">return</span> <span class="token string">'No matches found 😞'</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span></code></pre></div>
+<p>If we’re checking for a match, we know that it will never be in the same index in the array. </p>
+<p>We can initialize the inner loop with <code>let j = i + 1</code>, so the iterator of the inner loop will always be one element ahead of the outer loop. </p>
+<p>This allows us to remove the <code>i !== j</code> operation in the <code>if</code> statement. </p>
+<p>Here’s the catch: how many times will the inner loop, <em>j</em>, run? </p>
+<p>Let’s make a table!</p>
+<table>
+<thead>
+<tr>
+<th>i</th>
+<th>j</th>
+<th>number of iterations of <em>j</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0 + 1</td>
+<td>5 - 1 = 4</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1 + 1</td>
+<td>5 - 2 = 3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2 + 1</td>
+<td>5 - 3 = 2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3 + 1</td>
+<td>5 - 4 = 1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4 + 1</td>
+<td>5 - 5 = 0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Total: 10</td>
+</tr>
+</tbody>
+</table>
+<p>Let’s say we have an array with five elements. When the value of the iterator in our outer loop, <em>i</em>, is 0, the value of the iterator in our inner loop, <em>j</em>, is the value of <em>i</em> plus 1. As the value of <em>i</em> increases, the number of iterations performed by <em>j</em> decreases correspondingly. </p>
+<p>What if our array length is variable, or, unknown? How would we calculate the number of iterations of our inner loop? </p>
+<table>
+<thead>
+<tr>
+<th>i</th>
+<th>j</th>
+<th>number of iterations of <em>j</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0 + 1</td>
+<td>n - 1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1 + 1</td>
+<td>n - 2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2 + 1</td>
+<td>n - 3</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>n - 3</td>
+<td>n - 3 + 1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>n - 2</td>
+<td>n - 2 + 1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n - 1</td>
+<td>n - 1 + 1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>The first time our outer loop runs, our inner loop runs <code>n - 1</code>.</p>
+<p>The second time our outer loop runs, our inner loop runs <code>n - 2</code>.</p>
+<p>The third time, <code>n - 3</code>.</p>
+<p>Hey! This is starting to look familiar. Where have we seen this pattern before?</p>
+<p>It’s very similar to <a href="https://jarednielsen.com/sum-consecutive-integers/">summing consecutive integers from 1 to n</a>. </p>
+<p>We can calculate this with the following equation:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">n * ( n - 1 ) / 2</code></pre></div>
+<p>We can simplify this <em>mathemagically</em>. </p>
+<p>While it’s not exactly <em>square</em>, recall that in Big O, we’re not interested in the details. So we drop the constants and multiply the terms with a result of <em>n^2</em>.</p>
+<p>Let’s visualize it: imagine a function that logs the pairs of <em>i</em> and <em>j</em>, with an output of the following: </p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[
+      [ [ 0, 1 ], [ 0, 2 ], [ 0, 3 ], [ 0, 4 ] ],
+                [ [ 1, 2 ], [ 1, 3 ], [ 1, 4 ] ],
+                          [ [ 2, 3 ], [ 2, 4 ] ],
+                                    [ [ 3, 4 ] ]
+]</code></pre></div>
+<p>See a pattern?</p>
+<p>It’s half a square matrix.</p>
+<p>We could write that as:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">( n * n ) / 2</code></pre></div>
+<p>If we drop the constant, the divisor, it’s just <em>n^2</em>.</p>
+<p>In <a href="https://amzn.to/2OtWpdv">Cracking the Coding Interview</a>, Gayle Laakmann McDowell directs us to think about what the code <em>means</em>. </p>
+<p>What does <em>that</em> mean?</p>
+<p>Our function is comparing pairs, <em>i</em> and <em>j</em>. </p>
+<p>The total number of pairs to compare is <em>i</em> * <em>j</em>, or, because we are using the same input, <em>n</em> * <em>n</em>, or <em>n^2</em>.</p>
+<p>But! We are only comparing pairs where <em>j</em> is greater than <em>i</em>, which is approximately half of the total number of pairs. </p>
+<p>We will never compare pairs where <em>j</em> is less than <em>i</em>. </p>
+<p>Again, we can write this as: </p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">( n * n ) / 2</code></pre></div>
+<p>And again, if we abstract away the details, it’s O(n^2).</p>
+<h3>Two Inputs</h3>
+<p>What if our function accepts two inputs of varying, indeterminate length? </p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">matcher</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">arr1<span class="token punctuation">,</span> arr2</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+   <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr1<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+       <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> arr2<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+           <span class="token keyword">if</span> <span class="token punctuation">(</span>arr1<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">===</span> arr2<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+               <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Match found at arr1[</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">] and arr2[</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>j<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">]</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+           <span class="token punctuation">}</span>
+       <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">return</span> <span class="token string">'No matches found 😞'</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span></code></pre></div>
+<p>Is this O(n^2)? </p>
+<p>Only if both arrays are equal in length, or <em>n</em>. </p>
+<p>Because we don’t know what we don’t know, we need to treat each value separately. </p>
+<p>So this is <em>O(n * m)</em>.</p>
+<p>In mathematics, this is known as a <em>multilinear</em> function. Bust that out in your next technical interview! </p>
+<h2>Big O Quadratic Time Complexity</h2>
+<p>Does O(n^2) scale? </p>
+<p>We can do worse.</p>
+<p>We can definitely do better.</p>
+<p>We’ll see how in the next tutorial.</p>
+<p>In this tutorial, you learned the fundamentals of Big O quadratic time complexity with examples in JavaScript. Stay tuned for part four of this series on Big O notation where we’ll look at O(log n), or logarithmic time complexity.</p></div><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFsUlEQVQ4yz2VaVBTVxTHnzL90FFnOmP7xY5WBFG2JLzkZZGwyGIgILJvsokJyJJISILIboIgoiJuCCKbgaAgApOgVqmKTmtlisUKtVat49i6djr94DjyyP0XgvZ8uWfunPObc869938pt+Iuat6+uDtLyeJrHaiP9pIzzNzmnqq8xGm0WHgNP1t5DZPnuXUX93PyjfGq0xs+xdHSCAcvQZDd9xIELmx6lHRRSfS2RfN+dEE7oxOprlTx1NhF50HNZCKVjkU4HYFgfgQ2bjWA0bSAJw4b8+L5+iyAghfRzAKU+lKWQ+UN/22HuR/+bicvuhB8OgBfuwpIYOgW9vwBw2xDVootK8jHJhUIZz137JvhbEy08fkBoJlNoAXBu+dzf6WbqfWMP0WFnJmyt7nWOFDkrj4KN64PnDwkrJ/fZvJgaIDg9hjeXR4hb8wmUh0eAvHqVUTE9yUcQSDL5QcSvjgEnkxg9TwjJbJwsb1Kvr5tE1NsgoDZTERcf5ubuw9OVNcRcvc2edJnxssRK/680Ie27ExEc9eTUEZIJEwIJHyZTcLIbD7izZB6+EXbYUj9y6G7avx+X0g7zK6VbDe3Gj0basnY3hZMD/RidE81Rusb8VPTcfQU5CIv1A/asAjSLaomZroGZkHtbL9XNXrDWp4AWEIFNI3HxqTWIcpVzkZ7xZBoXjTZwovGleYe/Gux4rm5F8/OncVr6xAuVRZjqKgQg+V7EMPEIU6QQOK4kYiL2cMmV1kRGqvPpNYm7TY7C4PhzJWw63hS4sL1Ji4CX9w624NfjFWYOnwQM+O38NrSj4HsDLw43Ybeyjqs9vSGh5cU7kla4l5hYjkhafCi/Ycphh/6lMPzgStPalvP8yaOHDFo7yD80GDAlMGAm3oNHhzbi1F9LuqkIlw1GiAPigJnbs6C9CrwS0xE4B9vE86dukAke0x1exrZTo4BTdwyUs/VkTJ3BQrTGjF2oAZjqjSMqpRoDQ+EwnEV9gcFQJ2YgpUeErgqDVhfdBLu3mGEQ/sSnigYtDCYpcK5kTNJ3Hjk8DJIqZuS1MZ1oDHfgkfmQby9OoimpFj4LluCqJWrcGGnCi2RpShXdEGns2K7SIlYOoaECKOIn1AOsVD2gXLkSh450VI4u9E258hssrLgBExtncCT+3h7/TL+6O1Ba1YubtY34GX/OdzouIaqbV04xNGgnV+JHqaWnGP22S6IDqCTMT6kaF5Ap5unBE6yNHZdSQdxFEWQe9eu4J9rF2EIDsX3zW2419SOZ4MjeDE5jbsT93C68ywiEzLA8fInYv4mbBSEsbHiBGQIU/upoy6asONB9dDqR2bjfdVE7OJDbl66RN6OWnDzSCMm70yiNkeLxxPTePX8DX6b/B0jQ5eRmJSB5JRskqHUQOIfzvJ95HASSpPtl7tUa/mxNa0DgylNbHmeEfdv3SDvb10m5pq9MNQcQrGuDM0n2tDWaoJWW4rUjB3IV+8i1TWHkacqYmv2HUXaNtXUHOozO/CbtCyJQl2EgrIKbE1XzD6dGMersaukRKUjxeX7oC4sgTKnEDn5etQebCZd5iHSN/gtTracmW06ZSIVhgOQ+gYFUwsPWmUXh+RkRaZWW4GCueTxiemZ0Ss3SPJcW3J5JMnK0ZCkFAUpLKok6oJiGGsbibsnf2bFilVzbSuh223QzDNk8hgHqj4/jKpottpVQqerSD7W1PFu+uFzDI9cR3a2hnXlSNiUjFxWma1mC/SV7Fcr1rKHjrQiIl6BpcuWs1xPgeKj1i4KlEUteGtcONTp9l47dNB6dc2diWnTsPX6e2W2BiHyGCiydiJ0bi0uq4EHT4y9dUc+tHT0932+dLnbfE769rzFGv2eBVhMXOonNaeaW03/fwHHTpqcEhIzs7amKFv0u6oscnmcpbS8prW4xJjbcWZw3ac4qa/MgQAL40vfQf0HblcPfuCf6k8AAAAASUVORK5CYII=" alt="Jared Nielsen" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/352e5/jared-nielsen.png 1x,
+/static/0cdc03efc5a69bac4bd7922ebc9f22b8/aae31/jared-nielsen.png 1.5x,
+/static/0cdc03efc5a69bac4bd7922ebc9f22b8/47c2b/jared-nielsen.png 2x" /><img loading="lazy" width="50" height="50" srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/352e5/jared-nielsen.png 1x,
+/static/0cdc03efc5a69bac4bd7922ebc9f22b8/aae31/jared-nielsen.png 1.5x,
+/static/0cdc03efc5a69bac4bd7922ebc9f22b8/47c2b/jared-nielsen.png 2x" src="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/352e5/jared-nielsen.png" alt="Jared Nielsen" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Want to level up your problem solving skills? I write a weekly newsletter about programming, problem solving and lifelong learning.<!-- --> <a href="http://eepurl.com/cP8CMn" target="_blank" rel="noopener">Join now</a></p></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/sum-consecutive-integers/">← <!-- -->How to Sum Consecutive Integers 1 to n</a></li><li></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-51067359-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/big-o-quadratic-time-complexity/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-e83603a732b9346823e1.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-f8c20c8491cbd22ce357.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-2a9c5f72c2c9311faca6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-5ac19a3435fa25e6ccc9.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-4979af1861382ebf361e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-3806a3a1523234bb684e.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-2a9c5f72c2c9311faca6.js" async=""></script><script src="/commons-246aa2cc16737a2f2814.js" async=""></script><script src="/app-e83603a732b9346823e1.js" async=""></script><script src="/styles-53d27243da94e1a00671.js" async=""></script><script src="/webpack-runtime-cb4336b6c4a9a05f98f0.js" async=""></script></body></html>
