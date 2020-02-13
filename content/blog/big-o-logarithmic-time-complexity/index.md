@@ -1,7 +1,7 @@
 ---
 title: Big O Logarithmic Time Complexity
 date: "2020-02-14"
-description: 
+description: In this tutorial, you’ll learn the fundamentals of Big O notation logarithmic time complexity with examples in JavaScript.
 keywords: ["big o", "logarithmic", "time complexity"]
 ---
 ![](./jarednielsen-big-o-logarithmic-time-complexity.png)
