@@ -58,7 +58,7 @@ It lists common orders by rate of growth, from fastest to slowest.
 
 We learned O(1), or constant time complexity, in [What is Big O?](https://jarednielsen.com/big-o-notation/), O(n) in [Big O Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity/), and O(n^2) in [Big O Quadratic Time Complexity](https://jarednielsen.com/big-o-quadratic-time-complexity/). 
 
-We previously skipped O(log n), logarithmic complexity, because it's be easier to understand after learning O(n^2), quadratic time complexity.
+We previously skipped O(log n), logarithmic complexity, because it's easier to understand after learning O(n^2), quadratic time complexity.
 
 Now it's time!
 
@@ -169,7 +169,7 @@ If we compare logarithmic time complexity to other time complexities on the [ubi
 
 ![](./big-o-cheatsheet.png)
 
-As we can see, logarithmic time complexity is very good!
+O(log n) is [better than bad, it's good!](https://www.youtube.com/watch?v=-fQGPZTECYs)
 
 What if the problem was, “How many 3s, multiplied, does it take to get 8?”
 
@@ -194,7 +194,7 @@ O(log n)
 ```
 
 
-## O(log n): Binary Search
+## Calculating O(log n): Binary Search
 
 The classic example used to illustrate O(log n) is binary search. Binary search is an algorithm that finds the location of an argument in a sorted series by dividing the input in half with each iteration. 
 
