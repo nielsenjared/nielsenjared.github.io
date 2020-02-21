@@ -5,7 +5,7 @@ description: In this tutorial, you’ll learn the fundamentals of Big O notation
 keywords: ["big o", "log linear", "time complexity"]
 ---
 
-![](./jarednielsen-image-title.png)
+![O(n log n)](./jarednielsen-big-o-log-linear-time-complexity.png)
 
 
 Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation log-linear, or quasilinear, time complexity with examples in JavaScript.
@@ -204,7 +204,7 @@ O(n log n) gives us a means of notating the rate of growth of an algorithm that 
 
 Let's look at an example. O(n log n) is common (and desireable) in sorting algorithms. As we saw with Bubble Sort above, we can easily brute force a sort using nested iteration, but that approach doesn't scale. 
 
-Here's an implementation of Merge Sort. 
+Here's an implementation of [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort). 
 
 ```js
 const nums = [128, 0, 64, 16, 4, 8, 2];
@@ -267,9 +267,11 @@ O(log n).
 
 If we _merge_ our two functions, the order of `mergeSort()` is O(n log n).
 
-@TODO This is a **divide and conquer** approach. 
+This is a **divide and conquer** approach. We _divide_ the array into subarrays each containing one element, then we _conquer_ by recombining them in order.
 
-@TODO stable vs. in-place algos
+![Merge Sort diagram By VineetKumar at English Wikipedia - Transferred from en.wikipedia to Commons by Eric Bauman using CommonsHelper., Public Domain, https://commons.wikimedia.org/w/index.php?curid=8004317](./vineet-kumar-merge-sort-diagram.svg)
+
+Like Bubble Sort, Merge Sort is a _stable_ algorithm. 
 
 
 ## Big O Log-Linear Time Complexity
