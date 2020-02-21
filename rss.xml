@@ -1,4 +1,267 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 13 Feb 2020 21:40:53 GMT</lastBuildDate><item><title><![CDATA[Big O Logarithmic Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-logarithmic-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-logarithmic-time-complexity/</guid><pubDate>Fri, 14 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 21 Feb 2020 16:58:47 GMT</lastBuildDate><item><title><![CDATA[Big O Log-Linear Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-log-linear-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-log-linear-time-complexity/</guid><pubDate>Fri, 21 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/841cd94577114ee5d82ee5b9fb116406/417af/jarednielsen-big-o-log-linear-time-complexity.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWElEQVQoz61STUsDMRDN/wfx5E1FsehF24IKWg+tLWhbpZZiDy3CihbFQkHcdbPZfDx3ksbdbY8aGF5m3nwkL2HGGBitM/Ooc99zSq9wPr9Qo1yMURGtIuZDNPwqNSvwPt/XMqMUVDADMlI9z2ASURqg3uZQr+95U0Kp8sFLk9MA1IuJmwHCjW0kR2cQF22kown44SnM55dr+LGAuB1CPr1ANHsQ7TuI675rHEaId44hHsZIqg3IxylYOhgj3NwFr9QhLjsgPz6oQy9PJScBeO0KaX8EftJAvF9DtFe1nJ4vEG1VwFtdJOdNO5hZIjsNXSPtDmFi7gRWTj/rR3GGib1Smp0i6dw7LvNNmtpa0epBh9+ZhlJa/RwhYYRDkE6EtojiwuprOHd5tKcY1RFSHmm4/h3Kr1eK2ZO7wvJ30b8xZsX1Zor7ZUP/bQq4ZibPZ6vP/1f794Y/GlNU5O77/HEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;O(n log n)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/841cd94577114ee5d82ee5b9fb116406/fb8a0/jarednielsen-big-o-log-linear-time-complexity.png&quot;
+        srcset=&quot;/static/841cd94577114ee5d82ee5b9fb116406/1a291/jarednielsen-big-o-log-linear-time-complexity.png 148w,
+/static/841cd94577114ee5d82ee5b9fb116406/2bc4a/jarednielsen-big-o-log-linear-time-complexity.png 295w,
+/static/841cd94577114ee5d82ee5b9fb116406/fb8a0/jarednielsen-big-o-log-linear-time-complexity.png 590w,
+/static/841cd94577114ee5d82ee5b9fb116406/526de/jarednielsen-big-o-log-linear-time-complexity.png 885w,
+/static/841cd94577114ee5d82ee5b9fb116406/fa2eb/jarednielsen-big-o-log-linear-time-complexity.png 1180w,
+/static/841cd94577114ee5d82ee5b9fb116406/417af/jarednielsen-big-o-log-linear-time-complexity.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation log-linear, or quasilinear, time complexity with examples in JavaScript.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This is the fifth in a series on Big O notation. If you want to stay in the loop, &lt;a href=&quot;http://eepurl.com/cP8CMn&quot;&gt;sign up for my weekly newsletter, The Solution&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;What Problem(s) Does Big O Solve?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Big O notation helps us answer the question, “Will it scale?”&lt;/li&gt;
+&lt;li&gt;Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Quick Refresher&lt;/h2&gt;
+&lt;p&gt;If you’re just joining us, you will want to start with that article, &lt;a href=&quot;https://jarednielsen.com/big-o-notation/&quot;&gt;What is Big O Notation?&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;What is Big O?&lt;/h3&gt;
+&lt;p&gt;Big O notation is a system for measuring the rate of growth of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the speed of an algorithm in seconds (or minutes!). Instead, we measure the number of operations it takes to complete.&lt;/p&gt;
+&lt;p&gt;The O is short for “Order of”. So, if we’re discussing an algorithm with O(n^2), we say its order of, or rate of growth, is n^2, or quadratic complexity.&lt;/p&gt;
+&lt;h3&gt;How Does Big O Work?&lt;/h3&gt;
+&lt;p&gt;Big O notation measures the &lt;em&gt;worst-case scenario&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;p&gt;Because we don’t know what we don’t know.&lt;/p&gt;
+&lt;p&gt;We need to know just how poorly our algorithm will perform so we can evaluate other solutions.&lt;/p&gt;
+&lt;p&gt;The worst-case scenario is also known as the “upper bound”. When we say “upper bound”, we mean the maximum number of operations performed by an algorithm.&lt;/p&gt;
+&lt;p&gt;Remember this table?&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;O&lt;/th&gt;
+&lt;th&gt;Complexity&lt;/th&gt;
+&lt;th&gt;Rate of growth&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;O(1)&lt;/td&gt;
+&lt;td&gt;constant&lt;/td&gt;
+&lt;td&gt;fast&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(log n)&lt;/td&gt;
+&lt;td&gt;logarithmic&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(n)&lt;/td&gt;
+&lt;td&gt;linear time&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(n * log n)&lt;/td&gt;
+&lt;td&gt;log linear&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(n^2)&lt;/td&gt;
+&lt;td&gt;quadratic&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(n^3)&lt;/td&gt;
+&lt;td&gt;cubic&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(2^n)&lt;/td&gt;
+&lt;td&gt;exponential&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(n!)&lt;/td&gt;
+&lt;td&gt;factorial&lt;/td&gt;
+&lt;td&gt;slow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;It lists common orders by rate of growth, from fastest to slowest.&lt;/p&gt;
+&lt;p&gt;Before getting into O(n log n), let’s begin with a review of O(n), O(n^2) and O(log n).&lt;/p&gt;
+&lt;h3&gt;O(n)&lt;/h3&gt;
+&lt;p&gt;An example of linear time complexity is a simple search in which every element in an array is checked against the query.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; animals &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;“ocelot”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “octopus”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “opossum”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “orangutan”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “orca”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “oriole”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “oryx”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “osprey”&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; animals&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;animals&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; userInput&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`Found &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;userInput&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; at &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;i&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you want to go deeper, check out &lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity/&quot;&gt;Big O Linear Time Complexity&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;O(n^2)&lt;/h3&gt;
+&lt;p&gt;A classic example of O(n^2) is &lt;a href=&quot;https://en.wikipedia.org/wiki/Bubble_sort&quot;&gt;Bubble Sort&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;bubbleSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; tmp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; tmp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Why is the order of &lt;code&gt;bubbleSort()&lt;/code&gt; O(n^2)?&lt;/p&gt;
+&lt;p&gt;🔑 Nested loops iterating the same input.&lt;/p&gt;
+&lt;p&gt;We could also write this with a &lt;code&gt;while&lt;/code&gt; loop:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;bubbleSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; swapped &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;swapped&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    swapped &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        swapped &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Either way, it still uses nested iteration, so it’s O(n^2).&lt;/p&gt;
+&lt;p&gt;If you want to go deeer, check out &lt;a href=&quot;https://jarednielsen.com/big-o-quadratic-time-complexity/&quot;&gt;Big O Quadratic Time Complexity&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;O(log n)&lt;/h3&gt;
+&lt;p&gt;Binary Search is a classic example of logarithmic time complexity. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;binarySearch&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ 
+   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; startIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; endIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  
+   &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;startIndex &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; endIndex&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      
+       &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; pivot &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;startIndex &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; endIndex&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;pivot&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`Found &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;num&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; at &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;pivot&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;pivot&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+           startIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pivot &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+           endIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pivot &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;🔑 With each iteration, our function is dividing the input, thus performing the inverse operation of exponentiation. &lt;/p&gt;
+&lt;p&gt;If you want to go deeper, check out &lt;a href=&quot;https://jarednielsen.com/big-o-logarithmic-time-complexity/&quot;&gt;Big O Logarithmic Time Complexity&lt;/a&gt;, we learned… &lt;/p&gt;
+&lt;h2&gt;O(n log n): Log-Linear Time Complexity&lt;/h2&gt;
+&lt;p&gt;So what is O(n log n)? &lt;/p&gt;
+&lt;p&gt;Well, it’s just that. It’s &lt;em&gt;n&lt;/em&gt;, a linear time complexity, multiplied by &lt;em&gt;log n&lt;/em&gt;, a logarithmic time complexity. &lt;/p&gt;
+&lt;p&gt;☝️ &lt;/p&gt;
+&lt;p&gt;“Hold up there, mister”, I hear you say.&lt;/p&gt;
+&lt;p&gt;“You said we drop the non-dominant terms, so what’s with this &lt;em&gt;n * log n&lt;/em&gt; business?”&lt;/p&gt;
+&lt;p&gt;While it &lt;em&gt;is&lt;/em&gt; true that we drop the non-dominant terms in Big O, which would you say is the dominant term? &lt;em&gt;n&lt;/em&gt; or &lt;em&gt;log n&lt;/em&gt;?  &lt;/p&gt;
+&lt;p&gt;Remember this trick question?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;matcher&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arr2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+           &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr1&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; arr2&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+               &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`Match found at arr1[&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;i&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;] and arr2[&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;j&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;]`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+           &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;No matches found 😞&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s the order of &lt;code&gt;matcher()&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;If the arrays were the same length, it &lt;em&gt;would be&lt;/em&gt; O(n^2).&lt;/p&gt;
+&lt;p&gt;Because we don’t know what we don’t know, it’s O(n * m).&lt;/p&gt;
+&lt;p&gt;O(n log n) gives us a means of notating the rate of growth of an algorithm that performs better than O(n^2) but not as well as O(n). &lt;/p&gt;
+&lt;h2&gt;Calculating O(n log n): Merge Sort&lt;/h2&gt;
+&lt;p&gt;Let’s look at an example. O(n log n) is common (and desireable) in sorting algorithms. As we saw with Bubble Sort above, we can easily brute force a sort using nested iteration, but that approach doesn’t scale. &lt;/p&gt;
+&lt;p&gt;Here’s an implementation of &lt;a href=&quot;https://en.wikipedia.org/wiki/Merge_sort&quot;&gt;Merge Sort&lt;/a&gt;. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nums &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;64&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;merge&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; right&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; right&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; right&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; right&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;mergeSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; pivot &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; left &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pivot&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; right &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pivot&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;merge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;mergeSort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;mergeSort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;mergeSort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nums&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Have we see this problem, or something like it before?&lt;/p&gt;
+&lt;p&gt;🤔 &lt;/p&gt;
+&lt;p&gt;Our &lt;code&gt;merge()&lt;/code&gt; function is following a pattern similar to what we say in Bubble Sort above. It accepts two arrays, and, through a series of conditional statements, &lt;em&gt;shifts&lt;/em&gt; values out of the arrays and &lt;em&gt;pushes&lt;/em&gt; them into a new array, &lt;code&gt;result&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;How many operations will &lt;code&gt;merge()&lt;/code&gt; perform? &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;n&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;To sort an array, we need at least one iteration over each element, so we’re already at O(n).&lt;/p&gt;
+&lt;p&gt;What’s happening in &lt;code&gt;mergeSort()&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;Our &lt;code&gt;mergeSort()&lt;/code&gt; function is following a similar pattern to our &lt;code&gt;binarySearch()&lt;/code&gt; above.  We create a &lt;em&gt;pivot&lt;/em&gt; and divide our input into two arrays. &lt;/p&gt;
+&lt;p&gt;What does this tell us? &lt;/p&gt;
+&lt;p&gt;O(log n).&lt;/p&gt;
+&lt;p&gt;If we &lt;em&gt;merge&lt;/em&gt; our two functions, the order of &lt;code&gt;mergeSort()&lt;/code&gt; is O(n log n).&lt;/p&gt;
+&lt;p&gt;This is a &lt;strong&gt;divide and conquer&lt;/strong&gt; approach. We &lt;em&gt;divide&lt;/em&gt; the array into subarrays each containing one element, then we &lt;em&gt;conquer&lt;/em&gt; by recombining them in order.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/vineet-kumar-merge-sort-diagram-4f80b904e3cd8d2bc547e2d886d832fe.svg&quot; alt=&quot;Merge Sort diagram By VineetKumar at English Wikipedia - Transferred from en.wikipedia to Commons by Eric Bauman using CommonsHelper., Public Domain, https://commons.wikimedia.org/w/index.php?curid=8004317&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Like Bubble Sort, Merge Sort is a &lt;em&gt;stable&lt;/em&gt; algorithm. &lt;/p&gt;
+&lt;h2&gt;Big O Log-Linear Time Complexity&lt;/h2&gt;
+&lt;p&gt;In this tutorial, you learned the fundamentals of Big O log-linear time complexity with examples in JavaScript. &lt;/p&gt;
+&lt;p&gt;Does O(n log n) scale? &lt;/p&gt;
+&lt;p&gt;Yes.&lt;/p&gt;
+&lt;p&gt;Can we do better?&lt;/p&gt;
+&lt;p&gt;Well… &lt;/p&gt;
+&lt;p&gt;It depends. &lt;/p&gt;
+&lt;p&gt;Log-linear time complexity is the order of many common sorting algorithms. But not all sorting algorithms are created equal. We’ll look into this in a future article. &lt;/p&gt;
+&lt;p&gt;Stay tuned. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Big O Logarithmic Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-logarithmic-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-logarithmic-time-complexity/</guid><pubDate>Fri, 14 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/eb122f3f1ab3e81a341c2da296dd6c93/417af/jarednielsen-big-o-logarithmic-time-complexity.png&quot;
