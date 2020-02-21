@@ -1,31 +1,74 @@
 ---
 title: Big O Log-Linear Time Complexity
 date: "2020-02-21"
-description: ~155-160 characters
+description: In this tutorial, you’ll learn the fundamentals of Big O notation log-linear time complexity with examples in JavaScript.
 keywords: ["big o", "log linear", "time complexity"]
 ---
+
 ![](./jarednielsen-image-title.png)
 
-@TODO plug newsletter http://eepurl.com/cP8CMn
+
+Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation log-linear, or quasilinear, time complexity with examples in JavaScript.
+
+---
+This is the fifth in a series on Big O notation. If you want to stay in the loop, [sign up for my weekly newsletter, The Solution](http://eepurl.com/cP8CMn).
+
+---
 
 
-@TODO introduction
+## What Problem(s) Does Big O Solve?
 
-also known as quasilinear time
+* Big O notation helps us answer the question, “Will it scale?”
+* Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!).
+
 
 ## Quick Refresher
 
+If you’re just joining us, you will want to start with that article, [What is Big O Notation?](https://jarednielsen.com/big-o-notation/)
+
+### What is Big O? 
+
+Big O notation is a system for measuring the rate of growth of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the speed of an algorithm in seconds (or minutes!). Instead, we measure the number of operations it takes to complete.
+
+The O is short for “Order of”. So, if we’re discussing an algorithm with O(n^2), we say its order of, or rate of growth, is n^2, or quadratic complexity.
+
+### How Does Big O Work? 
+
+Big O notation measures the _worst-case scenario_.
+
+Why?
+
+Because we don’t know what we don’t know.
+
+We need to know just how poorly our algorithm will perform so we can evaluate other solutions.
+
+The worst-case scenario is also known as the “upper bound”. When we say "upper bound", we mean the maximum number of operations performed by an algorithm.
+
+Remember this table?
+
+| O             | Complexity    | Rate of growth    |
+|---            | ---           | ---   |
+| O(1)          | constant      | fast  |
+| O(log n)      | logarithmic   |       |
+| O(n)          | linear time   |       |
+| O(n * log n)  | log linear    |       |
+| O(n^2)        | quadratic     |       |
+| O(n^3)        | cubic         |       |
+| O(2^n)        | exponential   |       |
+| O(n!)         | factorial     | slow  |
+
+It lists common orders by rate of growth, from fastest to slowest.
+
+Before getting into O(n log n), let’s begin with a review of O(n), O(n^2) and O(log n).
+
+
 ### O(n)
 
-In [Big O Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity/), we learned 
+An example of linear time complexity is a simple search in which every element in an array is checked against the query.
 
 ```js
 const animals = [“ocelot”, “octopus”, “opossum”, “orangutan”, “orca”, “oriole”, “oryx”, “osprey”];
-```
 
-
-
-```js
 for (let i = 0; i < animals.length; i++) {
     if (animals[i] === userInput) {
         return `Found ${userInput} at ${i}`;
@@ -33,14 +76,10 @@ for (let i = 0; i < animals.length; i++) {
 };
 ```
 
-
-
-
+If you want to go deeper, check out [Big O Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity/).
 
 
 ### O(n^2)
-
-In [Big O Quadratic Time Complexity](https://jarednielsen.com/big-o-quadratic-time-complexity/), we learned...
 
 A classic example of O(n^2) is [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort).
 
@@ -61,7 +100,7 @@ const bubbleSort = (arr) => {
 
 Why is the order of `bubbleSort()` O(n^2)?
 
-🔑 Nested iteration. 
+🔑 Nested loops iterating the same input.
 
 We could also write this with a `while` loop:
 
@@ -88,13 +127,13 @@ const bubbleSort = arr => {
 
 Either way, it still uses nested iteration, so it's O(n^2).
 
+If you want to go deeer, check out [Big O Quadratic Time Complexity](https://jarednielsen.com/big-o-quadratic-time-complexity/).
+
+
 
 ### O(log n)
 
-
-In [Big O Logarithmic Time Complexity](https://jarednielsen.com/big-o-logarithmic-time-complexity/), we learned... 
-
-We looked at Binary Search to see how we could refactor a brute force function into something more efficient. 
+Binary Search is a classic example of logarithmic time complexity. 
 
 ```js
 const binarySearch = (arr, num) => {
@@ -120,8 +159,10 @@ const binarySearch = (arr, num) => {
 
 🔑 With each iteration, our function is dividing the input, thus performing the inverse operation of exponentiation. 
 
+If you want to go deeper, check out [Big O Logarithmic Time Complexity](https://jarednielsen.com/big-o-logarithmic-time-complexity/), we learned... 
 
-## O(n log n)
+
+## O(n log n): Log-Linear Time Complexity
 
 So what is O(n log n)? 
 
@@ -159,13 +200,11 @@ Because we don't know what we don't know, it's O(n * m).
 O(n log n) gives us a means of notating the rate of growth of an algorithm that performs better than O(n^2) but not as well as O(n). 
 
 
-## Merge Sort 
+## Calculating O(n log n): Merge Sort 
 
 Let's look at an example. O(n log n) is common (and desireable) in sorting algorithms. As we saw with Bubble Sort above, we can easily brute force a sort using nested iteration, but that approach doesn't scale. 
 
-Here's an implementation of Merge Sort. Have we see this problem, or something like it before?
-
-🤔 
+Here's an implementation of Merge Sort. 
 
 ```js
 const nums = [128, 0, 64, 16, 4, 8, 2];
@@ -206,30 +245,47 @@ const mergeSort = (arr) =>{
 console.log(mergeSort(nums));
 ```
 
-What's happening here? 
+Have we see this problem, or something like it before?
 
-Our `merge()` function accepts two arrays, and, through a series of conditional statements, _shifts_ values out of the arrays and _pushes_ them into a new array, `result`. 
+🤔 
 
-How many items will be merged? 
+Our `merge()` function is following a pattern similar to what we say in Bubble Sort above. It accepts two arrays, and, through a series of conditional statements, _shifts_ values out of the arrays and _pushes_ them into a new array, `result`. 
+
+How many operations will `merge()` perform? 
 
 _n_
 
 To sort an array, we need at least one iteration over each element, so we're already at O(n).
 
-And what's happening in `mergeSort()`? 
+What's happening in `mergeSort()`? 
 
-We create a _pivot_ and divide our input into two arrays. 
+Our `mergeSort()` function is following a similar pattern to our `binarySearch()` above.  We create a _pivot_ and divide our input into two arrays. 
 
 What does this tell us? 
 
 O(log n).
 
-Our `mergeSort()` function is following a similar pattern to our `binarySearch()` above. 
-
-This is a **divide and conquer** approach. 
-
 If we _merge_ our two functions, the order of `mergeSort()` is O(n log n).
 
+@TODO This is a **divide and conquer** approach. 
 
-## Big O Log Linear Time Complexity
+@TODO stable vs. in-place algos
 
+
+## Big O Log-Linear Time Complexity
+
+In this tutorial, you learned the fundamentals of Big O log-linear time complexity with examples in JavaScript. 
+
+Does O(n log n) scale? 
+
+Yes.
+
+Can we do better?
+
+Well... 
+
+It depends. 
+
+Log-linear time complexity is the order of many common sorting algorithms. But not all sorting algorithms are created equal. We'll look into this in a future article. 
+
+Stay tuned. 
