@@ -100,7 +100,7 @@ const bubbleSort = (arr) => {
 
 Why is the order of `bubbleSort()` O(n^2)?
 
-🔑 Nested loops iterating the same input.
+🔑 Nested loops iterating over the same input.
 
 We could also write this with a `while` loop:
 
@@ -127,7 +127,7 @@ const bubbleSort = arr => {
 
 Either way, it still uses nested iteration, so it's O(n^2).
 
-If you want to go deeer, check out [Big O Quadratic Time Complexity](https://jarednielsen.com/big-o-quadratic-time-complexity/).
+If you want to go deeper, check out [Big O Quadratic Time Complexity](https://jarednielsen.com/big-o-quadratic-time-complexity/).
 
 
 
@@ -159,7 +159,7 @@ const binarySearch = (arr, num) => {
 
 🔑 With each iteration, our function is dividing the input, thus performing the inverse operation of exponentiation. 
 
-If you want to go deeper, check out [Big O Logarithmic Time Complexity](https://jarednielsen.com/big-o-logarithmic-time-complexity/), we learned... 
+If you want to go deeper, check out [Big O Logarithmic Time Complexity](https://jarednielsen.com/big-o-logarithmic-time-complexity/).
 
 
 ## O(n log n): Log-Linear Time Complexity
@@ -174,35 +174,14 @@ Well, it's just that. It's _n_, a linear time complexity, multiplied by _log n_,
 
 "You said we drop the non-dominant terms, so what's with this _n * log n_ business?"
 
-While it _is_ true that we drop the non-dominant terms in Big O, which would you say is the dominant term? _n_ or _log n_?  
-
-Remember this trick question?
-
-```js
-const matcher = (arr1, arr2) => {
-   for (let i = 0; i < arr1.length; i++){
-       for (let j = 0; j < arr2.length; j++){
-           if (arr1[i] === arr2[j]){
-               return `Match found at arr1[${i}] and arr2[${j}]`;
-           }
-       }
-   }
-   return 'No matches found 😞'; 
-}
-```
-
-What's the order of `matcher()`?
-
-If the arrays were the same length, it _would be_ O(n^2).
-
-Because we don't know what we don't know, it's O(n * m).
+While it _is_ true that we drop the non-dominant terms in Big O, that's generally when we are _adding_ two different complexities, such as `n^2 + n`. Here, we are using multiplication. We can't simplify `n * log n` any further, so we keep both terms. 
 
 O(n log n) gives us a means of notating the rate of growth of an algorithm that performs better than O(n^2) but not as well as O(n). 
 
 
 ## Calculating O(n log n): Merge Sort 
 
-Let's look at an example. O(n log n) is common (and desireable) in sorting algorithms. As we saw with Bubble Sort above, we can easily brute force a sort using nested iteration, but that approach doesn't scale. 
+Let's look at an example. O(n log n) is common (and desirable) in sorting algorithms. As we saw with Bubble Sort above, we can easily brute force a sort using nested iteration, but that approach doesn't scale. 
 
 Here's an implementation of [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort). 
 
@@ -245,11 +224,11 @@ const mergeSort = (arr) =>{
 console.log(mergeSort(nums));
 ```
 
-Have we see this problem, or something like it before?
+Have we seen this problem, or something like it, before?
 
 🤔 
 
-Our `merge()` function is following a pattern similar to what we say in Bubble Sort above. It accepts two arrays, and, through a series of conditional statements, _shifts_ values out of the arrays and _pushes_ them into a new array, `result`. 
+Our `merge()` function is following a pattern similar to what we saw in Bubble Sort above. It accepts two arrays, and, through a series of conditional statements, _shifts_ values out of the arrays and _pushes_ them into a new array, `result`. 
 
 How many operations will `merge()` perform? 
 
@@ -266,12 +245,6 @@ What does this tell us?
 O(log n).
 
 If we _merge_ our two functions, the order of `mergeSort()` is O(n log n).
-
-This is a **divide and conquer** approach. We _divide_ the array into subarrays each containing one element, then we _conquer_ by recombining them in order.
-
-![Merge Sort diagram By VineetKumar at English Wikipedia - Transferred from en.wikipedia to Commons by Eric Bauman using CommonsHelper., Public Domain, https://commons.wikimedia.org/w/index.php?curid=8004317](./vineet-kumar-merge-sort-diagram.svg)
-
-Like Bubble Sort, Merge Sort is a _stable_ algorithm. 
 
 
 ## Big O Log-Linear Time Complexity
