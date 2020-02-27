@@ -1,4 +1,267 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 21 Feb 2020 16:58:47 GMT</lastBuildDate><item><title><![CDATA[Big O Log-Linear Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-log-linear-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-log-linear-time-complexity/</guid><pubDate>Fri, 21 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 27 Feb 2020 20:53:19 GMT</lastBuildDate><item><title><![CDATA[How to Sum Consecutive Powers of 2]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag…]]></description><link>http://jarednielsen.com/sum-consecutive-powers-2/</link><guid isPermaLink="false">http://jarednielsen.com/sum-consecutive-powers-2/</guid><pubDate>Fri, 28 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2cfbac528588632d736f920398c09cfd/417af/jarednielsen-sum-powers-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA1UlEQVQoz7VSTQuDMAz1//+d4S/w4sUdrOhhBw+Cw805hjCd/XgzZa0dKtvAPQhJQ/vyksZTSmFL89wDwXonNviJkCCl1J4PA9QYU5pyZAPlnKJusVXCJGEIwxBlecS92KE5HXBpbqjrMxhj6LrOFiDkeY44jq2YGWEQBNhHETjnEI8rBCcCpS+3bavzRVGg73tL6Pu+joUQE6GRnabpqKa2M1yCUUKoqgpZlr21PvuU6ZFcHDpe3rTtFpkR2vl8uSLm/uqnWOla/uc1WVop76+LvYU9AQasYcNS37D3AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen sum powers 2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2cfbac528588632d736f920398c09cfd/fb8a0/jarednielsen-sum-powers-2.png&quot;
+        srcset=&quot;/static/2cfbac528588632d736f920398c09cfd/1a291/jarednielsen-sum-powers-2.png 148w,
+/static/2cfbac528588632d736f920398c09cfd/2bc4a/jarednielsen-sum-powers-2.png 295w,
+/static/2cfbac528588632d736f920398c09cfd/fb8a0/jarednielsen-sum-powers-2.png 590w,
+/static/2cfbac528588632d736f920398c09cfd/526de/jarednielsen-sum-powers-2.png 885w,
+/static/2cfbac528588632d736f920398c09cfd/fa2eb/jarednielsen-sum-powers-2.png 1180w,
+/static/2cfbac528588632d736f920398c09cfd/417af/jarednielsen-sum-powers-2.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag to improve the performance of your algorithms and make an impression in technical interviews. In this tutorial, you will learn how to sum consecutive powers of 2 with a simple and easy to remember equation.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Want to level up your problem solving skills? I write a weekly newsletter about programming, problem solving and lifelong learning.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://eepurl.com/cP8CMn&quot;&gt;Sign up for The Solution&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;How to Sum Consecutive Powers of 2&lt;/h2&gt;
+&lt;p&gt;How would you add these numbers? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^0 + 2^1 + 2^2 + 2^3 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Was your first thought to take the ‘brute force’ approach? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^0 = 1
+2^1 = 2, + 1 = 3
+2^2 = 4, + 3 = 7
+2^3 = 8, + 7 = 15&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Nothing wrong with that and you probably didn’t need a pen and paper or a calculator to get there.&lt;/p&gt;
+&lt;p&gt;What if the final power was not 2^3 but 2^30? Or 2^300?&lt;/p&gt;
+&lt;p&gt;Brute force would be brutal.&lt;/p&gt;
+&lt;p&gt;What if you were presented with this situation?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^0 + 2^1 + 2^2 + … + 2^n = ?&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;How would you solve this?&lt;/p&gt;
+&lt;h2&gt;Programming is Problem Solving&lt;/h2&gt;
+&lt;p&gt;What is programming?&lt;/p&gt;
+&lt;p&gt;Programming is problem solving.&lt;/p&gt;
+&lt;p&gt;What problems do we solve?&lt;/p&gt;
+&lt;p&gt;There are two primary categories of problems we solve as programmers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automation&lt;/li&gt;
+&lt;li&gt;Algorithms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We could write a for loop to automate the addition of our powers of 2:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;sumPowers2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; power &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+ &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; power&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   sum &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; sum&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Will it scale? &lt;/p&gt;
+&lt;p&gt;What’s the Big O?&lt;/p&gt;
+&lt;p&gt;O(n).&lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;p&gt;Our function needs to perform one operation for every input, so the order of our algorithm is &lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity/&quot;&gt;O(n) or linear time complexity&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;There must be a better way!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Rather than automate the brute force approach, how can we solve this problem &lt;em&gt;algorithmically&lt;/em&gt;?&lt;/p&gt;
+&lt;h2&gt;Math O’Clock 🧮 🕐&lt;/h2&gt;
+&lt;p&gt;I’m about to blow your mind.&lt;/p&gt;
+&lt;p&gt;Check this out:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 = 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;😐&lt;/p&gt;
+&lt;p&gt;Bear with me.&lt;/p&gt;
+&lt;p&gt;🐻&lt;/p&gt;
+&lt;p&gt;If &lt;code&gt;1&lt;/code&gt; is equal to &lt;code&gt;1&lt;/code&gt;, then it follows that&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 = 2 - 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And if &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 + 2 = 3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then it follows that&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 + 2 = 4 - 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s take it one more step. If&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 + 2 + 4 = 7&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 + 2 + 4 = 8 - 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Cool?&lt;/p&gt;
+&lt;p&gt;😎&lt;/p&gt;
+&lt;p&gt;Let’s power up!&lt;/p&gt;
+&lt;p&gt;What is &lt;code&gt;x&lt;/code&gt; in this equation? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^x = 8&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or, in plain English, “How many 2s multiplied together does it take to get 8?”&lt;/p&gt;
+&lt;p&gt;We could also write it as a logarithm:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;log2(8) = 3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We could say, “To what power do we raise 2 for a product of 8?”&lt;/p&gt;
+&lt;p&gt;🧐&lt;/p&gt;
+&lt;p&gt;We know that &lt;code&gt;2^2 = 4&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And &lt;code&gt;2^1 = 2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;And &lt;code&gt;2^0 = 1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;“Wait, what?”&lt;/p&gt;
+&lt;p&gt;Why is &lt;code&gt;2^0 = 1&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;Table time! 🏓&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Exponent&lt;/th&gt;
+&lt;th&gt;=&lt;/th&gt;
+&lt;th&gt;=&lt;/th&gt;
+&lt;th&gt;Power&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2^3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2^2&lt;/td&gt;
+&lt;td&gt;(2^3) / 2&lt;/td&gt;
+&lt;td&gt;8 / 2&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2^1&lt;/td&gt;
+&lt;td&gt;(2^2) / 2&lt;/td&gt;
+&lt;td&gt;4 / 2&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2^0&lt;/td&gt;
+&lt;td&gt;(2^1) / 2&lt;/td&gt;
+&lt;td&gt;2 / 2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;See the pattern? &lt;/p&gt;
+&lt;p&gt;What is &lt;code&gt;2^4&lt;/code&gt;? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;16&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What is the sum of the powers of &lt;code&gt;2^4&lt;/code&gt;? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 + 2 + 4 + 8 + 16 = 31&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s another way we can describe &lt;code&gt;31&lt;/code&gt;?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;31 = 32 - 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What is &lt;code&gt;2^5&lt;/code&gt;?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;32&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Did you see what happened there? &lt;/p&gt;
+&lt;p&gt;The sum of the powers of two is one less than the product of the next power. &lt;/p&gt;
+&lt;p&gt;🤯&lt;/p&gt;
+&lt;p&gt;Let’s make another table! 🏓🏓&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Exponent&lt;/th&gt;
+&lt;th&gt;Power&lt;/th&gt;
+&lt;th&gt;Sum of Powers&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2^0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2^1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2^2&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2^3&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2^4&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;31&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2^5&lt;/td&gt;
+&lt;td&gt;32&lt;/td&gt;
+&lt;td&gt;63&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;What’s the next exponent? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^6&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s &lt;code&gt;2^6&lt;/code&gt;?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;64&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So what is the sum of the powers of &lt;code&gt;2^6&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;🤔&lt;/p&gt;
+&lt;p&gt;Let’s convert this pattern to an equation to find out.&lt;/p&gt;
+&lt;p&gt;What if our exponent is unknown, or &lt;code&gt;n&lt;/code&gt;? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^n&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What is the sum of &lt;code&gt;2^n&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;☝️ The sum of the powers of two is one less than the product of the next power. &lt;/p&gt;
+&lt;p&gt;If our power is &lt;code&gt;n&lt;/code&gt;, what’s the next power?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n + 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If &lt;code&gt;n&lt;/code&gt; is equal to &lt;code&gt;1&lt;/code&gt;, then it follows&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^n = 2
+2^(n + 1) = 4&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And if &lt;code&gt;n&lt;/code&gt; is equal to &lt;code&gt;2&lt;/code&gt;, then it follows&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^n = 4
+2^(n + 1) = 8&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Lookin’ good!&lt;/p&gt;
+&lt;p&gt;How do we get &lt;em&gt;one less&lt;/em&gt; than the product of the next power?&lt;/p&gt;
+&lt;p&gt;We simply subtract &lt;code&gt;1&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^(n + 1) - 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;🎉 There’s our equation! &lt;/p&gt;
+&lt;h2&gt;Proof by Induction&lt;/h2&gt;
+&lt;p&gt;If &lt;code&gt;n&lt;/code&gt; is equal to &lt;code&gt;1&lt;/code&gt;, then it follows&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^(n + 1) - 1 = 3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If &lt;code&gt;n&lt;/code&gt; is equal to &lt;code&gt;2&lt;/code&gt;, then it follows&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^(n + 1) - 1 = 7&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The question above was: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is the sum of the powers of &lt;code&gt;2^6&lt;/code&gt;?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Let’s prove that our equation, &lt;code&gt;2^(n + 1) - 1&lt;/code&gt;, works. &lt;/p&gt;
+&lt;p&gt;We know that the power of &lt;code&gt;2^6&lt;/code&gt; is &lt;code&gt;64&lt;/code&gt;. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2 * 2 * 2 * 2 * 2  * 2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We know that the power of &lt;code&gt;2^7&lt;/code&gt; is &lt;code&gt;128&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;If we plug &lt;code&gt;6&lt;/code&gt; into our equation, the result is 127:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^(6 + 1) - 1 = 127&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we manually add the powers of &lt;code&gt;2^6&lt;/code&gt;, the result is also 127:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 + 2 + 4 + 8 + 16 + 32 + 64 = 127&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;💥 Proof! &lt;/p&gt;
+&lt;p&gt;The sum of the powers of two is one less than the product of the next power. &lt;/p&gt;
+&lt;p&gt;Don’t take my word for it. Try it with a larger value.&lt;/p&gt;
+&lt;h2&gt;Programming is Problem Solving&lt;/h2&gt;
+&lt;p&gt;Let’s take another look at our function from above. How can we refactor this to improve its time complexity?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;sumPowers2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; power &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+ &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; power&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   sum &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; sum&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We simply translate our equation into JavaScript!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;sumPowers2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; power &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;power &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s the order of our new function?&lt;/p&gt;
+&lt;p&gt;O(1).&lt;/p&gt;
+&lt;p&gt;Regardless of the size of the input, our function will always perform the same number of operations.&lt;/p&gt;
+&lt;h2&gt;How to Sum Consecutive Powers of 2&lt;/h2&gt;
+&lt;p&gt;You don’t need to be a math whiz to be a good programmer, but there are a handful of equations you will want to add to your problem solving toolbox. In this tutorial, you learned how to sum consecutive powers of 2 with a simple and easy to remember equation. It’s like a party trick for technical interviews.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Big O Log-Linear Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-log-linear-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-log-linear-time-complexity/</guid><pubDate>Fri, 21 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/841cd94577114ee5d82ee5b9fb116406/417af/jarednielsen-big-o-log-linear-time-complexity.png&quot;
@@ -133,7 +396,7 @@
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Why is the order of &lt;code&gt;bubbleSort()&lt;/code&gt; O(n^2)?&lt;/p&gt;
-&lt;p&gt;🔑 Nested loops iterating the same input.&lt;/p&gt;
+&lt;p&gt;🔑 Nested loops iterating over the same input.&lt;/p&gt;
 &lt;p&gt;We could also write this with a &lt;code&gt;while&lt;/code&gt; loop:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;bubbleSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   
@@ -154,7 +417,7 @@
   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Either way, it still uses nested iteration, so it’s O(n^2).&lt;/p&gt;
-&lt;p&gt;If you want to go deeer, check out &lt;a href=&quot;https://jarednielsen.com/big-o-quadratic-time-complexity/&quot;&gt;Big O Quadratic Time Complexity&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to go deeper, check out &lt;a href=&quot;https://jarednielsen.com/big-o-quadratic-time-complexity/&quot;&gt;Big O Quadratic Time Complexity&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;O(log n)&lt;/h3&gt;
 &lt;p&gt;Binary Search is a classic example of logarithmic time complexity. &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;binarySearch&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -177,31 +440,17 @@
    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;🔑 With each iteration, our function is dividing the input, thus performing the inverse operation of exponentiation. &lt;/p&gt;
-&lt;p&gt;If you want to go deeper, check out &lt;a href=&quot;https://jarednielsen.com/big-o-logarithmic-time-complexity/&quot;&gt;Big O Logarithmic Time Complexity&lt;/a&gt;, we learned… &lt;/p&gt;
+&lt;p&gt;If you want to go deeper, check out &lt;a href=&quot;https://jarednielsen.com/big-o-logarithmic-time-complexity/&quot;&gt;Big O Logarithmic Time Complexity&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;O(n log n): Log-Linear Time Complexity&lt;/h2&gt;
 &lt;p&gt;So what is O(n log n)? &lt;/p&gt;
 &lt;p&gt;Well, it’s just that. It’s &lt;em&gt;n&lt;/em&gt;, a linear time complexity, multiplied by &lt;em&gt;log n&lt;/em&gt;, a logarithmic time complexity. &lt;/p&gt;
 &lt;p&gt;☝️ &lt;/p&gt;
 &lt;p&gt;“Hold up there, mister”, I hear you say.&lt;/p&gt;
 &lt;p&gt;“You said we drop the non-dominant terms, so what’s with this &lt;em&gt;n * log n&lt;/em&gt; business?”&lt;/p&gt;
-&lt;p&gt;While it &lt;em&gt;is&lt;/em&gt; true that we drop the non-dominant terms in Big O, which would you say is the dominant term? &lt;em&gt;n&lt;/em&gt; or &lt;em&gt;log n&lt;/em&gt;?  &lt;/p&gt;
-&lt;p&gt;Remember this trick question?&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;matcher&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arr2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-       &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-           &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr1&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; arr2&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-               &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`Match found at arr1[&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;i&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;] and arr2[&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;j&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;]`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-           &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;No matches found 😞&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;What’s the order of &lt;code&gt;matcher()&lt;/code&gt;?&lt;/p&gt;
-&lt;p&gt;If the arrays were the same length, it &lt;em&gt;would be&lt;/em&gt; O(n^2).&lt;/p&gt;
-&lt;p&gt;Because we don’t know what we don’t know, it’s O(n * m).&lt;/p&gt;
+&lt;p&gt;While it &lt;em&gt;is&lt;/em&gt; true that we drop the non-dominant terms in Big O, that’s generally when we are &lt;em&gt;adding&lt;/em&gt; two different complexities, such as &lt;code&gt;n^2 + n&lt;/code&gt;. Here, we are using multiplication. We can’t simplify &lt;code&gt;n * log n&lt;/code&gt; any further, so we keep both terms. &lt;/p&gt;
 &lt;p&gt;O(n log n) gives us a means of notating the rate of growth of an algorithm that performs better than O(n^2) but not as well as O(n). &lt;/p&gt;
 &lt;h2&gt;Calculating O(n log n): Merge Sort&lt;/h2&gt;
-&lt;p&gt;Let’s look at an example. O(n log n) is common (and desireable) in sorting algorithms. As we saw with Bubble Sort above, we can easily brute force a sort using nested iteration, but that approach doesn’t scale. &lt;/p&gt;
+&lt;p&gt;Let’s look at an example. O(n log n) is common (and desirable) in sorting algorithms. As we saw with Bubble Sort above, we can easily brute force a sort using nested iteration, but that approach doesn’t scale. &lt;/p&gt;
 &lt;p&gt;Here’s an implementation of &lt;a href=&quot;https://en.wikipedia.org/wiki/Merge_sort&quot;&gt;Merge Sort&lt;/a&gt;. &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nums &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;64&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
@@ -239,9 +488,9 @@
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;mergeSort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nums&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Have we see this problem, or something like it before?&lt;/p&gt;
+&lt;p&gt;Have we seen this problem, or something like it, before?&lt;/p&gt;
 &lt;p&gt;🤔 &lt;/p&gt;
-&lt;p&gt;Our &lt;code&gt;merge()&lt;/code&gt; function is following a pattern similar to what we say in Bubble Sort above. It accepts two arrays, and, through a series of conditional statements, &lt;em&gt;shifts&lt;/em&gt; values out of the arrays and &lt;em&gt;pushes&lt;/em&gt; them into a new array, &lt;code&gt;result&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Our &lt;code&gt;merge()&lt;/code&gt; function is following a pattern similar to what we saw in Bubble Sort above. It accepts two arrays, and, through a series of conditional statements, &lt;em&gt;shifts&lt;/em&gt; values out of the arrays and &lt;em&gt;pushes&lt;/em&gt; them into a new array, &lt;code&gt;result&lt;/code&gt;. &lt;/p&gt;
 &lt;p&gt;How many operations will &lt;code&gt;merge()&lt;/code&gt; perform? &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;n&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;To sort an array, we need at least one iteration over each element, so we’re already at O(n).&lt;/p&gt;
@@ -250,9 +499,6 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;What does this tell us? &lt;/p&gt;
 &lt;p&gt;O(log n).&lt;/p&gt;
 &lt;p&gt;If we &lt;em&gt;merge&lt;/em&gt; our two functions, the order of &lt;code&gt;mergeSort()&lt;/code&gt; is O(n log n).&lt;/p&gt;
-&lt;p&gt;This is a &lt;strong&gt;divide and conquer&lt;/strong&gt; approach. We &lt;em&gt;divide&lt;/em&gt; the array into subarrays each containing one element, then we &lt;em&gt;conquer&lt;/em&gt; by recombining them in order.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/vineet-kumar-merge-sort-diagram-4f80b904e3cd8d2bc547e2d886d832fe.svg&quot; alt=&quot;Merge Sort diagram By VineetKumar at English Wikipedia - Transferred from en.wikipedia to Commons by Eric Bauman using CommonsHelper., Public Domain, https://commons.wikimedia.org/w/index.php?curid=8004317&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Like Bubble Sort, Merge Sort is a &lt;em&gt;stable&lt;/em&gt; algorithm. &lt;/p&gt;
 &lt;h2&gt;Big O Log-Linear Time Complexity&lt;/h2&gt;
 &lt;p&gt;In this tutorial, you learned the fundamentals of Big O log-linear time complexity with examples in JavaScript. &lt;/p&gt;
 &lt;p&gt;Does O(n log n) scale? &lt;/p&gt;
@@ -264,7 +510,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;Stay tuned. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Big O Logarithmic Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-logarithmic-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-logarithmic-time-complexity/</guid><pubDate>Fri, 14 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/eb122f3f1ab3e81a341c2da296dd6c93/417af/jarednielsen-big-o-logarithmic-time-complexity.png&quot;
+    href=&quot;/static/056f2d552c38f329953c59768328cbcf/417af/jarednielsen-big-o-logarithmic-time-complexity.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -283,13 +529,13 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;jarednielsen big o logarithmic time complexity&quot;
         title=&quot;&quot;
-        src=&quot;/static/eb122f3f1ab3e81a341c2da296dd6c93/fb8a0/jarednielsen-big-o-logarithmic-time-complexity.png&quot;
-        srcset=&quot;/static/eb122f3f1ab3e81a341c2da296dd6c93/1a291/jarednielsen-big-o-logarithmic-time-complexity.png 148w,
-/static/eb122f3f1ab3e81a341c2da296dd6c93/2bc4a/jarednielsen-big-o-logarithmic-time-complexity.png 295w,
-/static/eb122f3f1ab3e81a341c2da296dd6c93/fb8a0/jarednielsen-big-o-logarithmic-time-complexity.png 590w,
-/static/eb122f3f1ab3e81a341c2da296dd6c93/526de/jarednielsen-big-o-logarithmic-time-complexity.png 885w,
-/static/eb122f3f1ab3e81a341c2da296dd6c93/fa2eb/jarednielsen-big-o-logarithmic-time-complexity.png 1180w,
-/static/eb122f3f1ab3e81a341c2da296dd6c93/417af/jarednielsen-big-o-logarithmic-time-complexity.png 1600w&quot;
+        src=&quot;/static/056f2d552c38f329953c59768328cbcf/fb8a0/jarednielsen-big-o-logarithmic-time-complexity.png&quot;
+        srcset=&quot;/static/056f2d552c38f329953c59768328cbcf/1a291/jarednielsen-big-o-logarithmic-time-complexity.png 148w,
+/static/056f2d552c38f329953c59768328cbcf/2bc4a/jarednielsen-big-o-logarithmic-time-complexity.png 295w,
+/static/056f2d552c38f329953c59768328cbcf/fb8a0/jarednielsen-big-o-logarithmic-time-complexity.png 590w,
+/static/056f2d552c38f329953c59768328cbcf/526de/jarednielsen-big-o-logarithmic-time-complexity.png 885w,
+/static/056f2d552c38f329953c59768328cbcf/fa2eb/jarednielsen-big-o-logarithmic-time-complexity.png 1180w,
+/static/056f2d552c38f329953c59768328cbcf/417af/jarednielsen-big-o-logarithmic-time-complexity.png 1600w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -375,7 +621,7 @@ The O is short for “Order of”. So, if we’re discussing an algorithm with O
 &lt;/table&gt;
 &lt;p&gt;It lists common orders by rate of growth, from fastest to slowest.&lt;/p&gt;
 &lt;p&gt;We learned O(1), or constant time complexity, in &lt;a href=&quot;https://jarednielsen.com/big-o-notation/&quot;&gt;What is Big O?&lt;/a&gt;, O(n) in &lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity/&quot;&gt;Big O Linear Time Complexity&lt;/a&gt;, and O(n^2) in &lt;a href=&quot;https://jarednielsen.com/big-o-quadratic-time-complexity/&quot;&gt;Big O Quadratic Time Complexity&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;We previously skipped O(log n), logarithmic complexity, because it’s be easier to understand after learning O(n^2), quadratic time complexity.&lt;/p&gt;
+&lt;p&gt;We previously skipped O(log n), logarithmic complexity, because it’s easier to understand after learning O(n^2), quadratic time complexity.&lt;/p&gt;
 &lt;p&gt;Now it’s time!&lt;/p&gt;
 &lt;h3&gt;Math O’Clock 🧮 🕝&lt;/h3&gt;
 &lt;p&gt;What is a logarithm?&lt;/p&gt;
@@ -503,7 +749,7 @@ etc.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;As we can see, logarithmic time complexity is very good!&lt;/p&gt;
+&lt;p&gt;O(log n) is &lt;a href=&quot;https://www.youtube.com/watch?v=-fQGPZTECYs&quot;&gt;better than bad, it’s good!&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;What if the problem was, “How many 3s, multiplied, does it take to get 8?”&lt;/p&gt;
 &lt;p&gt;The answer is 1.8927892607&lt;/p&gt;
 &lt;p&gt;If you imagined calculating that number by hand is a tedious process, you’d be right. &lt;/p&gt;
@@ -514,7 +760,7 @@ etc.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;We’re interested in the &lt;em&gt;order of&lt;/em&gt; our algorithm so we can make comparisons and evaluate alternative solutions.&lt;/p&gt;
 &lt;p&gt;We consider the base of our log a constant, so we drop it, and simply use the following notation:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;O(log n)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;O(log n): Binary Search&lt;/h2&gt;
+&lt;h2&gt;Calculating O(log n): Binary Search&lt;/h2&gt;
 &lt;p&gt;The classic example used to illustrate O(log n) is binary search. Binary search is an algorithm that finds the location of an argument in a sorted series by dividing the input in half with each iteration. &lt;/p&gt;
 &lt;p&gt;Let’s say we are given the following array and asked to find the position of the number &lt;code&gt;512&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; powers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;64&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;256&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;512&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
