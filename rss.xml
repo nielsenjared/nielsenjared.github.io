@@ -1,4 +1,388 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 05 Mar 2020 14:07:03 GMT</lastBuildDate><item><title><![CDATA[Proof By Induction]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag…]]></description><link>http://jarednielsen.com/proof-induction/</link><guid isPermaLink="false">http://jarednielsen.com/proof-induction/</guid><pubDate>Fri, 06 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 Mar 2020 12:45:24 GMT</lastBuildDate><item><title><![CDATA[Big O Recursive Time Complexity]]></title><description><![CDATA[After Big O, the second most terrifying computer science topic might be recursion. Don’t let the memes scare you, recursion is just…]]></description><link>http://jarednielsen.com/big-o-recursive-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-recursive-time-complexity/</guid><pubDate>Thu, 12 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/82d91a3fd2072cce2081085db2d9761c/2f950/jarednielsen-big-o-recursive-time-complexity.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAw0lEQVQoz62SSwvCMBCE+///jODFg/bixXrSXqpIER+gIFqfYN5jSExb0UgjBoYNu+zHLEyklIJXUr7Wsu/fiXwD99zPQLXKvgwAmgUuINZbA5H7YwmS5ytkcfJC34HCumBJCtLqgg1T0N4AYrWBuhPwLAft9CvXjYGjiQVqMI0T8OlcOy3AxxlIOw4AupN1lZcbFGUQ+bI6eXeAmC3CgNap0Nt6gXMrQqEYN8Jz3txhPTZOn+LUODb1uHxTSA5/1d+BD8kFYp+XSm4LAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive time complexity&quot;
+        title=&quot;&quot;
+        src=&quot;/static/82d91a3fd2072cce2081085db2d9761c/b9e4f/jarednielsen-big-o-recursive-time-complexity.png&quot;
+        srcset=&quot;/static/82d91a3fd2072cce2081085db2d9761c/cf440/jarednielsen-big-o-recursive-time-complexity.png 148w,
+/static/82d91a3fd2072cce2081085db2d9761c/d2d38/jarednielsen-big-o-recursive-time-complexity.png 295w,
+/static/82d91a3fd2072cce2081085db2d9761c/b9e4f/jarednielsen-big-o-recursive-time-complexity.png 590w,
+/static/82d91a3fd2072cce2081085db2d9761c/f9b6a/jarednielsen-big-o-recursive-time-complexity.png 885w,
+/static/82d91a3fd2072cce2081085db2d9761c/2d849/jarednielsen-big-o-recursive-time-complexity.png 1180w,
+/static/82d91a3fd2072cce2081085db2d9761c/2f950/jarednielsen-big-o-recursive-time-complexity.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;After Big O, the second most terrifying computer science topic might be recursion. Don’t let the memes scare you, recursion is just recursion. It’s very easy to understand and you don’t need to be a 10X developer to do so. In this tutorial, you’ll learn the fundamentals of calculating Big O recursive time complexity.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Want to level up your problem solving skills? &lt;/p&gt;
+&lt;p&gt;I write a weekly newsletter about programming, problem solving and lifelong learning. &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://eepurl.com/cP8CMn&quot;&gt;Sign up for &lt;em&gt;The Solution&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;What Problem(s) Does Recursion Solve?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Recursion allows us to write functions that are compact and elegant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What Problem(s) Does Recursion Create?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Recursion can easily exceed the maximum size of the call stack. &lt;/li&gt;
+&lt;li&gt;Recursion can make the program harder to understand not only for your collaborators, but for your future self&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What is Recursion?&lt;/h2&gt;
+&lt;p&gt;In computer science, recursion occurs when a function calls itself within its declaration. &lt;/p&gt;
+&lt;p&gt;For example: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;loop&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you run this in your browser console or using Node, you’ll get an error. &lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;p&gt;Too much recursion!&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;const loop()&lt;/code&gt; is just that, a &lt;em&gt;constant&lt;/em&gt; loop.&lt;/p&gt;
+&lt;p&gt;🔁&lt;/p&gt;
+&lt;p&gt;We use recursion to solve a large problem by breaking it down into smaller instances of the same problem.&lt;/p&gt;
+&lt;p&gt;To do that, we need to tell our function what the smallest instance looks like. &lt;/p&gt;
+&lt;p&gt;If you recall, with &lt;a href=&quot;https://jarednielsen.com/proof-induction/&quot;&gt;proof by induction&lt;/a&gt; we need to establish two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;base&lt;/li&gt;
+&lt;li&gt;induction&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Recursion is similar. We also need to establish a base case but rather than induction, we establish the &lt;em&gt;recursive case&lt;/em&gt;. &lt;/p&gt;
+&lt;p&gt;We use the recursive case to break the problem down into smaller instances. &lt;/p&gt;
+&lt;p&gt;We use the base case to return when there are no more problems to be solved. &lt;/p&gt;
+&lt;p&gt;For example. a family on vacation:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;fighting&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;patience&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;patience &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;If you don’t stop fighting, I will turn this car around!&quot;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fighting&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;patience &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The kids are fighting in the backseat. &lt;/p&gt;
+&lt;p&gt;Dad is driving and quickly losing his patience. &lt;/p&gt;
+&lt;p&gt;Our recursive case is the constant fighting. &lt;/p&gt;
+&lt;p&gt;Our base case is dad’s patience when it runs out.&lt;/p&gt;
+&lt;p&gt;🚗 &lt;/p&gt;
+&lt;h3&gt;Recursion: Factorial&lt;/h3&gt;
+&lt;p&gt;The classic example of recursion is computing the factorial of a given number.&lt;/p&gt;
+&lt;p&gt;What’s a &lt;a href=&quot;https://en.wikipedia.org/wiki/Factorial&quot;&gt;factorial&lt;/a&gt;? &lt;/p&gt;
+&lt;p&gt;A factorial is the product of all positive integers less than or equal to &lt;em&gt;n&lt;/em&gt;. &lt;/p&gt;
+&lt;p&gt;We write that as &lt;em&gt;n!&lt;/em&gt;. &lt;/p&gt;
+&lt;p&gt;For example, 5!:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;5 * 4 * 3 * 2 * 1 = 120&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here’s an iterative factorial in JavaScript:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;factorial&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+   &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     num &lt;span class=&quot;token operator&quot;&gt;*=&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And here it is refactored with recursion:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;factorial&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;factorial&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Every call to &lt;code&gt;factorial()&lt;/code&gt; again calls &lt;code&gt;factorial()&lt;/code&gt;, but decreases the value of &lt;code&gt;num&lt;/code&gt; by 1, until the base case is met and 1 is returned. &lt;/p&gt;
+&lt;h2&gt;Fibonacci&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Fibonacci_number&quot;&gt;Fibonacci&lt;/a&gt; is a sequence of numbers where each number is the sum of the preceding two. &lt;/p&gt;
+&lt;p&gt;It starts like this…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;0 1 1 2 3 5 8 13 21 34 55 89 144…&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Fibonacci algorithms are standard challenges for beginners and technical interviews. There are many ways to solve a Fibonacci algorithm and each reveals the depth of your knowledge.&lt;/p&gt;
+&lt;p&gt;Let’s dive in!&lt;/p&gt;
+&lt;h3&gt;Iterative Fibonacci&lt;/h3&gt;
+&lt;p&gt;Before we get to recursion, let’s look at an iterative solution to the problem.&lt;/p&gt;
+&lt;p&gt;Given an integer, &lt;code&gt;n&lt;/code&gt;, calculate the sum of a Fibonacci sequence.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;fiberative&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What is the order of &lt;code&gt;fiberative()&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;O(n).&lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;p&gt;Our solution is &lt;em&gt;iterative&lt;/em&gt;. We perform &lt;code&gt;n&lt;/code&gt; operations. &lt;/p&gt;
+&lt;p&gt;If you want to go deeper, check out &lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity/&quot;&gt;Big O Linear Time Complexity&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Recursive Fibonacci&lt;/h3&gt;
+&lt;p&gt;Now let’s implement our algorithm using recursion. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;fibonaive&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonaive&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonaive&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s the order of &lt;code&gt;fibonaive()&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;Spoiler: it’s not good. &lt;/p&gt;
+&lt;p&gt;That’s why this approach is referred to as the &lt;em&gt;naive&lt;/em&gt; implementation. &lt;/p&gt;
+&lt;p&gt;Let’s get informed.&lt;/p&gt;
+&lt;h2&gt;Calculating Recursive Time Complexity&lt;/h2&gt;
+&lt;p&gt;Let’s make a small adjustment to &lt;code&gt;fibonaive()&lt;/code&gt; for the purpose of illustration:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;fibonot&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonot&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonot&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;☝️ We only modified the last line so that &lt;code&gt;fibonot()&lt;/code&gt; is now balanced. &lt;/p&gt;
+&lt;p&gt;What’s happening in our function?&lt;/p&gt;
+&lt;p&gt;Every time we call &lt;code&gt;fibonot()&lt;/code&gt;, we call &lt;code&gt;fibonot()&lt;/code&gt; twice.&lt;/p&gt;
+&lt;p&gt;In each of those calls, we subtract 1 from &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;How many times does this happen?&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;n&lt;/code&gt; &lt;/p&gt;
+&lt;p&gt;We call &lt;code&gt;fibonot()&lt;/code&gt; until the value of &lt;code&gt;n&lt;/code&gt;  is less than or equal to 0, or equal to 1, then we return without a call.&lt;/p&gt;
+&lt;p&gt;Have we seen this, or something like it, before?&lt;/p&gt;
+&lt;p&gt;🤔&lt;/p&gt;
+&lt;p&gt;Every invocation of &lt;code&gt;fibonot()&lt;/code&gt; creates two &lt;em&gt;branches&lt;/em&gt; by calling itself twice. &lt;/p&gt;
+&lt;p&gt;Our branches are creating a &lt;em&gt;tree&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;With each iteration, the value of &lt;code&gt;n&lt;/code&gt; becomes smaller until one of our &lt;em&gt;base&lt;/em&gt; conditions is met. &lt;/p&gt;
+&lt;p&gt;So the &lt;em&gt;depth&lt;/em&gt;  of our tree is &lt;code&gt;n&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Let’s map out the calls:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7d700ad7dfada9204d1c95e942718172/2f950/jarednielsen-big-o-recursion-tree.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtUlEQVQoz82S2wqEMAxE+/+fWsRqvddqlhOILMWyoC8bCNHpzCSkded5yl3+iprO1YyO45B937WO4ygxRsk5X1jN2JVG8zxL13WyrqvmsizXN2fbtikGh1oaOwNMME2TDMOgZMRlgMFlahIN/xY6YUpJvPfa1QLDtm21gU2AGIxqWN/3qqWRTshOmqbR3bAnutIghHAJIJPWEFM4cDlnt3jAcd87KOsT7PaW35i62nt6mv9v+AHyhmSBBEE1JgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursion tree&quot;
+        title=&quot;&quot;
+        src=&quot;/static/7d700ad7dfada9204d1c95e942718172/b9e4f/jarednielsen-big-o-recursion-tree.png&quot;
+        srcset=&quot;/static/7d700ad7dfada9204d1c95e942718172/cf440/jarednielsen-big-o-recursion-tree.png 148w,
+/static/7d700ad7dfada9204d1c95e942718172/d2d38/jarednielsen-big-o-recursion-tree.png 295w,
+/static/7d700ad7dfada9204d1c95e942718172/b9e4f/jarednielsen-big-o-recursion-tree.png 590w,
+/static/7d700ad7dfada9204d1c95e942718172/f9b6a/jarednielsen-big-o-recursion-tree.png 885w,
+/static/7d700ad7dfada9204d1c95e942718172/2d849/jarednielsen-big-o-recursion-tree.png 1180w,
+/static/7d700ad7dfada9204d1c95e942718172/2f950/jarednielsen-big-o-recursion-tree.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Do you see a pattern? &lt;/p&gt;
+&lt;p&gt;Where have we seen this, or something like it, before? &lt;/p&gt;
+&lt;p&gt;🤔&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/sum-consecutive-powers-2/&quot;&gt;Powers of 2!&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Exponent&lt;/th&gt;
+&lt;th&gt;Power&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2^3&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2^2&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2^1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2^0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;So what’s the order of &lt;code&gt;fibonot()&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;O(2^n)&lt;/p&gt;
+&lt;p&gt;Exponential! &lt;/p&gt;
+&lt;p&gt;Ew!&lt;/p&gt;
+&lt;p&gt;As a rule of thumb, when calculating recursive runtimes, use the following formula:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;branches^depth&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Where branches are the number of recursive calls made in the function definition and depth is the value passed to the first call.&lt;/p&gt;
+&lt;p&gt;In the illustration above, there are two branches with a depth of 4. &lt;/p&gt;
+&lt;p&gt;Let’s return to &lt;code&gt;fibonaive()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;What’s its Big O? &lt;/p&gt;
+&lt;p&gt;For our purposes, it’s O(2^n).&lt;/p&gt;
+&lt;p&gt;Technically, it’s O(1.6^n). &lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;p&gt;Let’s plant a tree! 🌲&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a5699072a9b66081806867d7ed53e5dd/2f950/jarednielsen-big-o-recursion-fibonacci-tree.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAwklEQVQoz9WS2wrEIAxE/f8frVB6r71qs5yApWhLWfZphWA0MxNHNcdxSBrp8N7Lvu/Z/h3XpELMkNd1lXmeZVkW6fte2rbVNUHt2uBRMIQgzjkpy1LGccxORs4eNTBg4WSCDIpVVSmBAbCu60ywaZoTs22bYuDGkxqSYRjU1jRNag2xruvUHmtsYxMMOSJRNDo7BelqrZWiKLQjawrk8T4hQ4o1xO/uXgUBczLi2vU6py/79MKn5bev8E2YXwX+T/ADB5tk8C2+gZwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursion fibonacci tree&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a5699072a9b66081806867d7ed53e5dd/b9e4f/jarednielsen-big-o-recursion-fibonacci-tree.png&quot;
+        srcset=&quot;/static/a5699072a9b66081806867d7ed53e5dd/cf440/jarednielsen-big-o-recursion-fibonacci-tree.png 148w,
+/static/a5699072a9b66081806867d7ed53e5dd/d2d38/jarednielsen-big-o-recursion-fibonacci-tree.png 295w,
+/static/a5699072a9b66081806867d7ed53e5dd/b9e4f/jarednielsen-big-o-recursion-fibonacci-tree.png 590w,
+/static/a5699072a9b66081806867d7ed53e5dd/f9b6a/jarednielsen-big-o-recursion-fibonacci-tree.png 885w,
+/static/a5699072a9b66081806867d7ed53e5dd/2d849/jarednielsen-big-o-recursion-fibonacci-tree.png 1180w,
+/static/a5699072a9b66081806867d7ed53e5dd/2f950/jarednielsen-big-o-recursion-fibonacci-tree.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;What do you see? &lt;/p&gt;
+&lt;p&gt;Unlike &lt;code&gt;fibonot()&lt;/code&gt; above, our tree is not balanced. &lt;/p&gt;
+&lt;p&gt;How many leaves are there on the tree? &lt;/p&gt;
+&lt;p&gt;We &lt;em&gt;could&lt;/em&gt; count them by hand, but we’re problem solvers. &lt;/p&gt;
+&lt;h3&gt;Math O’Clock 🧮🕒&lt;/h3&gt;
+&lt;p&gt;Fibonacci is also expressed using the following formula:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;F(n) = F(n -1) + F(n - 2)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s use this formula to solve for &lt;code&gt;x&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;x^n = x^(n -1) + x^(n - 2)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We first divide both sides by x^(n - 2)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;x^2 = x + 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Subtract 1 from both sides&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;x^2 - 1 = x&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Subtract x from both sides &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;x^2 - 1 - x = 0 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Where have we seen this, or something like it, before? &lt;/p&gt;
+&lt;p&gt;🤔&lt;/p&gt;
+&lt;p&gt;It’s a quadratic equation! &lt;/p&gt;
+&lt;p&gt;Quadratic equations follow the form:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ax^2 + bx + c = 0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We can use the quadratic formula to solve for x. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dc9e58a94002276906294022f426263e/d40c8/quadratic-formula.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 30.85%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsSAAALEgHS3X78AAAAjUlEQVQY06XRSwuCQBSG4TGnFAQLy7x1XUctggQ30ab//5d8Jz5lFkVEHzzMMAePx9GY3xPIVKy3/5oIc8SYIMQJNzQocESJXC96ZYFEe6s1xR53cY3OaHFBhjU6PFUb88ASNa4aP9UE7myDSo3cgys1c5NtcVB9zEzr8FmfkmmanfkjgXc31vsR7+qmB+K/BhKwslkiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;quadratic formula&quot;
+        title=&quot;&quot;
+        src=&quot;/static/dc9e58a94002276906294022f426263e/b9e4f/quadratic-formula.png&quot;
+        srcset=&quot;/static/dc9e58a94002276906294022f426263e/cf440/quadratic-formula.png 148w,
+/static/dc9e58a94002276906294022f426263e/d2d38/quadratic-formula.png 295w,
+/static/dc9e58a94002276906294022f426263e/b9e4f/quadratic-formula.png 590w,
+/static/dc9e58a94002276906294022f426263e/f9b6a/quadratic-formula.png 885w,
+/static/dc9e58a94002276906294022f426263e/2d849/quadratic-formula.png 1180w,
+/static/dc9e58a94002276906294022f426263e/d40c8/quadratic-formula.png 2000w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Let’s plug in our values:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- (-1) + sqrt((-1)^2 - 4 * 1 * (-1)) / 2 * 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;First, let’s simplify the numerator.&lt;/p&gt;
+&lt;p&gt;A negative negative is positive, so:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 + sqrt((-1)^2 + 4 * 1 * 1)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A negative integer raised to a power is positive, so:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;(-1)^2 = 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Leaving us with the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 + sqrt(1 + 4 * 1 * 1)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we simplify the terms of the numerator:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 + sqrt(5)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And simplify the terms of the denominator:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;x = (1 + sqrt(5)) / 2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Which is equal to ~1.6.&lt;/p&gt;
+&lt;p&gt;AKA φ&lt;/p&gt;
+&lt;p&gt;AKA &lt;a href=&quot;https://en.wikipedia.org/wiki/Phi&quot;&gt;Phi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AKA &lt;a href=&quot;https://en.wikipedia.org/wiki/Fibonacci_number#Binet&amp;#x27;s_formula&quot;&gt;Binet’s formula&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;AKA &lt;a href=&quot;https://en.wikipedia.org/wiki/Golden_ratio&quot;&gt;the Golden Ratio&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;☝️&lt;/p&gt;
+&lt;p&gt;“Hold up there, mister”, I hear you say. &lt;/p&gt;
+&lt;p&gt;“What about the other half of the quadratic formula?”&lt;/p&gt;
+&lt;p&gt;Good eye! 🕵️&lt;/p&gt;
+&lt;p&gt;You noticed that the quadratic formula results in two solutions, signified by the &lt;a href=&quot;https://en.wikipedia.org/wiki/Plus%E2%80%93minus_sign&quot;&gt;plus-minus sign&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Each solution charts the x-intercept of a parabola. &lt;/p&gt;
+&lt;p&gt;But we’re not interested in negative values, so we can stop with one solution.&lt;/p&gt;
+&lt;h2&gt;Space Complexity: The Final Frontier 🚀&lt;/h2&gt;
+&lt;p&gt;If the time complexity of our recursive Fibonacci is O(2^n), what’s the space complexity?&lt;/p&gt;
+&lt;p&gt;Tempted to say the same? &lt;/p&gt;
+&lt;p&gt;The branching diagram may not be helpful here because your intuition may be to count the function calls themselves.&lt;/p&gt;
+&lt;p&gt;Don’t count the leaves. &lt;/p&gt;
+&lt;p&gt;How deep is the tree?&lt;/p&gt;
+&lt;p&gt;📝 Space complexity is the amount of memory used by the algorithm. &lt;/p&gt;
+&lt;p&gt;When a function is called, it is added to the stack.&lt;/p&gt;
+&lt;p&gt;When a function returns, it is popped off the stack.&lt;/p&gt;
+&lt;p&gt;We’re not adding &lt;em&gt;all&lt;/em&gt; of the function calls to the stack at once. &lt;/p&gt;
+&lt;p&gt;We are only making &lt;code&gt;n&lt;/code&gt; calls at any given time as we move up and down branches.
+We proceed branch by branch, making our function calls until our base case is met, then we return and make our calls down the next branch. &lt;/p&gt;
+&lt;p&gt;So the space complexity is O(n).&lt;/p&gt;
+&lt;h2&gt;Big O Recursive Time Complexity&lt;/h2&gt;
+&lt;p&gt;In this tutorial, you’ll learn the fundamentals of calculating Big O recursive time complexity. If recursive runtimes are so bad, why is everyone so hot for recursion? We’ll answer that in a future article. Stay tuned.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Proof By Induction]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag…]]></description><link>http://jarednielsen.com/proof-induction/</link><guid isPermaLink="false">http://jarednielsen.com/proof-induction/</guid><pubDate>Fri, 06 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/92e97d14d73a7870ab289163dba67433/2f950/jarednielsen-proof-induction.png&quot;
