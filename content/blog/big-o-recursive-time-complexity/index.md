@@ -2,7 +2,7 @@
 title: 'Big O Recursive Time Complexity'
 date: '2020-03-12'
 description: 'In this tutorial, you’ll learn the fundamentals of calculating Big O recursive time complexity by calculating the sum of a Fibonacci sequence.'
-keywords: ['big o', 'recursion', 'fibonacci', 'recursive time complexity']
+keywords: ['big o', 'recursion', 'fibonacci', 'recursive time complexity', 'time complexity']
 
 ---
 
@@ -228,10 +228,6 @@ How many times does this happen?
 
 We call `fibonot()` until the value of `n`  is less than or equal to 0, or equal to 1, then we return without a call.
 
-Have we seen this, or something like it, before?
-
-🤔
-
 Every invocation of `fibonot()` creates two _branches_ by calling itself twice. 
 
 Our branches are creating a _tree_.
@@ -397,32 +393,8 @@ Each solution charts the x-intercept of a parabola.
 But we’re not interested in negative values, so we can stop with one solution.
 
 
-## Space Complexity: The Final Frontier 🚀
+## Big O Recursive Space Complexity: The Final Frontier 🚀
 
 If the time complexity of our recursive Fibonacci is O(2^n), what’s the space complexity?
 
-Tempted to say the same? 
-
-The branching diagram may not be helpful here because your intuition may be to count the function calls themselves.
-
-Don’t count the leaves. 
-
-How deep is the tree?
-
-📝 Space complexity is the amount of memory used by the algorithm. 
-
-When a function is called, it is added to the stack.
-
-When a function returns, it is popped off the stack.
-
-We’re not adding _all_ of the function calls to the stack at once. 
-
-We are only making `n` calls at any given time as we move up and down branches.
-We proceed branch by branch, making our function calls until our base case is met, then we return and make our calls down the next branch. 
-
-So the space complexity is O(n).
-
-
-## Big O Recursive Time Complexity
-
-In this tutorial, you’ll learn the fundamentals of calculating Big O recursive time complexity. If recursive runtimes are so bad, why is everyone so hot for recursion? We’ll answer that in a future article. Stay tuned.
+We'll answer that question in the next tutorial. Stay tuned.
