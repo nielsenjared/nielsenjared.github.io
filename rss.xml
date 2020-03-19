@@ -1,4 +1,1418 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 Mar 2020 12:45:24 GMT</lastBuildDate><item><title><![CDATA[Big O Recursive Time Complexity]]></title><description><![CDATA[After Big O, the second most terrifying computer science topic might be recursion. Don’t let the memes scare you, recursion is just…]]></description><link>http://jarednielsen.com/big-o-recursive-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-recursive-time-complexity/</guid><pubDate>Thu, 12 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 19 Mar 2020 19:58:36 GMT</lastBuildDate><item><title><![CDATA[Big O Recursive Space Complexity]]></title><description><![CDATA[Next to Big O, the second most terrifying computer science topic might be recursion. Don’t let the memes scare you, recursion is just…]]></description><link>http://jarednielsen.com/big-o-recursive-space-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-recursive-space-complexity/</guid><pubDate>Fri, 20 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/82d91a3fd2072cce2081085db2d9761c/2f950/jarednielsen-big-o-recursive-space-complexity.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAw0lEQVQoz62SSwvCMBCE+///jODFg/bixXrSXqpIER+gIFqfYN5jSExb0UgjBoYNu+zHLEyklIJXUr7Wsu/fiXwD99zPQLXKvgwAmgUuINZbA5H7YwmS5ytkcfJC34HCumBJCtLqgg1T0N4AYrWBuhPwLAft9CvXjYGjiQVqMI0T8OlcOy3AxxlIOw4AupN1lZcbFGUQ+bI6eXeAmC3CgNap0Nt6gXMrQqEYN8Jz3txhPTZOn+LUODb1uHxTSA5/1d+BD8kFYp+XSm4LAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity&quot;
+        title=&quot;&quot;
+        src=&quot;/static/82d91a3fd2072cce2081085db2d9761c/b9e4f/jarednielsen-big-o-recursive-space-complexity.png&quot;
+        srcset=&quot;/static/82d91a3fd2072cce2081085db2d9761c/cf440/jarednielsen-big-o-recursive-space-complexity.png 148w,
+/static/82d91a3fd2072cce2081085db2d9761c/d2d38/jarednielsen-big-o-recursive-space-complexity.png 295w,
+/static/82d91a3fd2072cce2081085db2d9761c/b9e4f/jarednielsen-big-o-recursive-space-complexity.png 590w,
+/static/82d91a3fd2072cce2081085db2d9761c/f9b6a/jarednielsen-big-o-recursive-space-complexity.png 885w,
+/static/82d91a3fd2072cce2081085db2d9761c/2d849/jarednielsen-big-o-recursive-space-complexity.png 1180w,
+/static/82d91a3fd2072cce2081085db2d9761c/2f950/jarednielsen-big-o-recursive-space-complexity.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Next to Big O, the second most terrifying computer science topic might be recursion. Don’t let the memes scare you, recursion is just recursion. It’s very easy to understand and you don’t need to be a 10X developer to do so. In this tutorial, you’ll learn the fundamentals of calculating Big O recursive space complexity by calculating the sum of a Fibonacci sequence. &lt;/p&gt;
+&lt;p&gt;If you’re just joining us, you may want to first read &lt;a href=&quot;https://jarednielsen.com/big-o-recursive-time-complexity/&quot;&gt;Big O Recursive Time Complexity&lt;/a&gt; or start at the beginning with &lt;a href=&quot;https://jarednielsen.com/big-o-notation/&quot;&gt;What is Big O Notation?&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;What Problem(s) Does Recursion Solve?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Recursion allows us to write functions that are compact and elegant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What Problem(s) Does Recursion Create?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Recursion can easily exceed the maximum size of the call stack. &lt;/li&gt;
+&lt;li&gt;Recursion can make the program harder to understand not only for your collaborators, but for your future self&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What is Recursion?&lt;/h2&gt;
+&lt;p&gt;In computer science, recursion occurs when a function calls itself within its declaration. &lt;/p&gt;
+&lt;p&gt;We use recursion to solve a large problem by breaking it down into smaller instances of the same problem.&lt;/p&gt;
+&lt;p&gt;To do that, we need to tell our function what the smallest instance looks like. &lt;/p&gt;
+&lt;p&gt;If you recall, with &lt;a href=&quot;https://jarednielsen.com/proof-induction/&quot;&gt;proof by induction&lt;/a&gt; we need to establish two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;base&lt;/li&gt;
+&lt;li&gt;induction&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Recursion is similar. We also need to establish a base case but rather than induction, we establish the &lt;em&gt;recursive case&lt;/em&gt;. &lt;/p&gt;
+&lt;p&gt;We use the recursive case to break the problem down into smaller instances. &lt;/p&gt;
+&lt;p&gt;We use the base case to return when there are no more problems to be solved. &lt;/p&gt;
+&lt;h2&gt;Time vs. Space Complexity&lt;/h2&gt;
+&lt;p&gt;We were primarily concerned with time complexity up to this point. &lt;/p&gt;
+&lt;p&gt;When working with recursion we also want to be mindful of space complexity. &lt;/p&gt;
+&lt;p&gt;Time complexity is how long our algorithms will take to complete their operations.&lt;/p&gt;
+&lt;p&gt;We’re not concerned with exact or specific times.&lt;/p&gt;
+&lt;p&gt;We only want to know how one time complexity compares to another time complexity. &lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;p&gt;We don’t know what we don’t know. &lt;/p&gt;
+&lt;p&gt;Our algorithms are not always going to run under the same conditions.&lt;/p&gt;
+&lt;p&gt;Getting a benchmark on my desktop will be different than getting one on your laptop even if we use the same data set. &lt;/p&gt;
+&lt;p&gt;Space complexity is how much memory our algorithms will use to complete their operations.&lt;/p&gt;
+&lt;p&gt;What are we talking about when we talk about &lt;em&gt;memory&lt;/em&gt;? &lt;/p&gt;
+&lt;p&gt;The call stack. &lt;/p&gt;
+&lt;p&gt;Remember this? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;loop&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you run &lt;code&gt;loop()&lt;/code&gt; from your browser console or Node, you’ll get an error. &lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;p&gt;Too much recursion! &lt;/p&gt;
+&lt;p&gt;We &lt;em&gt;constantly&lt;/em&gt; add &lt;code&gt;loop()&lt;/code&gt; to the call stack until we use up all of the allocated memory. &lt;/p&gt;
+&lt;p&gt;Then our process yells at us!&lt;/p&gt;
+&lt;p&gt;That’s called a stack overflow. &lt;/p&gt;
+&lt;p&gt;The classic metaphors for stacks are cafeteria trays or dishes. &lt;/p&gt;
+&lt;p&gt;In a cafeteria, clean trays are set out in a stack. &lt;/p&gt;
+&lt;p&gt;When you line up to get lunch, you take the tray off the top of the stack. &lt;/p&gt;
+&lt;p&gt;When dirty trays are washed and dried, they are added to the top of the stack.&lt;/p&gt;
+&lt;p&gt;Same with function calls.&lt;/p&gt;
+&lt;p&gt;When a function is called, it is added to the stack. When it returns it is taken off the stack. &lt;/p&gt;
+&lt;p&gt;In the application of &lt;em&gt;life&lt;/em&gt;, we need to make a living. &lt;/p&gt;
+&lt;p&gt;Let’s say I’m a part-time dishwasher. &lt;/p&gt;
+&lt;p&gt;I go to work, so my &lt;code&gt;work()&lt;/code&gt; function is pushed to the stack.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;The Stack&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;work()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;My &lt;code&gt;work()&lt;/code&gt; function calls three functions. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;punchIn()
+doDishes(tray)
+punchOut()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When I punch in, &lt;code&gt;punchIn()&lt;/code&gt; is pushed to the stack. &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;The Stack&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;punchIn()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;work()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;punchIn()&lt;/code&gt; immediately returns and is popped off the stack. &lt;/p&gt;
+&lt;p&gt;Then &lt;code&gt;doDishes()&lt;/code&gt; is pushed to the stack.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;The Stack&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;doDishes()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;work()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;My &lt;code&gt;doDishes()&lt;/code&gt; function also calls three functions:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;wash()
+rinse()
+dry()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;My &lt;code&gt;doDishes()&lt;/code&gt; function also accepts an argument, &lt;code&gt;tray&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;For every dish in &lt;code&gt;tray&lt;/code&gt;, I push, then pop &lt;code&gt;wash()&lt;/code&gt;, &lt;code&gt;rinse()&lt;/code&gt; and &lt;code&gt;dry()&lt;/code&gt; on and off the stack. &lt;/p&gt;
+&lt;p&gt;When &lt;code&gt;wash()&lt;/code&gt; is called, it is pushed to the stack. &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;The Stack&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;wash()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;doDishes()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;work()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;When &lt;code&gt;wash()&lt;/code&gt; returns, it is popped off the stack and then &lt;code&gt;rinse()&lt;/code&gt; is called and pushed to the stack.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;The Stack&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;rinse()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;doDishes()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;work()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;When &lt;code&gt;rinse()&lt;/code&gt; returns, it is popped off the stack and then &lt;code&gt;dry()&lt;/code&gt; is called and pushed to the stack.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;The Stack&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;dry()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;doDishes()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;work()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;When &lt;code&gt;dry()&lt;/code&gt; returns, it is popped off the stack and then &lt;code&gt;washed()&lt;/code&gt; is called again and pushed to the stack.&lt;/p&gt;
+&lt;p&gt;Wash. Rinse. Dry. Repeat.&lt;/p&gt;
+&lt;p&gt;When there are no more dishes to do, &lt;code&gt;doDishes()&lt;/code&gt; returns, and I punch out and push &lt;code&gt;punchOut()&lt;/code&gt; to the stack.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;The Stack&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;punchOut()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;work()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;It returns immediately and because work is done, &lt;code&gt;work()&lt;/code&gt; is popped off the stack. &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;The Stack&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;work()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Calculating Recursive Space Complexity&lt;/h2&gt;
+&lt;p&gt;In &lt;a href=&quot;https://jarednielsen.com/big-o-recursive-time-complexity/&quot;&gt;the previous tutorial&lt;/a&gt;, we calculated the time complexity of a naive implementation of the sum of the Fibonacci sequence. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;fibonaive&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonaive&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonaive&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If the time complexity of our recursive Fibonacci is O(2^n), what’s the space complexity?&lt;/p&gt;
+&lt;p&gt;Tempted to say the same? &lt;/p&gt;
+&lt;p&gt;We drew a tree to map out the function calls to help us understand time complexity. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a5699072a9b66081806867d7ed53e5dd/2f950/jarednielsen-big-o-recursion-fibonacci-tree.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAwklEQVQoz9WS2wrEIAxE/f8frVB6r71qs5yApWhLWfZphWA0MxNHNcdxSBrp8N7Lvu/Z/h3XpELMkNd1lXmeZVkW6fte2rbVNUHt2uBRMIQgzjkpy1LGccxORs4eNTBg4WSCDIpVVSmBAbCu60ywaZoTs22bYuDGkxqSYRjU1jRNag2xruvUHmtsYxMMOSJRNDo7BelqrZWiKLQjawrk8T4hQ4o1xO/uXgUBczLi2vU6py/79MKn5bev8E2YXwX+T/ADB5tk8C2+gZwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursion fibonacci tree&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a5699072a9b66081806867d7ed53e5dd/b9e4f/jarednielsen-big-o-recursion-fibonacci-tree.png&quot;
+        srcset=&quot;/static/a5699072a9b66081806867d7ed53e5dd/cf440/jarednielsen-big-o-recursion-fibonacci-tree.png 148w,
+/static/a5699072a9b66081806867d7ed53e5dd/d2d38/jarednielsen-big-o-recursion-fibonacci-tree.png 295w,
+/static/a5699072a9b66081806867d7ed53e5dd/b9e4f/jarednielsen-big-o-recursion-fibonacci-tree.png 590w,
+/static/a5699072a9b66081806867d7ed53e5dd/f9b6a/jarednielsen-big-o-recursion-fibonacci-tree.png 885w,
+/static/a5699072a9b66081806867d7ed53e5dd/2d849/jarednielsen-big-o-recursion-fibonacci-tree.png 1180w,
+/static/a5699072a9b66081806867d7ed53e5dd/2f950/jarednielsen-big-o-recursion-fibonacci-tree.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;The branching diagram may not be helpful here because your intuition may be to count the function calls themselves.&lt;/p&gt;
+&lt;p&gt;Don’t count the leaves. &lt;/p&gt;
+&lt;p&gt;How deep is the tree?&lt;/p&gt;
+&lt;p&gt;📝 Space complexity is the amount of memory used by the algorithm. &lt;/p&gt;
+&lt;p&gt;When a function is called, it is added to the stack.&lt;/p&gt;
+&lt;p&gt;When a function returns, it is popped off the stack.&lt;/p&gt;
+&lt;p&gt;We’re not adding &lt;em&gt;all&lt;/em&gt; of the function calls to the stack at once. &lt;/p&gt;
+&lt;p&gt;We are only making &lt;code&gt;n&lt;/code&gt; calls at any given time as we move up and down branches.&lt;/p&gt;
+&lt;p&gt;We proceed branch by branch, making our function calls until our base case is met, then we return and make our calls down the next branch. &lt;/p&gt;
+&lt;p&gt;For brevity and clarity in the graphics, I’ll refer to our &lt;code&gt;fibonaive()&lt;/code&gt; as &lt;code&gt;f()&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Let’s say we call &lt;code&gt;f()&lt;/code&gt; and pass it a value of &lt;code&gt;5&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a279291edef4c7201ef54e5383521be9/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-01.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdklEQVQoz9VR2wrAIAj1/393gw3mZTg6IZm99DThlNdjKamqjegCncXs4eaL4VxLI1FKct95mx6XuZUarwgBEcmkQ7OUEwnxMiQlu2GZ02xyxZ0IVPfMF0fUCf1g5g+zL6SFFUssZ4hgJeXyQDgr2AHtEvyP8AU8F2oxCgxHiAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 01&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a279291edef4c7201ef54e5383521be9/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-01.png&quot;
+        srcset=&quot;/static/a279291edef4c7201ef54e5383521be9/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-01.png 148w,
+/static/a279291edef4c7201ef54e5383521be9/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-01.png 295w,
+/static/a279291edef4c7201ef54e5383521be9/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-01.png 590w,
+/static/a279291edef4c7201ef54e5383521be9/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-01.png 885w,
+/static/a279291edef4c7201ef54e5383521be9/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-01.png 1180w,
+/static/a279291edef4c7201ef54e5383521be9/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-01.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;f(5)&lt;/code&gt; is now on the call stack. &lt;/p&gt;
+&lt;p&gt;For&lt;code&gt;f(5)&lt;/code&gt; to return, it must call itself twice.&lt;/p&gt;
+&lt;p&gt;But each of those returns must return. &lt;/p&gt;
+&lt;p&gt;All the way down.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;f(5)&lt;/code&gt; first calls &lt;code&gt;f(n - 1)&lt;/code&gt;, which is &lt;code&gt;f(4)&lt;/code&gt;. So &lt;code&gt;f(4)&lt;/code&gt; is pushed to the stack.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/daf9251f1caac3aa5c689784df84e0aa/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-02.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAlklEQVQoz9VR0Q4CIQzb//+rD0bjKTdaGQIOOOLDPUlSyNjaFSYA2IGcoZHclXkBrGviJogPKgFGfu3EFohnIK8P4rbR2nX1BUvB7CYkocudMMEYs7vm1NVGy60cVvu5iCVO+MT8OndCHcfFwkKsidV5dOf/sQnapqoZR08YwR93MiVLp3GifrKrCbcnj4QzkLMC/yf4BlMOaeAKuBcWAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 02&quot;
+        title=&quot;&quot;
+        src=&quot;/static/daf9251f1caac3aa5c689784df84e0aa/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-02.png&quot;
+        srcset=&quot;/static/daf9251f1caac3aa5c689784df84e0aa/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-02.png 148w,
+/static/daf9251f1caac3aa5c689784df84e0aa/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-02.png 295w,
+/static/daf9251f1caac3aa5c689784df84e0aa/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-02.png 590w,
+/static/daf9251f1caac3aa5c689784df84e0aa/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-02.png 885w,
+/static/daf9251f1caac3aa5c689784df84e0aa/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-02.png 1180w,
+/static/daf9251f1caac3aa5c689784df84e0aa/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-02.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;And &lt;code&gt;f(4)&lt;/code&gt; first calls &lt;code&gt;f(n - 1)&lt;/code&gt;, which is &lt;code&gt;f(3)&lt;/code&gt;. So &lt;code&gt;f(3)&lt;/code&gt; is pushed to the stack.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/de41527527eb3e4ad89508e82ccdea2f/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-03.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAoElEQVQoz9VRQQ6DMAzr//+6w8Q2GCT2mqzQNoB24LQiS20iOzZJANjBP/YQJRehH4Dr2XEzUhUqZLsb+b0Q40xMM3l/EcP4HdaQWXAsaNCM50TcBsIEVd1dN6xArXfm0O270GOLZlUn1Xyd0Bo5vpNdFEo1J7mpgdg6ibX2PxKsDkWEonIYIYI/amnXLFPjRtvNnm14ixwJV5CuCvyf4AfBJ2mnEEv2hwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 03&quot;
+        title=&quot;&quot;
+        src=&quot;/static/de41527527eb3e4ad89508e82ccdea2f/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-03.png&quot;
+        srcset=&quot;/static/de41527527eb3e4ad89508e82ccdea2f/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-03.png 148w,
+/static/de41527527eb3e4ad89508e82ccdea2f/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-03.png 295w,
+/static/de41527527eb3e4ad89508e82ccdea2f/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-03.png 590w,
+/static/de41527527eb3e4ad89508e82ccdea2f/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-03.png 885w,
+/static/de41527527eb3e4ad89508e82ccdea2f/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-03.png 1180w,
+/static/de41527527eb3e4ad89508e82ccdea2f/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-03.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;And &lt;code&gt;f(3)&lt;/code&gt; first calls &lt;code&gt;f(n - 1)&lt;/code&gt;, which is &lt;code&gt;f(2)&lt;/code&gt;. So &lt;code&gt;f(2)&lt;/code&gt; is pushed to the stack.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ab4fd6a83e87c0c2fe7ff13a248040c0/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-04.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAoElEQVQoz9VRyxKDIBDj//+102ktKuAmdbEoL9uDp8JkBpYkZMEAYIE4WWIRMiyMA2AajXaFaYx0rWIXiMkTsycfIzFMGycT84O+YYKdidtAqKFITLcnzXiiZ6cJlWzdavTaW9NaFB39FUap5Xpv4uo5kne7ESAFMU9S1/J3JHgkFOcpPjRt9cAfteYN0631j+Y/yy8Xm57gCsxVg/8zfANrFWl/VxmViwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 04&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ab4fd6a83e87c0c2fe7ff13a248040c0/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-04.png&quot;
+        srcset=&quot;/static/ab4fd6a83e87c0c2fe7ff13a248040c0/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-04.png 148w,
+/static/ab4fd6a83e87c0c2fe7ff13a248040c0/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-04.png 295w,
+/static/ab4fd6a83e87c0c2fe7ff13a248040c0/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-04.png 590w,
+/static/ab4fd6a83e87c0c2fe7ff13a248040c0/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-04.png 885w,
+/static/ab4fd6a83e87c0c2fe7ff13a248040c0/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-04.png 1180w,
+/static/ab4fd6a83e87c0c2fe7ff13a248040c0/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-04.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;And &lt;code&gt;f(2)&lt;/code&gt; first calls &lt;code&gt;f(n - 1)&lt;/code&gt;, which is &lt;code&gt;f(1)&lt;/code&gt;. So &lt;code&gt;f(1)&lt;/code&gt; is pushed to the stack. &lt;/p&gt;
+&lt;p&gt;What’s our space complexity? &lt;/p&gt;
+&lt;p&gt;O(n).&lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;p&gt;At this point, we are only using &lt;em&gt;n&lt;/em&gt; amount of memory.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a63c0ce7bbf8c9a9baf4e3c0c926aac7/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-05.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAApklEQVQoz9WR0Q6DIAxF+f8/3cOyGMdUlJ5RBgwRswefRnKjtr2HthoR4SDYa/OwbsQT8jnR85ovJIH0Xc3LikwOmR0ML2ScPjWVmaQ+MMvOyH1EFOh97K50WtV5zZ12qMV2CaBnGU1j0QRl1BpEuqD9NhEWxuFhdwXtsxej6jpfaHAbchvwYVftWD3xI2bijnT5OZmg5Y82p+3suMOO4YrMVcD/Ad8J+GlLlRzRIAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 05&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a63c0ce7bbf8c9a9baf4e3c0c926aac7/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-05.png&quot;
+        srcset=&quot;/static/a63c0ce7bbf8c9a9baf4e3c0c926aac7/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-05.png 148w,
+/static/a63c0ce7bbf8c9a9baf4e3c0c926aac7/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-05.png 295w,
+/static/a63c0ce7bbf8c9a9baf4e3c0c926aac7/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-05.png 590w,
+/static/a63c0ce7bbf8c9a9baf4e3c0c926aac7/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-05.png 885w,
+/static/a63c0ce7bbf8c9a9baf4e3c0c926aac7/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-05.png 1180w,
+/static/a63c0ce7bbf8c9a9baf4e3c0c926aac7/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-05.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;We just reached our base case. Our condition is met, so rather than making recursive calls, &lt;code&gt;f(1)&lt;/code&gt; returns 1 and is popped off the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/269640da12b766dfab54483c00b2dd40/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-06.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqUlEQVQoz9VR7QrDIAz0/d90jDJGsX7nZqw6tZYW9mvCYUwu50UFEeEAoIcPgPNIK9ZLYdYrviJZiGNuNg6kLEhHvDfQqnZO04yMuWCB1KBlBbFgCMldddrwAtdOHTJZmiRURuNcagLqqK0Q8gXjWaQojoOX7AjjPsuhcV0uFNZaLI8nnDYd4Qy4yAnvPTalECjsj5xF648Oa3R2eMOOfMPhFcSvAv8n+AG1R2kcjOdJRwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 06&quot;
+        title=&quot;&quot;
+        src=&quot;/static/269640da12b766dfab54483c00b2dd40/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-06.png&quot;
+        srcset=&quot;/static/269640da12b766dfab54483c00b2dd40/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-06.png 148w,
+/static/269640da12b766dfab54483c00b2dd40/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-06.png 295w,
+/static/269640da12b766dfab54483c00b2dd40/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-06.png 590w,
+/static/269640da12b766dfab54483c00b2dd40/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-06.png 885w,
+/static/269640da12b766dfab54483c00b2dd40/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-06.png 1180w,
+/static/269640da12b766dfab54483c00b2dd40/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-06.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Now &lt;code&gt;f(2)&lt;/code&gt; makes its second recursive call, &lt;code&gt;f(n - 2)&lt;/code&gt;, which is &lt;code&gt;f(0)&lt;/code&gt;. So &lt;code&gt;f(0)&lt;/code&gt; is pushed to the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e6b798cc14bae049f51a1c68db394305/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-07.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsElEQVQoz9VR7QrDIAz0/R90jMG+kGr9SG6J1GK1XWH/JhzR5HJe1DAzBgBbZAJSRllSr4W9XjMIadTmkMA+gmfB24GthzJaPhYcC5JgmsF3C1ZBouJuddpwSWuHDpU8hSJUR9NcaQLWUVshLBf0Z1N2Vly9XBmpEvq4l0Pjul5oYop4XG/Il6e4o+GdeuAkZ3LOcE7c+QDob9afbGOzemfDG27IlXji8hvMr43/K/gBZhdo8P4WsQgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 07&quot;
+        title=&quot;&quot;
+        src=&quot;/static/e6b798cc14bae049f51a1c68db394305/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-07.png&quot;
+        srcset=&quot;/static/e6b798cc14bae049f51a1c68db394305/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-07.png 148w,
+/static/e6b798cc14bae049f51a1c68db394305/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-07.png 295w,
+/static/e6b798cc14bae049f51a1c68db394305/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-07.png 590w,
+/static/e6b798cc14bae049f51a1c68db394305/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-07.png 885w,
+/static/e6b798cc14bae049f51a1c68db394305/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-07.png 1180w,
+/static/e6b798cc14bae049f51a1c68db394305/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-07.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Our base condition is met, so rather than making recursive calls, &lt;code&gt;f(0)&lt;/code&gt; returns 1 and is popped off the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f6dbc8d249f1bec5f1c3555330350606/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-08.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArElEQVQoz9WR4Q7CIAyEef8HNdNoolns5oB+UjImsi1G/0lyWWnvjoM5VWUFeEeI4AN5pXkZbGndysi+Jn54dJjQMeEmaD9gjJrPjH3DmHAf0UuPmmGMOd2StOJGm+0mNPJsVK5mvSyC5aq1EfMB7d7lqh/hKi+TilgnaXtUqcuBznvPuTtxPHRMqYbtx26Fez0XQkBEkEGwuhguf7RZbbLVG34r+AT3q/B/DZ8ZRmjF8pLQTQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 08&quot;
+        title=&quot;&quot;
+        src=&quot;/static/f6dbc8d249f1bec5f1c3555330350606/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-08.png&quot;
+        srcset=&quot;/static/f6dbc8d249f1bec5f1c3555330350606/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-08.png 148w,
+/static/f6dbc8d249f1bec5f1c3555330350606/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-08.png 295w,
+/static/f6dbc8d249f1bec5f1c3555330350606/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-08.png 590w,
+/static/f6dbc8d249f1bec5f1c3555330350606/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-08.png 885w,
+/static/f6dbc8d249f1bec5f1c3555330350606/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-08.png 1180w,
+/static/f6dbc8d249f1bec5f1c3555330350606/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-08.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Both of the recursive calls made by &lt;code&gt;f(2)&lt;/code&gt; returned, so &lt;code&gt;f(2)&lt;/code&gt; returns and is popped off the stack.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/34ae2f525c14975a9712ec833ba0dd1c/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-09.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAq0lEQVQoz9WR0QrDIAxF/f8PLX0ZrEi1nZozI7M427VsbwtcjEnuTYxGRNgB3hEThEixnK+JI67ZCemp5DUg/oEsGZNDrEcr2nouBVPGvCA3i6hgSmW6bdKmNmnuk2CxeS1C9WkaLSTYntoK8WrQ34061lqm+1SCtaA/j2I0U9eGJoTAOI4Mw4D6cLzsM7S7NDFGnHN471G/Cm4/2lk/2W6H3xKuYH4l/q/gE7/6aJuA/ID2AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 09&quot;
+        title=&quot;&quot;
+        src=&quot;/static/34ae2f525c14975a9712ec833ba0dd1c/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-09.png&quot;
+        srcset=&quot;/static/34ae2f525c14975a9712ec833ba0dd1c/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-09.png 148w,
+/static/34ae2f525c14975a9712ec833ba0dd1c/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-09.png 295w,
+/static/34ae2f525c14975a9712ec833ba0dd1c/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-09.png 590w,
+/static/34ae2f525c14975a9712ec833ba0dd1c/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-09.png 885w,
+/static/34ae2f525c14975a9712ec833ba0dd1c/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-09.png 1180w,
+/static/34ae2f525c14975a9712ec833ba0dd1c/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-09.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Now &lt;code&gt;f(3)&lt;/code&gt; makes its second recursive call, which is &lt;code&gt;f(n -2)&lt;/code&gt; or &lt;code&gt;f(1)&lt;/code&gt;. So &lt;code&gt;f(1)&lt;/code&gt; is pushed to the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1c0dfdd1501877a8fe1e0f16dacc5df0/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-10.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAt0lEQVQoz9WR3Q6CMAyF9/4PqtyYCJPxs62fdGEIAzR6Z5MTNtpzetoZEWEH2CJE8IEUUz4njrhmJ6RfJQ8e6Uakn1A7xHZoxbqeGeeCikeP3CyigjEmd4vTXBOFqLkzhynaIQmh480CiQTLqFqbhZgblHejB9tY6qYBN413b19isnVS/mPlOjc03nuqquJyveLHMS3/8KHeYL1HE0LAOUfnOvScuy4vWkTpbLfDbwmfYH4l/q/gE3ZlaHfEtlEjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 10&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1c0dfdd1501877a8fe1e0f16dacc5df0/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-10.png&quot;
+        srcset=&quot;/static/1c0dfdd1501877a8fe1e0f16dacc5df0/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-10.png 148w,
+/static/1c0dfdd1501877a8fe1e0f16dacc5df0/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-10.png 295w,
+/static/1c0dfdd1501877a8fe1e0f16dacc5df0/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-10.png 590w,
+/static/1c0dfdd1501877a8fe1e0f16dacc5df0/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-10.png 885w,
+/static/1c0dfdd1501877a8fe1e0f16dacc5df0/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-10.png 1180w,
+/static/1c0dfdd1501877a8fe1e0f16dacc5df0/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-10.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;We just reached our base case. Our condition is met, so rather than making recursive calls, &lt;code&gt;f(1)&lt;/code&gt; returns 1 and is popped off the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3c5e0a7d9d1da4e3251b88f0d0a17ab5/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-11.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtklEQVQoz9WRUROCIBCE+f9/VF8aSwtS4L44DMfQcuqtm1nkuL29FYyIsAG8IkTwgRypPgP2es1GSL/aPHrETcg94WKRwaGMNZ8jwUy43pHTgKhgjNnd4rRwoxC19k4wx23MQoQ51zU3wfKryi1CPAfUudFN3/cMCc46unOXi4W4dlKfsXJdBhrvPW3b0jQN4zSh+e5DfcD6Lk0IAWttcmfRfZm6vGgVtbPNHX7bcATza+P/Cj4AJjVoUaomHioAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 11&quot;
+        title=&quot;&quot;
+        src=&quot;/static/3c5e0a7d9d1da4e3251b88f0d0a17ab5/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-11.png&quot;
+        srcset=&quot;/static/3c5e0a7d9d1da4e3251b88f0d0a17ab5/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-11.png 148w,
+/static/3c5e0a7d9d1da4e3251b88f0d0a17ab5/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-11.png 295w,
+/static/3c5e0a7d9d1da4e3251b88f0d0a17ab5/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-11.png 590w,
+/static/3c5e0a7d9d1da4e3251b88f0d0a17ab5/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-11.png 885w,
+/static/3c5e0a7d9d1da4e3251b88f0d0a17ab5/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-11.png 1180w,
+/static/3c5e0a7d9d1da4e3251b88f0d0a17ab5/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-11.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Both of the recursive calls made by &lt;code&gt;f(3)&lt;/code&gt; returned, so &lt;code&gt;f(3)&lt;/code&gt; returns and is popped off the stack.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/31bcd222cae69387f64bd3cda7267dff/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-12.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAs0lEQVQoz9VR2w6DIAzl/39UXkgcTnRAe0ZBDEN3y57W5CRAey4NiplxAPCISECIyJX6BcAZV9VDZqIocCLzLYAXD14TLg48LRCrloxXggJiwnpNZDMVQaKcbk9aZynNSu+ZoNQ8zzDGIMZYgxYSsK+aTTchbAb9XcnBWpvhnMM4jrlZB9sk/Rua1NVQhRCgtcYwDPDeQ+6nH/UhlKwoyQT7uo17X32yg+C3hLcJf1nvPwXvpshoHdm6up8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 12&quot;
+        title=&quot;&quot;
+        src=&quot;/static/31bcd222cae69387f64bd3cda7267dff/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-12.png&quot;
+        srcset=&quot;/static/31bcd222cae69387f64bd3cda7267dff/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-12.png 148w,
+/static/31bcd222cae69387f64bd3cda7267dff/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-12.png 295w,
+/static/31bcd222cae69387f64bd3cda7267dff/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-12.png 590w,
+/static/31bcd222cae69387f64bd3cda7267dff/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-12.png 885w,
+/static/31bcd222cae69387f64bd3cda7267dff/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-12.png 1180w,
+/static/31bcd222cae69387f64bd3cda7267dff/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-12.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Now &lt;code&gt;f(4)&lt;/code&gt; makes its second recursive call, which is &lt;code&gt;f(n -2)&lt;/code&gt; or &lt;code&gt;f(2)&lt;/code&gt;. So &lt;code&gt;f(2)&lt;/code&gt; is pushed to the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a2af1deba20d8b756466b063c4fb9092/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-13.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAuUlEQVQoz9VR0Q7CMAjs///olpjFWW0328JZmETrNo2+SXJJCRzcUcfMWAFoUQjIBRq1btjiOntoE5YJXMl8zeApgeeKUwSfJ8iqZzLeDRQQEeZQyQcPXGZVpjCl1ktL765CiRAChmFAKXdrovIYgPSwakuNs5U7eXjvFTFGjOOoRVIlBCrUONga8mzf5ZzR9z26rkNKCZI3n7Nz/L1bOrEoygRmd2myH0UTr8pWNwS+I3yC+5X4vwNvMdtn74B7oV0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 13&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a2af1deba20d8b756466b063c4fb9092/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-13.png&quot;
+        srcset=&quot;/static/a2af1deba20d8b756466b063c4fb9092/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-13.png 148w,
+/static/a2af1deba20d8b756466b063c4fb9092/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-13.png 295w,
+/static/a2af1deba20d8b756466b063c4fb9092/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-13.png 590w,
+/static/a2af1deba20d8b756466b063c4fb9092/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-13.png 885w,
+/static/a2af1deba20d8b756466b063c4fb9092/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-13.png 1180w,
+/static/a2af1deba20d8b756466b063c4fb9092/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-13.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;And &lt;code&gt;f(2)&lt;/code&gt; first calls &lt;code&gt;f(n - 1)&lt;/code&gt;, which is &lt;code&gt;f(1)&lt;/code&gt;. So &lt;code&gt;f(1)&lt;/code&gt; is pushed to the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/48e94950b002d54cb816586400c3f7d8/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-14.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAwklEQVQoz9VR7Q6CMAzc+78oJAaDkw3cR892WJ0TJPGfTS7poHe76wwR4QPAO1IGYkIp/q/Y4hptyhBWBWIy3SJoDqCFcfGg6wy5qibjm6Ag54zFMflkgWkpzgrUqc7ynMzuOpRyzmEYBqS0RitC5wkIr6h6qXK2zkYaa22B9x7jOAKZ1pgcuXaifStSxzcxRvR9j67rEEKAnMsQO6Odxbeod2kkojibGc+4+tLPF30sUb/V+2x3iKaOCEcwvxL/V/AO2M9nwwMFfjYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 14&quot;
+        title=&quot;&quot;
+        src=&quot;/static/48e94950b002d54cb816586400c3f7d8/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-14.png&quot;
+        srcset=&quot;/static/48e94950b002d54cb816586400c3f7d8/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-14.png 148w,
+/static/48e94950b002d54cb816586400c3f7d8/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-14.png 295w,
+/static/48e94950b002d54cb816586400c3f7d8/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-14.png 590w,
+/static/48e94950b002d54cb816586400c3f7d8/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-14.png 885w,
+/static/48e94950b002d54cb816586400c3f7d8/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-14.png 1180w,
+/static/48e94950b002d54cb816586400c3f7d8/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-14.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;We just reached our base case. Our condition is met, so rather than making recursive calls, &lt;code&gt;f(1)&lt;/code&gt; returns 1 and is popped off the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ac85a6defe7fc9ece1e4428f09b27952/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-15.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAvklEQVQoz9VR7QrDIAz0/V+0hdFhXbXOj9yMbZjr+gH7t8BBJLnzThUR4QvAJ1IGxYRaZS7Y4ypp6hIWBSbTM4LmAPIFowM9ZvBVLRlngoycM7wt5JsBTR5gZwxxKrtlj3cPHXJZazEMA1Jao6WycJ+A8I4qlwpn76y4McZUOOegta4O9KjhZ1972ohtRdr4KsaIvu/RdR1CCOAzD7ing4c/g+KI7Iwhcan5oOVH176ZHQpiU1eES4e/Ev9X8AWThGeiiE+7rgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 15&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ac85a6defe7fc9ece1e4428f09b27952/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-15.png&quot;
+        srcset=&quot;/static/ac85a6defe7fc9ece1e4428f09b27952/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-15.png 148w,
+/static/ac85a6defe7fc9ece1e4428f09b27952/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-15.png 295w,
+/static/ac85a6defe7fc9ece1e4428f09b27952/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-15.png 590w,
+/static/ac85a6defe7fc9ece1e4428f09b27952/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-15.png 885w,
+/static/ac85a6defe7fc9ece1e4428f09b27952/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-15.png 1180w,
+/static/ac85a6defe7fc9ece1e4428f09b27952/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-15.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Now &lt;code&gt;f(2)&lt;/code&gt; makes its second recursive call, &lt;code&gt;f(n - 2)&lt;/code&gt;, which is &lt;code&gt;f(0)&lt;/code&gt;. So &lt;code&gt;f(0)&lt;/code&gt; is pushed to the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a1cdc8fb2f92152e466b17fbbbbee903/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-16.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAxUlEQVQoz9VR7Q6CMAzc+78oJAYzJhtzHz3XQXUiQuI/m1zSZnftXaaICB8A3pEyKCbUKu+CPa2SppKwbGAx3SNoDiBfMDrQbQafasU4WsjIOcPbIr4Y0OQBdsYQ18ItPOZ+dchlrcUwDEhpjZYL4ToB7HaNKkdFszcrbowxFc45aK2rAz1q+Lm41G6JzjdW8XZJG1/FGNH3PbquQwgBPPMD95UosdvIB1AckZ0xJC49P+j142gc4WC5wqbOBKcOfxX+78IHT61ngXqwlDwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 16&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a1cdc8fb2f92152e466b17fbbbbee903/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-16.png&quot;
+        srcset=&quot;/static/a1cdc8fb2f92152e466b17fbbbbee903/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-16.png 148w,
+/static/a1cdc8fb2f92152e466b17fbbbbee903/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-16.png 295w,
+/static/a1cdc8fb2f92152e466b17fbbbbee903/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-16.png 590w,
+/static/a1cdc8fb2f92152e466b17fbbbbee903/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-16.png 885w,
+/static/a1cdc8fb2f92152e466b17fbbbbee903/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-16.png 1180w,
+/static/a1cdc8fb2f92152e466b17fbbbbee903/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-16.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Our base condition is met, so rather than making recursive calls, &lt;code&gt;f(0)&lt;/code&gt; returns 1 and is popped off the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2fb8f8814ef2a810ae30a94fb630335f/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-17.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAxklEQVQoz81R7Q6DIBDj/V9Uk8UFmHyMj+s4Jk6dzizZj5E03EnbKyKICG8A1kgZFBPqKucNe1rRikrC04HFdI8gF0C+QFnQzYFHEX2GWDY5Z3hTxBcNGj3AyRgtdeMWHnMPDXkZYzAMA1KarpYL4ToCMU83fQ1tmr1ecKG1rrDWQkpZE0gl4Z2Dkgqu7HXGJN6arBLGGNH3PbquQwgB3PMB17zHFOfUZ/+vGjKZkzGWwvlFgdW3o2SzITbrTPDVK/8C/2/4AARFZ1wqcbdZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 17&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2fb8f8814ef2a810ae30a94fb630335f/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-17.png&quot;
+        srcset=&quot;/static/2fb8f8814ef2a810ae30a94fb630335f/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-17.png 148w,
+/static/2fb8f8814ef2a810ae30a94fb630335f/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-17.png 295w,
+/static/2fb8f8814ef2a810ae30a94fb630335f/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-17.png 590w,
+/static/2fb8f8814ef2a810ae30a94fb630335f/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-17.png 885w,
+/static/2fb8f8814ef2a810ae30a94fb630335f/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-17.png 1180w,
+/static/2fb8f8814ef2a810ae30a94fb630335f/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-17.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Both of the recursive calls made by &lt;code&gt;f(2)&lt;/code&gt; returned, so &lt;code&gt;f(2)&lt;/code&gt; returns and is popped off the stack.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/26bd90d561760c6069840221d331f408/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-18.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAvElEQVQoz82RbQ+CMAyE+f9/FBIDgek22UvP3XBxIARN/GCTJ22hvd2gERG8AawJEeIDcuzNVzSl4OCykODynLAOck9MBnK14FHyqSCJMWLWBuGi4G4Gkc5IcV3NkUNBhtYafd8jhOVqIQYMwwDn/fOmL7Gys9c3LJRSGWMMxnGEpKFpmmCtzT0zoyxvRVYOfXLQdR3atoVzDuz5gjUzHRfXZ98vC3KYzki9WOe9Z4eC2MTZwld/+Rf8v+ADnIRnMs4epsAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 18&quot;
+        title=&quot;&quot;
+        src=&quot;/static/26bd90d561760c6069840221d331f408/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-18.png&quot;
+        srcset=&quot;/static/26bd90d561760c6069840221d331f408/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-18.png 148w,
+/static/26bd90d561760c6069840221d331f408/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-18.png 295w,
+/static/26bd90d561760c6069840221d331f408/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-18.png 590w,
+/static/26bd90d561760c6069840221d331f408/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-18.png 885w,
+/static/26bd90d561760c6069840221d331f408/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-18.png 1180w,
+/static/26bd90d561760c6069840221d331f408/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-18.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Both of the recursive calls made by &lt;code&gt;f(4)&lt;/code&gt; returned, so &lt;code&gt;f(4)&lt;/code&gt; returns and is popped off the stack.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/27c2eb60dab3f2b44fd2fdee4cdb352a/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-19.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsUlEQVQoz82S6wqDMAyFff8XVRDFdra117OdgNB1ihP2Y4FD0jb5mtB2pRS0+rCUUWKS8Ci/VteC6GOM8N7DOQe7OURlgMeGF/YeMOcMYwzGccS6rkgpiXJ12Z5HnQJpBE3TJAAaC+Z5lm5bWD1Nu+4YaK1F1losyyJJSikZmWv6/ZIjyFuH7GAYBvR9jxCCdMQDxvT72N88iACZzM6ourD2R3unwPaHXBXceuVf6P+BT7sOZuQDUXnRAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 19&quot;
+        title=&quot;&quot;
+        src=&quot;/static/27c2eb60dab3f2b44fd2fdee4cdb352a/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-19.png&quot;
+        srcset=&quot;/static/27c2eb60dab3f2b44fd2fdee4cdb352a/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-19.png 148w,
+/static/27c2eb60dab3f2b44fd2fdee4cdb352a/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-19.png 295w,
+/static/27c2eb60dab3f2b44fd2fdee4cdb352a/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-19.png 590w,
+/static/27c2eb60dab3f2b44fd2fdee4cdb352a/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-19.png 885w,
+/static/27c2eb60dab3f2b44fd2fdee4cdb352a/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-19.png 1180w,
+/static/27c2eb60dab3f2b44fd2fdee4cdb352a/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-19.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Now &lt;code&gt;f(5)&lt;/code&gt; makes its second recursive call, &lt;code&gt;f(n - 2)&lt;/code&gt;, which is &lt;code&gt;f(3)&lt;/code&gt;. So &lt;code&gt;f(3)&lt;/code&gt; is pushed to the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/94041d5b5b45bf2c78714d48df63881f/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-20.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAy0lEQVQoz9WS4Q6DIAyEff8X1cRokCAMQW5c1QWVxWT/RtK0aO/jKjYpJVzjtuKKFHLk8hQVbXMFMYcQ4L2Hcw725RD0DCiL5JYtfMgHRDbfwCfguq6Y5xl938MYgxgjYhZu3rKQTnOPAAez5RqQi6BhGATCRfg4juL2cJ725+XIsi+ma1horSWstVBKSdM0TTIy98zHISdI7RvSQdd1aNsWy7KII75gzSxj765rl3ADspnOGKWwzJ/6uLz0Hd5c/5AnwaPDX4X/C3wD+Flmm7BWepoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 20&quot;
+        title=&quot;&quot;
+        src=&quot;/static/94041d5b5b45bf2c78714d48df63881f/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-20.png&quot;
+        srcset=&quot;/static/94041d5b5b45bf2c78714d48df63881f/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-20.png 148w,
+/static/94041d5b5b45bf2c78714d48df63881f/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-20.png 295w,
+/static/94041d5b5b45bf2c78714d48df63881f/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-20.png 590w,
+/static/94041d5b5b45bf2c78714d48df63881f/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-20.png 885w,
+/static/94041d5b5b45bf2c78714d48df63881f/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-20.png 1180w,
+/static/94041d5b5b45bf2c78714d48df63881f/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-20.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;And &lt;code&gt;f(3)&lt;/code&gt; first calls &lt;code&gt;f(n - 1)&lt;/code&gt;, which is &lt;code&gt;f(2)&lt;/code&gt;. So &lt;code&gt;f(2)&lt;/code&gt; is pushed to the stack.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/edfd0d17ab8e68353a317c4dfbf47c99/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-21.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA0UlEQVQoz9WSSw6DMAxEuf9FQaJQoCSBJHiaMRTxU1l0VUsjG2G/jAOZiOCoU8QJEpJSudPFbHYEMYcQMI4jnHOwg0NoDdBYiPOzxpAOiGw+gXfAaZpgjEFZluj7HjFGxDQ4e4NChG7NAHm8ID5cAxkEVVWlEAbhdV2rW4Vx1Cfg08x5AbFvu13Gous6lbUWTdNoU9u2ujKfmT+HSNIKubpDOiiKAnmew3uvjviCNbOuvbiWizs7AdlMZ9R2cJvX+vPxvgGPf8jdwJ0y+WH4P4FvhcVmaysoa9AAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 21&quot;
+        title=&quot;&quot;
+        src=&quot;/static/edfd0d17ab8e68353a317c4dfbf47c99/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-21.png&quot;
+        srcset=&quot;/static/edfd0d17ab8e68353a317c4dfbf47c99/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-21.png 148w,
+/static/edfd0d17ab8e68353a317c4dfbf47c99/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-21.png 295w,
+/static/edfd0d17ab8e68353a317c4dfbf47c99/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-21.png 590w,
+/static/edfd0d17ab8e68353a317c4dfbf47c99/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-21.png 885w,
+/static/edfd0d17ab8e68353a317c4dfbf47c99/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-21.png 1180w,
+/static/edfd0d17ab8e68353a317c4dfbf47c99/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-21.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;And &lt;code&gt;f(2)&lt;/code&gt; first calls &lt;code&gt;f(n - 1)&lt;/code&gt;, which is &lt;code&gt;f(1)&lt;/code&gt;. So &lt;code&gt;f(1)&lt;/code&gt; is pushed to the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6d817200d57357d02b800079990c510e/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2klEQVQoz9WSyQ6DMAxE+f8fBYlCgUJCNk89aUFsag891dIojrBfxgmFiOCoU8QECSpNd7roLY4griEEOOdgrYWZLUI/AZ2BWP+SC3pAZPEJvAOmlDBNE+q6xjiOiDEiauPLGzJE6HacIbcHxIdrIIOgpmkyhJG0sW3b7BbLiATe1a2PK4gmttMVTIZhyDLGoOu6XNT3fR6ZezvPgFMIx9aDkrwhV3dIB1VVoSxLeO+zI35gzjXqPrtOm4e5AK1AFtMZtYy7HWGJ7cviE/D4h3xr+KZCfmj+T+ATQP5mSTBUXdoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 22&quot;
+        title=&quot;&quot;
+        src=&quot;/static/6d817200d57357d02b800079990c510e/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-22.png&quot;
+        srcset=&quot;/static/6d817200d57357d02b800079990c510e/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-22.png 148w,
+/static/6d817200d57357d02b800079990c510e/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-22.png 295w,
+/static/6d817200d57357d02b800079990c510e/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-22.png 590w,
+/static/6d817200d57357d02b800079990c510e/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-22.png 885w,
+/static/6d817200d57357d02b800079990c510e/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-22.png 1180w,
+/static/6d817200d57357d02b800079990c510e/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-22.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;We just reached our base case. Our condition is met, so rather than making recursive calls, &lt;code&gt;f(1)&lt;/code&gt; returns 1 and is popped off the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cfd98ce7ad07b93f032b8070aa30ff3b/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-23.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2ElEQVQoz9VRa2+DMBDj//9RkBg0YZCEPM6Lbysqj6qq+mmWrFzE2ecLjYjgyBNygaTKWu54oW2ORjxTSljXFd57uOCR7AIYB/Hxl2uqAzKbT8Y7w1IKlmVB3/eY5xk5Z+QqZDYV1lqYdg6Qr29ITNeGBI2GYVATolThOI6adgPXvtW0MW9GDPG4XcNimialcw7GGG2y1urKvIcQ9AmssTqoyJ/J1RsyQdd1aNsWMUZNxA+seeZ6Z2oOuae9+hmbIZuZjLyv+7jCEc+SbYbvCl6xkQ/E/9PwBwbBZix3jJhPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 23&quot;
+        title=&quot;&quot;
+        src=&quot;/static/cfd98ce7ad07b93f032b8070aa30ff3b/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-23.png&quot;
+        srcset=&quot;/static/cfd98ce7ad07b93f032b8070aa30ff3b/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-23.png 148w,
+/static/cfd98ce7ad07b93f032b8070aa30ff3b/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-23.png 295w,
+/static/cfd98ce7ad07b93f032b8070aa30ff3b/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-23.png 590w,
+/static/cfd98ce7ad07b93f032b8070aa30ff3b/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-23.png 885w,
+/static/cfd98ce7ad07b93f032b8070aa30ff3b/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-23.png 1180w,
+/static/cfd98ce7ad07b93f032b8070aa30ff3b/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-23.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Now &lt;code&gt;f(2)&lt;/code&gt; makes its second recursive call, &lt;code&gt;f(n - 2)&lt;/code&gt;, which is &lt;code&gt;f(0)&lt;/code&gt;. So &lt;code&gt;f(0)&lt;/code&gt; is pushed to the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/99eaa4d95dbe352fdfe563a1ff078a5e/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-24.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3ElEQVQoz9WR666DIBCEef8X1cRq1CK3BabO2jYtbU9O0l/dZAIIM3wrptaKVi+VC6pkcOdJb7ymDeIoIogxwnsPFzxk2YDZofp0KIpeAPrwR2ApBdu2YRgGWGuRc0bejUVtOChJawPq6Yya5IXU3MgYNI6jhrDKbpymSWnvJXvYZI/QaxAhHrsznKzrqnLOYZ5nPbQsi7bMdQhBfwG/1ZCAJvSJkAR936PrOqSUlIgbnHPM+5rUvERpaYzy9kE0kIdJRt3afWyhLTV+eOF7y60BHw7/R6Z+Yf7NwAu0z2YDmVkpHwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 24&quot;
+        title=&quot;&quot;
+        src=&quot;/static/99eaa4d95dbe352fdfe563a1ff078a5e/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-24.png&quot;
+        srcset=&quot;/static/99eaa4d95dbe352fdfe563a1ff078a5e/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-24.png 148w,
+/static/99eaa4d95dbe352fdfe563a1ff078a5e/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-24.png 295w,
+/static/99eaa4d95dbe352fdfe563a1ff078a5e/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-24.png 590w,
+/static/99eaa4d95dbe352fdfe563a1ff078a5e/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-24.png 885w,
+/static/99eaa4d95dbe352fdfe563a1ff078a5e/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-24.png 1180w,
+/static/99eaa4d95dbe352fdfe563a1ff078a5e/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-24.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Our base condition is met, so rather than making recursive calls, &lt;code&gt;f(0)&lt;/code&gt; returns 1 and is popped off the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/05bc16aa7887ec9f01000876015a1d76/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-25.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3UlEQVQoz9VR7W6DMAzM+78oSBQELOQ7uebMxrJCq0r9NUsnO7F9PieqlIJHnCxllJjAzB9c9KpHIvoYI7z3sNbCOIu4bMBsUGzY4aMMAPvwgjDnjG3bMAwDtNZIKSHVxixt2EmoVjuU2xdKiCel6kcZicZxFBJarn6aJlF7WKxkk66kv9tQRLudYrCuq8AYg3mepWhZFlmZZ+ecPMFa73yNOSh/Dz69IRX0fY+u6xBCEEVMMKZP9UzVHHLk/J7D1aewmMqI1ExtfWvH3QXZsfKp4UnxO1Dlg+b/SXgHefxl5XlEFcIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 25&quot;
+        title=&quot;&quot;
+        src=&quot;/static/05bc16aa7887ec9f01000876015a1d76/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-25.png&quot;
+        srcset=&quot;/static/05bc16aa7887ec9f01000876015a1d76/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-25.png 148w,
+/static/05bc16aa7887ec9f01000876015a1d76/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-25.png 295w,
+/static/05bc16aa7887ec9f01000876015a1d76/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-25.png 590w,
+/static/05bc16aa7887ec9f01000876015a1d76/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-25.png 885w,
+/static/05bc16aa7887ec9f01000876015a1d76/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-25.png 1180w,
+/static/05bc16aa7887ec9f01000876015a1d76/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-25.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Both of the recursive calls made by &lt;code&gt;f(2)&lt;/code&gt; returned, so &lt;code&gt;f(2)&lt;/code&gt; returns and is popped off the stack.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4bff8e52b6e527e1b90eede4b18f8c80/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-26.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2ElEQVQoz9WR6wqDMAyF+/4vquAUFW3tJT3zxAn1sjHYrwVC0yY5+dqanDPOfrEkyDGBmYPf9JqzENcYI7z3cM7BLg5xmIHeIrsA0H0Comx9+CAoIpjnGU3TYJompJSQVjLRNmyUK62fLOQxIod4ITU7GYXatlURmqxr13VKuxtjPXvV7BDl7QyDcRzVrbXo+16LhmHQK3O/LIs+Ac8YU1QK0QMhp9Z1jaqqEEJQCiYY7+9Jag5RWuZWcaW6+xQWk4yeiqnlWlqZu/3l24Y3xd+4yT80/6fgExTNZbmToh43AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 26&quot;
+        title=&quot;&quot;
+        src=&quot;/static/4bff8e52b6e527e1b90eede4b18f8c80/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-26.png&quot;
+        srcset=&quot;/static/4bff8e52b6e527e1b90eede4b18f8c80/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-26.png 148w,
+/static/4bff8e52b6e527e1b90eede4b18f8c80/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-26.png 295w,
+/static/4bff8e52b6e527e1b90eede4b18f8c80/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-26.png 590w,
+/static/4bff8e52b6e527e1b90eede4b18f8c80/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-26.png 885w,
+/static/4bff8e52b6e527e1b90eede4b18f8c80/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-26.png 1180w,
+/static/4bff8e52b6e527e1b90eede4b18f8c80/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-26.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Now &lt;code&gt;f(3)&lt;/code&gt; makes its second recursive call, which is &lt;code&gt;f(n -2)&lt;/code&gt; or &lt;code&gt;f(1)&lt;/code&gt;. So &lt;code&gt;f(1)&lt;/code&gt; is pushed to the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/203b95a31c1ee4b78d8787a2f79d049e/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-27.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA4UlEQVQoz9VR7YqEMAzs+7+ogigq/bRNZzvhetfbdeHgfm1kSGySyaQ1tVY848WKoOYCZn7hptc8E9HnnJFSQggBPgbkwwG7Rw0XQKQC5DZEP7wnFBE457AsC6y1KKWgNHLpjVTZ1CbrIcsJ2IgqNwppJFrXVUlo0vy2baq2G2M9+6qpVxuwWVSXvpUaJs7zVHjvse+7Kj2OQ1fmf4xRr4BnjEkqnZTKRH4IOXWeZ0zThOu6VAUTjPt9UjWHqFrmGrlu1lcd7tGwmMqIMkwd/Whj7vaVbxveFP8Fpv6j+TMJH5gLZYQXKrgjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 27&quot;
+        title=&quot;&quot;
+        src=&quot;/static/203b95a31c1ee4b78d8787a2f79d049e/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-27.png&quot;
+        srcset=&quot;/static/203b95a31c1ee4b78d8787a2f79d049e/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-27.png 148w,
+/static/203b95a31c1ee4b78d8787a2f79d049e/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-27.png 295w,
+/static/203b95a31c1ee4b78d8787a2f79d049e/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-27.png 590w,
+/static/203b95a31c1ee4b78d8787a2f79d049e/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-27.png 885w,
+/static/203b95a31c1ee4b78d8787a2f79d049e/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-27.png 1180w,
+/static/203b95a31c1ee4b78d8787a2f79d049e/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-27.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;We just reached our base case. Our condition is met, so rather than making recursive calls, &lt;code&gt;f(1)&lt;/code&gt; returns 1 and is popped off the stack. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6edaceca7a6319ffdcd463e45b004f71/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-28.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2UlEQVQoz9WR2w6EIAxE+f8f1cRo1AiIFGaZeomr7pNP26RpufR0KCbnjKvfTBJyFPDkyx9qzRXEGGNECAHee7jZIw4W6B2yXwB6ECCmo99PYEoJ1lo0TYNpmiAikAIv+lZFVFnUhslBmnGNpQZXII2gtm0VQksldl2nandjrnvbnWVZdM3aXalhMo6junMOfd+r0mEY9Mlcz/OsI+Aec0LSBt1fdgDZta5rVFWlHbnmAfN9nlTNIlVb9gg/5n6avQJ5mcrocup6jmfLF8Dtl58K3rh5C/g/4Acn62VTK0KDPgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 28&quot;
+        title=&quot;&quot;
+        src=&quot;/static/6edaceca7a6319ffdcd463e45b004f71/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-28.png&quot;
+        srcset=&quot;/static/6edaceca7a6319ffdcd463e45b004f71/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-28.png 148w,
+/static/6edaceca7a6319ffdcd463e45b004f71/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-28.png 295w,
+/static/6edaceca7a6319ffdcd463e45b004f71/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-28.png 590w,
+/static/6edaceca7a6319ffdcd463e45b004f71/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-28.png 885w,
+/static/6edaceca7a6319ffdcd463e45b004f71/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-28.png 1180w,
+/static/6edaceca7a6319ffdcd463e45b004f71/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-28.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Both of the recursive calls made by &lt;code&gt;f(3)&lt;/code&gt; returned, so &lt;code&gt;f(3)&lt;/code&gt; returns and is popped off the stack.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c90199b0069139dc894f2d074f225177/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-29.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyklEQVQoz9VS2QqDMBDM//+ogiiJ5NIcU2ch4lVK6VMDy54zu5tE1VpxldvJBUjlFn7CqisRdUoJy7IghAAfA5JxSNrCbz5jzLHmifhEWEqBcw7DMMBai5wz8gYsqCIkYYy5VkPMjZCHROM4CkC23PQ0TadJaDPWatZ1FZ/YNqmiMc+ziPceWmvpaoyR9ejHGGVNxmgfSdtmOyG79n2PruukI30maLf7JJigliP5090LIYs5GeXY9aivL/vuhfeVP32Fb0T9SvB/hC86wWT8CY7f8QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 29&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c90199b0069139dc894f2d074f225177/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-29.png&quot;
+        srcset=&quot;/static/c90199b0069139dc894f2d074f225177/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-29.png 148w,
+/static/c90199b0069139dc894f2d074f225177/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-29.png 295w,
+/static/c90199b0069139dc894f2d074f225177/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-29.png 590w,
+/static/c90199b0069139dc894f2d074f225177/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-29.png 885w,
+/static/c90199b0069139dc894f2d074f225177/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-29.png 1180w,
+/static/c90199b0069139dc894f2d074f225177/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-29.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Both of the recursive calls made by &lt;code&gt;f(5)&lt;/code&gt; returned, so &lt;code&gt;f(5)&lt;/code&gt; returns and is popped off the stack.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/10434169c2678fc00a60f8dcb7161bfb/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-30.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAvElEQVQoz9WS6wqEIBCFff8XLYiiorvaLN/AhGgRy/5aYXBu54xHded5Sm75CiGI977I32FdTsQOeN93WddVtm2TYRik73uNMWrpgEfCGKPM8yxN08g0TcXJ8MlRsx4wBSELorZtFWAyu64rCMlZz3EcGoO1kzqccRzVlmVRaUxFJvKIkY1McvgpqSm7CJla17VUVaUTiSng230CBmQ1yO/uXglp5mRYOjXd85d9euFL8ttX+MbcrwT/R/gB27Vk3uaUNqEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o recursive space complexity fibonacci tree 30&quot;
+        title=&quot;&quot;
+        src=&quot;/static/10434169c2678fc00a60f8dcb7161bfb/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-30.png&quot;
+        srcset=&quot;/static/10434169c2678fc00a60f8dcb7161bfb/cf440/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-30.png 148w,
+/static/10434169c2678fc00a60f8dcb7161bfb/d2d38/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-30.png 295w,
+/static/10434169c2678fc00a60f8dcb7161bfb/b9e4f/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-30.png 590w,
+/static/10434169c2678fc00a60f8dcb7161bfb/f9b6a/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-30.png 885w,
+/static/10434169c2678fc00a60f8dcb7161bfb/2d849/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-30.png 1180w,
+/static/10434169c2678fc00a60f8dcb7161bfb/a987b/jarednielsen-big-o-recursive-space-complexity-fibonacci-tree-30.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;How many calls to &lt;code&gt;f()&lt;/code&gt; were on the stack at any given time? &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;So the space complexity is O(n).&lt;/p&gt;
+&lt;h2&gt;Big O Recursive Space Complexity&lt;/h2&gt;
+&lt;p&gt;In this tutorial, you learned the fundamentals of calculating Big O recursive space complexity. In the next tutorial, we’ll look at how to improve our recursive algorithms with dynamic programming. Stay tuned!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Big O Recursive Time Complexity]]></title><description><![CDATA[After Big O, the second most terrifying computer science topic might be recursion. Don’t let the memes scare you, recursion is just…]]></description><link>http://jarednielsen.com/big-o-recursive-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-recursive-time-complexity/</guid><pubDate>Thu, 12 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/82d91a3fd2072cce2081085db2d9761c/2f950/jarednielsen-big-o-recursive-time-complexity.png&quot;
@@ -161,8 +1575,6 @@
 &lt;p&gt;How many times does this happen?&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;n&lt;/code&gt; &lt;/p&gt;
 &lt;p&gt;We call &lt;code&gt;fibonot()&lt;/code&gt; until the value of &lt;code&gt;n&lt;/code&gt;  is less than or equal to 0, or equal to 1, then we return without a call.&lt;/p&gt;
-&lt;p&gt;Have we seen this, or something like it, before?&lt;/p&gt;
-&lt;p&gt;🤔&lt;/p&gt;
 &lt;p&gt;Every invocation of &lt;code&gt;fibonot()&lt;/code&gt; creates two &lt;em&gt;branches&lt;/em&gt; by calling itself twice. &lt;/p&gt;
 &lt;p&gt;Our branches are creating a &lt;em&gt;tree&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;With each iteration, the value of &lt;code&gt;n&lt;/code&gt; becomes smaller until one of our &lt;em&gt;base&lt;/em&gt; conditions is met. &lt;/p&gt;
@@ -368,21 +1780,9 @@
 &lt;p&gt;You noticed that the quadratic formula results in two solutions, signified by the &lt;a href=&quot;https://en.wikipedia.org/wiki/Plus%E2%80%93minus_sign&quot;&gt;plus-minus sign&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Each solution charts the x-intercept of a parabola. &lt;/p&gt;
 &lt;p&gt;But we’re not interested in negative values, so we can stop with one solution.&lt;/p&gt;
-&lt;h2&gt;Space Complexity: The Final Frontier 🚀&lt;/h2&gt;
+&lt;h2&gt;Big O Recursive Space Complexity: The Final Frontier 🚀&lt;/h2&gt;
 &lt;p&gt;If the time complexity of our recursive Fibonacci is O(2^n), what’s the space complexity?&lt;/p&gt;
-&lt;p&gt;Tempted to say the same? &lt;/p&gt;
-&lt;p&gt;The branching diagram may not be helpful here because your intuition may be to count the function calls themselves.&lt;/p&gt;
-&lt;p&gt;Don’t count the leaves. &lt;/p&gt;
-&lt;p&gt;How deep is the tree?&lt;/p&gt;
-&lt;p&gt;📝 Space complexity is the amount of memory used by the algorithm. &lt;/p&gt;
-&lt;p&gt;When a function is called, it is added to the stack.&lt;/p&gt;
-&lt;p&gt;When a function returns, it is popped off the stack.&lt;/p&gt;
-&lt;p&gt;We’re not adding &lt;em&gt;all&lt;/em&gt; of the function calls to the stack at once. &lt;/p&gt;
-&lt;p&gt;We are only making &lt;code&gt;n&lt;/code&gt; calls at any given time as we move up and down branches.
-We proceed branch by branch, making our function calls until our base case is met, then we return and make our calls down the next branch. &lt;/p&gt;
-&lt;p&gt;So the space complexity is O(n).&lt;/p&gt;
-&lt;h2&gt;Big O Recursive Time Complexity&lt;/h2&gt;
-&lt;p&gt;In this tutorial, you’ll learn the fundamentals of calculating Big O recursive time complexity. If recursive runtimes are so bad, why is everyone so hot for recursion? We’ll answer that in a future article. Stay tuned.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Proof By Induction]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag…]]></description><link>http://jarednielsen.com/proof-induction/</link><guid isPermaLink="false">http://jarednielsen.com/proof-induction/</guid><pubDate>Fri, 06 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;We’ll answer that question in the next tutorial. Stay tuned.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Proof By Induction]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag…]]></description><link>http://jarednielsen.com/proof-induction/</link><guid isPermaLink="false">http://jarednielsen.com/proof-induction/</guid><pubDate>Fri, 06 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/92e97d14d73a7870ab289163dba67433/2f950/jarednielsen-proof-induction.png&quot;
