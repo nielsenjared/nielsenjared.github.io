@@ -39,7 +39,7 @@ class Index extends React.Component {
               </label>
         	    <input
                 type="email"
-                value=""
+                defaultValue=""
                 name="EMAIL"
                 className="email"
                 id="mce-EMAIL"
@@ -55,7 +55,7 @@ class Index extends React.Component {
                      type="text"
                      name="b_7bb2004f13affd3cd65365d9e_fdf24030be"
                      tabIndex="-1"
-                     value=""
+                     defaultValue=""
                    />
                  </div>
               {/*for the peeps*/}
