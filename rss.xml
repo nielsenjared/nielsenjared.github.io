@@ -1,4 +1,232 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 26 Mar 2020 12:17:21 GMT</lastBuildDate><item><title><![CDATA[Big O Recursive Space Complexity]]></title><description><![CDATA[Next to Big O, the second most terrifying computer science topic might be recursion. Don’t let the memes scare you, recursion is just…]]></description><link>http://jarednielsen.com/big-o-recursive-space-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-recursive-space-complexity/</guid><pubDate>Fri, 20 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 27 Mar 2020 11:49:26 GMT</lastBuildDate><item><title><![CDATA[What is Dynamic Programming? Memoization and Tabulation]]></title><description><![CDATA[Dynamic programming is a fancy name for something you probably do already: effeciently solving a big problem by breaking it down into…]]></description><link>http://jarednielsen.com/dynamic-programming-memoization-tabulation/</link><guid isPermaLink="false">http://jarednielsen.com/dynamic-programming-memoization-tabulation/</guid><pubDate>Fri, 27 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1f712ed61d2706b3733d7307579036aa/2f950/jarednielsen-dynamic-programming-memoization-tabulation.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACIklEQVQoz4WS3UuTYRjG33+gVIiogznTTTfdsm1vzm3NRTMWwSg6qLOggyIIOokoSZQRgX3hQawvJpuLLWskImYeNBNUsMKoGKNC+sIjES1YZu7j195tzncj6IILHh7u57qv+34ugQIymUyO8nMmnd5gSmKKdIHSXfk7CQJlKIryf+REy4wIJa4KnZNLP+BngtTcd1bic6zEPpF8HWN5OMqH2/2877rG/Nh47l1a5rToUG5ZwsTZDp4Y2onoHYQarEQaHQTrWrilaMar3k2vUMXk6XP54tU1WEvmJ5I7TCV+sTg+zXJ0mujRU3QKFXgqlFzarODCJgXdlTvo3dbIje1NXNmiIqRrI/FolJcnzzPbdTXvNjuhsL5cabTIVh2RSi1hpUi4WmRUvYeA0kRIbWGwrpVIjYhfYcRba6Kzqoan5oOMtB3m1cXLMsGCw/TqH74MjxE9foZggxmfQk9IayGgs+LVtODT2ejXmOmt1jFo2Md1tYEercgz5xE+3w3kNZLJf+9w8W2Mme4ewtYD9NUa8NeL3Glqpc/oyDaw4FUZCZr24lE1M+Rw8/Xx0Iag/JfTyVSJ+O+FReLBAUaOnSCot3Kv3ojPYMe300Zgl52bGpGQzcXCxFReQxq5JMjrLIS3mLdsqOenZpjs8PDQ6cZv20+g1cl9ox2/3cXSm3fFOqE81CW5zH6Y5FqOb89fMNDuJug6lBVu50H2vBz/WAz6X6BFxkqL0usgAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen dynamic programming memoization tabulation&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1f712ed61d2706b3733d7307579036aa/b9e4f/jarednielsen-dynamic-programming-memoization-tabulation.png&quot;
+        srcset=&quot;/static/1f712ed61d2706b3733d7307579036aa/cf440/jarednielsen-dynamic-programming-memoization-tabulation.png 148w,
+/static/1f712ed61d2706b3733d7307579036aa/d2d38/jarednielsen-dynamic-programming-memoization-tabulation.png 295w,
+/static/1f712ed61d2706b3733d7307579036aa/b9e4f/jarednielsen-dynamic-programming-memoization-tabulation.png 590w,
+/static/1f712ed61d2706b3733d7307579036aa/f9b6a/jarednielsen-dynamic-programming-memoization-tabulation.png 885w,
+/static/1f712ed61d2706b3733d7307579036aa/2d849/jarednielsen-dynamic-programming-memoization-tabulation.png 1180w,
+/static/1f712ed61d2706b3733d7307579036aa/2f950/jarednielsen-dynamic-programming-memoization-tabulation.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Dynamic programming is a fancy name for something you probably do already: effeciently solving a big problem by breaking it down into smaller problems and reusing the solutions to the smaller problems to avoid solving them more than once. In this tutorial, you will learn the fundamentals of the two approaches to dynamic programming: memoization and tabulation.&lt;/p&gt;
+&lt;p&gt;This article is part of a series on Big O notation. If you’re just joining us, you may want to read the previous article, &lt;a href=&quot;https://jarednielsen.com/big-o-recursive-space-complexity/&quot;&gt;Big O Recursive Space Complexity&lt;/a&gt;, or start at the beginning with &lt;a href=&quot;https://jarednielsen.com/big-o-notation/&quot;&gt;What is Big O Notation?&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;What Problem(s) Does Dynamic Programming Solve?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dynamic programming helps us optimize solutions to problems by caching values for future use&lt;/li&gt;
+&lt;li&gt;Dynamic programming helps us improve the runtimes of recursive algorithms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Dynamic Programming: Optimal Substructure and Overlapping Subproblems&lt;/h2&gt;
+&lt;p&gt;There are two criteria for a dynamic programming approach to problem solving:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Optimal substructure&lt;/li&gt;
+&lt;li&gt;Overlapping subproblems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What is &lt;em&gt;optimal substructure&lt;/em&gt;? &lt;/p&gt;
+&lt;p&gt;The solution to a larger problem can be found by combining the returned values of its smaller problems. &lt;/p&gt;
+&lt;p&gt;Like recursion and &lt;a href=&quot;https://jarednielsen.com/proof-induction/&quot;&gt;proof by induction&lt;/a&gt;, we recognize a pattern and apply the same approach to solving the parts as we would the whole.&lt;/p&gt;
+&lt;p&gt;What are &lt;em&gt;overlapping subproblems&lt;/em&gt;?&lt;/p&gt;
+&lt;p&gt;The solution to a larger problem recognizes redundancy in the smaller problems and &lt;em&gt;caches&lt;/em&gt; those solutions for later recall rather than repeatedly solving the same problem, making the algorithm much more efficient. &lt;/p&gt;
+&lt;p&gt;Both of these concepts will click when we refactor our naive sum of Fibonacci sequence algorithm.&lt;/p&gt;
+&lt;p&gt;☝️ This might sound a lot like divide and conquer, but divide and conquer algorithms, such as merge sort and quick sort, don’t solve overlapping subproblems. They continually divide a problem into smaller, yet new, problems, then recombine the smaller solutions into a solution to the larger problem.&lt;/p&gt;
+&lt;h3&gt;Top-down vs. Bottom-up&lt;/h3&gt;
+&lt;p&gt;There are two approaches for implementing a dynamic programming solution:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Top-down&lt;/li&gt;
+&lt;li&gt;Bottom-up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The top-down approach is generally recursive (but less efficient) and more intuitive to implement as it is often a matter of recognizing the pattern in an algorithm and refactoring it as a dynamic programming solution.&lt;/p&gt;
+&lt;p&gt;The bottom-up approach is generally iterative (and more efficient), but less intuitive and requires us to solve (and know!) the smaller problems first then use the combined values of the smaller problems for the larger solution. &lt;/p&gt;
+&lt;p&gt;We refer to top-down solutions as &lt;em&gt;memoization&lt;/em&gt; and bottom-up as &lt;em&gt;tabulation&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;We’ll look at the reason for these terms below. &lt;/p&gt;
+&lt;p&gt;But first, a quick refresher. &lt;/p&gt;
+&lt;h2&gt;Fibonacci&lt;/h2&gt;
+&lt;p&gt;We’ll revisit our naive recursive sum of Fibonacci sequence for this tutorial. If you’re just joining us, you may want to first read &lt;a href=&quot;https://jarednielsen.com/big-o-recursive-time-complexity&quot;&gt;Big O Recursive Time Complexity&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The sum of the Fibonacci sequence is a contrived example, but it is useful (and concise) in illustrating the difference between memoization and tabulation and how to refactor a recursive function for improved time and space complexity. &lt;/p&gt;
+&lt;h3&gt;Naive Recursive Fibonacci&lt;/h3&gt;
+&lt;p&gt;Here’s our naive implementation of the sum of the Fibonacci sequence. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;fibonaive&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+ &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonaive&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonaive&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Why is it &lt;em&gt;naive&lt;/em&gt;? &lt;/p&gt;
+&lt;p&gt;Because the runtime is &lt;em&gt;really&lt;/em&gt; bad.&lt;/p&gt;
+&lt;p&gt;It’s O(2^n).&lt;/p&gt;
+&lt;p&gt;(Actually, it’s O(1.6^n), but who’s counting?)&lt;/p&gt;
+&lt;p&gt;Take a look at this diagram of our recursive call branches.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a5699072a9b66081806867d7ed53e5dd/2f950/jarednielsen-big-o-recursion-fibonacci-tree.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAwklEQVQoz9WS2wrEIAxE/f8frVB6r71qs5yApWhLWfZphWA0MxNHNcdxSBrp8N7Lvu/Z/h3XpELMkNd1lXmeZVkW6fte2rbVNUHt2uBRMIQgzjkpy1LGccxORs4eNTBg4WSCDIpVVSmBAbCu60ywaZoTs22bYuDGkxqSYRjU1jRNag2xruvUHmtsYxMMOSJRNDo7BelqrZWiKLQjawrk8T4hQ4o1xO/uXgUBczLi2vU6py/79MKn5bev8E2YXwX+T/ADB5tk8C2+gZwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Recursive Fibonacci Tree&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a5699072a9b66081806867d7ed53e5dd/b9e4f/jarednielsen-big-o-recursion-fibonacci-tree.png&quot;
+        srcset=&quot;/static/a5699072a9b66081806867d7ed53e5dd/cf440/jarednielsen-big-o-recursion-fibonacci-tree.png 148w,
+/static/a5699072a9b66081806867d7ed53e5dd/d2d38/jarednielsen-big-o-recursion-fibonacci-tree.png 295w,
+/static/a5699072a9b66081806867d7ed53e5dd/b9e4f/jarednielsen-big-o-recursion-fibonacci-tree.png 590w,
+/static/a5699072a9b66081806867d7ed53e5dd/f9b6a/jarednielsen-big-o-recursion-fibonacci-tree.png 885w,
+/static/a5699072a9b66081806867d7ed53e5dd/2d849/jarednielsen-big-o-recursion-fibonacci-tree.png 1180w,
+/static/a5699072a9b66081806867d7ed53e5dd/2f950/jarednielsen-big-o-recursion-fibonacci-tree.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Why is this algorithm inefficient? &lt;/p&gt;
+&lt;p&gt;Overlapping subproblems! &lt;/p&gt;
+&lt;p&gt;We solve the same problems repeatedly in our branches. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/368401b370a0ffa4776f67268829919d/a987b/jarednielsen-big-o-recursion-fibonacci-tree-overlapping-subproblems.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVQoz9VS7W6DMAzk/V90rdDaQMmX7fhmBwoa6iZN/bVIVhL7fJyPDKqKc5yXiICZv+Uc9ap3OBP57s21VuScUUrBPM8IIfS7B1lNhTda/Eyo2hBjxDiOWOJiyhqEZVfFdvZcshqFD9T0gHQhJ8K+yoR6v0JoJWi2jxOjtGNMMlHjzCBZMUSEGz0QUbvYTuiF+9LwuTBySwia0Kw62Z64gkMEshGDMUkCFYLeFhu5bV4qmk22ExIElzwhXgLUvPO7F0ilg8EG9tHtMwxvtGzlw/ceh4+DGHt2ybmuzZvJO+hp/XbYcy/+8DryE/jLU/hLDO8S/D/CLwZqZl15PczAAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Recursive Fibonacci Tree Overlapping Subproblems&quot;
+        title=&quot;&quot;
+        src=&quot;/static/368401b370a0ffa4776f67268829919d/b9e4f/jarednielsen-big-o-recursion-fibonacci-tree-overlapping-subproblems.png&quot;
+        srcset=&quot;/static/368401b370a0ffa4776f67268829919d/cf440/jarednielsen-big-o-recursion-fibonacci-tree-overlapping-subproblems.png 148w,
+/static/368401b370a0ffa4776f67268829919d/d2d38/jarednielsen-big-o-recursion-fibonacci-tree-overlapping-subproblems.png 295w,
+/static/368401b370a0ffa4776f67268829919d/b9e4f/jarednielsen-big-o-recursion-fibonacci-tree-overlapping-subproblems.png 590w,
+/static/368401b370a0ffa4776f67268829919d/f9b6a/jarednielsen-big-o-recursion-fibonacci-tree-overlapping-subproblems.png 885w,
+/static/368401b370a0ffa4776f67268829919d/2d849/jarednielsen-big-o-recursion-fibonacci-tree-overlapping-subproblems.png 1180w,
+/static/368401b370a0ffa4776f67268829919d/a987b/jarednielsen-big-o-recursion-fibonacci-tree-overlapping-subproblems.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;How many times do we solve &lt;code&gt;f(0)&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;How many times do we solve &lt;code&gt;f(1)&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;How many times do we solve &lt;code&gt;f(2)&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;How many times do we solve &lt;code&gt;f(3)&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;The answer to all of the above is: too many!&lt;/p&gt;
+&lt;h2&gt;Dynamic Programming: Memoization&lt;/h2&gt;
+&lt;p&gt;Memoization is the top-down approach to solving a problem with dynamic programming. &lt;/p&gt;
+&lt;p&gt;It’s called memoization because we will create a &lt;em&gt;memo&lt;/em&gt;, or a “note to self”, for the values returned from solving each problem. &lt;/p&gt;
+&lt;p&gt;Then, when we encounter the same problem again, we simply check the memo, and, rather than solving the problem a second (or third or fourth) time, we retrieve the solution from our memo. &lt;/p&gt;
+&lt;h3&gt;Top-Down Fibonacci&lt;/h3&gt;
+&lt;p&gt;Here’s our Fibonacci sequence, memoized:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;fibDown&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;n&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; memo&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+           &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;memo&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+           memo&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibDown&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; memo&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibDown&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; memo&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; memo&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Where have we seen this, or something like it, before? &lt;/p&gt;
+&lt;p&gt;🤔&lt;/p&gt;
+&lt;p&gt;It’s very similar to our naive implementation.&lt;/p&gt;
+&lt;p&gt;But!&lt;/p&gt;
+&lt;p&gt;We now pass our function a &lt;code&gt;memo&lt;/code&gt; argument and initialize it as an array. &lt;/p&gt;
+&lt;p&gt;Each time we recursively call &lt;code&gt;fibDown()&lt;/code&gt;, we pass it the &lt;code&gt;memo&lt;/code&gt; array. &lt;/p&gt;
+&lt;p&gt;If the value of &lt;code&gt;memo[n]&lt;/code&gt; is undefined, meaning there’s no value stored in that index yet, we assign that value the returned values of &lt;code&gt;fibDown(n - 1, memo) + fibDown(n - 2, memo)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;What’s the time complexity? &lt;/p&gt;
+&lt;p&gt;O(n).&lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;p&gt;Because we don’t solve the &lt;em&gt;overlapping subproblems&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;This is a big improvement over the naive implementation.&lt;/p&gt;
+&lt;p&gt;What’s the space complexity? &lt;/p&gt;
+&lt;p&gt;Also O(n).&lt;/p&gt;
+&lt;h2&gt;Dynamic Programming: Tabulation&lt;/h2&gt;
+&lt;p&gt;With bottom-up, or &lt;em&gt;tabulation&lt;/em&gt;, we start with the smallest problems and use the returned values to calculate larger values. &lt;/p&gt;
+&lt;p&gt;We can think of it as entering values in a table, or spreadsheet, and then applying a formula to those values.&lt;/p&gt;
+&lt;h3&gt;Bottom-Up Fibonacci&lt;/h3&gt;
+&lt;p&gt;Here’s our Fibonacci sequence, &lt;em&gt;tabulated&lt;/em&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;fibottomUp&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+           &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+           &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; tmp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+           x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+           y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; tmp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Where have we seen this, or something like it, before? &lt;/p&gt;
+&lt;p&gt;🤔&lt;/p&gt;
+&lt;p&gt;This solution is very similar to a swap algorithm. &lt;/p&gt;
+&lt;p&gt;We declare three local variables, &lt;code&gt;x&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt; and &lt;code&gt;tmp&lt;/code&gt; and then juggle the values.&lt;/p&gt;
+&lt;p&gt;What is the Big O of &lt;code&gt;fibottomUp()&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;Like memoization above, the time complexity is also O(n).&lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;p&gt;We are using a &lt;code&gt;for&lt;/code&gt; loop to iterate over the value of &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;But the space complexity is O(1). &lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;p&gt;No recursion.&lt;/p&gt;
+&lt;p&gt;We are only pushing one call to the stack.&lt;/p&gt;
+&lt;h2&gt;Dynamic Programming: Memoization and Tabulation&lt;/h2&gt;
+&lt;p&gt;Which is better? Memoizaiton or tabulation? &lt;/p&gt;
+&lt;p&gt;If we don’t need to solve &lt;em&gt;all&lt;/em&gt; the problems and are just looking for the optimal solution, memoization is better. &lt;/p&gt;
+&lt;p&gt;If we do need to solve all the problems, that means we are going to make a lot of recursive calls, and tabulation is better.&lt;/p&gt;
+&lt;p&gt;The caveat is that memoization is generally more intuitive to implement especially when we don’t know the solution to subproblems, whereas tabulation requires us to know the solutions, or bottom, in advance, in order to build our way up. &lt;/p&gt;
+&lt;p&gt;In this tutorial, you learned the fundamentals of the two approaches to dynamic programming: memoization and tabulation. Stay tuned for the next articles in this series: Big O factorial time complexity and NP-complete problems. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Big O Recursive Space Complexity]]></title><description><![CDATA[Next to Big O, the second most terrifying computer science topic might be recursion. Don’t let the memes scare you, recursion is just…]]></description><link>http://jarednielsen.com/big-o-recursive-space-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-recursive-space-complexity/</guid><pubDate>Fri, 20 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/82d91a3fd2072cce2081085db2d9761c/2f950/jarednielsen-big-o-recursive-space-complexity.png&quot;
