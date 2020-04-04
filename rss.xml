@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Apr 2020 13:47:40 GMT</lastBuildDate><item><title><![CDATA[How to Calculate Permutations and Combinations]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag…]]></description><link>http://jarednielsen.com/calculate-permutations-combinations/</link><guid isPermaLink="false">http://jarednielsen.com/calculate-permutations-combinations/</guid><pubDate>Fri, 03 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;./jarednielsen-calculate-permutations-combinations.png&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Apr 2020 20:19:23 GMT</lastBuildDate><item><title><![CDATA[How to Calculate Permutations and Combinations]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag…]]></description><link>http://jarednielsen.com/calculate-permutations-combinations/</link><guid isPermaLink="false">http://jarednielsen.com/calculate-permutations-combinations/</guid><pubDate>Fri, 03 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/02e95e7cdd33f860d2d00aba18b68ef6/a987b/jarednielsen-calculate-permutations-combinations.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMUlEQVQoz62SwU6DQBCGeVmfw7snj76AHnwKPRijHk01tLXC0qq0pRRaoNDd/VzA1mINmugkf4B/dv6ZYX9La00roIL5oH60n7e+I5VSNYzGOouR+YKikKRp0swb/Cj4NXL/mtg+IcsKgiDYy7cKlhGGIc/uCNf1EMLjqXdvcGm4Pt1uz3ACV7iIV4fJdLwnam1WKEN4HmPfx384JwocoihhJRPujgX9K5+B6OEIh5fHETdHA6ZvId5QVLWb9RuCtm0zM2stn8/I5x0Wy8KwktvDMZ3TKcOJQ7yIiL2MiwOf2SAlmE8aU1q76yopyVfZtiNaIdfS3LKikAVpkpkzivUHJ8upVDlQyz+suilToD9vUEldFda5+r3kdoVabcPGe9sOtQ8bLtC1Q38l+Bf8u+A7lVpak/MgHksAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen calculate permutations combinations&quot;
+        title=&quot;&quot;
+        src=&quot;/static/02e95e7cdd33f860d2d00aba18b68ef6/b9e4f/jarednielsen-calculate-permutations-combinations.png&quot;
+        srcset=&quot;/static/02e95e7cdd33f860d2d00aba18b68ef6/cf440/jarednielsen-calculate-permutations-combinations.png 148w,
+/static/02e95e7cdd33f860d2d00aba18b68ef6/d2d38/jarednielsen-calculate-permutations-combinations.png 295w,
+/static/02e95e7cdd33f860d2d00aba18b68ef6/b9e4f/jarednielsen-calculate-permutations-combinations.png 590w,
+/static/02e95e7cdd33f860d2d00aba18b68ef6/f9b6a/jarednielsen-calculate-permutations-combinations.png 885w,
+/static/02e95e7cdd33f860d2d00aba18b68ef6/2d849/jarednielsen-calculate-permutations-combinations.png 1180w,
+/static/02e95e7cdd33f860d2d00aba18b68ef6/a987b/jarednielsen-calculate-permutations-combinations.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag to improve the performance of your algorithms and make an impression in technical interviews. In this tutorial, you will learn how to calculate permutations and combinations of a series of n integers with simple and easy to remember equations.&lt;/p&gt;
 &lt;h2&gt;What is the Difference Between Permutations and Combinations?&lt;/h2&gt;
 &lt;ul&gt;
