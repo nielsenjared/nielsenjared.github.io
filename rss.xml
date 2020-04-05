@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Apr 2020 20:19:23 GMT</lastBuildDate><item><title><![CDATA[How to Calculate Permutations and Combinations]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag…]]></description><link>http://jarednielsen.com/calculate-permutations-combinations/</link><guid isPermaLink="false">http://jarednielsen.com/calculate-permutations-combinations/</guid><pubDate>Fri, 03 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Apr 2020 16:24:03 GMT</lastBuildDate><item><title><![CDATA[How to Calculate Permutations and Combinations]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag…]]></description><link>http://jarednielsen.com/calculate-permutations-combinations/</link><guid isPermaLink="false">http://jarednielsen.com/calculate-permutations-combinations/</guid><pubDate>Fri, 03 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/02e95e7cdd33f860d2d00aba18b68ef6/a987b/jarednielsen-calculate-permutations-combinations.png&quot;
@@ -1826,7 +1826,111 @@ dry()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;So the space complexity is O(n).&lt;/p&gt;
 &lt;h2&gt;Big O Recursive Space Complexity&lt;/h2&gt;
-&lt;p&gt;In this tutorial, you learned the fundamentals of calculating Big O recursive space complexity. In the next tutorial, we’ll look at how to improve our recursive algorithms with dynamic programming. Stay tuned!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Big O Recursive Time Complexity]]></title><description><![CDATA[After Big O, the second most terrifying computer science topic might be recursion. Don’t let the memes scare you, recursion is just…]]></description><link>http://jarednielsen.com/big-o-recursive-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-recursive-time-complexity/</guid><pubDate>Thu, 12 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;In this tutorial, you learned the fundamentals of calculating Big O recursive space complexity. In the next tutorial, we’ll look at how to improve our recursive algorithms with dynamic programming. Stay tuned!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fail Better]]></title><description><![CDATA[This article originally published in my newsletter, The Solution. How are you failing?  In How Humans Learn, Joshua R. Eyler states that…]]></description><link>http://jarednielsen.com/fail-better/</link><guid isPermaLink="false">http://jarednielsen.com/fail-better/</guid><pubDate>Fri, 20 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4fbaa9421263e738978fff94a8e0447c/2f950/jarednielsen-solution-fail-better.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABRUlEQVQoz62SvU7DMBSF8xS8BLAhoc48AQMTIwNiYuFBWBkYGJBgZGFBAgkVpDIVED8TEoK0tE2TtGljJ/453NgpaYIqJOBKR/Kxrz9dX19Ha41CakqyWCtBSos940UlXxmGMxMGfAEmYb2u+B+B0mZLz14ixe4eeHvfepWAd4/BO4c5VM8CavOMLEbtC3Qu58Hfdo0fPKyjW1+EGL1Aiwi9xgr85hokc6FlPAUtAW1lvF+He76Aj+sauH8FGTXRv1nG+9kcgvsNyPgVXqNGWkJwuwolhnmlVaB9D+LWEbh3SsvIJIroDuHzNvzHTbDuCQFb5HcQPm1R7kEJVgJm3dKSQ6YMKk2gkiHJpwoYBAuRjnuQfAiZDCA4iQV0ltAdVpoA59vYUNO14vlYSJts9iaqeAMqfrsE/E1kzZpmVCr8u/4d+AmfVVHvUR1JygAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen solution fail better&quot;
+        title=&quot;&quot;
+        src=&quot;/static/4fbaa9421263e738978fff94a8e0447c/b9e4f/jarednielsen-solution-fail-better.png&quot;
+        srcset=&quot;/static/4fbaa9421263e738978fff94a8e0447c/cf440/jarednielsen-solution-fail-better.png 148w,
+/static/4fbaa9421263e738978fff94a8e0447c/d2d38/jarednielsen-solution-fail-better.png 295w,
+/static/4fbaa9421263e738978fff94a8e0447c/b9e4f/jarednielsen-solution-fail-better.png 590w,
+/static/4fbaa9421263e738978fff94a8e0447c/f9b6a/jarednielsen-solution-fail-better.png 885w,
+/static/4fbaa9421263e738978fff94a8e0447c/2d849/jarednielsen-solution-fail-better.png 1180w,
+/static/4fbaa9421263e738978fff94a8e0447c/2f950/jarednielsen-solution-fail-better.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This article originally published in my newsletter, &lt;a href=&quot;https://mailchi.mp/612196250c49/the-solution-are-you-failing-better&quot;&gt;The Solution&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;How are you failing? &lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/3cmDuvR&quot;&gt;How Humans Learn&lt;/a&gt;, Joshua R. Eyler states that “failure and learning are one and the same”. He continues: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is the quality of our failures that matters most. For our purposes, failing better suggests a kind of cycle where we continually fail and then learn from that failure in order to refine our understanding. There is no stopping point to the cycle because failure is not negative.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We must fail in order to learn. &lt;/p&gt;
+&lt;h2&gt;Learn to Fail Better&lt;/h2&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2NZz8jx&quot;&gt;Atomic Habits&lt;/a&gt;, James Clear writes: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is the feedback loop behind all human behavior: try, fail, learn, try differently. With practice, the useless movements fade away and the useful actions get reinforced. That’s a habit forming.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Clear breaks habit formation into four steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Cue&lt;/li&gt;
+&lt;li&gt;Craving&lt;/li&gt;
+&lt;li&gt;Response&lt;/li&gt;
+&lt;li&gt;Reward&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The cue is the trigger. It sets the process in motion by making us crave something, whether through acquisition or avoidance. We respond to the craving and, if our response resolves it, our behavior is rewarded. If our response doesn’t resolve the craving, we try again. &lt;/p&gt;
+&lt;p&gt;This process works for establishing good habits.&lt;/p&gt;
+&lt;p&gt;It also works for establishing bad habits.&lt;/p&gt;
+&lt;p&gt;Like procrastination. &lt;/p&gt;
+&lt;p&gt;As Barbara Oakley points out in &lt;a href=&quot;https://amzn.to/2UWpClG&quot;&gt;A Mind for Numbers&lt;/a&gt;, “We procrastinate about things that make us feel uncomfortable.”&lt;/p&gt;
+&lt;p&gt;Like mathematics.&lt;/p&gt;
+&lt;p&gt;Or a blank page. &lt;/p&gt;
+&lt;p&gt;Or debugging.&lt;/p&gt;
+&lt;p&gt;Or fear of failure. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It’s easy to feel distaste for something you’re not good at. But the better you get at something, the more you’ll find you enjoy it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Procrastination is our response to a craving. &lt;/p&gt;
+&lt;p&gt;A craving to make the discomfort go away. &lt;/p&gt;
+&lt;p&gt;So instead of addressing the discomfort, we go away.&lt;/p&gt;
+&lt;p&gt;But when we return, the discomfort is still there! &lt;/p&gt;
+&lt;p&gt;How do we overcome procrastination?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you find yourself avoiding certain tasks because they make you uncomfortable, there is a great way to reframe things: Learn to focus on process, not product.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In other words, focus on the solving, not the problem.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/33Mp30d&quot;&gt;How To Solve It&lt;/a&gt;, George Polya outlines four things we need to do to improve our problem solving:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;We have to understand the problem; we have to see clearly what is required.&lt;/li&gt;
+&lt;li&gt;We have to see how the various items are connected, how the unknown is linked to the data, in order to obtain the idea of the solution, to make a plan.&lt;/li&gt;
+&lt;li&gt;We carry out our plan.&lt;/li&gt;
+&lt;li&gt;We look back at the completed solution, we review and discuss it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This process creates a feedback loop.&lt;/p&gt;
+&lt;p&gt;We not only improve our ability to solve problems. &lt;/p&gt;
+&lt;p&gt;We improve our ability to improve our ability to solve problems. &lt;/p&gt;
+&lt;p&gt;We want to make this process a habit (which is why I continue to loop back to it). &lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Habit is an energy saver for us. It allows us to free our mind for other types of activities.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Whenever you want to build a new habit, you can simply ask yourself:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;How can I make it obvious?&lt;/li&gt;
+&lt;li&gt;How can I make it attractive? &lt;/li&gt;
+&lt;li&gt;How can I make it easy? &lt;/li&gt;
+&lt;li&gt;How can I make it satisfying? &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Make asking these questions a habit!&lt;/p&gt;
+&lt;h2&gt;Fail Better&lt;/h2&gt;
+&lt;p&gt;The title of this article is a line from &lt;em&gt;Worstword Ho&lt;/em&gt;, a short story by one of my favorites, Samuel Beckett: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ever tried. Ever failed. No matter. Try again. Fail again. Fail better.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If we must fail in order to learn, then we must learn to fail better.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Big O Recursive Time Complexity]]></title><description><![CDATA[After Big O, the second most terrifying computer science topic might be recursion. Don’t let the memes scare you, recursion is just…]]></description><link>http://jarednielsen.com/big-o-recursive-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-recursive-time-complexity/</guid><pubDate>Thu, 12 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/82d91a3fd2072cce2081085db2d9761c/2f950/jarednielsen-big-o-recursive-time-complexity.png&quot;
