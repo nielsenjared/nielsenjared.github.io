@@ -1,4 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Apr 2020 16:24:03 GMT</lastBuildDate><item><title><![CDATA[How to Calculate Permutations and Combinations]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag…]]></description><link>http://jarednielsen.com/calculate-permutations-combinations/</link><guid isPermaLink="false">http://jarednielsen.com/calculate-permutations-combinations/</guid><pubDate>Fri, 03 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Apr 2020 13:30:12 GMT</lastBuildDate><item><title><![CDATA[How to Improve Learning and Memory with Retrieval Practice]]></title><description><![CDATA[How do we learn anything? How do we remember the things that we learn? The authors of Make It Stick point out that: In very short order we…]]></description><link>http://jarednielsen.com/learning-memory-retrieval/</link><guid isPermaLink="false">http://jarednielsen.com/learning-memory-retrieval/</guid><pubDate>Mon, 06 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2b7a385e506bc8cfab3a031a141d540b/a987b/jarednielsen-solution-retrieval.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABjUlEQVQoz32Sv0vDQBTH+7+5dnFQKB0EwUVw0tHVyclBELSCSl3aSUSwVJRaf4EKCtqkqGhjf8R2kbZpcne9r+8uNdqaGPjkuOTuc+/dezEpJaTso9+PQhBcj5LmAfIbOURs+MeISHBIBUBzOSyV4dKYeimB67pgjIFzQghwEnASeYpOBYJ1Bwfxf6MMhPV6HYZRIkyUHh5h3l6hXEzDyi7ByifRKq1CPXqjijQyQpIJiqjZbGJ9I4XkRBypxTEcrsRxvhbH094CnvfjaJq7YE6LsGkjRqQREeZyOWxvbeIgs4xCdhaXmXEY+SlUjhOwzuZgFabRtS/8SFXq4UXxhY1GA9XqOz5sG9WajcqLifJ1Fm/FeVROEng9moR1OgPuNAap/5UNCTkVhDEPzHPBPQfc7YK5PbRtA/X7NGp3O/is3kB4VBzu/ko5RKgA9MVo9GLBaKNDgg5Yr61Rh+hqC89POaQ4fh8GfecjqPci4Vy3ltD434L+JFcsEAwW/qTu49EVaNwIPL9/lUdF+AXPLkUuoesMwQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen solution retrieval&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2b7a385e506bc8cfab3a031a141d540b/b9e4f/jarednielsen-solution-retrieval.png&quot;
+        srcset=&quot;/static/2b7a385e506bc8cfab3a031a141d540b/cf440/jarednielsen-solution-retrieval.png 148w,
+/static/2b7a385e506bc8cfab3a031a141d540b/d2d38/jarednielsen-solution-retrieval.png 295w,
+/static/2b7a385e506bc8cfab3a031a141d540b/b9e4f/jarednielsen-solution-retrieval.png 590w,
+/static/2b7a385e506bc8cfab3a031a141d540b/f9b6a/jarednielsen-solution-retrieval.png 885w,
+/static/2b7a385e506bc8cfab3a031a141d540b/2d849/jarednielsen-solution-retrieval.png 1180w,
+/static/2b7a385e506bc8cfab3a031a141d540b/a987b/jarednielsen-solution-retrieval.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;How do we learn anything?&lt;/p&gt;
+&lt;p&gt;How do we remember the things that we learn?&lt;/p&gt;
+&lt;p&gt;The authors of &lt;a href=&quot;https://amzn.to/2QTzklN&quot;&gt;Make It Stick&lt;/a&gt; point out that:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In very short order we lose something like 70 percent of what we’ve just heard or read. After that, forgetting begins to slow, but the lesson is clear: a central challenge to improving the way we learn is finding a way to interrupt the process of forgetting.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;How do we interrupt the process of forgetting?&lt;/p&gt;
+&lt;p&gt;Repetition. &lt;/p&gt;
+&lt;p&gt;“When you learn something new, connections are formed between neurons in your brain,” writes Julie Dirksen in &lt;a href=&quot;https://amzn.to/2wxA5Kx&quot;&gt;Design for How People Learn&lt;/a&gt;. She continues: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Connections that are reinforced become stronger and more durable. And, like a path that sees dwindling traffic, connections that aren’t reinforced will usually fade or become irretrievable. Repetition and practice are necessary to successfully retain most learning for the long term.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For most of us, through formal education, this meant rote memorization.&lt;/p&gt;
+&lt;p&gt;“If you repeat something over and over, eventually you will wear a groove into your long-term memory,” but, as Dirksen outlines, there are limitations to this approach: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It only makes one association in your memory. &lt;/li&gt;
+&lt;li&gt;You don’t have experience using it in multiple contexts, so it’s more difficult to take that information and transfer it to a variety of situations&lt;/li&gt;
+&lt;li&gt;You likely have sequential rather than random access to the information. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is the brute force approach to learning. &lt;/p&gt;
+&lt;p&gt;And as we all know, it’s brutal.&lt;/p&gt;
+&lt;p&gt;And as we can see, it’s inefficient. &lt;/p&gt;
+&lt;p&gt;There must be a better way! &lt;/p&gt;
+&lt;p&gt;It’s called testing. &lt;/p&gt;
+&lt;p&gt;😩&lt;/p&gt;
+&lt;p&gt;That’s probably not what you wanted to hear.&lt;/p&gt;
+&lt;p&gt;This doesn’t necessarily mean taking a formal test. &lt;/p&gt;
+&lt;p&gt;As lifelong learners, we need to find our own means to test ourselves.&lt;/p&gt;
+&lt;p&gt;What does this look like? &lt;/p&gt;
+&lt;p&gt;Reflection.&lt;/p&gt;
+&lt;p&gt;(See what I did there.)&lt;/p&gt;
+&lt;p&gt;The authors of &lt;a href=&quot;https://amzn.to/2QTzklN&quot;&gt;Make It Stick&lt;/a&gt; write:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Reflection can involve several cognitive activities that lead to stronger learning: retrieving knowledge and earlier training from memory, connecting these to new experiences, and visualizing and mentally rehearsing what you might do differently next time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The more we practice retrieving knowledge from memory the easier it becomes to do so again in the future.&lt;/p&gt;
+&lt;p&gt;This is known as the &lt;em&gt;testing effect&lt;/em&gt;. &lt;/p&gt;
+&lt;p&gt;There are two types of retrieval practice:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Effortful&lt;/li&gt;
+&lt;li&gt;Repeated&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Effortful retrieval&lt;/strong&gt; “makes for stronger learning and retention. We’re easily seduced into believing that learning is better when it’s easier, but the research shows the opposite: when the mind has to work, learning sticks better.” &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Repeated retrieval&lt;/strong&gt; “not only makes memories more durable but produces knowledge that can be retrieved more readily, in more varied settings, and applied to a weider variety of problems.” &lt;/p&gt;
+&lt;p&gt;Reflection and retrieval are much more efficient and effective strategies than rote memorization. &lt;/p&gt;
+&lt;p&gt;And much more fun.&lt;/p&gt;
+&lt;p&gt;As Robert and Michel Root-Bernstein write in &lt;a href=&quot;https://amzn.to/2UhVpgo&quot;&gt;Sparks of Genius&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Making patterns for oneself is a lot more fun than memorizing — and a lot more valuable. Teasing apart one pattern and composing another requires real understanding of the basic elements of phenomena and processes. More, it opens up whole new worlds of knowledge.&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[How to Calculate Permutations and Combinations]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag…]]></description><link>http://jarednielsen.com/calculate-permutations-combinations/</link><guid isPermaLink="false">http://jarednielsen.com/calculate-permutations-combinations/</guid><pubDate>Fri, 03 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/02e95e7cdd33f860d2d00aba18b68ef6/a987b/jarednielsen-calculate-permutations-combinations.png&quot;
