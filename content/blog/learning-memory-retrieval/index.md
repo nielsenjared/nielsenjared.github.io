@@ -8,6 +8,8 @@ keywords: ['learning', 'memory', 'retrieval']
 
 ![](./jarednielsen-solution-retrieval.png)
 
+_This article originally published in my newsletter, [The Solution](https://mailchi.mp/8b2bd76dba7f/how-do-you-remember)._
+
 How do we learn anything?
 
 How do we remember the things that we learn?
