@@ -1,6 +1,6 @@
 ---
 title: "Fail Better"
-date: "2020-03-20"
+date: "2020-03-30"
 description: If we must fail in order to learn, then we must learn to fail better.
 keywords: ['failure','learning','habit']
 ---

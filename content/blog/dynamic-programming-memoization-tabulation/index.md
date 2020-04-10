@@ -1,13 +1,13 @@
 ---
 title: 'What is Dynamic Programming? Memoization and Tabulation'
 date: '2020-03-27'
-description: In this tutorial, you will learn the fundamentals of the two approaches to dynamic programming, memoization and tabulation. Dynamic programming is a fancy name for effeciently solving a big problem by breaking it down into smaller problems and caching those solutions to avoid solving them more than once. 
+description: In this tutorial, you will learn the fundamentals of the two approaches to dynamic programming, memoization and tabulation. Dynamic programming is a fancy name for efficiently solving a big problem by breaking it down into smaller problems and caching those solutions to avoid solving them more than once. 
 keywords: ["dynamic programming", "big o", "problem solving", "memoization", "tabulation", "fibonacci"]
 ---
 
 ![](./jarednielsen-dynamic-programming-memoization-tabulation.png)
 
-Dynamic programming is a fancy name for something you probably do already: effeciently solving a big problem by breaking it down into smaller problems and reusing the solutions to the smaller problems to avoid solving them more than once. In this tutorial, you will learn the fundamentals of the two approaches to dynamic programming: memoization and tabulation.
+Dynamic programming is a fancy name for something you probably do already: efficiently solving a big problem by breaking it down into smaller problems and reusing the solutions to the smaller problems to avoid solving them more than once. In this tutorial, you will learn the fundamentals of the two approaches to dynamic programming: memoization and tabulation.
 
 This article is part of a series on Big O notation. If you’re just joining us, you may want to read the previous article, [Big O Recursive Space Complexity](https://jarednielsen.com/big-o-recursive-space-complexity/), or start at the beginning with [What is Big O Notation?](https://jarednielsen.com/big-o-notation/).
 
