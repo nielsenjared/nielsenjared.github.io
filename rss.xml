@@ -1,4 +1,228 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Apr 2020 14:17:39 GMT</lastBuildDate><item><title><![CDATA[How to Improve Learning and Memory with Retrieval Practice]]></title><description><![CDATA[This article originally published in my newsletter, The Solution. How do we learn anything? How do we remember the things that we learn? The…]]></description><link>http://jarednielsen.com/learning-memory-retrieval/</link><guid isPermaLink="false">http://jarednielsen.com/learning-memory-retrieval/</guid><pubDate>Mon, 06 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 10 Apr 2020 12:58:17 GMT</lastBuildDate><item><title><![CDATA[Big O Factorial Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-factorial-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-factorial-time-complexity/</guid><pubDate>Fri, 17 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/36abe77b998054914b2d38002d33cace/2f950/jarednielsen-big-o-factorial-time-complexity.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABO0lEQVQoz62Sy0vEMBDG+/9fRfEmLCh78gEqiAiriNIV3BVRlEVED4uo+Oi2TfP8TCaJ25bqRQMDX5KZ30wykxhj0DCtYQAYpWmPqJXyd3WfqGvxSRtIACEDyEJKhrgaPkUJI5UH6y6gDXaLD1IUy33olzerh5BXE+iPDOL82t8fnkFnOdTNHVh/Z564AYxl24z5Qg/idATW20S1PYDhAtXuEcqVdajHKfjeMdT0mUDl4irBCRoYSf3v3GIb+yiW1iDSMaqtA5i8gBhegp+MICcPvuL3DBDCA+3Tu4Hxb2yV+umVtEgvoG7v/XnFfVD4U/dkV233kx3MOUtpGyKst2+GYQz6c2ZhFWkyzsn0LPfaNpCa4+KtJZ1jE0ckZqaxCRYCv89p/9PYuPLjiLQ0WufzOPw+h3+1fwd+AYt9WRll+f1ZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o factorial time complexity&quot;
+        title=&quot;&quot;
+        src=&quot;/static/36abe77b998054914b2d38002d33cace/b9e4f/jarednielsen-big-o-factorial-time-complexity.png&quot;
+        srcset=&quot;/static/36abe77b998054914b2d38002d33cace/cf440/jarednielsen-big-o-factorial-time-complexity.png 148w,
+/static/36abe77b998054914b2d38002d33cace/d2d38/jarednielsen-big-o-factorial-time-complexity.png 295w,
+/static/36abe77b998054914b2d38002d33cace/b9e4f/jarednielsen-big-o-factorial-time-complexity.png 590w,
+/static/36abe77b998054914b2d38002d33cace/f9b6a/jarednielsen-big-o-factorial-time-complexity.png 885w,
+/static/36abe77b998054914b2d38002d33cace/2d849/jarednielsen-big-o-factorial-time-complexity.png 1180w,
+/static/36abe77b998054914b2d38002d33cace/2f950/jarednielsen-big-o-factorial-time-complexity.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O factorial time complexity.&lt;/p&gt;
+&lt;h2&gt;What Problem(s) Does Big O Notation Solve?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Big O notation helps us answer the question, “Will it scale?” &lt;/li&gt;
+&lt;li&gt;Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Quick Refresher&lt;/h2&gt;
+&lt;p&gt;This is the last article in a series on Big O notation. If you’re just joining us, you may want to start at the beginning with &lt;a href=&quot;https://jarednielsen.com/big-o-notation/&quot;&gt;What is Big O Notation?&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;What is Big O Notation?&lt;/h3&gt;
+&lt;p&gt;Big O notation is a system for measuring the rate of growth of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the &lt;em&gt;speed&lt;/em&gt; of an algorithm in seconds (or minutes!). Instead, we measure the number of operations it takes to complete. &lt;/p&gt;
+&lt;p&gt;The O is short for “Order of”. So, if we’re discussing an algorithm with &lt;em&gt;O(n)&lt;/em&gt;, we say its &lt;em&gt;order of&lt;/em&gt;, or rate of growth, is &lt;em&gt;n&lt;/em&gt;, or linear complexity. &lt;/p&gt;
+&lt;h3&gt;How Does Big O Notation Work?&lt;/h3&gt;
+&lt;p&gt;Big O notation measures the &lt;em&gt;worst-case runtime&lt;/em&gt;. &lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;p&gt;Because we don’t know what we don’t know.&lt;/p&gt;
+&lt;p&gt;We need to know just how poorly our algorithm will perform so we can compare it to other solutions. &lt;/p&gt;
+&lt;p&gt;The worst-case scenario is also known as the “upper bound”. &lt;/p&gt;
+&lt;p&gt;Remember this table? &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;O&lt;/th&gt;
+&lt;th&gt;Complexity&lt;/th&gt;
+&lt;th&gt;Rate of growth&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;O(1)&lt;/td&gt;
+&lt;td&gt;constant&lt;/td&gt;
+&lt;td&gt;fast&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(log n)&lt;/td&gt;
+&lt;td&gt;logarithmic&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(n)&lt;/td&gt;
+&lt;td&gt;linear&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(n * log n)&lt;/td&gt;
+&lt;td&gt;log linear&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(n^2)&lt;/td&gt;
+&lt;td&gt;quadratic&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(n^3)&lt;/td&gt;
+&lt;td&gt;cubic&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(2^n)&lt;/td&gt;
+&lt;td&gt;exponential&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O(n!)&lt;/td&gt;
+&lt;td&gt;factorial&lt;/td&gt;
+&lt;td&gt;slow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;It lists common orders from fastest to slowest. &lt;/p&gt;
+&lt;h2&gt;Big O Factorial Time Complexity&lt;/h2&gt;
+&lt;p&gt;Here we are, at the end of our journey. &lt;/p&gt;
+&lt;p&gt;And we saved the worst for last.&lt;/p&gt;
+&lt;p&gt;O(n!)&lt;/p&gt;
+&lt;p&gt;AKA factorial time complexity.&lt;/p&gt;
+&lt;p&gt;If Big O helps us identify the worst-case scenario for our algorithms, O(n!) is the worst of the worst. &lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;p&gt;Recall that a factorial is the product of the sequence of &lt;em&gt;n&lt;/em&gt; integers. &lt;/p&gt;
+&lt;p&gt;For example, the factorial of 5, or &lt;em&gt;5!&lt;/em&gt;, is:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;5 * 4 * 3 * 2 * 1 = 120&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We will find ourselves writing algorithms with factorial time complexity when calculating permutations and combinations.&lt;/p&gt;
+&lt;p&gt;If we look at our chart, we see that our rate of growth is nearly vertical. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9c24f10d0295ead7526e32d62fa2eac5/4117f/big-o-cheatsheet.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 63.15359477124183%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAACrUlEQVQoz1XRSUwTYRQH8I94Mh7UgyeN8WJijCfjtXZaynYQIXoyeDHRRG/GoMZAHDpMZyEIGBXFgxcTJVIENMFSkO5lWmQ1sQudQikpUFlmulra7zkDhITkHf75kl/ee99DpUIhHw5nAoFcKASRCI5Gc4HARs/7jdddG8ONCf8dYexe99B1i60ZojEsRkAU1QovQUxE2WQySZLRxsZkczNmmCxFrTU1ZRkG2tuB7wCuC/guaHsJXAcoj6wJaA7oNuh+CGO3UGZ9XTaZZKOxyHHA85ISWBaUzLJYDQxmd4tTpMLaoZOEgdvg0YL/moolmt4myT2Toii8hw8VqzIlfHwAjmqYIMCtB6EeZZJJmaYlksQct8MwyghKf3zAeBaYNlW+ewKWeuwlsKccPJVFpy7rqEXxYDBlMm3v4hxN52lawfuM5aH1BXS2wEADeHUg6HbshsTQ1dXvWmlEk3fWonlBSDHMHpYPFuYPzykQ4DHsOAypUd2WhciN67FbB746FJiaUrDU0pI3mZSFgef253z7GKx14Ndir/6frVy2EkoV7HrwGmDCAG4ChDp1502KShmN6VYqTyuX6FD/c7BBGbLo1WZ/EpJVmx4jik51VXBVgrMK7DUwXoXdN9Q7/6WMm+TzNMngNhY+3S85KvIujTyil36UZ0crSrZqcNSobEIPfg3MX4GFixA/A1vnVbzZyqw9I0s9T7HlZt6uV0DBZlA6w4wGQpchdgGSZ0E+BeljUDwCgADKMEZb0gkkJ9YmH90NvjLEhy/FbOcSvtOJuZPxwNHFSJm4giKr6E8CzcbRdAz9WkKCiLwiGp0vGxTQN/9xlMvkAlNWcaE/HOlbWPwSWOwNxT+HVnpDK/22yTdfraxr7sPv2MB0tH922TyzbJ5eNvuiZlewzycO/QeV1h5qGVp6JgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;big o cheatsheet&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9c24f10d0295ead7526e32d62fa2eac5/b9e4f/big-o-cheatsheet.png&quot;
+        srcset=&quot;/static/9c24f10d0295ead7526e32d62fa2eac5/cf440/big-o-cheatsheet.png 148w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/d2d38/big-o-cheatsheet.png 295w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/b9e4f/big-o-cheatsheet.png 590w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/f9b6a/big-o-cheatsheet.png 885w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/2d849/big-o-cheatsheet.png 1180w,
+/static/9c24f10d0295ead7526e32d62fa2eac5/4117f/big-o-cheatsheet.png 2448w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;That’s great if we’re going to the Moon, but not if we are writing algorithms. &lt;/p&gt;
+&lt;p&gt;🚀🌌🌙&lt;/p&gt;
+&lt;p&gt;Why would anyone ever write an algorithm with factorial time complexity? &lt;/p&gt;
+&lt;p&gt;It’s not that we &lt;em&gt;want&lt;/em&gt; to write terrible algorithms. &lt;/p&gt;
+&lt;p&gt;The problem is the problems. &lt;/p&gt;
+&lt;p&gt;There are some problems for which there is no easy solution. &lt;/p&gt;
+&lt;h2&gt;NP-Complete Problems&lt;/h2&gt;
+&lt;p&gt;These are what are known as &lt;em&gt;NP-complete&lt;/em&gt; problems. &lt;/p&gt;
+&lt;p&gt;NP-complete is a concept in complexity theory used to describe a category of problems for which there is no known correct &lt;em&gt;and&lt;/em&gt; fast solution.&lt;/p&gt;
+&lt;p&gt;In other words, the solution to an NP-complete problem can be quickly verified, but there is no known way to quickly find a solution. &lt;/p&gt;
+&lt;p&gt;It’s important to distinguish between two types of &lt;em&gt;solution&lt;/em&gt;. &lt;/p&gt;
+&lt;p&gt;There’s the solution as &lt;em&gt;algorithm&lt;/em&gt;, i.e: the function that we can apply to any input to solve this problem. &lt;/p&gt;
+&lt;p&gt;And there’s the solution as &lt;em&gt;output&lt;/em&gt;, i.e: the specific value we want our function to return.&lt;/p&gt;
+&lt;p&gt;With NP-complete problems, we can prove our solution, as algorithm, will work on a small input, but the time to find a specific solution, as output, grows rapidly as the input size increases.&lt;/p&gt;
+&lt;p&gt;Complexity theory is a big topic and deserves a series of its own, so we’ll leave it at that.&lt;/p&gt;
+&lt;p&gt;Let’s look at a few ‘real-world’ examples that may help illustrate this concept. &lt;/p&gt;
+&lt;h3&gt;The Traveling Salesman&lt;/h3&gt;
+&lt;p&gt;A classic example of NP-complete is the &lt;a href=&quot;https://en.wikipedia.org/wiki/Travelling_salesman_problem&quot;&gt;Traveling Salesman Problem&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;AKA TSP.&lt;/p&gt;
+&lt;p&gt;Say you’re a traveling salesperson and you need to visit &lt;em&gt;n&lt;/em&gt; cities. What is the shortest route that visits each and returns you to your start? &lt;/p&gt;
+&lt;p&gt;To solve this, we need to calculate every possible route. &lt;/p&gt;
+&lt;p&gt;Let’s start with 3 cities: Austin, Boston and Chicago&lt;/p&gt;
+&lt;p&gt;How many permutations are there? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Austin &amp;gt; Boston &amp;gt; Chicago
+Austin &amp;gt; Chicago &amp;gt; Boston
+Boston &amp;gt; Austin &amp;gt; Chicago
+Boston &amp;gt; Chicago &amp;gt; Austin
+Chicago &amp;gt; Austin &amp;gt; Boston
+Chicago &amp;gt; Boston &amp;gt; Austin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is &lt;em&gt;3!&lt;/em&gt;, which is six permutations.&lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;p&gt;If we have three possible starting points, then for each starting point we have two possible routes to the final destination.&lt;/p&gt;
+&lt;p&gt;What if we need to visit 4 cities? Austin, Boston, Chicago, and Detroit.&lt;/p&gt;
+&lt;p&gt;How many permutations? &lt;/p&gt;
+&lt;p&gt;That would be &lt;em&gt;4!&lt;/em&gt;, which is 24 permutations.&lt;/p&gt;
+&lt;p&gt;Why? &lt;/p&gt;
+&lt;p&gt;If we have four possible starting points, then for each starting point we have three possible routes, and for each of those points, we have two possible routes, and the final stop. So:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;4 * 3 * 2 * 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And five?&lt;/p&gt;
+&lt;p&gt;As we saw above, that’s 120. &lt;/p&gt;
+&lt;p&gt;What about 10? &lt;/p&gt;
+&lt;p&gt;Uh oh.&lt;/p&gt;
+&lt;p&gt;(Or should I say, &lt;code&gt;Uh O&lt;/code&gt;?)&lt;/p&gt;
+&lt;p&gt;That’s 3628800. &lt;/p&gt;
+&lt;p&gt;That’s a big increase and a lot of computational processing.&lt;/p&gt;
+&lt;p&gt;We could easily write an algorithm to brute force a solution for small inputs, but it doesn’t take long before we cross a threshold requiring us to make millions (and more!) calculations. &lt;/p&gt;
+&lt;h3&gt;The Knapsack Problem&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Knapsack_problem&quot;&gt;Knapsack Problem&lt;/a&gt; is another classic NP-complete problem. &lt;/p&gt;
+&lt;p&gt;It’s a resource allocation problem in which we are trying to find an optimized combination under a set of constraints. &lt;/p&gt;
+&lt;p&gt;Say you’ve got an inventory of flat panel TVs from multiple manufacturers and you need to fill a shipping container with them. Larger TVs are worth more, but they also take up more space. You want to pack as many TVs into the container as possible to maximize your profit. &lt;/p&gt;
+&lt;p&gt;How do we solve this problem? &lt;/p&gt;
+&lt;p&gt;The brute force approach is to calculate all possible combinations and select the “best” which takes us into the realm of factorial time complexity.&lt;/p&gt;
+&lt;p&gt;Lucky for us, there are several solutions using &lt;a href=&quot;https://jarednielsen.com/dynamic-programming-memoization-tabulation/&quot;&gt;dynamic programming&lt;/a&gt; that are more elegant and (slightly more) efficient.&lt;/p&gt;
+&lt;h3&gt;The Clique Problem&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Clique_problem&quot;&gt;Clique Problem&lt;/a&gt; asks us to find all subsets of vertices in a graph. &lt;/p&gt;
+&lt;p&gt;It might be easier to think of this as the “Social Network Problem” or “The One Degree of Kevin Bacon Problem”: given a network of individuals, how do you find the closest friends for each of them?&lt;/p&gt;
+&lt;h2&gt;How Do We Solve NP-Complete Problems?&lt;/h2&gt;
+&lt;p&gt;We know we can solve NP-complete problems. &lt;/p&gt;
+&lt;p&gt;The problem is we don’t have time.&lt;/p&gt;
+&lt;p&gt;The solution is &lt;em&gt;heuristics&lt;/em&gt;. &lt;/p&gt;
+&lt;p&gt;In computer science, a &lt;a href=&quot;https://en.wikipedia.org/wiki/Heuristic_(computer_science)&quot;&gt;heuristic algorithm&lt;/a&gt; is an approach for finding an approximate, or ‘good enough’ solution. &lt;/p&gt;
+&lt;p&gt;You are reading this book because you are a practitioner, not an academic. &lt;/p&gt;
+&lt;p&gt;Academics get paid to create problems. &lt;/p&gt;
+&lt;p&gt;We get paid to solve them. &lt;/p&gt;
+&lt;p&gt;A parting quote, generally attributed to Sheryl Sandberg:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Done is better than perfect. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Just like this article. &lt;/p&gt;
+&lt;h2&gt;Big O Factorial Time Complexity&lt;/h2&gt;
+&lt;p&gt;Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O factorial time complexity. Now go solve problems! Just don’t waste your time on the hard ones. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Improve Learning and Memory with Retrieval Practice]]></title><description><![CDATA[This article originally published in my newsletter, The Solution. How do we learn anything? How do we remember the things that we learn? The…]]></description><link>http://jarednielsen.com/learning-memory-retrieval/</link><guid isPermaLink="false">http://jarednielsen.com/learning-memory-retrieval/</guid><pubDate>Mon, 06 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/2b7a385e506bc8cfab3a031a141d540b/a987b/jarednielsen-solution-retrieval.png&quot;
