@@ -1,8 +1,8 @@
 ---
-title: Pattern Forming
+title: Pattern Forming and Problem Solving
 date: "2020-03-23"
 description: How do you build something out of nothing? Start by forming patterns. 
-keywords: ['', '', '']
+keywords: ['pattern forming', 'patterns', 'problem solving']
 ---
 
 
