@@ -1,0 +1,378 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><meta data-react-helmet="true" name="description" content="Scrum is the most popular agile process, and Essential Scrum by Kenneth S. Rubin is arguably the most popular book on the topic. The problem that Scrum seeks to solve is how do we empower teams to identify and solve their own problems?"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=1659889846b630ce0576be754ef9c32d"/><title data-react-helmet="true">Essential Scrum by Kenneth S. Rubin | jarednielsen.com</title><meta name="generator" content="Gatsby 2.18.2"/><meta data-react-helmet="true" property="og:title" content="Essential Scrum by Kenneth S. Rubin"/><meta data-react-helmet="true" property="og:description" content="Scrum is the most popular agile process, and Essential Scrum by Kenneth S. Rubin is arguably the most popular book on the topic. The problem that Scrum seeks to solve is how do we empower teams to identify and solve their own problems?"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Jared Nielsen"/><meta data-react-helmet="true" name="twitter:title" content="Essential Scrum by Kenneth S. Rubin"/><meta data-react-helmet="true" name="twitter:description" content="Scrum is the most popular agile process, and Essential Scrum by Kenneth S. Rubin is arguably the most popular book on the topic. The problem that Scrum seeks to solve is how do we empower teams to identify and solve their own problems?"/><style data-href="/styles.a2b0a4210f454d4c17db.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}h1{font-size:2em!important}#mc_embed_signup form{text-align:center;padding:10px 0}.mc-field-group{display:inline-block}#mc_embed_signup input.email{font-family:Open Sans,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;font-size:15px;border:1px solid #abb0b2;border-radius:3px;color:#343434;background-color:#fff;box-sizing:border-box;height:32px;padding:0 .4em;display:inline-block;margin:0;width:350px;vertical-align:top}#mc_embed_signup label{display:block;font-size:16px;padding-bottom:10px;font-weight:700}#mc_embed_signup .clear{display:inline-block}#mc_embed_signup .button{font-size:13px;border:none;border-radius:3px;letter-spacing:.03em;color:#fff;background-color:#ff007f;box-sizing:border-box;height:32px;line-height:32px;padding:0 18px;display:inline-block;margin:0;-webkit-transition:all .23s ease-in-out 0s;transition:all .23s ease-in-out 0s}#mc_embed_signup .button:hover{background-color:#8000ff;cursor:pointer}#mc_embed_signup div#mce-responses{float:left;top:-1.4em;padding:0 .5em;overflow:hidden;width:90%;margin:0 5%;clear:both}#mc_embed_signup div.response{margin:1em 0;padding:1em .5em .5em 0;font-weight:700;float:left;top:-1.5em;z-index:1;width:80%}#mc_embed_signup #mce-error-response{display:none}#mc_embed_signup #mce-success-response{color:#529214;display:none}#mc_embed_signup label.error{display:block;float:none;width:auto;margin-left:1.05em;text-align:left;padding:.5em 0}@media (max-width:768px){#mc_embed_signup input.email{width:100%;margin-bottom:5px}#mc_embed_signup .clear{display:block;width:100%}#mc_embed_signup .button{width:100%;margin:0}}</style><link as="script" rel="preload" href="/component---src-templates-blog-post-js-2a9c5f72c2c9311faca6.js"/><link as="script" rel="preload" href="/commons-246aa2cc16737a2f2814.js"/><link as="script" rel="preload" href="/app-e83603a732b9346823e1.js"/><link as="script" rel="preload" href="/styles-53d27243da94e1a00671.js"/><link as="script" rel="preload" href="/webpack-runtime-c973350df21cb6f2e98b.js"/><link as="fetch" rel="preload" href="/page-data/book-summary/essential-scrum-kenneth-rubin/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">jarednielsen.com</a></h3><h1>Essential Scrum by Kenneth S. Rubin</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">April 15, 2019</p><div><p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/75c43b87b6827ca0b864d640b1cd0f1b/c35de/essential-scrum.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 52.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EABQBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAXZ1BMNAAv8A/8QAHBAAAgEFAQAAAAAAAAAAAAAAAQQAAwUREyE0/9oACAEBAAEFAn/OgMV5cOLok7Z//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8BZ//EABkQAAIDAQAAAAAAAAAAAAAAAAABEGKBcf/aAAgBAQAGPwLR8jRKsf/EABoQAQACAwEAAAAAAAAAAAAAAAEAERAhMVH/2gAIAQEAAT8hq7crOexbaeYpDow//9oADAMBAAIAAwAAABBUD//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/EGf/xAAVEQEBAAAAAAAAAAAAAAAAAAAQMf/aAAgBAgEBPxCT/8QAHBABAAEEAwAAAAAAAAAAAAAAAREAEDFRIUGB/9oACAEBAAE/ECUnp+1lEHgvZaUkOud1kQUIM2//2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Essential Srum: A Practical Guide to the Most Popular Agile Process by Kenneth S. Rubin"
+        title=""
+        src="/static/75c43b87b6827ca0b864d640b1cd0f1b/c739e/essential-scrum.jpg"
+        srcset="/static/75c43b87b6827ca0b864d640b1cd0f1b/8ee9c/essential-scrum.jpg 148w,
+/static/75c43b87b6827ca0b864d640b1cd0f1b/ebbe7/essential-scrum.jpg 295w,
+/static/75c43b87b6827ca0b864d640b1cd0f1b/c739e/essential-scrum.jpg 590w,
+/static/75c43b87b6827ca0b864d640b1cd0f1b/5413e/essential-scrum.jpg 885w,
+/static/75c43b87b6827ca0b864d640b1cd0f1b/4efde/essential-scrum.jpg 1180w,
+/static/75c43b87b6827ca0b864d640b1cd0f1b/c35de/essential-scrum.jpg 1200w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Scrum is the most popular agile process, and <a href="https://amzn.to/39cryel">Essential Scrum: A Practical Guide to the Most Popular Agile Process by Kenneth S. Rubin</a> is arguably the most popular book on the topic. The problem that Scrum seeks to solve is how do we empower teams to identify and solve their own problems? The following book summary is a combination of my notes and quotes.</p>
+<p><em>Note: Amazon links are affiliate.</em></p>
+<h2>Book Summary of <em>Essential Scrum: A Practical Guide to the Most Popular Agile Process</em> by Kenneth S. Rubin</h2>
+<blockquote>
+<p>Scrum is an agile approach for developing innovative products and services.</p>
+</blockquote>
+<blockquote>
+<p>With an agile approach, you begin by creating a <strong>product backlog</strong> — a prioritized list of the features and other capabilities needed to develop a successful product. Guided by the product backlog, you always work on the most important or highest-priority items first. When you run out of resources (such as time), any work that didn’t get completed will be of lower priority than the completed work. </p>
+</blockquote>
+<blockquote>
+<p>The work itself is performed in short, timeboxed <strong>iterations</strong>, which usually range from a week to a calendar month in length. During each iteration, a self-organizing, <strong>cross-functional team</strong> does all of he work — such as designing, building, and testing — required to produce complete, working features that could be put into production.</p>
+</blockquote>
+<blockquote>
+<p>Typically the amount of work in the product backlog is much greater than can be completed by a team in one short-duration iteration. So, at the start of each iteration, the team plans which high-priority subset of the product backlog to create in the upcoming iteration.</p>
+</blockquote>
+<blockquote>
+<p>At the end of the iteration, the team reviews the complete features with the stakeholders to get their feedback. Based on the feedback, the product owner and team can alter both they plan to work on next and how the team plans to do the work.</p>
+</blockquote>
+<blockquote>
+<p>At the end of each iteration, the team should have a potentially shippable product (or increment of the product), one that can be released if appropriate. </p>
+</blockquote>
+<h3>Can Scrum Help You?</h3>
+<blockquote>
+<p>Scrum’s focus on delivering working, integrated, tested, business-valuable features each iteration leads to results being delivered fast. Scrum is also well suited to help organizations succeed in a complex world where they must quickly adapt based on the interconnected actions of competitors, customers, users, regulatory bodies, and other stakeholders. And Scrum provides more joy for all participants. Not only are customers delighted, but also the people doing the work actually enjoy it! They enjoy frequent and meaningful collaboration, leading to improved interpersonal relationships and greature mutual trust among team members.</p>
+</blockquote>
+<blockquote>
+<p>Though Scrum is an excellent solution for many situations, it is not the proper solution in all circumstances. The <strong>Cynefin framework</strong> (Snowden and Boone 2007) is a sense-making framework that helps us understand the situation in which we have to operate and decide on a situation-appropriate approach. </p>
+</blockquote>
+<h4>Cynefin Framework</h4>
+<ul>
+<li>
+<p>Complex domain:</p>
+<ul>
+<li>“This is the domain of emergence. We need to explore to learn about the problem, then inspect and adapt based on our learning.”</li>
+<li>“If there is a right answer, we will know it only with hindsight.”</li>
+<li>“Scrum is particularly well suited for operating in a complex domain. In such situations our ability to prove (explore), sense (inspect), and respond (adapt) is critical.”</li>
+</ul>
+</li>
+<li>
+<p>Complicated domain:</p>
+<ul>
+<li>“Complicated problems are the domain of good practices dominated by experts. There might be multiple right answers, but expert diagnosis is required to figure them out.”</li>
+<li>Because of this, Scrum is not the best solution for these types of problems.</li>
+</ul>
+</li>
+<li>
+<p>Simple domain</p>
+<ul>
+<li>“When dealing with simple problems, everyone can see cause and effect. Often the right answer is obvious and undisputed. This is the domain of legitimate best practices. There are known solutions.”</li>
+<li>Scrum is not the most efficient tool for this type of problem.</li>
+<li>“Using a process with a well-defined, repeatable set of steps that are known to solve the problem would be a better fit.”</li>
+</ul>
+</li>
+<li>
+<p>Chaotic domain</p>
+<ul>
+<li>“Chaotic problems require a rapid response. We are in a crisis and need to act immediately to prevent further harm and reestablish at least som order”</li>
+<li>
+<p>Scrum is not the best solution here. </p>
+<ul>
+<li>“With chaotic problems, someone needs to take charge of the situation and act.” </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Disorder</p>
+<ul>
+<li>“You are in the disorder domain when you don’t know which of the other domains you are in.”</li>
+<li>When you are in the disorder domain, they way out is to break down the situation into constituent parts and assign each to one of the other four domains You are not trying to apply Scrum in the disorder domain; you are trying to get out of this domain.”</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Scrum is not a silver bullet or a magic cure. Scrum can, however, enable you to embrace the changes that accompany all complex <strong>product development efforts</strong>.</p>
+</blockquote>
+<blockquote>
+<p>Although the Scrum framework is simple, it would be a mistake to assume that Scrum is easy and painless to apply. Scrum doesn’t prescriptively answer your process questions; instead, it empowers teams to ask and answer their own great questions. Scrum doesn’t give individuals a cookbook solution to all of their organizational maladies; instead, Scrum makes visible the dysfunctions and waste that prevent organizations from reaching their true potential.</p>
+</blockquote>
+<h3>Scrum Framework</h3>
+<h4>Scrum Roles</h4>
+<ul>
+<li>
+<p>Product Owner</p>
+<ul>
+<li>The empowered central point of product leadership.</li>
+<li>The product owner maintains and communicates to all other participants a clear vision of what the Scrum team is trying to achieve.</li>
+</ul>
+</li>
+<li>
+<p>ScrumMaster</p>
+<ul>
+<li>Helps everyone involved understand and embrace the Scrum values, principles, and practices. </li>
+<li>Acts as a coach, providing process leadership and helping the Scrum team and the rest of the organization develop their own high-performance, organization-specific Scrum approach.</li>
+<li>Helps the team resolve issues and make improvements to its use of Scrum.</li>
+<li>Responsible for protecting the team from outside interference and takes a leadership role in removing impediments that inhibit team productivity.</li>
+</ul>
+</li>
+<li>
+<p>Development Team</p>
+<ul>
+<li>A diverse, cross-functional collection of architects, programmers, testers, database administrators, UI designers, and so on, who are responsible for designing, building and testing the desired product. </li>
+</ul>
+</li>
+</ul>
+<h4>Scrum Activities and Artifacts</h4>
+<ul>
+<li>Product backlog</li>
+<li>Sprints</li>
+<li>Sprint Planning</li>
+<li>Sprint Execution</li>
+<li>Daily Scrum</li>
+<li>Done</li>
+<li>Defined as a potentially shippable product increment</li>
+<li>Sprint Review</li>
+<li>Sprint Retrospective</li>
+</ul>
+<h3>Agile Principles</h3>
+<h4>Scrum vs. Plan-driven Development</h4>
+<blockquote>
+<p>Plan-driven processes (waterfall, tradiational, sequential, anticipatory, predictive or prescriptive development processes )are so named because they attempt to plan for and anticipate up front all of the features a user might want in the end product, and to determine how best to build those features. The idea here is that the better the planning, the better the understanding, and therefore the better the execution. </p>
+</blockquote>
+<blockquote>
+<p>Plan-driven development works well if you are applying it to problems that are well defined, predictable, and unlikely to undergo any significant change. The problem is that most product development efforts are anything but predictable, especially at the beginning. So, while a plan-driven process gives the impression of an orderly, accountable, and measurable approach, that impression can lead to a false sens of security. After all, developing a product rarely goes as planned. [P]lan-driven development approaches are based on a set of beliefs that do not match the uncertainty inherent in most product development efforts.</p>
+</blockquote>
+<blockquote>
+<p>Scrum, on the other hand, is based on a different set of beliefs — ones that do map well to problems with enough uncertainty to make high levels or predictability difficult. </p>
+</blockquote>
+<ul>
+<li>
+<p>Variability and uncertainty</p>
+<ul>
+<li>
+<p>Embrace helpful variability</p>
+<ul>
+<li>In product development… the goal is to create the unique <em>single instance</em> of the product, not to <em>manufacture</em> the product. This single instance is analogous to a unique recipe. We don’t want to create the same recipe twice; if we do, we have wasted our money. </li>
+</ul>
+</li>
+<li>
+<p>Employ iterative and incremental development</p>
+<ul>
+<li><strong>Iterative development</strong> acknowledges that we will probably get hings wrong before we get them right and that we weill do things poorly before we do them well. As such, iterative development is a planned rework strategy.</li>
+<li>The biggest downside to iterative development is that in the presence of uncertainty it can be difficult up front to determine (plan) how many improvement passes will be necessary.</li>
+<li><strong>Incremental development</strong> is based on the age-old principle of “Build some of it before you build all of it”. We avoid having one large, big-bang-style event at the end of development where all the pieces come together and the entire product is delivered. Instead, we break the product into smaller pices so that we can build some of it, learn how each piece is to survive in the environment in which it must exist, adapt based on what we learn, and then build more of it. </li>
+<li>The biggest drawback to incremental development is that by building in pieces, we risk missing the big picture (wee see the trees but not the forest).</li>
+<li>In Scrum, we don’t work on a phase at a time; we work on a feature at a time.</li>
+<li>We receive feedback… which allows us to adapt. Scrum does not require that we predetermine a set number of iterations. The continuous stream of feedback will guide us to do the appropriate and economically sensible number of iteration while developing the product incrementally.</li>
+</ul>
+</li>
+<li>
+<p>Leverage Variability through Inspection, Adaptation and Transparency</p>
+<ul>
+<li>Scrum embraces the fact that in product development, some level of variability is required in order to build something new. Scrum also assumes that the process necessary to create the product is complex and therefore would defy a complete up-front definition. Furthermore, it generates early and frequent feedback to ensure that the right product is built and that the product is built right.</li>
+<li>To do this well, we rely on transparency: all of the information that is important to producing a product must be available to the people involved in creating the product. </li>
+</ul>
+</li>
+<li>
+<p>Reduce All Forms of Uncertainty Simultaneously</p>
+<ul>
+<li>End uncertainty (what)</li>
+<li>Means uncertainty (how)</li>
+<li>In Scrum, we do not constrain ourselves by fully addressing one type of uncertainty before we address the next type. Instead, we take a more holistic approach and focus on simultaneously reducing all uncertainties.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Prediction and adaptation</p>
+<ul>
+<li>
+<p>We are constantly balancing the desire for prediction with the need for adaptation. How?</p>
+<ul>
+<li>Keep options open</li>
+<li>
+<p>Last responsible moment</p>
+<ul>
+<li>We delay commitment and do not make important and irreversible decisions until the last responsible moment</li>
+<li>And when is that? When the cost of not making a decision becomes greater than the cost of making a decision</li>
+</ul>
+</li>
+<li>
+<p>Accept that you can’t get it right up front</p>
+<ul>
+<li>In Scrum, we acknowledge that we can’t get all of the requirements or the plans right up front. In fact, we believe that trying to do so could be dangerous because we are likely missing important knowledge</li>
+</ul>
+</li>
+<li>
+<p>Favor an adaptive, exploratory approach</p>
+<ul>
+<li>When faced with uncertainty, we buy information by exploring</li>
+</ul>
+</li>
+<li>
+<p>Embrace change in an economically sensible way</p>
+<ul>
+<li>In Scrum, we assume that change is the norm</li>
+<li>Manage the amount of work in process and the flow of that work so that the cost of change is less affected by time that it is with sequential projects</li>
+</ul>
+</li>
+<li>
+<p>Balance predictive up-front work with adaptive just-in-time work</p>
+<ul>
+<li>Up-front work should be helpful without being excessive</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Validated learning</p>
+<ul>
+<li>
+<p>Validate important assumptions fast</p>
+<ul>
+<li>Assumptions represent a significant development risk</li>
+</ul>
+</li>
+<li>
+<p>Leverage multiple concurrent learning loops</p>
+<ul>
+<li>Constant learning is a key to our success</li>
+</ul>
+</li>
+<li>
+<p>Organize workflow for fast feedback</p>
+<ul>
+<li>We ensure that feedback generating activities occur in close time proximity to the original work</li>
+<li>Fast feedback closes the learning loop quickly, allowing us to truncate bad development paths before they can cause serious economic damage.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Work-in-progress (WIP)</p>
+<ul>
+<li>
+<p>Use economically small batches</p>
+<ul>
+<li>Single piece flow over all-before-any</li>
+</ul>
+</li>
+<li>
+<p>Recognize inventory and manage it for good flow</p>
+<ul>
+<li>Although we need some requirements if we are going to start development, we don’t need to have <em>all</em> of the requirements. If we have too many requirements, we will likely experience inventory waste when requirements changes. On the other hand, if we don’t have enough requirements inventory, we will disrupt the fast flow of work, which is also a form of waste.</li>
+</ul>
+</li>
+<li>
+<p>Focus on Idle work, not idle workers</p>
+<ul>
+<li>Idle work is something we want to do but can’t do because something is preventing us</li>
+<li>“Watch the baton, not the runners”</li>
+<li>You don’t win the race (deliver products) when the baton is on the ground.</li>
+</ul>
+</li>
+<li>Consider cost of delay</li>
+</ul>
+</li>
+<li>
+<p>Progress</p>
+<ul>
+<li>
+<p>Adapt to real-time information and replan</p>
+<ul>
+<li>Our goal is to rapidly replan and adapt to the stream of economically important information that is continuously arriving during the development effort</li>
+</ul>
+</li>
+<li>
+<p>Measure progress by validating working assets</p>
+<ul>
+<li>Can we really claim success if we finish on time and on budget and yet fail to meet customer expectations?</li>
+<li>With Scrum, we measure progress by building working, validated assets that deliver value and that can be used to validate important assumptions.</li>
+</ul>
+</li>
+<li>
+<p>Focus on value-centric delivery</p>
+<ul>
+<li>A customer-value-centric form of development… is based on a prioritized, incremental model of delivery in which the highest-value features are continuously build and delivered in the next iteration.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Performance</p>
+<ul>
+<li>
+<p>Go fast but never hurry</p>
+<ul>
+<li>In Scrum, one core goal is to be nimble, adaptable, and speedy. By going fast, we deliver fast, we get feedback fast, and we get value into the hands of our customers sooner. Learning and reacting quickly allow us to generate revenue and/or reduce costs sooner.</li>
+<li>In Scrum, time is of the essence but we don’t rush to get things done. </li>
+</ul>
+</li>
+<li>
+<p>Sustainable pace</p>
+<ul>
+<li>People should be able to work at a pace that they can continue for an extended period of time</li>
+</ul>
+</li>
+<li>
+<p>Build in quality</p>
+<ul>
+<li>Each increment of value that is created is completed to a high level of confidence and has the potential to be put into production or shipped to customers</li>
+</ul>
+</li>
+<li>
+<p>Employ minimally sufficient ceremony</p>
+<ul>
+<li>In Scrum, our goal is to eliminate unnecessary formality. Therefore, we set the ceremonial bar at a low level, one that is minimally sufficient or good enough.</li>
+</ul>
+</li>
+<li>
+<p>Scrum isn’t anti-documentation:</p>
+<ul>
+<li>We adopt an economic perspective and carefully review which documents we create. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><em>Essential Scrum: A Practical Guide to the Most Popular Agile Process</em> by Kenneth S. Rubin</h2>
+<p>This book summary captures the high-level, conceptual framework of Scrum. The remainder of the book discusses it’s implementation. If you’re a technical manager or leader interested in implementing Scrum in your organization, I recommend reading <a href="https://amzn.to/39cryel">Essential Scrum: A Practical Guide to the Most Popular Agile Process by Kenneth S. Rubin</a>.</p></div><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img src="data:image/png;base64,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" alt="Jared Nielsen" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/352e5/jared-nielsen.png 1x,
+/static/0cdc03efc5a69bac4bd7922ebc9f22b8/aae31/jared-nielsen.png 1.5x,
+/static/0cdc03efc5a69bac4bd7922ebc9f22b8/47c2b/jared-nielsen.png 2x" /><img loading="lazy" width="50" height="50" srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/352e5/jared-nielsen.png 1x,
+/static/0cdc03efc5a69bac4bd7922ebc9f22b8/aae31/jared-nielsen.png 1.5x,
+/static/0cdc03efc5a69bac4bd7922ebc9f22b8/47c2b/jared-nielsen.png 2x" src="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/352e5/jared-nielsen.png" alt="Jared Nielsen" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Want to level up your problem solving skills? I write a weekly newsletter about programming, problem solving and lifelong learning.<!-- --> <a href="http://eepurl.com/cP8CMn" target="_blank" rel="noopener">Join now</a></p></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/book-summary/agile-retrospectives-esther-derby-diana-larsen/">← <!-- -->Agile Retrospectives by Esther Derby and Diana Larsen</a></li><li><a rel="next" href="/puzzle-video-games-problem-solving/">Best Puzzle Video Games to Level Up Problem Solving Skills<!-- --> →</a></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-51067359-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/book-summary/essential-scrum-kenneth-rubin/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-e83603a732b9346823e1.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-f8c20c8491cbd22ce357.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-2a9c5f72c2c9311faca6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-5ac19a3435fa25e6ccc9.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-4979af1861382ebf361e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-a28e292c1f821d5f3628.js"]};/*]]>*/</script><script src="/webpack-runtime-c973350df21cb6f2e98b.js" async=""></script><script src="/styles-53d27243da94e1a00671.js" async=""></script><script src="/app-e83603a732b9346823e1.js" async=""></script><script src="/commons-246aa2cc16737a2f2814.js" async=""></script><script src="/component---src-templates-blog-post-js-2a9c5f72c2c9311faca6.js" async=""></script></body></html>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 13 Apr 2020 10:17:17 GMT</lastBuildDate><item><title><![CDATA[Big O Factorial Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-factorial-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-factorial-time-complexity/</guid><pubDate>Fri, 17 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 13 Apr 2020 15:58:59 GMT</lastBuildDate><item><title><![CDATA[Big O Factorial Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-factorial-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-factorial-time-complexity/</guid><pubDate>Fri, 17 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/36abe77b998054914b2d38002d33cace/2f950/jarednielsen-big-o-factorial-time-complexity.png&quot;
@@ -222,7 +222,139 @@ Chicago &amp;gt; Boston &amp;gt; Austin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Just like this article. &lt;/p&gt;
 &lt;h2&gt;Big O Factorial Time Complexity&lt;/h2&gt;
-&lt;p&gt;Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O factorial time complexity. Now go solve problems! Just don’t waste your time on the hard ones. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Improve Learning and Memory with Retrieval Practice]]></title><description><![CDATA[This article originally published in my newsletter, The Solution. How do we learn anything? How do we remember the things that we learn? The…]]></description><link>http://jarednielsen.com/learning-memory-retrieval/</link><guid isPermaLink="false">http://jarednielsen.com/learning-memory-retrieval/</guid><pubDate>Mon, 06 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O factorial time complexity. Now go solve problems! Just don’t waste your time on the hard ones. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Analogy in Learning and Software Development]]></title><description><![CDATA[This article originally published in my weekly newsletter, The Solution. How do we learn abstract concepts? How do we learn anything that we…]]></description><link>http://jarednielsen.com/analogy-learning-software-development/</link><guid isPermaLink="false">http://jarednielsen.com/analogy-learning-software-development/</guid><pubDate>Mon, 13 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/25454e15e8e0399f85bbc3abce8ac383/a987b/jarednielsen-solution-analogy-metaphor.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2UlEQVQoz53SwQqCMBgHcJ82giA6desleocuPkEQEUEFHerYJSSiZgpikmZu7ts/c4Z00XTwwRjbj/+3zVBKobKI8B1KEer2G9UbNMajC2TiQ31Qkm1BjcXbKa7zPrzD+K+ktaBwjrCXHdytSZ5SRKwSrQBlfjB0FmDrLtzdCPamh5DNNEhpu4SBZWZgL8MGuG2H4I9TkVC2eRR9Z+55j/3KhORBgTV+FNIJZAKVxniGPjyXIeURpIhAkhctU0OQBCh9gcQzw+MCS/L1EqQGLaMcP/P2H7t5vQFLvF07xgXmqwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Illustration of rubber duck lightbulb&quot;
+        title=&quot;&quot;
+        src=&quot;/static/25454e15e8e0399f85bbc3abce8ac383/b9e4f/jarednielsen-solution-analogy-metaphor.png&quot;
+        srcset=&quot;/static/25454e15e8e0399f85bbc3abce8ac383/cf440/jarednielsen-solution-analogy-metaphor.png 148w,
+/static/25454e15e8e0399f85bbc3abce8ac383/d2d38/jarednielsen-solution-analogy-metaphor.png 295w,
+/static/25454e15e8e0399f85bbc3abce8ac383/b9e4f/jarednielsen-solution-analogy-metaphor.png 590w,
+/static/25454e15e8e0399f85bbc3abce8ac383/f9b6a/jarednielsen-solution-analogy-metaphor.png 885w,
+/static/25454e15e8e0399f85bbc3abce8ac383/2d849/jarednielsen-solution-analogy-metaphor.png 1180w,
+/static/25454e15e8e0399f85bbc3abce8ac383/a987b/jarednielsen-solution-analogy-metaphor.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This article originally published in my weekly newsletter, &lt;a href=&quot;https://mailchi.mp/f7da8a0d5542/the-solution-how-do-we-learn-abstract-concepts&quot;&gt;The Solution&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;How do we learn abstract concepts?&lt;/p&gt;
+&lt;p&gt;How do we learn anything that we can’t see, smell, taste, touch, or hear? &lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2UhVpgo&quot;&gt;Sparks of Genius&lt;/a&gt;, Robert and Michel Root-Bernstein write:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is not our senses that limit or liberate us, but our ability to illuminate the unknown by means of analogies to the known. Learning itself depends on analogizing. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;What is an Analogy?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In its most general sense, analogy refers to a functional resemblance between things that are otherwise unlike.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You are probably familiar with some of these classic analogies for understanding natural phenomena:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ancient Greek analogy of sound to water waves&lt;/li&gt;
+&lt;li&gt;European analogy of light to sound&lt;/li&gt;
+&lt;li&gt;William Harvey’s analogy of the heart to a pump&lt;/li&gt;
+&lt;li&gt;Benjamin Franklins’ analogy of lightning to electricity&lt;/li&gt;
+&lt;li&gt;James Clerk Maxwell’s analogy of electromagnetic forces to continuum mechanics&lt;/li&gt;
+&lt;li&gt;Max Planck’s analogy of electrons to vibrating strings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What Problem(s) Does Analogy Solve?&lt;/h2&gt;
+&lt;p&gt;All of them! &lt;/p&gt;
+&lt;p&gt;Analogy is an important and useful tool for learning and problem solving. &lt;/p&gt;
+&lt;p&gt;One of my favorite approaches for teaching functions is to use the analogy of a toaster:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;toaster&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;bread&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; bread &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; “ toast&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;”&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;toaster&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“Sourdough”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We could manually toast a piece of bread on the stove. &lt;/p&gt;
+&lt;p&gt;Or, we could use a toaster. &lt;/p&gt;
+&lt;p&gt;A function, like a toaster, is a little machine that lets us repeat a process without needing to perform the manual steps every time. &lt;/p&gt;
+&lt;p&gt;We put bread in the toaster. &lt;/p&gt;
+&lt;p&gt;The toaster returns toast. &lt;/p&gt;
+&lt;p&gt;We put an argument in the function.&lt;/p&gt;
+&lt;p&gt;The function returns a value.&lt;/p&gt;
+&lt;p&gt;No analogy is perfect.&lt;/p&gt;
+&lt;p&gt;If we push any analogy far enough, we’ll see it eventually break down.&lt;/p&gt;
+&lt;p&gt;The authors of &lt;a href=&quot;https://amzn.to/2UhVpgo&quot;&gt;Sparks of Genius&lt;/a&gt; pose the following question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;How and why do things that correspond only inexactly to whatever we are trying to explain nonetheless provide us with useful insights into real phenomena?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A function is not a toaster and a toaster is not a function.&lt;/p&gt;
+&lt;p&gt;But the analogy works.&lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Analogies, as imperfect correspondences presumed in spite of difference, help us make the leap from existing knowledge to new worlds of understanding that no other mental tool allows.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Analogy and Software Development&lt;/h2&gt;
+&lt;p&gt;You’ll encounter purists working in the sciences who believe that analogies are “misleading” and “illogical” due to this inexactness.&lt;/p&gt;
+&lt;p&gt;There’s no room for ambiguity in formal languages.&lt;/p&gt;
+&lt;p&gt;Or is there?&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2JCCarc&quot;&gt;Code Complete&lt;/a&gt;, Steve McConnell writes:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Important developments often arise out of analogies. By comparing a topic you understand poorly to something similar you understand better, you can come up with insights that result in a better understanding of the less-familiar topic. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;How do we use analogy in software development?&lt;/p&gt;
+&lt;p&gt;Metaphors. &lt;/p&gt;
+&lt;p&gt;☝️ What’s the difference between an anlogy and a metaphor? &lt;/p&gt;
+&lt;p&gt;An analogy is what is expressed and a metaphor is how it is expressed.&lt;/p&gt;
+&lt;p&gt;McConnell goes on to define &lt;em&gt;software metaphors&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A software metaphor is more like a searchlight than a road map. It doesn’t tell you where to find the answer; it tells you how to look for it. A metaphor serves more as a heuristic than it does as an algorithm.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There are a lot of popular metaphors for software development, such as writing, gardening and oyster farming, but McConnell ultimately settles on his favorite: construction.&lt;/p&gt;
+&lt;p&gt;We &lt;em&gt;build&lt;/em&gt; software.&lt;/p&gt;
+&lt;p&gt;The process of software construction is also analogous to the problem solving heuristic developed by George Polya in &lt;a href=&quot;https://amzn.to/33Mp30d&quot;&gt;How To Solve It&lt;/a&gt;:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Problem solving&lt;/th&gt;
+&lt;th&gt;Software construction&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Define the problem&lt;/td&gt;
+&lt;td&gt;What are we building?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Develop a plan&lt;/td&gt;
+&lt;td&gt;How are we building it?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Execute the plan&lt;/td&gt;
+&lt;td&gt;Are we having fun yet?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Reflect on the solution&lt;/td&gt;
+&lt;td&gt;Does it pass inspection?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A good craftsman knows the right tool for the job and knows how to use it correctly. Programmers do, too. The more you learn about programming, the more you fill your mental toolbox with analytical tools and the knowledge of when to use them and how to use them correctly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now you can add this to your toolbox! &lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Improve Learning and Memory with Retrieval Practice]]></title><description><![CDATA[This article originally published in my newsletter, The Solution. How do we learn anything? How do we remember the things that we learn? The…]]></description><link>http://jarednielsen.com/learning-memory-retrieval/</link><guid isPermaLink="false">http://jarednielsen.com/learning-memory-retrieval/</guid><pubDate>Mon, 06 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/2b7a385e506bc8cfab3a031a141d540b/a987b/jarednielsen-solution-retrieval.png&quot;
@@ -6652,7 +6784,7 @@ mongoose&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;ul&gt;
 &lt;li&gt;See  also: Fez, Limbo, Thomas Was Alone&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;What are your favorite puzzle video games for problem solving? Let me know &lt;a href=&quot;https://twitter.com/jarednielsen&quot;&gt;@jarednielsen on Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Essential Scrum by Kenneth S. Rubin]]></title><description><![CDATA[Scrum is the most popular agile process, and Essential Scrum: A Practical Guide to the Most Popular Agile Process by Kenneth S. Rubin is…]]></description><link>http://jarednielsen.com/book summary/essential-scrum-kenneth-rubin/</link><guid isPermaLink="false">http://jarednielsen.com/book summary/essential-scrum-kenneth-rubin/</guid><pubDate>Mon, 15 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;What are your favorite puzzle video games for problem solving? Let me know &lt;a href=&quot;https://twitter.com/jarednielsen&quot;&gt;@jarednielsen on Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Essential Scrum by Kenneth S. Rubin]]></title><description><![CDATA[Scrum is the most popular agile process, and Essential Scrum: A Practical Guide to the Most Popular Agile Process by Kenneth S. Rubin is…]]></description><link>http://jarednielsen.com/book-summary/essential-scrum-kenneth-rubin/</link><guid isPermaLink="false">http://jarednielsen.com/book-summary/essential-scrum-kenneth-rubin/</guid><pubDate>Mon, 15 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/75c43b87b6827ca0b864d640b1cd0f1b/c35de/essential-scrum.jpg&quot;
@@ -7009,7 +7141,7 @@ mongoose&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;&lt;em&gt;Essential Scrum: A Practical Guide to the Most Popular Agile Process&lt;/em&gt; by Kenneth S. Rubin&lt;/h2&gt;
-&lt;p&gt;This book summary captures the high-level, conceptual framework of Scrum. The remainder of the book discusses it’s implementation. If you’re a technical manager or leader interested in implementing Scrum in your organization, I recommend reading &lt;a href=&quot;https://amzn.to/39cryel&quot;&gt;Essential Scrum: A Practical Guide to the Most Popular Agile Process by Kenneth S. Rubin&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Agile Retrospectives by Esther Derby and Diana Larsen]]></title><description><![CDATA[Other than agile itself, perhaps the most important aspect of agile software development is the retrospective. This is where the iteration…]]></description><link>http://jarednielsen.com/book summary/agile-retrospectives-esther-derby-diana-larsen/</link><guid isPermaLink="false">http://jarednielsen.com/book summary/agile-retrospectives-esther-derby-diana-larsen/</guid><pubDate>Mon, 08 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;This book summary captures the high-level, conceptual framework of Scrum. The remainder of the book discusses it’s implementation. If you’re a technical manager or leader interested in implementing Scrum in your organization, I recommend reading &lt;a href=&quot;https://amzn.to/39cryel&quot;&gt;Essential Scrum: A Practical Guide to the Most Popular Agile Process by Kenneth S. Rubin&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Agile Retrospectives by Esther Derby and Diana Larsen]]></title><description><![CDATA[Other than agile itself, perhaps the most important aspect of agile software development is the retrospective. This is where the iteration…]]></description><link>http://jarednielsen.com/book-summary/agile-retrospectives-esther-derby-diana-larsen/</link><guid isPermaLink="false">http://jarednielsen.com/book-summary/agile-retrospectives-esther-derby-diana-larsen/</guid><pubDate>Mon, 08 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/e463c92d05a4c8f8fd84431af9c70638/689db/agile-retrospectives.jpg&quot;
