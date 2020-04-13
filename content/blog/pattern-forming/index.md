@@ -20,6 +20,9 @@ How does this ‘pure thought stuff’ become code?
 
 Patterns. 
 
+
+## Pattern Forming is Problem Solving 
+
 In [Sparks of Genius](https://amzn.to/2UhVpgo), Robert and Michele Root-Bernstein write:
 
 > All language can be transcribed using as few as two symbols--the dot and dash of Morse code--and virtually any kind of information can be translated into zeros and ones and fed into a computer. The striking thing about pattern forming is not the complexity of the elements that are combined, but the cleverness and unexpectedness with which the combinations are made.
@@ -35,6 +38,9 @@ The Root-Bernstein’s outline two lessons learned from their study of pattern f
 We want to form a pattern of forming patterns. 
 
 How do we do that?
+
+
+## The Pattern Forming / Habit Forming Feedback Loop
 
 In [Atomic Habits](https://amzn.to/2NZz8jx), James Clear discusses the importance of using habits to form an identity rather than to achieve a goal: 
 
@@ -61,6 +67,9 @@ It also consists of two steps:
 We use recursion to solve a large problem by breaking it down into smaller instances of the same problem.
 
 We recognize a pattern in the problem then we form a pattern to solve it.  
+
+
+## Problem Solving is Pattern Forming
 
 In [How To Solve It](https://amzn.to/33Mp30d), George Polya outlines four steps for solving any problem:
 
