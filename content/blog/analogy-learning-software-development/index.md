@@ -1,7 +1,7 @@
 ---
 title: "Analogy in Learning and Software Development"
 date: "2020-04-13"
-description: How do we learn concepts that we can’t see, smell, taste, touch, or hear? Learning itself depends on analogy.
+description: How do we learn concepts that we can’t see, smell, taste, touch, or hear? Learning itself, especially software development, depends on analogy.
 keywords: ['analogy', 'learning', 'software development']
 ---
 
@@ -84,7 +84,7 @@ Why?
 > Analogies, as imperfect correspondences presumed in spite of difference, help us make the leap from existing knowledge to new worlds of understanding that no other mental tool allows.
 
 
-## Analogy and Software Metaphors
+## Analogy and Software Development
 
 You'll encounter purists working in the sciences who believe that analogies are "misleading" and "illogical" due to this inexactness.
 
@@ -104,7 +104,7 @@ Metaphors.
 
 An analogy is what is expressed and a metaphor is how it is expressed.
 
-Here's McConnell getting meta:
+McConnell goes on to define _software metaphors_:
 
 > A software metaphor is more like a searchlight than a road map. It doesn’t tell you where to find the answer; it tells you how to look for it. A metaphor serves more as a heuristic than it does as an algorithm.
 
