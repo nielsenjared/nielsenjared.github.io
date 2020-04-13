@@ -1,7 +1,7 @@
 ---
 title: "Analogy in Learning and Software Development"
-date: "2020-04-06"
-description: 
+date: "2020-04-13"
+description: How do we learn concepts that we can’t see, smell, taste, touch, or hear? Learning itself depends on analogy.
 keywords: ['analogy', 'learning', 'software development']
 ---
 
