@@ -1,13 +1,13 @@
 ---
 title: Proof By Induction
 date: "2020-03-06"
-description: In this tutorial, you will learn proof by induction by summing consecutive integers 1 to n. Proof by induction is useful for understanding and calculating the Big O of recursive algorithms.
+description: In this tutorial, you will learn proof by induction, a mathematical method used to prove the truth of a statement. Proof by induction is useful for understanding and calculating the Big O of recursive algorithms.
 keywords: ["proof by induction"]
 ---
 
 ![](./jarednielsen-proof-induction.png)
 
-You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag to improve the performance of your algorithms and make an impression in technical interviews. In this tutorial, you will learn proof by induction by summing consecutive integers 1 to n.
+You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag to improve the performance of your algorithms and make an impression in technical interviews. In this tutorial, you will learn proof by induction, a mathematical method used to prove the truth of a statement.
 
 ---
 Want to level up your problem solving skills? I write a weekly newsletter about programming, problem solving and lifelong learning.
@@ -232,4 +232,4 @@ We just proved our equation!
 
 ## Proof by Induction
 
-In this tutorial, you learned proof by induction by proving an equation to sum consecutive integers from 1 to n. Proof by induction is useful for understanding and calculating the Big O of recursive algorithms. We’ll look at that in a future article. Stay tuned! 
+In this tutorial, you learned proof by induction, a mathematical method used to prove the truth of a statement. Proof by induction is useful for understanding and calculating the Big O of recursive algorithms. We’ll look at that in a future article. Stay tuned! 
