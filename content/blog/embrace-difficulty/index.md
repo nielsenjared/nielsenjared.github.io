@@ -1,16 +1,19 @@
 ---
 title: Embrace Difficulty
 date: '2020-04-20'
-description: 
-keywords: ['difficulty', '', '']
+description: The key to success in life and learning is to embrace difficulty. We need to be challenged to stay motivated and improve. As long as the challenge isn't _too_ difficult.
+keywords: ['difficulty', 'challenge', '']
 ---
 
 
 ![](./jarednielsen-solution-embrace-difficulty.png)
 
-@TODO introduction
+The key to success in life and learning is to embrace difficulty. We need to be challenged to stay motivated and improve. As long as the challenge isn't _too_ difficult.
 
 _This article originally published in my newsletter, [The Solution](https://mailchi.mp/f21680161849/the-solution-how-do-you-embrace-difficulty)_
+
+
+## Once Upon A Time...
 
 I thought I wanted to be an artist. 
 
@@ -107,6 +110,9 @@ Persistence is key.
 But Barbara, sometimes learning is difficult! 
 
 This is a good thing. 
+
+
+## Embrace Difficulty
 
 The authors of [Make It Stick](https://amzn.to/2QTzklN), counsel us to embrace difficulty: 
 
