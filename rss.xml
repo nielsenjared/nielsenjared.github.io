@@ -1,4 +1,180 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 17 Apr 2020 11:54:18 GMT</lastBuildDate><item><title><![CDATA[Big O Factorial Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-factorial-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-factorial-time-complexity/</guid><pubDate>Fri, 17 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Apr 2020 12:46:05 GMT</lastBuildDate><item><title><![CDATA[Embrace Difficulty]]></title><description><![CDATA[The key to success in life and learning is to embrace difficulty. We need to be challenged to stay motivated and improve. As long as the…]]></description><link>http://jarednielsen.com/embrace-difficulty/</link><guid isPermaLink="false">http://jarednielsen.com/embrace-difficulty/</guid><pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/460907b5e60cc37d300c2354537620b7/a987b/jarednielsen-solution-embrace-difficulty.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABT0lEQVQoz2NgwAKezY6F0DNiGJ/ty2J68X8lw4umQIanOzOYnt8og8gdz2MgCTydH4tT7vnVItIMe7Y4kRFML03SeHY4LxXEfjErVvLZ/tyc509LWUl24fNDBUxQ2vXZ8YKXz07maD7fWyD37FjB22cnCrwhBkLUYIB///4xoeO//34y/f/7n/HV/3OsLy/3iny9s4Plw/+nzC+uTRD+cGMJ+////xn//v7KhE0vXpfe7zdXebI/Gey3m8kMgk/2JJcR9B7QVAsM/OenNdAVup/ubSp5faHl/5cXBxO/v74U9O5S6/8P91bXAeV0/v75Yf3v338MvSADsYL///7++/f35/9/vz79//v7+79/f77//wtk//vz4z+QA1TxF6s+hv84wT8g+gPW/P/f7/8gDDHoD1DuL0QejFEBTheC3PgPoQOsG8oBi+MCDBCd1MMAplb1GMTYAYIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen solution embrace difficulty&quot;
+        title=&quot;&quot;
+        src=&quot;/static/460907b5e60cc37d300c2354537620b7/b9e4f/jarednielsen-solution-embrace-difficulty.png&quot;
+        srcset=&quot;/static/460907b5e60cc37d300c2354537620b7/cf440/jarednielsen-solution-embrace-difficulty.png 148w,
+/static/460907b5e60cc37d300c2354537620b7/d2d38/jarednielsen-solution-embrace-difficulty.png 295w,
+/static/460907b5e60cc37d300c2354537620b7/b9e4f/jarednielsen-solution-embrace-difficulty.png 590w,
+/static/460907b5e60cc37d300c2354537620b7/f9b6a/jarednielsen-solution-embrace-difficulty.png 885w,
+/static/460907b5e60cc37d300c2354537620b7/2d849/jarednielsen-solution-embrace-difficulty.png 1180w,
+/static/460907b5e60cc37d300c2354537620b7/a987b/jarednielsen-solution-embrace-difficulty.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;The key to success in life and learning is to embrace difficulty. We need to be challenged to stay motivated and improve. As long as the challenge isn’t &lt;em&gt;too&lt;/em&gt; difficult.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This article originally published in my newsletter, &lt;a href=&quot;https://mailchi.mp/f21680161849/the-solution-how-do-you-embrace-difficulty&quot;&gt;The Solution&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Once Upon A Time…&lt;/h2&gt;
+&lt;p&gt;I thought I wanted to be an artist. &lt;/p&gt;
+&lt;p&gt;It’s a difficult career path.&lt;/p&gt;
+&lt;p&gt;But I was all in. &lt;/p&gt;
+&lt;p&gt;I went to graduate school and earned an MFA.&lt;/p&gt;
+&lt;p&gt;I got hired as the assistant to the artist Thomas Houseago. &lt;/p&gt;
+&lt;p&gt;Hosueago was the next big thing.&lt;/p&gt;
+&lt;p&gt;Everybody wanted to be his assistant. &lt;/p&gt;
+&lt;p&gt;Since I filled that role, they wanted to be my friend. &lt;/p&gt;
+&lt;p&gt;It was prestigious and glamorous. &lt;/p&gt;
+&lt;p&gt;And then I got fired. &lt;/p&gt;
+&lt;p&gt;My new friends abandoned me. &lt;/p&gt;
+&lt;p&gt;I didn’t do anything wrong, but that didn’t stop me from feeling like a failure.&lt;/p&gt;
+&lt;p&gt;I qualified for unemployment and received a bi-weekly check that was enough to cover rent.&lt;/p&gt;
+&lt;p&gt;I hustled for side gigs and freelance work to cover the rest while I looked for full-time employment. &lt;/p&gt;
+&lt;p&gt;It was the Great Recession. &lt;/p&gt;
+&lt;p&gt;There weren’t any jobs.&lt;/p&gt;
+&lt;p&gt;And you can only look for work for so many hours a day before there’s nothing else to see.&lt;/p&gt;
+&lt;p&gt;So I spent the rest of my time learning.&lt;/p&gt;
+&lt;p&gt;I taught myself C++ and openFrameworks.&lt;/p&gt;
+&lt;p&gt;And microcontrollers. &lt;/p&gt;
+&lt;p&gt;And 3D modeling. &lt;/p&gt;
+&lt;p&gt;I wasn’t worried about being productive.&lt;/p&gt;
+&lt;p&gt;I was pursuing what I thought was interesting and fun.&lt;/p&gt;
+&lt;p&gt;And then I landed a great gig as an exhibit technician at the Natural History Museum in Los Angeles. &lt;/p&gt;
+&lt;p&gt;Why did they hire me? &lt;/p&gt;
+&lt;p&gt;Because I knew openFrameworks, microcontrollers, and 3D modeling. &lt;/p&gt;
+&lt;p&gt;I fell into it.&lt;/p&gt;
+&lt;p&gt;It was awesome. &lt;/p&gt;
+&lt;p&gt;I spent my days tinkering, designing and building interactive exhibits, working with smart, interesting people.&lt;/p&gt;
+&lt;p&gt;It didn’t feel like work. &lt;/p&gt;
+&lt;p&gt;The experience I gained there paved the way for my next gig with the National Science Foundation. &lt;/p&gt;
+&lt;p&gt;And that paved the way for where I am today.&lt;/p&gt;
+&lt;p&gt;Do I miss the art world? &lt;/p&gt;
+&lt;p&gt;I rarely think about it.&lt;/p&gt;
+&lt;p&gt;I like what I do.&lt;/p&gt;
+&lt;p&gt;Why am I telling you this tale? &lt;/p&gt;
+&lt;p&gt;It was difficult getting fired. &lt;/p&gt;
+&lt;p&gt;Making ends meet was hard. &lt;/p&gt;
+&lt;p&gt;In retrospect, that time period established my career path. &lt;/p&gt;
+&lt;p&gt;The future is unknown.&lt;/p&gt;
+&lt;p&gt;Things will change.&lt;/p&gt;
+&lt;p&gt;Prepare yourself for that day.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2UWpClG&quot;&gt;A Mind for Numbers&lt;/a&gt;, Barbara Oakley writes: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Taking responsibility for your own learning is one of the most important things you can do. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Persistence is key. &lt;/p&gt;
+&lt;p&gt;“Persistence is often more important than intelligence. Approaching material with a goal of learning it on your own gives you a unique path to mastery.”&lt;/p&gt;
+&lt;p&gt;But Barbara, sometimes learning is difficult! &lt;/p&gt;
+&lt;p&gt;This is a good thing. &lt;/p&gt;
+&lt;h2&gt;Embrace Difficulty&lt;/h2&gt;
+&lt;p&gt;The authors of &lt;a href=&quot;https://amzn.to/2QTzklN&quot;&gt;Make It Stick&lt;/a&gt;, counsel us to embrace difficulty: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Difficulty in learning new things is not only to be expected but can be beneficial. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;How do you persist in persistence? &lt;/p&gt;
+&lt;p&gt;Habits.&lt;/p&gt;
+&lt;p&gt;🙄&lt;/p&gt;
+&lt;p&gt;Yes, I’m making a habit of habits. &lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2NZz8jx&quot;&gt;Atomic Habits&lt;/a&gt;, James Clear defines “The Goldilocks Rules”, which states that:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;…humans experience peak motivation when working on tasks that are right on the edge of their current abilities. Not too hard. Not too easy. Just right.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We need to be challenged, not only to learn, but to build the habit of learning. &lt;/p&gt;
+&lt;p&gt;According to Brown, Roediger, and McDaniel, learning is at least a three-step process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Encoding&lt;/strong&gt;: information is held in short-term working memory before being consolidated into a cohesive representation of knowledge in long-term memory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Consolidation&lt;/strong&gt;: reorganizes and stabilizes memory traces, gives them meaning, and makes connections to past experiences and to tohter knowledge already stored in long-term memory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Retrieval&lt;/strong&gt;: updates learning and enables you to apply it when you need it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;They write that, “retrieval practice that’s easy does little to strengthen learning; the more difficult the practice, the greater the benefit.”&lt;/p&gt;
+&lt;p&gt;If the problem is too easy, we’ll get bored. &lt;/p&gt;
+&lt;p&gt;“The greatest threat to success is not failure but boredom. We get bored with habits because they stop delighting us.” James Clear continues: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The only way to become excellent is to be endlessly fascinated by doing the same thing over and over. You have to fall in love with boredom.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What if the problem is too difficult? &lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/30BVrAW&quot;&gt;The Pragmatic Programmer&lt;/a&gt;, authors Andy Hunt and Dave Thomas offer several strategies for solving impossible problems, the first being:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Don’t think outside the box—&lt;em&gt;find&lt;/em&gt; the box!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We often dismiss potential solutions too readily due to our preconceived notions. They write that, “the secret is to identify the real (not imagined) constraints, and find a solution therein.” &lt;/p&gt;
+&lt;p&gt;Can you connect all of the ducks and return to the starting point with just three straight, connected lines? &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/50e98af0a1fe97ba67ef952c4e0efad1/a987b/jarednielsen-solution-embrace-difficulty-puzzle-unsolved.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA4UlEQVQoz52STwuCQBDF+9zRpT5Ul04duhR1Kgg6BAn9g8xKXXVn5qW7KZYa1uhjB8Z5zG/WDmpCRIpThCHZk+elWl100BBvDfKl1sYwb9DeHsFhYnLyXfjOOK3R7xNmaFlE7hrHWQ9JeACpC47TLpS7fPumYmh3UxXMy2AdFHtkHUKYSvutqmZCKXCS6w4PZ/RCvuC+HaaGUQlZ2k5ocWJvg/NiAJ0hRx5O8z7UdVUgG5DPCZuR0waOQfEtRVUQUuD4DqbIXEz+C7U2tA1kxdrK5PSvYXVDUjobL6XZ8D89AW03Y9z3dnnhAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen solution embrace difficulty puzzle unsolved&quot;
+        title=&quot;&quot;
+        src=&quot;/static/50e98af0a1fe97ba67ef952c4e0efad1/b9e4f/jarednielsen-solution-embrace-difficulty-puzzle-unsolved.png&quot;
+        srcset=&quot;/static/50e98af0a1fe97ba67ef952c4e0efad1/cf440/jarednielsen-solution-embrace-difficulty-puzzle-unsolved.png 148w,
+/static/50e98af0a1fe97ba67ef952c4e0efad1/d2d38/jarednielsen-solution-embrace-difficulty-puzzle-unsolved.png 295w,
+/static/50e98af0a1fe97ba67ef952c4e0efad1/b9e4f/jarednielsen-solution-embrace-difficulty-puzzle-unsolved.png 590w,
+/static/50e98af0a1fe97ba67ef952c4e0efad1/f9b6a/jarednielsen-solution-embrace-difficulty-puzzle-unsolved.png 885w,
+/static/50e98af0a1fe97ba67ef952c4e0efad1/2d849/jarednielsen-solution-embrace-difficulty-puzzle-unsolved.png 1180w,
+/static/50e98af0a1fe97ba67ef952c4e0efad1/a987b/jarednielsen-solution-embrace-difficulty-puzzle-unsolved.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;How would you solve this problem? &lt;/p&gt;
+&lt;p&gt;(The solution is above.)&lt;/p&gt;
+&lt;p&gt;Sometimes you need to just get out of your own way!&lt;/p&gt;
+&lt;p&gt;Take a break.&lt;/p&gt;
+&lt;p&gt;Do something fun.&lt;/p&gt;
+&lt;p&gt;Let your diffuse mode work on the problem. &lt;/p&gt;
+&lt;p&gt;If that doesn’t work, ask for help. &lt;/p&gt;
+&lt;p&gt;Ask someone to ask you the following questions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Why are you solving this problem? &lt;/li&gt;
+&lt;li&gt;What’s the benefit of solving it?&lt;/li&gt;
+&lt;li&gt;Are the problems you’re having related to edge cases? &lt;/li&gt;
+&lt;li&gt;Is there a simpler, related problem you can solve?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If there’s no one around, talk to the duck.&lt;/p&gt;
+&lt;p&gt;Lastly, Hunt and Thomas remind us that, “Fortune favors the prepared mind”: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In order to have eureka! moments, your nonconscious brain needs to have plenty of raw material; prior experiences that can contribute to an answer. &lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Big O Factorial Time Complexity]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o-factorial-time-complexity/</link><guid isPermaLink="false">http://jarednielsen.com/big-o-factorial-time-complexity/</guid><pubDate>Fri, 17 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/36abe77b998054914b2d38002d33cace/2f950/jarednielsen-big-o-factorial-time-complexity.png&quot;
