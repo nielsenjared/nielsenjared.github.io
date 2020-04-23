@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Apr 2020 12:46:05 GMT</lastBuildDate><item><title><![CDATA[Embrace Difficulty]]></title><description><![CDATA[The key to success in life and learning is to embrace difficulty. We need to be challenged to stay motivated and improve. As long as the…]]></description><link>http://jarednielsen.com/embrace-difficulty/</link><guid isPermaLink="false">http://jarednielsen.com/embrace-difficulty/</guid><pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 23 Apr 2020 14:13:33 GMT</lastBuildDate><item><title><![CDATA[The Superlative Guide to Big O]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o/</link><guid isPermaLink="false">http://jarednielsen.com/big-o/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/46f4775ef27b57ef4de82f39754f7827/2f950/jarednielsen-big-o.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAzklEQVQoz62SPwvCMBDF/egugosiIoKiKCK41A/g6uAkOLn4B6xDB+cmpU1yz6ShrUMbaPDgwSVwv7y7XIeIUCulUIS4PiDuYZ6TkWqo0eo0Ao10MRuswPpzxN0J+CKwUP1YO6C07tLjGWy4Lp0aqLi9LFSq9sDsdAEbbytgbwbxfDtdOls2wZd7sOkO8WiDJDh4tvwDNCHDCDL6WJhr5i4gjIssA/FEj0CChAAxDkpTm5u7GqfuX1Z2ffLiAlDKc22qxlGeTQN+e+ihvwO/50ddzJPqQsUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen big o&quot;
+        title=&quot;&quot;
+        src=&quot;/static/46f4775ef27b57ef4de82f39754f7827/b9e4f/jarednielsen-big-o.png&quot;
+        srcset=&quot;/static/46f4775ef27b57ef4de82f39754f7827/cf440/jarednielsen-big-o.png 148w,
+/static/46f4775ef27b57ef4de82f39754f7827/d2d38/jarednielsen-big-o.png 295w,
+/static/46f4775ef27b57ef4de82f39754f7827/b9e4f/jarednielsen-big-o.png 590w,
+/static/46f4775ef27b57ef4de82f39754f7827/f9b6a/jarednielsen-big-o.png 885w,
+/static/46f4775ef27b57ef4de82f39754f7827/2d849/jarednielsen-big-o.png 1180w,
+/static/46f4775ef27b57ef4de82f39754f7827/2f950/jarednielsen-big-o.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this series, you’ll learn the fundamentals of Big O notation with examples in JavaScript.&lt;/p&gt;
+&lt;h2&gt;Big O: The Superlative Guide&lt;/h2&gt;
+&lt;p&gt;The following list is a ‘table of contents’ of my articles about Big O. They weren’t all written in this order, but this is the order I recommend reading them in. If you think otherwise or think there’s something missing, let me know on Twitter &lt;a href=&quot;https://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;. And there’s more on the way! If you want to stay in the loop, sign up for my newsletter, &lt;a href=&quot;http://eepurl.com/cP8CMn&quot;&gt;The Solution&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-notation/&quot;&gt;What is Big O Notation?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity/&quot;&gt;Big O Linear Time Complexity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/sum-consecutive-integers/&quot;&gt;How to Sum Consecutive Integers 1 to n&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-quadratic-time-complexity/&quot;&gt;Big O Quadratic Time Complexity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-logarithmic-time-complexity/&quot;&gt;Big O Logarithmic Time Complexity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/proof-induction/&quot;&gt;Proof by Induction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/sum-consecutive-powers-2/&quot;&gt;How to Sum Consecutive Powers of 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Big O Time and Space Complexity?&lt;/a&gt; [⏳ Coming soon!]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-recursive-time-complexity/&quot;&gt;Big O Recursive Time Complexity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-recursive-space-complexity/&quot;&gt;Big O Recursive Space Complexity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/dynamic-programming-memoization-tabulation/&quot;&gt;Dynamic Programming: Memoization and Tabulation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-log-linear-time-complexity/&quot;&gt;Big O Log-Linear Time Complexity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Big O Amortized Analysis&lt;/a&gt; [⏳ Coming soon!]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/calculate-permutations-combinations/&quot;&gt;How to Calculate Permutations and Combinations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-factorial-time-complexity/&quot;&gt;Big O Factorial Time Complexity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-omega-theta/&quot;&gt;What’s the Difference Between Big O, Big Omega, and Big Theta?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Embrace Difficulty]]></title><description><![CDATA[The key to success in life and learning is to embrace difficulty. We need to be challenged to stay motivated and improve. As long as the…]]></description><link>http://jarednielsen.com/embrace-difficulty/</link><guid isPermaLink="false">http://jarednielsen.com/embrace-difficulty/</guid><pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/460907b5e60cc37d300c2354537620b7/a987b/jarednielsen-solution-embrace-difficulty.png&quot;
@@ -13,7 +69,7 @@
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABT0lEQVQoz2NgwAKezY6F0DNiGJ/ty2J68X8lw4umQIanOzOYnt8og8gdz2MgCTydH4tT7vnVItIMe7Y4kRFML03SeHY4LxXEfjErVvLZ/tyc509LWUl24fNDBUxQ2vXZ8YKXz07maD7fWyD37FjB22cnCrwhBkLUYIB///4xoeO//34y/f/7n/HV/3OsLy/3iny9s4Plw/+nzC+uTRD+cGMJ+////xn//v7KhE0vXpfe7zdXebI/Gey3m8kMgk/2JJcR9B7QVAsM/OenNdAVup/ubSp5faHl/5cXBxO/v74U9O5S6/8P91bXAeV0/v75Yf3v338MvSADsYL///7++/f35/9/vz79//v7+79/f77//wtk//vz4z+QA1TxF6s+hv84wT8g+gPW/P/f7/8gDDHoD1DuL0QejFEBTheC3PgPoQOsG8oBi+MCDBCd1MMAplb1GMTYAYIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAABG0lEQVQoz51RTU/CQBDlH3v2qD+Em0cUiIliPKkHBQIXRD6MoSEYxAQDhbTdnZ3HdreVFlqCTvI6s92ZtzNvCsgwZv71TITwZFB+A7tBKmfXChls24K4Zu4BVz2g2AFcYX8fRZgk0yblN9b1G+CiC3ImWHVqYM8/ssM4IRyTlQn9bhPTygnEfAziBabPp/B+XqM0lU1odAoRaxbphQcH/ORAwY7IgqAeBzqHtvpmIN1hBK69A6UhxOcHXOdOa+iD+iMs25f6OrkUPtBh3N1sBa7qBVyPEJTvMWudQ96+gEoNfLXPUiPb93c6zB3ZeAUKFvorTazCmHwztiXkA4SGLPKkk6UuImmLpbAwRPQHwhT2FeKEz11KPuH/sAHDm1yqMMDLAQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
