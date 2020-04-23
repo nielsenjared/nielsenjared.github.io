@@ -12,7 +12,7 @@ Is there a computer science topic more terrifying than Big O notation? Don’t l
 
 ## Big O: The Superlative Guide
 
-The following list is a ‘table of contents’ of my articles about Big O. They weren’t all written in this order, but this is the order I recommend reading them in. If you think otherwise or think there’s something missing, let me know on Twitter [@jarednielsen](https://twitter.com/jarednielsen).
+The following list is a ‘table of contents’ of my articles about Big O. They weren’t all written in this order, but this is the order I recommend reading them in. If you think otherwise or think there’s something missing, let me know on Twitter [@jarednielsen](https://twitter.com/jarednielsen). And there’s more on the way! If you want to stay in the loop, sign up for my newsletter, [The Solution](http://eepurl.com/cP8CMn).
 
 
 * [What is Big O Notation?](https://jarednielsen.com/big-o-notation/)
@@ -29,7 +29,7 @@ The following list is a ‘table of contents’ of my articles about Big O. They
 
 * [How to Sum Consecutive Powers of 2](https://jarednielsen.com/sum-consecutive-powers-2/)
 
-* [What’s the difference between space and time complexity?](#) [⏳ Coming soon!]
+* [Big O Time and Space Complexity?](#) [⏳ Coming soon!]
 
 * [Big O Recursive Time Complexity](https://jarednielsen.com/big-o-recursive-time-complexity/)
 
@@ -39,14 +39,10 @@ The following list is a ‘table of contents’ of my articles about Big O. They
 
 * [Big O Log-Linear Time Complexity](https://jarednielsen.com/big-o-log-linear-time-complexity/)
 
-* [What is Amortized Analysis?](#) [⏳ Coming soon!]
+* [Big O Amortized Analysis](#) [⏳ Coming soon!]
 
 * [How to Calculate Permutations and Combinations](https://jarednielsen.com/calculate-permutations-combinations/)
 
 * [Big O Factorial Time Complexity](https://jarednielsen.com/big-o-factorial-time-complexity/)
 
 * [What’s the Difference Between Big O, Big Omega, and Big Theta?](https://jarednielsen.com/big-o-omega-theta/)
-
-
-And there’s more on the way! If you want to stay in the loop, sign up for my newsletter, [The Solution](http://eepurl.com/cP8CMn).
-
