@@ -7,33 +7,39 @@ keywords: ["big o", "big o notation", "time complexity", "constant time"]
 
 ![](./jarednielsen-big-o.png)
 
-Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you'll learn the fundamentals of Big O notation, beginning with constant time complexity with examples in JavaScript.
-
-_Note: Amazon links are affiliate._
+Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you'll learn the fundamentals of Big O notation, beginning with constant time complexity with examples in JavaScript. Come with us now on a journey through time and space complexity...
 
 ---
-This is the first in a series on Big O notation. If you want to stay in the loop, [sign up for my weekly newsletter, The Solution](http://eepurl.com/cP8CMn).
+![](./jarednielsen-little-book-big-o-cover-200x300.png)
+
+This article is an excerpt from _The Little Book of Big O_. [Pre-order it today!](https://gum.co/big-o)
 
 ---
 
 ## What Problem(s) Does Big O Notation Solve?
 
-* Big O notation helps us answer the question, “Will it scale?” 
+* Big O notation helps us answer the question, “Can we do better?” 
 
-* Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!).
+* Big O notation equips us with a shared language for discussing the complexity of algorithms with other developers (and mathematicians!).
 
 
 ## What is Big O Notation? 
 
-Big O is a notation for measuring the performance of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the _speed_ of an algorithm in seconds (or minutes!). We measure the _rate of growth_ of an algorithm in the number of operations it takes to complete. 
+Big O is a notation for measuring the complexity of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the _speed_ of an algorithm in seconds (or minutes!). We measure the _rate of growth_ of an algorithm in the number of operations it takes to complete. 
 
-The O is short for “Order of”. So, if we’re discussing an algorithm with _O(n)_, we say its order of, or rate of growth, is _n_, or linear complexity. 
+What do we mean by notation? According to Wikipedia, in linguistics and semiotics, a notation is:
 
-You will probably read or hear Big O referred to as asymptotic runtime, or [asymptotic computational complexity](https://en.wikipedia.org/wiki/Asymptotic_computational_complexity). This is a fancy way of describing the limits of a function. There is a branch of mathematics, [order theory](https://en.wikipedia.org/wiki/Order_theory), devoted to this topic. For our intents and purposes, _order_: 
+> a system of graphics or symbols, characters and abbreviated expressions, used (for example) in artistic and scientific disciplines to represent technical facts and quantities by convention. Therefore, a notation is a collection of related symbols that are each given an arbitrary meaning, created to facilitate structured communication within a domain knowledge or field of study. 
 
-> … provides a formal framework for describing statements such as "this is less than that" or "this precedes that".
+The O is actually the Greek character Omicron and is shorthand for “Order of”. So, if we’re discussing an algorithm with _O(n)_, we say its _order of_, or rate of growth, is _n_, or linear complexity. 
 
-We use _order_ to evaluate the complexity of our algorithms.
+Why _order_? 
+
+In biology, an order is a taxonomic classification. We are in the order of primates. 🐒🦍
+
+In computer science, an order is a mathematical classification for algorithms. We use Big O to measure the rate of growth, or complexity, of algorithms, so algorithms with equivalent complexity are in the same order. 
+
+You will see Big O referred to as asymptotic runtime, or [asymptotic computational complexity](https://en.wikipedia.org/wiki/Asymptotic_computational_complexity). This is a fancy way of describing the limits of a function. 
 
 
 ### Math O’Clock 🧮 🕐 
@@ -65,7 +71,7 @@ Because we don’t know what we don’t know.
 
 If we’re writing a search algorithm, we won’t always know the query ahead of time. If we’re writing a sorting algorithm, we won’t always know the dataset ahead of time. What if the query is the very last element or what if the dataset is a real mess. We want to know just how poorly our algorithm will perform.
 
-The worst-case scenario is also known as the “upper bound”. Limits again!
+The worst-case scenario is also known as the “upper bound”.
 
 You’re going to encounter a lot of tables like this: 
 
@@ -82,7 +88,7 @@ You’re going to encounter a lot of tables like this:
 
 This lists common runtimes from fastest to slowest. 
 
-And you’re definitely going to see this chart:
+And you’re definitely going to see charts like this:
 ![](./jarednielsen-big-o-chart.png)
 
 We’ll return to both as we proceed. 
@@ -193,3 +199,8 @@ Why? We’ll see in the next article.
 ## What is Big O Notation? 
 
 Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant and linear time complexity with examples in JavaScript. Join us for part two of this series [Big O & Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity).
+
+---
+
+_Note: Amazon links are affiliate._
+
