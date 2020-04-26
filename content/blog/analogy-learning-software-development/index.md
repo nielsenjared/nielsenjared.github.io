@@ -8,7 +8,11 @@ keywords: ['analogy', 'learning', 'software development']
 
 ![Illustration of rubber duck lightbulb](./jarednielsen-solution-analogy-metaphor.png)
 
+How do we learn concepts that we can’t see, smell, taste, touch, or hear? Learning itself, especially software development, depends on analogy.
+
 _This article originally published in my weekly newsletter, [The Solution](https://mailchi.mp/f7da8a0d5542/the-solution-how-do-we-learn-abstract-concepts)._
+
+## Analogy and Learning 
 
 How do we learn abstract concepts?
 
