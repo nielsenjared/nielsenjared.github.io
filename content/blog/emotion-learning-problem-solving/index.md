@@ -1,13 +1,13 @@
 ---
 title: Emotion in Learning & Problem Solving
 date: '2020-04-27'
-description: TODO
+description: Emotion is important for success in both problem solving and learning. Empathy sparks creativity, but to excel we need to be aware of our emotional blocks. 
 keywords: ['emotion', 'learning', 'problem solving', 'empathy', 'emotional blocks']
 ---
 
 ![](./jarednielsen-solution-emotion.png)
 
-Emotion is an important, and often overlooked, factor for success in both problem solving and learning. We can use empathy to spark creativity. But, sometimes emotion blocks our creativity. This article outlines common emotional blocks with advice for unblocking our creativity.
+Emotion is important for success in both problem solving and learning. Empathy sparks creativity, but to excel we need to be aware of our emotional blocks. 
 
 _This article originally published in my newsletter, [The Solution](https://mailchi.mp/56497a1c27df/the-solution-how-are-you-feeling)._
 
