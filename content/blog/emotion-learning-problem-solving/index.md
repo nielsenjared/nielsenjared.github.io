@@ -1,5 +1,5 @@
 ---
-title: Empathy & Emotion in Learning & Problem Solving
+title: Emotion in Learning & Problem Solving
 date: '2020-04-27'
 description: TODO
 keywords: ['emotion', 'learning', 'problem solving', 'empathy', 'emotional blocks']
@@ -11,7 +11,7 @@ Emotion is an important, and often overlooked, factor for success in both proble
 
 _This article originally published in my newsletter, [The Solution](https://mailchi.mp/56497a1c27df/the-solution-how-are-you-feeling)._
 
-## Empathy & Emotion in Learning & Problem Solving
+## Emotion & Metacognition
 
 What is the role of emotion in metacognition? 
 
@@ -28,6 +28,9 @@ Is emotion responsible for our development as a problem-solving species?
 What role does emotion play in our day-to-day problem solving?
 
 Empathy.
+
+
+## Empathy & Creativity
 
 “The key to empathizing is learning to perceive the world through someone else’s mind and body,” write Robert and Michel Root-Bernstein in [Sparks of Genius](https://amzn.to/2UhVpgo). They continue: 
 
@@ -70,6 +73,7 @@ In [Conceptual Blockbusting](https://amzn.to/2Io9QrZ), James L. Adams identifies
 
 Let's take a closer look at each of these.
 
+
 ### Fear of Taking a Risk
 
 We are all too familiar with this first block. It’s what prevents us from starting a new project, from applying for a new job, from making that pitch. Adams sums up this experience nicely: 
@@ -86,11 +90,13 @@ Are your fears founded or unfounded?
 
 "What are your catastrophic expectations?"
 
+
 ### No Appetite For Chaos
 
 This may be the emotional block most relevant to software development. Adams succinctly describes the process of debugging:
 
 > The solution of a complex problem is a messy process. Rigorous and logical techniques are often necessary but not sufficient. You must usually wallow in misleading and ill-fitting data, hazy and difficult-to-test concepts, opinions, values, and other such untidy quantities. In a sense, problem-solving is bringing order to chaos. A desire for order is therefore necessary. However, the ability to tolerate chaos is a must.
+
 
 ### Judging Rather Than Generating New Ideas
 
@@ -100,22 +106,25 @@ Many of these emotional blocks are intertwined. If you don’t have an appetite 
 
 2. Ideas often lead to other ideas. 
 
+
 ### Inability or Unwillingness to Incubate
 
 Relaxing judgment is important, but so is just relaxing in general. We know that in order to cultivate eureka! moments, we need to let our diffuse mode work on the problem. According to Adams, there are other benefits gained from taking a break:
 
 > Your overall compulsiveness is less fanatical when you are relaxed, and the brain is more likely to deal with seemingly silly combinations of thoughts. If you are never relaxed, your brain is usually on guard against non-serious activities, with resulting difficulties in the type of thinking necessary for fluent and flexible conceptualization.
 
+
 ### Lack of Challenge vs. Excessive Zeal
 
 We need to maintain motivation to solve a problem or learn a new skill, but we need to allow the process to unfold as it will. We "cannot do our best on a challenge unless we are motivated. On the other hand, excessive motivation to succeed, especially to succeed quickly, can inhibit the creative process.”
+
 
 ### Reality and Fantasy
 
 We need to give ourselves permission to fantasize. “The imagination is extremely powerful because it can go beyond reality. But in order to do this, the imagination must be set free of the constraints placed upon real acts and events.”
 
 
-## Empathy & Emotion in Learning & Problem Solving
+## Emotion in Learning & Problem Solving
 
 I'll leave you with one more piece of advice from Adams for effective problem solving with emotion:
 
