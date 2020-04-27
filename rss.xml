@@ -1,4 +1,117 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 23 Apr 2020 14:13:33 GMT</lastBuildDate><item><title><![CDATA[The Superlative Guide to Big O]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o/</link><guid isPermaLink="false">http://jarednielsen.com/big-o/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Apr 2020 12:47:32 GMT</lastBuildDate><item><title><![CDATA[Emotion in Learning & Problem Solving]]></title><description><![CDATA[Emotion is important for success in both problem solving and learning. Empathy sparks creativity, but to excel we need to be aware of our…]]></description><link>http://jarednielsen.com/emotion-learning-problem-solving/</link><guid isPermaLink="false">http://jarednielsen.com/emotion-learning-problem-solving/</guid><pubDate>Mon, 27 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c2bbcae1a1555376636dab50b14b3883/a987b/jarednielsen-solution-emotion.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABC0lEQVQoz7VSwUoDQQzdv+tfePQDrBevgldvHkRowYsf4EmxfoEgVW+1VQoV2e7SFgUXmuQ5k0xmFT22swTem7w8JskWIoJNRrE9QwA/cTzCxvFPjoX/1mXD+BFZoarJUaxMPB1iu1OjYErrXGeGURBO1T3Bqn+tePFY42Znhs+KVXp09Yr+cKm5l+UYu9NjlLRSXj/08PF2m7sovKVq7xTz/TPF82GDy847yvtG+cGgRndQKn5qpujMDnH3NTLDyQUWz+fJEKllZnt+vCTR2bENInRrPLZJQaezS3riNTiMI9eHaJfCLnQueSmcwnPRNC9F3MyX4huVdqPO06h/5yTlpMUW2PZ/uKH4BhgAWsGDNI4fAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen solution emotion&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c2bbcae1a1555376636dab50b14b3883/b9e4f/jarednielsen-solution-emotion.png&quot;
+        srcset=&quot;/static/c2bbcae1a1555376636dab50b14b3883/cf440/jarednielsen-solution-emotion.png 148w,
+/static/c2bbcae1a1555376636dab50b14b3883/d2d38/jarednielsen-solution-emotion.png 295w,
+/static/c2bbcae1a1555376636dab50b14b3883/b9e4f/jarednielsen-solution-emotion.png 590w,
+/static/c2bbcae1a1555376636dab50b14b3883/f9b6a/jarednielsen-solution-emotion.png 885w,
+/static/c2bbcae1a1555376636dab50b14b3883/2d849/jarednielsen-solution-emotion.png 1180w,
+/static/c2bbcae1a1555376636dab50b14b3883/a987b/jarednielsen-solution-emotion.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Emotion is important for success in both problem solving and learning. Empathy sparks creativity, but to excel we need to be aware of our emotional blocks. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This article originally published in my newsletter, &lt;a href=&quot;https://mailchi.mp/56497a1c27df/the-solution-how-are-you-feeling&quot;&gt;The Solution&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Emotion &amp;#x26; Metacognition&lt;/h2&gt;
+&lt;p&gt;What is the role of emotion in metacognition? &lt;/p&gt;
+&lt;p&gt;Emotion is an important, and often overlooked, contributing factor to success in both problem solving and learning. &lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/3cmDuvR&quot;&gt;How Humans Learn&lt;/a&gt;, Joshua R. Eyler writes:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Emotions are inextricably a part of our actions, our behavior, our psychology, and our mechanisms for learning because they are connected to the development or function of so many other networks in our brains. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Is emotion responsible for our development as a problem-solving species?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Problems, especially those that have to do with our interactions with other people, activate an emotional response that can help us to potentially find a resolution. Our emotions drive us to work together toward a common goal, to learn from one another, and to make important decisions about our safety or the well-being of others. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What role does emotion play in our day-to-day problem solving?&lt;/p&gt;
+&lt;p&gt;Empathy.&lt;/p&gt;
+&lt;h2&gt;Empathy &amp;#x26; Creativity&lt;/h2&gt;
+&lt;p&gt;“The key to empathizing is learning to perceive the world through someone else’s mind and body,” write Robert and Michel Root-Bernstein in &lt;a href=&quot;https://amzn.to/2UhVpgo&quot;&gt;Sparks of Genius&lt;/a&gt;. They continue: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We have found that practitioners of every art, science, and humanistic profession use empathy as a primary tool, for it permits a kind of understanding that is not attainable by any other means. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What does this mean in practice? &lt;/p&gt;
+&lt;p&gt;How do we learn to empathize? &lt;/p&gt;
+&lt;p&gt;Furthermore, how do we learn to empathize when what we are working with is not human? &lt;/p&gt;
+&lt;p&gt;The answer is Shakespearean: play-acting. &lt;/p&gt;
+&lt;p&gt;According to the Root-Bernstein’s, Richard Feynman “revolutionized quantum physics by asking himself questions such as ‘If I were an electron, what would I do?’”&lt;/p&gt;
+&lt;p&gt;The authors of Sparks of Genius recount tales of programmers and engineers who “walk around inside their microchips and programs somewhat like the characters who are sucked into the world of electronic circuits in the movie Tron.” &lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2xEIyMo&quot;&gt;Alien Phenomenology&lt;/a&gt;, Ian Bogost implores us to explore this further:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As operators or engineers, we may be able to describe how such objects and assemblages work. But what do they experience? What’s their proper phenomenology? In short, what is it like to be a thing?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While empathy is a powerful tool, sometimes our emotions block us from learning and solving problems. &lt;/p&gt;
+&lt;h2&gt;Emotional Blocks&lt;/h2&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2Io9QrZ&quot;&gt;Conceptual Blockbusting&lt;/a&gt;, James L. Adams identifies six types of emotional blocks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fear of making a mistake, failing, or taking a risk&lt;/li&gt;
+&lt;li&gt;Inability to tolerate ambiguity, an overriding desire for security and order, no appetite for chaos&lt;/li&gt;
+&lt;li&gt;Preference for judging ideas rather than generating them&lt;/li&gt;
+&lt;li&gt;Inability to relax, incubate, and sleep on it&lt;/li&gt;
+&lt;li&gt;Lack of challenge (problem fails to engage interest) or excessive zeal (over-motivation to succeed quickly)&lt;/li&gt;
+&lt;li&gt;Inability to distinguish reality from fantasy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let’s take a closer look at each of these.&lt;/p&gt;
+&lt;h3&gt;Fear of Taking a Risk&lt;/h3&gt;
+&lt;p&gt;We are all too familiar with this first block. It’s what prevents us from starting a new project, from applying for a new job, from making that pitch. Adams sums up this experience nicely: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The expression of a new idea, and especially the process of trying to convince someone else that it has value, sometimes makes you feel like an a**, since you are doing something that possibly exposes your imperfections. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;How do we unblock our fear of failure? &lt;/p&gt;
+&lt;p&gt;We can “realistically assess the possible negative consequences of an idea.”&lt;/p&gt;
+&lt;p&gt;What is the worst that can happen?&lt;/p&gt;
+&lt;p&gt;Are your fears founded or unfounded?&lt;/p&gt;
+&lt;p&gt;“What are your catastrophic expectations?”&lt;/p&gt;
+&lt;h3&gt;No Appetite For Chaos&lt;/h3&gt;
+&lt;p&gt;This may be the emotional block most relevant to software development. Adams succinctly describes the process of debugging:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The solution of a complex problem is a messy process. Rigorous and logical techniques are often necessary but not sufficient. You must usually wallow in misleading and ill-fitting data, hazy and difficult-to-test concepts, opinions, values, and other such untidy quantities. In a sense, problem-solving is bringing order to chaos. A desire for order is therefore necessary. However, the ability to tolerate chaos is a must.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Judging Rather Than Generating New Ideas&lt;/h3&gt;
+&lt;p&gt;Many of these emotional blocks are intertwined. If you don’t have an appetite for chaos, you may also be quick to judge. We reject ideas if we analyze or judge too quickly. According to Adams, this is detrimental for two reasons: &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Newly formed ideas are fragile and imperfect—they need time to mature and acquire the detail needed to make them believable. &lt;/li&gt;
+&lt;li&gt;Ideas often lead to other ideas. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Inability or Unwillingness to Incubate&lt;/h3&gt;
+&lt;p&gt;Relaxing judgment is important, but so is just relaxing in general. We know that in order to cultivate eureka! moments, we need to let our diffuse mode work on the problem. According to Adams, there are other benefits gained from taking a break:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Your overall compulsiveness is less fanatical when you are relaxed, and the brain is more likely to deal with seemingly silly combinations of thoughts. If you are never relaxed, your brain is usually on guard against non-serious activities, with resulting difficulties in the type of thinking necessary for fluent and flexible conceptualization.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Lack of Challenge vs. Excessive Zeal&lt;/h3&gt;
+&lt;p&gt;We need to maintain motivation to solve a problem or learn a new skill, but we need to allow the process to unfold as it will. We “cannot do our best on a challenge unless we are motivated. On the other hand, excessive motivation to succeed, especially to succeed quickly, can inhibit the creative process.”&lt;/p&gt;
+&lt;h3&gt;Reality and Fantasy&lt;/h3&gt;
+&lt;p&gt;We need to give ourselves permission to fantasize. “The imagination is extremely powerful because it can go beyond reality. But in order to do this, the imagination must be set free of the constraints placed upon real acts and events.”&lt;/p&gt;
+&lt;h2&gt;Emotion in Learning &amp;#x26; Problem Solving&lt;/h2&gt;
+&lt;p&gt;I’ll leave you with one more piece of advice from Adams for effective problem solving with emotion:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We are more likely to be creative and in a state of flow if we love the things we are doing. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;❤️&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Superlative Guide to Big O]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o/</link><guid isPermaLink="false">http://jarednielsen.com/big-o/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/46f4775ef27b57ef4de82f39754f7827/2f950/jarednielsen-big-o.png&quot;
@@ -69,7 +182,7 @@
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAABG0lEQVQoz51RTU/CQBDlH3v2qD+Em0cUiIliPKkHBQIXRD6MoSEYxAQDhbTdnZ3HdreVFlqCTvI6s92ZtzNvCsgwZv71TITwZFB+A7tBKmfXChls24K4Zu4BVz2g2AFcYX8fRZgk0yblN9b1G+CiC3ImWHVqYM8/ssM4IRyTlQn9bhPTygnEfAziBabPp/B+XqM0lU1odAoRaxbphQcH/ORAwY7IgqAeBzqHtvpmIN1hBK69A6UhxOcHXOdOa+iD+iMs25f6OrkUPtBh3N1sBa7qBVyPEJTvMWudQ96+gEoNfLXPUiPb93c6zB3ZeAUKFvorTazCmHwztiXkA4SGLPKkk6UuImmLpbAwRPQHwhT2FeKEz11KPuH/sAHDm1yqMMDLAQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABT0lEQVQoz2NgwAKezY6F0DNiGJ/ty2J68X8lw4umQIanOzOYnt8og8gdz2MgCTydH4tT7vnVItIMe7Y4kRFML03SeHY4LxXEfjErVvLZ/tyc509LWUl24fNDBUxQ2vXZ8YKXz07maD7fWyD37FjB22cnCrwhBkLUYIB///4xoeO//34y/f/7n/HV/3OsLy/3iny9s4Plw/+nzC+uTRD+cGMJ+////xn//v7KhE0vXpfe7zdXebI/Gey3m8kMgk/2JJcR9B7QVAsM/OenNdAVup/ubSp5faHl/5cXBxO/v74U9O5S6/8P91bXAeV0/v75Yf3v338MvSADsYL///7++/f35/9/vz79//v7+79/f77//wtk//vz4z+QA1TxF6s+hv84wT8g+gPW/P/f7/8gDDHoD1DuL0QejFEBTheC3PgPoQOsG8oBi+MCDBCd1MMAplb1GMTYAYIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -454,7 +567,7 @@ Chicago &amp;gt; Boston &amp;gt; Austin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Just like this article. &lt;/p&gt;
 &lt;h2&gt;Big O Factorial Time Complexity&lt;/h2&gt;
-&lt;p&gt;Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O factorial time complexity. Now go solve problems! Just don’t waste your time on the hard ones. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Analogy in Learning and Software Development]]></title><description><![CDATA[This article originally published in my weekly newsletter, The Solution. How do we learn abstract concepts? How do we learn anything that we…]]></description><link>http://jarednielsen.com/analogy-learning-software-development/</link><guid isPermaLink="false">http://jarednielsen.com/analogy-learning-software-development/</guid><pubDate>Mon, 13 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O factorial time complexity. Now go solve problems! Just don’t waste your time on the hard ones. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Analogy in Learning and Software Development]]></title><description><![CDATA[How do we learn concepts that we can’t see, smell, taste, touch, or hear? Learning itself, especially software development, depends on…]]></description><link>http://jarednielsen.com/analogy-learning-software-development/</link><guid isPermaLink="false">http://jarednielsen.com/analogy-learning-software-development/</guid><pubDate>Mon, 13 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/25454e15e8e0399f85bbc3abce8ac383/a987b/jarednielsen-solution-analogy-metaphor.png&quot;
@@ -490,7 +603,9 @@ Chicago &amp;gt; Boston &amp;gt; Austin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
   &lt;/a&gt;
     &lt;/p&gt;
+&lt;p&gt;How do we learn concepts that we can’t see, smell, taste, touch, or hear? Learning itself, especially software development, depends on analogy.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This article originally published in my weekly newsletter, &lt;a href=&quot;https://mailchi.mp/f7da8a0d5542/the-solution-how-do-we-learn-abstract-concepts&quot;&gt;The Solution&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Analogy and Learning&lt;/h2&gt;
 &lt;p&gt;How do we learn abstract concepts?&lt;/p&gt;
 &lt;p&gt;How do we learn anything that we can’t see, smell, taste, touch, or hear? &lt;/p&gt;
 &lt;p&gt;In &lt;a href=&quot;https://amzn.to/2UhVpgo&quot;&gt;Sparks of Genius&lt;/a&gt;, Robert and Michel Root-Bernstein write:&lt;/p&gt;
@@ -5529,24 +5644,58 @@ If we change our coefficients: &lt;/p&gt;
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation, beginning with constant time complexity with examples in JavaScript.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note: Amazon links are affiliate.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation, beginning with constant time complexity with examples in JavaScript. Come with us now on a journey through time and space complexity…&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;This is the first in a series on Big O notation. If you want to stay in the loop, &lt;a href=&quot;http://eepurl.com/cP8CMn&quot;&gt;sign up for my weekly newsletter, The Solution&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d1c77e7fc24d8443efcab13b2bc11ba7/9ec3c/jarednielsen-little-book-big-o-cover-200x300.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 200px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 150%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEGUlEQVRIx41W7W9TVRjvX2NiYozBD/qVxLeI0QSM8sFEcYKJwZjo/IBmaPiigqgEEk0MuhgXFMyGmwI6HGxKu5YCXWEtbuu62XYd3X3t3X1/+fmcc+/t2lFYb/Kk5/Y8z+/8ntdzE9j0BEEQL7DVE3TRSXRTCDwPbBU4LgLbgbtcg3NrnouvavAlFb6sdgXtDmjZsLM3YU1dhXOjCOP8FIzxf6CP/gX72i2sn/wF5uV0dLjfG6A7twTn+iz0oVE4+dtwZorwVhqwJjMwzo7zfa7r9wDoNUTI730C6/dLMIf/gDU6AWvkT6hHTsLKEXiuALdS791lFp/1rwZhXZiCfTUP++8s7NR12MTUIGC3WOKx3Rowou8SC+ntQ1A/Pg6XEmH88CtPhv7FILQDR9Ek9s6NQg8uR5tOKgfl/cNQ+j+FOTYB86dzMIZ+gzE4EnpQb8DX1ntn6KTzBPYZZfM09BNDMH4cg/71KYrlJb4v7T8Ec+Riq8S2BLQJsNl/GPq3Z6BRLI3T5+EJEpoDX0L/fhgqHWYOj/cAGJeNbsJhyUheg53JQ/v8OxinzsG6mKRETcKl5ATOFklpgUUsA8NE890jEB/ZCfnJ1yFvfxXitheh7v0IXn2to6jbQbszdF0ou/shPf4ynMvTBG5QmVCxZ/OQn+qD9EQfb7+QwH0YxvGwzk5AeOBZuJlcuBcJz/DSfxAfeh76Nz9v9H03hiFg6II2cALyM2+w48P/fb9jv7nnAJS+gxt2WwJ+cAzKjjc5r9igA3DvAJTXPrwPYGzghi6bVMTCgzvgFedbiWola02A+OgurB8d7HQ5kgTaXuIAsy6Qnt5HLPfB+7fUOt2vrkB9pR/iY7vhVVc3qiJmyQGjcAeb+5nGk/TcWxAefgHKrv1QXnoHwradELfvoRq92Vk2sS13OYjGPXOLKZDbbB5yBaUJ88wFaAePU5cco34eg98Qwj3TpB51eImBuc1sCSN0mZUL2zQtBKzpJZm75ywuwVpehlEqcWFru1SGs1ShmblGY07h+qwJWJ2CwBOMEQMDsWKnBrpBaSYlhe4NUYJ/hwxXG6HcaSCgng4YkNoMwUif2zGvaEYmwKgyhgyY0WcXEzuArflh4UXFGdCaGXFvot9QIjvOkMcviiGPo8ej21QUlObnsTA3h1qlgtXaChYXFrC8WKZ1LYq5F0kUf8/vLBtEXcFnnihianISmXQahdkCbheLSF65gvT0NL3PttVnTCiUxL0ub0mSUCSQTCaDbDaLmZkZ5PN55HI5VKvVDcBNhO5mGAHaFDNBECDLMmrkYrlchqqq0DQNJiuZuO3u+nKIR8kmwHq9jlQqxRmWqGQKhQJnmEwmUaGYdvRxB8N7uOxSxmLxyTUm7e/tQ6OdUKLXj6Be9f4H+zvWuC0V0GsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen little book big o cover 200x300&quot;
+        title=&quot;&quot;
+        src=&quot;/static/d1c77e7fc24d8443efcab13b2bc11ba7/9ec3c/jarednielsen-little-book-big-o-cover-200x300.png&quot;
+        srcset=&quot;/static/d1c77e7fc24d8443efcab13b2bc11ba7/cf440/jarednielsen-little-book-big-o-cover-200x300.png 148w,
+/static/d1c77e7fc24d8443efcab13b2bc11ba7/9ec3c/jarednielsen-little-book-big-o-cover-200x300.png 200w&quot;
+        sizes=&quot;(max-width: 200px) 100vw, 200px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;This article is an excerpt from &lt;em&gt;The Little Book of Big O&lt;/em&gt;. &lt;a href=&quot;https://gum.co/big-o&quot;&gt;Pre-order it today!&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;What Problem(s) Does Big O Notation Solve?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Big O notation helps us answer the question, “Will it scale?” &lt;/li&gt;
-&lt;li&gt;Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!).&lt;/li&gt;
+&lt;li&gt;Big O notation helps us answer the question, “Can we do better?” &lt;/li&gt;
+&lt;li&gt;Big O notation equips us with a shared language for discussing the complexity of algorithms with other developers (and mathematicians!).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;What is Big O Notation?&lt;/h2&gt;
-&lt;p&gt;Big O is a notation for measuring the performance of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the &lt;em&gt;speed&lt;/em&gt; of an algorithm in seconds (or minutes!). We measure the &lt;em&gt;rate of growth&lt;/em&gt; of an algorithm in the number of operations it takes to complete. &lt;/p&gt;
-&lt;p&gt;The O is short for “Order of”. So, if we’re discussing an algorithm with &lt;em&gt;O(n)&lt;/em&gt;, we say its order of, or rate of growth, is &lt;em&gt;n&lt;/em&gt;, or linear complexity. &lt;/p&gt;
-&lt;p&gt;You will probably read or hear Big O referred to as asymptotic runtime, or &lt;a href=&quot;https://en.wikipedia.org/wiki/Asymptotic_computational_complexity&quot;&gt;asymptotic computational complexity&lt;/a&gt;. This is a fancy way of describing the limits of a function. There is a branch of mathematics, &lt;a href=&quot;https://en.wikipedia.org/wiki/Order_theory&quot;&gt;order theory&lt;/a&gt;, devoted to this topic. For our intents and purposes, &lt;em&gt;order&lt;/em&gt;: &lt;/p&gt;
+&lt;p&gt;Big O is a notation for measuring the complexity of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the &lt;em&gt;speed&lt;/em&gt; of an algorithm in seconds (or minutes!). We measure the &lt;em&gt;rate of growth&lt;/em&gt; of an algorithm in the number of operations it takes to complete. &lt;/p&gt;
+&lt;p&gt;What do we mean by notation? According to Wikipedia, in linguistics and semiotics, a notation is:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;… provides a formal framework for describing statements such as “this is less than that” or “this precedes that”.&lt;/p&gt;
+&lt;p&gt;a system of graphics or symbols, characters and abbreviated expressions, used (for example) in artistic and scientific disciplines to represent technical facts and quantities by convention. Therefore, a notation is a collection of related symbols that are each given an arbitrary meaning, created to facilitate structured communication within a domain knowledge or field of study. &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;We use &lt;em&gt;order&lt;/em&gt; to evaluate the complexity of our algorithms.&lt;/p&gt;
+&lt;p&gt;The O is actually the Greek character Omicron and is shorthand for “Order of”. So, if we’re discussing an algorithm with &lt;em&gt;O(n)&lt;/em&gt;, we say its &lt;em&gt;order of&lt;/em&gt;, or rate of growth, is &lt;em&gt;n&lt;/em&gt;, or linear complexity. &lt;/p&gt;
+&lt;p&gt;Why &lt;em&gt;order&lt;/em&gt;? &lt;/p&gt;
+&lt;p&gt;In biology, an order is a taxonomic classification. We are in the order of primates. 🐒🦍&lt;/p&gt;
+&lt;p&gt;In computer science, an order is a mathematical classification for algorithms. We use Big O to measure the rate of growth, or complexity, of algorithms, so algorithms with equivalent complexity are in the same order. &lt;/p&gt;
+&lt;p&gt;You will see Big O referred to as asymptotic runtime, or &lt;a href=&quot;https://en.wikipedia.org/wiki/Asymptotic_computational_complexity&quot;&gt;asymptotic computational complexity&lt;/a&gt;. This is a fancy way of describing the limits of a function. &lt;/p&gt;
 &lt;h3&gt;Math O’Clock 🧮 🕐&lt;/h3&gt;
 &lt;p&gt;You don’t need to be a math whiz to grok Big O, but there are a few basic concepts we need to cover to set you up for success.&lt;/p&gt;
 &lt;p&gt;If you recall from algebra, you worked with functions such as &lt;em&gt;f(x)&lt;/em&gt; and &lt;em&gt;g(x)&lt;/em&gt;, and even did things like &lt;em&gt;f(g(x))&lt;/em&gt;, where &lt;em&gt;f()&lt;/em&gt; and &lt;em&gt;g()&lt;/em&gt; were equations and &lt;em&gt;x&lt;/em&gt; was a numerical value (or another equation!) passed to the functions. &lt;/p&gt;
@@ -5561,7 +5710,7 @@ If we change our coefficients: &lt;/p&gt;
 &lt;p&gt;Why?&lt;/p&gt;
 &lt;p&gt;Because we don’t know what we don’t know.&lt;/p&gt;
 &lt;p&gt;If we’re writing a search algorithm, we won’t always know the query ahead of time. If we’re writing a sorting algorithm, we won’t always know the dataset ahead of time. What if the query is the very last element or what if the dataset is a real mess. We want to know just how poorly our algorithm will perform.&lt;/p&gt;
-&lt;p&gt;The worst-case scenario is also known as the “upper bound”. Limits again!&lt;/p&gt;
+&lt;p&gt;The worst-case scenario is also known as the “upper bound”.&lt;/p&gt;
 &lt;p&gt;You’re going to encounter a lot of tables like this: &lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -5615,7 +5764,7 @@ If we change our coefficients: &lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;This lists common runtimes from fastest to slowest. &lt;/p&gt;
-&lt;p&gt;And you’re definitely going to see this chart:
+&lt;p&gt;And you’re definitely going to see charts like this:
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -5743,7 +5892,9 @@ If we change our coefficients: &lt;/p&gt;
 &lt;p&gt;It depends on what happens when we call &lt;code&gt;pukeRainbows()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Why? We’ll see in the next article. &lt;/p&gt;
 &lt;h2&gt;What is Big O Notation?&lt;/h2&gt;
-&lt;p&gt;Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant and linear time complexity with examples in JavaScript. Join us for part two of this series &lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity&quot;&gt;Big O &amp;#x26; Linear Time Complexity&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Programming is Problem Solving]]></title><description><![CDATA[My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah. Though the technologies were primitive…]]></description><link>http://jarednielsen.com/programming-problem-solving/</link><guid isPermaLink="false">http://jarednielsen.com/programming-problem-solving/</guid><pubDate>Mon, 13 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant and linear time complexity with examples in JavaScript. Join us for part two of this series &lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity&quot;&gt;Big O &amp;#x26; Linear Time Complexity&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Note: Amazon links are affiliate.&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Programming is Problem Solving]]></title><description><![CDATA[My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah. Though the technologies were primitive…]]></description><link>http://jarednielsen.com/programming-problem-solving/</link><guid isPermaLink="false">http://jarednielsen.com/programming-problem-solving/</guid><pubDate>Mon, 13 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/58f3affa86516d8d73953a19d9f3fa58/2f950/jared-nielsen-teach-adults-code-duck.png&quot;
