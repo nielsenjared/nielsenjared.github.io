@@ -1,12 +1,31 @@
 ---
-title: Learn JavaScript Data Structures: Arrays
+title: Learn JavaScript Array Data Structure
+date: '2020-05-01'
+description: TODO
+keyword: ['javascript', 'array', 'arrays', 'data structure', 'data structures']
 ---
 
 ![](./image.png)
 
 @TODO introduction
 
+At some point in your career (today?!) you will want to learn data structures. Why? 
+
+
+## What is an Array? 
+
 An array is the simplest data structure. It is a sequential collection of elements each identified by index. In JavaScript, (almost) everything is an object, including arrays. The JavaScript Array object contains property/value pairs where the property name corresponds with the array index. You guessed it. Because it’s an object, the property name is a string and not an integer. Because they are objects, they are not as efficient as arrays in other languages.
+
+
+## What Problem(s) Do Arrays Solve?
+
+@TODO 
+* Arrays allow us to store similar values in a single variable, rather than individual variables for each value
+
+* 
+
+  
+## Learn JavaScript Array Data Structure
 
 Arrays in [statically typed programming languages](https://en.wikipedia.org/wiki/Type_system) cannot store different data types. Because JavaScript is a dynamically typed language and arrays are objects, we _can_ store different data types in them, but that doesn't mean we _should_.
 
@@ -23,13 +42,12 @@ var best = {
 }
 ```
 
-
-## Creating Arrays
+### Creating Arrays in JavaScript
 
 There are several approaches available for creating arrays. The first is array declaration with literals:
 
 
-### Array Declaration
+#### Array Declaration
 ```js
 const empty = [];
 ```
@@ -47,7 +65,7 @@ empty.constructor // returns [Function: Array]
 ```
 
 
-### Array Constructor
+#### Array Constructor
 
 There's also the Array constructor, but, as we will see below, it can be problematic:
 ```js
@@ -90,7 +108,7 @@ console.log(numnums); //returns [ '4' ]
 If we were to use the Array constructor without type-checking, there's a possibility that we would create an array containing a string, rather than an array of empty elements.
 
 
-### Array.of()
+#### Array.of()
 
 Fortunately for us, `Array.of()` was introduced in ES6 to bring some sanity to array instantiation and address the issue of passing types to the Array constructor.
 
@@ -106,102 +124,12 @@ console.log(strings);
 ```
 
 
-## Shallow & Deep Copies
+### Array Mutator Methods
 
-@TODO
-
-```js
-const nums = [1, 2, 3];
-
-const numnums = nums;
-
-nums[0] = "The shallow end...";
-
-console.log(numnums[0]); //returns "The shallow end..."
-```
-
-Arr! Not what we want. Assigning the value of an existing array to a new array creates a _shallow_ copy. The new array is only a reference to the original. It gets worse...
-
-```js
-const nums = [1, 2, 3];
-
-const numnums = nums;
-
-numnums[0] = "... of the gene pool.";
-
-console.log(nums[0]); //returns "... of the gene pool."
-```
-
-@TODO: Why?
-
-To avoid this situation, we need to make a _deep_ copy. We have a few options available to us.
-
-### for
-@TODO
-The tried-and-true, classic `for` loop.
-
-```js
-const nums = [1,2,3];
-const numnums = [];
-
-for (var i = 0; i < nums.length; ++i) {
-  numnums[i] = nums[i];
-}
-```
-
-But declaring an empty array is inelegant. We can use array methods to accomplish the same ends.
+I’m going to assume you are familiar with `push` and `pop`, but maybe not `unshift` and `shift`, which add and remove elements at the beginning of an array, respectively.
 
 
-### slice()
-
-The old school approach is using the `slice()` method to create a deep copy of an array.
-
-```js
-const nums = [1, 2, 3];
-
-const numnums = nums.slice();
-
-nums[0] = "The shallow end...";
-
-console.log(numnums[0]); //returns 1
-```
-
-
-### Spread
-
-The ES6-y approach is to use the spread operator:
-
-```js
-const nums = [1, 2, 3];
-
-const numnums = [...nums];
-
-nums[0] = "The shallow end...";
-
-console.log(numnums[0]); //returns 1
-```
-
-
-### Array.from()
-
-There is also the `Array.from()` method:
-
-```js
-const nums = [1, 2, 3];
-
-const numnums = Array.from(nums);
-
-nums[0] = "The shallow end...";
-
-console.log(numnums[0]); //returns 1
-```
-
-
-## Array Mutator Methods
-I’m going to assume you are familiar with push and pop, but maybe not unshift and shift, which add and remove elements at the beginning of an array, respectively.
-
-
-### unshift
+#### unshift
 
 We can think of `unshift()` as the opposite of `push()`. The `push()` method adds items to _the end_ of an array. The `unshift()` method adds items to _the beginning_.
 
@@ -214,7 +142,7 @@ console.log(nums); // returns [4, 5, 6, 1, 2, 3]
 ```
 
 
-### shift
+#### shift
 
 As `unshift()` is to `push()`, `shift()` is to `pop()`. This method will _shift_ the array one index by removing the first item.
 
@@ -224,34 +152,21 @@ nums.shift();
 console.log(nums); // returns [5, 6, 1, 2, 3]
 ```
 
+@TODO
+## Learn JavaScript Array Data Structure
 
+Arrays are commonplace in development. That means they are also commonplace in technical interviews. It's important to understand the basics but also be aware of the quirks. 
 
+Some common interview questions are: 
 
+* Determine if all elements in an array are unique values
 
-## Array Interview Questions
+* Find the missing number in an array of 1 to 100
 
-Find the missing number in a given integer array of 1 to 100
-Find the duplicate number on a given integer array
-Find the largest and smallest number in an unsorted integer array
-Find all pairs of an integer array whose sum is equal to a given number
-Find duplicate numbers in an array if it contains multiple duplicates
-How are duplicates removed from a given array in Java
-How is an integer array sorted in place using the quicksort algorithm
+* Find the duplicate number on a given integer array
+
 Remove duplicates from an array in place
-How do you reverse an array in place in Java
-How are duplicates removed from an array without using any library
 
-<!-- Find the second minimum element of an array -->
-First non-repeating integers in an array
 Merge two sorted arrays
-Rearrange positive and negative values in an array
 
-
-
-## (Re)Sources
-* [MDN: slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
-* [MDN: Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
-* [MDN: Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
-* [Wikipedia: Object copying](https://en.wikipedia.org/wiki/Object_copying)
-* [MDN: unshift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
-*
+How is an integer array sorted in place using the quicksort algorithm
