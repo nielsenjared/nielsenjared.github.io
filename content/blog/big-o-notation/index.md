@@ -7,7 +7,9 @@ keywords: ["big o", "big o notation", "time complexity", "constant time"]
 
 ![](./jarednielsen-big-o.png)
 
-Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you'll learn the fundamentals of Big O notation, beginning with constant time complexity with examples in JavaScript. Come with us now on a journey through time and space complexity...
+Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you'll learn the fundamentals of Big O notation, beginning with constant time complexity with examples in JavaScript. 
+
+Come with us now on a journey through time and space complexity...
 
 ---
 ![](./jarednielsen-little-book-big-o-cover-200x300.png)
@@ -23,6 +25,15 @@ This article is an excerpt from _The Little Book of Big O_. [Pre-order it today!
 * Big O notation equips us with a shared language for discussing the complexity of algorithms with other developers (and mathematicians!).
 
 
+## Let's Get Meta
+
+* Why do you need to know this? (The answer is not: "Because technical interviews are intimidating!")
+
+* What does it mean to 'do better' in software development?
+
+* What is the connection between mathematics and computer science? 
+
+
 ## What is Big O Notation? 
 
 Big O is a notation for measuring the complexity of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the _speed_ of an algorithm in seconds (or minutes!). We measure the _rate of growth_ of an algorithm in the number of operations it takes to complete. 
@@ -31,13 +42,13 @@ What do we mean by notation? According to Wikipedia, in linguistics and semiotic
 
 > a system of graphics or symbols, characters and abbreviated expressions, used (for example) in artistic and scientific disciplines to represent technical facts and quantities by convention. Therefore, a notation is a collection of related symbols that are each given an arbitrary meaning, created to facilitate structured communication within a domain knowledge or field of study. 
 
-The O is actually the Greek character Omicron and is shorthand for “Order of”. So, if we’re discussing an algorithm with _O(n)_, we say its _order of_, or rate of growth, is _n_, or linear complexity. 
+The O is actually the Greek character _Omicron_ and is shorthand for “Order of”. So, if we’re discussing an algorithm with _O(n)_, we say its _order of_, or rate of growth, is _n_, or linear complexity. 
 
 Why _order_? 
 
 In biology, an order is a taxonomic classification. We are in the order of primates. 🐒🦍
 
-In computer science, an order is a mathematical classification for algorithms. We use Big O to measure the rate of growth, or complexity, of algorithms, so algorithms with equivalent complexity are in the same order. 
+In computer science, an order is a mathematical classification for algorithms. We use Big O to measure the rate of growth, or complexity, of algorithms, so algorithms with equivalent complexity are in the same order. We will see below that we can also _order_ algorithms as they increase in complexity. 
 
 You will see Big O referred to as asymptotic runtime, or [asymptotic computational complexity](https://en.wikipedia.org/wiki/Asymptotic_computational_complexity). This is a fancy way of describing the limits of a function. 
 
@@ -63,7 +74,7 @@ For now. 😀
 
 ## How Does Big O Notation Work? 
 
-Big O notation measures the _worst-case runtime_. 
+Big O notation is used to define the _worst-case scenario_ for a given algorithm. 
 
 Why?
 
@@ -71,11 +82,11 @@ Because we don’t know what we don’t know.
 
 If we’re writing a search algorithm, we won’t always know the query ahead of time. If we’re writing a sorting algorithm, we won’t always know the dataset ahead of time. What if the query is the very last element or what if the dataset is a real mess. We want to know just how poorly our algorithm will perform.
 
-The worst-case scenario is also known as the “upper bound”.
+The worst-case scenario is also known as the _upper bound_.
 
 You’re going to encounter a lot of tables like this: 
 
-| O             | Run time          |       |
+| O             | Complexity        |       |
 |---            |---                |---    |
 | O(1)          | constant          | fast  |
 | O(log n)      | logarithmic       |       |
@@ -93,17 +104,25 @@ And you’re definitely going to see charts like this:
 
 We’ll return to both as we proceed. 
 
-Before we get into any code, let’s get hands-on to get a feel (pun intended) for Big O. We’ll use an example from [Grokking Algorithms](https://amzn.to/376TGy9). 
+Before we get into any code, let’s get hands-on to get a feel for Big O. We’ll use an example from [Grokking Algorithms](https://amzn.to/376TGy9) _(Note: Amazon links are affiliate)_. 
 
 Let's say I give you a square piece of paper and ask you to divide it into sixteen squares. How would you approach this problem? 
 
 You could take the brute force approach and draw sixteen individual squares. If you take this approach, how many steps, or computations, will you perform? 
 
-Sixteen.
+Sixteen. 
 
-Is there an approach that requires fewer steps? Of course!
+One for each square that you draw.
 
-Fold the paper in half. Then in half again. Four squares! 
+Is there an approach that requires fewer steps? 
+
+Of course!
+
+Fold the paper in half. Then in half again. 
+
+How man squares did you just create? 
+
+Four! 
 
 Now fold it in half two more times. 
 
@@ -131,9 +150,7 @@ Say you’re working with an API that returns a users full name in an array, lik
 Your task is to get the users first name. Easy, in JavaScript:
 
 ```js
-const getFirstName = data => {
-    return data[0];
-}
+const getFirstName = data => data[0];
 
 ```
 
@@ -145,7 +162,7 @@ Here’s another JavaScript example:
 const isEven = num => num % 2 === 0;
 ```
 
-Our algorithm checks whether or not a number is even or odd and will return true or false accordingly. It only needs to perform one operation. Again, O(1). 
+Our algorithm checks whether or not a number is even or odd and will return true or false accordingly. No matter the size of the value passed to `isEven`, it only needs to perform one operation. Again, O(1). 
 
 One more example: Say you are checking your application state to determine whether or not you need to style an alert element with a specific color. You could do so with a series of conditional statements:
 
@@ -196,11 +213,17 @@ It depends on what happens when we call `pukeRainbows()`.
 Why? We’ll see in the next article. 
 
 
+## Metacognition
+
+Ask yourself the following questions again. What are your answers? 
+
+* Why do you need to know this? 
+
+* What does it mean to 'do better' in software development?
+
+* What is the connection between mathematics and computer science? 
+
+
 ## What is Big O Notation? 
 
-Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant and linear time complexity with examples in JavaScript. Join us for part two of this series [Big O & Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity).
-
----
-
-_Note: Amazon links are affiliate._
-
+Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant time complexity with examples in JavaScript. Join us for part two of this series [Big O & Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity).
