@@ -27,11 +27,17 @@ This article is an excerpt from _The Little Book of Big O_. [Pre-order it today!
 
 ## Let's Get Meta
 
-* Why do you need to know this? (The answer is not: "Because technical interviews are intimidating!")
+Programming is problem solving. Both are metacognitive activities. To excel, we want to improve our thinking _about_ thinking.
 
-* What does it mean to 'do better' in software development?
+Ask yourself the following questions and keep them back of mind as you proceed: 
 
-* What is the connection between mathematics and computer science? 
+* Why do I need to know this? (The answer is not: "Because technical interviews are intimidating!")
+
+* What does it mean to _do better_ in software development?
+
+* How can I use this knowledge in my own work? 
+
+If you know the answers, great! If not, even better! Another secret to success is maintaining a beginner's mind even when you're an expert. 
 
 
 ## What is Big O Notation? 
@@ -104,7 +110,7 @@ And you’re definitely going to see charts like this:
 
 We’ll return to both as we proceed. 
 
-Before we get into any code, let’s get hands-on to get a feel for Big O. We’ll use an example from [Grokking Algorithms](https://amzn.to/376TGy9) _(Note: Amazon links are affiliate)_. 
+Before we get into any code, let’s get hands-on to get a feel for Big O. We’ll use an example from [Grokking Algorithms](https://amzn.to/376TGy9) ( _Note: Amazon links are affiliate_ ). 
 
 Let's say I give you a square piece of paper and ask you to divide it into sixteen squares. How would you approach this problem? 
 
@@ -219,11 +225,11 @@ Ask yourself the following questions again. What are your answers?
 
 * Why do you need to know this? 
 
-* What does it mean to 'do better' in software development?
+* What does it mean to _do better_ in software development?
 
 * What is the connection between mathematics and computer science? 
 
 
-## What is Big O Notation? 
+### What is Big O Notation? 
 
 Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant time complexity with examples in JavaScript. Join us for part two of this series [Big O & Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity).
