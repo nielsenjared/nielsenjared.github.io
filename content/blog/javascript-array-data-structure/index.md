@@ -1,31 +1,39 @@
 ---
 title: Learn JavaScript Array Data Structure
 date: '2020-05-01'
-description: TODO
+description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the array data structure in JavaScript. 
 keyword: ['javascript', 'array', 'arrays', 'data structure', 'data structures']
 ---
 
 ![](./image.png)
 
-@TODO introduction
 
-At some point in your career (today?!) you will want to learn data structures. Why? 
+At some point in your career (today?!) you will want to learn data structures. Why? It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. For example, if you're a JavaScript developer, you probably take your JS engine for granted. But under-the-hood, V8 or Spidermonkey in Chrome and Firefox, respectively, are written in C++, and are using data structures, such as stacks and queues, to implement the JavaScript execution context. When you query a database, your DBMS is using data structures, such as hash tables and trees, to parse and optimize execution. In this tutorial, you will learn the array data structure in JavaScript. 
 
 
 ## What is an Array? 
 
-An array is the simplest data structure. It is a sequential collection of elements each identified by index. In JavaScript, (almost) everything is an object, including arrays. The JavaScript Array object contains property/value pairs where the property name corresponds with the array index. You guessed it. Because it’s an object, the property name is a string and not an integer. Because they are objects, they are not as efficient as arrays in other languages.
+An array is the simplest data structure. It is a sequential collection of elements each identified by index. 
+
+@TODO image? 
+
+We can think of our computer as an array of switches. A byte is an array of eight bits. From bytes we build complex layers of abstraction to create memory, characters, and cat videos. 
 
 
 ## What Problem(s) Do Arrays Solve?
 
-@TODO 
-* Arrays allow us to store similar values in a single variable, rather than individual variables for each value
+* Arrays allow us to store similar values in a single variable, rather than individual variables for each value.
 
-* 
+* Arrays allow us to quickly and easily perform operations on similar values.
+
+* Arrays are fast. If we know the index of the element, an array search is in the order of O(1).
+
+* Arrays are multidimensional, meaning we can store arrays in arrays in arrays...
 
   
 ## Learn JavaScript Array Data Structure
+
+In JavaScript, (almost) everything is an object, including arrays. The JavaScript Array object contains property/value pairs where the property name corresponds with the array index. You guessed it. Because it’s an object, the property name is a string and not an integer. Because they are objects, they are not as efficient as arrays in other languages.
 
 Arrays in [statically typed programming languages](https://en.wikipedia.org/wiki/Type_system) cannot store different data types. Because JavaScript is a dynamically typed language and arrays are objects, we _can_ store different data types in them, but that doesn't mean we _should_.
 
@@ -152,7 +160,6 @@ nums.shift();
 console.log(nums); // returns [5, 6, 1, 2, 3]
 ```
 
-@TODO
 ## Learn JavaScript Array Data Structure
 
 Arrays are commonplace in development. That means they are also commonplace in technical interviews. It's important to understand the basics but also be aware of the quirks. 
@@ -165,8 +172,8 @@ Some common interview questions are:
 
 * Find the duplicate number on a given integer array
 
-Remove duplicates from an array in place
+* Merge two sorted arrays
 
-Merge two sorted arrays
+* Sort and arry in place using quicksort
 
-How is an integer array sorted in place using the quicksort algorithm
+In this tutorial, you learned the array data structure in JavaScript. Learning data structures will help you understand how software works and improve your problem-solving skills. 
