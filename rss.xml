@@ -1,4 +1,165 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Apr 2020 12:53:08 GMT</lastBuildDate><item><title><![CDATA[Emotion in Learning & Problem Solving]]></title><description><![CDATA[Emotion is important for success in both problem solving and learning. Empathy sparks creativity, but to excel we need to be aware of our…]]></description><link>http://jarednielsen.com/emotion-learning-problem-solving/</link><guid isPermaLink="false">http://jarednielsen.com/emotion-learning-problem-solving/</guid><pubDate>Mon, 27 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 30 Apr 2020 15:58:18 GMT</lastBuildDate><item><title><![CDATA[Learn JavaScript Array Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/javascript-array-data-structure/</link><guid isPermaLink="false">http://jarednielsen.com/javascript-array-data-structure/</guid><pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f056be784905396036eba7df9d20880f/a987b/jarednielsen-javascript-array-data-structure.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABD0lEQVQoz62S607DMAyF+/5Pxk+EBAPEBmvRKsouXbu2udkHJwEtHd0AiUinrlzn80njjJmRyq/4PMafVro/OwWyoyhjY7QOrA1YGVCnQPsObr2Hq3aw5QbUqxE0S525bQtbVDD5G/TtC/TjK4xIXT/JewGzKDFczUL0YP0gOak/C/RFJE5c3YLaPsjt2pg/DLHpex3y0UAT3J4H1gc51iAbBNB0EepzXk0PJpZjbo9AaeYbXATa1SYeMRy5iHGWi5bQd0v5Noe+z2HmK6ibhdSvvwORQEPnqgbLz/aXQeKCrQ2O/Waf9w7NcxkMhEubumWcjM5ocNLcZ+1oZIgujM2URrP2xZyu/R3wD/p34Afe6l9fCVil2gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen javascript array data structure&quot;
+        title=&quot;&quot;
+        src=&quot;/static/f056be784905396036eba7df9d20880f/b9e4f/jarednielsen-javascript-array-data-structure.png&quot;
+        srcset=&quot;/static/f056be784905396036eba7df9d20880f/cf440/jarednielsen-javascript-array-data-structure.png 148w,
+/static/f056be784905396036eba7df9d20880f/d2d38/jarednielsen-javascript-array-data-structure.png 295w,
+/static/f056be784905396036eba7df9d20880f/b9e4f/jarednielsen-javascript-array-data-structure.png 590w,
+/static/f056be784905396036eba7df9d20880f/f9b6a/jarednielsen-javascript-array-data-structure.png 885w,
+/static/f056be784905396036eba7df9d20880f/2d849/jarednielsen-javascript-array-data-structure.png 1180w,
+/static/f056be784905396036eba7df9d20880f/a987b/jarednielsen-javascript-array-data-structure.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not &lt;em&gt;just&lt;/em&gt; to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the array data structure in JavaScript. &lt;/p&gt;
+&lt;h2&gt;What is an Array?&lt;/h2&gt;
+&lt;p&gt;An array is the simplest data structure. It is a sequential collection of elements each identified by index. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5fc3f1e0a9af60c718c16fb7262b0ec1/a987b/jarednielsen-javascript-array-data-structure-example.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9UlEQVQoz82SP2/CMBDF8/2/ByztVIk5Ax3abgVVqtSBoUICpSVgkziJ7+7hPwElpkOHVsLSG3z2/fxOz5mI4C+V/SvwN0uC5LqWAv2ibwVWFaSzYNNCvJghTRdlCUIcalw3oP0RttjHOz00O8NYG6hJDn03RzV7gd2UMI9vMPkraKfRLlaoHp5gnt+h7+foPtZoliuoaQ77WUSnPAB6B/R1ABUHB68vzqjUcUgi5752cAXaltGxq9nNDlyZyEhHDk6Pxp8EBahrkvPeQwfNfmxpu94dD0fug2G5XB4+dLXvm9OzccqjtMbJSZJkmuyPKd/sxz4BDq1iJ9uFAX8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen javascript array data structure example&quot;
+        title=&quot;&quot;
+        src=&quot;/static/5fc3f1e0a9af60c718c16fb7262b0ec1/b9e4f/jarednielsen-javascript-array-data-structure-example.png&quot;
+        srcset=&quot;/static/5fc3f1e0a9af60c718c16fb7262b0ec1/cf440/jarednielsen-javascript-array-data-structure-example.png 148w,
+/static/5fc3f1e0a9af60c718c16fb7262b0ec1/d2d38/jarednielsen-javascript-array-data-structure-example.png 295w,
+/static/5fc3f1e0a9af60c718c16fb7262b0ec1/b9e4f/jarednielsen-javascript-array-data-structure-example.png 590w,
+/static/5fc3f1e0a9af60c718c16fb7262b0ec1/f9b6a/jarednielsen-javascript-array-data-structure-example.png 885w,
+/static/5fc3f1e0a9af60c718c16fb7262b0ec1/2d849/jarednielsen-javascript-array-data-structure-example.png 1180w,
+/static/5fc3f1e0a9af60c718c16fb7262b0ec1/a987b/jarednielsen-javascript-array-data-structure-example.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;We can think of our computer as an array of switches. A byte is an array of eight bits. From bytes we build complex layers of abstraction to create memory, characters, and cat videos. &lt;/p&gt;
+&lt;h2&gt;What Problem(s) Do Arrays Solve?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Arrays allow us to store similar values in a single variable, rather than individual variables for each value.&lt;/li&gt;
+&lt;li&gt;Arrays allow us to quickly and easily perform operations on similar values.&lt;/li&gt;
+&lt;li&gt;Arrays are fast. If we know the index of the element, an array search is in the order of O(1).&lt;/li&gt;
+&lt;li&gt;Arrays are multidimensional, meaning we can store arrays in arrays in arrays…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Learn JavaScript Array Data Structure&lt;/h2&gt;
+&lt;p&gt;In JavaScript, (almost) everything is an object, including arrays. The JavaScript Array object contains property/value pairs where the property name corresponds with the array index. You guessed it. Because it’s an object, the property name is a string and not an integer. Because they are objects, they are not as efficient as arrays in other languages.&lt;/p&gt;
+&lt;p&gt;Arrays in &lt;a href=&quot;https://en.wikipedia.org/wiki/Type_system&quot;&gt;statically typed programming languages&lt;/a&gt; cannot store different data types. Because JavaScript is a dynamically typed language and arrays are objects, we &lt;em&gt;can&lt;/em&gt; store different data types in them, but that doesn’t mean we &lt;em&gt;should&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;🥇 Best practice is to limit our arrays to one data type. Why? Arrays are classically defined as &lt;a href=&quot;https://en.wikipedia.org/wiki/Array&quot;&gt;a systematic arrangement of similar objects&lt;/a&gt; and if we declare an array containing multiple data types, there is no obvious structure, which may be fine if we are very careful about not mutating the array as it is used throughout an application, but what happens if we aren’t? It should be immediately apparent in this example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; bad &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;two&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; best &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  number&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  string&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;two&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  object&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  bool&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Creating Arrays in JavaScript&lt;/h3&gt;
+&lt;p&gt;There are several approaches available for creating arrays. The first is array declaration with literals:&lt;/p&gt;
+&lt;h4&gt;Array Declaration&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; empty &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or,&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; full &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;this&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;that&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;the other&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To prove the point above:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; empty &lt;span class=&quot;token comment&quot;&gt;// returns &apos;object&apos;&lt;/span&gt;
+
+empty&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;constructor &lt;span class=&quot;token comment&quot;&gt;// returns [Function: Array]  &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Array Constructor&lt;/h4&gt;
+&lt;p&gt;There’s also the Array constructor, but, as we will see below, it can be problematic:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nums &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nums&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//returns 1&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nums&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// returns 3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We clearly and obviously created an array with three elements. But if we run the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; numnums &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;numnums&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// returns undefined&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;numnums&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// returns 4&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Maddening! What’s inside &lt;code&gt;numnums&lt;/code&gt;?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;numnums&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;… returns:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[ &amp;lt;4 empty items&amp;gt; ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Passing only one numerical argument to the Array constructor will return an array with a corresponding number of empty elements, whereas passing multiple integers will create an array containing each argument. It gets worse:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; numnums &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;4&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;numnums&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//returns [ &apos;4&apos; ]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we were to use the Array constructor without type-checking, there’s a possibility that we would create an array containing a string, rather than an array of empty elements.&lt;/p&gt;
+&lt;h4&gt;Array.of()&lt;/h4&gt;
+&lt;p&gt;Fortunately for us, &lt;code&gt;Array.of()&lt;/code&gt; was introduced in ES6 to bring some sanity to array instantiation and address the issue of passing types to the Array constructor.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nums &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Array&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;numbers&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// returns [4]&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; strings &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Array&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;string&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;strings&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// returns [ &apos;string&apos;, &apos;&apos; ]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Array Mutator Methods&lt;/h3&gt;
+&lt;p&gt;I’m going to assume you are familiar with &lt;code&gt;push&lt;/code&gt; and &lt;code&gt;pop&lt;/code&gt;, but maybe not &lt;code&gt;unshift&lt;/code&gt; and &lt;code&gt;shift&lt;/code&gt;, which add and remove elements at the beginning of an array, respectively.&lt;/p&gt;
+&lt;h4&gt;unshift&lt;/h4&gt;
+&lt;p&gt;We can think of &lt;code&gt;unshift()&lt;/code&gt; as the opposite of &lt;code&gt;push()&lt;/code&gt;. The &lt;code&gt;push()&lt;/code&gt; method adds items to &lt;em&gt;the end&lt;/em&gt; of an array. The &lt;code&gt;unshift()&lt;/code&gt; method adds items to &lt;em&gt;the beginning&lt;/em&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nums &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+nums&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;unshift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nums&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// returns [4, 5, 6, 1, 2, 3]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;shift&lt;/h4&gt;
+&lt;p&gt;As &lt;code&gt;unshift()&lt;/code&gt; is to &lt;code&gt;push()&lt;/code&gt;, &lt;code&gt;shift()&lt;/code&gt; is to &lt;code&gt;pop()&lt;/code&gt;. This method will &lt;em&gt;shift&lt;/em&gt; the array one index by removing the first item.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;nums&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nums&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// returns [5, 6, 1, 2, 3]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Learn JavaScript Array Data Structure&lt;/h2&gt;
+&lt;p&gt;Arrays are commonplace in development. That means they are also commonplace in technical interviews. It’s important to understand the basics but also be aware of the quirks. For example, if you’re a JavaScript developer, you probably take your JS engine for granted. But under-the-hood, V8 or Spidermonkey in Chrome and Firefox, respectively, are written in C++, and are using data structures, such as stacks and queues, to implement the JavaScript execution context. When you query a database, your DBMS is using data structures, such as hash tables and trees, to parse and optimize execution.&lt;/p&gt;
+&lt;p&gt;Some common interview questions are: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Determine if all elements in an array are unique values&lt;/li&gt;
+&lt;li&gt;Find the missing number in an array of 1 to 100&lt;/li&gt;
+&lt;li&gt;Find the duplicate number on a given integer array&lt;/li&gt;
+&lt;li&gt;Merge two sorted arrays&lt;/li&gt;
+&lt;li&gt;Sort and arry in place using quicksort&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this tutorial, you learned the array data structure in JavaScript. Learning data structures will help you understand how software works and improve your problem-solving skills. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Emotion in Learning & Problem Solving]]></title><description><![CDATA[Emotion is important for success in both problem solving and learning. Empathy sparks creativity, but to excel we need to be aware of our…]]></description><link>http://jarednielsen.com/emotion-learning-problem-solving/</link><guid isPermaLink="false">http://jarednielsen.com/emotion-learning-problem-solving/</guid><pubDate>Mon, 27 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/c2bbcae1a1555376636dab50b14b3883/a987b/jarednielsen-solution-emotion.png&quot;
@@ -182,7 +343,7 @@
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABT0lEQVQoz2NgwAKezY6F0DNiGJ/ty2J68X8lw4umQIanOzOYnt8og8gdz2MgCTydH4tT7vnVItIMe7Y4kRFML03SeHY4LxXEfjErVvLZ/tyc509LWUl24fNDBUxQ2vXZ8YKXz07maD7fWyD37FjB22cnCrwhBkLUYIB///4xoeO//34y/f/7n/HV/3OsLy/3iny9s4Plw/+nzC+uTRD+cGMJ+////xn//v7KhE0vXpfe7zdXebI/Gey3m8kMgk/2JJcR9B7QVAsM/OenNdAVup/ubSp5faHl/5cXBxO/v74U9O5S6/8P91bXAeV0/v75Yf3v338MvSADsYL///7++/f35/9/vz79//v7+79/f77//wtk//vz4z+QA1TxF6s+hv84wT8g+gPW/P/f7/8gDDHoD1DuL0QejFEBTheC3PgPoQOsG8oBi+MCDBCd1MMAplb1GMTYAYIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAABG0lEQVQoz51RTU/CQBDlH3v2qD+Em0cUiIliPKkHBQIXRD6MoSEYxAQDhbTdnZ3HdreVFlqCTvI6s92ZtzNvCsgwZv71TITwZFB+A7tBKmfXChls24K4Zu4BVz2g2AFcYX8fRZgk0yblN9b1G+CiC3ImWHVqYM8/ssM4IRyTlQn9bhPTygnEfAziBabPp/B+XqM0lU1odAoRaxbphQcH/ORAwY7IgqAeBzqHtvpmIN1hBK69A6UhxOcHXOdOa+iD+iMs25f6OrkUPtBh3N1sBa7qBVyPEJTvMWudQ96+gEoNfLXPUiPb93c6zB3ZeAUKFvorTazCmHwztiXkA4SGLPKkk6UuImmLpbAwRPQHwhT2FeKEz11KPuH/sAHDm1yqMMDLAQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -5644,7 +5805,8 @@ If we change our coefficients: &lt;/p&gt;
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation, beginning with constant time complexity with examples in JavaScript. Come with us now on a journey through time and space complexity…&lt;/p&gt;
+&lt;p&gt;Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation, beginning with constant time complexity with examples in JavaScript. &lt;/p&gt;
+&lt;p&gt;Come with us now on a journey through time and space complexity…&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;
   &lt;a
@@ -5685,16 +5847,25 @@ If we change our coefficients: &lt;/p&gt;
 &lt;li&gt;Big O notation helps us answer the question, “Can we do better?” &lt;/li&gt;
 &lt;li&gt;Big O notation equips us with a shared language for discussing the complexity of algorithms with other developers (and mathematicians!).&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;p&gt;Programming is problem solving. Both are metacognitive activities. To excel, we want to improve our thinking &lt;em&gt;about&lt;/em&gt; thinking.&lt;/p&gt;
+&lt;p&gt;Ask yourself the following questions and keep them back of mind as you proceed: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Why do I need to know this? (The answer is not: “Because technical interviews are intimidating!“)&lt;/li&gt;
+&lt;li&gt;What does it mean to &lt;em&gt;do better&lt;/em&gt; in software development?&lt;/li&gt;
+&lt;li&gt;How can I use this knowledge in my own work? &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you know the answers, great! If not, even better! Another secret to success is maintaining a beginner’s mind even when you’re an expert. &lt;/p&gt;
 &lt;h2&gt;What is Big O Notation?&lt;/h2&gt;
 &lt;p&gt;Big O is a notation for measuring the complexity of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the &lt;em&gt;speed&lt;/em&gt; of an algorithm in seconds (or minutes!). We measure the &lt;em&gt;rate of growth&lt;/em&gt; of an algorithm in the number of operations it takes to complete. &lt;/p&gt;
 &lt;p&gt;What do we mean by notation? According to Wikipedia, in linguistics and semiotics, a notation is:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;a system of graphics or symbols, characters and abbreviated expressions, used (for example) in artistic and scientific disciplines to represent technical facts and quantities by convention. Therefore, a notation is a collection of related symbols that are each given an arbitrary meaning, created to facilitate structured communication within a domain knowledge or field of study. &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The O is actually the Greek character Omicron and is shorthand for “Order of”. So, if we’re discussing an algorithm with &lt;em&gt;O(n)&lt;/em&gt;, we say its &lt;em&gt;order of&lt;/em&gt;, or rate of growth, is &lt;em&gt;n&lt;/em&gt;, or linear complexity. &lt;/p&gt;
+&lt;p&gt;The O is actually the Greek character &lt;em&gt;Omicron&lt;/em&gt; and is shorthand for “Order of”. So, if we’re discussing an algorithm with &lt;em&gt;O(n)&lt;/em&gt;, we say its &lt;em&gt;order of&lt;/em&gt;, or rate of growth, is &lt;em&gt;n&lt;/em&gt;, or linear complexity. &lt;/p&gt;
 &lt;p&gt;Why &lt;em&gt;order&lt;/em&gt;? &lt;/p&gt;
 &lt;p&gt;In biology, an order is a taxonomic classification. We are in the order of primates. 🐒🦍&lt;/p&gt;
-&lt;p&gt;In computer science, an order is a mathematical classification for algorithms. We use Big O to measure the rate of growth, or complexity, of algorithms, so algorithms with equivalent complexity are in the same order. &lt;/p&gt;
+&lt;p&gt;In computer science, an order is a mathematical classification for algorithms. We use Big O to measure the rate of growth, or complexity, of algorithms, so algorithms with equivalent complexity are in the same order. We will see below that we can also &lt;em&gt;order&lt;/em&gt; algorithms as they increase in complexity. &lt;/p&gt;
 &lt;p&gt;You will see Big O referred to as asymptotic runtime, or &lt;a href=&quot;https://en.wikipedia.org/wiki/Asymptotic_computational_complexity&quot;&gt;asymptotic computational complexity&lt;/a&gt;. This is a fancy way of describing the limits of a function. &lt;/p&gt;
 &lt;h3&gt;Math O’Clock 🧮 🕐&lt;/h3&gt;
 &lt;p&gt;You don’t need to be a math whiz to grok Big O, but there are a few basic concepts we need to cover to set you up for success.&lt;/p&gt;
@@ -5706,17 +5877,17 @@ If we change our coefficients: &lt;/p&gt;
 &lt;p&gt;Math time over.&lt;/p&gt;
 &lt;p&gt;For now. 😀 &lt;/p&gt;
 &lt;h2&gt;How Does Big O Notation Work?&lt;/h2&gt;
-&lt;p&gt;Big O notation measures the &lt;em&gt;worst-case runtime&lt;/em&gt;. &lt;/p&gt;
+&lt;p&gt;Big O notation is used to define the &lt;em&gt;worst-case scenario&lt;/em&gt; for a given algorithm. &lt;/p&gt;
 &lt;p&gt;Why?&lt;/p&gt;
 &lt;p&gt;Because we don’t know what we don’t know.&lt;/p&gt;
 &lt;p&gt;If we’re writing a search algorithm, we won’t always know the query ahead of time. If we’re writing a sorting algorithm, we won’t always know the dataset ahead of time. What if the query is the very last element or what if the dataset is a real mess. We want to know just how poorly our algorithm will perform.&lt;/p&gt;
-&lt;p&gt;The worst-case scenario is also known as the “upper bound”.&lt;/p&gt;
+&lt;p&gt;The worst-case scenario is also known as the &lt;em&gt;upper bound&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;You’re going to encounter a lot of tables like this: &lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;O&lt;/th&gt;
-&lt;th&gt;Run time&lt;/th&gt;
+&lt;th&gt;Complexity&lt;/th&gt;
 &lt;th&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -5802,12 +5973,16 @@ If we change our coefficients: &lt;/p&gt;
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;We’ll return to both as we proceed. &lt;/p&gt;
-&lt;p&gt;Before we get into any code, let’s get hands-on to get a feel (pun intended) for Big O. We’ll use an example from &lt;a href=&quot;https://amzn.to/376TGy9&quot;&gt;Grokking Algorithms&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Before we get into any code, let’s get hands-on to get a feel for Big O. We’ll use an example from &lt;a href=&quot;https://amzn.to/376TGy9&quot;&gt;Grokking Algorithms&lt;/a&gt; ( &lt;em&gt;Note: Amazon links are affiliate&lt;/em&gt; ). &lt;/p&gt;
 &lt;p&gt;Let’s say I give you a square piece of paper and ask you to divide it into sixteen squares. How would you approach this problem? &lt;/p&gt;
 &lt;p&gt;You could take the brute force approach and draw sixteen individual squares. If you take this approach, how many steps, or computations, will you perform? &lt;/p&gt;
-&lt;p&gt;Sixteen.&lt;/p&gt;
-&lt;p&gt;Is there an approach that requires fewer steps? Of course!&lt;/p&gt;
-&lt;p&gt;Fold the paper in half. Then in half again. Four squares! &lt;/p&gt;
+&lt;p&gt;Sixteen. &lt;/p&gt;
+&lt;p&gt;One for each square that you draw.&lt;/p&gt;
+&lt;p&gt;Is there an approach that requires fewer steps? &lt;/p&gt;
+&lt;p&gt;Of course!&lt;/p&gt;
+&lt;p&gt;Fold the paper in half. Then in half again. &lt;/p&gt;
+&lt;p&gt;How man squares did you just create? &lt;/p&gt;
+&lt;p&gt;Four! &lt;/p&gt;
 &lt;p&gt;Now fold it in half two more times. &lt;/p&gt;
 &lt;p&gt;When you unfold it, the paper will be divided into sixteen squares. &lt;/p&gt;
 &lt;p&gt;How many steps, or computations, were required?&lt;/p&gt;
@@ -5854,13 +6029,11 @@ If we change our coefficients: &lt;/p&gt;
 &lt;p&gt;Say you’re working with an API that returns a users full name in an array, like so: &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;“Jared”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “Nielsen”&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Your task is to get the users first name. Easy, in JavaScript:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;getFirstName&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; data&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;getFirstName&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; data&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;No matter how many times you run your ‘algorithm’, it only needs to perform one operation to return the desired value. That’s O(1), or constant time.&lt;/p&gt;
 &lt;p&gt;Here’s another JavaScript example: &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;isEven&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Our algorithm checks whether or not a number is even or odd and will return true or false accordingly. It only needs to perform one operation. Again, O(1). &lt;/p&gt;
+&lt;p&gt;Our algorithm checks whether or not a number is even or odd and will return true or false accordingly. No matter the size of the value passed to &lt;code&gt;isEven&lt;/code&gt;, it only needs to perform one operation. Again, O(1). &lt;/p&gt;
 &lt;p&gt;One more example: Say you are checking your application state to determine whether or not you need to style an alert element with a specific color. You could do so with a series of conditional statements:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token function-variable function&quot;&gt;const&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;danger&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -5891,10 +6064,15 @@ If we change our coefficients: &lt;/p&gt;
 &lt;p&gt;Is it still O(1)? &lt;/p&gt;
 &lt;p&gt;It depends on what happens when we call &lt;code&gt;pukeRainbows()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Why? We’ll see in the next article. &lt;/p&gt;
-&lt;h2&gt;What is Big O Notation?&lt;/h2&gt;
-&lt;p&gt;Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant and linear time complexity with examples in JavaScript. Join us for part two of this series &lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity&quot;&gt;Big O &amp;#x26; Linear Time Complexity&lt;/a&gt;.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Note: Amazon links are affiliate.&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Programming is Problem Solving]]></title><description><![CDATA[My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah. Though the technologies were primitive…]]></description><link>http://jarednielsen.com/programming-problem-solving/</link><guid isPermaLink="false">http://jarednielsen.com/programming-problem-solving/</guid><pubDate>Mon, 13 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;h2&gt;Metacognition&lt;/h2&gt;
+&lt;p&gt;Ask yourself the following questions again. What are your answers? &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Why do you need to know this? &lt;/li&gt;
+&lt;li&gt;What does it mean to &lt;em&gt;do better&lt;/em&gt; in software development?&lt;/li&gt;
+&lt;li&gt;What is the connection between mathematics and computer science? &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What is Big O Notation?&lt;/h3&gt;
+&lt;p&gt;Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant time complexity with examples in JavaScript. Join us for part two of this series &lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity&quot;&gt;Big O &amp;#x26; Linear Time Complexity&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Programming is Problem Solving]]></title><description><![CDATA[My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah. Though the technologies were primitive…]]></description><link>http://jarednielsen.com/programming-problem-solving/</link><guid isPermaLink="false">http://jarednielsen.com/programming-problem-solving/</guid><pubDate>Mon, 13 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/58f3affa86516d8d73953a19d9f3fa58/2f950/jared-nielsen-teach-adults-code-duck.png&quot;
