@@ -5,17 +5,18 @@ description: Learning data structures will help you understand how software work
 keyword: ['javascript', 'array', 'arrays', 'data structure', 'data structures']
 ---
 
-![](./image.png)
+
+![](./jarednielsen-javascript-array-data-structure.png)
 
 
-At some point in your career (today?!) you will want to learn data structures. Why? It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. For example, if you're a JavaScript developer, you probably take your JS engine for granted. But under-the-hood, V8 or Spidermonkey in Chrome and Firefox, respectively, are written in C++, and are using data structures, such as stacks and queues, to implement the JavaScript execution context. When you query a database, your DBMS is using data structures, such as hash tables and trees, to parse and optimize execution. In this tutorial, you will learn the array data structure in JavaScript. 
+At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the array data structure in JavaScript. 
 
 
 ## What is an Array? 
 
 An array is the simplest data structure. It is a sequential collection of elements each identified by index. 
 
-@TODO image? 
+![](./jarednielsen-javascript-array-data-structure-example.png)
 
 We can think of our computer as an array of switches. A byte is an array of eight bits. From bytes we build complex layers of abstraction to create memory, characters, and cat videos. 
 
@@ -162,7 +163,7 @@ console.log(nums); // returns [5, 6, 1, 2, 3]
 
 ## Learn JavaScript Array Data Structure
 
-Arrays are commonplace in development. That means they are also commonplace in technical interviews. It's important to understand the basics but also be aware of the quirks. 
+Arrays are commonplace in development. That means they are also commonplace in technical interviews. It's important to understand the basics but also be aware of the quirks. For example, if you're a JavaScript developer, you probably take your JS engine for granted. But under-the-hood, V8 or Spidermonkey in Chrome and Firefox, respectively, are written in C++, and are using data structures, such as stacks and queues, to implement the JavaScript execution context. When you query a database, your DBMS is using data structures, such as hash tables and trees, to parse and optimize execution.
 
 Some common interview questions are: 
 
