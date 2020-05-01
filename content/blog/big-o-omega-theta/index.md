@@ -1,6 +1,6 @@
 ---
 title: 'What’s the Difference Between Big O, Big Omega, and Big Theta?'
-description: 
+description: Big O is only one of many notations for analyzing the complexity of algorithms. In this tutorial, you’ll learn the difference between Big O, Big Omega, and Big Theta notations.
 date: '2020-04-10'
 keywords: ['big o', 'big omega', 'big theta']
 ---
@@ -70,7 +70,7 @@ Half of `¼` is `⅛`.
 
 Half of `⅛` is `1/16`. 
 
-Half of `1/16 is… you see where this is going. 
+Half of `1/16` is… you see where this is going. 
 
 With each division, our denominator increases by a power of 2.
 

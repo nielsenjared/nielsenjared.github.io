@@ -110,31 +110,35 @@ And you’re definitely going to see charts like this:
 
 We’ll return to both as we proceed. 
 
-Before we get into any code, let’s get hands-on to get a feel for Big O. We’ll use an example from [Grokking Algorithms](https://amzn.to/376TGy9) ( _Note: Amazon links are affiliate_ ). 
+Before we get into any code, let’s get hands-on to get a feel for Big O using a simple variation on a classic problem: [cutting stock](https://en.wikipedia.org/wiki/Cutting_stock_problem).
 
-Let's say I give you a square piece of paper and ask you to divide it into sixteen squares. How would you approach this problem? 
+Let's say I give you a square piece of plywood and ask you to cut it into sixteen squares of equal size. How would you approach this problem? 
 
-You could take the brute force approach and draw sixteen individual squares. If you take this approach, how many steps, or computations, will you perform? 
+You could take the brute force approach and use your jigsaw to cut sixteen individual squares. If you take this approach, how many steps, or computations, will you perform? 
 
-Sixteen. 
-
-One for each square that you draw.
+Sixteen. One for each square that you cut.
 
 Is there an approach that requires fewer steps? 
 
 Of course!
 
-Fold the paper in half. Then in half again. 
+Cut the square of plywood in half. Stack the two pieces and then cut them in half again. 
 
 How man squares did you just create? 
 
 Four! 
 
-Now fold it in half two more times. 
+But how many cuts did it require? 
 
-When you unfold it, the paper will be divided into sixteen squares. 
+Only two. 
 
-How many steps, or computations, were required?
+Now cut the stack in half again, stack those pieces, and make one more dividing cut. 
+
+How many squared of plywood does that create? 
+
+Sixteen?
+
+How many cuts, or _computations_, were required?
 
 Four. 
 
@@ -170,56 +174,66 @@ const isEven = num => num % 2 === 0;
 
 Our algorithm checks whether or not a number is even or odd and will return true or false accordingly. No matter the size of the value passed to `isEven`, it only needs to perform one operation. Again, O(1). 
 
-One more example: Say you are checking your application state to determine whether or not you need to style an alert element with a specific color. You could do so with a series of conditional statements:
+One more example: Say you are asked to check if a number is prime. You struggle to think of a real-world scenario for this algorithm, so you dash off this little winner: 
 
 ```js
-const  = state => {
-   if (state === 'danger') {
-       return 'crimson';
-   } else if (state === 'warning') {
-       return 'orange';
-   } else if (state === 'success') {
-       return 'chartreuse';
-   } else {
-       return 'cornflowerblue';
-   };
+const isPrime = num => {
+  if (num <= 1) {
+    return true;
+  } else if (num <= 3) {
+    return true;
+  } else if (num % 2 === 0 || num % 3 === 0) {
+    return false;
+  } else {
+      return "Who cares?";
+  }
 }
 ```
 
 What is our _best-case scenario_ for this algorithm? 
 
-If `state` is equal to `danger`, we will only perform one operation and return. 
+If `num` is less than or equal to 1, we will only perform one operation and return. 
 
 That would be O(1). 
 
-What if `state` is not equal to `danger`? What if `state` does not match any of our conditions? What is our worst-case scenario?
+What if `num` is not less than or equal to 1? What if `num` does not match any of our conditions? What is our worst-case scenario?
 
 It's still O(1).
 
 Why? 
 
-Even though we check multiple conditions before returning `cornflowerblue`, the order of, or rate of growth, is _constant_. The size of the input does not affect the number of operations performed. We know the upper bound, or worst-case scenario, in advance, and we know it will not change. 
+Even though we check multiple conditions before returning indifference, the order of, or rate of growth, is _constant_. The size of the input does not affect the number of operations performed. We know the upper bound, or worst-case scenario, in advance, and we know it will not change. 
 
 What if our function performs an operation in one of the conditions?
 
 ```js
-const alertColor = state => {
-   if (state === 'danger') {
-       return 'crimson';
-   } else {
-       return pukeRainbows(state);
-   };
+const isPrime = num => {
+  if (num <= 1) {
+    return true;
+  } else if (num <= 3) {
+    return true;
+  } else if (num % 2 === 0 || num % 3 === 0) {
+    return false;
+  } else {
+    let i = 5; 
+    
+    while (i * i <= num) {
+        if (num % i === 0 || num % (i + 2) === 0) {
+            return false;
+        }
+        i += 6;
+    }
+  return true;
+  }
 }
 ```
 
 Is it still O(1)? 
 
-It depends on what happens when we call `pukeRainbows()`.
-
-Why? We’ll see in the next article. 
+We’ll see in the next article. 
 
 
-## Metacognition
+### What is Big O Notation? 
 
 Ask yourself the following questions again. What are your answers? 
 
@@ -228,8 +242,5 @@ Ask yourself the following questions again. What are your answers?
 * What does it mean to _do better_ in software development?
 
 * What is the connection between mathematics and computer science? 
-
-
-### What is Big O Notation? 
 
 Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant time complexity with examples in JavaScript. Join us for part two of this series [Big O & Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity).
