@@ -14,7 +14,7 @@ Come with us now on a journey through time and space complexity...
 ---
 ![](./jarednielsen-little-book-big-o-cover-200x300.png)
 
-This article is an excerpt from _The Little Book of Big O_. [Pre-order it today!](https://gum.co/big-o)
+This article is an excerpt from [The Little Book of Big O](https://gum.co/big-o).
 
 ---
 
@@ -25,7 +25,7 @@ This article is an excerpt from _The Little Book of Big O_. [Pre-order it today!
 * Big O notation equips us with a shared language for discussing the complexity of algorithms with other developers (and mathematicians!).
 
 
-## Let's Get Meta
+## Let's Get Meta 🧠
 
 Programming is problem solving. Both are metacognitive activities. To excel, we want to improve our thinking _about_ thinking.
 
@@ -46,7 +46,7 @@ Big O is a notation for measuring the complexity of an algorithm. Big O notation
 
 What do we mean by notation? According to Wikipedia, in linguistics and semiotics, a notation is:
 
-> a system of graphics or symbols, characters and abbreviated expressions, used (for example) in artistic and scientific disciplines to represent technical facts and quantities by convention. Therefore, a notation is a collection of related symbols that are each given an arbitrary meaning, created to facilitate structured communication within a domain knowledge or field of study. 
+> a system of graphics or symbols, characters and abbreviated expressions, used (for example) in artistic and scientific disciplines to represent technical facts and quantities by convention.
 
 The O is actually the Greek character _Omicron_ and is shorthand for “Order of”. So, if we’re discussing an algorithm with _O(n)_, we say its _order of_, or rate of growth, is _n_, or linear complexity. 
 
@@ -174,7 +174,7 @@ const isEven = num => num % 2 === 0;
 
 Our algorithm checks whether or not a number is even or odd and will return true or false accordingly. No matter the size of the value passed to `isEven`, it only needs to perform one operation. Again, O(1). 
 
-One more example: Say you are asked to check if a number is prime. You struggle to think of a real-world scenario for this algorithm, so you dash off this little winner: 
+One more example. Say you are asked to check if a number is prime. You struggle to think of a real-world scenario for this algorithm, so you dash off this little winner: 
 
 ```js
 const isPrime = num => {
@@ -216,7 +216,7 @@ const isPrime = num => {
     return false;
   } else {
     let i = 5; 
-    
+
     while (i * i <= num) {
         if (num % i === 0 || num % (i + 2) === 0) {
             return false;
@@ -235,12 +235,13 @@ We’ll see in the next article.
 
 ### What is Big O Notation? 
 
-Ask yourself the following questions again. What are your answers? 
+* Big O is a notation for measuring the complexity of an algorithm. We measure the _rate of growth_ of an algorithm in the number of operations it takes to complete or the amount of memory it consumes.
 
-* Why do you need to know this? 
+* Big O notation is used to define the _upper bound_, or _worst-case scenario_, for a given algorithm. 
 
-* What does it mean to _do better_ in software development?
-
-* What is the connection between mathematics and computer science? 
+* O(1), or constant time complexity, is the rate of growth in which the size of the input does not affect the number of operations performed.
 
 Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant time complexity with examples in JavaScript. Join us for part two of this series [Big O & Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity).
+
+If you want to increase _your_ rate of growth, get a copy of [The Little Book of Big O](https://gum.co/big-o).
+
