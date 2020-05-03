@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 30 Apr 2020 15:58:18 GMT</lastBuildDate><item><title><![CDATA[Learn JavaScript Array Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/javascript-array-data-structure/</link><guid isPermaLink="false">http://jarednielsen.com/javascript-array-data-structure/</guid><pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 16:02:52 GMT</lastBuildDate><item><title><![CDATA[Learn JavaScript Array Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/javascript-array-data-structure/</link><guid isPermaLink="false">http://jarednielsen.com/javascript-array-data-structure/</guid><pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/f056be784905396036eba7df9d20880f/a987b/jarednielsen-javascript-array-data-structure.png&quot;
@@ -967,7 +967,7 @@ Chicago &amp;gt; Boston &amp;gt; Austin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Half of &lt;code&gt;½&lt;/code&gt; is &lt;code&gt;¼&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Half of &lt;code&gt;¼&lt;/code&gt; is &lt;code&gt;⅛&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Half of &lt;code&gt;⅛&lt;/code&gt; is &lt;code&gt;1/16&lt;/code&gt;. &lt;/p&gt;
-&lt;p&gt;Half of `1/16 is… you see where this is going. &lt;/p&gt;
+&lt;p&gt;Half of &lt;code&gt;1/16&lt;/code&gt; is… you see where this is going. &lt;/p&gt;
 &lt;p&gt;With each division, our denominator increases by a power of 2.&lt;/p&gt;
 &lt;p&gt;We will never be able to halve something into nothing. &lt;/p&gt;
 &lt;p&gt;Unless it’s cake. &lt;/p&gt;
@@ -5840,14 +5840,14 @@ If we change our coefficients: &lt;/p&gt;
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;This article is an excerpt from &lt;em&gt;The Little Book of Big O&lt;/em&gt;. &lt;a href=&quot;https://gum.co/big-o&quot;&gt;Pre-order it today!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This article is an excerpt from &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;What Problem(s) Does Big O Notation Solve?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Big O notation helps us answer the question, “Can we do better?” &lt;/li&gt;
 &lt;li&gt;Big O notation equips us with a shared language for discussing the complexity of algorithms with other developers (and mathematicians!).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;h2&gt;Let’s Get Meta 🧠&lt;/h2&gt;
 &lt;p&gt;Programming is problem solving. Both are metacognitive activities. To excel, we want to improve our thinking &lt;em&gt;about&lt;/em&gt; thinking.&lt;/p&gt;
 &lt;p&gt;Ask yourself the following questions and keep them back of mind as you proceed: &lt;/p&gt;
 &lt;ul&gt;
@@ -5860,7 +5860,7 @@ If we change our coefficients: &lt;/p&gt;
 &lt;p&gt;Big O is a notation for measuring the complexity of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the &lt;em&gt;speed&lt;/em&gt; of an algorithm in seconds (or minutes!). We measure the &lt;em&gt;rate of growth&lt;/em&gt; of an algorithm in the number of operations it takes to complete. &lt;/p&gt;
 &lt;p&gt;What do we mean by notation? According to Wikipedia, in linguistics and semiotics, a notation is:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;a system of graphics or symbols, characters and abbreviated expressions, used (for example) in artistic and scientific disciplines to represent technical facts and quantities by convention. Therefore, a notation is a collection of related symbols that are each given an arbitrary meaning, created to facilitate structured communication within a domain knowledge or field of study. &lt;/p&gt;
+&lt;p&gt;a system of graphics or symbols, characters and abbreviated expressions, used (for example) in artistic and scientific disciplines to represent technical facts and quantities by convention.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The O is actually the Greek character &lt;em&gt;Omicron&lt;/em&gt; and is shorthand for “Order of”. So, if we’re discussing an algorithm with &lt;em&gt;O(n)&lt;/em&gt;, we say its &lt;em&gt;order of&lt;/em&gt;, or rate of growth, is &lt;em&gt;n&lt;/em&gt;, or linear complexity. &lt;/p&gt;
 &lt;p&gt;Why &lt;em&gt;order&lt;/em&gt;? &lt;/p&gt;
@@ -5939,7 +5939,7 @@ If we change our coefficients: &lt;/p&gt;
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9c24f10d0295ead7526e32d62fa2eac5/4117f/jarednielsen-big-o-chart.png&quot;
+    href=&quot;/static/140e001aad420b3bcdda52c9da2a01f8/a987b/jarednielsen-big-o-chart.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -5951,20 +5951,20 @@ If we change our coefficients: &lt;/p&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 63.15359477124183%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAACrUlEQVQoz1XRSUwTYRQH8I94Mh7UgyeN8WJijCfjtXZaynYQIXoyeDHRRG/GoMZAHDpMZyEIGBXFgxcTJVIENMFSkO5lWmQ1sQudQikpUFlmulra7zkDhITkHf75kl/ee99DpUIhHw5nAoFcKASRCI5Gc4HARs/7jdddG8ONCf8dYexe99B1i60ZojEsRkAU1QovQUxE2WQySZLRxsZkczNmmCxFrTU1ZRkG2tuB7wCuC/guaHsJXAcoj6wJaA7oNuh+CGO3UGZ9XTaZZKOxyHHA85ISWBaUzLJYDQxmd4tTpMLaoZOEgdvg0YL/moolmt4myT2Toii8hw8VqzIlfHwAjmqYIMCtB6EeZZJJmaYlksQct8MwyghKf3zAeBaYNlW+ewKWeuwlsKccPJVFpy7rqEXxYDBlMm3v4hxN52lawfuM5aH1BXS2wEADeHUg6HbshsTQ1dXvWmlEk3fWonlBSDHMHpYPFuYPzykQ4DHsOAypUd2WhciN67FbB746FJiaUrDU0pI3mZSFgef253z7GKx14Ndir/6frVy2EkoV7HrwGmDCAG4ChDp1502KShmN6VYqTyuX6FD/c7BBGbLo1WZ/EpJVmx4jik51VXBVgrMK7DUwXoXdN9Q7/6WMm+TzNMngNhY+3S85KvIujTyil36UZ0crSrZqcNSobEIPfg3MX4GFixA/A1vnVbzZyqw9I0s9T7HlZt6uV0DBZlA6w4wGQpchdgGSZ0E+BeljUDwCgADKMEZb0gkkJ9YmH90NvjLEhy/FbOcSvtOJuZPxwNHFSJm4giKr6E8CzcbRdAz9WkKCiLwiGp0vGxTQN/9xlMvkAlNWcaE/HOlbWPwSWOwNxT+HVnpDK/22yTdfraxr7sPv2MB0tH922TyzbJ5eNvuiZlewzycO/QeV1h5qGVp6JgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABfElEQVQoz32T607bQBBGef8X6r9KSFVb1CoqsiDESmkdGydNwPFtfdnb6XoXAk1IR/qk2dvx7DfeC2stb2W0RUuXG4MdRo7Xg9waYMbe7dP/rF0cBmbaAkWiaEuwRYlJc3doDPDDPu1hunlC7RKfnwBdhtYabaQHSuWm0gzTinBgAr7Iwx7fhb0CXchR0oiKMjWMwrjqMuxUnQc+X2uCFQ+ofOEq77BKngeOzq+6KSlzGHYtZpUGmFbBLy1R23vUPn/2Wnubzlfo7tl1DfsNiDjF1BWHaCvMnwT6IYynI6p3VZShQf9rSr2UmLu1z7UoEJuIZndDO2Q0w5JWLGi6BY/imqq7xVjtP3ACnKJXmi8fPzD7fUm0/Ua0+kS0+0q0v+Km/MG8jpk3MXftPddixax6cI00vqnvAvOy5nO84PuvhFmy4XYtmGc986QjzkZ+rtWrcsnSSaqpQnP627xAj2PoW4qnLaKdPNUnOuvhZITv3lHX3kaY48zrCfoLFvdZGyFuN7EAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;jarednielsen big o chart&quot;
         title=&quot;&quot;
-        src=&quot;/static/9c24f10d0295ead7526e32d62fa2eac5/b9e4f/jarednielsen-big-o-chart.png&quot;
-        srcset=&quot;/static/9c24f10d0295ead7526e32d62fa2eac5/cf440/jarednielsen-big-o-chart.png 148w,
-/static/9c24f10d0295ead7526e32d62fa2eac5/d2d38/jarednielsen-big-o-chart.png 295w,
-/static/9c24f10d0295ead7526e32d62fa2eac5/b9e4f/jarednielsen-big-o-chart.png 590w,
-/static/9c24f10d0295ead7526e32d62fa2eac5/f9b6a/jarednielsen-big-o-chart.png 885w,
-/static/9c24f10d0295ead7526e32d62fa2eac5/2d849/jarednielsen-big-o-chart.png 1180w,
-/static/9c24f10d0295ead7526e32d62fa2eac5/4117f/jarednielsen-big-o-chart.png 2448w&quot;
+        src=&quot;/static/140e001aad420b3bcdda52c9da2a01f8/b9e4f/jarednielsen-big-o-chart.png&quot;
+        srcset=&quot;/static/140e001aad420b3bcdda52c9da2a01f8/cf440/jarednielsen-big-o-chart.png 148w,
+/static/140e001aad420b3bcdda52c9da2a01f8/d2d38/jarednielsen-big-o-chart.png 295w,
+/static/140e001aad420b3bcdda52c9da2a01f8/b9e4f/jarednielsen-big-o-chart.png 590w,
+/static/140e001aad420b3bcdda52c9da2a01f8/f9b6a/jarednielsen-big-o-chart.png 885w,
+/static/140e001aad420b3bcdda52c9da2a01f8/2d849/jarednielsen-big-o-chart.png 1180w,
+/static/140e001aad420b3bcdda52c9da2a01f8/a987b/jarednielsen-big-o-chart.png 1920w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -5973,19 +5973,21 @@ If we change our coefficients: &lt;/p&gt;
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;We’ll return to both as we proceed. &lt;/p&gt;
-&lt;p&gt;Before we get into any code, let’s get hands-on to get a feel for Big O. We’ll use an example from &lt;a href=&quot;https://amzn.to/376TGy9&quot;&gt;Grokking Algorithms&lt;/a&gt; ( &lt;em&gt;Note: Amazon links are affiliate&lt;/em&gt; ). &lt;/p&gt;
-&lt;p&gt;Let’s say I give you a square piece of paper and ask you to divide it into sixteen squares. How would you approach this problem? &lt;/p&gt;
-&lt;p&gt;You could take the brute force approach and draw sixteen individual squares. If you take this approach, how many steps, or computations, will you perform? &lt;/p&gt;
-&lt;p&gt;Sixteen. &lt;/p&gt;
-&lt;p&gt;One for each square that you draw.&lt;/p&gt;
+&lt;p&gt;Before we get into any code, let’s get hands-on to get a feel for Big O using a simple variation on a classic problem: &lt;a href=&quot;https://en.wikipedia.org/wiki/Cutting_stock_problem&quot;&gt;cutting stock&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s say I give you a square piece of plywood and ask you to cut it into sixteen squares of equal size. How would you approach this problem? &lt;/p&gt;
+&lt;p&gt;You could take the brute force approach and use your jigsaw to cut sixteen individual squares. If you take this approach, how many steps, or computations, will you perform? &lt;/p&gt;
+&lt;p&gt;Sixteen. One for each square that you cut.&lt;/p&gt;
 &lt;p&gt;Is there an approach that requires fewer steps? &lt;/p&gt;
 &lt;p&gt;Of course!&lt;/p&gt;
-&lt;p&gt;Fold the paper in half. Then in half again. &lt;/p&gt;
+&lt;p&gt;Cut the square of plywood in half. Stack the two pieces and then cut them in half again. &lt;/p&gt;
 &lt;p&gt;How man squares did you just create? &lt;/p&gt;
 &lt;p&gt;Four! &lt;/p&gt;
-&lt;p&gt;Now fold it in half two more times. &lt;/p&gt;
-&lt;p&gt;When you unfold it, the paper will be divided into sixteen squares. &lt;/p&gt;
-&lt;p&gt;How many steps, or computations, were required?&lt;/p&gt;
+&lt;p&gt;But how many cuts did it require? &lt;/p&gt;
+&lt;p&gt;Only two. &lt;/p&gt;
+&lt;p&gt;Now cut the stack in half again, stack those pieces, and make one more dividing cut. &lt;/p&gt;
+&lt;p&gt;How many squared of plywood does that create? &lt;/p&gt;
+&lt;p&gt;Sixteen?&lt;/p&gt;
+&lt;p&gt;How many cuts, or &lt;em&gt;computations&lt;/em&gt;, were required?&lt;/p&gt;
 &lt;p&gt;Four. &lt;/p&gt;
 &lt;p&gt;In Big O notation, our first approach, brute force, is O(n), or linear time. Creating sixteen squares requires sixteen operations. But our second, refactored and optimized, approach is O(log n), or logarithmic time (the inverse of exponentiation). Creating sixteen squares requires only four steps. &lt;/p&gt;
 &lt;p&gt;We’ll look at O(log n) later. Let’s begin with O(1), which will help us understand O(n).&lt;/p&gt;
@@ -6034,45 +6036,55 @@ If we change our coefficients: &lt;/p&gt;
 &lt;p&gt;Here’s another JavaScript example: &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;isEven&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Our algorithm checks whether or not a number is even or odd and will return true or false accordingly. No matter the size of the value passed to &lt;code&gt;isEven&lt;/code&gt;, it only needs to perform one operation. Again, O(1). &lt;/p&gt;
-&lt;p&gt;One more example: Say you are checking your application state to determine whether or not you need to style an alert element with a specific color. You could do so with a series of conditional statements:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token function-variable function&quot;&gt;const&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;danger&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;crimson&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;warning&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;orange&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;success&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;chartreuse&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;cornflowerblue&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;p&gt;One more example. Say you are asked to check if a number is prime. You struggle to think of a real-world scenario for this algorithm, so you dash off this little winner: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;isPrime&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Who cares?&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;What is our &lt;em&gt;best-case scenario&lt;/em&gt; for this algorithm? &lt;/p&gt;
-&lt;p&gt;If &lt;code&gt;state&lt;/code&gt; is equal to &lt;code&gt;danger&lt;/code&gt;, we will only perform one operation and return. &lt;/p&gt;
+&lt;p&gt;If &lt;code&gt;num&lt;/code&gt; is less than or equal to 1, we will only perform one operation and return. &lt;/p&gt;
 &lt;p&gt;That would be O(1). &lt;/p&gt;
-&lt;p&gt;What if &lt;code&gt;state&lt;/code&gt; is not equal to &lt;code&gt;danger&lt;/code&gt;? What if &lt;code&gt;state&lt;/code&gt; does not match any of our conditions? What is our worst-case scenario?&lt;/p&gt;
+&lt;p&gt;What if &lt;code&gt;num&lt;/code&gt; is not less than or equal to 1? What if &lt;code&gt;num&lt;/code&gt; does not match any of our conditions? What is our worst-case scenario?&lt;/p&gt;
 &lt;p&gt;It’s still O(1).&lt;/p&gt;
 &lt;p&gt;Why? &lt;/p&gt;
-&lt;p&gt;Even though we check multiple conditions before returning &lt;code&gt;cornflowerblue&lt;/code&gt;, the order of, or rate of growth, is &lt;em&gt;constant&lt;/em&gt;. The size of the input does not affect the number of operations performed. We know the upper bound, or worst-case scenario, in advance, and we know it will not change. &lt;/p&gt;
+&lt;p&gt;Even though we check multiple conditions before returning indifference, the order of, or rate of growth, is &lt;em&gt;constant&lt;/em&gt;. The size of the input does not affect the number of operations performed. We know the upper bound, or worst-case scenario, in advance, and we know it will not change. &lt;/p&gt;
 &lt;p&gt;What if our function performs an operation in one of the conditions?&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;alertColor&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;danger&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;crimson&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;pukeRainbows&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;isPrime&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        i &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Is it still O(1)? &lt;/p&gt;
-&lt;p&gt;It depends on what happens when we call &lt;code&gt;pukeRainbows()&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Why? We’ll see in the next article. &lt;/p&gt;
-&lt;h2&gt;Metacognition&lt;/h2&gt;
-&lt;p&gt;Ask yourself the following questions again. What are your answers? &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Why do you need to know this? &lt;/li&gt;
-&lt;li&gt;What does it mean to &lt;em&gt;do better&lt;/em&gt; in software development?&lt;/li&gt;
-&lt;li&gt;What is the connection between mathematics and computer science? &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;We’ll see in the next article. &lt;/p&gt;
 &lt;h3&gt;What is Big O Notation?&lt;/h3&gt;
-&lt;p&gt;Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant time complexity with examples in JavaScript. Join us for part two of this series &lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity&quot;&gt;Big O &amp;#x26; Linear Time Complexity&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Programming is Problem Solving]]></title><description><![CDATA[My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah. Though the technologies were primitive…]]></description><link>http://jarednielsen.com/programming-problem-solving/</link><guid isPermaLink="false">http://jarednielsen.com/programming-problem-solving/</guid><pubDate>Mon, 13 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Big O is a notation for measuring the complexity of an algorithm. We measure the &lt;em&gt;rate of growth&lt;/em&gt; of an algorithm in the number of operations it takes to complete or the amount of memory it consumes.&lt;/li&gt;
+&lt;li&gt;Big O notation is used to define the &lt;em&gt;upper bound&lt;/em&gt;, or &lt;em&gt;worst-case scenario&lt;/em&gt;, for a given algorithm. &lt;/li&gt;
+&lt;li&gt;O(1), or constant time complexity, is the rate of growth in which the size of the input does not affect the number of operations performed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you learned the fundamentals of Big O notation, as well as constant time complexity with examples in JavaScript. Join us for part two of this series &lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity&quot;&gt;Big O &amp;#x26; Linear Time Complexity&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to increase &lt;em&gt;your&lt;/em&gt; rate of growth, get a copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Programming is Problem Solving]]></title><description><![CDATA[My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah. Though the technologies were primitive…]]></description><link>http://jarednielsen.com/programming-problem-solving/</link><guid isPermaLink="false">http://jarednielsen.com/programming-problem-solving/</guid><pubDate>Mon, 13 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/58f3affa86516d8d73953a19d9f3fa58/2f950/jared-nielsen-teach-adults-code-duck.png&quot;
