@@ -1,14 +1,25 @@
 ---
-title: 'Do you know what you think you know?' 
+title: 'Illusions of Competence & Humility in Software Development'
 date: '2020-05-04'
-description: “The way you focus your intelligence is more important than how much intelligence you have.”
-keywords: ['', '']
+description: To succeed in software development, it’s important to maintain your humility and avoid illusions of competence. 
+keywords: ['dunning-kruger effect', 'illusions of competence', 'humility']
 ---
 
-![](@TODO)
+
+![](./jarednielsen-solution-illusions-humility.png)
 
 
-@TODO introduction
+
+It’s easy to overestimate our abilities. Not even a 10X developer can know everything. To succeed in software development, it’s important to maintain your humility and avoid illusions of competence. 
+
+_This article originally published in my newsletter, [The Solution](https://mailchi.mp/7198cd4b4db8/the-solution-do-you-know-what-you-think-you-know)_
+
+
+## Illusions of Competence & Humility in Software Development
+
+> “The way you focus your intelligence is more important than how much intelligence you have.”
+
+> -Steve McConnell, _Code Complete_
 
 Do you know what you think you know? 
 
@@ -23,7 +34,7 @@ But.
 It’s easy to fall into the trap of overestimating our abilities. As we’ll see, we’re hardwired to do it. 
 
 
-## @TODO 
+### Humility in Software Development
 
 In [Code Complete](https://amzn.to/2JCCarc), Steve McConnell humorously outlines the importance of humility in software development: 
 
@@ -37,11 +48,14 @@ We need to think _about_ our thinking.
 
 This is true for learning as well.
 
+
+### Illusions of Competence and Knowing
+
 In [Make It Stick](https://amzn.to/2QTzklN), the authors write: 
 
 > Each of us is an astounding bundle of perceptual and cognitive abilities, coexisting with the seeds of our own undoing. When it comes to learning, what we choose to do is guided by our judgments of what works and what doesn't, and we are easily misled. 
 
-Why are we easily misled? The authors outline several common pitfalls: 
+Why are we easily misled? The authors outline several common illusions of competence: 
 
 * **Hunger for Narrative**: When surprising things happen, we search for an explanation. The urge to resolve ambiguity can be surprisingly potent, even when the subject is inconsequential.  
 
@@ -67,7 +81,10 @@ Why are we easily misled? The authors outline several common pitfalls:
 
 That's a lot to think about!
 
-How do we avoid illusions?
+
+## How to Avoid Illusions of Competence
+
+How do we avoid illusions of competence?
 
 Practice. 
 
@@ -77,7 +94,7 @@ In [A Mind for Numbers](https://amzn.to/2UWpClG), Barbara Oakley cautions us:
 
 > Beware--a common illusion of competence is to continue practicing a technique you know, simply because it’s easy and it feels good to successfully solve problems. 
 
-What is the best way to practice? 
+Okay, so what is the best way to practice? 
 
 Testing. 
 
@@ -104,7 +121,7 @@ In [A Mind for Numbers](https://amzn.to/2UWpClG), Barbara Oakley reinforces the 
 > You want your brain to become used to the idea that just knowing _how_ to use a particular problem-solving technique isn’t enough--you also need to know _when_ to use it. 
 
 
-## @TODO 
+## How to Maintain Intellectual Honesty in Software Development
 
 We can supplement the above list with several ways for maintaining intellectual honesty in software development, as outlined by Steve McConnell in Code Complete: 
 
