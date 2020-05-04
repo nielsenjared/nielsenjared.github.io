@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 16:02:52 GMT</lastBuildDate><item><title><![CDATA[Learn JavaScript Array Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/javascript-array-data-structure/</link><guid isPermaLink="false">http://jarednielsen.com/javascript-array-data-structure/</guid><pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 04 May 2020 12:52:01 GMT</lastBuildDate><item><title><![CDATA[Illusions of Competence & Humility in Software Development]]></title><description><![CDATA[It’s easy to overestimate our abilities. Not even a 10X developer can know everything. To succeed in software development, it’s important to…]]></description><link>http://jarednielsen.com/illusions-competence-humility/</link><guid isPermaLink="false">http://jarednielsen.com/illusions-competence-humility/</guid><pubDate>Mon, 04 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f056be784905396036eba7df9d20880f/a987b/jarednielsen-javascript-array-data-structure.png&quot;
+    href=&quot;/static/a1cea22a0dc6a899cd8ab3ada9e78c92/a987b/jarednielsen-solution-illusions-humility.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -13,20 +13,139 @@
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABD0lEQVQoz62S607DMAyF+/5Pxk+EBAPEBmvRKsouXbu2udkHJwEtHd0AiUinrlzn80njjJmRyq/4PMafVro/OwWyoyhjY7QOrA1YGVCnQPsObr2Hq3aw5QbUqxE0S525bQtbVDD5G/TtC/TjK4xIXT/JewGzKDFczUL0YP0gOak/C/RFJE5c3YLaPsjt2pg/DLHpex3y0UAT3J4H1gc51iAbBNB0EepzXk0PJpZjbo9AaeYbXATa1SYeMRy5iHGWi5bQd0v5Noe+z2HmK6ibhdSvvwORQEPnqgbLz/aXQeKCrQ2O/Waf9w7NcxkMhEubumWcjM5ocNLcZ+1oZIgujM2URrP2xZyu/R3wD/p34Afe6l9fCVil2gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVQoz63SMQuDMBAF4Pz//9SlU0OVdm5Kt0RjSqM4eXB5anBy8Ug9eEMgfLyQUyklSLKO5J6SQL/QYYhRhIpA93mjc3YDuRBkzgC9HnheL/jGPp+ZubzhOmMfcdc3GGMQQjh89iHYNC3qqoLWGtbaP8ElNE3w3ud2RFT+Kdg1PWdtdpAEVtLFluZ0cAYugWRpw1bTQAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen solution illusions humility&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a1cea22a0dc6a899cd8ab3ada9e78c92/b9e4f/jarednielsen-solution-illusions-humility.png&quot;
+        srcset=&quot;/static/a1cea22a0dc6a899cd8ab3ada9e78c92/cf440/jarednielsen-solution-illusions-humility.png 148w,
+/static/a1cea22a0dc6a899cd8ab3ada9e78c92/d2d38/jarednielsen-solution-illusions-humility.png 295w,
+/static/a1cea22a0dc6a899cd8ab3ada9e78c92/b9e4f/jarednielsen-solution-illusions-humility.png 590w,
+/static/a1cea22a0dc6a899cd8ab3ada9e78c92/f9b6a/jarednielsen-solution-illusions-humility.png 885w,
+/static/a1cea22a0dc6a899cd8ab3ada9e78c92/2d849/jarednielsen-solution-illusions-humility.png 1180w,
+/static/a1cea22a0dc6a899cd8ab3ada9e78c92/a987b/jarednielsen-solution-illusions-humility.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;It’s easy to overestimate our abilities. Not even a 10X developer can know everything. To succeed in software development, it’s important to maintain your humility and avoid illusions of competence. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This article originally published in my newsletter, &lt;a href=&quot;https://mailchi.mp/7198cd4b4db8/the-solution-do-you-know-what-you-think-you-know&quot;&gt;The Solution&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Illusions of Competence &amp;#x26; Humility in Software Development&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“The way you focus your intelligence is more important than how much intelligence you have.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;-Steve McConnell, &lt;em&gt;Code Complete&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Do you know what you think you know? &lt;/p&gt;
+&lt;p&gt;Are you sure? &lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2QTzklN&quot;&gt;Make It Stick&lt;/a&gt;, the authors describe the The Dunning-Kruger effect, a phenomenon in which “incompetent people overestimate their own competence and, failing to sense a mismatch between their performance and what is desirable, see no need to try to improve.”&lt;/p&gt;
+&lt;p&gt;I’m not suggesting &lt;em&gt;you&lt;/em&gt; are incompetent. &lt;/p&gt;
+&lt;p&gt;But.&lt;/p&gt;
+&lt;p&gt;It’s easy to fall into the trap of overestimating our abilities. As we’ll see, we’re hardwired to do it. &lt;/p&gt;
+&lt;h3&gt;Humility in Software Development&lt;/h3&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2JCCarc&quot;&gt;Code Complete&lt;/a&gt;, Steve McConnell humorously outlines the importance of humility in software development: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The people who are best at programming are the people who realize how small their brains are. They are humble. The people who are the worst at programming are the people who refuse to accept the fact that their brains aren’t equal to the task. Their egos keep them from being great programmers. The more you learn to compensate for your small brain, the better a programmer you’ll be. The more humble you are, the faster you’ll improve. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Programming and problem solving are both metacognitive activities. &lt;/p&gt;
+&lt;p&gt;To excel, we need self-awareness.&lt;/p&gt;
+&lt;p&gt;We need to think &lt;em&gt;about&lt;/em&gt; our thinking. &lt;/p&gt;
+&lt;p&gt;This is true for learning as well.&lt;/p&gt;
+&lt;h3&gt;Illusions of Competence and Knowing&lt;/h3&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2QTzklN&quot;&gt;Make It Stick&lt;/a&gt;, the authors write: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Each of us is an astounding bundle of perceptual and cognitive abilities, coexisting with the seeds of our own undoing. When it comes to learning, what we choose to do is guided by our judgments of what works and what doesn’t, and we are easily misled. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Why are we easily misled? The authors outline several common illusions of competence: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hunger for Narrative&lt;/strong&gt;: When surprising things happen, we search for an explanation. The urge to resolve ambiguity can be surprisingly potent, even when the subject is inconsequential.  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Distortions of memory&lt;/strong&gt;: We cannot remember every aspect of an event, so we remember those elements that have greatest emotional significance for us, and we fill in the gaps with details of our own that are consistent with our narrative but may be wrong. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Imagination inflation&lt;/strong&gt;: When asked to imagine an event vividly, people will sometimes begin to believe, when asked about it later, that the event actually occurred. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Suggestion&lt;/strong&gt;: We are susceptible to the influence of others, intentional or not.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interference&lt;/strong&gt;: Outside events can distort memory. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Curse of knowledge&lt;/strong&gt;: Our tendency to underestimate how long it will take another person to learn something new or perform a task that we have already mastered. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hindsight bias&lt;/strong&gt;: What is often called the &lt;em&gt;knew-it-all-along effect&lt;/em&gt;, in which we view events after the fact as having been more predictable than they were before they occurred. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The feeling of knowing&lt;/strong&gt;: Something you once heard that you hear again later carries a warmth of familiarity that can be mistaken for memory, a shred of something you once knew and cannot quite place but are inclined to believe. In the world of propaganda, this is called “the big lie” technique—even a big lie told repeatedly can come to be accepted as truth. 🤔&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fluency illusions&lt;/strong&gt;: Our tendency to mistake fluency with a text for mastery of its content. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Social influence&lt;/strong&gt;: Our memories tend to align with the memories of the people around us. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;False consensus effect&lt;/strong&gt;: We generally fail to recognize the idiosyncratic nature of our personal understanding of the world and interpretation of events and that ours differ from others’. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s a lot to think about!&lt;/p&gt;
+&lt;h2&gt;How to Avoid Illusions of Competence&lt;/h2&gt;
+&lt;p&gt;How do we avoid illusions of competence?&lt;/p&gt;
+&lt;p&gt;Practice. &lt;/p&gt;
+&lt;p&gt;“If it’s important, it needs to be practiced, and practiced again.”&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2UWpClG&quot;&gt;A Mind for Numbers&lt;/a&gt;, Barbara Oakley cautions us: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Beware—a common illusion of competence is to continue practicing a technique you know, simply because it’s easy and it feels good to successfully solve problems. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Okay, so what is the best way to practice? &lt;/p&gt;
+&lt;p&gt;Testing. &lt;/p&gt;
+&lt;p&gt;I know.&lt;/p&gt;
+&lt;p&gt;The last word you want to hear, especially if you’re a developer. &lt;/p&gt;
+&lt;p&gt;Testing forces us to retrieve information from memory and situate it in new contexts. &lt;/p&gt;
+&lt;p&gt;Don’t worry, though, the authors of &lt;a href=&quot;https://amzn.to/2QTzklN&quot;&gt;Make It Stick&lt;/a&gt; outline several other tools and habits for calibrating your judgment, the first being closely related to testing: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cues&lt;/strong&gt;: Create a mental model of the material that integrates the various ideas across a text, connects them to what you already know, and enables you to draw inferences. How ably you can explain a text is an excellent cue for judging comprehension, because you must recall the salient points from memory, put them into your own words, and explain why they are significant—how they relate to the larger subject. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Peer instruction&lt;/strong&gt;: Work through a problem with a partner. You will both learn more through the process of teaching one another than working in isolation. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Feedback&lt;/strong&gt;: Ask for it. As the authors of &lt;a href=&quot;https://amzn.to/2QTzklN&quot;&gt;Make It Stick&lt;/a&gt; write, “The path to self-insight leads through other people.” &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Teams&lt;/strong&gt;: “In many settings, your judgment and learning are calibrated by working alongside a more experienced partner.”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Simulation&lt;/strong&gt;: “Training that simulates the kinds of demands and changeable conditions that can be expected in real-world settings helps learners and trainers assess mastery and focus on areas where understanding or competency need to be raised.”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2UWpClG&quot;&gt;A Mind for Numbers&lt;/a&gt;, Barbara Oakley reinforces the importance of simulation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You want your brain to become used to the idea that just knowing &lt;em&gt;how&lt;/em&gt; to use a particular problem-solving technique isn’t enough—you also need to know &lt;em&gt;when&lt;/em&gt; to use it. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;How to Maintain Intellectual Honesty in Software Development&lt;/h2&gt;
+&lt;p&gt;We can supplement the above list with several ways for maintaining intellectual honesty in software development, as outlined by Steve McConnell in Code Complete: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Refusing to pretend you’re an expert when you’re not&lt;/li&gt;
+&lt;li&gt;Readily admitting your mistakes&lt;/li&gt;
+&lt;li&gt;Trying to understand a compile warning rather than suppressing the message&lt;/li&gt;
+&lt;li&gt;Clearly understanding your program—not compiling it to see if it works&lt;/li&gt;
+&lt;li&gt;Providing realistic status reports&lt;/li&gt;
+&lt;li&gt;Providing realistic schedule estimates and holding your ground when management asks you to adjust them&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In many ways, the items on this list all relate to the first, which is also closely related to the Dunning-Kruger effect and (sometimes willful) illusions of competence and knowing. McConnell offers some sage advice:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;How can you learn anything new if you pretend that you know everything already? You’d be better off pretending that you don’t know anything. Listen to people’s explanations, learn something new from them, and assess whether &lt;em&gt;they&lt;/em&gt; know what &lt;em&gt;they&lt;/em&gt; are talking about. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In other words: be humble.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn JavaScript Array Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/javascript-array-data-structure/</link><guid isPermaLink="false">http://jarednielsen.com/javascript-array-data-structure/</guid><pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9feeb0d1a1c844d1617bc9447568eb34/a987b/jarednielsen-javascript-array-data-structure.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABC0lEQVQoz62S606DQBCFef8n86cx0aqx1YIpEXuhUGDvx5lZTZdKqyZuchgyzH5zlp0shIBUvOLzGH9a6f7sFBicjzI2RusQtEFQBr5T8PsObr2Hq3aw5Qa+VyNoljpz2xa2qGDyN+jbF+jHVxiSun6i9wJmUWK4mklksH6gHNWfBXIRO3H1Ab7tRW7XSt4fhtj0vZZ8NNCI2/NABnVDhDVdjJxjNT2CD3TM7RFIzbjBRaBdbeIR5chFjLOctIS+W9K3OfR9DjNfQd0sqH79HYgEKp2rGoF+Nl+GJxfBWnHMmznPDs1zKQbk0qZuGSejMxqcNPdZOxoZ7y+MzZRGs/bFnK79HfAP+nfgB+XyX2L9+aSXAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;jarednielsen javascript array data structure&quot;
         title=&quot;&quot;
-        src=&quot;/static/f056be784905396036eba7df9d20880f/b9e4f/jarednielsen-javascript-array-data-structure.png&quot;
-        srcset=&quot;/static/f056be784905396036eba7df9d20880f/cf440/jarednielsen-javascript-array-data-structure.png 148w,
-/static/f056be784905396036eba7df9d20880f/d2d38/jarednielsen-javascript-array-data-structure.png 295w,
-/static/f056be784905396036eba7df9d20880f/b9e4f/jarednielsen-javascript-array-data-structure.png 590w,
-/static/f056be784905396036eba7df9d20880f/f9b6a/jarednielsen-javascript-array-data-structure.png 885w,
-/static/f056be784905396036eba7df9d20880f/2d849/jarednielsen-javascript-array-data-structure.png 1180w,
-/static/f056be784905396036eba7df9d20880f/a987b/jarednielsen-javascript-array-data-structure.png 1920w&quot;
+        src=&quot;/static/9feeb0d1a1c844d1617bc9447568eb34/b9e4f/jarednielsen-javascript-array-data-structure.png&quot;
+        srcset=&quot;/static/9feeb0d1a1c844d1617bc9447568eb34/cf440/jarednielsen-javascript-array-data-structure.png 148w,
+/static/9feeb0d1a1c844d1617bc9447568eb34/d2d38/jarednielsen-javascript-array-data-structure.png 295w,
+/static/9feeb0d1a1c844d1617bc9447568eb34/b9e4f/jarednielsen-javascript-array-data-structure.png 590w,
+/static/9feeb0d1a1c844d1617bc9447568eb34/f9b6a/jarednielsen-javascript-array-data-structure.png 885w,
+/static/9feeb0d1a1c844d1617bc9447568eb34/2d849/jarednielsen-javascript-array-data-structure.png 1180w,
+/static/9feeb0d1a1c844d1617bc9447568eb34/a987b/jarednielsen-javascript-array-data-structure.png 1920w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -52,7 +171,7 @@
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9UlEQVQoz82SP2/CMBDF8/2/ByztVIk5Ax3abgVVqtSBoUICpSVgkziJ7+7hPwElpkOHVsLSG3z2/fxOz5mI4C+V/SvwN0uC5LqWAv2ibwVWFaSzYNNCvJghTRdlCUIcalw3oP0RttjHOz00O8NYG6hJDn03RzV7gd2UMI9vMPkraKfRLlaoHp5gnt+h7+foPtZoliuoaQ77WUSnPAB6B/R1ABUHB68vzqjUcUgi5752cAXaltGxq9nNDlyZyEhHDk6Pxp8EBahrkvPeQwfNfmxpu94dD0fug2G5XB4+dLXvm9OzccqjtMbJSZJkmuyPKd/sxz4BDq1iJ9uFAX8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVQoz7VSTU8CMRDd//9LTEg8evNAiNFIQjwBEi8aEwkRFvar3e3MPDttkUXhBpM07et7nb7ONBMRXHJkV0t4Ljz7B+Ok/r9DZtC2Ahc1pHXgpoWYNnI62w7SOQix14rnLWhXgb53cT8lzVSgYSdvMM+vKG6GqO/GcF8b2Kc5mvsX0LpAN/1AdfsAO16gHIzQLj5hp++oPW8eZ9ElJ4catNoGF7TKwZUJZMCbMor9xVw0oLyEW+bRtaOg1bP7Z2ehSimpziqA4lQGIYq8Yr/m2hy0/tnsE0d3fKhhv6j99VmcDv82JOHjpvQ6GAz1E+EYAyf4q//DS40f62JiFtcP698AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
