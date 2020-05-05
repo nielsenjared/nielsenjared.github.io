@@ -9,41 +9,48 @@ keywords: ["big o", "big o notation", "linear time", "time complexity"]
 
 Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you'll learn the fundamentals of Big O notation linear time complexity with examples in JavaScript.
 
----
-This is the second in a series on Big O notation. If you want to stay in the loop, [sign up for my weekly newsletter, The Solution](http://eepurl.com/cP8CMn).
 
 ---
 
-## What Problem(s) Does Big O Notation Solve?
+![](../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-cover-200x300.png)
 
-* Big O notation helps us answer the question, “Will it scale?” 
+This article is an excerpt from [The Little Book of Big O](https://gum.co/big-o).
 
-* Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!).
+---
 
+## Retrieval Practice
 
-## Quick Refresher
+Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding: 
 
-If you're just joining us, you will want to start with the first article in this series, [What is Big O Notation?](https://jarednielsen.com/big-o-notation/)
+* What is Big O notation?
+
+* How does Big O notation work? 
+
+* What is O(1), or constant time complexity? 
+
+This is the second in a series on Big O notation. If you're just joining us, you will want to start with the first article in this series, [What is Big O Notation?](https://jarednielsen.com/big-o-notation/)
 
 
 ### What is Big O Notation? 
 
-Big O notation is a system for measuring the rate of growth of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the _speed_ of an algorithm in seconds (or minutes!). Instead, we measure the number of operations it takes to complete. 
+Big O notation is a system for measuring the rate of growth of an algorithm. Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!). Big O notation mathematically describes the complexity of an algorithm in terms of time and space. 
 
-The O is short for “Order of”. So, if we’re discussing an algorithm with _O(n)_, we say its _order of_, or rate of growth, is _n_, or linear complexity. 
+The O is short for “Order of”. So, if we’re discussing an algorithm with _O(n)_, we say its _order of_, or rate of growth, is _n_, or linear complexity.
 
 
-### How Does Big O Notation Work? 
+### What Problem(s) Does Big O Notation Solve?
 
-Big O notation measures the _worst-case runtime_. 
+Big O notation helps us answer the question, "Can we do better?” 
+
+How?
+
+Big O notation measures the _upper bound_, or _worst-case scenario_. 
 
 Why?
 
 Because we don’t know what we don’t know.
 
-We need to know just how poorly our algorithm will perform so we can compare it to other solutions. 
-
-The worst-case scenario is also known as the “upper bound”. 
+We want to know just how poorly our algorithm will perform so we can compare it to other solutions. 
 
 Remember this table? 
 
@@ -60,7 +67,7 @@ Remember this table?
 
 It lists common orders from fastest to slowest. 
 
-We learned O(1), or constant time complexity, in [What is Big O Notation?](https://jarednielsen.com/big-o-notation/). We're going to skip O(log n) for the time being. It will be easier to understand after learning O(n), linear time complexity, and O(n^2), quadratic time complexity. 
+As you can see, we are not proceeding in _linear_ fashion. We learned O(1), or constant time complexity, in [What is Big O Notation?](https://jarednielsen.com/big-o-notation/). We're going to skip O(log n) for the time being. It will be easier to understand after learning O(n), linear time complexity, and O(n^2), quadratic time complexity. 
 
 Before getting into O(n), let’s begin with a quick refreshser on O(1), constant time complexity.
 
@@ -184,16 +191,14 @@ Because the value is _constant_, not variable, our line does not represent a rat
 
 Speaking of time, math o'clock is over. Back to Big O.
 
-_Charts made with [Desmos](https://www.desmos.com/calculator)_
-
 
 ## Big O & Constant Terms
 
 Now forget everything you just saw. 
 
-The only chart you need to think about is this [ubiquitous cheatsheet](https://www.bigocheatsheet.com) that you are going to see everywhere: 
+The only chart you need to think about is this one: 
 
-![Big O Cheatsheet](big-o-cheatsheet.png)
+![](../../assets/graphics/little-book-big-o/jarednielsen-big-o-chart.png)
 
 We want to think about our algorithms in the abstract, not in terms of a specific implementation. 
 
@@ -201,9 +206,7 @@ Why?
 
 We want to know the _order of_ a function so we can determine whether or not our algorithm is a sufficient solution for our problem or if we need to find a more efficient alternative.
 
-We're not interested in the details. 
-
-So we drop the constant terms. They don’t provide any meaningful additional information. As we saw above, whether we chart `2n + 1` or just `n`, we still get a linear rate of growth. 
+We're not interested in the details. So we drop the constant terms. They don’t provide any meaningful additional information. As we saw above, whether we chart `2n + 1` or just `n`, we still get a linear rate of growth. 
 
 
 ## Big O & Upper Bound
@@ -258,8 +261,12 @@ All O(n).
 
 You can see how linear complexity is fine for small inputs, but becomes a consideration when the size of the input increases. 
 
+If we want to know the _lower bound_, or the _tight bound_, we use two different notations: Big Omega, or Ω, and Big Theta, or Θ. We'll look at them later, in [What's the Difference Between Big O, Big Omega, and Big Theta?](https://jarednielsen.com/big-o-omega-theta/).
 
-## Trick Questions
+
+## this.pop() Quiz
+
+@TODO
 
 ### Big O & Conditional Statements 
 
@@ -332,6 +339,9 @@ Does O(n) scale?
 
 We can do better _and_ worse. 
 
-In this tutorial, you learned the fundamentals of Big O linear time complexity with examples in JavaScript. Stay tuned for part three of this series on Big O notation where we'll look at O(n^2), or quadratic time complexity.
+In this tutorial, you learned the fundamentals of Big O linear time complexity with examples in JavaScript. Stay tuned for part three of this series where we'll look at O(n^2), [Big O Quadratic Time Complexity](https://jarednielsen.com/big-o-quadratic-time-complexity/).
+
+If you want to increase _your_ rate of growth, get a copy of [The Little Book of Big O](https://gum.co/big-o).
+
 
  _Big O thanks to [Rob Conery](https://twitter.com/robconery)_

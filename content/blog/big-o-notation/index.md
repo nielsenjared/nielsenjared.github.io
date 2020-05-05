@@ -12,7 +12,8 @@ Is there a computer science topic more terrifying than Big O notation? Don’t l
 Come with us now on a journey through time and space complexity...
 
 ---
-![](./jarednielsen-little-book-big-o-cover-200x300.png)
+
+![](../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-cover-200x300.png)
 
 This article is an excerpt from [The Little Book of Big O](https://gum.co/big-o).
 
@@ -106,7 +107,7 @@ You’re going to encounter a lot of tables like this:
 This lists common runtimes from fastest to slowest. 
 
 And you’re definitely going to see charts like this:
-![](./jarednielsen-big-o-chart.png)
+![](../../assets/graphics/little-book-big-o/jarednielsen-big-o-chart.png)
 
 We’ll return to both as we proceed. 
 
