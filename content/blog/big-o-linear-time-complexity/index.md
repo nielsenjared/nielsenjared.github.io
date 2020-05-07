@@ -127,6 +127,15 @@ Why?
 Even though we check multiple conditions before returning, the rate of growth is _constant_. We know the _upper bound_, or worst-case scenario, in advance, and we know it will not change. 
 
 
+## @TODO {{ TITLE }}
+
+* What do we mean by _linear time complexity_?
+
+* What is a _constant term_ and why do we drop it?
+
+* What is amortized analysis?
+
+
 ## O(n): Linear Time Complexity
 
 If O(1) performs the same number of operations regardless of the size of the input, what is O(n)?
@@ -264,9 +273,9 @@ You can see how linear complexity is fine for small inputs, but becomes a consid
 If we want to know the _lower bound_, or the _tight bound_, we use two different notations: Big Omega, or Ω, and Big Theta, or Θ. We'll look at them later, in [What's the Difference Between Big O, Big Omega, and Big Theta?](https://jarednielsen.com/big-o-omega-theta/).
 
 
-## this.pop() Quiz
+## `pop()` Quiz
 
-@TODO
+Here are two 'trick questions' to test your knowledge of linear time complexity.
 
 ### Big O & Conditional Statements 
 
