@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 08 May 2020 10:52:26 GMT</lastBuildDate><item><title><![CDATA[JavaScript Data Structures: Stack]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/javascript-data-structures-stack/</link><guid isPermaLink="false">http://jarednielsen.com/javascript-data-structures-stack/</guid><pubDate>Fri, 08 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 08 May 2020 12:29:54 GMT</lastBuildDate><item><title><![CDATA[JavaScript Stack Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-stack-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-stack-javascript/</guid><pubDate>Fri, 08 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/2932984860a859602758596a2fffaa74/a987b/jarednielsen-javascript-data-structures-stack.png&quot;
@@ -34,7 +34,7 @@
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the stack data structure in JavaScript. &lt;/p&gt;
+&lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement the stack data structure in JavaScript. &lt;/p&gt;
 &lt;h2&gt;What is a Stack?&lt;/h2&gt;
 &lt;p&gt;A stack is similar to an array with one significant difference: elements are only accessible from one end, the top. This means we can’t randomly access elements. We can add elements to the stack and we can remove elements from the stack. But if we want to access an element mid-way in the stack, you guessed it, we need to &lt;em&gt;pop&lt;/em&gt; the elements above it off the stack. &lt;/p&gt;
 &lt;p&gt;The classic analogies for the stack data structure are plates or cafeteria trays. In a cafeteria, when you line up to be served, you take a tray off the top of a stack of trays. You take one tray and only one tray. When dirty trays are washed they are put on top of the stack. &lt;/p&gt;
@@ -288,10 +288,10 @@ stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;blockquote&gt;
 &lt;p&gt;How can you learn anything new if you pretend that you know everything already? You’d be better off pretending that you don’t know anything. Listen to people’s explanations, learn something new from them, and assess whether &lt;em&gt;they&lt;/em&gt; know what &lt;em&gt;they&lt;/em&gt; are talking about. &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;In other words: be humble.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn JavaScript Array Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/javascript-array-data-structure/</link><guid isPermaLink="false">http://jarednielsen.com/javascript-array-data-structure/</guid><pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;In other words: be humble.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn JavaScript Array Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-array-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-array-javascript/</guid><pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f056be784905396036eba7df9d20880f/a987b/jarednielsen-javascript-array-data-structure.png&quot;
+    href=&quot;/static/9feeb0d1a1c844d1617bc9447568eb34/a987b/jarednielsen-javascript-array-data-structure.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -303,20 +303,20 @@ stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABD0lEQVQoz62S607DMAyF+/5Pxk+EBAPEBmvRKsouXbu2udkHJwEtHd0AiUinrlzn80njjJmRyq/4PMafVro/OwWyoyhjY7QOrA1YGVCnQPsObr2Hq3aw5QbUqxE0S525bQtbVDD5G/TtC/TjK4xIXT/JewGzKDFczUL0YP0gOak/C/RFJE5c3YLaPsjt2pg/DLHpex3y0UAT3J4H1gc51iAbBNB0EepzXk0PJpZjbo9AaeYbXATa1SYeMRy5iHGWi5bQd0v5Noe+z2HmK6ibhdSvvwORQEPnqgbLz/aXQeKCrQ2O/Waf9w7NcxkMhEubumWcjM5ocNLcZ+1oZIgujM2URrP2xZyu/R3wD/p34Afe6l9fCVil2gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABC0lEQVQoz62S606DQBCFef8n86cx0aqx1YIpEXuhUGDvx5lZTZdKqyZuchgyzH5zlp0shIBUvOLzGH9a6f7sFBicjzI2RusQtEFQBr5T8PsObr2Hq3aw5Qa+VyNoljpz2xa2qGDyN+jbF+jHVxiSun6i9wJmUWK4mklksH6gHNWfBXIRO3H1Ab7tRW7XSt4fhtj0vZZ8NNCI2/NABnVDhDVdjJxjNT2CD3TM7RFIzbjBRaBdbeIR5chFjLOctIS+W9K3OfR9DjNfQd0sqH79HYgEKp2rGoF+Nl+GJxfBWnHMmznPDs1zKQbk0qZuGSejMxqcNPdZOxoZ7y+MzZRGs/bFnK79HfAP+nfgB+XyX2L9+aSXAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;jarednielsen javascript array data structure&quot;
         title=&quot;&quot;
-        src=&quot;/static/f056be784905396036eba7df9d20880f/b9e4f/jarednielsen-javascript-array-data-structure.png&quot;
-        srcset=&quot;/static/f056be784905396036eba7df9d20880f/cf440/jarednielsen-javascript-array-data-structure.png 148w,
-/static/f056be784905396036eba7df9d20880f/d2d38/jarednielsen-javascript-array-data-structure.png 295w,
-/static/f056be784905396036eba7df9d20880f/b9e4f/jarednielsen-javascript-array-data-structure.png 590w,
-/static/f056be784905396036eba7df9d20880f/f9b6a/jarednielsen-javascript-array-data-structure.png 885w,
-/static/f056be784905396036eba7df9d20880f/2d849/jarednielsen-javascript-array-data-structure.png 1180w,
-/static/f056be784905396036eba7df9d20880f/a987b/jarednielsen-javascript-array-data-structure.png 1920w&quot;
+        src=&quot;/static/9feeb0d1a1c844d1617bc9447568eb34/b9e4f/jarednielsen-javascript-array-data-structure.png&quot;
+        srcset=&quot;/static/9feeb0d1a1c844d1617bc9447568eb34/cf440/jarednielsen-javascript-array-data-structure.png 148w,
+/static/9feeb0d1a1c844d1617bc9447568eb34/d2d38/jarednielsen-javascript-array-data-structure.png 295w,
+/static/9feeb0d1a1c844d1617bc9447568eb34/b9e4f/jarednielsen-javascript-array-data-structure.png 590w,
+/static/9feeb0d1a1c844d1617bc9447568eb34/f9b6a/jarednielsen-javascript-array-data-structure.png 885w,
+/static/9feeb0d1a1c844d1617bc9447568eb34/2d849/jarednielsen-javascript-array-data-structure.png 1180w,
+/static/9feeb0d1a1c844d1617bc9447568eb34/a987b/jarednielsen-javascript-array-data-structure.png 1920w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -342,7 +342,7 @@ stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9UlEQVQoz82SP2/CMBDF8/2/ByztVIk5Ax3abgVVqtSBoUICpSVgkziJ7+7hPwElpkOHVsLSG3z2/fxOz5mI4C+V/SvwN0uC5LqWAv2ibwVWFaSzYNNCvJghTRdlCUIcalw3oP0RttjHOz00O8NYG6hJDn03RzV7gd2UMI9vMPkraKfRLlaoHp5gnt+h7+foPtZoliuoaQ77WUSnPAB6B/R1ABUHB68vzqjUcUgi5752cAXaltGxq9nNDlyZyEhHDk6Pxp8EBahrkvPeQwfNfmxpu94dD0fug2G5XB4+dLXvm9OzccqjtMbJSZJkmuyPKd/sxz4BDq1iJ9uFAX8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVQoz7VSTU8CMRDd//9LTEg8evNAiNFIQjwBEi8aEwkRFvar3e3MPDttkUXhBpM07et7nb7ONBMRXHJkV0t4Ljz7B+Ok/r9DZtC2Ahc1pHXgpoWYNnI62w7SOQix14rnLWhXgb53cT8lzVSgYSdvMM+vKG6GqO/GcF8b2Kc5mvsX0LpAN/1AdfsAO16gHIzQLj5hp++oPW8eZ9ElJ4catNoGF7TKwZUJZMCbMor9xVw0oLyEW+bRtaOg1bP7Z2ehSimpziqA4lQGIYq8Yr/m2hy0/tnsE0d3fKhhv6j99VmcDv82JOHjpvQ6GAz1E+EYAyf4q//DS40f62JiFtcP698AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
