@@ -1,9 +1,11 @@
 ---
-title: Learn JavaScript Stack Data Structure
-date: 2020-05-08
-description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the stack data structure in JavaScript.
+title: 'JavaScript Data Structures: Stack'
+date: '2020-05-08'
+description: 'Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the stack data structure in JavaScript.'
 keywords: ['javascript', 'stack', 'stacks', 'data structure']
 ---
+
+![](./jarednielsen-javascript-data-structures-stack.png)
 
 At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the stack data structure in JavaScript. 
 
@@ -81,9 +83,10 @@ The `empty` method, or `isEmpty`, returns a boolean value if the stack is or is 
 
 Unless you’ve got a lot of interviews on your calendar, it’s not every day that you’ll _consciously_ implement a stack. But as a JavaScript developer, an understanding of stacks will help you understand how JavaScript itself works. 
 
-Enough talk! Time for action!
+Let's implement a stack!
 
-Because we’re using an array, we can simply implement a stack using built-in array methods: 
+We can simply implement a stack using and Array and its built-in methods: 
+
 ```js
 const stack = [];
  
@@ -123,7 +126,7 @@ const firstOut = stack.pop(); // "Last in!"
 const peekABoo = stack.peek(); // "First in!"
 ```
 
-Now what? Let's stack some sh*t!
+
 
 A classic problem solved using the stack data structure is base conversion. 
 
