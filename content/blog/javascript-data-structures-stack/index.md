@@ -79,13 +79,13 @@ The `empty` method, or `isEmpty`, returns a boolean value if the stack is or is 
 * Stacks are useful when we want the constraints of LIFO, such as backtracking
 
 
-## Stack Data Structure in JavaScript 
+## Stack Data Structures in JavaScript 
 
 Unless you’ve got a lot of interviews on your calendar, it’s not every day that you’ll _consciously_ implement a stack. But as a JavaScript developer, an understanding of stacks will help you understand how JavaScript itself works. 
 
 Let's implement a stack!
 
-We can simply implement a stack using and Array and its built-in methods: 
+We can simply implement a stack using an Array and its built-in methods: 
 
 ```js
 const stack = [];
@@ -126,103 +126,46 @@ const firstOut = stack.pop(); // "Last in!"
 const peekABoo = stack.peek(); // "First in!"
 ```
 
-
-
-A classic problem solved using the stack data structure is base conversion. 
+If you're not a fan of sugary syntax, we can also implement our stack using prototype:
 
 ```js
-const decimalToBase = (num, base) => {
-  const stack = new Stack();
+const Stack = function() {
+  this.store = [];
+  this.top = 0;
+}
 
-  const digits = '0123456789ABCDEF';
-  let mod;
-  let result = '';
-  
-  while (num > 0) {
-    mod = Math.floor(num % base);
-    stack.push(mod);
-    num = Math.floor(num / base);
-  }
-  
-  while (stack.top > 0) {
-    result += digits[stack.pop()];
-  }
+Stack.prototype.push = function(element) {
+  return this.store[this.top++] = element;
+}
 
-  return result;
+Stack.prototype.pop = function(element) {
+  return this.store[--this.top];
+}
+
+Stack.prototype.peek = function(element) {
+   return this.store[this.top - 1];
 }
 ```
 
-What's happening here? 
 
-To calculate a base, we need to divide the decimal by the desired base until the quotient is zero. We store the remainder of each division operation and use that to create a string representing the base. 
-
-Let's pseudocode base 2 before we power up and convert the decimal `6` to binary. 
-
-```
-6 / 2 = 3
-```
-
-The remainder is 0, so we _push_ that to a string: 
-```
-0
-```
-
-We now divide our quotient, `3`, by `2`.
-```
-3 / 2 = 1
-```
-
-The remainder is 1, so we _push_ that to our string: 
-```
-10
-```
-
-We're not at zero, yet. Our quotient is `1`, so we divide that by 2.
-```
-1 / 2 < 0
-```
-
-Our remainder is again `1`, so we push that to our string:
-```
-110
-```
-
-There's our binary conversion of the decimal 6.
-
-We first declare a new instance of our `Stack` class, `stack`. 
-
-We next declare `mod`, `result`, and `digits`. We'll see how each of these are used as we proceed. 
-
-We iterate using a `while` loop. 
-
-1. We get the remainder of our num _modulo_ base and assign it to `mod`. We then push `mod` onto the stack. 
-
-1234 16
-2
-77
-77 16
-13
-4
-4 16
-4
-0
-4D2
-
-## Big O & Stack Data Structure
+## Big O & Stack Data Structures
 
 What is the order of a stack?
 
 Regardless of the size of the stack, the time complexity for the `push()` and `pop()` methods is constant. We perform one operation when adding or removing an element from the stack. If we need to search the stack or access a buried element, then it’s O(n). The space complexity is straightforward, pun intended: O(n). 
 
 
-## Learn JavaScript Stack Data Structure
+## JavaScript Stack Data Structures
 
+In this tutorial, you learned the stack data structure in JavaScript. 
 
-Three more classic and common interview questions using stacks are:
+There are several classic and common interview questions using stacks, including:
 
 * Tower of Hanoi
 
 * Check for balanced parentheses
 
 * Evaluation of postfix expressions
+
+In the next tutorial, we'll learn how to [Convert Decimals to Base Using a Stack](#). Stay tuned!
 
