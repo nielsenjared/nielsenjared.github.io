@@ -1,4 +1,175 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 May 2020 17:14:37 GMT</lastBuildDate><item><title><![CDATA[Illusions of Competence & Humility in Software Development]]></title><description><![CDATA[It’s easy to overestimate our abilities. Not even a 10X developer can know everything. To succeed in software development, it’s important to…]]></description><link>http://jarednielsen.com/illusions-competence-humility/</link><guid isPermaLink="false">http://jarednielsen.com/illusions-competence-humility/</guid><pubDate>Mon, 04 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 08 May 2020 10:52:26 GMT</lastBuildDate><item><title><![CDATA[JavaScript Data Structures: Stack]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/javascript-data-structures-stack/</link><guid isPermaLink="false">http://jarednielsen.com/javascript-data-structures-stack/</guid><pubDate>Fri, 08 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2932984860a859602758596a2fffaa74/a987b/jarednielsen-javascript-data-structures-stack.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsklEQVQoz62S2QrDMAwE8///WVrI4dhxbklbWYlfSiiNqWCeJIaVrUpEcEUqHhdwnMDLCnIDKEQIX89nqq9CP4L7QYkGNR48H/JU94WakDqvggBqe+y1g6wbOExlQup0zTMhdSpVYUrIYSxM6E6RJfTYH7UllGUrFQ4mMhpd+dmajONcKNRPofQhuqIlVam968v9JsRJFgrRcTYJr285zcdM6vHNs8nSz7IeF9xhKX8XvgGoRGVkQYLhugAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen javascript data structures stack&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2932984860a859602758596a2fffaa74/b9e4f/jarednielsen-javascript-data-structures-stack.png&quot;
+        srcset=&quot;/static/2932984860a859602758596a2fffaa74/cf440/jarednielsen-javascript-data-structures-stack.png 148w,
+/static/2932984860a859602758596a2fffaa74/d2d38/jarednielsen-javascript-data-structures-stack.png 295w,
+/static/2932984860a859602758596a2fffaa74/b9e4f/jarednielsen-javascript-data-structures-stack.png 590w,
+/static/2932984860a859602758596a2fffaa74/f9b6a/jarednielsen-javascript-data-structures-stack.png 885w,
+/static/2932984860a859602758596a2fffaa74/2d849/jarednielsen-javascript-data-structures-stack.png 1180w,
+/static/2932984860a859602758596a2fffaa74/a987b/jarednielsen-javascript-data-structures-stack.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the stack data structure in JavaScript. &lt;/p&gt;
+&lt;h2&gt;What is a Stack?&lt;/h2&gt;
+&lt;p&gt;A stack is similar to an array with one significant difference: elements are only accessible from one end, the top. This means we can’t randomly access elements. We can add elements to the stack and we can remove elements from the stack. But if we want to access an element mid-way in the stack, you guessed it, we need to &lt;em&gt;pop&lt;/em&gt; the elements above it off the stack. &lt;/p&gt;
+&lt;p&gt;The classic analogies for the stack data structure are plates or cafeteria trays. In a cafeteria, when you line up to be served, you take a tray off the top of a stack of trays. You take one tray and only one tray. When dirty trays are washed they are put on top of the stack. &lt;/p&gt;
+&lt;p&gt;Your browser history is another analogy. Say you Google ‘stack’ and find yourself at the &lt;a href=&quot;https://en.wikipedia.org/wiki/Stack&quot;&gt;Wikipedia disambiguation page&lt;/a&gt;. You click &lt;a href=&quot;https://en.wikipedia.org/wiki/Stack_(abstract_data_type)&quot;&gt;Stack (abstract data type)&lt;/a&gt; and read a bit about &lt;em&gt;stacks&lt;/em&gt; in the context of computer science, confirming what you just read above. But what’s an &lt;a href=&quot;https://en.wikipedia.org/wiki/Abstract_data_type&quot;&gt;abstract data type&lt;/a&gt;? &lt;/p&gt;
+&lt;p&gt;Down the rabbit hole! 🐇🕳&lt;/p&gt;
+&lt;p&gt;Several hours later you’re reading &lt;a href=&quot;https://apps.dtic.mil/dtic/tr/fulltext/u2/673971.pdf&quot;&gt;Barbara Liskov’s thesis, &lt;em&gt;A Program to Play Chess End Games&lt;/em&gt;&lt;/a&gt;, with no recollection of how you got there. Luckily, you can retrace your history with your browser. By clicking the back button, you are popping pages off the stack!&lt;/p&gt;
+&lt;h3&gt;LIFO: Last In, First Out&lt;/h3&gt;
+&lt;p&gt;LIke people on an elevator, the dynamic of a stack is also referred to as &lt;strong&gt;Last In First Out&lt;/strong&gt;, or &lt;strong&gt;LIFO&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Stack Operations&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fd8d9f313b880524b9930ab757886d81/6ca41/wikipedia-stack-diagram.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 69.85769728331177%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABkklEQVQoz11T2W6DMBDk/78vzUXKDQEn0AQkn0A69ggqdR+sYb3H7KyJlmX5BAOw1u7YOUe8rt6vlIJzXVeA0+kkpQSOPputwfZPhI7TNM8zMM7r9fp6vfiZ53nTNH3f/yUz6Pl8sqdPiONn31vnULSu63uwJRj7R6AkHkJrHRLc5XK5ty0T2rZ7PERVlSyHE7fG+NGMMeASwYUOVVWN4wjvNE1onmcZE6wx5/MZoR5b+3U8EqOZ78ySw88AYiQPSmVZ4mRCkiRMQNh3klBUeNIsjSjSvMxSScxJnXFHbRb4pdywH3WXEM39zFKqPM/QwW7rMcGoP1e4Y630vhdPu64rqM9ozHy73fxnoKe1er/fIPRvnSwU4brIC60NXXUwYkgIOtCSc4K/EIK0aUjWaIULL4m1cRxTHhRGWtd1jBuGAbKLTnALeDC4jaABkqmtcxYLIMbOgXed0zTlLmF4XofDAQNGxui6qZUKj8S5oii2BzNj8q2oy7KM5HG2bcv+flUuvKf93/iHqQ1i+AvhpLTAv2jlJpdf7DbuAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;wikipedia stack diagram&quot;
+        title=&quot;&quot;
+        src=&quot;/static/fd8d9f313b880524b9930ab757886d81/b9e4f/wikipedia-stack-diagram.png&quot;
+        srcset=&quot;/static/fd8d9f313b880524b9930ab757886d81/cf440/wikipedia-stack-diagram.png 148w,
+/static/fd8d9f313b880524b9930ab757886d81/d2d38/wikipedia-stack-diagram.png 295w,
+/static/fd8d9f313b880524b9930ab757886d81/b9e4f/wikipedia-stack-diagram.png 590w,
+/static/fd8d9f313b880524b9930ab757886d81/6ca41/wikipedia-stack-diagram.png 773w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;There are three primary operations for a stack, the first two are essential: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pop&lt;/li&gt;
+&lt;li&gt;push&lt;/li&gt;
+&lt;li&gt;peek&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both &lt;code&gt;pop&lt;/code&gt; and &lt;code&gt;push&lt;/code&gt; will be familiar to you from working with arrays and intuitive when thinking about stacks, especially using the cafeteria tray analogy. &lt;/p&gt;
+&lt;p&gt;What is &lt;code&gt;peek&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;peek&lt;/code&gt; operation allows us to view the value in the element on the top of the stack. &lt;/p&gt;
+&lt;p&gt;Why do we need a &lt;code&gt;peek&lt;/code&gt; operation? &lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;pop&lt;/code&gt; operation permanently removes an element from the top of the stack. The &lt;code&gt;peek&lt;/code&gt; operation lets us &lt;em&gt;peek&lt;/em&gt; at the value without popping it off. &lt;/p&gt;
+&lt;p&gt;What else? &lt;/p&gt;
+&lt;p&gt;Depending on the implementation, there may be the following: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;top&lt;/li&gt;
+&lt;li&gt;clear&lt;/li&gt;
+&lt;li&gt;length&lt;/li&gt;
+&lt;li&gt;empty&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;code&gt;top&lt;/code&gt; property is a counter variable, letting you know the &lt;em&gt;height&lt;/em&gt; of the stack. &lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;clear&lt;/code&gt; method does just that, it &lt;em&gt;clears&lt;/em&gt; the stack. &lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;length&lt;/code&gt; is somewhat redundant with the &lt;code&gt;top&lt;/code&gt; property. It returns the length of the stack. &lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;empty&lt;/code&gt; method, or &lt;code&gt;isEmpty&lt;/code&gt;, returns a boolean value if the stack is or is not empty. &lt;/p&gt;
+&lt;h2&gt;What Problem(s) Does a Stack Data Structure Solve?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Stacks are fast because data can only be added and removed from the top&lt;/li&gt;
+&lt;li&gt;Stacks are useful when we want the constraints of LIFO, such as backtracking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Stack Data Structures in JavaScript&lt;/h2&gt;
+&lt;p&gt;Unless you’ve got a lot of interviews on your calendar, it’s not every day that you’ll &lt;em&gt;consciously&lt;/em&gt; implement a stack. But as a JavaScript developer, an understanding of stacks will help you understand how JavaScript itself works. &lt;/p&gt;
+&lt;p&gt;Let’s implement a stack!&lt;/p&gt;
+&lt;p&gt;We can simply implement a stack using an Array and its built-in methods: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; stack &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Last in!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; firstOut &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;🤨&lt;/p&gt;
+&lt;p&gt;Not impressed? We can also declare a class:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Stack&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;top &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;top&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; element&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;top &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;top&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; stack &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;First in!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Last in!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; firstOut &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// &quot;Last in!&quot;&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; peekABoo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// &quot;First in!&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you’re not a fan of sugary syntax, we can also implement our stack using prototype:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;Stack&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;top &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token class-name&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;push&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;top&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; element&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token class-name&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;pop&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;top&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token class-name&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;peek&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;top &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Big O &amp;#x26; Stack Data Structures&lt;/h2&gt;
+&lt;p&gt;What is the order of a stack?&lt;/p&gt;
+&lt;p&gt;Regardless of the size of the stack, the time complexity for the &lt;code&gt;push()&lt;/code&gt; and &lt;code&gt;pop()&lt;/code&gt; methods is constant. We perform one operation when adding or removing an element from the stack. If we need to search the stack or access a buried element, then it’s O(n). The space complexity is straightforward, pun intended: O(n). &lt;/p&gt;
+&lt;h2&gt;JavaScript Stack Data Structures&lt;/h2&gt;
+&lt;p&gt;In this tutorial, you learned the stack data structure in JavaScript. &lt;/p&gt;
+&lt;p&gt;There are several classic and common interview questions using stacks, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tower of Hanoi&lt;/li&gt;
+&lt;li&gt;Check for balanced parentheses&lt;/li&gt;
+&lt;li&gt;Evaluation of postfix expressions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the next tutorial, we’ll learn how to &lt;a href=&quot;#&quot;&gt;Convert Decimals to Base Using a Stack&lt;/a&gt;. Stay tuned!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Illusions of Competence & Humility in Software Development]]></title><description><![CDATA[It’s easy to overestimate our abilities. Not even a 10X developer can know everything. To succeed in software development, it’s important to…]]></description><link>http://jarednielsen.com/illusions-competence-humility/</link><guid isPermaLink="false">http://jarednielsen.com/illusions-competence-humility/</guid><pubDate>Mon, 04 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/a1cea22a0dc6a899cd8ab3ada9e78c92/a987b/jarednielsen-solution-illusions-humility.png&quot;
@@ -5640,6 +5811,12 @@ etc.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;It’s still O(1).&lt;/p&gt;
 &lt;p&gt;Why? &lt;/p&gt;
 &lt;p&gt;Even though we check multiple conditions before returning, the rate of growth is &lt;em&gt;constant&lt;/em&gt;. We know the &lt;em&gt;upper bound&lt;/em&gt;, or worst-case scenario, in advance, and we know it will not change. &lt;/p&gt;
+&lt;h2&gt;@TODO {{ TITLE }}&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What do we mean by &lt;em&gt;linear time complexity&lt;/em&gt;?&lt;/li&gt;
+&lt;li&gt;What is a &lt;em&gt;constant term&lt;/em&gt; and why do we drop it?&lt;/li&gt;
+&lt;li&gt;What is amortized analysis?&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;O(n): Linear Time Complexity&lt;/h2&gt;
 &lt;p&gt;If O(1) performs the same number of operations regardless of the size of the input, what is O(n)?&lt;/p&gt;
 &lt;p&gt;The heading above gives it away. &lt;/p&gt;
@@ -5879,8 +6056,8 @@ If we change our coefficients: &lt;/p&gt;
 &lt;p&gt;All O(n).&lt;/p&gt;
 &lt;p&gt;You can see how linear complexity is fine for small inputs, but becomes a consideration when the size of the input increases. &lt;/p&gt;
 &lt;p&gt;If we want to know the &lt;em&gt;lower bound&lt;/em&gt;, or the &lt;em&gt;tight bound&lt;/em&gt;, we use two different notations: Big Omega, or Ω, and Big Theta, or Θ. We’ll look at them later, in &lt;a href=&quot;https://jarednielsen.com/big-o-omega-theta/&quot;&gt;What’s the Difference Between Big O, Big Omega, and Big Theta?&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;this.pop() Quiz&lt;/h2&gt;
-&lt;p&gt;@TODO&lt;/p&gt;
+&lt;h2&gt;&lt;code&gt;pop()&lt;/code&gt; Quiz&lt;/h2&gt;
+&lt;p&gt;Here are two ‘trick questions’ to test your knowledge of linear time complexity.&lt;/p&gt;
 &lt;h3&gt;Big O &amp;#x26; Conditional Statements&lt;/h3&gt;
 &lt;p&gt;What’s the order of this function? &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;lowerList&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;

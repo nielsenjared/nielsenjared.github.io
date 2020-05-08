@@ -170,6 +170,12 @@
 <p>It’s still O(1).</p>
 <p>Why? </p>
 <p>Even though we check multiple conditions before returning, the rate of growth is <em>constant</em>. We know the <em>upper bound</em>, or worst-case scenario, in advance, and we know it will not change. </p>
+<h2>@TODO {{ TITLE }}</h2>
+<ul>
+<li>What do we mean by <em>linear time complexity</em>?</li>
+<li>What is a <em>constant term</em> and why do we drop it?</li>
+<li>What is amortized analysis?</li>
+</ul>
 <h2>O(n): Linear Time Complexity</h2>
 <p>If O(1) performs the same number of operations regardless of the size of the input, what is O(n)?</p>
 <p>The heading above gives it away. </p>
@@ -409,8 +415,8 @@ If we change our coefficients: </p>
 <p>All O(n).</p>
 <p>You can see how linear complexity is fine for small inputs, but becomes a consideration when the size of the input increases. </p>
 <p>If we want to know the <em>lower bound</em>, or the <em>tight bound</em>, we use two different notations: Big Omega, or Ω, and Big Theta, or Θ. We’ll look at them later, in <a href="https://jarednielsen.com/big-o-omega-theta/">What’s the Difference Between Big O, Big Omega, and Big Theta?</a>.</p>
-<h2>this.pop() Quiz</h2>
-<p>@TODO</p>
+<h2><code>pop()</code> Quiz</h2>
+<p>Here are two ‘trick questions’ to test your knowledge of linear time complexity.</p>
 <h3>Big O &#x26; Conditional Statements</h3>
 <p>What’s the order of this function? </p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">lowerList</span> <span class="token operator">=</span> <span class="token parameter">arr</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
