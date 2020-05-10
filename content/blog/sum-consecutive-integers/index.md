@@ -10,13 +10,13 @@ keywords: ['integers', 'sum', 'consecutive', '1 to n']
 You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag to improve the performance of your algorithms and make an impression in technical interviews. In this tutorial, you will learn how to sum a series of consecutive integers from 1 to n with a simple and easy to remember equation.
 
 ---
-Want to level up your problem solving skills? I write a weekly newsletter about programming, problem solving and lifelong learning. 
 
-[Sign up for The Solution](http://eepurl.com/cP8CMn)
+![](../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-cover-200x300.png)
+
+This article is an excerpt from [The Little Book of Big O](https://gum.co/big-o).
 
 ---
 
-## How to Sum Integers 1 to n
 
 How would _you_ add these numbers?
 
@@ -45,7 +45,7 @@ What if the array contained 100 or 1,000 or 1,000,000 elements?
 Brute force would be brutal. 
 
 
-### Programming is Problem Solving
+## Programming is Problem Solving
 
 What is programming? 
 
@@ -56,6 +56,7 @@ What problems do we solve?
 There are two primary categories of problems we solve as programmers:
 
 * Automation
+
 * Algorithms
 
 We could easily write a for loop to automate the addition of our series:
@@ -88,6 +89,9 @@ Our function needs to perform one operation for every input, so the order of our
 
 **There must be a better way!**
 
+
+## How to Sum Integers 1 to n
+
 Rather than automate the brute force approach, how can we solve this problem _algorithmically_? 
 
 Take another look at our array. Is there a different approach we could take to find the sum?
@@ -98,7 +102,7 @@ Take another look at our array. Is there a different approach we could take to f
 
 When you added the series, you most likely started at one end and worked towards the other. 
 
-Or maybe you started at the end  and worked backwards, like so: 
+Or maybe you started at the end and worked backwards, like so: 
 ```
 10 + 9 = 19
 19 + 8 = 27
@@ -124,6 +128,7 @@ What if we put our forward and back approaches side-by-side?
 | 28 + 8 = 36         | 49 + 3 = 52        |
 | 36 + 9 = 45        | 53 + 2 = 54        |
 | 45 + 10 = 55        | 54 + 1 = 55        |
+
 Notice anything? 
 
 If we sum the sums in each row of our table, we get multiples of 11. 
@@ -163,13 +168,13 @@ How do you make this calculation if you don’t know the length of your array?
 We will still make our pairs, but we’ll use a variable, _n_, as a placeholder for the length of our array.
 
 ```
-1 + n    = (n+ 1)
+1 + n    = (n + 1)
 2 + n -1 = (n + 1)
 ```
 
-Wait! What? Why `n -1`? 
+Wait! What? Why `n - 1`? 
 
-We want to pair the second element in our array with the second to last element. The second element is 2 and the second to last element is the length of our array minus 1, so `n-1`. What is the sum of 2 + n -1 ?  
+We want to pair the second element in our array with the second to last element. The second element is 2 and the second to last element is the length of our array minus 1, so `n - 1`. What is the sum of `2 + n - 1`?  
 
 ```
 n + 1
@@ -179,7 +184,7 @@ I think you see where this is going.
 ```
 3 + n - 2 = n + 1
 4 + n - 3 = n + 1
-5 + n -4  = n + 1
+5 + n - 4 = n + 1
 ```
 
 At some point we will reach the median of our array. That value will be `n / 2`. Here, our median is 5, which is the quotient of 10 divided by 2.
@@ -234,7 +239,7 @@ If we know the median, what do we need to do next?
 
 We simply need to multiply this value by the length of our array.
 ```
-n(n + 1) / 2
+n (n + 1) / 2
 ```
 
 Regardless of the array length, this equation is incredibly useful in helping us make our algorithms more efficient. 
@@ -256,7 +261,7 @@ const sumHarder = arr => {
 
 We simply translate our equation into JavaScript!
 ```js
-const sumSmarter = arr => arr.length * (arr.length + 1)/2;
+const sumSmarter = arr => arr.length * (arr.length + 1) / 2;
 ```
 
 What's the order of our new function? 

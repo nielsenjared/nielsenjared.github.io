@@ -127,7 +127,7 @@ Why?
 Even though we check multiple conditions before returning, the rate of growth is _constant_. We know the _upper bound_, or worst-case scenario, in advance, and we know it will not change. 
 
 
-## @TODO {{ TITLE }}
+## Let's Get Meta 🧠
 
 * What do we mean by _linear time complexity_?
 

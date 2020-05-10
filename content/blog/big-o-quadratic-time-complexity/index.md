@@ -11,18 +11,23 @@ keywords: ["Big O", "quadratic", "time complexity"]
 Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation quadratic time complexity with examples in JavaScript.
 
 ---
-This is the third in a series on Big O notation. If you want to stay in the loop, [sign up for my weekly newsletter, The Solution](http://eepurl.com/cP8CMn).
+
+![](../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-cover-200x300.png)
+
+This article is an excerpt from [The Little Book of Big O](https://gum.co/big-o).
 
 ---
 
 ## What Problem(s) Does Big O Solve?
 
-* Big O notation helps us answer the question, “Will it scale?”
+* Big O notation helps us answer the question, “Can we do better?”
+
 * Big O notation equips us with a shared language for discussing performance with other developers (and mathematicians!).
+
 
 ## Quick Refresher
 
-In the first twp parts of this series, we looked at constant and linear time complexity, or O(1) and O(n). If you’re just joining us, you will want to start with that article, [What is Big O Notation?](https://jarednielsen.com/big-o-notation/)
+In the first two parts of this series, we looked at constant and linear time complexity, or O(1) and O(n). If you’re just joining us, you will want to start with that article, [What is Big O Notation?](https://jarednielsen.com/big-o-notation/)
 
 
 ### What is Big O? 
