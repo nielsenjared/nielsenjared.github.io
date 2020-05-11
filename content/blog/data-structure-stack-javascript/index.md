@@ -1,13 +1,13 @@
 ---
-title: 'JavaScript Data Structures: Stack'
+title: 'JavaScript Stack Data Structure'
 date: '2020-05-08'
-description: 'Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the stack data structure in JavaScript.'
+description: 'Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement the stack data structure in JavaScript.'
 keywords: ['javascript', 'stack', 'stacks', 'data structure']
 ---
 
 ![](./jarednielsen-javascript-data-structures-stack.png)
 
-At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the stack data structure in JavaScript. 
+At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement the stack data structure in JavaScript. 
 
 
 ## What is a Stack?
