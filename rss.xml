@@ -1,4 +1,437 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 11 May 2020 14:19:57 GMT</lastBuildDate><item><title><![CDATA[To Succeed, Build Structure]]></title><description><![CDATA[To succeed in problem solving and programming, you need to learn how to build structure, whether those structures are software or mental…]]></description><link>http://jarednielsen.com/build-structure/</link><guid isPermaLink="false">http://jarednielsen.com/build-structure/</guid><pubDate>Mon, 11 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 15 May 2020 13:38:30 GMT</lastBuildDate><item><title><![CDATA[How to Convert a Decimal to Binary in JavaScript]]></title><description><![CDATA[There are 10 kinds of programmers in the world: those who can convert decimal to binary and those who can’t. In this tutorial, you will…]]></description><link>http://jarednielsen.com/convert-decimal-binary/</link><guid isPermaLink="false">http://jarednielsen.com/convert-decimal-binary/</guid><pubDate>Fri, 15 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/496a77b08842bc03adeeeea3a73491b3/a987b/jarednielsen-convert-decimal-binary.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAABJUlEQVQoz62SzUvDQBDF8/97lOJJQfBWMSCePPgBilAQi1CsaRukPaSISL9jm+z83E22ZGts7MGByc68zL68mYnHTxMxD0RlCXEkzEKLJRpMHc9qKU5tnpuLDnI3idIEQucQwrp9b70sgE3CEm4TzUd3b8H8cgadd+TqDc5fwX+BWx3HSVFv75QUTr+E1CQPfThukp4GRP4jy5setDTpYIxEU/iY521XESodnDSF5yEs+hOSWgOWihoBE9us2qVlgymLHzSE/XvF3Urj9RZqMOKINhdpSKySbIiyVlS1lBwTRrEwNjKudYt+kGk7ky5t+WSVr97sm23mbaq3hUmKehoW7Tn3q8h+UWh/HYfDzFXTZ+eabGeF7kxE5V8RR/lf6sqE/2DfiC9dDk674TQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen convert decimal binary&quot;
+        title=&quot;&quot;
+        src=&quot;/static/496a77b08842bc03adeeeea3a73491b3/b9e4f/jarednielsen-convert-decimal-binary.png&quot;
+        srcset=&quot;/static/496a77b08842bc03adeeeea3a73491b3/cf440/jarednielsen-convert-decimal-binary.png 148w,
+/static/496a77b08842bc03adeeeea3a73491b3/d2d38/jarednielsen-convert-decimal-binary.png 295w,
+/static/496a77b08842bc03adeeeea3a73491b3/b9e4f/jarednielsen-convert-decimal-binary.png 590w,
+/static/496a77b08842bc03adeeeea3a73491b3/f9b6a/jarednielsen-convert-decimal-binary.png 885w,
+/static/496a77b08842bc03adeeeea3a73491b3/2d849/jarednielsen-convert-decimal-binary.png 1180w,
+/static/496a77b08842bc03adeeeea3a73491b3/a987b/jarednielsen-convert-decimal-binary.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;There are 10 kinds of programmers in the world: those who can convert decimal to binary and those who can’t. In this tutorial, you will learn how to convert a decmial to binary using a Stack data structure with examples in JavaScript. &lt;/p&gt;
+&lt;h2&gt;Reflection Practice&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What’s a stack? &lt;/li&gt;
+&lt;li&gt;What’s a base? &lt;/li&gt;
+&lt;li&gt;What is binary?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What’s a Stack?&lt;/h3&gt;
+&lt;p&gt;A stack is a data structure that follows the Last In First Out principle (LIFO). We can only add or remove elements from the top of the stack .&lt;/p&gt;
+&lt;p&gt;If you want to go deeper, read my article about the &lt;a href=&quot;https://jarednielsen.com/data-structure-stack-javascript/&quot;&gt;JavaScript Stack Data Structure&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;What’s a Base?&lt;/h3&gt;
+&lt;p&gt;A base is the number of different digits used to count in a numerical system. We count in base 10 most likely due to us evolving ten fingers. When we count in base 10, we use ten distinct &lt;em&gt;whole&lt;/em&gt; numbers.  &lt;/p&gt;
+&lt;h3&gt;What is Binary?&lt;/h3&gt;
+&lt;p&gt;Binary is base 2. We have two different digits to count with, &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;1&lt;/code&gt;. (Or &lt;code&gt;true&lt;/code&gt; and &lt;code&gt;false&lt;/code&gt;). &lt;/p&gt;
+&lt;p&gt;Counting from 1 to 10 with our hands is easy. Our fingers are like switches and we flip them. &lt;/p&gt;
+&lt;p&gt;(Starting with the index or thumb! Sheesh!)&lt;/p&gt;
+&lt;p&gt;What do we do when we go beyond 10? &lt;/p&gt;
+&lt;p&gt;We flip those switches the other way! &lt;/p&gt;
+&lt;p&gt;We not only extend or retract our fingers to count to ten, if we are counting to a value greater than ten, we also track the number of times we count by 10. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;0 
+1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What happens when we reach 9? &lt;/p&gt;
+&lt;p&gt;We &lt;em&gt;overflow&lt;/em&gt; into another digit on the left and reset the digit on the right, giving us &lt;code&gt;10&lt;/code&gt;. We then increment the right-most digit as we count up:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;10
+11
+12
+13
+14
+15
+16
+17
+18
+19&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What happens when we reach 19? &lt;/p&gt;
+&lt;p&gt;We increment the value of the digit on the left by &lt;code&gt;1&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;This may seem rudimentary, but bear with me.&lt;/p&gt;
+&lt;p&gt;What happens when we reach 99? &lt;/p&gt;
+&lt;p&gt;We need to &lt;em&gt;overflow&lt;/em&gt; again and add another digit, giving us &lt;code&gt;100&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If we knew at the outset that we wanted to count beyond &lt;code&gt;100&lt;/code&gt;, we could start with three digits and proceed like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;000
+001
+002
+...
+009
+010
+011
+...
+099
+100
+101&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;etc.&lt;/p&gt;
+&lt;p&gt;What if we are limited to two fingers, or switches? &lt;/p&gt;
+&lt;p&gt;We’re going to need a lot more digits!&lt;/p&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How do you build something out of nothing? &lt;/li&gt;
+&lt;li&gt;What mathematical operation do we use to break problems down?&lt;/li&gt;
+&lt;li&gt;What does the modulo operator do?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Convert Decimal to Binary&lt;/h2&gt;
+&lt;p&gt;To understand how to convert decimal to base, it’s useful to first understand how to convert decimal to binary. Our challenge is to convert a decimal, such as &lt;code&gt;10&lt;/code&gt;, to its binary counterpart, &lt;code&gt;1010&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;If you already know how to do this, skip ahead to &lt;a href=&quot;&quot;&gt;How To Convert a Decimal Binary Using a Stack in JavaScript&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;How do we break this problem down? &lt;/p&gt;
+&lt;p&gt;In base 10, what is &lt;code&gt;1&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;It is one of ten possible values, or, &lt;code&gt;1 / 10&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;What does that look like? &lt;/p&gt;
+&lt;p&gt;What mathematical operation do we use to break problems down? &lt;/p&gt;
+&lt;p&gt;Division. &lt;/p&gt;
+&lt;p&gt;So in base 2, what is &lt;code&gt;1&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;It is one of &lt;em&gt;two&lt;/em&gt; possible values. &lt;/p&gt;
+&lt;p&gt;If we’re using division to convert to binary, what is our divisor? &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;What does the operation of division return? &lt;/p&gt;
+&lt;p&gt;A quotient and a remainder. &lt;/p&gt;
+&lt;p&gt;Let’s start simple and convert &lt;code&gt;0&lt;/code&gt; to binary. What is the quotient of the following: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;0 / 2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;🙄&lt;/p&gt;
+&lt;p&gt;It’s &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;What’s the remainder of &lt;code&gt;0 / 2&lt;/code&gt;? Also &lt;code&gt;0&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;If we start to build a table, it looks like this so far:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Decimal&lt;/th&gt;
+&lt;th&gt;Binary&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Because we are only working with two values, &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;1&lt;/code&gt;, we can surmise that the decimal &lt;code&gt;1&lt;/code&gt; converted to binary is also &lt;code&gt;1&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;But don’t take my word for it! Let’s proove it . What is &lt;code&gt;1 / 2&lt;/code&gt;?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 / 2 = 0.5&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Not exactly a &lt;em&gt;whole&lt;/em&gt; number!&lt;/p&gt;
+&lt;p&gt;But the remainder &lt;em&gt;is&lt;/em&gt; 1. How? &lt;/p&gt;
+&lt;p&gt;We use the &lt;a href=&quot;https://en.wikipedia.org/wiki/Division_algorithm&quot;&gt;division algorithm&lt;/a&gt;, which states that:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For integers &lt;code&gt;N&lt;/code&gt; and &lt;code&gt;D&lt;/code&gt; where &lt;code&gt;D != 0&lt;/code&gt;, there are unique integers &lt;code&gt;Q&lt;/code&gt; and &lt;code&gt;R&lt;/code&gt; where &lt;code&gt;0 &amp;#x3C;= R &amp;#x3C; D&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In other words: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;N = D * Q + R&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Where &lt;code&gt;N&lt;/code&gt; is our dividend, &lt;code&gt;D&lt;/code&gt; is our divisor, and &lt;code&gt;Q&lt;/code&gt; and &lt;code&gt;R&lt;/code&gt; are the quotient and remainder, respectively.&lt;/p&gt;
+&lt;p&gt;👆 Keep in mind that &lt;code&gt;Q&lt;/code&gt; is not the quotient we return from the division operation of &lt;code&gt;1 / 2&lt;/code&gt;. It’s the number of times the divisor goes into the dividend, which is &lt;code&gt;0&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;So, using our equation above:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 = 2 * 0 + 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Another way to think about it is to calculate the division of &lt;code&gt;1 / 2&lt;/code&gt; by hand. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/496a77b08842bc03adeeeea3a73491b3/a987b/jarednielsen-convert-decimal-binary.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAABJUlEQVQoz62SzUvDQBDF8/97lOJJQfBWMSCePPgBilAQi1CsaRukPaSISL9jm+z83E22ZGts7MGByc68zL68mYnHTxMxD0RlCXEkzEKLJRpMHc9qKU5tnpuLDnI3idIEQucQwrp9b70sgE3CEm4TzUd3b8H8cgadd+TqDc5fwX+BWx3HSVFv75QUTr+E1CQPfThukp4GRP4jy5setDTpYIxEU/iY521XESodnDSF5yEs+hOSWgOWihoBE9us2qVlgymLHzSE/XvF3Urj9RZqMOKINhdpSKySbIiyVlS1lBwTRrEwNjKudYt+kGk7ky5t+WSVr97sm23mbaq3hUmKehoW7Tn3q8h+UWh/HYfDzFXTZ+eabGeF7kxE5V8RR/lf6sqE/2DfiC9dDk674TQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen convert decimal binary&quot;
+        title=&quot;&quot;
+        src=&quot;/static/496a77b08842bc03adeeeea3a73491b3/b9e4f/jarednielsen-convert-decimal-binary.png&quot;
+        srcset=&quot;/static/496a77b08842bc03adeeeea3a73491b3/cf440/jarednielsen-convert-decimal-binary.png 148w,
+/static/496a77b08842bc03adeeeea3a73491b3/d2d38/jarednielsen-convert-decimal-binary.png 295w,
+/static/496a77b08842bc03adeeeea3a73491b3/b9e4f/jarednielsen-convert-decimal-binary.png 590w,
+/static/496a77b08842bc03adeeeea3a73491b3/f9b6a/jarednielsen-convert-decimal-binary.png 885w,
+/static/496a77b08842bc03adeeeea3a73491b3/2d849/jarednielsen-convert-decimal-binary.png 1180w,
+/static/496a77b08842bc03adeeeea3a73491b3/a987b/jarednielsen-convert-decimal-binary.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;We add this value to our table:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Decimal&lt;/th&gt;
+&lt;th&gt;Binary&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;What about &lt;code&gt;2&lt;/code&gt;?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2 / 2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The quotient is &lt;code&gt;1&lt;/code&gt; and the remainder is &lt;code&gt;0&lt;/code&gt;. But we already have &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;0&lt;/code&gt; in our table? &lt;/p&gt;
+&lt;p&gt;We need to &lt;em&gt;overflow&lt;/em&gt;, meaning we now need &lt;em&gt;at least&lt;/em&gt; two digits to represent anything greater than decimal &lt;code&gt;2&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;What happens when we overflow? &lt;/p&gt;
+&lt;p&gt;We increment the value to the left and reset the value on the right, so when we add &lt;code&gt;2&lt;/code&gt; to our table: &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Decimal&lt;/th&gt;
+&lt;th&gt;Binary&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Are you starting to see the pattern? &lt;/p&gt;
+&lt;p&gt;We’re building our binary strings with the remainder, and not the quotient, of our division operation. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2 / 2 = 1
+1 / 2 = 0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So the binary conversion of &lt;code&gt;2&lt;/code&gt; is &lt;code&gt;10&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;What’s 3? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;3 / 2 = 1
+1 / 2 = 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Decimal&lt;/th&gt;
+&lt;th&gt;Binary&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;What about &lt;code&gt;4&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;You guessed it, we need to &lt;em&gt;overflow&lt;/em&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Decimal&lt;/th&gt;
+&lt;th&gt;Binary&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;What about &lt;code&gt;5&lt;/code&gt;? Now its’ getting interesting. Our plan is to use a Stack data structure to in our algorithm solution. Using the LIFO principle, imagine &lt;em&gt;pushing&lt;/em&gt; values to the binary string as we build it. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;5 / 2 = 2
+5 % 2 = 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We &lt;em&gt;push&lt;/em&gt; the remainder to a string: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We now divide our quotient, &lt;code&gt;2&lt;/code&gt;, by &lt;code&gt;2&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2 / 2 = 1
+2 % 2 = 0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We &lt;em&gt;push&lt;/em&gt; the remainder to our string: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;01&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We’re not at zero, yet. Our quotient is &lt;code&gt;1&lt;/code&gt;, so we divide that by 2.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1 / 2 &amp;lt; 0
+1 % 2 = 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our remainder is again &lt;code&gt;1&lt;/code&gt;, so we &lt;em&gt;push&lt;/em&gt; that to our string:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;101&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There’s our binary conversion of the decimal 5:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Decimal&lt;/th&gt;
+&lt;th&gt;Binary&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;How To Convert a Decimal Binary Using a Stack in JavaScript&lt;/h2&gt;
+&lt;p&gt;Let’s translate this to JavaScript using a Stack. If you’re unfamiliar with stacks, you may want to first read &lt;a href=&quot;https://jarednielsen.com/data-structure-stack-javascript/&quot;&gt;JavaScript Stack Data Structure&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here’s our algorithm:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBinary&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; stack &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+    stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+    num &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;top &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+    result &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s happening here? &lt;/p&gt;
+&lt;p&gt;We first declare a new instance of our &lt;code&gt;Stack&lt;/code&gt; class, &lt;code&gt;stack&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;We next declare a &lt;code&gt;result&lt;/code&gt; variables, setting the value to an empty string. &lt;/p&gt;
+&lt;p&gt;We next declare two &lt;code&gt;while&lt;/code&gt; loops. &lt;/p&gt;
+&lt;p&gt;The first &lt;code&gt;while&lt;/code&gt; loop iterates over the value of our algorithm parameter, &lt;code&gt;num&lt;/code&gt;. In each iteration, we use the modulo operator, &lt;code&gt;%&lt;/code&gt;, to get the remainder of &lt;code&gt;num&lt;/code&gt; divided by &lt;code&gt;2&lt;/code&gt; and &lt;code&gt;push()&lt;/code&gt; it to the &lt;code&gt;stack&lt;/code&gt;. We then reassign the value of &lt;code&gt;num&lt;/code&gt; to the current value of &lt;code&gt;num&lt;/code&gt; divided by &lt;code&gt;2&lt;/code&gt;. But! We use &lt;code&gt;floor()&lt;/code&gt; to round it down. Why? We want to work with whole numbers and we are most interested in our remainder. &lt;/p&gt;
+&lt;p&gt;Let’s walk through each iteration. &lt;/p&gt;
+&lt;p&gt;If &lt;code&gt;num&lt;/code&gt; is equal to &lt;code&gt;6&lt;/code&gt;, then in our first iteration, we push &lt;code&gt;0&lt;/code&gt; to the stack: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the next iteration, &lt;code&gt;num&lt;/code&gt; is now equal to &lt;code&gt;3&lt;/code&gt;, so we push &lt;code&gt;1&lt;/code&gt; to the stack: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1
+0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The value of &lt;code&gt;num&lt;/code&gt; is now &lt;code&gt;1&lt;/code&gt;, which is greater than zero, so in the next iteration we push &lt;code&gt;1&lt;/code&gt; to the stack: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1
+1
+0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The value of &lt;code&gt;num&lt;/code&gt; is now less than zero, so we move on to the second &lt;code&gt;while&lt;/code&gt; loop, which iterates over the stack. We use the &lt;code&gt;pop()&lt;/code&gt; method to remove each value from the top of the stack and build our &lt;code&gt;result&lt;/code&gt; string. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;#39;1&amp;#39; + &amp;#39;1&amp;#39; + &amp;#39;0&amp;#39; = &amp;#39;110&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we don’t want to use a Stack, we could simply concatenate a string, then reverse it: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBinary&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+    result &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+    num &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But the &lt;code&gt;split()&lt;/code&gt; converts the string to an array, so we could just start with an array instead and use &lt;code&gt;unshift()&lt;/code&gt; rather than &lt;code&gt;reverse()&lt;/code&gt; (J4F): &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBinary&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+    result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;unshift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+    num &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or we could just cheat and use the built-in &lt;code&gt;toString()&lt;/code&gt; method and pass it &lt;code&gt;2&lt;/code&gt; as an argument, meaning we want to convert our string to binar: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBinary&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But what fun is that? &lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How do you build something out of nothing? &lt;/li&gt;
+&lt;li&gt;What mathematical operation do we use to break problems down?&lt;/li&gt;
+&lt;li&gt;What does the modulo operator do?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How Do You Build Something Out of Nothing?&lt;/h3&gt;
+&lt;p&gt;Form patterns! &lt;/p&gt;
+&lt;h3&gt;What Mathematical Operation Do We Use to Break Problems Down?&lt;/h3&gt;
+&lt;p&gt;Division! One of the keys to effective problem solving is breaking problems down into smaller problems. Here, we literally divided the problem. &lt;/p&gt;
+&lt;p&gt;See also: divide &amp;#x26; conquer &lt;/p&gt;
+&lt;h3&gt;What Does the Module Operator Do?&lt;/h3&gt;
+&lt;p&gt;The modulo operator, &lt;code&gt;%&lt;/code&gt;, returns the &lt;em&gt;remainder&lt;/em&gt; of division, rather than the quotient. &lt;/p&gt;
+&lt;p&gt;In this tutorial, you learn edhow to convert a decmial to binary using a Stack data structure with examples in JavaScript. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[To Succeed, Build Structure]]></title><description><![CDATA[To succeed in problem solving and programming, you need to learn how to build structure, whether those structures are software or mental…]]></description><link>http://jarednielsen.com/build-structure/</link><guid isPermaLink="false">http://jarednielsen.com/build-structure/</guid><pubDate>Mon, 11 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/44b80782ec4e39468a7fcaa9be7973b3/a987b/jarednielsen-solution-structure.png&quot;
