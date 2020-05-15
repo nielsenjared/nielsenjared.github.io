@@ -1,5 +1,5 @@
 ---
-title: 'How to Convert a Decimal to Base'
+title: 'How to Convert a Decimal to a Base'
 date: '2020-05-15'
 description: ''
 keywords: ['javascript', 'decimal', 'base', 'conversion']
@@ -9,11 +9,7 @@ keywords: ['javascript', 'decimal', 'base', 'conversion']
 
 
 @TODO introduction
-
-
-
-
-A classic problem solved using the stack data structure is base conversion. To understand how to convert decimal to base, it's useful to first understand how to convert decimal to binary. 
+There are 10 kinds of programmers in the world: those who can convert decimal to binary and those who can't. In this tutorial, you will learn how to convert a decmial to a base using a Stack data structure with examples in JavaScript. 
 
 
 ## Reflection Practice
@@ -122,7 +118,9 @@ We're going to need a lot more digits!
 
 ## How to Convert Decimal to Binary 
 
-Our challenge is to convert a decimal, such as `10`, to its binary counterpart, `1010`. 
+To understand how to convert decimal to base, it's useful to first understand how to convert decimal to binary. Our challenge is to convert a decimal, such as `10`, to its binary counterpart, `1010`. 
+
+If you already know how to do this, skip ahead to [How To Convert a Decimal Binary Using a Stack in JavaScript]().
 
 How do we break this problem down? 
 
@@ -140,7 +138,7 @@ So in base 2, what is `1`?
 
 It is one of _two_ possible values. 
 
-So if we're using division to convert to binary, what is our divisor? 
+If we're using division to convert to binary, what is our divisor? 
 
 `2`
 
@@ -298,18 +296,21 @@ There's our binary conversion of the decimal 5:
 | 5         | 100     |
 
 
-Let's translate this to JavaScript using a Stack: 
+## How To Convert a Decimal Binary Using a Stack in JavaScript
+
+Let's translate this to JavaScript using a Stack. If you're unfamiliar with stacks, you may want to first read [JavaScript Stack Data Structure](https://jarednielsen.com/data-structure-stack-javascript/).
+
+@TODO
+
 
 ```js
 const decimalToBinary = (num) => {
   const stack = new Stack();
 
-  let mod;
   let result = '';
   
   while (num > 0){ 
-    mod = Math.floor(num % 2); 
-    stack.push(mod); 
+    stack.push(num % 2); 
     num = Math.floor(num / 2); 
   }
   
@@ -320,24 +321,59 @@ const decimalToBinary = (num) => {
   return result;
 }
 ```
-@TODO what's happening here? 
+
+What's happening here? 
+
+We first declare a new instance of our `Stack` class, `stack`. 
+
+We next declare a `result` variables, setting the value to an empty string. 
+
+We next declare two `while` loops. 
+
+The first `while` loop iterates over the value of our algorithm parameter, `num`. In each iteration, we use the modulo operator, `%`, to get the remainder of `num` divided by `2` and `push()` it to the `stack`. We then reassign the value of `num` to the current value of `num` divided by `2`. But! We use `floor()` to round it down. Why? We want to work with whole numbers and we are most interested in our remainder. 
+
+Let's walk through each iteration. 
+
+If `num` is equal to `6`, then in our first iteration, we push `0` to the stack: 
+```
+0
+```
+
+In the next iteration, `num` is now equal to `3`, so we push `1` to the stack: 
+```
+1
+0
+```
+
+The value of `num` is now `1`, which is greater than zero, so in the next iteration we push `1` to the stack: 
+```
+1
+1
+0
+```
+
+The value of `num` is now less than zero, so we move on to the second `while` loop, which iterates over the stack. We use the `pop()` method to remove each value from the top of the stack and build our `result` string. 
+```
+'1' + '1' + '0' = '110'
+```
 
 
-## How to Convert Decimal to Base
+## How to Convert Decimal to Base Using a Stack in JavaScript
 
 Let's take our algorithm above and extend it to convert any base between binary and hexadecimal. To do that, though, we need to answer the question posed above: how do we count using a base greater than 10? 
+
+To calculate a base, we need to divide the decimal by the desired base until the quotient is zero. We store the remainder of each division operation and use that to create a string representing the base. 
 
 ```js
 const decimalToBase = (num, base) => {
   const stack = new Stack();
 
   const digits = '0123456789ABCDEF';
-  let mod;
+
   let result = '';
   
   while (num > 0) {
-    mod = Math.floor(num % base);
-    stack.push(mod);
+    stack.push(num % base);
     num = Math.floor(num / base);
   }
   
@@ -351,26 +387,7 @@ const decimalToBase = (num, base) => {
 
 What's happening here? 
 
-To calculate a base, we need to divide the decimal by the desired base until the quotient is zero. We store the remainder of each division operation and use that to create a string representing the base. 
 
-We first declare a new instance of our `Stack` class, `stack`. 
-
-We next declare `mod`, `result`, and `digits`. We'll see how each of these are used as we proceed. 
-
-We iterate using a `while` loop. 
-
-1. We get the remainder of our num _modulo_ base and assign it to `mod`. We then push `mod` onto the stack. 
-
-1234 16
-2
-77
-77 16
-13
-4
-4 16
-4
-0
-4D2
 
 
 ## Reflection 
