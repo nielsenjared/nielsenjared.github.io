@@ -1,11 +1,11 @@
 ---
 title: 'How to Convert a Decimal to Binary in JavaScript'
 date: '2020-05-15'
-description: 'There are 10 kinds of programmers in the world: those who can convert decimal to binary and those who can't. In this tutorial, you will learn how to convert a decmial to binary using a Stack data structure with examples in JavaScript.'
-keywords: ['javascript', 'decimal', 'base', 'conversion']
+description: "There are 10 kinds of programmers in the world: those who can convert decimal to binary and those who can't. In this tutorial, you will learn how to convert a decmial to binary using a Stack data structure with examples in JavaScript."
+keywords: ['javascript', 'decimal', 'binary', 'convert']
 ---
 
-![](./jarednielsen-@TODO.png)
+![](./jarednielsen-convert-decimal-binary.png)
 
 
 There are 10 kinds of programmers in the world: those who can convert decimal to binary and those who can't. In this tutorial, you will learn how to convert a decmial to binary using a Stack data structure with examples in JavaScript. 
@@ -193,9 +193,10 @@ So, using our equation above:
 
 Another way to think about it is to calculate the division of `1 / 2` by hand. 
 
-@TODO image of long division of 1 / 2
+![](./jarednielsen-convert-decimal-binary.png)
 
 We add this value to our table:
+
 | Decimal   | Binary  |
 | ---       | ---     |
 | 0         | 0       |
@@ -214,6 +215,7 @@ We need to _overflow_, meaning we now need _at least_ two digits to represent an
 What happens when we overflow? 
 
 We increment the value to the left and reset the value on the right, so when we add `2` to our table: 
+
 | Decimal   | Binary  |
 | ---       | ---     |
 | 0         | 0       |
@@ -236,6 +238,7 @@ What's 3?
 3 / 2 = 1
 1 / 2 = 1
 ```
+
 | Decimal   | Binary  |
 | ---       | ---     |
 | 0         | 0       |
@@ -246,6 +249,7 @@ What's 3?
 What about `4`? 
 
 You guessed it, we need to _overflow_.
+
 | Decimal   | Binary  |
 | ---       | ---     |
 | 0         | 0       |
@@ -289,6 +293,7 @@ Our remainder is again `1`, so we _push_ that to our string:
 ```
 
 There's our binary conversion of the decimal 5:
+
 | Decimal   | Binary  |
 | ---       | ---     |
 | 0         | 0       |
