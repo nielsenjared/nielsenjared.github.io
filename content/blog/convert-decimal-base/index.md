@@ -29,7 +29,7 @@ A classic problem solved using the stack data structure is base conversion. To u
 
 A stack is a data structure that follows the Last In First Out principle (LIFO). We can only add or remove elements from the top of the stack .
 
-If you want to go deeper, read [JavaScript Stack Data Structure](https://jarednielsen.com/data-structure-stack-javascript/).
+If you want to go deeper, read my article about the [JavaScript Stack Data Structure](https://jarednielsen.com/data-structure-stack-javascript/).
 
 
 ### What's a Base? 
@@ -43,11 +43,13 @@ Binary is base 2. We have two different digits to count with, `0` and `1`. (Or `
 
 Counting from 1 to 10 with our hands is easy. Our fingers are like switches and we flip them. 
 
+(Starting with the index or thumb! Sheesh!)
+
 What do we do when we go beyond 10? 
 
 We flip those switches the other way! 
 
-We not only extend or retract our fingers to count to ten, if we are counting a value greater than ten, we also track the number of times we count by 10. 
+We not only extend or retract our fingers to count to ten, if we are counting to a value greater than ten, we also track the number of times we count by 10. 
 
 ```
 0 
@@ -113,7 +115,7 @@ We're going to need a lot more digits!
 
 * How can we _algorithmically_ convert a decimal to binary? 
 
-* 
+* What does the remainder tell us about division?
 
 * How do we count using a base greater than ten? 
 
@@ -176,7 +178,7 @@ But the remainder _is_ 1. How?
 
 We use the [division algorithm](https://en.wikipedia.org/wiki/Division_algorithm), which states that:
 
-> for integers `N` and `D` where `D != 0`, there are unique integers `Q` and `R` where `0 <= R < abs(D)`
+> For integers `N` and `D` where `D != 0`, there are unique integers `Q` and `R` where `0 <= R < D`
 
 In other words: 
 ```
@@ -369,5 +371,10 @@ We iterate using a `while` loop.
 4
 0
 4D2
+
+
+## Reflection 
+
+
 
 
