@@ -1,15 +1,14 @@
 ---
-title: 'How to Convert a Decimal to a Base'
+title: 'How to Convert a Decimal to Binary in JavaScript'
 date: '2020-05-15'
-description: ''
+description: 'There are 10 kinds of programmers in the world: those who can convert decimal to binary and those who can't. In this tutorial, you will learn how to convert a decmial to binary using a Stack data structure with examples in JavaScript.'
 keywords: ['javascript', 'decimal', 'base', 'conversion']
 ---
 
 ![](./jarednielsen-@TODO.png)
 
 
-@TODO introduction
-There are 10 kinds of programmers in the world: those who can convert decimal to binary and those who can't. In this tutorial, you will learn how to convert a decmial to a base using a Stack data structure with examples in JavaScript. 
+There are 10 kinds of programmers in the world: those who can convert decimal to binary and those who can't. In this tutorial, you will learn how to convert a decmial to binary using a Stack data structure with examples in JavaScript. 
 
 
 ## Reflection Practice
@@ -109,11 +108,11 @@ We're going to need a lot more digits!
 
 ## Let's Get Meta 
 
-* How can we _algorithmically_ convert a decimal to binary? 
+* How do you build something out of nothing? 
 
-* What does the remainder tell us about division?
+* What mathematical operation do we use to break problems down?
 
-* How do we count using a base greater than ten? 
+* What does the modulo operator do?
 
 
 ## How to Convert Decimal to Binary 
@@ -191,6 +190,10 @@ So, using our equation above:
 ```
 1 = 2 * 0 + 1
 ```
+
+Another way to think about it is to calculate the division of `1 / 2` by hand. 
+
+@TODO image of long division of 1 / 2
 
 We add this value to our table:
 | Decimal   | Binary  |
@@ -300,8 +303,7 @@ There's our binary conversion of the decimal 5:
 
 Let's translate this to JavaScript using a Stack. If you're unfamiliar with stacks, you may want to first read [JavaScript Stack Data Structure](https://jarednielsen.com/data-structure-stack-javascript/).
 
-@TODO
-
+Here's our algorithm:
 
 ```js
 const decimalToBinary = (num) => {
@@ -357,41 +359,68 @@ The value of `num` is now less than zero, so we move on to the second `while` lo
 '1' + '1' + '0' = '110'
 ```
 
-
-## How to Convert Decimal to Base Using a Stack in JavaScript
-
-Let's take our algorithm above and extend it to convert any base between binary and hexadecimal. To do that, though, we need to answer the question posed above: how do we count using a base greater than 10? 
-
-To calculate a base, we need to divide the decimal by the desired base until the quotient is zero. We store the remainder of each division operation and use that to create a string representing the base. 
-
+If we don't want to use a Stack, we could simply concatenate a string, then reverse it: 
 ```js
-const decimalToBase = (num, base) => {
-  const stack = new Stack();
-
-  const digits = '0123456789ABCDEF';
+const decimalToBinary = (num) => {
 
   let result = '';
-  
-  while (num > 0) {
-    stack.push(num % base);
-    num = Math.floor(num / base);
-  }
-  
-  while (stack.top > 0) {
-    result += digits[stack.pop()];
-  }
 
-  return result;
+  while (num > 0){ 
+    result += num % 2; 
+    num = Math.floor(num / 2); 
+  }
+  
+  return result.split('').reverse().join('');
 }
 ```
 
-What's happening here? 
+But the `split()` converts the string to an array, so we could just start with an array instead and use `unshift()` rather than `reverse()` (J4F): 
+```js
+const decimalToBinary = (num) => {
 
+  let result = [];
 
+  while (num > 0){ 
+    result.unshift(num % 2); 
+    num = Math.floor(num / 2); 
+  }
+  
+  return result.join('');
+}
+```
+
+Or we could just cheat and use the built-in `toString()` method and pass it `2` as an argument, meaning we want to convert our string to binar: 
+```js
+const decimalToBinary = num => num.toString(2);
+```
+
+But what fun is that? 
 
 
 ## Reflection 
 
+* How do you build something out of nothing? 
 
+* What mathematical operation do we use to break problems down?
+
+* What does the modulo operator do?
+
+
+### How Do You Build Something Out of Nothing? 
+
+Form patterns! 
+
+
+### What Mathematical Operation Do We Use to Break Problems Down? 
+
+Division! One of the keys to effective problem solving is breaking problems down into smaller problems. Here, we literally divided the problem. 
+
+See also: divide & conquer 
+
+### What Does the Module Operator Do? 
+
+The modulo operator, `%`, returns the _remainder_ of division, rather than the quotient. 
+
+In this tutorial, you learn edhow to convert a decmial to binary using a Stack data structure with examples in JavaScript. 
 
 
