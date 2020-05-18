@@ -117,9 +117,7 @@ We're going to need a lot more digits!
 
 ## How to Convert Decimal to Binary 
 
-To understand how to convert decimal to base, it's useful to first understand how to convert decimal to binary. Our challenge is to convert a decimal, such as `10`, to its binary counterpart, `1010`. 
-
-If you already know how to do this, skip ahead to [How To Convert a Decimal Binary Using a Stack in JavaScript]().
+Our challenge is to convert a decimal, such as `10`, to its binary counterpart, `1010`. 
 
 How do we break this problem down? 
 
@@ -301,10 +299,10 @@ There's our binary conversion of the decimal 5:
 | 2         | 10      |
 | 3         | 11      |
 | 4         | 100     |
-| 5         | 100     |
+| 5         | 101     |
 
 
-## How To Convert a Decimal Binary Using a Stack in JavaScript
+## How To Convert a Decimal to Binary Using a Stack in JavaScript
 
 Let's translate this to JavaScript using a Stack. If you're unfamiliar with stacks, you may want to first read [JavaScript Stack Data Structure](https://jarednielsen.com/data-structure-stack-javascript/).
 
@@ -394,7 +392,7 @@ const decimalToBinary = (num) => {
 }
 ```
 
-Or we could just cheat and use the built-in `toString()` method and pass it `2` as an argument, meaning we want to convert our string to binar: 
+Or we could just cheat and use the built-in `toString()` method and pass it `2` as an argument, meaning we want to convert our string to binary: 
 ```js
 const decimalToBinary = num => num.toString(2);
 ```
@@ -426,6 +424,6 @@ See also: divide & conquer
 
 The modulo operator, `%`, returns the _remainder_ of division, rather than the quotient. 
 
-In this tutorial, you learn edhow to convert a decmial to binary using a Stack data structure with examples in JavaScript. 
+In this tutorial, you learned how to convert a decmial to binary using a Stack data structure with examples in JavaScript.
 
 
