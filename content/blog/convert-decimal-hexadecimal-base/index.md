@@ -1,5 +1,5 @@
 ---
-title: 'How to Convert a Decimal to a Base'
+title: 'How to Convert a Decimal to Hexadecimal and Any Base In-Between'
 date: '2020-05-22'
 description: ''
 keywords: ['javascript', 'decimal', 'base', 'conversion']
@@ -8,8 +8,7 @@ keywords: ['javascript', 'decimal', 'base', 'conversion']
 ![](./jarednielsen-@TODO.png)
 
 
-@TODO introduction
-In this tutorial, you will learn how to convert a decmial to a base using a Stack data structure with examples in JavaScript. 
+You don't need to be a math whiz to be a good programmer. But there are a handful of mathematical concepts to learn to help you understand how computers work and set yourself up for success in interviews. In this tutorial, you will learn how to convert a decmial to any base using a Stack data structure with examples in JavaScript. 
 
 
 ## Reflection Practice
@@ -39,7 +38,7 @@ To understand how to convert a decimal to base, it's useful to first understand 
 
 To calculate a binary value, we need to divide the decimal by `2` until the quotient is zero. We store the remainder of each division operation and use that to create a string representing the base. 
 
-@TODO link to decimal to binary article 
+If you want to go deeper, check out [How to Convert a Decimal to Binary in JavaScript](https://jarednielsen.com/convert-decimal-binary/)
 
 
 ## Let's Get Meta 
@@ -136,9 +135,9 @@ Our remainder is `7`, so we add it to our hexadecimal string, giving us:
 7FF
 ```
 
-## How to Convert Decimal to Base Using a Stack in JavaScript
+## How to Convert Decimal to Hexadecimal and any Base In-Between Using a Stack in JavaScript
 
-Let's refactor the algorithm we created in [How to Convert a Decimal to Binary in JavaScript](@TODO) to convert any base between binary and hexadecimal using a stack. If you're unfamiliar with stacks, you may want to first read [JavaScript Stack Data Structure](https://jarednielsen.com/data-structure-stack-javascript/).
+Let's refactor the algorithm we created in [How to Convert a Decimal to Binary in JavaScript](https://jarednielsen.com/convert-decimal-binary/) to convert any base between binary and hexadecimal using a stack. If you're unfamiliar with stacks, you may want to first read [JavaScript Stack Data Structure](https://jarednielsen.com/data-structure-stack-javascript/).
 
 To calculate a base, we need to divide the decimal by the desired base until the quotient is zero. We store the remainder of each division operation and use that to create a string representing the base. 
 
@@ -165,7 +164,17 @@ const decimalToBase = (num, base) => {
 
 What's happening here? 
 
-@TODO 
+We first use our `Stack` class to declare a new `stack`.
+
+We then declare a string, `digits`, representing the 16 symbols in our hexadecimal series. 
+
+We next declare an empty string, `result`, which we will use to build our return value. 
+
+We next declare two `while` loops. 
+
+The first `while` loop iterates over the value of our algorithm parameter, `num`. In each iteration, we use the modulo operator, `%`, to get the remainder of `num` divided by `base` and `push()` it to the `stack`. We then reassign the value of `num` to the current value of `num` divided by `base`. But! We use `floor()` to round it down. Why? We want to work with whole numbers and we are most interested in our remainder. 
+
+🔑 When the value of `num` is less than zero, we move on to the second `while` loop, which iterates over the stack. We use the `pop()` method to remove each value from the top of the stack and build our `result` string by looking up its associated value in `digits`.
 
 If we don't want to use a Stack, we could simply concatenate a string, then reverse it: 
 
@@ -228,7 +237,8 @@ Form patterns!
 
 ### How Do We Count Using a Base Greater Than 10? 
 
-@TODO 
+@TODO
+Hexadecimal, or base-16, uses the first six characters of the Roman alphabet to represent the values of 10 through 15.  
 
 ### @TODO
 
