@@ -1,17 +1,17 @@
 ---
-title: 'How to Convert a Decimal to Hexadecimal and Any Base In-Between'
+title: 'How to Convert a Decimal to Hexadecimal in JavaScript'
 date: '2020-05-22'
-description: ''
-keywords: ['javascript', 'decimal', 'base', 'conversion']
+description: 'In this tutorial, you will learn how to convert a decimal to any base between binary and hexadecimal using a Stack data structure with examples in JavaScript. '
+keywords: ['javascript', 'decimal', 'base', 'convert', 'hexadecimal']
 ---
 
 ![](./jarednielsen-@TODO.png)
 
 
-You don't need to be a math whiz to be a good programmer. But there are a handful of mathematical concepts to learn to help you understand how computers work and set yourself up for success in interviews. In this tutorial, you will learn how to convert a decmial to any base using a Stack data structure with examples in JavaScript. 
+You don't need to be a math whiz to be a good programmer, but there are a handful of mathematical concepts to learn to help you understand how computers work and set yourself up for success in interviews. In this tutorial, you will learn how to convert a decimal to any base between binary and hexadecimal using a Stack data structure with examples in JavaScript. 
 
 
-## Reflection Practice
+## Retrieval Practice
 
 * What's a stack? 
 
@@ -24,7 +24,7 @@ You don't need to be a math whiz to be a good programmer. But there are a handfu
 
 A stack is a data structure that follows the Last In First Out principle (LIFO). We can only add or remove elements from the top of the stack .
 
-If you want to go deeper, read my article about the [JavaScript Stack Data Structure](https://jarednielsen.com/data-structure-stack-javascript/).
+If you want to go deeper, check out [JavaScript Stack Data Structure](https://jarednielsen.com/data-structure-stack-javascript/).
 
 
 ### What's a Base? 
@@ -41,13 +41,15 @@ To calculate a binary value, we need to divide the decimal by `2` until the quot
 If you want to go deeper, check out [How to Convert a Decimal to Binary in JavaScript](https://jarednielsen.com/convert-decimal-binary/)
 
 
-## Let's Get Meta 
+## Let's Get Meta 🧠
+
+Ask yourself the following questions and keep them back of mind as you proceed: 
 
 * How do you build something out of nothing? 
 
 * How do we count using a base greater than 10? 
 
-* @TODO 
+* Why do I need to know this?
 
 
 ## How to Convert Decimal to Base 
@@ -66,11 +68,11 @@ It's a symbol representing a value.
 
 What is `1`? 
 
-A symbol representing the _one_.
+A symbol representing the value _one_.
 
 What is 'one'? 
 
-A symbol representing `1`. (And round and round we go...)
+A symbol representing the value `1`. (And round and round we go...)
 
 What is `10`? 
 
@@ -98,13 +100,12 @@ If we wanted to create our own base, say, _Emojidecimal_, we could use whatever 
 | 14        | 🐘             |
 | 15        | 🦊             |
 
-The symbol doesn't matter, as long as we all agree on what the value that it represents. It's too late for us to change Hexadecimal and I doubt Emojidecimal is going to gain any traction. 😦
+The symbol doesn't matter, as long as we all agree on the value that it represents. Do you think Emojidecimal will gain traction? 🤔
 
-Let's convert `2047` to hexadecimal. 
+Let's convert `2047` to hexadecimal. The first step is to get the remainder of our dividend and divisor.
 
 ```
 2048 % 16 = 15
-2048 / 16 = 127
 ```
 
 Our remainder is `15`, but we are no longer using base-10, so we can't add this value to our hexadecimal string. If we use the table we created above, we can see that `15` maps to `F`, so we start building our hexadecimal string with it, giving us:
@@ -112,11 +113,14 @@ Our remainder is `15`, but we are no longer using base-10, so we can't add this 
 F
 ```
 
-Our quotient is `127`, so we get the remainder and divide it by `16`:
-
+The next step is to divide: 
 ```
-128 % 16 = 15
-128 / 16 = 7
+2048 / 16 = 127
+```
+
+Our quotient is `127`, so we repeat the operations above:
+```
+127 % 16 = 15
 ```
 
 Our remainder is again `15`, so we add `F` to our hexadecimal string, giving us:
@@ -124,10 +128,10 @@ Our remainder is again `15`, so we add `F` to our hexadecimal string, giving us:
 FF
 ```
 
-Our quotient is `7`, so we get the remainder and divide it by `16`:
+We then divide `127 / 16`. Our quotient is `7`, so we calculate the remainder and divide `7` by `16`:
 ```
-8 % 16 = 7
-8 / 16 < 0
+7 % 16 = 7
+7 / 16 < 0
 ```
 
 Our remainder is `7`, so we add it to our hexadecimal string, giving us: 
@@ -227,20 +231,20 @@ But what fun is that?
 
 * How do we count using a base greater than 10? 
 
-* @TODO 
+* Why do I need to know this?
 
 
 ### How Do You Build Something Out of Nothing? 
 
-Form patterns! 
+Form patterns! If you want to go deeper, check out my article [Pattern Forming and Problem Solving](https://jarednielsen.com/pattern-forming/).
 
 
 ### How Do We Count Using a Base Greater Than 10? 
 
-@TODO
 Hexadecimal, or base-16, uses the first six characters of the Roman alphabet to represent the values of 10 through 15.  
 
-### @TODO
+### Why Do I Need to Know This? 
 
-@TODO 
+You don't need to be a math whiz to be a good programmer. But there are a handful of mathematical concepts to learn to help you understand how computers work and set yourself up for success in interviews. 
 
+In this tutorial, you learned how to convert a decimal to hexadecimal and any base in-between binary and  using a Stack data structure with examples in JavaScript. 
