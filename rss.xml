@@ -1,4 +1,233 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 15 May 2020 13:38:30 GMT</lastBuildDate><item><title><![CDATA[How to Convert a Decimal to Binary in JavaScript]]></title><description><![CDATA[There are 10 kinds of programmers in the world: those who can convert decimal to binary and those who can’t. In this tutorial, you will…]]></description><link>http://jarednielsen.com/convert-decimal-binary/</link><guid isPermaLink="false">http://jarednielsen.com/convert-decimal-binary/</guid><pubDate>Fri, 15 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 23 May 2020 11:26:47 GMT</lastBuildDate><item><title><![CDATA[How to Convert a Decimal to Hexadecimal in JavaScript]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of mathematical concepts to learn to help you understand…]]></description><link>http://jarednielsen.com/convert-decimal-hexadecimal/</link><guid isPermaLink="false">http://jarednielsen.com/convert-decimal-hexadecimal/</guid><pubDate>Fri, 22 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0d0294bd2e1beecc2688a4efce373a13/a987b/jarednielsen-convert-decimal-hexadecimal.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABCklEQVQoz62SwUrDQBCG87Y+gU/Rh/CkCHoSBRVBrY0gSjzbi6WlNzEhaZKdzM7+zu5a0WJNkQY+ZnZ3+Hey/yTOOWyTZO2hrK7lJ07WC/Z9/RWxJgr6pG4gizpEp1H8uighleblAk4jlRX4fQ779oomr2CNnjMhzwtYZjjNfW+JV6fRE5rDU5ireyVFezlCe3YDGj6C0gx8l2G2f4SHwQ6OB7tID4aYZnsoJhc4Ob/G+DkFvdyGLmOH/gajN1AH13GEbYzWRohgDKM00EjgTrvnOvyupVZr25DHN1yij73Kl6AC8XRxXxE1Tix/GoJgVLLxSMg3p8Pe705HwaVLf9Bj7wZzuPXB/icfEpxcjSrQsskAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen convert decimal hexadecimal&quot;
+        title=&quot;&quot;
+        src=&quot;/static/0d0294bd2e1beecc2688a4efce373a13/b9e4f/jarednielsen-convert-decimal-hexadecimal.png&quot;
+        srcset=&quot;/static/0d0294bd2e1beecc2688a4efce373a13/cf440/jarednielsen-convert-decimal-hexadecimal.png 148w,
+/static/0d0294bd2e1beecc2688a4efce373a13/d2d38/jarednielsen-convert-decimal-hexadecimal.png 295w,
+/static/0d0294bd2e1beecc2688a4efce373a13/b9e4f/jarednielsen-convert-decimal-hexadecimal.png 590w,
+/static/0d0294bd2e1beecc2688a4efce373a13/f9b6a/jarednielsen-convert-decimal-hexadecimal.png 885w,
+/static/0d0294bd2e1beecc2688a4efce373a13/2d849/jarednielsen-convert-decimal-hexadecimal.png 1180w,
+/static/0d0294bd2e1beecc2688a4efce373a13/a987b/jarednielsen-convert-decimal-hexadecimal.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;You don’t need to be a math whiz to be a good programmer, but there are a handful of mathematical concepts to learn to help you understand how computers work and set yourself up for success in interviews. In this tutorial, you will learn how to convert a decimal to any base between binary and hexadecimal using a Stack data structure with examples in JavaScript. &lt;/p&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What’s a stack? &lt;/li&gt;
+&lt;li&gt;What’s a base? &lt;/li&gt;
+&lt;li&gt;How do you convert a decimal to binary?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What’s a Stack?&lt;/h3&gt;
+&lt;p&gt;A stack is a data structure that follows the Last In First Out principle (LIFO). We can only add or remove elements from the top of the stack .&lt;/p&gt;
+&lt;p&gt;If you want to go deeper, check out &lt;a href=&quot;https://jarednielsen.com/data-structure-stack-javascript/&quot;&gt;JavaScript Stack Data Structure&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;What’s a Base?&lt;/h3&gt;
+&lt;p&gt;A base is the number of different digits used to count in a numerical system. We count in base 10 most likely due to us evolving ten fingers. When we count in base 10, we use ten distinct &lt;em&gt;whole&lt;/em&gt; numbers.  &lt;/p&gt;
+&lt;h3&gt;How to Convert a Decimal to Binary&lt;/h3&gt;
+&lt;p&gt;To understand how to convert a decimal to base, it’s useful to first understand how to convert a decimal to binary. Binary is base 2. We have two different digits to count with, &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;1&lt;/code&gt;. (Or &lt;code&gt;true&lt;/code&gt; and &lt;code&gt;false&lt;/code&gt;). &lt;/p&gt;
+&lt;p&gt;To calculate a binary value, we need to divide the decimal by &lt;code&gt;2&lt;/code&gt; until the quotient is zero. We store the remainder of each division operation and use that to create a string representing the base. &lt;/p&gt;
+&lt;p&gt;If you want to go deeper, check out &lt;a href=&quot;https://jarednielsen.com/convert-decimal-binary/&quot;&gt;How to Convert a Decimal to Binary in JavaScript&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Let’s Get Meta 🧠&lt;/h2&gt;
+&lt;p&gt;Ask yourself the following questions and keep them back of mind as you proceed: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How do you build something out of nothing? &lt;/li&gt;
+&lt;li&gt;How do we count using a base greater than 10? &lt;/li&gt;
+&lt;li&gt;Why do I need to know this?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Convert Decimal to Base&lt;/h2&gt;
+&lt;p&gt;If converting a decimal to binary is simply a process of repeatedly dividing the decimal by &lt;code&gt;2&lt;/code&gt; and using the remainder to build a string, how do you think we convert a decimal to &lt;em&gt;any&lt;/em&gt; base? &lt;/p&gt;
+&lt;p&gt;What’s the pattern? &lt;/p&gt;
+&lt;p&gt;We divide the decimal by the base!&lt;/p&gt;
+&lt;p&gt;Let’s convert &lt;code&gt;2048&lt;/code&gt; to base-16, hexadecimal. To do that, though, we need to answer the question posed above: how do we count using a base greater than 10? &lt;/p&gt;
+&lt;p&gt;What is a number? &lt;/p&gt;
+&lt;p&gt;It’s a symbol representing a value. &lt;/p&gt;
+&lt;p&gt;What is &lt;code&gt;1&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;A symbol representing the value &lt;em&gt;one&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;What is ‘one’? &lt;/p&gt;
+&lt;p&gt;A symbol representing the value &lt;code&gt;1&lt;/code&gt;. (And round and round we go…)&lt;/p&gt;
+&lt;p&gt;What is &lt;code&gt;10&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;In the decimal, or base-10, numeral system, it’s a value represented by &lt;em&gt;two&lt;/em&gt; symbols. Because it’s two symbols, we can’t use it in base-16. What’s the solution? More symbols!&lt;/p&gt;
+&lt;p&gt;Hexadecimal, or base-16, uses the first six characters of the Roman alphabet to represent the values of 10 through 15. &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Decimal&lt;/th&gt;
+&lt;th&gt;Hexadecimal&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;D&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;E&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;If we wanted to create our own base, say, &lt;em&gt;Emojidecimal&lt;/em&gt;, we could use whatever symbols we want: &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Decimal&lt;/th&gt;
+&lt;th&gt;Hexadecimal&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;🍎&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;🍌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;🐈&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;🐕&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;🐘&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;🦊&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The symbol doesn’t matter, as long as we all agree on the value that it represents. Do you think Emojidecimal will gain traction? 🤔&lt;/p&gt;
+&lt;p&gt;Let’s convert &lt;code&gt;2047&lt;/code&gt; to hexadecimal. The first step is to get the remainder of our dividend and divisor.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2048 % 16 = 15&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our remainder is &lt;code&gt;15&lt;/code&gt;, but we are no longer using base-10, so we can’t add this value to our hexadecimal string. If we use the table we created above, we can see that &lt;code&gt;15&lt;/code&gt; maps to &lt;code&gt;F&lt;/code&gt;, so we start building our hexadecimal string with it, giving us:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;F&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The next step is to divide: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2048 / 16 = 127&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our quotient is &lt;code&gt;127&lt;/code&gt;, so we repeat the operations above:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;127 % 16 = 15&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our remainder is again &lt;code&gt;15&lt;/code&gt;, so we add &lt;code&gt;F&lt;/code&gt; to our hexadecimal string, giving us:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FF&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We then divide &lt;code&gt;127 / 16&lt;/code&gt;. Our quotient is &lt;code&gt;7&lt;/code&gt;, so we calculate the remainder and divide &lt;code&gt;7&lt;/code&gt; by &lt;code&gt;16&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;7 % 16 = 7
+7 / 16 &amp;lt; 0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our remainder is &lt;code&gt;7&lt;/code&gt;, so we add it to our hexadecimal string, giving us: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;7FF&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;How to Convert Decimal to Hexadecimal and any Base In-Between Using a Stack in JavaScript&lt;/h2&gt;
+&lt;p&gt;Let’s refactor the algorithm we created in &lt;a href=&quot;https://jarednielsen.com/convert-decimal-binary/&quot;&gt;How to Convert a Decimal to Binary in JavaScript&lt;/a&gt; to convert any base between binary and hexadecimal using a stack. If you’re unfamiliar with stacks, you may want to first read &lt;a href=&quot;https://jarednielsen.com/data-structure-stack-javascript/&quot;&gt;JavaScript Stack Data Structure&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To calculate a base, we need to divide the decimal by the desired base until the quotient is zero. We store the remainder of each division operation and use that to create a string representing the base. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBase&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; base&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; stack &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; digits &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0123456789ABCDEF&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; base&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    num &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; base&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;top &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    result &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; digits&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s happening here? &lt;/p&gt;
+&lt;p&gt;We first use our &lt;code&gt;Stack&lt;/code&gt; class to declare a new &lt;code&gt;stack&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We then declare a string, &lt;code&gt;digits&lt;/code&gt;, representing the 16 symbols in our hexadecimal series. &lt;/p&gt;
+&lt;p&gt;We next declare an empty string, &lt;code&gt;result&lt;/code&gt;, which we will use to build our return value. &lt;/p&gt;
+&lt;p&gt;We next declare two &lt;code&gt;while&lt;/code&gt; loops. &lt;/p&gt;
+&lt;p&gt;The first &lt;code&gt;while&lt;/code&gt; loop iterates over the value of our algorithm parameter, &lt;code&gt;num&lt;/code&gt;. In each iteration, we use the modulo operator, &lt;code&gt;%&lt;/code&gt;, to get the remainder of &lt;code&gt;num&lt;/code&gt; divided by &lt;code&gt;base&lt;/code&gt; and &lt;code&gt;push()&lt;/code&gt; it to the &lt;code&gt;stack&lt;/code&gt;. We then reassign the value of &lt;code&gt;num&lt;/code&gt; to the current value of &lt;code&gt;num&lt;/code&gt; divided by &lt;code&gt;base&lt;/code&gt;. But! We use &lt;code&gt;floor()&lt;/code&gt; to round it down. Why? We want to work with whole numbers and we are most interested in our remainder. &lt;/p&gt;
+&lt;p&gt;🔑 When the value of &lt;code&gt;num&lt;/code&gt; is less than zero, we move on to the second &lt;code&gt;while&lt;/code&gt; loop, which iterates over the stack. We use the &lt;code&gt;pop()&lt;/code&gt; method to remove each value from the top of the stack and build our &lt;code&gt;result&lt;/code&gt; string by looking up its associated value in &lt;code&gt;digits&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If we don’t want to use a Stack, we could simply concatenate a string, then reverse it: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBase&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; base&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; digits &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0123456789ABCDEF&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    result &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; digits&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; base&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    num &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; base&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But the &lt;code&gt;split()&lt;/code&gt; converts the string to an array, so we could just start with an array instead and use &lt;code&gt;unshift()&lt;/code&gt; rather than &lt;code&gt;reverse()&lt;/code&gt; (J4F): &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBase&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; base&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; digits &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0123456789ABCDEF&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;unshift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;digits&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; base&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    num &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; base&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or we could just cheat and use the built-in &lt;code&gt;toString()&lt;/code&gt; method and pass it our base as an argument, meaning we want to convert our string to the given parameter. For example:  &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBase&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; base&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But what fun is that? &lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How do you build something out of nothing? &lt;/li&gt;
+&lt;li&gt;How do we count using a base greater than 10? &lt;/li&gt;
+&lt;li&gt;Why do I need to know this?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How Do You Build Something Out of Nothing?&lt;/h3&gt;
+&lt;p&gt;Form patterns! If you want to go deeper, check out my article &lt;a href=&quot;https://jarednielsen.com/pattern-forming/&quot;&gt;Pattern Forming and Problem Solving&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;How Do We Count Using a Base Greater Than 10?&lt;/h3&gt;
+&lt;p&gt;Hexadecimal, or base-16, uses the first six characters of the Roman alphabet to represent the values of 10 through 15.  &lt;/p&gt;
+&lt;h3&gt;Why Do I Need to Know This?&lt;/h3&gt;
+&lt;p&gt;You don’t need to be a math whiz to be a good programmer. But there are a handful of mathematical concepts to learn to help you understand how computers work and set yourself up for success in interviews. &lt;/p&gt;
+&lt;p&gt;In this tutorial, you learned how to convert a decimal to hexadecimal and any base in-between binary and  using a Stack data structure with examples in JavaScript. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Convert a Decimal to Binary in JavaScript]]></title><description><![CDATA[There are 10 kinds of programmers in the world: those who can convert decimal to binary and those who can’t. In this tutorial, you will…]]></description><link>http://jarednielsen.com/convert-decimal-binary/</link><guid isPermaLink="false">http://jarednielsen.com/convert-decimal-binary/</guid><pubDate>Fri, 15 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/496a77b08842bc03adeeeea3a73491b3/a987b/jarednielsen-convert-decimal-binary.png&quot;
@@ -102,8 +331,7 @@
 &lt;li&gt;What does the modulo operator do?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;How to Convert Decimal to Binary&lt;/h2&gt;
-&lt;p&gt;To understand how to convert decimal to base, it’s useful to first understand how to convert decimal to binary. Our challenge is to convert a decimal, such as &lt;code&gt;10&lt;/code&gt;, to its binary counterpart, &lt;code&gt;1010&lt;/code&gt;. &lt;/p&gt;
-&lt;p&gt;If you already know how to do this, skip ahead to &lt;a href=&quot;&quot;&gt;How To Convert a Decimal Binary Using a Stack in JavaScript&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our challenge is to convert a decimal, such as &lt;code&gt;10&lt;/code&gt;, to its binary counterpart, &lt;code&gt;1010&lt;/code&gt;. &lt;/p&gt;
 &lt;p&gt;How do we break this problem down? &lt;/p&gt;
 &lt;p&gt;In base 10, what is &lt;code&gt;1&lt;/code&gt;? &lt;/p&gt;
 &lt;p&gt;It is one of ten possible values, or, &lt;code&gt;1 / 10&lt;/code&gt;. &lt;/p&gt;
@@ -351,11 +579,11 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;100&lt;/td&gt;
+&lt;td&gt;101&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2&gt;How To Convert a Decimal Binary Using a Stack in JavaScript&lt;/h2&gt;
+&lt;h2&gt;How To Convert a Decimal to Binary Using a Stack in JavaScript&lt;/h2&gt;
 &lt;p&gt;Let’s translate this to JavaScript using a Stack. If you’re unfamiliar with stacks, you may want to first read &lt;a href=&quot;https://jarednielsen.com/data-structure-stack-javascript/&quot;&gt;JavaScript Stack Data Structure&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Here’s our algorithm:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBinary&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -415,7 +643,7 @@
   
   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Or we could just cheat and use the built-in &lt;code&gt;toString()&lt;/code&gt; method and pass it &lt;code&gt;2&lt;/code&gt; as an argument, meaning we want to convert our string to binar: &lt;/p&gt;
+&lt;p&gt;Or we could just cheat and use the built-in &lt;code&gt;toString()&lt;/code&gt; method and pass it &lt;code&gt;2&lt;/code&gt; as an argument, meaning we want to convert our string to binary: &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBinary&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;But what fun is that? &lt;/p&gt;
 &lt;h2&gt;Reflection&lt;/h2&gt;
@@ -431,7 +659,7 @@
 &lt;p&gt;See also: divide &amp;#x26; conquer &lt;/p&gt;
 &lt;h3&gt;What Does the Module Operator Do?&lt;/h3&gt;
 &lt;p&gt;The modulo operator, &lt;code&gt;%&lt;/code&gt;, returns the &lt;em&gt;remainder&lt;/em&gt; of division, rather than the quotient. &lt;/p&gt;
-&lt;p&gt;In this tutorial, you learn edhow to convert a decmial to binary using a Stack data structure with examples in JavaScript. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[To Succeed, Build Structure]]></title><description><![CDATA[To succeed in problem solving and programming, you need to learn how to build structure, whether those structures are software or mental…]]></description><link>http://jarednielsen.com/build-structure/</link><guid isPermaLink="false">http://jarednielsen.com/build-structure/</guid><pubDate>Mon, 11 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;In this tutorial, you learned how to convert a decmial to binary using a Stack data structure with examples in JavaScript.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[To Succeed, Build Structure]]></title><description><![CDATA[To succeed in problem solving and programming, you need to learn how to build structure, whether those structures are software or mental…]]></description><link>http://jarednielsen.com/build-structure/</link><guid isPermaLink="false">http://jarednielsen.com/build-structure/</guid><pubDate>Mon, 11 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/44b80782ec4e39468a7fcaa9be7973b3/a987b/jarednielsen-solution-structure.png&quot;
