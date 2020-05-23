@@ -5,7 +5,7 @@ description: 'In this tutorial, you will learn how to convert a decimal to any b
 keywords: ['javascript', 'decimal', 'base', 'convert', 'hexadecimal']
 ---
 
-![](./jarednielsen-@TODO.png)
+![](./jarednielsen-convert-decimal-hexadecimal.png)
 
 
 You don't need to be a math whiz to be a good programmer, but there are a handful of mathematical concepts to learn to help you understand how computers work and set yourself up for success in interviews. In this tutorial, you will learn how to convert a decimal to any base between binary and hexadecimal using a Stack data structure with examples in JavaScript. 
