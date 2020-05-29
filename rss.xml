@@ -1,4 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 23 May 2020 11:26:47 GMT</lastBuildDate><item><title><![CDATA[How to Convert a Decimal to Hexadecimal in JavaScript]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of mathematical concepts to learn to help you understand…]]></description><link>http://jarednielsen.com/convert-decimal-hexadecimal/</link><guid isPermaLink="false">http://jarednielsen.com/convert-decimal-hexadecimal/</guid><pubDate>Fri, 22 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 29 May 2020 11:49:37 GMT</lastBuildDate><item><title><![CDATA[JavaScript Queue Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-queue-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-queue-javascript/</guid><pubDate>Fri, 29 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b767d279d8ad848ab2e01534fa3b7e56/a987b/jarednielsen-javascript-data-structures-queue.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7ElEQVQoz62S646CMBCFef/HWxOT/UFciAEXUW6Cvcz07LTEzSogmuwkJ216+XpmOpFzDnPycbfGXoyl8zdFcyD4uaVf6GPMPvgMSM0FJs5GRyKqOthjDZuf4JQJZ1jpWWj0CGNtYPISepeBihp8GaCTHOojhtp+wWalwCvo9ADuhgl0AnTWjvUSsE/biRNHBO6vYY3bHlS3AuvDfB3oL4krKsVdK6NcMskBahNDf6Yw6bc4PIcsqO5ecUiwRQWzLwTaiDsGDwosdfUpuqsK9WMZQzZLNcTfX34jVj9l0goL7bG0H6016rv6d+AP1spkK3RxoS4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen javascript data structures queue&quot;
+        title=&quot;&quot;
+        src=&quot;/static/b767d279d8ad848ab2e01534fa3b7e56/b9e4f/jarednielsen-javascript-data-structures-queue.png&quot;
+        srcset=&quot;/static/b767d279d8ad848ab2e01534fa3b7e56/cf440/jarednielsen-javascript-data-structures-queue.png 148w,
+/static/b767d279d8ad848ab2e01534fa3b7e56/d2d38/jarednielsen-javascript-data-structures-queue.png 295w,
+/static/b767d279d8ad848ab2e01534fa3b7e56/b9e4f/jarednielsen-javascript-data-structures-queue.png 590w,
+/static/b767d279d8ad848ab2e01534fa3b7e56/f9b6a/jarednielsen-javascript-data-structures-queue.png 885w,
+/static/b767d279d8ad848ab2e01534fa3b7e56/2d849/jarednielsen-javascript-data-structures-queue.png 1180w,
+/static/b767d279d8ad848ab2e01534fa3b7e56/a987b/jarednielsen-javascript-data-structures-queue.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement the queue data structure in JavaScript.&lt;/p&gt;
+&lt;h2&gt;What is a Queue?&lt;/h2&gt;
+&lt;p&gt;A queue is similar to an array with one significant difference: elements are only accessible from one end. This means we can’t randomly access elements. Sounds like a stack, but there’s one significant difference between a queue and a stack: elements are accessed at one end of the queue and added at the other whereas with a stack, elements are added and accessed from the same end, the top. &lt;/p&gt;
+&lt;p&gt;An analogy for a queue is, well, a queue. At a department store, for example, customers form a queue to make their purchases. As customers join the line, they must wait their turn to checkout. &lt;/p&gt;
+&lt;p&gt;Your printer queue is another example. Say you need to print the complete works of H.G. Wells on Project Gutenberg. If you print them alphabetically, then &lt;em&gt;The Invisible Man&lt;/em&gt; will print before &lt;em&gt;The Time Machine&lt;/em&gt;, even though it’s a time machine. &lt;/p&gt;
+&lt;h3&gt;FIFO: First In, First Out&lt;/h3&gt;
+&lt;p&gt;Like people in line to checkout, the dynamic of a queue is also referred to as &lt;strong&gt;First In, First Out&lt;/strong&gt;, or &lt;strong&gt;FIFO&lt;/strong&gt;. This is in contrast to the dynamic of a stack, which is &lt;strong&gt;LIFO&lt;/strong&gt;, or &lt;strong&gt;Last In, First Out&lt;/strong&gt;. &lt;/p&gt;
+&lt;h3&gt;Queue Operations&lt;/h3&gt;
+&lt;p&gt;There are three primary queue operations, the first two are essential:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;enqueue&lt;/li&gt;
+&lt;li&gt;dequeue&lt;/li&gt;
+&lt;li&gt;peek&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first method, &lt;em&gt;enqueue&lt;/em&gt;, adds an element at the end of the queue, like an individual getting in the back of a line. &lt;/p&gt;
+&lt;p&gt;The second method, &lt;em&gt;deqeue&lt;/em&gt;, removes an element from the front of the queue, like an individual getting on a roller coaster. &lt;/p&gt;
+&lt;p&gt;What is &lt;code&gt;peek&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;peek&lt;/code&gt; operation allows us to view the value of the element at the front of the queue.&lt;/p&gt;
+&lt;p&gt;Why do we need a peek operation?&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;dequeue&lt;/code&gt; operation permanently removes an element from the queue. The peek operation lets us peek at the value without removing it.&lt;/p&gt;
+&lt;p&gt;What else?&lt;/p&gt;
+&lt;p&gt;Depending on the implementation, there may be the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;length&lt;/li&gt;
+&lt;li&gt;empty&lt;/li&gt;
+&lt;li&gt;front&lt;/li&gt;
+&lt;li&gt;back&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The length is self explanatory: it returns the length of the queue.&lt;/p&gt;
+&lt;p&gt;The empty method, or isEmpty, returns a boolean value if the queue is or is not empty. &lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;front&lt;/code&gt; and &lt;code&gt;back&lt;/code&gt; methods are specific implementations of &lt;code&gt;peek&lt;/code&gt;, returning the value at the front or back of the queue, respectively. &lt;/p&gt;
+&lt;h2&gt;What Problem(s) Do Queues Solve?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Queues are useful when we want the constraints of FIFO&lt;/li&gt;
+&lt;li&gt;Queues are useful when handling asynchronous data transfers&lt;/li&gt;
+&lt;li&gt;Queues are useful for managing shared resources, such as job scheduling in an operating system or network&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Queue Data Structure in JavaScript&lt;/h2&gt;
+&lt;p&gt;Unless you’ve got a lot of interviews on your calendar, it’s not every day that you’ll consciously implement a stack. But as a JavaScript developer, an understanding of stacks will help you understand how JavaScript itself works.&lt;/p&gt;
+&lt;p&gt;We can simply implement a stack using an Array and its built-in methods:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; queue &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;First In!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; firstOut &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;🤨&lt;/p&gt;
+&lt;p&gt;Not impressed? We can also declare a class:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Queue&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;enqueue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;element&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;dequeue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; q &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Queue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+q&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;enqueue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;First in!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+q&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;enqueue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Last out!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; firstOut &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; q&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;dequeue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//&quot;First in!&quot;&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; peekABoo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; q&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//&quot;Last out!&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you’re not a fan of sugary syntax, we can also implement our stack using prototype:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;Queue&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;token class-name&quot;&gt;Queue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;enqueue&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;element&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;token class-name&quot;&gt;Queue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;dequeue&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;token class-name&quot;&gt;Queue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;peek&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Big O &amp;#x26; Queue Data Structures&lt;/h2&gt;
+&lt;p&gt;What is the order of a queue? &lt;/p&gt;
+&lt;p&gt;Regardless of the size of the queue, the time complexity for the enqueue() and dequeue() methods is constant. We perform one operation when adding or removing an element from the queue. If we need to search the queue or access a buried element, then it’s O(n). The space complexity is straightforward, pun intended: O(n). &lt;/p&gt;
+&lt;h2&gt;Learn JavaScript Queue Data Structure&lt;/h2&gt;
+&lt;p&gt;In this tutorial, you learned the queue data structure in JavaScript.&lt;/p&gt;
+&lt;p&gt;There are several classic and common interview questions using queues, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Implement a queue with two stacks&lt;/li&gt;
+&lt;li&gt;Implement a stack with a queue&lt;/li&gt;
+&lt;li&gt;Generate binary numbers from 1 to n&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the next tutorial, we’ll learn how to implement a priority queue. Stay tuned!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Convert a Decimal to Hexadecimal in JavaScript]]></title><description><![CDATA[You don’t need to be a math whiz to be a good programmer, but there are a handful of mathematical concepts to learn to help you understand…]]></description><link>http://jarednielsen.com/convert-decimal-hexadecimal/</link><guid isPermaLink="false">http://jarednielsen.com/convert-decimal-hexadecimal/</guid><pubDate>Fri, 22 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/0d0294bd2e1beecc2688a4efce373a13/a987b/jarednielsen-convert-decimal-hexadecimal.png&quot;
