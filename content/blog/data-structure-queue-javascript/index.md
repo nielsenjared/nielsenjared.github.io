@@ -75,9 +75,9 @@ The `front` and `back` methods are specific implementations of `peek`, returning
 
 ## Queue Data Structure in JavaScript 
 
-Unless you’ve got a lot of interviews on your calendar, it’s not every day that you’ll consciously implement a stack. But as a JavaScript developer, an understanding of stacks will help you understand how JavaScript itself works.
+Unless you’ve got a lot of interviews on your calendar, it’s not every day that you’ll consciously implement a queue. But as a JavaScript developer, an understanding of queues will help you understand how JavaScript itself works.
 
-We can simply implement a stack using an Array and its built-in methods:
+We can simply implement a queue using an Array and its built-in methods:
 
 ```js
 const queue = [];
@@ -116,7 +116,7 @@ let firstOut = q.dequeue(); //"First in!"
 let peekABoo = q.peek(); //"Last out!"
 ```
 
-If you’re not a fan of sugary syntax, we can also implement our stack using prototype:
+If you’re not a fan of sugary syntax, we can also implement our queue using prototype:
 
 ```js
 const Queue = function() {
