@@ -321,6 +321,7 @@ TypeError: Cannot read property 'next' of null
 
 ```
 
+
 The last method we will write, and perhaps most important for Linked Lists, is `insert`. To implement `insert` in our Linked List, we need to know two things: 
 
 * the value to be inserted
