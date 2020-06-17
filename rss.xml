@@ -1,4 +1,251 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 02 Jun 2020 00:51:52 GMT</lastBuildDate><item><title><![CDATA[JavaScript Queue Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-queue-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-queue-javascript/</guid><pubDate>Fri, 29 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Jun 2020 11:35:04 GMT</lastBuildDate><item><title><![CDATA[JavaScript Linked List Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-linked-list-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-linked-list-javascript/</guid><pubDate>Fri, 19 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement the Linked List data structure in JavaScript.&lt;/p&gt;
+&lt;h2&gt;What is a Linked List?&lt;/h2&gt;
+&lt;p&gt;A linked list is just that: a list that is linked. &lt;/p&gt;
+&lt;p&gt;🙄&lt;/p&gt;
+&lt;p&gt;Okay. A linked list is an ordered series of elements that are not necessarily stored in contiguous memory. &lt;/p&gt;
+&lt;p&gt;☝️&lt;/p&gt;
+&lt;p&gt;Contiguous memory? &lt;/p&gt;
+&lt;p&gt;In a compiled language, such as C++, the length of an array needs to be declared at runtime. When the program is executed, memory is allocated for the length of that array &lt;em&gt;continguously&lt;/em&gt;, or side-by-side, whether or not anything is yet stored in the array. This makes for very fast and efficient access of elements. &lt;/p&gt;
+&lt;p&gt;Elements in a linked list are generally referred to as &lt;em&gt;nodes&lt;/em&gt;, although they are sometimes called elements or items, too. Each node contains a field that stores a value generally referred to as the &lt;em&gt;link&lt;/em&gt; or &lt;em&gt;pointer&lt;/em&gt;, which, you guessed it, &lt;em&gt;links&lt;/em&gt; or &lt;em&gt;points&lt;/em&gt; to the next node in the list. The &lt;em&gt;head&lt;/em&gt; of a linked list is its first node and, depending on the implementation, the &lt;em&gt;tail&lt;/em&gt; is either the last element or the series of elements that follow the head.&lt;/p&gt;
+&lt;p&gt;A common analogy for Linked Lists is a train. The engine is the head and each car is a node. The train cars are &lt;em&gt;linked&lt;/em&gt; together, but can be reordered by changing how the cars are linked.&lt;/p&gt;
+&lt;h3&gt;Linked List Operations&lt;/h3&gt;
+&lt;p&gt;There are numerous approaches to implementing a Linked List in JavaScript. The fundamental operations are: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;adding, or appending, nodes&lt;/li&gt;
+&lt;li&gt;removing nodes&lt;/li&gt;
+&lt;li&gt;inserting nodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Depending on the implementation, the &lt;em&gt;adding&lt;/em&gt; and &lt;em&gt;inserting&lt;/em&gt; operations may be one and the same. For the sake of simplicity, we’ll keep them separate in this tutorial. In other implementatons, you may find the following operations: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;remove head&lt;/li&gt;
+&lt;li&gt;repleace head &lt;/li&gt;
+&lt;li&gt;remove tail&lt;/li&gt;
+&lt;li&gt;insert before&lt;/li&gt;
+&lt;li&gt;insert after &lt;/li&gt;
+&lt;li&gt;find&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What Problem(s) Do Linked Lists Solve?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;In many programming languages (but not JavaScript), arrays are fixed in length, so it’s computationally expensive to add elements that exceed the memory allocation of the array as well as insert or remove elements, which may require reallocation of memory. &lt;/li&gt;
+&lt;li&gt;Arrays in JavaScript are implemented as objects and thus less efficient than arrays in other languages. Unless you need random access to elements, a linked list may be more efficient than a one-dimensional array.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What Problem(s) Do Linked Lists Create?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Linked Lists use more memory than arrays due to their pointers. &lt;/li&gt;
+&lt;li&gt;Linked Lists must be traversed sequentially.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Linked List Data Structure in JavaScript&lt;/h2&gt;
+&lt;p&gt;Let’s implement a Linked List in JavaScript. The first question to answer is: what do we know about Linked Lists? &lt;/p&gt;
+&lt;p&gt;A linked list is a sequential series of nodes. Each node in the list stores at least two fields: the value we want to store in the node and a pointer to the next node. We implement a linked list to solve the problem(s) that arrays create. So we can’t use an array. What &lt;em&gt;can&lt;/em&gt; we use? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;☝️&lt;/p&gt;
+&lt;p&gt;What does that look like?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; node &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; “&lt;span class=&quot;token constant&quot;&gt;I&lt;/span&gt;’m a node&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But one node does not a list make! &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nodeA &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; “&lt;span class=&quot;token constant&quot;&gt;A&lt;/span&gt; is &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; algorithm”
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nodeB &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; “&lt;span class=&quot;token constant&quot;&gt;B&lt;/span&gt; is &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; boolean”
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nodeC &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; “&lt;span class=&quot;token constant&quot;&gt;C&lt;/span&gt; is &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; cookie&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;”
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Still not a &lt;em&gt;list&lt;/em&gt;. How do we &lt;em&gt;link&lt;/em&gt; these? With a property:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nodeA &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;A is for algorithm&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ next&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; nodeB
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nodeB &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;B is for boolean&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ next&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; nodeC
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nodeC &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;C is for cookie!&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ next&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Why &lt;code&gt;null&lt;/code&gt; and not &lt;code&gt;undefined&lt;/code&gt;? Because &lt;code&gt;null&lt;/code&gt; is an empty or non-existant value, whereas &lt;code&gt;undefined&lt;/code&gt; has been declared but not yet assigned a value. &lt;/p&gt;
+&lt;p&gt;The snippet above presents two problems. Can you spot them? &lt;/p&gt;
+&lt;p&gt;First, if we attempt to access the &lt;code&gt;next&lt;/code&gt; value in either &lt;code&gt;nodeA&lt;/code&gt; or &lt;code&gt;nodeB&lt;/code&gt;, we will get an error like the following: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Cannot access &amp;#39;nodeC&amp;#39; before initialization&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To resolve this, we can simply invert the declarations: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nodeC &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;C is for cookie!&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ next&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nodeB &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;B is for boolean&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ next&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; nodeC
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nodeA &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;A is for algorithm&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ next&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; nodeB
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But that’s not the real issue. We created three objects that link to each other, but we still didn’t create a list.&lt;/p&gt;
+&lt;p&gt;What’s the solution? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;☝️&lt;/p&gt;
+&lt;p&gt;Let’s create an object, &lt;code&gt;linkedList&lt;/code&gt;, to contain our nodes. What is the first node in a Linked List? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; linkedList &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ head&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; nodeA
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s next? &lt;/p&gt;
+&lt;p&gt;Exactly. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; linkedList &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ head&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; nodeA&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ next&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; nodeB
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now there’s a list! But what’s the problem with this implementation?&lt;/p&gt;
+&lt;p&gt;It’s not self-contained. We want our objects nested in our Linked List. &lt;/p&gt;
+&lt;p&gt;Let’s replace the variables with their values so we can see the structure. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; linkedList &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ head&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;A is for algorithm&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ next&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;B is for boolean&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+   next&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;C is for cookie!&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+     next&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s the pattern? &lt;/p&gt;
+&lt;p&gt;Nested objects. &lt;/p&gt;
+&lt;p&gt;Our goal now is to write a function, or functions, that return an object like this. How do we get there? &lt;/p&gt;
+&lt;p&gt;Let’s create a helper class to create new nodes. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Node&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s verify that it works. If we declare and log a new Node:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; node &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Node&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Node { element: undefined, next: null }&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Next, let’s declare our &lt;code&gt;LinkedList&lt;/code&gt; class:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;LinkedList&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Again, let’s verify that it works. If we declare and log it:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; linkedList &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// LinkedList { length: 0, head: null }&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now we need a method for adding elements to our Linked List. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; node &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Node&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+     &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; current &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    
+       &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+         current &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      
+       current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we append two elements:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;linkedList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;First&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+linkedList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Second&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The log will return:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;LinkedList {
+  length: 2,
+  head: Node {
+    element: &amp;#39;First&amp;#39;,
+    next: Node { element: &amp;#39;Second&amp;#39;, next: null }
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now let’s implement a &lt;code&gt;remove&lt;/code&gt; method:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;   &lt;span class=&quot;token function&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ 
+   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; current &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+   &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     current &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  
+   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s happening here? &lt;/p&gt;
+&lt;p&gt;First we check our head. If it’s not there, we return null.&lt;/p&gt;
+&lt;p&gt;Then we check if the value stored in the head is the value we want to remove. If so, we reassign the value of the next node to the value of &lt;code&gt;head&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Next, we create a temporary variable, &lt;code&gt;current&lt;/code&gt;, and assign it the value in our &lt;code&gt;head&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;If the value of &lt;code&gt;current&lt;/code&gt; is not equal to &lt;code&gt;null&lt;/code&gt;, we iterate over our list using a &lt;code&gt;while&lt;/code&gt; loop. &lt;/p&gt;
+&lt;p&gt;If the next node is not equal to &lt;code&gt;null&lt;/code&gt; &lt;em&gt;and&lt;/em&gt; the value in the next node is not equal to the value we want to remove, then we reassign the value of &lt;code&gt;current&lt;/code&gt; to the value of the next node. &lt;/p&gt;
+&lt;p&gt;We repeat until our two conditions are not met. So, if the value of &lt;code&gt;current.next&lt;/code&gt; is null &lt;em&gt;or&lt;/em&gt; the value of &lt;code&gt;current.next.value&lt;/code&gt; is the one we want to remove, we exit the &lt;code&gt;while&lt;/code&gt; loop.&lt;/p&gt;
+&lt;p&gt;Lastly, we check if the value of &lt;code&gt;current.next&lt;/code&gt; is not equal to &lt;code&gt;null&lt;/code&gt;. Why? Just in case. If the value we are looking to remove is not in the list, attempting to assign &lt;code&gt;current.next.next&lt;/code&gt; to &lt;code&gt;current.next&lt;/code&gt; will throw an error. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;TypeError: Cannot read property &amp;#39;next&amp;#39; of null&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The last method we will write, and perhaps most important for Linked Lists, is &lt;code&gt;insert&lt;/code&gt;. To implement &lt;code&gt;insert&lt;/code&gt; in our Linked List, we need to know two things: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the value to be inserted&lt;/li&gt;
+&lt;li&gt;the position to insert the value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are countless approaches to implementing a Linked List, some using &lt;code&gt;insertBefore&lt;/code&gt; and &lt;code&gt;insertAfter&lt;/code&gt; and even &lt;code&gt;replaceHead&lt;/code&gt; methods. For the sake of brevity, we’ll implement an all purpose &lt;code&gt;insert&lt;/code&gt; that inserts a value &lt;em&gt;before&lt;/em&gt; an existing node making an assumption that we don’t want to change the head of our Linked List and inserting &lt;em&gt;after&lt;/em&gt; would be redundant with our &lt;code&gt;append&lt;/code&gt; method at the end of the list. &lt;/p&gt;
+&lt;p&gt;What’s our approach? &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;find the insertion position&lt;/li&gt;
+&lt;li&gt;create a new node &lt;em&gt;before&lt;/em&gt; the insert position and assign the &lt;code&gt;next&lt;/code&gt; property to the &lt;em&gt;next&lt;/em&gt; node&lt;/li&gt;
+&lt;li&gt;assign the &lt;code&gt;next&lt;/code&gt; property of the node &lt;em&gt;before&lt;/em&gt; the insertion point to the new node&lt;/li&gt;
+&lt;li&gt;update the length of the list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt; &lt;span class=&quot;token function&quot;&gt;insert&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;pos&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; value&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; current &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;head&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+   &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; pos&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     current &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; pos&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; node &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Node&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     current&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our &lt;code&gt;insert&lt;/code&gt; method accepts two arguments, &lt;code&gt;pos&lt;/code&gt; and &lt;code&gt;value&lt;/code&gt;. We first initialize a temp variable, &lt;code&gt;current&lt;/code&gt;, and assign it the value of our &lt;code&gt;head&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;The structure is similar to our &lt;code&gt;remove&lt;/code&gt; method. &lt;/p&gt;
+&lt;p&gt;We first need to find &lt;code&gt;pos&lt;/code&gt;. We do so with a &lt;code&gt;while&lt;/code&gt; loop. If the value of &lt;code&gt;current.next&lt;/code&gt; is not &lt;code&gt;null&lt;/code&gt; &lt;em&gt;and&lt;/em&gt; the value of &lt;code&gt;current.next.value&lt;/code&gt; is not equal to &lt;code&gt;pos&lt;/code&gt;, then we iterate over our list. With each iteration, we reassign the value of &lt;code&gt;current&lt;/code&gt; to the value of &lt;code&gt;current.next&lt;/code&gt;. We exit the &lt;code&gt;while&lt;/code&gt; loop when one of our conditions return false, meaning we did or did not find &lt;code&gt;pos&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Next we check if there’s a value in &lt;code&gt;current.next&lt;/code&gt; &lt;em&gt;or&lt;/em&gt; if &lt;code&gt;current.next.value&lt;/code&gt; does not equal &lt;code&gt;pos&lt;/code&gt;. This is to catch edge cases so we don’t insert our new node in the wrong position. If neither of those return &lt;code&gt;true&lt;/code&gt;, then we create a new &lt;code&gt;node&lt;/code&gt; and do the ol’ switcheroo by assigning the value of its &lt;code&gt;next&lt;/code&gt; to the value of &lt;code&gt;current.next&lt;/code&gt;. and then assigning the value of &lt;code&gt;current.next&lt;/code&gt; the new &lt;code&gt;node&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Lastly, we increase the length of the list by 1. &lt;/p&gt;
+&lt;h2&gt;Big O &amp;#x26; Linked List Data Structures&lt;/h2&gt;
+&lt;p&gt;What is the order of a Linked List? &lt;/p&gt;
+&lt;p&gt;For access and search, the order of a Linked List is O(n). In our implementation, the order of our insert and remove methods is also O(n) as they both require iteration. But there are (more involved) approaches to Linked Lists where the insert and remove methods are O(1). &lt;/p&gt;
+&lt;h2&gt;Learn JavaScript Linked List Data Structure&lt;/h2&gt;
+&lt;p&gt;In this tutorial, you learned the Linked List data structure in JavaScript. There are several classic and common interview questions using Linked Lists, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reverse a Linked List&lt;/li&gt;
+&lt;li&gt;Detect a loop in a Linked List (i.e: nodes that link to each other)&lt;/li&gt;
+&lt;li&gt;Remove duplicates from a Linked List&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the next tutorial, we’ll learn how to implement a Hash Table. Stay tuned!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JavaScript Queue Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-queue-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-queue-javascript/</guid><pubDate>Fri, 29 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/b767d279d8ad848ab2e01534fa3b7e56/a987b/jarednielsen-javascript-data-structures-queue.png&quot;
