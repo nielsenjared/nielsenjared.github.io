@@ -5,7 +5,6 @@ description: 'Learning data structures will help you understand how software wor
 keywords: ['javascript', 'linked list', 'data structure']
 ---
 
-![](./jarednielsen-javascript-data-structures-linked-list.png)
 
 At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement the Linked List data structure in JavaScript.
 
