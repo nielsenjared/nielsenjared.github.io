@@ -1,8 +1,8 @@
 ---
-title:
-date:
-description: 
-keywords: 
+title: 'JavaScript Tree Data Structure'
+date: '2020-09-18'
+description: 'Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement the tree data structure in JavaScript.'
+keywords: ['javascript', 'tree', 'data structure']
 ---
 
 ![]()
@@ -25,13 +25,11 @@ Knuth recognizes that the recursive definition is not _entirely_ helpful and pro
 
 > ... every node of a tree is the root of some subtree contained in the whole tree. The number of subtrees of a node is called the _degree_ of that node. A node of degree zero is called a _terminal node_, or sometimes a _leaf_. A nonterminal node is often called a _branch node_.
 
-The top node of a tree is called the root. The top? Yes, computer scientists draw their trees upside down. Knuth initially proposed trees be drawn as they are found in nature, but discovered that, as is true of most academics, his colleagues were set in their ways. He theorizes that the convention to draw trees upside down is due to the way we write, starting at the top of the page. I also think it’s due to gravity and ergonomics: it’s easier to draw a downstroke than an upstroke. I digress. Back to data structures.
+The top node of a tree is called the root. The top? Yes, computer scientists draw their trees upside down. Knuth initially proposed trees be drawn as they are found in nature, but discovered that, as is true of most academics, his colleagues were set in their ways. He theorizes that the convention to draw trees upside down is due to the way we write, starting at the top of the page. I also think it’s due to gravity and ergonomics: it’s easier to draw a downstroke than an upstroke. I digress...
 
-Like a tree, the relationship between nodes is _familial_: if a node is connected to a node above it, that node is its parent and it is the child. Any node can be a parent, but if a node does not connect to any children, then it is considered a _terminal_, or _leaf_ node. Why? Because at the end of a branch is a leaf. 
+Like a tree, the relationship between nodes is _familial_: if a node is connected to a node above it, that node is its parent and it is the child. Any node can be a parent, but if a node does not connect to any children, then it is considered a _terminal_, or _leaf_, node. Why? Because at the end of a branch is a leaf. What are siblings? Child nodes that share a parent. 
 
-What are siblings? Child nodes that share a parent. 
-
-The connection between nodes is an edge and the sequence of edges that connects two nodes is a _path_. 
+The connection between nodes is an _edge_ and the sequence of edges that connects two nodes is a _path_. 
 
 You use trees everyday: the file system on your computer is a tree. Folders nested in folders. That’s why it’s called the ‘root’ directory. 
 
@@ -47,12 +45,9 @@ According to Knuth, a forest is:
 
 A binary tree is a type of tree where parent nodes are restricted to no more than two child nodes. Knuth defines binary trees as:
 
-> a finite set of nodes that either is empty, or consists of a root and the elements of two disjoin binary trees called the left and right subtrees of the root. 
+> a finite set of nodes that either is empty, or consists of a root and the elements of two disjoint binary trees called the left and right subtrees of the root. 
 
-@TODO 
-Binary trees are logarithmic. 
-At level 0 we have log2(0) = 1 Node. At level 1 we have log2(1)
-= 2 and finally log2(2) = 4 nodes.
+:memo: Binary trees are logarithmic. 
 
 
 ## What Problem(s) Do Trees Solve? 
@@ -68,7 +63,7 @@ Let’s implement a Binary Search Tree (BST) in JavaScript. What do we know abou
 
 How about _left_ and _right_? 
 
-These are the agreed upon terms in the industry. Following the convention of a left-to-right writing system (LTR), we want to store lower values in left nodes and higher values in right nodes. In other words, for each_parent_ node:
+These are the agreed upon terms in the industry. Following the convention of a left-to-right writing system (LTR), we want to store lower values in left nodes and higher values in right nodes. In other words, for each _parent_ node:
 
 * the left child must be of equal or lesser value
 
@@ -239,19 +234,7 @@ According to the rules outlined above,
 
 * the right child must be of equal or greater value to the parent
 
-Let’s translate that into pseudocode: 
-
-@TODO 
-```js
-   // check the value of root.data
-   // if data is less than root.data
-   // assign data to root.left
-   // else assign data to root.right
-
-```
-
-
-
+Let’s translate that into JavaScript:
 
 ```js
    if (data <= this.root.data) {
@@ -272,6 +255,7 @@ tree.insert(0);
  
 ```
 
+The above method invocations return the following:
 ```sh
 Tree {
   root: Node {
@@ -282,7 +266,7 @@ Tree {
 }
 ```
 
-But, there’s an issue:
+But, there’s an issue. What happens when we make multiple non-sequential calls?
 ```js
 const tree = new Tree();
 tree.insert(64);
@@ -292,8 +276,7 @@ tree.insert(32);
 tree.insert(256);
 ```
 
-@TODO Explain
-
+What happened to `127` and `0`? 
 ```sh
 Tree {
   root: Node {
@@ -308,54 +291,45 @@ We need some checks and balances, or, conditions…
 
 If the `left` and `right` nodes are not `null`, we need to store our data deeper in the tree.
 
-There are two approaches we can take: 1) iterative; 2) recursive. We'll use iterative as it is easier to see the magic.
+There are two approaches we can take: 1) iterative; 2) recursive. We'll use iterative as it is easier to see what is happening.
 
-If we need to store our value deeper in our tree, we can no longer use @TODO
+Let's use a `while` loop for our iteration. Why? Because we want the loop to run _until_ we find a terminal node that is `null` and then we will assign it a value. Our final `insert()` method looks like the following: 
 
-Let’s pseudocode a strategy: 
-@TODO
-```js
-// declare a current variable so know where we are in the tree
-// declare a parent variable to reference the node above
-// while some condition
-// if current node left is null and data is less than parent.data
-// assign the new node to current node left
-// else if current node right is null and data is greater than parent.data
-// assign the new node to current node right 
-
-// BUT if current node is not null and data is less than parent
-
-```
 
 ```js
-   let current = this.root;
-   let parent;
- 
-   while(current) {
-     parent = current;
-     if (data <= current.data) {
-       current = current.left;
-       if (current === null) {
-         parent.left = node;
-       }
-     } else {
-       current = current.right;
-       if (current === null) {
-         parent.right = node;
-       }
-     }
-   }
+insert(data) {
+    const node = new Node(data, null, null);
+
+    if (this.root === null) {
+      this.root = node;
+      return;
+    } 
+
+    let current = this.root;
+    let parent;
+
+    while(current) {
+      parent = current;
+      if (data <= current.data) {
+        current = current.left;
+        if (current === null) {
+          parent.left = node;
+        }
+      } else {
+        current = current.right;
+        if (current === null) {
+          parent.right = node;
+        }
+      }
+    }
+  }
 ```
-
-@TODO implement recursive https://en.wikipedia.org/wiki/Binary_search_tree#Insertion
-
-
-
-
-There are three standard functions 
 
 ## Big O & Tree Data Structures
 
+The access, search, insertion, and deletion methods of a binary search tree are all O(n) due to the use of iteration. Average case, though, is O(log n) because we are continually dividing our operations as we execute a method. 
 
 
 ## Learn JavaScript Data Structure
+
+In this tutorial you learned how to implement a tree data structure with an `insert()` method in JavaScript. We're not done, though. In the next tutorial we'll implement our other methods. 
