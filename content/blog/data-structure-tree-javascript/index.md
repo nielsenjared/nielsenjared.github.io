@@ -13,6 +13,7 @@ At some point in your career (today?!) you will want to learn data structures. I
 ## What is a Tree?
 
 > I think that I shall never see
+
 > A structure lovely as a tree.
 
 In [The Art of Computer Programming](https://amzn.to/2RD7cmN), Donald Knuth provides a recursive definition of trees:
@@ -25,7 +26,7 @@ Knuth recognizes that the recursive definition is not _entirely_ helpful and pro
 
 > ... every node of a tree is the root of some subtree contained in the whole tree. The number of subtrees of a node is called the _degree_ of that node. A node of degree zero is called a _terminal node_, or sometimes a _leaf_. A nonterminal node is often called a _branch node_.
 
-The top node of a tree is called the root. The top? Yes, computer scientists draw their trees upside down. Knuth initially proposed trees be drawn as they are found in nature, but discovered that, as is true of most academics, his colleagues were set in their ways. He theorizes that the convention to draw trees upside down is due to the way we write, starting at the top of the page. I also think it’s due to gravity and ergonomics: it’s easier to draw a downstroke than an upstroke. I digress...
+The top node of a tree is called the _root_. The top? Yes, computer scientists draw their trees upside down. Knuth initially proposed trees be drawn as they are found in nature, but discovered that, as is true of most academics, his colleagues were set in their ways. He theorizes that the convention to draw trees upside down is due to the way we write, starting at the top of the page. I also think it’s due to gravity and ergonomics: it’s easier to draw a downstroke than an upstroke. I digress...
 
 Like a tree, the relationship between nodes is _familial_: if a node is connected to a node above it, that node is its parent and it is the child. Any node can be a parent, but if a node does not connect to any children, then it is considered a _terminal_, or _leaf_, node. Why? Because at the end of a branch is a leaf. What are siblings? Child nodes that share a parent. 
 
@@ -47,7 +48,7 @@ A binary tree is a type of tree where parent nodes are restricted to no more tha
 
 > a finite set of nodes that either is empty, or consists of a root and the elements of two disjoint binary trees called the left and right subtrees of the root. 
 
-:memo: Binary trees are logarithmic. 
+📝 Binary trees are logarithmic. 
 
 
 ## What Problem(s) Do Trees Solve? 
@@ -59,7 +60,7 @@ A binary tree is a type of tree where parent nodes are restricted to no more tha
 
 Let’s implement a Binary Search Tree (BST) in JavaScript. What do we know about binary trees? Each node, or parent, is limited to two child nodes. We need nomenclature to distinguish between these two nodes. 
 
-:thinking-face: 
+🤔 
 
 How about _left_ and _right_? 
 
@@ -141,7 +142,7 @@ const bst = {
 
 This is our goal. How do we get there? 
 
-:thinking-face:
+🤔
 
 What's the pattern? 
 
