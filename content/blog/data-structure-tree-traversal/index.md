@@ -68,6 +68,8 @@ tree.insert(256);
 
 ## Traversal
 
+@TODO https://en.wikipedia.org/wiki/Tree_traversal#Depth-first_search_of_binary_tree
+
 There are three standard functions for traversing a tree: 
 
 * inorder
@@ -102,13 +104,13 @@ You will see a lot of examples of inorder traversal that simply log the values f
 traverseInOrder(node) {
     if (node !== null) {
         this.traverseInOrder(node.left);
-        memo.push(node.data);
+        console.log(node.data);
         this.traverseInOrder(node.right);
     }
 }
 ```
 
-This is a great proof of concept. The method works! But you can't do anything with the returned values. Why? We need our method to return them. But, what happens if we plug a return value in between our recursive calls to `this.traverseInOrder()`? 
+This is a great proof of concept. The method works! But you can't do anything with a logged value except observe it. We need our method to return the values stored in our tree. But, what happens if we plug a return value in between our recursive calls to `this.traverseInOrder()`? 
 
 Yep. Our method will exit before we traverse the right nodes. 
 
@@ -131,6 +133,12 @@ traverseInOrder(node, memo = []) {
 }
 ```
 
+## Traversing PreOrder
+
+
+
+
+## Traversing PostOrder
 
 
 
