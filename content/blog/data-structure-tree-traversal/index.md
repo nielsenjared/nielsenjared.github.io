@@ -120,6 +120,8 @@ The solution is dynamic!
 
 @TODO Soemthing about an array so we can pass it down through each recursive call and catch the value in that node
 
+@TODO URL TO DP POST
+
 Finally, we return `memo`. 
 
 ```js
@@ -135,10 +137,28 @@ traverseInOrder(node, memo = []) {
 
 ## Traversing PreOrder
 
+```js
+  traversePreOrder(node, memo = []) {
+        if (node !== null) {
+            memo.push(node.data);
+            this.traverseInOrder(node.left, memo);
+            this.traverseInOrder(node.right, memo);
+        }
+        return memo;
+    }
+
 
 
 
 ## Traversing PostOrder
 
+    traversePostOrder(node, memo = []) {
+        if (node !== null) {
+            this.traverseInOrder(node.left, memo);
+            this.traverseInOrder(node.right, memo);
+            memo.push(node.data);
+        }
+        return memo;
+    }
 
 

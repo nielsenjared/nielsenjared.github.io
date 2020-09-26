@@ -5,7 +5,7 @@ description: 'Learning data structures will help you understand how software wor
 keywords: ['javascript', 'tree', 'data structure']
 ---
 
-![]()
+![](./jarednielsen-data-structure-tree.png)
 
 At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement the tree data structure in JavaScript. 
 
