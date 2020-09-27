@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Sep 2020 12:54:00 GMT</lastBuildDate><item><title><![CDATA[JavaScript Tree Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-tree-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-tree-javascript/</guid><pubDate>Fri, 18 Sep 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 27 Sep 2020 08:54:19 GMT</lastBuildDate><item><title><![CDATA[JavaScript Tree Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-tree-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-tree-javascript/</guid><pubDate>Fri, 18 Sep 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bd0e8b4985a301b2f193ab1bc044b4b2/a987b/jarednielsen-data-structure-tree.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA9hAAAPYQGoP6dpAAABn0lEQVQoz3WSTU8aURSG/Z26dOHCvdFN3ZrYxK5MXJloUxfVIHZQ/KqkGCmKorQoIqDFdKIoCkIBmbnncWb4qCPjm5w5N7nnPPc9904fbyQiTthS7axXHklcZiFfRR7riKHcte06W31ewG6xvagK+6enfE1GKadvIFVEyo3W3qvDPYGvYU42FeeJNOHwPoR09pZDLPkD8OMaijVPaBfY9uMaYevXATlfjMy3Q9Lzu8wu+4l++U5kMwq5J6ejVe/hsHMfDlgJyfotyeMzfvrDFmQH/5zG5lyQnc/rpLVD8qV7TKTrsOPSc+Q78x8b9yn+XuoEgtscTa5w8nGN1NQGe/NbSL5M1NApmXVXX49DW4VmhYvnIrqqEtezZAJH7E74qIysE/8UxIhcU8OgoKyvYWAq5ervAT6ZDUrNGg1roLucTmxSI/7BB0NBmtMxlGFaOOWAREnPQ3qO3FFxJsLv4QVORhbJjFuve/bQun8lvNfX49A51c6JAgyuwoCG9K/wRzv+vy/ueNeh87u0gWxfIWMhZNSK8TBky253b6bp6AUW7UEF7iXVvwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen data structure tree&quot;
+        title=&quot;&quot;
+        src=&quot;/static/bd0e8b4985a301b2f193ab1bc044b4b2/b9e4f/jarednielsen-data-structure-tree.png&quot;
+        srcset=&quot;/static/bd0e8b4985a301b2f193ab1bc044b4b2/cf440/jarednielsen-data-structure-tree.png 148w,
+/static/bd0e8b4985a301b2f193ab1bc044b4b2/d2d38/jarednielsen-data-structure-tree.png 295w,
+/static/bd0e8b4985a301b2f193ab1bc044b4b2/b9e4f/jarednielsen-data-structure-tree.png 590w,
+/static/bd0e8b4985a301b2f193ab1bc044b4b2/f9b6a/jarednielsen-data-structure-tree.png 885w,
+/static/bd0e8b4985a301b2f193ab1bc044b4b2/2d849/jarednielsen-data-structure-tree.png 1180w,
+/static/bd0e8b4985a301b2f193ab1bc044b4b2/a987b/jarednielsen-data-structure-tree.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement the tree data structure in JavaScript. &lt;/p&gt;
 &lt;h2&gt;What is a Tree?&lt;/h2&gt;
 &lt;blockquote&gt;
