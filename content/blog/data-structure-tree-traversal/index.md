@@ -7,10 +7,13 @@ keywords: ['javascript', 'tree', 'data structure', 'traversal']
 
 ![]()
 
-At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement the tree data structure in JavaScript. 
+At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement a tree traversal in JavaScript. 
+
+## What Problem(s) Do Trees Solve? 
 
 
-## Tree
+
+## What is a Tree?
 
 @TODO recap
 
@@ -66,7 +69,7 @@ tree.insert(256);
 ```
 
 
-## Traversal
+## What is Tree Traversal?
 
 @TODO https://en.wikipedia.org/wiki/Tree_traversal#Depth-first_search_of_binary_tree
 
@@ -78,26 +81,14 @@ There are three standard functions for traversing a tree:
 
 * postorder
 
-### Inorder 
+Each of these is considered _depth-first search_, or DFS, because we traverse a branch to its furthest depth before moving on to the next branch. This is in contrast to _bread-first search_, or BFS, which, you guessed it, traverses all of the nodes on a level before going deeper into the tree. 
 
-@TODO returns the values of nodes in ascending order
-
-
-### Preorder
-
-@TODO returns the values of nodes beginning with the root and proceeding down the left branch of each subtree, then the followed by the right branch of each subtree
+Let's start in order with inorder.
 
 
-### Postorder
+## Traversing a Tree In-Order
 
-@TODO Is the inverse of preorder. Returns the values of nodes beginning with the child nodes of the left subtree, then the right branch of each subtree, ending with the root. 
-
-
-Let's start with inorder
-
-## Traversing InOrder
-
-@TODO 
+Recall that one of the defining features of a BTS is the storage of nodes with lower values to the left and higher values to the right. An in-order traversal returns the values of nodes in ascending order.
 
 You will see a lot of examples of inorder traversal that simply log the values from within, like this: 
 ```js
@@ -116,13 +107,11 @@ Yep. Our method will exit before we traverse the right nodes.
 
 How do we solve this problem? 
 
-The solution is dynamic!
+The solution is dynamic! We need to store, or _cache_, the return value of each call to `this.traverseInOrder()`. 
 
-@TODO Soemthing about an array so we can pass it down through each recursive call and catch the value in that node
+How do we do that? 
 
-@TODO URL TO DP POST
-
-Finally, we return `memo`. 
+We can pass an array up and down the call stack and `push` the `node.data` at each call into it.
 
 ```js
 traverseInOrder(node, memo = []) {
@@ -135,7 +124,12 @@ traverseInOrder(node, memo = []) {
 }
 ```
 
-## Traversing PreOrder
+This is an example of memoization. If you want to learn more, check out my article [What is Dynamic Programming? Memoization and Tabulation](https://jarednielsen.com/dynamic-programming-memoization-tabulation/).
+
+
+## Traversing Pre-Order
+
+@TODO returns the values of nodes beginning with the root and proceeding down the left branch of each subtree, then followed by the right branch of each subtree. 
 
 ```js
   traversePreOrder(node, memo = []) {
@@ -146,10 +140,15 @@ traverseInOrder(node, memo = []) {
         }
         return memo;
     }
+```
 
 
+## Traversing Post-Order
+
+@TODO Is the inverse of preorder. Returns the values of nodes beginning with the child nodes of the left subtree, then the right branch of each subtree, ending with the root. 
 
 
+```js
 ## Traversing PostOrder
 
     traversePostOrder(node, memo = []) {
@@ -160,5 +159,5 @@ traverseInOrder(node, memo = []) {
         }
         return memo;
     }
-
+```
 
