@@ -331,6 +331,6 @@ insert(data) {
 The access, search, insertion, and deletion methods of a binary search tree are all O(n) due to the use of iteration. Average case, though, is O(log n) because we are continually dividing our operations as we execute a method. 
 
 
-## Learn JavaScript Data Structure
+## Learn JavaScript Tree Data Structure
 
 In this tutorial you learned how to implement a tree data structure with an `insert()` method in JavaScript. We're not done, though. In the next tutorial we'll implement our other methods. 
