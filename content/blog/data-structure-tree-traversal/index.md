@@ -1,11 +1,11 @@
 ---
 title: 'JavaScript Tree Data Structure Traversal'
-date: '2020-09-25'
+date: '2020-10-02'
 description: 'Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement traversal of a tree data structure in JavaScript.'
 keywords: ['javascript', 'tree', 'data structure', 'traversal']
 ---
 
-![]()
+![](./jarednielsen-data-structure-tree.png)
 
 At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement traversal of a tree data structure in JavaScript. 
 
@@ -21,17 +21,23 @@ At some point in your career (today?!) you will want to learn data structures. I
 
 ### What is a Tree?
 
-@TODO
+The tree is a data structure composed of _nodes_ connected by _edges_. In [The Art of Computer Programming](https://amzn.to/2RD7cmN), Donald Knuth provides a recursive definition of trees:
+
+1. there is one specially designated node called the _root_ of the tree, `root(T)`; and…
+
+2. the remaining nodes (excluding the root) are partitioned into `m >= 0` disjoint sets `T1… ™`, and each of these sets in turn is a tree. 
 
 
 ### What is a forest? 
 
-@TODO
+A forest is a set of trees or the nodes of a tree excluding the root.
 
 
 ### What is a Binary Tree?
 
-@TODO
+A binary tree is a type of tree where parent nodes are restricted to no more than two child nodes. Knuth defines binary trees as:
+
+> a finite set of nodes that either is empty, or consists of a root and the elements of two disjoint binary trees called the left and right subtrees of the root. 
 
 
 ## What Problem(s) Do Trees Solve? 
@@ -41,7 +47,7 @@ At some point in your career (today?!) you will want to learn data structures. I
 
 ## Implementation of a Binary Search Tree Data Structure in JavaScript 
 
-@TODO recap
+Below is our implementation of a binary search tree in JavaScript. If you are just joining us, you may want to start with the previous article [JavaScript Tree Data Structure](https://jarednielsen.com/data-structure-tree-javascript/).
 
 ```js
 class Node {
@@ -389,7 +395,6 @@ class Tree {
 
 ## Big O & Tree Data Structures
 
-@TODO
 The access, search, insertion, and deletion methods of a binary search tree are all O(n) due to the use of iteration. Average case, though, is O(log n) because we are continually dividing our operations as we execute a method. 
 
 
