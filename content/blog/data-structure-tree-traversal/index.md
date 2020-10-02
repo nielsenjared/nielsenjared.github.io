@@ -1,5 +1,5 @@
 ---
-title: 'JavaScript Tree Data Structure Traversal'
+title: 'Data Structures in JavaScript: Tree Traversal'
 date: '2020-10-02'
 description: 'Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement traversal of a tree data structure in JavaScript.'
 keywords: ['javascript', 'tree', 'data structure', 'traversal']
