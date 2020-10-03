@@ -1,13 +1,14 @@
 ---
-title: 'Expertise'
+title: 'Practice Makes Practice'
 date: '2020-10-05'
-description: ''
-keywords: []
+description: 'The path to success in any field is to develop expertise. The first, and most important, step on that path is deciding that it’s possible. The second step is to make it a practice.'
+keywords: ['expertise', practice']
 ---
 
-![]()
+![](./jarednielsen-solution-expertise-practice.png)
 
-@TODO INTRODUCTION
+The path to success in any field is to develop expertise. The first, and most important, step on that path is deciding that it’s possible. The second step is to make it a practice. 
+
 
 ---
 
@@ -15,15 +16,10 @@ This article originally published in my newsletter, [The Solution](https://mailc
 
 ---
 
-Do you want to be an expert? 
 
-The path to success in any field is to develop expertise. 
+## How Do You Gain Expertise? 
 
-The first, and most important, step on that path is deciding that it’s possible.
-
-To grow, we need to assume a growth mindset. 
-
-In [Mindset](https://amzn.to/2E4SL5E), Carol Dweck outlines two different learner mindsets:
+To gain expertise, we need to first assume a _growth mindset_. In [Mindset](https://amzn.to/2E4SL5E), Carol Dweck outlines two different learner mindsets:
 
 * fixed
 
@@ -45,20 +41,37 @@ Lucky for us, our brains are plastic. Even if our mindset is fixed, we can recod
 
 In [A Mind for Numbers](https://amzn.to/2UWpClG), Barbara Oakley writes:
 
-It seems people can enhance the development of their neuronal circuits by practicing thoughts that use those neurons. We’re still in the infancy of understanding neural development, but one thing is becoming clear--we can make significant changes in our brain by changing how we think.
- 
-## How Do You Become an Expert?
+> It seems people can enhance the development of their neuronal circuits by practicing thoughts that use those neurons. We’re still in the infancy of understanding neural development, but one thing is becoming clear--we can make significant changes in our brain by changing how we think.
+
 How do we gain expertise? 
 
-Deliberate practice. 
+
+## Practice Makes Practice
+
+We gain expertise through deliberate practice. 
 
 The authors of [Make It Stick](https://amzn.to/2QTzklN) explain that deliberate practice is “goal directed, often solitary, and consists of repeated striving to reach beyond your current level of performance.” They continue:
 
 > Whatever the field, expert performance is thought to be garnered through the slow acquisition of a larger number of increasingly complex patterns, patterns that are used to store knowledge about which actions to take in a vast vocabulary of different situations. 
 
 These patterns are mental models. Building mental models requires effortful learning, but that effort builds new connections and capabilities. It changes the brain and makes us expert.
- 
+
+In [Atomic Habits](https://amzn.to/2NZz8jx), James Clear makes a compelling argument for deliberate practice: 
+
+“...if you can get 1 percent better each day for one year, you’ll end up thirty-seven times better by the time you’re done. Conversely, if you get 1 percent worse each day for one year, you’ll decline nearly down to zero.”
+
+Clear did the math for us:
+
+|   1% + / -                        | Result        |
+| ---                               | ---           |
+| 1% worse every day for one year | 0.99365 = 00.03 |
+| 1% better every day for one year | 1.01365 = 37.78 |
+
+It's clear (sorry) that we need to continually practice to not only improve, but maintain a baseline of expertise. 
+
+
 ## Play To Your Strengths
+
 What if we aren’t born with “a mind for numbers”? 
 
 The authors of [Make It Stick](https://amzn.to/2QTzklN) write:
@@ -82,8 +95,7 @@ The answers to these questions will lead you to your area of specialization.
 According to Clear:
 
 > Once we realize our strengths, we know where to spend our time and energy. We know which types of opportunities to look for and which types of challenges to avoid. The better we understand our nature, the better our strategy can be.
- 
-## Practice Makes Practice
+
 Deliberate practice and specialization make sense if you’re an athlete or a musician. But what about programmers? Technology changes too rapidly! 
 
 That’s a good thing. Especially if you have a growth mindset. It means there’s always an opportunity to “reinvent” yourself. If you are pragmatic, you’re already on it. David Thomas and Andy Hunt outline several guidelines for acquiring "intellectual capital" in [The Pragmatic Programmer](https://amzn.to/30BVrAW): 
@@ -104,7 +116,7 @@ That’s a good thing. Especially if you have a growth mindset. It means there�
 
 Hunt and Thomas additionally counsel us to “think _critically_ about what [we] read and hear”. There’s a lot of hype and vested interests in technology and it’s important to focus our efforts on the _right_ things. 
 
-We can do that by building what? A mental model. Hunt and Thomas provide a few questions we can ask ourselves to improve our critical thinking ability: 
+We can do that by building _mental models_. Hunt and Thomas provide a few questions we can ask ourselves to improve our critical thinking ability: 
 
 * Ask the “Five Whys”
 
@@ -118,6 +130,7 @@ We can do that by building what? A mental model. Hunt and Thomas provide a few q
 
  
 ## Let’s Get Meta
+
 Do you want to be an expert? 
 
 The authors of [Make It Stick](https://amzn.to/2QTzklN) offer advice on achieving that goal:
@@ -132,4 +145,7 @@ In [Conceptual Blockbusting](https://amzn.to/2Io9QrZ), James L. Adams writes:
 
 > For all our education and training as thinkers, we acquire knowledge, perhaps skill, and maybe appreciation, but we could go much further if we just spent more time thinking about the process of thinking. 
 
-@TODO CONCLUSION
+
+## How Do You Gain Expertise? Practice Makes Practice
+
+Expertise is a journey, not a destination. In order to stay on the path, we need to first decide that it's possible with a growth mindset and then commit to deliberate practice. 
