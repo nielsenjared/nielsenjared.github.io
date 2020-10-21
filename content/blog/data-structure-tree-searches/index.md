@@ -170,8 +170,96 @@ Implementing a search for the maximum value in a BST is simply a matter of modif
 
 ### Binary Search Tree Specific Value
 
+Pattern recognition is an important skill to develop as a programmer. 
+
+_If_ we're searching for a speciic value, what do we need to do? We need to check all of the values (until we find our node, of course). What control statement allows us to repeat a process _until_ a condition is met? 
+
+`while`
+
+@TODO
+
+```js
+    searchSpecific(data) {
+        let current = this.root;
+
+        while(current.data !== data) {
+            if (data < current.data) {
+                current = current.left;
+            }
+            else {
+                current = current.right;
+            }
+            if (current === null) { 
+                return null;
+            }
+        }
+        return current;
+    }
+```
+
+What's happening in `searchSpecific`? 
+
+We declare a temporary variable, `current` and assign it our starting point, `this.root`. 
+
+```js
+        let current = this.root;
+```
+
+We then enter our `while` loop. _While_ `current.data` is not equal to `data`, the argument we passed to `searchSpecific`, we will continue to traverse our tree until we find the specific value. Once we find the node containing our data, we'll return it. So our function looks something like this: 
 
 
+```js
+    searchSpecific(data) {
+        let current = this.root;
+
+        while(current.data !== data) {
+            //find that data!
+        }
+        return current;
+    }
+```
+
+Here's where that pattern recognition comes in to play. How do we implement the functionality of both `searchMax()` and `searchMin()`? 
+
+_If_ `data` is less than `current.data`, then we need to continue traversing the nodes on the left. Otherwise, we traverse the nodes on the right.  What does that look like? 
+
+```js
+            if (data < current.data) {
+                current = current.left;
+            }
+            else {
+                current = current.right;
+            }
+```
+
+The last bit is, well, the last bit. We need to exit our `while` loop in the event that we don't find a node containing the data we are looking for. 
+
+```js
+            if (current === null) { 
+                return null;
+            }
+```
+
+Here's the full function again: 
+
+```js
+    searchSpecific(data) {
+        let current = this.root;
+
+        while(current.data !== data) {
+            if (data < current.data) {
+                current = current.left;
+            }
+            else {
+                current = current.right;
+            }
+            if (current === null) { 
+                return null;
+            }
+        }
+        return current;
+    }
+```
 
 ## Big O & Tree Data Structures
 
@@ -180,4 +268,4 @@ The access, search, insertion, and deletion methods of a binary search tree are 
 
 ## Learn JavaScript Tree Data Structure
 
-In this tutorial you learned how to implement in-order, pre-order, and post-order traversal of a tree data structure in JavaScript. We're not done, though. In the next tutorial we'll implement our other methods. 
+In this tutorial you learned how to implement minimum, maximum and specific values searches of a tree data structure in JavaScript. We're not done, though. In the next tutorial we'll implement node removal. 
