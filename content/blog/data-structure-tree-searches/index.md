@@ -1,20 +1,20 @@
 ---
-title: 'Data Structures in JavaScript: Tree Traversal'
-date: '2020-10-02'
-description: 'Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement traversal of a tree data structure in JavaScript.'
-keywords: ['javascript', 'tree', 'data structure', 'traversal']
+title: 'Data Structures in JavaScript: Tree Search'
+date: '2020-10-16'
+description: 'Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement search of a tree data structure in JavaScript.'
+keywords: ['javascript', 'tree', 'data structure', 'search']
 ---
 
 ![](./jarednielsen-data-structure-tree.png)
 
-At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement traversal of a tree data structure in JavaScript. 
+At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement minimum, maximum, and specific value searches of a tree data structure in JavaScript. 
 
 
 ## Retrieval Practice
 
 * What is a tree? 
 
-* @TODO 
+* What is tree traversal?
 
 * What are the three types of traversal?
 
@@ -84,17 +84,17 @@ class Tree {
 
         while(current) {
         parent = current;
-        if (data <= current.data) {
-            current = current.left;
-            if (current === null) {
-            parent.left = node;
+            if (data <= current.data) {
+                current = current.left;
+                if (current === null) {
+                parent.left = node;
+                }
+            } else {
+                current = current.right;
+                if (current === null) {
+                parent.right = node;
+                }
             }
-        } else {
-            current = current.right;
-            if (current === null) {
-            parent.right = node;
-            }
-        }
         }
     }
 }
@@ -119,11 +119,9 @@ Tree {
 }
 ```
 
-@TODO 
-## Binary Search Tree
+## Tree Search 
 
-
-@TODO three types of searches
+There are three standard approaches for searching a Binary Search Tree. They are:  
 
 * minimum value
 
@@ -131,8 +129,10 @@ Tree {
 
 * specific value
 
+Let's implement each of these approaches to tree search.
 
-### Binary Search Tree Minimum Value
+
+### Tree Search: Minimum Value
 
 If we know that lower values are stored in branches to the left, how do we implement a search for a minimum value? 
 
@@ -140,8 +140,70 @@ Easy!
 
 We traverse the branches on the left until we reach the terminal node. 
 
+We declare our `searchMin()` method:
+
+```js
+    searchMin() {
+       //
+    }
+```
+
+If we're searching all the nodes on the left, we need a starting point. We also need a way to _remember_ which node we are currently checking. Hmmm...
+
+
+```js
+    searchMin() {
+        let current = this.root;
+    }
+```
+
+What do we know about functions? They return. What do we want to return? Data. 
+
+```js
+    searchMin() {
+        let current = this.root;
+
+        return current.data;
+    }
+```
+
+
+What control statement allows us to repeat a process _until_ a condition is met? 
+
+`while`
+
+Let's _do_ it! 
+
+
+```js
+    searchMin() {
+        let current = this.root;
+
+        while () {
+            // what?
+        }
+        return current.data;
+    }
+```
+
+While what? Until there are no nodes left to search. 
+
 ```js
 
+    searchMin() {
+        let current = this.root;
+
+        while (current.left !== null) {
+            // what?
+        }
+        return current.data;
+    }
+```
+
+What are we doing _while_ we are searching? If the current node is not the terminal node, we need to keep searching. So we reassign the value of `current` to `current.left`:
+
+
+```js
     searchMin() {
         let current = this.root;
 
@@ -152,7 +214,10 @@ We traverse the branches on the left until we reach the terminal node.
     }
 ```
 
-### Binary Search Tree Maximum Value
+If we run `searchMin()`, it will traverse all of the left-most nodes and return the value stored in the leaf, or terminal node, in that branch.
+
+
+### Tree Search: Maximum Value
 
 Implementing a search for the maximum value in a BST is simply a matter of modifying our `searchMin()` function to traverse the nodes on the right.
 
@@ -167,16 +232,12 @@ Implementing a search for the maximum value in a BST is simply a matter of modif
     }
 ```
 
+If we run `searchMax()`, it will traverse all of the right-most nodes and return the value stored in the leaf, or terminal node, in that branch.
 
-### Binary Search Tree Specific Value
 
-Pattern recognition is an important skill to develop as a programmer. 
+### Tree Search: Specific Value
 
-_If_ we're searching for a speciic value, what do we need to do? We need to check all of the values (until we find our node, of course). What control statement allows us to repeat a process _until_ a condition is met? 
-
-`while`
-
-@TODO
+_If_ we're searching for a speciic value, what do we need to do? We need to check all of the values, left _and_ right (until we find our node, of course). Our specific tree search function will look the following: 
 
 ```js
     searchSpecific(data) {
@@ -197,7 +258,7 @@ _If_ we're searching for a speciic value, what do we need to do? We need to chec
     }
 ```
 
-What's happening in `searchSpecific`? 
+What's happening in `searchSpecific`? Let's break it down...
 
 We declare a temporary variable, `current` and assign it our starting point, `this.root`. 
 
@@ -219,7 +280,7 @@ We then enter our `while` loop. _While_ `current.data` is not equal to `data`, t
     }
 ```
 
-Here's where that pattern recognition comes in to play. How do we implement the functionality of both `searchMax()` and `searchMin()`? 
+Here's where pattern recognition comes in to play. How do we implement the functionality of both `searchMax()` and `searchMin()`? 
 
 _If_ `data` is less than `current.data`, then we need to continue traversing the nodes on the left. Otherwise, we traverse the nodes on the right.  What does that look like? 
 
