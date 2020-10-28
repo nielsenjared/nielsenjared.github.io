@@ -245,6 +245,83 @@ What happense in these conditional blocks? If we recall the implementation of ou
 
 We need to traverse the left (or right) node of the current node and reassign the left (or right) node of the current node with whatever our function returns. 
 
+Now what? If we found our node, we need to "remove" it. This will require us to restructure our tree and move child nodes up a level in the branch. What are the scenarios we need to address? 
+
+* leaf nodes
+
+* a node with one child
+
+* a node with two children
+
+Let's start with leaf nodes. How do we know if a node is a leaf node? 
+
+No children. 
+
+How do we know if a node doesn't have any children?
+
+It's left and right nodes will be equal to `null`. 
+
+How do we "remove" the node? 
+
+We're not _really_ removing the node (hence the scare quotes). We assign it a value of `null` so the value is no longer referenced in our tree. 
+
+What does that look like? 
+
+
+```js
+    removeNode(data, node = this.root) {
+        if (node === null) {
+            return null;
+        }
+
+        if (data < node.data) {
+            node.left = this.removeNode(data, node.left);
+            return node;
+        } else if (data > node.data) {
+            node.right = this.removeNode(data, node.right);
+            return node;
+        } else {
+            if (node.left === null && node.right === null) {
+                node = null;
+                return node;
+            }
+        }
+    }
+```
+
+If our node has a child, we need to replace that node with its child. But first we need to determine if the child is the left or the right node. 
+```js
+    removeNode(data, node = this.root) {
+        if (node === null) {
+            return null;
+        }
+
+        if (data < node.data) {
+            node.left = this.removeNode(data, node.left);
+            return node;
+        } else if (data > node.data) {
+            node.right = this.removeNode(data, node.right);
+            return node;
+        } else {
+            if (node.left === null && node.right === null) {
+                node = null;
+                return node;
+            }
+            if (node.left === null) {
+                node = node.right;
+                return node;
+            } else if (node.right === null) {
+                node = node.left;
+                return node;
+            }
+        }
+    }
+```
+
+If the left node is equal to `null` then we reassign the value of our node to `node.right`. But if the right node is `null`, then we reassign the value of our node to `node.left`. 
+
+@TODO
+
 
 
 
