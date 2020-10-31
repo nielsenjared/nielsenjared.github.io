@@ -313,6 +313,8 @@ If our node has a child, we need to replace that node with its child. But first 
             } else if (node.right === null) {
                 node = node.left;
                 return node;
+            } else {
+                return node;
             }
         }
     }
@@ -320,10 +322,54 @@ If our node has a child, we need to replace that node with its child. But first 
 
 If the left node is equal to `null` then we reassign the value of our node to `node.right`. But if the right node is `null`, then we reassign the value of our node to `node.left`. 
 
-@TODO
+If our node has two children, we need to determine a successor. But we can't simply move one of the subtrees up to replace it, though, because the children would overlap and our tree would no longer be binary. 
 
+What do we need to do? 
 
+We need to find the smallest node in the right subtree to replace the node we are removing. 
 
+Why the smallest node in the _right_ subtree? 
+
+To retain the structure of our tree. Recall that when inserting nodes in a tree, if a value is greater than it's parent, or `current` node, it is inserted in the right subtree. If it smaller than it's parent, or `current` node, it is inserted in the left subtree. If we replace a node with a value that is greater than it's child on the right, we break the structure of our tree.  
+
+What does that look like? 
+```js
+    removeNode(data, node = this.root) {
+        if (node === null) {
+            return null;
+        }
+
+        if (data < node.data) {
+            node.left = this.removeNode(data, node.left);
+            return node;
+        } else if (data > node.data) {
+            node.right = this.removeNode(data, node.right);
+            return node;
+        } else {
+            if (node.left === null && node.right === null) {
+                node = null;
+                return node;
+            }
+            if (node.left === null) {
+                node = node.right;
+                return node;
+            } else if (node.right === null) {
+                node = node.left;
+                return node;
+            } else {
+                let temp;
+                while (node.right && node.right.left !== null) {
+                    temp = node.right.left;
+                }
+                node.data = temp.data;
+                node.right = removeNode(temp.data, node.right);
+                return node;
+            }
+        }
+    }
+```
+
+Because we are _swapping_ values, we first declare a `temp` variable. Then we iterate until we find a terminal, or leaf node, telling us we found the smallest value. For each iteration, we assign `temp` the value in the left node. We then "remove" our current node by reassigning it the value stored in our `temp` object. Lastly, we need to remove the node we just swapped, so we call `removeNode` and pass it the value stored in `temp`. 
 
 
 ## Big O & Tree Data Structures
