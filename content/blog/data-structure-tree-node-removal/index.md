@@ -1,6 +1,6 @@
 ---
 title: 'Data Structures in JavaScript: Tree Node Removal'
-date: '2020-10-16'
+date: '2020-10-30'
 description: 'Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will implement node removal in a tree data structure in JavaScript.'
 keywords: ['javascript', 'tree', 'data structure', 'search']
 ---
@@ -179,8 +179,6 @@ Tree {
 ```
 
 ## Implementation of Node Removal in a Binary Search Tree Data Structure in JavaScript 
-
-@TODO
 
 Let's first declare our method:
 ```js
