@@ -8,11 +8,23 @@ keyword: ['javascript', 'graph', 'graphs', 'data structure', 'data structures']
 
 ![](./jarednielsen-javascript-graph-data-structure.png)
 
+
+At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the graph data structure in JavaScript. 
+
+
 ## What is a Graph? 
 
-A graph consists of a set of nodes, or _vertices_, connected by _edges_.  An edge consists of a pair of _vertices_. For example, given two vertices, `A` and `B`, when traversing a graph, the path between `A` and `B` is an edge. 
+According to [Wikipedia](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)), a graph is:
 
-`A` and `B` are _adjacent_. 
+> a structure amounting to a set of objects in which some pairs of the objects are in some sense "related". 
+
+A graph consists of a set of nodes, or _vertices_, connected by _edges_.  An edge consists of a pair of vertices. For example, if we establish a pair between two vertices, `A` and `B`, we refer t0 this related pairing as an edge. Because they are connected by an edge, `A` and `B` are _adjacent_. 
+
+The classic analogy for graphs is a map. 
+@TODO
+
+Another standard analogy for graphs is a social network. 
+
 
 ### Degrees
 
@@ -23,10 +35,7 @@ The number of adjacent vertices.
 
 Weight? 
 
-The classic analogy for graphs is a map. 
-@TODO
 
-Another standard analogy for graphs is a social network. 
 
 
 
@@ -34,22 +43,29 @@ Another standard analogy for graphs is a social network.
 
 * directed, or digraph
 
-A graph with ordered pairs is a directed graph, or digraph. 
+A graph with ordered pairs is a directed graph, or digraph. In a graphical (no pun intended) representation, the direction of the edge is drawn with an arrow indicated the direction. 
 
 
 * undirected, or just graph
 
-### Paths & Cycles
-
-@TODO 
-+ strongly connected 
 
 
+### Paths, Loops & Cycles
+
+A _path_ in a graph is a sequence of edges. If vertices `A` and `B` are connected, and `B` and `C` are connected, then we establish a path from `A` to `C`. The length of this path is two as there are two edges connecting `A`, `B`, and `C`. 
+
+A _loop_ in a graph occurs when the path of a vertex connects to itself. 
+
+A _cycle_ is a path that reconnects to the starting vertex. Using our example above, if we create and edge between `C` and `A`, then the path from `A` to `B` to `C` to `A` is a cycle. 
+
+A _strongly connected_ graph occurs when every vertex is connected to every other vertex. Two or more vertices are considered strongly connected when they are connected by paths. 
 
 
 ## What Problem(s) Does a Graph Solve?
 
-@TODO 
+* Optimization: We can use the graph data structure in conjunction with an optimization algorithm for determining an optimal path, such as GPS
+
+* Network topology: We can use the graph data structure when modeling network topology, such as the internet or your friends on Facebook!
 
 
 ## How to Implement a Graph Data Structure in JavaScript
@@ -86,7 +102,7 @@ In a table! 🏓
 | D | 1 | 1 | 1 | 0 | 1 |
 | E | 0 | 0 | 0 | 1 | 0 |
 
-This is called an _adjacency matrix_ as it represents which vertices are adjacent to one another. When we inspect row `D`, we see that there are edges between `D` and `A`, `B` and `E`. 
+This is called an _adjacency matrix_ as it represents which vertices are adjacent to one another. When we inspect row `D`, we see that there are edges between `D` and `A`, `B`, `C` and `E`. 
 
 How would we represent this in JavaScript? 
 
@@ -118,7 +134,7 @@ We need a way to _look up_ our edges...
 }
 ```
 
-This is what we want our graph to return. Now let's write a class that will create this.
+This is what we want our graph to return. Now let's write a class to do just that.
 
 ```js
 class Graph {
