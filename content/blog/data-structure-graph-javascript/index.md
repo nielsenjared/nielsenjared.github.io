@@ -1,6 +1,6 @@
 ---
 title: Learn JavaScript Graph Data Structure
-date: '2020-05-01'
+date: '2020-11-13'
 description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the graph data structure in JavaScript. 
 keyword: ['javascript', 'graph', 'graphs', 'data structure', 'data structures']
 ---
@@ -20,34 +20,28 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Graph_(discrete_mathemati
 
 A graph consists of a set of nodes, or _vertices_, connected by _edges_.  An edge consists of a pair of vertices. For example, if we establish a pair between two vertices, `A` and `B`, we refer t0 this related pairing as an edge. Because they are connected by an edge, `A` and `B` are _adjacent_. 
 
-The classic analogy for graphs is a map. 
-@TODO
+The classic analogy for graphs is a map. If you look at a map of the United States interstate system, you will see cities, or vertices, connected by freeways, or edges. 
 
-Another standard analogy for graphs is a social network. 
+![](./library-of-congress-interstate-map.jpg)
 
+Another standard analogy for graphs is a social network. Imagine your peer group. You are connected to your friends and family, but not all of your friends and family are connected to each other and you are likely not connected to all of their friends and family.
 
-### Degrees
-
-The number of adjacent vertices. 
-
-
-
-
-Weight? 
-
-
-
+![](./gordon-johnson-pixabay-social-network.png)
 
 
 ### Two Types of Graph
 
-* directed, or digraph
-
-A graph with ordered pairs is a directed graph, or digraph. In a graphical (no pun intended) representation, the direction of the edge is drawn with an arrow indicated the direction. 
+* **directed**, or **digraph**: A graph with ordered pairs is a directed graph, or digraph. In a graphical (no pun intended) representation, the direction of the edge is drawn with an arrow indicated the direction of traversal.
 
 
-* undirected, or just graph
+* **undirected**, or just **graph**: This is self-explanatroy, the edges of the graph are not directed.
 
+
+### Degrees & Weight
+
+The _degrees_ of a vertex refers to the number of adjacent vertices. 
+
+The _weight_ of an edge represents the cost or the capacity of the edge, such as distance or time between two vertices.
 
 
 ### Paths, Loops & Cycles
@@ -72,7 +66,7 @@ A _strongly connected_ graph occurs when every vertex is connected to every othe
 
 Like a social network, what is important is the relationship between nodes and not necessarily the nodes themselves. 
 
-Yes, a tree data structure is a series of nodes in relationship to one another. Graphs differ from trees in that trees always follow the same structure. The relationships between nodes are predetermined: a root with two children. We don't know what the structure of our graph will look like in advance, so when we implement a graph class, tracking the relationship between vertices is more important than the vertices themselves. 
+Yes, a tree data structure is a series of nodes in relationship to one another, but graphs differ from trees in that trees always follow the same structure. The relationships between nodes are predetermined: a root with two children. We don't know what the structure of our graph will look like in advance, so when we implement a graph class, tracking the relationship between vertices is more important than the vertices themselves. 
 
 Let's start with a small and simple data set of four vertices: `A`, `B`, `C`, `D` & `E`. Let's say that there are edges between the following vertices: 
 
@@ -169,7 +163,7 @@ class Graph {
 }
 ```
 
-@TODO explain this
+Our `addVertex` method is simply creating a property, `v`, in our `adjacent` object, and assigning it an empty array. 
 
 If we use our `addVertex` method to add the vertices from our adjacency matrix above...
 ```js
@@ -185,7 +179,7 @@ g.addVertex("E");
 Graph { adjacent: { A: [], B: [], C: [], D: [], E: [] } }
 ```
 
-Now we need to determine our edges.
+Now we need to create our edges.
 ```js
 class Graph {
     constructor() {
@@ -203,7 +197,10 @@ class Graph {
 }
 ```
 
-@TODO explain
+Our `addEdge()` method is simply accepting two arguments, `v` and `w`, looking up one and pushing the other into its corresponding array. 
+
+
+Why `v` and `w`? It's a mathematic convention in graph theory. 
 
 If we use our `addEdge` method to add the edges from our adjacency matrix above...
 ```js
@@ -229,9 +226,31 @@ Graph {
 }
 ```
 
+This is a very lightweight implementation of a graph data structure. What if we wanted to return all of our vertices? We would need to use `Object.keys()`. Or, we could add an array to our constructor and push our vertices to it within `addVertex`:
 
 
-@TODO 
+```js
+class Graph {
+    constructor() {
+        this.vertices = [];
+        this.adjacent = {};
+    }
+
+    addVertex(v) {
+        this.vertices.push(v);
+        this.adjacent[v] = [];
+    }
+
+    addEdge(v, w) {
+        this.adjacent[v].push(w);
+        this.adjacent[w].push(v);
+    }
+}
+```
+
+We access our vertices array with `g.vertices`.
+
+We could add one more feature to allow us to quickly return the number of edges in our graph. 
 
 ```js
 class Graph {
@@ -252,33 +271,13 @@ class Graph {
         this.edges++;
     }
 }
-
-const g = new Graph();
-
-g.addVertex("A");
-g.addVertex("B");
-g.addVertex("C");
-
-g.addEdge("A","B");
 ```
 
-If we log our graph, `g`, we see that `A` and `B` reference each other, establishing our first edge. 
-
-```sh
-Graph {
-  vertices: [ 'A', 'B', 'C' ],
-  adjacent: { A: [ 'B' ], B: [ 'A' ], C: [] }
-  edges: 1,
-}
-```
-
-## Big O & Graph Data Structures
-
-@TODO 
+We access our edges with `g.edges`.
 
 ## Data Structures in JavaScript: Graph
 
-In this tutorial you learned how to implement a graph data structure in JavaScript. 
+In this tutorial you learned how to implement a graph data structure in JavaScript. In the next tutorial, we will implement traversal methods for breadth-first and depth-first searches. Stay tuned!
 
 
 
