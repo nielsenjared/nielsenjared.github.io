@@ -26,6 +26,7 @@ The classic analogy for graphs is a map. If you look at a map of the United Stat
 
 Another standard analogy for graphs is a social network. Imagine your peer group. You are connected to your friends and family, but not all of your friends and family are connected to each other and you are likely not connected to all of their friends and family.
 
+
 ![](./gordon-johnson-pixabay-social-network.png)
 
 
