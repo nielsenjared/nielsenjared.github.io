@@ -6,8 +6,7 @@ keyword: ['javascript', 'graph', 'graphs', 'data structure', 'data structures']
 ---
 
 
-![](./jarednielsen-javascript-graph-data-structure.png)
-
+![illustration of graph data structure](./jarednielsen-data-structure-graph-javascript.png)
 
 At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the graph data structure in JavaScript. 
 
@@ -83,7 +82,7 @@ D → E
 
 We could sketch that out like so...
 
-@TODO insert drawing
+![](./jarednielsen-data-structure-graph-javascript-sketch.png)
 
 What is another way we can represent the relationships between data? 
 
@@ -91,17 +90,17 @@ In a table! 🏓
 
 | X | A | B | C | D | E |
 |--:|--:|--:|--:|--:|---|
-| A | 0 | 1 | 1 | 1 | 0 |
-| B | 1 | 0 | 1 | 1 | 0 |
-| C | 0 | 1 | 0 | 1 | 0 |
-| D | 1 | 1 | 1 | 0 | 1 |
-| E | 0 | 0 | 0 | 1 | 0 |
+| A | X | 1 | 1 | 1 | 0 |
+| B | 1 | X | 1 | 1 | 0 |
+| C | 0 | 1 | X | 1 | 0 |
+| D | 1 | 1 | 1 | X | 1 |
+| E | 0 | 0 | 0 | 1 | X |
 
 This is called an _adjacency matrix_ as it represents which vertices are adjacent to one another. When we inspect row `D`, we see that there are edges between `D` and `A`, `B`, `C` and `E`. 
 
 How would we represent this in JavaScript? 
 
-Nested arrays! 🪆🐣
+Nested arrays! 🐣
 
 ```js
 [
@@ -201,7 +200,7 @@ class Graph {
 Our `addEdge()` method is simply accepting two arguments, `v` and `w`, looking up one and pushing the other into its corresponding array. 
 
 
-Why `v` and `w`? It's a mathematic convention in graph theory. 
+Why `v` and `w`? It's a mathematic convention in graph theory. 🤷
 
 If we use our `addEdge` method to add the edges from our adjacency matrix above...
 ```js
