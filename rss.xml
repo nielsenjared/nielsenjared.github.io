@@ -1,4 +1,366 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 07 Nov 2020 11:51:20 GMT</lastBuildDate><item><title><![CDATA[Data Structures in JavaScript: Tree Node Removal]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-tree-node-removal/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-tree-node-removal/</guid><pubDate>Fri, 30 Oct 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 20 Nov 2020 10:48:30 GMT</lastBuildDate><item><title><![CDATA[Learn JavaScript Graph Data Structure]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-graph-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-graph-javascript/</guid><pubDate>Fri, 13 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/be30c5d7f850ec2708f159138208bd36/a987b/jarednielsen-data-structure-graph-javascript.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA9hAAAPYQGoP6dpAAABrklEQVQoz32SW0/bQBCF+TX9O/yRvvcBxEMfKEItF1GhIlSJQlVeeMHcBY1Ek1Qil6olmIIlkpC0EKS44WKL3Dwf4yQGB1mdsXe98u6Zc87OAL0QEX9A/G9P+tf61qVJniq/qVDQ+Z5m91wvgxggFCLBEGyFu3gVezFPiVtOWpeccIUtTqdKB0p6xZ8Dhhm5Z3Xcy7YeBOv4gt0dkwQXxCmS8UqUpab82o+gIYJdwKASeLR0vBnc5udYlq32NStOng+NMl+zabKJAzY5ZUeFWyo7IBIpOcywUKywfH7KUv2YharJRK1I7lMSc9Rgnl/EjFUqL42ui1GSw8Y60iCljm0pi6U7kz29iiMc1pol3ssBb+6zfDz8xlXMfGIYCShdL+oq+syrkvKKCvUPx3KxJi0mCoeMOAneukm+a8F2wC5sYJ/kgKU+Dd9JPXGjc8bIUHvxhYWjHOPsktamUav1/9P+SIbPpRfE5h0xhlobTFWSTHv75PhL0JiPYFF9KKH044eUec02r8RgmHVm2Occu6/3opo68lJsXD5LmlmJM0eSRUnxx7vugHma/wPz4wH52UOV1WjJOwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;illustration of graph data structure&quot;
+        title=&quot;&quot;
+        src=&quot;/static/be30c5d7f850ec2708f159138208bd36/b9e4f/jarednielsen-data-structure-graph-javascript.png&quot;
+        srcset=&quot;/static/be30c5d7f850ec2708f159138208bd36/cf440/jarednielsen-data-structure-graph-javascript.png 148w,
+/static/be30c5d7f850ec2708f159138208bd36/d2d38/jarednielsen-data-structure-graph-javascript.png 295w,
+/static/be30c5d7f850ec2708f159138208bd36/b9e4f/jarednielsen-data-structure-graph-javascript.png 590w,
+/static/be30c5d7f850ec2708f159138208bd36/f9b6a/jarednielsen-data-structure-graph-javascript.png 885w,
+/static/be30c5d7f850ec2708f159138208bd36/2d849/jarednielsen-data-structure-graph-javascript.png 1180w,
+/static/be30c5d7f850ec2708f159138208bd36/a987b/jarednielsen-data-structure-graph-javascript.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not &lt;em&gt;just&lt;/em&gt; to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the graph data structure in JavaScript. &lt;/p&gt;
+&lt;h2&gt;What is a Graph?&lt;/h2&gt;
+&lt;p&gt;According to &lt;a href=&quot;https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)&quot;&gt;Wikipedia&lt;/a&gt;, a graph is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a structure amounting to a set of objects in which some pairs of the objects are in some sense “related”. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A graph consists of a set of nodes, or &lt;em&gt;vertices&lt;/em&gt;, connected by &lt;em&gt;edges&lt;/em&gt;.  An edge consists of a pair of vertices. For example, if we establish a pair between two vertices, &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;, we refer t0 this related pairing as an edge. Because they are connected by an edge, &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt; are &lt;em&gt;adjacent&lt;/em&gt;. &lt;/p&gt;
+&lt;p&gt;The classic analogy for graphs is a map. If you look at a map of the United States interstate system, you will see cities, or vertices, connected by freeways, or edges. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6d89816588173f398573ff445f1eae2e/1f8c8/library-of-congress-interstate-map.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 69.02985074626865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAdRbIxUHD//EABkQAAMAAwAAAAAAAAAAAAAAAAAQEQEhMf/aAAgBAQABBQKGdHVF/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAACAx/9oACAEBAAY/AiL/AP/EABgQAQEBAQEAAAAAAAAAAAAAAAERACFB/9oACAEBAAE/IYezR4uL0AG5mtQhv//aAAwDAQACAAMAAAAQJ9//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEBAQEBAAMAAAAAAAAAAAABEQAhQTFRYf/aAAgBAQABPxCAVs7TJvQ/WJKM8JgTZD8wjr78TIISE5v/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;library of congress interstate map&quot;
+        title=&quot;&quot;
+        src=&quot;/static/6d89816588173f398573ff445f1eae2e/c739e/library-of-congress-interstate-map.jpg&quot;
+        srcset=&quot;/static/6d89816588173f398573ff445f1eae2e/8ee9c/library-of-congress-interstate-map.jpg 148w,
+/static/6d89816588173f398573ff445f1eae2e/ebbe7/library-of-congress-interstate-map.jpg 295w,
+/static/6d89816588173f398573ff445f1eae2e/c739e/library-of-congress-interstate-map.jpg 590w,
+/static/6d89816588173f398573ff445f1eae2e/5413e/library-of-congress-interstate-map.jpg 885w,
+/static/6d89816588173f398573ff445f1eae2e/4efde/library-of-congress-interstate-map.jpg 1180w,
+/static/6d89816588173f398573ff445f1eae2e/1f8c8/library-of-congress-interstate-map.jpg 1876w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Another standard analogy for graphs is a social network. Imagine your peer group. You are connected to your friends and family, but not all of your friends and family are connected to each other and you are likely not connected to all of their friends and family.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fa6ce9ef0a0421b06d16bd9573fbc62f/a987b/gordon-johnson-pixabay-social-network.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 63.072916666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAD1ElEQVQ4y2NIdPfTONNZzLuxrcA4209b+v+xSkYGICjwdxJM9XKUXdl/hLPAU9G8qybO+NCRlVIgufMrathA9JmSQodZEeGa6QH+fI1pxQIgMYbvB1axFldHsmZvX8DdXhTqrC/AwJdWnO5akF8s2RcWIuruFaHHwKDMm+tgrNDgaqxQahcmWxsdq1nQtEI4vniuwZYob9WWhCRdJ+9YfbCBBVHxJhmeJdzdyYpKdw75ahprq4oDhcWWZJZpNKYXKLSnxKkdbqjX7/ZykV2Z4a67Y3K5DkhfbpStiE+giXxZZglfe1GuNEhMRjqEkSFIP4aHgUGTMylS06ihMU/1wJ5WxX3zc3n3dtdqgBSleUYp7UmONgSxnXOLTd0ctC1LIjw4GzJMjTKTNHSmZeQ67ihtNgDJ//+zmolhy6xAz/4cH+m+iAIJkOC2JiuHqmJv3uQ8U7nJ7vYq/ckhzrGRNsr/Gf4zTOnx0xBTYWCvjo4Sjff2VgSp352eLbXRxVO+uz5HafGsVl2GJTmJKXPi0kEuYMwKCZNb3VZhsXZKAs+EDhO15dlx6pM1gll8Y6tFQ0uXGeybYirbHaOtNiUy2qjTtIYnsTBGMbkijj8+i4G7vtQY7COGcO94uxCLWK41HZ0SVSkFgfZ+sdopVgzaC6Y1GLQmJniF6yuIH++dzNdeGgjWMDPMRTdT20b44Eovndq+PC2gRxn783Ll9qzIEmeAAdW6+TzJFdNMQOy8eFfhnPQgTRCbmZ0BlEx4d+XkRJycH2r3/38Mk5eNthUDFwMLSL4yKlAs1DVQ3FPDUWpJo5fz1Y0uYgzbC0oUNxcVWdb4WYv2+RrbgyOivVFz/0xvsKFlKYk8PSHZqiDzYzwjffsqs2zLE9IkO5JTFdXMgsRiQsMM6lJczbWk+YEO4mZk2G6ZItATEBSQ4eku1BAQJQbSuKwlWW/vIg/v7hZlwSnBwZbrEjzkQIZPasw3Wt5aLbRhkp1xdmgSOJFHWon4GqkrqSR4uGnWR/ryMJzbZy4DFAdJMsZ3MLCVFmnqpliHqIP4m/tVuCZWyOmmlk02j66YKwkygNVUl70l21Lm8A4GRltjPWY7e2dw2C1Lq+QBh19foS1Y4ZoV7bLLctO1rk1oF+/yMjbrLKrVTgk0trDTY+AryopRyvC3tyzyC1SYX9Vm2hyhybsxW5kLpG9FhG/Qjm4/PT0BZtb+AAt/eMT0Tm2SXZ2eqXa2oBSc6rMbF+kY5y4WBLGjwoK5ywOihdbm13CD+A4afMpVKTbWc1oCxfauajY7viMWlHsYp0YFqwMAhQQtCkydO/cAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;gordon johnson pixabay social network&quot;
+        title=&quot;&quot;
+        src=&quot;/static/fa6ce9ef0a0421b06d16bd9573fbc62f/b9e4f/gordon-johnson-pixabay-social-network.png&quot;
+        srcset=&quot;/static/fa6ce9ef0a0421b06d16bd9573fbc62f/cf440/gordon-johnson-pixabay-social-network.png 148w,
+/static/fa6ce9ef0a0421b06d16bd9573fbc62f/d2d38/gordon-johnson-pixabay-social-network.png 295w,
+/static/fa6ce9ef0a0421b06d16bd9573fbc62f/b9e4f/gordon-johnson-pixabay-social-network.png 590w,
+/static/fa6ce9ef0a0421b06d16bd9573fbc62f/f9b6a/gordon-johnson-pixabay-social-network.png 885w,
+/static/fa6ce9ef0a0421b06d16bd9573fbc62f/2d849/gordon-johnson-pixabay-social-network.png 1180w,
+/static/fa6ce9ef0a0421b06d16bd9573fbc62f/a987b/gordon-johnson-pixabay-social-network.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h3&gt;Two Types of Graph&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;directed&lt;/strong&gt;, or &lt;strong&gt;digraph&lt;/strong&gt;: A graph with ordered pairs is a directed graph, or digraph. In a graphical (no pun intended) representation, the direction of the edge is drawn with an arrow indicated the direction of traversal.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;undirected&lt;/strong&gt;, or just &lt;strong&gt;graph&lt;/strong&gt;: This is self-explanatroy, the edges of the graph are not directed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Degrees &amp;#x26; Weight&lt;/h3&gt;
+&lt;p&gt;The &lt;em&gt;degrees&lt;/em&gt; of a vertex refers to the number of adjacent vertices. &lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;weight&lt;/em&gt; of an edge represents the cost or the capacity of the edge, such as distance or time between two vertices.&lt;/p&gt;
+&lt;h3&gt;Paths, Loops &amp;#x26; Cycles&lt;/h3&gt;
+&lt;p&gt;A &lt;em&gt;path&lt;/em&gt; in a graph is a sequence of edges. If vertices &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt; are connected, and &lt;code&gt;B&lt;/code&gt; and &lt;code&gt;C&lt;/code&gt; are connected, then we establish a path from &lt;code&gt;A&lt;/code&gt; to &lt;code&gt;C&lt;/code&gt;. The length of this path is two as there are two edges connecting &lt;code&gt;A&lt;/code&gt;, &lt;code&gt;B&lt;/code&gt;, and &lt;code&gt;C&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;A &lt;em&gt;loop&lt;/em&gt; in a graph occurs when the path of a vertex connects to itself. &lt;/p&gt;
+&lt;p&gt;A &lt;em&gt;cycle&lt;/em&gt; is a path that reconnects to the starting vertex. Using our example above, if we create and edge between &lt;code&gt;C&lt;/code&gt; and &lt;code&gt;A&lt;/code&gt;, then the path from &lt;code&gt;A&lt;/code&gt; to &lt;code&gt;B&lt;/code&gt; to &lt;code&gt;C&lt;/code&gt; to &lt;code&gt;A&lt;/code&gt; is a cycle. &lt;/p&gt;
+&lt;p&gt;A &lt;em&gt;strongly connected&lt;/em&gt; graph occurs when every vertex is connected to every other vertex. Two or more vertices are considered strongly connected when they are connected by paths. &lt;/p&gt;
+&lt;h2&gt;What Problem(s) Does a Graph Solve?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Optimization: We can use the graph data structure in conjunction with an optimization algorithm for determining an optimal path, such as GPS&lt;/li&gt;
+&lt;li&gt;Network topology: We can use the graph data structure when modeling network topology, such as the internet or your friends on Facebook!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Implement a Graph Data Structure in JavaScript&lt;/h2&gt;
+&lt;p&gt;Like a social network, what is important is the relationship between nodes and not necessarily the nodes themselves. &lt;/p&gt;
+&lt;p&gt;Yes, a tree data structure is a series of nodes in relationship to one another, but graphs differ from trees in that trees always follow the same structure. The relationships between nodes are predetermined: a root with two children. We don’t know what the structure of our graph will look like in advance, so when we implement a graph class, tracking the relationship between vertices is more important than the vertices themselves. &lt;/p&gt;
+&lt;p&gt;Let’s start with a small and simple data set of four vertices: &lt;code&gt;A&lt;/code&gt;, &lt;code&gt;B&lt;/code&gt;, &lt;code&gt;C&lt;/code&gt;, &lt;code&gt;D&lt;/code&gt; &amp;#x26; &lt;code&gt;E&lt;/code&gt;. Let’s say that there are edges between the following vertices: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;A → B
+A → C
+A → D
+B → C
+B → D
+C → D
+D → E&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We could sketch that out like so…&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/a987b/jarednielsen-data-structure-graph-javascript-sketch.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA9hAAAPYQGoP6dpAAABKklEQVQoz31S207CQBDlD/0lfsLw4E/4al/lzUtMJCoBJSUpUqQgZbtaujvHvfQyCO0m7c7szpw5Z2Z7KBcR2T/sRpq8787sqQsAVXbH6nHH5zcp2nzp8w5pEPtTrT0o+YJ1IaJTQM5QhgeIlUJSANt5huntGorFEWNADZPzgMUB2PSf8HY1xewXWKTAiwTEaAP1GDvWRxhE5yVXPbPXeZQjnBdYG8Ao0bhPgO/rd8jLBxergjGy/rAEb5FcFeOXX3tCbvadtQ24NC2IfoDP1y2KuwWoC7CS7GwzZWjPVkwkPgYhJjNCJAzTjMBz/ik+ZshbQsobIlgivrjBalSPxbdG101sl4wmpX5CysjMlrZxLhXseZ6wawckXpkzaQfqBAQbDpXyuN+1/gDjEGAljLnysgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen data structure graph javascript sketch&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/b9e4f/jarednielsen-data-structure-graph-javascript-sketch.png&quot;
+        srcset=&quot;/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/cf440/jarednielsen-data-structure-graph-javascript-sketch.png 148w,
+/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/d2d38/jarednielsen-data-structure-graph-javascript-sketch.png 295w,
+/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/b9e4f/jarednielsen-data-structure-graph-javascript-sketch.png 590w,
+/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/f9b6a/jarednielsen-data-structure-graph-javascript-sketch.png 885w,
+/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/2d849/jarednielsen-data-structure-graph-javascript-sketch.png 1180w,
+/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/a987b/jarednielsen-data-structure-graph-javascript-sketch.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;What is another way we can represent the relationships between data? &lt;/p&gt;
+&lt;p&gt;In a table! 🏓&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;right&quot;&gt;X&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;A&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;B&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;C&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;D&lt;/th&gt;
+&lt;th&gt;E&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;A&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;X&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;B&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;X&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;C&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;X&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;D&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;X&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;E&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td&gt;X&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This is called an &lt;em&gt;adjacency matrix&lt;/em&gt; as it represents which vertices are adjacent to one another. When we inspect row &lt;code&gt;D&lt;/code&gt;, we see that there are edges between &lt;code&gt;D&lt;/code&gt; and &lt;code&gt;A&lt;/code&gt;, &lt;code&gt;B&lt;/code&gt;, &lt;code&gt;C&lt;/code&gt; and &lt;code&gt;E&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;How would we represent this in JavaScript? &lt;/p&gt;
+&lt;p&gt;Nested arrays! 🐣&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But there’s a shortcoming to this approach. How do we track the vertices that correspond to the array indexes? &lt;/p&gt;
+&lt;p&gt;We need a way to &lt;em&gt;look up&lt;/em&gt; our edges…&lt;/p&gt;
+&lt;p&gt;🤔&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token constant&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token constant&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token constant&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token constant&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token constant&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is what we want our graph to return. Now let’s write a class to do just that.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Graph&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we declare a new graph, &lt;code&gt;g&lt;/code&gt;…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; g &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Graph&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;…and log it…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;Graph { adjacent: {} }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We now need methods for adding vertices and edges. We can’t declare edges without vertices, so let’s start with that: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Graph&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our &lt;code&gt;addVertex&lt;/code&gt; method is simply creating a property, &lt;code&gt;v&lt;/code&gt;, in our &lt;code&gt;adjacent&lt;/code&gt; object, and assigning it an empty array. &lt;/p&gt;
+&lt;p&gt;If we use our &lt;code&gt;addVertex&lt;/code&gt; method to add the vertices from our adjacency matrix above…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;B&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;C&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;D&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;E&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;…logging our graph will return the following: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;Graph { adjacent: { A: [], B: [], C: [], D: [], E: [] } }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now we need to create our edges.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Graph&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;v&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; w&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;w&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;w&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our &lt;code&gt;addEdge()&lt;/code&gt; method is simply accepting two arguments, &lt;code&gt;v&lt;/code&gt; and &lt;code&gt;w&lt;/code&gt;, looking up one and pushing the other into its corresponding array. &lt;/p&gt;
+&lt;p&gt;Why &lt;code&gt;v&lt;/code&gt; and &lt;code&gt;w&lt;/code&gt;? It’s a mathematic convention in graph theory. 🤷&lt;/p&gt;
+&lt;p&gt;If we use our &lt;code&gt;addEdge&lt;/code&gt; method to add the edges from our adjacency matrix above…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;B&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;C&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;D&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;B&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;C&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;B&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;D&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;C&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;D&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;D&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;E&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;…logging our graph will return the following: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;Graph {
+  adjacent: {
+    A: [ &amp;#39;B&amp;#39;, &amp;#39;C&amp;#39;, &amp;#39;D&amp;#39; ],
+    B: [ &amp;#39;A&amp;#39;, &amp;#39;C&amp;#39;, &amp;#39;D&amp;#39; ],
+    C: [ &amp;#39;A&amp;#39;, &amp;#39;B&amp;#39;, &amp;#39;D&amp;#39; ],
+    D: [ &amp;#39;A&amp;#39;, &amp;#39;B&amp;#39;, &amp;#39;C&amp;#39;, &amp;#39;E&amp;#39; ],
+    E: [ &amp;#39;D&amp;#39; ]
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is a very lightweight implementation of a graph data structure. What if we wanted to return all of our vertices? We would need to use &lt;code&gt;Object.keys()&lt;/code&gt;. Or, we could add an array to our constructor and push our vertices to it within &lt;code&gt;addVertex&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Graph&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;vertices &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;vertices&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;v&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; w&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;w&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;w&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We access our vertices array with &lt;code&gt;g.vertices&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We could add one more feature to allow us to quickly return the number of edges in our graph. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Graph&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;vertices &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;edges &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;vertices&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;v&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; w&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;w&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;w&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;edges&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We access our edges with &lt;code&gt;g.edges&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Data Structures in JavaScript: Graph&lt;/h2&gt;
+&lt;p&gt;In this tutorial you learned how to implement a graph data structure in JavaScript. In the next tutorial, we will implement traversal methods for breadth-first and depth-first searches. Stay tuned!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Data Structures in JavaScript: Tree Node Removal]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-tree-node-removal/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-tree-node-removal/</guid><pubDate>Fri, 30 Oct 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/bd0e8b4985a301b2f193ab1bc044b4b2/a987b/jarednielsen-data-structure-tree.png&quot;

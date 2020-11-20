@@ -1,0 +1,383 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.a2b0a4210f454d4c17db.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}h1{font-size:2em!important}#mc_embed_signup form{text-align:center;padding:10px 0}.mc-field-group{display:inline-block}#mc_embed_signup input.email{font-family:Open Sans,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;font-size:15px;border:1px solid #abb0b2;border-radius:3px;color:#343434;background-color:#fff;box-sizing:border-box;height:32px;padding:0 .4em;display:inline-block;margin:0;width:350px;vertical-align:top}#mc_embed_signup label{display:block;font-size:16px;padding-bottom:10px;font-weight:700}#mc_embed_signup .clear{display:inline-block}#mc_embed_signup .button{font-size:13px;border:none;border-radius:3px;letter-spacing:.03em;color:#fff;background-color:#ff007f;box-sizing:border-box;height:32px;line-height:32px;padding:0 18px;display:inline-block;margin:0;-webkit-transition:all .23s ease-in-out 0s;transition:all .23s ease-in-out 0s}#mc_embed_signup .button:hover{background-color:#8000ff;cursor:pointer}#mc_embed_signup div#mce-responses{float:left;top:-1.4em;padding:0 .5em;overflow:hidden;width:90%;margin:0 5%;clear:both}#mc_embed_signup div.response{margin:1em 0;padding:1em .5em .5em 0;font-weight:700;float:left;top:-1.5em;z-index:1;width:80%}#mc_embed_signup #mce-error-response{display:none}#mc_embed_signup #mce-success-response{color:#529214;display:none}#mc_embed_signup label.error{display:block;float:none;width:auto;margin-left:1.05em;text-align:left;padding:.5em 0}@media (max-width:768px){#mc_embed_signup input.email{width:100%;margin-bottom:5px}#mc_embed_signup .clear{display:block;width:100%}#mc_embed_signup .button{width:100%;margin:0}}</style><meta name="generator" content="Gatsby 2.18.2"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=1659889846b630ce0576be754ef9c32d"/><title data-react-helmet="true">Learn JavaScript Graph Data Structure | jarednielsen.com</title><meta data-react-helmet="true" name="description" content="Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the graph data structure in JavaScript."/><meta data-react-helmet="true" property="og:title" content="Learn JavaScript Graph Data Structure"/><meta data-react-helmet="true" property="og:description" content="Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the graph data structure in JavaScript."/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Jared Nielsen"/><meta data-react-helmet="true" name="twitter:title" content="Learn JavaScript Graph Data Structure"/><meta data-react-helmet="true" name="twitter:description" content="Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the graph data structure in JavaScript."/><link as="script" rel="preload" href="/webpack-runtime-c973350df21cb6f2e98b.js"/><link as="script" rel="preload" href="/styles-53d27243da94e1a00671.js"/><link as="script" rel="preload" href="/app-e83603a732b9346823e1.js"/><link as="script" rel="preload" href="/commons-246aa2cc16737a2f2814.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-2a9c5f72c2c9311faca6.js"/><link as="fetch" rel="preload" href="/page-data/data-structure-graph-javascript/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">jarednielsen.com</a></h3><h1>Learn JavaScript Graph Data Structure</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">November 13, 2020</p><div><p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/be30c5d7f850ec2708f159138208bd36/a987b/jarednielsen-data-structure-graph-javascript.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA9hAAAPYQGoP6dpAAABrklEQVQoz32SW0/bQBCF+TX9O/yRvvcBxEMfKEItF1GhIlSJQlVeeMHcBY1Ek1Qil6olmIIlkpC0EKS44WKL3Dwf4yQGB1mdsXe98u6Zc87OAL0QEX9A/G9P+tf61qVJniq/qVDQ+Z5m91wvgxggFCLBEGyFu3gVezFPiVtOWpeccIUtTqdKB0p6xZ8Dhhm5Z3Xcy7YeBOv4gt0dkwQXxCmS8UqUpab82o+gIYJdwKASeLR0vBnc5udYlq32NStOng+NMl+zabKJAzY5ZUeFWyo7IBIpOcywUKywfH7KUv2YharJRK1I7lMSc9Rgnl/EjFUqL42ui1GSw8Y60iCljm0pi6U7kz29iiMc1pol3ssBb+6zfDz8xlXMfGIYCShdL+oq+syrkvKKCvUPx3KxJi0mCoeMOAneukm+a8F2wC5sYJ/kgKU+Dd9JPXGjc8bIUHvxhYWjHOPsktamUav1/9P+SIbPpRfE5h0xhlobTFWSTHv75PhL0JiPYFF9KKH044eUec02r8RgmHVm2Occu6/3opo68lJsXD5LmlmJM0eSRUnxx7vugHma/wPz4wH52UOV1WjJOwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="illustration of graph data structure"
+        title=""
+        src="/static/be30c5d7f850ec2708f159138208bd36/b9e4f/jarednielsen-data-structure-graph-javascript.png"
+        srcset="/static/be30c5d7f850ec2708f159138208bd36/cf440/jarednielsen-data-structure-graph-javascript.png 148w,
+/static/be30c5d7f850ec2708f159138208bd36/d2d38/jarednielsen-data-structure-graph-javascript.png 295w,
+/static/be30c5d7f850ec2708f159138208bd36/b9e4f/jarednielsen-data-structure-graph-javascript.png 590w,
+/static/be30c5d7f850ec2708f159138208bd36/f9b6a/jarednielsen-data-structure-graph-javascript.png 885w,
+/static/be30c5d7f850ec2708f159138208bd36/2d849/jarednielsen-data-structure-graph-javascript.png 1180w,
+/static/be30c5d7f850ec2708f159138208bd36/a987b/jarednielsen-data-structure-graph-javascript.png 1920w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>At some point in your career (today?!) you will want to learn data structures. It’s not <em>just</em> to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the graph data structure in JavaScript. </p>
+<h2>What is a Graph?</h2>
+<p>According to <a href="https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)">Wikipedia</a>, a graph is:</p>
+<blockquote>
+<p>a structure amounting to a set of objects in which some pairs of the objects are in some sense “related”. </p>
+</blockquote>
+<p>A graph consists of a set of nodes, or <em>vertices</em>, connected by <em>edges</em>.  An edge consists of a pair of vertices. For example, if we establish a pair between two vertices, <code>A</code> and <code>B</code>, we refer t0 this related pairing as an edge. Because they are connected by an edge, <code>A</code> and <code>B</code> are <em>adjacent</em>. </p>
+<p>The classic analogy for graphs is a map. If you look at a map of the United States interstate system, you will see cities, or vertices, connected by freeways, or edges. </p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/6d89816588173f398573ff445f1eae2e/1f8c8/library-of-congress-interstate-map.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 69.02985074626865%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAdRbIxUHD//EABkQAAMAAwAAAAAAAAAAAAAAAAAQEQEhMf/aAAgBAQABBQKGdHVF/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAACAx/9oACAEBAAY/AiL/AP/EABgQAQEBAQEAAAAAAAAAAAAAAAERACFB/9oACAEBAAE/IYezR4uL0AG5mtQhv//aAAwDAQACAAMAAAAQJ9//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEBAQEBAAMAAAAAAAAAAAABEQAhQTFRYf/aAAgBAQABPxCAVs7TJvQ/WJKM8JgTZD8wjr78TIISE5v/2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="library of congress interstate map"
+        title=""
+        src="/static/6d89816588173f398573ff445f1eae2e/c739e/library-of-congress-interstate-map.jpg"
+        srcset="/static/6d89816588173f398573ff445f1eae2e/8ee9c/library-of-congress-interstate-map.jpg 148w,
+/static/6d89816588173f398573ff445f1eae2e/ebbe7/library-of-congress-interstate-map.jpg 295w,
+/static/6d89816588173f398573ff445f1eae2e/c739e/library-of-congress-interstate-map.jpg 590w,
+/static/6d89816588173f398573ff445f1eae2e/5413e/library-of-congress-interstate-map.jpg 885w,
+/static/6d89816588173f398573ff445f1eae2e/4efde/library-of-congress-interstate-map.jpg 1180w,
+/static/6d89816588173f398573ff445f1eae2e/1f8c8/library-of-congress-interstate-map.jpg 1876w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Another standard analogy for graphs is a social network. Imagine your peer group. You are connected to your friends and family, but not all of your friends and family are connected to each other and you are likely not connected to all of their friends and family.</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/fa6ce9ef0a0421b06d16bd9573fbc62f/a987b/gordon-johnson-pixabay-social-network.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 63.072916666666664%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAD1ElEQVQ4y2NIdPfTONNZzLuxrcA4209b+v+xSkYGICjwdxJM9XKUXdl/hLPAU9G8qybO+NCRlVIgufMrathA9JmSQodZEeGa6QH+fI1pxQIgMYbvB1axFldHsmZvX8DdXhTqrC/AwJdWnO5akF8s2RcWIuruFaHHwKDMm+tgrNDgaqxQahcmWxsdq1nQtEI4vniuwZYob9WWhCRdJ+9YfbCBBVHxJhmeJdzdyYpKdw75ahprq4oDhcWWZJZpNKYXKLSnxKkdbqjX7/ZykV2Z4a67Y3K5DkhfbpStiE+giXxZZglfe1GuNEhMRjqEkSFIP4aHgUGTMylS06ihMU/1wJ5WxX3zc3n3dtdqgBSleUYp7UmONgSxnXOLTd0ctC1LIjw4GzJMjTKTNHSmZeQ67ihtNgDJ//+zmolhy6xAz/4cH+m+iAIJkOC2JiuHqmJv3uQ8U7nJ7vYq/ckhzrGRNsr/Gf4zTOnx0xBTYWCvjo4Sjff2VgSp352eLbXRxVO+uz5HafGsVl2GJTmJKXPi0kEuYMwKCZNb3VZhsXZKAs+EDhO15dlx6pM1gll8Y6tFQ0uXGeybYirbHaOtNiUy2qjTtIYnsTBGMbkijj8+i4G7vtQY7COGcO94uxCLWK41HZ0SVSkFgfZ+sdopVgzaC6Y1GLQmJniF6yuIH++dzNdeGgjWMDPMRTdT20b44Eovndq+PC2gRxn783Ll9qzIEmeAAdW6+TzJFdNMQOy8eFfhnPQgTRCbmZ0BlEx4d+XkRJycH2r3/38Mk5eNthUDFwMLSL4yKlAs1DVQ3FPDUWpJo5fz1Y0uYgzbC0oUNxcVWdb4WYv2+RrbgyOivVFz/0xvsKFlKYk8PSHZqiDzYzwjffsqs2zLE9IkO5JTFdXMgsRiQsMM6lJczbWk+YEO4mZk2G6ZItATEBSQ4eku1BAQJQbSuKwlWW/vIg/v7hZlwSnBwZbrEjzkQIZPasw3Wt5aLbRhkp1xdmgSOJFHWon4GqkrqSR4uGnWR/ryMJzbZy4DFAdJMsZ3MLCVFmnqpliHqIP4m/tVuCZWyOmmlk02j66YKwkygNVUl70l21Lm8A4GRltjPWY7e2dw2C1Lq+QBh19foS1Y4ZoV7bLLctO1rk1oF+/yMjbrLKrVTgk0trDTY+AryopRyvC3tyzyC1SYX9Vm2hyhybsxW5kLpG9FhG/Qjm4/PT0BZtb+AAt/eMT0Tm2SXZ2eqXa2oBSc6rMbF+kY5y4WBLGjwoK5ywOihdbm13CD+A4afMpVKTbWc1oCxfauajY7viMWlHsYp0YFqwMAhQQtCkydO/cAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="gordon johnson pixabay social network"
+        title=""
+        src="/static/fa6ce9ef0a0421b06d16bd9573fbc62f/b9e4f/gordon-johnson-pixabay-social-network.png"
+        srcset="/static/fa6ce9ef0a0421b06d16bd9573fbc62f/cf440/gordon-johnson-pixabay-social-network.png 148w,
+/static/fa6ce9ef0a0421b06d16bd9573fbc62f/d2d38/gordon-johnson-pixabay-social-network.png 295w,
+/static/fa6ce9ef0a0421b06d16bd9573fbc62f/b9e4f/gordon-johnson-pixabay-social-network.png 590w,
+/static/fa6ce9ef0a0421b06d16bd9573fbc62f/f9b6a/gordon-johnson-pixabay-social-network.png 885w,
+/static/fa6ce9ef0a0421b06d16bd9573fbc62f/2d849/gordon-johnson-pixabay-social-network.png 1180w,
+/static/fa6ce9ef0a0421b06d16bd9573fbc62f/a987b/gordon-johnson-pixabay-social-network.png 1920w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<h3>Two Types of Graph</h3>
+<ul>
+<li><strong>directed</strong>, or <strong>digraph</strong>: A graph with ordered pairs is a directed graph, or digraph. In a graphical (no pun intended) representation, the direction of the edge is drawn with an arrow indicated the direction of traversal.</li>
+<li><strong>undirected</strong>, or just <strong>graph</strong>: This is self-explanatroy, the edges of the graph are not directed.</li>
+</ul>
+<h3>Degrees &#x26; Weight</h3>
+<p>The <em>degrees</em> of a vertex refers to the number of adjacent vertices. </p>
+<p>The <em>weight</em> of an edge represents the cost or the capacity of the edge, such as distance or time between two vertices.</p>
+<h3>Paths, Loops &#x26; Cycles</h3>
+<p>A <em>path</em> in a graph is a sequence of edges. If vertices <code>A</code> and <code>B</code> are connected, and <code>B</code> and <code>C</code> are connected, then we establish a path from <code>A</code> to <code>C</code>. The length of this path is two as there are two edges connecting <code>A</code>, <code>B</code>, and <code>C</code>. </p>
+<p>A <em>loop</em> in a graph occurs when the path of a vertex connects to itself. </p>
+<p>A <em>cycle</em> is a path that reconnects to the starting vertex. Using our example above, if we create and edge between <code>C</code> and <code>A</code>, then the path from <code>A</code> to <code>B</code> to <code>C</code> to <code>A</code> is a cycle. </p>
+<p>A <em>strongly connected</em> graph occurs when every vertex is connected to every other vertex. Two or more vertices are considered strongly connected when they are connected by paths. </p>
+<h2>What Problem(s) Does a Graph Solve?</h2>
+<ul>
+<li>Optimization: We can use the graph data structure in conjunction with an optimization algorithm for determining an optimal path, such as GPS</li>
+<li>Network topology: We can use the graph data structure when modeling network topology, such as the internet or your friends on Facebook!</li>
+</ul>
+<h2>How to Implement a Graph Data Structure in JavaScript</h2>
+<p>Like a social network, what is important is the relationship between nodes and not necessarily the nodes themselves. </p>
+<p>Yes, a tree data structure is a series of nodes in relationship to one another, but graphs differ from trees in that trees always follow the same structure. The relationships between nodes are predetermined: a root with two children. We don’t know what the structure of our graph will look like in advance, so when we implement a graph class, tracking the relationship between vertices is more important than the vertices themselves. </p>
+<p>Let’s start with a small and simple data set of four vertices: <code>A</code>, <code>B</code>, <code>C</code>, <code>D</code> &#x26; <code>E</code>. Let’s say that there are edges between the following vertices: </p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">A → B
+A → C
+A → D
+B → C
+B → D
+C → D
+D → E</code></pre></div>
+<p>We could sketch that out like so…</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/a987b/jarednielsen-data-structure-graph-javascript-sketch.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA9hAAAPYQGoP6dpAAABKklEQVQoz31S207CQBDlD/0lfsLw4E/4al/lzUtMJCoBJSUpUqQgZbtaujvHvfQyCO0m7c7szpw5Z2Z7KBcR2T/sRpq8787sqQsAVXbH6nHH5zcp2nzp8w5pEPtTrT0o+YJ1IaJTQM5QhgeIlUJSANt5huntGorFEWNADZPzgMUB2PSf8HY1xewXWKTAiwTEaAP1GDvWRxhE5yVXPbPXeZQjnBdYG8Ao0bhPgO/rd8jLBxergjGy/rAEb5FcFeOXX3tCbvadtQ24NC2IfoDP1y2KuwWoC7CS7GwzZWjPVkwkPgYhJjNCJAzTjMBz/ik+ZshbQsobIlgivrjBalSPxbdG101sl4wmpX5CysjMlrZxLhXseZ6wawckXpkzaQfqBAQbDpXyuN+1/gDjEGAljLnysgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="jarednielsen data structure graph javascript sketch"
+        title=""
+        src="/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/b9e4f/jarednielsen-data-structure-graph-javascript-sketch.png"
+        srcset="/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/cf440/jarednielsen-data-structure-graph-javascript-sketch.png 148w,
+/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/d2d38/jarednielsen-data-structure-graph-javascript-sketch.png 295w,
+/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/b9e4f/jarednielsen-data-structure-graph-javascript-sketch.png 590w,
+/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/f9b6a/jarednielsen-data-structure-graph-javascript-sketch.png 885w,
+/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/2d849/jarednielsen-data-structure-graph-javascript-sketch.png 1180w,
+/static/1354cd83ef97d77fb1f1d6a2aa6b45c7/a987b/jarednielsen-data-structure-graph-javascript-sketch.png 1920w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>What is another way we can represent the relationships between data? </p>
+<p>In a table! 🏓</p>
+<table>
+<thead>
+<tr>
+<th align="right">X</th>
+<th align="right">A</th>
+<th align="right">B</th>
+<th align="right">C</th>
+<th align="right">D</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">A</td>
+<td align="right">X</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td>0</td>
+</tr>
+<tr>
+<td align="right">B</td>
+<td align="right">1</td>
+<td align="right">X</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td>0</td>
+</tr>
+<tr>
+<td align="right">C</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">X</td>
+<td align="right">1</td>
+<td>0</td>
+</tr>
+<tr>
+<td align="right">D</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">X</td>
+<td>1</td>
+</tr>
+<tr>
+<td align="right">E</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<p>This is called an <em>adjacency matrix</em> as it represents which vertices are adjacent to one another. When we inspect row <code>D</code>, we see that there are edges between <code>D</code> and <code>A</code>, <code>B</code>, <code>C</code> and <code>E</code>. </p>
+<p>How would we represent this in JavaScript? </p>
+<p>Nested arrays! 🐣</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">B</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">C</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">D</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">A</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">C</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">D</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">B</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">D</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">A</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">B</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">C</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">E</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">D</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span>
+<span class="token punctuation">]</span></code></pre></div>
+<p>But there’s a shortcoming to this approach. How do we track the vertices that correspond to the array indexes? </p>
+<p>We need a way to <em>look up</em> our edges…</p>
+<p>🤔</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token punctuation">{</span>
+    <span class="token constant">A</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">B</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">C</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">D</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token constant">B</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">A</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">C</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">D</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token constant">C</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">B</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">D</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token constant">D</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">A</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">B</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">C</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">E</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token constant">E</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">D</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>This is what we want our graph to return. Now let’s write a class to do just that.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Graph</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>If we declare a new graph, <code>g</code>…</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>…and log it…</p>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">Graph { adjacent: {} }</code></pre></div>
+<p>We now need methods for adding vertices and edges. We can’t declare edges without vertices, so let’s start with that: </p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Graph</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">addVertex</span><span class="token punctuation">(</span><span class="token parameter">v</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent<span class="token punctuation">[</span>v<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Our <code>addVertex</code> method is simply creating a property, <code>v</code>, in our <code>adjacent</code> object, and assigning it an empty array. </p>
+<p>If we use our <code>addVertex</code> method to add the vertices from our adjacency matrix above…</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">g<span class="token punctuation">.</span><span class="token function">addVertex</span><span class="token punctuation">(</span><span class="token string">"A"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+g<span class="token punctuation">.</span><span class="token function">addVertex</span><span class="token punctuation">(</span><span class="token string">"B"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+g<span class="token punctuation">.</span><span class="token function">addVertex</span><span class="token punctuation">(</span><span class="token string">"C"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+g<span class="token punctuation">.</span><span class="token function">addVertex</span><span class="token punctuation">(</span><span class="token string">"D"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+g<span class="token punctuation">.</span><span class="token function">addVertex</span><span class="token punctuation">(</span><span class="token string">"E"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>…logging our graph will return the following: </p>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">Graph { adjacent: { A: [], B: [], C: [], D: [], E: [] } }</code></pre></div>
+<p>Now we need to create our edges.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Graph</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">addVertex</span><span class="token punctuation">(</span><span class="token parameter">v</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent<span class="token punctuation">[</span>v<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token parameter">v<span class="token punctuation">,</span> w</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>w<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent<span class="token punctuation">[</span>w<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Our <code>addEdge()</code> method is simply accepting two arguments, <code>v</code> and <code>w</code>, looking up one and pushing the other into its corresponding array. </p>
+<p>Why <code>v</code> and <code>w</code>? It’s a mathematic convention in graph theory. 🤷</p>
+<p>If we use our <code>addEdge</code> method to add the edges from our adjacency matrix above…</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">g<span class="token punctuation">.</span><span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token string">"A"</span><span class="token punctuation">,</span><span class="token string">"B"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+g<span class="token punctuation">.</span><span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token string">"A"</span><span class="token punctuation">,</span><span class="token string">"C"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+g<span class="token punctuation">.</span><span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token string">"A"</span><span class="token punctuation">,</span><span class="token string">"D"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+g<span class="token punctuation">.</span><span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token string">"B"</span><span class="token punctuation">,</span><span class="token string">"C"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+g<span class="token punctuation">.</span><span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token string">"B"</span><span class="token punctuation">,</span><span class="token string">"D"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+g<span class="token punctuation">.</span><span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token string">"C"</span><span class="token punctuation">,</span><span class="token string">"D"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+g<span class="token punctuation">.</span><span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token string">"D"</span><span class="token punctuation">,</span><span class="token string">"E"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>…logging our graph will return the following: </p>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">Graph {
+  adjacent: {
+    A: [ &#39;B&#39;, &#39;C&#39;, &#39;D&#39; ],
+    B: [ &#39;A&#39;, &#39;C&#39;, &#39;D&#39; ],
+    C: [ &#39;A&#39;, &#39;B&#39;, &#39;D&#39; ],
+    D: [ &#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;E&#39; ],
+    E: [ &#39;D&#39; ]
+  }
+}</code></pre></div>
+<p>This is a very lightweight implementation of a graph data structure. What if we wanted to return all of our vertices? We would need to use <code>Object.keys()</code>. Or, we could add an array to our constructor and push our vertices to it within <code>addVertex</code>:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Graph</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>vertices <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">addVertex</span><span class="token punctuation">(</span><span class="token parameter">v</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>vertices<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent<span class="token punctuation">[</span>v<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token parameter">v<span class="token punctuation">,</span> w</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>w<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent<span class="token punctuation">[</span>w<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>We access our vertices array with <code>g.vertices</code>.</p>
+<p>We could add one more feature to allow us to quickly return the number of edges in our graph. </p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Graph</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>vertices <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>edges <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">addVertex</span><span class="token punctuation">(</span><span class="token parameter">v</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>vertices<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent<span class="token punctuation">[</span>v<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token parameter">v<span class="token punctuation">,</span> w</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>w<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>adjacent<span class="token punctuation">[</span>w<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>edges<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>We access our edges with <code>g.edges</code>.</p>
+<h2>Data Structures in JavaScript: Graph</h2>
+<p>In this tutorial you learned how to implement a graph data structure in JavaScript. In the next tutorial, we will implement traversal methods for breadth-first and depth-first searches. Stay tuned!</p></div><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFsUlEQVQ4yz2VaVBTVxTHnzL90FFnOmP7xY5WBFG2JLzkZZGwyGIgILJvsokJyJJISILIboIgoiJuCCKbgaAgApOgVqmKTmtlisUKtVat49i6djr94DjyyP0XgvZ8uWfunPObc869938pt+Iuat6+uDtLyeJrHaiP9pIzzNzmnqq8xGm0WHgNP1t5DZPnuXUX93PyjfGq0xs+xdHSCAcvQZDd9xIELmx6lHRRSfS2RfN+dEE7oxOprlTx1NhF50HNZCKVjkU4HYFgfgQ2bjWA0bSAJw4b8+L5+iyAghfRzAKU+lKWQ+UN/22HuR/+bicvuhB8OgBfuwpIYOgW9vwBw2xDVootK8jHJhUIZz137JvhbEy08fkBoJlNoAXBu+dzf6WbqfWMP0WFnJmyt7nWOFDkrj4KN64PnDwkrJ/fZvJgaIDg9hjeXR4hb8wmUh0eAvHqVUTE9yUcQSDL5QcSvjgEnkxg9TwjJbJwsb1Kvr5tE1NsgoDZTERcf5ubuw9OVNcRcvc2edJnxssRK/680Ie27ExEc9eTUEZIJEwIJHyZTcLIbD7izZB6+EXbYUj9y6G7avx+X0g7zK6VbDe3Gj0basnY3hZMD/RidE81Rusb8VPTcfQU5CIv1A/asAjSLaomZroGZkHtbL9XNXrDWp4AWEIFNI3HxqTWIcpVzkZ7xZBoXjTZwovGleYe/Gux4rm5F8/OncVr6xAuVRZjqKgQg+V7EMPEIU6QQOK4kYiL2cMmV1kRGqvPpNYm7TY7C4PhzJWw63hS4sL1Ji4CX9w624NfjFWYOnwQM+O38NrSj4HsDLw43Ybeyjqs9vSGh5cU7kla4l5hYjkhafCi/Ycphh/6lMPzgStPalvP8yaOHDFo7yD80GDAlMGAm3oNHhzbi1F9LuqkIlw1GiAPigJnbs6C9CrwS0xE4B9vE86dukAke0x1exrZTo4BTdwyUs/VkTJ3BQrTGjF2oAZjqjSMqpRoDQ+EwnEV9gcFQJ2YgpUeErgqDVhfdBLu3mGEQ/sSnigYtDCYpcK5kTNJ3Hjk8DJIqZuS1MZ1oDHfgkfmQby9OoimpFj4LluCqJWrcGGnCi2RpShXdEGns2K7SIlYOoaECKOIn1AOsVD2gXLkSh450VI4u9E258hssrLgBExtncCT+3h7/TL+6O1Ba1YubtY34GX/OdzouIaqbV04xNGgnV+JHqaWnGP22S6IDqCTMT6kaF5Ap5unBE6yNHZdSQdxFEWQe9eu4J9rF2EIDsX3zW2419SOZ4MjeDE5jbsT93C68ywiEzLA8fInYv4mbBSEsbHiBGQIU/upoy6asONB9dDqR2bjfdVE7OJDbl66RN6OWnDzSCMm70yiNkeLxxPTePX8DX6b/B0jQ5eRmJSB5JRskqHUQOIfzvJ95HASSpPtl7tUa/mxNa0DgylNbHmeEfdv3SDvb10m5pq9MNQcQrGuDM0n2tDWaoJWW4rUjB3IV+8i1TWHkacqYmv2HUXaNtXUHOozO/CbtCyJQl2EgrIKbE1XzD6dGMersaukRKUjxeX7oC4sgTKnEDn5etQebCZd5iHSN/gtTracmW06ZSIVhgOQ+gYFUwsPWmUXh+RkRaZWW4GCueTxiemZ0Ss3SPJcW3J5JMnK0ZCkFAUpLKok6oJiGGsbibsnf2bFilVzbSuh223QzDNk8hgHqj4/jKpottpVQqerSD7W1PFu+uFzDI9cR3a2hnXlSNiUjFxWma1mC/SV7Fcr1rKHjrQiIl6BpcuWs1xPgeKj1i4KlEUteGtcONTp9l47dNB6dc2diWnTsPX6e2W2BiHyGCiydiJ0bi0uq4EHT4y9dUc+tHT0932+dLnbfE769rzFGv2eBVhMXOonNaeaW03/fwHHTpqcEhIzs7amKFv0u6oscnmcpbS8prW4xJjbcWZw3ac4qa/MgQAL40vfQf0HblcPfuCf6k8AAAAASUVORK5CYII=" alt="Jared Nielsen" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/352e5/jared-nielsen.png 1x,
+/static/0cdc03efc5a69bac4bd7922ebc9f22b8/aae31/jared-nielsen.png 1.5x,
+/static/0cdc03efc5a69bac4bd7922ebc9f22b8/47c2b/jared-nielsen.png 2x" /><img loading="lazy" width="50" height="50" srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/352e5/jared-nielsen.png 1x,
+/static/0cdc03efc5a69bac4bd7922ebc9f22b8/aae31/jared-nielsen.png 1.5x,
+/static/0cdc03efc5a69bac4bd7922ebc9f22b8/47c2b/jared-nielsen.png 2x" src="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/352e5/jared-nielsen.png" alt="Jared Nielsen" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Want to level up your problem solving skills? I write a weekly newsletter about programming, problem solving and lifelong learning.<!-- --> <a href="http://eepurl.com/cP8CMn" target="_blank" rel="noopener">Join now</a></p></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/data-structure-tree-node-removal/">← <!-- -->Data Structures in JavaScript: Tree Node Removal</a></li><li></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-51067359-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/data-structure-graph-javascript/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-e83603a732b9346823e1.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-f8c20c8491cbd22ce357.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-2a9c5f72c2c9311faca6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-5ac19a3435fa25e6ccc9.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-4979af1861382ebf361e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-a28e292c1f821d5f3628.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-2a9c5f72c2c9311faca6.js" async=""></script><script src="/commons-246aa2cc16737a2f2814.js" async=""></script><script src="/app-e83603a732b9346823e1.js" async=""></script><script src="/styles-53d27243da94e1a00671.js" async=""></script><script src="/webpack-runtime-c973350df21cb6f2e98b.js" async=""></script></body></html>
