@@ -1,7 +1,7 @@
 ---
 title: "Flow & Friction"
 date: "2021-01-18"
-description: @TODO
+description: TODO
 keywords: ['flow']
 ---
 
