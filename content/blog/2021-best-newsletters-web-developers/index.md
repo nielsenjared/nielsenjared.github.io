@@ -37,20 +37,18 @@ In addition to updates on the rapidly evolving JavaScript ecosystem, this newsle
 📨 [JavaScript Weekly](https://javascriptweekly.com/)
 
 
-@TODO replace with Mozilla 10
-### Mozilla Developer Newsletter
+### Weekly Mozilla News Beat
 
-Mozilla is killing it lately. The latest Firefox is a big win for both consumers and developers with emphasis on privacy and the new CSS developer tools, respectively. Their newsletter also gets better with each iteration, too.
+This week's internet news, from awesome to awful.
 
-📨 [Mozilla Developer Newsletter](https://www.mozilla.org/en-US/newsletter/developer/)
-
+📨 [Weekly Mozilla News Beat](https://foundation.mozilla.org/en/newsletter/)
 
 
-### Daily Developer Tips
+### Dev Tips
 
-If you came of age in the era of jQuery or are just beginning to learn JavaScript, this is an excellent newsletter for leveling up on “vanilla JS” with practical, real-world scenarios. Chris Ferdinandi also addresses ethical questions that we as developers need to consider. FYI: This newsletter is primarily promotional.
+Umar's Dev Tips are a refreshing change of pace for your text-based inbox. Delivered daily, each tip is a screenshot GIF demonstrating useful web APIS, CSS tricks, and things you didn't know you could do with DevTools. 
 
-📨 [Daily Developer Tips](https://gomakethings.com/articles/?mc_cid=6eb9c466e4&mc_eid=c409540068)
+📨 [Dev Tips](https://umaar.com/dev-tips/)
 
 
 ### Pointer
@@ -60,10 +58,9 @@ _Pointer_ tends to address concerns related to management, both inter- and intra
 📨 [Pointer](http://www.pointer.io/)
 
 
-@TODO replace
 ### History of the Web
 
-There is no urgency in reading this newsletter as it is all old news, but it is definitely in the need-to-know category. Each issue is a deep-dive into a ‘forgotten’ history of the web. The issues are always fascinating and always informative.
+There is no urgency in reading this newsletter as it is all old news, but it is definitely in the need-to-know category. Each issue is a deep-dive into a ‘forgotten’ history of the web. The issues are always fascinating and always informative. It's also now a podcast and a series of CSS Tricks.
 
 📨 [History of the Web](https://thehistoryoftheweb.com/)
 
@@ -75,13 +72,11 @@ This understated missive is excellent in its lean curation of high-level, langua
 📨 [Programming Digest](https://programmingdigest.net/)
 
 
-@TODO replace
-### Morning Cup of Coding
+### DEV Newsletter
 
-_Morning Cup of Coding_ is a very well-curated, terse list of articles. Most of the topics are _not_ specific to web development. What separates it from the other newsletters on this list is an emphasis on quality writing. Each edition highlights three or four articles on computer science topics that are _human-_readable. If you’re in the States, you’ll receive this in the afternoon. Timezones bedevil newsletter curators, too! 
+Brought to you by Jess (from DEV), this newsletter rounds up the best community contributions on dev.to, plus links to new DevNews, DevDiscuss, and CodeNewbie podcasts. You'll need to create an account (Twitter or GitHub auth), and opt-in under Notifications in the Settings menu.
 
-📨 [Morning Cup of Coding](https://humanreadablemag.us18.list-manage.com/subscribe?u=ab0f46cf302c0ed836e0bf0ad&id=56b5f64c5f)
-
+📨 [DEV](https://dev.to/settings/notifications)
 
 
 ### Weekend Reads
