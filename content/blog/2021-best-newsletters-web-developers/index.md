@@ -11,8 +11,7 @@ By best I mean _my favorite_.
 
 Of the many great newsletters available for web developers, these are the 10 that I find give me a well-rounded perspective on current trends and must-know developments in our field with minimal redundancy and maximal entertainment value.
 
-_Note: This post is an update from my [Best Newsletters for Web Developers in 2020](http://jarednielsen.com/2020-best-newsletters-web-developers/). The changes? 
-@TODO
+_Note: This post is an update from my [Best Newsletters for Web Developers in 2020](http://jarednielsen.com/2020-best-newsletters-web-developers/). 
 
 ## Best Newsletters for Web Developers in 2021
 
@@ -60,7 +59,7 @@ _Pointer_ tends to address concerns related to management, both inter- and intra
 
 ### History of the Web
 
-There is no urgency in reading this newsletter as it is all old news, but it is definitely in the need-to-know category. Each issue is a deep-dive into a ‘forgotten’ history of the web. The issues are always fascinating and always informative. It's also now a podcast and a series of CSS Tricks.
+There is no urgency in reading this newsletter as it is all old news, but it is definitely in the need-to-know category. Each issue is a deep-dive into a ‘forgotten’ history of the web. The issues are always fascinating and always informative. It's also now a podcast and a series on CSS Tricks.
 
 📨 [History of the Web](https://thehistoryoftheweb.com/)
 
