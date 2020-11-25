@@ -1,9 +1,9 @@
 ---
 title: Best Newsletters for Web Developers in 2021
-date: "2021-11-27"
+date: "2020-11-27"
 description: Of the many great newsletters available for web developers, these are the 10 that I find give me a well-rounded perspective on current trends and must-know developments in our field with minimal redundancy and maximal entertainment value.
 ---
-![Best Newsletters for Web Developers in 2021](./jared-nielsen-2020-best-newsletters-web-developers.png)
+![Best Newsletters for Web Developers in 2021](./jared-nielsen-2021-best-newsletters-web-developers.png)
 
 Here is a list of the best newsletters for web developers in 2021.
 
@@ -11,7 +11,7 @@ By best I mean _my favorite_.
 
 Of the many great newsletters available for web developers, these are the 10 that I find give me a well-rounded perspective on current trends and must-know developments in our field with minimal redundancy and maximal entertainment value.
 
-_Note: This post is an update from my [Best Newsletters for Web Developers in 2020](http://jarednielsen.com/2020-best-newsletters-web-developers/). 
+_Note: This post is an update from my [Best Newsletters for Web Developers in 2020](http://jarednielsen.com/2020-best-newsletters-web-developers/)._
 
 ## Best Newsletters for Web Developers in 2021
 
@@ -38,21 +38,21 @@ In addition to updates on the rapidly evolving JavaScript ecosystem, this newsle
 
 ### Weekly Mozilla News Beat
 
-This week's internet news, from awesome to awful.
+This week's internet news, from awesome to awful, brought to you by the nonprofit dedicated to keeping the Internet a global public resource that is open and accessible to all.
 
 📨 [Weekly Mozilla News Beat](https://foundation.mozilla.org/en/newsletter/)
 
 
 ### Dev Tips
 
-Umar's Dev Tips are a refreshing change of pace for your text-based inbox. Delivered daily, each tip is a screenshot GIF demonstrating useful web APIS, CSS tricks, and things you didn't know you could do with DevTools. 
+Umar's Dev Tips are a refreshing change of pace for your text-based inbox. Delivered daily, each tip is an animated screenshot GIF demonstrating useful web APIS, CSS tricks, and things you didn't know you could do with DevTools. 
 
 📨 [Dev Tips](https://umaar.com/dev-tips/)
 
 
 ### Pointer
 
-_Pointer_ tends to address concerns related to management, both inter- and intra- personal. There is something perspective-changing in every issue, no matter where you are in your career trajectory as a web developer.
+_Pointer_ addresses concerns related to management, both inter- and intra- personal. There is something perspective-changing in every issue, no matter where you are in your career trajectory as a web developer.
 
 📨 [Pointer](http://www.pointer.io/)
 
@@ -71,11 +71,11 @@ This understated missive is excellent in its lean curation of high-level, langua
 📨 [Programming Digest](https://programmingdigest.net/)
 
 
-### DEV Newsletter
+### The Overflow
 
-Brought to you by Jess (from DEV), this newsletter rounds up the best community contributions on dev.to, plus links to new DevNews, DevDiscuss, and CodeNewbie podcasts. You'll need to create an account (Twitter or GitHub auth), and opt-in under Notifications in the Settings menu.
+Stack Overflow launched a newsletter in late 2019 and week-over-week it delivers a collection of great questions from their community, news and articles from their blog, and awesome links from around the web.
 
-📨 [DEV](https://dev.to/settings/notifications)
+📨 [The Overflow](https://stackoverflow.blog/newsletter/)
 
 
 ### Weekend Reads
