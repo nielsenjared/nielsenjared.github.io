@@ -1,6 +1,6 @@
 ---
 title: Best Newsletters for Web Developers in 2021
-date: "2020-11-27"
+date: "2020-12-04"
 description: Of the many great newsletters available for web developers, these are the 10 that I find give me a well-rounded perspective on current trends and must-know developments in our field with minimal redundancy and maximal entertainment value.
 ---
 ![Best Newsletters for Web Developers in 2021](./jared-nielsen-2021-best-newsletters-web-developers.png)
