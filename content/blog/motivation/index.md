@@ -8,18 +8,33 @@ keywords: ['']
 ![](./jarednielsen-solution-rubber-duck-motivation.jpg)
 
 
-How do you stay motivated? Especially in a year like this one. 
-
+How do you stay motivated? How do you stay motivated in a year like 2020? 
 
 ## What is Motivation? 
 
-Why do we do what we do? Because we want to do it or because someone tells us to do it? This is the difference between instrinsic and extrinsic motivation. 
+Why do we do what we do? Because we want to do it or because someone tells us to do it? This is challenging enough, but becomes even moreso for lifelong learners. How do we stay motivated to continue learning new skills?
 
-In [Drive](https://amzn.to/2IcdJnD), Daniel Pink defines and defines two personas that characterize these two behaviors:
+In [Ultralearning](https://amzn.to/33IZMF0), Scott Young counsels us to answer the question, ‘Why?’ 
 
-* Type X, which is "...fueled more by extrinsic desires than intrinsic ones. It concerns itself less with the inherent satisfaction of an activity and more with the external rewards to which the activity leads."
+Why am I learning this?
 
-* Type I, which is … is fueled more by intrinsic desires than extrinsic ones. It concerns itself less with the external rewards to which an activity leads and more with the inherent satisfaction of the activity itself."
+He divides projects into two types of motivation: 
+
+* Instrumental
+
+* Intrinsic
+
+According to Young, "Instrumental learning projects are those you’re learning with the purpose of achieving a different, nonlearning result". These projects are primarily for the benefit of your career. This is in contrast to intrinsic projects where "you’re learning the subject for its own sake, not as a means to some other outcome." He offers a word of advice:
+
+> If you’re pursuing a project for mostly instrumental reasons, it’s often a good idea to do an additional step of research: determining whether learning the skill or topic in question will actually help you achieve your goal. 
+
+I don't know about you, but I find it challenging to maintain motivation for instrumental purposes. There must be a better way!
+
+In [Drive](https://amzn.to/2IcdJnD), Daniel Pink defines two personas that characterize intrinsic and extrinsic behaviors:
+
+* **Type X**, which is "...fueled more by extrinsic desires than intrinsic ones. It concerns itself less with the inherent satisfaction of an activity and more with the external rewards to which the activity leads."
+
+* **Type I**, which is "…fueled more by intrinsic desires than extrinsic ones. It concerns itself less with the external rewards to which an activity leads and more with the inherent satisfaction of the activity itself."
 
 Pink adds further distinctions:
 
@@ -33,29 +48,15 @@ Pink adds further distinctions:
 
 * Type I behavior promotes greater physical and mental well-being. 
 
+How does one become a Type I?
+
 According to Pink, there are three "nutrients" required for self-directed growth: 
 
-* Autonomy
+* **Autonomy**, or acting with choice. 
 
-* Mastery
+* **Mastery**, or flow, where the activity itself is its own reward. 
 
-* Purpose
-
-@TODO say something about ^^^
-
-In [Ultralearning](https://amzn.to/33IZMF0), Scott Young counsels us to answer the question, ‘Why?’ 
-
-Why do we want or need to learn something? 
-
-He divides projects into two types of motivation: 
-
-* Instrumental
-
-* Intrinsic
-
-According to Young, "Instrumental learning projects are those you’re learning with the purpose of achieving a different, nonlearning result". These projects are primarily for the benefit of your career. This is in contrast to intrinsic projects where "you’re learning the subject for its own sake, not as a means to some other outcome." He offers a word of advice:
-
-> If you’re pursuing a project for mostly instrumental reasons, it’s often a good idea to do an additional step of research: determining whether learning the skill or topic in question will actually help you achieve your goal. 
+* **Purpose**, because "...the most deeply motivated people--not to mention those who are most productive and satisfied--hitch their desires to a cause larger than themselves."
 
 
 ## Why Do We Want to Be Intrinsically Motivated? 
@@ -81,13 +82,13 @@ They continue:
 
 ## How Do We Stay Motivated?
 
-Stay motivated? Easier said than done. Especially in a year like this one. 
+Stay motivated? Easier said than done. 
 
 In [Ultralearning](https://amzn.to/33IZMF0), Scott Young defines three problems that prevent us from focusing:
 
 * Failing to start to focus (AKA procrastination)
 
-* Failing to sustain focus (AKA getting distracted). The sources that cause distractions:
+* Failing to sustain focus (AKA getting distracted). Young identifies three sources that cause distractions:
 
     * Your environment
 
@@ -97,22 +98,32 @@ In [Ultralearning](https://amzn.to/33IZMF0), Scott Young defines three problems 
 
 * Failing to create the right kind of focus
 
+
+### How Do We Start to Focus? 
+
 Why do we procrastinate? 
 
-According to Barbara Oakley in [A Mind for Numbers](https://amzn.to/2UWpClG), "We procrastinate about things that make us feel uncomfortable." Like learning a programming language. 
+According to Barbara Oakley, "We procrastinate about things that make us feel uncomfortable." 
 
-How do we improve our ability to focus? 
+How do we overcome this discomfort? 
 
-According to Young, the first step to overcoming procrastination is to "recognize when you are procrastinating" and to "start small". 
-@TODO ^^
-
-In [A Mind for Numbers](@TODO), Barbara Oakley offers strategies for preventing procrastination. The first is to harness your willpower:
+In [A Mind for Numbers](https://amzn.to/2UWpClG), Oakley offers strategies for preventing procrastination. The first is to harness your willpower:
 
 > Unlike procrastination, which is easy to fall into, willpower is hard to come by because it uses a lot of neural resources. This means that the _last_ thing you want to do in tackling procrastination is to go around spraying willpower on it like its cheap air freshers. You shouldn’t waste willpower on procrastination except when absolutely necessary!
+
+We can harness our willpower by establishing a routine. If you are like most people and your willpower is strongest first thing in the morning, carve out time for study. 
+
+
+### How Do We Sustain Focus? 
 
 A second strategy proposed by Oakley is to focus on process over product: 
 
 > If you find yourself avoiding certain tasks because they make you uncomfortable, there is a great way to reframe things: Learn to focus on _process_, not _product_. The product is what triggers the pain that causes you to procrastinate. Instead, you need to focus on the _process_, the small chunks of time you need over days or weeks.
+
+We can focus on process over product by establishing a routine. Build the habit of study.
+
+
+### How Do We Create the Right Kind of Focus? 
 
 In [Drive](https://amzn.to/2IcdJnD), Pink outlines **Nine Strategies for Awakening Your Motivation**:
 
@@ -136,23 +147,23 @@ In [Drive](https://amzn.to/2IcdJnD), Pink outlines **Nine Strategies for Awakeni
 
 In [Code Complete](https://amzn.to/2JCCarc), Steve McConnell offers a list of strategies for developers: 
 
-* Build your awareness of the development process
+* **Build your awareness of the development process**: "If you're not learning, you're turning into a dinosaur!"
 
-* Experiment
+* **Experiment**: "One key to effective programming is learning to make mistakes quickly, learning from them each time. Making a mistake is no sin. Failing to learn from a mistake is."
 
-* Read about problem solving
+* **Read about problem solving**: "Problem solving is the core activity in building computer software." Thanks for reading!
 
-* Analyze and plan before you act
+* **Analyze and plan before you act**
 
-* Learn about successful projects
+* **Learn about successful projects**: "...find code written by superior programmers and read it. Ask to look at the code of programmers you respect. Ask to look at the code of programmers you don't. Compare their code, and compare their code to your own. What are the differences? Why are they different? Which way is better? Why?"
 
-* Read!
+* **Read!**: RTFM! "Documentation contains the keys to the castle, and it's worth spending time reading it."
 
-* Read other books and periodicals
+* **Read other books and periodicals**: "A little reading goes a long way toward professional advancement."
 
-* Affiliate with other professionals
+* **Affiliate with other professionals**: "Find other people who care about sharpening their software-development skills. Attend a conference, join a local user group, or participate in an online discussion group."
 
-* Make a commitment to professional development
+* **Make a commitment to professional development**: "Good programmers constantly look for ways to become better."
 
 Notice he recommends a lot of reading!
 
