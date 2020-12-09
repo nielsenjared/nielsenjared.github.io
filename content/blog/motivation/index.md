@@ -1,24 +1,20 @@
 ---
-title: Motivation
+title: How Do We Find Motivation?
 date: '2020-12-11'
-description: "Hey"
-keywords: ['']
+description: "How do you find motivation? How do you find motivation in a year like this? It's challenging enough to Get Things Done, so how do you find motivation to continue learning new skills?"
+keywords: ['motivation', 'learning']
 ---
 
 ![](./jarednielsen-solution-rubber-duck-motivation.jpg)
 
 
-How do you stay motivated? How do you stay motivated in a year like 2020? 
-
-## What is Motivation? 
-
-Why do we do what we do? Because we want to do it or because someone tells us to do it? This is challenging enough, but becomes even moreso for lifelong learners. How do we stay motivated to continue learning new skills?
+How do you find motivation? How do you find motivation in a year like 2020? It's challenging enough to Get Things Done, so how do you find motivation to continue learning new skills?
 
 In [Ultralearning](https://amzn.to/33IZMF0), Scott Young counsels us to answer the question, ‘Why?’ 
 
 Why am I learning this?
 
-He divides projects into two types of motivation: 
+Young divides projects into two types of motivation: 
 
 * Instrumental
 
@@ -28,7 +24,28 @@ According to Young, "Instrumental learning projects are those you’re learning 
 
 > If you’re pursuing a project for mostly instrumental reasons, it’s often a good idea to do an additional step of research: determining whether learning the skill or topic in question will actually help you achieve your goal. 
 
-I don't know about you, but I find it challenging to maintain motivation for instrumental purposes. There must be a better way!
+I don't know about you, but I find it challenging to maintain motivation for instrumental purposes. 
+
+Why?
+
+Mihaly ‎Csikszentmihalyi provides an answer in [Flow](https://amzn.to/35NmVb3): 
+
+> There is no question that to survive, and especially to survive in a complex society, it is necessary to work for external goals and to postpone immediate gratifications. But a person does not have to be turned into a puppet jerked about by social controls. The solution is to gradually become free of societal rewards and learn how to substitute for them rewards that are under one's own powers. This is not to say that we should abandon every goal endorsed by society; rather, it means that, in addition to or instead of the goals others use to bribe us with, we develop a set of our own. 
+
+Steve McConnell maps this to a real-world object in [Code Complete](https://amzn.to/2JCCarc):
+
+> Your employer can’t force you to be a good programmer; a lot of times your employer isn’t even in a position to judge whether you’re good. If you want to be great, you’re responsible for making yourself great. It’s a matter of your personal character.
+
+And Dave and Andy reiterate this point in [The Pragmatic Programmer](https://amzn.to/30BVrAW):
+
+> It’s your life. You own it. You run it. You create it. 
+
+They continue: 
+
+> You are building the future, for yourselves and for your descendants. Your duty is to make it a future that we’d all want to inhabit. Recognize when you’re doing something against this ideal, and have the courage to say ‘no’! Envision the future we _could_ have, and have the courage to create it. Build castles in the air every day. 
+
+
+## How Do You Find Motivation?
 
 In [Drive](https://amzn.to/2IcdJnD), Daniel Pink defines two personas that characterize intrinsic and extrinsic behaviors:
 
@@ -59,30 +76,7 @@ According to Pink, there are three "nutrients" required for self-directed growth
 * **Purpose**, because "...the most deeply motivated people--not to mention those who are most productive and satisfied--hitch their desires to a cause larger than themselves."
 
 
-## Why Do We Want to Be Intrinsically Motivated? 
-
-Why would we want to favor intrinsic motivation over extrinsic, instrumental motivation? 
-
-Mihaly ‎Csikszentmihalyi provides an answer in [Flow](https://amzn.to/35NmVb3): 
-
-> There is no question that to survive, and especially to survive in a complex society, it is necessary to work for external goals and to postpone immediate gratifications. But a person does not have to be turned into a puppet jerked about by social controls. The solution is to gradually become free of societal rewards and learn how to substitute for them rewards that are under one's own powers. This is not to say that we should abandon every goal endorsed by society; rather, it means that, in addition to or instead of the goals others use to bribe us with, we develop a set of our own. 
-
-Steve McConnell maps this to a real-world object in [Code Complete](https://amzn.to/2JCCarc):
-
-> Your employer can’t force you to be a good programmer; a lot of times your employer isn’t even in a position to judge whether you’re good. If you want to be great, you’re responsible for making yourself great. It’s a matter of your personal character.
-
-And Dave and Andy reiterate this point in [The Pragmatic Programmer](https://amzn.to/30BVrAW):
-
-> It’s your life. You own it. You run it. You create it. 
-
-They continue: 
-
-> You are building the future, for yourselves and for your descendants. Your duty is to make it a future that we’d all want to inhabit. Recognize when you’re doing something against this ideal, and have the courage to say ‘no’! Envision the future we _could_ have, and have the courage to create it. Build castles in the air every day. 
-
-
 ## How Do We Stay Motivated?
-
-Stay motivated? Easier said than done. 
 
 In [Ultralearning](https://amzn.to/33IZMF0), Scott Young defines three problems that prevent us from focusing:
 
@@ -168,6 +162,6 @@ In [Code Complete](https://amzn.to/2JCCarc), Steve McConnell offers a list of st
 Notice he recommends a lot of reading!
 
 
-## Conclusion
+## How Do We Find Motivation? 
 
-@TODO
+How do you find motivation to continue learning new skills? Ask yourself 'Why?' Does the answer lead to _autonomy_, _mastery_, and _purpose_? 
