@@ -1,16 +1,16 @@
 ---
-title: How Do We Find Motivation?
+title: Finding Motivation to Learn New Skills
 date: '2020-12-11'
-description: "How do you find motivation? How do you find motivation in a year like this? It's challenging enough to Get Things Done, so how do you find motivation to continue learning new skills?"
-keywords: ['motivation', 'learning']
+description: "How do you find motivation? How do you find motivation in a year like this? It's challenging enough to Get Things Done, so how do you find motivation to learn new skills?"
+keywords: ['motivation', 'learn', 'skills']
 ---
 
 ![](./jarednielsen-solution-rubber-duck-motivation.jpg)
 
 
-How do you find motivation? How do you find motivation in a year like 2020? It's challenging enough to Get Things Done, so how do you find motivation to continue learning new skills?
+How do you find motivation? How do you find motivation in a year like 2020? It's challenging enough to Get Things Done, so how do you find motivation to learn new skills?
 
-In [Ultralearning](https://amzn.to/33IZMF0), Scott Young counsels us to answer the question, ‘Why?’ 
+In [Ultralearning](https://amzn.to/33IZMF0), Scott Young advises us to answer the question, ‘Why?’ 
 
 Why am I learning this?
 
@@ -32,7 +32,7 @@ Mihaly ‎Csikszentmihalyi provides an answer in [Flow](https://amzn.to/35NmVb3)
 
 > There is no question that to survive, and especially to survive in a complex society, it is necessary to work for external goals and to postpone immediate gratifications. But a person does not have to be turned into a puppet jerked about by social controls. The solution is to gradually become free of societal rewards and learn how to substitute for them rewards that are under one's own powers. This is not to say that we should abandon every goal endorsed by society; rather, it means that, in addition to or instead of the goals others use to bribe us with, we develop a set of our own. 
 
-Steve McConnell maps this to a real-world object in [Code Complete](https://amzn.to/2JCCarc):
+Steve McConnell maps this to a real-world object (see what I did there) in [Code Complete](https://amzn.to/2JCCarc):
 
 > Your employer can’t force you to be a good programmer; a lot of times your employer isn’t even in a position to judge whether you’re good. If you want to be great, you’re responsible for making yourself great. It’s a matter of your personal character.
 
@@ -94,8 +94,6 @@ In [Ultralearning](https://amzn.to/33IZMF0), Scott Young defines three problems 
 
 
 ### How Do We Start to Focus? 
-
-Why do we procrastinate? 
 
 According to Barbara Oakley, "We procrastinate about things that make us feel uncomfortable." 
 
@@ -162,6 +160,6 @@ In [Code Complete](https://amzn.to/2JCCarc), Steve McConnell offers a list of st
 Notice he recommends a lot of reading!
 
 
-## How Do We Find Motivation? 
+## Finding Motivation to Learn New Skills
 
-How do you find motivation to continue learning new skills? Ask yourself 'Why?' Does the answer lead to _autonomy_, _mastery_, and _purpose_? 
+How do you find motivation to learn new skills? Ask yourself 'Why?' Does the answer lead to _autonomy_, _mastery_, and _purpose_? 
