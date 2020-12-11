@@ -1,5 +1,5 @@
 ---
-title: Finding Motivation to Learn New Skills
+title: Find Motivation to Learn New Skills
 date: '2020-12-11'
 description: "How do you find motivation? How do you find motivation in a year like this? It's challenging enough to Get Things Done, so how do you find motivation to learn new skills?"
 keywords: ['motivation', 'learn', 'skills']
