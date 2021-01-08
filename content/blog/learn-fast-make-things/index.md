@@ -7,7 +7,7 @@ subject: How are you learning this year?
 preview_text: “Learning, at its core, is a broadening of horizons, of seeing things that were previously invisible and of recognizing capabilities within yourself that you didn’t know existed.”
 ---
 
-![](.png)
+![](./jarednielsen-solution-101-learn-fast.png)
 
 What are you learning this year? 
 
