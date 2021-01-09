@@ -1,7 +1,7 @@
 ---
 title: Learn Fast and Make Things
 date: "2021-01-11"
-description: TODO
+description: "If we want to succeed in today's economy we need to learn how to learn, and fast. We can use the ultralearning strategy to design our own learning projects on our own timelines." 
 keywords: ['learn', 'learning', 'ultralearning', 'fast', 'make']
 subject: How are you learning this year? 
 preview_text: “Learning, at its core, is a broadening of horizons, of seeing things that were previously invisible and of recognizing capabilities within yourself that you didn’t know existed.”
@@ -23,7 +23,7 @@ Why?
 
 We can boil it down to two factors: 
 
-* the resolution is too ambitious or too ambiguous or both
+* the resolution is too ambtious or too ambiguous or both
 
 * the resolution focuses on product, not process
 
@@ -31,9 +31,9 @@ These are two sides of the same coin.
 
 If we clearly define our goal and determine a realistic scope, we can focus on the process.
 
-If we focus on the process, we can achieve amibitious qnd ambiguous goals. 
+If we focus on the process, we can achieve amibitious and ambiguous goals. 
 
-“That makes for a nice tweet,” I hear you say. “But I need to learn fast!"
+“That makes for a nice tweet,” I hear you say. “But I need to know this now!"
 
 How do we focus on process _and_ quickly learn new skills? 
 
@@ -57,7 +57,7 @@ Yes, what if?
 
 The changing pace of technology is fast and to succeed, we need to learn how to learn at the same speed. 
 
-According to Young [Ultralearning](https://amzn.to/33IZMF0) is...
+According to Young, [Ultralearning](https://amzn.to/33IZMF0) is...
 
 > ...a potent skill for dealing with a changing world. The ability to learn hard things quickly is going to become increasingly valuable, and thus it is worth developing to whatever extent you can, even if it requires some investment first.”
 
@@ -90,17 +90,15 @@ Young argues that there are three factors that drive a need for us to adopt ultr
 
 #### Average Is Over
 
-TODO
+Ubiquitous computing and automation create a "skill polarization", in which the middle ground disappears and jobs are now divided between high- and low-skilled categories. Moving into, or even staying in, the high-skilled category requires constant learning and specialization. 
 
 #### Tuition is Too High 
 
-TODO
+Somewhat related to the above, a polarization occurred with higher education: the cost of tuition increased, but the skills required to succeed in today's economy decreased. A college degree is no longer a guarantee.
 
 #### New Frontiers in Learning
 
-TODO 
-
-“For those who know how to use technology wisely, it is the easiest time in history to teach yourself something new.”
+Anyone, anywhere, can learn almost anything using resources that are freely available online. According to Young, "...for those who know how to use technology wisely, it is the easiest time in history to teach yourself something new.”
 
 
 ### Ultralearning for Personal Growth 
@@ -136,13 +134,15 @@ Young then outlines nine principles for a successful ultralearning project:
 
 6. **Feedback: Don’t Dodge the Punches**. Feedback is harsh and uncomfortable. Know how to use it without letting your ego get in the way. Extract the signal from the noise, so you know what to pay attention to and what to ignore. 
 
-7.  **Retention: Don’t Fill a Leaky Bucket**. Understand what you forget and why. Learn to remember things not just for now but forever. 
+7. **Retention: Don’t Fill a Leaky Bucket**. Understand what you forget and why. Learn to remember things not just for now but forever.
 
 8. **Intuition: Dig Deep Before Building Up**. Develop your intuition through play and exploration of concepts and skills. Understand how understanding works, and don’t recourse to cheap tricks of memorization to avoid deeply knowing things.
 
 9. **Experimentation: Explore Outside Your Comfort Zone**. All of these principles are only starting points. True mastery comes not just from following the path trodden by others but from exploring possibilities they haven’t yet imagined. 
 
-TODO
+There's no one-size-fits-all strategy for ultralearning. You will need to adapt these principles to the needs of your project and map them to your timeline. 
+
+Learn fast and make things! 
 
 There are only so many hours in the day. Looking for a way to make the most of them? 
 
