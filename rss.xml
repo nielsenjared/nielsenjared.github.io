@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Jan 2021 01:18:36 GMT</lastBuildDate><item><title><![CDATA[Learn Fast and Make Things]]></title><description><![CDATA[What are you learning this year?  Perhaps we need to reframe the question: how are you learning this year?  Did you make resolutions to…]]></description><link>http://jarednielsen.com/learn-fast-make-things/</link><guid isPermaLink="false">http://jarednielsen.com/learn-fast-make-things/</guid><pubDate>Mon, 11 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Jan 2021 14:29:41 GMT</lastBuildDate><item><title><![CDATA[Learn Fast and Make Things]]></title><description><![CDATA[What are you learning this year?  Perhaps we need to reframe the question: how are you learning this year?  Did you make resolutions to…]]></description><link>http://jarednielsen.com/learn-fast-make-things/</link><guid isPermaLink="false">http://jarednielsen.com/learn-fast-make-things/</guid><pubDate>Mon, 11 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/394962a38a09df2737ef704c29b87f7f/a987b/jarednielsen-solution-101-learn-fast.png&quot;
@@ -118,7 +118,107 @@
 &lt;p&gt;There’s no one-size-fits-all strategy for ultralearning. You will need to adapt these principles to the needs of your project and map them to your timeline. &lt;/p&gt;
 &lt;p&gt;Learn fast and make things! &lt;/p&gt;
 &lt;p&gt;There are only so many hours in the day. Looking for a way to make the most of them? &lt;/p&gt;
-&lt;p&gt;Check out my latest article, &lt;a href=&quot;@TODO&quot;&gt;Best Podcasts for Developers in 2021&lt;/a&gt; &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Best Podcasts for Web Developers in 2021]]></title><description><![CDATA[Keeping up with the changing pace of technology is part and parcel of being a web developer. Listening to podcasts is a great way to stay…]]></description><link>http://jarednielsen.com/2021-best-podcasts-web-developers/</link><guid isPermaLink="false">http://jarednielsen.com/2021-best-podcasts-web-developers/</guid><pubDate>Fri, 18 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;Check out my latest article, &lt;a href=&quot;@TODO&quot;&gt;Best Podcasts for Developers in 2021&lt;/a&gt; &lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Use Chunking for Learning and Problem Solving]]></title><description><![CDATA[When learning something new, we want to create chunks. With chunking, we learn a concept then combine that concept with other concepts to…]]></description><link>http://jarednielsen.com/chunking-learning/</link><guid isPermaLink="false">http://jarednielsen.com/chunking-learning/</guid><pubDate>Mon, 28 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/87a9d10a919ef73d1cd743ece451194b/2f950/jarednielsen-solution-chunking.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAuklEQVQoz82Ruw6CMBiFeVBfwSfwSZx8BzcHF128kOjgoDGGRGMimIIXaFPo32PBDi5CLIunPenS8+W/eFprfHV5lAY/TZGnAUpprVCX8eqBRrlCOO6C7fpQMrFQcgOiuoRo3cN50gG/zt5AUi5AqsIyPiC9zPE0bYtk36ZCVYUfxxFuwRBZ6INtBy1bNhJsY2BLZNHKvAtQwS3UaYYEkncUgqHgxiI2W5e2QnLYsq3yU03/G4G/+v+BLy/fYXleI2ecAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen solution chunking&quot;
+        title=&quot;&quot;
+        src=&quot;/static/87a9d10a919ef73d1cd743ece451194b/b9e4f/jarednielsen-solution-chunking.png&quot;
+        srcset=&quot;/static/87a9d10a919ef73d1cd743ece451194b/cf440/jarednielsen-solution-chunking.png 148w,
+/static/87a9d10a919ef73d1cd743ece451194b/d2d38/jarednielsen-solution-chunking.png 295w,
+/static/87a9d10a919ef73d1cd743ece451194b/b9e4f/jarednielsen-solution-chunking.png 590w,
+/static/87a9d10a919ef73d1cd743ece451194b/f9b6a/jarednielsen-solution-chunking.png 885w,
+/static/87a9d10a919ef73d1cd743ece451194b/2d849/jarednielsen-solution-chunking.png 1180w,
+/static/87a9d10a919ef73d1cd743ece451194b/2f950/jarednielsen-solution-chunking.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;When learning something new, we want to create chunks. With chunking, we learn a concept then combine that concept with other concepts to solve problems. If we encounter a concept that is too big to understand, we need to break it into smaller chunks, then recombine the chunks. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This article originally published in my newsletter, &lt;a href=&quot;http://eepurl.com/cP8CMn&quot;&gt;The Solution&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Learning by Chunking&lt;/h2&gt;
+&lt;p&gt;How do you eat an elephant? &lt;/p&gt;
+&lt;p&gt;You don’t. &lt;/p&gt;
+&lt;p&gt;You first become a vegan.&lt;/p&gt;
+&lt;p&gt;Then you donate to the WWF. &lt;/p&gt;
+&lt;p&gt;Lastly, you get online and start a flamewar with anyone who uses this archaic idiom.&lt;/p&gt;
+&lt;p&gt;You can find me on Twitter &lt;a href=&quot;https://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See what I did there? &lt;/p&gt;
+&lt;p&gt;If you want to master a new skill or solve a mammoth problem, break it into bite-, or byte-, sized pieces. These pieces are chunks. According to Barbara Oakley in &lt;a href=&quot;https://amzn.to/2UWpClG&quot;&gt;A Mind for Numbers&lt;/a&gt;: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;One of the first steps toward gaining expertise in math and science is to create conceptual chunks—mental leaps that unite separate bits of information through meaning.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Oakley outlines three steps for learning by chunking:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Focus&lt;/li&gt;
+&lt;li&gt;Understand&lt;/li&gt;
+&lt;li&gt;Contextualize&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Focus&lt;/h3&gt;
+&lt;p&gt;You can’t truly learn something if you are distracted, trying to learn too many things at once, or trying to eat an elephant. Continually break the problem down until the pieces are digestible and proceed one-at-a-time.&lt;/p&gt;
+&lt;p&gt;We divide &amp;#x26; conquer! Or should we say, we &lt;em&gt;chunk&lt;/em&gt; &amp;#x26; conquer?&lt;/p&gt;
+&lt;p&gt;This is also a common pattern in algorithm design. &lt;/p&gt;
+&lt;p&gt;Divide &amp;#x26; conquer recursively breaks a problem down into smaller and smaller pieces. &lt;/p&gt;
+&lt;p&gt;These smaller pieces are then recombined into a solution to the problem. &lt;/p&gt;
+&lt;p&gt;What’s the pattern?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Divide&lt;/li&gt;
+&lt;li&gt;Conquer&lt;/li&gt;
+&lt;li&gt;Combine&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What are the chunks you need to know to implement a divide and conquer algorithm?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic maths (division and inequality)&lt;/li&gt;
+&lt;li&gt;Conditional statements and operators&lt;/li&gt;
+&lt;li&gt;Iteration&lt;/li&gt;
+&lt;li&gt;Recursion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We could break it down even further.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variables&lt;/li&gt;
+&lt;li&gt;Data types&lt;/li&gt;
+&lt;li&gt;Array methods&lt;/li&gt;
+&lt;li&gt;Indexes&lt;/li&gt;
+&lt;li&gt;Functions&lt;/li&gt;
+&lt;li&gt;Control flow&lt;/li&gt;
+&lt;li&gt;Etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are a few of the programming fundamentals, or chunks, in our library that enable us to create more complex chunks, such as recursion.&lt;/p&gt;
+&lt;h3&gt;Understand&lt;/h3&gt;
+&lt;p&gt;Chunks are useless if you don’t know what they mean. &lt;/p&gt;
+&lt;p&gt;How does this chunk work? Why?&lt;/p&gt;
+&lt;p&gt;In understanding our chunks, we begin to build a library. According to Oakley:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In building a chunked library, you are training your brain to recognize not only a specific problem, but different types and classes of problems so that you can automatically know how to quickly solve whatever you encounter. You’ll start to see patterns that simplify problem solving for you and will soon find that different solution techniques are lurking at the edge of your memory. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Contextualize&lt;/h3&gt;
+&lt;p&gt;Lastly, put the pieces back together. How does what you are chunking fit into the big picture? &lt;/p&gt;
+&lt;p&gt;How does it relate to other chunks? &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Chunking may involve your learning how to use a certain problem-solving technique. Context means learning when to use that technique instead of some other technique.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;How to Use Chunking for Learning and Problem Solving&lt;/h2&gt;
+&lt;p&gt;When learning something new, we want to create chunks. Chunks are separate bits of information united through meaning. With chunking, we learn a concept then combine that concept with other concepts to solve problems. If we encounter a concept that is too big to understand, we need to break it into smaller chunks, then recombine the chunks. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Best Podcasts for Web Developers in 2021]]></title><description><![CDATA[Keeping up with the changing pace of technology is part and parcel of being a web developer. Listening to podcasts is a great way to stay…]]></description><link>http://jarednielsen.com/2021-best-podcasts-web-developers/</link><guid isPermaLink="false">http://jarednielsen.com/2021-best-podcasts-web-developers/</guid><pubDate>Fri, 18 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/42f63b519c492898624d8daacaa20594/2f950/jared-nielsen-2021-best-podcasts-web-developers.png&quot;
