@@ -1,11 +1,13 @@
 ---
 title: "How to Use Chunking for Learning and Problem Solving"
-date: "2020-28-12"
+date: "2020-12-28"
 description: "When learning something new, we want to create chunks. With chunking, we learn a concept then combine concepts to solve problems. If we encounter a concept that is too big to understand, we need to break it into smaller chunks, then recombine the chunks."
 keywords: ['chunking', 'learning']
 subject:  https://mailchi.mp/f55497ad61ea/the-solution-how-do-you-eat-an-algorithm
 preview_text: https://mailchi.mp/94f023d293ea/how-do-you-gain-expertise
 ---
+
+![](./jarednielsen-solution-chunking.png)
 
 When learning something new, we want to create chunks. With chunking, we learn a concept then combine that concept with other concepts to solve problems. If we encounter a concept that is too big to understand, we need to break it into smaller chunks, then recombine the chunks. 
 
