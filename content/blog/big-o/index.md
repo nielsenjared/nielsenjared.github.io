@@ -13,10 +13,10 @@ Is there a computer science topic more terrifying than Big O notation? Don’t l
 --- 
 
 If you want to stay in the loop, sign up for my newsletter, [The Solution](http://eepurl.com/cP8CMn).
-Will it scale?
 
 ---
 
+Will it scale?
 
 _That_ is the question.
 
