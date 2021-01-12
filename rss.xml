@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Jan 2021 14:29:41 GMT</lastBuildDate><item><title><![CDATA[Learn Fast and Make Things]]></title><description><![CDATA[What are you learning this year?  Perhaps we need to reframe the question: how are you learning this year?  Did you make resolutions to…]]></description><link>http://jarednielsen.com/learn-fast-make-things/</link><guid isPermaLink="false">http://jarednielsen.com/learn-fast-make-things/</guid><pubDate>Mon, 11 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Jan 2021 14:58:35 GMT</lastBuildDate><item><title><![CDATA[Learn Fast and Make Things]]></title><description><![CDATA[What are you learning this year?  Perhaps we need to reframe the question: how are you learning this year?  Did you make resolutions to…]]></description><link>http://jarednielsen.com/learn-fast-make-things/</link><guid isPermaLink="false">http://jarednielsen.com/learn-fast-make-things/</guid><pubDate>Mon, 11 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/394962a38a09df2737ef704c29b87f7f/a987b/jarednielsen-solution-101-learn-fast.png&quot;
@@ -3981,8 +3981,23 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this series, you’ll learn the fundamentals of Big O notation with examples in JavaScript.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;If you want to stay in the loop, sign up for my newsletter, &lt;a href=&quot;http://eepurl.com/cP8CMn&quot;&gt;The Solution&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Will it scale?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;That&lt;/em&gt; is the question.&lt;/p&gt;
+&lt;p&gt;Big O helps us answer it.&lt;/p&gt;
+&lt;p&gt;Programming and problem solving are both metacognitive activities. We think about thinking. Big O is one more tool in our problem solving toolbox. While Big O is specifically used to calculate the order of a function, we can extend the mindset to problem solving (and life) in general and ask ourselves: ‘How can we improve?’&lt;/p&gt;
+&lt;p&gt;I’m an entirely self-taught developer. I’m lucky. I was never asked any questions about Big O in any technical interviews.&lt;/p&gt;
+&lt;p&gt;Did I need it?&lt;/p&gt;
+&lt;p&gt;No. I got by just fine without it.&lt;/p&gt;
+&lt;p&gt;Would it have helped?&lt;/p&gt;
+&lt;p&gt;Yes. Immensely.&lt;/p&gt;
+&lt;p&gt;If you didn’t take the traditional, academic route to programming, there’s no urgency to learn Big O. There are too many other things to keep up on: libraries, frameworks, the latest spec! So Big O falls by the wayside and we hope it never comes up. If we do carve out time to learn it, it’s most likely in preparation for a technical interview.&lt;/p&gt;
+&lt;p&gt;Will you scale? &lt;/p&gt;
+&lt;p&gt;That is the question!&lt;/p&gt;
 &lt;h2&gt;Big O: The Superlative Guide&lt;/h2&gt;
-&lt;p&gt;The following list is a ‘table of contents’ of my articles about Big O. They weren’t all written in this order, but this is the order I recommend reading them in. If you think otherwise or think there’s something missing, let me know on Twitter &lt;a href=&quot;https://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;. And there’s more on the way! If you want to stay in the loop, sign up for my newsletter, &lt;a href=&quot;http://eepurl.com/cP8CMn&quot;&gt;The Solution&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The following list is a ‘table of contents’ of my articles about Big O. They weren’t all written in this order, but this is the order I recommend reading them in. If you think otherwise or think there’s something missing, let me know on Twitter &lt;a href=&quot;https://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;. And there’s more on the way!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-notation/&quot;&gt;What is Big O Notation?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity/&quot;&gt;Big O Linear Time Complexity&lt;/a&gt;&lt;/li&gt;
@@ -3991,16 +4006,15 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-logarithmic-time-complexity/&quot;&gt;Big O Logarithmic Time Complexity&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/proof-induction/&quot;&gt;Proof by Induction&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/sum-consecutive-powers-2/&quot;&gt;How to Sum Consecutive Powers of 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Big O Time and Space Complexity?&lt;/a&gt; [⏳ Coming soon!]&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-recursive-time-complexity/&quot;&gt;Big O Recursive Time Complexity&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-recursive-space-complexity/&quot;&gt;Big O Recursive Space Complexity&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/dynamic-programming-memoization-tabulation/&quot;&gt;Dynamic Programming: Memoization and Tabulation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-log-linear-time-complexity/&quot;&gt;Big O Log-Linear Time Complexity&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Big O Amortized Analysis&lt;/a&gt; [⏳ Coming soon!]&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/calculate-permutations-combinations/&quot;&gt;How to Calculate Permutations and Combinations&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-factorial-time-complexity/&quot;&gt;Big O Factorial Time Complexity&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-omega-theta/&quot;&gt;What’s the Difference Between Big O, Big Omega, and Big Theta?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Embrace Difficulty]]></title><description><![CDATA[The key to success in life and learning is to embrace difficulty. We need to be challenged to stay motivated and improve. As long as the…]]></description><link>http://jarednielsen.com/embrace-difficulty/</link><guid isPermaLink="false">http://jarednielsen.com/embrace-difficulty/</guid><pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want all this (and more!) in one package, pick up a copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Embrace Difficulty]]></title><description><![CDATA[The key to success in life and learning is to embrace difficulty. We need to be challenged to stay motivated and improve. As long as the…]]></description><link>http://jarednielsen.com/embrace-difficulty/</link><guid isPermaLink="false">http://jarednielsen.com/embrace-difficulty/</guid><pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/460907b5e60cc37d300c2354537620b7/a987b/jarednielsen-solution-embrace-difficulty.png&quot;
