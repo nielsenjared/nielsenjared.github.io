@@ -98,6 +98,10 @@ g.addVertex("B");
 g.addVertex("C");
 g.addVertex("D");
 g.addVertex("E");
+g.addVertex("F");
+g.addVertex("G");
+
+
 
 g.addEdge("A","B");
 g.addEdge("A","C");
@@ -105,7 +109,9 @@ g.addEdge("A","D");
 g.addEdge("B","C");
 g.addEdge("B","D");
 g.addEdge("C","D");
-g.addEdge("D","E");
+g.addEdge("C","E");
+g.addEdge("D","F");
+g.addEdge("F","G");
 ```
 
 To our Graph class, let's add a `bfs` method:
@@ -143,13 +149,77 @@ Let's outline an approach in pseudocode:
 
 This will work if our query is `B`, `C`, or `D`. How do we get to `E`? How do we move down a level? 
 
+Here's the point where we need to make a jump, literally.
+
 * If none of the adjacent vertices are equal to our query, jump back to the first adjacent vertex and check its adjacent vertices.
 
-Here's the point where we need to make a jump. 
+But things are about to get messy! Why? 
 
-We need to 
+If we jump back to where we started to "move down a level", how do we avoid checking vertices twice? 
 
-If we jump
+
+
+
+Even thought we _discovered_ a vertex, we didn't yet fully explore it. 
+
+
+We need a way to track which vertices we already visited. 
+
+But!
+
+We also need a way to track which vertices we need to visit. 
+
+
+TODO ^^^
+
+
+Here's our finished BFS method: 
+```js
+ bfs(query, root = this.vertices[0]) {
+        const discovered = [];
+        discovered[root] = true;
+
+        const queue = [];
+        queue.push(root);
+
+        let adj = this.adjacent;
+
+        while(queue.length) {
+            let v = queue.shift();
+
+            if (v == query) {
+                return `Found it!`;
+            }
+
+            for (let i = 0; i < adj[v].length; i++) {
+                if (!discovered[adj[v][i]]) {
+                    discovered[adj[v][i]] = true;
+                    queue.push(adj[v][i]);
+                }
+            }
+        }
+        return "Not found...";
+    }
+```
+
+You're like, "BFD. 
+
+"Why would we need this if we can simply _look up_ our query in the `adjacent` 'dictionary'?" 
+
+I'm glad you asked. 
+
+
+## Breadth-First Search & Shortest Path (in JavaScript)
+
+For the sake of brevity and example, the method above is contrived. A "real-world" application of a breadth-first search algorithm would check for a value stored in a graph and return the unique identifier, or key, of the vertex where that value was found. Another "real-world" scenario is finding the shortest path between two vertices. Let's modify our method above to do just that! 
+
+If we want to know the shortest path between two vertices, we need another way to store that data. We will want to capture the distance and the path taken.
+
+
+
+
+
+
 
 
 
