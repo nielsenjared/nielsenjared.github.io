@@ -30,7 +30,7 @@ What do we know about these things?
 
 * vertices are connected to each other with edges
 
-* vertices can be connected to more than one (or two) other vertices
+* vertices can be connected to any number of adjacent vertices (including zero!)
 
 Let's draw a simple graph so we can visualize this: 
 
@@ -42,19 +42,22 @@ Anywhere!
 
 We just pick a vertex and start searching. 
 
-For the sake of simplicity, let's choose vertex `A` as our starting point. 
+For the sake of simplicity, let's choose vertex `A` as our starting point, or `root`, and `E` as our `goal`.
+TODO
 
-As we can see it is connected to vertices `B`, `C`, and `D`. Now we need to make a decision. 
+As we can see, `A` is connected to vertices `B`, `C`, and `D`. 
 
-Do we first search the vertices connected to `A`? Or do we choose one of the vertices connected to `A` and then search the vertices connected to it? 
+Now we need to make a decision. 
+
+Do we first search the vertices connected to `A`? Or do we choose _one_ of the vertices connected to `A` and then search the vertices connected to it? 
 
 :thinking-face:
 
 This is the difference between BFS and DFS. 
 
-With BFS, we search all of the edges connected to a vertex before moving on to search the edges of the connected vertices. 
+With Breadth-First Search, we search all of the edges connected to a vertex before moving on to search the edges of the connected vertices. 
 
-With DFS, we follow the paths of the edges connected to our starting vertex, or _search key_, one at a time, until we reach the end, then we backtrack and search the alternate paths, until we find the vertex we are looking for or we arrive back where we started. 
+With Depth-First Search, we follow the paths of the edges connected to our starting vertex, or _search key_, one at a time, until we reach the end, then we backtrack and search the alternate paths, until we find the vertex we are looking for or we arrive back where we started. 
 
 TODO THIS IS SIMILAR TO BINARY SEARCH TREE
 
@@ -114,25 +117,53 @@ g.addEdge("D","F");
 g.addEdge("F","G");
 ```
 
-To our Graph class, let's add a `bfs` method:
+To our Graph class, let's add a `bfs` method. We need to declare two parameters, `goal` and `root`, and if `goal` and `root` are equal, we return `true`, else we return `false`:
 ```js
-    bfs(v) {
-        return v;
+    bfs(goal, root) {
+        if (root === goal) {
+            return true;
+        }
+
+        return false;
     }
 ```
 
-Let's verify that our `bfs()` method works by logging the return value with an argument of `E`:
+We can take our declaration one step further using JavaScript's [default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters).
 ```js
-console.log(g.bfs("E"));
+    bfs(goal, root = this.vertices[0]) {
+        if (root === goal) {
+            return true;
+        }
+
+        return false;
+    }
 ```
+
+:memo: You will see many different implementations of BFS. Some do not specify a root while others do not specify a goal. The goal here (no pun intended) is to demonstrate an approach that covers the breadth (pun intended) of BFS variations. 
+
+TODO UPDATE TO SEARCH FOR G
+Let's verify that our `bfs()` method works by logging the return value with an argument of `G`:
+
+```js
+console.log(g.bfs("G", "G"));
+```
+
+The above will return `true`. 
+
+And the following will return `false`: 
+```js
+console.log(g.bfs("G"));
+```
+
+This is great if our graph only consists of two vertices. 
 
 Now what? 
 
-Let's outline an approach in pseudocode: 
+Let's roughly outline an approach in pseudocode: 
 
-* Look at the vertices adjacent to our key. 
+* Look at the vertices adjacent to our root. 
 
-* If an adjacent value is equal to our query, return "Found it!"
+* If an adjacent value is equal to our query, return `true`.
 
 * Repeat until we find the query. 
 
