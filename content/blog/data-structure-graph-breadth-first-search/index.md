@@ -1,22 +1,41 @@
 ---
-title: Data Structure JavaScript Graph Breadth  
+title: Data Structure JavaScript Graph Breadth-First Search  
 date: '2020-11-13'
 description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the graph data structure in JavaScript. 
 keyword: ['javascript', 'graph', 'graphs', 'data structure', 'data structures']
 ---
 
 
+![illustration of graph data structure](./jarednielsen-data-structure-graph-javascript.png)
 
-## 
+At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the breadth-first search (BFS) algorithm with graph data structures in JavaScript. 
+
+
+## Retrieval Practice
+
+TODO 
+
+* Binary search
+
+* 
+
+## Let's Get Meta
+
+TODO
+
+* 
+
+* 
+
+* 
+
+## What is Breadth-First Search? 
 
 Two algorithms for graph traversal: 
 
-* breadth-first search (BFS) and
+* breadth-first search (BFS) 
 
 * depth-first search (DFS)
-
-
-## TODO STRATEGY
 
 How do we search a graph? 
 
@@ -62,6 +81,11 @@ With Depth-First Search, we follow the paths of the edges connected to our start
 TODO THIS IS SIMILAR TO BINARY SEARCH TREE
 
 
+## What Problem(s) Do(es) Breadth-First Search Solve? 
+
+TODO 
+
+
 
 
  
@@ -104,8 +128,6 @@ g.addVertex("E");
 g.addVertex("F");
 g.addVertex("G");
 
-
-
 g.addEdge("A","B");
 g.addEdge("A","C");
 g.addEdge("A","D");
@@ -141,7 +163,6 @@ We can take our declaration one step further using JavaScript's [default paramet
 
 :memo: You will see many different implementations of BFS. Some do not specify a root while others do not specify a goal. The goal here (no pun intended) is to demonstrate an approach that covers the breadth (pun intended) of BFS variations. 
 
-TODO UPDATE TO SEARCH FOR G
 Let's verify that our `bfs()` method works by logging the return value with an argument of `G`:
 
 ```js
@@ -155,71 +176,278 @@ And the following will return `false`:
 console.log(g.bfs("G"));
 ```
 
-This is great if our graph only consists of two vertices. 
-
 Now what? 
 
-Let's roughly outline an approach in pseudocode: 
+Let's outline a rough approach in pseudocode: 
 
-* Look at the vertices adjacent to our root. 
+* Check the root. 
 
-* If an adjacent value is equal to our query, return `true`.
+* If the root is equal to the goal, return true. 
 
-* Repeat until we find the query. 
+* If the root is not equal to our goal, check the vertices adjacent to our root. 
 
+* If an adjacent value is equal to our goal, return `true`.
+
+* If none of the adjacent vertices are equal to our goal, return `false`. 
+
+If we translate this to JavaScript: 
 ```js
-    bfs(v) {
-        for (let i = 0; i < this.vertices.length; i++) {
-            if (this.vertices[i] === v) {
-                return "Found it!";
+    bfs(goal, root = this.vertices[0]) {
+        let adj = this.adjacent;
+
+        if (root === goal) {
+            return true;
+        }
+
+        for (let i = 0; i < adj[root].length; i++) {
+            if (adj[root][i] === goal) {
+                return true;
             }
         }
-        return "Nope.";
+
+        return false;
     }
 ```
 
-This will work if our query is `B`, `C`, or `D`. How do we get to `E`? How do we move down a level? 
+This will work if our query is `B`, `C`, or `D`. How do we get to `G`? 
 
-Here's the point where we need to make a jump, literally.
+How do we "move down" a level? 
 
-* If none of the adjacent vertices are equal to our query, jump back to the first adjacent vertex and check its adjacent vertices.
+Here's the point where we need to make a jump, literally _and_ figuratively. 
 
 But things are about to get messy! Why? 
 
-If we jump back to where we started to "move down a level", how do we avoid checking vertices twice? 
+We know our graph looks likes this:
 
+TODO 
 
+What if we don't know what our graph looks like? 
 
+What if our graph looked like this? 
 
-Even thought we _discovered_ a vertex, we didn't yet fully explore it. 
+TODO 
 
+Or this? 
+
+TODO 
+
+There are a couple problems we need to solve. 
+
+If we jump back to where we started, in this case, `B`, how do we avoid checking `B` twice? 
+
+_And..._
+
+If we checked `B`, but not its adjacent vertices, how do we "move down a level" and check the vertices connected to `B`? 
+
+Once we check `B`, how do we move on to `C` and check its adjacent vertices? 
 
 We need a way to track which vertices we already visited. 
 
 But!
 
-We also need a way to track which vertices we need to visit. 
+We also need a way to track which vertices we need to visit.
 
+With no predefined structure, how do know which vertex we need to check next? 
 
-TODO ^^^
+How do we bring order to this chaos?
 
+:thinking-face:
 
-Here's our finished BFS method: 
+Let's restate our goal: 
+
+> Given a graph, a root, and a goal, start at the root and search all of the vertices in the graph until we find the goal
+
+There's a keyword here...
+
+It starts with 'u' and ends with 'ntil'....
+
+What is the control flow statement that functions like a repeating `if` statement? 
+
+I'll just wait here _while_ you think about it :P
+
+Let's edit our pseudocode: 
+
+* While there are vertices to check, start with the root. 
+
+* If the root is equal to the goal, return true. 
+
+* If the root is not equal to our goal, check the vertices adjacent to our root. 
+
+* If an adjacent value is equal to our goal, return `true`.
+
+* If none of the adjacent vertices are equal to our goal, return `false`. 
+
+The next question is, `while` what? How do we know there are vertices to check? 
+
+It's like we need a check list...
+
+Let's use an analogy. 
+
+Graphs are often used to represent social networks. Imagine you and your friends are going to see a movie. You can't all rush into the theater at once. What do you need to do? Form a line, or a queue! 
+
+:head-exploding: 
+
+Let's refactor our `bfs` method to use a queue. We'll first use an array and treat it like a Queue data structure and then later refactor to use a proper Queue class.
+
 ```js
- bfs(query, root = this.vertices[0]) {
-        const discovered = [];
-        discovered[root] = true;
+    bfs(goal, root = this.vertices[0]) {
+        let adj = this.adjacent;
 
         const queue = [];
         queue.push(root);
 
-        let adj = this.adjacent;
-
         while(queue.length) {
             let v = queue.shift();
 
-            if (v == query) {
-                return `Found it!`;
+            if (v === goal) {
+                return true;
+            }
+
+            for (let i = 0; i < adj[v].length; i++) {
+                queue.push(adj[v][i]);
+            }
+        }
+
+        return false;
+    }
+```
+
+We declare an array, `queue`, and `push`, or _enqueue_ our `root` to it. While there are vertices in the queue, we _dequeue_ the first vertex and assign it to the variable, `v`. If `v` is equal to our `goal`, we return `true`. If `v` is not equal to our `goal`, we push the adjacent vertices adjacent to our `queue` and then check them. 
+
+This works great if we are only searching `D`. 
+
+What happens if we search for `G`? 
+
+Let's log `v` to see what's happening inside our `while` loop. 
+```js
+    bfs(goal, root = this.vertices[0]) {
+        let adj = this.adjacent;
+
+        const queue = [];
+        queue.push(root);
+
+        while(queue.length) {
+            let v = queue.shift();
+            console.log(v);
+
+            if (v === goal) {
+                return true;
+            }
+
+            for (let i = 0; i < adj[v].length; i++) {
+                queue.push(adj[v][i]);
+            }
+        }
+
+        return false;
+    }
+```
+
+When we search for `D`:
+```js
+console.log(g.bfs("D"));
+```
+
+We log the following: 
+```sh
+A
+B
+C
+D
+true
+```
+
+But if we search for `G`:
+```js
+console.log(g.bfs("G"));
+```
+
+We log the following: 
+```sh
+A
+B
+C
+D
+A
+C
+D
+A
+B
+D
+E
+A
+B
+C
+F
+B
+C
+D
+A
+B
+D
+E
+A
+B
+C
+F
+B
+C
+D
+A
+C
+D
+A
+B
+C
+F
+C
+B
+C
+D
+A
+C
+D
+A
+B
+D
+E
+D
+G
+true
+```
+
+This is not very efficient.
+
+It gets worse. What happens if we search for `H`?
+
+Yep...
+
+What's the problem? 
+
+The condition of our `while` loop is always true because we continually push vertices to our queue. 
+
+What's the solution? 
+
+We need an exit strategy. Or a way to track which vertices we already checked so we don't check them again.
+
+We _could_ use another Queue, but we don't need FIFO, so we can just use an array to track which vertices we "discovered".
+
+```js
+    bfs(goal, root = this.vertices[0]) {
+        let adj = this.adjacent;
+
+        const queue = [];
+        queue.push(root);
+
+        const discovered = [];
+        discovered[root] = true;
+
+        while(queue.length) {
+            let v = queue.shift();
+            console.log(v);
+
+            if (v === goal) {
+                return true;
             }
 
             for (let i = 0; i < adj[v].length; i++) {
@@ -229,9 +457,16 @@ Here's our finished BFS method:
                 }
             }
         }
-        return "Not found...";
+
+        return false;
     }
 ```
+
+We declare an array, `discovered`, and create an index, `root` assigned a value of `true`. Within the `for` loop in our `while` loop, we add a condition to check whether or not the vertex was "discovered". If we did not previously discover the vertex, we now mark it as discovered, or `true`, and push it to our `queue` to later check if it is equal to our `goal`. 
+
+That's it!
+
+That's Breadth-First Search!`
 
 You're like, "BFD. 
 
@@ -240,9 +475,12 @@ You're like, "BFD.
 I'm glad you asked. 
 
 
-## Breadth-First Search & Shortest Path (in JavaScript)
+## Shortest Path (in JavaScript)
 
-For the sake of brevity and example, the method above is contrived. A "real-world" application of a breadth-first search algorithm would check for a value stored in a graph and return the unique identifier, or key, of the vertex where that value was found. Another "real-world" scenario is finding the shortest path between two vertices. Let's modify our method above to do just that! 
+For the sake of brevity and example, the method above is contrived. A "real-world" application of a breadth-first search algorithm would check for a value stored in a graph and return the unique identifier, or key, of the vertex where that value was found. Another "real-world" scenario is finding the shortest path between two vertices. In the next tutorial, we'll modify our `bfs` method to do just that!
+
+
+
 
 If we want to know the shortest path between two vertices, we need another way to store that data. We will want to capture the distance and the path taken.
 
@@ -268,4 +506,4 @@ If we want to know the shortest path between two vertices, we need another way t
 
 
 
-##
+## Reflection
