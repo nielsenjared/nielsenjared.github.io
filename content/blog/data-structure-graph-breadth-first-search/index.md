@@ -1,6 +1,6 @@
 ---
 title: "Data Structures in JavaScript: Breadth-First Search Algorithm in a Graph"  
-date: '2020-11-13'
+date: '2021-01-22'
 description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the graph data structure in JavaScript. 
 keyword: ['javascript', 'graph', 'breadth-first search', 'data structure', 'bfs']
 ---
@@ -20,25 +20,28 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * What problem(s) does a Graph solve? 
 
-* 
+* What problem(s) do data structures solve? 
 
 ### What is a Graph? 
 
-TODO 
-
-### 
-
-TODO 
+A graph consists of a set of nodes, or _vertices_, connected by _edges_.  An edge consists of a pair of vertices. For example, if we establish a pair between two vertices, `A` and `B`, we refer t0 this related pairing as an edge. Because they are connected by an edge, `A` and `B` are _adjacent_.
 
 
-###
+### What Problem(s) Does a Graph Solve?
 
-TODO 
+* Optimization: We can use the graph data structure in conjunction with an optimization algorithm for determining an optimal path, such as GPS
 
+* Network topology: We can use the graph data structure when modeling network topology, such as the internet or your friends on Facebook!
+
+### What Problem(s) Do Data Structures Solve?
+
+According to [Wikipedia](https://en.wikipedia.org/wiki/Data_structure):
+
+> Different types of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks. Data structures provide a means to manage large amounts of data efficiently for uses such as large databases and internet indexing services. Usually, efficient data structures are key to designing efficient algorithms. 
 
 
 ## Let's Get Meta
-
+ 
 * What is Breadth-First Search? 
 
 * What is the difference between Breadth-First Search and Depth-First Search? 
@@ -97,16 +100,12 @@ With Depth-First Search, we follow the paths of the edges connected to our start
 
 ## What Problem(s) Does Breadth-First Search Solve? 
 
-TODO 
-
-
-
-
+There are a number of specific use cases, such as the Ford-Fulkerson or Cheney's algorithm, for breadth-first search algorithms, but a general application is to find the shortest, or most efficient, path between two vertices. 
  
 
 ### Breadth-First Search (BFS) in JavaScript
 
-Let's declare our Graph data structure. If you're just joining us, you may want to start with TODO.
+Let's declare our Graph data structure. If you're just joining us, you may want to start with [Learn JavaScript Graph Data Structure].
 
 ```js
 class Graph {
@@ -500,3 +499,19 @@ For the sake of brevity and example, the method above is contrived. A "real-worl
 * What is the difference between Breadth-First Search and Depth-First Search? 
 
 * What problem(s) does Breadth-First Search solve?
+
+
+### What is Breadth-First Search? 
+
+Breadth-First Search is an algorithm that searches a graph for a specific goal by checking all of the edges connected to a vertex before moving on to check the edges of the connected vertices. 
+
+
+### What is the Difference Between Breadth-First Search and Depth-First Search? 
+
+Breadth-First Search checks all of the vertices adjacent to a given vertex before checking the vertices adjacent to those vertices. Depth-First Search, on the other hand, checks all of the vertices on a path and then backtracks.
+
+
+### What Problem(s) Does Breadth-First Search Solve? 
+
+Breadth-First Search is generally used to find the shortest path between two vertices in a graph. 
+
