@@ -23,7 +23,7 @@ Why?
 
 We can boil it down to two factors: 
 
-* the resolution is too ambtious or too ambiguous or both
+* the resolution is too ambitious or too ambiguous or both
 
 * the resolution focuses on product, not process
 
@@ -144,7 +144,5 @@ There's no one-size-fits-all strategy for ultralearning. You will need to adapt 
 
 Learn fast and make things! 
 
-There are only so many hours in the day. Looking for a way to make the most of them? 
 
-Check out my latest article, [Best Podcasts for Developers in 2021](@TODO) 
 

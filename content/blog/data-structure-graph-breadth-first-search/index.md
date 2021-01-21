@@ -1,37 +1,54 @@
 ---
-title: Data Structure JavaScript Graph Breadth-First Search  
+title: "Data Structures in JavaScript: Breadth-First Search Algorithm in a Graph"  
 date: '2020-11-13'
 description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the graph data structure in JavaScript. 
-keyword: ['javascript', 'graph', 'graphs', 'data structure', 'data structures']
+keyword: ['javascript', 'graph', 'breadth-first search', 'data structure', 'bfs']
 ---
 
 
-![illustration of graph data structure](./jarednielsen-data-structure-graph-javascript.png)
+![](./jarednielsen-data-structure-graph-bfs-a-g.png)
+
 
 At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the breadth-first search (BFS) algorithm with graph data structures in JavaScript. 
 
 
 ## Retrieval Practice
 
-TODO 
+Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-* Binary search
+* What is a Graph?
+
+* What problem(s) does a Graph solve? 
 
 * 
+
+### What is a Graph? 
+
+TODO 
+
+### 
+
+TODO 
+
+
+###
+
+TODO 
+
+
 
 ## Let's Get Meta
 
-TODO
+* What is Breadth-First Search? 
 
-* 
+* What is the difference between Breadth-First Search and Depth-First Search? 
 
-* 
+* What problem(s) does Breadth-First Search solve?
 
-* 
 
 ## What is Breadth-First Search? 
 
-Two algorithms for graph traversal: 
+There are two algorithms for graph traversal: 
 
 * breadth-first search (BFS) 
 
@@ -53,7 +70,7 @@ What do we know about these things?
 
 Let's draw a simple graph so we can visualize this: 
 
-TODO GRAPH DRAWING 
+![](./jarednielsen-data-structure-graph-bfs-a-g.png)
 
 If we can't start at a root, where do we begin? 
 
@@ -61,8 +78,7 @@ Anywhere!
 
 We just pick a vertex and start searching. 
 
-For the sake of simplicity, let's choose vertex `A` as our starting point, or `root`, and `E` as our `goal`.
-TODO
+For the sake of simplicity, let's choose vertex `A` as our starting point, or `root`, and `G` as our `goal`.
 
 As we can see, `A` is connected to vertices `B`, `C`, and `D`. 
 
@@ -78,10 +94,8 @@ With Breadth-First Search, we search all of the edges connected to a vertex befo
 
 With Depth-First Search, we follow the paths of the edges connected to our starting vertex, or _search key_, one at a time, until we reach the end, then we backtrack and search the alternate paths, until we find the vertex we are looking for or we arrive back where we started. 
 
-TODO THIS IS SIMILAR TO BINARY SEARCH TREE
 
-
-## What Problem(s) Do(es) Breadth-First Search Solve? 
+## What Problem(s) Does Breadth-First Search Solve? 
 
 TODO 
 
@@ -219,21 +233,21 @@ But things are about to get messy! Why?
 
 We know our graph looks likes this:
 
-TODO 
+![](./jarednielsen-data-structure-graph-bfs-a-g.png)
 
 What if we don't know what our graph looks like? 
 
 What if our graph looked like this? 
 
-TODO 
+![](./jarednielsen-data-structure-graph-bfs-a-g-alternate.png)
 
 Or this? 
 
-TODO 
+![](./jarednielsen-data-structure-graph-bfs-a-g-alternate-02.png)
 
 There are a couple problems we need to solve. 
 
-If we jump back to where we started, in this case, `B`, how do we avoid checking `B` twice? 
+If we jump back to where we started, how do we avoid checking `B` twice? 
 
 _And..._
 
@@ -247,7 +261,9 @@ But!
 
 We also need a way to track which vertices we need to visit.
 
-With no predefined structure, how do know which vertex we need to check next? 
+What's the problem we need to solve? 
+
+There's no predetermined structure. 
 
 How do we bring order to this chaos?
 
@@ -283,7 +299,7 @@ It's like we need a check list...
 
 Let's use an analogy. 
 
-Graphs are often used to represent social networks. Imagine you and your friends are going to see a movie. You can't all rush into the theater at once. What do you need to do? Form a line, or a queue! 
+Graphs are often used to represent social networks. Imagine you and your friends are going to see a movie. You can't all rush into the theater at once. What do you need to do? Form a line, or, as they say across the pond, a queue! 
 
 :head-exploding: 
 
@@ -428,7 +444,7 @@ The condition of our `while` loop is always true because we continually push ver
 
 What's the solution? 
 
-We need an exit strategy. Or a way to track which vertices we already checked so we don't check them again.
+We need an exit strategy... or a way to track which vertices we already checked so we don't check them again.
 
 We _could_ use another Queue, but we don't need FIFO, so we can just use an array to track which vertices we "discovered".
 
@@ -474,36 +490,13 @@ You're like, "BFD.
 
 I'm glad you asked. 
 
-
-## Shortest Path (in JavaScript)
-
 For the sake of brevity and example, the method above is contrived. A "real-world" application of a breadth-first search algorithm would check for a value stored in a graph and return the unique identifier, or key, of the vertex where that value was found. Another "real-world" scenario is finding the shortest path between two vertices. In the next tutorial, we'll modify our `bfs` method to do just that!
 
 
-
-
-If we want to know the shortest path between two vertices, we need another way to store that data. We will want to capture the distance and the path taken.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Reflection
+
+* What is Breadth-First Search? 
+
+* What is the difference between Breadth-First Search and Depth-First Search? 
+
+* What problem(s) does Breadth-First Search solve?
