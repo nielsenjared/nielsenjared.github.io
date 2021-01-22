@@ -1,15 +1,16 @@
 ---
-title: "Data Structures in JavaScript: Breadth-First Search Algorithm in a Graph"  
+title: "Data Structures in JavaScript: Breadth-First Search Graph Traversal"  
 date: '2021-01-22'
 description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the graph data structure in JavaScript. 
 keyword: ['javascript', 'graph', 'breadth-first search', 'data structure', 'bfs']
 ---
 
 
-![](./jarednielsen-data-structure-graph-bfs-a-g.png)
+![](./jarednielsen-data-structure-graph-bfs.png)
 
 
-At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the breadth-first search (BFS) algorithm with graph data structures in JavaScript. 
+At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the breadth-first search (BFS) algorithm with graph data structures in JavaScript. If you're just joining us, you may want to start with [Learn JavaScript Graph Data Structure](https://jarednielsen.com/data-structure-graph-javascript/).
+ 
 
 
 ## Retrieval Practice
@@ -49,7 +50,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Data_structure):
 * What problem(s) does Breadth-First Search solve?
 
 
-## What is Breadth-First Search? 
+## Graph Traversal: BFS vs. DFS
 
 There are two algorithms for graph traversal: 
 
@@ -89,24 +90,18 @@ Now we need to make a decision.
 
 Do we first search the vertices connected to `A`? Or do we choose _one_ of the vertices connected to `A` and then search the vertices connected to it? 
 
-:thinking-face:
+🤔
 
 This is the difference between BFS and DFS. 
 
 With Breadth-First Search, we search all of the edges connected to a vertex before moving on to search the edges of the connected vertices. 
 
 With Depth-First Search, we follow the paths of the edges connected to our starting vertex, or _search key_, one at a time, until we reach the end, then we backtrack and search the alternate paths, until we find the vertex we are looking for or we arrive back where we started. 
-
-
-## What Problem(s) Does Breadth-First Search Solve? 
-
-There are a number of specific use cases, such as the Ford-Fulkerson or Cheney's algorithm, for breadth-first search algorithms, but a general application is to find the shortest, or most efficient, path between two vertices. 
  
 
 ### Breadth-First Search (BFS) in JavaScript
 
-Let's declare our Graph data structure. If you're just joining us, you may want to start with [Learn JavaScript Graph Data Structure].
-
+Let's declare our Graph data structure. 
 ```js
 class Graph {
   constructor() {
@@ -174,7 +169,7 @@ We can take our declaration one step further using JavaScript's [default paramet
     }
 ```
 
-:memo: You will see many different implementations of BFS. Some do not specify a root while others do not specify a goal. The goal here (no pun intended) is to demonstrate an approach that covers the breadth (pun intended) of BFS variations. 
+📝 You will see many different implementations of BFS. Some do not specify a root while others do not specify a goal. The goal here (no pun intended) is to demonstrate an approach that covers the breadth (pun intended) of BFS variations. 
 
 Let's verify that our `bfs()` method works by logging the return value with an argument of `G`:
 
@@ -266,11 +261,11 @@ There's no predetermined structure.
 
 How do we bring order to this chaos?
 
-:thinking-face:
+🤔
 
 Let's restate our goal: 
 
-> Given a graph, a root, and a goal, start at the root and search all of the vertices in the graph until we find the goal
+> Given a graph, a root, and a goal, start at the root and search the adjacent vertices until we find the goal
 
 There's a keyword here...
 
@@ -278,7 +273,7 @@ It starts with 'u' and ends with 'ntil'....
 
 What is the control flow statement that functions like a repeating `if` statement? 
 
-I'll just wait here _while_ you think about it :P
+I'll just wait here _while_ you think about it 😛
 
 Let's edit our pseudocode: 
 
@@ -292,15 +287,15 @@ Let's edit our pseudocode:
 
 * If none of the adjacent vertices are equal to our goal, return `false`. 
 
-The next question is, `while` what? How do we know there are vertices to check? 
+The next question is, `while` _what_? How do we know there are vertices to check? 
 
-It's like we need a check list...
+It's like we need a list...
 
 Let's use an analogy. 
 
 Graphs are often used to represent social networks. Imagine you and your friends are going to see a movie. You can't all rush into the theater at once. What do you need to do? Form a line, or, as they say across the pond, a queue! 
 
-:head-exploding: 
+🤯 
 
 Let's refactor our `bfs` method to use a queue. We'll first use an array and treat it like a Queue data structure and then later refactor to use a proper Queue class.
 
@@ -439,9 +434,13 @@ Yep...
 
 What's the problem? 
 
-The condition of our `while` loop is always true because we continually push vertices to our queue. 
+♾️
+
+The condition of our `while` loop is always true because we never stop pushing vertices to our queue. 
 
 What's the solution? 
+
+🛑
 
 We need an exit strategy... or a way to track which vertices we already checked so we don't check them again.
 
@@ -513,5 +512,5 @@ Breadth-First Search checks all of the vertices adjacent to a given vertex befor
 
 ### What Problem(s) Does Breadth-First Search Solve? 
 
-Breadth-First Search is generally used to find the shortest path between two vertices in a graph. 
+There are a number of specific use cases, such as the Ford-Fulkerson or Cheney's algorithm, for breadth-first search algorithms, but a general application is to find the shortest, or most efficient, path between two vertices.
 
