@@ -1,4 +1,529 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Jan 2021 14:58:35 GMT</lastBuildDate><item><title><![CDATA[Learn Fast and Make Things]]></title><description><![CDATA[What are you learning this year?  Perhaps we need to reframe the question: how are you learning this year?  Did you make resolutions to…]]></description><link>http://jarednielsen.com/learn-fast-make-things/</link><guid isPermaLink="false">http://jarednielsen.com/learn-fast-make-things/</guid><pubDate>Mon, 11 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 22 Jan 2021 14:07:55 GMT</lastBuildDate><item><title><![CDATA[Data Structures in JavaScript: Breadth-First Search Graph Traversal]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-graph-breadth-first-search/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-graph-breadth-first-search/</guid><pubDate>Fri, 22 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e8a05c1e0480dd327b5d4fb4401832d6/a987b/jarednielsen-data-structure-graph-bfs.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAv0lEQVQoz62SzQ6CMBCEef8H8urRqAc8KYImChhFBUUpbSnt2MZoPMivbjKbHrpfJjtrKaXQRq9q+me1gkgFsY+heNEIrQaawZxBXjNwNwBf7SDvRMNlLdSqc1d4IcjQBh3PUaw1kFCIQwzJqp3WAk0X2wh06oDaLriG5jMXIkl7ArWT8nQBc33cBiMwZwMeHvvt0JQkDMwLIKIEdLIAX/rdQsGH3imbN9XhpJlO+gxVlk91dvjlfH6+wz76O/ABRWhjLmqnyScAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen data structure graph bfs&quot;
+        title=&quot;&quot;
+        src=&quot;/static/e8a05c1e0480dd327b5d4fb4401832d6/b9e4f/jarednielsen-data-structure-graph-bfs.png&quot;
+        srcset=&quot;/static/e8a05c1e0480dd327b5d4fb4401832d6/cf440/jarednielsen-data-structure-graph-bfs.png 148w,
+/static/e8a05c1e0480dd327b5d4fb4401832d6/d2d38/jarednielsen-data-structure-graph-bfs.png 295w,
+/static/e8a05c1e0480dd327b5d4fb4401832d6/b9e4f/jarednielsen-data-structure-graph-bfs.png 590w,
+/static/e8a05c1e0480dd327b5d4fb4401832d6/f9b6a/jarednielsen-data-structure-graph-bfs.png 885w,
+/static/e8a05c1e0480dd327b5d4fb4401832d6/2d849/jarednielsen-data-structure-graph-bfs.png 1180w,
+/static/e8a05c1e0480dd327b5d4fb4401832d6/a987b/jarednielsen-data-structure-graph-bfs.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not &lt;em&gt;just&lt;/em&gt; to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the breadth-first search (BFS) algorithm with graph data structures in JavaScript. If you’re just joining us, you may want to start with &lt;a href=&quot;https://jarednielsen.com/data-structure-graph-javascript/&quot;&gt;Learn JavaScript Graph Data Structure&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;p&gt;Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is a Graph?&lt;/li&gt;
+&lt;li&gt;What problem(s) does a Graph solve? &lt;/li&gt;
+&lt;li&gt;What problem(s) do data structures solve? &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What is a Graph?&lt;/h3&gt;
+&lt;p&gt;A graph consists of a set of nodes, or &lt;em&gt;vertices&lt;/em&gt;, connected by &lt;em&gt;edges&lt;/em&gt;.  An edge consists of a pair of vertices. For example, if we establish a pair between two vertices, &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;, we refer t0 this related pairing as an edge. Because they are connected by an edge, &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt; are &lt;em&gt;adjacent&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;What Problem(s) Does a Graph Solve?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Optimization: We can use the graph data structure in conjunction with an optimization algorithm for determining an optimal path, such as GPS&lt;/li&gt;
+&lt;li&gt;Network topology: We can use the graph data structure when modeling network topology, such as the internet or your friends on Facebook!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What Problem(s) Do Data Structures Solve?&lt;/h3&gt;
+&lt;p&gt;According to &lt;a href=&quot;https://en.wikipedia.org/wiki/Data_structure&quot;&gt;Wikipedia&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Different types of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks. Data structures provide a means to manage large amounts of data efficiently for uses such as large databases and internet indexing services. Usually, efficient data structures are key to designing efficient algorithms. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What is Breadth-First Search? &lt;/li&gt;
+&lt;li&gt;What is the difference between Breadth-First Search and Depth-First Search? &lt;/li&gt;
+&lt;li&gt;What problem(s) does Breadth-First Search solve?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Graph Traversal: BFS vs. DFS&lt;/h2&gt;
+&lt;p&gt;There are two algorithms for graph traversal: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;breadth-first search (BFS) &lt;/li&gt;
+&lt;li&gt;depth-first search (DFS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;How do we search a graph? &lt;/p&gt;
+&lt;p&gt;Unlike a binary tree, we don’t necessarily have a root and we definitely don’t have a predetermined structure of branches. What &lt;em&gt;do&lt;/em&gt; we have? &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vertices&lt;/li&gt;
+&lt;li&gt;edges &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What do we know about these things? &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vertices are connected to each other with edges&lt;/li&gt;
+&lt;li&gt;vertices can be connected to any number of adjacent vertices (including zero!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let’s draw a simple graph so we can visualize this: &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3777e15231b190bd61947a511c4a301b/a987b/jarednielsen-data-structure-graph-bfs-a-g.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIElEQVQoz62STUsCQRzG/SJ9kKBLxz5B5+4dI7pJB6Eu3UoQgqBLhhAE0gtERHqygyCewkvELqXubiqu7s5/HufNbQVXV3DgYV6Y/2+eZ2YynHPMFRGmzd46hHdSiuY8ZEiqyyQCReHg6gXeYw2/91U4lQbcwgOC2qeGMkoJJN3L1t49hX18jQ4bwrF+8L19BOfySR3GxwF4EK7iUJQJuAxu72TR3s+rQ/yWha+NPfjvTe2UKCUw5rT3Wseo3tKAvo/BbQXu8we8szuQmKv1pUApxtTmbu4Gbq6oC0VM5fStAWvzAKzzN+N0MdC8dP+8jN5F2TwGi6AwCRIjw2jWJcW+S6iBUnIsXclx7B4XO4xFj/4eTUVG//edHriC1g6cALJXU1AMuQH1AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen data structure graph bfs a g&quot;
+        title=&quot;&quot;
+        src=&quot;/static/3777e15231b190bd61947a511c4a301b/b9e4f/jarednielsen-data-structure-graph-bfs-a-g.png&quot;
+        srcset=&quot;/static/3777e15231b190bd61947a511c4a301b/cf440/jarednielsen-data-structure-graph-bfs-a-g.png 148w,
+/static/3777e15231b190bd61947a511c4a301b/d2d38/jarednielsen-data-structure-graph-bfs-a-g.png 295w,
+/static/3777e15231b190bd61947a511c4a301b/b9e4f/jarednielsen-data-structure-graph-bfs-a-g.png 590w,
+/static/3777e15231b190bd61947a511c4a301b/f9b6a/jarednielsen-data-structure-graph-bfs-a-g.png 885w,
+/static/3777e15231b190bd61947a511c4a301b/2d849/jarednielsen-data-structure-graph-bfs-a-g.png 1180w,
+/static/3777e15231b190bd61947a511c4a301b/a987b/jarednielsen-data-structure-graph-bfs-a-g.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;If we can’t start at a root, where do we begin? &lt;/p&gt;
+&lt;p&gt;Anywhere! &lt;/p&gt;
+&lt;p&gt;We just pick a vertex and start searching. &lt;/p&gt;
+&lt;p&gt;For the sake of simplicity, let’s choose vertex &lt;code&gt;A&lt;/code&gt; as our starting point, or &lt;code&gt;root&lt;/code&gt;, and &lt;code&gt;G&lt;/code&gt; as our &lt;code&gt;goal&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;As we can see, &lt;code&gt;A&lt;/code&gt; is connected to vertices &lt;code&gt;B&lt;/code&gt;, &lt;code&gt;C&lt;/code&gt;, and &lt;code&gt;D&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Now we need to make a decision. &lt;/p&gt;
+&lt;p&gt;Do we first search the vertices connected to &lt;code&gt;A&lt;/code&gt;? Or do we choose &lt;em&gt;one&lt;/em&gt; of the vertices connected to &lt;code&gt;A&lt;/code&gt; and then search the vertices connected to it? &lt;/p&gt;
+&lt;p&gt;🤔&lt;/p&gt;
+&lt;p&gt;This is the difference between BFS and DFS. &lt;/p&gt;
+&lt;p&gt;With Breadth-First Search, we search all of the edges connected to a vertex before moving on to search the edges of the connected vertices. &lt;/p&gt;
+&lt;p&gt;With Depth-First Search, we follow the paths of the edges connected to our starting vertex, or &lt;em&gt;search key&lt;/em&gt;, one at a time, until we reach the end, then we backtrack and search the alternate paths, until we find the vertex we are looking for or we arrive back where we started. &lt;/p&gt;
+&lt;h3&gt;Breadth-First Search (BFS) in JavaScript&lt;/h3&gt;
+&lt;p&gt;Let’s declare our Graph data structure. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Graph&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;vertices &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;edges &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;vertices&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;v&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; w&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;w&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;w&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;edges&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Next, let’s initialize a new Graph and add vertices and edges. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; g &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Graph&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;B&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;C&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;D&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;E&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;F&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addVertex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;G&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;B&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;C&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;D&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;B&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;C&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;B&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;D&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;C&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;D&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;C&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;E&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;D&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;F&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEdge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;F&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;G&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To our Graph class, let’s add a &lt;code&gt;bfs&lt;/code&gt; method. We need to declare two parameters, &lt;code&gt;goal&lt;/code&gt; and &lt;code&gt;root&lt;/code&gt;, and if &lt;code&gt;goal&lt;/code&gt; and &lt;code&gt;root&lt;/code&gt; are equal, we return &lt;code&gt;true&lt;/code&gt;, else we return &lt;code&gt;false&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;bfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;goal&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; root&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;root &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We can take our declaration one step further using JavaScript’s &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters&quot;&gt;default parameters&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;bfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;goal&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; root &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;vertices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;root &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;📝 You will see many different implementations of BFS. Some do not specify a root while others do not specify a goal. The goal here (no pun intended) is to demonstrate an approach that covers the breadth (pun intended) of BFS variations. &lt;/p&gt;
+&lt;p&gt;Let’s verify that our &lt;code&gt;bfs()&lt;/code&gt; method works by logging the return value with an argument of &lt;code&gt;G&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;bfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;G&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;G&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The above will return &lt;code&gt;true&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;And the following will return &lt;code&gt;false&lt;/code&gt;: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;bfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;G&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now what? &lt;/p&gt;
+&lt;p&gt;Let’s outline a rough approach in pseudocode: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check the root. &lt;/li&gt;
+&lt;li&gt;If the root is equal to the goal, return true. &lt;/li&gt;
+&lt;li&gt;If the root is not equal to our goal, check the vertices adjacent to our root. &lt;/li&gt;
+&lt;li&gt;If an adjacent value is equal to our goal, return &lt;code&gt;true&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If none of the adjacent vertices are equal to our goal, return &lt;code&gt;false&lt;/code&gt;. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If we translate this to JavaScript: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;bfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;goal&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; root &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;vertices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; adj &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;root &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; adj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;root&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;adj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;root&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will work if our query is &lt;code&gt;B&lt;/code&gt;, &lt;code&gt;C&lt;/code&gt;, or &lt;code&gt;D&lt;/code&gt;. How do we get to &lt;code&gt;G&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;How do we “move down” a level? &lt;/p&gt;
+&lt;p&gt;Here’s the point where we need to make a jump, literally &lt;em&gt;and&lt;/em&gt; figuratively. &lt;/p&gt;
+&lt;p&gt;But things are about to get messy! Why? &lt;/p&gt;
+&lt;p&gt;We know our graph looks likes this:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3777e15231b190bd61947a511c4a301b/a987b/jarednielsen-data-structure-graph-bfs-a-g.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIElEQVQoz62STUsCQRzG/SJ9kKBLxz5B5+4dI7pJB6Eu3UoQgqBLhhAE0gtERHqygyCewkvELqXubiqu7s5/HufNbQVXV3DgYV6Y/2+eZ2YynHPMFRGmzd46hHdSiuY8ZEiqyyQCReHg6gXeYw2/91U4lQbcwgOC2qeGMkoJJN3L1t49hX18jQ4bwrF+8L19BOfySR3GxwF4EK7iUJQJuAxu72TR3s+rQ/yWha+NPfjvTe2UKCUw5rT3Wseo3tKAvo/BbQXu8we8szuQmKv1pUApxtTmbu4Gbq6oC0VM5fStAWvzAKzzN+N0MdC8dP+8jN5F2TwGi6AwCRIjw2jWJcW+S6iBUnIsXclx7B4XO4xFj/4eTUVG//edHriC1g6cALJXU1AMuQH1AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen data structure graph bfs a g&quot;
+        title=&quot;&quot;
+        src=&quot;/static/3777e15231b190bd61947a511c4a301b/b9e4f/jarednielsen-data-structure-graph-bfs-a-g.png&quot;
+        srcset=&quot;/static/3777e15231b190bd61947a511c4a301b/cf440/jarednielsen-data-structure-graph-bfs-a-g.png 148w,
+/static/3777e15231b190bd61947a511c4a301b/d2d38/jarednielsen-data-structure-graph-bfs-a-g.png 295w,
+/static/3777e15231b190bd61947a511c4a301b/b9e4f/jarednielsen-data-structure-graph-bfs-a-g.png 590w,
+/static/3777e15231b190bd61947a511c4a301b/f9b6a/jarednielsen-data-structure-graph-bfs-a-g.png 885w,
+/static/3777e15231b190bd61947a511c4a301b/2d849/jarednielsen-data-structure-graph-bfs-a-g.png 1180w,
+/static/3777e15231b190bd61947a511c4a301b/a987b/jarednielsen-data-structure-graph-bfs-a-g.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;What if we don’t know what our graph looks like? &lt;/p&gt;
+&lt;p&gt;What if our graph looked like this? &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e41b8a5eff1f7f2f588b31ff726ce78e/a987b/jarednielsen-data-structure-graph-bfs-a-g-alternate.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDUlEQVQoz61SPWsCQRD171jbpxeblP6FVJYGREKwSZdK+wMhRQIKxkolgiQpRPwCOyFFYjwQvJy5O/V29rl36uZUxLvgwGN3BubtvJ0X4pzjKGwGTiTAgW3unG5NAIc9oaNkomEb4+gNtPuizNX4HabpvHuXj5widMJ8bkJ/H0BTqviptKAX3jDrDaE9NmBV2mtCRv4J1dgt1JQiJ/uKJDDJlmTOGfMpmZzfEQ3GHDYxjC4z0K4VLETt92OEz/AVrHo/mGR3EZswnl5h1bqYPrzArHUwy5axHH6vCcmnZAnmWc5FEnqu/Cd5j+yAEB7syF8sXZBhgqw5uClg29JSwSbct5HXhxTEh//E2QlXpFtTfOH2fqwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen data structure graph bfs a g alternate&quot;
+        title=&quot;&quot;
+        src=&quot;/static/e41b8a5eff1f7f2f588b31ff726ce78e/b9e4f/jarednielsen-data-structure-graph-bfs-a-g-alternate.png&quot;
+        srcset=&quot;/static/e41b8a5eff1f7f2f588b31ff726ce78e/cf440/jarednielsen-data-structure-graph-bfs-a-g-alternate.png 148w,
+/static/e41b8a5eff1f7f2f588b31ff726ce78e/d2d38/jarednielsen-data-structure-graph-bfs-a-g-alternate.png 295w,
+/static/e41b8a5eff1f7f2f588b31ff726ce78e/b9e4f/jarednielsen-data-structure-graph-bfs-a-g-alternate.png 590w,
+/static/e41b8a5eff1f7f2f588b31ff726ce78e/f9b6a/jarednielsen-data-structure-graph-bfs-a-g-alternate.png 885w,
+/static/e41b8a5eff1f7f2f588b31ff726ce78e/2d849/jarednielsen-data-structure-graph-bfs-a-g-alternate.png 1180w,
+/static/e41b8a5eff1f7f2f588b31ff726ce78e/a987b/jarednielsen-data-structure-graph-bfs-a-g-alternate.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Or this? &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7995b2cb3758f31b11175772f5cf3425/a987b/jarednielsen-data-structure-graph-bfs-a-g-alternate-02.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEElEQVQoz5WSvUoDQRSF80wW1vEZfAbrFGkMaGET0tvZhSApLMRCsNJOBCVCsAgkpAhhQzZuZs0mS+b3ZHYmLlvMwuyFyxYz95tzzt2aUgrOlhIKtuLOA4KTBv5L4XjumKs5YVyYweTuBdHFLXi8RUr+kD6+IzxvQ1FuHlOyInD3/Illu4/kZ4p4OEH8+o3VdQ/Q59WA2k5WdBZiNw9BWl3Mz1pgGpNyam2LKpYZN0PkqoegfglKNtiyPVY391icNm2GJTmWKLTrkL8bsCAC+Rph/TZAMhgjffqwCo/3/ICFNkq15UxpvuWSDTuBKH6znISA0JbFcm2iUHtmgZV+G8eCcmXSbdUfWMjV554/0LMP5jBUKx7i5/8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen data structure graph bfs a g alternate 02&quot;
+        title=&quot;&quot;
+        src=&quot;/static/7995b2cb3758f31b11175772f5cf3425/b9e4f/jarednielsen-data-structure-graph-bfs-a-g-alternate-02.png&quot;
+        srcset=&quot;/static/7995b2cb3758f31b11175772f5cf3425/cf440/jarednielsen-data-structure-graph-bfs-a-g-alternate-02.png 148w,
+/static/7995b2cb3758f31b11175772f5cf3425/d2d38/jarednielsen-data-structure-graph-bfs-a-g-alternate-02.png 295w,
+/static/7995b2cb3758f31b11175772f5cf3425/b9e4f/jarednielsen-data-structure-graph-bfs-a-g-alternate-02.png 590w,
+/static/7995b2cb3758f31b11175772f5cf3425/f9b6a/jarednielsen-data-structure-graph-bfs-a-g-alternate-02.png 885w,
+/static/7995b2cb3758f31b11175772f5cf3425/2d849/jarednielsen-data-structure-graph-bfs-a-g-alternate-02.png 1180w,
+/static/7995b2cb3758f31b11175772f5cf3425/a987b/jarednielsen-data-structure-graph-bfs-a-g-alternate-02.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;There are a couple problems we need to solve. &lt;/p&gt;
+&lt;p&gt;If we jump back to where we started, how do we avoid checking &lt;code&gt;B&lt;/code&gt; twice? &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;And…&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If we checked &lt;code&gt;B&lt;/code&gt;, but not its adjacent vertices, how do we “move down a level” and check the vertices connected to &lt;code&gt;B&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;Once we check &lt;code&gt;B&lt;/code&gt;, how do we move on to &lt;code&gt;C&lt;/code&gt; and check its adjacent vertices? &lt;/p&gt;
+&lt;p&gt;We need a way to track which vertices we already visited. &lt;/p&gt;
+&lt;p&gt;But!&lt;/p&gt;
+&lt;p&gt;We also need a way to track which vertices we need to visit.&lt;/p&gt;
+&lt;p&gt;What’s the problem we need to solve? &lt;/p&gt;
+&lt;p&gt;There’s no predetermined structure. &lt;/p&gt;
+&lt;p&gt;How do we bring order to this chaos?&lt;/p&gt;
+&lt;p&gt;🤔&lt;/p&gt;
+&lt;p&gt;Let’s restate our goal: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given a graph, a root, and a goal, start at the root and search the adjacent vertices until we find the goal&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There’s a keyword here…&lt;/p&gt;
+&lt;p&gt;It starts with ‘u’ and ends with ‘ntil’…&lt;/p&gt;
+&lt;p&gt;What is the control flow statement that functions like a repeating &lt;code&gt;if&lt;/code&gt; statement? &lt;/p&gt;
+&lt;p&gt;I’ll just wait here &lt;em&gt;while&lt;/em&gt; you think about it 😛&lt;/p&gt;
+&lt;p&gt;Let’s edit our pseudocode: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;While there are vertices to check, start with the root. &lt;/li&gt;
+&lt;li&gt;If the root is equal to the goal, return true. &lt;/li&gt;
+&lt;li&gt;If the root is not equal to our goal, check the vertices adjacent to our root. &lt;/li&gt;
+&lt;li&gt;If an adjacent value is equal to our goal, return &lt;code&gt;true&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If none of the adjacent vertices are equal to our goal, return &lt;code&gt;false&lt;/code&gt;. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The next question is, &lt;code&gt;while&lt;/code&gt; &lt;em&gt;what&lt;/em&gt;? How do we know there are vertices to check? &lt;/p&gt;
+&lt;p&gt;It’s like we need a list…&lt;/p&gt;
+&lt;p&gt;Let’s use an analogy. &lt;/p&gt;
+&lt;p&gt;Graphs are often used to represent social networks. Imagine you and your friends are going to see a movie. You can’t all rush into the theater at once. What do you need to do? Form a line, or, as they say across the pond, a queue! &lt;/p&gt;
+&lt;p&gt;🤯 &lt;/p&gt;
+&lt;p&gt;Let’s refactor our &lt;code&gt;bfs&lt;/code&gt; method to use a queue. We’ll first use an array and treat it like a Queue data structure and then later refactor to use a proper Queue class.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;bfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;goal&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; root &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;vertices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; adj &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; queue &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;root&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; v &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; adj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;adj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We declare an array, &lt;code&gt;queue&lt;/code&gt;, and &lt;code&gt;push&lt;/code&gt;, or &lt;em&gt;enqueue&lt;/em&gt; our &lt;code&gt;root&lt;/code&gt; to it. While there are vertices in the queue, we &lt;em&gt;dequeue&lt;/em&gt; the first vertex and assign it to the variable, &lt;code&gt;v&lt;/code&gt;. If &lt;code&gt;v&lt;/code&gt; is equal to our &lt;code&gt;goal&lt;/code&gt;, we return &lt;code&gt;true&lt;/code&gt;. If &lt;code&gt;v&lt;/code&gt; is not equal to our &lt;code&gt;goal&lt;/code&gt;, we push the adjacent vertices adjacent to our &lt;code&gt;queue&lt;/code&gt; and then check them. &lt;/p&gt;
+&lt;p&gt;This works great if we are only searching &lt;code&gt;D&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;What happens if we search for &lt;code&gt;G&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;Let’s log &lt;code&gt;v&lt;/code&gt; to see what’s happening inside our &lt;code&gt;while&lt;/code&gt; loop. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;bfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;goal&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; root &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;vertices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; adj &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; queue &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;root&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; v &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; adj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;adj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When we search for &lt;code&gt;D&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;bfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;D&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We log the following: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;A
+B
+C
+D
+true&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But if we search for &lt;code&gt;G&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;bfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;G&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We log the following: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;A
+B
+C
+D
+A
+C
+D
+A
+B
+D
+E
+A
+B
+C
+F
+B
+C
+D
+A
+B
+D
+E
+A
+B
+C
+F
+B
+C
+D
+A
+C
+D
+A
+B
+C
+F
+C
+B
+C
+D
+A
+C
+D
+A
+B
+D
+E
+D
+G
+true&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is not very efficient.&lt;/p&gt;
+&lt;p&gt;It gets worse. What happens if we search for &lt;code&gt;H&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;Yep…&lt;/p&gt;
+&lt;p&gt;What’s the problem? &lt;/p&gt;
+&lt;p&gt;♾️&lt;/p&gt;
+&lt;p&gt;The condition of our &lt;code&gt;while&lt;/code&gt; loop is always true because we never stop pushing vertices to our queue. &lt;/p&gt;
+&lt;p&gt;What’s the solution? &lt;/p&gt;
+&lt;p&gt;🛑&lt;/p&gt;
+&lt;p&gt;We need an exit strategy… or a way to track which vertices we already checked so we don’t check them again.&lt;/p&gt;
+&lt;p&gt;We &lt;em&gt;could&lt;/em&gt; use another Queue, but we don’t need FIFO, so we can just use an array to track which vertices we “discovered”.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;bfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;goal&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; root &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;vertices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; adj &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;adjacent&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; queue &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;root&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; discovered &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        discovered&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;root&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; v &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; adj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;discovered&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;adj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                    discovered&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;adj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                    queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;adj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We declare an array, &lt;code&gt;discovered&lt;/code&gt;, and create an index, &lt;code&gt;root&lt;/code&gt; assigned a value of &lt;code&gt;true&lt;/code&gt;. Within the &lt;code&gt;for&lt;/code&gt; loop in our &lt;code&gt;while&lt;/code&gt; loop, we add a condition to check whether or not the vertex was “discovered”. If we did not previously discover the vertex, we now mark it as discovered, or &lt;code&gt;true&lt;/code&gt;, and push it to our &lt;code&gt;queue&lt;/code&gt; to later check if it is equal to our &lt;code&gt;goal&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;That’s it!&lt;/p&gt;
+&lt;p&gt;That’s Breadth-First Search!`&lt;/p&gt;
+&lt;p&gt;You’re like, “BFD. &lt;/p&gt;
+&lt;p&gt;“Why would we need this if we can simply &lt;em&gt;look up&lt;/em&gt; our query in the &lt;code&gt;adjacent&lt;/code&gt; ‘dictionary’?” &lt;/p&gt;
+&lt;p&gt;I’m glad you asked. &lt;/p&gt;
+&lt;p&gt;For the sake of brevity and example, the method above is contrived. A “real-world” application of a breadth-first search algorithm would check for a value stored in a graph and return the unique identifier, or key, of the vertex where that value was found. Another “real-world” scenario is finding the shortest path between two vertices. In the next tutorial, we’ll modify our &lt;code&gt;bfs&lt;/code&gt; method to do just that!&lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What is Breadth-First Search? &lt;/li&gt;
+&lt;li&gt;What is the difference between Breadth-First Search and Depth-First Search? &lt;/li&gt;
+&lt;li&gt;What problem(s) does Breadth-First Search solve?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What is Breadth-First Search?&lt;/h3&gt;
+&lt;p&gt;Breadth-First Search is an algorithm that searches a graph for a specific goal by checking all of the edges connected to a vertex before moving on to check the edges of the connected vertices. &lt;/p&gt;
+&lt;h3&gt;What is the Difference Between Breadth-First Search and Depth-First Search?&lt;/h3&gt;
+&lt;p&gt;Breadth-First Search checks all of the vertices adjacent to a given vertex before checking the vertices adjacent to those vertices. Depth-First Search, on the other hand, checks all of the vertices on a path and then backtracks.&lt;/p&gt;
+&lt;h3&gt;What Problem(s) Does Breadth-First Search Solve?&lt;/h3&gt;
+&lt;p&gt;There are a number of specific use cases, such as the Ford-Fulkerson or Cheney’s algorithm, for breadth-first search algorithms, but a general application is to find the shortest, or most efficient, path between two vertices.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn Fast and Make Things]]></title><description><![CDATA[What are you learning this year?  Perhaps we need to reframe the question: how are you learning this year?  Did you make resolutions to…]]></description><link>http://jarednielsen.com/learn-fast-make-things/</link><guid isPermaLink="false">http://jarednielsen.com/learn-fast-make-things/</guid><pubDate>Mon, 11 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/394962a38a09df2737ef704c29b87f7f/a987b/jarednielsen-solution-101-learn-fast.png&quot;
@@ -42,7 +567,7 @@
 &lt;p&gt;Why? &lt;/p&gt;
 &lt;p&gt;We can boil it down to two factors: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;the resolution is too ambtious or too ambiguous or both&lt;/li&gt;
+&lt;li&gt;the resolution is too ambitious or too ambiguous or both&lt;/li&gt;
 &lt;li&gt;the resolution focuses on product, not process&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These are two sides of the same coin. &lt;/p&gt;
@@ -116,9 +641,7 @@
 &lt;li&gt;&lt;strong&gt;Experimentation: Explore Outside Your Comfort Zone&lt;/strong&gt;. All of these principles are only starting points. True mastery comes not just from following the path trodden by others but from exploring possibilities they haven’t yet imagined. &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;There’s no one-size-fits-all strategy for ultralearning. You will need to adapt these principles to the needs of your project and map them to your timeline. &lt;/p&gt;
-&lt;p&gt;Learn fast and make things! &lt;/p&gt;
-&lt;p&gt;There are only so many hours in the day. Looking for a way to make the most of them? &lt;/p&gt;
-&lt;p&gt;Check out my latest article, &lt;a href=&quot;@TODO&quot;&gt;Best Podcasts for Developers in 2021&lt;/a&gt; &lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Use Chunking for Learning and Problem Solving]]></title><description><![CDATA[When learning something new, we want to create chunks. With chunking, we learn a concept then combine that concept with other concepts to…]]></description><link>http://jarednielsen.com/chunking-learning/</link><guid isPermaLink="false">http://jarednielsen.com/chunking-learning/</guid><pubDate>Mon, 28 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;Learn fast and make things! &lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Use Chunking for Learning and Problem Solving]]></title><description><![CDATA[When learning something new, we want to create chunks. With chunking, we learn a concept then combine that concept with other concepts to…]]></description><link>http://jarednielsen.com/chunking-learning/</link><guid isPermaLink="false">http://jarednielsen.com/chunking-learning/</guid><pubDate>Mon, 28 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/87a9d10a919ef73d1cd743ece451194b/2f950/jarednielsen-solution-chunking.png&quot;
