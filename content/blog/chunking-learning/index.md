@@ -46,13 +46,15 @@ Oakley outlines three steps for learning by chunking:
 
 You can’t truly learn something if you are distracted, trying to learn too many things at once, or trying to eat an elephant. Continually break the problem down until the pieces are digestible and proceed one-at-a-time.
 
-We divide & conquer! Or should we say, we _chunk_ & conquer?
+Where have we seen this or something like it before? 
 
-This is also a common pattern in algorithm design. 
+🤔
 
-Divide & conquer recursively breaks a problem down into smaller and smaller pieces. 
+We divide & conquer! 
 
-These smaller pieces are then recombined into a solution to the problem. 
+Or should we say, we _chunk_ & conquer?
+
+This is also a common pattern in algorithm design. Divide & conquer recursively breaks a problem down into smaller and smaller pieces. These smaller pieces are then recombined into a solution to the problem. 
 
 What’s the pattern?
 
@@ -88,13 +90,14 @@ We could break it down even further.
 
 * Etc.
 
-These are a few of the programming fundamentals, or chunks, in our library that enable us to create more complex chunks, such as recursion.
+These are a few of the programming fundamentals, or chunks, in our library that enable us to create more complex chunks, such as recursion. Even more fundamental is [Proof by Induction](https://jarednielsen.com/proof-induction/)
+
 
 ### Understand
 
 Chunks are useless if you don’t know what they mean. 
 
-Ask yourself, "How does this chunk work? Why?"
+Ask yourself, "How does this chunk work? Why does this chunk work?"
 
 In understanding our chunks, we begin to build a library. According to Oakley:
 
