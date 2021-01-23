@@ -1,6 +1,6 @@
 ---
 title: "How to Use Chunking for Learning and Problem Solving"
-date: "2020-12-28"
+date: "2021-01-25"
 description: "When learning something new, we want to create chunks. With chunking, we learn a concept then combine concepts to solve problems. If we encounter a concept that is too big to understand, we need to break it into smaller chunks, then recombine the chunks."
 keywords: ['chunking', 'learning']
 subject:  https://mailchi.mp/f55497ad61ea/the-solution-how-do-you-eat-an-algorithm
@@ -94,7 +94,7 @@ These are a few of the programming fundamentals, or chunks, in our library that 
 
 Chunks are useless if you don’t know what they mean. 
 
-How does this chunk work? Why?
+Ask yourself, "How does this chunk work? Why?"
 
 In understanding our chunks, we begin to build a library. According to Oakley:
 
@@ -113,5 +113,12 @@ How does it relate to other chunks?
 
 When learning something new, we want to create chunks. Chunks are separate bits of information united through meaning. With chunking, we learn a concept then combine that concept with other concepts to solve problems. If we encounter a concept that is too big to understand, we need to break it into smaller chunks, then recombine the chunks. 
 
+How do we do do that? 
+
+Practice. 
+
+According to Oakley, "practice helps build strong neural patterns--that is, conceptual chunks of understanding."
+
+[Practice makes practice](https://jarednielsen.com/practice-makes-practice/).
  
 
