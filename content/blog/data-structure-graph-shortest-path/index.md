@@ -133,7 +133,127 @@ The vertices and the number of edges that constitute the path.
 
 What data type (or structure) do we want to use to store these values? 
 
-Arrays!
+It starts with 'a' and rhymes with 'ray'...
+
+To our `bfs` method, let's add an `edges` array and initialize our `edges` array with key `root` assigned a value of `0`. Why? Because the distance from our `root` to itself _is_ 0, and we want to be sure we account for all edge cases (no pun intended).
+```js
+    bfs(goal, root = this.vertices[0]) {
+        let adj = this.adjacent;
+
+        const queue = [];
+        queue.push(root);
+
+        const discovered = [];
+        discovered[root] = true;
+
+        //add edges array and initialize it with root
+        const edges = [];
+        edges[root] = 0;
+
+        while(queue.length) {
+            let v = queue.shift();
+
+            //return edges array if we find our goal
+            if (v === goal) {
+                return edges;
+            }
+
+            for (let i = 0; i < adj[v].length; i++) {
+                if (!discovered[adj[v][i]]) {
+                    discovered[adj[v][i]] = true;
+                    queue.push(adj[v][i]);
+                }
+            }
+        }
+
+        return false;
+    }
+```
+
+We also want to return our `edges` array if and when we find our `goal`. 
+
+Verify that your method works by logging `g.bfs("A"));`.
+
+Now what? 
+
+Let's restate our goal:
+> Given a graph, a root, and a goal, find the shortest path from the root to the goal. 
+
+Let's look at our drawing.
+
+![./jarednielsen-data-structure-graph-bfs-a-g.png]
+
+If we want to find the shortest path between `A` and `E`, what do we need to do? 
+
+We need to count the edges! 
+
+If our `bfs` is returning our `edges` array, what does `edges` need to look like? 
+```sh
+[ A: 0, B: 1, C: 1, D: 1, E: 2, F: 2, G: 3]
+```
+
+Let's write pseudocode!
+
+* If (while) there are vertices in the queue, check the first vertex. 
+
+* If the first vertex is equal to our goal, return our edge counts.
+
+* Otherwise, check the vertices adjacent to our vertex. 
+
+* If the adjacent vertices are new to us (not discovered), label them "discovered". 
+
+* Then add the newly discovered vertex to the queue to check later. 
+
+* Then "count" the edges between our starting vertex and our newly discovered vertex. 
+
+What do I mean by "count"? 
+
+Where have we seen this or something like it before? 
+
+What is a _very_ common pattern in iteration? 
+
+Incrementation (if that's a word).
+
+```js
+count++
+```
+
+Or:
+```js
+count += 1
+```
+
+Let's think this through...
+
+The first vertex we will iterate over is `A`. We know the value of `A` in `edges` is `0`. We know the distance between `A` and it's adjacent vertices, `B`, `C`, and `D`, is 1. We want to add `B`, `C`, and `D` to our `edges` array and assign them a value of 1. 
+
+On the next iteration of our `while` loop, the value of `B` in `edges` will be `1`, but the adjacent vertices will be labeled "discovered", so we will skip them and move on to `C`, where the value stored in `edges` is also `1`. This time, however, `E` is not "discovered", so we now label it "discovered", push it to the `queue` and add it to our `edges` array. 
+
+But! It's two edges away from our `root`? How do we get that value? 
+
+From `C`! 
+
+AKA `edges[v]`.
+
+We simply add 1 to the value associated with our current vertex. 
+```js
+            for (let i = 0; i < adj[v].length; i++) {
+                if (!discovered[adj[v][i]]) {
+                    discovered[adj[v][i]] = true;
+                    queue.push(adj[v][i]);
+                    edges[adj[v][i]] = edges[v] + 1;
+                    console.log(edges);
+                }
+            }
+```
+
+
+
+
+
+
+
+
 
 
 
