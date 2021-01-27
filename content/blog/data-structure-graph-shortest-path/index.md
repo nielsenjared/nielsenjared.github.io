@@ -242,10 +242,124 @@ We simply add 1 to the value associated with our current vertex.
                     discovered[adj[v][i]] = true;
                     queue.push(adj[v][i]);
                     edges[adj[v][i]] = edges[v] + 1;
-                    console.log(edges);
                 }
             }
 ```
+
+Our `bfs` method, `g.bfs("G")`, will return the following: 
+```sh
+[
+  A: 0, B: 1,
+  C: 1, D: 1,
+  E: 2, F: 2,
+  G: 3
+]
+```
+
+If we just want the shortest path to our goal, we can modify our conditional return: 
+```js
+            if (v === goal) {
+                return edges[goal];
+            }
+```
+
+Now we need to return the vertices along the path. 
+
+Where have we seen this or something like it before? 
+
+:thinking-face:
+
+We can follow the same pattern we used to label vertices "discovered" and to count edges.
+```js
+    bfs(goal, root = this.vertices[0]) {
+        let adj = this.adjacent;
+
+        const queue = [];
+        queue.push(root);
+
+        const discovered = [];
+        discovered[root] = true;
+
+        const edges = [];
+        edges[root] = 0;
+
+        //add vertices array and initialize it with root
+        const vertices = [];
+        vertices[root] = null;
+
+        while(queue.length) {
+            let v = queue.shift();
+
+            //refactor our conditional to return both edges & vertices
+            if (v === goal) {
+                return { 
+                    edges,
+                    vertices
+                };
+            }
+
+            for (let i = 0; i < adj[v].length; i++) {
+                if (!discovered[adj[v][i]]) {
+                    discovered[adj[v][i]] = true;
+                    queue.push(adj[v][i]);
+                    edges[adj[v][i]] = edges[v] + 1;
+                    //create a key in vertices array with the current vertex
+                    //assign it a value of its predecessor
+                    vertices[adj[v][i]] = v;
+                }
+            }
+        }
+
+        return false;
+    }
+```
+
+We declare a `vertices` array and create a key with `root` assigned a value of `null`. Why `null`? Because our `root` doesn't creat a path to itself. We next modify our conditional statement to return both `edges` and `vertices`. Finally, within our `while` loop, for each adjacent vertex, we add a key to our `vertices` array and assign it the value of the predecessor.
+
+Our `bfs` method, `g.bfs("G")`, will return the following: 
+```sh
+{
+  edges: [
+    A: 0, B: 1,
+    C: 1, D: 1,
+    E: 2, F: 2,
+    G: 3
+  ],
+  vertices: [ A: null, B: 'A', C: 'A', D: 'A', E: 'C', F: 'D', G: 'F' ]
+}
+```
+
+That's not particularly useful, though, is it? 
+
+What do we need to do? 
+
+We need to assemble the path. 
+
+Like implementing Breadth-First Search itself, this is about to get messy. Why? 
+
+TODO 
+
+Let's pseudocode! 
+
+* Starting with our goal, what is it's predecessor? 
+
+* Look up the predcessor.
+
+* Push it to an array.
+
+* What is the predcessor of the predecessor? 
+
+* Look it up and push it to the array.
+
+* Repeat until we return to the root. 
+
+* Then reverse the array or pop elements out into a string. 
+
+
+
+
+
+
 
 
 
