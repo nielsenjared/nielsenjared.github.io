@@ -41,11 +41,10 @@ There are a number of specific use cases, such as the Ford-Fulkerson or Cheney's
  
 * TODO
 
+* 
 
-## TODO 
+* 
 
-...
- 
 
 ### Shortest-Path Graph Traversal in JavaScript
 
@@ -341,9 +340,9 @@ TODO
 
 Let's pseudocode! 
 
-* Starting with our goal, what is it's predecessor? 
+* Starting with the goal.
 
-* Look up the predcessor.
+* Look up its predcessor.
 
 * Push it to an array.
 
@@ -355,23 +354,200 @@ Let's pseudocode!
 
 * Then reverse the array or pop elements out into a string. 
 
+There are several approaches we can take to implement this. We could add a method to our class, or we could build the path _outside_ the class, but my preference is to add a helper function in our `bfs` method. Let's call it `buildPath`. What do we want `buildPath` to return? The patch, natch. If we know, as we outlined above, that we need to work with our `goal` and our `root`, let's pass those variables to our function along with `predecessors`. Here's our `bfs` method:
+```js
+    bfs(goal, root = this.vertices[0]) {
+        let adj = this.adjacent;
 
+        const queue = [];
+        queue.push(root);
 
+        const discovered = [];
+        discovered[root] = true;
 
+        const edges = [];
+        edges[root] = 0;
 
+        const predecessors = [];
+        predecessors[root] = null;
 
+        //declare buildPath function
+        const buildPath = (goal, root, predecessors) => {
+            return path;
+        }
 
+        while(queue.length) {
+            let v = queue.shift();
 
+            if (v === goal) {
+                return { 
+                    distance: edges[goal],
+                    path: buildPath(goal, root, predecessors)
+                };
+            }
 
+            for (let i = 0; i < adj[v].length; i++) {
+                if (!discovered[adj[v][i]]) {
+                    discovered[adj[v][i]] = true;
+                    queue.push(adj[v][i]);
+                    edges[adj[v][i]] = edges[v] + 1;
+                    predecessors[adj[v][i]] = v;
+                }
+            }
+        }
 
+        return false;
+    }
+```
 
+How do we 'look up' predecessor of our `goal`?
+```js
+predecessors[goal];
+```
 
+What is the predecessor of the predecessor? 
+```js
+predecssors[predecessors[goal]];
+```
 
+And what's the predecesor of the predecessor of the predecessor? 
 
+🤨
 
+_While_ we could go down that rabbit hole, let's find an algorithmic approach:
+```js
+            let u = predecessors[goal];
 
+            while(u != root) {
+                u = predecessors[u];
+            }
 
+```
 
+Why `u`? 
+
+In graph theory, _u_ is often used for the vertex that precedes a given vertex, _v_. 
+
+That's the crux of it. What's missing? Our array. Let's name it `stack` as a classic implementation of this algorithm uses a Stack data structure for the LIFO. Here's our complete `buildPath` helper function:
+```js
+        const buildPath = (goal, root, predecessors) => {
+            //declare and initialize a "stack"
+            const stack = [];
+            //push our goal to the stack
+            stack.push(goal);
+
+            let u = predecessors[goal];
+
+            while(u != root) {
+                //push each predecssor to the stack
+                stack.push(u);
+                u = predecessors[u];
+            }
+
+            //put the cherry on top
+            stack.push(root);
+
+            //LIFO
+            let path = stack.reverse().join('-');
+
+            return path;
+        }
+```
+
+Lastly, we need to call our helper function in our conditional statement: 
+```js
+        while(queue.length) {
+            let v = queue.shift();
+
+            //refactor to return distance and path
+            if (v === goal) {
+                return { 
+                    distance: edges[goal],
+                    path: buildPath(goal, root, predecessors)
+                };
+            }
+
+            for (let i = 0; i < adj[v].length; i++) {
+                if (!discovered[adj[v][i]]) {
+                    discovered[adj[v][i]] = true;
+                    queue.push(adj[v][i]);
+                    edges[adj[v][i]] = edges[v] + 1;
+                    predecessors[adj[v][i]] = v;
+                }
+            }
+        }
+```
+
+Here's our complete `bfs` method: 
+```js
+    bfs(goal, root = this.vertices[0]) {
+        let adj = this.adjacent;
+
+        const queue = [];
+        queue.push(root);
+
+        const discovered = [];
+        discovered[root] = true;
+
+        const edges = [];
+        edges[root] = 0;
+
+        const predecessors = [];
+        predecessors[root] = null;
+
+        const buildPath = (goal, root, predecessors) => {
+            const stack = [];
+            stack.push(goal);
+
+            let u = predecessors[goal];
+
+            while(u != root) {
+                stack.push(u);
+                u = predecessors[u];
+            }
+
+            stack.push(root);
+
+            let path = stack.reverse().join('-');
+
+            return path;
+        }
+    
+
+        while(queue.length) {
+            let v = queue.shift();
+
+            if (v === goal) {
+                return { 
+                    distance: edges[goal],
+                    path: buildPath(goal, root, predecessors)
+                };
+            }
+
+            for (let i = 0; i < adj[v].length; i++) {
+                if (!discovered[adj[v][i]]) {
+                    discovered[adj[v][i]] = true;
+                    queue.push(adj[v][i]);
+                    edges[adj[v][i]] = edges[v] + 1;
+                    predecessors[adj[v][i]] = v;
+                }
+            }
+        }
+
+        return false;
+    }
+```
+
+And now when we call `g.bfs("G", "A")`, it returns: 
+```sh
+{ distance: 3, path: 'A-D-F-G' }
+```
+
+Can we do better? 
+
+Absolutely. 
+
+We'll look at Djikstra's and the Floyd-Warshall algorithms in the future.
 
 
 ## Reflection
