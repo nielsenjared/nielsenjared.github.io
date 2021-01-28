@@ -1,19 +1,24 @@
 ---
-title: "Data Structures in JavaScript: Shortest-Path Graph Traversal"  
-date: '2021-01-22'
+title: "Data Structures in JavaScript: Shortest Path Graph Traversal"  
+date: '2021-01-29'
 description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the shortest-path graph traversal algorithm in JavaScript. 
-keyword: ['javascript', 'graph', 'shortest-path', 'data structure']
+keyword: ['javascript', 'graph', 'shortest-path', 'data structure', 'breadth-first search']
 ---
 
 
 ![](./jarednielsen-data-structure-graph-bfs.png)
 
 
-At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the breadth-first search (BFS) algorithm with graph data structures in JavaScript. If you're just joining us, you may want to start with [Learn JavaScript Graph Data Structure](https://jarednielsen.com/data-structure-graph-javascript/).
- 
+At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the breadth-first search (BFS) algorithm with graph data structures in JavaScript. 
+
+If you're just joining us, you may want to start with [Data Structures in JavaScript: Graph](https://jarednielsen.com/data-structure-graph-javascript/). 
+
+If you're new to data structures, you may want to start with [Data Structures in JavaScript: Array](https://jarednielsen.com/data-structure-array-javascript/)
 
 
 ## Retrieval Practice
+
+Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding: 
 
 * What is Breadth-First Search? 
 
@@ -38,12 +43,14 @@ There are a number of specific use cases, such as the Ford-Fulkerson or Cheney's
 
 
 ## Let's Get Meta
+
+Programming is problem solving. Both are metacognitive activities. To excel, we want to improve our thinking _about_ thinking. Ask yourself the following questions and keep them back of mind as you proceed: 
  
-* TODO
+* What is pattern recognition?
 
-* 
+* Why is Breadth-First Search used to find the shortest-path?  
 
-* 
+* What is a predecessor? 
 
 
 ### Shortest-Path Graph Traversal in JavaScript
@@ -126,7 +133,7 @@ Now what?
 
 What do we need our `bfs` method to return if we want to know the shortest path between the `root` and the `goal`? 
 
-:thinking-face:
+🤔
 
 The vertices and the number of edges that constitute the path. 
 
@@ -134,7 +141,8 @@ What data type (or structure) do we want to use to store these values?
 
 It starts with 'a' and rhymes with 'ray'...
 
-To our `bfs` method, let's add an `edges` array and initialize our `edges` array with key `root` assigned a value of `0`. Why? Because the distance from our `root` to itself _is_ 0, and we want to be sure we account for all edge cases (no pun intended).
+To our `bfs` method, let's add an `edges` array and initialize our `edges` array with a key `root` assigned a value of `0`. Why? Because the distance from our `root` to itself _is_ 0, and we want to be sure we account for all edge cases (no pun intended). We also want to return our `edges` array if and when we find our `goal`. 
+
 ```js
     bfs(goal, root = this.vertices[0]) {
         let adj = this.adjacent;
@@ -169,8 +177,6 @@ To our `bfs` method, let's add an `edges` array and initialize our `edges` array
     }
 ```
 
-We also want to return our `edges` array if and when we find our `goal`. 
-
 Verify that your method works by logging `g.bfs("A"));`.
 
 Now what? 
@@ -178,9 +184,9 @@ Now what?
 Let's restate our goal:
 > Given a graph, a root, and a goal, find the shortest path from the root to the goal. 
 
-Let's look at our drawing.
+Let's look at the diagram of our graph...
 
-![./jarednielsen-data-structure-graph-bfs-a-g.png]
+![](./jarednielsen-data-structure-graph-bfs-a-g.png)
 
 If we want to find the shortest path between `A` and `E`, what do we need to do? 
 
@@ -245,7 +251,7 @@ We simply add 1 to the value associated with our current vertex.
             }
 ```
 
-Our `bfs` method, `g.bfs("G")`, will return the following: 
+Passing `G` to our `bfs` method, `g.bfs("G")`, will return the following: 
 ```sh
 [
   A: 0, B: 1,
@@ -266,7 +272,7 @@ Now we need to return the vertices along the path.
 
 Where have we seen this or something like it before? 
 
-:thinking-face:
+🤔
 
 We can follow the same pattern we used to label vertices "discovered" and to count edges.
 ```js
@@ -283,8 +289,8 @@ We can follow the same pattern we used to label vertices "discovered" and to cou
         edges[root] = 0;
 
         //add vertices array and initialize it with root
-        const vertices = [];
-        vertices[root] = null;
+        const predecessors = [];
+        predecessors[root] = null;
 
         while(queue.length) {
             let v = queue.shift();
@@ -293,7 +299,7 @@ We can follow the same pattern we used to label vertices "discovered" and to cou
             if (v === goal) {
                 return { 
                     edges,
-                    vertices
+                    predecessors
                 };
             }
 
@@ -304,7 +310,7 @@ We can follow the same pattern we used to label vertices "discovered" and to cou
                     edges[adj[v][i]] = edges[v] + 1;
                     //create a key in vertices array with the current vertex
                     //assign it a value of its predecessor
-                    vertices[adj[v][i]] = v;
+                    predecessors[adj[v][i]] = v;
                 }
             }
         }
@@ -313,7 +319,7 @@ We can follow the same pattern we used to label vertices "discovered" and to cou
     }
 ```
 
-We declare a `vertices` array and create a key with `root` assigned a value of `null`. Why `null`? Because our `root` doesn't creat a path to itself. We next modify our conditional statement to return both `edges` and `vertices`. Finally, within our `while` loop, for each adjacent vertex, we add a key to our `vertices` array and assign it the value of the predecessor.
+We declare a `predecessors` array and create a key with `root` assigned a value of `null`. Why `null`? Because our `root` doesn't creat a path to itself. We next modify our conditional statement to return both `edges` and `predecessors`. Finally, within our `while` loop, for each adjacent vertex, we add a key to our `predecessors` array and assign it the value of the predecessor.
 
 Our `bfs` method, `g.bfs("G")`, will return the following: 
 ```sh
@@ -324,7 +330,7 @@ Our `bfs` method, `g.bfs("G")`, will return the following:
     E: 2, F: 2,
     G: 3
   ],
-  vertices: [ A: null, B: 'A', C: 'A', D: 'A', E: 'C', F: 'D', G: 'F' ]
+  predecessors: [ A: null, B: 'A', C: 'A', D: 'A', E: 'C', F: 'D', G: 'F' ]
 }
 ```
 
@@ -332,13 +338,7 @@ That's not particularly useful, though, is it?
 
 What do we need to do? 
 
-We need to assemble the path. 
-
-Like implementing Breadth-First Search itself, this is about to get messy. Why? 
-
-TODO 
-
-Let's pseudocode! 
+We need to write pseudocode! 
 
 * Starting with the goal.
 
@@ -354,7 +354,7 @@ Let's pseudocode!
 
 * Then reverse the array or pop elements out into a string. 
 
-There are several approaches we can take to implement this. We could add a method to our class, or we could build the path _outside_ the class, but my preference is to add a helper function in our `bfs` method. Let's call it `buildPath`. What do we want `buildPath` to return? The patch, natch. If we know, as we outlined above, that we need to work with our `goal` and our `root`, let's pass those variables to our function along with `predecessors`. Here's our `bfs` method:
+There are several approaches we can take to implement this. We could add a method to our class, or we could build the path _outside_ the class, but my preference is to add a helper function in our `bfs` method. Let's call it `buildPath`. What do we want `buildPath` to return? The path, natch. If we know, as we outlined above, that we need to work with our `goal` and our `root`, let's pass those variables to our function along with `predecessors`. Here's our `bfs` method:
 ```js
     bfs(goal, root = this.vertices[0]) {
         let adj = this.adjacent;
@@ -400,14 +400,14 @@ There are several approaches we can take to implement this. We could add a metho
     }
 ```
 
-How do we 'look up' predecessor of our `goal`?
+How do we 'look up' the predecessor of our `goal`?
 ```js
 predecessors[goal];
 ```
 
 What is the predecessor of the predecessor? 
 ```js
-predecssors[predecessors[goal]];
+predecessors[predecessors[goal]];
 ```
 
 And what's the predecesor of the predecessor of the predecessor? 
@@ -426,9 +426,17 @@ _While_ we could go down that rabbit hole, let's find an algorithmic approach:
 
 Why `u`? 
 
-In graph theory, _u_ is often used for the vertex that precedes a given vertex, _v_. 
+[There is only one like `u` in the world.](https://www.youtube.com/watch?v=MhuYv5cEvHY)
 
-That's the crux of it. What's missing? Our array. Let's name it `stack` as a classic implementation of this algorithm uses a Stack data structure for the LIFO. Here's our complete `buildPath` helper function:
+🙄
+
+In graph theory, _u_ is often used for the vertex that precedes a given vertex, _v_. Here, we use `u` as a temporary variable to store the value of a given predecessor. With each iteration of our `while` loop, we reassign the value of `u` with the predecessor of `u`. We repeat until `u` is equal to the value of our `root`. 
+
+That's the crux of it. 
+
+What remains? 
+
+Our array. Let's name it `stack`, as a classic implementation of this algorithm uses a Stack data structure for its LIFO semantics. Here's our complete `buildPath` helper function:
 ```js
         const buildPath = (goal, root, predecessors) => {
             //declare and initialize a "stack"
@@ -547,22 +555,40 @@ Can we do better?
 
 Absolutely. 
 
-We'll look at Djikstra's and the Floyd-Warshall algorithms in the future.
+We'll break down classic shortest-path algorithms, such as Djikstra's and the Floyd-Warshall, in the future. Stay tuned!
 
 
 ## Reflection
 
-* TODO
+What are your answers to the following questions? 
 
-* 
+* What is pattern recognition? 
 
-* 
+* Why is Breadth-First Search used to find the shortest-path?  
 
-
-### 
-
-
-### 
+* What is a predecessor?  
 
 
-### 
+### What is Pattern Recognition?  
+
+According to [Wikipedia](https://en.wikipedia.org/wiki/Pattern_recognition_(psychology)): 
+
+> In psychology and cognitive neuroscience, pattern recognition describes cognitive process that matches information from a stimulus with information retrieved from memory
+
+Pattern recognition is an important skill to develop as a programmer. It allows us to quickly and easily recognize opportunities to solve problems with algorithms and automation.
+
+
+### Why is Breadth-First Search Used to Find the Shortest Path?
+
+BFS was always already searching the shortest path. We simply need to record the distances between vertices and the paths taken. 
+
+
+### What is a Predecessor? 
+
+According to Wikipedia, in [graph theory](https://en.wikipedia.org/wiki/Glossary_of_graph_theory_terms#predecessor) a predecessor is: 
+
+> A vertex coming before a given vertex in a directed path.
+
+The graph we used in this tutorial was not directed, but we can treat it as such because we are only seaching in one direction. 
+
+
