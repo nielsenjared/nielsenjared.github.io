@@ -1,36 +1,35 @@
 ---
-title: "Will You Scale?"
-date: "2020-12-21"
-description: "TODO"
-keywords: ['TODO']
-subject:  
+title: "How To Do Better"
+date: "2021-01-31"
+description: "As lifelong learners, we need to ensure that we grow. How do we do that? Invest 1%, every day, in your knowledge portfolio."
+keywords: ['habits', 'knowledge portfolio', ]
+subject: 
 preview_text: 
 ---
 
 ![](./jarednielsen-solution-TODO.png)
 
-https://mailchi.mp/6482916bdf14/the-solution-whats-your-order-of-magnitude
-
 What’s your Big O?
 
-Big O notation helps us answer the question, “Will it scale?” 
+Big O notation helps us answer the question, “Can we do better?” 
 
-As lifelong learners, we need to ensure that we scale. How do we do that?
+As lifelong learners, we need to ensure that we grow. How do we do that?
 
-“Your knowledge and experience are your most important day-to-day professional assets.
-
-"Unfortunately, they’re expiring assets.
-
-"Your ability to learn new things is your most important strategic asset.”
+> Your knowledge and experience are your most important day-to-day professional assets.
+> Unfortunately, they’re expiring assets.
+> Your ability to learn new things is your most important strategic asset.
 
 In The Pragmatic Programmer, authors Dave Thomas and Andy Hunt define the term knowledge portfolio, likening it to a financial portfolio, they outline five steps for managing it:
 
-    Serious investors invest regularly--as a habit.
-    Diversification is the key to long-term success.
-    Smart investors balance their portfolios between conservative and high-risk, high-reward investments.
-    Investors try to buy low and sell high for maximum return.
-    Portfolios should be reviewed and rebalanced periodically.
+* Serious investors invest regularly--as a habit.
 
+* Diversification is the key to long-term success.
+
+* Smart investors balance their portfolios between conservative and high-risk, high-reward investments.
+
+* Investors try to buy low and sell high for maximum return.
+
+* Portfolios should be reviewed and rebalanced periodically.
 
 We’ll return to this list in the future. Let’s focus on the first point today.
 
@@ -56,16 +55,18 @@ Does this seem daunting?
 
 In Atomic Habits, James Clear makes a compelling argument for making incremental improvements: 
 
-“...if you can get 1 percent better each day for one year, you’ll end up thirty-seven times better by the time you’re done. Conversely, if you get 1 percent worse each day for one year, you’ll decline nearly down to zero.”
+> ...if you can get 1 percent better each day for one year, you’ll end up thirty-seven times better by the time you’re done. Conversely, if you get 1 percent worse each day for one year, you’ll decline nearly down to zero.
 
 Clear did the math for us:
- 
-1% worse every day for one year 	0.99^365 = 00.03
-1% better every day for one year 	1.01^365 = 37.78
+
+|                                   |                   |
+| ---                               | ---            |
+| 1% worse every day for one year 	| 0.99^365 = 00.03 |
+| 1% better every day for one year 	| 1.01^365 = 37.78 |
  
 He also charted it, for us visual folks:
 
-https://jamesclear.com/marginal-gains
+![](https://jamesclear.com/wp-content/uploads/2015/08/tiny-gains-graph.jpg)
 
 It’s clear (sorry) to see that if we let a skill atrophy, we will all but lose it, and if we want to build our knowledge portfolio, it requires continual investment. 
 
@@ -73,15 +74,13 @@ It’s clear (sorry) to see that if we let a skill atrophy, we will all but lose
 
 Every day. 
 
-“Habits are algorithms operating in the background that power our lives.”
+As [Shane Parrish states on the Farnam Street blog](https://fs.blog/2017/06/habits-vs-goals/): 
+
+> Habits are algorithms operating in the background that power our lives.
 
 What are your algorithms? 
 
-Will you scale? 
-
----
-
-https://mailchi.mp/d72c0358d555/the-solution-whats-your-rate-of-growth
+What's your rate of growth? 
 
 Quadratic growth is horrible.
 
@@ -91,7 +90,7 @@ But it’s desirable when it comes to our personal growth.
 
 In Atomic Habits, James Clear describes the phenomenon he calls “The Plateau of Latent Potential”. This is the time period in which you are learning a new skill or working on a project and it feels like you are not making progress. You think you should be progressing linearly, but what you don’t realize is that you are progressing quadratically, maybe even exponentially. 
 
-TODO PLATEAU OF LATENT POTENTIAL IMAGE
+![](https://i0.wp.com/www.samuelthomasdavies.com/wp-content/uploads/2019/01/The-Plateau-of-Latent-Potential-1.png?resize=1024%2C607&ssl=1)
 
 The outset is a slog.
 
@@ -99,7 +98,7 @@ Configuration, installations, definitions, conventions, nomenclature, syntax, to
 
 It’s grueling!
 
-There’s a critical threshold to cross before growth accelerates. And then… lookout! 
+There’s a critical threshold to cross before growth accelerates. And then… lookout! 🚀
 
 The sky is the limit!
 
