@@ -1,6 +1,6 @@
 ---
 title: "How To Invest in Your Knowledge Portfolio"
-date: "2021-01-31"
+date: "2021-02-01"
 description: "As lifelong learners, we want to optimize our rate of growth. How do we do that? Make it a habit. Invest 1% in your knowledge portfolio every day."
 keywords: ['habits', 'knowledge portfolio', 'invest']
 subject: Are you investing in your knowledge portfolio?
