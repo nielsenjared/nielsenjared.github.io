@@ -1,4 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 28 Jan 2021 13:34:23 GMT</lastBuildDate><item><title><![CDATA[Data Structures in JavaScript: Shortest Path Graph Traversal]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-graph-shortest-path/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-graph-shortest-path/</guid><pubDate>Fri, 29 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 31 Jan 2021 17:20:26 GMT</lastBuildDate><item><title><![CDATA[How To Invest in Your Knowledge Portfolio]]></title><description><![CDATA[What’s your Big O? One of the fundamental concepts of computer science is Big O notation. Big O helps us answer the question, “Can we do…]]></description><link>http://jarednielsen.com/invest-knowledge-portfolio/</link><guid isPermaLink="false">http://jarednielsen.com/invest-knowledge-portfolio/</guid><pubDate>Mon, 01 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6311f3191d3612ad264bb415c9b23897/2f950/jarednielsen-solution-invest-knowledge-portfolio.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA40lEQVQoz6WSzQ7BQBSF+3q2NrWXWHsJD+ANbCx4ALEhsaA2Iv52JFLVUkmFxJTpzBy3FWxotU5yZpLJPd/cOxlNKYUkQ0nQgl9qtfgCAkkBSduN8wj8P5DkmBOMR8arWxUD/g5EGFY4d2qwOjp2syqeygZUIgqzRRvrVg7HVRPi6iHw3VioljTuyWxi083DNsrY9otg7vABpLdNOfJDh0kFVk8nF2APStThPkuHVCwDKHED85aw5w1sp3WcnDEk96Pz8Ek+Qb8DwwAFQ0BwvYCTBWeQAaPLeFrge+TPyvwP0/sOaT5bC5XTaykAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen solution invest knowledge portfolio&quot;
+        title=&quot;&quot;
+        src=&quot;/static/6311f3191d3612ad264bb415c9b23897/b9e4f/jarednielsen-solution-invest-knowledge-portfolio.png&quot;
+        srcset=&quot;/static/6311f3191d3612ad264bb415c9b23897/cf440/jarednielsen-solution-invest-knowledge-portfolio.png 148w,
+/static/6311f3191d3612ad264bb415c9b23897/d2d38/jarednielsen-solution-invest-knowledge-portfolio.png 295w,
+/static/6311f3191d3612ad264bb415c9b23897/b9e4f/jarednielsen-solution-invest-knowledge-portfolio.png 590w,
+/static/6311f3191d3612ad264bb415c9b23897/f9b6a/jarednielsen-solution-invest-knowledge-portfolio.png 885w,
+/static/6311f3191d3612ad264bb415c9b23897/2d849/jarednielsen-solution-invest-knowledge-portfolio.png 1180w,
+/static/6311f3191d3612ad264bb415c9b23897/2f950/jarednielsen-solution-invest-knowledge-portfolio.png 1600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;What’s your Big O?&lt;/p&gt;
+&lt;p&gt;One of the fundamental concepts of computer science is Big O notation. Big O helps us answer the question, “Can we do better?” We use Big O to measure the performance, or rate of growth, of an algorithm.&lt;/p&gt;
+&lt;p&gt;As lifelong learners, we want to optimize our rate of growth. How do we do that?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Your knowledge and experience are your most important day-to-day professional assets.
+Unfortunately, they’re expiring assets.
+Your ability to learn new things is your most important strategic asset.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/30BVrAW&quot;&gt;The Pragmatic Programmer&lt;/a&gt;, authors Dave Thomas and Andy Hunt define the term &lt;em&gt;knowledge portfolio&lt;/em&gt;. Likening it to a financial portfolio, they outline five steps for managing it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Serious investors invest regularly—as a habit.&lt;/li&gt;
+&lt;li&gt;Diversification is the key to long-term success.&lt;/li&gt;
+&lt;li&gt;Smart investors balance their portfolios between conservative and high-risk, high-reward investments.&lt;/li&gt;
+&lt;li&gt;Investors try to buy low and sell high for maximum return.&lt;/li&gt;
+&lt;li&gt;Portfolios should be reviewed and rebalanced periodically.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’ll return to this list in the future. Let’s focus on the first point: investing as a habit. &lt;/p&gt;
+&lt;p&gt;Are you keeping up with trends and developments in the industry?&lt;/p&gt;
+&lt;p&gt;Learning new things?&lt;/p&gt;
+&lt;p&gt;Learning old things?&lt;/p&gt;
+&lt;p&gt;Reading technical books?&lt;/p&gt;
+&lt;p&gt;Taking courses?&lt;/p&gt;
+&lt;p&gt;Going to meetups?&lt;/p&gt;
+&lt;p&gt;Building side projects? &lt;/p&gt;
+&lt;p&gt;Contributing to open source projects? &lt;/p&gt;
+&lt;p&gt;Solving problems?&lt;/p&gt;
+&lt;p&gt;Does this seem daunting?&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2NZz8jx&quot;&gt;Atomic Habits&lt;/a&gt;, James Clear makes a compelling argument for making incremental improvements: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;…if you can get 1 percent better each day for one year, you’ll end up thirty-seven times better by the time you’re done. Conversely, if you get 1 percent worse each day for one year, you’ll decline nearly down to zero.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Clear did the math for us:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1% worse every day for one year&lt;/td&gt;
+&lt;td&gt;0.99^365 = 00.03&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1% better every day for one year&lt;/td&gt;
+&lt;td&gt;1.01^365 = 37.78&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;He also charted it, for us visual folks:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://jamesclear.com/wp-content/uploads/2015/08/tiny-gains-graph.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;It’s clear (sorry) to see that if we let a skill atrophy, we will all but lose it, and if we want to build our knowledge portfolio, it requires continual investment. &lt;/p&gt;
+&lt;p&gt;1%. &lt;/p&gt;
+&lt;p&gt;Every day. &lt;/p&gt;
+&lt;p&gt;As &lt;a href=&quot;https://fs.blog/2017/06/habits-vs-goals/&quot;&gt;Shane Parrish states on the Farnam Street blog&lt;/a&gt;: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Habits are algorithms operating in the background that power our lives.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What are your algorithms? &lt;/p&gt;
+&lt;p&gt;What’s your rate of growth? &lt;/p&gt;
+&lt;p&gt;Quadratic growth is horrible.&lt;/p&gt;
+&lt;p&gt;For algorithms.&lt;/p&gt;
+&lt;p&gt;But it’s desirable when it comes to our personal growth. &lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://amzn.to/2NZz8jx&quot;&gt;Atomic Habits&lt;/a&gt; describes the phenomenon he calls “The Plateau of Latent Potential”. This is the time period in which you are learning a new skill or working on a project and it feels like you are not making progress. You think you should be progressing linearly, but what you don’t realize is that you are progressing quadratically, maybe even exponentially. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i0.wp.com/www.samuelthomasdavies.com/wp-content/uploads/2019/01/The-Plateau-of-Latent-Potential-1.png?resize=1024%2C607&amp;#x26;ssl=1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The outset is a slog.&lt;/p&gt;
+&lt;p&gt;Configuration, installations, definitions, conventions, nomenclature, syntax, tooling… &lt;/p&gt;
+&lt;p&gt;It’s grueling!&lt;/p&gt;
+&lt;p&gt;There’s a critical threshold to cross before growth accelerates. And then… lookout! &lt;/p&gt;
+&lt;p&gt;🚀&lt;/p&gt;
+&lt;p&gt;The sky is the limit!&lt;/p&gt;
+&lt;p&gt;But first you must cross The Valley of Disappointment. &lt;/p&gt;
+&lt;p&gt;It’s a treacherous place for developers. 🐇 The terrain of our field is constantly shifting and everyone is opinionated. &lt;/p&gt;
+&lt;p&gt;Who do you trust?&lt;/p&gt;
+&lt;p&gt;You can see the other side of The Valley, but not the path to get there. &lt;/p&gt;
+&lt;p&gt;It’s easy to lose your way.&lt;/p&gt;
+&lt;p&gt;There’s no map.&lt;/p&gt;
+&lt;p&gt;So you Google it.&lt;/p&gt;
+&lt;p&gt;And you open so many browser tabs you can no longer read their titles. &lt;/p&gt;
+&lt;p&gt;You find yourself in tutorial purgatory.&lt;/p&gt;
+&lt;p&gt;Or deciphering the comments on StackOverflow. &lt;/p&gt;
+&lt;p&gt;Or worse yet, on the second page of search results! &lt;/p&gt;
+&lt;p&gt;😱&lt;/p&gt;
+&lt;p&gt;How do you solve this problem? &lt;/p&gt;
+&lt;p&gt;🐰 Habits. &lt;/p&gt;
+&lt;p&gt;If you want to learn a new skill, such as programming, or improve your problem solving, you must make it a habit. &lt;/p&gt;
+&lt;p&gt;Yeah, yeah. You heard me the first time.&lt;/p&gt;
+&lt;p&gt;But really, how do you solve this problem? How do you cross that critical threshhold? How do you find your way across The Valley of Disappointment?&lt;/p&gt;
+&lt;p&gt;Talk to the duck.&lt;/p&gt;
+&lt;p&gt;🦆&lt;/p&gt;
+&lt;p&gt;Understanding the problem or challenge, framing it clearly and articulately, is the first, and most important step to success. It also defines the boundaries of what you are learning or solving in order to prevent scope creep. &lt;/p&gt;
+&lt;p&gt;Focus on one thing at a time. If you chase two rabbits, both are going to get away.&lt;/p&gt;
+&lt;p&gt;Read The Fantastic Manual! Always refer to primary sources and start with the official tutorials. If you’re following a third-party tutorial, make sure it’s recent. Technical tutorials have a short shelf life. (There’s a caveat, though: sometimes the docs are outdated or non-existent and this is an opportunity to contribute to a project!)&lt;/p&gt;
+&lt;p&gt;Don’t give up.&lt;/p&gt;
+&lt;p&gt;But do take breaks. &lt;/p&gt;
+&lt;p&gt;As with Archimedes in the bathtub, sometimes you need to pull off the highway to see Eureka.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Data Structures in JavaScript: Shortest Path Graph Traversal]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-graph-shortest-path/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-graph-shortest-path/</guid><pubDate>Fri, 29 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/e8a05c1e0480dd327b5d4fb4401832d6/a987b/jarednielsen-data-structure-graph-bfs.png&quot;
