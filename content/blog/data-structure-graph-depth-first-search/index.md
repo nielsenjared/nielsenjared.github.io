@@ -149,42 +149,29 @@ g.addEdge("D","F");
 g.addEdge("F","G");
 ```
 
-To our Graph class, let's add a `dfs` method. We need to declare two parameters, `goal` and `root`, and if `goal` and `root` are equal, we return `true`, else we return `false`:
+Let's restate the goal of our `dfs` method: 
+
+> Given a graph, a starting vertex, and a goal, start at the root and search path by path
+
+To our Graph class, let's add a `dfs` method. We need to declare two parameters, `goal` and `v`. 
 ```js
-    dfs(goal, root) {
-        if (root === goal) {
-            return true;
-        }
+    dfs(goal, v) {
 
         return false;
     }
 ```
+
+📝 We will `return false` for the time being because we haven't yet found our goal. 
 
 We can take our declaration one step further using JavaScript's [default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters).
 ```js
-    dfs(goal, root = this.vertices[0]) {
-        if (root === goal) {
-            return true;
-        }
+    dfs(goal, v = this.vertices[0]) {
 
         return false;
     }
 ```
 
-📝 You will see many different implementations of DFS. Some do not specify a root while others do not specify a goal. The goal here (no pun intended) is to demonstrate an approach that covers BFS variations in-depth (pun intended). 
-
-Let's verify that our `dfs()` method works by logging the return value with an argument of `G`:
-
-```js
-console.log(g.dfs("G", "G"));
-```
-
-The above will return `true`. 
-
-And the following will return `false`: 
-```js
-console.log(g.dfs("G"));
-```
+📝 You will see many different implementations of DFS. Some do not specify a root while others do not specify a goal. The goal here (no pun intended) is to demonstrate an approach that covers DFS variations in-depth (pun intended). 
 
 Now what? 
 
@@ -193,8 +180,6 @@ Let's outline a rough approach in pseudocode:
 * Check the root. 
 
 * If the root is equal to the goal, return true. 
-
-TODO
 
 * If the root is not equal to our goal, check the first vertex adjacent to our root. 
 
@@ -206,20 +191,9 @@ TODO
 
 What is this starting to look like? 
 
-Recursion! 
-
-Where have we seen this or something like it before? 
-
 🤔
 
-TODO
-Binary Search Tree!
-
-What's the difference between BST and DFS? 
-
-A binary search tree is just that, _binary_. We can divide our recursive function calls into _left_ and _right_. Our graph, on the other hand, might consist of _left_, _right_, _center_, _top_, _bottom_, _North by North West_, _South by South West_... you get the idea. 
-
-We need some way of sorting through this? 
+Recursion! 
 
 What do we know about recursion? 
 
@@ -227,270 +201,150 @@ Like [proof by induction](https://jarednielsen.com/proof-induction), we need to 
 
 * base case 
 
-* recursive case
+* recursive, or iterative, case
 
+So what is our base case? 
 
+TODO 
+If we discovered our goal or not. 
 
-
-
-
-
-
-
-
-* If an adjacent value is equal to our goal, return `true`.
-
-* If none of the adjacent vertices are equal to our goal, return `false`. 
-
-If we translate this to JavaScript: 
 ```js
-    bfs(goal, root = this.vertices[0]) {
-        let adj = this.adjacent;
+    dfs(goal, v = this.vertices[0]) {
+        const discovered = [];
+        discovered[v] = true;
 
-        if (root === goal) {
-            return true;
-        }
-
-        for (let i = 0; i < adj[root].length; i++) {
-            if (adj[root][i] === goal) {
-                return true;
-            }
-        }
-
-        return false;
+        return discovered[goal] || false;
     }
 ```
 
-This will work if our query is `B`, `C`, or `D`. How do we get to `G`? 
+We declare an array, `discovered` and create a key with the value of `v`. We short circuit the return, if `goal` is in `discovered`, we return `true`, otherwise we return `false`.
 
-How do we "move down" a level? 
+If we call our `dfs` with an argument of "G", `g.dfs("G")`, it will return `false`. 
 
-Here's the point where we need to make a jump, literally _and_ figuratively. 
+And if we call our `dfs` with an argument of "A", `g.dfs("A")`, it will return `true`. 
 
-But things are about to get messy! Why? 
+Base case established. Now what? 
 
-We know our graph looks likes this:
+We need to establish the recursive, or iterative, case. 
 
-![](./jarednielsen-data-structure-graph-bfs-a-g.png)
+Let's make things easier on ourselves, and _let_ `this.adjacent` equal `adj`.
+```js
+    dfs(goal, v = this.vertices[0]) {
+        let adj = this.adjacent;
 
-What if we don't know what our graph looks like? 
+        const discovered = [];
+        discovered[v] = true;
 
-What if our graph looked like this? 
+        return discovered[goal] || false;
+    }
+```
 
-![](./jarednielsen-data-structure-graph-bfs-a-g-alternate.png)
+Now we need to iterate over `adj`, our array of vertices. For each vertex adjacent to `v`, we want to check if it discovered. If it's not discovered, we make our recursive call. 
+```js
+    dfs(goal, v = this.vertices[0]) {
+        let adj = this.adjacent;
 
-Or this? 
+        const discovered = [];
+        discovered[v] = true;
 
-![](./jarednielsen-data-structure-graph-bfs-a-g-alternate-02.png)
+        for (let i = 0; i < adj[v].length; i++){
+            let w = adj[v][i];
 
-There are a couple problems we need to solve. 
+            if (!discovered[w]) {
+                this.dfs(goal, w);
+            }
 
-If we jump back to where we started, how do we avoid checking `B` twice? 
+        }
 
-_And..._
+        return discovered[goal] || false;
+    }
+```
 
-If we checked `B`, but not its adjacent vertices, how do we "move down a level" and check the vertices connected to `B`? 
-
-Once we check `B`, how do we move on to `C` and check its adjacent vertices? 
-
-We need a way to track which vertices we already visited. 
-
-But!
-
-We also need a way to track which vertices we need to visit.
-
-What's the problem we need to solve? 
-
-There's no predetermined structure. 
-
-How do we bring order to this chaos?
+What happens when we run our `dfs`? 
+```sh
+RangeError: Maximum call stack size exceeded
+```
 
 🤔
 
-Let's restate our goal: 
+WTF? 
 
-> Given a graph, a root, and a goal, start at the root and search the adjacent vertices until we find the goal
+Where's the problem? 
 
-There's a keyword here...
+Every time we call `dfs`, we are declaring a new `discovered` array. Each time we enter our for loop and check if `w` is or is not "discovered", we make the call.
 
-It starts with 'u' and ends with 'ntil'....
+What's the solution?
 
-What is the control flow statement that functions like a repeating `if` statement? 
+[It's dynamic!](https://jarednielsen.com/dynamic-programming-memoization-tabulation/) 
 
-I'll just wait here _while_ you think about it 😛
-
-Let's edit our pseudocode: 
-
-* While there are vertices to check, start with the root. 
-
-* If the root is equal to the goal, return true. 
-
-* If the root is not equal to our goal, check the vertices adjacent to our root. 
-
-* If an adjacent value is equal to our goal, return `true`.
-
-* If none of the adjacent vertices are equal to our goal, return `false`. 
-
-The next question is, `while` _what_? How do we know there are vertices to check? 
-
-It's like we need a list...
-
-Let's use an analogy. 
-
-Graphs are often used to represent social networks. Imagine you and your friends are going to see a movie. You can't all rush into the theater at once. What do you need to do? Form a line, or, as they say across the pond, a queue! 
-
-🤯 
-
-Let's refactor our `bfs` method to use a queue. We'll first use an array and treat it like a Queue data structure and then later refactor to use a proper Queue class.
-
+We need to pass our `discovered` array as an argument to our recursive `dfs` calls. 
 ```js
-    bfs(goal, root = this.vertices[0]) {
+    dfs(goal, v = this.vertices[0]) {
         let adj = this.adjacent;
 
-        const queue = [];
-        queue.push(root);
+        const discovered = [];
+        discovered[v] = true;
 
-        while(queue.length) {
-            let v = queue.shift();
+        for (let i = 0; i < adj[v].length; i++){
+            let w = adj[v][i];
 
-            if (v === goal) {
-                return true;
-            }
-
-            for (let i = 0; i < adj[v].length; i++) {
-                queue.push(adj[v][i]);
+            if (!discovered[w]) {
+                this.dfs(goal, w, discovered);
             }
         }
 
-        return false;
+        return discovered[goal] || false;
     }
 ```
 
-We declare an array, `queue`, and `push`, or _enqueue_ our `root` to it. While there are vertices in the queue, we _dequeue_ the first vertex and assign it to the variable, `v`. If `v` is equal to our `goal`, we return `true`. If `v` is not equal to our `goal`, we push the adjacent vertices adjacent to our `queue` and then check them. 
+But this won't work. Why? 
 
-This works great if we are only searching `D`. 
-
-What happens if we search for `G`? 
-
-Let's log `v` to see what's happening inside our `while` loop. 
+Because `discovered` is not a parameter of our `dfs` declaration. Let's fix that. 
 ```js
-    bfs(goal, root = this.vertices[0]) {
+    dfs(goal, v = this.vertices[0], discovered = []) {
         let adj = this.adjacent;
 
-        const queue = [];
-        queue.push(root);
+        discovered[v] = true;
 
-        while(queue.length) {
-            let v = queue.shift();
-            console.log(v);
+        for (let i = 0; i < adj[v].length; i++){
+            let w = adj[v][i];
 
-            if (v === goal) {
-                return true;
-            }
-
-            for (let i = 0; i < adj[v].length; i++) {
-                queue.push(adj[v][i]);
+            if (!discovered[w]) {
+                this.dfs(goal, w, discovered);
             }
         }
 
-        return false;
+        return discovered[goal] || false;
     }
 ```
 
-When we search for `D`:
+📝 We removed the `const` declaration of `discovered`. 
+
+Now, if we call our `dfs` with an argument of "G", `g.dfs("G")`, it will return `true`. 
+
+And if we call our `dfs` with an argument of "H", `g.dfs("H")`, it will return `false`. 
+
+Here's our complete Graph class: 
 ```js
-console.log(g.bfs("D"));
-```
+class Graph {
+    constructor() {
+        this.vertices = [];
+        this.adjacent = {};
+        this.edges = 0;
+    }
 
-We log the following: 
-```sh
-A
-B
-C
-D
-true
-```
+    addVertex(v) {
+        this.vertices.push(v);
+        this.adjacent[v] = [];
+    }
 
-But if we search for `G`:
-```js
-console.log(g.bfs("G"));
-```
+    addEdge(v, w) {
+        this.adjacent[v].push(w);
+        this.adjacent[w].push(v);
+        this.edges++;
+    }
 
-We log the following: 
-```sh
-A
-B
-C
-D
-A
-C
-D
-A
-B
-D
-E
-A
-B
-C
-F
-B
-C
-D
-A
-B
-D
-E
-A
-B
-C
-F
-B
-C
-D
-A
-C
-D
-A
-B
-C
-F
-C
-B
-C
-D
-A
-C
-D
-A
-B
-D
-E
-D
-G
-true
-```
 
-This is not very efficient.
-
-It gets worse. What happens if we search for `H`?
-
-Yep...
-
-What's the problem? 
-
-♾️
-
-The condition of our `while` loop is always true because we never stop pushing vertices to our queue. 
-
-What's the solution? 
-
-🛑
-
-We need an exit strategy... or a way to track which vertices we already checked so we don't check them again.
-
-We _could_ use another Queue, but we don't need FIFO, so we can just use an array to track which vertices we "discovered".
-
-```js
     bfs(goal, root = this.vertices[0]) {
         let adj = this.adjacent;
 
@@ -500,53 +354,95 @@ We _could_ use another Queue, but we don't need FIFO, so we can just use an arra
         const discovered = [];
         discovered[root] = true;
 
+        const edges = [];
+        edges[root] = 0;
+
+        const predecessors = [];
+        predecessors[root] = null;
+
+        const buildPath = (goal, root, predecessors) => {
+            const stack = [];
+            stack.push(goal);
+
+            let u = predecessors[goal];
+
+            while(u != root) {
+                stack.push(u);
+                u = predecessors[u];
+            }
+
+            stack.push(root);
+
+            let path = stack.reverse().join('-');
+
+            return path;
+        }
+    
+
         while(queue.length) {
             let v = queue.shift();
-            console.log(v);
 
             if (v === goal) {
-                return true;
+                return { 
+                    distance: edges[goal],
+                    path: buildPath(goal, root, predecessors)
+                };
             }
 
             for (let i = 0; i < adj[v].length; i++) {
                 if (!discovered[adj[v][i]]) {
                     discovered[adj[v][i]] = true;
                     queue.push(adj[v][i]);
+                    edges[adj[v][i]] = edges[v] + 1;
+                    predecessors[adj[v][i]] = v;
                 }
             }
         }
 
         return false;
     }
-```
 
-We declare an array, `discovered`, and create an index, `root` assigned a value of `true`. Within the `for` loop in our `while` loop, we add a condition to check whether or not the vertex was "discovered". If we did not previously discover the vertex, we now mark it as discovered, or `true`, and push it to our `queue` to later check if it is equal to our `goal`. 
+    dfs(goal, v = this.vertices[0], discovered = []) {
+        let adj = this.adjacent;
+
+        discovered[v] = true;
+
+        for (let i = 0; i < adj[v].length; i++){
+            let w = adj[v][i];
+
+            if (!discovered[w]) {
+                this.dfs(goal, w, discovered);
+            }
+        }
+
+        return discovered[goal] || false;
+    }
+}
+```
 
 That's it!
 
-That's Breadth-First Search!`
+That's Depth-First Search!`
 
-You're like, "BFD. 
-
-"Why would we need this if we can simply _look up_ our query in the `adjacent` 'dictionary'?" 
+What good is this inefficient algorithm? 
 
 I'm glad you asked. 
 
-For the sake of brevity and example, the method above is contrived. A "real-world" application of a breadth-first search algorithm would check for a value stored in a graph and return the unique identifier, or key, of the vertex where that value was found. Another "real-world" scenario is finding the shortest path between two vertices. In the next tutorial, we'll modify our `bfs` method to do just that!
+In the next tutorial, we'll modify our `dfs` method to perform topological sorting! Stay tuned!
 
 
 ## Reflection
 
-* What is Breadth-First Search? 
+* What is Depth-First Search? 
 
 * What is the difference between Breadth-First Search and Depth-First Search? 
 
-* What problem(s) does Breadth-First Search solve?
+* What problem(s) does Depth-First Search solve?
 
 
-### What is Breadth-First Search? 
+### What is Depth-First Search? 
 
-Breadth-First Search is an algorithm that searches a graph for a specific goal by checking all of the edges connected to a vertex before moving on to check the edges of the connected vertices. 
+Breadth-First Search is an algorithm that searches a graph for a specific goal by checking all of the vertices connected on a path before moving on to check the adjacent vertices. 
 
 
 ### What is the Difference Between Breadth-First Search and Depth-First Search? 
@@ -554,7 +450,7 @@ Breadth-First Search is an algorithm that searches a graph for a specific goal b
 Breadth-First Search checks all of the vertices adjacent to a given vertex before checking the vertices adjacent to those vertices. Depth-First Search, on the other hand, checks all of the vertices on a path and then backtracks.
 
 
-### What Problem(s) Does Breadth-First Search Solve? 
+### What Problem(s) Does Depth-First Search Solve? 
 
-There are a number of specific use cases, such as the Ford-Fulkerson or Cheney's algorithm, for breadth-first search algorithms, but a general application is to find the shortest, or most efficient, path between two vertices.
+There are a number of specific use cases, such as finding the bridges in a graph, finding the solution to a maze, or defining the topology of a graph. 
 
