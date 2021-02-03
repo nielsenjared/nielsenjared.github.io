@@ -101,7 +101,7 @@ With Breadth-First Search, we search all of the edges connected to a vertex befo
 With Depth-First Search, we follow the paths of the edges connected to our starting vertex, or _search key_, one at a time, until we reach the end, then we backtrack and search the alternate paths, until we find the vertex we are looking for or we arrive back where we started. 
  
 
-### Depth-First Search (BFS) in JavaScript
+### Depth-First Search (DFS) in JavaScript
 
 Let's declare our Graph data structure. 
 ```js
@@ -161,7 +161,7 @@ To our Graph class, let's add a `dfs` method. We need to declare two parameters,
     }
 ```
 
-📝 We will `return false` for the time being because we haven't yet found our goal. 
+📝 We will `return false` for the time being because we haven't found our goal yet. 
 
 We can take our declaration one step further using JavaScript's [default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters).
 ```js
@@ -205,9 +205,7 @@ Like [proof by induction](https://jarednielsen.com/proof-induction), we need to 
 
 So what is our base case? 
 
-TODO 
-If we discovered our goal or not. 
-
+Our base case is whether or not we discovered our goal. 
 ```js
     dfs(goal, v = this.vertices[0]) {
         const discovered = [];
@@ -217,17 +215,15 @@ If we discovered our goal or not.
     }
 ```
 
-We declare an array, `discovered` and create a key with the value of `v`. We short circuit the return, if `goal` is in `discovered`, we return `true`, otherwise we return `false`.
+We declare an array, `discovered` and create a key with the value of `v`. We short circuit the return, if `goal` is in `discovered`, and return `true`, otherwise we return `false`.
 
 If we call our `dfs` with an argument of "G", `g.dfs("G")`, it will return `false`. 
 
-And if we call our `dfs` with an argument of "A", `g.dfs("A")`, it will return `true`. 
+But if we call our `dfs` with an argument of "A", `g.dfs("A")`, it will return `true`. 
 
 Base case established. Now what? 
 
-We need to establish the recursive, or iterative, case. 
-
-Let's make things easier on ourselves, and _let_ `this.adjacent` equal `adj`.
+We need to establish the recursive, or iterative, case. Let's make things easier on ourselves, and _let_ `this.adjacent` equal `adj`.
 ```js
     dfs(goal, v = this.vertices[0]) {
         let adj = this.adjacent;
@@ -271,11 +267,11 @@ WTF?
 
 Where's the problem? 
 
-Every time we call `dfs`, we are declaring a new `discovered` array. Each time we enter our for loop and check if `w` is or is not "discovered", we make the call.
+With each recursive call of `dfs`, we are declaring a new `discovered` array. Each time we enter our for loop, we "discover" that `w` is not yet `discovered` and we make another recursive call to `dfs`. 
 
 What's the solution?
 
-[It's dynamic!](https://jarednielsen.com/dynamic-programming-memoization-tabulation/) 
+Hint: [It's dynamic!](https://jarednielsen.com/dynamic-programming-memoization-tabulation/) 
 
 We need to pass our `discovered` array as an argument to our recursive `dfs` calls. 
 ```js
@@ -317,6 +313,7 @@ Because `discovered` is not a parameter of our `dfs` declaration. Let's fix that
         return discovered[goal] || false;
     }
 ```
+This is memoization, one of two approaches referred to as dyanmic programming . With memoization, we make a "memo" of the values returned by the preceding recursive calls. Speaking of memos...
 
 📝 We removed the `const` declaration of `discovered`. 
 
@@ -424,7 +421,7 @@ That's it!
 
 That's Depth-First Search!`
 
-What good is this inefficient algorithm? 
+"What good is this inefficient algorithm?"
 
 I'm glad you asked. 
 
