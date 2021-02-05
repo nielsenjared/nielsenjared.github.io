@@ -212,51 +212,55 @@ TODO MOVE TO HOW ARTICLE?
 
 ## What Makes a Person Creative?
 
-According to Csikszentmihalyi, there are three phenomena that distinguish a creative person from the rest of the pack. These are people... 
+According to Csikszentmihalyi, there are three phenomena that distinguish a creative person from the rest of the pack. These are people who...
 
-1. “...who express unusual thoughts, who are interesting and stimulating.” But only if “...they also contribute something of permanent significance.” Otherwise, they are merely “brilliant”
+1. “...express unusual thoughts, who are interesting and stimulating.” But only if “...they also contribute something of permanent significance.” Otherwise, they are merely “brilliant”
 
-2. “...who experience the world in novel or original ways.”
+2. “...experience the world in novel or original ways.”
 
-3. “...who… changed our culture in some important respect.”
+3. “...changed our culture in some important respect.”
 
-It’s important here to distinguish between talent, genius, and creativity. 
+It’s important here to distinguish between talent, genius, and creativity: 
 
 * Talent vs. creativity: “Talent differs from creativity in that it focuses on an innate ability to do something very well.”
 
 * Genius vs. creativity: “...a person who is both brilliant and creative at the same time.”
 
+Talent is not a prerequisite for creativity. But it doesn't hurt. Creativity, however, is a prerequisite for genius. 
 
-TODO
-### {{ 10 PAIRS OF ANTITHETICAL TRAITS }}
 
-10 pairs of antithetical traits [see Creativity p. 58]
-* energy vs. rest: “creative individuals have a great deal of energy, but they are also often quiet and at rest.”
+### The 10 Antithetical Traits of Creative People
 
-* smart vs. naive
+In [Creativity](https://amzn.to/3tCdEwv), Csikszentmihalyi outlines 10 pairs of antithetical traits, or dialectical tensions, that he observed in his studies of creative people. They consist of the following dyads: 
 
-* disciplined vs. playful
+* energy vs. rest: “...creative individuals have a great deal of energy, but they are also often quiet and at rest.”
 
-* fantasy vs. realism
+* smart vs. naive: "...a certain immaturity, both emotional and mental, can go hand in hand with with the deepest insights."
 
-* extraversion vs. introversion
+* disciplined vs. playful: "There is no question that a playfully light attitude is typical of creative individuals. But this playfulness doesn't go far without its antithesis, a quality of doggedness, endurance, perserverance."
 
-* humble vs. proud
+* fantasy vs. realism: "Both are needed to break away from the present without losing touch with the past."
 
-* masculine vs. feminine
+* extraversion vs. introversion: "Only those who can tolerate being alone are able to master the symbolic content of a domain. Yet over and over again, the importance of seeing people, hearing people, exchanging ideas, and getting to know another person's work and mind are stressed by creative individuals."
 
-* traditional vs. rebellious
+* humble vs. proud: The creative individual's "respect for the domain in which they work makes them aware of the long line of previous contributions to it, which puts their own into perspective. [They] are also aware of the role that luck played in their own achievements. And... they are usually so focused on future projects and current challenges that their past accomplishment, not matter how outstanding, are no longer very interesting to them."
 
-* passionate vs. objective
+* masculine vs. feminine: "A psychologically androgynous person in effect doubles his or her repertoire of resopnses and can interact with the world in terms of a much richer and varied spectrum of opportunities."
 
-* enjoyment vs. suffering
+* traditional vs. rebellious: "Being only traditional leaves the domain unchanged; constantly taking chances without regard to what has been valued in the past rarely leads to novelty that is accepted as an improvement."
 
-“...the novelty that survives to change a domain is usually the work of someone who can operate at both ends of these polarities--and that is the kind of person we call ‘creative’.”
+* passionate vs. objective: "Without the passion, we soon lose interest in a difficult task. Yet without being objective about it, our work is not very good and lacks credibility."
+
+* enjoyment vs. suffering: 
+
+According to Csikszentmihalyi: 
+> ...the novelty that survives to change a domain is usually the work of someone who can operate at both ends of these polarities--and that is the kind of person we call ‘creative’.
 
 
 ### What is the Psychology of the Creative Person?
 
 According to Teresa Amabile, there are three components that make up the psychology of a creative person:
+
 * domain-relevant skills
 
 * creativity-relevant skills
@@ -275,7 +279,7 @@ Amabile identifies three areas of creativity-relevant skills:
 
 * work style
 
-Each of these areas is determined by prerequisites. Let's look at those first: experience and personality traits. 
+Each of these areas is determined by prerequisites. Let's look at those first. They are _experience_ and _personality traits_. 
 
 
 ##### Prerequisites to Creativity
@@ -311,66 +315,28 @@ The second prerequisite is personality. The common personality traits of a creat
 
 ##### Cognitive Style
 
-TODO
+In [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h), Pierce J. Howard describes the creativity-relevant skill as:
 
 “...the ability and willingness to break perceptual sets (as opposed to functional fixedness), be comfortable with complexity, hold options open and not push for closure, suspend judgment rather than reacting to things as good or bad, be comfortable with wider categories, develop an accurate memory, abandon or suspend performance scripts, and see things differently from others.”
 
+
 ##### Knowledge of Heuristics
 
-TODO
+Heuristics are approaches to solving problems. They are also sometimes referred to as _mental models_. Every domain consists of heuristics, but there are countless heuristics that cross domains, as well. 
 
-“Heuristics are insightful tips for coming up with new ideas. Probably the most famous heuristic comes out of the neuro linguistic programming literature: “If what you’re doing is not working, try something different.” This is based on the axiom “If you always do what you’ve always done, you’ll always get what you’ve always gotten.” 
+And example that Howard uses is the following: 
+
+>If you always do what you've always done, you'll always get what you've always gotten.
+
 
 ##### Work Style
 
-TODO
-
-A positive work style consists of the ability to sustain long periods of concentration , the ability to abandon non-productive approaches, persistence during difficulty, a high energy level, and a willingness to work hard. 
-
-
-### What is the Biology of a Creative Person?
-
-Are people born creative? Biology does play a part. There are two important factors to consider: 
-
-* Chemical
-
-* Molecular
-
-
-#### Chemical
-
-According to {{ AUTHOR OF OWNER’S MANUAL BRAIN }}, creativity is probably related to higher levels of the following: 
-
-* acetylcholine
-
-* calpain
-
-* kinase C
-
-* dopamine neurotransmitter associated with inducing the state of mind that visualizes easily and continually invites one to ask the question, ‘What if?’
-
-And probably related to lower levels of the following: 
-
-* serotonin
-
-* endorphin
-
-“...many creative personalities report the need to calm down for work by doing something special, such as meditation or music. This suggests less active opioid receptors than the norm.”
-
-
-#### Molecular
-
-On a molecular plane, creativity can be described as a function of alpha waves, which occur somewhere between alertness and sleep.”
-
-
-On the continuum from tight mental self-control to the loss of control we experience in sleep, creativity occurs toward the sleep end of the continuum.
-
-Edison and Dali used naps
+According to Howard, a positive work style... "consists of the ability to sustain long periods of concentration, the ability to abandon non-productive approaches, persistence during difficulty, a high energy level, and a willingness to work hard."
 
 
 ## What are the Stages of the Creative Process? 
 
-In {{ TITLE }}, Hamming outlines what he see as the pattern of creativity: 
+In [The Art of Doing Science and Engineering: Learning to Learn](https://amzn.to/3pRfkzV), Richard W. Hamming outlines what he see as the pattern of creativity: 
 
 1. recognition of the problem
 
@@ -380,50 +346,40 @@ In {{ TITLE }}, Hamming outlines what he see as the pattern of creativity:
 
 4. a closer examination of the problem shows that the solution is faulty, but might be saved by some suitable revision
 
-He also recognizes that revision sometimes means reframing the problem: 
+He adds this addendum to the last step: 
 
 > But maybe the problem needs to be altered to fit the solution!
 
+In [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h), Pierce J. Howard discusses the four steps outlined by researcher [Graham Wallas](https://en.wikipedia.org/wiki/Graham_Wallas): 
 
+1. Preparation: Doing research, gathering factors, assembling people or materials--whatever is needed to have all domain specific information at our disposal before the creative act.
 
+2. Incubation: Allowing the collected materials to gestate, to be assimilated into our preexisting schemas, and to interplay6 unconsciously or consciously in our minds without the stress of having to produce. 
 
-TODO see flowchart on p. 663
-In {{ BOOK }}, Teresa Amabile offers a refined outline of the same stages: 
+3. Inspiration: The actual “Aha! “ or “Eureka!” moment when preparation and incubation produce inspiration.
 
-1. Preparation
+4. Evaluation: The attempt to verify that the proposed solution is domain-relevant and logically fits the requirements of the original need or stimulus.
 
-Doing research, gathering factors, assembling people or materials--whatever is needed to have all domain specific information at our disposal before the creative act.
+In [Creativity](https://amzn.to/3tCdEwv), Csikszentmihalyi takes this one step further, adding a step he refers to as 'elaboration': 
 
-2. Incubation
+1. preparation
 
-Allowing the collected materials to gestate, to be assimilated into our preexisting schemas, and to interplay6 unconsciously or consciously in our minds without the stress of having to produce. 
+2. incubation
 
-3. Inspiration
+3. insight
 
-The actual “Aha! “ or “Eureka!” moment when preparation and incubation produce inspiration.
+4. evaluation
 
-4. Evaluation
+5. elaboration
 
-The attempt to verify that the proposed solution is domain-relevant and logically fits the requirements of the original need or stimulus.
-
-In [Creativity](TODO), Csikszentmihalyi takes this one step further: 
-
-* preparation
-
-* incubation
-
-* insight
-
-* evaluation
-
-* elaboration
-
-
+TODO 
 “...this classical analytic framework leading from preparation to elaboration givbes a severely distorted picture of the creative process if it is taken too literally. A person who makes a creative contribution never just slogs through the long last stage of elaboration. This part of the process is constantly interrupted by periods of incubation and is punctuated by small epiphanies. Many fresh insights emerge as one is presumably just putting finishing touches on the initial insight. “
 
 “Thus the creative process is less linear than recursive. How many iterations it goes through, how many loops are involved, how many insights are needed, depends on the depth and breadth of the issues dealt with. Sometimes incubation lasts for years; sometimes it takes a few hours. Sometimes the creative idea includes one deep insight and innumerable small ones.”
 
 “...insights tend to come to prepared minds, that is, to those who have thought long and hard about a given set of problematic issues.”
+
+Let's look at each of these stages individually, beginning with preparation. 
 
 ### Preparation
 ...
