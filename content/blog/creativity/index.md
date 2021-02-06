@@ -1,13 +1,12 @@
 ---
 title: "Creativity" 
-date: 2021-02-08
-description: "Creativity is important for problem solving. But what creativity? How does creativity work?" 
+date: '2021-02-08'
+description: "Creativity is important for problem solving. But what is creativity? How does creativity work?" 
 subject: Why is creativity important? How does creativity work? 
-preview_text: 
+preview_text: “'Creativity' is just another name for the great successes which make a difference in history."
 ---
 
-TODO 
-Painting with John? 
+![](TODO)
 
 
 
@@ -28,7 +27,7 @@ Creativity not only helps us solve problems, it helps us identify them, too.
 
 Beyond solving problems, why is it important to develop or improve our ability to be creative? 
 
-According to Miahly Csikszentmihalyi in the aptly titled book, [Creativity](https://amzn.to/3tCdEwv), “...most of the things that are interesting, important, and _human_ are the results of creativity.” He outlines two main reasons we want to introduce or cultivate creativity in our lives: 
+According to Miahly Csikszentmihalyi in his aptly titled book, [Creativity](https://amzn.to/3tCdEwv), “...most of the things that are interesting, important, and _human_ are the results of creativity.” He outlines two main reasons we want to introduce or cultivate creativity in our lives: 
 
 * “...when we are involved in it, we feel that we are living more fully than during the rest of life.”
 
@@ -197,17 +196,9 @@ There are factors that may set luminaries apart from you and I, though, and we'l
 
 * luck
 
-The domain and the field preexist the creative person, so it's a matter of being in the right place at the right time. 
+The domain and the field preexist the creative person, so it's a matter of being in the right place at the right time. Csikszentmihalyi places a greater emphasis on the domain and the field: 
 
-TODO Czisk on luck
-> Perhaps the most important implication of the systems model is that the level of creativity in a given place at a given time does not depend only on the amount of individual creativity. It depends just as much on how well suited the respective domains and fields are to the recognition and diffusion of novel ideas.
-
-
-“Because we are used to thinking that creativity begins and ends with the person, it is easy to miss the fact that the greatest spur to it may come from changes outside the individual.”
-
-
-TODO MOVE TO HOW ARTICLE?
-“Luck favors the prepared mind.” 
+> Because we are used to thinking that creativity begins and ends with the person, it is easy to miss the fact that the greatest spur to it may come from changes outside the individual.”
 
 
 ## What Makes a Person Creative?
@@ -222,9 +213,9 @@ According to Csikszentmihalyi, there are three phenomena that distinguish a crea
 
 It’s important here to distinguish between talent, genius, and creativity: 
 
-* Talent vs. creativity: “Talent differs from creativity in that it focuses on an innate ability to do something very well.”
+* **Talent vs. creativity**: “Talent differs from creativity in that it focuses on an innate ability to do something very well.”
 
-* Genius vs. creativity: “...a person who is both brilliant and creative at the same time.”
+* **Genius vs. creativity**: “...a person who is both brilliant and creative at the same time.”
 
 Talent is not a prerequisite for creativity. But it doesn't hurt. Creativity, however, is a prerequisite for genius. 
 
@@ -267,7 +258,8 @@ According to Teresa Amabile, there are three components that make up the psychol
 
 * task motivation
 
-Domain-relevant skills are more or less self-explanatory. They are ““the knowledge, technical skills, and special talents peculiar to the domain in which he [or she] wishes to be creative.” And task motivation is also equally clear: You must want to do it! Let’s look closer at creativity-relevant skills. 
+Domain-relevant skills are more or less self-explanatory. They are “the knowledge, technical skills, and special talents peculiar to the domain in which he [or she] wishes to be creative.” And task motivation is also equally clear: _you must want to do it!_ Let’s look closer at creativity-relevant skills. 
+
 
 #### Creativity-Relevant Skills
 
@@ -284,9 +276,9 @@ Each of these areas is determined by prerequisites. Let's look at those first. T
 
 ##### Prerequisites to Creativity
 
-The first is experience: You can’t do it unless you’ve done it! This seems like a paradox, but like recursion, you can’t call the function until you write it. Experience is iterative. You gain experience by gaining experience. 
+The first prerequisite to creativity is experience: You can’t do it unless you’ve done it! This seems like a paradox, but like recursion, you can’t call the function until you write it. Experience is iterative. You gain experience by gaining experience. 
 
-The second prerequisite is personality. The common personality traits of a creative person are: 
+The second prerequisite to creativity is personality. The common personality traits of a creative person are: 
 
 * Self-discipline
 
@@ -312,6 +304,10 @@ The second prerequisite is personality. The common personality traits of a creat
 
 * Task motivation
 
+🤔
+
+These look a lot like the 10 antithetical traits outlined by Csikszentmihalyi!
+
 
 ##### Cognitive Style
 
@@ -324,9 +320,9 @@ In [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h), Pierce J. Howard
 
 Heuristics are approaches to solving problems. They are also sometimes referred to as _mental models_. Every domain consists of heuristics, but there are countless heuristics that cross domains, as well. 
 
-And example that Howard uses is the following: 
+And example that Howard uses iIn [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h) is the following: 
 
->If you always do what you've always done, you'll always get what you've always gotten.
+> If you always do what you've always done, you'll always get what you've always gotten.
 
 
 ##### Work Style
@@ -344,21 +340,17 @@ In [The Art of Doing Science and Engineering: Learning to Learn](https://amzn.to
 
 3. the moment of ‘insight’
 
-4. a closer examination of the problem shows that the solution is faulty, but might be saved by some suitable revision
-
-He adds this addendum to the last step: 
-
-> But maybe the problem needs to be altered to fit the solution!
+4. a closer examination of the problem shows that the solution is faulty, but might be saved by some suitable revision, or, as Hamming states, "...maybe the problem needs to be altered to fit the solution!"
 
 In [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h), Pierce J. Howard discusses the four steps outlined by researcher [Graham Wallas](https://en.wikipedia.org/wiki/Graham_Wallas): 
 
-1. Preparation: Doing research, gathering factors, assembling people or materials--whatever is needed to have all domain specific information at our disposal before the creative act.
+1. **Preparation**: Doing research, gathering factors, assembling people or materials--whatever is needed to have all domain specific information at our disposal before the creative act.
 
-2. Incubation: Allowing the collected materials to gestate, to be assimilated into our preexisting schemas, and to interplay6 unconsciously or consciously in our minds without the stress of having to produce. 
+2. **Incubation**: Allowing the collected materials to gestate, to be assimilated into our preexisting schemas, and to interplay unconsciously or consciously in our minds without the stress of having to produce. 
 
-3. Inspiration: The actual “Aha! “ or “Eureka!” moment when preparation and incubation produce inspiration.
+3. **Inspiration**: The actual “Aha! “ or “Eureka!” moment when preparation and incubation produce inspiration.
 
-4. Evaluation: The attempt to verify that the proposed solution is domain-relevant and logically fits the requirements of the original need or stimulus.
+4. **Evaluation**: The attempt to verify that the proposed solution is domain-relevant and logically fits the requirements of the original need or stimulus.
 
 In [Creativity](https://amzn.to/3tCdEwv), Csikszentmihalyi takes this one step further, adding a step he refers to as 'elaboration': 
 
@@ -372,116 +364,160 @@ In [Creativity](https://amzn.to/3tCdEwv), Csikszentmihalyi takes this one step f
 
 5. elaboration
 
-TODO 
-“...this classical analytic framework leading from preparation to elaboration givbes a severely distorted picture of the creative process if it is taken too literally. A person who makes a creative contribution never just slogs through the long last stage of elaboration. This part of the process is constantly interrupted by periods of incubation and is punctuated by small epiphanies. Many fresh insights emerge as one is presumably just putting finishing touches on the initial insight. “
-
-“Thus the creative process is less linear than recursive. How many iterations it goes through, how many loops are involved, how many insights are needed, depends on the depth and breadth of the issues dealt with. Sometimes incubation lasts for years; sometimes it takes a few hours. Sometimes the creative idea includes one deep insight and innumerable small ones.”
-
-“...insights tend to come to prepared minds, that is, to those who have thought long and hard about a given set of problematic issues.”
+It's important to note that, even though we can create a list of steps, the creative process is not necessarily linear. Insight is recursive. Preparation and incubation may take years, informing each other in feedback loops, returning smaller insights that ultimately result in a domain-changing breakthrough.
 
 Let's look at each of these stages individually, beginning with preparation. 
 
-### Preparation
-...
-#### Where do Problems Arise? 
 
-##### personal experiences
+### 1. Preparation
 
-* life
+The first step of the creative process is preparation. This entails conducting research and gathering resources. Perhaps more important, though, is identifying and defining the problem itself. 
 
-* past knowledge
+According to Csikszentmihalyi: 
 
-“just as personal experiences produce tensions that cannot be resolved in terms of ordinary solutions, so does working within a symbolic system. Over and over, both in the arts and the sciences, the inspiration for a creative solution comes from a conflict suggested by the ‘state of the art’”. Every domain has its own internal logic, its pattern of development, and those who work within it must respond to this logic. “
+> The creative prowess starts with a sense that there is a puzzle somewhere, or a task to be accomplished. Perhaps something is not right, somewhere there is a conflict, a tension, a need to be satisfied. The problematic issue can be triggered by a personal experience, by a lack of fit in the symbolic system, by the stimulation of colleagues, or by public needs. In any case, without such a felt tension that attracts the psychic energy of the person, there is no need for a new response. Therefore, without a stimulus of this sort, the creative process is unlikely to start.
+
+Where do we find problems? What types of problems do we solve? 
 
 
-##### requirements of the domain
-“...a person cannot be inspired by a domain unless he or she learns its ulres. 
+#### Where Do We Find Problems? 
 
-“...the importance of basic knowledge, of thorough familiarity with the symbolic information and the basic procedures of the discipline.”
+Csikszentmihalyi identifies three areas where problems arise, though there aren't necessarily clean lines drawn between these realms: 
 
-“You cannot transform a domain unless you first thoroughly understand how it works.”
+* **personal experiences**: these emerge from day-to-day life, from past experience, or, most likely, from the interplay of the two as the creative person gains new experience and integrates it with their memories
 
-##### social pressures
+* **the requirements of the domain**: these emerge from conflict in working with the internal logic of the domain. 
 
-All through life, a creative person is exposed to the influence of teachers, mentors, fellow students, and coworkers, and later in life to the ideas of one’s own students and followers. Moreover, the institutions one works for and the events of the wider society in which one lives provide powerful influence that can redirect one's career and channel a person's thinking in new directions. 
+* **social pressures**: these emerge from the influence of teachers, mentors, and colleagues. For better or worse, these individuals {{ WHAT? }}
 
-“The creative prowess starts with a sense that there is a puzzle somewhere, or a task to be accomplished. Perhaps something is not right, somewhere there is a conflict, a tension, a need to be satisfied. The problematic issue can be triggered by a personal experience, by a lack of fit in the symbolic system, by the stimulation of colleagues, or by public needs. In any case, without such a felt tension that attracts the psychic energy of the person, there is no need for a new response. Therefore, without a stimulus of this sort, the creative process is unlikely to start.”
 
 #### What Types of Problems Does Creativity Solve? 
 
-* presented problems
-“Problems are not all alike in the way they come to a person’s attention. Most problems are already formed; everybody knows what is to be done and only the solution is missing.”
-“..usually take a much shorter time to prepare for and to solve than discovered problems. Although it may require little time and effort a novel solution to a presented problem could change the domain in significant way stand there be judged creative.” 
-“...when approached with a desire to come up with the best solution, even the most rigidly predefined problems can result in creative outcomes.”
+We now know where problems come from, but what does a problem look like? Csikszentmihalyi divides problems into two categories: _presented_ and _discovered_. 
 
-* discovered problems
-“...situations in which nobody asked the question yet, nobody even knows that there is_is_ a problem.
-“... have a chance to make a larger difference in the way we see the world.”
-“Most great changes in a domain share this feature: They tend to fall toward the discovered rather than the presented end on the continuum of problematic situations.”
+* **presented problems**: These problems preexist the problem solver, such that "everybody knows what is to be done and only the solution is missing.” 
 
-### Incubation: The Mysterious Time
+* **discovered problems**: These are problems "created" by the problem solver, “situations in which nobody asked the question yet, nobody even knows that there _is_ a problem." 
 
-“After a creative person senses that on the horizon of his or her expertise there is something that does not fit, some problem that might be worth tackling, the process of creativity usually goes underground for a while. The evidence for incubation comes from reports of discoveries in which the creator becomes puzzled by an issue and remembers coming to a sudden insight into the nature of the problem, but does not remember any intermediated conscious mental steps. Because of this empty space in between sensing a problem and intuiting its solution, it has been assumed that na indispensable stage of incubation must take place in na interval of the conscious process.” 
+Of the two, discovered problems and their solutions are generally domain-changing. Nobody thought of the problem, or its solution, until now, and now there's no going back. 
 
-“... it is important to let problems simmer below the threshold of consciousness for a time.”
 
-How long is this time? 
+### 2. Incubation: The Mysterious Time
 
-“In general, it seems that the more through the revolution brought about by the novelty, the longer it was working its way underground.” 
+Csikszentmihalyi refers to incubation as 'The Mysterious Time' because it's difficult to study. We can observe creative people conducting research and gathering resources, but we can't fully capture the magic of how new ideas are formed. Yet. What's clear is that the creative person needs to _stop_ working on the problem and let it simmer on the backburner. How long is this process? It depends. But, "...in general, it seems that the more thorough the revolution brought about by the novelty, the longer it was working its way underground.” 
+
 
 #### The Functions of Idle Time
 
-* Freudian theory: 
+There are several theories for what is happening during the incubation stage. Let's look at the _psychological_ and _cognitive_ theories. 
 
-“The creative person is one who succeeds in displacing the quest for the forbidden knowledge into a permissible curiosity.” 
+The psychological theory is Freudian and assumes that "...the creative person is one who succeeds in displacing the quest for the forbidden knowledge into a permissible curiosity.”
 
-* Cognitive theory
+🙄
 
-“...some kind of information processing keeps going on in the mind even when we are not aware of it, even when we are asleep. The difference is that cognitive theories do not posit any direction to subconscious thought. There is no trauma at the center of the unconscious, seeking resolution through disguised curiosity. Cognitive theorists believe that ideas, when deprived of conscious direction, follow simple laws of association. They combine more or less randomly, although seemingly irrelevant associations between ideas may occur as a result of a prior connection...”
+Psycholgoical theories also purports that creativity is rooted in trauma. While it is true that there is a significant number of creative individuals who experienced trauma in their formative years, there is an equal, if not greater, number who did not (at least they aren't tell us about it). Furthermore, there's an equal, if not greater, number of individuals who experienced trauma who are not outwardly creative. 
 
+The cognitive theory, on the other hand, states that we continue working on problems in the background, even when we are asleep, the idea being that, when we are consciously focused on a problem, we tend to think linearly about it, but when we allow our subconscious or unconscious to work on it, our minds can create new associations that we would otherwise reject. 
 
-serial and parallel processing
+In [A Mind for Numbers](https://amzn.to/2UWpClG), Barbara Oakley differntiates these two modes of thinking as _focused_ and _diffuse_.
 
-“When we think consciously about an issue, our previous training and the effort to arrive at a solution push our ideas in a linear direction, usually along predictable or familiarly lines. But intentionality does not work in the subconscious. Free from rational direction, ideas can combine and pursue each other every which way. Because of this freedom, original connections that would be at first rejected by the rational mind have a chance to become established.”
+Focused-mode thinking “involves a direct approach to solving problems using rational, sequential, analytical approaches. The focused mode is used to concentrate on something that's already tightly connected in your mind, often because you are familiar and comfortable with the underlying concepts.”
+
+Diffuse mode thinking “is what happens when you relax your attention and just let your mind wander. It allows us to suddenly gain a new insight on a problem we’ve been struggling with and is associated with ‘big-picture’ perspectives.”
 
 
 #### The Field, The Domain, and The Unconscious
-“...even in the unconscious the symbol system and the social environment play important roles
 
-it is obvious that incubation cannot work for a person who has not mastered a domain or been involved in a field
+Regardless of which theory you ascribe to the incubation of creativity, "...it is obvious that incubation cannot work for a person who has not mastered a domain or been involved in a field." 
 
-“Even though subconscious thinking may not follow rational lines, it still follows patterns that were established during conscious learning. We internalize the knowledge of the domain, the concerns of the field, and they become part of the way our minds are organized”
+Like they say, "You gotta know the rules before you can break them!"
 
-“...just as one must take the concerns of the discipline seriously, one must also be willing to take a stand against received wisdom, if the conditions warrant it.”
+> Creative thoughts evolve in this gap filled with tension--holding on to what is known and accepted while tending toward a still ill-defined truth that is barely glimpsed on the other side of the chasm.
 
-“Creative thoughts evolve in this gap filled with tension--holding on to what is known and accepted while tending toward a still ill-defined truth that is barely glimpsed on the other side of the chasm.”
+TODO verify
+Lastly, Hunt and Thomas remind us that, “Fortune favors the prepared mind”: 
 
-### Insight: The “Aha!” Experience
-“The insight presumably occurs when a subconscious connection between ideas fits so well that it is forced to pop out into awareness like a cork held underwater breaking out into the air after it is released.”
+In order to have eureka! moments, your nonconscious brain needs to have plenty of raw material; prior experiences that can contribute to an answer. 
 
-### Evaluation
-Hamming
+
+### 3. Insight: The “Aha!” Experience
+
+After preparation and incubation is the moment we've all been waiting for..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Eureka! 
+
+Csikszentmihalyi describes this best: 
+
+> The insight presumably occurs when a subconscious connection between ideas fits so well that it is forced to pop out into awareness like a cork held underwater breaking out into the air after it is released.
+
+🎉
+
+
+### 4. Evaluation
+
+But was our insight any good?
+
+The next stage of the creative process is evaluation. We need to vett and validate our insight.
+
+Richard W. Hamming describes this process: 
 
 > There is often a lot of further work to be done on the idea, the logical cleaning up, the organizing so others can see it, the public presentation to others, which may require new ways of looking at the problem and our solution, not just your idiosyncratic way which gave you the first solution. This revision of the solution often brings clarity to you in the long run!
 
-### The 99 Percent Perspiration
-four conditions
-* the person must pay attention to the developing work, to notice when new ideas, new problems, and new insights arise out of the interaction with the medium. Keeping the mind open and flexible is an important aspect of the way creative persons carry on their work.
 
-* one must pay attention to one's goals and feelings, to know whether the work is indeed proceeding as intended. 
+### 5. Elaboration: The 99 Percent Perspiration
 
-* keep in touch with domain knowledge, to use the most effective techniques, the fullest information, and the best theories oas one proceeds
+So you had a "Eureka!" moment? All tests passed? Now what? 
 
-* listen to colleagues in the field: “by interacting with others involved with similar problems, it is possible to correct a line of solution that is going in the wrong direction, to refine and focus one's ideas. and to find the most convincing mode of presenting them, the one that has the best chance of being acdp ted.”
+You're probably familiar with this quote by Thomas Edison: 
 
-“One thing about creative work is that it’s never done.”
+> Genius is one percent inspiration, ninety-nine percent perspiration.
+
+It's not enough to be inspired. Recall that a fundamental requirement of creativity is to produce value by changing a symbolic domain. That symbolic domain isn't going to change itself! Now, after all that, it's time to bring the idea to life. 
+
+Do the work. 
+
+As Csikszentmihalyi reminds us: 
+
+> One thing about creative work is that it’s never done.
+
 
 ## How To Improve Your Creativity? 
 
-Hamming: 
-> “Creativity” is just another name for the great successes which make a difference in history.
-
-Now that we know {{ X, Y, Z }}, how do we become, or improve our ability to be, creative? 
+Now that we know the definition of creatvity, what makes a person creative, and the stages of the creative process, the real question is: how do we become, or improve our ability to be, creative? 
 
 We’ll look at that problem in the next issue of The Solution.
 
