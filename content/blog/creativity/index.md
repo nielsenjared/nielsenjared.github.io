@@ -1,74 +1,61 @@
 ---
-title: "Creativity" 
+title: "What is Creativity?" 
 date: '2021-02-08'
-description: "Creativity is important for problem solving. But what is creativity? How does creativity work?" 
-subject: Why is creativity important? How does creativity work? 
+description: "Creativity is the most important problem solving skill you can develop. But what is creativity? Why is it important? How does it work? In this article, we will define creativity, identify the traits of a creative person, and outline the stages of the creative process." 
+subject: What is creativity?
 preview_text: “'Creativity' is just another name for the great successes which make a difference in history."
 ---
 
-![](TODO)
+![creativity](./jarednielsen-creativity.png)
 
 
+Creativity is the most important problem solving skill you can develop. But what _is_ creativity? Why is it important? How does it work? In this article, we will define creativity, identify the traits of a creative person, and outline the stages of the creative process.
 
-TODO 
-Creativity is 
-misunderstood? Mis
+When learning something new or trying to understand a concept, I like to frame it in terms of the problem for which it is a solution. So...
 
+_What is the problem that creativity solves?_ 
 
-Why do we want to be creative? 
+The answer is: _all of them!_ 
 
-What is creativity? 
+Creativity _is_ problem solving! 
 
-What is the problem that creativity solves? 
+Creativity is not only useful for solving problems, it is perhaps more useful in identifying problems. Beyond "solving problems", why is it important to develop or improve our ability to be creative? According to Miahly Csikszentmihalyi, the author of [Creativity](https://amzn.to/3tCdEwv), “most of the things that are interesting, important, and _human_ are the results of creativity.” He outlines two main reasons we want to introduce and cultivate creativity in our lives: 
 
-Just that. Creativity is problem solving!
+1. “...when we are involved in it, we feel that we are living more fully than during the rest of life.”
 
-Creativity not only helps us solve problems, it helps us identify them, too.
+2. “...for better or worse, our future is now closely tied to human creativity. The result will be determined in large part by our dreams and by the struggle to make them real.”
 
-Beyond solving problems, why is it important to develop or improve our ability to be creative? 
+The first point is related to the subject that made Csikszentmihalyi a household name: _flow_. Flow is "...the state in which people are so involved in an activity that nothing else seems to matter". But it’s important to distinguish flow from creativity. Creativity generally occurs during a flow state, but unlike some flow activities, “creativity also leaves an outcome that adds to the richness and complexity of the future.”
 
-According to Miahly Csikszentmihalyi in his aptly titled book, [Creativity](https://amzn.to/3tCdEwv), “...most of the things that are interesting, important, and _human_ are the results of creativity.” He outlines two main reasons we want to introduce or cultivate creativity in our lives: 
+The second point is related to the survival of our species, which seems pretty important. 
 
-* “...when we are involved in it, we feel that we are living more fully than during the rest of life.”
-
-
-* “Because for better or worse, our future is now closely tied to human creativity. The result will be determined in large part by our dreams and by the struggle to make them real.”
-
-The first point is related to the subject that made Csikszentmihalyi a household name: _flow_. 
-
-TODO flow summary
-When we are in flow, we are able to “... find purpose and enjoyment in the chaos of existence.”
-
-It’s important to distinguish flow from creativity. Creativity generally occurs during a flow state, but unlike some flow activities, such as sex, sports, and religion, “...creativity also leaves an outcome that adds to the richness and complexity of the future.” Kids don't count. 
-
-The second point is related to the survival of our species. 
-
-TODO GRAB A QUOTE
-
-How does creativity work? 
-
-Before we answer that, let’s define creativity. 
-
-What exactly _is_ creativity? 
+But what exactly _is_ creativity? 
 
 If you search for the term, you'll find definitions like the following: 
 
 > the use of the imagination or original ideas, especially in the production of an artistic work.
 
-And...
-
-> a phenomenon whereby something somehow new and somehow valuable is formed.
-
-You'll also find a lot of images of lightbulbs and rainbow colored confetti bursting from human heads. 
-
+You'll also find a lot of images of lightbulbs or rainbow colored confetti bursting from human heads. But...
+```
 🤯 + 🌈 != creativity
+```
+
+For many people, the word "creativity" invokes images of art, design, or fashion, but not science, mathematics, or engineering. This is a myth. While the artistic product may be very different from the scientific, they share the same underlying process. Speaking of myths, as Fred Brooks put it in [The Mythical Man Month](): 
+
+> The programmer, like the poet, works only slightly removed from pure thought-stuff. [They build their] castles in the air, from air, creating by exertion of the imagination.
+
+Whether you are a poet or a programmer, you share personality traits and follow the same steps as other creative people. 
 
 
 ## What is Creativity? 
 
-For many people the word creativity invokes images of art, design, or fashion, but not science, mathematics, or engineering. 
+And now for something completely different, a quote from John Cleese. In his book, [Creativity](https://amzn.to/3p14JkC), he defines creativity as: 
 
-Let's start with a few quotes from [Richard W. Hamming](https://en.wikipedia.org/wiki/Richard_Hamming), a pioneer of computer engineering and telecommunications, who worked on the Manhattan Project and later at Bell Laboratories. In his book, [The Art of Doing Science and Engineering: Learning to Learn](https://amzn.to/3pRfkzV), he writes: 
+> new ways of thinking about things
+
+If it were not for a serendipitous encounter with an improv group in college, Cleese would have applied his creativity to a career as a lawyer. Funny? 
+
+Let's refine this defintion with a quote from [Richard W. Hamming](https://en.wikipedia.org/wiki/Richard_Hamming), a pioneer of computer engineering and telecommunications, who worked on the Manhattan Project and later at Bell Laboratories. In his book, [The Art of Doing Science and Engineering: Learning to Learn](https://amzn.to/3pRfkzV), he writes: 
 
 > Creativity, originality, novelty, and other such words are regarded as ‘good things’, and we often fail to distinguish between them--indeed, we find them hard to define. Surely we do not need three words with exactly the same meaning!
 
@@ -100,7 +87,7 @@ How do we know if something is _creative_?
 
 Researcher and Harvard professor [Teresa Amabile](https://en.wikipedia.org/wiki/Teresa_Amabile) states that: 
 
-> “A product or response will be judged as creative to the extent that (a) it is both a novel and appropriate, useful, correct or valuable response to the task at hand, and (b) the task is heuristic rather than algorithmic.”
+> A product or response will be judged as creative to the extent that (a) it is both a novel and appropriate, useful, correct or valuable response to the task at hand, and (b) the task is heuristic rather than algorithmic.
 
 She outlines three criteria for distinguishing creative contributions from others:
 
@@ -112,7 +99,7 @@ She outlines three criteria for distinguishing creative contributions from other
 
 Novelty and spontaneity make sense. But what do we mean by ‘relevance’? 
 
-According to Csikszentmihalyi, “...creativity does not happen inside people’s heads, but in the interactions between a person’s thoughts and a sociocultural context.” He outlines three elements for what he refers to as The Systems Model of creativity:
+According to Csikszentmihalyi, “creativity does not happen inside people’s heads, but in the interactions between a person’s thoughts and a sociocultural context.” He outlines three elements for what he refers to as The Systems Model of creativity:
 
 * a culture that contains symbolic rules
 
@@ -127,18 +114,17 @@ Let’s look closer at each of the above elements.
 
 What is a domain? Csikszentmihalyi defines it as "a set of symbolic rules and procedures" and "an isolated little world in which a person can think and act with clarity and concentration.”
 
-If you are a programmer, your domain is computer science. But that's a large domain, so perhaps you work in a subdomain, such as web development, which is a subdomain of software development. If you're a web developer, your symbolic rules and procedures consist of the langauge or languages you use and their syntax and control constructs, the client-server model, communication protocols, etc.
+If you are a programmer, your domain is computer science. But that's a large domain, so perhaps you work in a subdomain, such as web development, which is a subdomain of software development. If you're a web developer, your symbolic rules and procedures consist of the language or languages you use and their syntax and control constructs, the client-server model, communication protocols, etc.
 
 How do we know if the product of creativity is relevant to the domain? 
 
-[Margaret Boden](https://en.wikipedia.org/wiki/Margaret_Boden) distinguishes between two forms or relevance: psychological and historical. Pierce J. Howard, author of [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h), succinctly defines these two forms: 
+[Margaret Boden](https://en.wikipedia.org/wiki/Margaret_Boden) distinguishes between two forms or relevance: _psychological_ and _historical_. Pierce J. Howard, author of [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h), succinctly defines these two forms: 
 
-* Psychological relevance is “merely something new for the individual doing the creating…”
+* Psychological relevance is “merely something new for the individual doing the creating.”
 
 * Historical relevance is “something new for humanity.”
 
-TODO HAMMING
-He offers a definition…
+Richard Hamming sums this up nicely:
 
 > Creativity seems, among other things, to be “usefully” putting together things which were not perceived to be related before, and it may be the _initial psychological_ distance between the things which counts the most.
 
@@ -146,7 +132,7 @@ Howard, in reference to the work of [Robert Sternberg](https://en.wikipedia.org/
 
 * Conceptual replication, “in which one attempts to repeat an earlier study to determine whether its results were a fluke or are here to stay.”
 
-* Redefinition: “in which one finds a new meaning or application for an established entity.”
+* Redefinition, “in which one finds a new meaning or application for an established entity.”
 
 * Forward incrementation, “in which one takes an established paradigm to a higher level.”
 
@@ -158,37 +144,25 @@ Howard, in reference to the work of [Robert Sternberg](https://en.wikipedia.org/
 
 * Re-initiation, “in which one approaches something in a radically different way and direction from current practice.”
 
-TODO
-As you can see, the list above progresses from 
+As you can see, the list above progresses from creative contributions that are easy to introduce into the domain to those that will require some convincing. 
 
-Teresa Amabile: 
+How does creativity change the domain? According to Teresa Amabile: 
 
-> A product or response is creative to the extent that appropriate observers independently agree it is creative. Appropriate observers are those familiar with the domain in which the product was created or the reponse articulated.
+> A product or response is creative to the extent that appropriate observers independently agree it is creative. 
 
 Who are these appropriate observers? 
 
 
 ### Field
 
-TODO
-The appropriate observers that Amabile is referring to are the individuals who act as gatekeepers to the domain. These gatekeepers are the established experts
+The appropriate observers that Amabile is referring to are the individuals who act as gatekeepers to, and caretakers of, the domain. These individuals are the established and recognized experts of _the field_. They were likely young whippersnappers and upstarts like you and me at one time, but are now the old guard.
 
-how fields affect the rate of creativity
-
-* being either reactive or proactive
-
-* by choosing either a narrow or broad filter in the selection of novelty
-
-* encourage novelty if they are well connected to the rest of the social system and are able to channel support into their own domain
-
-
-
-> Creativity is any act, idea, or product that changes an existing domain, or that transforms an existing domain into a new one. And the definition of a creative person is: someone whose thoughts or actions change a domain, or establish a new domain. It is important to remember, however, that a domain cannot be changed without ht explicit or implicit consent of a field responsible for it.”
+According to Csikszentmihalyi, "a domain cannot be changed without the explicit or implicit consent of a field responsible for it."
 
 
 ### Person
 
-Who is this creative person? 
+Who is the creative person? 
 
 It's you. Me. Anyone, really. 
 
@@ -196,9 +170,7 @@ There are factors that may set luminaries apart from you and I, though, and we'l
 
 * luck
 
-The domain and the field preexist the creative person, so it's a matter of being in the right place at the right time. Csikszentmihalyi places a greater emphasis on the domain and the field: 
-
-> Because we are used to thinking that creativity begins and ends with the person, it is easy to miss the fact that the greatest spur to it may come from changes outside the individual.”
+The domain and the field preexist the creative person, so for them it's a matter of being in the right place at the right time. Csikszentmihalyi places a greater emphasis on the domain and the field because "we are used to thinking that creativity begins and ends with the person, it is easy to miss the fact that the greatest spur to it may come from changes outside the individual."
 
 
 ## What Makes a Person Creative?
@@ -244,8 +216,7 @@ In [Creativity](https://amzn.to/3tCdEwv), Csikszentmihalyi outlines 10 pairs of 
 
 * enjoyment vs. suffering: 
 
-According to Csikszentmihalyi: 
-> ...the novelty that survives to change a domain is usually the work of someone who can operate at both ends of these polarities--and that is the kind of person we call ‘creative’.
+According to Csikszentmihalyi, "...the novelty that survives to change a domain is usually the work of someone who can operate at both ends of these polarities--and that is the kind of person we call ‘creative’."
 
 
 ### What is the Psychology of the Creative Person?
@@ -271,7 +242,7 @@ Amabile identifies three areas of creativity-relevant skills:
 
 * work style
 
-Each of these areas is determined by prerequisites. Let's look at those first. They are _experience_ and _personality traits_. 
+Each of these areas is determined by prerequisites: _experience_ and _personality traits_. 
 
 
 ##### Prerequisites to Creativity
@@ -313,14 +284,14 @@ These look a lot like the 10 antithetical traits outlined by Csikszentmihalyi!
 
 In [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h), Pierce J. Howard describes the creativity-relevant skill as:
 
-“...the ability and willingness to break perceptual sets (as opposed to functional fixedness), be comfortable with complexity, hold options open and not push for closure, suspend judgment rather than reacting to things as good or bad, be comfortable with wider categories, develop an accurate memory, abandon or suspend performance scripts, and see things differently from others.”
+> ...the ability and willingness to break perceptual sets (as opposed to functional fixedness), be comfortable with complexity, hold options open and not push for closure, suspend judgment rather than reacting to things as good or bad, be comfortable with wider categories, develop an accurate memory, abandon or suspend performance scripts, and see things differently from others.
 
 
 ##### Knowledge of Heuristics
 
 Heuristics are approaches to solving problems. They are also sometimes referred to as _mental models_. Every domain consists of heuristics, but there are countless heuristics that cross domains, as well. 
 
-And example that Howard uses iIn [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h) is the following: 
+And example that Howard uses in [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h) is the following: 
 
 > If you always do what you've always done, you'll always get what you've always gotten.
 
@@ -375,7 +346,7 @@ The first step of the creative process is preparation. This entails conducting r
 
 According to Csikszentmihalyi: 
 
-> The creative prowess starts with a sense that there is a puzzle somewhere, or a task to be accomplished. Perhaps something is not right, somewhere there is a conflict, a tension, a need to be satisfied. The problematic issue can be triggered by a personal experience, by a lack of fit in the symbolic system, by the stimulation of colleagues, or by public needs. In any case, without such a felt tension that attracts the psychic energy of the person, there is no need for a new response. Therefore, without a stimulus of this sort, the creative process is unlikely to start.
+> The creative process starts with a sense that there is a puzzle somewhere, or a task to be accomplished. Perhaps something is not right, somewhere there is a conflict, a tension, a need to be satisfied. The problematic issue can be triggered by a personal experience, by a lack of fit in the symbolic system, by the stimulation of colleagues, or by public needs. In any case, without such a felt tension that attracts the psychic energy of the person, there is no need for a new response. Therefore, without a stimulus of this sort, the creative process is unlikely to start.
 
 Where do we find problems? What types of problems do we solve? 
 
@@ -388,7 +359,7 @@ Csikszentmihalyi identifies three areas where problems arise, though there aren'
 
 * **the requirements of the domain**: these emerge from conflict in working with the internal logic of the domain. 
 
-* **social pressures**: these emerge from the influence of teachers, mentors, and colleagues. For better or worse, these individuals {{ WHAT? }}
+* **social pressures**: these emerge from the influence of teachers, mentors, and colleagues. For better or worse, these individuals shape our thinking and steer the course of our careers, as well as our lives
 
 
 #### What Types of Problems Does Creativity Solve? 
@@ -419,68 +390,62 @@ Psycholgoical theories also purports that creativity is rooted in trauma. While 
 
 The cognitive theory, on the other hand, states that we continue working on problems in the background, even when we are asleep, the idea being that, when we are consciously focused on a problem, we tend to think linearly about it, but when we allow our subconscious or unconscious to work on it, our minds can create new associations that we would otherwise reject. 
 
-In [A Mind for Numbers](https://amzn.to/2UWpClG), Barbara Oakley differntiates these two modes of thinking as _focused_ and _diffuse_.
-
-Focused-mode thinking “involves a direct approach to solving problems using rational, sequential, analytical approaches. The focused mode is used to concentrate on something that's already tightly connected in your mind, often because you are familiar and comfortable with the underlying concepts.”
-
-Diffuse mode thinking “is what happens when you relax your attention and just let your mind wander. It allows us to suddenly gain a new insight on a problem we’ve been struggling with and is associated with ‘big-picture’ perspectives.”
-
 
 #### The Field, The Domain, and The Unconscious
 
-Regardless of which theory you ascribe to the incubation of creativity, "...it is obvious that incubation cannot work for a person who has not mastered a domain or been involved in a field." 
+Regardless of which theory you ascribe to the incubation, "it is obvious that incubation cannot work for a person who has not mastered a domain or been involved in a field." 
 
-Like they say, "You gotta know the rules before you can break them!"
+Like they say, "You gotta know the rules before you can break them!" According to Csikszentmihalyi:
 
 > Creative thoughts evolve in this gap filled with tension--holding on to what is known and accepted while tending toward a still ill-defined truth that is barely glimpsed on the other side of the chasm.
 
-TODO verify
-Lastly, Hunt and Thomas remind us that, “Fortune favors the prepared mind”: 
-
-In order to have eureka! moments, your nonconscious brain needs to have plenty of raw material; prior experiences that can contribute to an answer. 
-
-
+ 
 ### 3. Insight: The “Aha!” Experience
 
-After preparation and incubation is the moment we've all been waiting for..
+After preparation and incubation is the flash of insight. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Wait for it...
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 Eureka! 
 
-Csikszentmihalyi describes this best: 
+According to Csikszentmihalyi: 
 
 > The insight presumably occurs when a subconscious connection between ideas fits so well that it is forced to pop out into awareness like a cork held underwater breaking out into the air after it is released.
 
@@ -491,9 +456,9 @@ Csikszentmihalyi describes this best:
 
 But was our insight any good?
 
-The next stage of the creative process is evaluation. We need to vett and validate our insight.
+The next stage of the creative process is evaluation. We need to vett and validate our breakthrough.
 
-Richard W. Hamming describes this process: 
+According to Richard W. Hamming: 
 
 > There is often a lot of further work to be done on the idea, the logical cleaning up, the organizing so others can see it, the public presentation to others, which may require new ways of looking at the problem and our solution, not just your idiosyncratic way which gave you the first solution. This revision of the solution often brings clarity to you in the long run!
 
@@ -517,8 +482,6 @@ As Csikszentmihalyi reminds us:
 
 ## How To Improve Your Creativity? 
 
-Now that we know the definition of creatvity, what makes a person creative, and the stages of the creative process, the real question is: how do we become, or improve our ability to be, creative? 
+Now that we know the definition of creativity, the traits a person creative, and the stages of the creative process, the real question is: how do we become, or improve our ability to be, creative? 
 
-We’ll look at that problem in the next issue of The Solution.
-
-In the meantime, dive deep into my latest article, [Data Structures in JavaScript: Depth-First Search Graph Traversal](TODO)
+We’ll look at that problem the next article in this series. Stay tuned!
