@@ -48,7 +48,7 @@ TODO
 
 * What is a directed acylclic graph? 
 
-* TODO SOMETHING ABOUT PATTERNS
+* What is a topological sort?
 
 
 ### What is Topology? 
@@ -81,10 +81,31 @@ And if something is _acyclic_, it's the opposite of that, meaning
 Let's put this together: what is a directed acylcic graph, or DAG? It's a graph that...
 
 
-### TODO SOMETHING ABOUT PATTERNS
+### What is a topological sort?
 
+There are a lot of popular analogies to explain topological sort. 
 TODO
 
+
+My favorite analogy is the one used by Corment et al in [Introduction to Algorithms](TODO), in which Professor Bumstead is getting dressed for work. After bathing, Prof Bumstead opens his closet to select the following garments:
+
+* undershorts
+
+* pants
+
+* belt
+
+* socks
+
+* shoes
+
+* shirt
+
+* tie
+
+* jacket
+
+If Professor Bumstead's closet is a graph and the garments are vertices, then we can see that there is an order, or direction, in which the professor must don each garment. Unless, of course, he is an absent-minded professor. 
 
 
 ## Topological Sort using Depth-First Search (DFS) in JavaScript
@@ -210,37 +231,115 @@ g.addEdge("F","G");
 ```
 
 
-What is the goal of topological sort? 
+Let's restate the goal of topological sort:
 
+> Given a directed acylcic graph, select a vertex with an indegree of zero and return all vertices in the order discovered on each path of the graph.
 
-```
-L ← Empty list that will contain the sorted nodes
-while exists nodes without a permanent mark do
-    select an unmarked node n
-    visit(n)
+Let's visualize this. Here's our diagram from the previous graph tutorials: 
 
-function visit(node n)
-    if n has a permanent mark then
-        return
-    if n has a temporary mark then
-        stop   (not a DAG)
+![](./jarednielsen-data-structure-graph-bfs-a-g.png)
 
-    mark n with a temporary mark
+We want to write a method that returns the following: 
 
-    for each node m with an edge from n to m do
-        visit(m)
-
-    remove temporary mark from n
-    mark n with a permanent mark
-    add n to head of L
+```sh
+[
+  'A', 'B',
+  'C', 'E',
+  'D', 'F',
+  'G'
+]
 ```
 
+:memo: Note that "E" follows "C" and precedes "D". 
 
+Why? 
 
+If we are following the control flow of our DFS method, we begin with "A", discover "B", backtrack to "A", then discover "C" and "E", then backtrack to "A" again to discover "D", "F", and finally "G". 
 
+I just described DFS, so let's translate that into pseudocode. 
 
+* Given a graph, a goal, and a starting vertex...
 
-TODO
+* Mark the vertex as discovered. 
+
+* For each adjacent vertex, if the vertex is not discovered. 
+
+* Mark the vertex as discovered.
+
+* For each adjacent vertex...
+
+* Repeat, recursively.
+
+* Return the discovered vertices. 
+
+If our goal is to return the vertices in the order they were discovered, how do we need to modify our pseudocode? 
+
+Where have we seen this or something like it before? 
+
+:thinking-face:
+
+Breadth-First Search! 
+
+What's the "secret sauce" of BFS? 
+
+A queue. 
+
+Why? 
+
+Because we move _across_ vertices. 
+
+Will a queue work in DFS? 
+
+No. 
+
+Why? 
+
+Because we are moving _up_ and _down_ vertices. 
+
+So what data structure _will_ work? 
+
+A stack. 
+
+Let's insert the new steps into our pseudocode:
+
+* Given a graph, a goal, and a starting vertex...
+
+* _Declare a stack._
+
+* Mark the vertex as discovered. 
+
+* For each adjacent vertex, if the vertex is not discovered....
+
+* Mark the vertex as discovered.
+
+* For each adjacent vertex...
+
+* Repeat, recursively.
+
+* _Push the vertex onto the stack._
+
+* Return the stack. 
+
+Now let's translate our pseudocode to JavaScript. We _could_ write a `topoSort` method from scratch, but because it is so similar to `dfs`, let's copy-pasta and refactor. For reference, here's our `dfs` method: 
+```js
+    dfs(goal, v = this.vertices[0], discovered = []) {
+        let adj = this.adjacent;
+
+        discovered[v] = true;
+
+        for (let i = 0; i < adj[v].length; i++){
+            let w = adj[v][i];
+
+            if (!discovered[w]) {
+                this.dfs(goal, w, discovered);
+            }
+        }
+
+        return discovered[goal] || false;
+    }
+```
+
+We simply need to make a few adjustments: 
 ```js
     topoSort(v = this.vertices[0], discovered = [], s) {
         const stack = s || [];
@@ -262,9 +361,14 @@ TODO
     }
 ```
 
-That's it! 
+We remove the `goal` parameter as we are not searching for a specific vertex and we add an `s` parameter so we can use memoization with our `stack` array. We then declare our `stack` by assigning it the value stored in `s` OR we initialize a new, empty array. It's DFS until the end, where, before we return our `stack`, we _prepend_ the vertex to the array. 
 
-Topological sort with DFS. 
+Can you top that? 
+
+Yes, actually, you can. There are several approaches to implementing a topological sort algorithm. The approach outlined in [Introduction to Algorithms](TODO) uses a Linked List rather than a Stack, which is very fancy. Another popular approach is using a HashTable. We chose an array because it is straightforward and as long as we remember to treat it as such, works similar to a stack. 
+
+TODO
+
 
 ## Reflection
 
