@@ -1,25 +1,23 @@
 ---
-title: "Data Structures in JavaScript: Topological Sort Depth-First Search Graph Traversal "  
-date: '2021-02-05'
-description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn depth-first search graph traversal in JavaScript. 
-keyword: ['javascript', 'graph', 'depth-first search', 'data structure', 'dfs']
+title: "Data Structures in JavaScript: Topological Sort with Depth-First Search Graph Traversal"  
+date: '2021-02-12'
+description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn topological sort using depth-first search graph traversal in JavaScript. 
+keyword: ['javascript', 'graph', 'topological sort', 'depth-first search', 'data structure', 'dfs']
 ---
 
 
 ![](./jarednielsen-data-structure-graph-bfs.png)
 
 
-At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn topological sort using a depth-first search graph traversal in JavaScript. 
+At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn topological sort using a depth-first search graph traversal in JavaScript. 
 
 If you're just joining us, you may want to start with [Learn JavaScript Graph Data Structure](https://jarednielsen.com/data-structure-graph-javascript/).
  
-
 
 ## Retrieval Practice
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-TODO
 * What is a Graph?
 
 * What problem(s) does a Graph solve? 
@@ -37,9 +35,10 @@ A graph consists of a set of nodes, or _vertices_, connected by _edges_.  An edg
 
 * Network topology: We can use the graph data structure when modeling network topology, such as the internet or your friends on Facebook!
 
+
 ### What is Depth-First Search?
 
-TODO 
+Depth-First Search is an algorithm that searches a graph for a specific goal by checking all of the vertices connected on a path before moving on to check the adjacent vertices. 
 
 
 ## Let's Get Meta
@@ -53,7 +52,13 @@ TODO
 
 ### What is Topology? 
 
-TODO
+According to Wikipedia...
+
+> In mathematics, topology is concerned with the properties of a geometric object that are preserved under continuous deformations, such as stretching, twisting, crumpling and bending, but not tearing or gluing. 
+
+🙄
+
+Let's think about this in the context of data structures. What is our geometric object? Our graph! We generally think of graphs in two dimensions, but they can easily be represented in three. What are the continuous deformations? The methods that add and remove vertices and edges. 
 
 
 ### What is a Directed Acylcic Graph? 
@@ -64,11 +69,9 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Directed_acyclic_graph), 
 
 Let's reverse engineer this term.
 
-We're familiar with the term 'graph'. In computer science a graph is: 
+We're familiar with the term 'graph'. 
 
-> TODO
-
-So what does _acyclic_ mean? 
+But what does _acyclic_ mean? 
 
 What is a cycle? 
 
@@ -76,16 +79,18 @@ What is a cycle?
 
 So if something is _cyclic_, it is "occurring in cycles; regularly repeated."
 
-And if something is _acyclic_, it's the opposite of that, meaning 
+And if something is _acyclic_, it's the opposite of that, meaning it does not occur in cycles. 
 
-Let's put this together: what is a directed acylcic graph, or DAG? It's a graph that...
+What does it mean if a graph is directed? 
+
+The edges of a directed graph "point" in a direction from one vertex to another. 
+
+TODO GRAPHIC?
 
 
-### What is a topological sort?
+### What is a Topological Sort?
 
-There are a lot of popular analogies to explain topological sort. 
-TODO
-
+There are a lot of popular analogies to explain topological sort, such as tasks that must be executed in a specific order or a list of skills and their prerequisites. 
 
 My favorite analogy is the one used by Corment et al in [Introduction to Algorithms](TODO), in which Professor Bumstead is getting dressed for work. After bathing, Prof Bumstead opens his closet to select the following garments:
 
@@ -105,7 +110,7 @@ My favorite analogy is the one used by Corment et al in [Introduction to Algorit
 
 * jacket
 
-If Professor Bumstead's closet is a graph and the garments are vertices, then we can see that there is an order, or direction, in which the professor must don each garment. Unless, of course, he is an absent-minded professor. 
+If Professor Bumstead's closet is a graph and the garments are vertices, then we can see that there is an order, or direction, in which the professor must suit up. Unless, of course, he is an absent-minded professor. 
 
 
 ## Topological Sort using Depth-First Search (DFS) in JavaScript
@@ -365,23 +370,34 @@ We remove the `goal` parameter as we are not searching for a specific vertex and
 
 Can you top that? 
 
-Yes, actually, you can. There are several approaches to implementing a topological sort algorithm. The approach outlined in [Introduction to Algorithms](TODO) uses a Linked List rather than a Stack, which is very fancy. Another popular approach is using a HashTable. We chose an array because it is straightforward and as long as we remember to treat it as such, works similar to a stack. 
-
-TODO
+Yes, actually, you can. There are several approaches to implementing a topological sort algorithm. The approach outlined in [Introduction to Algorithms](TODO) uses a Linked List rather than a Stack, which is very fancy. Another popular approach is using a HashTable. We chose an array because it is straightforward and as long as we remember to treat it as such, it works similar to a stack. There are also implementations that compute the _time_ from when a vertex is discovered to when it is "finished", meaning all adjacent vertices are explored. This time is then used to determine the position of the vertex in the sorted topology. 
 
 
 ## Reflection
 
+* What is topology? 
+
+* What is a directed acylclic graph? 
+
+* What is a topological sort?
+
+### What is Topology? 
+
+According to Wikipedia...
+
+> In mathematics, topology is concerned with the properties of a geometric object that are preserved under continuous deformations, such as stretching, twisting, crumpling and bending, but not tearing or gluing. 
 
 
+### What is a Directed Acylcic Graph? 
 
-### 
+According to [Wikipedia](https://en.wikipedia.org/wiki/Directed_acyclic_graph), a directed acyclic graph is a graph that...  
 
-
-
-### 
-
+> consists of vertices and edges, with each edge directed from one vertex to another, such that following those directions will never form a closed loop
 
 
-### 
+### What is a Topological Sort?
+
+According to Wikipedia, a [topological sort](https://en.wikipedia.org/wiki/Topological_sorting) is...
+
+> a linear ordering of its vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering. For instance, the vertices of the graph may represent tasks to be performed, and the edges may represent constraints that one task must be performed before another; in this application, a topological ordering is just a valid sequence for the tasks.
 
