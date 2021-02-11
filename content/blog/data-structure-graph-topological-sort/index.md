@@ -69,21 +69,13 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Directed_acyclic_graph), 
 
 Let's reverse engineer this term.
 
-We're familiar with the term 'graph'. 
-
-But what does _acyclic_ mean? 
-
-What is a cycle? 
+We're familiar with the term 'graph'. But what does _acyclic_ mean? What is a cycle? 
 
 > a series of events that are regularly repeated in the same order.
 
-So if something is _cyclic_, it is "occurring in cycles; regularly repeated."
+So if something is _cyclic_, it is "occurring in cycles; regularly repeated." And if something is _acyclic_, it's the opposite of that, meaning it does not occur in cycles.
 
-And if something is _acyclic_, it's the opposite of that, meaning it does not occur in cycles. 
-
-What does it mean if a graph is directed? 
-
-The edges of a directed graph "point" in a direction from one vertex to another. 
+What does it mean if a graph is directed? The edges of a directed graph "point" in a direction from one vertex to another. 
 
 TODO GRAPHIC?
 
@@ -92,7 +84,7 @@ TODO GRAPHIC?
 
 There are a lot of popular analogies to explain topological sort, such as tasks that must be executed in a specific order or a list of skills and their prerequisites. 
 
-My favorite analogy is the one used by Corment et al in [Introduction to Algorithms](TODO), in which Professor Bumstead is getting dressed for work. After bathing, Prof Bumstead opens his closet to select the following garments:
+My favorite analogy is the one used by Corment et al in [Introduction to Algorithms](https://amzn.to/372MOUz), in which Professor Bumstead is getting dressed for work. After bathing, Prof Bumstead opens his closet to select the following garments:
 
 * undershorts
 
@@ -240,7 +232,7 @@ Let's restate the goal of topological sort:
 
 > Given a directed acylcic graph, select a vertex with an indegree of zero and return all vertices in the order discovered on each path of the graph.
 
-Let's visualize this. Here's our diagram from the previous graph tutorials: 
+What do we mean by "indegree"? Indegree and its opposite, outdegree, describe whether or not edges are directed to or from a vertex. So, here, a vertex with an indegree of zero means that there are no vertices directed at it. In our diagram above, the vertex `"A"` has an indegree of zero, but an outdegree of three as its edges at directed at vertices `"B"`, `"C"`, and `"D"`. 
 
 ![](./jarednielsen-data-structure-graph-bfs-a-g.png)
 
@@ -255,7 +247,7 @@ We want to write a method that returns the following:
 ]
 ```
 
-:memo: Note that "E" follows "C" and precedes "D". 
+📝 Note that "E" follows "C" and precedes "D". 
 
 Why? 
 
@@ -265,23 +257,19 @@ I just described DFS, so let's translate that into pseudocode.
 
 * Given a graph, a goal, and a starting vertex...
 
-* Mark the vertex as discovered. 
+* Mark the starting vertex as discovered. 
 
-* For each adjacent vertex, if the vertex is not discovered. 
+* For each adjacent vertex, if the vertex is not discovered, mark the adjacent vertex as discovered.
 
-* Mark the vertex as discovered.
-
-* For each adjacent vertex...
-
-* Repeat, recursively.
+* For each adjacent vertex... Repeat, recursively.
 
 * Return the discovered vertices. 
 
-If our goal is to return the vertices in the order they were discovered, how do we need to modify our pseudocode? 
+If our goal is to return the vertices in the order they were discovered, how do we modify our pseudocode? 
 
 Where have we seen this or something like it before? 
 
-:thinking-face:
+🤔
 
 Breadth-First Search! 
 
@@ -295,7 +283,7 @@ Because we move _across_ vertices.
 
 Will a queue work in DFS? 
 
-No. 
+🙅‍♀️
 
 Why? 
 
@@ -311,15 +299,11 @@ Let's insert the new steps into our pseudocode:
 
 * _Declare a stack._
 
-* Mark the vertex as discovered. 
+* Mark the starting vertex as discovered. 
 
-* For each adjacent vertex, if the vertex is not discovered....
+* For each adjacent vertex, if the vertex is not discovered, mark the adjacent vertex as discovered.
 
-* Mark the vertex as discovered.
-
-* For each adjacent vertex...
-
-* Repeat, recursively.
+* For each adjacent vertex... Repeat, recursively.
 
 * _Push the vertex onto the stack._
 
@@ -366,11 +350,11 @@ We simply need to make a few adjustments:
     }
 ```
 
-We remove the `goal` parameter as we are not searching for a specific vertex and we add an `s` parameter so we can use memoization with our `stack` array. We then declare our `stack` by assigning it the value stored in `s` OR we initialize a new, empty array. It's DFS until the end, where, before we return our `stack`, we _prepend_ the vertex to the array. 
+We remove the `goal` parameter as we are not searching for a specific vertex and we add an `s` parameter so we can use memoization with our `stack` array. We then declare our `stack` by assigning it the value stored in `s` OR we initialize a new, empty array. Before we return our `stack`, we _prepend_ the vertex to the array. 
 
 Can you top that? 
 
-Yes, actually, you can. There are several approaches to implementing a topological sort algorithm. The approach outlined in [Introduction to Algorithms](TODO) uses a Linked List rather than a Stack, which is very fancy. Another popular approach is using a HashTable. We chose an array because it is straightforward and as long as we remember to treat it as such, it works similar to a stack. There are also implementations that compute the _time_ from when a vertex is discovered to when it is "finished", meaning all adjacent vertices are explored. This time is then used to determine the position of the vertex in the sorted topology. 
+Yes, actually, you can. There are several approaches to implementing a topological sort algorithm. The approach outlined in [Introduction to Algorithms](https://amzn.to/372MOUz) uses a Linked List rather than a Stack, which is very fancy. Another popular approach is using a HashTable. We chose an array because it is straightforward and as long as we remember to treat it as such, works similar to a stack, not to mention it's a bit redundant to implement in JavaScript. There are also implementations that compute the _time_ from when a vertex is discovered to when it is "finished", meaning all adjacent vertices are explored. This time is then used to determine the position of the vertex in the sorted topology. 
 
 
 ## Reflection
@@ -381,23 +365,17 @@ Yes, actually, you can. There are several approaches to implementing a topologic
 
 * What is a topological sort?
 
-### What is Topology? 
+### What is Topology?
 
-According to Wikipedia...
-
-> In mathematics, topology is concerned with the properties of a geometric object that are preserved under continuous deformations, such as stretching, twisting, crumpling and bending, but not tearing or gluing. 
+For our intents and purposes, topology is the study of the _shape_ of a data structure, in this case, a graph. We are specifically interested in the properties of our graph, the edges and vertices, and the relationship between them. 
 
 
 ### What is a Directed Acylcic Graph? 
 
-According to [Wikipedia](https://en.wikipedia.org/wiki/Directed_acyclic_graph), a directed acyclic graph is a graph that...  
-
-> consists of vertices and edges, with each edge directed from one vertex to another, such that following those directions will never form a closed loop
+A DAG is a graph containing at least one vertex with an indegree of zero and consisting of edges that specify an ordering of vertices, such that the edge (u, v) implies that the vertex _u_ precedes _v_. 
 
 
-### What is a Topological Sort?
+### What is Topological Sorting?
 
-According to Wikipedia, a [topological sort](https://en.wikipedia.org/wiki/Topological_sorting) is...
-
-> a linear ordering of its vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering. For instance, the vertices of the graph may represent tasks to be performed, and the edges may represent constraints that one task must be performed before another; in this application, a topological ordering is just a valid sequence for the tasks.
+Topological sorting is a graph traversal algorithm that returns the vertices of a directed acyclic graph in the order defined by their edges.
 
