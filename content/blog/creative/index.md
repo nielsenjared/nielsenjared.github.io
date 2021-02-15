@@ -9,28 +9,65 @@ preview_text: “Luck favors the prepared mind.”
 ![creativity](./jarednielsen-creativity.png)
 
 
+What type of programmer do you want to be? 
 
-## What is Creativity? 
+There are two types of problems we solve as developers: algorithmic and heuristic.
+
+We can map these to the two types of problems outlined by Csikszentmihalyi in [Creativity](TODO):
+
+* presented
+
+* discovered
 
 
-## Why is Creativity Important? 
+For algorithmic problems, it’s simply a matter of recognizing a pattern and implementing a tried and true solution.
+
+I say simply, but it takes practice to develop skills of pattern recognition.
+
+Heuristic problems, on the other hand, are a matter of TODO
+
+If you’re content pushing pixels, all you really need is Google. It will do the thinking for you.
+
+But if you want to level up, you need to play the metagame.
+
+You want to identify problems and implement solutions. 
+
+You want to be proactive, rather than reactive. 
+
+If you’re content cleaning up legacy code bases, again, all you need is Google Fu. 
+
+If you’re content to be told what to do, you can stop reading now. 
+
+You can unsubscribe here. 
+
+If you want to excel, if you want to design or discover something new, you need to improve your ability to be creative. 
+
+Still with me? 
+
+Alright, then. 
+
+How do we improve our ability to be creative? 
+
 
 ## How do We Become or Improve Our Ability to Be Creative?
 
 Can we teach creativity?
 
-TODO 
-Hamming: 
-“It cannot be done with simple tricks and easy methods; what must be done is _you must change yourself_ to be more creative.” 
+It depends on who you ask. 
 
+According to Richard Hamming in [The Art of ... : ](TODO):
 
-In [Creativity], Csziksenmihalyi outlines {{ X }}: 
+> It cannot be done with simple tricks and easy methods; what must be done is _you must change yourself_ to be more creative.
+
+How do we change ourselves? 
+
+In [Creativity], Csziksenmihalyi divides this problem into two categories: 
 
 * the acquisition of creative energy
 
 * the application of creative energy
 
-How do you get more creative energy? Then, once you get it, what do you do with it? 
+How do you get more creative energy? And once you get it, what do you do with it? 
 
 I like to think of these two categories in terms of luck. 
 
@@ -38,20 +75,11 @@ I like to think of these two categories in terms of luck.
 
 * get lucky
 
-Before we look at these, Pierce J. Howard stresses 
-
-Stress the necessity of all three elements of creativity 
-Novelty
-Relevance
-Spontaneity
-
-
-Prepare to be lucky.
-
 Twyla Tharp
-You don’t get lucky without preparation, and there’s no sense in being prepared if you’re not open to the possibility of a glorious accident… Some people resent the idea of luck. Accepting the role of chance in our lives suggests that our creations and triumphs are not entirely our own, and that in some way we’re undeserving of our success. I say, Get over it. This is how the world works. In creative endeavors luck is a skill.
 
+> You don’t get lucky without preparation, and there’s no sense in being prepared if you’re not open to the possibility of a glorious accident… Some people resent the idea of luck. Accepting the role of chance in our lives suggests that our creations and triumphs are not entirely our own, and that in some way we’re undeserving of our success. I say, Get over it. This is how the world works. In creative endeavors luck is a skill.
 
+Cz: 
 “...insights tend to come to prepared minds, that is, to those who have thought long and hard about a given set of problematic issues.”
 
 
@@ -61,77 +89,135 @@ Hamming
 
 ### Prepare to Be Lucky: The Acquisition of Creative Energy
 
+Csziksenmihalyi outlines four approaches to aid us in the acquisition of creative energy: 
+
 * Overcoming limits
 
-* Curiosity and interest
+* TODO curiosity and interest
 
 * Cultivating Flow in Everyday Life
 
 * Habits of Strength
 
-#### Overcoming Limts
+
+#### Overcoming Limts of Creative Energy
+
+In [The Owner's Manual for the Brain](TODO), Pierce J. Howard stresses the necessity of the three elements of creativity: 
+
+* Novelty
+
+* Relevance
+
+* Spontaneity
+
+
+There are two limits that prevent us from TODO: 
+
+* external
+
+* internal 
+
+##### External Limitations to Being Creative
+
+
+TODO
+There aren't enough hours in the day! 
+
+Csziksenmihalyi
 
 “...the most fundamental difference between people consists in how much uncommitted attention they have left over to deal with novelty. 
 
-“...the fact is that there are real limits to how many things a person can attend to at the  same time, and when survival needs require all of one's attention, none is left over for being creative.”
+“...the fact is that there are real limits to how many things a person can attend to at the same time, and when survival needs require all of one's attention, none is left over for being creative.”
 
-Internal limitation
+##### Internal Limitations to Being Creative
 
-paranoia
+Csziksenmihalyi identifies two primary pitfalls that prevent us from TODO our potential: 
 
-The person who suffers from it usually cannot afford to become interested in the world from an objective, impartial viewpoint, and therefore is unable to learn much that is new.
+* paranoia
 
-selfishness
+* selfishness 
+
+TODO paranoia
+
+> The person who suffers from it usually cannot afford to become interested in the world from an objective, impartial viewpoint, and therefore is unable to learn much that is new.
+
+TODO selfishness
 
 ...for some people the concept of “need” is inflated to the point that it becomes an obsession that devours every waking moment. When everything a person sees, thinks, or dresses must serve self-interest, there is not attention left over to learn about anything else. 
 
 “...a great deal of our limited supply of attention is committed to the tasks of surviving from one day to the next.”
+
 “To achieve creativity in an existing domain, there must be surplus attention available.”
+
 “...it is practically impossible to learn a domain deeploy enough to make a change in it without dedicating all of one’s attention to it and thereby appearing to be arrogant, selfish, and ruthless to those who believe they have a right to the creative person’s attention.”
+
 “In fact, creative people are neither single-minded, specialized, nor selfish. Indeed, they seem to be the opposite: They love to make connections with adjacent areas of knowledge. They tend to be -- in principle--caring and sensitive. Yet the demands of their role inevitably push them toward specialization and selfishness. Of the many paradoxes of creativity, this is perhaps the most difficult to avoid.”
 
 
+##### Internal Traits
 
-#### Curiosity and Interest
+* Develop what you lack
 
-the allocation if attention to things for their own sake
+* Shift often from openness to closure
+
+* Aim for complexity
+
+TODO
+
+#### TODO Curiosity and Interest
+
+Once we are able to TODO, we can focus on "the allocation of attention to things for their own sake," or, in other words, curiosity and interest. 
 
 How can interest and curiosity be cultivated?
 
-/try to be surprised by something every day
+Csziksenmihalyi TODO
 
-Try to surprise at least one person every day
+* try to be surprised by something every day
 
-/write down each day what surprised you and how you surprised others
+* try to surprise at least one person every day
 
-When somethihng strikes a spark of interest, follow it.
+* write down each day what surprised you and how you surprised others
 
-Cleese
-Keeping going
-* nurture and trust your unconscious
+* when somethihng strikes a spark of interest, follow it.
 
-* Playing… keeps you “fresh”.
+In [Creativity](TODO), John Cleese counsels us on "keeping going". To do so we need to nurture and trust our unconscious. 
+
+How do we do that? 
+
+Play. 
+
+According to Cleese, "Playing… keeps you 'fresh'."
 
 
 #### Cultivating Flow in Everyday Life
 
 How can we relearn to enjoy curiosity so tha the pursuit of new experiences and new knowledge becomes self-sustaining?
 
-Wake up in the morning with a specifi c goal to look forward to
+Wake up in the morning with a specific goal to look forward to
 
-If yuou do anything well, it becomes enjoyable.
+If you do anything well, it becomes enjoyable.
 
 To keep enjoying something, you need to increase its complexity.
 
 
 Flow (Chapter 5)
+
 What drives creative people?
+
 The opportunity to do the work that they enjoy doing. 
+
 and “...designing or discovering something new.”
+
 Creativity vs. entropy
+
 “We are generally torn between two opposite sets of instructions programmed into the brain: the least-effort imperative on one side, and the claims of creativity on the other.” 
-“In most individuals entropy seems to be stronger, and they enjoy comfort more than the challenge of discovery. A few… are more responsive to the rewards of discovery. But we all respond to both of these rewards; the tendencies toward conserving energy as well as using it constructively are simultaneously part of our inheritance.”
+
+“In most individuals entropy seems to be stronger, and they enjoy comfort more than the challenge of discovery. 
+
+A few… are more responsive to the rewards of discovery. But we all respond to both of these rewards; the tendencies toward conserving energy as well as using it constructively are simultaneously part of our inheritance.”
+
 What is enjoyment? 
+
 Nine elements
 …
 The Conditions for Flow
@@ -153,7 +239,9 @@ The Conditions for Flow
 * Do it for its own sake!
 
 Flow and Happiness
+
 p. 123
+
 Flow and the Evolution of Consciousness
 p. 124
 
@@ -161,19 +249,29 @@ p. 124
 
 #### Habits of Strength
 
-How do you develop strength? 
+TODO DEFINE ENTROPY [entropy](https://en.wikipedia.org/wiki/Entropy)
+
+Fight entropy
+Csz:
+“We must erect barriers agains distractions, dig channels so that energy can flow more freely, find ways to escape outside temptations and interruprtions.”
+
+“...what is important is not to relinquish control over creative energy so that it dissipates without direction.”
+
+See also: War of Art , resistance
+
+How do we fight entropy? 
+
+We build strength.
+
+How do we do that?
+
+😬
+
+You're not going to like this answer...
 
 Hard work. 
 
-
-
-Fight entropy
-See also: War of Art , resistance
-
-Csz:
-“We must erect barriers agains distracvtions, dig channels so that energy can flowe more freely, find ways to escape outside temptations and interruprtions.”
-
-“...what is important is not to relinquish control over creative energy so that it dissipates without direction.”
+TODO ATOMIC HABITS; BUILDING MUSCLE
 
 What can you do to build up habits that will make it possible to control attention so that it can be open and receptive, or focus and directed, depending on what your overall goals require?
 
@@ -183,23 +281,27 @@ What can you do to build up habits that will make it possible to control attenti
 
 * Shape your space
 
-It is not what the enbironment is like that matters, but the extent to which you are in harmony with it.
-“A place for everything, and everything in its place.”
-
 * Find out what you like and what you hate about life.
 
 * Start doing more of what you love, less of what you hate. 
+
+The last two points are subjective and up to you. Let's look at some strategies for the first three.
 
 
 ##### Take Charge Of Your Schedule
 
 Patterning Activities
+
 “what counts is to be master of one’s own time”
+
 “Being in tune with place and time, we experience the reality of our unique existence and its relationship to the cosmos.”
 
 Timing is everything
+
 More introverted people will probably bet art their creative best in the morning, more extraverted people in the evening
-Allow time for incubation and preparation. Aks, “What information or material is needed before action can be taken?”
+
+Allow time for incubation and preparation. Ask, “What information or material is needed before action can be taken?”
+
 Always take a break between preparing for your creative act and executing it. 
 
 ...consumption of high-glycemic carbohydrates and fats tends to interfere with creativity by reducing arousal, whereas consumption of proteins and low-glycemic carbohydrates, unless it is excessive, has no apparent negative impact on arousal.
@@ -208,12 +310,21 @@ Always take a break between preparing for your creative act and executing it.
 ##### Make time for reflection and relaxation.
 
 Meditate
+
 Exercise
+
 Create _attentional_ mental space
+
 Creative episodes are most productive when they are preceded by some form of meditation or aerobic exertion. 
 
 
 ##### Shape Your Space 
+
+It is not what the environment is like that matters, but the extent to which you are in harmony with it.
+
+TODO Ben Franklin: 
+
+“A place for everything, everything in its place.”
 
 macroenvironment vs. microenvironment
 
@@ -234,6 +345,7 @@ the immediate setting in which a person works
 “What helps to preserve and develop individuality, and hence enhance creativity, is an environment that we have built to reflect ourselves, where it is easy to forget the outside world and concentrate completely on the task at hand.”
 
 What sets creative individuals apart? 
+
 “...whether the conditions in which they find themselves are luxurious or miserable, they manage to give their surroundings a personal pattern that echoes the rhythm of their thoughts and habits of action. Within this environment of their own making, they can forget the rest of the world and concentrate on pursuing the Muse.”
 
 
@@ -259,54 +371,63 @@ Hamming
 
 
 
-##### Internal Traits
 
-* Develop what you lack
-
-* Shift often from openness to closure
-
-* Aim for complexity
 
 
 
 
 ### Get Lucky: The Application of Creative Energy
 
-
-
-
-
+TODO
 
 
 #### Problem Finding
 
 * Find a way to express what moves you
 
-Cleese
-Write about what you know
-“... you are most likely to be creative in an area that you already know and care about.”
+* Look at problems from as many viewpoints as possible
+
+* Figure out the implications of the problem.
+
+* Implement the solution
+
+
+
+In [Creativity](TODO), John Cleese counsels us to "write about what you know," because: 
+
+> ... you are most likely to be creative in an area that you already know and care about.
 
 
 * Look at problems from as many viewpoints as possible
 
-Hamming
-Analogy
-“Probably the most important tool in creativity…
+In [The Art of ...: Learning ...](TODO), Hamming TODO analogy, stating that it is probably "the most important tool in creativity": 
+
 “Something seems like something else which we knew in the past.”
-“Wide acquaintance with various fields of konlwedge is thus a help--_provided_ you have the knowledge filed away so it is available when needed, rather than to be found only when led directly to it. This flexible access to pieces of knowledg seems to come from looking at knowledge _while you are acquiring it_ from many different angles, turning over any new idea to see its many sides before filing it away. This implies efort on your part not to take the easy, immediately useful “memorizing the material” path, but to prepare your mind for the future.”
+
+How do we develop our ability to _analogize_? 
+
+According to Hamming: 
+
+> Wide acquaintance with various fields of konlwedge is thus a help--_provided_ you have the knowledge filed away so it is available when needed, rather than to be found only when led directly to it. This flexible access to pieces of knowledge seems to come from looking at knowledge _while you are acquiring it_ from many different angles, turning over any new idea to see its many sides before filing it away. This implies efort on your part not to take the easy, immediately useful “memorizing the material” path, but to prepare your mind for the future.
+
+
+
 “...get down to the fundamentals of a field, since it implies you must examine things many ways before you can decide what i fundamental and what is frills.”
 
 
 * Figure out the implications of the problem.
 
 Hamming
-“...when you learn something new, think of other applications of it, onew which have not arisen in your past but which might in your future.”
+
+“...when you learn something new, think of other applications of it, ones which have not arisen in your past but which might in your future.”
 
 * Implement the solution
 
 
 
 #### Divergent thinking
+
+TODO WHAT IS DIVERGENT THINKING?
 
 * Produce as many ideas as possible
 
@@ -326,7 +447,7 @@ Know When to Fold ‘Em
 
 
 
-#### Choosing a special Domain
+#### Choosing a Special Domain
 
 Find your domain and make a singular commitment to it
 
@@ -341,10 +462,20 @@ I don't know if I completely agree with this statement. That's the topic for fut
 
 
 Being in the Right Place
+
 The place where one lives is important for three reasons
-“...one must be in a position to acss the domain in which one plans to work.”
-“novel stimulation is not evenly distributed”
-“access to the field is not evenly distributed in space” 
-Where is the right place to be? 
-“Unfortunately, there is no single answer. Creativity is not determined by outside factors but by the person’s hard resolution to do what must be done. Which place is best depends on the total configuration of a person’s characteristics and those of the task he or she is involved in.”
+
+* “...one must be in a position to acss the domain in which one plans to work.”
+
+* “novel stimulation is not evenly distributed”
+
+* “access to the field is not evenly distributed in space” 
+
+So where is the right place to be? 
+
+According to Csziksenmihalyi, there is no single answer. 
+
+> Creativity is not determined by outside factors but by the person’s hard resolution to do what must be done. Which place is best depends on the total configuration of a person’s characteristics and those of the task he or she is involved in.
+
+
 
