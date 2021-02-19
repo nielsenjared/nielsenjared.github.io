@@ -77,8 +77,7 @@ So if something is _cyclic_, it is "occurring in cycles; regularly repeated." An
 
 What does it mean if a graph is directed? The edges of a directed graph "point" in a direction from one vertex to another. 
 
-TODO GRAPHIC?
-
+![directed acyclic graph](./jarednielsen-data-structure-directed-acyclic-graph.png)
 
 ### What is a Topological Sort?
 
@@ -234,7 +233,7 @@ Let's restate the goal of topological sort:
 
 What do we mean by "indegree"? Indegree and its opposite, outdegree, describe whether or not edges are directed to or from a vertex. So, here, a vertex with an indegree of zero means that there are no vertices directed at it. In our diagram above, the vertex `"A"` has an indegree of zero, but an outdegree of three as its edges at directed at vertices `"B"`, `"C"`, and `"D"`. 
 
-![](./jarednielsen-data-structure-graph-bfs-a-g.png)
+![directed acyclic graph](./jarednielsen-data-structure-directed-acyclic-graph.png)
 
 We want to write a method that returns the following: 
 
