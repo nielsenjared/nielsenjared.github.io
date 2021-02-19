@@ -1,6 +1,6 @@
 ---
 title: "Data Structures in JavaScript: Topological Sort with Depth-First Search Graph Traversal"  
-date: '2021-02-12'
+date: '2021-02-19'
 description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn topological sort using depth-first search graph traversal in JavaScript. 
 keyword: ['javascript', 'graph', 'topological sort', 'depth-first search', 'data structure', 'dfs']
 ---
