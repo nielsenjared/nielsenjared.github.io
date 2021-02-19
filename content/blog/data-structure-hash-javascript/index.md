@@ -95,10 +95,12 @@ Why an array?
 
 Why would we not use an object?
 
+What is the problem we need to solve?
+
 
 ### Hashing 
 
-
+We need to create a key for each 
 
 
 
@@ -119,6 +121,8 @@ There are two common wasys to think about hashing:
 
 * creating a key to use when looking up a vbalue in a hash table
 
+https://en.wikipedia.org/wiki/Hash_function
+Use of a hash function to index a hash table is called hashing or scatter storage addressing. 
 
 ### What is a Hash Table?
 
