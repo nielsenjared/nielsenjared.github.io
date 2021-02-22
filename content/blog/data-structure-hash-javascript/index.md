@@ -97,10 +97,50 @@ Why would we not use an object?
 
 What is the problem we need to solve?
 
+An array _is_ a table! 
+
+
+
 
 ### Hashing 
 
-We need to create a key for each 
+
+
+We need to create a key for each entry in our table. 
+
+Why don't we just use the key itself? 
+
+What's the problem with these two keys? 
+
+```
+"apple"
+```
+
+...and...
+
+```
+1234567890
+```
+
+One is a string and the other an integer, _and_ the integer is composed of twice as many characters as the string. 
+
+What would our array look like if we start pushing these keys into it? 
+
+```
+[ "apple": "apple", "1234567890": 1234567890]
+```
+
+Can we do better? 
+
+Yes... but why? 
+
+We don't need to push key/value pairs to our array because our array, by default, is composed of indexes. We want to convert the key into a numerical value and use that as the array index. And when we want to look up a value, we "reverse engineer" the value to find its index. 
+
+Just like cooking up a [hash](https://en.wikipedia.org/wiki/Hash_(food)), we need to chop our keys into bite- (or byte-) sized pieces. 
+
+Mmm... data hash. Just like Mom used to make. 
+
+
 
 
 
@@ -119,7 +159,7 @@ There are two common wasys to think about hashing:
 
 * finding a value in a data structure as quickly as possible
 
-* creating a key to use when looking up a vbalue in a hash table
+* creating a key to use when looking up a value in a hash table
 
 https://en.wikipedia.org/wiki/Hash_function
 Use of a hash function to index a hash table is called hashing or scatter storage addressing. 
