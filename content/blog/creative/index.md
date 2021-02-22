@@ -15,27 +15,33 @@ There are two types of problems we solve as developers:
 
 * algorithmic
 
-* heuristic.
+* heuristic
 
-We can map these to the two types of problems outlined by Csikszentmihalyi in [Creativity](TODO):
+We can map these to the two types of problems outlined by Csikszentmihalyi in [Creativity](https://amzn.to/3tCdEwv):
 
 * presented
 
 * discovered
 
-For algorithmic problems, it’s simply a matter of recognizing a pattern and implementing a tried and true solution. The list is long, but a few examples are: 
+To solve algorithmic, or presented, problems, it’s simply a matter of recognizing a pattern and implementing a tried-and-true solution. A lot of technical interview questions are these 'classics' disguised as story problems, used to test both the breadth of your knowledge and the depth of your problem solving abilitites. The list is long, but a few examples are: 
 
 * dynamic programming
 
 * divide and conquer
 
-* swap
+* decrease and conquer
 
-* TODO 
+* swapping
+
+* sorting 
+
+* ...etc
 
 I say simply, but it takes practice to build a library of patterns and the ability to recognize them.
 
-Heuristic problems, on the other hand, are a matter of {{ TODO }}.
+Heuristic, or discovered, problems, on the other hand, are not only new to us, but new to the field. We can't use an off-the-shelf solution. We need to invent one! 
+
+:memo: It's important to distinguish between [heuristic algorithms](https://en.wikipedia.org/wiki/Heuristic_(computer_science)) and [heuristic](https://en.wikipedia.org/wiki/Heuristic) in general: "Heuristics can be mental shortcuts that ease the cognitive load of making a decision", whereas, in computer science specifically, a heuristic is "a technique designed for solving a problem more quickly when classic methods are too slow, or for finding an approximate solution when classic methods fail to find any exact solution."
 
 If you’re content pushing pixels, all you really need is Google. It will do the thinking for you.
 
@@ -60,17 +66,17 @@ Alright, then.
 
 ## How do We Become or Improve Our Ability to Be Creative?
 
-The real question is, 'Can creativity be taught?'
+Maybe the real question is, 'Can creativity be taught?'
 
 The answer depends on who you ask. 
 
-According to Richard Hamming in [The Art of ... : ](TODO), when it comes to learning creativity, we must be our own teachers:
+According to Richard Hamming in [The Art of Doing Science and Engineering: Learning to Learn](https://amzn.to/3pRfkzV), when it comes to learning creativity, we must be our own teachers:
 
 > It cannot be done with simple tricks and easy methods; what must be done is _you must change yourself_ to be more creative.
 
 How do we change ourselves? 
 
-In [Creativity], Csziksenmihalyi divides this problem into two categories: 
+In [Creativity](https://amzn.to/3tCdEwv), Csziksenmihalyi divides this problem into two categories: 
 
 * the acquisition of creative energy
 
@@ -84,7 +90,7 @@ I like to think of these two categories in terms of luck. There are two things w
 
 * get lucky
 
-According to Twyla Tharp in [The Creative Habit](TODO): 
+Twyla Tharp make the case in [The Creative Habit](TODO): 
 
 > You don’t get lucky without preparation, and there’s no sense in being prepared if you’re not open to the possibility of a glorious accident… Some people resent the idea of luck. Accepting the role of chance in our lives suggests that our creations and triumphs are not entirely our own, and that in some way we’re undeserving of our success. I say, 'Get over it.' This is how the world works. In creative endeavors luck is a skill.
 
@@ -110,11 +116,11 @@ According to Csziksenmihalyi, there are two limits that prevent us from reaching
 
 * internal 
 
-##### External Limitations to Being Creative
+##### External Limitations to Creative Energy
 
 External limitations to our creativity are all the things(!) we must do to survive each day: commute and report to work; attend to the needs of our family; purchase, prepare, and eat food; basic hygiene; advanced hygiene (whatever that is); house cleaning; bill paying; and, oh yeah, sleeping...
 
-Somehow we are suppoed to find time to build X, learn Y, and {{ TODO }} Z.
+Somehow we are suppoed to find time to build X, learn Y, and keep up with Z.
 
 There aren't enough hours in the day! 
 
@@ -122,17 +128,12 @@ According to Csziksenmihalyi, “...the fact is that there are real limits to ho
 
 > ...the most fundamental difference between people consists in how much uncommitted attention they have left over to deal with novelty. 
 
-This is why 'productivity gurus' tell us to do our most important work first thing in the morning. Our attention, not to mention our will power, dissipates over the course of the day. 
+This is why 'productivity gurus' counsel us to do our most important work first thing in the morning. Our attention, not to mention our will power, dissipates over the course of the day. 
 
 For some of us, the obligations of work and family are too demanding to allow attention to be devoted to novelty. The rest of us need to get over ourselves. 
 
-TODO
-“...a great deal of our limited supply of attention is committed to the tasks of surviving from one day to the next.”
 
-“To achieve creativity in an existing domain, there must be surplus attention available.”
-
-
-##### Internal Limitations to Being Creative
+##### Internal Limitations to Creative Energy
 
 Csziksenmihalyi identifies two primary pitfalls that prevent us from achieving our creative potential: 
 
@@ -140,35 +141,16 @@ Csziksenmihalyi identifies two primary pitfalls that prevent us from achieving o
 
 * selfishness 
 
-The paranoiac "usually cannot afford to become interested in the world from an objective, impartial viewpoint, and therefore is unable to learn much that is new,", whereas "when everything a person sees, thinks, or dresses must serve self-interest, there is not attention left over to learn about anything else."
+The paranoiac "usually cannot afford to become interested in the world from an objective, impartial viewpoint, and therefore is unable to learn much that is new," whereas "when everything a person sees, thinks, or does must serve self-interest, there is not attention left over to learn about anything else."
 
 But there's a paradox here. In order to overcome external limitations (and keep the internal limitations in check), we need to be protective of our attention. According to Csziksenmihalyi, "it is practically impossible to learn a domain deeploy enough to make a change in it without dedicating all of one’s attention to it and thereby appearing to be arrogant, selfish, and ruthless to those who believe they have a right to the creative person’s attention.”
-
-
-###### Traits for Overcoming Internal Limitations
-
-So you're selfish and paranoid? TODO
-
-* Develop what you lack
-
-* Shift often from openness to closure
-
-* Aim for complexity
-
-TODO 
 
 
 #### Cultivating Curiosity and Interest
 
 Once we overcome our internal and external limitations, we can focus on "the allocation of attention to things for their own sake" or, in other words, curiosity and interest. 
 
-How can interest and curiosity be cultivated?
-
-Practice spontaneity. 
-
-Sound paradoxical? 
-
-Csziksenmihalyi offers four suggestions for being spontaneous: 
+How can interest and curiosity be cultivated? Practice spontaneity. Sound paradoxical? Csziksenmihalyi offers four suggestions for being spontaneous: 
 
 * try to be surprised by something every day
 
@@ -178,42 +160,26 @@ Csziksenmihalyi offers four suggestions for being spontaneous:
 
 * when somethihng strikes a spark of interest, follow it.
 
-In [Creativity](TODO), John Cleese counsels us on "keeping going". To do so we need to nurture and trust our unconscious. 
-
-How do we do that? 
-
-Play. 
-
-According to Cleese, "Playing… keeps you 'fresh'."
+In [Creativity](https://amzn.to/3p14JkC), John Cleese counsels us on "keeping going". To do so we need to nurture and trust our unconscious. How do we do that? Play. According to Cleese, "Playing… keeps you 'fresh'."
 
 
-TODO
 #### Cultivating Flow in Everyday Life
+
+What drives creative people? 
+
+The opportunity to do the work that they enjoy doing and to design and discover something new. 
 
 How can we relearn to enjoy curiosity so that the pursuit of new experiences and new knowledge becomes self-sustaining?
 
-Wake up in the morning with a specific goal to look forward to
+* First things first: wake up with a specific goal in mind. Set that goal the night before. 
 
-If you do anything well, it becomes enjoyable.
+* If you do anything well, it becomes enjoyable.
 
-To keep enjoying something, you need to increase its complexity.
+* To keep enjoying something, you need to increase its complexity.
 
 
 Flow (Chapter 5)
 
-What drives creative people?
-
-The opportunity to do the work that they enjoy doing. 
-
-and “...designing or discovering something new.”
-
-Creativity vs. entropy
-
-“We are generally torn between two opposite sets of instructions programmed into the brain: the least-effort imperative on one side, and the claims of creativity on the other.” 
-
-“In most individuals entropy seems to be stronger, and they enjoy comfort more than the challenge of discovery. 
-
-A few… are more responsive to the rewards of discovery. But we all respond to both of these rewards; the tendencies toward conserving energy as well as using it constructively are simultaneously part of our inheritance.”
 
 What is enjoyment? 
 
@@ -247,6 +213,13 @@ p. 124
 
 
 #### Building Habits of Strength
+
+
+“We are generally torn between two opposite sets of instructions programmed into the brain: the least-effort imperative on one side, and the claims of creativity on the other.” 
+
+“In most individuals entropy seems to be stronger, and they enjoy comfort more than the challenge of discovery. 
+
+A few… are more responsive to the rewards of discovery. But we all respond to both of these rewards; the tendencies toward conserving energy as well as using it constructively are simultaneously part of our inheritance.”
 
 Hamming
 
@@ -319,11 +292,7 @@ The goal is to create _attentional_ mental space. Let your brain stretch its leg
 
 ##### Shape Your Space 
 
-It is not what the environment is like that matters, but the extent to which you are in harmony with it.
-
-TODO Ben Franklin: 
-
-“A place for everything, everything in its place.”
+We all became acutely aware of the importance of our work environments in 2020. Everything changed, whether we still needed to report on-site, switched to telecommuting, or found that our remote life became just that... remote. 
 
 We can divide our space into two categories:
 
@@ -331,32 +300,22 @@ We can divide our space into two categories:
 
 * microenvironment
 
-The macroenvironment is the social, cultural, and institutional contexts we live in. The microenvironment is immediate setting.
+The macroenvironment is the social, cultural, and institutional contexts we live in. The microenvironment is the immediate surroundings. Like external and internal limits discussed above, we need to adapt, whether that is _to_ our environment or environment _to_ us. 
 
+According to Csziksenmihalyi: 
 
+> Most of us cannot do a great deal about the macroenvironment. There is not that much we can do about the wealth of the society we live in, or even about the institutions in which we work. We can, however, gain control over the immediate environment and transform it so that it enhances personal creativity.
 
-“Most of us cannot do a great deal about the macroenvironment. There is not that much we can do about the wealth of the society we live in, or even about the institutions in which we work. We can, however, gain control over the immediate environment and transform it so that it enhances personal creativity.”
+This might be easier said than done. Not everyone has the luxury of free space to devote to creative work. So commandeer it! Take over a space temporarily. Make your own pop-up! Legend has it Einstein worked out his early theories on the kitchen table in the tiny apartment shared with his wife and child. Our devices allow us to take our "office" with us. If you are reading this, you likely own a laptop, at the very least, a smartphone. Just put on your headphones and get to work. Don't forget to turn off notifications! It's not just a matter of shaping your space, it's also a _carving out_ of space. According to Csziksenmihalyi, this is what sets creative individuals apart:
 
+> ...whether the conditions in which they find themselves are luxurious or miserable, they manage to give their surroundings a personal pattern that echoes the rhythm of their thoughts and habits of action. Within this environment of their own making, they can forget the rest of the world and concentrate on pursuing the Muse.
 
-
-“The important thing is to have a special place tailor-made to one’s own needs, where one feels comfortable and in control.”
-
-“reflect a personal sense of how the universe ought to be.”
-
-“What helps to preserve and develop individuality, and hence enhance creativity, is an environment that we have built to reflect ourselves, where it is easy to forget the outside world and concentrate completely on the task at hand.”
-
-What sets creative individuals apart? 
-
-“...whether the conditions in which they find themselves are luxurious or miserable, they manage to give their surroundings a personal pattern that echoes the rhythm of their thoughts and habits of action. Within this environment of their own making, they can forget the rest of the world and concentrate on pursuing the Muse.”
-
-
-
-
-Make sure that where you work and live reflets your needs and your tastes. There should be room for immersion in concentrated activity and for stimulating novelty. The objects around you should help you become what you intend to be. Think about how you use time and consider whether your schedule reflects the rhythms that work best for you. If in doubt, experiment until you discover the best timing for work and rest, for thought and action, for being alone and for being with people.
-
-All this said, sometimes we need the outside world. Richard W. Hamming offers a counterpoint in [The Art of ](TODO): 
+All this said, sometimes we need the outside world. Richard W. Hamming offers a counterpoint in [The Art of Doing Science and Engineering: Learning to Learn](https://amzn.to/3pRfkzV): 
 
 > ... I often suspect… that what the individual regards as ideal conditions for creativity is not what is needed, but rather the constant impinging of reality is often a great help. In the past I have deliberately managed myself in this matter by promising a result by a given date, and then, like a cornered rat, having at the last minute to find something!
+
+
+#### Building Habits of Strength
 
 When it comes to building habits of strenght, Richard W. Hamming offers some final advice:
 
@@ -365,12 +324,12 @@ When it comes to building habits of strenght, Richard W. Hamming offers some fin
 
 ### Get Lucky: The Application of Creative Energy
 
-Creative energy acquired. Now what? We need to find (or create) problems in which to apply it. 
+Now that we know _how_ to acquire creative energy, what do we do with it? We need to find (or create) problems in which to apply it.  
 
 
 #### Problem Finding
 
-TODO
+Csziksenmihalyi
 
 * Find a way to express what moves you
 
@@ -383,14 +342,14 @@ TODO
 
 ##### Find a Way to Express What Moves You
 
-In [Creativity](TODO), John Cleese counsels us to "write about what you know," because: 
+In [Creativity](https://amzn.to/3p14JkC), John Cleese counsels us to "write about what you know," because: 
 
 > ... you are most likely to be creative in an area that you already know and care about.
 
 
 ##### Look at Problems From As Many Viewpoints as Possible
 
-In [The Art of ...: Learning ...](TODO), Hamming recommends the use of analogy, stating that it is probably "the most important tool in creativity". TODO: 
+In [The Art of Doing Science and Engineering: Learning to Learn](https://amzn.to/3pRfkzV), Hamming recommends the use of analogy, stating that it is probably "the most important tool in creativity". TODO: 
 
 “Something seems like something else which we knew in the past.”
 
@@ -426,9 +385,7 @@ TODO WHAT IS DIVERGENT THINKING?
 
 * Try to produce unlikely ideas
 
-Cleese
-Make an imaginative leap
-“...the bigger the leap, the longer the creative period is likely to be.”
+In [Creativity](https://amzn.to/3p14JkC), Cleese encourages us to "make an imaginative leap", but warns us that "the bigger the leap, the longer the creative period is likely to be.”
 
 Hamming
 “The false starts and false solutions often sharpen the next approach you try. YOu now know how not to do it! You have a smaller number of approaches left to explore. You have a better idea of what will not work and possibly why it will not work.”
