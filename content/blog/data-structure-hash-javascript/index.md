@@ -100,6 +100,27 @@ What is the problem we need to solve?
 An array _is_ a table! 
 
 
+TODO 
+```js
+class HashTable {
+    constructor() {
+        this.table = [];
+    }
+}
+
+const hashTable = new HashTable();
+```
+
+Logging our `hashTable` will return: 
+```sh
+HashTable { table: [] }
+```
+
+Now what? 
+
+Now we need to _put_ data in the table. 
+
+Let's get cooking!
 
 
 ### Hashing 
@@ -140,7 +161,148 @@ Just like cooking up a [hash](https://en.wikipedia.org/wiki/Hash_(food)), we nee
 
 Mmm... data hash. Just like Mom used to make. 
 
+TODO
+If we are creating an integer for our key, what do we need to account for? 
 
+Duplicates, or _collisions_, and 
+
+TODO 
+
+There are a number of hashing algorithms for us to choose from. Several of them rely on modulo division to create unique integers. 
+
+
+```js
+    modularHash(key) {
+        let sum = 0;
+
+        for (let i = 0; i < key.length; ++i) {
+            sum += key.charCodeAt(i);
+        }
+
+        let hash = sum % 71; 
+
+        return hash;
+    }
+```
+
+
+I picked a random prime number from the [list of prime numbers](https://en.wikipedia.org/wiki/List_of_prime_numbers). As we can see, 71 is the 20th prime number, so this means our hash table can hold 20 key / value pairs. 
+
+Calling our `modularHash` method...
+```js
+hashTable.modularHash("Jared Nielsen");
+```
+
+...returns `29`. 
+
+If we change our modulus from 71 to 29, our method returns `18`. And if we change it to 173, our method returns `25`. 
+
+
+
+
+
+
+
+
+An alternative approach would be to declare the length of the array in advance, which we would be required to do in some other programming languages. In this scenario, our constructor would look like: 
+```js
+    constructor() {
+        this.table = new Array(71);
+    }
+```
+
+...and our `loseloseHash` would return:
+```js
+        let hash = total % this.table.length;
+```
+
+☝️ You don't want to take this approach, but if you did, you would want an array length that was a prime number. Why? If you array length was a composite number, you wouldn't be able to generate unique keys. 
+
+### TODO 
+
+Now that we can create a hash, we need to _put_ it in our table. 
+```js
+    put(key, value) {
+        let hash = this.modularHash(key);
+        return this.table[hash] = value;
+    }
+```
+
+We declare a `put` method and pass it `key` and `value` parameters. Within our `put` method, we call the `modularHash` method and pass it our `key`. We then assign the `value` to the index in `table` that corresponds with our hashed `key`. 
+
+Let's use our hash table to look up Twitter handles by a person's given name. 
+
+```js
+hashTable.put("Jared Nielsen", "@jarednielsen");
+```
+
+Logging our table returns: 
+```sh
+HashTable { table: [ <29 empty items>, '@jarednielsen' ] }
+```
+TODO
+📝 Note the `<29 empty items>`. 
+
+If we log `hashTable.table[0];`, it returns: 
+```sh
+undefined
+```
+
+But if we log `hashTable.table[29];`, it returns:
+```sh
+@jarednielsen
+```
+
+Let's _put_ another value in our table. 
+```js
+hashTable.put("NASA", "@nasa");
+```
+
+Logging our `hashTable` now returns: 
+```sh
+HashTable {
+  table: [ <7 empty items>, '@nasa', <21 empty items>, '@jarednielsen' ]
+}
+```
+
+What happens if we put "ASAN"? 
+```js
+hashTable.put("ASAN", "@nasa");
+```
+
+Logging our `hashTable` still returns: 
+```sh
+HashTable {
+  table: [ <7 empty items>, '@nasa', <21 empty items>, '@jarednielsen' ]
+}
+```
+
+What's going on? 
+
+The value returned by our `modularHash` method is the same when it is passed "NASA" or "ASAN" because, forward or back, it's the sum of the character codes is the same. 
+
+We'll look at better hash functions in the next article. 
+
+TODO
+```js
+    get(key) {
+        return this.table[this.modularHash(key)];
+    }
+```
+
+If we call our `get` method...
+```js
+hashTable.get("Jared Nielsen");
+```
+
+...it will return `@jarednielsen`. 
+
+Lastly, let's implement a `remove` method. 
+```js
+    remove(key) {
+        return delete this.table[this.modularHash(key)];
+    }
+```
 
 
 
