@@ -1,15 +1,15 @@
 ---
-title: "Data Structures in JavaScript: Shortest Path Graph Traversal"  
-date: '2021-01-29'
-description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the hash {{  }} in JavaScript. 
-keyword: ['javascript', 'data structure']
+title: "Data Structures in JavaScript: Hash Table"  
+date: '2021-02-26'
+description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the hash table data structure in JavaScript. 
+keywords: ['javascript', 'data structure', 'hash table']
 ---
 
 
 ![](./jarednielsen-data-structure-hash-javascript.png)
 
 
-At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the {{ ToDO }} in JavaScript. 
+At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the hash table data structure in JavaScript. 
 
 
 If you're new to data structures, you may want to start with [Data Structures in JavaScript: Array](https://jarednielsen.com/data-structure-array-javascript/)
@@ -19,22 +19,28 @@ If you're new to data structures, you may want to start with [Data Structures in
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding: 
 
+* What is an array? 
+
+* TODO 
+
+* What problem(s) do data structures solve?
 
 
+### What is an Array? 
 
-### 
-
-
-
-
-### 
+An array is the simplest data structure. It is a sequential collection of elements each identified by index. 
 
 
+### TODO
+
+TODO
 
 
-### 
+### What Problem(s) Do Data Structures Solve?
 
+According to [Wikipedia](https://en.wikipedia.org/wiki/Data_structure):
 
+> Different types of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks. Data structures provide a means to manage large amounts of data efficiently for uses such as large databases and internet indexing services. Usually, efficient data structures are key to designing efficient algorithms. 
 
 
 ## Let's Get Meta
@@ -48,14 +54,7 @@ Programming is problem solving. Both are metacognitive activities. To excel, we 
 * What problems does a hash tables solve?
 
 
-
-
-
-
-
-TODO
-
-## How to {{ }} HashTable in JavaScript
+## How to Implement a Hash Table in JavaScript
 
 This is the final data structure in our series. All of the previous data structures solve different problems, but what is the downside to most of them? 
 
@@ -63,44 +62,79 @@ This is the final data structure in our series. All of the previous data structu
 
 Iteration.
 
-When we are searching for a node, we need to iterate over the entire data structure. This is not very efficient. 
+While iteration is important, it's not optimal. (See what I did there?)
 
-TODO 
+Take a graph, for example, when we are searching for a node, we need to iterate over (almost) the entire data structure. Can we do better? 
 
-```js 
-const hashTable = {};
+
+
+    TODO 
+
+    ```js 
+    const hashTable = {};
+    ```
+
+    Done. 
+
+    🙄
+
+    Seriously.
+
+    For our intents and purposes, an object _is_ a hash table. When we insert a new value into an object, a key is made.
+
+    But that's not why you're here. Let's do this the hard way.
+
+Let's start with a list of programming languages:
+```md
+Ada
+BASIC
+C
+Dart
+ECMAScript
+Fortran
+Go
 ```
 
-Done. 
+How would we translate this list to JavaScript? 
 
-🙄
+🤔
 
-Seriously.
-
-For our intents and purposes, an object _is_ a hash table. When we insert a new value into an object, a key is made
-
-But that's not why you're here. Let's do this the hard way.
-
-Let's start with an array of programming languages:
 ```js
-
+const languages = ["Ada", "BASIC", "C", "Dart", "ECMAScript", "Fortran", "Go"]
 ```
 
-
-```JavaScript
-
-
+If we wanted to find "Fortran", we could write a simple search function: 
+```js
+const simpleSearch = (array, query) => {
+    
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === query) {
+            return i;
+        }
+    }
+}
 ```
-Why an array?
 
-Why would we not use an object?
+We're still in the order of O(n), though. How can we improve? If we knew the index of "Fortran" in advance! If we knew that "Fortran" was "the fifth element", we could _look it up_, like so: 
+```js
+let fifthElement = languages[5];
+```
 
-What is the problem we need to solve?
+Let's visualize this: 
 
-An array _is_ a table! 
+| Index     |   Element         |
+| ---       | ---               |
+| 0         |   Ada             |
+| 1         |   BASIC           |
+| 2         |   C               |
+| 3         |   Dart            |
+| 4         |   ECMAScript      |
+| 5         |   Fortran         |
+| 6         |   Go              |
 
+An array _is_ a table! And if we know the index of our element, we can quickly lookup the data stored in our table. 
 
-TODO 
+Let's declare a class and a new hash table:
 ```js
 class HashTable {
     constructor() {
@@ -116,15 +150,15 @@ Logging our `hashTable` will return:
 HashTable { table: [] }
 ```
 
-Now what? 
-
-Now we need to _put_ data in the table. 
+We'll use an array for the _table_, all that's missing is the _hash_. 
 
 Let's get cooking!
 
 
 ### Hashing 
 
+TODO 
+How do we find an element in an array without iterating over the array? We need some way of "remembering" the index. We _could_ hard code it, but that defeats the purpose. We're programmers, after all. We're only working with six programming languages in this tutorial, but what if we were working with all 700 or so? How can we store elements in an array and later find them without iteration? 
 
 
 We need to create a key for each entry in our table. 
@@ -164,7 +198,7 @@ Mmm... data hash. Just like Mom used to make.
 TODO
 If we are creating an integer for our key, what do we need to account for? 
 
-Duplicates, or _collisions_, and 
+Duplicates, or what is referred to as _collisions_, and 
 
 TODO 
 
@@ -336,5 +370,9 @@ Use of a hash function to index a hash table is called hashing or scatter storag
 ToDO
 
 
-### BONUS: What Problem(s) Do Hash Tables Create?
+## Data Structures in JavaScript: Hash Tables
+
+
+### What Problem(s) Do Hash Tables Create?
+
 
