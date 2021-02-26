@@ -6,7 +6,7 @@ keywords: ['javascript', 'data structure', 'hash table']
 ---
 
 
-![](./jarednielsen-data-structure-hash-table-javascript.png)
+![](./jarednielsen-data-structure-hash-table.png)
 
 
 At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the hash table data structure in JavaScript. 
