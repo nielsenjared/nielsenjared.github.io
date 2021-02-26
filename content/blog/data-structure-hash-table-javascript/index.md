@@ -6,7 +6,7 @@ keywords: ['javascript', 'data structure', 'hash table']
 ---
 
 
-![](./jarednielsen-data-structure-hash-javascript.png)
+![](./jarednielsen-data-structure-hash-table-javascript.png)
 
 
 At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn the hash table data structure in JavaScript. 
@@ -21,7 +21,7 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * What is an array? 
 
-* TODO 
+* What is a table?
 
 * What problem(s) do data structures solve?
 
@@ -31,9 +31,9 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 An array is the simplest data structure. It is a sequential collection of elements each identified by index. 
 
 
-### TODO
+### What is a Table?
 
-TODO
+When it's not a piece of furniture, a table is a structure that organizes information, or data, in rows and columns. 
 
 
 ### What Problem(s) Do Data Structures Solve?
@@ -62,27 +62,7 @@ This is the final data structure in our series. All of the previous data structu
 
 Iteration.
 
-While iteration is important, it's not optimal. (See what I did there?)
-
-Take a graph, for example, when we are searching for a node, we need to iterate over (almost) the entire data structure. Can we do better? 
-
-
-
-    TODO 
-
-    ```js 
-    const hashTable = {};
-    ```
-
-    Done. 
-
-    🙄
-
-    Seriously.
-
-    For our intents and purposes, an object _is_ a hash table. When we insert a new value into an object, a key is made.
-
-    But that's not why you're here. Let's do this the hard way.
+While iteration is important, it's not optimal. (See what I did there?) Take a graph, for example: when we are searching for a node, we may need to iterate over the entire data structure. Can we do better? 
 
 Let's start with a list of programming languages:
 ```md
@@ -99,11 +79,13 @@ How would we translate this list to JavaScript?
 
 🤔
 
+An array! It's simply a variable that allows us to store one or more values, like a list. 
+
 ```js
 const languages = ["Ada", "BASIC", "C", "Dart", "ECMAScript", "Fortran", "Go"]
 ```
 
-If we wanted to find "Fortran", we could write a simple search function: 
+If we wanted to find the location where "Fortran" is stored in our array, we could write a simple search function: 
 ```js
 const simpleSearch = (array, query) => {
     
@@ -115,7 +97,7 @@ const simpleSearch = (array, query) => {
 }
 ```
 
-We're still in the order of O(n), though. How can we improve? If we knew the index of "Fortran" in advance! If we knew that "Fortran" was "the fifth element", we could _look it up_, like so: 
+We're still in the order of O(n), though. How can we improve this? If we knew the index of "Fortran" in advance! If we knew that "Fortran" was "the fifth element", we could _look it up_, like so: 
 ```js
 let fifthElement = languages[5];
 ```
@@ -132,7 +114,7 @@ Let's visualize this:
 | 5         |   Fortran         |
 | 6         |   Go              |
 
-An array _is_ a table! And if we know the index of our element, we can quickly lookup the data stored in our table. 
+What do we see? An array _is_ a table! And if we know the index of our element, we can quickly lookup the data stored in our table. 
 
 Let's declare a class and a new hash table:
 ```js
@@ -150,59 +132,36 @@ Logging our `hashTable` will return:
 HashTable { table: [] }
 ```
 
-We'll use an array for the _table_, all that's missing is the _hash_. 
-
-Let's get cooking!
+There's our table. Now, all that's missing is the _hash_. Let's get cooking!
 
 
-### Hashing 
+### Implementing a Modular Hash Function in JavaScript
 
-TODO 
-How do we find an element in an array without iterating over the array? We need some way of "remembering" the index. We _could_ hard code it, but that defeats the purpose. We're programmers, after all. We're only working with six programming languages in this tutorial, but what if we were working with all 700 or so? How can we store elements in an array and later find them without iteration? 
+How do we find an element in an array without iterating over the array? We need some way of "remembering" the index. We _could_ hard code it, but that defeats the purpose. We're programmers, after all. We're only working with six programming languages in our array, but what if we were working with all 700 or so programming languages? How can we store elements in an array and later find them without iteration? 
 
+One more thought experiment: what if we didn't know what, or how many, languages we wanted to store in our hash table in advance? All we know is that we want to store "Fortran". We could declare an array:
+```js
+const languages = [];
 
-We need to create a key for each entry in our table. 
-
-Why don't we just use the key itself? 
-
-What's the problem with these two keys? 
-
-```
-"apple"
+languages.push("Fortran");
 ```
 
-...and...
+This will store "Fortran" at the 0 index. But! What happens if another dev, or, worse yet, _you_, mutate the array with `shift` or `unshift`? The value "Fortran" will no longer be stored at the 0 index, if in the array at all. The same problem exists if we assign a specific index, like so: 
+```js
+const languages = [];
 
-```
-1234567890
-```
-
-One is a string and the other an integer, _and_ the integer is composed of twice as many characters as the string. 
-
-What would our array look like if we start pushing these keys into it? 
-
-```
-[ "apple": "apple", "1234567890": 1234567890]
+languages[5] = "Fortran";
 ```
 
-Can we do better? 
+It's like we need to _encode_ "Fortran" in the index itself...
 
-Yes... but why? 
-
-We don't need to push key/value pairs to our array because our array, by default, is composed of indexes. We want to convert the key into a numerical value and use that as the array index. And when we want to look up a value, we "reverse engineer" the value to find its index. 
+🤔
 
 Just like cooking up a [hash](https://en.wikipedia.org/wiki/Hash_(food)), we need to chop our keys into bite- (or byte-) sized pieces. 
 
-Mmm... data hash. Just like Mom used to make. 
+(Mmm... data hash. Just like Mom used to make.) 
 
-TODO
-If we are creating an integer for our key, what do we need to account for? 
-
-Duplicates, or what is referred to as _collisions_, and 
-
-TODO 
-
-There are a number of hashing algorithms for us to choose from. Several of them rely on modulo division to create unique integers. 
+This process of chopping up keys is called _hashing_. There are a number of hashing algorithms for us to choose from. Several of them rely on modulo division to create unique integers. Here's an example: 
 
 
 ```js
@@ -219,8 +178,30 @@ There are a number of hashing algorithms for us to choose from. Several of them 
     }
 ```
 
+I picked a random prime number from the [list of prime numbers](https://en.wikipedia.org/wiki/List_of_prime_numbers). As we can see, 71 is the 20th prime number, so this means our hash table can hold 20 key / value pairs. Why do we want a prime number? Because it is only divisible by itself, thus guaranteeing that number of unique indexes in our table. 
 
-I picked a random prime number from the [list of prime numbers](https://en.wikipedia.org/wiki/List_of_prime_numbers). As we can see, 71 is the 20th prime number, so this means our hash table can hold 20 key / value pairs. 
+With the addition of the `modularHash` method, our hash table class now looks like this: 
+```js
+class HashTable {
+    constructor() {
+        this.table = [];
+    }
+
+    modularHash(key) {
+        let sum = 0;
+
+        for (let i = 0; i < key.length; ++i) {
+            sum += key.charCodeAt(i);
+        }
+
+        let hash = sum % 71; 
+
+        return hash;
+    }
+}
+
+const hashTable = new HashTable();
+```
 
 Calling our `modularHash` method...
 ```js
@@ -231,13 +212,6 @@ hashTable.modularHash("Jared Nielsen");
 
 If we change our modulus from 71 to 29, our method returns `18`. And if we change it to 173, our method returns `25`. 
 
-
-
-
-
-
-
-
 An alternative approach would be to declare the length of the array in advance, which we would be required to do in some other programming languages. In this scenario, our constructor would look like: 
 ```js
     constructor() {
@@ -245,14 +219,15 @@ An alternative approach would be to declare the length of the array in advance, 
     }
 ```
 
-...and our `loseloseHash` would return:
+...and our `modularHash` would return:
 ```js
         let hash = total % this.table.length;
 ```
 
-☝️ You don't want to take this approach, but if you did, you would want an array length that was a prime number. Why? If you array length was a composite number, you wouldn't be able to generate unique keys. 
+☝️ If you take this approach, you would want an array length that was a prime number. Why? If your array length was a composite number, you wouldn't be able to generate unique keys. 
 
-### TODO 
+
+### Implementing Put, Get, and Remove Methods in a Hash Table with JavaScript
 
 Now that we can create a hash, we need to _put_ it in our table. 
 ```js
@@ -274,7 +249,7 @@ Logging our table returns:
 ```sh
 HashTable { table: [ <29 empty items>, '@jarednielsen' ] }
 ```
-TODO
+
 📝 Note the `<29 empty items>`. 
 
 If we log `hashTable.table[0];`, it returns: 
@@ -301,23 +276,25 @@ HashTable {
 
 What happens if we put "ASAN"? 
 ```js
-hashTable.put("ASAN", "@nasa");
+hashTable.put("ASAN", "@asan");
 ```
 
-Logging our `hashTable` still returns: 
+Logging our `hashTable` returns: 
 ```sh
 HashTable {
-  table: [ <7 empty items>, '@nasa', <21 empty items>, '@jarednielsen' ]
+  table: [ <7 empty items>, '@asan', <21 empty items>, '@jarednielsen' ]
 }
 ```
 
+Uh oh.
+
 What's going on? 
 
-The value returned by our `modularHash` method is the same when it is passed "NASA" or "ASAN" because, forward or back, it's the sum of the character codes is the same. 
+The value returned by our `modularHash` method is the same when it is passed "NASA" or "ASAN" because, forward or back, the sum of the character codes is the same. 
 
-We'll look at better hash functions in the next article. 
+This is referred to as a _collision_. We'll look at solutions for this problem in the next article. 
 
-TODO
+To _get_ our date from our table, we need to "reverse engineer" the key.
 ```js
     get(key) {
         return this.table[this.modularHash(key)];
@@ -338,6 +315,43 @@ Lastly, let's implement a `remove` method.
     }
 ```
 
+For reference, our complete hash table class looks like this: 
+```js
+class HashTable {
+    constructor() {
+        this.table = [];
+    }
+
+    modularHash(key) {
+        let sum = 0;
+
+        for (let i = 0; i < key.length; ++i) {
+            sum += key.charCodeAt(i);
+        }
+
+        let hash = sum % 71; 
+
+        return hash;
+    }
+
+    put(key, value) {
+        let hash = this.modularHash(key);
+        return this.table[hash] = value;
+    }
+
+    get(key) {
+        return this.table[this.modularHash(key)];
+    }
+
+    remove(key) {
+        return delete this.table[this.modularHash(key)];
+    }
+
+
+}
+
+const hashTable = new HashTable();
+```
 
 
 ## Reflection
@@ -351,28 +365,23 @@ Lastly, let's implement a `remove` method.
 
 ### What is Hashing?
 
-There are two common wasys to think about hashing: 
+Hashing is creating a key to use when looking up a value in a hash table.
 
-* finding a value in a data structure as quickly as possible
-
-* creating a key to use when looking up a value in a hash table
-
-https://en.wikipedia.org/wiki/Hash_function
-Use of a hash function to index a hash table is called hashing or scatter storage addressing. 
 
 ### What is a Hash Table?
 
-
+A hash table is a data structure that allows us to quickly look up values using a key. 
 
 
 ### What Problem(s) Do Hash Tables Solve?
 
-ToDO
+Hash tables are fast! They allow us to quickly look up values with a constant time complexity.
 
 
 ## Data Structures in JavaScript: Hash Tables
 
+In this tutorial you learned the basics of hash tables with JavaScript. In the next tutorial, we'll look at how we can improve our hash function. 
 
-### What Problem(s) Do Hash Tables Create?
+
 
 
