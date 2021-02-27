@@ -1,7 +1,7 @@
 ---
 title: "How to Be Creative" 
-date: '2021-02-15'
-description: "How do we become, or improve our ability to be, creative?" 
+date: '2021-03-01'
+description: "How do we become, or improve our ability to be, creative? By creating our own luck." 
 subject: How do you become creative?
 preview_text: “Luck favors the prepared mind.”
 ---
@@ -23,8 +23,6 @@ We can map these to the two types of problems outlined by Csikszentmihalyi in [C
 
 * discovered
 
-TODO DIFFERENCE BETWEEN PRESENTED & DISCOVERED
-
 To solve algorithmic, or presented, problems, it’s simply a matter of recognizing a pattern and implementing a tried-and-true solution. A lot of technical interview questions are these 'classics' disguised as story problems, used to test both the breadth and depth of your knowledge. The list is long, but a few examples are: 
 
 * dynamic programming
@@ -43,27 +41,13 @@ I say simply, but it takes practice to build a library of patterns and the abili
 
 Heuristic, or discovered problems, on the other hand, are not only new to us, but new to the field. We can't use an off-the-shelf solution. We need to invent one! 
 
-:memo: It's important to distinguish between [heuristic algorithms](https://en.wikipedia.org/wiki/Heuristic_(computer_science)) and [heuristic](https://en.wikipedia.org/wiki/Heuristic) in general: "Heuristics can be mental shortcuts that ease the cognitive load of making a decision", whereas, in computer science specifically, a heuristic is "a technique designed for solving a problem more quickly when classic methods are too slow, or for finding an approximate solution when classic methods fail to find any exact solution."
+📝 It's important to distinguish between [heuristic algorithms](https://en.wikipedia.org/wiki/Heuristic_(computer_science)) and [heuristic](https://en.wikipedia.org/wiki/Heuristic) in general: "Heuristics can be mental shortcuts that ease the cognitive load of making a decision", whereas, in computer science specifically, a heuristic is "a technique designed for solving a problem more quickly when classic methods are too slow, or for finding an approximate solution when classic methods fail to find any exact solution."
 
-If you’re content pushing pixels, all you really need is Google. It will do the thinking for you.
+If we’re content pushing pixels, all we need is Google. It will do the thinking for us. Just copy/paste those answers from StackOverflow. 
 
-But if you want to level up, you need to play the metagame.
+But if we want to design or discover something new, we need to improve our ability to be creative.
 
-You want to identify problems and implement solutions. 
-
-You want to be proactive, rather than reactive. 
-
-If you’re content cleaning up legacy code bases, again, all you need is Google Fu. 
-
-If you’re content to be told what to do, you can stop reading now. 
-
-You can unsubscribe here. 
-
-If you want to excel, if you want to design or discover something new, you need to improve your ability to be creative. 
-
-Still with me? 
-
-Alright, then. 
+Easier said than done? 
 
 
 ## How do We Become or Improve Our Ability to Be Creative?
@@ -92,14 +76,14 @@ I like to think of these two categories in terms of luck. There are two things w
 
 * get lucky
 
-Twyla Tharp makes the case for luck and preparation for it in [The Creative Habit](TODO): 
+Twyla Tharp makes the case for luck and preparation for it in [The Creative Habit](https://amzn.to/3uNCaLE): 
 
 > You don’t get lucky without preparation, and there’s no sense in being prepared if you’re not open to the possibility of a glorious accident… Some people resent the idea of luck. Accepting the role of chance in our lives suggests that our creations and triumphs are not entirely our own, and that in some way we’re undeserving of our success. I say, 'Get over it.' This is how the world works. In creative endeavors luck is a skill.
 
 
 ### Prepare to Be Lucky: The Acquisition of Creative Energy
 
-Csziksenmihalyi outlines four approaches to aid us in the acquisition of creative energy, because, as he states, “...insights tend to come to prepared minds, that is, to those who have thought long and hard about a given set of problematic issues.” These four approaches are the following: 
+Csziksenmihalyi outlines four approaches to aid us in the acquisition of creative energy: 
 
 * Overcoming limits
 
@@ -235,14 +219,14 @@ Are you an introvert? You are also likely a morning person. Aim to do your creat
 
 Are you an extrovert? You are also likely an evening person, maybe even a night owl, so burn that midnight oil!
 
-We know that preparation and incubation are essential for insight, so allow time for those processes. In [The Owner's Manual for the Brain](TODO), Pierce J. Howard counsels us to "always take a break between preparing for your creative act and executing it" to allow insight to incubate and to approach the work with fresh eyes. 
+We know that preparation and incubation are essential for insight, so allow time for those processes. In [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h), Pierce J. Howard counsels us to "always take a break between preparing for your creative act and executing it" to allow insight to incubate and to approach the work with fresh eyes. 
 
-Don't forget your "feeding schedule". When you eat is as important as what you eat. Don't sabotage your creative attention with a gut bomb. According to Howard in [The Owner's Manual for the Brain](TODO), "...consumption of high-glycemic carbohydrates and fats tends to interfere with creativity by reducing arousal, whereas consumption of proteins and low-glycemic carbohydrates, unless it is excessive, has no apparent negative impact on arousal."
+Don't forget your "feeding schedule". When you eat is as important as what you eat. Don't sabotage your creative attention with a gut bomb. According to Howard in [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h), "...consumption of high-glycemic carbohydrates and fats tends to interfere with creativity by reducing arousal, whereas consumption of proteins and low-glycemic carbohydrates, unless it is excessive, has no apparent negative impact on arousal."
 
 
 ##### Make Time for Reflection and Relaxation
 
-In [The Owner's Manual for the Brain](TODO), Pierce J. Howard recommends making time for reflection and relaxation, suggesting two opposite activities to do so: 
+In [The Owner's Manual for the Brain](https://amzn.to/2YMlK7h), Pierce J. Howard recommends making time for reflection and relaxation, suggesting two opposite activities to do so: 
 
 * Meditation
 
@@ -292,18 +276,18 @@ Richard W. Hamming offers some additional final advice:
 
 ### Get Lucky: The Application of Creative Energy
 
-Now that we know _how_ to acquire creative energy, what do we do with it? We need to find (or create) problems in which to apply it. There are three TODO where we can apply our creative energy: 
+Now that we know _how_ to acquire creative energy, what do we do with it? We need to find (or create) problems in which to apply it. There are three steps we can take towards applying our creative energy: 
 
 * Problem finding
 
 * Divergent thinking
 
-* Choose a special domain
+* Choosing a special domain
 
 
 #### Problem Finding
 
-Csziksenmihalyi outlines four TODO 
+Csziksenmihalyi outlines four strategies for finding problems. 
 
 * Find a way to express what moves you
 
@@ -311,10 +295,12 @@ Csziksenmihalyi outlines four TODO
 
 * Figure out the implications of the problem
 
-* Implement the solution
+* Implement solutions
 
 
 ##### Find a Way to Express What Moves You
+
+For most of us, problems needing solutions will emerge from the patterns of everyday life. It's easy to miss these opportunities due to (the wrong) habits or inertia. Pay close and careful attention; it's these day-to-day problems that "move you". 
 
 In [Creativity](https://amzn.to/3p14JkC), John Cleese counsels us to "write about what you know," because: 
 
@@ -334,14 +320,16 @@ According to Hamming:
 
 ##### Figure Out the Implications of the Problem
 
-Hamming
+If you identify a problem in your day-to-day, think through how others are affected (or not) by the issue. What are the side effects? What are the problems that create this problem? 
 
-“...when you learn something new, think of other applications of it, ones which have not arisen in your past but which might in your future.”
+Richard W. Hamming offers advice on making this a habit: 
+
+> ...when you learn something new, think of other applications of it, ones which have not arisen in your past but which might in your future.
 
 
-##### Implement the Solution
+##### Implementing Solutions
 
-This one's all you.
+This one's all you. The important thing to keep in mind is to experiment and iterate. Implementing a solution doesn't mean you're done finding the problem. It might mean you just created more problems to solve! Win-win! 
 
 
 #### Divergent thinking
@@ -365,9 +353,9 @@ But, he also counsels us to "know when to fold ‘em:"
 
 #### Choosing a Special Domain
 
-The final, and perhaps most important TODO, is to find your domain and make a singular commitment to it.
+The final, and perhaps most important application of creative energy, is to find your domain and make a singular commitment to it.
 
-Csziksenmihalyi TODO: 
+To do this, Csziksenmihalyi counsels us to specialize, because... 
 
 > As culture evolves, it becomes increasingly difficult to master more than one domain of knowledge. Therefore, it follows, as culture evolves, specialized knowledge will be favored over generalized knowledge.
 
@@ -385,16 +373,14 @@ The place where one lives is important for three reasons:
 
 So where is the right place to be? 
 
-According to Csziksenmihalyi, there is no single answer. 
+According to Csziksenmihalyi, there is no single answer. He continues:
 
 > Creativity is not determined by outside factors but by the person’s hard resolution to do what must be done. Which place is best depends on the total configuration of a person’s characteristics and those of the task he or she is involved in.
 
 
 ## How to Be Creative
 
-If we want to become, or improve our ability to be, creative, we need to first acquire creative energy and then apply it. 
-
-TODO
+If we want to become, or improve our ability to be, creative, we need to first acquire creative energy and then apply it. It's a matter of preparing ourselves to be lucky, because, as Csziksenmihalyi reminds us, “insights tend to come to prepared minds, that is, to those who have thought long and hard about a given set of problematic issues."
 
 A parting thought from Richard W. Hamming: 
 
