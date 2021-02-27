@@ -196,7 +196,7 @@ In thermodynamics, [entropy](https://en.wikipedia.org/wiki/Entropy) is "the stat
 
 > We must erect barriers agains distractions, dig channels so that energy can flow more freely, find ways to escape outside temptations and interruprtions.
 
-How do we fight entropy? 
+How do we fight entropy? How do we erect barriers and dig channels? 
 
 We build strength.
 
@@ -208,7 +208,7 @@ You're not going to like this answer...
 
 Hard work. 
 
-In addition to hard work, there are specific actions we can take to erect barriers and dig channels to protect our creative attention:
+In addition to hard work, there are specific actions we can take to protect our creative attention:
 
 * Take charge of your schedule.
 
@@ -225,15 +225,9 @@ The last two points are subjective and up to you. Let's look at some strategies 
 
 ##### Take Charge Of Your Schedule
 
-As we saw above, there are external limits that prevent us from making the most of our attention. 
+As we saw above, there are external limits that prevent us from making the most of our attention. These are generally demands on our time, but that demands mean we don't have a say in _when_ we apply our attention to these things. Make your schedule work for you. 
 
-TODO
-* First things first: wake up with a specific goal in mind. Set that goal the night before. 
-
-This is why 'productivity gurus' counsel us to do our most important work first thing in the morning. Our attention, not to mention our will power, dissipates over the course of the day. 
-
-Patterning Activities
-TODO James Clear? 
+Csziksenmihalyi's first piece of advice? "Wake up with a specific goal in mind. Set that goal the night before." This is why 'productivity gurus' counsel us to do our most important work first thing in the morning. Our attention, not to mention our will power, dissipates over the course of the day. 
 
 Keep in mind that timing is everything. 
 
@@ -244,8 +238,6 @@ Are you an extrovert? You are also likely an evening person, maybe even a night 
 We know that preparation and incubation are essential for insight, so allow time for those processes. In [The Owner's Manual for the Brain](TODO), Pierce J. Howard counsels us to "always take a break between preparing for your creative act and executing it" to allow insight to incubate and to approach the work with fresh eyes. 
 
 Don't forget your "feeding schedule". When you eat is as important as what you eat. Don't sabotage your creative attention with a gut bomb. According to Howard in [The Owner's Manual for the Brain](TODO), "...consumption of high-glycemic carbohydrates and fats tends to interfere with creativity by reducing arousal, whereas consumption of proteins and low-glycemic carbohydrates, unless it is excessive, has no apparent negative impact on arousal."
-
-
 
 
 ##### Make Time for Reflection and Relaxation
@@ -291,29 +283,33 @@ All this said, sometimes we need the outside world. Richard W. Hamming offers a 
 
 #### Building Habits of Strength
 
-Hamming
+> We are, in a very real sense, the sum total of our habits, and nothing more; hency by changing our habits, once we understand which ones we should change and in what directions, and understand our limitations in changing ourselves, then we are on the path along which we want to go.” 
 
-“We are, in a very real sense, the sum total of our habits, and nothing more; hency by changing our habits, once we understand which ones we should change and in what directions, and understand our limitations in changing ourselves, then we are on the path along which we want to go.” 
-
-When it comes to building habits of strenght, Richard W. Hamming offers some final advice:
+Richard W. Hamming offers some additional final advice:
 
 > ...do not try heroic reformations which are almost certain to fail. Practice on small ones until you gradually build up your ability to change yourself in the larger things. You must learn to walk before you run in this matter of being creative, but I believe it can be done. Furthermore, if you are to succeed (to the extent you secretly wish to), you must become creative in the face of the rapidly changing technology which will dominate your career. Society will not stand still for you; it will evolve more and more rapidly as technology plays an increasing role at all levels of the organization.
 
 
 ### Get Lucky: The Application of Creative Energy
 
-Now that we know _how_ to acquire creative energy, what do we do with it? We need to find (or create) problems in which to apply it.  
+Now that we know _how_ to acquire creative energy, what do we do with it? We need to find (or create) problems in which to apply it. There are three TODO where we can apply our creative energy: 
+
+* Problem finding
+
+* Divergent thinking
+
+* Choose a special domain
 
 
 #### Problem Finding
 
-Csziksenmihalyi
+Csziksenmihalyi outlines four TODO 
 
 * Find a way to express what moves you
 
 * Look at problems from as many viewpoints as possible
 
-* Figure out the implications of the problem.
+* Figure out the implications of the problem
 
 * Implement the solution
 
@@ -327,22 +323,21 @@ In [Creativity](https://amzn.to/3p14JkC), John Cleese counsels us to "write abou
 
 ##### Look at Problems From As Many Viewpoints as Possible
 
-In [The Art of Doing Science and Engineering: Learning to Learn](https://amzn.to/3pRfkzV), Hamming recommends the use of analogy, stating that it is probably "the most important tool in creativity". TODO: 
+In [The Art of Doing Science and Engineering: Learning to Learn](https://amzn.to/3pRfkzV), Hamming recommends the use of analogy, stating that it is probably "the most important tool in creativity". He describes analogy as a process in which "something seems like something else which we knew in the past.”
 
-“Something seems like something else which we knew in the past.”
-
-How do we develop our ability to _analogize_? 
+How do we develop our ability to _analogize_?
 
 According to Hamming: 
 
 > Wide acquaintance with various fields of konlwedge is thus a help--_provided_ you have the knowledge filed away so it is available when needed, rather than to be found only when led directly to it. This flexible access to pieces of knowledge seems to come from looking at knowledge _while you are acquiring it_ from many different angles, turning over any new idea to see its many sides before filing it away. This implies efort on your part not to take the easy, immediately useful “memorizing the material” path, but to prepare your mind for the future.
 
 
-##### Figure Out the Implications of the Problem.
+##### Figure Out the Implications of the Problem
 
 Hamming
 
 “...when you learn something new, think of other applications of it, ones which have not arisen in your past but which might in your future.”
+
 
 ##### Implement the Solution
 
@@ -351,7 +346,7 @@ This one's all you.
 
 #### Divergent thinking
 
-TODO WHAT IS DIVERGENT THINKING?
+In [Creativity](https://amzn.to/3p14JkC), Cleese encourages us to "make an imaginative leap", but warns us that "the bigger the leap, the longer the creative period is likely to be." These leaps are [divergent thinking](https://en.wikipedia.org/wiki/Divergent_thinking). The goal(s) of divergent thinking are to: 
 
 * Produce as many ideas as possible
 
@@ -359,35 +354,30 @@ TODO WHAT IS DIVERGENT THINKING?
 
 * Try to produce unlikely ideas
 
-In [Creativity](https://amzn.to/3p14JkC), Cleese encourages us to "make an imaginative leap", but warns us that "the bigger the leap, the longer the creative period is likely to be.”
+Richard W. Hamming reminds us that this, and creativity in general, is an iterative process: 
 
-Hamming
-“The false starts and false solutions often sharpen the next approach you try. YOu now know how not to do it! You have a smaller number of approaches left to explore. You have a better idea of what will not work and possibly why it will not work.”
+> The false starts and false solutions often sharpen the next approach you try. You now know how not to do it! You have a smaller number of approaches left to explore. You have a better idea of what will not work and possibly why it will not work.
 
-Know When to Fold ‘Em
-“If you cannot drop a wrong problem, then the first time you meet one you will be stuk with it for the rest of your career.”
+But, he also counsels us to "know when to fold ‘em:"
 
+> If you cannot drop a wrong problem, then the first time you meet one you will be stuck with it for the rest of your career.
 
 
 #### Choosing a Special Domain
 
-Find your domain and make a singular committment to it.
+The final, and perhaps most important TODO, is to find your domain and make a singular commitment to it.
 
-Csziksenmihalyi
-TODO 
-“As culture evolves, it becomes increasingly difficult to master more than one domain of knowledge. Therefore, it follows, as culture evolves, specialized knowledge will be favored over generalized knowledge.”
+Csziksenmihalyi TODO: 
 
+> As culture evolves, it becomes increasingly difficult to master more than one domain of knowledge. Therefore, it follows, as culture evolves, specialized knowledge will be favored over generalized knowledge.
 
+In some domains, this is also a matter of being in the right place at the right time. According to Csziksenmihalyi: 
 
+> The right milieu is important in more ways than one. It can affect the production of novelty as well as its acceptance; therefore, it is not surprising that creative individuals tend to gravitate toward centers of vital activity, where their work has the chance of succeeding.
 
+The place where one lives is important for three reasons: 
 
-Being in the Right Place
-
-“The right milieu is important in more ways than one. It can affect the production of novelty as well as its acceptance; therefore, it is not surprising that creative individuals tend to gravitate toward centers of vital activity, where their work has the chance of succeeding.”
-
-The place where one lives is important for three reasons
-
-* “...one must be in a position to acss the domain in which one plans to work.”
+* “one must be in a position to acss the domain in which one plans to work”
 
 * “novel stimulation is not evenly distributed”
 
@@ -404,6 +394,9 @@ According to Csziksenmihalyi, there is no single answer.
 
 If we want to become, or improve our ability to be, creative, we need to first acquire creative energy and then apply it. 
 
-Hamming
-“If you want to do significant things, now is the time to start thinking (if you have not already done so) and not wait until it is the proper moment--which may never arrive!”
+TODO
+
+A parting thought from Richard W. Hamming: 
+
+> If you want to do significant things, now is the time to start thinking (if you have not already done so) and not wait until it is the proper moment--which may never arrive!
 
