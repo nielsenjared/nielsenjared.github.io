@@ -23,7 +23,9 @@ We can map these to the two types of problems outlined by Csikszentmihalyi in [C
 
 * discovered
 
-To solve algorithmic, or presented, problems, it’s simply a matter of recognizing a pattern and implementing a tried-and-true solution. A lot of technical interview questions are these 'classics' disguised as story problems, used to test both the breadth of your knowledge and the depth of your problem solving abilitites. The list is long, but a few examples are: 
+TODO DIFFERENCE BETWEEN PRESENTED & DISCOVERED
+
+To solve algorithmic, or presented, problems, it’s simply a matter of recognizing a pattern and implementing a tried-and-true solution. A lot of technical interview questions are these 'classics' disguised as story problems, used to test both the breadth and depth of your knowledge. The list is long, but a few examples are: 
 
 * dynamic programming
 
@@ -39,7 +41,7 @@ To solve algorithmic, or presented, problems, it’s simply a matter of recogniz
 
 I say simply, but it takes practice to build a library of patterns and the ability to recognize them.
 
-Heuristic, or discovered, problems, on the other hand, are not only new to us, but new to the field. We can't use an off-the-shelf solution. We need to invent one! 
+Heuristic, or discovered problems, on the other hand, are not only new to us, but new to the field. We can't use an off-the-shelf solution. We need to invent one! 
 
 :memo: It's important to distinguish between [heuristic algorithms](https://en.wikipedia.org/wiki/Heuristic_(computer_science)) and [heuristic](https://en.wikipedia.org/wiki/Heuristic) in general: "Heuristics can be mental shortcuts that ease the cognitive load of making a decision", whereas, in computer science specifically, a heuristic is "a technique designed for solving a problem more quickly when classic methods are too slow, or for finding an approximate solution when classic methods fail to find any exact solution."
 
@@ -82,7 +84,7 @@ In [Creativity](https://amzn.to/3tCdEwv), Csziksenmihalyi divides this problem i
 
 * the application of creative energy
 
-How do you get more creative energy? And once you get it, what do you do with it? 
+How do we get more creative energy? And once we get it, what do we do with it? 
 
 I like to think of these two categories in terms of luck. There are two things we need to do: 
 
@@ -90,14 +92,14 @@ I like to think of these two categories in terms of luck. There are two things w
 
 * get lucky
 
-Twyla Tharp make the case in [The Creative Habit](TODO): 
+Twyla Tharp makes the case for luck and preparation for it in [The Creative Habit](TODO): 
 
 > You don’t get lucky without preparation, and there’s no sense in being prepared if you’re not open to the possibility of a glorious accident… Some people resent the idea of luck. Accepting the role of chance in our lives suggests that our creations and triumphs are not entirely our own, and that in some way we’re undeserving of our success. I say, 'Get over it.' This is how the world works. In creative endeavors luck is a skill.
 
 
 ### Prepare to Be Lucky: The Acquisition of Creative Energy
 
-Csziksenmihalyi outlines four approaches to aid us in the acquisition of creative energy, because, as he states, “...insights tend to come to prepared minds, that is, to those who have thought long and hard about a given set of problematic issues.”
+Csziksenmihalyi outlines four approaches to aid us in the acquisition of creative energy, because, as he states, “...insights tend to come to prepared minds, that is, to those who have thought long and hard about a given set of problematic issues.” These four approaches are the following: 
 
 * Overcoming limits
 
@@ -120,15 +122,11 @@ According to Csziksenmihalyi, there are two limits that prevent us from reaching
 
 External limitations to our creativity are all the things(!) we must do to survive each day: commute and report to work; attend to the needs of our family; purchase, prepare, and eat food; basic hygiene; advanced hygiene (whatever that is); house cleaning; bill paying; and, oh yeah, sleeping...
 
-Somehow we are suppoed to find time to build X, learn Y, and keep up with Z.
-
-There aren't enough hours in the day! 
+Somehow we are suppoed to find time to build X, learn Y, and stay sharp on Z. There aren't enough hours in the day! 
 
 According to Csziksenmihalyi, “...the fact is that there are real limits to how many things a person can attend to at the same time, and when survival needs require all of one's attention, none is left over for being creative.” He continues...
 
 > ...the most fundamental difference between people consists in how much uncommitted attention they have left over to deal with novelty. 
-
-This is why 'productivity gurus' counsel us to do our most important work first thing in the morning. Our attention, not to mention our will power, dissipates over the course of the day. 
 
 For some of us, the obligations of work and family are too demanding to allow attention to be devoted to novelty. The rest of us need to get over ourselves. 
 
@@ -141,7 +139,7 @@ Csziksenmihalyi identifies two primary pitfalls that prevent us from achieving o
 
 * selfishness 
 
-The paranoiac "usually cannot afford to become interested in the world from an objective, impartial viewpoint, and therefore is unable to learn much that is new," whereas "when everything a person sees, thinks, or does must serve self-interest, there is not attention left over to learn about anything else."
+The paranoiac "usually cannot afford to become interested in the world from an objective, impartial viewpoint, and therefore is unable to learn much that is new,", whereas "when everything a person sees, thinks, or does must serve self-interest, there is not attention left over to learn about anything else."
 
 But there's a paradox here. In order to overcome external limitations (and keep the internal limitations in check), we need to be protective of our attention. According to Csziksenmihalyi, "it is practically impossible to learn a domain deeploy enough to make a change in it without dedicating all of one’s attention to it and thereby appearing to be arrogant, selfish, and ruthless to those who believe they have a right to the creative person’s attention.”
 
@@ -158,7 +156,7 @@ How can interest and curiosity be cultivated? Practice spontaneity. Sound parado
 
 * write down each day what surprised you and how you surprised others
 
-* when somethihng strikes a spark of interest, follow it.
+* when somethihng strikes a spark of interest, follow it
 
 In [Creativity](https://amzn.to/3p14JkC), John Cleese counsels us on "keeping going". To do so we need to nurture and trust our unconscious. How do we do that? Play. According to Cleese, "Playing… keeps you 'fresh'."
 
@@ -169,65 +167,32 @@ What drives creative people?
 
 The opportunity to do the work that they enjoy doing and to design and discover something new. 
 
-How can we relearn to enjoy curiosity so that the pursuit of new experiences and new knowledge becomes self-sustaining?
+How can we relearn to enjoy curiosity so that the pursuit of new experiences and new knowledge becomes self-sustaining? First, we need to get good at it. If you do anything well, it becomes enjoyable. But! To keep enjoying something, you need to increase its complexity.
 
-* First things first: wake up with a specific goal in mind. Set that goal the night before. 
+What do we mean by 'enjoyment'? Athletes, artists, and scientists all describe the experience of working as "...an effortless, yet highly focused state of consciousness." This is also known as a _flow state_. Csziksenmihalyi identifies nine conditions that describe flow:
 
-* If you do anything well, it becomes enjoyable.
+1. There are clear goals every step of the way. 
 
-* To keep enjoying something, you need to increase its complexity.
+2. There is immediate feedback to one's actions.
 
+3. There is a balance between challenges and skills.
 
-Flow (Chapter 5)
+4. Action and awareness are merged. 
 
+5. Distractions are excluded from consciousness. 
 
-What is enjoyment? 
+6. There is no worry of failure. 
 
-Nine elements
-…
-The Conditions for Flow
+7. Self-consciousness disappears. 
 
-* Clarity of goals
+8. **The sense of time becomes distorted.** We lose track of time. 
 
-* Feedback
-
-* Balancing challenges and skill
-
-* The Merging of action and awareness
-
-* Avoiding distractions
-
-* Forgetting self, time, and surroundings
-
-* Autotelic
-
-* Do it for its own sake!
-
-Flow and Happiness
-
-p. 123
-
-Flow and the Evolution of Consciousness
-p. 124
-
+9. **The activity becomes autotelic.** Do it for its own sake!
 
 
 #### Building Habits of Strength
 
-
-“We are generally torn between two opposite sets of instructions programmed into the brain: the least-effort imperative on one side, and the claims of creativity on the other.” 
-
-“In most individuals entropy seems to be stronger, and they enjoy comfort more than the challenge of discovery. 
-
-A few… are more responsive to the rewards of discovery. But we all respond to both of these rewards; the tendencies toward conserving energy as well as using it constructively are simultaneously part of our inheritance.”
-
-Hamming
-
-“We are, in a very real sense, the sum total of our habits, and nothing more; hency by changing our habits, once we understand which ones we should change and in what directions, and understand our limitations in changing ourselves, then we are on the path along which we want to go.” 
-
-In thermodynamics, [entropy](https://en.wikipedia.org/wiki/Entropy) is "the state of disorder, randomness, or uncertainty" in a system. 
-
-To acquire creative energy, we need to fight entropy. According to Csziksenmihalyi, “what is important is not to relinquish control over creative energy so that it dissipates without direction.” He continues:
+In thermodynamics, [entropy](https://en.wikipedia.org/wiki/Entropy) is "the state of disorder, randomness, or uncertainty" in a system. To acquire creative energy, we need to fight entropy. According to Csziksenmihalyi, “what is important is not to relinquish control over creative energy so that it dissipates without direction.” He continues:
 
 > We must erect barriers agains distractions, dig channels so that energy can flow more freely, find ways to escape outside temptations and interruprtions.
 
@@ -260,6 +225,13 @@ The last two points are subjective and up to you. Let's look at some strategies 
 
 ##### Take Charge Of Your Schedule
 
+As we saw above, there are external limits that prevent us from making the most of our attention. 
+
+TODO
+* First things first: wake up with a specific goal in mind. Set that goal the night before. 
+
+This is why 'productivity gurus' counsel us to do our most important work first thing in the morning. Our attention, not to mention our will power, dissipates over the course of the day. 
+
 Patterning Activities
 TODO James Clear? 
 
@@ -272,6 +244,8 @@ Are you an extrovert? You are also likely an evening person, maybe even a night 
 We know that preparation and incubation are essential for insight, so allow time for those processes. In [The Owner's Manual for the Brain](TODO), Pierce J. Howard counsels us to "always take a break between preparing for your creative act and executing it" to allow insight to incubate and to approach the work with fresh eyes. 
 
 Don't forget your "feeding schedule". When you eat is as important as what you eat. Don't sabotage your creative attention with a gut bomb. According to Howard in [The Owner's Manual for the Brain](TODO), "...consumption of high-glycemic carbohydrates and fats tends to interfere with creativity by reducing arousal, whereas consumption of proteins and low-glycemic carbohydrates, unless it is excessive, has no apparent negative impact on arousal."
+
+
 
 
 ##### Make Time for Reflection and Relaxation
@@ -317,6 +291,10 @@ All this said, sometimes we need the outside world. Richard W. Hamming offers a 
 
 #### Building Habits of Strength
 
+Hamming
+
+“We are, in a very real sense, the sum total of our habits, and nothing more; hency by changing our habits, once we understand which ones we should change and in what directions, and understand our limitations in changing ourselves, then we are on the path along which we want to go.” 
+
 When it comes to building habits of strenght, Richard W. Hamming offers some final advice:
 
 > ...do not try heroic reformations which are almost certain to fail. Practice on small ones until you gradually build up your ability to change yourself in the larger things. You must learn to walk before you run in this matter of being creative, but I believe it can be done. Furthermore, if you are to succeed (to the extent you secretly wish to), you must become creative in the face of the rapidly changing technology which will dominate your career. Society will not stand still for you; it will evolve more and more rapidly as technology plays an increasing role at all levels of the organization.
@@ -358,10 +336,6 @@ How do we develop our ability to _analogize_?
 According to Hamming: 
 
 > Wide acquaintance with various fields of konlwedge is thus a help--_provided_ you have the knowledge filed away so it is available when needed, rather than to be found only when led directly to it. This flexible access to pieces of knowledge seems to come from looking at knowledge _while you are acquiring it_ from many different angles, turning over any new idea to see its many sides before filing it away. This implies efort on your part not to take the easy, immediately useful “memorizing the material” path, but to prepare your mind for the future.
-
-
-
-“...get down to the fundamentals of a field, since it implies you must examine things many ways before you can decide what i fundamental and what is frills.”
 
 
 ##### Figure Out the Implications of the Problem.
