@@ -1,5 +1,5 @@
 ---
-title: "Data Structures in JavaScript: Handling Hash Table Collisions with Separate Chaining"  
+title: "Data Structures in JavaScript: Separate Chaining Hash Table Collisions"  
 date: '2021-03-05'
 description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn how to implement separate chaining to handle collisions in a hash table data structure with JavaScript. 
 keywords: ['javascript', 'data structure', 'hash table', 'separate chaining']
