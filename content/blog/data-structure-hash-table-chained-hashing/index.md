@@ -9,7 +9,7 @@ keywords: ['javascript', 'data structure', 'hash table', 'separate chaining']
 ![](./jarednielsen-data-structure-hash-table.png)
 
 
-At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn how to implement separate chaining to handle collisions in a hash table data structure with JavaScript.
+At some point in your career (today?!) you will want to learn data structures. It's not _just_ to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn how to implement separate chaining, or chained hashing, to handle collisions in a hash table data structure with JavaScript.
 
 
 If you're new to data structures, you may want to start with [Data Structures in JavaScript: Array](https://jarednielsen.com/data-structure-array-javascript/)
@@ -194,7 +194,7 @@ Where have we seen this, or something like it before?
 
 A linked list! 
 
-In some implementations of chained hashing, a linked list will be used to store the colliding values. If you want to go deeper, check out [Data Structures in JavaScript: Linked List](https://jarednielsen.com/data-structure-linked-list-javascript/).
+The 'classic' implementation of chained hashing uses a linked list to store the colliding values. For our intents and purposes, arrays will suffice. If you want to go deeper, check out [Data Structures in JavaScript: Linked List](https://jarednielsen.com/data-structure-linked-list-javascript/).
 
 Now we need to _get_ our values. For reference, our existing `get` method looks like this:
 ```js
@@ -220,7 +220,7 @@ For every array stored in our hashed index...
     }
 ```
 
-TODO SUMMARYIZE GET METHOD
+We update our `get` method to iterate over all of the elements stored at the hash index. If the first value in an element is equal to the key, we return the second value. If none of the values are equal to the key, we return undefined. 
 
 
 ## Reflection
@@ -250,7 +250,3 @@ If chained hashing is creating a _chain_ of key / value pairs at a hashed index,
 ## Data Structures in JavaScript: Separate Chaining in Hash Tables
 
 In this tutorial you learned chained hashing. In our next tutorial, we'll look at another solution to collisions in hash tables: open address hashing. 
-
-
-
-
