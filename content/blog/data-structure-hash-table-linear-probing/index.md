@@ -1,6 +1,6 @@
 ---
 title: "Data Structures in JavaScript: Linear Probing Hash Table Collisions"  
-date: '2021-03-05'
+date: '2021-03-12'
 description: Learning data structures will help you understand how software works and improve your problem-solving skills. In this tutorial, you will learn how to implement linear probing to handle collisions in a hash table data structure with JavaScript. 
 keywords: ['javascript', 'data structure', 'hash table', 'linear probing']
 ---
@@ -23,7 +23,7 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * What is hashing?
 
-* TODO
+* What is separate chaining?
 
 
 ### What is a Hash Table?
@@ -36,7 +36,9 @@ A hash table is a data structure that allows us to quickly look up values using 
 Hashing is creating a key to use when looking up a value in a hash table.
 
 
-### TODO 
+### What is Separate Chaining?
+
+Separate chaining, or chained hashing, is an approach to collision resolution that stores multiple key / value pairs at the same index in a hash table. 
 
 
 ## Let's Get Meta
@@ -45,12 +47,12 @@ Programming is problem solving. Both are metacognitive activities. To excel, we 
  
 * What is a collision? 
 
+* What is open address hashing?
+
 * What is linear probing? 
 
-* TODO
 
-
-## How to Implement Hash Table Separate Chainnig in JavaScript
+## How to Implement Hash Table Linear Probing in JavaScript
 
 Let's pick up where we left off in our previous tutorial, [Data Structures in JavaScript: Hash Table](https://jarednielsen.com/data-structure-hash-table-javascript/).
 
@@ -85,8 +87,6 @@ class HashTable {
     remove(key) {
         return delete this.table[this.modularHash(key)];
     }
-
-
 }
 
 const hashTable = new HashTable();
@@ -134,8 +134,6 @@ What's the solution?
 
 There are two primary approaches to handling collisions in a hash table: [chained hashing](https://jarednielsen.com/data-structure-hash-table-separate-chaining/) (the topic of a previous tutorial) and open address hashing (the topic of this tutorial!). We _could_ use a [perfect hash function](https://en.wikipedia.org/wiki/Perfect_hash_function), but that's a topic for another day (or book!).
 
-Let's return to the car analogy. If there aren't enough parking spots for two vehicles, what do we do? We could build a parking garage or we could hire a valet. A parking garage would allow us to "stack" cars on top of each other and a valet would allow us to "abstract" the details by parking the cars in some other location. 
-
 How can we store more than one value at a given index in an array? 
 
 🤔
@@ -144,71 +142,36 @@ We don't!
 
 We just park it somewhere else. 
 
-TODO
-```js
-class HashTable {
-    constructor() {
-        this.table = [];
-    }
+Most people who own and drive cars try to find the parking spot closest to the entrance when they go to the store. What do they do if the closest spot is taken? They park in the next closest spot. 
 
-    modularHash(key) {
-        let sum = 0;
+That's linear probing! 
 
-        for (let i = 0; i < key.length; ++i) {
-            sum += key.charCodeAt(i);
-        }
+We create a hash and, if there's already a value stored at that index, we look, or _probe_, for the next available index _in line_. 
 
-        let hash = sum % 71; 
-
-        return hash;
-    }
-
-    put(key, value) {
-        let hash = this.modularHash(key);
-
-        if (this.table[hash] === undefined) {
-            this.table[hash] = [];
-        }
-
-        return this.table[hash].push([key, value]);
-    }
-
-    get(key) {
-        let hash = this.modularHash(key);
-
-        for (let i = 0; i < this.table[hash].length; i++) {
-            if (this.table[hash][i][0] === key) {
-                return this.table[hash][i][1];
-            }
-        }
-
-        return undefined;
-    }
-
-    remove(key) {
-        return delete this.table[this.modularHash(key)];
-    }
-}
-```
-
-TODO 
+Let's translate that to JavaScript: 
 ```js
     put(key, value) {
         let hash = this.modularHash(key);
 
         if (this.table[hash] === undefined) {
-            return this.table[hash] = value;
+            return this.table[hash] = [key, value];
         } else {
-            while (this.table[hash] != undefined) {
+            while (this.table[hash] !== undefined) {
                 hash++;
             }
         }
 
-        return this.table[hash] = value;
+        return this.table[hash] = [key, value];
     }
 ```
 
-TODO
+We first create our hash using our `modularHash` method. Then we check if the index of the hash is `undefined`. If so, we store our value there. If it's not `undefined`, meaning there is already something stored at that index, we look at the next index by incrementing our hash. We continue to probe until we find an index that is `undefined` and, once we do, we store our value. 
+
+📝 Note that we are storing the key / value pairs in an array.
+
+But how do we _get_ our values out of our hash table? 
+
+We simply reverse the process. 
 ```js
     get(key) {
         let hash = this.modularHash(key);
@@ -224,15 +187,16 @@ TODO
     }
 ```
 
+We first generate our hash using `modularHash`, but, unlike our _put_ method, our conditional is nested inside our iterator. While the value stored in an index is not equal to `undefined`, or, in other words, while the value is _defined_, if the first element in the array is equal to our `key`, bingo! Otherwise, we continue iterating until we begin to probe `undefined` indexes. 
 
 
 ## Reflection
 
 * What is a collision? 
 
-* What is linear probing? 
+* What is open address hashing? 
 
-* TODO
+* What is linear probing? 
 
 
 ### What is a Collision? 
@@ -240,14 +204,16 @@ TODO
 A collision occurs in a hash table when our put method attempts to store multiple values at the same hash index.
 
 
+### What is Open Address Hashing? 
+
+Open address hashing AKA open addressing AKA closed hashing is a general approach for resolving collisions in a hash table by, you guessed it, finding an open address and storing the value in it. 
+
+
 ### What is Linear Probling?
 
-
-### TODO
+Linear probing is a specific application of open address hashing in which we search for an available index _linearly_. 
 
 
 ## Data Structures in JavaScript: Linear Probing Hash Tables
 
-In this tutorial you learned linear probing. 
-
-TODO
+In this tutorial you learned linear probing. This is the end of my series on hash tables, but it's also just the beginning! There are many hashing functions to explore, or should I say _probe_...
