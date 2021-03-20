@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 10 Mar 2021 14:04:53 GMT</lastBuildDate><item><title><![CDATA[Data Structures in JavaScript: Linear Probing Hash Table Collisions]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-hash-table-linear-probing/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-hash-table-linear-probing/</guid><pubDate>Fri, 12 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 20 Mar 2021 00:19:53 GMT</lastBuildDate><item><title><![CDATA[The Superlative Guide to Data Structures in JavaScript]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structures-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structures-javascript/</guid><pubDate>Fri, 19 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2da4811a1a790f69545a5e6157eed389/a987b/jarednielsen-data-structures.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYklEQVQoz5XSy0rDQBQG4Nm5EvciiIuKCiKCD6CC6EopCr6CioLQpfoCxYUL8REUb0tFELUFQaQWL63oNhVMUKxNTXObTH4nSVOTtlE88G8ycz7OHEJsxtAQywLjiSpGLTTt4yE2sxsx6mHC5j4eZlaRm15DZmwZ2eFFyKk7DzVpFBjEfJC6TZnRJeyRLuyQPhyRIRyTGJ7n1j1QN9y7v4MsDD7GV7BNerHV2o9UxxROyACyCQ+0fLAObQ6aHng7kcAh6cYuGcRpywifsAf5hWQNdHfpokHQ5jt0E0adys8ncd4+iXRsFmedcVy0jeN14yB6h9zxwABk84tM12EqClTxDe+5J7xcXqOQvoJ0c4+yKEEryTCUCqimwzJNd0X+00kI4wfMMGFpGigHtc8SypKEolDgESCLIiofRegO+KWAqip/us6n/UGrE/oJjw8n9VX9Hv0f1nYYkaaNdmT+Bv+Zb3HKMyT3eJ8rAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen data structures&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2da4811a1a790f69545a5e6157eed389/b9e4f/jarednielsen-data-structures.png&quot;
+        srcset=&quot;/static/2da4811a1a790f69545a5e6157eed389/cf440/jarednielsen-data-structures.png 148w,
+/static/2da4811a1a790f69545a5e6157eed389/d2d38/jarednielsen-data-structures.png 295w,
+/static/2da4811a1a790f69545a5e6157eed389/b9e4f/jarednielsen-data-structures.png 590w,
+/static/2da4811a1a790f69545a5e6157eed389/f9b6a/jarednielsen-data-structures.png 885w,
+/static/2da4811a1a790f69545a5e6157eed389/2d849/jarednielsen-data-structures.png 1180w,
+/static/2da4811a1a790f69545a5e6157eed389/a987b/jarednielsen-data-structures.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures in JavaScript will help you understand how software works and improve your problem-solving skills. &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;If you want to stay in the loop, sign up for my newsletter, &lt;a href=&quot;http://eepurl.com/cP8CMn&quot;&gt;The Solution&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Data Structures in JavaScript&lt;/h2&gt;
+&lt;p&gt;The following list is a ‘table of contents’ of my articles about data structures in JavaScript. If you think there’s something missing, let me know on Twitter &lt;a href=&quot;https://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;. And there’s more on the way!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-array-javascript/&quot;&gt;Data Structures in JavaScript: Array&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-stack-javascript/&quot;&gt;Data Structures in JavaScript: Stack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-queue-javascript/&quot;&gt;Data Structures in JavaScript: Queue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-linked-list-javascript/&quot;&gt;Data Structures in JavaScript: Linked List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-tree-javascript/&quot;&gt;Data Structures in JavaScript: Tree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-tree-traversal/&quot;&gt;Data Structures in JavaScript: Tree Traversal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-tree-search/&quot;&gt;Data Structures in JavaScript: Tree Search&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-tree-node-removal/&quot;&gt;Data Structures in JavaScript: Tree Node Removal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-graph-javascript/&quot;&gt;Data Structures in JavaScript: Graph&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-graph-breadth-first-search/&quot;&gt;Data Structures in JavaScript: Breadth-First Search Graph Traversal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-graph-shortest-path/&quot;&gt;Data Structures in JavaScript: Shortest Path Graph Traversal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-graph-depth-first-search/&quot;&gt;Data Structures in JavaScript: Depth-First Search Graph Traversal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-graph-topological-sort/&quot;&gt;Data Structures in JavaScript: Topological Sort with Depth-First Search Graph Traversal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-hash-table-javascript/&quot;&gt;Data Structures in JavaScript: Hash Table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-hash-table-separate-chaining/&quot;&gt;Data Structures in JavaScript: Separate Chaining Hash Table Collisions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/data-structure-hash-table-linear-probing/&quot;&gt;Data Structures in JavaScript: Linear Probing Hash Table Collisions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want all this (and more!) in one package, pick up a copy of &lt;a href=&quot;https://gum.co/data-structures&quot;&gt;The 7 Data Structures of Highly Effective Developers&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Data Structures in JavaScript: Linear Probing Hash Table Collisions]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structure-hash-table-linear-probing/</link><guid isPermaLink="false">http://jarednielsen.com/data-structure-hash-table-linear-probing/</guid><pubDate>Fri, 12 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/3f8492266cdadd46d50972877979a3da/a987b/jarednielsen-data-structure-hash-table.png&quot;
@@ -2718,42 +2778,7 @@ g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&q
 &lt;blockquote&gt;
 &lt;p&gt;A vertex coming before a given vertex in a directed path.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The graph we used in this tutorial was not directed, but we can treat it as such because we are only seaching in one direction. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Use Chunking for Learning and Problem Solving]]></title><description><![CDATA[When learning something new, we want to create chunks. With chunking, we learn a concept then combine that concept with other concepts to…]]></description><link>http://jarednielsen.com/chunking-learning/</link><guid isPermaLink="false">http://jarednielsen.com/chunking-learning/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/87a9d10a919ef73d1cd743ece451194b/2f950/jarednielsen-solution-chunking.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAuklEQVQoz82Ruw6CMBiFeVBfwSfwSZx8BzcHF128kOjgoDGGRGMimIIXaFPo32PBDi5CLIunPenS8+W/eFprfHV5lAY/TZGnAUpprVCX8eqBRrlCOO6C7fpQMrFQcgOiuoRo3cN50gG/zt5AUi5AqsIyPiC9zPE0bYtk36ZCVYUfxxFuwRBZ6INtBy1bNhJsY2BLZNHKvAtQwS3UaYYEkncUgqHgxiI2W5e2QnLYsq3yU03/G4G/+v+BLy/fYXleI2ecAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;jarednielsen solution chunking&quot;
-        title=&quot;&quot;
-        src=&quot;/static/87a9d10a919ef73d1cd743ece451194b/b9e4f/jarednielsen-solution-chunking.png&quot;
-        srcset=&quot;/static/87a9d10a919ef73d1cd743ece451194b/cf440/jarednielsen-solution-chunking.png 148w,
-/static/87a9d10a919ef73d1cd743ece451194b/d2d38/jarednielsen-solution-chunking.png 295w,
-/static/87a9d10a919ef73d1cd743ece451194b/b9e4f/jarednielsen-solution-chunking.png 590w,
-/static/87a9d10a919ef73d1cd743ece451194b/f9b6a/jarednielsen-solution-chunking.png 885w,
-/static/87a9d10a919ef73d1cd743ece451194b/2d849/jarednielsen-solution-chunking.png 1180w,
-/static/87a9d10a919ef73d1cd743ece451194b/2f950/jarednielsen-solution-chunking.png 1600w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
+&lt;p&gt;The graph we used in this tutorial was not directed, but we can treat it as such because we are only seaching in one direction. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Use Chunking for Learning and Problem Solving]]></title><description><![CDATA[When learning something new, we want to create chunks. With chunking, we learn a concept then combine that concept with other concepts to…]]></description><link>http://jarednielsen.com/chunking-learning/</link><guid isPermaLink="false">http://jarednielsen.com/chunking-learning/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;./jarednielsen-solution-chunking.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;When learning something new, we want to create chunks. With chunking, we learn a concept then combine that concept with other concepts to solve problems. If we encounter a concept that is too big to understand, we need to break it into smaller chunks, then recombine the chunks. &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This article originally published in my newsletter, &lt;a href=&quot;http://eepurl.com/cP8CMn&quot;&gt;The Solution&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Learning by Chunking&lt;/h2&gt;
@@ -2918,7 +2943,7 @@ g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&q
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABG0lEQVQoz62SP2vCQBjG/SL9IOLUzU/QvbOrFBdHwambGQShY1sHpyBKoZQKFXSwiJO0QykR/BeN0mhy7z29y8UYwdgUvPDAe7m8vzzP3SU45zgqIuzGKHUDs1gN5txliOpLRC3Isb57gtXoYqa3sXwbYFGuw+kMFZRRTCDtgeOrIiaFe/yI2jYtfF/mMK80IFf51gF33PgO5SMKMNFspPMYZzTvJ/aHga+La9ivA+WUKCYw5NR6fsem96kAKxvrxxbMZheL2xpIzL33fwKlGPM+nonYZuFBNYqYntOXPoxkFmy6PHB6Guif9Kqkw9J0/zBYAIWfIDIyQjp2fbjrKqCUrKUrWYf28bTDUPTg7tFO5Gu/3/GB/9DZgb9/eFObG0JkLQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIElEQVQoz62STUsCQRzG/SJ9kKBLxz5B5+4dI7pJB6Eu3UoQgqBLhhAE0gtERHqygyCewkvELqXubiqu7s5/HufNbQVXV3DgYV6Y/2+eZ2YynHPMFRGmzd46hHdSiuY8ZEiqyyQCReHg6gXeYw2/91U4lQbcwgOC2qeGMkoJJN3L1t49hX18jQ4bwrF+8L19BOfySR3GxwF4EK7iUJQJuAxu72TR3s+rQ/yWha+NPfjvTe2UKCUw5rT3Wseo3tKAvo/BbQXu8we8szuQmKv1pUApxtTmbu4Gbq6oC0VM5fStAWvzAKzzN+N0MdC8dP+8jN5F2TwGi6AwCRIjw2jWJcW+S6iBUnIsXclx7B4XO4xFj/4eTUVG//edHriC1g6cALJXU1AMuQH1AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -3057,7 +3082,7 @@ g&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&q
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABG0lEQVQoz62SP2vCQBjG/SL9IOLUzU/QvbOrFBdHwambGQShY1sHpyBKoZQKFXSwiJO0QykR/BeN0mhy7z29y8UYwdgUvPDAe7m8vzzP3SU45zgqIuzGKHUDs1gN5txliOpLRC3Isb57gtXoYqa3sXwbYFGuw+kMFZRRTCDtgeOrIiaFe/yI2jYtfF/mMK80IFf51gF33PgO5SMKMNFspPMYZzTvJ/aHga+La9ivA+WUKCYw5NR6fsem96kAKxvrxxbMZheL2xpIzL33fwKlGPM+nonYZuFBNYqYntOXPoxkFmy6PHB6Guif9Kqkw9J0/zBYAIWfIDIyQjp2fbjrKqCUrKUrWYf28bTDUPTg7tFO5Gu/3/GB/9DZgb9/eFObG0JkLQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIElEQVQoz62STUsCQRzG/SJ9kKBLxz5B5+4dI7pJB6Eu3UoQgqBLhhAE0gtERHqygyCewkvELqXubiqu7s5/HufNbQVXV3DgYV6Y/2+eZ2YynHPMFRGmzd46hHdSiuY8ZEiqyyQCReHg6gXeYw2/91U4lQbcwgOC2qeGMkoJJN3L1t49hX18jQ4bwrF+8L19BOfySR3GxwF4EK7iUJQJuAxu72TR3s+rQ/yWha+NPfjvTe2UKCUw5rT3Wseo3tKAvo/BbQXu8we8szuQmKv1pUApxtTmbu4Gbq6oC0VM5fStAWvzAKzzN+N0MdC8dP+8jN5F2TwGi6AwCRIjw2jWJcW+S6iBUnIsXclx7B4XO4xFj/4eTUVG//edHriC1g6cALJXU1AMuQH1AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
