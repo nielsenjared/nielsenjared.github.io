@@ -5,7 +5,7 @@ description: Learning data structures in JavaScript will help you understand how
 keywords: ["data structures", "javascript"]
 ---
 
-![](./jarednielsen-big-o.png)
+![](./jarednielsen-data-structures.png)
 
 
 At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your dream job. Learning data structures in JavaScript will help you understand how software works and improve your problem-solving skills. 
