@@ -1,8 +1,8 @@
 ---
-title: "Learn {{ XX }} Algorithm in JavaScript"
-date: "2021-XX-XX"
+title: "Learn Fizz Buzz Algorithm in JavaScript"
+date: "2021-04-02"
 description: 
-keywords: ['algorithm', ' {{ TITLE }}', 'learn', 'javascript']
+keywords: ['algorithm', 'fizz buzz', 'learn', 'javascript']
 ---
 
 
@@ -11,34 +11,36 @@ keywords: ['algorithm', ' {{ TITLE }}', 'learn', 'javascript']
 
 TODO INTRODUCTION
 
+In this tutorial, you will learn the classic Fizz Buzz algorithm {{ ... }}
+
 
 ## Retrieval Practice
 
 * What is an algorithm? 
 
-* What is a prime number? 
+* What is the modulo operator? 
 
-* TODO 
+* What is the ternary operator?
 
 
-### TODO BULLET #1
+### What is An Algorithm? 
 
 TODO 
 
 
-### TODO BULLET #2
+### What is the Modulo Operator?
 
 TODO
 
 
-### TODO BULLET #3
+### What is the Ternary Operator?
 
 TODO
 
 
 ## Let's Get Meta
 
-* What Problem(s) Does {{ TITLE }} Solve? 
+* What Problem(s) Does Fizz Buzz Solve? 
 
 * 
 
@@ -46,6 +48,8 @@ TODO
 
 
 ## How to Implement {{ TITLE }} Algorithm in JavaScript 
+
+
 
 ```js
 TODO
@@ -66,9 +70,9 @@ TODO
 * 
 
 
-### What Problem(s) Does {{ TITLE }} Solve?
+### What Problem(s) Does Fizz Buzz Solve?
 
-TODO 
+None! But learning how to implement it in more than one way builds your street cred. 
 
 
 ### TODO BULLET #2
