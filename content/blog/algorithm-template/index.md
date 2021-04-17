@@ -1,22 +1,28 @@
 ---
-title: "Learn {{ XX }} Algorithm in JavaScript"
-date: "2021-XX-XX"
-description: 
-keywords: ['algorithm', ' {{ TITLE }}', 'learn', 'javascript']
+title: "Learn {{ TODO }} Algorithm in JavaScript"
+date: "2021-TO-DO"
+description: "TODO"
+keywords: ['algorithm', ' {{ TODO TITLE }}', 'javascript']
 ---
 
 
-![ {{ ALT TEXT }} ](./jarednielsen-algorithm-javascript-{{ TITLE }}.png)
+![ {{ TODO ALT TEXT }} ](./jarednielsen-algorithm-javascript-{{ TITLE }}.png)
 
 
 TODO INTRODUCTION
 
+---
+
+Ready to level up? Grab your copies of [The Little Book of Big O](https://gum.co/big-o) and [The Seven Data Structures of Highly Effective Developers](https://gum.co/data-structures).
+
+---
+
 
 ## Retrieval Practice
 
-* What is an algorithm? 
+* TODO
 
-* What is a prime number? 
+* TODO
 
 * TODO 
 
@@ -38,35 +44,39 @@ TODO
 
 ## Let's Get Meta
 
-* What Problem(s) Does {{ TITLE }} Solve? 
+* What Problem(s) Does {{ TODO TITLE }} Solve? 
 
 * 
 
 * 
 
 
-## How to Implement {{ TITLE }} Algorithm in JavaScript 
+## How to Implement {{ TODO TITLE }} Algorithm in JavaScript 
+
+TODO
 
 ```js
 TODO
 ```
 
+TODO
 
-## Big O & {{ TITLE }} Algorithm
+
+## Big O & {{ TODO TITLE }} Algorithm
 
 TODO 
 
 
 ## Reflection
 
-* What Problem(s) Does {{ TITLE }} Solve? 
+* What Problem(s) Does {{ TODO TITLE }} Solve? 
 
 * 
 
 * 
 
 
-### What Problem(s) Does {{ TITLE }} Solve?
+### What Problem(s) Does {{ TODO TITLE }} Solve?
 
 TODO 
 
@@ -81,8 +91,9 @@ TODO
 TODO
 
 
-## Learn {{ TITLE } Algorithm in JavaScript
+## Learn {{ TODO TITLE } Algorithm in JavaScript
 
+TODO RECAP FOR SEO
 
 
 
