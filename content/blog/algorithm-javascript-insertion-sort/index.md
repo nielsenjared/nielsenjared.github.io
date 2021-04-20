@@ -56,7 +56,23 @@ TODO
 TODO
 
 ```js
-TODO
+const unsorted = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
+
+const insertionSort = (arr) => {
+
+    for (let i = 1; i < arr.length; i++) {
+        let temp = arr[i];
+        let j = i - 1;
+        while (j >= 0 && arr[j] > temp) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = temp;
+    }
+    return arr;
+};
+
+let sorted = insertionSort(unsorted);
 ```
 
 TODO
