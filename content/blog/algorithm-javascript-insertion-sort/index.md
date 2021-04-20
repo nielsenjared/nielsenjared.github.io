@@ -1,12 +1,12 @@
 ---
-title: "Learn {{ TODO }} Algorithm in JavaScript"
+title: "Learn Insertions Sort Algorithm in JavaScript"
 date: "2021-TO-DO"
 description: "TODO"
-keywords: ['algorithm', ' {{ TODO TITLE }}', 'javascript']
+keywords: ['algorithm', 'insertion sort', 'javascript']
 ---
 
 
-![ {{ TODO ALT TEXT }} ](./jarednielsen-algorithm-javascript-{{ TITLE }}.png)
+![ {{ TODO ALT TEXT }} ](./jarednielsen-algorithm-javascript-insertion-sort.png)
 
 
 TODO INTRODUCTION
@@ -44,14 +44,14 @@ TODO
 
 ## Let's Get Meta
 
-* What Problem(s) Does {{ TODO TITLE }} Solve? 
+* What Problem(s) Does Insertion Sort Solve? 
+
+* Why is it called 'Insertion Sort'? 
 
 * 
 
-* 
 
-
-## How to Implement {{ TODO TITLE }} Algorithm in JavaScript 
+## How to Implement Insertion Sort Algorithm in JavaScript 
 
 TODO
 
@@ -62,21 +62,21 @@ TODO
 TODO
 
 
-## Big O & {{ TODO TITLE }} Algorithm
+## Big O & Insertion Sort Algorithm
 
 TODO 
 
 
 ## Reflection
 
-* What Problem(s) Does {{ TODO TITLE }} Solve? 
+* What Problem(s) Does Insertion Solve? 
 
 * 
 
 * 
 
 
-### What Problem(s) Does {{ TODO TITLE }} Solve?
+### What Problem(s) Does Insertion Sort Solve?
 
 TODO 
 
@@ -91,9 +91,6 @@ TODO
 TODO
 
 
-## Learn {{ TODO TITLE } Algorithm in JavaScript
+## Learn Insertion Sort Algorithm in JavaScript
 
 TODO RECAP FOR SEO
-
-
-
