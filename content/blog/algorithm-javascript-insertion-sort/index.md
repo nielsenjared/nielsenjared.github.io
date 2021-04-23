@@ -262,86 +262,194 @@ It's time to get algorithmic.
 
 This solution is great for two values, but how do we sort an array of multiple values? 
 
-For each value in the array, we will need to perform our conditional operation. Here's a biolerplate:
+_For_ each value in the array, we need to check it against the previous values and insert it in ordinal sequence...
+
+Let's refactor our function with iteration. Rather than `i`, let's use a descriptive iterator variable, `curr`, short for _current_, to help us _see_ what's happening. 
+
+What value do we initialize `curr` with? 
+TODO something about abstraction and algorithmic of `arr[curr]`
+TODO changing 
+            arr[prev + 1] = arr[prev];
+            arr[curr] = arr[prev];
+
+
+
 ```js 
 const insertionSort = (arr) => {
-    for (let i = 0; i < arr.length; i++) { 
-        // what are we doing here?
+    for (let curr = 1; curr < arr.length; curr++) {
+        let temp = arr[curr];
+        let prev = 0;
 
+        if (arr[prev] > temp) {
+            arr[curr] = arr[prev];
+            arr[prev] = temp;
+        }
     }
     return arr;
 };
 ```
 
+What happens when we run this? 
+```sh
+[
+  1, 10,  9,
+  2,  8,  3,
+  7,  4,  6,
+  5
+]
+```
 
+Our first two numbers swapped, but nothing else. Why? 
 
+We need to _algorithmically_ determine the value of `prev`. In our conditional statement, we are only comparing each number against the value stored in `arr[0]`, which, after the first iteration is `1`. 
 
-Just like in our playing cards analogy, we need a means of _temporarily_ removing a value from our array. 
-```js 
+If `prev` is the value _previous_ to `curr`, how can we determine it without hard coding a value? 
+
+```js
+let prev = curr - 1;
+```
+
+Our algorithm now looks like this: 
+```js
 const insertionSort = (arr) => {
-    for (let i = 0; i < arr.length; i++) { 
-        let temp = arr[i];
-        // and? 
+    for (let curr = 1; curr < arr.length; curr++) {
+        let temp = arr[curr];
+        let prev = curr - 1;
+
+        if (arr[prev] > temp) {
+            arr[curr] = arr[prev];
+            arr[prev] = temp;
+        }
     }
     return arr;
 };
 ```
 
-And then we need to compare it to the previous value. 
-
-Wait! There is no previous value. 
-
-On our first iteration, `i` is equal to `0`, the first index in our array. So let's start iterating with the second element. 
-
-```js 
-const insertionSort = (arr) => {
-    for (let i = 1; i < arr.length; i++) { 
-        let temp = arr[i];
-        // and? 
-    }
-    return arr;
-};
+If we run it, the result is the following: 
+```sh
+[
+   1,  9,  2,
+   8,  3,  7,
+   4,  6,  5,
+  10
+]
 ```
+
+What is going on here? 
+
+TODO explanation: we're only checking values forward, not back, so for each iteration, `arr[prev]` is 10, and we swap all of the values with it until we reach the end of the array. 
+
+That's cool if our goal is _just_ to sort the largest value. 
 
 TODO
 
-Let's call it `j`. 
+Let's visualize this...
 
-We _could_ simply set the value of `j` to 0, but what happens when the value of `i` increases? How do we do this _programmatically_? 
+Here's our `unsorted` array:
+```md
+10, 1, 9, 2, 8, 3, 7, 4, 6, 5
+```
 
-Let's set the value of `j` to `i - 1`. 
+In the first iteration:
 
-```js 
-const insertionSort = (arr) => {
-    for (let i = 1; i < arr.length; i++) { 
-        let temp = arr[i];
-        let j = i - 1; 
-    }
-    return arr;
-};
+* `curr` is equal to 1
+* The value stored in `arr[curr]` is 1
+* `temp` is equal to the value stored in `arr[curr]`, which is 1
+* `prev` is equal to `curr - 1`, which is 0
+* The value stored in `arr[prev]` is 10
+
+| `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
+| ---       | ---                      | ---    | ---            |
+|  1        | 1                        | 0      | 10             |
+
+
+
+
+
+```md
+[ 1,  9, 10, 2,  8,  3, 7,  4,  6, 5 ]
+```
+
+```
+[ 1,  9,  2, 10,  8,  3, 7,  4,  6, 5 ]
+```
+
+```
+[ 1,  9,  2, 8, 10,  3, 7,  4,  6, 5 ]
+```
+```
+[
+  1,  9,  2,
+  8,  3, 10,
+  7,  4,  6,
+  5
+]
+```
+
+```
+[
+   1,  9,  2,
+   8,  3,  7,
+  10,  4,  6,
+   5
+]
+```
+
+```
+[
+  1,  9,  2,
+  8,  3,  7,
+  4, 10,  6,
+  5
+]
+```
+
+```
+[
+  1,  9,  2,
+  8,  3,  7,
+  4,  6, 10,
+  5
+]
+```
+
+```
+[
+   1,  9,  2,
+   8,  3,  7,
+   4,  6,  5,
+  10
+]
+```
+
+```
+[
+   1,  9,  2,
+   8,  3,  7,
+   4,  6,  5,
+  10
+]
 ```
 
 
 
-Here's the crux of the algorithm: 
-you start iterating with the secvondf item in your array and compare it to the previous item
-swap if necessary. 
-
-
 
 
 
 ```js 
+const unsorted = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
+
 const insertionSort = (arr) => {
 
-    for (let i = 1; i < arr.length; i++) {
-        let temp = arr[i];
-        let j = i - 1;
-        while (j >= 0 && arr[j] > temp) {
-            arr[j + 1] = arr[j];
-            j = j - 1;
+    for (let curr = 1; curr < arr.length; curr++) {
+        let temp = arr[curr];
+        let prev = curr - 1;
+        
+        while (prev >= 0 && arr[prev] > temp) {
+            arr[prev + 1] = arr[prev];
+            prev = prev - 1;
         }
-        arr[j + 1] = temp;
+        arr[prev + 1] = temp;
     }
     return arr;
 };
