@@ -350,33 +350,47 @@ Here's our `unsorted` array:
 10, 1, 9, 2, 8, 3, 7, 4, 6, 5
 ```
 
-In the first iteration:
-
-* `curr` is equal to 1
-* The value stored in `arr[curr]` is 1
-* `temp` is equal to the value stored in `arr[curr]`, which is 1
-* `prev` is equal to `curr - 1`, which is 0
-* The value stored in `arr[prev]` is 10
+In the first iteration, the values stored in our variables are the following: 
 
 | `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
 | ---       | ---                      | ---    | ---            |
-|  1        | 1                        | 0      | 10             |
+| 1         | 1                        | 0      | 10             |
 
-
-
-
-
+And our `insertionSort` function returns the following:
 ```md
 [ 1,  9, 10, 2,  8,  3, 7,  4,  6, 5 ]
 ```
 
+In the second iteration, the values stored in our variables are the following: 
+
+| `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
+| ---       | ---                      | ---    | ---            |
+| 2         | 9                        | 1     |  10            |
+
+And our `insertionSort` function returns the following:
 ```
 [ 1,  9,  2, 10,  8,  3, 7,  4,  6, 5 ]
 ```
 
+In the third iteration, the values stored in our variables are the following: 
+
+| `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
+| ---       | ---                      | ---    | ---            |
+| 3         | 2                        |  2     |     10         |
+
+And our `insertionSort` function returns the following:
 ```
 [ 1,  9,  2, 8, 10,  3, 7,  4,  6, 5 ]
 ```
+
+
+In the fourth iteration, the values stored in our variables are the following: 
+
+| `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
+| ---       | ---                      | ---    | ---            |
+| 4         | 8                        |  3     |    10          |
+
+And our `insertionSort` function returns the following:
 ```
 [
   1,  9,  2,
@@ -385,7 +399,13 @@ In the first iteration:
   5
 ]
 ```
+In the fifth iteration, the values stored in our variables are the following: 
 
+| `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
+| ---       | ---                      | ---    | ---            |
+| 5         | 3                        |  4     |    10          |
+
+And our `insertionSort` function returns the following:
 ```
 [
    1,  9,  2,
@@ -394,7 +414,13 @@ In the first iteration:
    5
 ]
 ```
+In the sixth iteration, the values stored in our variables are the following: 
 
+| `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
+| ---       | ---                      | ---    | ---            |
+| 6         | 7                        | 5      |      10        |
+
+And our `insertionSort` function returns the following:
 ```
 [
   1,  9,  2,
@@ -403,7 +429,13 @@ In the first iteration:
   5
 ]
 ```
+In the seventh iteration, the values stored in our variables are the following: 
 
+| `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
+| ---       | ---                      | ---    | ---            |
+| 7          | 4                        |  6     |    10          |
+
+And our `insertionSort` function returns the following:
 ```
 [
   1,  9,  2,
@@ -412,7 +444,28 @@ In the first iteration:
   5
 ]
 ```
+In the eighth iteration, the values stored in our variables are the following: 
 
+| `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
+| ---       | ---                      | ---    | ---            |
+| 8         | 6                        |  7     |    10          |
+
+And our `insertionSort` function returns the following:
+```
+[
+   1,  9,  2,
+   8,  3,  7,
+   4,  6,  5,
+  10
+]
+```
+In the ninth and final iteration, the values stored in our variables are the following: 
+
+| `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
+| ---       | ---                      | ---    | ---            |
+| 9         | 5                        |  8     |    10          |
+
+And our `insertionSort` function returns the following:
 ```
 [
    1,  9,  2,
@@ -422,18 +475,138 @@ In the first iteration:
 ]
 ```
 
+Do you see the pattern? 
+
+What's the solution?
+TODO
+With every iteration _forward_, we need to go back and sort the preceding numbers as well. What control flow statement easily allows us to count down? 
+
+`while`
+
+Which of the values listed in our tables above do we want to use as our condition? 
+
+TODO
+
+`prev`
+
+Let's refactor our function with a `while` loop:
+
+```js
+const insertionSort = (arr) => {
+    for (let curr = 1; curr < arr.length; curr++) {
+        let temp = arr[curr];
+        let prev = curr - 1;
+
+        while(prev >=0 && arr[prev] > temp) {
+            arr[curr] = arr[prev];
+            arr[prev] = temp;
+        }
+    }
+    return arr;
+};
 ```
-[
-   1,  9,  2,
-   8,  3,  7,
-   4,  6,  5,
-  10
-]
+TODO
+But! We need a way to count down. 
+
+```js
+const insertionSort = (arr) => {
+    for (let curr = 1; curr < arr.length; curr++) {
+        let temp = arr[curr];
+        let prev = curr - 1;    
+
+        while(prev >=0 && arr[prev] > temp) {
+            arr[curr] = arr[prev];
+            arr[prev] = temp;
+        }
+
+        while(prev >=0) {
+            if (arr[prev] > temp) {
+                arr[curr] = arr[prev];
+                arr[prev] = temp;
+                prev = prev - 1;
+            }
+        }
+    }
+    return arr;
+};
 ```
 
+There are still two problems with this function. 
+
+When we decrement `prev` with each iteration of our `while` loop, it is no longer _coupled_ with `curr`. What is `curr`, abstractly? 
+
+`prev + 1`
+
+Let's update that in our function...
+
+```js
+const insertionSort = (arr) => {
+    for (let curr = 1; curr < arr.length; curr++) {
+        let temp = arr[curr];
+        let prev = curr - 1;
+
+        while(prev >=0) {
+            if (arr[prev] > temp) {
+                arr[prev + 1] = arr[prev];
+                arr[prev] = temp;
+                prev = prev - 1;
+            }
+        }
+    }
+    return arr;
+};
+```
+
+TODO
+There's still one more thing we need to fix. If we run this function, we will enter and endless loop. Why? 
+
+`arr[prev] = temp;`
 
 
+With each iteration of our `while` loop, we are assigning the value of `temp` to `arr[prev]`. 
 
+
+```js
+const insertionSort = (arr) => {
+    for (let curr = 1; curr < arr.length; curr++) {
+        let temp = arr[curr];
+        let prev = curr - 1;
+
+        while(prev >=0) {
+            if (arr[prev] > temp) {
+                arr[prev + 1] = arr[prev];
+                prev = prev - 1;
+            }
+        }
+    }
+    return arr;
+};
+```
+
+But if we run this now, our function returns the following: 
+```
+[ 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 ]
+```
+
+We need a way to 
+
+```js
+const insertionSort = (arr) => {
+    for (let curr = 1; curr < arr.length; curr++) {
+        let temp = arr[curr];
+        let prev = curr - 1;
+
+        while(prev >=0) {
+            if (arr[prev] > temp) {
+                arr[prev + 1] = arr[prev];
+                prev = prev - 1;
+            }
+        }
+        arr[prev + 1] = temp;
+    }
+    return arr;
+};
+```
 
 
 ```js 
