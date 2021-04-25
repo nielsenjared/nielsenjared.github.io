@@ -44,11 +44,11 @@ TODO
 
 ## Let's Get Meta
 
-* What Problem(s) Does Insertion Sort Solve? 
-
-* Why is it called 'Insertion Sort'? 
-
 * What is computational thinking?
+
+* Why is it called 'Insertion Sort'?
+
+* What Problem(s) Does Insertion Sort Solve? 
 
 
 ## How to Implement Insertion Sort Algorithm in JavaScript 
@@ -479,7 +479,7 @@ Do you see the pattern?
 
 What's the solution?
 TODO
-With every iteration _forward_, we need to go back and sort the preceding numbers as well. What control flow statement easily allows us to count down? 
+With every iteration _forward_, we need to word backwards and sort the preceding numbers as well. What control flow statement easily allows us to count down? 
 
 `while`
 
@@ -489,6 +489,8 @@ TODO
 
 `prev`
 
+TODO why?
+
 Let's refactor our function with a `while` loop:
 
 ```js
@@ -497,41 +499,30 @@ const insertionSort = (arr) => {
         let temp = arr[curr];
         let prev = curr - 1;
 
-        while(prev >=0 && arr[prev] > temp) {
-            arr[curr] = arr[prev];
-            arr[prev] = temp;
-        }
-    }
-    return arr;
-};
-```
-TODO
-But! We need a way to count down. 
-
-```js
-const insertionSort = (arr) => {
-    for (let curr = 1; curr < arr.length; curr++) {
-        let temp = arr[curr];
-        let prev = curr - 1;    
-
-        while(prev >=0 && arr[prev] > temp) {
-            arr[curr] = arr[prev];
-            arr[prev] = temp;
-        }
-
         while(prev >=0) {
             if (arr[prev] > temp) {
                 arr[curr] = arr[prev];
                 arr[prev] = temp;
-                prev = prev - 1;
             }
+            prev = prev - 1;
         }
     }
     return arr;
 };
 ```
 
-There are still two problems with this function. 
+NOTE: `prev = prev - 1;` is _outside_ the `if` statement. If we placed it inside, we would get caught in an endless loop as there are definitely iterations where `arr[prev]` will be less than `temp`. 
+
+Running `insertionSort` returns: 
+```
+[
+  1, 2, 2, 3,
+  3, 4, 4, 5,
+  5, 6
+]
+```
+
+Well... it's sorted. But also _shorted_. What's going on?
 
 When we decrement `prev` with each iteration of our `while` loop, it is no longer _coupled_ with `curr`. What is `curr`, abstractly? 
 
@@ -539,98 +530,35 @@ When we decrement `prev` with each iteration of our `while` loop, it is no longe
 
 Let's update that in our function...
 
-```js
-const insertionSort = (arr) => {
-    for (let curr = 1; curr < arr.length; curr++) {
-        let temp = arr[curr];
-        let prev = curr - 1;
-
-        while(prev >=0) {
-            if (arr[prev] > temp) {
-                arr[prev + 1] = arr[prev];
-                arr[prev] = temp;
-                prev = prev - 1;
-            }
-        }
-    }
-    return arr;
-};
-```
-
-TODO
-There's still one more thing we need to fix. If we run this function, we will enter and endless loop. Why? 
-
-`arr[prev] = temp;`
-
-
-With each iteration of our `while` loop, we are assigning the value of `temp` to `arr[prev]`. 
-
-
-```js
-const insertionSort = (arr) => {
-    for (let curr = 1; curr < arr.length; curr++) {
-        let temp = arr[curr];
-        let prev = curr - 1;
-
-        while(prev >=0) {
-            if (arr[prev] > temp) {
-                arr[prev + 1] = arr[prev];
-                prev = prev - 1;
-            }
-        }
-    }
-    return arr;
-};
-```
-
-But if we run this now, our function returns the following: 
-```
-[ 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 ]
-```
-
-We need a way to 
-
-```js
-const insertionSort = (arr) => {
-    for (let curr = 1; curr < arr.length; curr++) {
-        let temp = arr[curr];
-        let prev = curr - 1;
-
-        while(prev >=0) {
-            if (arr[prev] > temp) {
-                arr[prev + 1] = arr[prev];
-                prev = prev - 1;
-            }
-        }
-        arr[prev + 1] = temp;
-    }
-    return arr;
-};
-```
 
 
 ```js 
-const unsorted = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
-
 const insertionSort = (arr) => {
-
     for (let curr = 1; curr < arr.length; curr++) {
         let temp = arr[curr];
-        let prev = curr - 1;
-        
-        while (prev >= 0 && arr[prev] > temp) {
-            arr[prev + 1] = arr[prev];
+        let prev = curr - 1;    
+ 
+        while(prev >= 0) {
+            if (arr[prev] > temp) {
+                arr[prev + 1] = arr[prev];
+                arr[prev] = temp;
+            }
             prev = prev - 1;
         }
-        arr[prev + 1] = temp;
     }
     return arr;
 };
-
-let sorted = insertionSort(unsorted);
 ```
 
-TODO
+Now when we run our `insertionSort` function, it returns: 
+```sh
+[
+   1,  2,  3,
+   4,  5,  6,
+   7,  8,  9,
+  10
+]
+```
 
 
 ## Big O & Insertion Sort Algorithm
@@ -640,26 +568,36 @@ TODO
 
 ## Reflection
 
-* What Problem(s) Does Insertion Solve? 
-
-* 
-
 * What is computational thinking?
 
+* Why is it called 'Insertion Sort'?
 
-### What Problem(s) Does Insertion Sort Solve?
-
-TODO 
-
-
-### TODO BULLET #2
-
-TODO
+* What Problem(s) Does Insertion Sort Solve? 
 
 
 ### What is computational thinking?
 
-TODO
+Computational thinking is 
+TODO 
+There are four primary stages of computational thinking: 
+
+* Decomposition
+
+* Pattern recognition
+
+* Abstraction
+
+* Algorithms
+
+
+### Why is it Called 'Insertion Sort'?
+
+Insertion Sort gets its name from the approach to sorting where a numerical value is _inserted_ into an array in ordinal sequence. 
+
+
+### What Problem(s) Does Insertion Sort Solve?
+
+Insertion Sort is useful, and ideal, when the data to be sorted is small or nearly sorted. 
 
 
 ## Learn Insertion Sort Algorithm in JavaScript
