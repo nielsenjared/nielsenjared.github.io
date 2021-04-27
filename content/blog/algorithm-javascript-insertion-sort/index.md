@@ -1,6 +1,6 @@
 ---
-title: "Learn Insertions Sort Algorithm in JavaScript"
-date: "2021-TO-DO"
+title: "Learn The Insertion Sort Algorithm in JavaScript"
+date: "2021-04-18"
 description: "TODO"
 keywords: ['algorithm', 'insertion sort', 'javascript']
 ---
@@ -9,7 +9,8 @@ keywords: ['algorithm', 'insertion sort', 'javascript']
 ![ {{ TODO ALT TEXT }} ](./jarednielsen-algorithm-javascript-insertion-sort.png)
 
 
-TODO INTRODUCTION
+
+In this tutorial, you will learn the insertion sort algorithm in JavaScript. 
 
 ---
 
@@ -20,46 +21,44 @@ Ready to level up? Grab your copies of [The Little Book of Big O](https://gum.co
 
 ## Retrieval Practice
 
-* TODO
+* What is an algorithm?
+
+* What is computational thinking? 
 
 * TODO
 
-* TODO 
 
-
-### TODO BULLET #1
+### What is an Algorithm?
 
 TODO 
 
 
-### TODO BULLET #2
+### What is Computational Thinking?
 
 TODO
 
 
-### TODO BULLET #3
+### TODO
 
 TODO
 
 
 ## Let's Get Meta
 
-* What is computational thinking?
+* TODO
 
 * Why is it called 'Insertion Sort'?
 
 * What Problem(s) Does Insertion Sort Solve? 
 
 
-## How to Implement Insertion Sort Algorithm in JavaScript 
+## How to Implement the Insertion Sort Algorithm in JavaScript 
 
 If we are writing a sorting algorithm, we need to start with something to sort. Let's declare an array of 'unsorted' integers:
 
 ```js
 const unsorted = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
 ```
-
-TODO 
 
 Next, let's declare our `insertionSort` function:
 
@@ -68,8 +67,6 @@ const insertionSort = (arr) => {
     return arr;
 };
 ```
-
-TODO
 
 Now what?
 
@@ -83,20 +80,7 @@ In [How to Solve It](TODO), George Polya outlines four steps of problem solving:
 
 4. Evaluate the result.
 
-
-TODO four steps to computational thinking 
-
-1. Decomposition
-
-2. Pattern recognition 
-
-3. Abstraction 
-
-4. Algorithms 
-
-
-
-In order to break our problem down, we need to understand it. 
+In order to understand our problem, we need to break it down. 
 
 Let's first define it and reframe the problem as acceptance criteria:
 
@@ -110,7 +94,7 @@ Let's use an analogy!
 
 TODO card graphics
 
-Imagine you were holding a deck of cards and you wanted to put the cards in order. Let's use the first half of our `unsorted` array as an example:
+Imagine you were holding a deck of cards and you wanted to put the cards in order. Usig the first half of our `unsorted` array as an example gives us the following hand:
 
 ```
 10, 1, 9, 2, 8
@@ -123,8 +107,6 @@ Moving left to right, you would look at the value of the first card and compare 
 ```
 1, 10, 9, 2, 8
 ```
-
-
 
 Again, moving left to right, we compare the values of our next two cards and see that `10` is greater than `9`, so we take `9` out of our hand _temporarily_ and _insert_ it between `1` and `10`. Now our hand looks like this: 
 
@@ -144,12 +126,14 @@ Lastly, we _temporarily_ remove `8` from our hand and compare it to the other ca
 1, 2, 8, 9, 10
 ```
 
-TODO decompose
-
-
 So... how do we translate this to JavaScript? 
 
-Let's break it down, or decompose the problem, into smaller pieces. What if our array only contained two values?
+With our analogy in hand (get it), let's break down, or _decompose_ the problem. Decomposition is considered the first step in computational thinking. 
+
+TODO
+
+
+What if our array only contained two values?
 
 ```js
 const test = [10, 1];
@@ -209,13 +193,13 @@ If we are using the first half of our array, our inclination is likely to _tempo
 
 If we _temporarily_ remove the first card, `3`, we would check its value against the next card, `7`, see that `3` is less than  `7`, and simply put it back in its original location. 
 
-We could also start with `7`, check its value against the previous card, see that `7` is greater than `3`, and return it to our hand. 
+We could also start with `7`, check its value against the previous card, see that `7` is greater than `3`, and return it to its location in our hand. 
 
 Do you see the pattern? So what about `10` and `1`?
 
 We _could_ temporarily remove `10` and check it against the next value, but as we saw above, we could accomplish the same end by starting with the second card, or value, in this case `1`. 
 
-Long story short:
+Long story short, to _temporarily_ remove a value from our array, we simply declare a variable `temp` and assign it the value stored in `arr[1]`:
 ```js 
 const insertionSort = (arr) => {
     let temp = arr[1];
@@ -229,7 +213,6 @@ const insertionSort = (arr) => {
 };
 ```
 
-TODO
 Now that we see the pattern, how do we _abstract_, or _model_, this? 
 
 What do I mean by that? 
@@ -255,10 +238,7 @@ const insertionSort = (arr) => {
 };
 ```
 
-TODO
-Now what? 
-
-It's time to get algorithmic. 
+Now it's time to get algorithmic. 
 
 This solution is great for two values, but how do we sort an array of multiple values? 
 
