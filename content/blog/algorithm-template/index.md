@@ -44,36 +44,51 @@ TODO
 
 ## Let's Get Meta
 
+* 
+
 * What Problem(s) Does {{ TODO TITLE }} Solve? 
 
-* 
-
-* 
+* What is the Big O of {{ TODO TITLE }}?
 
 
 ## How to Implement {{ TODO TITLE }} Algorithm in JavaScript 
 
 TODO
 
+1. Understand the problem
+
+2. Make a plan
+
+3. Execute the plan
+
+4. Evaluate the plan
+
 ```js
 TODO
 ```
 
-TODO
+* Decomposition
 
+* Pattern recognition
 
-## Big O & {{ TODO TITLE }} Algorithm
+* Abstraction
 
-TODO 
+* Algorithm
+
 
 
 ## Reflection
 
+* TODO
+
 * What Problem(s) Does {{ TODO TITLE }} Solve? 
 
-* 
+* What is the Big O of {{ TODO TITLE }}?
 
-* 
+
+### TODO BULLET #1
+
+TODO
 
 
 ### What Problem(s) Does {{ TODO TITLE }} Solve?
@@ -81,17 +96,12 @@ TODO
 TODO 
 
 
-### TODO BULLET #2
+### What is the Big O of Insertion Sort? 
 
 TODO
 
 
-### TODO BULLET #3
-
-TODO
-
-
-## Learn {{ TODO TITLE } Algorithm in JavaScript
+## Learn {{ TODO TITLE }} Algorithm in JavaScript
 
 TODO RECAP FOR SEO
 
