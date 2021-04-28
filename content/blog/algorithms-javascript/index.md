@@ -1,8 +1,8 @@
 ---
-title: "Learn {{ TODO }} Algorithm in JavaScript"
+title: "How to Learn Algorithms in JavaScript"
 date: "2021-TO-DO"
 description: "TODO"
-keywords: ['algorithm', ' {{ TODO TITLE }}', 'javascript']
+keywords: ['algorithms', 'javascript']
 ---
 
 
@@ -16,6 +16,24 @@ TODO INTRODUCTION
 Ready to level up? Grab your copies of [The Little Book of Big O](https://gum.co/big-o) and [The Seven Data Structures of Highly Effective Developers](https://gum.co/data-structures).
 
 ---
+
+
+
+In [How to Solve It](TODO), George Polya outlines four steps of problem solving: 
+
+1. Understand the problem.
+
+2. Make a plan.
+
+3. Execute the plan. 
+
+4. Evaluate the result.
+
+
+TODO COMPUTATIONAL THINKING
+
+
+
 
 
 ## Retrieval Practice
