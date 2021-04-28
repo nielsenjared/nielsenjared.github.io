@@ -9,6 +9,7 @@ keywords: ['algorithm', 'insertion sort', 'javascript']
 ![ {{ TODO ALT TEXT }} ](./jarednielsen-algorithm-javascript-insertion-sort.png)
 
 
+TODO
 
 In this tutorial, you will learn the insertion sort algorithm in JavaScript. 
 
@@ -21,11 +22,16 @@ Ready to level up? Grab your copies of [The Little Book of Big O](https://gum.co
 
 ## Retrieval Practice
 
+* What is programming? 
+
 * What is an algorithm?
 
 * What is computational thinking? 
 
-* TODO
+
+### What is Programming? 
+
+TODO 
 
 
 ### What is an Algorithm?
@@ -38,18 +44,13 @@ TODO
 TODO
 
 
-### TODO
-
-TODO
-
-
 ## Let's Get Meta
-
-* TODO
 
 * Why is it called 'Insertion Sort'?
 
 * What Problem(s) Does Insertion Sort Solve? 
+
+* What is the Big O of Insertion Sort?
 
 
 ## How to Implement the Insertion Sort Algorithm in JavaScript 
@@ -69,16 +70,6 @@ const insertionSort = (arr) => {
 ```
 
 Now what?
-
-In [How to Solve It](TODO), George Polya outlines four steps of problem solving: 
-
-1. Understand the problem.
-
-2. Make a plan.
-
-3. Execute the plan. 
-
-4. Evaluate the result.
 
 In order to understand our problem, we need to break it down. 
 
@@ -100,7 +91,7 @@ Imagine you were holding a deck of cards and you wanted to put the cards in orde
 10, 1, 9, 2, 8
 ```
 
-TODO
+TODO GRAPHIC
 
 Moving left to right, you would look at the value of the first card and compare it to the value of the second card. In this instance, our first card is `10` and our second card is `1`. `10` is greater than `1`, so we _swap_ their positions. Now our hand looks like this: 
 
@@ -108,11 +99,15 @@ Moving left to right, you would look at the value of the first card and compare 
 1, 10, 9, 2, 8
 ```
 
+TODO GRAPHIC
+
 Again, moving left to right, we compare the values of our next two cards and see that `10` is greater than `9`, so we take `9` out of our hand _temporarily_ and _insert_ it between `1` and `10`. Now our hand looks like this: 
 
 ```
 1, 9, 10, 2, 8
 ```
+
+TODO GRAPHIC
 
 And again, moving left to right, our next two cards are `10` and `2`. `10` is greater than `2`, but, now, `9` is _also_ greater than `2`, so we _insert_ `2` between `1` and `9`. Now our hands looks like this: 
 
@@ -126,12 +121,11 @@ Lastly, we _temporarily_ remove `8` from our hand and compare it to the other ca
 1, 2, 8, 9, 10
 ```
 
+TODO GRAPHIC
+
 So... how do we translate this to JavaScript? 
 
-With our analogy in hand (get it), let's break down, or _decompose_ the problem. Decomposition is considered the first step in computational thinking. 
-
-TODO
-
+With our analogy in hand (get it), let's break down, or _decompose_ the problem. 
 
 What if our array only contained two values?
 
@@ -213,24 +207,28 @@ const insertionSort = (arr) => {
 };
 ```
 
-Now that we see the pattern, how do we _abstract_, or _model_, this? 
+Now that we _recognize the pattern_, how do we _abstract_, or model, this? 
 
 What do I mean by that? 
 
-As soon as we declared `temp`, we entered the realm of abstraction. `arr[1]` and `arr[2]` both refer to specific values in our array. But `temp` can refer to _any_ value we assign to it. In our conditional statement, we are still making specific reference to `arr[0]`. How do we _model_ this value? 
+As soon as we declared `temp`, we entered the realm of abstraction. `arr[1]` and `arr[2]` both refer to specific values in our array. But `temp` can refer to _any_ value we assign to it. In our conditional statement, we are still making specific reference to `arr[0]`.
 
+What is `arr[0]` in relation to `arr[1]`?
 
-TODO
+It's the _previous_ index in our array, so let's declare a new variable, `prev` and assign it a value of 0.
 
+And what is `temp` in relation to `prev`?
 
+`prev + 1`
 
+When we refactor our `insertionSort` function, we only need to make reference to specific value in array, `arr[1]`. The rest are abstractions. 
 ```js 
 const insertionSort = (arr) => {
     let temp = arr[1];
     let prev = 0;
 
     if (arr[prev] > temp) {
-        arr[prev + 1] = arr[prev];
+        arr[1] = arr[prev];
         arr[prev] = temp;
     }
 
@@ -238,21 +236,19 @@ const insertionSort = (arr) => {
 };
 ```
 
-Now it's time to get algorithmic. 
+Now it's time for the last stage of computational thinking: let's get algorithmic!
 
-This solution is great for two values, but how do we sort an array of multiple values? 
+Our current solution is great for two values, but how do we sort an array of multiple values? 
 
 _For_ each value in the array, we need to check it against the previous values and insert it in ordinal sequence...
 
 Let's refactor our function with iteration. Rather than `i`, let's use a descriptive iterator variable, `curr`, short for _current_, to help us _see_ what's happening. 
 
-What value do we initialize `curr` with? 
-TODO something about abstraction and algorithmic of `arr[curr]`
-TODO changing 
-            arr[prev + 1] = arr[prev];
-            arr[curr] = arr[prev];
+What value do we assign to `curr`?
 
+We might be inclined, by force of habit and inertia, to initialize our iterator variable with 0, but let's recall our card analogy above. We don't need to start with the first card in our hand when starting with the second card achieves the same end and is more efficient. So... let's initialize our `for` loop with 1. 
 
+We also need to update our reference to `arr[1]` with a `arr[curr]`: 
 
 ```js 
 const insertionSort = (arr) => {
@@ -269,14 +265,9 @@ const insertionSort = (arr) => {
 };
 ```
 
-What happens when we run this? 
+What happens when we run our `insertionSort` function? 
 ```sh
-[
-  1, 10,  9,
-  2,  8,  3,
-  7,  4,  6,
-  5
-]
+[  1, 10,  9, 2,  8,  3, 7,  4,  6, 5 ]
 ```
 
 Our first two numbers swapped, but nothing else. Why? 
@@ -307,21 +298,14 @@ const insertionSort = (arr) => {
 
 If we run it, the result is the following: 
 ```sh
-[
-   1,  9,  2,
-   8,  3,  7,
-   4,  6,  5,
-  10
-]
+[ 1,  9,  2,  8,  3,  7,  4,  6,  5, 10 ]
 ```
 
 What is going on here? 
 
-TODO explanation: we're only checking values forward, not back, so for each iteration, `arr[prev]` is 10, and we swap all of the values with it until we reach the end of the array. 
+We're only checking values forward, not back, so for each iteration, `arr[prev]` is 10, and we swap all of the values with it until we reach the end of the array. 
 
 That's cool if our goal is _just_ to sort the largest value. 
-
-TODO
 
 Let's visualize this...
 
@@ -338,7 +322,7 @@ In the first iteration, the values stored in our variables are the following:
 
 And our `insertionSort` function returns the following:
 ```md
-[ 1,  9, 10, 2,  8,  3, 7,  4,  6, 5 ]
+[ 1,  9,  10,  2,  8,  3,  7,  4,  6,  5 ]
 ```
 
 In the second iteration, the values stored in our variables are the following: 
@@ -349,7 +333,7 @@ In the second iteration, the values stored in our variables are the following:
 
 And our `insertionSort` function returns the following:
 ```
-[ 1,  9,  2, 10,  8,  3, 7,  4,  6, 5 ]
+[ 1,  9,  2,  10,  8,  3,  7,  4,  6,  5 ]
 ```
 
 In the third iteration, the values stored in our variables are the following: 
@@ -360,7 +344,7 @@ In the third iteration, the values stored in our variables are the following:
 
 And our `insertionSort` function returns the following:
 ```
-[ 1,  9,  2, 8, 10,  3, 7,  4,  6, 5 ]
+[ 1,  9,  2,  8, 10,  3,  7,  4,  6,  5 ]
 ```
 
 
@@ -372,13 +356,9 @@ In the fourth iteration, the values stored in our variables are the following:
 
 And our `insertionSort` function returns the following:
 ```
-[
-  1,  9,  2,
-  8,  3, 10,
-  7,  4,  6,
-  5
-]
+[ 1,  9,  2,  8,  3, 10, 7,  4,  6, 5 ]
 ```
+
 In the fifth iteration, the values stored in our variables are the following: 
 
 | `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
@@ -387,13 +367,9 @@ In the fifth iteration, the values stored in our variables are the following:
 
 And our `insertionSort` function returns the following:
 ```
-[
-   1,  9,  2,
-   8,  3,  7,
-  10,  4,  6,
-   5
-]
+[ 1,  9,  2, 8,  3,  7, 10,  4,  6, 5 ]
 ```
+
 In the sixth iteration, the values stored in our variables are the following: 
 
 | `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
@@ -402,13 +378,9 @@ In the sixth iteration, the values stored in our variables are the following:
 
 And our `insertionSort` function returns the following:
 ```
-[
-  1,  9,  2,
-  8,  3,  7,
-  4, 10,  6,
-  5
-]
+[ 1,  9,  2, 8,  3,  7, 4, 10,  6, 5 ]
 ```
+
 In the seventh iteration, the values stored in our variables are the following: 
 
 | `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
@@ -417,13 +389,9 @@ In the seventh iteration, the values stored in our variables are the following:
 
 And our `insertionSort` function returns the following:
 ```
-[
-  1,  9,  2,
-  8,  3,  7,
-  4,  6, 10,
-  5
-]
+[ 1,  9,  2, 8,  3,  7, 4,  6, 10, 5 ]
 ```
+
 In the eighth iteration, the values stored in our variables are the following: 
 
 | `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
@@ -432,13 +400,9 @@ In the eighth iteration, the values stored in our variables are the following:
 
 And our `insertionSort` function returns the following:
 ```
-[
-   1,  9,  2,
-   8,  3,  7,
-   4,  6,  5,
-  10
-]
+[ 1,  9,  2, 8,  3,  7, 4,  6,  5, 10 ]
 ```
+
 In the ninth and final iteration, the values stored in our variables are the following: 
 
 | `curr`    | `arr[curr]` && `temp`    | `prev` | `arr[prev]`    |
@@ -447,29 +411,28 @@ In the ninth and final iteration, the values stored in our variables are the fol
 
 And our `insertionSort` function returns the following:
 ```
-[
-   1,  9,  2,
-   8,  3,  7,
-   4,  6,  5,
-  10
-]
+[ 1,  9,  2, 8,  3,  7, 4,  6,  5, 10 ]
 ```
 
 Do you see the pattern? 
 
 What's the solution?
-TODO
-With every iteration _forward_, we need to word backwards and sort the preceding numbers as well. What control flow statement easily allows us to count down? 
+
+With every iteration _forward_, we need to word backwards and sort the preceding numbers as well. 
+
+What control flow statement easily allows us to count down? 
 
 `while`
 
 Which of the values listed in our tables above do we want to use as our condition? 
 
-TODO
-
 `prev`
 
-TODO why?
+Why?
+
+Because _abstraction_! 
+
+With each iteration of our `while` loop, we want to check the value stored in the _previous_  array index. And with each iteraton of our `for` loop, we reassign the value of `prev` to `curr - 1`.
 
 Let's refactor our function with a `while` loop:
 
@@ -493,13 +456,9 @@ const insertionSort = (arr) => {
 
 NOTE: `prev = prev - 1;` is _outside_ the `if` statement. If we placed it inside, we would get caught in an endless loop as there are definitely iterations where `arr[prev]` will be less than `temp`. 
 
-Running `insertionSort` returns: 
+Running `insertionSort` now returns: 
 ```
-[
-  1, 2, 2, 3,
-  3, 4, 4, 5,
-  5, 6
-]
+[ 1, 2, 2, 3, 3, 4, 4, 5, 5, 6 ]
 ```
 
 Well... it's sorted. But also _shorted_. What's going on?
@@ -540,34 +499,13 @@ Now when we run our `insertionSort` function, it returns:
 ]
 ```
 
-
-## Big O & Insertion Sort Algorithm
-
-TODO 
-
-
 ## Reflection
-
-* What is computational thinking?
 
 * Why is it called 'Insertion Sort'?
 
 * What Problem(s) Does Insertion Sort Solve? 
 
-
-### What is computational thinking?
-
-Computational thinking is 
-TODO 
-There are four primary stages of computational thinking: 
-
-* Decomposition
-
-* Pattern recognition
-
-* Abstraction
-
-* Algorithms
+* What is the Big O of Insertion Sort? 
 
 
 ### Why is it Called 'Insertion Sort'?
@@ -578,6 +516,11 @@ Insertion Sort gets its name from the approach to sorting where a numerical valu
 ### What Problem(s) Does Insertion Sort Solve?
 
 Insertion Sort is useful, and ideal, when the data to be sorted is small or nearly sorted. 
+
+
+## What is the Big O of Insertion Sort?
+
+What is the Big O of Insertion Sort? Because we are working with nested iteration, it's O(n^2). 
 
 
 ## Learn Insertion Sort Algorithm in JavaScript
