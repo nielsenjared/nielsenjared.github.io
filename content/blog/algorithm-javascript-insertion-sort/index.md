@@ -1,20 +1,28 @@
 ---
-title: "Learn The Insertion Sort Algorithm in JavaScript"
+title: "Learn Insertion Sort Algorithm in JavaScript"
 date: "2021-04-18"
 description: "TODO"
 keywords: ['algorithm', 'insertion sort', 'javascript']
 ---
 
 
-![ {{ TODO ALT TEXT }} ](./jarednielsen-algorithm-javascript-insertion-sort.png)
+![ {{ Insertion Sort }} ](./jarednielsen-algorithm-javascript-insertion-sort.png)
+
+TODO SOMETHING ABOUT HOW LEARING ALGORITHMS IS _REALLY_ LEARNING HOW TO THINK LIKE A PROGRAMMER. LEARNING ALGORITHMS IS REALLY LEARNING COMPUTATIONAL THINKING. 
+
+learn how to think like a programmer
+
+In this series, you will not only learn the classic algorithms. You'll also learn computational thinking, or, how to think like a programmer. 
 
 
-TODO
 
-In this tutorial, you will learn the insertion sort algorithm in JavaScript. 
+At some point in your career (today?!), you'll want to learn the classic algorithms. It's not just to ace the technical interview and land your dream job. Learning algorithms will help you understand how software works and improve your problem-solving skills. 
+
+
+In this tutorial, you will learn the insertion sort algorithm in JavaScript. If you are just joining us, you may want to start with the first article in this series, [How to Solve Any Algorithm](TODO). 
 
 ---
-
+TODO UPDATE TEMPLATE WITH HERO IMAGE
 Ready to level up? Grab your copies of [The Little Book of Big O](https://gum.co/big-o) and [The Seven Data Structures of Highly Effective Developers](https://gum.co/data-structures).
 
 ---
@@ -31,17 +39,25 @@ Ready to level up? Grab your copies of [The Little Book of Big O](https://gum.co
 
 ### What is Programming? 
 
-TODO 
+Programming is the act and art of writing instructions to be executed by a machine. These instructions must follow a predetermined, formalized, set of rules. These rules determine what we can write and how we can use those whats. A programming language is, fundamentally, a combination of logic and syntax, or a set of instructions for writing instructions. So meta!
 
 
 ### What is an Algorithm?
 
-TODO 
+An algorithm is a set of clearly defined rules or instructions to be executed by a computer in order to solve a specific problem.
 
 
 ### What is Computational Thinking?
 
-TODO
+Computational thinking is an approach to problem solving where we frame our solution in terms that a computer could also execute. Computational thinking consists of the following stages: 
+
+* **Decomposition**: TODO
+
+* **Pattern recognition**: TODO
+
+* **Abstraction**: TODO 
+
+* **Algorithms**: TODO
 
 
 ## Let's Get Meta
