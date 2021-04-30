@@ -8,18 +8,10 @@ keywords: ['algorithm', 'insertion sort', 'javascript']
 
 ![ {{ Insertion Sort }} ](./jarednielsen-algorithm-javascript-insertion-sort.png)
 
-TODO SOMETHING ABOUT HOW LEARING ALGORITHMS IS _REALLY_ LEARNING HOW TO THINK LIKE A PROGRAMMER. LEARNING ALGORITHMS IS REALLY LEARNING COMPUTATIONAL THINKING. 
 
-learn how to think like a programmer
-
-In this series, you will not only learn the classic algorithms. You'll also learn computational thinking, or, how to think like a programmer. 
+If you want to write better code, you need to learn how to think like a programmer. If you want to learn how to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. Like your health and your savings, it won't happen overnight. You need to do the work. In this tutorial, you will learn the insertion sort algorithm in JavaScript. If you are just joining us, you may want to start with the first article in this series, [How to Solve Any Algorithm](TODO). 
 
 
-
-At some point in your career (today?!), you'll want to learn the classic algorithms. It's not just to ace the technical interview and land your dream job. Learning algorithms will help you understand how software works and improve your problem-solving skills. 
-
-
-In this tutorial, you will learn the insertion sort algorithm in JavaScript. If you are just joining us, you may want to start with the first article in this series, [How to Solve Any Algorithm](TODO). 
 
 ---
 TODO UPDATE TEMPLATE WITH HERO IMAGE
