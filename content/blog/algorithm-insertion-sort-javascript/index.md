@@ -1,15 +1,14 @@
 ---
-title: "Learn Insertion Sort Algorithm in JavaScript"
-date: "2021-04-18"
-description: "TODO"
+title: "How to Code the Insertion Sort Algorithm in JavaScript"
+date: "2021-04-30"
+description: "If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn how to code the insertion sort algorithm in JavaScript. "
 keywords: ['algorithm', 'insertion sort', 'javascript']
 ---
-
 
 ![ Insertion Sort ](./jarednielsen-algorithm-javascript-insertion-sort.png)
 
 
-If you want to write better code, you need to learn how to think like a programmer. If you want to learn how to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. Like your health and your savings, it won't happen overnight. You need to do the work. In this tutorial, you will learn the insertion sort algorithm in JavaScript. 
+If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn how to code the insertion sort algorithm in JavaScript. 
 
 ---
 Ready to level up? Grab your copies of [The Little Book of Big O](https://gum.co/big-o) and [The Seven Data Structures of Highly Effective Developers](https://gum.co/data-structures).
@@ -40,13 +39,13 @@ An algorithm is a set of clearly defined rules or instructions to be executed by
 
 Computational thinking is an approach to problem solving where we frame our solution in terms that a computer could also execute. Computational thinking consists of the following stages: 
 
-* **Decomposition**: TODO
+* **Decomposition**: Breaking a complex problem into smaller, easier to solve components
 
-* **Pattern recognition**: TODO
+* **Pattern recognition**: Developing a generalized solution to apply to multiple problems
 
-* **Abstraction**: TODO 
+* **Abstraction**: Hiding or ignoring the details of a problem in order to simplify it and make it easier to solve
 
-* **Algorithms**: TODO
+* **Algorithms**: Composing step-by-step instructions to solve a problem
 
 
 ## Let's Get Meta
@@ -538,4 +537,4 @@ What is the Big O of Insertion Sort? Because we are working with nested iteratio
 
 ## Learn Insertion Sort Algorithm in JavaScript
 
-TODO RECAP FOR SEO
+If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn the insertion sort algorithm in JavaScript. 
