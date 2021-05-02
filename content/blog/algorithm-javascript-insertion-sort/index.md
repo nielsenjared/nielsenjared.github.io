@@ -6,15 +6,12 @@ keywords: ['algorithm', 'insertion sort', 'javascript']
 ---
 
 
-![ {{ Insertion Sort }} ](./jarednielsen-algorithm-javascript-insertion-sort.png)
+![ Insertion Sort ](./jarednielsen-algorithm-javascript-insertion-sort.png)
 
 
-If you want to write better code, you need to learn how to think like a programmer. If you want to learn how to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. Like your health and your savings, it won't happen overnight. You need to do the work. In this tutorial, you will learn the insertion sort algorithm in JavaScript. If you are just joining us, you may want to start with the first article in this series, [How to Solve Any Algorithm](TODO). 
-
-
+If you want to write better code, you need to learn how to think like a programmer. If you want to learn how to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. Like your health and your savings, it won't happen overnight. You need to do the work. In this tutorial, you will learn the insertion sort algorithm in JavaScript. 
 
 ---
-TODO UPDATE TEMPLATE WITH HERO IMAGE
 Ready to level up? Grab your copies of [The Little Book of Big O](https://gum.co/big-o) and [The Seven Data Structures of Highly Effective Developers](https://gum.co/data-structures).
 
 ---
@@ -84,14 +81,14 @@ In order to understand our problem, we need to break it down.
 Let's first define it and reframe the problem as acceptance criteria:
 
 > GIVEN an array of unsorted numbers
+>
 > WHEN we check the value of each number and find one out of sequence
+>
 > THEN we insert that number in its ordinal location in the array 
 
 Where have we seen this or something like it before? 
 
 Let's use an analogy!
-
-TODO card graphics
 
 Imagine you were holding a deck of cards and you wanted to put the cards in order. Usig the first half of our `unsorted` array as an example gives us the following hand:
 
@@ -99,7 +96,7 @@ Imagine you were holding a deck of cards and you wanted to put the cards in orde
 10, 1, 9, 2, 8
 ```
 
-TODO GRAPHIC
+![ playing cards ](./jarednielsen-algorithm-javascript-insertion-sort.png)
 
 Moving left to right, you would look at the value of the first card and compare it to the value of the second card. In this instance, our first card is `10` and our second card is `1`. `10` is greater than `1`, so we _swap_ their positions. Now our hand looks like this: 
 
@@ -107,7 +104,10 @@ Moving left to right, you would look at the value of the first card and compare 
 1, 10, 9, 2, 8
 ```
 
-TODO GRAPHIC
+![ playing cards ](./jarednielsen-algorithm-javascript-insertion-sort-01-10-09-02-08.png)
+
+![ playing cards ](./jarednielsen-algorithm-javascript-insertion-sort-09-temp.png)
+
 
 Again, moving left to right, we compare the values of our next two cards and see that `10` is greater than `9`, so we take `9` out of our hand _temporarily_ and _insert_ it between `1` and `10`. Now our hand looks like this: 
 
@@ -115,13 +115,18 @@ Again, moving left to right, we compare the values of our next two cards and see
 1, 9, 10, 2, 8
 ```
 
-TODO GRAPHIC
+![ playing cards ](./jarednielsen-algorithm-javascript-insertion-sort-01-09-10-02-08.png)
 
-And again, moving left to right, our next two cards are `10` and `2`. `10` is greater than `2`, but, now, `9` is _also_ greater than `2`, so we _insert_ `2` between `1` and `9`. Now our hands looks like this: 
+![ playing cards ](./jarednielsen-algorithm-javascript-insertion-sort-02-temp.png)
+
+And again, moving left to right, our next two cards are `10` and `2`. `10` is greater than `2`, but, now, `9` is _also_ greater than `2`, so we _temporarily_ remove `2` from our hand and then _insert_ `2` between `1` and `9`. Now our hands looks like this: 
 
 ```
 1, 2, 9, 10, 8
 ```
+![ playing cards ](./jarednielsen-algorithm-javascript-insertion-sort-01-02-09-10-08.png)
+
+![ playing cards ](./jarednielsen-algorithm-javascript-insertion-sort-08-temp.png)
 
 Lastly, we _temporarily_ remove `8` from our hand and compare it to the other cards. `10` is greater than `8`, and `9` is greater than `8`, but `2` is not. So we _insert_ `8` between `2` and `9`. Our sorted hand looks like this: 
 
@@ -129,7 +134,7 @@ Lastly, we _temporarily_ remove `8` from our hand and compare it to the other ca
 1, 2, 8, 9, 10
 ```
 
-TODO GRAPHIC
+![ playing cards ](./jarednielsen-algorithm-javascript-insertion-sort-01-02-08-09-10.png)
 
 So... how do we translate this to JavaScript? 
 
