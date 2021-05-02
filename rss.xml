@@ -1,4 +1,753 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Apr 2021 15:42:58 GMT</lastBuildDate><item><title><![CDATA[The Superlative Guide to Data Structures in JavaScript]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structures-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structures-javascript/</guid><pubDate>Fri, 19 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 May 2021 16:57:06 GMT</lastBuildDate><item><title><![CDATA[How to Code the Insertion Sort Algorithm in JavaScript]]></title><description><![CDATA[If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing…]]></description><link>http://jarednielsen.com/algorithm-insertion-sort-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/algorithm-insertion-sort-javascript/</guid><pubDate>Fri, 30 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/09dc331e5fe0f44e93fddb221691f22c/a987b/jarednielsen-algorithm-javascript-insertion-sort.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVQoz82RywrCMBBF+/8rP0uhiNjWlS+0Sh+bau0ryeQ6CVXaEsGFCwOXCZOZM3eIp7XGVET0taa93jcgpZSVKz+FjoDDQ70U0Ttn7qqPr3onkPqmPM8RRRHK+x06SUAcu67DbrtFcbuByhIqywwFKdce9nvr8iOwKAos5nNkHLFaAbMZNIOO5zNOLFQVdF2DO+1w3/ftQAvrnXrDdQ04CAJEmw0kF9J6DaQpEuM8DPEwMJa6XiEYvuShlzgerT4CGvtN01hJKSE4J4VA27ZsrrJR8JvgaJyZ3NvhcGU4PsUeVw6usg+//Av9P/AJuNRfEHPb+IoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot; Insertion Sort &quot;
+        title=&quot;&quot;
+        src=&quot;/static/09dc331e5fe0f44e93fddb221691f22c/b9e4f/jarednielsen-algorithm-javascript-insertion-sort.png&quot;
+        srcset=&quot;/static/09dc331e5fe0f44e93fddb221691f22c/cf440/jarednielsen-algorithm-javascript-insertion-sort.png 148w,
+/static/09dc331e5fe0f44e93fddb221691f22c/d2d38/jarednielsen-algorithm-javascript-insertion-sort.png 295w,
+/static/09dc331e5fe0f44e93fddb221691f22c/b9e4f/jarednielsen-algorithm-javascript-insertion-sort.png 590w,
+/static/09dc331e5fe0f44e93fddb221691f22c/f9b6a/jarednielsen-algorithm-javascript-insertion-sort.png 885w,
+/static/09dc331e5fe0f44e93fddb221691f22c/2d849/jarednielsen-algorithm-javascript-insertion-sort.png 1180w,
+/static/09dc331e5fe0f44e93fddb221691f22c/a987b/jarednielsen-algorithm-javascript-insertion-sort.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn how to code the insertion sort algorithm in JavaScript. &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Ready to level up? Grab your copies of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt; and &lt;a href=&quot;https://gum.co/data-structures&quot;&gt;The Seven Data Structures of Highly Effective Developers&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What is programming? &lt;/li&gt;
+&lt;li&gt;What is an algorithm?&lt;/li&gt;
+&lt;li&gt;What is computational thinking? &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What is Programming?&lt;/h3&gt;
+&lt;p&gt;Programming is the act and art of writing instructions to be executed by a machine. These instructions must follow a predetermined, formalized, set of rules. These rules determine what we can write and how we can use those whats. A programming language is, fundamentally, a combination of logic and syntax, or a set of instructions for writing instructions. So meta!&lt;/p&gt;
+&lt;h3&gt;What is an Algorithm?&lt;/h3&gt;
+&lt;p&gt;An algorithm is a set of clearly defined rules or instructions to be executed by a computer in order to solve a specific problem.&lt;/p&gt;
+&lt;h3&gt;What is Computational Thinking?&lt;/h3&gt;
+&lt;p&gt;Computational thinking is an approach to problem solving where we frame our solution in terms that a computer could also execute. Computational thinking consists of the following stages: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Decomposition&lt;/strong&gt;: Breaking a complex problem into smaller, easier to solve components&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pattern recognition&lt;/strong&gt;: Developing a generalized solution to apply to multiple problems&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abstraction&lt;/strong&gt;: Hiding or ignoring the details of a problem in order to simplify it and make it easier to solve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Algorithms&lt;/strong&gt;: Composing step-by-step instructions to solve a problem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Why is it called ‘Insertion Sort’?&lt;/li&gt;
+&lt;li&gt;What Problem(s) Does Insertion Sort Solve? &lt;/li&gt;
+&lt;li&gt;What is the Big O of Insertion Sort?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Implement the Insertion Sort Algorithm in JavaScript&lt;/h2&gt;
+&lt;p&gt;If we are writing a sorting algorithm, we need to start with something to sort. Let’s declare an array of ‘unsorted’ integers:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; unsorted &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Next, let’s declare our &lt;code&gt;insertionSort&lt;/code&gt; function:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;insertionSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now what?&lt;/p&gt;
+&lt;p&gt;In order to understand our problem, we need to break it down. &lt;/p&gt;
+&lt;p&gt;Let’s first define it and reframe the problem as acceptance criteria:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GIVEN an array of unsorted numbers&lt;/p&gt;
+&lt;p&gt;WHEN we check the value of each number and find one out of sequence&lt;/p&gt;
+&lt;p&gt;THEN we insert that number in its ordinal location in the array &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Where have we seen this or something like it before? &lt;/p&gt;
+&lt;p&gt;Let’s use an analogy!&lt;/p&gt;
+&lt;p&gt;Imagine you were holding a deck of cards and you wanted to put the cards in order. Usig the first half of our &lt;code&gt;unsorted&lt;/code&gt; array as an example gives us the following hand:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;10, 1, 9, 2, 8&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/09dc331e5fe0f44e93fddb221691f22c/a987b/jarednielsen-algorithm-javascript-insertion-sort.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVQoz82RywrCMBBF+/8rP0uhiNjWlS+0Sh+bau0ryeQ6CVXaEsGFCwOXCZOZM3eIp7XGVET0taa93jcgpZSVKz+FjoDDQ70U0Ttn7qqPr3onkPqmPM8RRRHK+x06SUAcu67DbrtFcbuByhIqywwFKdce9nvr8iOwKAos5nNkHLFaAbMZNIOO5zNOLFQVdF2DO+1w3/ftQAvrnXrDdQ04CAJEmw0kF9J6DaQpEuM8DPEwMJa6XiEYvuShlzgerT4CGvtN01hJKSE4J4VA27ZsrrJR8JvgaJyZ3NvhcGU4PsUeVw6usg+//Av9P/AJuNRfEHPb+IoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot; playing cards &quot;
+        title=&quot;&quot;
+        src=&quot;/static/09dc331e5fe0f44e93fddb221691f22c/b9e4f/jarednielsen-algorithm-javascript-insertion-sort.png&quot;
+        srcset=&quot;/static/09dc331e5fe0f44e93fddb221691f22c/cf440/jarednielsen-algorithm-javascript-insertion-sort.png 148w,
+/static/09dc331e5fe0f44e93fddb221691f22c/d2d38/jarednielsen-algorithm-javascript-insertion-sort.png 295w,
+/static/09dc331e5fe0f44e93fddb221691f22c/b9e4f/jarednielsen-algorithm-javascript-insertion-sort.png 590w,
+/static/09dc331e5fe0f44e93fddb221691f22c/f9b6a/jarednielsen-algorithm-javascript-insertion-sort.png 885w,
+/static/09dc331e5fe0f44e93fddb221691f22c/2d849/jarednielsen-algorithm-javascript-insertion-sort.png 1180w,
+/static/09dc331e5fe0f44e93fddb221691f22c/a987b/jarednielsen-algorithm-javascript-insertion-sort.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Moving left to right, you would look at the value of the first card and compare it to the value of the second card. In this instance, our first card is &lt;code&gt;10&lt;/code&gt; and our second card is &lt;code&gt;1&lt;/code&gt;. &lt;code&gt;10&lt;/code&gt; is greater than &lt;code&gt;1&lt;/code&gt;, so we &lt;em&gt;swap&lt;/em&gt; their positions. Now our hand looks like this: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1, 10, 9, 2, 8&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c4f4c0a876e52a8643e2d461f7d40dff/a987b/jarednielsen-algorithm-javascript-insertion-sort-01-10-09-02-08.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVQoz82STQuCQBCG+//Q77KDhAchPJhmJpgihZq67u7bjKloGHno0MLLzs7HszPsbrTWeJdSarXeazczByf04mQp5bgP9lSDbxnIScBLdB4WF402Q/pd9znLQHZyMI6hsgyaIKcggOM4qOsaruvidr9D5Tnk9coUxEkC73jsLlwEdp2dz8B2C3geQoLvDANCCJx8HwHHyhL68QBVIiGgaZpomubLyIcDNAHKooBBwCiKkKYpbNtGwTCSJJ8g+N6ycAnD2eizR1HUfkvBtm27zkoq4pG5i8EWVQUx8S12iMkjzOyV6/O3+YH+H/gEqEJfBl1gY6YAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot; playing cards &quot;
+        title=&quot;&quot;
+        src=&quot;/static/c4f4c0a876e52a8643e2d461f7d40dff/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-01-10-09-02-08.png&quot;
+        srcset=&quot;/static/c4f4c0a876e52a8643e2d461f7d40dff/cf440/jarednielsen-algorithm-javascript-insertion-sort-01-10-09-02-08.png 148w,
+/static/c4f4c0a876e52a8643e2d461f7d40dff/d2d38/jarednielsen-algorithm-javascript-insertion-sort-01-10-09-02-08.png 295w,
+/static/c4f4c0a876e52a8643e2d461f7d40dff/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-01-10-09-02-08.png 590w,
+/static/c4f4c0a876e52a8643e2d461f7d40dff/f9b6a/jarednielsen-algorithm-javascript-insertion-sort-01-10-09-02-08.png 885w,
+/static/c4f4c0a876e52a8643e2d461f7d40dff/2d849/jarednielsen-algorithm-javascript-insertion-sort-01-10-09-02-08.png 1180w,
+/static/c4f4c0a876e52a8643e2d461f7d40dff/a987b/jarednielsen-algorithm-javascript-insertion-sort-01-10-09-02-08.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6857d558105780096d380634c9ae97db/a987b/jarednielsen-algorithm-javascript-insertion-sort-09-temp.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVQoz81STY+CQAz1/yf+LjmQjTchAVFgTZAEEhRkPt+2sywZ1N3swYNNmint6+N1OitrLe7dGOOcYyEE4jhG27aLmo/xfbVIMMADK6XAluc50jR1sdF6ruspfk7IIG5gp2/fmqZBkiToLhdwhYnshHlOyEkuVhUMNVtqOJKqKIqcSiklBJ2q66DPZ2ZBVdfI9vuZ/IHQKSsKYL0GsgwlkQebDcZx/B6RcJoU4nYDdaImwjAM3R3/PfJuB3s4oL9eEQQBCv4JGSvVXO976NMJks6P7RafZbkYfbEUvnA1NfOYwzDMCn6WIEmhJNWc74lUUPygEP4S7hbyH/v92bzA35/wC8oBXxzgeDP6AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot; playing cards &quot;
+        title=&quot;&quot;
+        src=&quot;/static/6857d558105780096d380634c9ae97db/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-09-temp.png&quot;
+        srcset=&quot;/static/6857d558105780096d380634c9ae97db/cf440/jarednielsen-algorithm-javascript-insertion-sort-09-temp.png 148w,
+/static/6857d558105780096d380634c9ae97db/d2d38/jarednielsen-algorithm-javascript-insertion-sort-09-temp.png 295w,
+/static/6857d558105780096d380634c9ae97db/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-09-temp.png 590w,
+/static/6857d558105780096d380634c9ae97db/f9b6a/jarednielsen-algorithm-javascript-insertion-sort-09-temp.png 885w,
+/static/6857d558105780096d380634c9ae97db/2d849/jarednielsen-algorithm-javascript-insertion-sort-09-temp.png 1180w,
+/static/6857d558105780096d380634c9ae97db/a987b/jarednielsen-algorithm-javascript-insertion-sort-09-temp.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Again, moving left to right, we compare the values of our next two cards and see that &lt;code&gt;10&lt;/code&gt; is greater than &lt;code&gt;9&lt;/code&gt;, so we take &lt;code&gt;9&lt;/code&gt; out of our hand &lt;em&gt;temporarily&lt;/em&gt; and &lt;em&gt;insert&lt;/em&gt; it between &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;10&lt;/code&gt;. Now our hand looks like this: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1, 9, 10, 2, 8&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4bedb4e50f778bf9477b153963af2d39/a987b/jarednielsen-algorithm-javascript-insertion-sort-01-09-10-02-08.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9ElEQVQoz82SywqCUBCGe3/otWpjIYZILSpIS1NaRMfLuf3NnDSyjFq0aGA4c+by+Y86stbi2Y0xX/vz7KiX4IaHZq31/exiM1AfBnITcPM2x8YDnTkwny2kq78COcnFLIM5naClRJIkSNMUdV1jEQQ4UGyFgDoemYIsz7FZr91DBoFO2W4HjMcANRbnM1bLpVMwn80QUYyqgi1L0CRyAnqeh6ZpPqwcRbDbLcTlgjAMURSFUzudTCBaoN7vIUnt3PeRxHFv9d5HMSRfUVEpBUlrlzRcEYTXFgRgNZLuku4cd7kXhWhfsLPH+Et7/9v8wP8feAWe4F8A4cN+WAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot; playing cards &quot;
+        title=&quot;&quot;
+        src=&quot;/static/4bedb4e50f778bf9477b153963af2d39/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-01-09-10-02-08.png&quot;
+        srcset=&quot;/static/4bedb4e50f778bf9477b153963af2d39/cf440/jarednielsen-algorithm-javascript-insertion-sort-01-09-10-02-08.png 148w,
+/static/4bedb4e50f778bf9477b153963af2d39/d2d38/jarednielsen-algorithm-javascript-insertion-sort-01-09-10-02-08.png 295w,
+/static/4bedb4e50f778bf9477b153963af2d39/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-01-09-10-02-08.png 590w,
+/static/4bedb4e50f778bf9477b153963af2d39/f9b6a/jarednielsen-algorithm-javascript-insertion-sort-01-09-10-02-08.png 885w,
+/static/4bedb4e50f778bf9477b153963af2d39/2d849/jarednielsen-algorithm-javascript-insertion-sort-01-09-10-02-08.png 1180w,
+/static/4bedb4e50f778bf9477b153963af2d39/a987b/jarednielsen-algorithm-javascript-insertion-sort-01-09-10-02-08.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6dd60fe660e92e24222c0e2063e90089/a987b/jarednielsen-algorithm-javascript-insertion-sort-02-temp.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABCElEQVQoz81Sy4qDQBDM/0O+y4t4EZHkEANBY8TkEHzPo9I1GRdNPOxhD9vQ2PSjumranbUWn26MWbvWMAD0/Q5zu0ErBcNeqX3O7lYJNiyANIH818XTBAwDbN/DCKj2fduALAoL5z5H48Bsij1NA10UsAT39W9AJlkUOebxgJbmPM9RlqUQGhDHMYrrFTIBJUxpVVUhyzLHfBPQMbtcgP0eOJ1QP584Hg6OQRRFSNP0zVKk0uq6RhiGGMfx5923JcugPZ/RiLQkSdwg2QZBgLZtXS9ZEZiLWFtKXx2F11SexSSbu65DLwegbMbMzweb5Fm4YGa4kgx/AGfL+Jc2Y3z/Nn/g/x/wBfwQXw+l7TJMAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot; playing cards &quot;
+        title=&quot;&quot;
+        src=&quot;/static/6dd60fe660e92e24222c0e2063e90089/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-02-temp.png&quot;
+        srcset=&quot;/static/6dd60fe660e92e24222c0e2063e90089/cf440/jarednielsen-algorithm-javascript-insertion-sort-02-temp.png 148w,
+/static/6dd60fe660e92e24222c0e2063e90089/d2d38/jarednielsen-algorithm-javascript-insertion-sort-02-temp.png 295w,
+/static/6dd60fe660e92e24222c0e2063e90089/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-02-temp.png 590w,
+/static/6dd60fe660e92e24222c0e2063e90089/f9b6a/jarednielsen-algorithm-javascript-insertion-sort-02-temp.png 885w,
+/static/6dd60fe660e92e24222c0e2063e90089/2d849/jarednielsen-algorithm-javascript-insertion-sort-02-temp.png 1180w,
+/static/6dd60fe660e92e24222c0e2063e90089/a987b/jarednielsen-algorithm-javascript-insertion-sort-02-temp.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;And again, moving left to right, our next two cards are &lt;code&gt;10&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt;. &lt;code&gt;10&lt;/code&gt; is greater than &lt;code&gt;2&lt;/code&gt;, but, now, &lt;code&gt;9&lt;/code&gt; is &lt;em&gt;also&lt;/em&gt; greater than &lt;code&gt;2&lt;/code&gt;, so we &lt;em&gt;temporarily&lt;/em&gt; remove &lt;code&gt;2&lt;/code&gt; from our hand and then &lt;em&gt;insert&lt;/em&gt; &lt;code&gt;2&lt;/code&gt; between &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;9&lt;/code&gt;. Now our hands looks like this: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1, 2, 9, 10, 8&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f9cf14b0775d6da120d54902dc0ebba6/a987b/jarednielsen-algorithm-javascript-insertion-sort-01-02-09-10-08.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA90lEQVQoz81S2wqCUBD0/x/6MRFfLILEEBWSJC94P5dp96SQZlDQQwcGl90zs7N7tLTWWEMp9THWXGuR4AsbJCmlwRw/59ei1rOYAh5glwyKmTQfJs+HOXPuVZCTXExTqNsNchwhswy6KDCQoH86oaoqlGUJz/NQUD6jehAEpuGmoHEWRcBuB+X7UG0LDAM0EcIwRES1rutg2zaSJEGe5yYe+M60982R9fEIeT4/9kMuQI4v1ysO+z3quoZPzRzHQd/3cF0XcRwvRl88iiIRQUUhBAR1HskRx0xuyTF/2WXTNMYZN+Dcy8iYFjxtG9+e97/ND/D/gnfV6V8F4J+FQwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot; playing cards &quot;
+        title=&quot;&quot;
+        src=&quot;/static/f9cf14b0775d6da120d54902dc0ebba6/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-01-02-09-10-08.png&quot;
+        srcset=&quot;/static/f9cf14b0775d6da120d54902dc0ebba6/cf440/jarednielsen-algorithm-javascript-insertion-sort-01-02-09-10-08.png 148w,
+/static/f9cf14b0775d6da120d54902dc0ebba6/d2d38/jarednielsen-algorithm-javascript-insertion-sort-01-02-09-10-08.png 295w,
+/static/f9cf14b0775d6da120d54902dc0ebba6/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-01-02-09-10-08.png 590w,
+/static/f9cf14b0775d6da120d54902dc0ebba6/f9b6a/jarednielsen-algorithm-javascript-insertion-sort-01-02-09-10-08.png 885w,
+/static/f9cf14b0775d6da120d54902dc0ebba6/2d849/jarednielsen-algorithm-javascript-insertion-sort-01-02-09-10-08.png 1180w,
+/static/f9cf14b0775d6da120d54902dc0ebba6/a987b/jarednielsen-algorithm-javascript-insertion-sort-01-02-09-10-08.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/48ec20c02a8ad905e6074282a8ea54e2/a987b/jarednielsen-algorithm-javascript-insertion-sort-08-temp.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVQoz82RSYuDQBCF/f+H/DHxIjoEIwQXZEJiiOLey0tVJ53RGGEOc5iCRy/V9fWrbkdrjXcppTYlpQRHURSIosjszWudBYyTGxCWnfPZqqrgui6GYdgAcjHdbMQun7KOOBhoY5om+L6PPM9fuR8gL3jzdIK6XiHpsLxcoG83jASMDwfUdW1cBUGAsixNMbsTQnxwaN1lGbDbQcUxVNcB4whNwCRJkFGu73vTZpqmC1fzd1y1rPd7yOPx8WbkEuT4+3zGVxiiaRrEdJnneabld9jqUxRBBEG5DUHuJnIkqJBb68gxj6y2bVegBRAsG/P5b+IT8C/1/4F3hIdfEfJIbvEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot; playing cards &quot;
+        title=&quot;&quot;
+        src=&quot;/static/48ec20c02a8ad905e6074282a8ea54e2/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-08-temp.png&quot;
+        srcset=&quot;/static/48ec20c02a8ad905e6074282a8ea54e2/cf440/jarednielsen-algorithm-javascript-insertion-sort-08-temp.png 148w,
+/static/48ec20c02a8ad905e6074282a8ea54e2/d2d38/jarednielsen-algorithm-javascript-insertion-sort-08-temp.png 295w,
+/static/48ec20c02a8ad905e6074282a8ea54e2/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-08-temp.png 590w,
+/static/48ec20c02a8ad905e6074282a8ea54e2/f9b6a/jarednielsen-algorithm-javascript-insertion-sort-08-temp.png 885w,
+/static/48ec20c02a8ad905e6074282a8ea54e2/2d849/jarednielsen-algorithm-javascript-insertion-sort-08-temp.png 1180w,
+/static/48ec20c02a8ad905e6074282a8ea54e2/a987b/jarednielsen-algorithm-javascript-insertion-sort-08-temp.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Lastly, we &lt;em&gt;temporarily&lt;/em&gt; remove &lt;code&gt;8&lt;/code&gt; from our hand and compare it to the other cards. &lt;code&gt;10&lt;/code&gt; is greater than &lt;code&gt;8&lt;/code&gt;, and &lt;code&gt;9&lt;/code&gt; is greater than &lt;code&gt;8&lt;/code&gt;, but &lt;code&gt;2&lt;/code&gt; is not. So we &lt;em&gt;insert&lt;/em&gt; &lt;code&gt;8&lt;/code&gt; between &lt;code&gt;2&lt;/code&gt; and &lt;code&gt;9&lt;/code&gt;. Our sorted hand looks like this: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1, 2, 8, 9, 10&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1505b5238bffc85380bceafda6fcf9d3/a987b/jarednielsen-algorithm-javascript-insertion-sort-01-02-08-09-10.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9ElEQVQoz81STQuCUBD0/x/6Td48licFk1BBlEJM/H4f0671xMygoEMLw3vsOuPMqqW1xhpKqY+x5lpPDX5ggySlnGDuy/5a1FqKKeAOdmlAJFNM5jIc01uKWrMzHuY5VFFADgPk5QJ9vWIgwfB4RFmWE+I4RtM0yLIMrutCCLHh0LhLEmC3gwoCqLYFxhGKCL7vIwzDiRzQrKCXMmzbRt/38943I2siy9PpvrfzGcRETudhv0dVVUjTFJ7nTUKO4yCKojn6y0fhfQkashNBsceugyCXHZ0tOWYRRl3XGGjO0Y3Dp8h4LPixcXxb73+bH+D/BW+9AF76D9DqDwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot; playing cards &quot;
+        title=&quot;&quot;
+        src=&quot;/static/1505b5238bffc85380bceafda6fcf9d3/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-01-02-08-09-10.png&quot;
+        srcset=&quot;/static/1505b5238bffc85380bceafda6fcf9d3/cf440/jarednielsen-algorithm-javascript-insertion-sort-01-02-08-09-10.png 148w,
+/static/1505b5238bffc85380bceafda6fcf9d3/d2d38/jarednielsen-algorithm-javascript-insertion-sort-01-02-08-09-10.png 295w,
+/static/1505b5238bffc85380bceafda6fcf9d3/b9e4f/jarednielsen-algorithm-javascript-insertion-sort-01-02-08-09-10.png 590w,
+/static/1505b5238bffc85380bceafda6fcf9d3/f9b6a/jarednielsen-algorithm-javascript-insertion-sort-01-02-08-09-10.png 885w,
+/static/1505b5238bffc85380bceafda6fcf9d3/2d849/jarednielsen-algorithm-javascript-insertion-sort-01-02-08-09-10.png 1180w,
+/static/1505b5238bffc85380bceafda6fcf9d3/a987b/jarednielsen-algorithm-javascript-insertion-sort-01-02-08-09-10.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;So… how do we translate this to JavaScript? &lt;/p&gt;
+&lt;p&gt;With our analogy in hand (get it), let’s break down, or &lt;em&gt;decompose&lt;/em&gt; the problem. &lt;/p&gt;
+&lt;p&gt;What if our array only contained two values?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; test &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We can see that we need to compare our two values, and if the first value is greater than the second value, we need to swap them. &lt;/p&gt;
+&lt;p&gt;Our immediate inclination might be something like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;insertionSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But this won’t work. Why? &lt;/p&gt;
+&lt;p&gt;The result will be the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[10, 10]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We could create a new array and return that, &lt;em&gt;or&lt;/em&gt;, if we think back to our playing cards analogy, we can &lt;em&gt;temporarily&lt;/em&gt; remove a value from the array and then &lt;em&gt;insert&lt;/em&gt; it into the array. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;insertionSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But which value do we &lt;em&gt;temporarily&lt;/em&gt; remove? &lt;code&gt;0&lt;/code&gt; or &lt;code&gt;1&lt;/code&gt;? &lt;/p&gt;
+&lt;p&gt;Let’s revisit our playing cards analogy again: if we are proceeding left to right through our hand, or array, do we pull the first card or the second? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; unsorted &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we are using the first half of our array, our inclination is likely to &lt;em&gt;temporarily&lt;/em&gt; remove the first card as it is greater. But what if we are working with the latter half of the array, where the first value is &lt;em&gt;less than&lt;/em&gt; the next? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;3, 7, 4, 6, 5&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we &lt;em&gt;temporarily&lt;/em&gt; remove the first card, &lt;code&gt;3&lt;/code&gt;, we would check its value against the next card, &lt;code&gt;7&lt;/code&gt;, see that &lt;code&gt;3&lt;/code&gt; is less than  &lt;code&gt;7&lt;/code&gt;, and simply put it back in its original location. &lt;/p&gt;
+&lt;p&gt;We could also start with &lt;code&gt;7&lt;/code&gt;, check its value against the previous card, see that &lt;code&gt;7&lt;/code&gt; is greater than &lt;code&gt;3&lt;/code&gt;, and return it to its location in our hand. &lt;/p&gt;
+&lt;p&gt;Do you see the pattern? So what about &lt;code&gt;10&lt;/code&gt; and &lt;code&gt;1&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;We &lt;em&gt;could&lt;/em&gt; temporarily remove &lt;code&gt;10&lt;/code&gt; and check it against the next value, but as we saw above, we could accomplish the same end by starting with the second card, or value, in this case &lt;code&gt;1&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Long story short, to &lt;em&gt;temporarily&lt;/em&gt; remove a value from our array, we simply declare a variable &lt;code&gt;temp&lt;/code&gt; and assign it the value stored in &lt;code&gt;arr[1]&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;insertionSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now that we &lt;em&gt;recognize the pattern&lt;/em&gt;, how do we &lt;em&gt;abstract&lt;/em&gt;, or model, this? &lt;/p&gt;
+&lt;p&gt;What do I mean by that? &lt;/p&gt;
+&lt;p&gt;As soon as we declared &lt;code&gt;temp&lt;/code&gt;, we entered the realm of abstraction. &lt;code&gt;arr[1]&lt;/code&gt; and &lt;code&gt;arr[2]&lt;/code&gt; both refer to specific values in our array. But &lt;code&gt;temp&lt;/code&gt; can refer to &lt;em&gt;any&lt;/em&gt; value we assign to it. In our conditional statement, we are still making specific reference to &lt;code&gt;arr[0]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;What is &lt;code&gt;arr[0]&lt;/code&gt; in relation to &lt;code&gt;arr[1]&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;It’s the &lt;em&gt;previous&lt;/em&gt; index in our array, so let’s declare a new variable, &lt;code&gt;prev&lt;/code&gt; and assign it a value of 0.&lt;/p&gt;
+&lt;p&gt;And what is &lt;code&gt;temp&lt;/code&gt; in relation to &lt;code&gt;prev&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;prev + 1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;When we refactor our &lt;code&gt;insertionSort&lt;/code&gt; function, we only need to make reference to specific value in array, &lt;code&gt;arr[1]&lt;/code&gt;. The rest are abstractions. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;insertionSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; prev &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now it’s time for the last stage of computational thinking: let’s get algorithmic!&lt;/p&gt;
+&lt;p&gt;Our current solution is great for two values, but how do we sort an array of multiple values? &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;For&lt;/em&gt; each value in the array, we need to check it against the previous values and insert it in ordinal sequence…&lt;/p&gt;
+&lt;p&gt;Let’s refactor our function with iteration. Rather than &lt;code&gt;i&lt;/code&gt;, let’s use a descriptive iterator variable, &lt;code&gt;curr&lt;/code&gt;, short for &lt;em&gt;current&lt;/em&gt;, to help us &lt;em&gt;see&lt;/em&gt; what’s happening. &lt;/p&gt;
+&lt;p&gt;What value do we assign to &lt;code&gt;curr&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;We might be inclined, by force of habit and inertia, to initialize our iterator variable with 0, but let’s recall our card analogy above. We don’t need to start with the first card in our hand when starting with the second card achieves the same end and is more efficient. So… let’s initialize our &lt;code&gt;for&lt;/code&gt; loop with 1. &lt;/p&gt;
+&lt;p&gt;We also need to update our reference to &lt;code&gt;arr[1]&lt;/code&gt; with a &lt;code&gt;arr[curr]&lt;/code&gt;: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;insertionSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; curr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; curr &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; curr&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;curr&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; prev &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;curr&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What happens when we run our &lt;code&gt;insertionSort&lt;/code&gt; function? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;[  1, 10,  9, 2,  8,  3, 7,  4,  6, 5 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our first two numbers swapped, but nothing else. Why? &lt;/p&gt;
+&lt;p&gt;We need to &lt;em&gt;algorithmically&lt;/em&gt; determine the value of &lt;code&gt;prev&lt;/code&gt;. In our conditional statement, we are only comparing each number against the value stored in &lt;code&gt;arr[0]&lt;/code&gt;, which, after the first iteration is &lt;code&gt;1&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;If &lt;code&gt;prev&lt;/code&gt; is the value &lt;em&gt;previous&lt;/em&gt; to &lt;code&gt;curr&lt;/code&gt;, how can we determine it without hard coding a value? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; prev &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; curr &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our algorithm now looks like this: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;insertionSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; curr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; curr &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; curr&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;curr&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; prev &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; curr &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;curr&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we run it, the result is the following: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;[ 1,  9,  2,  8,  3,  7,  4,  6,  5, 10 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What is going on here? &lt;/p&gt;
+&lt;p&gt;We’re only checking values forward, not back, so for each iteration, &lt;code&gt;arr[prev]&lt;/code&gt; is 10, and we swap all of the values with it until we reach the end of the array. &lt;/p&gt;
+&lt;p&gt;That’s cool if our goal is &lt;em&gt;just&lt;/em&gt; to sort the largest value. &lt;/p&gt;
+&lt;p&gt;Let’s visualize this…&lt;/p&gt;
+&lt;p&gt;Here’s our &lt;code&gt;unsorted&lt;/code&gt; array:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;10, 1, 9, 2, 8, 3, 7, 4, 6, 5&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the first iteration, the values stored in our variables are the following: &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;curr&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[curr]&lt;/code&gt; &amp;#x26;&amp;#x26; &lt;code&gt;temp&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;prev&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[prev]&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And our &lt;code&gt;insertionSort&lt;/code&gt; function returns the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;[ 1,  9,  10,  2,  8,  3,  7,  4,  6,  5 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the second iteration, the values stored in our variables are the following: &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;curr&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[curr]&lt;/code&gt; &amp;#x26;&amp;#x26; &lt;code&gt;temp&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;prev&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[prev]&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And our &lt;code&gt;insertionSort&lt;/code&gt; function returns the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[ 1,  9,  2,  10,  8,  3,  7,  4,  6,  5 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the third iteration, the values stored in our variables are the following: &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;curr&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[curr]&lt;/code&gt; &amp;#x26;&amp;#x26; &lt;code&gt;temp&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;prev&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[prev]&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And our &lt;code&gt;insertionSort&lt;/code&gt; function returns the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[ 1,  9,  2,  8, 10,  3,  7,  4,  6,  5 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the fourth iteration, the values stored in our variables are the following: &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;curr&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[curr]&lt;/code&gt; &amp;#x26;&amp;#x26; &lt;code&gt;temp&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;prev&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[prev]&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And our &lt;code&gt;insertionSort&lt;/code&gt; function returns the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[ 1,  9,  2,  8,  3, 10, 7,  4,  6, 5 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the fifth iteration, the values stored in our variables are the following: &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;curr&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[curr]&lt;/code&gt; &amp;#x26;&amp;#x26; &lt;code&gt;temp&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;prev&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[prev]&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And our &lt;code&gt;insertionSort&lt;/code&gt; function returns the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[ 1,  9,  2, 8,  3,  7, 10,  4,  6, 5 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the sixth iteration, the values stored in our variables are the following: &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;curr&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[curr]&lt;/code&gt; &amp;#x26;&amp;#x26; &lt;code&gt;temp&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;prev&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[prev]&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And our &lt;code&gt;insertionSort&lt;/code&gt; function returns the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[ 1,  9,  2, 8,  3,  7, 4, 10,  6, 5 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the seventh iteration, the values stored in our variables are the following: &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;curr&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[curr]&lt;/code&gt; &amp;#x26;&amp;#x26; &lt;code&gt;temp&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;prev&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[prev]&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And our &lt;code&gt;insertionSort&lt;/code&gt; function returns the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[ 1,  9,  2, 8,  3,  7, 4,  6, 10, 5 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the eighth iteration, the values stored in our variables are the following: &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;curr&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[curr]&lt;/code&gt; &amp;#x26;&amp;#x26; &lt;code&gt;temp&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;prev&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[prev]&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And our &lt;code&gt;insertionSort&lt;/code&gt; function returns the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[ 1,  9,  2, 8,  3,  7, 4,  6,  5, 10 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the ninth and final iteration, the values stored in our variables are the following: &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;curr&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[curr]&lt;/code&gt; &amp;#x26;&amp;#x26; &lt;code&gt;temp&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;prev&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;arr[prev]&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And our &lt;code&gt;insertionSort&lt;/code&gt; function returns the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[ 1,  9,  2, 8,  3,  7, 4,  6,  5, 10 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Do you see the pattern? &lt;/p&gt;
+&lt;p&gt;What’s the solution?&lt;/p&gt;
+&lt;p&gt;With every iteration &lt;em&gt;forward&lt;/em&gt;, we need to word backwards and sort the preceding numbers as well. &lt;/p&gt;
+&lt;p&gt;What control flow statement easily allows us to count down? &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;while&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Which of the values listed in our tables above do we want to use as our condition? &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;prev&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;p&gt;Because &lt;em&gt;abstraction&lt;/em&gt;! &lt;/p&gt;
+&lt;p&gt;With each iteration of our &lt;code&gt;while&lt;/code&gt; loop, we want to check the value stored in the &lt;em&gt;previous&lt;/em&gt;  array index. And with each iteraton of our &lt;code&gt;for&lt;/code&gt; loop, we reassign the value of &lt;code&gt;prev&lt;/code&gt; to &lt;code&gt;curr - 1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s refactor our function with a &lt;code&gt;while&lt;/code&gt; loop:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;insertionSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; curr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; curr &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; curr&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;curr&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; prev &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; curr &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;prev &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;curr&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            prev &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; prev &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;NOTE: &lt;code&gt;prev = prev - 1;&lt;/code&gt; is &lt;em&gt;outside&lt;/em&gt; the &lt;code&gt;if&lt;/code&gt; statement. If we placed it inside, we would get caught in an endless loop as there are definitely iterations where &lt;code&gt;arr[prev]&lt;/code&gt; will be less than &lt;code&gt;temp&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Running &lt;code&gt;insertionSort&lt;/code&gt; now returns: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[ 1, 2, 2, 3, 3, 4, 4, 5, 5, 6 ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Well… it’s sorted. But also &lt;em&gt;shorted&lt;/em&gt;. What’s going on?&lt;/p&gt;
+&lt;p&gt;When we decrement &lt;code&gt;prev&lt;/code&gt; with each iteration of our &lt;code&gt;while&lt;/code&gt; loop, it is no longer &lt;em&gt;coupled&lt;/em&gt; with &lt;code&gt;curr&lt;/code&gt;. What is &lt;code&gt;curr&lt;/code&gt;, abstractly? &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;prev + 1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Let’s update that in our function…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;insertionSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; curr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; curr &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; curr&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;curr&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; prev &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; curr &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;    
+ 
+        &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;prev &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            prev &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; prev &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now when we run our &lt;code&gt;insertionSort&lt;/code&gt; function, it returns: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;[
+   1,  2,  3,
+   4,  5,  6,
+   7,  8,  9,
+  10
+]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Why is it called ‘Insertion Sort’?&lt;/li&gt;
+&lt;li&gt;What Problem(s) Does Insertion Sort Solve? &lt;/li&gt;
+&lt;li&gt;What is the Big O of Insertion Sort? &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Why is it Called ‘Insertion Sort’?&lt;/h3&gt;
+&lt;p&gt;Insertion Sort gets its name from the approach to sorting where a numerical value is &lt;em&gt;inserted&lt;/em&gt; into an array in ordinal sequence. &lt;/p&gt;
+&lt;h3&gt;What Problem(s) Does Insertion Sort Solve?&lt;/h3&gt;
+&lt;p&gt;Insertion Sort is useful, and ideal, when the data to be sorted is small or nearly sorted. &lt;/p&gt;
+&lt;h2&gt;What is the Big O of Insertion Sort?&lt;/h2&gt;
+&lt;p&gt;What is the Big O of Insertion Sort? Because we are working with nested iteration, it’s O(n^2). &lt;/p&gt;
+&lt;h2&gt;Learn Insertion Sort Algorithm in JavaScript&lt;/h2&gt;
+&lt;p&gt;If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn the insertion sort algorithm in JavaScript. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Superlative Guide to Data Structures in JavaScript]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structures-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structures-javascript/</guid><pubDate>Fri, 19 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/2da4811a1a790f69545a5e6157eed389/a987b/jarednielsen-data-structures.png&quot;
