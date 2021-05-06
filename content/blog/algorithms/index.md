@@ -1,37 +1,40 @@
 ---
 title: "How to Solve Algorithms"
-date: "2021-TO-DO"
+date: "2021-05-07"
 description: "TODO"
-keywords: ['algorithms', 'javascript']
+keywords: ['algorithms', 'problem solving', 'computational thinking', 'heuristics']
 ---
 
 
 ![ algorithms ](./jarednielsen-algorithms.png)
 
 
-TODO INTRODUCTION
-something about computational thinking 
+> Tell me, what is it you plan to do with your one wild and precious life?
 
-With heuristics! 
+https://www.loc.gov/programs/poetry-and-literature/poet-laureate/poet-laureate-projects/poetry-180/all-poems/item/poetry-180-133/the-summer-day/
 
-I had you at heuristics, didn't I? 
+Are you going to spend it solving the same problem over and over? Or, worse yet, working on the wrong problem? 
+
+Staring at a screen scratching your head? 
+
+Copy / pasting StackOverflow? 
+
+Writing click-bait? 
+
+(Oh wait, that's me...)
+
+We want to work smarter, not harder. 
+
+How do we do that? 
+
+Lucky for us, there's an old school approach to problem solving that is still relevant today. It's called, you'll never guess...
+
 
 ---
 
 Pre-order your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 ---
-
-Like your health or your retirement, there's no shortcut to learning how to solve algorithms. 
-
-Do the work. 
-
-Practice makes practice. 
-
-
-Lucky for us, there's an old school approach to problem solving that is still relevant today. It's called, you'll never guess...
-
-_How to Solve It_.
 
 
 ## How To Solve It
@@ -49,15 +52,21 @@ In [How to Solve It](TODO), George Polya outlines four steps of problem solving:
 
 ### Understand the Problem
 
-TODO 
+If you're a good developer, you'll realize that the best solutions emerge from listening to your customer tell their story. 
 
-Many alogirthms are disguised as story problems, such as the farmer who needs to get his goose, his corn, and his fox across the river. But! He can only carry one of these at a time. If left alone, the goose will eat the corn and the fox will eat the goose. How does he get everything across?
+Many alogirthms are disguised as story problems, such as the farmer who needs to get his What does he do? 
+
+, his corn, and his fox across the river. But! He can only carry one of these at a time. If left alone, the What does he do? 
+
+ will eat the corn and the fox will eat the What does he do? 
+
+. How does he get everything across?
 
 Story time.
 
 User story time, that is.
 
-I know. 
+Yeah, I know. 
 
 They're awkward. 
 
@@ -67,29 +76,37 @@ But the thing is, they _work_!
 
 The format for a user story is: 
 
+```md
 AS A < USER OF SOME SORT >
 I WANT < TO DO THIS >
 SO THAT < MY EXISTENCE IS VALIDATED >
+```
 
 In our farmer example above: 
 
+```md
 AS A farmer
-I WANT to ferry my goose, fox, and corn across the river
+I WANT to ferry my What does he do? 
+
+, fox, and corn across the river
 SO THAT we all live happily ever after
+```
 
 Reframing a problem as a user story then makes it very easy to write acceptance criteria. 
 
 The format for acceptance criteria is: 
-
+```md
 GIVEN < APPLICATION >
 WHEN < I DO THIS >
 THEN < I EXPECT THE APP TO DO THAT >
+```
 
 In our farmer example above: 
-
-GIVE three items that each other
+```md
+GIVE three items that will eat each other
 WHEN I ferry one item across the river
 THEN the other two are safe
+```
 
 
 ### Make a Plan
@@ -117,20 +134,18 @@ Just // each line and there you go.
 
 It's show time. 
 
-After all this problem understanding and plan making, it's time to crack your fingers, dust off the keyboard, and code code code! 
+After all this problem understanding and plan making, it's time to crack your fingers, dust off the keyboard, and write some code! 
 
 This part will be easy because why? 
 
 Because you wrote pseudocode! All you need to do now is translate that plain language into JavaScript, Python, or (shudder) Java.
 
-You got this! 
+Then hit Enter...
 
 
 ### Evaluate the Plan
 
-Now run that code! 
-
-Did it work? 
+Did your plan work? 
 
 If no, back to step 1. 
 
@@ -139,11 +154,11 @@ If yes, can you do better?
 
 ## TODO How to Solve It with Computational Thinking 
 
-The steps above are table stakes. 
+The steps above are table stakes for problem solving and can be applied to any domain. 
 
 If you want to turn pro, you need to assimilate with the Borg and learn how to think like a computer. 
 
-There are four primary part of computational thinking: 
+There are four primary stages of computational thinking: 
 
 * Decomposition
 
@@ -158,63 +173,74 @@ There are four primary part of computational thinking:
 
 If composing a function is the process of assembling the various components, such as variable, control flow, and conditions, then decomposition is the opposite: it's breaking a problem down into smaller parts.
 
-TODO
-This is the easiest _and_ the hardest step in the process because sometimes the component parts of a problem are obvious, but other times the component parts are emergent, or intertwined, and it's difficult to cleanly separate them. 
+This is both the easiest _and_ the hardest step in the process because sometimes the component parts of a problem are obvious, but other times the component parts are emergent, or intertwined, and it's difficult to cleanly separate them. 
 
-TODO
+How does our farmer decompose? 
 
-See also: [Proof by Induction](https://jarednielsen.com/proof-induction/)
+Well, yes, he makes compost.
+
+He also thinks through the problem.
+
+If there was only one item, he would simply need to carry it across the river.
+
+If there were two items, he would need to carry one across the river, then return for the second item and carry it across the river. 
+
+If there are three? 
+
+He would still need to carry one across the river, but he would need to ensure that the two left behind did not destroy, or should we say, decompose, one another. 
+
+In thinking through his items he sees that there is only one combination that can be safely left alone: the fox 🦊 and the corn 🌽. 
+
+The duck is the crux of the problem! 🦆
+
+He sees that he must carry it across first. 
+
+What does he choose when he returns for the second item?
+
+It doesn't matter. Either can be left alone and neither can be left with the duck. 
+
+What does he do? 
+
+Do you see a pattern? 
 
 
 ### Generalisation
 
-TODO 
-We look for a pattern. 
+In decomposing the farmer's problem, we revealed a handful of crucial components to a solution: 
 
-Do we see a pattern in our farmer story? 
+* conditional statements
 
-Yes!
+* repetition
 
-TODO
-Our farmer needs to cross the river several times to get everything across. 
+* logic
 
+Another way of saying this is that we _recognized patterns_. 
 
+A useful question to be in the habit of asking yourself is: where have I seen this or something like it before? 
 
 
 ### Abstraction 
 
-TODO 
-We remove the details. 
+Once we recognize patterns, we can remove the details, or form abstractions.
 
 What if it wasn't a farmer? What if it was a lawyer? With three clients who would eat each other and they needed to get across town to the courthouse. 
 
-Or what if it was TODO 
+Or what if it was a space shuttle transporting lifeforms to another planet and we needed to find the right combination of carbon and oxygen producers? 
 
-Or what if we don't know who it is, but we know they've got three problems in tow? 
+It no longer matter who or what it is. 
 
-We abstract away the details. 
-
-Rather than a farmer, it's 
+What matters is that we can remove the details in order to form a conceptual model and focus on the relationships between concepts. 
 
 
 ### Algorithm
 
-TODO 
+Now we simply need to write a series of repeatable steps to solve our problem, and, like above, evaluate its success. 
 
-Now we need to write a series of steps to solve our problem. 
+Where have we seen this or something like it before? 
 
-
-
-
-
-
+🤔
 
 
 ## How to Solve Any Algorithm
 
-You can solve any algorithm using Polya's heuristic and computational thinking
-
-The farmer story problem is just a swap.
-
-
-
+You can solve any algorithm using Polya's heuristic and computational thinking. Like your health or your retirement, there's no shortcut to learning how to solve algorithms. Do the work. Practice makes practice. 
