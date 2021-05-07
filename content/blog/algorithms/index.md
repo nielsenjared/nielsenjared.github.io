@@ -1,45 +1,28 @@
 ---
 title: "How to Solve Algorithms"
 date: "2021-05-07"
-description: "TODO"
+description: "Learn how to solve any algorithm using these simple and easy-to-remember techiques."
 keywords: ['algorithms', 'problem solving', 'computational thinking', 'heuristics']
 ---
 
 
 ![ algorithms ](./jarednielsen-algorithms.png)
 
+In 1992, Mary Oliver published [Poem 133: The Summer Day](https://www.loc.gov/programs/poetry-and-literature/poet-laureate/poet-laureate-projects/poetry-180/all-poems/item/poetry-180-133/the-summer-day/), which ends with a question for the reader:
 
 > Tell me, what is it you plan to do with your one wild and precious life?
 
-https://www.loc.gov/programs/poetry-and-literature/poet-laureate/poet-laureate-projects/poetry-180/all-poems/item/poetry-180-133/the-summer-day/
-
 Are you going to spend it solving the same problem over and over? Or, worse yet, working on the wrong problem? 
-
-Staring at a screen scratching your head? 
-
-Copy / pasting StackOverflow? 
-
-Writing click-bait? 
-
-(Oh wait, that's me...)
 
 We want to work smarter, not harder. 
 
 How do we do that? 
 
-Lucky for us, there's an old school approach to problem solving that is still relevant today. It's called, you'll never guess...
-
-
----
-
-Pre-order your copy of [A is for Algorithms](https://gum.co/algorithms)
-
----
-
+Lucky for us, there's an old school approach to problem solving that is still relevant today. It's called, you'll never guess... _
 
 ## How To Solve It
 
-In [How to Solve It](TODO), George Polya outlines four steps of problem solving: 
+In [How to Solve It](https://amzn.to/33Mp30d), George Polya outlines four steps of problem solving: 
 
 1. Understand the problem.
 
