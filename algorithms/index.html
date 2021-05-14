@@ -41,7 +41,7 @@
 <p>Are you going to spend it solving the same problem over and over? Or, worse yet, working on the wrong problem? </p>
 <p>We want to work smarter, not harder. </p>
 <p>How do we do that? </p>
-<p>Lucky for us, there’s an old school approach to problem solving that is still relevant today. It’s called, you’ll never guess… _</p>
+<p>Lucky for us, there’s an old school approach to problem solving that is still relevant today. It’s called, you’ll never guess…</p>
 <h2>How To Solve It</h2>
 <p>In <a href="https://amzn.to/33Mp30d">How to Solve It</a>, George Polya outlines four steps of problem solving: </p>
 <ol>
@@ -52,10 +52,9 @@
 </ol>
 <h3>Understand the Problem</h3>
 <p>If you’re a good developer, you’ll realize that the best solutions emerge from listening to your customer tell their story. </p>
-<p>Many alogirthms are disguised as story problems, such as the farmer who needs to get his What does he do? </p>
-<p>, his corn, and his fox across the river. But! He can only carry one of these at a time. If left alone, the What does he do? </p>
-<p> will eat the corn and the fox will eat the What does he do? </p>
-<p>. How does he get everything across?</p>
+<p>Many alogirthms are disguised as story problems, such as the farmer who needs to get duck, his corn, and his fox across the river.  </p>
+<p>But! He can only carry one of these at a time. If left alone, the duck will eat the corn and the fox will eat the duck.</p>
+<p>How does he get everything across?</p>
 <p>Story time.</p>
 <p>User story time, that is.</p>
 <p>Yeah, I know. </p>
@@ -68,9 +67,7 @@ I WANT &lt; TO DO THIS >
 SO THAT &lt; MY EXISTENCE IS VALIDATED ></code></pre></div>
 <p>In our farmer example above: </p>
 <div class="gatsby-highlight" data-language="md"><pre class="language-md"><code class="language-md">AS A farmer
-I WANT to ferry my What does he do? 
-
-, fox, and corn across the river
+I WANT to ferry my duck, fox, and corn across the river
 SO THAT we all live happily ever after</code></pre></div>
 <p>Reframing a problem as a user story then makes it very easy to write acceptance criteria. </p>
 <p>The format for acceptance criteria is: </p>
@@ -84,30 +81,25 @@ THEN the other two are safe</code></pre></div>
 <h3>Make a Plan</h3>
 <p>The next step in Polya’s heuristic is to make a plan.</p>
 <p>AKA pseudocode. </p>
-<p>You write pseudocode, don’t you? </p>
-<p>Writing pseudocode is like making a sketch for a design. </p>
+<p>You write pseudocode, don’t you? Writing pseudocode is like making a sketch for a design. </p>
 <p>It’s your back-of-the-envelope proof-of-concept. </p>
 <p>It’s your discovery phase, your user research, your market validation. </p>
 <p>It’s your roadmap. </p>
 <p>It’s also the comments for your function. </p>
 <p>Just // each line and there you go. </p>
 <h3>Execute the Plan</h3>
-<p>It’s show time. </p>
-<p>After all this problem understanding and plan making, it’s time to crack your fingers, dust off the keyboard, and write some code! </p>
-<p>This part will be easy because why? </p>
-<p>Because you wrote pseudocode! All you need to do now is translate that plain language into JavaScript, Python, or (shudder) Java.</p>
-<p>Then hit Enter…</p>
+<p>It’s show time. After all this problem understanding and plan making, it’s time to crack your fingers, dust off the keyboard, and write some code! This part will be easy because why? Because you wrote pseudocode! All you need to do now is translate that plain language into JavaScript, Python, or (shudder) Java. Then hit Enter…</p>
 <h3>Evaluate the Plan</h3>
 <p>Did your plan work? </p>
 <p>If no, back to step 1. </p>
 <p>If yes, can you do better? </p>
-<h2>TODO How to Solve It with Computational Thinking</h2>
+<h2>How to Solve It with Computational Thinking</h2>
 <p>The steps above are table stakes for problem solving and can be applied to any domain. </p>
 <p>If you want to turn pro, you need to assimilate with the Borg and learn how to think like a computer. </p>
 <p>There are four primary stages of computational thinking: </p>
 <ul>
 <li>Decomposition</li>
-<li>Pattern recognition, or generalisation</li>
+<li>Generalisation</li>
 <li>Abstraction </li>
 <li>Algorithms </li>
 </ul>
@@ -119,14 +111,8 @@ THEN the other two are safe</code></pre></div>
 <p>He also thinks through the problem.</p>
 <p>If there was only one item, he would simply need to carry it across the river.</p>
 <p>If there were two items, he would need to carry one across the river, then return for the second item and carry it across the river. </p>
-<p>If there are three? </p>
-<p>He would still need to carry one across the river, but he would need to ensure that the two left behind did not destroy, or should we say, decompose, one another. </p>
-<p>In thinking through his items he sees that there is only one combination that can be safely left alone: the fox 🦊 and the corn 🌽. </p>
-<p>The duck is the crux of the problem! 🦆</p>
-<p>He sees that he must carry it across first. </p>
-<p>What does he choose when he returns for the second item?</p>
-<p>It doesn’t matter. Either can be left alone and neither can be left with the duck. </p>
-<p>What does he do? </p>
+<p>If there are three? He would still need to carry one across the river, but he would need to ensure that the two left behind did not destroy, or should we say, decompose, one another. In thinking through his items he sees that there is only one combination that can be safely left alone: the fox 🦊 and the corn 🌽. The duck is the crux of the problem! 🦆 He sees that he must carry it across first. </p>
+<p>What does he choose when he returns for the second item? It doesn’t matter. Either can be left alone and neither can be left with the duck. </p>
 <p>Do you see a pattern? </p>
 <h3>Generalisation</h3>
 <p>In decomposing the farmer’s problem, we revealed a handful of crucial components to a solution: </p>
@@ -141,8 +127,7 @@ THEN the other two are safe</code></pre></div>
 <p>Once we recognize patterns, we can remove the details, or form abstractions.</p>
 <p>What if it wasn’t a farmer? What if it was a lawyer? With three clients who would eat each other and they needed to get across town to the courthouse. </p>
 <p>Or what if it was a space shuttle transporting lifeforms to another planet and we needed to find the right combination of carbon and oxygen producers? </p>
-<p>It no longer matter who or what it is. </p>
-<p>What matters is that we can remove the details in order to form a conceptual model and focus on the relationships between concepts. </p>
+<p>It no longer matter who or what it is. What matters is that we can remove the details in order to form a conceptual model and focus on the relationships between concepts. </p>
 <h3>Algorithm</h3>
 <p>Now we simply need to write a series of repeatable steps to solve our problem, and, like above, evaluate its success. </p>
 <p>Where have we seen this or something like it before? </p>
