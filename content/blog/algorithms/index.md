@@ -18,7 +18,8 @@ We want to work smarter, not harder.
 
 How do we do that? 
 
-Lucky for us, there's an old school approach to problem solving that is still relevant today. It's called, you'll never guess... _
+Lucky for us, there's an old school approach to problem solving that is still relevant today. It's called, you'll never guess...
+
 
 ## How To Solve It
 
@@ -37,13 +38,11 @@ In [How to Solve It](https://amzn.to/33Mp30d), George Polya outlines four steps 
 
 If you're a good developer, you'll realize that the best solutions emerge from listening to your customer tell their story. 
 
-Many alogirthms are disguised as story problems, such as the farmer who needs to get his What does he do? 
+Many alogirthms are disguised as story problems, such as the farmer who needs to get duck, his corn, and his fox across the river.  
 
-, his corn, and his fox across the river. But! He can only carry one of these at a time. If left alone, the What does he do? 
+But! He can only carry one of these at a time. If left alone, the duck will eat the corn and the fox will eat the duck.
 
- will eat the corn and the fox will eat the What does he do? 
-
-. How does he get everything across?
+How does he get everything across?
 
 Story time.
 
@@ -69,9 +68,7 @@ In our farmer example above:
 
 ```md
 AS A farmer
-I WANT to ferry my What does he do? 
-
-, fox, and corn across the river
+I WANT to ferry my duck, fox, and corn across the river
 SO THAT we all live happily ever after
 ```
 
@@ -98,9 +95,7 @@ The next step in Polya's heuristic is to make a plan.
 
 AKA pseudocode. 
 
-You write pseudocode, don't you? 
-
-Writing pseudocode is like making a sketch for a design. 
+You write pseudocode, don't you? Writing pseudocode is like making a sketch for a design. 
 
 It's your back-of-the-envelope proof-of-concept. 
 
@@ -115,15 +110,7 @@ Just // each line and there you go.
 
 ### Execute the Plan
 
-It's show time. 
-
-After all this problem understanding and plan making, it's time to crack your fingers, dust off the keyboard, and write some code! 
-
-This part will be easy because why? 
-
-Because you wrote pseudocode! All you need to do now is translate that plain language into JavaScript, Python, or (shudder) Java.
-
-Then hit Enter...
+It's show time. After all this problem understanding and plan making, it's time to crack your fingers, dust off the keyboard, and write some code! This part will be easy because why? Because you wrote pseudocode! All you need to do now is translate that plain language into JavaScript, Python, or (shudder) Java. Then hit Enter...
 
 
 ### Evaluate the Plan
@@ -135,7 +122,7 @@ If no, back to step 1.
 If yes, can you do better? 
 
 
-## TODO How to Solve It with Computational Thinking 
+## How to Solve It with Computational Thinking 
 
 The steps above are table stakes for problem solving and can be applied to any domain. 
 
@@ -145,7 +132,7 @@ There are four primary stages of computational thinking:
 
 * Decomposition
 
-* Pattern recognition, or generalisation
+* Generalisation
 
 * Abstraction 
 
@@ -168,21 +155,9 @@ If there was only one item, he would simply need to carry it across the river.
 
 If there were two items, he would need to carry one across the river, then return for the second item and carry it across the river. 
 
-If there are three? 
+If there are three? He would still need to carry one across the river, but he would need to ensure that the two left behind did not destroy, or should we say, decompose, one another. In thinking through his items he sees that there is only one combination that can be safely left alone: the fox 🦊 and the corn 🌽. The duck is the crux of the problem! 🦆 He sees that he must carry it across first. 
 
-He would still need to carry one across the river, but he would need to ensure that the two left behind did not destroy, or should we say, decompose, one another. 
-
-In thinking through his items he sees that there is only one combination that can be safely left alone: the fox 🦊 and the corn 🌽. 
-
-The duck is the crux of the problem! 🦆
-
-He sees that he must carry it across first. 
-
-What does he choose when he returns for the second item?
-
-It doesn't matter. Either can be left alone and neither can be left with the duck. 
-
-What does he do? 
+What does he choose when he returns for the second item? It doesn't matter. Either can be left alone and neither can be left with the duck. 
 
 Do you see a pattern? 
 
@@ -210,9 +185,7 @@ What if it wasn't a farmer? What if it was a lawyer? With three clients who woul
 
 Or what if it was a space shuttle transporting lifeforms to another planet and we needed to find the right combination of carbon and oxygen producers? 
 
-It no longer matter who or what it is. 
-
-What matters is that we can remove the details in order to form a conceptual model and focus on the relationships between concepts. 
+It no longer matter who or what it is. What matters is that we can remove the details in order to form a conceptual model and focus on the relationships between concepts. 
 
 
 ### Algorithm
