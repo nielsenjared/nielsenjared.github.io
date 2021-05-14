@@ -12,7 +12,7 @@ In 1992, Mary Oliver published [Poem 133: The Summer Day](https://www.loc.gov/pr
 
 > Tell me, what is it you plan to do with your one wild and precious life?
 
-Are you going to spend it solving the same problem over and over? Or, worse yet, working on the wrong problem? 
+What do you plan to do? Are you going to spend your one wild and precious life solving the same problem over and over? Or, worse yet, working on the wrong problem? 
 
 We want to work smarter, not harder. 
 
@@ -36,13 +36,7 @@ In [How to Solve It](https://amzn.to/33Mp30d), George Polya outlines four steps 
 
 ### Understand the Problem
 
-If you're a good developer, you'll realize that the best solutions emerge from listening to your customer tell their story. 
-
-Many alogirthms are disguised as story problems, such as the farmer who needs to get duck, his corn, and his fox across the river.  
-
-But! He can only carry one of these at a time. If left alone, the duck will eat the corn and the fox will eat the duck.
-
-How does he get everything across?
+If you're a good developer, you'll realize that the best solutions emerge from listening to your customer tell their story. Many alogirthms are disguised as story problems, such as the farmer who needs to get duck, corn, and fox across the river.  But! He can only carry one of these at a time. If left alone, the duck will eat the corn and the fox will eat the duck. How does he get everything across?
 
 Story time.
 
@@ -95,7 +89,9 @@ The next step in Polya's heuristic is to make a plan.
 
 AKA pseudocode. 
 
-You write pseudocode, don't you? Writing pseudocode is like making a sketch for a design. 
+You write pseudocode, don't you? 
+
+Writing pseudocode is like making a sketch for a design. 
 
 It's your back-of-the-envelope proof-of-concept. 
 
@@ -103,14 +99,14 @@ It's your discovery phase, your user research, your market validation.
 
 It's your roadmap. 
 
-It's also the comments for your function. 
-
-Just // each line and there you go. 
+It's also the comments for your function. Just // each line and there you go. 
 
 
 ### Execute the Plan
 
-It's show time. After all this problem understanding and plan making, it's time to crack your fingers, dust off the keyboard, and write some code! This part will be easy because why? Because you wrote pseudocode! All you need to do now is translate that plain language into JavaScript, Python, or (shudder) Java. Then hit Enter...
+It's show time! 
+
+After all this problem understanding and plan making, it's time to crack your fingers, dust off the keyboard, and write some code! This part will be easy because why? Because you wrote pseudocode! All you need to do now is translate that plain language into JavaScript, Python, or (shudder) Java. Then hit Enter...
 
 
 ### Evaluate the Plan
@@ -124,11 +120,7 @@ If yes, can you do better?
 
 ## How to Solve It with Computational Thinking 
 
-The steps above are table stakes for problem solving and can be applied to any domain. 
-
-If you want to turn pro, you need to assimilate with the Borg and learn how to think like a computer. 
-
-There are four primary stages of computational thinking: 
+The steps above are table stakes for problem solving and can be applied to any domain. If you want to turn pro, you need to assimilate with the Borg and learn how to think like a computer. There are four primary stages of computational thinking: 
 
 * Decomposition
 
@@ -141,9 +133,7 @@ There are four primary stages of computational thinking:
 
 ### Decomposition
 
-If composing a function is the process of assembling the various components, such as variable, control flow, and conditions, then decomposition is the opposite: it's breaking a problem down into smaller parts.
-
-This is both the easiest _and_ the hardest step in the process because sometimes the component parts of a problem are obvious, but other times the component parts are emergent, or intertwined, and it's difficult to cleanly separate them. 
+If composing a function is the process of assembling the various components, such as variable, control flow, and conditions, then decomposition is the opposite: it's breaking a problem down into smaller parts. This is both the easiest _and_ the hardest step in the process because sometimes the component parts of a problem are obvious, but other times the component parts are emergent, or intertwined, and it's difficult to cleanly separate them. 
 
 How does our farmer decompose? 
 
