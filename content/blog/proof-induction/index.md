@@ -9,10 +9,11 @@ keywords: ["proof by induction"]
 
 You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag to improve the performance of your algorithms and make an impression in technical interviews. In this tutorial, you will learn proof by induction, a mathematical method used to prove the truth of a statement.
 
----
-Want to level up your problem solving skills? I write a weekly newsletter about programming, problem solving and lifelong learning.
+--- 
 
-[Sign up for The Solution](http://eepurl.com/cP8CMn)
+![](./../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-banner.png)
+
+Be O(#1). Grab your copy of [The Little Book of Big O](https://gum.co/big-o).
 
 ---
 

@@ -11,15 +11,13 @@ keywords: ['big o', 'recursion', 'fibonacci', 'recursive time complexity', 'time
 
 After Big O, the second most terrifying computer science topic might be recursion. Don’t let the memes scare you, recursion is just recursion. It’s very easy to understand and you don’t need to be a 10X developer to do so. In this tutorial, you’ll learn the fundamentals of calculating Big O recursive time complexity.
 
+--- 
+
+![](./../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-banner.png)
+
+Be O(#1). Grab your copy of [The Little Book of Big O](https://gum.co/big-o).
+
 ---
-Want to level up your problem solving skills? 
-
-I write a weekly newsletter about programming, problem solving and lifelong learning. 
-
-[Sign up for _The Solution_](http://eepurl.com/cP8CMn)
-
----
-
 
 ## What Problem(s) Does Recursion Solve?
 
