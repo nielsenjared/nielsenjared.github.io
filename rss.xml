@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 17 May 2021 10:47:09 GMT</lastBuildDate><item><title><![CDATA[How to Code the Insertion Sort Algorithm in JavaScript]]></title><description><![CDATA[If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing…]]></description><link>http://jarednielsen.com/algorithm-insertion-sort-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/algorithm-insertion-sort-javascript/</guid><pubDate>Fri, 14 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 17 May 2021 15:19:49 GMT</lastBuildDate><item><title><![CDATA[How to Code the Insertion Sort Algorithm in JavaScript]]></title><description><![CDATA[If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing…]]></description><link>http://jarednielsen.com/algorithm-insertion-sort-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/algorithm-insertion-sort-javascript/</guid><pubDate>Fri, 14 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/09dc331e5fe0f44e93fddb221691f22c/a987b/jarednielsen-algorithm-javascript-insertion-sort.png&quot;
@@ -36,7 +36,33 @@
     &lt;/p&gt;
 &lt;p&gt;If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn how to code the insertion sort algorithm in JavaScript. &lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Ready to level up? Grab your copies of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt; and &lt;a href=&quot;https://gum.co/data-structures&quot;&gt;The Seven Data Structures of Highly Effective Developers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEElEQVQoz41Su04DMRD0P1OCqCkjOlpEBaKAjvT8AjoRIKFGcXTGvofX9rDe5CQgdhRLI9k7nvHc7imtNWpIMUIWEeBJtrl2SKOMMSihbVvEnYm7foC9upV99F64mk51XYcSrLWQfKPH5myG9ckFUmuRuJS5mk55frGEwXWSaJg/w5zOYM4v0d89bWvM1XQqpYQSiMmcpr+fI3xpxG9OdfOIFAIoEGo6hcoK3PzY9aDFCvHtE+F1Cf+yQLBOuO2E0p6umFAMebKJ+0drnt77B/RyBa83iD0/QruJlxLWDCfRMIxomkbgxxG5DwcN/0f+bThharicPf0x3PvkmmHg5uffI8M5J5jOmTvasHbx2Ds/GANXRSTBBK8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;algorithms&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/b9e4f/jarednielsen-algorithms-banner.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/cf440/jarednielsen-algorithms-banner.png 148w,
+/static/9f575ba85d45bde70732b6d52ad2e638/d2d38/jarednielsen-algorithms-banner.png 295w,
+/static/9f575ba85d45bde70732b6d52ad2e638/b9e4f/jarednielsen-algorithms-banner.png 590w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f9b6a/jarednielsen-algorithms-banner.png 885w,
+/static/9f575ba85d45bde70732b6d52ad2e638/2d849/jarednielsen-algorithms-banner.png 1180w,
+/static/9f575ba85d45bde70732b6d52ad2e638/a987b/jarednielsen-algorithms-banner.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;Retrieval Practice&lt;/h2&gt;
 &lt;ul&gt;
@@ -750,7 +776,7 @@
 &lt;p&gt;If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn the insertion sort algorithm in JavaScript. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Solve Algorithms]]></title><description><![CDATA[In 1992, Mary Oliver published Poem 133: The Summer Day, which ends with a question for the reader: Tell me, what is it you plan to do with…]]></description><link>http://jarednielsen.com/algorithms/</link><guid isPermaLink="false">http://jarednielsen.com/algorithms/</guid><pubDate>Fri, 07 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/25454e15e8e0399f85bbc3abce8ac383/a987b/jarednielsen-algorithms.png&quot;
+    href=&quot;/static/df440e89a86dd4ee54067a49e2c8a705/a987b/jarednielsen-algorithms.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -769,13 +795,13 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot; algorithms &quot;
         title=&quot;&quot;
-        src=&quot;/static/25454e15e8e0399f85bbc3abce8ac383/b9e4f/jarednielsen-algorithms.png&quot;
-        srcset=&quot;/static/25454e15e8e0399f85bbc3abce8ac383/cf440/jarednielsen-algorithms.png 148w,
-/static/25454e15e8e0399f85bbc3abce8ac383/d2d38/jarednielsen-algorithms.png 295w,
-/static/25454e15e8e0399f85bbc3abce8ac383/b9e4f/jarednielsen-algorithms.png 590w,
-/static/25454e15e8e0399f85bbc3abce8ac383/f9b6a/jarednielsen-algorithms.png 885w,
-/static/25454e15e8e0399f85bbc3abce8ac383/2d849/jarednielsen-algorithms.png 1180w,
-/static/25454e15e8e0399f85bbc3abce8ac383/a987b/jarednielsen-algorithms.png 1920w&quot;
+        src=&quot;/static/df440e89a86dd4ee54067a49e2c8a705/b9e4f/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/df440e89a86dd4ee54067a49e2c8a705/cf440/jarednielsen-algorithms.png 148w,
+/static/df440e89a86dd4ee54067a49e2c8a705/d2d38/jarednielsen-algorithms.png 295w,
+/static/df440e89a86dd4ee54067a49e2c8a705/b9e4f/jarednielsen-algorithms.png 590w,
+/static/df440e89a86dd4ee54067a49e2c8a705/f9b6a/jarednielsen-algorithms.png 885w,
+/static/df440e89a86dd4ee54067a49e2c8a705/2d849/jarednielsen-algorithms.png 1180w,
+/static/df440e89a86dd4ee54067a49e2c8a705/a987b/jarednielsen-algorithms.png 1920w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -877,7 +903,8 @@ THEN the other two are safe&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Where have we seen this or something like it before? &lt;/p&gt;
 &lt;p&gt;🤔&lt;/p&gt;
 &lt;h2&gt;How to Solve Any Algorithm&lt;/h2&gt;
-&lt;p&gt;You can solve any algorithm using Polya’s heuristic and computational thinking. Like your health or your retirement, there’s no shortcut to learning how to solve algorithms. Do the work. Practice makes practice. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Superlative Guide to Data Structures in JavaScript]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structures-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structures-javascript/</guid><pubDate>Fri, 19 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;You can solve any algorithm using Polya’s heuristic and computational thinking. Like your health or your retirement, there’s no shortcut to learning how to solve algorithms. Do the work. Practice makes practice. &lt;/p&gt;
+&lt;p&gt;Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Superlative Guide to Data Structures in JavaScript]]></title><description><![CDATA[At some point in your career (today?!) you will want to learn data structures. It’s not just to ace the technical interview and land your…]]></description><link>http://jarednielsen.com/data-structures-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/data-structures-javascript/</guid><pubDate>Fri, 19 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/2da4811a1a790f69545a5e6157eed389/a987b/jarednielsen-data-structures.png&quot;
