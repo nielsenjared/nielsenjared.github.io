@@ -9,11 +9,11 @@ keywords: ['integers', 'sum', 'consecutive', '1 to n']
 
 You don’t need to be a math whiz to be a good programmer, but there are a handful of tricks you will want to add to your problem solving bag to improve the performance of your algorithms and make an impression in technical interviews. In this tutorial, you will learn how to sum a series of consecutive integers from 1 to n with a simple and easy to remember equation.
 
----
+--- 
 
-![](../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-cover-200x300.png)
+![](./../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-banner.png)
 
-This article is an excerpt from [The Little Book of Big O](https://gum.co/big-o).
+Be O(#1). Grab your copy of [The Little Book of Big O](https://gum.co/big-o).
 
 ---
 

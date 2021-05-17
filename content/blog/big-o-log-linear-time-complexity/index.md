@@ -10,8 +10,11 @@ keywords: ["big o", "log linear", "time complexity"]
 
 Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O notation log-linear, or quasilinear, time complexity with examples in JavaScript.
 
----
-This is the fifth in a series on Big O notation. If you want to stay in the loop, [sign up for my weekly newsletter, The Solution](http://eepurl.com/cP8CMn).
+--- 
+
+![](./../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-banner.png)
+
+Be O(#1). Grab your copy of [The Little Book of Big O](https://gum.co/big-o).
 
 ---
 

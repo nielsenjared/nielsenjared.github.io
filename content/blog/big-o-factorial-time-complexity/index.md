@@ -9,6 +9,14 @@ keywords: ["big o", "big o notation", "factorial", "time complexity"]
 
 Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you’ll learn the fundamentals of Big O factorial time complexity.
 
+--- 
+
+![](./../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-banner.png)
+
+Be O(#1). Grab your copy of [The Little Book of Big O](https://gum.co/big-o).
+
+---
+
 
 ## What Problem(s) Does Big O Notation Solve?
 

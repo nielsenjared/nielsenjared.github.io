@@ -11,6 +11,14 @@ Is there a computer science topic more terrifying than Big O notation? Don’t l
 
 If you're just joining us, you may want to start at the beginning with [What is Big O Notation?](https://jarednielsen.com/big-o-notation/).
 
+--- 
+
+![](./../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-banner.png)
+
+Be O(#1). Grab your copy of [The Little Book of Big O](https://gum.co/big-o).
+
+---
+
 
 ## What is Asymptotic Computational Complexity? 
 

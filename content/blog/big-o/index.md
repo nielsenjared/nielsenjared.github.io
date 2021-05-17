@@ -12,7 +12,9 @@ Is there a computer science topic more terrifying than Big O notation? Don’t l
 
 --- 
 
-If you want to stay in the loop, sign up for my newsletter, [The Solution](http://eepurl.com/cP8CMn).
+![](./../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-banner.png)
+
+Be O(#1). Grab your copy of [The Little Book of Big O](https://gum.co/big-o).
 
 ---
 

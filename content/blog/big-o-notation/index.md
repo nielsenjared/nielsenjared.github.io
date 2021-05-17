@@ -11,11 +11,11 @@ Is there a computer science topic more terrifying than Big O notation? Don’t l
 
 Come with us now on a journey through time and space complexity...
 
----
+--- 
 
-![](../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-cover-200x300.png)
+![](./../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-banner.png)
 
-This article is an excerpt from [The Little Book of Big O](https://gum.co/big-o).
+Be O(#1). Grab your copy of [The Little Book of Big O](https://gum.co/big-o).
 
 ---
 

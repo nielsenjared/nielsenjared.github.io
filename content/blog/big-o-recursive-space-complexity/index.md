@@ -13,6 +13,14 @@ Next to Big O, the second most terrifying computer science topic might be recurs
 
 If you’re just joining us, you may want to first read [Big O Recursive Time Complexity](https://jarednielsen.com/big-o-recursive-time-complexity/) or start at the beginning with [What is Big O Notation?](https://jarednielsen.com/big-o-notation/).
 
+--- 
+
+![](./../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-banner.png)
+
+Be O(#1). Grab your copy of [The Little Book of Big O](https://gum.co/big-o).
+
+---
+
 
 ## What Problem(s) Does Recursion Solve?
 
