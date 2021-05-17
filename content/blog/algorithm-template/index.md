@@ -12,8 +12,8 @@ keywords: ['algorithm', ' {{ TODO TITLE }}', 'javascript']
 TODO INTRODUCTION
 
 ---
-
-Ready to level up? Grab your copies of [The Little Book of Big O](https://gum.co/big-o) and [The Seven Data Structures of Highly Effective Developers](https://gum.co/data-structures).
+![algorithms](./../../assets/graphics/algorithms/jarednielsen-algorithms-banner.png)
+Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 ---
 
