@@ -190,3 +190,5 @@ Where have we seen this or something like it before?
 ## How to Solve Any Algorithm
 
 You can solve any algorithm using Polya's heuristic and computational thinking. Like your health or your retirement, there's no shortcut to learning how to solve algorithms. Do the work. Practice makes practice. 
+
+Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
