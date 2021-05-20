@@ -50,7 +50,7 @@ TODO
 * What is the Big O of Bubble Sort?
 
 
-## How to Code the Bubble Sort Algorithm in JavaScript 
+## TODO  
 
 TODO SOMETHING ABOUT BUBBLE SORT AND HOW IT IS AN COMPARISON / EXCHANGE ALGORITHM
 
@@ -58,17 +58,11 @@ TODO SOMETHING ABOUT BUBBLE SORT AND HOW IT IS AN COMPARISON / EXCHANGE ALGORITH
 
 If we are writing a sorting algorithm, we need to start with something to sort. Let’s declare an array of ‘unsorted’ integers:
 
-```js
-const unsorted = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
+```md
+[10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
 ```
 
-Next, let’s declare our Bubble Sort function:
 
-```js
-const bubbleSort = (arr) => {
-    return arr;
-};
-```
 
 Now what?
 
@@ -128,21 +122,7 @@ How do we find the initial conditions?
 
 What's the smallest problem we can solve? 
 
-```js
-const unsorted = [];
-```
-
-That's _too_ small! 
-
-But we could easily address this with the following: 
-
-```js
-const bubbleSort = (arr) => {
-    if (!arr.length) {
-        return;
-    }
-}
-```
+TODO
 
 If our "unsorted" array is empty, we will return _before_ we begin iterating. 
 
@@ -150,8 +130,8 @@ Speaking of iterating, what _is_ the smallest problem we can solve?
 
 If we're sorting an array, it's two numbers: 
 
-```js
-const smallArray = [10, 1];
+```md
+[10, 1];
 ```
 
 TODO 
@@ -238,30 +218,34 @@ What about 7?
 
 _n - 3_
 
-See that pattern? 
+See the pattern? 
+
+From patterns we can form abstractions.
 
 How do we form abstractions? 
 
 Variables! 
 
+We can use the counter variable in our `for` loop to subtract from _n_. 
 
 TODO
-Let's map this to a table:
+Let's map it to a table:
 
-| Iteration | n       | Array                             |
-| ---       | 10      | ---                               |
-| 1         | 9      | [10, 1, 9, 2, 8, 3, 7, 4, 6, 5]   |
-| 2         | 8       | [1, 10, 9, 2, 8, 3, 7, 4, 6, 5]   |
-| 3         | 7      | [1, 9, 10, 2, 8, 3, 7, 4, 6, 5]   |
-| 4         | 6      | [1, 9, 2, 10, 8, 3, 7, 4, 6, 5]   |
-| 5         | 5      | [1, 9, 2, 8, 10, 3, 7, 4, 6, 5]   |
-| 6         | 4      | [1, 9, 2, 8, 3, 10, 7, 4, 6, 5]   |
-| 7         | 3      | [1, 9, 2, 8, 3, 7, 10, 4, 6, 5]   |
-| 8         | 2      | [1, 9, 2, 8, 3, 7, 4, 10, 6, 5]   |
-| 9         | 1      | [1, 9, 2, 8, 3, 7, 4, 6, 10, 5]   |
-| 10        | 0      | [1, 9, 2, 8, 3, 7, 4, 6, 5, 10]   |
+| i     | n - i |
+| ---   | ---   |
+| 1     | 9     |
+| 2     | 8     |
+| 3     | 7     |
+| 4     | 6     |
+| 5     | 5     |
+| 6     | 4     |
+| 7     | 3     |
+| 8     | 2     |
+| 9     | 1     |
+| 10    | 0     |
 
-Let's translate this into pseudocode:
+
+And let's map that to our pseudocode:
 
 ```md
 FOR each element, _i_, in an array, _n_
@@ -275,18 +259,149 @@ FOR each element, _i_, in an array, _n_
 RETURN the sorted array
 ```
 
+Now that we've got a plan, let's execute it!
+
+### How to Code the Bubble Sort Algorithm in JavaScript
+
+Let's initialize our array: 
+```js
+const unsorted = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
+```
+
+Next, let’s declare our Bubble Sort function:
+
+```js
+const bubbleSort = (arr) => {
+    return arr;
+};
+```
+
+Now we simply translate our pseudode line-by-line: 
+```js
+const bubbleSort = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+  
+        for (let j = 0; j < arr.length - i; j++) {
+
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+
+        }
+
+    }
+
+    return arr;
+}
+```
+
+
+### Evaluate the Plan
+
+Other than using a different sort algorithm, there a few optimizations we can make to our Bubble Sort function. 
+
+Let's start with this line:
+```js
+    for (let i = 0; i < arr.length; i++) {
+```
+
+Do we need to initialize our counter variable with 0? 
+
+No. Why? 
+
+Because our nested loop is initialized with 0, which is where the magic is happening. We are guaranteed that the first two values will be compared, so we can initialize our outer loop with 1. 
+
+```js
+const bubbleSort = (arr) => {
+    for (let i = 1; i < arr.length; i++) {
+  
+        for (let j = 0; j < arr.length - i; j++) {
+
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+
+        }
+
+    }
+
+    return arr;
+}
+```
+
+We're not done with this line:
+```js
+    for (let i = 0; i < arr.length; i++) {
+```
+
+What else can we do? Do we need to iterate over the entire length of the array? 
+
+No. Why? 
+
+Because, as above, our nested loop is comparing the current value and the value _next_ to it, so we can extend our generalization, _n - 1_, to the outer loop as well. 
+
+```js
+const bubbleSort = (arr) => {
+    for (let i = 1; i < arr.length - 1; i++) {
+  
+        for (let j = 0; j < arr.length - i; j++) {
+
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+
+        }
+
+    }
+
+    return arr;
+}
+```
 
 
 
-### Execute the Plan
-
+What if the array passed to `bubbleSort` was already sorted? Or mostly sorted? We wouldn't need to perform all of our iterations. How would we exit? 
 
 TODO 
-
 
 ```js
 const unsorted = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
 
+const bubbleSort = arr => {
+
+    let swapped = false
+  
+    for (let i = 1; i < arr.length - 1; i++) {
+        swapped = false;
+  
+        for (let j = 0; j < arr.length - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            
+                swapped = true;
+            }
+        }
+    
+        if (!swapped) {
+            return arr;
+        }
+    }
+
+    return arr;
+}
+```
+
+What if the array passed to `bubbleSort` was empty? How would we catch that? We could simply check whether or not the length of the array was true or false and return accordingly. 
+
+```js
 const bubbleSort = arr => {
     if (!arr.length) {
         return arr;
@@ -316,12 +431,7 @@ const bubbleSort = arr => {
 }
 ```
 
-
-### Evaluate the Plan
-
-TODO
-
-If we wanted, we could get fancy with our swap and use array destructuring: 
+One last optimization, if we wanted, we could get fancy with our swap and use array destructuring: 
 ```js
 [a[j], a[j + 1]] = [a[j + 1], a[j]];
 ```
@@ -351,7 +461,7 @@ TODO
 TODO
 
 
-## Learn Algorithms in JavaScript
+## How to Code the Bubble Sort Algorithm in JavaScript
 
 TODO RECAP FOR SEO
 
