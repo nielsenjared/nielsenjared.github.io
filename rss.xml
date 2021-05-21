@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 21 May 2021 12:58:01 GMT</lastBuildDate><item><title><![CDATA[How to Code the Bubble Sort Algorithm in JavaScript]]></title><description><![CDATA[If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing…]]></description><link>http://jarednielsen.com/algorithm-bubble-sort-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/algorithm-bubble-sort-javascript/</guid><pubDate>Fri, 21 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com]]></title><description><![CDATA[The work & play of Jared Nielsen.]]></description><link>http://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 21 May 2021 16:44:51 GMT</lastBuildDate><item><title><![CDATA[How to Code the Bubble Sort Algorithm in JavaScript]]></title><description><![CDATA[If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing…]]></description><link>http://jarednielsen.com/algorithm-bubble-sort-javascript/</link><guid isPermaLink="false">http://jarednielsen.com/algorithm-bubble-sort-javascript/</guid><pubDate>Fri, 21 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/f8e41ea587c4c41bcce3d34eb98ab2c6/a987b/jarednielsen-algorithm-bubble-sort.png&quot;
@@ -36,8 +36,43 @@
     &lt;/p&gt;
 &lt;p&gt;If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn how to code the bubble sort algorithm in JavaScript. &lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;./../../assets/graphics/algorithms/jarednielsen-algorithms-banner.png&quot; alt=&quot;A is for Algorithms&quot;&gt;
-Give yourself an A. Pick up a copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/a987b/jarednielsen-algorithms-banner.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEElEQVQoz41Su04DMRD0P1OCqCkjOlpEBaKAjvT8AjoRIKFGcXTGvofX9rDe5CQgdhRLI9k7nvHc7imtNWpIMUIWEeBJtrl2SKOMMSihbVvEnYm7foC9upV99F64mk51XYcSrLWQfKPH5myG9ckFUmuRuJS5mk55frGEwXWSaJg/w5zOYM4v0d89bWvM1XQqpYQSiMmcpr+fI3xpxG9OdfOIFAIoEGo6hcoK3PzY9aDFCvHtE+F1Cf+yQLBOuO2E0p6umFAMebKJ+0drnt77B/RyBa83iD0/QruJlxLWDCfRMIxomkbgxxG5DwcN/0f+bThharicPf0x3PvkmmHg5uffI8M5J5jOmTvasHbx2Ds/GANXRSTBBK8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/b9e4f/jarednielsen-algorithms-banner.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/cf440/jarednielsen-algorithms-banner.png 148w,
+/static/9f575ba85d45bde70732b6d52ad2e638/d2d38/jarednielsen-algorithms-banner.png 295w,
+/static/9f575ba85d45bde70732b6d52ad2e638/b9e4f/jarednielsen-algorithms-banner.png 590w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f9b6a/jarednielsen-algorithms-banner.png 885w,
+/static/9f575ba85d45bde70732b6d52ad2e638/2d849/jarednielsen-algorithms-banner.png 1180w,
+/static/9f575ba85d45bde70732b6d52ad2e638/a987b/jarednielsen-algorithms-banner.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Give yourself an A. Pick up a copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;Retrieval Practice&lt;/h2&gt;
 &lt;ul&gt;
@@ -1194,7 +1229,7 @@ Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2UlEQVQoz53SwQqCMBgHcJ82giA6desleocuPkEQEUEFHerYJSSiZgpikmZu7ts/c4Z00XTwwRjbj/+3zVBKobKI8B1KEer2G9UbNMajC2TiQ31Qkm1BjcXbKa7zPrzD+K+ktaBwjrCXHdytSZ5SRKwSrQBlfjB0FmDrLtzdCPamh5DNNEhpu4SBZWZgL8MGuG2H4I9TkVC2eRR9Z+55j/3KhORBgTV+FNIJZAKVxniGPjyXIeURpIhAkhctU0OQBCh9gcQzw+MCS/L1EqQGLaMcP/P2H7t5vQFLvF07xgXmqwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABSklEQVQoz62SO08CQRSF+ZUmthS2vhL/gRZaGEwgRhsxRihFCguNFobGqImvKAosSqKiICoLu7OzM5+w6wYiDxvu5GSKufe7OScT0lrTLbruYfV3LlBo0EO77DeDRmoPe/cIkTlHHJ/inF2jhTMQ2geovGbxWaKwNkFtcQmVLVKfjyFPLmhE4shCyQcq1Quky2Y30KoaFGJhvpMJqNWpjs/gPj7j7GeQWWM4UA8A5qNt4DZ2PEVlbBJzZRORPkTeF4cA+4TtASsGudUwH8sRzGgCZZRobu1gtiy7Ty9BczDln54MlYuWAu26NMt5chtTlKfnMGMJrPQB9fUk1dkF7Ic8rnJQwm71Sn9Oq18gHataSQ+ohIWyGzhfFaybW6zLO6yrO0SuiPv6jrKaaKe1WEpvuW9dBRky0gqBHvhJ/RhUR1r/Kw/oSY9GP/foS/F6KccbAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -8529,7 +8564,73 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;blockquote&gt;
 &lt;p&gt;We are more likely to be creative and in a state of flow if we love the things we are doing. &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;❤️&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Superlative Guide to Big O]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o/</link><guid isPermaLink="false">http://jarednielsen.com/big-o/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;❤️&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Little Book of Big O]]></title><description><![CDATA[So you need to learn Big O. You don’t really want to, but interviews are scary! Maybe you picked up a copy of Cracking the Coding Interview…]]></description><link>http://jarednielsen.com/little-book-big-o/</link><guid isPermaLink="false">http://jarednielsen.com/little-book-big-o/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/a987b/jarednielsen-little-book-big-o-banner.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABGUlEQVQoz41STUvDQBTc/3/wL4ReelMK9SJ4865ebFPEBj+wodo0Tcxmv7Jj3guVYndLHwzsvnkzzFtWFEWBIDYbeAC+kTDzF+iHGbrvLfeIi+lEVVUIYbctWazvn9CMp2hv7mCzD+7tyhIxnZBSIoSfumaxeZyjvkjQTm7hsnfuERfTCWMMQlCyZbF7foUcTSCTK9h0yT3iYjrhvUcIVmlQteNrdJ9rdPkXn6mIi+kEIuWsHRL27yaTS4ZbDis7Y4ch7490wYR/hpRSa+jsjdGpFl2/LnGDXyDhKUNK4LTBLE2RLhZQTcM9e8rwf+S9IYkIuk+Y5zny1QpKKdj+4Q8Nj1aOGTrnUPffoz74Ivs7cWcbxgbPnfkFDwxWXYOXmHoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;jarednielsen little book big o banner&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/b9e4f/jarednielsen-little-book-big-o-banner.png&quot;
+        srcset=&quot;/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/cf440/jarednielsen-little-book-big-o-banner.png 148w,
+/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/d2d38/jarednielsen-little-book-big-o-banner.png 295w,
+/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/b9e4f/jarednielsen-little-book-big-o-banner.png 590w,
+/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/f9b6a/jarednielsen-little-book-big-o-banner.png 885w,
+/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/2d849/jarednielsen-little-book-big-o-banner.png 1180w,
+/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/a987b/jarednielsen-little-book-big-o-banner.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;So you need to learn Big O.&lt;/p&gt;
+&lt;p&gt;You don’t really want to, but interviews are scary!&lt;/p&gt;
+&lt;p&gt;Maybe you picked up a copy of &lt;em&gt;Cracking the Coding Interview&lt;/em&gt;, but the book, at 687 pages, barely cracks the surface of Big O.&lt;/p&gt;
+&lt;p&gt;So you Google Big O and find dozens of dense articles with questionable authenticity and accuracy each claiming to be the “ultimate guide” but they only lead you back to where you started.&lt;/p&gt;
+&lt;p&gt;Or you find yourself popping links off Stackoverflow with most commenters recommending you read the Wikipedia article on Big O Notation, that begins like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;🙄&lt;/p&gt;
+&lt;p&gt;To understand that Big O article, you must first understand that Big O article.&lt;/p&gt;
+&lt;p&gt;It’s time to pull yourself up by your own bootstraps.&lt;/p&gt;
+&lt;p&gt;The Little Book of Big O will take you on a journey through time and space complexity with examples in JavaScript introducing the following topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O(1)&lt;/li&gt;
+&lt;li&gt;O(n)&lt;/li&gt;
+&lt;li&gt;O(n^2)&lt;/li&gt;
+&lt;li&gt;O(log n)&lt;/li&gt;
+&lt;li&gt;O(n log n)&lt;/li&gt;
+&lt;li&gt;O(n!)&lt;/li&gt;
+&lt;li&gt;Amortized analysis&lt;/li&gt;
+&lt;li&gt;Space vs. time complexity&lt;/li&gt;
+&lt;li&gt;Recursive time complexity&lt;/li&gt;
+&lt;li&gt;Recursive space complexity&lt;/li&gt;
+&lt;li&gt;Proof by Induction&lt;/li&gt;
+&lt;li&gt;Dynamic programming&lt;/li&gt;
+&lt;li&gt;Big Omega &amp;#x26; Big Theta&lt;/li&gt;
+&lt;li&gt;And more!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It may not be “the ultimate”, but it’s definitely superlative.&lt;/p&gt;
+&lt;p&gt;Be O(#1).&lt;/p&gt;
+&lt;p&gt;Grab your copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Superlative Guide to Big O]]></title><description><![CDATA[Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s…]]></description><link>http://jarednielsen.com/big-o/</link><guid isPermaLink="false">http://jarednielsen.com/big-o/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/46f4775ef27b57ef4de82f39754f7827/2f950/jarednielsen-big-o.png&quot;
@@ -8635,73 +8736,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-factorial-time-complexity/&quot;&gt;Big O Factorial Time Complexity&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jarednielsen.com/big-o-omega-theta/&quot;&gt;What’s the Difference Between Big O, Big Omega, and Big Theta?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If you want all this (and more!) in one package, pick up a copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Little Book of Big O]]></title><description><![CDATA[So you need to learn Big O. You don’t really want to, but interviews are scary! Maybe you picked up a copy of Cracking the Coding Interview…]]></description><link>http://jarednielsen.com/little-book-big-o/</link><guid isPermaLink="false">http://jarednielsen.com/little-book-big-o/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/a987b/jarednielsen-little-book-big-o-banner.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABGUlEQVQoz41STUvDQBTc/3/wL4ReelMK9SJ4865ebFPEBj+wodo0Tcxmv7Jj3guVYndLHwzsvnkzzFtWFEWBIDYbeAC+kTDzF+iHGbrvLfeIi+lEVVUIYbctWazvn9CMp2hv7mCzD+7tyhIxnZBSIoSfumaxeZyjvkjQTm7hsnfuERfTCWMMQlCyZbF7foUcTSCTK9h0yT3iYjrhvUcIVmlQteNrdJ9rdPkXn6mIi+kEIuWsHRL27yaTS4ZbDis7Y4ch7490wYR/hpRSa+jsjdGpFl2/LnGDXyDhKUNK4LTBLE2RLhZQTcM9e8rwf+S9IYkIuk+Y5zny1QpKKdj+4Q8Nj1aOGTrnUPffoz74Ivs7cWcbxgbPnfkFDwxWXYOXmHoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;jarednielsen little book big o banner&quot;
-        title=&quot;&quot;
-        src=&quot;/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/b9e4f/jarednielsen-little-book-big-o-banner.png&quot;
-        srcset=&quot;/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/cf440/jarednielsen-little-book-big-o-banner.png 148w,
-/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/d2d38/jarednielsen-little-book-big-o-banner.png 295w,
-/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/b9e4f/jarednielsen-little-book-big-o-banner.png 590w,
-/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/f9b6a/jarednielsen-little-book-big-o-banner.png 885w,
-/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/2d849/jarednielsen-little-book-big-o-banner.png 1180w,
-/static/2abbd4fcaee2aed9c0cd0348d5c66ce4/a987b/jarednielsen-little-book-big-o-banner.png 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;So you need to learn Big O.&lt;/p&gt;
-&lt;p&gt;You don’t really want to, but interviews are scary!&lt;/p&gt;
-&lt;p&gt;Maybe you picked up a copy of &lt;em&gt;Cracking the Coding Interview&lt;/em&gt;, but the book, at 687 pages, barely cracks the surface of Big O.&lt;/p&gt;
-&lt;p&gt;So you Google Big O and find dozens of dense articles with questionable authenticity and accuracy each claiming to be the “ultimate guide” but they only lead you back to where you started.&lt;/p&gt;
-&lt;p&gt;Or you find yourself popping links off Stackoverflow with most commenters recommending you read the Wikipedia article on Big O Notation, that begins like this:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;🙄&lt;/p&gt;
-&lt;p&gt;To understand that Big O article, you must first understand that Big O article.&lt;/p&gt;
-&lt;p&gt;It’s time to pull yourself up by your own bootstraps.&lt;/p&gt;
-&lt;p&gt;The Little Book of Big O will take you on a journey through time and space complexity with examples in JavaScript introducing the following topics:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;O(1)&lt;/li&gt;
-&lt;li&gt;O(n)&lt;/li&gt;
-&lt;li&gt;O(n^2)&lt;/li&gt;
-&lt;li&gt;O(log n)&lt;/li&gt;
-&lt;li&gt;O(n log n)&lt;/li&gt;
-&lt;li&gt;O(n!)&lt;/li&gt;
-&lt;li&gt;Amortized analysis&lt;/li&gt;
-&lt;li&gt;Space vs. time complexity&lt;/li&gt;
-&lt;li&gt;Recursive time complexity&lt;/li&gt;
-&lt;li&gt;Recursive space complexity&lt;/li&gt;
-&lt;li&gt;Proof by Induction&lt;/li&gt;
-&lt;li&gt;Dynamic programming&lt;/li&gt;
-&lt;li&gt;Big Omega &amp;#x26; Big Theta&lt;/li&gt;
-&lt;li&gt;And more!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It may not be “the ultimate”, but it’s definitely superlative.&lt;/p&gt;
-&lt;p&gt;Be O(#1).&lt;/p&gt;
-&lt;p&gt;Grab your copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Embrace Difficulty]]></title><description><![CDATA[The key to success in life and learning is to embrace difficulty. We need to be challenged to stay motivated and improve. As long as the…]]></description><link>http://jarednielsen.com/embrace-difficulty/</link><guid isPermaLink="false">http://jarednielsen.com/embrace-difficulty/</guid><pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;p&gt;If you want all this (and more!) in one package, pick up a copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Embrace Difficulty]]></title><description><![CDATA[The key to success in life and learning is to embrace difficulty. We need to be challenged to stay motivated and improve. As long as the…]]></description><link>http://jarednielsen.com/embrace-difficulty/</link><guid isPermaLink="false">http://jarednielsen.com/embrace-difficulty/</guid><pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/460907b5e60cc37d300c2354537620b7/a987b/jarednielsen-solution-embrace-difficulty.png&quot;
