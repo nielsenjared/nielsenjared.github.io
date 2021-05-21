@@ -12,33 +12,41 @@ If you want to think like a programmer, you need to learn algorithms. Learning a
 
 ---
 ![A is for Algorithms](./../../assets/graphics/algorithms/jarednielsen-algorithms-banner.png)
-Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
+Give yourself an A. Pick up a copy of [A is for Algorithms](https://gum.co/algorithms)
 
 ---
 
 
 ## Retrieval Practice
 
-* TODO
+* What is programming?
 
-* TODO
+* What is an algorithm? 
 
-* TODO 
-
-
-### TODO BULLET #1
-
-TODO 
+* What is computational thinking? 
 
 
-### TODO BULLET #2
+### What is Programming?
 
-TODO
+Programming is the act and art of writing instructions to be executed by a machine. These instructions must follow a predetermined, formalized, set of rules. These rules determine what we can write and how we can use those whats. A programming language is, fundamentally, a combination of logic and syntax, or a set of instructions for writing instructions. So meta!
 
 
-### TODO BULLET #3
+### What is an Algorithm? 
 
-TODO
+An algorithm is a set of clearly defined rules or instructions to be executed by a computer in order to solve a specific problem.
+
+
+### What is Computational Thinking? 
+
+Computational thinking is an approach to problem solving where we frame our solution in terms that a computer could also execute. Computational thinking consists of the following stages:
+
+* Decomposition: Breaking a complex problem into smaller, easier to solvecomponents
+
+* Pattern recognition: Developing a generalized solution to apply to multipleproblems
+
+* Abstraction: Hiding or ignoring the details of a problem in order to simplifyit and make it easier to solve
+
+* Algorithms: Composing step-by-step instructions to solve a problem
 
 
 ## Let's Get Meta
@@ -50,21 +58,9 @@ TODO
 * What is the Big O of Bubble Sort?
 
 
-## TODO  
+## How to Code the Bubble Sort Algorithm in JavaScript
 
 TODO SOMETHING ABOUT BUBBLE SORT AND HOW IT IS AN COMPARISON / EXCHANGE ALGORITHM
-
-
-
-If we are writing a sorting algorithm, we need to start with something to sort. Let’s declare an array of ‘unsorted’ integers:
-
-```md
-[10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
-```
-
-
-
-Now what?
 
 Let's revisit our problem solving heuristic: 
 
@@ -79,9 +75,7 @@ Let's revisit our problem solving heuristic:
 
 ### Understand the Problem
 
-To understand our problem, we first need to define it.
-
-Let's reframe the problem as acceptance criteria:
+To understand our problem, we first need to define it. Let's reframe the problem as acceptance criteria:
 
 > GIVEN an array of unsorted numbers
 
@@ -89,14 +83,14 @@ Let's reframe the problem as acceptance criteria:
 
 > THEN we exchange their positions in the array 
 
-That's our general outline. We know our input conditions (an unsorted array) and our output requirements (a sorted array), and our goal is to arrange the elements in the array in ascending order.
+That's our general outline. We know our input conditions (an unsorted array) and our output requirements (a sorted array), and our goal is to organize the elements in the array in ascending, or non-descending, order.
 
 Let's make a plan!
 
 
 ### Make a Plan
 
-TODO This is where we want to use our computational thinking heuristics: 
+Let's revisit our computational thinking heuristics as they will aid and guide is in making a plan: 
 
 * Decomposition
 
@@ -106,49 +100,40 @@ TODO This is where we want to use our computational thinking heuristics:
 
 * Algorithm
 
+If we are writing a sorting algorithm, we need to start with something to sort. Let’s declare an array of ‘unsorted’ integers:
 
+```md
+[10, 1, 9, 2, 8, 3, 7, 4, 6, 5]
+```
 
-If we read between the lines of our acceptance criteria, we will see that we need to check a condition repeatedly. 
+When we are decomposing a problem, we want to break it into the types of problems that need to be solved. We also want to break it into the smallest problems that can be solved. 
 
-According to R. G. Dromey in [How to Solve It By Computer](TODO), there are three things we need to take into account to construct any loop: 
-
-* the initial conditions that need to apply _before_ the loop begins to execute
-
-* the _invariant relation_ that must apply after each iteration of the loop
-
-* the conditions under which the iterative process must _terminate_ 
-
-How do we find the initial conditions? 
 
 What's the smallest problem we can solve? 
 
-TODO
-
-If our "unsorted" array is empty, we will return _before_ we begin iterating. 
-
-Speaking of iterating, what _is_ the smallest problem we can solve? 
-
-If we're sorting an array, it's two numbers: 
+Two numbers. We can shift the first two off our array... 
 
 ```md
-[10, 1];
+[10, 1]
+```
+... and swap them:
+```md
+[1, 10]
 ```
 
-TODO 
-
-We're getting ahead of ourselves here. Before we write any more JavaScript, let's pseudocode a solution. 
+What about the next smallest problem? If we read between the lines of our acceptance criteria, we will see that we need to check a condition repeatedly, or iterate. Let's translate this to pseudocode: 
 
 ```md
-FOR each element, _n_, in an unsorted array
+FOR each element in an unsorted array
 
-    IF the value of _n_ is greater than the next element, or _n + 1_
+    IF the value of the element is greater than the next element
 
         SWAP the elements
 
 RETURN the sorted array
 ```
 
-Will this work? Rather than translate this into code, let's think it through. If we test this with our smallest problem, `[10, 1]`, there's no problem. It works! Let's "run" this program with our `unsorted` array and map it out in a table...
+Will this work? Let's think it through. If we test this with our smallest problem, `[10, 1]`, there's no problem. It works! Let's "run" this program with our full array and map it out in a table...
 
 | Iteration | Array                             |
 | ---       | ---                               |
@@ -176,7 +161,7 @@ What's the solution?
 
 More loops! 
 
-Now that we moved the largest value to the end of the array, we need to start at the beginning and find the second largest value and move it to the penultimate position. Rinse and repeat. So for each iteration we need another iteration. 
+Now that we moved the largest value to the end of the array, we need to start at the beginning again and find the second largest value and move it to the penultimate position. Rinse and repeat. So for each iteration we need a nested iteration. 
 
 Here's our updated pseudocode:
 
@@ -192,15 +177,13 @@ FOR each element in an array
 RETURN the sorted array
 ```
 
-Will this work? Yes. But! Can we do better? Let's think it through...
+Will this work? Yes... But! Can we do better? This is the crux of the algorithm, so let's think it through...
 
 If _n_ is the length of our array, does the nested loop need to iterate over _n_? 
 
 No. Why? 
 
 With each iteration we are sorting one value so the elements that remain to be sorted are _n - 1_. 
-
-I'm going to belabor this point because it's the crux of Bubble Sort and a common pattern in algorithm design.
 
 If the starting value of _n_ is 10 and we sort the largest value, 10, in the first iteration, how many elements remain to be sorted? 
 
@@ -261,9 +244,9 @@ RETURN the sorted array
 
 Now that we've got a plan, let's execute it!
 
-### How to Code the Bubble Sort Algorithm in JavaScript
+### Execute the Plan
 
-Let's initialize our array: 
+First, we initialize our array: 
 ```js
 const unsorted = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
 ```
@@ -296,6 +279,18 @@ const bubbleSort = (arr) => {
     return arr;
 }
 ```
+
+Running `bubbleSort(unsorted)` returns:  
+```sh
+[
+   1,  2,  3,
+   4,  5,  6,
+   7,  8,  9,
+  10
+]
+```
+
+Bubbles, sorted! 
 
 
 ### Evaluate the Plan
@@ -363,8 +358,6 @@ const bubbleSort = (arr) => {
     return arr;
 }
 ```
-
-
 
 What if the array passed to `bubbleSort` was already sorted? Or mostly sorted? We wouldn't need to perform all of our iterations. How would we exit? 
 
@@ -446,24 +439,23 @@ One last optimization, if we wanted, we could get fancy with our swap and use ar
 * What is the Big O of Bubble Sort?
 
 
-### TODO BULLET #1
+### Why Is It Called 'Bubble Sort'?
 
-TODO
+Bubble Sort is a comparison or exchange algorithm. It gets its name because larger elements in the array _bubble_ their way up to the top. 
 
 
 ### What Problem(s) Does Bubble Sort Solve?
 
-TODO 
+Well... it might be more a matter of what problems does bubble sort create. As we will see next, it's performance is not great. That said, it is suitable for small arrays or arrays that are mostly sorted.
 
 
 ### What is the Big O of Bubble Sort? 
 
-TODO
+Due to the nested iteration, the worst-case scenario time complexity for Bubble Sort is O(n^2).
 
 
 ## How to Code the Bubble Sort Algorithm in JavaScript
 
-TODO RECAP FOR SEO
-
+Bubble Sort is an algorithm that you need to know, but you don't necessarily want to implement (except if asked in an interview!). Learning it helps you recognize common patterns in algorithm design and understand why other sorting algorithms, such as quick and merge, are preferrable. In the next tutorial, we'll learn how to code Selection Sort. Stay tuned!
 
 
