@@ -6,7 +6,7 @@ keywords: ['algorithm', 'bubble sort', 'javascript']
 ---
 
 
-![ bubble sort ](./jarednielsen-algorithm-javascript-bubble-sort.png)
+![ bubble sort ](./jarednielsen-algorithm-bubble-sort.png)
 
 If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn how to code the bubble sort algorithm in JavaScript. 
 
@@ -59,8 +59,6 @@ Computational thinking is an approach to problem solving where we frame our solu
 
 
 ## How to Code the Bubble Sort Algorithm in JavaScript
-
-TODO SOMETHING ABOUT BUBBLE SORT AND HOW IT IS AN COMPARISON / EXCHANGE ALGORITHM
 
 Let's revisit our problem solving heuristic: 
 
@@ -211,7 +209,6 @@ Variables!
 
 We can use the counter variable in our `for` loop to subtract from _n_. 
 
-TODO
 Let's map it to a table:
 
 | i     | n - i |
@@ -359,9 +356,7 @@ const bubbleSort = (arr) => {
 }
 ```
 
-What if the array passed to `bubbleSort` was already sorted? Or mostly sorted? We wouldn't need to perform all of our iterations. How would we exit? 
-
-TODO 
+What if the array passed to `bubbleSort` was already sorted? Or mostly sorted? We wouldn't need to perform all of our iterations. How would we exit? We can declare a `swapped` variable and with each iteration check whether or not any elements in the array were swapped. If no elements were swapped, then the array is sorted and we can return.
 
 ```js
 const unsorted = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
