@@ -1,12 +1,12 @@
 ---
-title: "Learn How to Code the {{ TODO }} Algorithm in JavaScript"
+title: "Learn How to Code the Selection Sort Algorithm in JavaScript"
 date: "2021-TO-DO"
 description: "TODO"
-keywords: ['algorithm', ' {{ TODO TITLE }}', 'javascript']
+keywords: ['algorithm', 'selection sort', 'javascript']
 ---
 
 
-![ {{ TODO ALT TEXT }} ](./jarednielsen-algorithm-{{ TITLE }}.png)
+![ selection sort ](./jarednielsen-algorithm-selection-sort.png)
 
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the bubble sort algorithm in JavaScript. 
