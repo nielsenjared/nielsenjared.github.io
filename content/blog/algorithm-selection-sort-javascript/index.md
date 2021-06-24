@@ -47,9 +47,9 @@ TODO
 
 * 
 
-* What Problem(s) Does {{ TODO TITLE }} Solve? 
+* What Problem(s) Does Selection Sort Solve? 
 
-* What is the Big O of {{ TODO TITLE }}?
+* What is the Big O of Selection Sort?
 
 
 ## How to Code the {{ TODO TITLE }} Algorithm in JavaScript 
@@ -69,11 +69,17 @@ TODO
 
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
-> GIVEN
-> WHEN
-> THEN 
+> GIVEN an array of integers
+> WHEN we find the lowest unsorted value
+> THEN we move that value to its proper ordinal position
 
-That’s our general outline. We know our input conditions (an unsorted array) and our output requirements (a sorted array), and our goal is to organize the elements in the array in ascending, or non-descending, order.
+That’s our general outline. We know the following: 
+
+* our input conditions (an unsorted array)
+
+* our output requirements (a sorted array)
+
+* our goal is to organize the elements in the array in ascending, or non-descending, order, starting with the smallest elements first
 
 Let’s make a plan!
 
@@ -91,45 +97,94 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 TODO
 
+```md
+[10, 1, 9, 2, 8, 3, 7, 4, 6, 5]
+```
+
+#### Decomposition 🧟
+
+What's the first problem we need to solve? 
+
+Finding the smallest value in our array. 
+
+iteration
+
+```md
+FOR TODO in 
+```
+
+
+If the first element in our array is 
+
+Let's begin with the smallest problem we can solve: 
+```md
+[10, 1]
+```
+
+TODO 
+```
+SELECT the first element
+SELECT the next element
+IF the next element is less than the first element
+SWAP their positions
+```
+
+
+
 
 ### Execute the Plan
 
 ```js
-TODO
+const selectionSort = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        let min = i;
+
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+        
+        let tmp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = tmp;
+    }
+    return arr;
+};
 ```
 
 
 
 ### Evaluate the Plan
 
-TODO
+TODO do we need to go the end of the array? 
 
 
 ## Reflection
 
-* TODO
+* Why is it called Selection Sort? 
 
-* What Problem(s) Does {{ TODO TITLE }} Solve? 
+* What Problem(s) Does Selection Sort Solve? 
 
-* What is the Big O of {{ TODO TITLE }}?
+* What is the Big O of Selection Sort?
 
 
-### TODO BULLET #1
+### Why Is It Called Selection Sort? 
 
+For each iteration of our algorithm, we _select_ an element from our array and compare it 
 TODO
 
-
-### What Problem(s) Does {{ TODO TITLE }} Solve?
+### What Problem(s) Does Selection Sort Solve?
 
 TODO 
 
 
-### What is the Big O of Insertion Sort? 
+### What is the Big O of Selection Sort? 
 
 TODO
 
 
-## How to Code the {{ TODO }} Algorithm in JavaScript
+## How to Code the Selection Sort Algorithm in JavaScript
 
 TODO RECAP FOR SEO
 
