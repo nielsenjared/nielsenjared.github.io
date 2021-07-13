@@ -52,7 +52,7 @@ TODO
 * What is the Big O of Selection Sort?
 
 
-## How to Code the {{ TODO TITLE }} Algorithm in JavaScript 
+## How to Code the Selction Sort Algorithm in JavaScript 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -93,7 +93,7 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 * Abstraction
 
-* Algorithm
+* Design
 
 TODO
 
@@ -101,20 +101,7 @@ TODO
 [10, 1, 9, 2, 8, 3, 7, 4, 6, 5]
 ```
 
-#### Decomposition 🧟
-
-What's the first problem we need to solve? 
-
-Finding the smallest value in our array. 
-
-iteration
-
-```md
-FOR TODO in 
-```
-
-
-If the first element in our array is 
+#### Decomposition
 
 Let's begin with the smallest problem we can solve: 
 ```md
@@ -124,15 +111,89 @@ Let's begin with the smallest problem we can solve:
 TODO 
 ```
 SELECT the first element
-SELECT the next element
 IF the next element is less than the first element
-SWAP their positions
+    SWAP their positions
+```
+
+Recall that our goal is to _select_ the smallest element, wherever it may be in the array, and TODO 
+
+TODO EXPLAIN ITERATION
+
+
+```
+FOR EACH element in an unsorted array
+    SELECT the first element
+    IF the next element is less than the first element
+        SWAP their positions
+```
+
+But! If we are looping over each element in our array, we don't want to select the "first" element with each iteration. 
+TODO 
+
+```
+FOR EACH element in an unsorted array
+    SELECT the current element
+    IF the next element is less than the current element
+        SWAP their positions
+```
+
+TODO 
+On our first iteration, _current_ is 10. We compare it to the next element, which is 1, so we swap them.
+```md
+[1, 10]
+```
+
+On the next iteraiton, _current_ is again 10! There's nothing next to compare, so we leave it where it is. (Let's make note of this so we can optimize our algorithm later, but for now let's focus on the basic structure.)
+
+Let's expand our array 
+```md
+[10, 1, 9]
 ```
 
 
 
 
+
+```md
+[10, 1, 9, 2]
+```
+
+```
+[1, 10, 9 , 2]
+```
+
+```
+[1, 9, 10, 2]
+```
+
+```
+[1, 9, 2, 10]
+```
+
+Uh oh! 
+
+That's not sorted! 
+
+TODO HOW DO WE GET TO NESTED ITERATION?
+
+
+"known minimum value"
+
+
+```md
+FOR EACH element in an unsorted array
+    SELECT the element with the "known minimum value"
+    FOR EACH 
+        IF the next element is less than the element with the "known minimum value"
+            UPDATE the "known minimum value" 
+        SWAP the positions of the current element with the "known minimum value" 
+```
+
+
+
 ### Execute the Plan
+
+Let's translate our pseudocode to JavaScript: 
 
 ```js
 const selectionSort = (arr) => {
