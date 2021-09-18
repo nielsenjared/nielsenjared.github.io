@@ -67,11 +67,16 @@ TODO
 
 ### Understand the Problem
 
-To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
+To understand our problem, we first need to define it. 
 
-> GIVEN an array of integers
+TODO 
+We use selection sort to build an array from left to right, by repeatedly "selecting" the minimum values in an unsorted array and placing them in their proper ordinal position. 
+
+Let’s reframe the problem as acceptance criteria:
+
+> GIVEN an unsorted array of integers
 > WHEN we find the lowest unsorted value
-> THEN we move that value to its proper ordinal position
+> THEN we move that value to its proper ordinal position and repeat until all values are in sequence
 
 That’s our general outline. We know the following: 
 
@@ -108,7 +113,7 @@ Let's begin with the smallest problem we can solve:
 [10, 1]
 ```
 
-TODO 
+TODO Let's pseudocode a solution to this very small problem: 
 ```
 SELECT the first element
 IF the next element is less than the first element
@@ -120,14 +125,53 @@ Recall that our goal is to _select_ the smallest element, wherever it may be in 
 TODO EXPLAIN ITERATION
 
 
+Let's expand our array 
+```md
+[10, 1, 9]
+```
+
+TODO
+
 ```
 FOR EACH element in an unsorted array
-    SELECT the first element
-    IF the next element is less than the first element
+    SELECT the current element
+    IF the next element is less than the current element
         SWAP their positions
 ```
 
-But! If we are looping over each element in our array, we don't want to select the "first" element with each iteration. 
+Let's run through this:
+
+On the first iteration, we select the first element, 10, and compare it to the next element, 1, which is less than 10, so we swap their positions. Our array now looks like this:
+
+```md
+[1, 10, 9]
+```
+
+On the next iteration, we select the current element, 10, and compare it to the next element, 9, which is less than 10, so we swap their positions. Our array now looks like this: 
+```md
+[1, 9, 10]
+```
+
+So far so good. Let's look at our full array: 
+
+
+```md
+[10, 1, 9, 2, 8, 3, 7, 4, 6, 5]
+```
+
+
+greater than 1, so we don't swap their positions. Our array now looks like this:
+```md
+[1, 10, 9]
+```
+
+🤔
+
+Wait! If we are looping over each element in our array, we don't want to select the "first" element with each iteration. 
+
+
+
+
 TODO 
 
 ```
@@ -145,9 +189,7 @@ On our first iteration, _current_ is 10. We compare it to the next element, whic
 
 On the next iteraiton, _current_ is again 10! There's nothing next to compare, so we leave it where it is. (Let's make note of this so we can optimize our algorithm later, but for now let's focus on the basic structure.)
 
-Let's expand our array 
-```md
-[10, 1, 9]
+
 ```
 
 
@@ -188,6 +230,10 @@ FOR EACH element in an unsorted array
             UPDATE the "known minimum value" 
         SWAP the positions of the current element with the "known minimum value" 
 ```
+
+
+The crux of selection sort is the `min` value. What is the best way to teach this? Start with `min`? Or reveal the blocks that lead us to `min`?
+
 
 
 
