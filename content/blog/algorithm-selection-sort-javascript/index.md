@@ -122,20 +122,18 @@ IF the next element is less than the first element
 
 Recall that our goal is to _select_ the smallest element, wherever it may be in the array, and TODO 
 
-TODO EXPLAIN ITERATION
-
-
 Let's expand our array 
 ```md
 [10, 1, 9]
 ```
 
+TODO EXPLAIN ITERATION
 TODO
 
 ```
 FOR EACH element in an unsorted array
-    SELECT the current element
-    IF the next element is less than the current element
+    SELECT the first element
+    IF the next element is less than the first element
         SWAP their positions
 ```
 
@@ -147,94 +145,79 @@ On the first iteration, we select the first element, 10, and compare it to the n
 [1, 10, 9]
 ```
 
-On the next iteration, we select the current element, 10, and compare it to the next element, 9, which is less than 10, so we swap their positions. Our array now looks like this: 
+But! On the next iteration, what happens? We again select the first element, `1`, and compare it to the next element, which is now `9`. `9` is greater than `1`, so we leave it where it is. 
+
+What's the solution? 
+
+We need a means of tracking and updating the "known minimum value". 
+
+In this scenario, `1` is our first "known minimum value", but we can see that `9` is less than `10`, so we need to compare the "known minimum value" to the next value in each iteration and update accordingly. Let's refer to the "known minimum value" as `MIN`. 
+
 ```md
-[1, 9, 10]
+FOR EACH element in an unsorted array
+    SELECT MIN OR the first element
+    IF the next element is less than MIN
+        UPDATE MIN with the next element
+    SWAP the current element with MIN
 ```
 
-So far so good. Let's look at our full array: 
-
-
+Let's iterate over our three-piece array again:
 ```md
-[10, 1, 9, 2, 8, 3, 7, 4, 6, 5]
+[10, 1, 9]
 ```
 
+On the first iteration, we SELECT `10` because it's the first element, and at this point MIN. If the next element, `1`, is less than MIN, we UPDATE MIN with that value. So MIN is now equal to `1`. Now we need to swap the current element, containing the value `10`, with MIN. After the first iteration, our array looks like this: 
 
-greater than 1, so we don't swap their positions. Our array now looks like this:
 ```md
 [1, 10, 9]
 ```
 
-🤔
-
-Wait! If we are looping over each element in our array, we don't want to select the "first" element with each iteration. 
-
+On the next iteration, we select the current element, which is now `10`. We compare the value stored in the next element, `9`, to MIN and see that 
+TODO
 
 
-
-TODO 
-
-```
-FOR EACH element in an unsorted array
-    SELECT the current element
-    IF the next element is less than the current element
-        SWAP their positions
-```
-
-TODO 
-On our first iteration, _current_ is 10. We compare it to the next element, which is 1, so we swap them.
+...so we swap their positions. Our array now looks like this: 
 ```md
-[1, 10]
+[1, 9, 10]
 ```
 
-On the next iteraiton, _current_ is again 10! There's nothing next to compare, so we leave it where it is. (Let's make note of this so we can optimize our algorithm later, but for now let's focus on the basic structure.)
-
-
-```
-
-
-
+So far so good. Let's add another value to our array: 
 
 
 ```md
 [10, 1, 9, 2]
 ```
 
-```
-[1, 10, 9 , 2]
-```
+Let's fast forward to the fourth iteration, where we compare...
 
-```
-[1, 9, 10, 2]
-```
+TODO
 
-```
+Our array looks like this
+```md
 [1, 9, 2, 10]
 ```
 
-Uh oh! 
+What's going on? What's wrong with our logic? 
 
-That's not sorted! 
+We are only comparing 
+TODO
 
-TODO HOW DO WE GET TO NESTED ITERATION?
+What's the solution? 
 
+Nested iteration. 
 
-"known minimum value"
-
+TODO 
 
 ```md
 FOR EACH element in an unsorted array
-    SELECT the element with the "known minimum value"
-    FOR EACH 
-        IF the next element is less than the element with the "known minimum value"
-            UPDATE the "known minimum value" 
-        SWAP the positions of the current element with the "known minimum value" 
+    SELECT MIN OR the first element
+    FOR EACH of the next elements in the array
+        IF the next element is less than MIN
+        UPDATE MIN with the next element
+    SWAP the current element with MIN
 ```
 
-
-The crux of selection sort is the `min` value. What is the best way to teach this? Start with `min`? Or reveal the blocks that lead us to `min`?
-
-
+TODO 
 
 
 ### Execute the Plan
