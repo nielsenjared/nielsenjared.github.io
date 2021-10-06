@@ -132,7 +132,7 @@ TODO
 
 ```
 FOR EACH element in an unsorted array
-    SELECT the first element
+    SELECT the current value
     IF the next element is less than the first element
         SWAP their positions
 ```
@@ -155,7 +155,7 @@ In this scenario, `1` is our first "known minimum value", but we can see that `9
 
 ```md
 FOR EACH element in an unsorted array
-    SELECT MIN OR the first element
+    SELECT MIN, the current value 
     IF the next element is less than MIN
         UPDATE MIN with the next element
     SWAP the current element with MIN
@@ -208,16 +208,34 @@ Nested iteration.
 
 TODO 
 
+Let's update our pseudocode: 
+
 ```md
 FOR EACH element in an unsorted array
-    SELECT MIN OR the first element
-    FOR EACH of the next elements in the array
+    SELECT MIN, the current value
+    FOR EACH of the remaining elements in the array
         IF the next element is less than MIN
         UPDATE MIN with the next element
     SWAP the current element with MIN
 ```
 
+Let's step through our array:
 TODO 
+```md
+[10, 1, 9, 2]
+```
+
+On the first iteration, we _select_ `10`, and assign it to `MIN`. We then enter our nested loop and iterate over the remaining elements. The next element is `1`, which is less than `10`, so we assign `1` to `MIN`. We are still in our nested loop, so we continue comparing the remaining values to `MIN` and discover that `1` is the lowest value in our array. We exit our nested loop and _swap_ the value in the `0` index, which is `10`, with `1`. Our array now looks like this: 
+```md
+[1, 10, 9, 2]
+```
+
+We are now at our outer loop again and we select the value in the `1` index, which is now `10`. We assign it to `MIN` and enter our nested loop. The next value is `9`, which is less than `10`, so we assign `9` to `MIN`. We continue iterating over the remaining values in our array and find that the next value, `2`, is less than `9`, so we assign `2` to `MIN`. We exit our nested loop and swap `2` with `10`. Our array now looks like this: 
+```md
+[1, 2, 9, 10]
+```
+
+Looks like a solid plan! 
 
 
 ### Execute the Plan
