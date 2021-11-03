@@ -70,8 +70,8 @@ TODO
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 > GIVEN two variables
-> WHEN TODO
-> THEN the values stored in the two variables are exchanged
+> WHEN I perform a swap
+> THEN the values are exchanged
 
 That’s our general outline. We know our input conditions (two variables) and our output requirements (exchanged values between the variables), and our goal is to swap them.
 
@@ -133,7 +133,7 @@ y = 456
 
 What's happening? 
 
-Following our control flow, we are  _overwriting_ the value of `x` with the value stored in `y`, which is 456. When we then assign the value of `x` to the `y`, we are simply reassigning the value of 456. 
+Following our control flow, we are  _overwriting_ the value of `x` with the value stored in `y`, which is 456. When we then assign the value of `x` to `y`, we are simply reassigning the value of 456. 
 
 
 #### Pattern Recognition
@@ -197,6 +197,29 @@ y = temp;
 ```
 
 TODO alternate approaches to swap
+```js
+x = 123;
+y = 456;
+x = x + y;
+y = x - y;
+x = x - y;
+```
+
+TODO
+```js
+x = 123;
+y = 456;
+x = x * y;
+y = x / y;
+x = x / y;
+```
+
+The downside to both of the approaches above is that they can only be used for numeric values. 
+
+In Python, you can do a one-liner using parallel assignment: 
+```py
+x, y = y, x
+```
 
 
 ## Reflection
