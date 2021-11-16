@@ -1,8 +1,8 @@
 ---
-title: "Learn How to Code the {{ TODO }} Algorithm in JavaScript"
+title: "Learn How to Code the Smallest Divisor of an Integer Algorithm in JavaScript"
 date: "2021-TO-DO"
 description: "TODO"
-keywords: ['algorithm', ' {{ TODO TITLE }}', 'javascript']
+keywords: ['algorithm', 'smallest divisor ', 'javascript']
 ---
 
 
@@ -95,14 +95,56 @@ TODO
 ### Execute the Plan
 
 ```js
-TODO
+const smallestDivisor = n => {
+    if (n % 2 == 0) {
+        return "2"
+    } else {
+        let r = Math.sqrt(n);
+
+        let d = 3;
+        
+        while ((n % d != 0) && (d < r)) {
+            d = d + 2;
+
+            if (n % d == 0) {
+                return d;
+            } else {
+                return 1;
+            }
+        }
+    }
+}
 ```
 
 
 
 ### Evaluate the Plan
 
-TODO
+```js
+const smallestDivisor = n => {
+    if (n <= 1) {
+        return "Enter a number greater than 1";
+    }
+
+    if (n % 2 == 0) {
+        return "2"
+    } else {
+        let r = Math.sqrt(n);
+
+        let d = 3;
+        
+        while ((n % d != 0) && (d < r)) {
+            d = d + 2;
+
+            if (n % d == 0) {
+                return d;
+            } else {
+                return 1;
+            }
+        }
+    }
+}
+```
 
 
 ## Reflection
