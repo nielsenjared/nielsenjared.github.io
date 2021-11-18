@@ -21,11 +21,11 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 ## Retrieval Practice
 
-* TODO
+* What's a whole number? 
 
-* TODO
+* What's a prime number?
 
-* TODO 
+* What's the square root? 
 
 
 ### TODO BULLET #1
@@ -69,11 +69,11 @@ TODO
 
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
-> GIVEN
-> WHEN
-> THEN 
+> GIVEN a whole number
+> WHEN I request the smallest divisor
+> THEN I am returned a whole number greater than 1
 
-That’s our general outline. We know our input conditions (an unsorted array) and our output requirements (a sorted array), and our goal is to organize the elements in the array in ascending, or non-descending, order.
+That’s our general outline. We know our input conditions (a whole number) and our output requirements (a whole number greater than 1), and our goal is to calculate the smallest divisor.
 
 Let’s make a plan!
 
@@ -89,7 +89,95 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 * Algorithm
 
+
+### Decomposition
+
+What's the smallest problem we can solve? 
+
+If our function must return a whole number greater than 1, the smallest problem can't be 1. Maybe the first thing we need to do is ensure that we don't waste time parsing a number less than or equal to 1? 
+
+```md
+SET n
+
+IF n IS LESS THAN OR EQUAL TO 1
+    RETURN "ENTER A NUMBER GREATER THAN 1"
+```
+
+What's our next smallest problem? 
+
+2!
+
+```md
+SET n
+
+IF n IS LESS THAN OR EQUAL TO 1
+    RETURN "ENTER A NUMBER GREATER THAN 1"
+
+IF n IS EQUAL TO 2
+    RETURN 2;
+```
+
+What do we know about even numbers? Their smallest divisor is always 2! How can we adapt the pseudocode above to address this? 
+
+```md
+SET n
+
+IF n IS LESS THAN OR EQUAL TO 1
+    RETURN "ENTER A NUMBER GREATER THAN 1"
+
+ELSE IF n MOD 2 IS EQUAL TO 0
+    RETURN 2;
+```
+
+If we map this out in a table, we can see we quickly checked off more than half of the numbers in our sequence. 
+
+| Integer   | Check?|
+| ---       | ---   |
+| 1         | x     |
+| 2         | x     |
+| 3         |       |
+| 4         | x     |
+| 5         |       |
+| 6         | x     |
+| 7         |       |
+| 8         | x     |
+| 9         |       |
+| 10        | x     |
+| 11        |       |
+| 12        | x     |
+
+Our next smallest problem is 3. We _know_ that the smallest divisor of 3 is itself (and 1). We _could_ set up another conditional statement checking if the remainder of `n` divided by 3 is equal to 0. 
+
+TODO 
+
+Looking ahead, what do we see? We would need to do the same for 5, 7, and 11. Why not 9? 
+
+Because 9 is divisible by 3. 
+
+What's the pattern established by 5, 7, and 11? 
+
+They're prime! 
+
 TODO
+
+
+
+| Integer   | Check?|
+| ---       | ---   |
+| 1         | x     |
+| 2         | x     |
+| 3         |       |
+| 4         | x     |
+| 5         |       |
+| 6         | x     |
+| 7         |       |
+| 8         | x     |
+| 9         |       |
+| 10        | x     |
+| 11        |       |
+| 12        | x     |
+
+
 
 
 ### Execute the Plan
@@ -124,9 +212,7 @@ const smallestDivisor = n => {
 const smallestDivisor = n => {
     if (n <= 1) {
         return "Enter a number greater than 1";
-    }
-
-    if (n % 2 == 0) {
+    } else if (n % 2 == 0) {
         return "2"
     } else {
         let r = Math.sqrt(n);
@@ -135,12 +221,12 @@ const smallestDivisor = n => {
         
         while ((n % d != 0) && (d < r)) {
             d = d + 2;
+        }
 
-            if (n % d == 0) {
-                return d;
-            } else {
-                return 1;
-            }
+        if (n % d == 0) {
+            return d;
+        } else {
+            return n;
         }
     }
 }
