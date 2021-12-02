@@ -205,11 +205,11 @@ ELSE
             RETURN n;
 ```
 
-TODO
+TODO if we return `n`, then we know the number is prime
 
-This is terribly inefficient, though. In a worst case scenario, we would check nearly half of the possiblities to return a value. How can we do better?
+This is terribly inefficient, though. In a worst case scenario, we would iterate nearly half of the possiblities to return a value. How can we do better?
 
-Is there another pattern in our table? 
+Let's look at our table again. Is there another pattern? 
 
 | Integer   | Check?|
 | ---       | ---   |
@@ -228,11 +228,35 @@ Is there another pattern in our table?
 | n         | ...   |
 
 
-What else do we know about 3? 
+3 is a divisor of 6, 9, and 12. We already checked off 6 and 12, though. What's the relationship between 3 and 9? 
 
-It's the square root of 9!
+3 is the square root of 9!
 
 TODO
+
+In this example, `n` is equal to 12. What's the square root of 12? 
+
+3.46410161514
+
+If we calculate the square root of `n`, we can see that we quickly eliminate the need to check _every_ odd number between 3 and `n`. We only need to continue iterating _while_ `d` is less than the square root of `n`. 
+
+Let's test this assumption before we proceed. 3's and 5's are easy to work with. How about a multiple of 7? How about 77? It's the product of two prime numbers, so we won't catch it in our initial conditional statements. 
+
+The square root of 77 is 8.77496438739.
+
+So on our first iteration, `d` is equal to 3. 
+
+77 is not divisible by 3 and 3 is less than 8.77496438739. 
+
+So we add 2 to 3. 
+
+77 is not divisible by 5 and 5 is less 8.77496438739. 
+
+So we add 2 to 5. 
+
+77 _is_ divisible by 7!
+
+Let's update our pseudocode...
 
 
 ```md
@@ -263,31 +287,7 @@ TODO
 
 ### Execute the Plan
 
-```js
-const smallestDivisor = n => {
-    if (n % 2 == 0) {
-        return "2"
-    } else {
-        let r = Math.sqrt(n);
-
-        let d = 3;
-        
-        while ((n % d != 0) && (d < r)) {
-            d = d + 2;
-
-            if (n % d == 0) {
-                return d;
-            } else {
-                return 1;
-            }
-        }
-    }
-}
-```
-
-
-
-### Evaluate the Plan
+Now it's just a matter of translating our pseudocode to JavaSceript:
 
 ```js
 const smallestDivisor = n => {
@@ -313,6 +313,9 @@ const smallestDivisor = n => {
 }
 ```
 
+
+### Evaluate the Plan
+TODO
 
 ## Reflection
 
