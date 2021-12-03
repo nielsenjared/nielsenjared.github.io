@@ -1,15 +1,15 @@
 ---
-title: "Learn How to Code the Smallest Divisor of an Integer Algorithm in JavaScript"
+title: "Learn How to Code the Smallest Divisor of a Whole Number Algorithm in JavaScript"
 date: "2021-TO-DO"
 description: "TODO"
-keywords: ['algorithm', 'smallest divisor ', 'javascript']
+keywords: ['algorithm', 'smallest divisor ', 'javascript', 'whole number']
 ---
 
 
 ![ {{ TODO ALT TEXT }} ](./jarednielsen-algorithm-{{ TITLE }}.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the bubble sort algorithm in JavaScript. 
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the smallest divisor of a whole number in JavaScript. 
 
 ---
 
@@ -25,20 +25,20 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 * What's a prime number?
 
-* What's the square root? 
+* What's a square root? 
 
 
-### TODO BULLET #1
+### What's a Whole Number? 
 
 TODO 
 
 
-### TODO BULLET #2
+### What's a Prime Number? 
 
 TODO
 
 
-### TODO BULLET #3
+### What's a Square Root? 
 
 TODO
 
@@ -47,12 +47,12 @@ TODO
 
 * 
 
-* What Problem(s) Does {{ TODO TITLE }} Solve? 
+* What Problem(s) Does the Smallest Divisor of a Whole Number Solve? 
 
-* What is the Big O of {{ TODO TITLE }}?
+* What is the Big O of the Smallest Divisor of a Whole Number?
 
 
-## How to Code the {{ TODO TITLE }} Algorithm in JavaScript 
+## How to Code the Smallest Divisor of a Whole Number Algorithm in JavaScript 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
