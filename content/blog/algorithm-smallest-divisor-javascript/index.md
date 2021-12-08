@@ -77,6 +77,7 @@ That’s our general outline. We know our input conditions (a whole number) and 
 
 Let’s make a plan!
 
+
 ### Make a Plan
 
 Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are: 
@@ -91,6 +92,8 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 
 ### Decomposition
+
+Let's use 12 as our input. You probably already know the answer, but it's a manageable number while we think through our approach and write pseudocode. 
 
 What's the smallest problem we can solve? 
 
@@ -117,7 +120,9 @@ IF n IS EQUAL TO 2
     RETURN 2;
 ```
 
-What do we know about even numbers? Their smallest divisor is always 2! How can we adapt the pseudocode above to address this? 
+We _could_ proceed with this brute force approach and write a conditional for _every_ number, but that's not how programmer's think. How can we do better? 
+
+What do we know about even numbers? Their smallest divisor is always 2! How can we adapt the pseudocode above to address this? We can use the modulo operator to check if the remainder of `n` divided by 2 is equal to 0:
 
 ```md
 INPUT n
@@ -129,7 +134,9 @@ ELSE IF n MOD 2 IS EQUAL TO 0
     RETURN 2;
 ```
 
-If we map this out in a table, we can see we quickly checked more than half of the numbers in our sequence (all the even numbers plus 1).
+If we were to "run" this algorithm, what numbers would be checked?
+
+Let's map it out in a table: 
 
 | Integer   | Check?|
 | ---       | ---   |
@@ -152,9 +159,7 @@ If we map this out in a table, we can see we quickly checked more than half of t
 
 What's the pattern we see?
 
-Our remaining numbers are all odd.
-
-TODO
+If we map this out in a table, we can see we quickly checked more than half of the numbers in our sequence (all the even numbers plus 1), thus our remaining numbers are all odd.
 
 Our next smallest problem is 3. We _know_ that the smallest divisor of 3 is itself (and 1). We _could_ set up another conditional statement checking if the remainder of `n` divided by 3 is equal to 0, like so...
 
@@ -179,7 +184,8 @@ What's the pattern established by 5, 7, and 11?
 
 They're prime!
 
-TODO how do we increment by 2 with odd (prime) numbers? 
+How do we increment by 2 with odd (prime) numbers? 
+
 We know we need to check each of the odd values, but we don't want to write a conditional for all of them. 
 TODO
 
