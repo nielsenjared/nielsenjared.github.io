@@ -49,9 +49,56 @@ TODO
 
 ## How to Code the Fizz Buzz Algorithm in JavaScript 
 
+[Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
-TODO CT INTRO
+1. Understand the problem
 
+2. Make a plan
+
+3. Execute the plan
+
+4. Evaluate the plan
+
+
+### Understand the Problem
+
+To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
+
+> GIVEN
+> WHEN
+> THEN 
+
+That’s our general outline. We know our input conditions ( TODO ) and our output requirements ( TODO ), and our goal is to organize the elements in the array in ascending, or non-descending, order.
+
+Let’s make a plan!
+
+
+### Make a Plan
+
+Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are: 
+
+* Decomposition
+
+* Pattern recognition
+
+* Abstraction
+
+* Algorithm
+
+TODO
+
+
+### Execute the Plan
+
+```js
+TODO
+```
+
+
+
+### Evaluate the Plan
+
+TODO
 
 
 
