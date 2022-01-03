@@ -47,7 +47,11 @@ TODO
 * 
 
 
-## How to Implement {{ TITLE }} Algorithm in JavaScript 
+## How to Code the Fizz Buzz Algorithm in JavaScript 
+
+
+TODO CT INTRO
+
 
 
 
