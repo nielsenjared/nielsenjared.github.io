@@ -64,6 +64,46 @@ TODO
 
 4. Evaluate the plan
 
+TODO ^^^
+
+How do you think like a programmer? 
+
+If programming is problem solving, we need one or more heuristics specific to this domain. 
+
+We’re in luck! 
+
+There’s a set of methods used for defining and solving a problem in terms that a computer could also perform. It’s called, you’ll never guess… computational thinking. 
+ 
+Computational thinking is a set of methods used for defining and solving a problem in terms that a computer could also perform.
+
+There are four stages to computational thinking: 
+
+* Decomposition
+
+* Pattern recognition
+
+* Abstraction
+
+* Algorithm
+
+We'll look at each of these in depth as we proceed with our problem solving. The first step is to understand the problem. Our workflow will follow with outline: 
+
+1. Understand the problem
+
+2. Make a plan
+
+    * Decompose the problem
+
+    * Recognize patterns
+
+    * Form abstractions
+
+    * Design the algorithm
+
+3. Execute the plan
+
+4. Evaluate the plan
+
 
 ### Understand the Problem
 
@@ -79,21 +119,19 @@ Let’s make a plan!
 
 ### Make a Plan
 
-Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are: 
+As outlined above, this is where we implement our computational thinking heuristics, the first being decomposition.
 
-* Decomposition
-
-* Pattern recognition
-
-* Abstraction
-
-* Algorithm
-
-TODO
+TODO MOVE THIS UP
 You might already be familiar with this algorithm and/or you might find the next few steps rudimentary. Bear with me as we establish our computational thinking framework and our approach to pseudocode. 
 
 
 #### Decomposition
+
+If composing a function is the process of assembling the various components, such as variables, control flow, and conditions, then decomposition is the opposite: it’s breaking a problem down into smaller parts.
+
+This is both the easiest and the hardest step in the process because sometimes the component parts of a problem are obvious, but other times the component parts are emergent, or intertwined, and it’s difficult to cleanly separate them.
+
+
 
 Let's break this problem down and start by declaring two variables, `x`, and `y`. Each of these variables stores a value. We need values to swap, so let's just say...
 ```md
@@ -138,6 +176,9 @@ Following our control flow, we are  _overwriting_ the value of `x` with the valu
 
 #### Pattern Recognition
 
+When we break a problem down into smaller pieces, we will often recognize patterns. Another way of saying this is that we generalize. We make a broad statement by inferring from specific cases. 
+
+
 Let's take a look at our pseudocode again...
 ```md
 SET x TO y
@@ -153,6 +194,9 @@ If only we could set the value of `x` aside, _temporarily_, while we performed o
 
 #### Abstraction
 
+Once we recognize patterns, we can remove the details, or form abstractions, in order to focus on the relationships between concepts.
+
+
 We're already working with abstractions using variables such as `x` and `y`, but we were thinking in terms of the specific value stored in those variables. In the _abstraction_ step of computational thinking, the value isn't important. Why doesn't the value matter? In this algorithm, we're more interested in _where_ the value is stored then _what_ the value is. 
 
 Knowing that, we need to declare another variable that allows us to temporarily store one of the values we want to swap. Let's call it `temp`:
@@ -165,6 +209,9 @@ SET y TO temp
 
 
 ### Execute the Plan
+
+Finally, we simply need to write a series of repeatable steps to solve our problem, otherwise known as an algorithm.
+TODO
 
 The last step in our computational thinking heuristic is to translate our pseudode. 
 
