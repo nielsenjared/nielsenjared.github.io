@@ -1,53 +1,29 @@
 ---
-title: "Learn Fizz Buzz Algorithm in JavaScript"
-date: "2021-04-02"
-description: 
-keywords: ['algorithm', 'fizz buzz', 'learn', 'javascript']
+title: "Learn How to Write Pseudocode by Solving the Classic Fizz Buzz Algorithm"
+date: "2022-01-14"
+description: TODO 
+keywords: ['algorithm', 'fizz buzz', 'fizzbuzz', 'learn', 'javascript', 'pseudocode']
 ---
 
+![ {{ ALT TEXT }} ](./jarednielsen-algorithm-fizzbuzz.png)
 
-![ {{ ALT TEXT }} ](./jarednielsen-algorithm-javascript-{{ TITLE }}.png)
+If you want to learn how to code, you'll want to learn how to pseudocode, which means thinking through the problem _before_ writing any code. 
+TODO
 
-
-TODO INTRODUCTION
-
-In this tutorial, you will learn the classic Fizz Buzz algorithm {{ ... }}
+In this tutorial, you will learn how to write pseudocode while solving the classic Fizz Buzz algorithm. 
 
 
 ## Retrieval Practice
 
-* What is an algorithm? 
+* What is programming? 
+
+* TODO
 
 * What is the modulo operator? 
 
-* What is the ternary operator?
 
 
-### What is An Algorithm? 
-
-TODO 
-
-
-### What is the Modulo Operator?
-
-TODO
-
-
-### What is the Ternary Operator?
-
-TODO
-
-
-## Let's Get Meta
-
-* What Problem(s) Does Fizz Buzz Solve? 
-
-* Why do you need to learn this? 
-
-* What's the Big O of Fizz Buzz?
-
-
-## How to Code the Fizz Buzz Algorithm in JavaScript 
+### What is Programming? 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -60,37 +36,66 @@ TODO
 4. Evaluate the plan
 
 
+### TODO
+
+TODO
+
+
+### What is the Modulo Operator?
+
+In programming, the [modulo operation](https://en.wikipedia.org/wiki/Modulo_operation) returns the remainder of a division operation.
+
+
+## Let's Get Meta
+
+* What is pseudocode? 
+
+* TODO
+
+* What's the Big O of Fizz Buzz?
+
+
+## Learn Pseudocode TODO
+
+TODO
+
+
 ### Understand the Problem
 
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 > GIVEN a whole number
-> WHEN counting up from 1 to that number
-> THEN I log Fizz if the number is a multiple of 3, log Buzz if the number is a multiple of 5, and log FizzBuzz if the number is a multiple of 3 and 5
 
-That’s our general outline. We know our input conditions (a whole number) and our output requirements (multiples of 3, 5, and 3 and 5, logged), and our goal is to TODO.
+> WHEN counting up from 1 to that number
+
+> THEN I log Fizz if the number is a multiple of 3, Buzz if the number is a multiple of 5, and FizzBuzz if the number is a multiple of 3 and 5
+
+That’s our general outline. We know our input conditions (a whole number) and our output requirements (multiples of 3, 5, and 3 and 5, logged as "Fizz", "Buzz", and "FizzBuzz", respectively).
 
 Let’s make a plan!
 
 
 ### Make a Plan
 
-Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are: 
-
-* Decomposition
-
-* Pattern recognition
-
-* Abstraction
-
-* Algorithm
-
-TODO
 
 
 #### Decomposition
 
-What's the smallest problem we can solve? 1, but we already know it won't log anything. So, our smallest problem is 3. We start counting at 1, so we will need to iterate from 1 to 3, then check if each value is a multiple 3. 
+TODO
+
+What's the smallest problem we can solve? 
+
+1.
+
+Let's pseudocode it: 
+```md
+INPUT 1
+
+IF 1 IS A MULTIPLE OF 3
+    OUTPUT "Fizz"
+
+
+But we already know it won't log anything. So, our smallest problem is actually 3. Our count starts at 1, so we will need to iterate from 1 to 3, then check if each value is a multiple 3. 
 
 Let's pseudocode this...
 ```md
@@ -138,6 +143,8 @@ Buzz
 Do you see a pattern emerging? 
 
 #### Pattern Recognition
+
+
 
 TODO
 
@@ -194,6 +201,13 @@ FOR EACH number FROM 1 TO whole number
         OUTPUT number
 ```
 
+
+### Abstraction
+
+
+
+### TODO Algorithm
+
 There's one more refactor we can make before we translate this to code. What's another way of saying "IS A MULTIPLE OF"? 
 
 [Modulo.](https://en.wikipedia.org/wiki/Modulo_operation)
@@ -227,6 +241,7 @@ FOR EACH number FROM 1 TO whole number
     ELSE
         OUTPUT number
 ```
+
 
 ### Execute the Plan
 
@@ -271,16 +286,16 @@ TODO
 
 ## Reflection
 
-* What Problem(s) Does {{ TITLE }} Solve? 
+* What is Computational Thinking? 
 
 * 
 
 * 
 
 
-### What Problem(s) Does Fizz Buzz Solve?
+### What is Computational Thinking?
 
-None! But learning how to implement it in more than one way builds your street cred. 
+Computational thinking is a set of methods used for defining and solving a problem in terms that a computer could also perform. 
 
 
 ### TODO BULLET #2
