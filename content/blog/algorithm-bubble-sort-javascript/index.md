@@ -3,6 +3,7 @@ title: "How to Code the Bubble Sort Algorithm in JavaScript"
 date: "2021-05-21"
 description: "If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn how to code the bubble sort algorithm in JavaScript. "
 keywords: ['algorithm', 'bubble sort', 'javascript']
+featuredImage: jarednielsen-algorithm-bubble-sort.png
 ---
 
 
@@ -12,7 +13,7 @@ If you want to think like a programmer, you need to learn algorithms. Learning a
 
 ---
 
-![A is for Algorithms](./../../assets/graphics/algorithms/jarednielsen-algorithms-banner.png)
+![A is for Algorithms](./jarednielsen-algorithms-banner.png)
 
 Give yourself an A. Pick up a copy of [A is for Algorithms](https://gum.co/algorithms)
 

@@ -30,3 +30,11 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     #mc_embed_signup .clear {display: block; width: 100% }
     #mc_embed_signup .button {width: 100%; margin:0; }
 }
+
+img {
+  max-width: 100%;
+}
+
+a {
+  /* color:#ff007f; */
+}

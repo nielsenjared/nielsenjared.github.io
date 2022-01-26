@@ -5,8 +5,7 @@ description: Is there a computer science topic more terrifying than Big O? Donâ€
 keywords: ["big o", "big o notation"]
 ---
 
-![](./../../assets/graphics/little-book-big-o/jarednielsen-little-book-big-o-banner.png)
-
+![](./jarednielsen-little-book-big-o-banner.png)
 
 So you need to learn Big O.
 

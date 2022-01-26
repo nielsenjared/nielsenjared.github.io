@@ -5,7 +5,7 @@ description: Big O notation is not a big deal. Learn the fundamentals of Big O l
 keywords: ["big o", "big o notation", "linear time", "time complexity"]
 ---
 
-![](./jarednielsen-big-o-linear-liberation.png)
+![](./jarednielsen-big-o-linear.png)
 
 Is there a computer science topic more terrifying than Big O notation? Don’t let the name scare you, Big O notation is not a big deal. It’s very easy to understand and you don’t need to be a math whiz to do so. In this tutorial, you'll learn the fundamentals of Big O notation linear time complexity with examples in JavaScript.
 

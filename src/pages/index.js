@@ -1,24 +1,22 @@
-import React from 'react'
+import * as React from "react"
+import { Link, graphql } from "gatsby"
+
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-import SEO from '../components/seo'
-
-
-import { Link, graphql } from 'gatsby'
-import banner from './jared-nielsen-banner.png';
+import banner from './solution-rubber-duck-banner.png';
+// import banner from './jared-nielsen-banner.png';
 import './index.css';
 
-class Index extends React.Component {
 
-  render() {
-    const { data } = this.props;
-    const siteTitle = data.site.siteMetadata.title
+const Index = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata?.title || `Title`
 
-    return(
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Jared Nielsen" keywords={['jared nielsen', 'problem solving', 'programming', 'lifelong learning']} />
-
-        <img src={banner} />
+  return (
+    <Layout location={location} title={siteTitle}>
+      <Seo title="Jared Nielsen" keywords={['jared nielsen', 'problem solving', 'programming', 'lifelong learning']} />
+      
+      <img src={banner} />
 
         <div id="mc_embed_signup">
           <form
@@ -33,7 +31,7 @@ class Index extends React.Component {
             <div id="mc_embed_signup_scroll">
         	    <label htmlFor="mce-EMAIL">
                 <h2>Programming is problem solving.</h2>
-                <p>Want to level up your skills? I write a weekly newsletter about programming, problem solving and lifelong learning.</p>
+                <p>Want to level up your skills? I write a bi-weekly newsletter about programming, problem solving and lifelong learning.</p>
                 <p>It's <em>The Solution</em>.</p>
                 <p>Look for it on Sundays.</p>
               </label>
@@ -68,11 +66,12 @@ class Index extends React.Component {
           Skeptical? Here's a sample: <a href="https://jarednielsen.com/programming-problem-solving/">Programming is Problem Solving</a>
         </p>
         </div>
+
     </Layout>
-    )
-  }
+  )
 }
-export default Index;
+
+export default Index
 
 export const pageQuery = graphql`
   query {
@@ -82,17 +81,15 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
         }
       }
     }

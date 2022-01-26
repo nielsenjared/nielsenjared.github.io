@@ -150,7 +150,7 @@ We’ll look at O(log n) later. Let’s begin with O(1), which will help us unde
 
 ## O(1): Constant Time Complexity
 
-![](./jarednielsen-big-o-constant-liberation.png)
+![](./jarednielsen-big-o-constant.png)
 
 Say you’re working with an API that returns a users full name in an array, like so: 
 

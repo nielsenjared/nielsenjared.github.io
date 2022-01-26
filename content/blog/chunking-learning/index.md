@@ -7,7 +7,7 @@ subject:  https://mailchi.mp/f55497ad61ea/the-solution-how-do-you-eat-an-algorit
 preview_text: https://mailchi.mp/94f023d293ea/how-do-you-gain-expertise
 ---
 
-![](./jarednielsen-solution-chunking.png)
+![](./jarednielsen-chunking-learning.png)
 
 When learning something new, we want to create chunks. With chunking, we learn a concept then combine that concept with other concepts to solve problems. If we encounter a concept that is too big to understand, we need to break it into smaller chunks, then recombine the chunks. 
 

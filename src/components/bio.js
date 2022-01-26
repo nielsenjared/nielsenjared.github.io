@@ -1,34 +1,49 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import Image from 'gatsby-image'
+/**
+ * Bio component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.com/docs/use-static-query/
+ */
 
-import { rhythm } from '../utils/typography'
+import * as React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-function Bio() {
+const Bio = () => {
+  const data = useStaticQuery(graphql`
+    query BioQuery {
+      site {
+        siteMetadata {
+          author {
+            name
+            summary
+          }
+          social {
+            twitter
+          }
+        }
+      }
+    }
+  `)
+
+  // Set these values by editing "siteMetadata" in gatsby-config.js
+  const author = data.site.siteMetadata?.author
+  const social = data.site.siteMetadata?.social
+
   return (
-    <StaticQuery
-      query={bioQuery}
-      render={data => {
-        const { author, social } = data.site.siteMetadata
-        return (
-          <div
-            style={{
-              display: 'flex',
-              marginBottom: rhythm(2.5),
-            }}
-          >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: '100%'
-              }}
-            />
-            <p>
-          Want to level up your problem solving skills? I write a weekly newsletter about programming, problem solving and lifelong learning. 
+    <div className="bio">
+      <StaticImage
+        className="bio-avatar"
+        layout="fixed"
+        formats={["auto", "webp", "avif"]}
+        src="../images/profile-pic.png"
+        width={50}
+        height={50}
+        quality={95}
+        alt="Profile picture"
+      />
+      <p>
+          Want to level up your problem solving skills? I write a bi-weekly newsletter about programming, problem solving and lifelong learning. 
           {' '}
           <a
             href="http://eepurl.com/cP8CMn"
@@ -36,32 +51,18 @@ function Bio() {
             rel="noopener">
             Join now
           </a>
+      </p>
+      {/* {author?.name && (
+        <p>
+          Written by <strong>{author.name}</strong> {author?.summary || null}
+          {` `}
+          <a href={`https://twitter.com/${social?.twitter || ``}`}>
+            @jarednielsen
+          </a>
         </p>
-          </div>
-        )
-      }}
-    />
+      )} */}
+    </div>
   )
 }
-
-const bioQuery = graphql`
-  query BioQuery {
-    avatar:file(absolutePath: { regex: "/jared-nielsen.png/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    site {
-      siteMetadata {
-        author
-        social {
-          twitter
-        }
-      }
-    }
-  }
-`
 
 export default Bio
