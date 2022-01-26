@@ -1,839 +1,776 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.a2b0a4210f454d4c17db.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}h1{font-size:2em!important}#mc_embed_signup form{text-align:center;padding:10px 0}.mc-field-group{display:inline-block}#mc_embed_signup input.email{font-family:Open Sans,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;font-size:15px;border:1px solid #abb0b2;border-radius:3px;color:#343434;background-color:#fff;box-sizing:border-box;height:32px;padding:0 .4em;display:inline-block;margin:0;width:350px;vertical-align:top}#mc_embed_signup label{display:block;font-size:16px;padding-bottom:10px;font-weight:700}#mc_embed_signup .clear{display:inline-block}#mc_embed_signup .button{font-size:13px;border:none;border-radius:3px;letter-spacing:.03em;color:#fff;background-color:#ff007f;box-sizing:border-box;height:32px;line-height:32px;padding:0 18px;display:inline-block;margin:0;-webkit-transition:all .23s ease-in-out 0s;transition:all .23s ease-in-out 0s}#mc_embed_signup .button:hover{background-color:#8000ff;cursor:pointer}#mc_embed_signup div#mce-responses{float:left;top:-1.4em;padding:0 .5em;overflow:hidden;width:90%;margin:0 5%;clear:both}#mc_embed_signup div.response{margin:1em 0;padding:1em .5em .5em 0;font-weight:700;float:left;top:-1.5em;z-index:1;width:80%}#mc_embed_signup #mce-error-response{display:none}#mc_embed_signup #mce-success-response{color:#529214;display:none}#mc_embed_signup label.error{display:block;float:none;width:auto;margin-left:1.05em;text-align:left;padding:.5em 0}@media (max-width:768px){#mc_embed_signup input.email{width:100%;margin-bottom:5px}#mc_embed_signup .clear{display:block;width:100%}#mc_embed_signup .button{width:100%;margin:0}}</style><meta name="generator" content="Gatsby 2.18.2"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=1659889846b630ce0576be754ef9c32d"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=1659889846b630ce0576be754ef9c32d"/><title data-react-helmet="true">Create a GitHub Repository and Your First Commit | jarednielsen.com</title><meta data-react-helmet="true" name="description" content="Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes!"/><meta data-react-helmet="true" property="og:title" content="Create a GitHub Repository and Your First Commit"/><meta data-react-helmet="true" property="og:description" content="Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes!"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Jared Nielsen"/><meta data-react-helmet="true" name="twitter:title" content="Create a GitHub Repository and Your First Commit"/><meta data-react-helmet="true" name="twitter:description" content="Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes!"/><link as="script" rel="preload" href="/webpack-runtime-c973350df21cb6f2e98b.js"/><link as="script" rel="preload" href="/styles-53d27243da94e1a00671.js"/><link as="script" rel="preload" href="/app-e83603a732b9346823e1.js"/><link as="script" rel="preload" href="/commons-246aa2cc16737a2f2814.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-2a9c5f72c2c9311faca6.js"/><link as="fetch" rel="preload" href="/page-data/create-github-repository-first-commit/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">jarednielsen.com</a></h3><h1>Create a GitHub Repository and Your First Commit</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">January 03, 2020</p><div><p>
-  <a
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta data-react-helmet="true" name="twitter:description" content="Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes!"/><meta data-react-helmet="true" name="twitter:title" content="Create a GitHub Repository and Your First Commit"/><meta data-react-helmet="true" name="twitter:creator" content="jarednielsen"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:description" content="Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes!"/><meta data-react-helmet="true" property="og:title" content="Create a GitHub Repository and Your First Commit"/><meta data-react-helmet="true" name="description" content="Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes!"/><meta name="generator" content="Gatsby 4.5.4"/><style data-href="/styles.ce96a3b9b8b83b9d7bde.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{-webkit-text-size-adjust:100%;line-height:1.15}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:"Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5}*,:after,:before{box-sizing:border-box}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:var(--fontSize-root);line-height:var(--lineHeight-normal)}body{color:var(--color-text);font-family:var(--font-body);font-size:var(--fontSize-1)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);border:0;height:1px}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);letter-spacing:-.025em;line-height:var(--lineHeight-tight);margin-bottom:var(--spacing-6);margin-top:var(--spacing-12)}h2,h3,h4,h5,h6{color:var(--color-heading);font-weight:var(--fontWeight-bold)}h1{color:var(--color-heading-black);font-size:var(--fontSize-6);font-weight:var(--fontWeight-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{--baseline-multiplier:0.179;--x-height-multiplier:0.35;line-height:var(--lineHeight-relaxed);margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{list-style-image:none;list-style-position:outside;margin-bottom:var(--spacing-8);margin-left:var(--spacing-0);margin-right:var(--spacing-0)}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{border-left:var(--spacing-1) solid var(--color-primary);color:var(--color-text-light);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{border-collapse:collapse;border-spacing:.25rem;margin-bottom:var(--spacing-8);width:100%}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-5)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-item{margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{color:var(--color-primary);font-size:var(--fontSize-4);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-family:var(--font-heading);font-size:var(--fontSize-2);font-weight:var(--fontWeight-bold);text-decoration:none}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{border-radius:100%;margin-right:var(--spacing-4);min-width:50px}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-family:var(--font-heading);font-size:var(--fontSize-2)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}@media (max-width:42rem){blockquote{margin-left:var(--spacing-0);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4)}ol,ul{list-style-position:inside}}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}h1{font-size:2em!important}#mc_embed_signup form{padding:10px 0;text-align:center}.mc-field-group{display:inline-block}#mc_embed_signup input.email{background-color:#fff;border:1px solid #abb0b2;border-radius:3px;box-sizing:border-box;color:#343434;display:inline-block;font-family:Open Sans,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;font-size:15px;height:32px;margin:0;padding:0 .4em;vertical-align:top;width:350px}#mc_embed_signup label{display:block;font-size:16px;font-weight:700;padding-bottom:10px}#mc_embed_signup .clear{display:inline-block}#mc_embed_signup .button{background-color:#ff007f;border:none;border-radius:3px;box-sizing:border-box;color:#fff;display:inline-block;font-size:13px;height:32px;letter-spacing:.03em;line-height:32px;margin:0;padding:0 18px;transition:all .23s ease-in-out 0s}#mc_embed_signup .button:hover{background-color:#8000ff;cursor:pointer}#mc_embed_signup div#mce-responses{clear:both;float:left;margin:0 5%;overflow:hidden;padding:0 .5em;top:-1.4em;width:90%}#mc_embed_signup div.response{float:left;font-weight:700;margin:1em 0;padding:1em .5em .5em 0;top:-1.5em;width:80%;z-index:1}#mc_embed_signup #mce-error-response{display:none}#mc_embed_signup #mce-success-response{color:#529214;display:none}#mc_embed_signup label.error{display:block;float:none;margin-left:1.05em;padding:.5em 0;text-align:left;width:auto}@media (max-width:768px){#mc_embed_signup input.email{margin-bottom:5px;width:100%}#mc_embed_signup .clear{display:block;width:100%}#mc_embed_signup .button{margin:0;width:100%}}img{max-width:100%}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" title="jarednielsen.com RSS Feed" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><title data-react-helmet="true">Create a GitHub Repository and Your First Commit | jarednielsen.com</title><link as="script" rel="preload" href="/webpack-runtime-538954c601d21277126a.js"/><link as="script" rel="preload" href="/framework-e413e527015be9a1bdfd.js"/><link as="script" rel="preload" href="/app-301c8cf0cc36be3d4466.js"/><link as="script" rel="preload" href="/commons-0f416e881c5946c9c507.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-2aec47be4891590b3660.js"/><link as="fetch" rel="preload" href="/page-data/create-github-repository-first-commit/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3257411868.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">jarednielsen.com</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">Create a GitHub Repository and Your First Commit</h1><p>January 03, 2020</p></header><section itemProp="articleBody"><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/db639c6ad280895e1286f99ef543d095/2f950/jarednielsen-forkyeah-github-repository-commit.png"
+    href="/static/db639c6ad280895e1286f99ef543d095/29007/jarednielsen-forkyeah-github-repository-commit.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAACJElEQVQ4y42UX0hTURzHFz3lQxAJPdRT0UtQTxG9RG/1HiisB9+DpC3Nh0iht6hmC4Sa1IOZMGEuF0L0V6SZNmuoD2ox3HCLaToWbrrcdn6f7u7u/u9CBw6/c+75ns/9/bvXQv0QQXQjxa1SSDiB/NhAIglI/a05L90pWYspzFir8BYqEEHNR1HLcSS0CQsxxL+KrGxALl8DbQRWwSSahJk1mItBIAqTqzC+iAx9hZdzSGGteV8G1nsoVV6ylYYPP/k24MF57Tb3O+x86hsk93waBj4jg5p1B5GldXNgOcxCGNMRJnqcnD1xin0WCxZttrYc5PGVTpTjIzz1I94FSKRNgEa4Svdul+Swn4vHz3DVamXM46Hf0Y/NZuP8ydMEbg3CcBC1FC9H1ZjDamByjxXXBIf3t9B7p7csSafTHGs9grujD2Zj5KnkvGmVdaBxGJua5/K5C7S3tRGPx9lJ7/DQ4eDogUNMPXiha1QJ2LTKUoGKsR91j2Lvukkmk8Hn8+l5vH6pnd3NP5UeNQ25rpkLYzv0i3d2J9m9LKlUCpe1m9+LoaImryp3qpq8JoflPiwJR75Dz2vUiNZzLq1NZtdqXihV+uZAXWyEHIwi3eNI1yvo9CDPvqA0kKpu/DpY0y9FN5ks8mgSbowhdi9y9w2yvl2EKKlJjzmwIDDEzITB5i1OzTveLhefK6kU4L+AhZHT8vPEr3unz3vvtepkGv4qZuMfJt1MEMCtJXwAAAAASUVORK5CYII='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAC4jAAAuIwF4pT92AAACH0lEQVQ4y42UO2hTURjHrzjZQRALDjopLoJOIi7iprvQQhy6CwYTWzuILbiJmhqhoAk61FpIIY2tFMRnKSa2JhraDm2V0IQmktY2RJK0sUnO95PcPG6e4AeHc849//O73+tejUYTQfRJSlulkHAC+bGJRBKQ/lt3XrlTmbW2sPJahbdR/ghqIYpaiSOhLViMId41ZHUT8oU6aDOwBibRJMytQyAG/ijMrMHkEjLyFV4GkOI6nDCAjR5KjZdsZ+DDT74Nu7Ffu839HiufBp3kn/tg+DPi9IEriCxvtAdWwyyG4Ysw3W/n7IlT7NM0NE2js+Mgj6+YUbaP8NSLeBYhkWkDLIerdO92SY56uXj8DFdNJibcboZsQ1gsFs6fPI3/lhNGg6jleDWq5hzWApN7rDqmOby/g4E7A1VJJpPhWOcRXD2DMB+jgJHzllXWgeXD2OwCl89doLuri3g8zk5mh4c2G0cPHGL2wQtdoyrAllUWAyrl/bhrHGvvTbLZLFNTU3oer1/qZnfrj9GjbUNuaOaipUK/eGe1k9vLkU6ncZj6+L0UKmkKyrhT0+R1Oaz2YUU49h36X6PGAojDB/PrdS+UGn1roC4uhxyMIn2TSO8rMLuRZ19QSpVy3PB5tgbWQrM55NEM3JhArB7k7htkI1WCKKlLT3tgUVAWMxcGi6c0zG54u1J6rsQowH8Bi5ZX8MSre6ePe+8hlW36q7SzfybdTBDKAD0UAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit"
-        title=""
-        src="/static/db639c6ad280895e1286f99ef543d095/b9e4f/jarednielsen-forkyeah-github-repository-commit.png"
-        srcset="/static/db639c6ad280895e1286f99ef543d095/cf440/jarednielsen-forkyeah-github-repository-commit.png 148w,
-/static/db639c6ad280895e1286f99ef543d095/d2d38/jarednielsen-forkyeah-github-repository-commit.png 295w,
-/static/db639c6ad280895e1286f99ef543d095/b9e4f/jarednielsen-forkyeah-github-repository-commit.png 590w,
-/static/db639c6ad280895e1286f99ef543d095/f9b6a/jarednielsen-forkyeah-github-repository-commit.png 885w,
-/static/db639c6ad280895e1286f99ef543d095/2d849/jarednielsen-forkyeah-github-repository-commit.png 1180w,
-/static/db639c6ad280895e1286f99ef543d095/2f950/jarednielsen-forkyeah-github-repository-commit.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit"
+        src="/static/db639c6ad280895e1286f99ef543d095/f058b/jarednielsen-forkyeah-github-repository-commit.png"
+        srcset="/static/db639c6ad280895e1286f99ef543d095/c26ae/jarednielsen-forkyeah-github-repository-commit.png 158w,
+/static/db639c6ad280895e1286f99ef543d095/6bdcf/jarednielsen-forkyeah-github-repository-commit.png 315w,
+/static/db639c6ad280895e1286f99ef543d095/f058b/jarednielsen-forkyeah-github-repository-commit.png 630w,
+/static/db639c6ad280895e1286f99ef543d095/40601/jarednielsen-forkyeah-github-repository-commit.png 945w,
+/static/db639c6ad280895e1286f99ef543d095/78612/jarednielsen-forkyeah-github-repository-commit.png 1260w,
+/static/db639c6ad280895e1286f99ef543d095/29007/jarednielsen-forkyeah-github-repository-commit.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes! </p>
+    </span></p>
+<p>Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes!</p>
 <h2>Create a GitHub Repository and Your First Commit</h2>
-<p>
-  <a
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/dfe80beabed4e6e17c5869a7c0807426/2f950/jarednielsen-forkyeah-github-repository-commit-00.png"
+    href="/static/dfe80beabed4e6e17c5869a7c0807426/29007/jarednielsen-forkyeah-github-repository-commit-00.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAACBUlEQVQoz1WRTWsTURSG51e4kIKaNmkzM8lMMh/5bDI1CTapUBTBjYgKIgrdBYulpVYKXZRWCi4CFfsXXAku3BRL6kpbC6YTOtRmUGw0HWnNfN/xTKap8fJwOPfc9z3nwMUCBO3HKZpLUkyCpDkywgOhaGwoFPUT1PkL/nN9Pt8geSlAXAwQYSaBUyzowQVgOM27UFyQ4obCLES4EpEYRDIafzIzV1lde1FZrbxcW1hc7n0FMMg8QkyCT49wKSHMJkHkVT5tfXYcxzQtiA1ZPp3UAQTY2QU8t+89uHv/4c1bdzK5UdgCJq9vVBFy/rRViPU9yfN4k10z0W0D0vTl0Wy+dOXq9XxxPDaco/n0+vuqphnNny3NsKX9r71md+2zHQAmnmGTApvI8qkRLi3EY7lnb1Yma0szWyuTX54vb76ioyk88s+P9QepAZzuIeJGgvYFqUGSef3u7a4i73wTa62DjZ2PA0HK00Psx2ksWxjLFkpCYUxwk/+AyqOJ8vT0/NTU3NPZhXL5cXH8Rr50LZMvggXANN0AVM1QOwnQ1nS1y5GifD/8JcmH2+Ledl3a/FBt/mgYFoInUGI2cgDLRpZtw5eYlu10DnJOD/ySZuiSvC//1luKcnJyDEUbIXBhhml1MA8ajdquKIp1TdPh+ei4rRomNGkqbQs6IgSrub0su2ux/gJ44UgRMTX1/wAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACKUlEQVQoz1WRy2sTYRDA92/w1IPkYF673252v9399tE8mgdtE4sFxYMHPRQRhV4UPPQQbKmHCoJKSgp69+DBi5eioict4qVU8NFsUVNIYg1Jms3GbJrs7iebjY8OPwaG4TczMEQQQD/JQikKUZSBUoRXIrzCiioZEYMATvj8JyZ8Pj/lC1AnT4VZUaWhFABckIYhwBEAygDKFCdRnERGRJJFFCcDqNC8AqB8/ebS+saje4WNQvHhnbv3GUGlOMlrASgTNK94MIKKoikUTbIoSnESI6gki96+e48xtiwLY9xqHfJKgmQR4F2T5pXxZgBlRlAvLly5fHXxwqWFqenTAMphFm2+fGVj3P3VG1pW5ccBr8T/bnZlGo7H0LwSz+SSM3O5M+dm5s6qU9OMoD5/8Xo4sFvNdr9v1etNXkkcP/s/WZxMSrGUFE3JsbSSyCAxufr0wa3S+uqHYv5TobjzWFJT5Ej2fCLECOGI6EGyiGRROIK8MkQLTzafaUb148He52Z5+/suK04GACRZNLIEIp7JxtNZN2dyo/yPWHr22uKN5eW1fP72ysra0lI+O38+nZ2PpWc9i9CNrkvHpWO4tHVD74ypNxqV2k9tv7azu7f9RXuztbVf1rq9o3bH0I0uYTvYdrBlOy6WbVm2g4+FjbE5GH6tfCu3zEbzUNfb7vNsx3YwMRhaHtVqraRppZLW65kY47Zh9voDjHFDNwdD98/mqLRs++iP8hu2sUZdcsYusQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 00"
-        title=""
-        src="/static/dfe80beabed4e6e17c5869a7c0807426/b9e4f/jarednielsen-forkyeah-github-repository-commit-00.png"
-        srcset="/static/dfe80beabed4e6e17c5869a7c0807426/cf440/jarednielsen-forkyeah-github-repository-commit-00.png 148w,
-/static/dfe80beabed4e6e17c5869a7c0807426/d2d38/jarednielsen-forkyeah-github-repository-commit-00.png 295w,
-/static/dfe80beabed4e6e17c5869a7c0807426/b9e4f/jarednielsen-forkyeah-github-repository-commit-00.png 590w,
-/static/dfe80beabed4e6e17c5869a7c0807426/f9b6a/jarednielsen-forkyeah-github-repository-commit-00.png 885w,
-/static/dfe80beabed4e6e17c5869a7c0807426/2d849/jarednielsen-forkyeah-github-repository-commit-00.png 1180w,
-/static/dfe80beabed4e6e17c5869a7c0807426/2f950/jarednielsen-forkyeah-github-repository-commit-00.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 00"
+        src="/static/dfe80beabed4e6e17c5869a7c0807426/f058b/jarednielsen-forkyeah-github-repository-commit-00.png"
+        srcset="/static/dfe80beabed4e6e17c5869a7c0807426/c26ae/jarednielsen-forkyeah-github-repository-commit-00.png 158w,
+/static/dfe80beabed4e6e17c5869a7c0807426/6bdcf/jarednielsen-forkyeah-github-repository-commit-00.png 315w,
+/static/dfe80beabed4e6e17c5869a7c0807426/f058b/jarednielsen-forkyeah-github-repository-commit-00.png 630w,
+/static/dfe80beabed4e6e17c5869a7c0807426/40601/jarednielsen-forkyeah-github-repository-commit-00.png 945w,
+/static/dfe80beabed4e6e17c5869a7c0807426/78612/jarednielsen-forkyeah-github-repository-commit-00.png 1260w,
+/static/dfe80beabed4e6e17c5869a7c0807426/29007/jarednielsen-forkyeah-github-repository-commit-00.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
+    </span></p>
 <p>If you don’t have one already, navigate to <a href="https://github.com">GitHub</a> and create an account.</p>
-<p>
-  <a
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/e1462bf49d6d990157d7e849fb281450/2f950/jarednielsen-forkyeah-github-repository-commit-01.png"
+    href="/static/e1462bf49d6d990157d7e849fb281450/29007/jarednielsen-forkyeah-github-repository-commit-01.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAB2UlEQVQoz41Sz2sTQRTev9GD4KkShJBqY2piI5aCF6GQHhTBo2BvIt48Cb304sEcCrZQWixtiC00P3azs5nZ+fn5Zjab7sGWDjz27ce8733vfRN1uq/x8tUmmq0Oak+eoVZ7itW1dbTaXTTWWreGv7PafIHm83U8qHdRf/gWH1feIMLi7P/oo/d4C5uPGnj/7jMhDkpp3Odw5XA14SGPtC6Kvn3dw05jA716Gzvbn2CMRsoYpJTIKYwxyHiOmHHCVMC5EIRbaK2gpIBzFpEH/On/OkRv+wM67S3s7n6BR1kmIHIF39RaS3mOORekvMB8E+fcUqnPoxLgWYbziwGmcQJFHedCkpoc6VwGAk/olZZkfh3+G+op3CKWhDl1v74egXMvHYFQaRN2WRYVI4tA7tVVFRaEqBDSXv6OGebSFoaEkW4uhyloZyzjQV2h8A7CNE5xejJEljIYoSEEp+IUknZorAmqrKMmlvbpCoXBFGtvCFEh9K7NiFTR6Fbb0P0qHuB8coRh/AcJm+JsfIDflz9xNjrB6egQw+Q41NrAsVBYHal6JBHGZFTCJ8gVPRUlwURC/1MIyTGjvD+4RMrt/0cuXSodS5IZGSVvfczer+8HDBdjtVTpy/8B1VwuttN3X3wAAAAASUVORK5CYII='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAB1UlEQVQoz3WSXWsTQRSG8wsFr7yrIZW0qU2JmF4VxV5YxTul6p3/QsQfIL0R/IqotZZAU2qbz81+zPc+MrO7kBRzYGBn5pxn3vecrbU7XXbudWltd6ivt7hd36TZatNqd2g0t2g0WyvWFusbd9nY3OJGY4e1mw95fmuPGmV8/NDjaf0R+2ttnjx+Dc6gpKquyfN84ZulyHTO2WWCc1Cz1obD9++OOLjT5XB7l/29Q7TRxHGCVhqlND4vk4pZLFC6OBNCYK3DGo1WGXnuPNAF4Ncvxzw7eMHu/Qe8evkG6xxxKhBSo40JhUJKkjQLQGMMxlicy5dc1CorMk05Pe3z92qIkIJMaiaxJEpVADjnkEqjtQowrYuHXFnvOUtAb2E4HJJlWdin0oOMTy36l+ekQjKNRVAflrXXgCwAteF8NCcWNkD866ZsR5XjexbFaaGutL0SmM4Tfh8PmEcxVphQnCQxSuqgxlvOc6+oUOX3vqfVUP+jUDMdz1BC4LQNDb+cDeiPv3M2PWEWT+iPv9G7OOLk6id/Rj/oT3oLDkrg9X+sCm0c0yRhkg4ROkFpxVxMmaYjEpEwFzM+Dc6ZpSsUVlOqLqIoQgjJqvA5bz/H/Looclw55X+J5CzyWBqrVwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 01"
-        title=""
-        src="/static/e1462bf49d6d990157d7e849fb281450/b9e4f/jarednielsen-forkyeah-github-repository-commit-01.png"
-        srcset="/static/e1462bf49d6d990157d7e849fb281450/cf440/jarednielsen-forkyeah-github-repository-commit-01.png 148w,
-/static/e1462bf49d6d990157d7e849fb281450/d2d38/jarednielsen-forkyeah-github-repository-commit-01.png 295w,
-/static/e1462bf49d6d990157d7e849fb281450/b9e4f/jarednielsen-forkyeah-github-repository-commit-01.png 590w,
-/static/e1462bf49d6d990157d7e849fb281450/f9b6a/jarednielsen-forkyeah-github-repository-commit-01.png 885w,
-/static/e1462bf49d6d990157d7e849fb281450/2d849/jarednielsen-forkyeah-github-repository-commit-01.png 1180w,
-/static/e1462bf49d6d990157d7e849fb281450/2f950/jarednielsen-forkyeah-github-repository-commit-01.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 01"
+        src="/static/e1462bf49d6d990157d7e849fb281450/f058b/jarednielsen-forkyeah-github-repository-commit-01.png"
+        srcset="/static/e1462bf49d6d990157d7e849fb281450/c26ae/jarednielsen-forkyeah-github-repository-commit-01.png 158w,
+/static/e1462bf49d6d990157d7e849fb281450/6bdcf/jarednielsen-forkyeah-github-repository-commit-01.png 315w,
+/static/e1462bf49d6d990157d7e849fb281450/f058b/jarednielsen-forkyeah-github-repository-commit-01.png 630w,
+/static/e1462bf49d6d990157d7e849fb281450/40601/jarednielsen-forkyeah-github-repository-commit-01.png 945w,
+/static/e1462bf49d6d990157d7e849fb281450/78612/jarednielsen-forkyeah-github-repository-commit-01.png 1260w,
+/static/e1462bf49d6d990157d7e849fb281450/29007/jarednielsen-forkyeah-github-repository-commit-01.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
+    </span></p>
 <p>The primary purpose of GitHub is to create and host repositories, commonly referred to as <em>repos</em>.</p>
-<p>What’s a repository? We can think of a repository like a cookbook or a recipe box: it’s a place for us to store our recipes. </p>
-<p>GitHub provides several different options for creating a new repository. The easiest to access is in the right side of the navbar. If you click the <code>+</code> sign, the first option in the dropdown menu is <code>New repository</code>. </p>
-<p>
-  <a
+<p>What’s a repository? We can think of a repository like a cookbook or a recipe box: it’s a place for us to store our recipes.</p>
+<p>GitHub provides several different options for creating a new repository. The easiest to access is in the right side of the navbar. If you click the <code class="language-text">+</code> sign, the first option in the dropdown menu is <code class="language-text">New repository</code>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/67cf1ddf94d5be60b422680ecc3ee6ef/2f950/jarednielsen-forkyeah-github-repository-commit-02.png"
+    href="/static/67cf1ddf94d5be60b422680ecc3ee6ef/29007/jarednielsen-forkyeah-github-repository-commit-02.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABzElEQVQoz42RTWsTURSG8+/8Aa4EFxIESSJpY6ZJsHRfSFfqulBxI+LKhSCI6MKFVpFSSmmp2JYW8qHJZCZz537N473TNJ2GIh7mHe7ce88z7zmnFLQfs9JZpb4cUL7/kHK5Rq3eYOlRi9qtu1Rvl6kEQa5qq3WhTptKp8XS8gr1epOqu19vBDSabUrM4tO7bbr31li9U+HJsxdg3fPmB+yew34fPh65S04fDrFv9+DzCcOdfSZ7RxSjpLXOF69fvWej0qL7oMnG+ibSQK8XM00UNhLY3zF2EGF6Ier7MXw75ezLDoODn3m+tZbMZpSMsfnG9tdduutPCZprPN96iXKHk0QiUunWBscnK8hnZdqQZbM9t/Aq+ZePJI75dXzCn9EYqSRxIkhTQZIkCJGilJonZdb3I0NqxWWFOacITNOUfn/gACI/jKaSSOgZhHnSpbwv5YHGXAF9D+dAqTgbRgh5cXkUSYZhim9JEVQESpXm0BuBk/GEw4NTzscjlBvEKJwydsMQQuQNX3To9U+HUkrCUchYxGhliJLU7SmXpF3/tHNq/q/k4sdVZIRT5crXzp1xurlkP6hrQyk6XEzwPfXO9IKzokz+M3sN+Bc36C8YQX8iCwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABw0lEQVQoz32RTWsTURSG8+dc+QcEEUNSGhMycYLpSgS7acWlVHHlj3Aj3UnBLxTFVoW0paRgiU20SWcy9879fOROIow29sA73DPMee77nqlEcY9Ot0ezHVOtN7lZvcVqM6IZxaxcuUb96nVqUUQt6lCLbxeqd2Nq3ZhGq0OjEVFrtFhtRbTaXSos6sOrLzyo3mf9RsTm5lNwYJ9/wn88hv4Iv3MIO4f4lweY7W/wesDZ3j5nu33KVbHWFoftF2/YWOmx1V5j/e4WufGMTlOyTOETgRuluB/nuOEU834Ab48Zvttj+LUPHpx3eO8D0BXA3c/7PNx4xNqdezx5/IzcOBKpELlCO0u41pcUpryxeOfn77yfA8MjVJ5lHB0NOB2NEVIyE5JcSoQQSCnRSs+Hw6Bz4Bza6EIsAyqlGY/HZEIU/UwoUmFwC0h5aN57jDGFlgO14eRnSpbPw01nivG5pFhJCVQGKq3Q+j8Os2TGwf53TiYTtNRME8EkEUV869wFh0Eh7iUONdNfUyYixWhDmuXkSmO0RmuDsXZJ5CXAP82/lQiNyMMOLc453IXIXP5T/vrY+8Jd2Gtw4JfsMMguLiub+g1tUC0pYFBxWAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 02"
-        title=""
-        src="/static/67cf1ddf94d5be60b422680ecc3ee6ef/b9e4f/jarednielsen-forkyeah-github-repository-commit-02.png"
-        srcset="/static/67cf1ddf94d5be60b422680ecc3ee6ef/cf440/jarednielsen-forkyeah-github-repository-commit-02.png 148w,
-/static/67cf1ddf94d5be60b422680ecc3ee6ef/d2d38/jarednielsen-forkyeah-github-repository-commit-02.png 295w,
-/static/67cf1ddf94d5be60b422680ecc3ee6ef/b9e4f/jarednielsen-forkyeah-github-repository-commit-02.png 590w,
-/static/67cf1ddf94d5be60b422680ecc3ee6ef/f9b6a/jarednielsen-forkyeah-github-repository-commit-02.png 885w,
-/static/67cf1ddf94d5be60b422680ecc3ee6ef/2d849/jarednielsen-forkyeah-github-repository-commit-02.png 1180w,
-/static/67cf1ddf94d5be60b422680ecc3ee6ef/2f950/jarednielsen-forkyeah-github-repository-commit-02.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 02"
+        src="/static/67cf1ddf94d5be60b422680ecc3ee6ef/f058b/jarednielsen-forkyeah-github-repository-commit-02.png"
+        srcset="/static/67cf1ddf94d5be60b422680ecc3ee6ef/c26ae/jarednielsen-forkyeah-github-repository-commit-02.png 158w,
+/static/67cf1ddf94d5be60b422680ecc3ee6ef/6bdcf/jarednielsen-forkyeah-github-repository-commit-02.png 315w,
+/static/67cf1ddf94d5be60b422680ecc3ee6ef/f058b/jarednielsen-forkyeah-github-repository-commit-02.png 630w,
+/static/67cf1ddf94d5be60b422680ecc3ee6ef/40601/jarednielsen-forkyeah-github-repository-commit-02.png 945w,
+/static/67cf1ddf94d5be60b422680ecc3ee6ef/78612/jarednielsen-forkyeah-github-repository-commit-02.png 1260w,
+/static/67cf1ddf94d5be60b422680ecc3ee6ef/29007/jarednielsen-forkyeah-github-repository-commit-02.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>Alternatively, if we navigate to the <code>Repositories</code> tab from our profile page, we are presented with a green button that reads, <code>New</code>. </p>
-<p>
-  <a
+    </span></p>
+<p>Alternatively, if we navigate to the <code class="language-text">Repositories</code> tab from our profile page, we are presented with a green button that reads, <code class="language-text">New</code>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/f9b02ab948623738966f7a3efcfc71e0/2f950/jarednielsen-forkyeah-github-repository-commit-03.png"
+    href="/static/f9b02ab948623738966f7a3efcfc71e0/29007/jarednielsen-forkyeah-github-repository-commit-03.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAA4klEQVQoz5WRy07DMBBF+7uFlJQ6oZB+KhtUsYCmjpXX2OOJbcbxBlpEyfXVSJZ85uVV8XyI3lfiqRJlVewP+a5cZ/ndw2O2FVkuUrzPd9+92RaifFmFnyKidhhVN1prwy1dwohYn+UIhmGiKck556/0C6y1OcuGUxhjFlcGgI/PU9v1Xd8PAJyLj0ZIpW7A3C2TBmPTOMdk9x+YF6aUYgrnoZe1TdaqRknZ1LXkystgbc3b6V22nKEFjUtgH3qEV3UcLMy3wJM6FyYXo/N/whR/1jNEU3yalsS7QvJ2ir6AvwCYfmpvrvJrQwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3UlEQVQoz5WOy07DMBBF+6ml0JQkfeZzu0IsENDEbuLanpdt5MKiVBU0V2cz0j2aO6k3Tb1pqvWuXO3K5bZeN4tqNX0spk+LWVH+MC8f5s+XzIqyWm4n6XdExFinjUOk9F+uZWbulLYOmFkkhBDDOXfJiNh2ChEBMMU47jN4eP/47AczDOZknfcA6D26m89vzO4HA4BEjEhETERIdJcsIlorwCwg0bjZWVa6U+rQdoA4Tkam18Nbe1RKHa2DMXJMlvxev/R4yldOChf8JbOISDiP/27nOocIHEkyV/oXZBNoYp6xueQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 03"
-        title=""
-        src="/static/f9b02ab948623738966f7a3efcfc71e0/b9e4f/jarednielsen-forkyeah-github-repository-commit-03.png"
-        srcset="/static/f9b02ab948623738966f7a3efcfc71e0/cf440/jarednielsen-forkyeah-github-repository-commit-03.png 148w,
-/static/f9b02ab948623738966f7a3efcfc71e0/d2d38/jarednielsen-forkyeah-github-repository-commit-03.png 295w,
-/static/f9b02ab948623738966f7a3efcfc71e0/b9e4f/jarednielsen-forkyeah-github-repository-commit-03.png 590w,
-/static/f9b02ab948623738966f7a3efcfc71e0/f9b6a/jarednielsen-forkyeah-github-repository-commit-03.png 885w,
-/static/f9b02ab948623738966f7a3efcfc71e0/2d849/jarednielsen-forkyeah-github-repository-commit-03.png 1180w,
-/static/f9b02ab948623738966f7a3efcfc71e0/2f950/jarednielsen-forkyeah-github-repository-commit-03.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 03"
+        src="/static/f9b02ab948623738966f7a3efcfc71e0/f058b/jarednielsen-forkyeah-github-repository-commit-03.png"
+        srcset="/static/f9b02ab948623738966f7a3efcfc71e0/c26ae/jarednielsen-forkyeah-github-repository-commit-03.png 158w,
+/static/f9b02ab948623738966f7a3efcfc71e0/6bdcf/jarednielsen-forkyeah-github-repository-commit-03.png 315w,
+/static/f9b02ab948623738966f7a3efcfc71e0/f058b/jarednielsen-forkyeah-github-repository-commit-03.png 630w,
+/static/f9b02ab948623738966f7a3efcfc71e0/40601/jarednielsen-forkyeah-github-repository-commit-03.png 945w,
+/static/f9b02ab948623738966f7a3efcfc71e0/78612/jarednielsen-forkyeah-github-repository-commit-03.png 1260w,
+/static/f9b02ab948623738966f7a3efcfc71e0/29007/jarednielsen-forkyeah-github-repository-commit-03.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>However you decide to create a repository, you will be routed to a page that allows you to fill in details about your project. The only thing that is required (<code>*</code>) at this point is a name. </p>
-<p>
-  <a
+    </span></p>
+<p>However you decide to create a repository, you will be routed to a page that allows you to fill in details about your project. The only thing that is required (<code class="language-text">*</code>) at this point is a name.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/872447cc9ecccbcb3503307bff173eee/2f950/jarednielsen-forkyeah-github-repository-commit-04.png"
+    href="/static/872447cc9ecccbcb3503307bff173eee/29007/jarednielsen-forkyeah-github-repository-commit-04.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABVElEQVQoz5VSa0/CMBTl56rokIcP+HH+ABO/SfwEiTFGGbCtwNaur+NtB6NjmOhNTm5z256ee3o7o4cJHIb3YwzuHB5pPUHUH+GiG+Hy5hbd3uCIaICrqF+ju8/XvSGGozE6OBPGGLBtjoTlkFLiP9Gx1uIAR2SpKIRAvFwhzzlKUUIqBW00lMta+3Pn4DgahA4uCs6xShIUUkAYRZKprkyt4vROiEbLB8Kd4Fis10in79i8zJG/foB/p+AlRyFyryYkbrQcsNWbktrMMgaxKSBZgbIQkFp5P0vC3wgDhQoG6ZYIHQH5VpQSSu8v2uO5Xwl90W36L7bQb1/YzRdYZxnieAlOio099a5J3FLoD/nnycPZJ6azKRaMfEwZ+SYQPgzYVldthUGONcNT/IyYJ9Vc1mNF6k2VTdBuS2FYcLPmJqUa8IrMfwJl56Og8ZGUpTpP+ANMNEK/FmpBEwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABSUlEQVQoz4WS227CMBBE+VZKgQIFRPt7/YC+9KmqkKh4QaKIkJtIfF9PZRPACRFYGiX2bk5mJ+m8zt/hNJm/YTxbYDxd+P1wMkP3eYhu/wW94Ri9wVVPg1Fd/ZHvmUwX6KBlGWOQ5kccsiMY5/7MWguyFo9WxzWGcksphegQoygYpJRQWsMQQWvjX9Z8JlQrkEuBKI7BlIAgfTo3dHFxFxjaPQOZFNglMdLlBvnXGuX3BnybgEsOJkoQUQ1cGzmgXYpaKmRZDp6XUGkBWXA/tlQKUkk//mNg4NDAIj3mEA5gNLhUUMY2+hwM7cBLBuevvNqj+N0hyXJEUQTOBcg2s7vCQmh95ArJ139Yrn6wyw5Ikgwlu/46qNw1p7p1GBQTKvCx/8SW7f2eKlfuSlQpyO/GYRiu1hqkT/cue+MB5OvaWAhNPk+p24H/AYNBJlzJNO0AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 04"
-        title=""
-        src="/static/872447cc9ecccbcb3503307bff173eee/b9e4f/jarednielsen-forkyeah-github-repository-commit-04.png"
-        srcset="/static/872447cc9ecccbcb3503307bff173eee/cf440/jarednielsen-forkyeah-github-repository-commit-04.png 148w,
-/static/872447cc9ecccbcb3503307bff173eee/d2d38/jarednielsen-forkyeah-github-repository-commit-04.png 295w,
-/static/872447cc9ecccbcb3503307bff173eee/b9e4f/jarednielsen-forkyeah-github-repository-commit-04.png 590w,
-/static/872447cc9ecccbcb3503307bff173eee/f9b6a/jarednielsen-forkyeah-github-repository-commit-04.png 885w,
-/static/872447cc9ecccbcb3503307bff173eee/2d849/jarednielsen-forkyeah-github-repository-commit-04.png 1180w,
-/static/872447cc9ecccbcb3503307bff173eee/2f950/jarednielsen-forkyeah-github-repository-commit-04.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 04"
+        src="/static/872447cc9ecccbcb3503307bff173eee/f058b/jarednielsen-forkyeah-github-repository-commit-04.png"
+        srcset="/static/872447cc9ecccbcb3503307bff173eee/c26ae/jarednielsen-forkyeah-github-repository-commit-04.png 158w,
+/static/872447cc9ecccbcb3503307bff173eee/6bdcf/jarednielsen-forkyeah-github-repository-commit-04.png 315w,
+/static/872447cc9ecccbcb3503307bff173eee/f058b/jarednielsen-forkyeah-github-repository-commit-04.png 630w,
+/static/872447cc9ecccbcb3503307bff173eee/40601/jarednielsen-forkyeah-github-repository-commit-04.png 945w,
+/static/872447cc9ecccbcb3503307bff173eee/78612/jarednielsen-forkyeah-github-repository-commit-04.png 1260w,
+/static/872447cc9ecccbcb3503307bff173eee/29007/jarednielsen-forkyeah-github-repository-commit-04.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>This will be the Fork Yeah! repository, so I name it <code>forkyeah</code>. You will notice two things: </p>
+    </span></p>
+<p>This will be the Fork Yeah! repository, so I name it <code class="language-text">forkyeah</code>. You will notice two things:</p>
 <ol>
-<li>I changed the owner from my account, <code>nielsenjared</code>, to <code>forkyeah</code>, which is an organization.</li>
-<li>I selected the checkbox next to <code>Initialize this respository with a README</code>. </li>
+<li>
+<p>I changed the owner from my account, <code class="language-text">nielsenjared</code>, to <code class="language-text">forkyeah</code>, which is an organization.</p>
+</li>
+<li>
+<p>I selected the checkbox next to <code class="language-text">Initialize this respository with a README</code>.</p>
+</li>
 </ol>
 <p>What’s a README? A README file is just that, a file that you should read. All good software projects include a README file to quickly get other developers oriented and up-to-speed.</p>
-<p>
-  <a
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/9ca6dd705b55edfea7e89117eefb4318/2f950/jarednielsen-forkyeah-github-repository-commit-05.png"
+    href="/static/9ca6dd705b55edfea7e89117eefb4318/29007/jarednielsen-forkyeah-github-repository-commit-05.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABAUlEQVQoz6VQy07DMBDM51ZQkVdpaH6QM+LKEXGwSHHixFm/dlmnSdUARUJMRmNlpfGMN9lVdVnVxf6Q3x/Sssr2NevNXT6xYN1ss802nTRb5vltWha7h4QuoLX+UAas9yEEpIDIQzB2BMM0ztEaCSHhggEsABiIwnbnXLwEmfEW9PgFq+Su18dW9Rqs43A01o9gG9kOPTyLl0fxFAjXyWcgvgkppB7AjxYHE5R2PXg1RhWqe22b00N+MhO1bffeHLkt5zL5DBEYF8BfrH/d7L2XUrJn6nFqsxSdf6+bOZGXYjwax2kUpk1Zh2DjhPlt23T56rnaHIiznPmb+a/4l/kTsiNqXk4EWJcAAAAASUVORK5CYII='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/UlEQVQoz6WRy07DMBRE+6fpMwkpffGRrNmyhFWrlqZpnDr3NUaRC6JIqYQYzcKy7vHojgfFclMsNw+Ldf64TotlvnhK56vRLB9Or04mWTJOk3GWTNLhNIsezfJ8vhqEH/IXXzr2bGYAAtBdEotv2ROzSLjVLUxCxMxERABUFfGBKAsB/bBrfFnV7uKZVQ3E2hIfq6px7evh7Xn3ItBeeLuvtmXjWvWMC1ntpWm19uK87ur6/bRXs174XLvDx1FEVE3V4sEMsQN0S6AXNrPTqWLuiolj37VF3YO7HIA1kEAtxDzR0DJYQPKLvYUBWOdrYJwFgn353lf9Vf+CPwHd6Wh7MP2lgQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 05"
-        title=""
-        src="/static/9ca6dd705b55edfea7e89117eefb4318/b9e4f/jarednielsen-forkyeah-github-repository-commit-05.png"
-        srcset="/static/9ca6dd705b55edfea7e89117eefb4318/cf440/jarednielsen-forkyeah-github-repository-commit-05.png 148w,
-/static/9ca6dd705b55edfea7e89117eefb4318/d2d38/jarednielsen-forkyeah-github-repository-commit-05.png 295w,
-/static/9ca6dd705b55edfea7e89117eefb4318/b9e4f/jarednielsen-forkyeah-github-repository-commit-05.png 590w,
-/static/9ca6dd705b55edfea7e89117eefb4318/f9b6a/jarednielsen-forkyeah-github-repository-commit-05.png 885w,
-/static/9ca6dd705b55edfea7e89117eefb4318/2d849/jarednielsen-forkyeah-github-repository-commit-05.png 1180w,
-/static/9ca6dd705b55edfea7e89117eefb4318/2f950/jarednielsen-forkyeah-github-repository-commit-05.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 05"
+        src="/static/9ca6dd705b55edfea7e89117eefb4318/f058b/jarednielsen-forkyeah-github-repository-commit-05.png"
+        srcset="/static/9ca6dd705b55edfea7e89117eefb4318/c26ae/jarednielsen-forkyeah-github-repository-commit-05.png 158w,
+/static/9ca6dd705b55edfea7e89117eefb4318/6bdcf/jarednielsen-forkyeah-github-repository-commit-05.png 315w,
+/static/9ca6dd705b55edfea7e89117eefb4318/f058b/jarednielsen-forkyeah-github-repository-commit-05.png 630w,
+/static/9ca6dd705b55edfea7e89117eefb4318/40601/jarednielsen-forkyeah-github-repository-commit-05.png 945w,
+/static/9ca6dd705b55edfea7e89117eefb4318/78612/jarednielsen-forkyeah-github-repository-commit-05.png 1260w,
+/static/9ca6dd705b55edfea7e89117eefb4318/29007/jarednielsen-forkyeah-github-repository-commit-05.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>After clicking the green <code>Create repository</code> button, we’re routed to the landing page of our project. We can see that our repository contains one file, <code>README.md</code>. </p>
-<p>What’s the <code>.md</code> extension? That’s Markdown. </p>
-<p>We also see that the contents of our README are displayed on the landing page. </p>
-<p>
-  <a
+    </span></p>
+<p>After clicking the green <code class="language-text">Create repository</code> button, we’re routed to the landing page of our project. We can see that our repository contains one file, <code class="language-text">README.md</code>.</p>
+<p>What’s the <code class="language-text">.md</code> extension? That’s Markdown.</p>
+<p>We also see that the contents of our README are displayed on the landing page.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/fe9c47c6422eec22cf842430a15de710/2f950/jarednielsen-forkyeah-github-repository-commit-06.png"
+    href="/static/fe9c47c6422eec22cf842430a15de710/29007/jarednielsen-forkyeah-github-repository-commit-06.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABSklEQVQoz41R207CQBDlb1VULlVI8av8C55MND7zhApGoPd278eZxTZtEeOkpyeZ2XN2ZnYQzBcIZgtMZyEm9yFGwZz4AWPi4e0UVy1cXI8Jox8eU27icXkzwXAUYHoXYoBeFEWJKJOopIGxDvTB0o8IwhiUQnpIrfFbDJxjEQmYSZhXEkIIj4pgyEQZDUvsssqzdzd8ke3BHQ3bSLMChzhFXlaQirokscwFiuUKh8cnlOsIr/sVlp/P1Ij15m19Y8jB/LaNsD3kSEuFrDJIhUG8z5G9vCP5iJEWCpskwTra+clqXWPYTnDESYqv3R5KaT+u1jyy4QkJzucc79R0G2l22DdkQRwnZKQ7h9kEjdB5/GlYMxsZWo2kDqQ+LpoXzjVFOaGszzP+1WH92rZ5/e6F1rVrZwz7yW7UojPVXuFk5HOod3aa75p+A7Q6QvqvYkowAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABWklEQVQoz42S204jMQyG+6hQFmiHinJ4sX2KvQJxyxViV6hiobQzzDGJ7W+VtIWhlBWWfjny4c8fO4PJ9JKIk+kF2ek5o5Mp2eklo8kZB0cZwx72f4zY62F4OGZ4NGb/cMzBcUY2OWcgakRohEFVVcyLhrr1+CAE0eRjTeM8Vd1SNS2Nc6neeIeaMTAz+ohEbdfhui55EcFLQE2x2qGqJBPSOfZor/8DIWaUdcsif00qnA+IGa51NFf3LH9e09y/cLv8w6/HG4KGJM12EqZrjdnTktm8pKgdZSuUnZAvG8qbB4rfC4rKM8tz7hZ/CWu1Hwj7gWjFa8nz/AXvPUGEEAQfAiG90lLM1DDhrWfjo30ijDPL8zwR9otNVyNh/ZKI/xKuPElR3KgXwwVd/4DV8IMYndcUj/iWwrQ11bS5/vY2ilbf6z23k3Bj/cS2fZXa7tmpcBf4Kr6l8B91B0EKpmgaBwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 06"
-        title=""
-        src="/static/fe9c47c6422eec22cf842430a15de710/b9e4f/jarednielsen-forkyeah-github-repository-commit-06.png"
-        srcset="/static/fe9c47c6422eec22cf842430a15de710/cf440/jarednielsen-forkyeah-github-repository-commit-06.png 148w,
-/static/fe9c47c6422eec22cf842430a15de710/d2d38/jarednielsen-forkyeah-github-repository-commit-06.png 295w,
-/static/fe9c47c6422eec22cf842430a15de710/b9e4f/jarednielsen-forkyeah-github-repository-commit-06.png 590w,
-/static/fe9c47c6422eec22cf842430a15de710/f9b6a/jarednielsen-forkyeah-github-repository-commit-06.png 885w,
-/static/fe9c47c6422eec22cf842430a15de710/2d849/jarednielsen-forkyeah-github-repository-commit-06.png 1180w,
-/static/fe9c47c6422eec22cf842430a15de710/2f950/jarednielsen-forkyeah-github-repository-commit-06.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 06"
+        src="/static/fe9c47c6422eec22cf842430a15de710/f058b/jarednielsen-forkyeah-github-repository-commit-06.png"
+        srcset="/static/fe9c47c6422eec22cf842430a15de710/c26ae/jarednielsen-forkyeah-github-repository-commit-06.png 158w,
+/static/fe9c47c6422eec22cf842430a15de710/6bdcf/jarednielsen-forkyeah-github-repository-commit-06.png 315w,
+/static/fe9c47c6422eec22cf842430a15de710/f058b/jarednielsen-forkyeah-github-repository-commit-06.png 630w,
+/static/fe9c47c6422eec22cf842430a15de710/40601/jarednielsen-forkyeah-github-repository-commit-06.png 945w,
+/static/fe9c47c6422eec22cf842430a15de710/78612/jarednielsen-forkyeah-github-repository-commit-06.png 1260w,
+/static/fe9c47c6422eec22cf842430a15de710/29007/jarednielsen-forkyeah-github-repository-commit-06.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>If we want to create new files, and we do, we click the <code>Create new file</code> button just above our list of files. </p>
-<p>
-  <a
+    </span></p>
+<p>If we want to create new files, and we do, we click the <code class="language-text">Create new file</code> button just above our list of files.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/86519bb709c2e66cafde684022d2b52d/2f950/jarednielsen-forkyeah-github-repository-commit-07.png"
+    href="/static/86519bb709c2e66cafde684022d2b52d/29007/jarednielsen-forkyeah-github-repository-commit-07.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAAlklEQVQoz+2OzQ6CQAyEeVyi6LL8beCpNbBhabutXYgRNPHoycmXHqaZzGSNG2o3VF1v295UXdkOpnZnU52uilXyoswLs7E5ysU2tnaZvMSjn+8egSJSjMwKiywLhgALgFpyVCYs/NRtmr33cwjj5AEJiQARQE+6RMhH7ZslUgrQWrE1K6uhn6SP5v1ufh/2/fsP/zL8AGhDbjU80o8UAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAj0lEQVQoz+2O2wqDMAyGfVLXeai1zKJ78421s81JqjeOQS93tY+fQEi+kMq6xbplnGZzm7V1Zrpr6669Ub1RXU7d6LrRlzZX1Q1H2sHq0VVywof3wwMgI/GBiCSANUJMQHt75kN+huhDWGN6+QBASIRIAIiUKxGVZEIEzKssQsxHAPMJ3CnJ/PVYefqXfylvjhpsUmg/mukAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 07"
-        title=""
-        src="/static/86519bb709c2e66cafde684022d2b52d/b9e4f/jarednielsen-forkyeah-github-repository-commit-07.png"
-        srcset="/static/86519bb709c2e66cafde684022d2b52d/cf440/jarednielsen-forkyeah-github-repository-commit-07.png 148w,
-/static/86519bb709c2e66cafde684022d2b52d/d2d38/jarednielsen-forkyeah-github-repository-commit-07.png 295w,
-/static/86519bb709c2e66cafde684022d2b52d/b9e4f/jarednielsen-forkyeah-github-repository-commit-07.png 590w,
-/static/86519bb709c2e66cafde684022d2b52d/f9b6a/jarednielsen-forkyeah-github-repository-commit-07.png 885w,
-/static/86519bb709c2e66cafde684022d2b52d/2d849/jarednielsen-forkyeah-github-repository-commit-07.png 1180w,
-/static/86519bb709c2e66cafde684022d2b52d/2f950/jarednielsen-forkyeah-github-repository-commit-07.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 07"
+        src="/static/86519bb709c2e66cafde684022d2b52d/f058b/jarednielsen-forkyeah-github-repository-commit-07.png"
+        srcset="/static/86519bb709c2e66cafde684022d2b52d/c26ae/jarednielsen-forkyeah-github-repository-commit-07.png 158w,
+/static/86519bb709c2e66cafde684022d2b52d/6bdcf/jarednielsen-forkyeah-github-repository-commit-07.png 315w,
+/static/86519bb709c2e66cafde684022d2b52d/f058b/jarednielsen-forkyeah-github-repository-commit-07.png 630w,
+/static/86519bb709c2e66cafde684022d2b52d/40601/jarednielsen-forkyeah-github-repository-commit-07.png 945w,
+/static/86519bb709c2e66cafde684022d2b52d/78612/jarednielsen-forkyeah-github-repository-commit-07.png 1260w,
+/static/86519bb709c2e66cafde684022d2b52d/29007/jarednielsen-forkyeah-github-repository-commit-07.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>This will route us to a simple text editor where we need to specify the name of the file and its contents. </p>
-<p>
-  <a
+    </span></p>
+<p>This will route us to a simple text editor where we need to specify the name of the file and its contents.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/d214114159893117a237cb3becfa2625/2f950/jarednielsen-forkyeah-github-repository-commit-08.png"
+    href="/static/d214114159893117a237cb3becfa2625/29007/jarednielsen-forkyeah-github-repository-commit-08.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAAuUlEQVQoz82Q4Q6CMAyEeVyi6BwoBJ4a2NhGVzor0yhBJf7z8qVpul2uW3KumqJq8rKWl1rkpSwbUVR7ke+OjGTS7JRmIhInzEGeZVEl4SlSg201AE4ep4mIoRDG0TsHIwCPwlJJoEAPtdq2XWeM1dqA9x6RK8Ct5YroaanXZA5xw2BwjojJDCIPJpy1Sl6YQSm9vnR/FdE3s3Ou6/vwQRtma51SKu75s5l/yFprjPHvNt8wr4//1XwF1dNtB+WxK48AAAAASUVORK5CYII='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsklEQVQoz82O3Q7CIAxGfVKdfziJEvXFdRsMSr+Cmdxo1Kl3nnxp2qSn6USbozbH7f5Q7w5Km3p/UtrM13W1rqvVkOlCTRdqthxqtdqULDdabc0k3+F6f3YxIkFSIeccmQMxRZbbeM+D3PbUtK0PwTrPDIgAUhpmiMiYHImscwBSzpJSCWM4gRujcmRr7fNSIY2/TUSXpnle+koOgbquAyCv/A8ygN5753pm/ll+9/D/yVf2z2siLlPHtwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 08"
-        title=""
-        src="/static/d214114159893117a237cb3becfa2625/b9e4f/jarednielsen-forkyeah-github-repository-commit-08.png"
-        srcset="/static/d214114159893117a237cb3becfa2625/cf440/jarednielsen-forkyeah-github-repository-commit-08.png 148w,
-/static/d214114159893117a237cb3becfa2625/d2d38/jarednielsen-forkyeah-github-repository-commit-08.png 295w,
-/static/d214114159893117a237cb3becfa2625/b9e4f/jarednielsen-forkyeah-github-repository-commit-08.png 590w,
-/static/d214114159893117a237cb3becfa2625/f9b6a/jarednielsen-forkyeah-github-repository-commit-08.png 885w,
-/static/d214114159893117a237cb3becfa2625/2d849/jarednielsen-forkyeah-github-repository-commit-08.png 1180w,
-/static/d214114159893117a237cb3becfa2625/2f950/jarednielsen-forkyeah-github-repository-commit-08.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 08"
+        src="/static/d214114159893117a237cb3becfa2625/f058b/jarednielsen-forkyeah-github-repository-commit-08.png"
+        srcset="/static/d214114159893117a237cb3becfa2625/c26ae/jarednielsen-forkyeah-github-repository-commit-08.png 158w,
+/static/d214114159893117a237cb3becfa2625/6bdcf/jarednielsen-forkyeah-github-repository-commit-08.png 315w,
+/static/d214114159893117a237cb3becfa2625/f058b/jarednielsen-forkyeah-github-repository-commit-08.png 630w,
+/static/d214114159893117a237cb3becfa2625/40601/jarednielsen-forkyeah-github-repository-commit-08.png 945w,
+/static/d214114159893117a237cb3becfa2625/78612/jarednielsen-forkyeah-github-repository-commit-08.png 1260w,
+/static/d214114159893117a237cb3becfa2625/29007/jarednielsen-forkyeah-github-repository-commit-08.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>Making ice cubes is the “Hello World” of cooking, so I create a recipe to do so. </p>
-<p>
-  <a
+    </span></p>
+<p>Making ice cubes is the “Hello World” of cooking, so I create a recipe to do so.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/54d1a596303e8f2d743d62d79f206f85/2f950/jarednielsen-forkyeah-github-repository-commit-09.png"
+    href="/static/54d1a596303e8f2d743d62d79f206f85/29007/jarednielsen-forkyeah-github-repository-commit-09.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAAtUlEQVQoz51R0Q6CMAz0///Id3/CBxJ9MiYg6BxsvbazAg+4BRK5NMu27nbt9ZAWiDF674lIRFIBVc1uDssDM4cRe8hl+g/y9EJ3kC3HwE5lEKpz1XbdyzlZwVbZYHbv3iKY74QsqKgr73kYgu8HgO0jUZ0EeQreVBaVum3udf1onzZwAAEaMfdaOjmTNX0zDv54O12aa4JJ2dRtNfFV/3+UI1EPCpCIZDWavcQaWSEpjpuM/AG4ZYxBDB0jkgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtUlEQVQoz52RwQ6CMBBE+f9v8uxHaIJXjQY0tJTdmd0axBgEkehkL+12Ou3bIo8kIjFGBcwsz+Tuk51ivCCZUkpdR/Jn87z9i/lxYumGFbPR/kw2s3J3qK/Xpgkk7ZNWgIXYNiGmTkQxKVV8M+ecU+pibAGiD/chkEPRVmhXt+p0OVf1LYQIQOCC52fnIIsX5z7WZHPc7i+lq4EACXPa4gDeklW1VUkwYab3D1G60GFZ6Yop7TvBrYxJo/9rQwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 09"
-        title=""
-        src="/static/54d1a596303e8f2d743d62d79f206f85/b9e4f/jarednielsen-forkyeah-github-repository-commit-09.png"
-        srcset="/static/54d1a596303e8f2d743d62d79f206f85/cf440/jarednielsen-forkyeah-github-repository-commit-09.png 148w,
-/static/54d1a596303e8f2d743d62d79f206f85/d2d38/jarednielsen-forkyeah-github-repository-commit-09.png 295w,
-/static/54d1a596303e8f2d743d62d79f206f85/b9e4f/jarednielsen-forkyeah-github-repository-commit-09.png 590w,
-/static/54d1a596303e8f2d743d62d79f206f85/f9b6a/jarednielsen-forkyeah-github-repository-commit-09.png 885w,
-/static/54d1a596303e8f2d743d62d79f206f85/2d849/jarednielsen-forkyeah-github-repository-commit-09.png 1180w,
-/static/54d1a596303e8f2d743d62d79f206f85/2f950/jarednielsen-forkyeah-github-repository-commit-09.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 09"
+        src="/static/54d1a596303e8f2d743d62d79f206f85/f058b/jarednielsen-forkyeah-github-repository-commit-09.png"
+        srcset="/static/54d1a596303e8f2d743d62d79f206f85/c26ae/jarednielsen-forkyeah-github-repository-commit-09.png 158w,
+/static/54d1a596303e8f2d743d62d79f206f85/6bdcf/jarednielsen-forkyeah-github-repository-commit-09.png 315w,
+/static/54d1a596303e8f2d743d62d79f206f85/f058b/jarednielsen-forkyeah-github-repository-commit-09.png 630w,
+/static/54d1a596303e8f2d743d62d79f206f85/40601/jarednielsen-forkyeah-github-repository-commit-09.png 945w,
+/static/54d1a596303e8f2d743d62d79f206f85/78612/jarednielsen-forkyeah-github-repository-commit-09.png 1260w,
+/static/54d1a596303e8f2d743d62d79f206f85/29007/jarednielsen-forkyeah-github-repository-commit-09.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>To save our file, we need to scroll down to the bottom of the screen where we can <code>Commit new file</code>. </p>
+    </span></p>
+<p>To save our file, we need to scroll down to the bottom of the screen where we can <code class="language-text">Commit new file</code>.</p>
 <p>What’s a commit? In order for GitHub to track our file and any changes (and who made the changes), we need to <em>commit</em> it to the repository.</p>
-<p>Notice the placeholder text in the form field for the title of our commit: </p>
+<p>Notice the placeholder text in the form field for the title of our commit:</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Create ICE-CUBES.md</code></pre></div>
 <p>We’re going to leave it at that and not add any additional text to our commit message.</p>
-<p>
-  <a
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/ee80346581697aa03cdaa7de22b1b22f/2f950/jarednielsen-forkyeah-github-repository-commit-10.png"
+    href="/static/ee80346581697aa03cdaa7de22b1b22f/29007/jarednielsen-forkyeah-github-repository-commit-10.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABW0lEQVQoz42Sy07DMBBF+7fQQl+BVi3fwp+whwUbJDYINiBRRJOGKnEefl/Gbkjd0iJGOpp4xr6eGacTTeeIJnOMJzOMLmcYRBPyVxhGU/T6Y3QDTs6GO3T7I8/p+Qi9QYTxxQwd7FlZVlgzgVpoaGNhGizluJCouPAIpXDIOtbSAcJ7Y1DUApxzCMJ5bQ2kVj7nobVX19jGWuxGsIX2ZUWJdJ0hp0qF0jClhMgrVHTRiuIFq/G4fMHt8qEVDzVaQWc2Yfh4/0KccRRcgT+vwO7fUN08oV4ylNpSuxpJwbDIUt+ZPxcKoqnMfubA9R3SRYpVltP8DFSSg78mvkJF1Wq9wZCwEmpbSOP9DFvBmNGLSBo8RxwnkFJuNv8Qjibgt2AQsMG3a0fr7cBd3L16yJ8VorlR0e8gqT1JbTlM8/ruOkVroWybO1rhfvCQHUvvn9tt+cicfP6fM/wG98xBw6lZdwoAAAAASUVORK5CYII='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABbUlEQVQoz42S0U7cMBBF86ntUuhuWLGl/E7/pM/tW9VXXhBq1UpLgM2GeGM7Y8+p7GyWQAVipCtHM+OjyR0Xy9UFSaerz5Rn58xPV5RnF8yXnzg6KZlN9P54wbsP84NmxwtmJ4ucP/pYUi7PKUJUkmKSgjGGu6ZjZ3t6CYiEfKaezjrMrsN0ls773K88KqpSqCoHRc0g6xzeu3wGjfRBiDGiSRrJERhyqhk0MoopLEXbWTZ1Q7vr8BKIVvDGYp3nfttgWsvl7TXf1j+RKHk0fQJkn0i0xrL+s2G9tTy4Hne1wfz4ze7rJd3fBhPSHwSqtuVXXRHiMO0TIHuY1h18+U59XXH30OZmuW1xVxW+NkgvhBCyYlDEhwwYgWM8AqsWthbfe25uKpxzQ/OoqdcT/Q+cJHTynSwNIWbjD+bvX8So1yfU7C4ikp+JF6WXYYMJmGtRcZK2PtRenHCMaeF5vFR5fqeYbolXvHqrh/8Aw74/1E14G30AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 10"
-        title=""
-        src="/static/ee80346581697aa03cdaa7de22b1b22f/b9e4f/jarednielsen-forkyeah-github-repository-commit-10.png"
-        srcset="/static/ee80346581697aa03cdaa7de22b1b22f/cf440/jarednielsen-forkyeah-github-repository-commit-10.png 148w,
-/static/ee80346581697aa03cdaa7de22b1b22f/d2d38/jarednielsen-forkyeah-github-repository-commit-10.png 295w,
-/static/ee80346581697aa03cdaa7de22b1b22f/b9e4f/jarednielsen-forkyeah-github-repository-commit-10.png 590w,
-/static/ee80346581697aa03cdaa7de22b1b22f/f9b6a/jarednielsen-forkyeah-github-repository-commit-10.png 885w,
-/static/ee80346581697aa03cdaa7de22b1b22f/2d849/jarednielsen-forkyeah-github-repository-commit-10.png 1180w,
-/static/ee80346581697aa03cdaa7de22b1b22f/2f950/jarednielsen-forkyeah-github-repository-commit-10.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 10"
+        src="/static/ee80346581697aa03cdaa7de22b1b22f/f058b/jarednielsen-forkyeah-github-repository-commit-10.png"
+        srcset="/static/ee80346581697aa03cdaa7de22b1b22f/c26ae/jarednielsen-forkyeah-github-repository-commit-10.png 158w,
+/static/ee80346581697aa03cdaa7de22b1b22f/6bdcf/jarednielsen-forkyeah-github-repository-commit-10.png 315w,
+/static/ee80346581697aa03cdaa7de22b1b22f/f058b/jarednielsen-forkyeah-github-repository-commit-10.png 630w,
+/static/ee80346581697aa03cdaa7de22b1b22f/40601/jarednielsen-forkyeah-github-repository-commit-10.png 945w,
+/static/ee80346581697aa03cdaa7de22b1b22f/78612/jarednielsen-forkyeah-github-repository-commit-10.png 1260w,
+/static/ee80346581697aa03cdaa7de22b1b22f/29007/jarednielsen-forkyeah-github-repository-commit-10.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>After we commit our new file, we are routed back to our landing page, where we see we now have two files in our repository: our <code>README.md</code> and our <code>ICE-CUBES.md</code>.</p>
-<p>Notice our placeholder commit message to the right of the <code>ICE-CUBES.md</code>. </p>
-<p>
-  <a
+    </span></p>
+<p>After we commit our new file, we are routed back to our landing page, where we see we now have two files in our repository: our <code class="language-text">README.md</code> and our <code class="language-text">ICE-CUBES.md</code>.</p>
+<p>Notice our placeholder commit message to the right of the <code class="language-text">ICE-CUBES.md</code>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/cd74132805db63fcf8b829817bfe04fc/2f950/jarednielsen-forkyeah-github-repository-commit-11.png"
+    href="/static/cd74132805db63fcf8b829817bfe04fc/29007/jarednielsen-forkyeah-github-repository-commit-11.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3klEQVQoz52Q2W7CQAxF87kVbYEkEEH5XHgBQsaBDOOxZ8GkBQWlLOLq+CXKke84yYtFXvwI2XQ+yoq0WIwns89hJgxaPr7GVwaXj9/pNM1nSezkqI3SjOQkIUQvE6O1JBiD7Fy8TRLDX7z3m7Lagt5CUzdHyx5bLAfyUR007Jtwm87mEOoGtbFo2Z4d94sUOWizl0Hqbe6EiKCupeG5SAdmRzLeP5IRsSx3zBz/TXuCu7JB3FWV6x3m4j6WjVkuV1LwHVnerAD6b3t183q9IeL+f89lORUAKAVS4RX5BBzhan5+lASRAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA5ElEQVQoz53QXU+DMBQG4P1SIUJWYDLd/vK8IpW2pLQ9Hy0LmxonypKdvOnFSZ+c5N007aFpj3V7qF/ets2+ao9i9/pc1vmcKi+rrBBPxTYrRFaI6yYvq0LsRL3fTD/Gu6AtBYocY5qmlOYlIAGiD0DM0+3cYNkbqUdpRmMdckJK8xsTp2kYvR7sGjbWWwceCCgGYrgkIFsXButcgDVMRNoY53xKKab4HSImIua4hhFRSgnw+8LnXDv4DwPAR98vi/my9/Dp9I6Ij2AiUkrxY5cDQNd1iLj8dx8zs9ZGKfVnZ0t8BjeraJuxq+5ZAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 11"
-        title=""
-        src="/static/cd74132805db63fcf8b829817bfe04fc/b9e4f/jarednielsen-forkyeah-github-repository-commit-11.png"
-        srcset="/static/cd74132805db63fcf8b829817bfe04fc/cf440/jarednielsen-forkyeah-github-repository-commit-11.png 148w,
-/static/cd74132805db63fcf8b829817bfe04fc/d2d38/jarednielsen-forkyeah-github-repository-commit-11.png 295w,
-/static/cd74132805db63fcf8b829817bfe04fc/b9e4f/jarednielsen-forkyeah-github-repository-commit-11.png 590w,
-/static/cd74132805db63fcf8b829817bfe04fc/f9b6a/jarednielsen-forkyeah-github-repository-commit-11.png 885w,
-/static/cd74132805db63fcf8b829817bfe04fc/2d849/jarednielsen-forkyeah-github-repository-commit-11.png 1180w,
-/static/cd74132805db63fcf8b829817bfe04fc/2f950/jarednielsen-forkyeah-github-repository-commit-11.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 11"
+        src="/static/cd74132805db63fcf8b829817bfe04fc/f058b/jarednielsen-forkyeah-github-repository-commit-11.png"
+        srcset="/static/cd74132805db63fcf8b829817bfe04fc/c26ae/jarednielsen-forkyeah-github-repository-commit-11.png 158w,
+/static/cd74132805db63fcf8b829817bfe04fc/6bdcf/jarednielsen-forkyeah-github-repository-commit-11.png 315w,
+/static/cd74132805db63fcf8b829817bfe04fc/f058b/jarednielsen-forkyeah-github-repository-commit-11.png 630w,
+/static/cd74132805db63fcf8b829817bfe04fc/40601/jarednielsen-forkyeah-github-repository-commit-11.png 945w,
+/static/cd74132805db63fcf8b829817bfe04fc/78612/jarednielsen-forkyeah-github-repository-commit-11.png 1260w,
+/static/cd74132805db63fcf8b829817bfe04fc/29007/jarednielsen-forkyeah-github-repository-commit-11.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
+    </span></p>
 <p>To view our newly create recipe, we simply click on its title.</p>
-<p>
-  <a
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/6e0f879d364bfc47ede81193d8b18f8a/2f950/jarednielsen-forkyeah-github-repository-commit-12.png"
+    href="/static/6e0f879d364bfc47ede81193d8b18f8a/29007/jarednielsen-forkyeah-github-repository-commit-12.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAA3UlEQVQoz8VQ2W6DMBDkc6MmKgSSkPDLEaFcxt6zW+coqCpSnzoar9aWZ0c7yaGsirLKT5f98ZIWp+xYZUW5fc/fHtxvdtlml8aa2fXObVrkh3OiMzg3NQO6gEQkomxHNQBMPrjJA5IukaioPHGtm2sz1O3YDTZBPLIxICNrO7j6o2NZYOHcjd5UAQiIPZA1XxVpcL7tR+fDD+cZIIT61kze21Tmb9oagFZ4TUzMfd8jovUy4wsi8qv4HhSQBBKOgdlfYFteLAJ7X3N+BqESHSW6xtj18bgi/iv+T/wJ2jtsFah+AtYAAAAASUVORK5CYII='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3ElEQVQoz8WQ2W6DQAxF86VZSgITktCkv10JwgCzeOzrKtAlPBSpT706mgdLx6PrVVndyup2vFzN+ZqXlbm8Fadqdzhu92ZinRXrl3yTFZss3+6Lid3BmNPrSp/ifbj35ElEGFABVJUohUg+REqs88zkumnfm7623vaOWGNCZBCDoZ0LdduN236RuyH0LkRiYgnEMfH0Dj623eB8xNyeyYmoae7OBwFEfkjMRIlZlmQRsdYSkariie8syczMAInGR09MHyVBSI/mxFjqjFEQKD7BOFT5Yunaf83/yR/rzGojpSTcYgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 12"
-        title=""
-        src="/static/6e0f879d364bfc47ede81193d8b18f8a/b9e4f/jarednielsen-forkyeah-github-repository-commit-12.png"
-        srcset="/static/6e0f879d364bfc47ede81193d8b18f8a/cf440/jarednielsen-forkyeah-github-repository-commit-12.png 148w,
-/static/6e0f879d364bfc47ede81193d8b18f8a/d2d38/jarednielsen-forkyeah-github-repository-commit-12.png 295w,
-/static/6e0f879d364bfc47ede81193d8b18f8a/b9e4f/jarednielsen-forkyeah-github-repository-commit-12.png 590w,
-/static/6e0f879d364bfc47ede81193d8b18f8a/f9b6a/jarednielsen-forkyeah-github-repository-commit-12.png 885w,
-/static/6e0f879d364bfc47ede81193d8b18f8a/2d849/jarednielsen-forkyeah-github-repository-commit-12.png 1180w,
-/static/6e0f879d364bfc47ede81193d8b18f8a/2f950/jarednielsen-forkyeah-github-repository-commit-12.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 12"
+        src="/static/6e0f879d364bfc47ede81193d8b18f8a/f058b/jarednielsen-forkyeah-github-repository-commit-12.png"
+        srcset="/static/6e0f879d364bfc47ede81193d8b18f8a/c26ae/jarednielsen-forkyeah-github-repository-commit-12.png 158w,
+/static/6e0f879d364bfc47ede81193d8b18f8a/6bdcf/jarednielsen-forkyeah-github-repository-commit-12.png 315w,
+/static/6e0f879d364bfc47ede81193d8b18f8a/f058b/jarednielsen-forkyeah-github-repository-commit-12.png 630w,
+/static/6e0f879d364bfc47ede81193d8b18f8a/40601/jarednielsen-forkyeah-github-repository-commit-12.png 945w,
+/static/6e0f879d364bfc47ede81193d8b18f8a/78612/jarednielsen-forkyeah-github-repository-commit-12.png 1260w,
+/static/6e0f879d364bfc47ede81193d8b18f8a/29007/jarednielsen-forkyeah-github-repository-commit-12.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>Let’s edit a file. The README only contains the title of our repository, so let’s add a bit more there. Just like our <code>ICE-CUBES.md</code> file above, click on <code>README.md</code>.</p>
-<p>
-  <a
+    </span></p>
+<p>Let’s edit a file. The README only contains the title of our repository, so let’s add a bit more there. Just like our <code class="language-text">ICE-CUBES.md</code> file above, click on <code class="language-text">README.md</code>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/04d402707892946ca9845d679e93e7dd/2f950/jarednielsen-forkyeah-github-repository-commit-13.png"
+    href="/static/04d402707892946ca9845d679e93e7dd/29007/jarednielsen-forkyeah-github-repository-commit-13.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABMElEQVQoz61RW1KEMBDktuqqvFYUbuMRvIDf3sHHr1XiLrqChDzbSXiYhd3yx65qJjWZaXomQXpdIM0KJFmO+CpHmGQUC0TrG6wuE5x5PDmPiOEQI8rFjqcXMVZhimSdI8AMbcvw0Qi0XEIqBW0AbT+EjguwjtMdh9AahxAYY1yDpmjP5aZCWdXYfDbY1d/ohAbjimJPQdrV9gvl6zs0bK/2aHpBn7uGoWk7apbgUpMr6c42MkeB57sHPN7ek2UF693v3xO04DTOtqrAWOdcqz0HGtL+6KWEeHqDkXopCC9hoWhvdV1DSgnMijHUjDB9AfzsJDhGK6RoF0IZN7LbLzmzdzZnd8oH+n0HBM1kf3yk/qEwuTPmN6+9qRaC8ySWg+HY9bxvMfKSx/J/OPwv/ACZRkRVVopDmgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABNElEQVQoz62R3U7CQBCFeVRFQVoIiLyOD6Lv4DVXJt5piMhP06Xb/ZnP7EJLKfXOSb40mZ45ndPpTWYLAuPZE+l0zmg8I50uSCaP3D2k9IdnbgcJN/ejmv4goT9MYj9o08mcnvNCwAcEVK74yTR5YTDGYJ3HWocXodAapQ7khwJtLSIgnAmanohQEWq92bHaZKx3il2m0NajjasxAvt9zvfXGnea8w2PlqGQ5QWZKtClpbSeorRoY+MzYhwfL28sn19BmeN2fxsSY262Ww5FEX+D8/6CEF+/r9DLT6S014Y0GqHCUJZl0ZiWmJOmKjkKaHZrw0pgnYtHMk5i5OPBfNRYJ2jjKU/Uc40PXW0Yf3J9dTlesrFl1fetmQvDOkIrUiMYXW+6Zjo3vKSrJ1cznRv+R/0ChDtCdlEWuO0AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 13"
-        title=""
-        src="/static/04d402707892946ca9845d679e93e7dd/b9e4f/jarednielsen-forkyeah-github-repository-commit-13.png"
-        srcset="/static/04d402707892946ca9845d679e93e7dd/cf440/jarednielsen-forkyeah-github-repository-commit-13.png 148w,
-/static/04d402707892946ca9845d679e93e7dd/d2d38/jarednielsen-forkyeah-github-repository-commit-13.png 295w,
-/static/04d402707892946ca9845d679e93e7dd/b9e4f/jarednielsen-forkyeah-github-repository-commit-13.png 590w,
-/static/04d402707892946ca9845d679e93e7dd/f9b6a/jarednielsen-forkyeah-github-repository-commit-13.png 885w,
-/static/04d402707892946ca9845d679e93e7dd/2d849/jarednielsen-forkyeah-github-repository-commit-13.png 1180w,
-/static/04d402707892946ca9845d679e93e7dd/2f950/jarednielsen-forkyeah-github-repository-commit-13.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 13"
+        src="/static/04d402707892946ca9845d679e93e7dd/f058b/jarednielsen-forkyeah-github-repository-commit-13.png"
+        srcset="/static/04d402707892946ca9845d679e93e7dd/c26ae/jarednielsen-forkyeah-github-repository-commit-13.png 158w,
+/static/04d402707892946ca9845d679e93e7dd/6bdcf/jarednielsen-forkyeah-github-repository-commit-13.png 315w,
+/static/04d402707892946ca9845d679e93e7dd/f058b/jarednielsen-forkyeah-github-repository-commit-13.png 630w,
+/static/04d402707892946ca9845d679e93e7dd/40601/jarednielsen-forkyeah-github-repository-commit-13.png 945w,
+/static/04d402707892946ca9845d679e93e7dd/78612/jarednielsen-forkyeah-github-repository-commit-13.png 1260w,
+/static/04d402707892946ca9845d679e93e7dd/29007/jarednielsen-forkyeah-github-repository-commit-13.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
+    </span></p>
 <p>For the time being, I’ll add a very brief description and the URL to sign up for the newsletter.</p>
-<p>
-  <a
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/c99aa98ccf08f0d5a1360af2aae441ae/2f950/jarednielsen-forkyeah-github-repository-commit-14.png"
+    href="/static/c99aa98ccf08f0d5a1360af2aae441ae/29007/jarednielsen-forkyeah-github-repository-commit-14.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAAqElEQVQoz+2P6wqDMAxGfVzZ3GrVWfSpvTdJb0t1A0U22P8dPigkPU2aVKotVVvUjXw0oqjzuhWluoricudITprlaSa2bBXOTVayVEnYMU66m4icM9Y57zk+BEQDQBjLPhxJgg/+TTfpfhgWDdO8WOs4xlgyEcR4+iOHyQDQD+PMNuCiNU/jFVhycZfIafIOvkQriKg1PwFEFunlrJ/4LJ/b37t/+Uf5Cb0hbTocdjhUAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAp0lEQVQoz+2O3QqDMAyFfVLnnFYts+hefKzSn6RJHM5dOAaF3e9wCISTL5xCm1mbeRin/jopbfrxprQ5t33V9lWzuaxVWavTa1ZNt/vSaTWYYj3I+Xh3iCTEIiIssq4rphQhAaZ9PeoDth6sXSKA84FJmIWIiYiYUyJmzsEA8LCLcz4ChBgBkZgR6f2CKAfzdroJAIIPIURAAqS9r+Rrf8f59A//CD8B5IhrWDraGfUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 14"
-        title=""
-        src="/static/c99aa98ccf08f0d5a1360af2aae441ae/b9e4f/jarednielsen-forkyeah-github-repository-commit-14.png"
-        srcset="/static/c99aa98ccf08f0d5a1360af2aae441ae/cf440/jarednielsen-forkyeah-github-repository-commit-14.png 148w,
-/static/c99aa98ccf08f0d5a1360af2aae441ae/d2d38/jarednielsen-forkyeah-github-repository-commit-14.png 295w,
-/static/c99aa98ccf08f0d5a1360af2aae441ae/b9e4f/jarednielsen-forkyeah-github-repository-commit-14.png 590w,
-/static/c99aa98ccf08f0d5a1360af2aae441ae/f9b6a/jarednielsen-forkyeah-github-repository-commit-14.png 885w,
-/static/c99aa98ccf08f0d5a1360af2aae441ae/2d849/jarednielsen-forkyeah-github-repository-commit-14.png 1180w,
-/static/c99aa98ccf08f0d5a1360af2aae441ae/2f950/jarednielsen-forkyeah-github-repository-commit-14.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 14"
+        src="/static/c99aa98ccf08f0d5a1360af2aae441ae/f058b/jarednielsen-forkyeah-github-repository-commit-14.png"
+        srcset="/static/c99aa98ccf08f0d5a1360af2aae441ae/c26ae/jarednielsen-forkyeah-github-repository-commit-14.png 158w,
+/static/c99aa98ccf08f0d5a1360af2aae441ae/6bdcf/jarednielsen-forkyeah-github-repository-commit-14.png 315w,
+/static/c99aa98ccf08f0d5a1360af2aae441ae/f058b/jarednielsen-forkyeah-github-repository-commit-14.png 630w,
+/static/c99aa98ccf08f0d5a1360af2aae441ae/40601/jarednielsen-forkyeah-github-repository-commit-14.png 945w,
+/static/c99aa98ccf08f0d5a1360af2aae441ae/78612/jarednielsen-forkyeah-github-repository-commit-14.png 1260w,
+/static/c99aa98ccf08f0d5a1360af2aae441ae/29007/jarednielsen-forkyeah-github-repository-commit-14.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
+    </span></p>
 <p>As before, scroll down to the bottom of the screen to commit the changes.</p>
-<p>
-  <a
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/2f950/jarednielsen-forkyeah-github-repository-commit-15.png"
+    href="/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/29007/jarednielsen-forkyeah-github-repository-commit-15.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAApElEQVQoz81RQQ7CMAzb/1/EnU9wmbghoQ22wbq2cZKSsR1g1XrghOVDJcu1k1TpA6qa9pGr1X+YyyiZTWPgRzMI9anu+n4YHrKDUm0wP8fJGCJFwoaU9drO7H1wkwfYPhLVJZAXcjFZVJquvbbNvRuccwACNGKdNT/FatY0KyOmw+VY384JFsUWZekiuwf8So5EHhQgAck62nqJNbJCUnw/NuYX2xKMsMwTmmkAAAAASUVORK5CYII='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAoklEQVQoz82RzQ6CQAyEef9X8u4zGE30aIyEFVh+tjNtDcEDgmDiyUlvzeRrZzKfyMx8Xctt9idm99/NSv3RrKrn4yWER1lVJPWTtsgE69jWsen6lASzEcGW2d27rm+aFiAGuI1AjkP9knZRhlt+L0IZYwMgwRJezy6ryKY595p21/0hP7kQBEioUW2twjeyiLSSOjDRacMhQks0qAtNME/7Ce1njLtvQ0KYAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 15"
-        title=""
-        src="/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/b9e4f/jarednielsen-forkyeah-github-repository-commit-15.png"
-        srcset="/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/cf440/jarednielsen-forkyeah-github-repository-commit-15.png 148w,
-/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/d2d38/jarednielsen-forkyeah-github-repository-commit-15.png 295w,
-/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/b9e4f/jarednielsen-forkyeah-github-repository-commit-15.png 590w,
-/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/f9b6a/jarednielsen-forkyeah-github-repository-commit-15.png 885w,
-/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/2d849/jarednielsen-forkyeah-github-repository-commit-15.png 1180w,
-/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/2f950/jarednielsen-forkyeah-github-repository-commit-15.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 15"
+        src="/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/f058b/jarednielsen-forkyeah-github-repository-commit-15.png"
+        srcset="/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/c26ae/jarednielsen-forkyeah-github-repository-commit-15.png 158w,
+/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/6bdcf/jarednielsen-forkyeah-github-repository-commit-15.png 315w,
+/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/f058b/jarednielsen-forkyeah-github-repository-commit-15.png 630w,
+/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/40601/jarednielsen-forkyeah-github-repository-commit-15.png 945w,
+/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/78612/jarednielsen-forkyeah-github-repository-commit-15.png 1260w,
+/static/29c1daa9d1f3bf9e7e7ec7bc315e1c34/29007/jarednielsen-forkyeah-github-repository-commit-15.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>This time, however, let’s add our own commit message. </p>
-<p>
-  <a
+    </span></p>
+<p>This time, however, let’s add our own commit message.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/7f81a1a647e6f839053ba628409380b3/2f950/jarednielsen-forkyeah-github-repository-commit-16.png"
+    href="/static/7f81a1a647e6f839053ba628409380b3/29007/jarednielsen-forkyeah-github-repository-commit-16.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAA4UlEQVQoz72RzW6DMBCE8/5v1HvPPTSXHkqipFJVDEFUNWB7154uP1ZIYhJOsfQZa7WMZ7wbyAohIH7n59R61Lt5quASjwWnbVkMCVY6JKJU0FvWCJJz+PzIkB8VikOOrtTo6hbGeXQT8WzJx2xpwbMoodx+oXjb4/f9iL+dQtMRGnNJK2DJ4XXRSOyWHfrwHC/0fsBPMPP9yLHI0qyqAj9K4VTV0FrDiWsjEQ0F+DVTnhc1NXj5fkVW7gF5KxInPezDwNg3G/f48/KUrbNorZXH58ERDSLjEHocSw+NpBz+A2OVZVwxM0XGAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAA3UlEQVQoz72Ry07DQAxF+/+/xJ4NGxYsQFWRUJEoCY0CnXYmtscHpUMfoISGDZaurp9XnvEMwN058Lk/ZJd6Z/8qOIY/CQ6LMYCJgmbGsPl3TBHMllk8PPL6XFMva2KzJb5HkmSS5sJf6DT/LnhIqipvd0uqmwXt7RMf8xVhJ4RkhKRskx55VPBnMqmyU0GB/gOyOznnI6yH2bQN++F127CqKtZNy2YTENHyZPV9/eKVz5PRElcv19zXc7wz1BTVnn2P0nc6t5fh8Q1FhNAloiidOppLTcxLbCd/aMNPdl1lZBulpNYAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 16"
-        title=""
-        src="/static/7f81a1a647e6f839053ba628409380b3/b9e4f/jarednielsen-forkyeah-github-repository-commit-16.png"
-        srcset="/static/7f81a1a647e6f839053ba628409380b3/cf440/jarednielsen-forkyeah-github-repository-commit-16.png 148w,
-/static/7f81a1a647e6f839053ba628409380b3/d2d38/jarednielsen-forkyeah-github-repository-commit-16.png 295w,
-/static/7f81a1a647e6f839053ba628409380b3/b9e4f/jarednielsen-forkyeah-github-repository-commit-16.png 590w,
-/static/7f81a1a647e6f839053ba628409380b3/f9b6a/jarednielsen-forkyeah-github-repository-commit-16.png 885w,
-/static/7f81a1a647e6f839053ba628409380b3/2d849/jarednielsen-forkyeah-github-repository-commit-16.png 1180w,
-/static/7f81a1a647e6f839053ba628409380b3/2f950/jarednielsen-forkyeah-github-repository-commit-16.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 16"
+        src="/static/7f81a1a647e6f839053ba628409380b3/f058b/jarednielsen-forkyeah-github-repository-commit-16.png"
+        srcset="/static/7f81a1a647e6f839053ba628409380b3/c26ae/jarednielsen-forkyeah-github-repository-commit-16.png 158w,
+/static/7f81a1a647e6f839053ba628409380b3/6bdcf/jarednielsen-forkyeah-github-repository-commit-16.png 315w,
+/static/7f81a1a647e6f839053ba628409380b3/f058b/jarednielsen-forkyeah-github-repository-commit-16.png 630w,
+/static/7f81a1a647e6f839053ba628409380b3/40601/jarednielsen-forkyeah-github-repository-commit-16.png 945w,
+/static/7f81a1a647e6f839053ba628409380b3/78612/jarednielsen-forkyeah-github-repository-commit-16.png 1260w,
+/static/7f81a1a647e6f839053ba628409380b3/29007/jarednielsen-forkyeah-github-repository-commit-16.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>After clicking <code>Commit changes</code>, we are routed back to the rendered README. We can see that our changes are reflected in the browser. </p>
+    </span></p>
+<p>After clicking <code class="language-text">Commit changes</code>, we are routed back to the rendered README. We can see that our changes are reflected in the browser.</p>
 <p>Notice the alert message above our README: a new commit was made by me!</p>
-<p>
-  <a
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/6b0935e0c17bfe84aacdd593bc77ca37/2f950/jarednielsen-forkyeah-github-repository-commit-17.png"
+    href="/static/6b0935e0c17bfe84aacdd593bc77ca37/29007/jarednielsen-forkyeah-github-repository-commit-17.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAA7klEQVQoz6VQi26DMAzkc9HWjVdbVj4ZVFJoSBw7iWdYkcqeqnY6nRQr58cl+7qp6qY8norDKauO+aHJqvrptVhYiqa7PN1l6YtovtaL56wq928J38EYqzRZ50MIkTlEEXaIFpyxgEi8RcKR44rurFql237s1SgtgILQUaDAV+PUoEPcYDN5nEAbACRAb92sQkdeioOeDOCXyXdAxMtlkOU/ntJb1heS90gi4Q9z23XnXmljr5NF8p9+xyWF782SEwBYayUeDSTXPmD2ghB9ZHGFJUj0M/28+UyOP6+9pshLqrdJS5cbf7v5UfzL/A6m5msW7qmdUAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7UlEQVQoz6WRi27CMAxF+VIeK9BSoKPfXdaWksSOH8kU2kkr0pDQrm4kR/Kx/FiUVV1W9eF8KU6XfVkV5zo/VpvdYb0tRi+zfPmxX2X5KsvX28mbXVEcPxfxlwCwNwSkqhpCTC9GIkZPgJ5Y4lwzuO1uTWea7t72A5J4CV4CSZAQLVI32Ee1P+DB4t0hEiEJeEaSVILFOD8Y59CHOT2Dibm/Dda68Rs06EMs4olZ5BXMzM31+tW2FsA48MxPQ76CVRURAcABGkhtvwGLiGhaD2vUkFJ5XJimgJ+7nsNhUjpSypviGH786lTv6l/wN7HYaSJ0LgNvAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 17"
-        title=""
-        src="/static/6b0935e0c17bfe84aacdd593bc77ca37/b9e4f/jarednielsen-forkyeah-github-repository-commit-17.png"
-        srcset="/static/6b0935e0c17bfe84aacdd593bc77ca37/cf440/jarednielsen-forkyeah-github-repository-commit-17.png 148w,
-/static/6b0935e0c17bfe84aacdd593bc77ca37/d2d38/jarednielsen-forkyeah-github-repository-commit-17.png 295w,
-/static/6b0935e0c17bfe84aacdd593bc77ca37/b9e4f/jarednielsen-forkyeah-github-repository-commit-17.png 590w,
-/static/6b0935e0c17bfe84aacdd593bc77ca37/f9b6a/jarednielsen-forkyeah-github-repository-commit-17.png 885w,
-/static/6b0935e0c17bfe84aacdd593bc77ca37/2d849/jarednielsen-forkyeah-github-repository-commit-17.png 1180w,
-/static/6b0935e0c17bfe84aacdd593bc77ca37/2f950/jarednielsen-forkyeah-github-repository-commit-17.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 17"
+        src="/static/6b0935e0c17bfe84aacdd593bc77ca37/f058b/jarednielsen-forkyeah-github-repository-commit-17.png"
+        srcset="/static/6b0935e0c17bfe84aacdd593bc77ca37/c26ae/jarednielsen-forkyeah-github-repository-commit-17.png 158w,
+/static/6b0935e0c17bfe84aacdd593bc77ca37/6bdcf/jarednielsen-forkyeah-github-repository-commit-17.png 315w,
+/static/6b0935e0c17bfe84aacdd593bc77ca37/f058b/jarednielsen-forkyeah-github-repository-commit-17.png 630w,
+/static/6b0935e0c17bfe84aacdd593bc77ca37/40601/jarednielsen-forkyeah-github-repository-commit-17.png 945w,
+/static/6b0935e0c17bfe84aacdd593bc77ca37/78612/jarednielsen-forkyeah-github-repository-commit-17.png 1260w,
+/static/6b0935e0c17bfe84aacdd593bc77ca37/29007/jarednielsen-forkyeah-github-repository-commit-17.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>Back at our <code>forkyeah</code> landing page, we see next to <code>README.md</code> our commit message and a time.</p>
-<p>
-  <a
+    </span></p>
+<p>Back at our <code class="language-text">forkyeah</code> landing page, we see next to <code class="language-text">README.md</code> our commit message and a time.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/87d4a7a94f0a43ae7221d072a1be4e9f/2f950/jarednielsen-forkyeah-github-repository-commit-18.png"
+    href="/static/87d4a7a94f0a43ae7221d072a1be4e9f/29007/jarednielsen-forkyeah-github-repository-commit-18.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABFUlEQVQoz5VRTW+DMAztz622anx1peUP7jztussurVbWQjCEJE6cGRgTdCrSnp58sPzy7JfVNs2SNIt3h+j5ECRpuMu4PjxFPWOu60243gR9Dcd+9Bgk8Xa/8hNIKQvQyljrnCPviLiptGmVZmpEP8fKk6cRjTKKZ7XmSZYjYvcIOd+/QpZuMHOu6uZaVtC0ujMnrlKZSyEA2rfz+8v5ddhl4vwLotMX5EKJWuUFiEZL7ZiNtnWLn1B9XHO6K/b+IoCdjUHF4OX5BMTufoZ1RuOSuJXyeDyVpUBreecuNF5oZL/cfTHb1HUDABXUBbQc+028S2I3hEszH+5weAP/fNUE1lo+0VhiOvoRI8duCfvmkvi/+AY6JmjhmkrLJwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABFUlEQVQoz5WRW2vDMAyF+0/Ta5qla9ruR+55r3va3tJCu1zsRLIsKcNLBkshhR2OwQh9MtaZpdkpzU5P+2PyfIzTLNm/xLvDYpPM14Oj1TZaxtFyG63i+Xrbe7FJkt1h1v0RtFBYAhIRVe1UQ9GRByRwRN53Y43g1nnniIicc6rKzNoP6CVdp9OwbdqirG0LRMyiSB4dfVW1NfB+/Xy9vHnlSfh8NecSSovXwlQWW9IGuUG24C/GfNzOLDIJF3VzKw0RASCgA0TynkVYwiH0o1/cwQiQ53lRVp6FAhVa9dfh/gBmZmutqeuqtoUBcPfrfQSLhoxEh732raLKMlgfRMXMxOJYiTUk/dPsRfsK8d3DY/i/+gZRD2bs5seCAgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 18"
-        title=""
-        src="/static/87d4a7a94f0a43ae7221d072a1be4e9f/b9e4f/jarednielsen-forkyeah-github-repository-commit-18.png"
-        srcset="/static/87d4a7a94f0a43ae7221d072a1be4e9f/cf440/jarednielsen-forkyeah-github-repository-commit-18.png 148w,
-/static/87d4a7a94f0a43ae7221d072a1be4e9f/d2d38/jarednielsen-forkyeah-github-repository-commit-18.png 295w,
-/static/87d4a7a94f0a43ae7221d072a1be4e9f/b9e4f/jarednielsen-forkyeah-github-repository-commit-18.png 590w,
-/static/87d4a7a94f0a43ae7221d072a1be4e9f/f9b6a/jarednielsen-forkyeah-github-repository-commit-18.png 885w,
-/static/87d4a7a94f0a43ae7221d072a1be4e9f/2d849/jarednielsen-forkyeah-github-repository-commit-18.png 1180w,
-/static/87d4a7a94f0a43ae7221d072a1be4e9f/2f950/jarednielsen-forkyeah-github-repository-commit-18.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 18"
+        src="/static/87d4a7a94f0a43ae7221d072a1be4e9f/f058b/jarednielsen-forkyeah-github-repository-commit-18.png"
+        srcset="/static/87d4a7a94f0a43ae7221d072a1be4e9f/c26ae/jarednielsen-forkyeah-github-repository-commit-18.png 158w,
+/static/87d4a7a94f0a43ae7221d072a1be4e9f/6bdcf/jarednielsen-forkyeah-github-repository-commit-18.png 315w,
+/static/87d4a7a94f0a43ae7221d072a1be4e9f/f058b/jarednielsen-forkyeah-github-repository-commit-18.png 630w,
+/static/87d4a7a94f0a43ae7221d072a1be4e9f/40601/jarednielsen-forkyeah-github-repository-commit-18.png 945w,
+/static/87d4a7a94f0a43ae7221d072a1be4e9f/78612/jarednielsen-forkyeah-github-repository-commit-18.png 1260w,
+/static/87d4a7a94f0a43ae7221d072a1be4e9f/29007/jarednielsen-forkyeah-github-repository-commit-18.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>Notice the navigation bar just above our list of files. The first item is a link to the commit log. </p>
-<p>
-  <a
+    </span></p>
+<p>Notice the navigation bar just above our list of files. The first item is a link to the commit log.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/510886bf8add79222dde1419f4650a05/2f950/jarednielsen-forkyeah-github-repository-commit-19.png"
+    href="/static/510886bf8add79222dde1419f4650a05/29007/jarednielsen-forkyeah-github-repository-commit-19.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABaUlEQVQoz42SW0/CQBCF+bcKCrQgBP6diQ/6anwSY+KLoITSblv3vnucbuXSxhonOT3pdPfrzOz2JvMlJrMl4tkC0c0Co3iGaLrEeDLHYBijf6aLq3FD/WEUdHkdYTCaIJ4u0EMrvpREahyEtrDOwXnA0YMMUmlwocClgjIGv0XPe08bHIIbC776gHx4hSw5ARSstdBaw5HX6xwC3SK8N+VrYBCt8VyjvH1GcrdCwUqqwsJYB6lNqGqXMhSFwNP2BffbR6q+hh8Z/gxYReXv6xQfTGBfcHzuGPa5QCEMcvpZJVYqbLIMb8mWgKd9R+B5ooqEFUjSHIraFUJCSBlcUdvG2iBLM1ZSNwo5zrAN5Jxjvd4gyxgMtayo3Wo27UranXUCDZ1eWZY0qxwsL5HSzCSd+M9O1CcSBvc38OCH0wrXxaNRmaWEsbVX+gcQ9TWpZmR88AB3dVUVLORtrU7gKenRFd535ZsfvgFwlkGOu0fgNgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABZklEQVQoz42SX2/TMBRH+1GhY6PNCmXjAyLxgMQbj4AQ8JRqWpumbuIb/z3ITpOFwmBXOop07d/xjezZav2WxPX6luL1DYvrNcWrWxarN1xcFcwnPL9c8uzFYmR+uWR+tcz9i5cFxeqGmQ+RREhEaETYdo7WOKxzOB+wzuc9WjqaVtNoQRuT90ceCDEyizEyEiLyY0v38TtGtUgKeY+1lhACMRFDn/b0vRizaHA8CNMpxqPff6V695ljpTC+n8xYhxjLrj7QHIUv2598uPuECy7L41+FyQhsyj1l1bI7au52ByqlOYpHacsh0RjKuubb/QYfQs78Jpw2UlWqZbtXGGPQWhDp0CIYY3HeZ7wL2M6OmeGb6g+hiFCWG/b7OoeHC4lnk0wz/xR672maBqUUtWqolCDGTYIn/idkuPoQxic0PotTOJye2MCTJ0y/aVzEuEHeT+VC37M+Zh4VDjVdOK/HVs4zvwBm9j+2+hR7hgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 19"
-        title=""
-        src="/static/510886bf8add79222dde1419f4650a05/b9e4f/jarednielsen-forkyeah-github-repository-commit-19.png"
-        srcset="/static/510886bf8add79222dde1419f4650a05/cf440/jarednielsen-forkyeah-github-repository-commit-19.png 148w,
-/static/510886bf8add79222dde1419f4650a05/d2d38/jarednielsen-forkyeah-github-repository-commit-19.png 295w,
-/static/510886bf8add79222dde1419f4650a05/b9e4f/jarednielsen-forkyeah-github-repository-commit-19.png 590w,
-/static/510886bf8add79222dde1419f4650a05/f9b6a/jarednielsen-forkyeah-github-repository-commit-19.png 885w,
-/static/510886bf8add79222dde1419f4650a05/2d849/jarednielsen-forkyeah-github-repository-commit-19.png 1180w,
-/static/510886bf8add79222dde1419f4650a05/2f950/jarednielsen-forkyeah-github-repository-commit-19.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 19"
+        src="/static/510886bf8add79222dde1419f4650a05/f058b/jarednielsen-forkyeah-github-repository-commit-19.png"
+        srcset="/static/510886bf8add79222dde1419f4650a05/c26ae/jarednielsen-forkyeah-github-repository-commit-19.png 158w,
+/static/510886bf8add79222dde1419f4650a05/6bdcf/jarednielsen-forkyeah-github-repository-commit-19.png 315w,
+/static/510886bf8add79222dde1419f4650a05/f058b/jarednielsen-forkyeah-github-repository-commit-19.png 630w,
+/static/510886bf8add79222dde1419f4650a05/40601/jarednielsen-forkyeah-github-repository-commit-19.png 945w,
+/static/510886bf8add79222dde1419f4650a05/78612/jarednielsen-forkyeah-github-repository-commit-19.png 1260w,
+/static/510886bf8add79222dde1419f4650a05/29007/jarednielsen-forkyeah-github-repository-commit-19.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
-<p>This is the history of our project. We made three commits. </p>
-<p>
-  <a
+    </span></p>
+<p>This is the history of our project. We made three commits.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
     class="gatsby-resp-image-link"
-    href="/static/833c872ac226bc01ab3f595ccf0ac933/2f950/jarednielsen-forkyeah-github-repository-commit-21.png"
+    href="/static/833c872ac226bc01ab3f595ccf0ac933/29007/jarednielsen-forkyeah-github-repository-commit-21.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
     <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 52.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABNUlEQVQoz4WQiW7CMBBE+VxUUSCcgk+tWoQIgoQ4wSQ+1uu10y0VKkcRo9FIXul57O1M5svxfDmaLZLpoj+aDafLwXj+1k/OHnF2e8Nub/Dryzx5TybJeN5pr2QM1IZ8iCH+mGLkITi0gJwhxPZWnTa28awQwvZwStlFk4pmK5RosNL+aKgyVCgvFMVb/TVz10GU+7IWlSzlCZynEDkdekAva1WU8qH5SrLReXVSGhwzziMS2znOoJRtGvMUDm38os1HvVvrbGuz1HDmeyz2XmQksiBEeN5MRKtys5N5Xgvp1Nn6hIqPhTrqFmzrnsLoME8zpa216DECeGsdAFqDYDDeb/rhz7x4C04bayxY5jwBorRNpWtP9ALmlzte7kV8GXj3KdcrmWLwL2AGjLFE4cz+U3Wnb67nY9JbFQugAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-    >
-      <img
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABKUlEQVQoz4WQ62rCQBBGfVIrVqKGGvR1i1AtRpOYzXVvc8mkGGmxgvpxdob9cZhhRmG0CaPNcrVefKyDZTRfbYIwmswWf4ynwXgavA11MptfeZ+HwTIa9TdxHmrL1In0vYgMvQckDwhIMnxv808+qTbOm1jpAZNrqlx3RRlWpnsoi8g5V8e8PheVqirjgTvxgB7JAdatSVX5bHJjXFY0WnsAAiBEvgBM1Bnrm8Y8k7/o8Nkc9zqNXRrbNHZZgnlCeUoqZXXmSnp5uPauPMR1kjR5AW0JugJToc60ynRhem97/3AyE5++T21rrQXGDjw5B96js2C1l+7+1Pdri4gDMNZZ563zSAxItdOlbYjphczMiEhEl0cknQDjttxvix0wvpaNtfSb/lV+AOWLYe9XEIVqAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
         class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="jarednielsen forkyeah github repository commit 21"
-        title=""
-        src="/static/833c872ac226bc01ab3f595ccf0ac933/b9e4f/jarednielsen-forkyeah-github-repository-commit-21.png"
-        srcset="/static/833c872ac226bc01ab3f595ccf0ac933/cf440/jarednielsen-forkyeah-github-repository-commit-21.png 148w,
-/static/833c872ac226bc01ab3f595ccf0ac933/d2d38/jarednielsen-forkyeah-github-repository-commit-21.png 295w,
-/static/833c872ac226bc01ab3f595ccf0ac933/b9e4f/jarednielsen-forkyeah-github-repository-commit-21.png 590w,
-/static/833c872ac226bc01ab3f595ccf0ac933/f9b6a/jarednielsen-forkyeah-github-repository-commit-21.png 885w,
-/static/833c872ac226bc01ab3f595ccf0ac933/2d849/jarednielsen-forkyeah-github-repository-commit-21.png 1180w,
-/static/833c872ac226bc01ab3f595ccf0ac933/2f950/jarednielsen-forkyeah-github-repository-commit-21.png 1600w"
-        sizes="(max-width: 590px) 100vw, 590px"
+        title="jarednielsen forkyeah github repository commit 21"
+        src="/static/833c872ac226bc01ab3f595ccf0ac933/f058b/jarednielsen-forkyeah-github-repository-commit-21.png"
+        srcset="/static/833c872ac226bc01ab3f595ccf0ac933/c26ae/jarednielsen-forkyeah-github-repository-commit-21.png 158w,
+/static/833c872ac226bc01ab3f595ccf0ac933/6bdcf/jarednielsen-forkyeah-github-repository-commit-21.png 315w,
+/static/833c872ac226bc01ab3f595ccf0ac933/f058b/jarednielsen-forkyeah-github-repository-commit-21.png 630w,
+/static/833c872ac226bc01ab3f595ccf0ac933/40601/jarednielsen-forkyeah-github-repository-commit-21.png 945w,
+/static/833c872ac226bc01ab3f595ccf0ac933/78612/jarednielsen-forkyeah-github-repository-commit-21.png 1260w,
+/static/833c872ac226bc01ab3f595ccf0ac933/29007/jarednielsen-forkyeah-github-repository-commit-21.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
       />
-    </span>
-  </span>
-  
   </a>
-    </p>
+    </span></p>
 <p>If we click on the title of the most recent commit, we are routed to a page the shows us the changes that were made to the repository in this commit. Fork yeah!</p>
 <h2>Create a GitHub Repository and Your First Commit</h2>
-<p>Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes! GitHub? More like GutHub. </p></div><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFsUlEQVQ4yz2VaVBTVxTHnzL90FFnOmP7xY5WBFG2JLzkZZGwyGIgILJvsokJyJJISILIboIgoiJuCCKbgaAgApOgVqmKTmtlisUKtVat49i6djr94DjyyP0XgvZ8uWfunPObc869938pt+Iuat6+uDtLyeJrHaiP9pIzzNzmnqq8xGm0WHgNP1t5DZPnuXUX93PyjfGq0xs+xdHSCAcvQZDd9xIELmx6lHRRSfS2RfN+dEE7oxOprlTx1NhF50HNZCKVjkU4HYFgfgQ2bjWA0bSAJw4b8+L5+iyAghfRzAKU+lKWQ+UN/22HuR/+bicvuhB8OgBfuwpIYOgW9vwBw2xDVootK8jHJhUIZz137JvhbEy08fkBoJlNoAXBu+dzf6WbqfWMP0WFnJmyt7nWOFDkrj4KN64PnDwkrJ/fZvJgaIDg9hjeXR4hb8wmUh0eAvHqVUTE9yUcQSDL5QcSvjgEnkxg9TwjJbJwsb1Kvr5tE1NsgoDZTERcf5ubuw9OVNcRcvc2edJnxssRK/680Ie27ExEc9eTUEZIJEwIJHyZTcLIbD7izZB6+EXbYUj9y6G7avx+X0g7zK6VbDe3Gj0basnY3hZMD/RidE81Rusb8VPTcfQU5CIv1A/asAjSLaomZroGZkHtbL9XNXrDWp4AWEIFNI3HxqTWIcpVzkZ7xZBoXjTZwovGleYe/Gux4rm5F8/OncVr6xAuVRZjqKgQg+V7EMPEIU6QQOK4kYiL2cMmV1kRGqvPpNYm7TY7C4PhzJWw63hS4sL1Ji4CX9w624NfjFWYOnwQM+O38NrSj4HsDLw43Ybeyjqs9vSGh5cU7kla4l5hYjkhafCi/Ycphh/6lMPzgStPalvP8yaOHDFo7yD80GDAlMGAm3oNHhzbi1F9LuqkIlw1GiAPigJnbs6C9CrwS0xE4B9vE86dukAke0x1exrZTo4BTdwyUs/VkTJ3BQrTGjF2oAZjqjSMqpRoDQ+EwnEV9gcFQJ2YgpUeErgqDVhfdBLu3mGEQ/sSnigYtDCYpcK5kTNJ3Hjk8DJIqZuS1MZ1oDHfgkfmQby9OoimpFj4LluCqJWrcGGnCi2RpShXdEGns2K7SIlYOoaECKOIn1AOsVD2gXLkSh450VI4u9E258hssrLgBExtncCT+3h7/TL+6O1Ba1YubtY34GX/OdzouIaqbV04xNGgnV+JHqaWnGP22S6IDqCTMT6kaF5Ap5unBE6yNHZdSQdxFEWQe9eu4J9rF2EIDsX3zW2419SOZ4MjeDE5jbsT93C68ywiEzLA8fInYv4mbBSEsbHiBGQIU/upoy6asONB9dDqR2bjfdVE7OJDbl66RN6OWnDzSCMm70yiNkeLxxPTePX8DX6b/B0jQ5eRmJSB5JRskqHUQOIfzvJ95HASSpPtl7tUa/mxNa0DgylNbHmeEfdv3SDvb10m5pq9MNQcQrGuDM0n2tDWaoJWW4rUjB3IV+8i1TWHkacqYmv2HUXaNtXUHOozO/CbtCyJQl2EgrIKbE1XzD6dGMersaukRKUjxeX7oC4sgTKnEDn5etQebCZd5iHSN/gtTracmW06ZSIVhgOQ+gYFUwsPWmUXh+RkRaZWW4GCueTxiemZ0Ss3SPJcW3J5JMnK0ZCkFAUpLKok6oJiGGsbibsnf2bFilVzbSuh223QzDNk8hgHqj4/jKpottpVQqerSD7W1PFu+uFzDI9cR3a2hnXlSNiUjFxWma1mC/SV7Fcr1rKHjrQiIl6BpcuWs1xPgeKj1i4KlEUteGtcONTp9l47dNB6dc2diWnTsPX6e2W2BiHyGCiydiJ0bi0uq4EHT4y9dUc+tHT0932+dLnbfE769rzFGv2eBVhMXOonNaeaW03/fwHHTpqcEhIzs7amKFv0u6oscnmcpbS8prW4xJjbcWZw3ac4qa/MgQAL40vfQf0HblcPfuCf6k8AAAAASUVORK5CYII=" alt="Jared Nielsen" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/352e5/jared-nielsen.png 1x,
-/static/0cdc03efc5a69bac4bd7922ebc9f22b8/aae31/jared-nielsen.png 1.5x,
-/static/0cdc03efc5a69bac4bd7922ebc9f22b8/47c2b/jared-nielsen.png 2x" /><img loading="lazy" width="50" height="50" srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/352e5/jared-nielsen.png 1x,
-/static/0cdc03efc5a69bac4bd7922ebc9f22b8/aae31/jared-nielsen.png 1.5x,
-/static/0cdc03efc5a69bac4bd7922ebc9f22b8/47c2b/jared-nielsen.png 2x" src="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/352e5/jared-nielsen.png" alt="Jared Nielsen" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Want to level up your problem solving skills? I write a weekly newsletter about programming, problem solving and lifelong learning.<!-- --> <a href="http://eepurl.com/cP8CMn" target="_blank" rel="noopener">Join now</a></p></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/mern-deploy-heroku/">← <!-- -->How to Scaffold a Boilerplate MERN Application and Deploy to Heroku</a></li><li><a rel="next" href="/programming-problem-solving/">Programming is Problem Solving<!-- --> →</a></li></ul></div></div></div><script>
+<p>Software developers create GitHub repositories to host the code for their projects, but we can create a GitHub repository for any purpose, like recipes! GitHub? More like GutHub.</p></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#080808;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/d4bf4/profile-pic.avif 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" data-srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/3faea/profile-pic.webp 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e5610/profile-pic.png" data-srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e5610/profile-pic.png 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/d4bf4/profile-pic.avif 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" srcSet="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/3faea/profile-pic.webp 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e5610/profile-pic.png" srcSet="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e5610/profile-pic.png 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div><p>Want to level up your problem solving skills? I write a bi-weekly newsletter about programming, problem solving and lifelong learning.<!-- --> <a href="http://eepurl.com/cP8CMn" target="_blank" rel="noopener">Join now</a></p></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/mern-deploy-heroku/">← <!-- -->How to Scaffold a Boilerplate MERN Application and Deploy to Heroku</a></li><li><a rel="next" href="/programming-problem-solving/">Programming is Problem Solving<!-- --> →</a></li></ul></nav></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
   
   
   if(true) {
@@ -843,10 +780,10 @@
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   }
   if (typeof ga === "function") {
-    ga('create', 'UA-51067359-1', 'auto', {});
+    ga('create', ' UA-51067359-1', 'auto', {});
       
       
       
       
       
-      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/create-github-repository-first-commit/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-e83603a732b9346823e1.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-f8c20c8491cbd22ce357.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-2a9c5f72c2c9311faca6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-5ac19a3435fa25e6ccc9.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-4979af1861382ebf361e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-a28e292c1f821d5f3628.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-2a9c5f72c2c9311faca6.js" async=""></script><script src="/commons-246aa2cc16737a2f2814.js" async=""></script><script src="/app-e83603a732b9346823e1.js" async=""></script><script src="/styles-53d27243da94e1a00671.js" async=""></script><script src="/webpack-runtime-c973350df21cb6f2e98b.js" async=""></script></body></html>
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/create-github-repository-first-commit/";window.___webpackCompilationHash="de056fe5988791059bd2";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-b227d9031ab4094e5021.js"],"app":["/app-301c8cf0cc36be3d4466.js"],"component---src-pages-404-js":["/component---src-pages-404-js-bb1698d01a7f9dde5caa.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-78841202c8510eea95ba.js"],"component---src-pages-index-js":["/component---src-pages-index-js-0b66a8cda36e6c7516ae.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-20f655bfb94bd369e9d3.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-2aec47be4891590b3660.js"]};/*]]>*/</script><script src="/polyfill-b227d9031ab4094e5021.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-2aec47be4891590b3660.js" async=""></script><script src="/commons-0f416e881c5946c9c507.js" async=""></script><script src="/app-301c8cf0cc36be3d4466.js" async=""></script><script src="/framework-e413e527015be9a1bdfd.js" async=""></script><script src="/webpack-runtime-538954c601d21277126a.js" async=""></script></body></html>
