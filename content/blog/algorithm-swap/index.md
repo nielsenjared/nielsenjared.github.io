@@ -1,17 +1,17 @@
 ---
 title: "Learn How to Code the Swap Algorithm in JavaScript"
 date: "2021-TO-DO"
-description: "TODO"
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a swap algorithm in JavaScript."
 keywords: ['algorithm', 'swap', 'javascript']
 ---
 
 
-![ {{ TODO ALT TEXT }} ](./jarednielsen-algorithm-{{ TITLE }}.png)
+![ Swap ](./jarednielsen-algorithm-swap.png)
 
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a swap algorithm in JavaScript. 
 
-You might already be familiar with this algorithm and/or you might find the next few steps rudimentary. Bear with me as we establish our computational thinking framework and our approach to pseudocode. 
+You might already be familiar with this algorithm and/or you might find the next few steps rudimentary. Bear with me as we establish our computational thinking framework and refine our approach to pseudocode. 
 
 ---
 
@@ -25,7 +25,7 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 * What is programming?
 
-* TODO
+* What is pseudocode?
 
 * TODO 
 
@@ -43,9 +43,9 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 4. Evaluate the plan
 
 
-### TODO BULLET #2
+### What is Pseudocode?
 
-TODO
+Pseudocode is an approach to designing and solving algorithms using plain language rather than the syntax of a specific programming language. Writing pseudocode allows us to focus on the solution to the problem rather than the details of its implementation. If you're just joining us, you may want to start with [Learn How to Write Pseudocode by Solving the Classic Fizz Buzz Algorithm](https://jarednielsen.com/algorithm-pseudocode-fizzbuzz/).
 
 
 ### TODO BULLET #3
@@ -53,7 +53,7 @@ TODO
 TODO
 
 
-## Let's Get Meta
+## Let's Get Meta 
 
 * What is computational thinking?
 
@@ -121,8 +121,6 @@ Let’s make a plan!
 ### Make a Plan
 
 As outlined above, this is where we implement our computational thinking heuristics, the first being decomposition.
-
-TODO MOVE THIS UP
 
 
 #### Decomposition
@@ -210,11 +208,7 @@ SET y TO temp
 
 ### Execute the Plan
 
-Finally, we simply need to write a series of repeatable steps to solve our problem, otherwise known as an algorithm.
-TODO
-
-The last step in our computational thinking heuristic is to translate our pseudode. 
-
+Finally, we simply need to implement the design of our algorithm. Here, we translate our pseudode to JavaScript:
 ```js
 let x = 123;
 let y = 456;
@@ -243,7 +237,7 @@ x = y;
 y = temp;
 ```
 
-TODO alternate approaches to swap
+You can omit the `temp` variable and get mathemagical: 
 ```js
 x = 123;
 y = 456;
@@ -252,7 +246,7 @@ y = x - y;
 x = x - y;
 ```
 
-TODO
+You can accomplish the same feat as above with multiplication and division: 
 ```js
 x = 123;
 y = 456;
@@ -271,31 +265,45 @@ x, y = y, x
 
 ## Reflection
 
-* TODO
+* What is computational thinking? 
 
-* What Problem(s) Does {{ TODO TITLE }} Solve? 
+* What problem(s) does swap solve? 
 
-* What is the Big O of {{ TODO TITLE }}?
-
-
-### TODO BULLET #1
-
-TODO
+* What is the Big O of swap?
 
 
-### What Problem(s) Does {{ TODO TITLE }} Solve?
+### What is Computational Thinking? 
+
+Computational thinking is a set of methods used for defining and solving a problem in terms that a computer could also perform.
+
+There are four stages to computational thinking: 
+
+* Decomposition
+
+* Pattern recognition
+
+* Abstraction
+
+* Algorithm design
+
+
+### What Problem(s) Does a Swap Algorithm Solve?
 
 TODO 
 
 
-### What is the Big O of Insertion Sort? 
+### What is the Big O of Swap? 
 
-TODO
+O(1), or constant. 
+
+Regardless of the size of the input, `n`, the swap algorithm only performs one operation.
+
+If you want to learn more about linear time complexity, check out my article [Big O Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity/).
 
 
-## How to Code the {{ TODO }} Algorithm in JavaScript
+## How to Code the Decimal to Binary Algorithm in JavaScript
 
-TODO RECAP FOR SEO
+In this tutorial you learned how to swap variables. In the next tutorial, you'll learn how to convert decimals to binary. 
 
 
 
