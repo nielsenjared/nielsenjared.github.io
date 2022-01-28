@@ -1,11 +1,12 @@
 ---
 title: "Learn How to Write Pseudocode by Solving the Classic Fizz Buzz Algorithm"
 date: "2022-01-14"
-description: If you want to learn how to code, you'll want to learn how to write pseudocode. Writing pseudocode helps you think through the problem _before_ writing any _code_ code. In this tutorial, you will learn how to write pseudocode while solving the classic Fizz Buzz algorithm. 
+description: "If you want to learn how to code, you'll want to learn how to write pseudocode. Writing pseudocode helps you think through the problem _before_ writing any _code_ code. In this tutorial, you will learn how to write pseudocode while solving the classic Fizz Buzz algorithm."
 keywords: ['algorithm', 'fizz buzz', 'fizzbuzz', 'learn', 'javascript', 'pseudocode']
 ---
 
-![ Fizz Buzz ](./jarednielsen-algorithm-fizzbuzz.png)
+
+![ Fizz Buzz ](./jarednielsen-fizzbuzz.png)
 
 If you want to learn how to code, you'll want to learn how to write pseudocode. Writing pseudocode helps you think through the problem _before_ writing any _code_ code. In this tutorial, you will learn how to write pseudocode while solving the classic Fizz Buzz algorithm. 
 
@@ -89,7 +90,7 @@ Let’s make a plan!
 
 What's the smallest problem we can solve? 
 
-1.
+1
 
 Let's pseudocode it: 
 ```md
