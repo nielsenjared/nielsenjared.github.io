@@ -1,22 +1,19 @@
 ---
 title: "Learn How to Code the Swap Algorithm in JavaScript"
-date: "2021-TO-DO"
+date: "2022-01-28"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a swap algorithm in JavaScript."
 keywords: ['algorithm', 'swap', 'javascript']
 ---
-
 
 ![ Swap ](./jarednielsen-algorithm-swap.png)
 
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a swap algorithm in JavaScript. 
 
-You might already be familiar with this algorithm and/or you might find the next few steps rudimentary. Bear with me as we establish our computational thinking framework and refine our approach to pseudocode. 
-
 ---
 
-![A is for Algorithms](./../../assets/graphics/algorithms/jarednielsen-algorithms-banner.png)
-Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
+![A is for Algorithms](./jarednielsen-algorithms.png)
+💯 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 ---
 
@@ -27,7 +24,7 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 * What is pseudocode?
 
-* TODO 
+* What is Big O?
 
 
 ### What is Programming?
@@ -48,12 +45,14 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 Pseudocode is an approach to designing and solving algorithms using plain language rather than the syntax of a specific programming language. Writing pseudocode allows us to focus on the solution to the problem rather than the details of its implementation. If you're just joining us, you may want to start with [Learn How to Write Pseudocode by Solving the Classic Fizz Buzz Algorithm](https://jarednielsen.com/algorithm-pseudocode-fizzbuzz/).
 
 
-### TODO BULLET #3
+### What is Big O? 
 
-TODO
+Big O is a notation for measuring the complexity of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the speed of an algorithm in seconds (or minutes!). We measure the rate of growth of an algorithm in the number of operations it takes to complete. If you're new to Big O, check out [The Superlative Guide to Big O](https://jarednielsen.com/big-o/).
 
 
 ## Let's Get Meta 
+
+Programming and problem solving are both metacognitive activities. To excel, we want to improve our thinking about thinking. Ask yourself the following questions and keep them back of mind as you proceed:
 
 * What is computational thinking?
 
@@ -289,7 +288,7 @@ There are four stages to computational thinking:
 
 ### What Problem(s) Does a Swap Algorithm Solve?
 
-TODO 
+Beyond swapping the values stored in two variables, swap algorithms are used in sorting algorithms. 
 
 
 ### What is the Big O of Swap? 
