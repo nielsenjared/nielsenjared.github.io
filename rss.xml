@@ -1,4 +1,282 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 Jan 2022 11:28:58 GMT</lastBuildDate><item><title><![CDATA[Learn How to Write Pseudocode by Solving the Classic Fizz Buzz Algorithm]]></title><description><![CDATA[If you want to learn how to code, you’ll want to learn how to write pseudocode. Writing pseudocode helps you think through the problem…]]></description><link>https://jarednielsen.com/algorithm-pseudocode-fizzbuzz/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-pseudocode-fizzbuzz/</guid><pubDate>Fri, 14 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 29 Jan 2022 13:07:21 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Swap Algorithm in JavaScript]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-swap/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-swap/</guid><pubDate>Fri, 28 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/eafd61727daa9b50b3aa93d38607977c/29007/jarednielsen-algorithm-swap.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABT0lEQVQoz2WRP0sDQRDF7yuKkA9gJ4oKVoKFoJDGwsJrBLvgv0KIkkJIK1amEAsRRBCCCnIm3iU7O7szI3Nz54V4/Dh29/bNezOXSMASPwOKd0JR7GEWcOJBCaAXIjIF5pBIxAargiAi8fm12D/O91K8G2gJE3sQNDGWYvSKGZqnCA4es4WV6dGZu+hli6vu5Er1rvTHxjyp60GVGb0Ij5d34PLGUsenl5/NtirR1+G90LwYraQAuNNr/srEAxeFAEwOO/TxKRSq5jW59axi39g6jZ3vppO0Y86+f5u11jjPtTq4uufAHK3namBsiMTh+3hpK99oF9sHo9Z6uH+wmdmQSyJLTHQvcRaNIMTfI9/tu/MevQ2FY+3pTWYk88oYyvBTvV3lBpkUM79Kp6Pm/8UNFLSFUDbCQbeGZbbYZCuOVMtIIRJifVfnf1+ZG34Bvqt02qRPIQMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; Swap &quot;
+        title=&quot; Swap &quot;
+        src=&quot;/static/eafd61727daa9b50b3aa93d38607977c/f058b/jarednielsen-algorithm-swap.png&quot;
+        srcset=&quot;/static/eafd61727daa9b50b3aa93d38607977c/c26ae/jarednielsen-algorithm-swap.png 158w,
+/static/eafd61727daa9b50b3aa93d38607977c/6bdcf/jarednielsen-algorithm-swap.png 315w,
+/static/eafd61727daa9b50b3aa93d38607977c/f058b/jarednielsen-algorithm-swap.png 630w,
+/static/eafd61727daa9b50b3aa93d38607977c/40601/jarednielsen-algorithm-swap.png 945w,
+/static/eafd61727daa9b50b3aa93d38607977c/78612/jarednielsen-algorithm-swap.png 1260w,
+/static/eafd61727daa9b50b3aa93d38607977c/29007/jarednielsen-algorithm-swap.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a swap algorithm in JavaScript.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+💯 Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What is programming?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is pseudocode?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is Big O?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What is Programming?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/programming-problem-solving/&quot;&gt;Programming is problem solving&lt;/a&gt;. There are four steps we need to take to solve any programming problem:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Understand the problem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make a plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;What is Pseudocode?&lt;/h3&gt;
+&lt;p&gt;Pseudocode is an approach to designing and solving algorithms using plain language rather than the syntax of a specific programming language. Writing pseudocode allows us to focus on the solution to the problem rather than the details of its implementation. If you’re just joining us, you may want to start with &lt;a href=&quot;https://jarednielsen.com/algorithm-pseudocode-fizzbuzz/&quot;&gt;Learn How to Write Pseudocode by Solving the Classic Fizz Buzz Algorithm&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;What is Big O?&lt;/h3&gt;
+&lt;p&gt;Big O is a notation for measuring the complexity of an algorithm. Big O notation mathematically describes the complexity of an algorithm in terms of time and space. We don’t measure the speed of an algorithm in seconds (or minutes!). We measure the rate of growth of an algorithm in the number of operations it takes to complete. If you’re new to Big O, check out &lt;a href=&quot;https://jarednielsen.com/big-o/&quot;&gt;The Superlative Guide to Big O&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;p&gt;Programming and problem solving are both metacognitive activities. To excel, we want to improve our thinking about thinking. Ask yourself the following questions and keep them back of mind as you proceed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What is computational thinking?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does a swap algorithm solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is the Big O of swap?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Code a Swap Algorithm in JavaScript&lt;/h2&gt;
+&lt;p&gt;How do you think like a programmer?&lt;/p&gt;
+&lt;p&gt;If programming is problem solving, we need one or more heuristics specific to this domain.&lt;/p&gt;
+&lt;p&gt;We’re in luck!&lt;/p&gt;
+&lt;p&gt;There’s a set of methods used for defining and solving a problem in terms that a computer could also perform. It’s called, you’ll never guess… computational thinking.&lt;/p&gt;
+&lt;p&gt;Computational thinking is a set of methods used for defining and solving a problem in terms that a computer could also perform.&lt;/p&gt;
+&lt;p&gt;There are four stages to computational thinking:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pattern recognition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstraction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithm design&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’ll look at each of these in depth as we proceed with our problem solving. The first step is to understand the problem. Our workflow will follow with outline:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Understand the problem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make a plan&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decompose the problem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Recognize patterns&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Form abstractions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Design the algorithm&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Understand the Problem&lt;/h3&gt;
+&lt;p&gt;To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GIVEN two variables&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;WHEN I perform a swap&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;THEN the values are exchanged&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That’s our general outline. We know our input conditions (two variables) and our output requirements (exchanged values between the variables), and our goal is to swap them.&lt;/p&gt;
+&lt;p&gt;Let’s make a plan!&lt;/p&gt;
+&lt;h3&gt;Make a Plan&lt;/h3&gt;
+&lt;p&gt;As outlined above, this is where we implement our computational thinking heuristics, the first being decomposition.&lt;/p&gt;
+&lt;h4&gt;Decomposition&lt;/h4&gt;
+&lt;p&gt;If composing a function is the process of assembling the various components, such as variables, control flow, and conditions, then decomposition is the opposite: it’s breaking a problem down into smaller parts.&lt;/p&gt;
+&lt;p&gt;This is both the easiest and the hardest step in the process because sometimes the component parts of a problem are obvious, but other times the component parts are emergent, or intertwined, and it’s difficult to cleanly separate them.&lt;/p&gt;
+&lt;p&gt;Let’s break this problem down and start by declaring two variables, &lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt;, and &lt;code class=&quot;language-text&quot;&gt;y&lt;/code&gt;. Each of these variables stores a value. We need values to swap, so let’s just say…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;x = 123
+y = 456&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our goal is to swap the value stored in &lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt;, 123, with the value stored in &lt;code class=&quot;language-text&quot;&gt;y&lt;/code&gt;, 456. When we are decomposing a problem, we want to break the problem down into the the smallest problem we can solve. So let’s just focus on &lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt;. How do we move the value stored in &lt;code class=&quot;language-text&quot;&gt;y&lt;/code&gt; to the variable &lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;Easy.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;x = y&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;How would we pseudocde this?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;SET x TO y&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;How do we move the value stored in &lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;y&lt;/code&gt;? Your initial thought might be to do something like this&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;x = y
+y = x&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our pseudocode would look like this…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;SET x TO y
+SET y TO x&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we ‘run’ this algorithm, what’s the result?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;x = 456
+y = 456&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s happening?&lt;/p&gt;
+&lt;p&gt;Following our control flow, we are  &lt;em&gt;overwriting&lt;/em&gt; the value of &lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt; with the value stored in &lt;code class=&quot;language-text&quot;&gt;y&lt;/code&gt;, which is 456. When we then assign the value of &lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;y&lt;/code&gt;, we are simply reassigning the value of 456.&lt;/p&gt;
+&lt;h4&gt;Pattern Recognition&lt;/h4&gt;
+&lt;p&gt;When we break a problem down into smaller pieces, we will often recognize patterns. Another way of saying this is that we generalize. We make a broad statement by inferring from specific cases.&lt;/p&gt;
+&lt;p&gt;Let’s take a look at our pseudocode again…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;SET x TO y
+SET y TO x&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s the pattern?&lt;/p&gt;
+&lt;p&gt;Variable assignment.&lt;/p&gt;
+&lt;p&gt;If only we could set the value of &lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt; aside, &lt;em&gt;temporarily&lt;/em&gt;, while we performed our swap…&lt;/p&gt;
+&lt;h4&gt;Abstraction&lt;/h4&gt;
+&lt;p&gt;Once we recognize patterns, we can remove the details, or form abstractions, in order to focus on the relationships between concepts.&lt;/p&gt;
+&lt;p&gt;We’re already working with abstractions using variables such as &lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;y&lt;/code&gt;, but we were thinking in terms of the specific value stored in those variables. In the &lt;em&gt;abstraction&lt;/em&gt; step of computational thinking, the value isn’t important. Why doesn’t the value matter? In this algorithm, we’re more interested in &lt;em&gt;where&lt;/em&gt; the value is stored then &lt;em&gt;what&lt;/em&gt; the value is.&lt;/p&gt;
+&lt;p&gt;Knowing that, we need to declare another variable that allows us to temporarily store one of the values we want to swap. Let’s call it &lt;code class=&quot;language-text&quot;&gt;temp&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;SET temp TO x
+SET x TO y
+SET y TO temp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Execute the Plan&lt;/h3&gt;
+&lt;p&gt;Finally, we simply need to implement the design of our algorithm. Here, we translate our pseudode to JavaScript:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;123&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;456&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we run this algorithm and log the values stored in &lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;y&lt;/code&gt;, the results are:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;456
+123&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Evaluate the Plan&lt;/h3&gt;
+&lt;p&gt;If &lt;code class=&quot;language-text&quot;&gt;temp&lt;/code&gt; was a value you were planning to update again, you may want to declare it without value assignment or assign a value of 0 to initialize it as a number.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;123&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;456&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//or let temp = 0&lt;/span&gt;
+temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can omit the &lt;code class=&quot;language-text&quot;&gt;temp&lt;/code&gt; variable and get mathemagical:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;123&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;456&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can accomplish the same feat as above with multiplication and division:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;123&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;456&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The downside to both of the approaches above is that they can only be used for numeric values.&lt;/p&gt;
+&lt;p&gt;In Python, you can do a one-liner using parallel assignment:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; x&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What is computational thinking?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does swap solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is the Big O of swap?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What is Computational Thinking?&lt;/h3&gt;
+&lt;p&gt;Computational thinking is a set of methods used for defining and solving a problem in terms that a computer could also perform.&lt;/p&gt;
+&lt;p&gt;There are four stages to computational thinking:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pattern recognition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstraction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithm design&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What Problem(s) Does a Swap Algorithm Solve?&lt;/h3&gt;
+&lt;p&gt;Beyond swapping the values stored in two variables, swap algorithms are used in sorting algorithms.&lt;/p&gt;
+&lt;h3&gt;What is the Big O of Swap?&lt;/h3&gt;
+&lt;p&gt;O(1), or constant.&lt;/p&gt;
+&lt;p&gt;Regardless of the size of the input, &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;, the swap algorithm only performs one operation.&lt;/p&gt;
+&lt;p&gt;If you want to learn more about linear time complexity, check out my article &lt;a href=&quot;https://jarednielsen.com/big-o-linear-time-complexity/&quot;&gt;Big O Linear Time Complexity&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;How to Code the Decimal to Binary Algorithm in JavaScript&lt;/h2&gt;
+&lt;p&gt;In this tutorial you learned how to swap variables. In the next tutorial, you’ll learn how to convert decimals to binary.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Write Pseudocode by Solving the Classic Fizz Buzz Algorithm]]></title><description><![CDATA[If you want to learn how to code, you’ll want to learn how to write pseudocode. Writing pseudocode helps you think through the problem…]]></description><link>https://jarednielsen.com/algorithm-pseudocode-fizzbuzz/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-pseudocode-fizzbuzz/</guid><pubDate>Fri, 14 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
