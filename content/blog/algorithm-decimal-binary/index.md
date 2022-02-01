@@ -25,7 +25,7 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 * What's binary?
 
-* TODO What's a decimal?
+* What is the modulo operator?
 
 
 ### What's a Base?
@@ -107,16 +107,16 @@ What if we are limited to two fingers, or switches?
 We're going to need a lot more digits!
 
 
-### TODO BULLET #3
+### What is the Modulo Operator?
 
-TODO
+In programming, the [modulo operation](https://en.wikipedia.org/wiki/Modulo_operation) returns the remainder of a division operation.
 
 
 ## Let's Get Meta
 
 * 
 
-* What Problem(s) Does Decimal to Binary Solve? 
+* What Problem(s) Does a Decimal to Binary Algorithm Solve? 
 
 * What is the Big O of Decimal to Binary Conversion?
 
@@ -161,6 +161,8 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 * Algorithm
 
+When we are decomposing a problem, we break the problem down into smaller problems that are easier to solve.
+
 What's the smallest problem we can solve? 
 
 `1`
@@ -169,8 +171,7 @@ In base 10, what is `1`?
 
 It is one of ten possible values, or, `1 / 10`. 
 
-
-So in base 2, what is `1`? 
+In base 2, what is `1`? 
 
 It is one of _two_ possible values. 
 
@@ -186,6 +187,8 @@ What does the operation of division return?
 
 A quotient and a remainder. 
 
+TODO 
+
 Let's start simple and convert `0` to binary. What is the quotient of the following: 
 ```
 0 / 2
@@ -195,7 +198,11 @@ Let's start simple and convert `0` to binary. What is the quotient of the follow
 
 It's `0`.
 
-What's the remainder of `0 / 2`? Also `0`. 
+What's the remainder of `0 / 2`, or `0 % 2`?
+
+Also `0`. 
+
+So the binary equivalent of `0` is also `0`. 
 
 If we start to build a table, it looks like this so far:
 
@@ -205,35 +212,27 @@ If we start to build a table, it looks like this so far:
 
 Because we are only working with two values, `0` and `1`, we can surmise that the decimal `1` converted to binary is also `1`. 
 
-But don't take my word for it! Let's proove it . What is `1 / 2`?
-```
-1 / 2 = 0.5
-```
+But don't take my word for it! Let's prove it. 
 
-Not exactly a _whole_ number!
+What is `1 / 2`? 
 
-But the remainder _is_ 1. How? 
+`0.5`
 
-We use the [division algorithm](https://en.wikipedia.org/wiki/Division_algorithm), which states that:
+Can we work with this? 
 
-> For integers `N` and `D` where `D != 0`, there are unique integers `Q` and `R` where `0 <= R < D`
+It's not a whole number. 
 
-In other words: 
-```
-N = D * Q + R
-```
+TODO WHY DO WE USE THE REMAINDER?
 
-Where `N` is our dividend, `D` is our divisor, and `Q` and `R` are the quotient and remainder, respectively.
+What is `1 % 2`? 
 
-👆 Keep in mind that `Q` is not the quotient we return from the division operation of `1 / 2`. It's the number of times the divisor goes into the dividend, which is `0`. 
+`1`
 
-So, using our equation above:
-```
-1 = 2 * 0 + 1
-```
+What 
 
 Another way to think about it is to calculate the division of `1 / 2` by hand. 
 
+TODO
 ![](./jarednielsen-convert-decimal-binary.png)
 
 We add this value to our table:
@@ -265,7 +264,8 @@ We increment the value to the left and reset the value on the right, so when we 
 
 Are you starting to see the pattern? 
 
-We're building our binary strings with the remainder, and not the quotient, of our division operation. We continue to perform that operation _while_ our number is greater than 0. 
+TODO 
+We're building our binary strings with the remainder, and not the quotient, of our division operation. We continue to perform the division operation _while_ our number is greater than 0. 
 
 ```
 2 / 2 = 1
@@ -299,14 +299,14 @@ You guessed it, we need to _overflow_.
 | 3         | 11      |
 | 4         | 100     |
 
-What about `5`? Now its' getting interesting. Our plan is to use a Stack data structure to in our algorithm solution. Using the LIFO principle, imagine _pushing_ values to the binary string as we build it. 
+What about `5`? Now its' getting interesting. TODO
 
 ```
 5 / 2 = 2
 5 % 2 = 1
 ```
 
-We _push_ the remainder to a string: 
+We "add" the remainder to a string: 
 ```
 1
 ```
@@ -319,7 +319,7 @@ We now divide our quotient, `2`, by `2`.
 
 We _push_ the remainder to our string: 
 ```
-01
+10
 ```
 
 We're not at zero, yet. Our quotient is `1`, so we divide that by 2.
@@ -378,7 +378,7 @@ const decimalToBinary = (num) => {
 }
 ```
 
-Note that, rather than _prepending_ the each remainder, we instead concatenate the `result` string and use a combination of string and array methods to _split_ the string into array items, reverse the order of the array, and then _re_join the items in a string. 
+Note that, rather than _prepending_ each remainder, we instead concatenate the `result` string and use a combination of string and array methods to _split_ the string into array items, reverse the order of the array, and then _re_join the items in a string. 
 
 
 ### Evaluate the Plan
@@ -410,7 +410,7 @@ But what fun is that?
 
 * TODO
 
-* What Problem(s) Does {{ TODO TITLE }} Solve? 
+* What Problem(s) Does a Decimal to Binary Algorithm Solve? 
 
 * What is the Big O of {{ TODO TITLE }}?
 
@@ -420,12 +420,12 @@ But what fun is that?
 TODO
 
 
-### What Problem(s) Does {{ TODO TITLE }} Solve?
+### What Problem(s) Does a Decimal to Binary Algorithm Solve?
 
 TODO 
 
 
-### What is the Big O of Insertion Sort? 
+### What is the Big O of Decimal to Binary? 
 
 TODO
 
