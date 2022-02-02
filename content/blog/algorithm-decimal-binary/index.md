@@ -183,11 +183,22 @@ If we're using division to convert to binary, what is our divisor?
 
 `2`
 
-What does the operation of division return? 
+What do we know about [division](https://en.wikipedia.org/wiki/Division_(mathematics)? 
 
-A quotient and a remainder. 
+The division operation divides one number, the dividend, by another number, the divisor, and returns a quotient and a remainder. So we're on the same page with terminology, let's look at an example...
+```md
+3 / 2 = 1
+```
 
-TODO 
+TODO
+`3` is the dividend, `2` is the divisor, and `1` is the quotient. What about the remainder? We use the modulo operator. 
+```md
+3 % 2 = 1
+```
+
+Here, again, `3` is the dividend, `2` is the divisor, but the result of the modulo operation, the remaidner, is `1`. 
+
+TODO
 
 Let's start simple and convert `0` to binary. What is the quotient of the following: 
 ```
@@ -198,11 +209,7 @@ Let's start simple and convert `0` to binary. What is the quotient of the follow
 
 It's `0`.
 
-What's the remainder of `0 / 2`, or `0 % 2`?
-
-Also `0`. 
-
-So the binary equivalent of `0` is also `0`. 
+So it's safe to say that the binary equivalent of the decimal `0` is also `0`. 
 
 If we start to build a table, it looks like this so far:
 
@@ -211,6 +218,11 @@ If we start to build a table, it looks like this so far:
 | 0         | 0       |
 
 Because we are only working with two values, `0` and `1`, we can surmise that the decimal `1` converted to binary is also `1`. 
+
+| Decimal   | Binary  |
+| ---       | ---     |
+| 0         | 0       |
+| 1         | 1       |
 
 But don't take my word for it! Let's prove it. 
 
@@ -222,34 +234,50 @@ Can we work with this?
 
 It's not a whole number. 
 
-TODO WHY DO WE USE THE REMAINDER?
+Our goal is to represent decimal values using _only_ `1`s and `0`s. How do we accomplish this goal?
+
+Use the remainder! 
 
 What is `1 % 2`? 
 
 `1`
 
-What 
+Let's map out the first five modulo operations J4F:
 
-Another way to think about it is to calculate the division of `1 / 2` by hand. 
+| Modulo    | Remainder  |
+| ---       | ---       |
+| 0 % 2     | 0         |
+| 1 % 2     | 1         |
+| 2 % 2     | 0         |
+| 3 % 2     | 1         |
+| 4 % 2     | 0         |
 
-TODO
-![](./jarednielsen-convert-decimal-binary.png)
+See a pattern? When we perform the modulo operation using `2`, the value returned will be either a `1` or a `0`. 
 
-We add this value to our table:
+Now we need an approach to represent numbers greater than or equal to `2`. 
+
+What happens when we divide `2` by `2`? 
+```
+2 / 2
+```
+
+The quotient is `1`.
+
+And what about modulo? 
+```
+2 % 2
+```
+
+The remainder is `0`. If we concatenate the quotient and the remainder, we get `10`, the binary equivalent of `2`. 
 
 | Decimal   | Binary  |
 | ---       | ---     |
 | 0         | 0       |
 | 1         | 1       |
-| 2         | ?       |
+| 2         | 10      |
 
-What about `2`?
-```
-2 / 2
-```
 
-The quotient is `1` and the remainder is `0`. But we already have `1` and `0` in our table? 
-
+TODO
 We need to _overflow_, meaning we now need _at least_ two digits to represent anything greater than decimal `2`. 
 
 What happens when we overflow? 
@@ -267,18 +295,22 @@ Are you starting to see the pattern?
 TODO 
 We're building our binary strings with the remainder, and not the quotient, of our division operation. We continue to perform the division operation _while_ our number is greater than 0. 
 
+
+
+
+
+What about 3? 
 ```
-2 / 2 = 1
-1 / 2 = 0
+3 % 2 = 1
+3 / 2 = 1.5
 ```
 
-So the binary conversion of `2` is `10`. 
+What do we do here? This isn't a binary value:
+```md
+"1.5" + "1" = "1.51"
+```
 
-What's 3? 
-```
-3 / 2 = 1
-1 / 2 = 1
-```
+We need to round down, or _floor_ it. 🏎️
 
 | Decimal   | Binary  |
 | ---       | ---     |
@@ -287,9 +319,25 @@ What's 3?
 | 2         | 10      |
 | 3         | 11      |
 
+Let's pseudocode our approach so far:
+```md
+INPUT decimal
+
+SET binary string EQUAL TO decimal MODULO 2
+SET quotient EQUAL TO THE FLOOR OF decimal DIVIDED BY 2
+PREPEND binary string WTIH quotient
+
+OUTPUT binary string
+```
+
+TODO STEP THROUGH PSEUDOCODE
+
+
 What about `4`? 
 
-You guessed it, we need to _overflow_.
+You guessed it, we need to add another digit. 
+
+TODO
 
 | Decimal   | Binary  |
 | ---       | ---     |
