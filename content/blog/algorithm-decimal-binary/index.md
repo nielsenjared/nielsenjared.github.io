@@ -330,14 +330,13 @@ PREPEND binary string WTIH quotient
 OUTPUT binary string
 ```
 
+
 TODO STEP THROUGH PSEUDOCODE
 
 
 What about `4`? 
 
-You guessed it, we need to add another digit. 
-
-TODO
+You guessed it, we need to add another digit. Without calculating it, what is the binary equivalent of `4`? Do you see a pattern emerging? 
 
 | Decimal   | Binary  |
 | ---       | ---     |
@@ -347,41 +346,54 @@ TODO
 | 3         | 11      |
 | 4         | 100     |
 
-What about `5`? Now its' getting interesting. TODO
-
+What about `5`? Let's build a string! We're now working with three digits, so let's create three placeholders:
+```md
+_ _ _
 ```
-5 / 2 = 2
+
+What's the remainder of 5 divided by 2? 
+```
 5 % 2 = 1
 ```
 
-We "add" the remainder to a string: 
+We _prepend_ `1` to our string: 
 ```
-1
+_ _ 1
 ```
 
-We now divide our quotient, `2`, by `2`.
+Following the pseudocode we outlined above, we need to:
+```md
+SET quotient EQUAL TO THE FLOOR OF decimal DIVIDED BY 2
 ```
-2 / 2 = 1
+
+But the result of that process is not a `1` or a `0`: 
+```md
+5 / 2 = 2
+```
+
+Where have we seen something this or somthing like it before? 🤔
+
+`2`! 
+
+The binary equivalent of `2` is `10`. How did we get that? 
+```md
 2 % 2 = 0
 ```
 
-We _push_ the remainder to our string: 
-```
-10
-```
-
-We're not at zero, yet. Our quotient is `1`, so we divide that by 2.
-```
-1 / 2 < 0
-1 % 2 = 1
+So we prepend our string with `0`: 
+```md
+_ 0 1
 ```
 
-Our remainder is again `1`, so we _push_ that to our string:
-```
-101
+And divide 2 by 2:
+```md
+2 / 2 = 1
 ```
 
-There's our binary conversion of the decimal 5:
+And prepend our string with `1`:
+```
+1 0 1
+```
 
 | Decimal   | Binary  |
 | ---       | ---     |
@@ -392,17 +404,17 @@ There's our binary conversion of the decimal 5:
 | 4         | 100     |
 | 5         | 101     |
 
-That was a lot of decomposing and pattern forming. Let's shift our thinking to abstraction and design. 
 
-If we pseudocode what we outlined above:
+TODO
+Let's update our pseudocode:
 ```md
-INPUT num
+INPUT decimal
 
 SET binary string TO EMPTY STRING
 
-WHILE num IS GREATER THAN 0
-    PREPEND THE RESULT OF num MODULO 2 TO binary string
-    REASSIGN num THE ABSOLUTE VALUE OF num DIVIDED BY 2
+WHILE decimal IS GREATER THAN 0
+    PREPEND THE RESULT OF decimal MODULO 2 TO binary string
+    REASSIGN decimal THE FLOOR VALUE OF decimal DIVIDED BY 2
 
 OUTPUT binary string
 ```
