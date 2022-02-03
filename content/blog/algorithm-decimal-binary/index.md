@@ -1,15 +1,15 @@
 ---
-title: "Learn How to Code a Decimal to Binary Conversion Algorithm in JavaScript"
-date: "2021-TO-DO"
-description: "TODO"
-keywords: ['algorithm', 'decimal', 'binary', 'javascript']
+title: "Learn How to Code the Decimal to Binary Conversion Algorithm in JavaScript"
+date: "2022-02-11"
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a decimal to binary conversion algorithm in JavaScript."
+keywords: ['algorithm', 'decimal', 'binary', 'conversion', 'javascript', 'learn how to code']
 ---
 
 
-![ {{ TODO ALT TEXT }} ](./jarednielsen-algorithm-{{ TITLE }}.png)
+![ Decimal to Binary Conversion Illustration ](./jarednielsen-algorithm-decimal-binary-conversion.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the bubble sort algorithm in JavaScript. 
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a decimal to binary conversion algorithm in JavaScript. 
 
 ---
 
@@ -114,11 +114,12 @@ In programming, the [modulo operation](https://en.wikipedia.org/wiki/Modulo_oper
 
 ## Let's Get Meta
 
-* 
 
 * What Problem(s) Does a Decimal to Binary Algorithm Solve? 
 
 * What is the Big O of Decimal to Binary Conversion?
+
+* What if you had been born with six fingers on each hand? 
 
 
 ## How to Code a Decimal to Binary Algorithm in JavaScript 
@@ -140,11 +141,11 @@ To understand our problem, we first need to define it. Let’s reframe the probl
 
 > GIVEN a decimal
 
-> WHEN I pass it to a function TODO
+> WHEN I pass it to a function for conversion
 
-> THEN the function returns the base equivalent
+> THEN the function returns the binary equivalent
 
-That’s our general outline. We know our input conditions (a decimal) and our output requirements (a binary TODO), and our goal is to perform the conversion of the decimal to binary.
+That’s our general outline. We know our input conditions (a decimal) and our output requirements (a binary equivalent), and our goal is to perform the conversion of the decimal to binary.
 
 Let’s make a plan!
 
@@ -190,15 +191,12 @@ The division operation divides one number, the dividend, by another number, the 
 3 / 2 = 1
 ```
 
-TODO
 `3` is the dividend, `2` is the divisor, and `1` is the quotient. What about the remainder? We use the modulo operator. 
 ```md
 3 % 2 = 1
 ```
 
-Here, again, `3` is the dividend, `2` is the divisor, but the result of the modulo operation, the remaidner, is `1`. 
-
-TODO
+Here, again, `3` is the dividend, `2` is the divisor, but the result of the modulo operation, the remainder, is `1`. 
 
 Let's start simple and convert `0` to binary. What is the quotient of the following: 
 ```
@@ -277,27 +275,9 @@ The remainder is `0`. If we concatenate the quotient and the remainder, we get `
 | 2         | 10      |
 
 
-TODO
-We need to _overflow_, meaning we now need _at least_ two digits to represent anything greater than decimal `2`. 
-
-What happens when we overflow? 
-
-We increment the value to the left and reset the value on the right, so when we add `2` to our table: 
-
-| Decimal   | Binary  |
-| ---       | ---     |
-| 0         | 0       |
-| 1         | 1       |
-| 2         | 10      |
-
 Are you starting to see the pattern? 
 
-TODO 
 We're building our binary strings with the remainder, and not the quotient, of our division operation. We continue to perform the division operation _while_ our number is greater than 0. 
-
-
-
-
 
 What about 3? 
 ```
@@ -329,10 +309,6 @@ PREPEND binary string WTIH quotient
 
 OUTPUT binary string
 ```
-
-
-TODO STEP THROUGH PSEUDOCODE
-
 
 What about `4`? 
 
@@ -405,7 +381,6 @@ And prepend our string with `1`:
 | 5         | 101     |
 
 
-TODO
 Let's update our pseudocode:
 ```md
 INPUT decimal
@@ -468,16 +443,11 @@ But what fun is that?
 
 ## Reflection
 
-* TODO
-
 * What Problem(s) Does a Decimal to Binary Algorithm Solve? 
 
-* What is the Big O of {{ TODO TITLE }}?
+* What is the Big O of Decimal to Binary Conversion?
 
-
-### TODO BULLET #1
-
-TODO
+* What if you had been born with six fingers on each hand? 
 
 
 ### What Problem(s) Does a Decimal to Binary Algorithm Solve?
@@ -487,10 +457,17 @@ TODO
 
 ### What is the Big O of Decimal to Binary? 
 
-TODO
+O(n/2)
+
+Our algorithm iterates while `n` is greater than 0, but we divide `n` by 2 with each iteration.
 
 
-## How to Code the {{ TODO }} Algorithm in JavaScript
+### What If You Had Been Born with Six Fingers on Each Hand? 
+
+Then you would have twelve toes, or so the theory goes. And you would need a system for counting beyond 10. 
+
+
+## How to Code the Decimal to Hexadecimal Algorithm in JavaScript
 
 TODO RECAP FOR SEO
 
