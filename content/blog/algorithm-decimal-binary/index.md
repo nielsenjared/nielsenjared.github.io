@@ -5,15 +5,13 @@ description: "If you want to learn how to code, you need to learn algorithms. Le
 keywords: ['algorithm', 'decimal', 'binary', 'conversion', 'javascript', 'learn how to code']
 ---
 
-
 ![ Decimal to Binary Conversion Illustration ](./jarednielsen-algorithm-decimal-binary-conversion.png)
-
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a decimal to binary conversion algorithm in JavaScript. 
 
 ---
 
-![A is for Algorithms](./../../assets/graphics/algorithms/jarednielsen-algorithms-banner.png)
+![A is for Algorithms](./jarednielsen-algorithms.png)
 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 ---
