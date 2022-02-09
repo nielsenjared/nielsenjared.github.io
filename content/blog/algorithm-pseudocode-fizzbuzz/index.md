@@ -11,6 +11,13 @@ keywords: ['algorithm', 'fizz buzz', 'fizzbuzz', 'learn', 'javascript', 'pseudoc
 If you want to learn how to code, you'll want to learn how to write pseudocode. Writing pseudocode helps you think through the problem _before_ writing any _code_. In this tutorial, you will learn how to write pseudocode while solving the classic Fizz Buzz algorithm. 
 
 
+---
+![A is for Algorithms](./jarednielsen-algorithms.png)
+💯 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
+
+---
+
+
 ## Retrieval Practice
 
 * What is programming? 
@@ -327,9 +334,10 @@ It's linear. We perform one operation for every input.
 If you want to learn more about linear time complexity, check out my article [Big O Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity/).
 
 
-## Learn How to Code the Swap Algorithm in JavaScript
+## A is for Algorithms
 
-In our next tutorial, we'll learn computational thinking by solving the swap algorithm in JavaScript. 
+![A is for Algorithms](./jarednielsen-algorithms.png)
+💯 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 
 

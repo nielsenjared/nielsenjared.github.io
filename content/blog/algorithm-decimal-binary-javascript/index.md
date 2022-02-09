@@ -12,7 +12,7 @@ If you want to learn how to code, you need to learn algorithms. Learning algorit
 ---
 
 ![A is for Algorithms](./jarednielsen-algorithms.png)
-Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
+💯 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 ---
 
@@ -468,8 +468,9 @@ If you're new to Big O, pick up a copy of [The Little Book of Big O](https://gum
 Then you would have [twelve toes](https://www.youtube.com/watch?v=pqGyUvZP0Zg), or so the theory goes. And you would need a system for counting beyond 10. 
 
 
-## How to Code the Decimal to Hexadecimal Algorithm in JavaScript
+## A is for Algorithms
 
-In this tutorial you learned how to code the decimal to binary algorithm. What if we wanted to convert to another base? Find out how in the next tutorial, [How to Code the Decimal to Hexadecimal Algorithm in JavaScript](#)
+![A is for Algorithms](./jarednielsen-algorithms.png)
+💯 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 
