@@ -1,11 +1,11 @@
 ---
-title: "Learn How to Code the Decimal to Binary Conversion Algorithm in JavaScript"
+title: "Learn How to Code the Decimal to Binary Algorithm in JavaScript"
 date: "2022-02-11"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a decimal to binary conversion algorithm in JavaScript."
 keywords: ['algorithm', 'decimal', 'binary', 'conversion', 'javascript', 'learn how to code']
 ---
 
-![ Decimal to Binary Conversion Illustration ](./jarednielsen-algorithm-decimal-binary-conversion.png)
+![ Decimal to Binary Conversion Illustration ](./jarednielsen-algorithm-decimal-binary.png)
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a decimal to binary conversion algorithm in JavaScript. 
 
@@ -112,10 +112,11 @@ In programming, the [modulo operation](https://en.wikipedia.org/wiki/Modulo_oper
 
 ## Let's Get Meta
 
+Ask yourself the following questions and keep them back of mind as you proceed: 
 
-* What Problem(s) Does a Decimal to Binary Algorithm Solve? 
+* Why do I need to learn decimal to binary conversion? 
 
-* What is the Big O of Decimal to Binary Conversion?
+* What is the [Big O](https://gum.co/big-o) of decimal to binary conversion? 
 
 * What if you had been born with six fingers on each hand? 
 
@@ -137,11 +138,11 @@ In programming, the [modulo operation](https://en.wikipedia.org/wiki/Modulo_oper
 
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
-> GIVEN a decimal
-
-> WHEN I pass it to a function for conversion
-
-> THEN the function returns the binary equivalent
+```md 
+GIVEN a decimal
+WHEN I pass it to a function for conversion
+THEN the function returns the binary equivalent
+```
 
 That’s our general outline. We know our input conditions (a decimal) and our output requirements (a binary equivalent), and our goal is to perform the conversion of the decimal to binary.
 
@@ -441,16 +442,16 @@ But what fun is that?
 
 ## Reflection
 
-* What Problem(s) Does a Decimal to Binary Algorithm Solve? 
+* Why do I need to know this? 
 
 * What is the Big O of Decimal to Binary Conversion?
 
 * What if you had been born with six fingers on each hand? 
 
 
-### What Problem(s) Does a Decimal to Binary Algorithm Solve?
+### Why You Need to Know This
 
-TODO 
+It's 1's and 0's all the way down. In your computer, at least. We're not living in the Matrix. Yet. 
 
 
 ### What is the Big O of Decimal to Binary? 
@@ -459,15 +460,16 @@ O(n/2)
 
 Our algorithm iterates while `n` is greater than 0, but we divide `n` by 2 with each iteration.
 
+If you're new to Big O, pick up a copy of [The Little Book of Big O](https://gum.co/big-o).
+
 
 ### What If You Had Been Born with Six Fingers on Each Hand? 
 
-Then you would have twelve toes, or so the theory goes. And you would need a system for counting beyond 10. 
+Then you would have [twelve toes](https://www.youtube.com/watch?v=pqGyUvZP0Zg), or so the theory goes. And you would need a system for counting beyond 10. 
 
 
 ## How to Code the Decimal to Hexadecimal Algorithm in JavaScript
 
-TODO RECAP FOR SEO
-
+In this tutorial you learned how to code the decimal to binary algorithm. What if we wanted to convert to another base? Find out how in the next tutorial, [How to Code the Decimal to Hexadecimal Algorithm in JavaScript](#)
 
 
