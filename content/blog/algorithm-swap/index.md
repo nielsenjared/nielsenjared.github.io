@@ -300,9 +300,10 @@ Regardless of the size of the input, `n`, the swap algorithm only performs one o
 If you want to learn more about linear time complexity, check out my article [Big O Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity/).
 
 
-## How to Code the Decimal to Binary Algorithm in JavaScript
+## A is for Algorithms
 
-In this tutorial you learned how to swap variables. In the next tutorial, you'll learn how to convert decimals to binary. 
+![A is for Algorithms](./jarednielsen-algorithms.png)
+💯 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 
 

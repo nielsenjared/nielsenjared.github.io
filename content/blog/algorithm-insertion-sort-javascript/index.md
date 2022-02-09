@@ -11,8 +11,9 @@ keywords: ['algorithm', 'insertion sort', 'javascript']
 If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn how to code the insertion sort algorithm in JavaScript. 
 
 ---
-![algorithms](./../../assets/graphics/algorithms/jarednielsen-algorithms-banner.png)
-Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
+
+![A is for Algorithms](./jarednielsen-algorithms.png)
+💯 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 ---
 
@@ -531,11 +532,12 @@ Insertion Sort gets its name from the approach to sorting where a numerical valu
 Insertion Sort is useful, and ideal, when the data to be sorted is small or nearly sorted. 
 
 
-## What is the Big O of Insertion Sort?
+### What is the Big O of Insertion Sort?
 
 What is the Big O of Insertion Sort? Because we are working with nested iteration, it's O(n^2). 
 
 
-## Learn Insertion Sort Algorithm in JavaScript
+## A is for Algorithms
 
-If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn the insertion sort algorithm in JavaScript. 
+![A is for Algorithms](./jarednielsen-algorithms.png)
+💯 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)

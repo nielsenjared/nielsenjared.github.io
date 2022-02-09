@@ -13,9 +13,8 @@ If you want to think like a programmer, you need to learn algorithms. Learning a
 
 ---
 
-![A is for Algorithms](./jarednielsen-algorithms-banner.png)
-
-Give yourself an A. Pick up a copy of [A is for Algorithms](https://gum.co/algorithms)
+![A is for Algorithms](./jarednielsen-algorithms.png)
+💯 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 ---
 
@@ -444,7 +443,7 @@ Bubble Sort is a comparison or exchange algorithm. It gets its name because larg
 
 ### What Problem(s) Does Bubble Sort Solve?
 
-Well... it might be more a matter of what problems does bubble sort create. As we will see next, it's performance is not great. That said, it is suitable for small arrays or arrays that are mostly sorted.
+Well... it might be more a matter of what problems does bubble sort create. As we will see next, it's performance is not great. That said, it is suitable for small arrays or arrays that are mostly sorted. Bubble Sort is an algorithm that you need to know, but you don't necessarily want to implement (except if asked in an interview!). Learning it helps you recognize common patterns in algorithm design and understand why other sorting algorithms, such as quick and merge, are preferrable. 
 
 
 ### What is the Big O of Bubble Sort? 
@@ -452,8 +451,10 @@ Well... it might be more a matter of what problems does bubble sort create. As w
 Due to the nested iteration, the worst-case scenario time complexity for Bubble Sort is O(n^2).
 
 
-## How to Code the Bubble Sort Algorithm in JavaScript
+## A is for Algorithms
 
-Bubble Sort is an algorithm that you need to know, but you don't necessarily want to implement (except if asked in an interview!). Learning it helps you recognize common patterns in algorithm design and understand why other sorting algorithms, such as quick and merge, are preferrable. In the next tutorial, we'll learn how to code Selection Sort. Stay tuned!
+![A is for Algorithms](./jarednielsen-algorithms.png)
+💯 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
+
 
 
