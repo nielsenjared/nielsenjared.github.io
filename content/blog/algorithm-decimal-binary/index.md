@@ -1,13 +1,13 @@
 ---
-title: "Learn How to Code the Decimal to Binary Algorithm in JavaScript"
+title: "Learn How to Code the Decimal to Binary Algorithm in JavaScript and Python"
 date: "2022-02-11"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a decimal to binary conversion algorithm in JavaScript."
-keywords: ['algorithm', 'decimal', 'binary', 'conversion', 'javascript', 'learn how to code']
+keywords: ['algorithm', 'decimal', 'binary', 'conversion', 'javascript', 'learn how to code', 'python']
 ---
 
 ![ Decimal to Binary Conversion Illustration ](./jarednielsen-algorithm-decimal-binary.png)
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a decimal to binary conversion algorithm in JavaScript. 
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a decimal to binary conversion algorithm in JavaScript _and_ Python. 
 
 ---
 
@@ -18,6 +18,8 @@ If you want to learn how to code, you need to learn algorithms. Learning algorit
 
 
 ## Retrieval Practice
+
+Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
 * What's a decimal?
 
@@ -183,7 +185,7 @@ If we're using division to convert to binary, what is our divisor?
 
 `2`
 
-What do we know about [division](https://en.wikipedia.org/wiki/Division_(mathematics)? 
+What do we know about [division](https://en.wikipedia.org/wiki/Division_(mathematics))? 
 
 The division operation divides one number, the dividend, by another number, the divisor, and returns a quotient and a remainder. So we're on the same page with terminology, let's look at an example...
 ```md
@@ -396,8 +398,11 @@ OUTPUT binary string
 
 ### Execute the Plan
 
-Now it's simply a matter of translating our pseudocode to JavaScript: 
+Finally, we simply need to implement the design of our algorithm. 
 
+#### How to Code a Decimal to Binary Conversion in JavaScript 
+
+In our solution, rather than _prepending_ each remainder, we instead concatenate the `result` string and use a combination of string and array methods to _split_ the string into array items, reverse the order of the array, and then join the items in a string. 
 ```js
 const decimalToBinary = (num) => {
 
@@ -412,12 +417,26 @@ const decimalToBinary = (num) => {
 }
 ```
 
-Note that, rather than _prepending_ each remainder, we instead concatenate the `result` string and use a combination of string and array methods to _split_ the string into array items, reverse the order of the array, and then _re_join the items in a string. 
+#### How to Code a Decimal to Binary Conversion in Python
+
+Similar to above, we perform `split`, `reverse`, and `join` operations. Note that we don't need to import the `math` library as double division in Python will _floor_ the returned value for us. 
+```py
+def decimal_binary(num):
+    result = ''
+
+    while num > 0:
+        result += str(num % 2)
+        num = num // 2
+
+    result.split().reverse()
+
+    return ''.join(result)
+```
 
 
 ### Evaluate the Plan
 
-The `split()` method converts the string to an array, so we could just start with an array instead and use `unshift()` rather than `reverse()` (J4F): 
+Let's take another look at our JavaScript solution. The `split()` method converts the string to an array, so we could just start with an array instead and use `unshift()` rather than `reverse()` (J4F): 
 ```js
 const decimalToBinary = (num) => {
 
@@ -439,12 +458,16 @@ const decimalToBinary = num => num.toString(2);
 
 But what fun is that? 
 
+The same is true for Python. We can simply call the `bin()` method. But, this will prepend the string with `0b`. 
+
 
 ## Reflection
 
+Remember those questions we asked at the top? Let's make it stick and answer them now!
+
 * Why do I need to know this? 
 
-* What is the Big O of Decimal to Binary Conversion?
+* What is the Big O time complexity of decimal to binary conversion?
 
 * What if you had been born with six fingers on each hand? 
 
@@ -454,7 +477,7 @@ But what fun is that?
 It's 1's and 0's all the way down. In your computer, at least. We're not living in the Matrix. Yet. 
 
 
-### What is the Big O of Decimal to Binary? 
+### What is the Big O Time Complexity of Decimal to Binary? 
 
 O(n/2)
 
@@ -472,5 +495,3 @@ Then you would have [twelve toes](https://www.youtube.com/watch?v=pqGyUvZP0Zg), 
 
 ![A is for Algorithms](./jarednielsen-algorithms.png)
 💯 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
-
-
