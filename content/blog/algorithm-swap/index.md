@@ -1,14 +1,14 @@
 ---
-title: "Learn How to Code the Swap Algorithm in JavaScript"
+title: "Learn How to Code the Swap Algorithm in JavaScript & Python"
 date: "2022-01-28"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a swap algorithm in JavaScript."
-keywords: ['algorithm', 'swap', 'javascript']
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a swap algorithm in JavaScript and Python."
+keywords: ['algorithm', 'swap', 'javascript', 'python']
 ---
 
 ![ Swap ](./jarednielsen-algorithm-swap.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a swap algorithm in JavaScript. 
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a swap algorithm in JavaScript _and_ Python. 
 
 ---
 
@@ -19,6 +19,8 @@ If you want to learn how to code, you need to learn algorithms. Learning algorit
 
 
 ## Retrieval Practice
+
+Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
 * What is programming?
 
@@ -105,12 +107,11 @@ We'll look at each of these in depth as we proceed with our problem solving. The
 ### Understand the Problem
 
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
-
-> GIVEN two variables
-
-> WHEN I perform a swap
-
-> THEN the values are exchanged
+```md 
+GIVEN two variables
+WHEN I perform a swap
+THEN the values are exchanged
+```
 
 That’s our general outline. We know our input conditions (two variables) and our output requirements (exchanged values between the variables), and our goal is to swap them.
 
@@ -207,21 +208,47 @@ SET y TO temp
 
 ### Execute the Plan
 
-Finally, we simply need to implement the design of our algorithm. Here, we translate our pseudode to JavaScript:
+Finally, we simply need to implement the design of our algorithm. 
+
+
+#### How to Code the Swap Algorithm in JavaScript
+
+Here, we translate our pseudode to JavaScript:
 ```js
 let x = 123;
 let y = 456;
-let temp = x;
-x = y;
-y = temp;
+
+const swap = (x, y) => {
+    let temp = x;
+    x = y;
+    y = temp;
+    return [x, y];
+} 
 ```
 
-If we run this algorithm and log the values stored in `x` and `y`, the results are: 
+If we run this algorithm and log the value returned, the result is: 
 ```sh
-456
-123
+[456, 123]
 ```
 
+
+#### How to Code the Swap Algorithm in Python
+
+```py
+x = 123
+y = 456
+
+def swap(x, y):
+    temp = x
+    x = y
+    y = temp
+    return [x, y]
+```
+
+Again, if we run this algorithm and print the value returned, the result is: 
+```sh
+[456, 123]
+```
 
 ### Evaluate the Plan
 
@@ -264,11 +291,13 @@ x, y = y, x
 
 ## Reflection
 
+Remember those questions we asked at the top? Let's make it stick and answer them now:
+
 * What is computational thinking? 
 
 * What problem(s) does swap solve? 
 
-* What is the Big O of swap?
+* What is the Big O time complexity of swap?
 
 
 ### What is Computational Thinking? 
@@ -291,13 +320,13 @@ There are four stages to computational thinking:
 Beyond swapping the values stored in two variables, swap algorithms are used in sorting algorithms. 
 
 
-### What is the Big O of Swap? 
+### What is the Big O Time Complexity of Swap? 
 
 O(1), or constant. 
 
 Regardless of the size of the input, `n`, the swap algorithm only performs one operation.
 
-If you want to learn more about linear time complexity, check out my article [Big O Linear Time Complexity](https://jarednielsen.com/big-o-linear-time-complexity/).
+If you want to learn more about Big O, check out [The Little Book of Big O](https://gum.co/big-o).
 
 
 ## A is for Algorithms
