@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 11 Feb 2022 12:03:55 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Decimal to Binary Algorithm in JavaScript]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-decimal-binary/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-decimal-binary/</guid><pubDate>Fri, 11 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 11 Feb 2022 12:43:18 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Decimal to Binary Algorithm in JavaScript and Python]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-decimal-binary/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-decimal-binary/</guid><pubDate>Fri, 11 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -31,7 +31,7 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a decimal to binary conversion algorithm in JavaScript.&lt;/p&gt;
+&lt;p&gt;If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a decimal to binary conversion algorithm in JavaScript &lt;em&gt;and&lt;/em&gt; Python.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -61,6 +61,7 @@
 💯 Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;p&gt;Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;What’s a decimal?&lt;/p&gt;
@@ -188,7 +189,7 @@ THEN the function returns the binary equivalent&lt;/code&gt;&lt;/pre&gt;&lt;/div
 &lt;p&gt;Division.&lt;/p&gt;
 &lt;p&gt;If we’re using division to convert to binary, what is our divisor?&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;What do we know about [division](&lt;a href=&quot;https://en.wikipedia.org/wiki/Division_(mathematics)&quot;&gt;https://en.wikipedia.org/wiki/Division_(mathematics)&lt;/a&gt;?&lt;/p&gt;
+&lt;p&gt;What do we know about &lt;a href=&quot;https://en.wikipedia.org/wiki/Division_(mathematics)&quot;&gt;division&lt;/a&gt;?&lt;/p&gt;
 &lt;p&gt;The division operation divides one number, the dividend, by another number, the divisor, and returns a quotient and a remainder. So we’re on the same page with terminology, let’s look at an example…&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;3 / 2 = 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; is the dividend, &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; is the divisor, and &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; is the quotient. What about the remainder? We use the modulo operator.&lt;/p&gt;
@@ -442,7 +443,9 @@ WHILE decimal IS GREATER THAN 0
 
 OUTPUT binary string&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Execute the Plan&lt;/h3&gt;
-&lt;p&gt;Now it’s simply a matter of translating our pseudocode to JavaScript:&lt;/p&gt;
+&lt;p&gt;Finally, we simply need to implement the design of our algorithm.&lt;/p&gt;
+&lt;h4&gt;How to Code a Decimal to Binary Conversion in JavaScript&lt;/h4&gt;
+&lt;p&gt;In our solution, rather than &lt;em&gt;prepending&lt;/em&gt; each remainder, we instead concatenate the &lt;code class=&quot;language-text&quot;&gt;result&lt;/code&gt; string and use a combination of string and array methods to &lt;em&gt;split&lt;/em&gt; the string into array items, reverse the order of the array, and then join the items in a string.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBinary&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 
     &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -454,9 +457,20 @@ OUTPUT binary string&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
     
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Note that, rather than &lt;em&gt;prepending&lt;/em&gt; each remainder, we instead concatenate the &lt;code class=&quot;language-text&quot;&gt;result&lt;/code&gt; string and use a combination of string and array methods to &lt;em&gt;split&lt;/em&gt; the string into array items, reverse the order of the array, and then _re_join the items in a string.&lt;/p&gt;
+&lt;h4&gt;How to Code a Decimal to Binary Conversion in Python&lt;/h4&gt;
+&lt;p&gt;Similar to above, we perform &lt;code class=&quot;language-text&quot;&gt;split&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;reverse&lt;/code&gt;, and &lt;code class=&quot;language-text&quot;&gt;join&lt;/code&gt; operations. Note that we don’t need to import the &lt;code class=&quot;language-text&quot;&gt;math&lt;/code&gt; library as double division in Python will &lt;em&gt;floor&lt;/em&gt; the returned value for us.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;decimal_binary&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        result &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        num &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; num &lt;span class=&quot;token operator&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+
+    result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;split&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;reverse&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;join&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Evaluate the Plan&lt;/h3&gt;
-&lt;p&gt;The &lt;code class=&quot;language-text&quot;&gt;split()&lt;/code&gt; method converts the string to an array, so we could just start with an array instead and use &lt;code class=&quot;language-text&quot;&gt;unshift()&lt;/code&gt; rather than &lt;code class=&quot;language-text&quot;&gt;reverse()&lt;/code&gt; (J4F):&lt;/p&gt;
+&lt;p&gt;Let’s take another look at our JavaScript solution. The &lt;code class=&quot;language-text&quot;&gt;split()&lt;/code&gt; method converts the string to an array, so we could just start with an array instead and use &lt;code class=&quot;language-text&quot;&gt;unshift()&lt;/code&gt; rather than &lt;code class=&quot;language-text&quot;&gt;reverse()&lt;/code&gt; (J4F):&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBinary&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 
   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -471,13 +485,15 @@ OUTPUT binary string&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Or we could just cheat and use the built-in &lt;code class=&quot;language-text&quot;&gt;toString()&lt;/code&gt; method and pass it &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; as an argument, meaning we want to convert our string to binary:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;decimalToBinary&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;But what fun is that?&lt;/p&gt;
+&lt;p&gt;The same is true for Python. We can simply call the &lt;code class=&quot;language-text&quot;&gt;bin()&lt;/code&gt; method. But, this will prepend the string with &lt;code class=&quot;language-text&quot;&gt;0b&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;p&gt;Remember those questions we asked at the top? Let’s make it stick and answer them now!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Why do I need to know this?&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;What is the Big O of Decimal to Binary Conversion?&lt;/p&gt;
+&lt;p&gt;What is the Big O time complexity of decimal to binary conversion?&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;What if you had been born with six fingers on each hand?&lt;/p&gt;
@@ -485,7 +501,7 @@ OUTPUT binary string&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Why You Need to Know This&lt;/h3&gt;
 &lt;p&gt;It’s 1’s and 0’s all the way down. In your computer, at least. We’re not living in the Matrix. Yet.&lt;/p&gt;
-&lt;h3&gt;What is the Big O of Decimal to Binary?&lt;/h3&gt;
+&lt;h3&gt;What is the Big O Time Complexity of Decimal to Binary?&lt;/h3&gt;
 &lt;p&gt;O(n/2)&lt;/p&gt;
 &lt;p&gt;Our algorithm iterates while &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; is greater than 0, but we divide &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; by 2 with each iteration.&lt;/p&gt;
 &lt;p&gt;If you’re new to Big O, pick up a copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;.&lt;/p&gt;
