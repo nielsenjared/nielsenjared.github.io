@@ -185,7 +185,7 @@ If we're using division to convert to binary, what is our divisor?
 
 `2`
 
-What do we know about [division](https://en.wikipedia.org/wiki/Division_(mathematics)? 
+What do we know about [division](https://en.wikipedia.org/wiki/Division_(mathematics))? 
 
 The division operation divides one number, the dividend, by another number, the divisor, and returns a quotient and a remainder. So we're on the same page with terminology, let's look at an example...
 ```md
