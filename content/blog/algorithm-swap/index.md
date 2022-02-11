@@ -263,22 +263,24 @@ x = y;
 y = temp;
 ```
 
-You can omit the `temp` variable and get mathemagical: 
-```js
-x = 123;
-y = 456;
-x = x + y;
-y = x - y;
-x = x - y;
+With Python, just omit the `let` statements and the semicolons.
+
+With both JavaScript and Python you can omit the `temp` variable (and semicolons) and get mathemagical: 
+```
+x = 123
+y = 456
+x = x + y
+y = x - y
+x = x - y
 ```
 
 You can accomplish the same feat as above with multiplication and division: 
-```js
-x = 123;
-y = 456;
-x = x * y;
-y = x / y;
-x = x / y;
+```
+x = 123
+y = 456
+x = x * y
+y = x / y
+x = x / y
 ```
 
 The downside to both of the approaches above is that they can only be used for numeric values. 
