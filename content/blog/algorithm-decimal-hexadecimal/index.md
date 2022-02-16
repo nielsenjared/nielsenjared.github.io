@@ -59,7 +59,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * What problem(s) does converting a decimal to hexadecimal solve? 
 
-* TODO
+* What is the Big O of decimal to hexadecimal conversion? 
 
 
 ## How to Code a Decimal To Hexadecimal Algorithm  
@@ -300,7 +300,7 @@ But what fun is that?
 
 * What problem(s) does converting a decimal to hexadecimal solve? 
 
-* TODO
+* What is the Big O of decimal to hexadecimal conversion? 
 
 
 ### How Do We Count Using a Base Greater Than 10?
@@ -337,9 +337,11 @@ The symbol doesn't matter, as long as we all agree on the value that it represen
 Hexadecimal values are used in computer science for a number (pun intended) of reasons. You are likely familiar with hexadecimal in HTML color codes, such as `#FFFFFF`, which is the hexadecimal representatoion of white, or a value of 255 for each component of RGB. Hexadecimal values are human-readable representations of binary because 16 is a power of 2. 
 
 
-### TODO
+### What is the Big O of Decimal to Hexadecimal Conversion? 
 
-TODO 
+O(n/m), where `n` is the input and `m` is the divisor, in this case `16`. 
+
+If you want to learn more, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
 
 ## A is for Algorithms
