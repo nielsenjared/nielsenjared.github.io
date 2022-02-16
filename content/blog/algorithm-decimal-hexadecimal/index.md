@@ -1,5 +1,5 @@
 ---
-title: "Learn How to Code the Decimal to Hexadecimal Conversion Algorithm in JavaScript"
+title: "Learn How to Code the Decimal to Hexadecimal Conversion Algorithm"
 date: "2022-02-25"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to convert numbers from decimal to hexadecimal in JavaScript and Python."
 keywords: ['algorithm', 'decimal', 'hexadecimal', 'javascript', 'python', 'learn how to code']
