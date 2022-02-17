@@ -1,12 +1,12 @@
 ---
 title: "Learn How to Code the Smallest Divisor of a Whole Number Algorithm"
-date: "2021-03-11"
+date: "2022-03-11"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the smallest divisor of a whole number"
 keywords: ['algorithm', 'smallest divisor ', 'javascript', 'whole number', 'python']
 ---
 
 
-![ {{ Smallest Divisor }} ](./jarednielsen-algorithm-smallest-divisor.png)
+![ Smallest Divisor ](./jarednielsen-algorithm-smallest-divisor.png)
 
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the smallest divisor of a whole number in JavaScript _and_ Python.
@@ -22,7 +22,7 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 ## Retrieval Practice
 
-TODO WHAT DOES THE SCIENCE SAY?
+Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
 * What's a whole number? 
 
@@ -48,13 +48,13 @@ TODO
 
 ## Let's Get Meta
 
-TODO INTRO
+Ask yourself the following questions and keep them back of mind as you proceed:
 
 * TODO
 
 * What Problem(s) Does the Smallest Divisor of a Whole Number Solve? 
 
-* What is the Big O of the Smallest Divisor of a Whole Number?
+* TODO
 
 
 ## How to Code the Smallest Divisor of a Whole Number Algorithm in JavaScript 
@@ -303,7 +303,7 @@ TODO
 Now it's just a matter of translating our pseudocode into syntax.  
 
 
-#### TODO JavaSceript
+#### TODO JavaScript
 
 TODO
 
@@ -331,24 +331,52 @@ const smallestDivisor = n => {
 }
 ```
 
-#### Python
+#### TODO Python
 
 TODO 
 
 ```py
-TODO
+import math 
+
+def smallest_divisor(num):
+    if num <= 1:
+        return "Enter a number greater than 1"
+    elif num % 2 == 0: 
+        return "2"
+    else:
+        r = math.sqrt(num)
+        
+        d = 3
+
+        while num % d != 0 and d < r:
+            d = d + 2
+        
+        if num % d == 0:
+            return d 
+        else: 
+            return num
 ```
 
 ### Evaluate the Plan
+
 TODO
 
+
+#### What is the Big O Of {{ TODO TITLE }}?
+
+TODO 
+
+
+
 ## Reflection
+
+Remember those _meta_ questions we asked at the top? Let’s make it stick and answer them now!
 
 * TODO
 
 * What Problem(s) Does {{ TODO TITLE }} Solve? 
 
-* What is the Big O of {{ TODO TITLE }}?
+* TODO 
 
 
 ### TODO BULLET #1
@@ -361,19 +389,15 @@ TODO
 TODO 
 
 
-### What is the Big O of the Smallest Divisor Algorithm? 
+### TODO 
 
 TODO
 
 
 ## A is for Algorithms
 
----
-
 ![A is for Algorithms](./jarednielsen-algorithms.png)
 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
-
----
 
 
 
