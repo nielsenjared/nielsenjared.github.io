@@ -6,7 +6,7 @@ keywords: ['algorithm', 'smallest divisor ', 'javascript', 'whole number', 'pyth
 ---
 
 
-![ Smallest Divisor ](./jarednielsen-algorithm-smallest-divisor.png)
+![ Illustration of a Large Duck Being Divided by a Smaller Duck ](./jarednielsen-algorithm-smallest-divisor.png)
 
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the smallest divisor of a whole number in JavaScript _and_ Python.
@@ -33,28 +33,28 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 ### What's a Whole Number? 
 
-TODO 
+A whole number is a positive number without fraction or decimal. For example, `0`, `64`, and `2048` are all whole numbers, whereas ``-1`, `2/3`, and `3.14` are not. 
 
 
 ### What's a Prime Number? 
 
-TODO
+A prime is a number greater than 1 that is not the product of two smaller numbers. To say it another way, a prime is a number greater than 1 that is only divisible by 1 and itself. For example, `7` is a prime number because it is the product of `1` and `7` and only `1` and `7`. There are no other whole numbers greater than 1 that result in a product of `7`. The only even prime is `2`. 
 
 
 ### What's a Square Root? 
 
-TODO
+The square root of a number is the factor of a number that results in the number when multiplied by itself. For example, the square root of `16` is `4` because `4 x 4 = 16`
 
 
 ## Let's Get Meta
 
 Ask yourself the following questions and keep them back of mind as you proceed:
 
-* TODO
+* Why do I need to know this?
 
 * What Problem(s) Does the Smallest Divisor of a Whole Number Solve? 
 
-* TODO
+* What is the relationship between mathematics and programming?
 
 
 ## How to Code the Smallest Divisor of a Whole Number Algorithm in JavaScript 
@@ -194,7 +194,8 @@ They're prime!
 How do we increment by 2 with odd (prime) numbers? 
 
 We know we need to check each of the odd values, but we don't want to write a conditional for all of them. 
-TODO
+
+Let's increment by `2` starting with `3`. 
 
 ```md
 INPUT n
@@ -218,7 +219,7 @@ ELSE
             RETURN n;
 ```
 
-TODO if we return `n`, then we know the number is prime
+If we return `n`, then we know the number is prime
 
 This is terribly inefficient, though. In a worst case scenario, we would iterate nearly half of the possiblities to return a value. How can we do better?
 
@@ -245,11 +246,9 @@ Let's look at our table again. Is there another pattern?
 
 3 is the square root of 9!
 
-TODO
+What's the square root of 12? 
 
-In this example, `n` is equal to 12. What's the square root of 12? 
-
-3.46410161514
+`3.46410161514`
 
 If we calculate the square root of `n`, we can see that we quickly eliminate the need to check _every_ odd number between 3 and `n`. We only need to continue iterating _while_ `d` is less than the square root of `n`. 
 
@@ -296,23 +295,22 @@ ELSE
             RETURN n;
 ```
 
-TODO
 
 ### Execute the Plan
 
-Now it's just a matter of translating our pseudocode into syntax.  
+Now it's just a matter of translating our pseudocode into syntax. Let's start with JavaScript...
 
 
-#### TODO JavaScript
+#### How to Code the Smallest Divisor Algorith in JavaScript
 
-TODO
+This is more or less a 1:1 translation of our pseudocode. Note that we are using the `Math` object and calling the `sqrt()` method. 
 
 ```js
 const smallestDivisor = n => {
     if (n <= 1) {
         return "Enter a number greater than 1";
     } else if (n % 2 == 0) {
-        return "2"
+        return n
     } else {
         let r = Math.sqrt(n);
 
@@ -331,9 +329,9 @@ const smallestDivisor = n => {
 }
 ```
 
-#### TODO Python
+#### How to Code the Smallest Divisor Algorith in Python
 
-TODO 
+Unlike our JavaScript above, we need to import the `math` module. Otherwise, the two functions are nearly identical. 
 
 ```py
 import math 
@@ -342,7 +340,7 @@ def smallest_divisor(num):
     if num <= 1:
         return "Enter a number greater than 1"
     elif num % 2 == 0: 
-        return "2"
+        return num
     else:
         r = math.sqrt(num)
         
@@ -359,27 +357,28 @@ def smallest_divisor(num):
 
 ### Evaluate the Plan
 
-TODO
+Can we do better? 
+
+This is pretty good. We could refactor some of the conditionals to be more concise, but at the cost of legibility without performance gain. 
 
 
-#### What is the Big O Of {{ TODO TITLE }}?
+#### What is the Big O Of Smallest Divisor?
 
-TODO 
-
+If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
 
 ## Reflection
 
 Remember those _meta_ questions we asked at the top? Let’s make it stick and answer them now!
 
-* TODO
+* Why do I need to know this?
 
-* What Problem(s) Does {{ TODO TITLE }} Solve? 
+* What problem(s) does smallest divisor solve? 
 
-* TODO 
+* What is the relationship between mathematics and programming?
 
 
-### TODO BULLET #1
+### Why Do I Need to Know This? 
 
 TODO
 
@@ -389,9 +388,9 @@ TODO
 TODO 
 
 
-### TODO 
+### What is the Relationship Between Mathematics and Programming?
 
-TODO
+You don't need to be a math whiz to be a good programmer, but there are a number of concepts, such as prime and square root, that will help you write more efficient algorithms. 
 
 
 ## A is for Algorithms
