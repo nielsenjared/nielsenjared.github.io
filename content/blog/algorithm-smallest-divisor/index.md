@@ -52,8 +52,6 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What Problem(s) Does the Smallest Divisor of a Whole Number Solve? 
-
 * What is the relationship between mathematics and programming?
 
 
@@ -380,12 +378,7 @@ Remember those _meta_ questions we asked at the top? Let’s make it stick and a
 
 ### Why Do I Need to Know This? 
 
-TODO
-
-
-### What Problem(s) Does the Smallest Divisor Algorithm Solve?
-
-TODO 
+It's not every day you'll be calculating the smallest divisor, but knowing it will help when you encounter resource allocation problems. Perhaps more importantly, _this_ smallest divisor algorithm combines several strategies for designing efficient algorithms. 
 
 
 ### What is the Relationship Between Mathematics and Programming?
