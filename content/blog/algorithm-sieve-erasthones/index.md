@@ -1,15 +1,15 @@
 ---
-title: "Learn How to Code the TODO Algorithm"
+title: "Learn How to Code the Sieve of Erasthones Algorithm"
 date: "2022-TODO-TODO"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO"
-keywords: ['algorithm', 'TODO', 'javascript', 'python']
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Erasthones."
+keywords: ['algorithm', 'Sieve of Erasthones', 'javascript', 'python']
 ---
 
 
-![ TODO ](./jarednielsen-algorithm-TODO.png)
+![ Sieve of Erasthones ](./jarednielsen-algorithm-sieve-erasthones.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Erasthones in JavaScript _and_ Python.
 
 
 ---
@@ -52,12 +52,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does Sieve of Erasthones solve? 
 
 * TODO
 
 
-## How to Code the TODO Algorithm 
+## Learn How to Code the Sieve of Erasthones Algorithm 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -113,17 +113,38 @@ DON'T USE ```md FOR PSUEDOCODE SNIPPETS
 Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
 
 
-#### How to Code the TODO Algorithm in JavaScript
+#### How to Code the Sieve of Erasthones Algorithm in JavaScript
 
 TODO
 ```js
-TODO
+const sieve = (num) => {
+    const bools = new Array(num + 1).fill(true);
+    bools[0], bools[1] = false;
+
+    const primes = [];
+
+    for (let i = 2; i <= num; i++) {
+        if (bools[i] === true) {
+            primes.push(i);
+
+            //let j = i * 2;
+            let j = i * i;
+
+            while (j <= num) {
+                bools[j] = false;
+                j += i;
+            }
+        }
+    }
+
+    return primes;
+}
 ```
 
 Now let's see it in Python...
 
 
-#### How to Code the TODO Algorithm in Python
+#### How to Code the Sieve of Erasthones Algorithm in Python
 
 TODO
 ```py
@@ -137,7 +158,7 @@ Can we do better?
 TODO
 
 
-#### What is the Big O Of TODO?
+#### What is the Big O Of Sieve of Erasthones?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -158,7 +179,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 TODO
 
 
-### What Problem(s) Does TODO Solve? 
+### What Problem(s) Does Sieve of Erasthones Solve? 
 
 TODO
 
