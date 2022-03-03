@@ -1,7 +1,7 @@
 ---
-title: "Learn How to Code the Sieve of Erasthones Algorithm"
+title: "Learn How to Code the Sieve of Erasthones Algorithm AKA Prime Number Generation"
 date: "2022-TODO-TODO"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Erasthones."
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Erasthones, or prime number generation."
 keywords: ['algorithm', 'Sieve of Erasthones', 'javascript', 'python']
 ---
 
@@ -24,19 +24,19 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-* TODO 
+* What's a prime number?
+
+* What's a composite number? 
 
 * TODO
 
-* TODO 
 
-
-### TODO #1
+### What's a Prime Number? 
 
 TODO
 
 
-### TODO #2
+### What's a Composite Number? 
 
 TODO
 
@@ -75,12 +75,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN TODO
+GIVEN a whole number, _n_, greater than 1
 WHEN TODO
-THEN TODO
+THEN I am returned a an array of the prime numbers between 1 and _n_
 ```
 
-That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
+That’s our general outline. We know our input conditions, a whole number greater than 1, and our output requirements, an array of prime number between 1 and _n_, and our goal is to generate those prime numbers.
 
 Let’s make a plan!
 
