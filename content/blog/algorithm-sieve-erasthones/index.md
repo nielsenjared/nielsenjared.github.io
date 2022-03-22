@@ -107,7 +107,7 @@ Why not `1`? Because `1` is not a prime number, so we skip it.
 TODO 
 ```
 INPUT n
-SET primes = []
+SET primes EQUAL TO AN EMPTY ARRAY
 
 IF n IS EQUAL TO 2
     PUSH n TO primes
@@ -144,8 +144,11 @@ What do we know about prime numbers?
 
 A prime number is only divisible by 1 and itself.
 
-Rather than find the primes, can we find everything else? Work like Michaelangelo and carve out our solution? 
+Where _do_ we see a pattern or patterns?
 
+All of the composite numbers! Each number that we exclude from our final output is composed of two (or more) factors. Rather than find the primes, can we find everything else? Work like Michaelangelo and carve out our solution? 
+
+TODO
 ```sh
 [
 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 
@@ -161,7 +164,27 @@ Rather than find the primes, can we find everything else? Work like Michaelangel
 ]
 ```
 
-TODO
+TODO HOW DO WE MAKE THE JUMP TO AN ARRAY OF BOOLEANS? 
+We don't need to store the value in the array because we can simply use the index. 
+
+Let's generate an array of boolean values. 
+
+```
+INPUT n
+
+SET bools EQUAL TO AN ARRAY OF LENGTH n
+FILL bools WITH A VALUE OF true
+
+SET primes EQUAL TO AN EMPTY ARRAY
+
+IF n IS EQUAL TO 2
+    PUSH n TO primes
+
+RETURN primes
+```
+
+
+
 
 ```
 DON'T USE ```md FOR PSUEDOCODE SNIPPETS
