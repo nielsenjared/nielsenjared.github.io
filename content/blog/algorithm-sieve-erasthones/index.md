@@ -54,7 +54,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * What problem(s) does Sieve of Erasthones solve? 
 
-* TODO
+* What is the difference betweed additive and subtractive problem solving? 
 
 
 ## Learn How to Code the Sieve of Erasthones Algorithm 
@@ -167,30 +167,97 @@ TODO
 TODO HOW DO WE MAKE THE JUMP TO AN ARRAY OF BOOLEANS? 
 We don't need to store the value in the array because we can simply use the index. 
 
-Let's generate an array of boolean values. 
+Because we're using a process of "subtraction", we want to set all of our values to `true` and then mark everyhing that is _not_ a prime number as `false`. 
+
+Let's update our pseudocode to generate an array of boolean values. 
 
 ```
 INPUT n
 
 SET bools EQUAL TO AN ARRAY OF LENGTH n
-FILL bools WITH A VALUE OF true
+POPULATE EVERY INDEX IN bools WITH A VALUE OF true
+
+...
+```
+
+We'll use the word "POPULATE" as we don't yet know, or need to know, how we will generate an array of boolean values. Maybe we'll iterate. Maybe we'll use an array method. We'll figure that out when we execute the plan. Speaking of iteration, now we need to figure out how we are changing values in our array from `true` to `false`. 
+
+
+Let's look at our matrix again:
+```sh
+[
+    1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 
+   11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 
+   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
+   31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 
+   41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 
+   51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 
+   61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 
+   71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 
+   81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 
+   91, 92, 93, 94, 95, 96, 97, 98, 99, 100
+]
+```
+
+When we're not looking for primes, we see _a lot_ of patterns emerge. There's on that is very obvious: even numbers. With the exception of `2`, which is prime, we can easily TODO
+
+
+TODO START ITERATING AT 2
+
+
+
+
+```
+INPUT n
+
+SET bools EQUAL TO AN ARRAY OF LENGTH n
+POPULATE EVERY INDEX IN bools WITH A VALUE OF true
 
 SET primes EQUAL TO AN EMPTY ARRAY
 
-IF n IS EQUAL TO 2
-    PUSH n TO primes
+
+FOR EVERY NUMBER, i, BETWEEN 2 AND num
+    IF THE VALUE STORED IN bools[i] IS EQUAL TO true
+        PUSH i TO primes
+
 
 RETURN primes
 ```
 
+TODO HOW DO WE AVOID ADDING EVERYTHING TO primes? 
 
+If we continue to iterate, our conditional will continue to be met and we will push every number to `primes`. How do we avoid this? We need to do something to address this within our conditional statement. 
 
+🤔
+
+We need to set all even numbers to false before we exit the conditional. Sounds like we need another loop. 
+
+TODO MAKE THE JUMP
 
 ```
-DON'T USE ```md FOR PSUEDOCODE SNIPPETS
-    IT WILL RENDER TABBED TEXT 
-        IN ANOTHER COLOR
+INPUT n
+
+SET bools EQUAL TO AN ARRAY OF LENGTH n
+POPULATE EVERY INDEX IN bools WITH A VALUE OF true
+
+SET primes EQUAL TO AN EMPTY ARRAY
+
+
+FOR EVERY NUMBER, i, BETWEEN 2 AND num
+    IF THE VALUE STORED IN bools[i] IS EQUAL TO true
+        PUSH i TO primes
+
+        SET j EQUAL TO i MULTIPLIED BY 2
+
+        WHILE j IS LESS THAN OR EQUAL TO n
+            SET THE VALUE STORED IN bools[j] TO false
+            SET THE VALUE OF j TO j PLUS i
+
+RETURN primes
 ```
+
+TODO WALK THROUGH THE NEXT FEW NUMBERS
+
 
 
 ### Execute the Plan
@@ -264,7 +331,30 @@ TODO
 
 Can we do better? 
 
-TODO
+We can make an optimization to our program and multiple `i` by itself: 
+
+
+```
+INPUT n
+
+SET bools EQUAL TO AN ARRAY OF LENGTH n
+POPULATE EVERY INDEX IN bools WITH A VALUE OF true
+
+SET primes EQUAL TO AN EMPTY ARRAY
+
+
+FOR EVERY NUMBER, i, BETWEEN 2 AND num
+    IF THE VALUE STORED IN bools[i] IS EQUAL TO true
+        PUSH i TO primes
+
+        SET j EQUAL TO i MULTIPLIED BY i
+
+        WHILE j IS LESS THAN OR EQUAL TO n
+            SET THE VALUE STORED IN bools[j] TO false
+            SET THE VALUE OF j TO j PLUS i
+
+RETURN primes
+```
 
 
 #### What is the Big O Of Sieve of Erasthones?
