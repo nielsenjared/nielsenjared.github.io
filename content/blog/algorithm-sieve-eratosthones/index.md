@@ -28,7 +28,7 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * What's a composite number? 
 
-* TODO
+* TODO What's the difference between space complexity and time complexity?
 
 
 ### What's a Prime Number? 
@@ -52,9 +52,9 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does Sieve of Erasthones solve? 
-
 * What is the difference betweed additive and subtractive problem solving? 
+
+* Why is it called the Sieve of Erasthones?
 
 
 ## Learn How to Code the Sieve of Erasthones Algorithm 
@@ -103,8 +103,7 @@ The first step is decomposition, or breaking our problem down into smaller probl
 
 Why not `1`? Because `1` is not a prime number, so we skip it. 
 
-
-TODO 
+Like writing, there's nothing more terrifying than the blank page, so let's get _something_ started in our pseudocode:
 ```
 INPUT n
 SET primes EQUAL TO AN EMPTY ARRAY
@@ -117,41 +116,39 @@ RETURN primes
 
 What's the _next_ smallest problem we can solve? `3`
 
-TODO 
-
 We might be tempted to take a brute force approach, and there are at least two:
 
 1. Create a dataset of all the prime numbers and return all of the values below n.
 
 2. Check if the remainder of each value in a series is equal to zero when divided by the previous values.
 
-The first option isn't great because it defeats the purpose of programming! We would need an infinite dataset. That's a lot of data entry!
+The first option isn't great because it defeats the purpose of programming! We would need an infinite dataset and that's a lot of data entry!
 
 The second option would require us to perform an operation for every value in our series. If our input value was 100, we would need to perform 99 modulo operations in order to find all of the prime numbers.
 
 🍻
 
+What do we know about prime numbers?
+
+A prime number is only divisible by 1 and itself.
+
 Let's take a step back, or up, and look for a pattern. If our input, `n`, is 100, then the array of primes we want to return needs to contain this sequence:
 ```sh
-2, 3, 5, 7, 11, 13, 17, 19, 21, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
 ```
 
 Do you see a pattern? 
 
 No! The problem with primes is that there's no pattern. 
 
-What do we know about prime numbers?
+Where _do_ we see a pattern? Or patterns?
 
-A prime number is only divisible by 1 and itself.
+All of the composite numbers! Each number that we exclude from our final output is composed of two (or more) factors. Rather than find the primes, can we find everything else? Work like Michaelangelo and carve out a solution? 
 
-Where _do_ we see a pattern or patterns?
-
-All of the composite numbers! Each number that we exclude from our final output is composed of two (or more) factors. Rather than find the primes, can we find everything else? Work like Michaelangelo and carve out our solution? 
-
-TODO
-```sh
+Let's look at _all_ of the numbers between 1 and 100: 
+```
 [
-0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 
+    1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 
    11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 
    21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
    31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 
@@ -164,7 +161,82 @@ TODO
 ]
 ```
 
-TODO HOW DO WE MAKE THE JUMP TO AN ARRAY OF BOOLEANS? 
+We know that `1` is not prime, so we can cross it out. And we immediately see that half of our numbers are multiples of `2`, so we can cross them all out.
+
+```
+[
+    X, 2,  3, X,  5, X,  7, X,  9, X, 
+   11, X, 13, X, 15, X, 17, X, 19, X, 
+   21, X, 23, X, 25, X, 27, X, 29, X, 
+   31, X, 33, X, 35, X, 37, X, 39, X, 
+   41, X, 43, X, 45, X, 47, X, 49, X, 
+   51, X, 53, X, 55, X, 57, X, 59, X, 
+   61, X, 63, X, 65, X, 67, X, 69, X, 
+   71, X, 73, X, 75, X, 77, X, 79, X, 
+   81, X, 83, X, 85, X, 87, X, 89, X, 
+   91, X, 93, X, 95, X, 97, X, 99, X
+]
+```
+
+TODO CROSS OUT MULTIPLES OF 3, BUT KEEP 3
+
+```
+[
+    X, 2,  3, X,  5, X,  7, X,  X, X, 
+   11, X, 13, X,  X, X, 17, X, 19, X, 
+    X, X, 23, X, 25, X,  X, X, 29, X, 
+   31, X,  X, X, 35, X, 37, X,  X, X, 
+   41, X, 43, X,  X, X, 47, X, 49, X, 
+    X, X, 53, X, 55, X,  X, X, 59, X, 
+   61, X,  X, X, 65, X, 67, X,  X, X, 
+   71, X, 73, X, 75, X, 77, X, 79, X, 
+    X, X, 83, X, 85, X,  X, X, 89, X, 
+   91, X,  X, X, 95, X, 97, X,  X, X
+]
+```
+
+TODO CROSS OUT MULTIPLES OF 5
+```
+[
+    X, 2,  3, X,  5, X,  7, X,  X, X, 
+   11, X, 13, X,  X, X, 17, X, 19, X, 
+    X, X, 23, X,  X, X,  X, X, 29, X, 
+   31, X,  X, X,  X, X, 37, X,  X, X, 
+   41, X, 43, X,  X, X, 47, X, 49, X, 
+    X, X, 53, X,  X, X,  X, X, 59, X, 
+   61, X,  X, X,  X, X, 67, X,  X, X, 
+   71, X, 73, X,  X, X, 77, X, 79, X, 
+    X, X, 83, X,  X, X,  X, X, 89, X, 
+   91, X,  X, X,  X, X, 97, X,  X, X
+]
+```
+
+TODO CROSS OUT MULTIPLES OF 7
+```
+[
+    X, 2,  3, X,  5, X,  7, X,  X, X, 
+   11, X, 13, X,  X, X, 17, X, 19, X, 
+    X, X, 23, X,  X, X,  X, X, 29, X, 
+   31, X,  X, X,  X, X, 37, X,  X, X, 
+   41, X, 43, X,  X, X, 47, X,  X, X, 
+    X, X, 53, X,  X, X,  X, X, 59, X, 
+   61, X,  X, X,  X, X, 67, X,  X, X, 
+   71, X, 73, X,  X, X,  X, X, 79, X, 
+    X, X, 83, X,  X, X,  X, X, 89, X, 
+    X, X,  X, X,  X, X, 97, X,  X, X
+]
+```
+
+
+Do you see the pattern? 
+TODO WE ARE REMOVING MULTIPLES OF THE PRIME NUMBERS, BUT KEEPING THE PRIMES
+
+The next prime would be `11`, and if our array was larger, would cross out `121`. 
+
+How do we capture this in pseudocode? 
+
+TODO 
+
 We don't need to store the value in the array because we can simply use the index. 
 
 Because we're using a process of "subtraction", we want to set all of our values to `true` and then mark everyhing that is _not_ a prime number as `false`. 
@@ -262,12 +334,13 @@ TODO WALK THROUGH THE NEXT FEW NUMBERS
 
 ### Execute the Plan
 
-Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
+Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
 #### How to Code the Sieve of Erasthones Algorithm in JavaScript
 
-TODO
+Let's start with JavaScript...
+
 ```js
 const sieve = (num) => {
     const bools = new Array(num + 1).fill(true);
@@ -370,7 +443,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * What problem(s) does TODO solve? 
 
-* TODO
+* What is the difference betweed additive and subtractive problem solving? 
 
 
 ### Why Do I Need to Know This? 
@@ -378,12 +451,12 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 TODO
 
 
-### What Problem(s) Does Sieve of Erasthones Solve? 
+### Why Is It Called "The Sieve of Erasthones"? 
 
 TODO
 
 
-### TODO
+### What's the Difference Between Additive and Subtractive Problem Solving? 
 
 TODO
 
