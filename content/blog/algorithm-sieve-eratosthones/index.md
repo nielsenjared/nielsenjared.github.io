@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Sieve of Erasthones Algorithm AKA Prime Number Generation"
-date: "2022-TODO-TODO"
+date: "2022-03-25"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Erasthones, or prime number generation."
 keywords: ['algorithm', 'Sieve of Erasthones', 'javascript', 'python']
 ---
@@ -15,7 +15,7 @@ If you want to learn how to code, you need to learn algorithms. Learning algorit
 ---
 
 ![A is for Algorithms](./jarednielsen-algorithms.png)
-Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
+Give yourself an A. Get your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 ---
 
@@ -28,22 +28,22 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * What's a composite number? 
 
-* TODO What's the difference between space complexity and time complexity?
+* What's the difference between space complexity and time complexity?
 
 
 ### What's a Prime Number? 
 
-TODO
+A prime number is any natural number that is only divisible by itself and 1. Or, in other words, is not the product of two smaller numbers. For example, `7`, is a prime number, where the factors of `7` are only `1` and itself. 
 
 
 ### What's a Composite Number? 
 
-TODO
+A composite number is any number that is, well, a composite, or multiple, of two smaller numbers. In other words, a composite numbers is divisible by at least one number other than `1` and itself. For example, `4` is the first composite number as its factors are  `1`, `2`, and `4`. Fun fact: `1` is neither prime _nor_ composite. It's _the_ unit. 
 
 
-### TODO #3
+### What's the Difference Between Space and Time Complexity? 
 
-TODO
+Space complexity is the amount of memory an algorithm uses to complete its operations, where time complexity is a measure of the operations themselves. 
 
 
 ## Let's Get Meta
@@ -76,7 +76,7 @@ To understand our problem, we first need to define it. Let’s reframe the probl
 
 ```md
 GIVEN a whole number, _n_, greater than 1
-WHEN TODO
+WHEN I pass _n_ to the Sieve function
 THEN I am returned a an array of the prime numbers between 1 and _n_
 ```
 
@@ -161,7 +161,7 @@ Let's look at _all_ of the numbers between 1 and 100:
 ]
 ```
 
-We know that `1` is not prime, so we can cross it out. And we immediately see that half of our numbers are multiples of `2`, so we can cross them all out.
+We know that `1` is not prime, so we can cross it out. And we immediately see that half of our numbers are multiples of `2`, so we can cross them all out, but keep `2`, as it's the first prime number:
 
 ```
 [
@@ -178,7 +178,7 @@ We know that `1` is not prime, so we can cross it out. And we immediately see th
 ]
 ```
 
-TODO CROSS OUT MULTIPLES OF 3, BUT KEEP 3
+Our next prime number is `3`, which we want to keep, but we can proceed and cross out all multiples of `3`. 
 
 ```
 [
@@ -195,7 +195,7 @@ TODO CROSS OUT MULTIPLES OF 3, BUT KEEP 3
 ]
 ```
 
-TODO CROSS OUT MULTIPLES OF 5
+We skip `4` as it's not a prime number and we already crossed it out with multiples of `2`. We then cross out multiples of `5`:
 ```
 [
     X, 2,  3, X,  5, X,  7, X,  X, X, 
@@ -211,7 +211,7 @@ TODO CROSS OUT MULTIPLES OF 5
 ]
 ```
 
-TODO CROSS OUT MULTIPLES OF 7
+Next is `7`...
 ```
 [
     X, 2,  3, X,  5, X,  7, X,  X, X, 
@@ -229,9 +229,8 @@ TODO CROSS OUT MULTIPLES OF 7
 
 
 Do you see the pattern? 
-TODO WE ARE REMOVING MULTIPLES OF THE PRIME NUMBERS, BUT KEEPING THE PRIMES
 
-The next prime would be `11`, and if our array was larger, would cross out `121`. 
+We are removing the multiples of the prime numbers, but keeping the primes. The next prime would be `11`, and if our array was larger, we would cross out `121`, which is only divisible by `1`, `11`, and itself. 
 
 How do we capture this in pseudocode? 
 
@@ -395,7 +394,7 @@ Now let's see it in Python...
 
 #### How to Code the Sieve of Erasthones Algorithm in Python
 
-TODO
+Let's see it in Python...
 ```py
 TODO
 ```
@@ -404,7 +403,7 @@ TODO
 
 Can we do better? 
 
-We can make an optimization to our program and multiple `i` by itself: 
+We can make an optimization to our program and multiple `i` by itself rather than by `2`: 
 
 
 ```
@@ -430,6 +429,8 @@ RETURN primes
 ```
 
 
+
+
 #### What is the Big O Of Sieve of Erasthones?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
@@ -441,19 +442,19 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* Why is it called the Sieve of Eratosthenes? 
 
 * What is the difference betweed additive and subtractive problem solving? 
 
 
 ### Why Do I Need to Know This? 
 
-TODO
+Prime numbers are considered the ["basic building blocks"](https://en.wikipedia.org/wiki/Prime_number#Unique_factorization) of natural numbers. Every number greater than `1` is a product of one or more prime numbers. In computing, prime numbers are used in encryption and hashing algorithms.
 
 
 ### Why Is It Called "The Sieve of Erasthones"? 
 
-TODO
+It's called a "sieve" because we are washing away the composite numbers and only keeping the primes. 
 
 
 ### What's the Difference Between Additive and Subtractive Problem Solving? 
