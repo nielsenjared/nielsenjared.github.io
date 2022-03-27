@@ -1,7 +1,7 @@
 ---
-title: "Learn How to Code the Sieve of Erasthones Algorithm AKA Prime Number Generation"
+title: "Learn How to Code the Sieve of Erarosthones Algorithm"
 date: "2022-03-25"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Erasthones, or prime number generation."
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Erasthones in JavaScript and Python."
 keywords: ['algorithm', 'Sieve of Erasthones', 'javascript', 'python']
 ---
 
@@ -57,7 +57,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 * Why is it called the Sieve of Erasthones?
 
 
-## Learn How to Code the Sieve of Erasthones Algorithm 
+## Learn How to Code the Sieve of Eratosthones Algorithm 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -228,17 +228,11 @@ Next is `7`...
 ```
 
 
-Do you see the pattern? 
+Do you see the pattern? We first removed all multiples of `2`, then all multiples of `3`, followed by `5` and `7`. The next prime is `11`, and if our array was larger, we would cross out `121`, which is only divisible by `1`, `11`, and itself. We can now abstract a general rule for our algorithm: remove the multiples of the prime numbers, but keep the primes. 
 
-We are removing the multiples of the prime numbers, but keeping the primes. The next prime would be `11`, and if our array was larger, we would cross out `121`, which is only divisible by `1`, `11`, and itself. 
-
-How do we capture this in pseudocode? 
-
-TODO 
-
-We don't need to store the value in the array because we can simply use the index. 
-
-Because we're using a process of "subtraction", we want to set all of our values to `true` and then mark everyhing that is _not_ a prime number as `false`. 
+Now let's design the algorithm! 
+ 
+We need to generate an array, but We don't need to store the numerical values in the array because we can simply use the index. But, we need to keep in mind that our first index is 0. Because we're using a process of "subtraction", we want to set all of our values to `true` and then mark everyhing that is _not_ a prime number as `false`. 
 
 Let's update our pseudocode to generate an array of boolean values. 
 
@@ -253,31 +247,6 @@ POPULATE EVERY INDEX IN bools WITH A VALUE OF true
 
 We'll use the word "POPULATE" as we don't yet know, or need to know, how we will generate an array of boolean values. Maybe we'll iterate. Maybe we'll use an array method. We'll figure that out when we execute the plan. Speaking of iteration, now we need to figure out how we are changing values in our array from `true` to `false`. 
 
-
-Let's look at our matrix again:
-```sh
-[
-    1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 
-   11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 
-   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
-   31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 
-   41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 
-   51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 
-   61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 
-   71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 
-   81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 
-   91, 92, 93, 94, 95, 96, 97, 98, 99, 100
-]
-```
-
-When we're not looking for primes, we see _a lot_ of patterns emerge. There's on that is very obvious: even numbers. With the exception of `2`, which is prime, we can easily TODO
-
-
-TODO START ITERATING AT 2
-
-
-
-
 ```
 INPUT n
 
@@ -286,25 +255,39 @@ POPULATE EVERY INDEX IN bools WITH A VALUE OF true
 
 SET primes EQUAL TO AN EMPTY ARRAY
 
-
 FOR EVERY NUMBER, i, BETWEEN 2 AND num
     IF THE VALUE STORED IN bools[i] IS EQUAL TO true
         PUSH i TO primes
 
+        ...
 
 RETURN primes
 ```
 
-TODO HOW DO WE AVOID ADDING EVERYTHING TO primes? 
-
-If we continue to iterate, our conditional will continue to be met and we will push every number to `primes`. How do we avoid this? We need to do something to address this within our conditional statement. 
+If we continue to iterate, our conditional will continue to be met and we will push every number to `primes`. How do we avoid this? 
 
 🤔
 
-We need to set all even numbers to false before we exit the conditional. Sounds like we need another loop. 
+We need to set all even numbers to false before we exit the conditional. Sounds like we need another loop. Do we want a `for` loop or a `while` loop? Because we don't know how many times we need the loop to run, let's use a `while` loop. Our nested loop needs an iterator. The convention is to name this variable `j`. What value do we use to initialize `j`? 
 
-TODO MAKE THE JUMP
+In our first iteration, `i` is equal to `2`, which is prime.
 
+In our second iteration, `i` will be equal to `3`, which is also prime.
+
+In our thrid iteration, `i` will be equal to `4`, which is composite. 
+
+We need to set the value of `j` to `4` in the first iteration. 
+
+There are two ways we can do this: addition and multiplication. Let's think through both. 
+
+If we use addition, our pseudocode would be:
+```
+        SET j EQUAL TO i PLUS 2
+```
+
+This will give us `4` on the first iteration. But on the next iteration, the value of `i` will be `3` and `3` plus `2` is `5`, which is prime. Addition won't work, so let's use multiplication. 
+
+What do we do within our `while` loop? We simply reassign the value of `j` to `j PLUS i`. Our pseudocode now looks like this:
 ```
 INPUT n
 
@@ -327,8 +310,17 @@ FOR EVERY NUMBER, i, BETWEEN 2 AND num
 RETURN primes
 ```
 
-TODO WALK THROUGH THE NEXT FEW NUMBERS
+Let's step through our pseudocode to fully understand what's happening before we translate it into syntax. 
 
+When our `for` loop increments, `i` will be equal to `3`, and our conditional will evaluate as `true`. We push `3` to `primes` then set the value of `j` to `3` multiplied by `2`, or `6`. Within the `while` loop, we set the value stored in the sixth index to `false` and then add `i`, which is `3`, to `j`, which is `6`. The new value of `j` is now `9`. We continue to iterate by multiples of `3` until `j` is greater than or equal to `n`. 
+
+When our `for` loop increments again, `i` will be equal to `4`. Our conditional will not evaluate as `true`, though, and we will proceed with the next iteration of the `for` loop. 
+
+When our `for` loop increments again, `i` will be equal to `5`, and our conditional will evaluate as `true`. We push `5` to `primes` then set the value of `j` to `5` multiplied by `2`, or `10`. Within the `while` loop, we set the value stored in the tenth index to `false` (again) and then add `i`, which is `5`, to `j`, which is `10`. The new value of `j` is now `15`. We continue to iterate by multiples of `5` until `j` is greater than or equal to `n`. 
+
+When our `for` loop increments again, `i` will be equal to `6`. Our conditional will not evaluate as `true`, though, and we will proceed with the next iteration of the `for` loop. 
+
+When our `for` loop increments again, `i` will be equal to `7`, our conditional will evaluate as `true`, and we repeat the steps above for `7` and all subsequent values. 
 
 
 ### Execute the Plan
@@ -336,7 +328,7 @@ TODO WALK THROUGH THE NEXT FEW NUMBERS
 Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
-#### How to Code the Sieve of Erasthones Algorithm in JavaScript
+#### How to Code the Sieve of Eratosthones Algorithm in JavaScript
 
 Let's start with JavaScript...
 
@@ -351,8 +343,7 @@ const sieve = (num) => {
         if (bools[i] === true) {
             primes.push(i);
 
-            //let j = i * 2;
-            let j = i * i;
+            let j = i * 2;
 
             while (j <= num) {
                 bools[j] = false;
@@ -371,18 +362,13 @@ Within our `sieve` function, we first declare a `bools` array, using the `Array`
 
 Next, we declare a `for` loop and initialize the iterator with a value of `2`. Why `2`? It's the first prime number and we already assigned `bools[0]` and `bools[1]` a value of `false`. Within our `for` loop, we declare a conditional. If the value of `bools[i]` is equal to `true`, we push it to the `primes` array. 
 
-Here's the fun part: within our conditional, we declare a variable, `j`, and assign it the value of `i` squared, or `i * i`. We then initialize a `while` loop, and, while `j` is less than or equal to `n`, we set the value of `bools[j]` to `false` and increment by `i`, using `j += i`. 
+Here's the fun part: within our conditional, we declare a variable, `j`, and assign it the value of `i * 2`. We then initialize a `while` loop, and, while `j` is less than or equal to `n`, we set the value of `bools[j]` to `false` and increment by `i`, using `j += i`. 
 
-Why? 
+Why? With the exception of `2`, none of our prime numbers are even. By multiplying `i` by 2, we create a composite value to then mark `false`. 
 
-With the exception of `2`, none of our prime numbers are even. By squaring `i`, we create an composite value to then mark `false`. 
-
-TODO While `j` is less than `n`, we 
-
-For example, in the first iteration, `i` is 2. Because everything but the first two elements in `bools` is marked `true`, we push `2` to the `primes` array. We then set the value of `j` to `i * i`, or `2 * 2`, of `4`. While `j`, which is currently `4`, is less than `n`, we set the value of `bools[j]` to `false` because it is true, `4` is not a prime number. We then add `i`, which is currently `2`, to `j`, which is currently `4`, resulting in `6`. Looping again, we set the value of `bools[j]` to `false`, because it's true, `6` is not a prime number. The next iteration `j` would be `8`, then `10`, then `12`, and so on until all even values were marked `false`. 
+While `j` is less than `n`, we continue to iterate. For example, in the first iteration, `i` is 2. Because everything but the first two elements in `bools` is marked `true`, we push `2` to the `primes` array. We then set the value of `j` to `i * i`, or `2 * 2`, of `4`. While `j`, which is currently `4`, is less than `n`, we set the value of `bools[j]` to `false` because it is true, `4` is not a prime number. We then add `i`, which is currently `2`, to `j`, which is currently `4`, resulting in `6`. Looping again, we set the value of `bools[j]` to `false`, because it's true, `6` is not a prime number. The next iteration `j` would be `8`, then `10`, then `12`, and so on until all even values were marked `false`. 
 
 When `j` is no longer less than or equal to `n`, we exit the `while` loop, exit the `if` block, and then enter the next iteration of our `for` loop where `i` is equal to `3`. We skipped over `3`, so it is still marked `true`, and we push it to `primes`. We then multiply `3` by `3`, and assign `j` the value of `9`. We set `bools[j]` to `false` and then add `3` to `j`, resulting in `12`. This is redundant, because we already marked `12` as `false`, but ¯\_(ツ)_/¯. In the next iteration, we mark `15` as `false`. We iterate until all multiples of `3` are marked `false`. 
-
 
 When `j` is no longer less than or equal to `n`, we exit the `while` loop, exit the `if` block, and then enter the next iteration of our `for` loop where `i` is equal to `4`. We already marked `4` as `false`, so we don't enter the conditional block and continue iterating with a value of `5` assigned to `i`. It's still marked as `true`, because we skipped over it in the first and second iteratons, `2` and `3` respectively. We then multiply `5` by `5`, and assign `j` the value of `25`. We set `bools[j]` to `false` and then add `5` to `j`, resulting in `30`. This is redundant, because we already marked `30` as `false`, but again, ¯\_(ツ)_/¯. In the next iteration, we mark `35` as `false`. We iterate until all multiples of `5` are marked `false`. 
 
@@ -392,11 +378,33 @@ We continue iterating over `n` until all elements associated with composite numb
 Now let's see it in Python...
 
 
-#### How to Code the Sieve of Erasthones Algorithm in Python
+#### How to Code the Sieve of Eratosthones Algorithm in Python
 
 Let's see it in Python...
 ```py
-TODO
+def sieve(n):
+    bools = [True for i in range(n + 1)]
+    # bools = [True] * (n + 1)
+    bools[0] = False
+    bools[1] = False
+
+    primes = []
+
+    for i in range(2, n):
+        if bools[i] == True:
+            primes.append(i)
+
+        j = i * 2
+
+        while j <= n:
+            bools[j] = False
+            j += i 
+
+    return primes 
+
+result = sieve(100)
+
+print(result)
 ```
 
 ### Evaluate the Plan
@@ -404,8 +412,6 @@ TODO
 Can we do better? 
 
 We can make an optimization to our program and multiple `i` by itself rather than by `2`: 
-
-
 ```
 INPUT n
 
@@ -428,10 +434,10 @@ FOR EVERY NUMBER, i, BETWEEN 2 AND num
 RETURN primes
 ```
 
+While this solution is more efficient in terms of time complexity, it's not so great for space because we need to generate an array of boolean values. 
 
 
-
-#### What is the Big O Of Sieve of Erasthones?
+#### What is the Big O Of Sieve of Eratosthones?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -452,14 +458,14 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 Prime numbers are considered the ["basic building blocks"](https://en.wikipedia.org/wiki/Prime_number#Unique_factorization) of natural numbers. Every number greater than `1` is a product of one or more prime numbers. In computing, prime numbers are used in encryption and hashing algorithms.
 
 
-### Why Is It Called "The Sieve of Erasthones"? 
+### Why Is It Called "The Sieve of Eratosthones"? 
 
 It's called a "sieve" because we are washing away the composite numbers and only keeping the primes. 
 
 
 ### What's the Difference Between Additive and Subtractive Problem Solving? 
 
-TODO
+In additive problem solving, we continual add features to a solution. In subtractive problem solving, we look for opportunities to achieve more with less. 
 
 
 ## A is for Algorithms
