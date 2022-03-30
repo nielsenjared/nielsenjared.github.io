@@ -1,12 +1,12 @@
 ---
 title: "Learn How to Code the Selecction Sort Algorithm"
-date: "2022-TODO-TODO"
+date: "2022-04-08"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the selection sort algorithm in JavaScript and Python."
 keywords: ['algorithm', 'selection sort', 'javascript', 'python']
 ---
 
 
-![ TODO ](./jarednielsen-algorithm-TODO.png)
+![ selection sort ](./jarednielsen-algorithm-selection-sort.png)
 
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the selection sort algorithm in JavaScript _and_ Python.
@@ -24,14 +24,14 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-* TODO 
+* How do we swap values in an array? 
 
 * TODO
 
 * TODO 
 
 
-### TODO #1
+### How Do We Swap Values in an Array? 
 
 TODO
 
@@ -81,13 +81,7 @@ THEN we move that value to its proper ordinal position and repeat until all valu
 
 ```
 
-That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
-
-* our input conditions (an unsorted array)
-
-* our output requirements (a sorted array)
-
-* our goal is to organize the elements in the array in ascending, or non-descending, order, starting with the smallest elements first
+That’s our general outline. We know our input conditions, an unsorted array, and our output requirements, a sorted array, and our goal is to organize the elements in the array in ascending, or non-descending, order, starting with the smallest elements first.
 
 
 Let’s make a plan!
@@ -105,48 +99,40 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 * Algorithm design
 
-TODO
-
-```md
+We need something to sort, so let's use this "unsorted" array:
+```
 [10, 1, 9, 2, 8, 3, 7, 4, 6, 5]
 ```
 
-The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
-
-Let's begin with the smallest problem we can solve: 
-```md
+The first step in our process is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
+```
 [10, 1]
 ```
 
-TODO Let's pseudocode a solution to this very small problem: 
+We can see that we simply need to swap the positions of these two values. Let's pseudocode a solution to this very small problem: 
 ```
-SELECT the first element
-IF the next element is less than the first element
-    SWAP their positions
+SELECT THE first ELEMENT
+IF THE next ELEMENT IS LESS THAN THE first
+    SWAP first AND next
 ```
 
-Recall that our goal is to _select_ the smallest element, wherever it may be in the array, and TODO 
-
-Let's expand our array 
-```md
+Let's expand our array:
+```
 [10, 1, 9]
 ```
 
-TODO EXPLAIN ITERATION
-TODO
-
+Now we need to make the leap to abstraction and add iteration to our pseudocode: 
 ```
-FOR EACH element in an unsorted array
-    SELECT the current value
-    IF the next element is less than the first element
-        SWAP their positions
+FOR EACH i IN array:
+    SELECT THE first ELEMENT
+    IF THE next ELEMENT IS LESS THAN THE first ELEMENT
+        SWAP first AND next
 ```
 
-Let's run through this:
+Let's step through this...
 
-On the first iteration, we select the first element, 10, and compare it to the next element, 1, which is less than 10, so we swap their positions. Our array now looks like this:
-
-```md
+On the first iteration, we select the first element, `10`, and compare it to the next element, `1`, which is less than `10`, so we swap their positions. Our array now looks like this:
+```
 [1, 10, 9]
 ```
 
@@ -154,16 +140,17 @@ But! On the next iteration, what happens? We again select the first element, `1`
 
 What's the solution? 
 
-We need a means of tracking and updating the "known minimum value". 
+We need a means of tracking and updating the index of the "known minimum value". 
 
-In this scenario, `1` is our first "known minimum value", but we can see that `9` is less than `10`, so we need to compare the "known minimum value" to the next value in each iteration and update accordingly. Let's refer to the "known minimum value" as `MIN`. 
+TODO
+In this scenario, `1` is our first "known minimum value", but we can see that `9` is less than `10`, so we need to compare the "known minimum value" to the next value in each iteration and update accordingly. Let's refer to the "known minimum value" as `min`. 
 
 ```md
-FOR EACH element in an unsorted array
-    SELECT MIN, the current value 
-    IF the next element is less than MIN
-        UPDATE MIN with the next element
-    SWAP the current element with MIN
+FOR EACH i IN array:
+    SET min EQUAL TO i 
+    IF THE next ELEMENT IS LESS THAN min
+        SET min EQUAL TO THE index OF next ELEMENT
+    SWAP the current element with min
 ```
 
 Let's iterate over our three-piece array again:
@@ -171,13 +158,13 @@ Let's iterate over our three-piece array again:
 [10, 1, 9]
 ```
 
-On the first iteration, we SELECT `10` because it's the first element, and at this point MIN. If the next element, `1`, is less than MIN, we UPDATE MIN with that value. So MIN is now equal to `1`. Now we need to swap the current element, containing the value `10`, with MIN. After the first iteration, our array looks like this: 
+On the first iteration, we SELECT `10` because it's the first element, and at this point min. If the next element, `1`, is less than min, we UPDATE min with that value. So min is now equal to `1`. Now we need to swap the current element, containing the value `10`, with min. After the first iteration, our array looks like this: 
 
 ```md
 [1, 10, 9]
 ```
 
-On the next iteration, we select the current element, which is now `10`. We compare the value stored in the next element, `9`, to MIN and see that 
+On the next iteration, we select the current element, which is now `10`. We compare the value stored in the next element, `9`, to min and see that 
 TODO
 
 
@@ -214,14 +201,14 @@ Nested iteration.
 TODO 
 
 Let's update our pseudocode: 
-
-```md
-FOR EACH element in an unsorted array
-    SELECT MIN, the current value
-    FOR EACH of the remaining elements in the array
-        IF the next element is less than MIN
-        UPDATE MIN with the next element
-    SWAP the current element with MIN
+```
+FOR EACH i IN array
+    SET min EQUAL TO i
+    SET j TO i + 1
+    FOR EACH j IN array
+        IF array[j] IS LESS THAN array[min]
+        SET min EQUAL TO j
+    SWAP array[i] WITH array[min]
 ```
 
 Let's step through our array:
@@ -230,12 +217,12 @@ TODO
 [10, 1, 9, 2]
 ```
 
-On the first iteration, we _select_ `10`, and assign it to `MIN`. We then enter our nested loop and iterate over the remaining elements. The next element is `1`, which is less than `10`, so we assign `1` to `MIN`. We are still in our nested loop, so we continue comparing the remaining values to `MIN` and discover that `1` is the lowest value in our array. We exit our nested loop and _swap_ the value in the `0` index, which is `10`, with `1`. Our array now looks like this: 
+On the first iteration, we set `min` to `i`, or `0`. We then enter our nested loop to iterate over the remaining elements. The next element `j`, is equal to `i + 1`. which in this iteration is `1`. Our conditional checks if the value stored in our array at index `1` is less than the value stored in our array at index `0`. If this evaluates as `true`, we set the value of `min` equal to `j`. In this iteration, `array[j]` is equal to `1` and `array[i]` is equal to `10`, so we set `min` equal to the value stored in `j`, which is `1`. We are still in our nested loop, so we continue comparing the remaining values to `min` and discover that `1` is the lowest value in our array. We exit our nested loop and _swap_ the value in the `0` index, which is `10`, with the vale in the `min` index, which is `1`. Our array now looks like this: 
 ```md
 [1, 10, 9, 2]
 ```
 
-We are now at our outer loop again and we select the value in the `1` index, which is now `10`. We assign it to `MIN` and enter our nested loop. The next value is `9`, which is less than `10`, so we assign `9` to `MIN`. We continue iterating over the remaining values in our array and find that the next value, `2`, is less than `9`, so we assign `2` to `MIN`. We exit our nested loop and swap `2` with `10`. Our array now looks like this: 
+We are now at our outer loop again and we select the value in the `1` index, which is now `10`. We assign it to `min` and enter our nested loop. The next value is `9`, which is less than `10`, so we assign `9` to `min`. We continue iterating over the remaining values in our array and find that the next value, `2`, is less than `9`, so we assign `2` to `min`. We exit our nested loop and swap `2` with `10`. Our array now looks like this: 
 ```md
 [1, 2, 9, 10]
 ```
@@ -311,6 +298,9 @@ TODO
 ### Why Is It Called Selecction Sort? 
 
 TODO TODO We use selection sort to build an array from left to right, by repeatedly "selecting" the minimum values in an unsorted array and placing them in their proper ordinal position. 
+
+Recall that our goal is to _select_ the smallest element, wherever it may be in the array, and move it _down_. 
+
 
 
 
