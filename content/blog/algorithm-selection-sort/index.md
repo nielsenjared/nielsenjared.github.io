@@ -111,21 +111,27 @@ The first step in our process is decomposition, or breaking our problem down int
 
 We can see that we simply need to swap the positions of these two values. Let's pseudocode a solution to this very small problem: 
 ```
-SELECT THE first ELEMENT
-IF THE next ELEMENT IS LESS THAN THE first
-    SWAP first AND next
+INPUT array
+SET first EQUAL TO THE VALUE STORED IN array[0]
+SET next EQUAL TO THE VALUE STORED IN array[1]
+IF THE next VALUE IN array IS LESS THAN THE first VALUE
+    SWAP THE first AND next VALUES
 ```
 
-Let's expand our array:
+So far so good! Let's expand our array and add another value:
 ```
 [10, 1, 9]
 ```
 
-Now we need to make the leap to abstraction and add iteration to our pseudocode: 
+We _could_ hardcode another conditional to check the value stored in the third index, but we're programmers. We immediately recognize a pattern emerging where we will need to _select_ the first value and compare it to the second and third values, and then _select_ the second value, and compare it to the third value, all while swapping the index of values when necessary. 
+
+Let's update our pseudocode: 
 ```
-FOR EACH i IN array:
-    SELECT THE first ELEMENT
-    IF THE next ELEMENT IS LESS THAN THE first ELEMENT
+INPUT array
+FOR EACH index IN array:
+    SET first EQUAL TO THE VALUE STORED IN array[0]
+    SET next EQUAL TO THE VALUE STORED IN array[1]
+    IF THE next VALUE IN array IS LESS THAN THE first VALUE
         SWAP first AND next
 ```
 
@@ -140,7 +146,8 @@ But! On the next iteration, what happens? We again select the first element, `1`
 
 What's the solution? 
 
-We need a means of tracking and updating the index of the "known minimum value". 
+TODO
+We need to make the leap to abstraction. We need a means of tracking and updating the index of the "known minimum value". 
 
 TODO
 In this scenario, `1` is our first "known minimum value", but we can see that `9` is less than `10`, so we need to compare the "known minimum value" to the next value in each iteration and update accordingly. Let's refer to the "known minimum value" as `min`. 
@@ -202,27 +209,26 @@ TODO
 
 Let's update our pseudocode: 
 ```
-FOR EACH i IN array
-    SET min EQUAL TO i
-    SET j TO i + 1
-    FOR EACH j IN array
-        IF array[j] IS LESS THAN array[min]
-        SET min EQUAL TO j
-    SWAP array[i] WITH array[min]
+FOR EACH index IN array
+    SET min EQUAL TO index
+    SET next TO index + 1
+    FOR EACH next IN array
+        IF THE VALUE STORED IN array[next] IS LESS THAN THE VALUE STORED IN array[min]
+        SET min EQUAL TO next
+    SWAP THE VALUES STORED IN array[index] WITH THE VALUE STORED IN array[min]
 ```
 
-Let's step through our array:
-TODO 
-```md
+Let's step through this, using this array:
+```
 [10, 1, 9, 2]
 ```
 
-On the first iteration, we set `min` to `i`, or `0`. We then enter our nested loop to iterate over the remaining elements. The next element `j`, is equal to `i + 1`. which in this iteration is `1`. Our conditional checks if the value stored in our array at index `1` is less than the value stored in our array at index `0`. If this evaluates as `true`, we set the value of `min` equal to `j`. In this iteration, `array[j]` is equal to `1` and `array[i]` is equal to `10`, so we set `min` equal to the value stored in `j`, which is `1`. We are still in our nested loop, so we continue comparing the remaining values to `min` and discover that `1` is the lowest value in our array. We exit our nested loop and _swap_ the value in the `0` index, which is `10`, with the vale in the `min` index, which is `1`. Our array now looks like this: 
+On the first iteration of our outer loop, we set `min` to `index`, or `0`. We then enter our nested loop to iterate over the remaining, or _next_ elements. The next element is equal to `index + 1`. which in this iteration is `1`. Our conditional checks if the value stored in our array at index `1` is less than the value stored in our array at index `0`. If this evaluates as `true`, we set the value of `min` equal to `next`. In this iteration, `array[next]` is equal to `1` and `array[index]` is equal to `10`, so we set `min` equal to the value stored in `next`, which is `1`. We are still in our nested loop, so we continue comparing the remaining values to `min` and discover that `1` is the lowest value in our array. We exit our nested loop and _swap_ the value in the `0` index, which is `10`, with the vale in the `min` index, which is `1`. Our array now looks like this: 
 ```md
 [1, 10, 9, 2]
 ```
 
-We are now at our outer loop again and we select the value in the `1` index, which is now `10`. We assign it to `min` and enter our nested loop. The next value is `9`, which is less than `10`, so we assign `9` to `min`. We continue iterating over the remaining values in our array and find that the next value, `2`, is less than `9`, so we assign `2` to `min`. We exit our nested loop and swap `2` with `10`. Our array now looks like this: 
+We are now iterating at the level of our outer loop again, and we select the value in the `1` index, which is now `10`. We assign it to `min` and enter our nested loop. The next value is `9`, which is less than `10`, so we assign the index of `next`, which is `2` to `min`. We continue iterating over the remaining values in our array and find that the next value, `2`, is less than `9`, so we assign the index of `next`, which is `3`, to `min`. We exit our nested loop and swap the value stored at `array[index]` with the value stored in `array[next]`. Our array now looks like this: 
 ```md
 [1, 2, 9, 10]
 ```
@@ -235,7 +241,7 @@ Looks like a solid plan!
 Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
 
 
-#### How to Code the TODO Algorithm in JavaScript
+#### How to Code the Selection Sort Algorithm in JavaScript
 
 Let's translate our pseudocode to JavaScript: 
 
@@ -260,7 +266,7 @@ const selectionSort = (arr) => {
 Now let's see it in Python...
 
 
-#### How to Code the TODO Algorithm in Python
+#### How to Code the Selection Sort Algorithm in Python
 
 TODO
 ```py
