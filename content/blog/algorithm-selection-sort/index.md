@@ -109,13 +109,13 @@ The first step in our process is decomposition, or breaking our problem down int
 [10, 1]
 ```
 
-We can see that we simply need to swap the positions of these two values. Let's pseudocode a solution to this very small problem: 
+We see that we simply need to swap the positions of these two values. Let's pseudocode a solution to this very small problem: 
 ```
 INPUT array
 SET first EQUAL TO THE VALUE STORED IN array[0]
 SET next EQUAL TO THE VALUE STORED IN array[1]
-IF THE next VALUE IN array IS LESS THAN THE first VALUE
-    SWAP THE first AND next VALUES
+IF next IS LESS THAN first 
+    SWAP first AND next 
 ```
 
 So far so good! Let's expand our array and add another value:
@@ -123,7 +123,7 @@ So far so good! Let's expand our array and add another value:
 [10, 1, 9]
 ```
 
-We _could_ hardcode another conditional to check the value stored in the third index, but we're programmers. We immediately recognize a pattern emerging where we will need to _select_ the first value and compare it to the second and third values, and then _select_ the second value, and compare it to the third value, all while swapping the index of values when necessary. 
+We _could_ hardcode another conditional to check the value stored in the third index, but we're programmers. We immediately recognize a pattern emerging where we will need to _select_ the first value and not only compare it to the second value, but to the third value as well. And then _select_ the second value, and compare it to the third value, all while swapping the location of values when necessary. We need to iterate. 
 
 Let's update our pseudocode: 
 ```
@@ -131,7 +131,7 @@ INPUT array
 FOR EACH index IN array:
     SET first EQUAL TO THE VALUE STORED IN array[0]
     SET next EQUAL TO THE VALUE STORED IN array[1]
-    IF THE next VALUE IN array IS LESS THAN THE first VALUE
+    IF next IS LESS THAN first
         SWAP first AND next
 ```
 
@@ -142,73 +142,68 @@ On the first iteration, we select the first element, `10`, and compare it to the
 [1, 10, 9]
 ```
 
-But! On the next iteration, what happens? We again select the first element, `1`, and compare it to the next element, which is now `9`. `9` is greater than `1`, so we leave it where it is. 
+But! What happens in the next iteration? We again select the first element and compare it to the next element, which is now `9`. `9` is greater than `1`, so we leave it where it is. 
 
 What's the solution? 
 
-TODO
-We need to make the leap to abstraction. We need a means of tracking and updating the index of the "known minimum value". 
+Abstraction!
+
+We need a means of tracking and updating the index of the "known minimum value". 
 
 TODO
-In this scenario, `1` is our first "known minimum value", but we can see that `9` is less than `10`, so we need to compare the "known minimum value" to the next value in each iteration and update accordingly. Let's refer to the "known minimum value" as `min`. 
+In this scenario, `1` is our first "known minimum value", but we can see that `9` is less than `10`, so after we move `1`, the _current_ "known minimum value" to the 0 index, we need to find the _next_ "known minimum value" and compare that to the `next` value and swap accordingly. 
 
-```md
-FOR EACH i IN array:
-    SET min EQUAL TO i 
-    IF THE next ELEMENT IS LESS THAN min
-        SET min EQUAL TO THE index OF next ELEMENT
-    SWAP the current element with min
+
+Let's refer to the "known minimum value" as `min`. 
+```
+INPUT array
+FOR EACH index IN array:
+    SET min EQUAL TO index 
+    SET next EQUAL TO index + 1
+    IF THE VALUE STORED IN array[next] IS LESS THAN THE VALUE STORED IN array[min]:
+        SET min EQUAL TO next
+        SWAP THE VALUE STORED IN array[index] WITH THE VALUE STORED IN array[min]
 ```
 
-Let's iterate over our three-piece array again:
-```md
+Let's iterate over our array again:
+```
 [10, 1, 9]
 ```
 
-On the first iteration, we SELECT `10` because it's the first element, and at this point min. If the next element, `1`, is less than min, we UPDATE min with that value. So min is now equal to `1`. Now we need to swap the current element, containing the value `10`, with min. After the first iteration, our array looks like this: 
-
-```md
+On the first iteration, we _select_ `10` because it's the first element, and the value stored in`array[min]`. If the value stored in `next`, in this case `1`, is less than the value stored in `min`, which it is, we reassign `min` the value of `next`. So `min` is now equal to `1`. Now we need to swap the value currently stored in `array[index]`, `10`, with the value stored in `array[min]`, `1`. After the first iteration, our array looks like this: 
+```
 [1, 10, 9]
 ```
 
-On the next iteration, we select the current element, which is now `10`. We compare the value stored in the next element, `9`, to min and see that 
-TODO
-
-
-...so we swap their positions. Our array now looks like this: 
-```md
+On the next iteration, `index` is equal to `1`, so we reassign the value of `min` with `1`. We then reassign the value of `next` with `index + 1`, or `2`. We compare the value stored in `array[next]`, which is `9`, with the value stored in `array[min]`, which is `10`. Our conditional evalutes as `true`, so we reassign the value of `min` with the value of `next` and then swap the value stored in `array[index]` with the value stored in `array[min]`. Our array now looks like this: 
+```
 [1, 9, 10]
 ```
 
 So far so good. Let's add another value to our array: 
-
-
-```md
+```
 [10, 1, 9, 2]
 ```
 
-Let's fast forward to the fourth iteration, where we compare...
+Let's fast forward to the fourth iteration, where our array looks like this:
+```
+[1, 9, 10, 2]
+```
 
-TODO
-
-Our array looks like this
-```md
+What's going to happen here? We're only going to swap the locations of `2` and `10`. Our array will look like this:
+```
 [1, 9, 2, 10]
 ```
 
-What's going on? What's wrong with our logic? 
+What's wrong with our design? 
 
-We are only comparing 
-TODO
+We are only comparing the iterator, `index` to the _next_ value. 
 
 What's the solution? 
 
-Nested iteration. 
-
-TODO 
-
-Let's update our pseudocode: 
+Nested iteration. We need to compare every index to every other value in the array. Let's update our pseudocode: 
 ```
+INPUT array
 FOR EACH index IN array
     SET min EQUAL TO index
     SET next TO index + 1
