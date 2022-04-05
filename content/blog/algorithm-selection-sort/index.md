@@ -26,22 +26,8 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * How do we swap values in an array? 
 
-* TODO
-
-* TODO 
-
 
 ### How Do We Swap Values in an Array? 
-
-TODO
-
-
-### TODO #2
-
-TODO
-
-
-### TODO #3
 
 TODO
 
@@ -54,7 +40,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why is it called "Selection Sort"?
 
-* TODO
+* What's _next_?
 
 
 ## How to Code the Selection Sort Algorithm 
@@ -150,9 +136,7 @@ Abstraction!
 
 We need a means of tracking and updating the index of the "known minimum value". 
 
-TODO
 In this scenario, `1` is our first "known minimum value", but we can see that `9` is less than `10`, so after we move `1`, the _current_ "known minimum value" to the 0 index, we need to find the _next_ "known minimum value" and compare that to the `next` value and swap accordingly. 
-
 
 Let's refer to the "known minimum value" as `min`. 
 ```
@@ -197,11 +181,11 @@ What's going to happen here? We're only going to swap the locations of `2` and `
 
 What's wrong with our design? 
 
-We are only comparing the iterator, `index` to the _next_ value. 
+We are only comparing the iterator, `index`, to the _next_ value. 
 
 What's the solution? 
 
-Nested iteration. We need to compare every index to every other value in the array. Let's update our pseudocode: 
+Nested iteration. We need to compare every index to all of the following values in the array. Let's update our pseudocode: 
 ```
 INPUT array
 FOR EACH index IN array
@@ -213,7 +197,7 @@ FOR EACH index IN array
     SWAP THE VALUES STORED IN array[index] WITH THE VALUE STORED IN array[min]
 ```
 
-Let's step through this, using this array:
+Let's step through our pseudocode, using this array:
 ```
 [10, 1, 9, 2]
 ```
@@ -258,12 +242,10 @@ const selectionSort = (arr) => {
 };
 ```
 
-Now let's see it in Python...
-
 
 #### How to Code the Selection Sort Algorithm in Python
 
-TODO
+Now let's see it in Python...
 ```py
 TODO
 ```
@@ -272,10 +254,10 @@ TODO
 
 Can we do better? 
 
-TODO  TODO do we need to go the end of the array? 
+TODO do we need to go the end of the array? 
 
 
-#### What is the Big O Of TODO?
+#### What is the Big O Of Selection Sort?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -288,26 +270,26 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why is it called "Selection Sort"? 
 
-* TODO
+* What's _next_?
 
 
 ### Why Do I Need to Know This? 
 
-TODO
+There are several reasons you need to know this: 
+
+* Selection Sort is a "classic" and, God forbid, some interviewer might ask you to whiteboard it
+
+* Selection Sort belongs to a class of _selection_ algorithms, in which a _k_ value is selected. Selection Sort shares the fundamental building blocks with others in this class.
 
 
 ### Why Is It Called Selecction Sort? 
 
-TODO TODO We use selection sort to build an array from left to right, by repeatedly "selecting" the minimum values in an unsorted array and placing them in their proper ordinal position. 
-
-Recall that our goal is to _select_ the smallest element, wherever it may be in the array, and move it _down_. 
+We use selection sort to sort an array from left to right by repeatedly "selecting" the minimum values in an unsorted array and placing them in their proper ordinal position. 
 
 
+### What's _Next_?
 
-
-### TODO
-
-TODO
+This is a _very_ meta question! In the context of this algorithm, `next` is the index following the current index. In the context of algorithms, _next_ is more efficient approaces to sorting. 
 
 
 ## A is for Algorithms
