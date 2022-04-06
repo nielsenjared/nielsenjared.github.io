@@ -29,7 +29,14 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 ### How Do We Swap Values in an Array? 
 
-TODO
+There are several approaches for swapping values in an array, but in general, we create a temporary variable to hold one of the values we want to swap while we reassign the existing variables. In pseudocode:
+```
+SET temp TO x
+SET x TO y
+SET y TO temp
+```
+
+If you're just joining us, you might want to start with [Learn How to Code the Swap Algorith in JavaScript and Python](https://jarednielsen.com/algorithm-swap/).
 
 
 ## Let's Get Meta
@@ -247,14 +254,76 @@ const selectionSort = (arr) => {
 
 Now let's see it in Python...
 ```py
-TODO
+unsorted = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5]
+
+def selection_sort(arr):
+    for i in range(len(arr)):
+        min = i
+
+        for j in range(i + 1, len(arr)):
+            if arr[j] < arr[min]:
+                min = j
+
+        tmp = arr[i]
+        arr[i] = arr[min]
+        arr[min] = tmp
+    
+    return arr
 ```
 
 ### Evaluate the Plan
 
-Can we do better? 
+Can we do better? Do we need to go the end of the array? If our nested loop is comparing the value of the _next_ index to the _current_ index, our outer loop doesn't need to include the last index. We can shave off one operation by setting the condition of our `for` loop to the length of our array _minus_ 1. 
 
-TODO do we need to go the end of the array? 
+Here it is in JavaScript...
+
+```js
+const selectionSort = (arr) => {
+    for (let i = 0; i < arr.length - 1; i++) {
+        let min = i;
+
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+        
+        let tmp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = tmp;
+    }
+    return arr;
+};
+```
+
+Note that we update the second line with the following:
+```js
+    for (let i = 0; i < arr.length - 1; i++) {
+```
+
+Here it is in Python...
+```py
+def selection_sort(arr):
+    for i in range(len(arr) - 1):
+        min = i
+
+        for j in range(i + 1, len(arr)):
+            if arr[j] < arr[min]:
+                min = j
+
+        tmp = arr[i]
+        arr[i] = arr[min]
+        arr[min] = tmp
+    
+    return arr
+```
+
+As above, note that we simply update the second line with the following:
+```py
+    for i in range(len(arr) - 1):
+```
+
+Note that we don't `- 1` in the condition of the nested loop. If we did, we would never _select_ the final value. 
 
 
 #### What is the Big O Of Selection Sort?
