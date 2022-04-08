@@ -1,6 +1,8 @@
 ---
 title: How to Breathe for Your Brain
-TODO
+date: 2022-03-14
+description: Your brain needs you to breathe. No oxygen, no brain. Lucky for us, our brains will breathe without our thinking about it, and we can also control our breathing with our brains! Here are some guidelines on how to breathe for optimal cognition.
+keywords: ['breathe', 'brain', ]
 ---
 
 
@@ -11,7 +13,7 @@ Your brain needs you to breathe.
 
 No oxygen, no brain. 
 
-Following “The Rule of Threes”, our brains can only survive without oxygen for 3 minutes. This isn’t a hard and fast rule, though, as there are some members of our species who can and do survive longer without the Big O. For the rest of us, we need to keep those lungs pumping. Lucky for us, our brain will breathe without our thinking about it, _and_, we can also control our breathing _with our brains_!
+Following “The Rule of Threes”, our brains can only survive without oxygen for 3 minutes. This isn’t a hard and fast rule, though, as there are some members of our species who can and do survive longer without the Big O. For the rest of us, we need to keep those lungs pumping. Lucky for us, our brains will breathe without our thinking about it, _and_, we can also control our breathing _with our brains_!
 
 Win win! 
 
