@@ -5,7 +5,6 @@ description: "If you want to learn how to code, you need to learn algorithms. Le
 keywords: ['algorithm', 'selection sort', 'javascript', 'python']
 ---
 
-
 ![ selection sort ](./jarednielsen-algorithm-selection-sort.png)
 
 
