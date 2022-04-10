@@ -1,15 +1,14 @@
 ---
-title: "Learn How to Code the Sieve of Erarosthones Algorithm"
+title: "Learn How to Code the Sieve of Eratosthenes Algorithm"
 date: "2022-03-25"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Erasthones in JavaScript and Python."
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Eratosthones in JavaScript and Python."
 keywords: ['algorithm', 'Sieve of Erasthones', 'javascript', 'python']
 ---
 
+![ graphic of sieve holding prime numbers ](./jarednielsen-algorithm-sieve-eratosthenes.png)
 
-![ Sieve of Erasthones ](./jarednielsen-algorithm-sieve-erasthones.png)
 
-
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Erasthones in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Eratosthenes in JavaScript _and_ Python.
 
 
 ---
@@ -57,7 +56,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 * Why is it called the Sieve of Erasthones?
 
 
-## Learn How to Code the Sieve of Eratosthones Algorithm 
+## Learn How to Code the Sieve of Eratosthenes Algorithm 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -328,7 +327,7 @@ When our `for` loop increments again, `i` will be equal to `7`, our conditional 
 Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
-#### How to Code the Sieve of Eratosthones Algorithm in JavaScript
+#### How to Code the Sieve of Eratosthenes Algorithm in JavaScript
 
 Let's start with JavaScript...
 
@@ -378,7 +377,7 @@ We continue iterating over `n` until all elements associated with composite numb
 Now let's see it in Python...
 
 
-#### How to Code the Sieve of Eratosthones Algorithm in Python
+#### How to Code the Sieve of Eratosthenes Algorithm in Python
 
 Let's see it in Python...
 ```py
@@ -437,7 +436,7 @@ RETURN primes
 While this solution is more efficient in terms of time complexity, it's not so great for space because we need to generate an array of boolean values. 
 
 
-#### What is the Big O Of Sieve of Eratosthones?
+#### What is the Big O Of Sieve of Eratosthenes?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -458,7 +457,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 Prime numbers are considered the ["basic building blocks"](https://en.wikipedia.org/wiki/Prime_number#Unique_factorization) of natural numbers. Every number greater than `1` is a product of one or more prime numbers. In computing, prime numbers are used in encryption and hashing algorithms.
 
 
-### Why Is It Called "The Sieve of Eratosthones"? 
+### Why Is It Called "The Sieve of Eratosthenes"? 
 
 It's called a "sieve" because we are washing away the composite numbers and only keeping the primes. 
 
