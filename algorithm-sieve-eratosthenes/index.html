@@ -1,0 +1,442 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta data-react-helmet="true" name="twitter:description" content="If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Eratosthones in JavaScript and Python."/><meta data-react-helmet="true" name="twitter:title" content="Learn How to Code the Sieve of Eratosthenes Algorithm"/><meta data-react-helmet="true" name="twitter:creator" content="jarednielsen"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:description" content="If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Eratosthones in JavaScript and Python."/><meta data-react-helmet="true" property="og:title" content="Learn How to Code the Sieve of Eratosthenes Algorithm"/><meta data-react-helmet="true" name="description" content="If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Eratosthones in JavaScript and Python."/><meta name="generator" content="Gatsby 4.5.4"/><style data-href="/styles.ce96a3b9b8b83b9d7bde.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{-webkit-text-size-adjust:100%;line-height:1.15}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:"Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5}*,:after,:before{box-sizing:border-box}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:var(--fontSize-root);line-height:var(--lineHeight-normal)}body{color:var(--color-text);font-family:var(--font-body);font-size:var(--fontSize-1)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);border:0;height:1px}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);letter-spacing:-.025em;line-height:var(--lineHeight-tight);margin-bottom:var(--spacing-6);margin-top:var(--spacing-12)}h2,h3,h4,h5,h6{color:var(--color-heading);font-weight:var(--fontWeight-bold)}h1{color:var(--color-heading-black);font-size:var(--fontSize-6);font-weight:var(--fontWeight-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{--baseline-multiplier:0.179;--x-height-multiplier:0.35;line-height:var(--lineHeight-relaxed);margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{list-style-image:none;list-style-position:outside;margin-bottom:var(--spacing-8);margin-left:var(--spacing-0);margin-right:var(--spacing-0)}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{border-left:var(--spacing-1) solid var(--color-primary);color:var(--color-text-light);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{border-collapse:collapse;border-spacing:.25rem;margin-bottom:var(--spacing-8);width:100%}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-5)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-item{margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{color:var(--color-primary);font-size:var(--fontSize-4);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-family:var(--font-heading);font-size:var(--fontSize-2);font-weight:var(--fontWeight-bold);text-decoration:none}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{border-radius:100%;margin-right:var(--spacing-4);min-width:50px}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-family:var(--font-heading);font-size:var(--fontSize-2)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}@media (max-width:42rem){blockquote{margin-left:var(--spacing-0);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4)}ol,ul{list-style-position:inside}}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}h1{font-size:2em!important}#mc_embed_signup form{padding:10px 0;text-align:center}.mc-field-group{display:inline-block}#mc_embed_signup input.email{background-color:#fff;border:1px solid #abb0b2;border-radius:3px;box-sizing:border-box;color:#343434;display:inline-block;font-family:Open Sans,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;font-size:15px;height:32px;margin:0;padding:0 .4em;vertical-align:top;width:350px}#mc_embed_signup label{display:block;font-size:16px;font-weight:700;padding-bottom:10px}#mc_embed_signup .clear{display:inline-block}#mc_embed_signup .button{background-color:#ff007f;border:none;border-radius:3px;box-sizing:border-box;color:#fff;display:inline-block;font-size:13px;height:32px;letter-spacing:.03em;line-height:32px;margin:0;padding:0 18px;transition:all .23s ease-in-out 0s}#mc_embed_signup .button:hover{background-color:#8000ff;cursor:pointer}#mc_embed_signup div#mce-responses{clear:both;float:left;margin:0 5%;overflow:hidden;padding:0 .5em;top:-1.4em;width:90%}#mc_embed_signup div.response{float:left;font-weight:700;margin:1em 0;padding:1em .5em .5em 0;top:-1.5em;width:80%;z-index:1}#mc_embed_signup #mce-error-response{display:none}#mc_embed_signup #mce-success-response{color:#529214;display:none}#mc_embed_signup label.error{display:block;float:none;margin-left:1.05em;padding:.5em 0;text-align:left;width:auto}@media (max-width:768px){#mc_embed_signup input.email{margin-bottom:5px;width:100%}#mc_embed_signup .clear{display:block;width:100%}#mc_embed_signup .button{margin:0;width:100%}}img{max-width:100%}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" title="jarednielsen.com RSS Feed" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><title data-react-helmet="true">Learn How to Code the Sieve of Eratosthenes Algorithm | jarednielsen.com</title><link as="script" rel="preload" href="/webpack-runtime-538954c601d21277126a.js"/><link as="script" rel="preload" href="/framework-e413e527015be9a1bdfd.js"/><link as="script" rel="preload" href="/app-301c8cf0cc36be3d4466.js"/><link as="script" rel="preload" href="/commons-0f416e881c5946c9c507.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-2aec47be4891590b3660.js"/><link as="fetch" rel="preload" href="/page-data/algorithm-sieve-eratosthenes/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3257411868.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">jarednielsen.com</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">Learn How to Code the Sieve of Eratosthenes Algorithm</h1><p>March 25, 2022</p></header><section itemProp="articleBody"><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/533c307cecaf0348698a227874d5810a/29007/jarednielsen-algorithm-sieve-eratosthenes.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABFklEQVQoz6WRPUsDQRCG999a+gcERQKigjYWNhErtRSJgmchqRRREJNoERQNBlLdKSa7N7PzIXcb73J6guDyFMOyz8w7rBGlApYpnjNYiIS8oBdkIfmGkplqMyYLqbIqM3sR1vyE+0ILhakzaZDAfufdgvbh5dRedeGJxJf+V1LDuTzbQhkOLoZR83i0tbu3urZwsrkzPJyMP1JwDhyAK3xTLqzl5Lv755tW+2Fl+2hufqm18ToaCHMRrZxckXNUaYxwe37ZXlw/ayxH1xE4J8pSzVyRAyTsiQDwLY4fO91+r5cksQMLmBIjiZfayaFxFoy9R8gWTC04m7oJovOExMhBll8mB8JXab5CqLPYP57Vy3/kX/InD4F67H9TOz8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" graphic of sieve holding prime numbers "
+        title=" graphic of sieve holding prime numbers "
+        src="/static/533c307cecaf0348698a227874d5810a/f058b/jarednielsen-algorithm-sieve-eratosthenes.png"
+        srcset="/static/533c307cecaf0348698a227874d5810a/c26ae/jarednielsen-algorithm-sieve-eratosthenes.png 158w,
+/static/533c307cecaf0348698a227874d5810a/6bdcf/jarednielsen-algorithm-sieve-eratosthenes.png 315w,
+/static/533c307cecaf0348698a227874d5810a/f058b/jarednielsen-algorithm-sieve-eratosthenes.png 630w,
+/static/533c307cecaf0348698a227874d5810a/40601/jarednielsen-algorithm-sieve-eratosthenes.png 945w,
+/static/533c307cecaf0348698a227874d5810a/78612/jarednielsen-algorithm-sieve-eratosthenes.png 1260w,
+/static/533c307cecaf0348698a227874d5810a/29007/jarednielsen-algorithm-sieve-eratosthenes.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Eratosthenes in JavaScript <em>and</em> Python.</p>
+<hr>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="A is for Algorithms"
+        title="A is for Algorithms"
+        src="/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png"
+        srcset="/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+Give yourself an A. Get your copy of <a href="https://gum.co/algorithms">A is for Algorithms</a></p>
+<hr>
+<h2>Retrieval Practice</h2>
+<p>Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:</p>
+<ul>
+<li>
+<p>What’s a prime number?</p>
+</li>
+<li>
+<p>What’s a composite number?</p>
+</li>
+<li>
+<p>What’s the difference between space complexity and time complexity?</p>
+</li>
+</ul>
+<h3>What’s a Prime Number?</h3>
+<p>A prime number is any natural number that is only divisible by itself and 1. Or, in other words, is not the product of two smaller numbers. For example, <code class="language-text">7</code>, is a prime number, where the factors of <code class="language-text">7</code> are only <code class="language-text">1</code> and itself.</p>
+<h3>What’s a Composite Number?</h3>
+<p>A composite number is any number that is, well, a composite, or multiple, of two smaller numbers. In other words, a composite numbers is divisible by at least one number other than <code class="language-text">1</code> and itself. For example, <code class="language-text">4</code> is the first composite number as its factors are  <code class="language-text">1</code>, <code class="language-text">2</code>, and <code class="language-text">4</code>. Fun fact: <code class="language-text">1</code> is neither prime <em>nor</em> composite. It’s <em>the</em> unit.</p>
+<h3>What’s the Difference Between Space and Time Complexity?</h3>
+<p>Space complexity is the amount of memory an algorithm uses to complete its operations, where time complexity is a measure of the operations themselves.</p>
+<h2>Let’s Get Meta</h2>
+<p>Ask yourself the following questions and keep them back of mind as you proceed:</p>
+<ul>
+<li>
+<p>Why do I need to know this?</p>
+</li>
+<li>
+<p>What is the difference betweed additive and subtractive problem solving?</p>
+</li>
+<li>
+<p>Why is it called the Sieve of Erasthones?</p>
+</li>
+</ul>
+<h2>Learn How to Code the Sieve of Eratosthenes Algorithm</h2>
+<p><a href="https://jarednielsen.com/programming-problem-solving/">Programming is problem solving</a>. There are four steps we need to take to solve any programming problem:</p>
+<ol>
+<li>
+<p>Understand the problem</p>
+</li>
+<li>
+<p>Make a plan</p>
+</li>
+<li>
+<p>Execute the plan</p>
+</li>
+<li>
+<p>Evaluate the plan</p>
+</li>
+</ol>
+<h3>Understand the Problem</h3>
+<p>To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:</p>
+<div class="gatsby-highlight" data-language="md"><pre class="language-md"><code class="language-md">GIVEN a whole number, <span class="token italic"><span class="token punctuation">_</span><span class="token content">n</span><span class="token punctuation">_</span></span>, greater than 1
+WHEN I pass <span class="token italic"><span class="token punctuation">_</span><span class="token content">n</span><span class="token punctuation">_</span></span> to the Sieve function
+THEN I am returned a an array of the prime numbers between 1 and <span class="token italic"><span class="token punctuation">_</span><span class="token content">n</span><span class="token punctuation">_</span></span></code></pre></div>
+<p>That’s our general outline. We know our input conditions, a whole number greater than 1, and our output requirements, an array of prime number between 1 and <em>n</em>, and our goal is to generate those prime numbers.</p>
+<p>Let’s make a plan!</p>
+<h3>Make a Plan</h3>
+<p>Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are:</p>
+<ul>
+<li>
+<p>Decomposition</p>
+</li>
+<li>
+<p>Pattern recognition</p>
+</li>
+<li>
+<p>Abstraction</p>
+</li>
+<li>
+<p>Algorithm design</p>
+</li>
+</ul>
+<p>The first step is decomposition, or breaking our problem down into smaller problems. What’s the smallest problem we can solve?</p>
+<p><code class="language-text">2</code></p>
+<p>Why not <code class="language-text">1</code>? Because <code class="language-text">1</code> is not a prime number, so we skip it.</p>
+<p>Like writing, there’s nothing more terrifying than the blank page, so let’s get <em>something</em> started in our pseudocode:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">INPUT n
+SET primes EQUAL TO AN EMPTY ARRAY
+
+IF n IS EQUAL TO 2
+    PUSH n TO primes
+
+RETURN primes</code></pre></div>
+<p>What’s the <em>next</em> smallest problem we can solve? <code class="language-text">3</code></p>
+<p>We might be tempted to take a brute force approach, and there are at least two:</p>
+<ol>
+<li>
+<p>Create a dataset of all the prime numbers and return all of the values below n.</p>
+</li>
+<li>
+<p>Check if the remainder of each value in a series is equal to zero when divided by the previous values.</p>
+</li>
+</ol>
+<p>The first option isn’t great because it defeats the purpose of programming! We would need an infinite dataset and that’s a lot of data entry!</p>
+<p>The second option would require us to perform an operation for every value in our series. If our input value was 100, we would need to perform 99 modulo operations in order to find all of the prime numbers.</p>
+<p>🍻</p>
+<p>What do we know about prime numbers?</p>
+<p>A prime number is only divisible by 1 and itself.</p>
+<p>Let’s take a step back, or up, and look for a pattern. If our input, <code class="language-text">n</code>, is 100, then the array of primes we want to return needs to contain this sequence:</p>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97</code></pre></div>
+<p>Do you see a pattern?</p>
+<p>No! The problem with primes is that there’s no pattern.</p>
+<p>Where <em>do</em> we see a pattern? Or patterns?</p>
+<p>All of the composite numbers! Each number that we exclude from our final output is composed of two (or more) factors. Rather than find the primes, can we find everything else? Work like Michaelangelo and carve out a solution?</p>
+<p>Let’s look at <em>all</em> of the numbers between 1 and 100:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[
+    1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 
+   11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 
+   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
+   31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 
+   41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 
+   51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 
+   61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 
+   71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 
+   81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 
+   91, 92, 93, 94, 95, 96, 97, 98, 99, 100
+]</code></pre></div>
+<p>We know that <code class="language-text">1</code> is not prime, so we can cross it out. And we immediately see that half of our numbers are multiples of <code class="language-text">2</code>, so we can cross them all out, but keep <code class="language-text">2</code>, as it’s the first prime number:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[
+    X, 2,  3, X,  5, X,  7, X,  9, X, 
+   11, X, 13, X, 15, X, 17, X, 19, X, 
+   21, X, 23, X, 25, X, 27, X, 29, X, 
+   31, X, 33, X, 35, X, 37, X, 39, X, 
+   41, X, 43, X, 45, X, 47, X, 49, X, 
+   51, X, 53, X, 55, X, 57, X, 59, X, 
+   61, X, 63, X, 65, X, 67, X, 69, X, 
+   71, X, 73, X, 75, X, 77, X, 79, X, 
+   81, X, 83, X, 85, X, 87, X, 89, X, 
+   91, X, 93, X, 95, X, 97, X, 99, X
+]</code></pre></div>
+<p>Our next prime number is <code class="language-text">3</code>, which we want to keep, but we can proceed and cross out all multiples of <code class="language-text">3</code>.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[
+    X, 2,  3, X,  5, X,  7, X,  X, X, 
+   11, X, 13, X,  X, X, 17, X, 19, X, 
+    X, X, 23, X, 25, X,  X, X, 29, X, 
+   31, X,  X, X, 35, X, 37, X,  X, X, 
+   41, X, 43, X,  X, X, 47, X, 49, X, 
+    X, X, 53, X, 55, X,  X, X, 59, X, 
+   61, X,  X, X, 65, X, 67, X,  X, X, 
+   71, X, 73, X, 75, X, 77, X, 79, X, 
+    X, X, 83, X, 85, X,  X, X, 89, X, 
+   91, X,  X, X, 95, X, 97, X,  X, X
+]</code></pre></div>
+<p>We skip <code class="language-text">4</code> as it’s not a prime number and we already crossed it out with multiples of <code class="language-text">2</code>. We then cross out multiples of <code class="language-text">5</code>:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[
+    X, 2,  3, X,  5, X,  7, X,  X, X, 
+   11, X, 13, X,  X, X, 17, X, 19, X, 
+    X, X, 23, X,  X, X,  X, X, 29, X, 
+   31, X,  X, X,  X, X, 37, X,  X, X, 
+   41, X, 43, X,  X, X, 47, X, 49, X, 
+    X, X, 53, X,  X, X,  X, X, 59, X, 
+   61, X,  X, X,  X, X, 67, X,  X, X, 
+   71, X, 73, X,  X, X, 77, X, 79, X, 
+    X, X, 83, X,  X, X,  X, X, 89, X, 
+   91, X,  X, X,  X, X, 97, X,  X, X
+]</code></pre></div>
+<p>Next is <code class="language-text">7</code>…</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[
+    X, 2,  3, X,  5, X,  7, X,  X, X, 
+   11, X, 13, X,  X, X, 17, X, 19, X, 
+    X, X, 23, X,  X, X,  X, X, 29, X, 
+   31, X,  X, X,  X, X, 37, X,  X, X, 
+   41, X, 43, X,  X, X, 47, X,  X, X, 
+    X, X, 53, X,  X, X,  X, X, 59, X, 
+   61, X,  X, X,  X, X, 67, X,  X, X, 
+   71, X, 73, X,  X, X,  X, X, 79, X, 
+    X, X, 83, X,  X, X,  X, X, 89, X, 
+    X, X,  X, X,  X, X, 97, X,  X, X
+]</code></pre></div>
+<p>Do you see the pattern? We first removed all multiples of <code class="language-text">2</code>, then all multiples of <code class="language-text">3</code>, followed by <code class="language-text">5</code> and <code class="language-text">7</code>. The next prime is <code class="language-text">11</code>, and if our array was larger, we would cross out <code class="language-text">121</code>, which is only divisible by <code class="language-text">1</code>, <code class="language-text">11</code>, and itself. We can now abstract a general rule for our algorithm: remove the multiples of the prime numbers, but keep the primes.</p>
+<p>Now let’s design the algorithm!</p>
+<p>We need to generate an array, but We don’t need to store the numerical values in the array because we can simply use the index. But, we need to keep in mind that our first index is 0. Because we’re using a process of “subtraction”, we want to set all of our values to <code class="language-text">true</code> and then mark everyhing that is <em>not</em> a prime number as <code class="language-text">false</code>.</p>
+<p>Let’s update our pseudocode to generate an array of boolean values.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">INPUT n
+
+SET bools EQUAL TO AN ARRAY OF LENGTH n
+POPULATE EVERY INDEX IN bools WITH A VALUE OF true
+
+...</code></pre></div>
+<p>We’ll use the word “POPULATE” as we don’t yet know, or need to know, how we will generate an array of boolean values. Maybe we’ll iterate. Maybe we’ll use an array method. We’ll figure that out when we execute the plan. Speaking of iteration, now we need to figure out how we are changing values in our array from <code class="language-text">true</code> to <code class="language-text">false</code>.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">INPUT n
+
+SET bools EQUAL TO AN ARRAY OF LENGTH n
+POPULATE EVERY INDEX IN bools WITH A VALUE OF true
+
+SET primes EQUAL TO AN EMPTY ARRAY
+
+FOR EVERY NUMBER, i, BETWEEN 2 AND num
+    IF THE VALUE STORED IN bools[i] IS EQUAL TO true
+        PUSH i TO primes
+
+        ...
+
+RETURN primes</code></pre></div>
+<p>If we continue to iterate, our conditional will continue to be met and we will push every number to <code class="language-text">primes</code>. How do we avoid this?</p>
+<p>🤔</p>
+<p>We need to set all even numbers to false before we exit the conditional. Sounds like we need another loop. Do we want a <code class="language-text">for</code> loop or a <code class="language-text">while</code> loop? Because we don’t know how many times we need the loop to run, let’s use a <code class="language-text">while</code> loop. Our nested loop needs an iterator. The convention is to name this variable <code class="language-text">j</code>. What value do we use to initialize <code class="language-text">j</code>?</p>
+<p>In our first iteration, <code class="language-text">i</code> is equal to <code class="language-text">2</code>, which is prime.</p>
+<p>In our second iteration, <code class="language-text">i</code> will be equal to <code class="language-text">3</code>, which is also prime.</p>
+<p>In our thrid iteration, <code class="language-text">i</code> will be equal to <code class="language-text">4</code>, which is composite.</p>
+<p>We need to set the value of <code class="language-text">j</code> to <code class="language-text">4</code> in the first iteration.</p>
+<p>There are two ways we can do this: addition and multiplication. Let’s think through both.</p>
+<p>If we use addition, our pseudocode would be:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">        SET j EQUAL TO i PLUS 2</code></pre></div>
+<p>This will give us <code class="language-text">4</code> on the first iteration. But on the next iteration, the value of <code class="language-text">i</code> will be <code class="language-text">3</code> and <code class="language-text">3</code> plus <code class="language-text">2</code> is <code class="language-text">5</code>, which is prime. Addition won’t work, so let’s use multiplication.</p>
+<p>What do we do within our <code class="language-text">while</code> loop? We simply reassign the value of <code class="language-text">j</code> to <code class="language-text">j PLUS i</code>. Our pseudocode now looks like this:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">INPUT n
+
+SET bools EQUAL TO AN ARRAY OF LENGTH n
+POPULATE EVERY INDEX IN bools WITH A VALUE OF true
+
+SET primes EQUAL TO AN EMPTY ARRAY
+
+
+FOR EVERY NUMBER, i, BETWEEN 2 AND num
+    IF THE VALUE STORED IN bools[i] IS EQUAL TO true
+        PUSH i TO primes
+
+        SET j EQUAL TO i MULTIPLIED BY 2
+
+        WHILE j IS LESS THAN OR EQUAL TO n
+            SET THE VALUE STORED IN bools[j] TO false
+            SET THE VALUE OF j TO j PLUS i
+
+RETURN primes</code></pre></div>
+<p>Let’s step through our pseudocode to fully understand what’s happening before we translate it into syntax.</p>
+<p>When our <code class="language-text">for</code> loop increments, <code class="language-text">i</code> will be equal to <code class="language-text">3</code>, and our conditional will evaluate as <code class="language-text">true</code>. We push <code class="language-text">3</code> to <code class="language-text">primes</code> then set the value of <code class="language-text">j</code> to <code class="language-text">3</code> multiplied by <code class="language-text">2</code>, or <code class="language-text">6</code>. Within the <code class="language-text">while</code> loop, we set the value stored in the sixth index to <code class="language-text">false</code> and then add <code class="language-text">i</code>, which is <code class="language-text">3</code>, to <code class="language-text">j</code>, which is <code class="language-text">6</code>. The new value of <code class="language-text">j</code> is now <code class="language-text">9</code>. We continue to iterate by multiples of <code class="language-text">3</code> until <code class="language-text">j</code> is greater than or equal to <code class="language-text">n</code>.</p>
+<p>When our <code class="language-text">for</code> loop increments again, <code class="language-text">i</code> will be equal to <code class="language-text">4</code>. Our conditional will not evaluate as <code class="language-text">true</code>, though, and we will proceed with the next iteration of the <code class="language-text">for</code> loop.</p>
+<p>When our <code class="language-text">for</code> loop increments again, <code class="language-text">i</code> will be equal to <code class="language-text">5</code>, and our conditional will evaluate as <code class="language-text">true</code>. We push <code class="language-text">5</code> to <code class="language-text">primes</code> then set the value of <code class="language-text">j</code> to <code class="language-text">5</code> multiplied by <code class="language-text">2</code>, or <code class="language-text">10</code>. Within the <code class="language-text">while</code> loop, we set the value stored in the tenth index to <code class="language-text">false</code> (again) and then add <code class="language-text">i</code>, which is <code class="language-text">5</code>, to <code class="language-text">j</code>, which is <code class="language-text">10</code>. The new value of <code class="language-text">j</code> is now <code class="language-text">15</code>. We continue to iterate by multiples of <code class="language-text">5</code> until <code class="language-text">j</code> is greater than or equal to <code class="language-text">n</code>.</p>
+<p>When our <code class="language-text">for</code> loop increments again, <code class="language-text">i</code> will be equal to <code class="language-text">6</code>. Our conditional will not evaluate as <code class="language-text">true</code>, though, and we will proceed with the next iteration of the <code class="language-text">for</code> loop.</p>
+<p>When our <code class="language-text">for</code> loop increments again, <code class="language-text">i</code> will be equal to <code class="language-text">7</code>, our conditional will evaluate as <code class="language-text">true</code>, and we repeat the steps above for <code class="language-text">7</code> and all subsequent values.</p>
+<h3>Execute the Plan</h3>
+<p>Now it’s simply a matter of translating our pseudocode into the syntax of our programming language.</p>
+<h4>How to Code the Sieve of Eratosthenes Algorithm in JavaScript</h4>
+<p>Let’s start with JavaScript…</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">sieve</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> bools <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    bools<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> bools<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> primes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>bools<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            primes<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">let</span> j <span class="token operator">=</span> i <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>j <span class="token operator">&lt;=</span> num<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                bools<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+                j <span class="token operator">+=</span> i<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> primes<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Let’s step through this solution:</p>
+<p>Within our <code class="language-text">sieve</code> function, we first declare a <code class="language-text">bools</code> array, using the <code class="language-text">Array</code> constructor. We create the new array with a single parameter, <code class="language-text">num + 1</code>. Why do we add <code class="language-text">1</code>? Because we start counting at <code class="language-text">0</code>. We then use the <code class="language-text">.fill()</code> method to <em>fill</em> the <code class="language-text">bools</code> array with elements equal to <code class="language-text">true</code>. Because we know <code class="language-text">0</code> and <code class="language-text">1</code> are <em>not</em> prime, we assign <code class="language-text">bools[0]</code> and <code class="language-text">bools[1]</code> a value of false. We then declare an empty array, <code class="language-text">primes</code>.</p>
+<p>Next, we declare a <code class="language-text">for</code> loop and initialize the iterator with a value of <code class="language-text">2</code>. Why <code class="language-text">2</code>? It’s the first prime number and we already assigned <code class="language-text">bools[0]</code> and <code class="language-text">bools[1]</code> a value of <code class="language-text">false</code>. Within our <code class="language-text">for</code> loop, we declare a conditional. If the value of <code class="language-text">bools[i]</code> is equal to <code class="language-text">true</code>, we push it to the <code class="language-text">primes</code> array.</p>
+<p>Here’s the fun part: within our conditional, we declare a variable, <code class="language-text">j</code>, and assign it the value of <code class="language-text">i * 2</code>. We then initialize a <code class="language-text">while</code> loop, and, while <code class="language-text">j</code> is less than or equal to <code class="language-text">n</code>, we set the value of <code class="language-text">bools[j]</code> to <code class="language-text">false</code> and increment by <code class="language-text">i</code>, using <code class="language-text">j += i</code>.</p>
+<p>Why? With the exception of <code class="language-text">2</code>, none of our prime numbers are even. By multiplying <code class="language-text">i</code> by 2, we create a composite value to then mark <code class="language-text">false</code>.</p>
+<p>While <code class="language-text">j</code> is less than <code class="language-text">n</code>, we continue to iterate. For example, in the first iteration, <code class="language-text">i</code> is 2. Because everything but the first two elements in <code class="language-text">bools</code> is marked <code class="language-text">true</code>, we push <code class="language-text">2</code> to the <code class="language-text">primes</code> array. We then set the value of <code class="language-text">j</code> to <code class="language-text">i * i</code>, or <code class="language-text">2 * 2</code>, of <code class="language-text">4</code>. While <code class="language-text">j</code>, which is currently <code class="language-text">4</code>, is less than <code class="language-text">n</code>, we set the value of <code class="language-text">bools[j]</code> to <code class="language-text">false</code> because it is true, <code class="language-text">4</code> is not a prime number. We then add <code class="language-text">i</code>, which is currently <code class="language-text">2</code>, to <code class="language-text">j</code>, which is currently <code class="language-text">4</code>, resulting in <code class="language-text">6</code>. Looping again, we set the value of <code class="language-text">bools[j]</code> to <code class="language-text">false</code>, because it’s true, <code class="language-text">6</code> is not a prime number. The next iteration <code class="language-text">j</code> would be <code class="language-text">8</code>, then <code class="language-text">10</code>, then <code class="language-text">12</code>, and so on until all even values were marked <code class="language-text">false</code>.</p>
+<p>When <code class="language-text">j</code> is no longer less than or equal to <code class="language-text">n</code>, we exit the <code class="language-text">while</code> loop, exit the <code class="language-text">if</code> block, and then enter the next iteration of our <code class="language-text">for</code> loop where <code class="language-text">i</code> is equal to <code class="language-text">3</code>. We skipped over <code class="language-text">3</code>, so it is still marked <code class="language-text">true</code>, and we push it to <code class="language-text">primes</code>. We then multiply <code class="language-text">3</code> by <code class="language-text">3</code>, and assign <code class="language-text">j</code> the value of <code class="language-text">9</code>. We set <code class="language-text">bools[j]</code> to <code class="language-text">false</code> and then add <code class="language-text">3</code> to <code class="language-text">j</code>, resulting in <code class="language-text">12</code>. This is redundant, because we already marked <code class="language-text">12</code> as <code class="language-text">false</code>, but ¯_(ツ)_/¯. In the next iteration, we mark <code class="language-text">15</code> as <code class="language-text">false</code>. We iterate until all multiples of <code class="language-text">3</code> are marked <code class="language-text">false</code>.</p>
+<p>When <code class="language-text">j</code> is no longer less than or equal to <code class="language-text">n</code>, we exit the <code class="language-text">while</code> loop, exit the <code class="language-text">if</code> block, and then enter the next iteration of our <code class="language-text">for</code> loop where <code class="language-text">i</code> is equal to <code class="language-text">4</code>. We already marked <code class="language-text">4</code> as <code class="language-text">false</code>, so we don’t enter the conditional block and continue iterating with a value of <code class="language-text">5</code> assigned to <code class="language-text">i</code>. It’s still marked as <code class="language-text">true</code>, because we skipped over it in the first and second iteratons, <code class="language-text">2</code> and <code class="language-text">3</code> respectively. We then multiply <code class="language-text">5</code> by <code class="language-text">5</code>, and assign <code class="language-text">j</code> the value of <code class="language-text">25</code>. We set <code class="language-text">bools[j]</code> to <code class="language-text">false</code> and then add <code class="language-text">5</code> to <code class="language-text">j</code>, resulting in <code class="language-text">30</code>. This is redundant, because we already marked <code class="language-text">30</code> as <code class="language-text">false</code>, but again, ¯_(ツ)_/¯. In the next iteration, we mark <code class="language-text">35</code> as <code class="language-text">false</code>. We iterate until all multiples of <code class="language-text">5</code> are marked <code class="language-text">false</code>.</p>
+<p>We continue iterating over <code class="language-text">n</code> until all elements associated with composite numbers in <code class="language-text">bools</code> are marked false. The next prime is <code class="language-text">7</code>, and we set the value of <code class="language-text">j</code> to <code class="language-text">7 * 7</code>, or <code class="language-text">49</code>, and then proceed to mark all multiples of <code class="language-text">7</code> as <code class="language-text">false</code>. The next prime is <code class="language-text">11</code>, when squared is <code class="language-text">121</code>, and so on.</p>
+<p>Now let’s see it in Python…</p>
+<h4>How to Code the Sieve of Eratosthenes Algorithm in Python</h4>
+<p>Let’s see it in Python…</p>
+<div class="gatsby-highlight" data-language="py"><pre class="language-py"><code class="language-py"><span class="token keyword">def</span> <span class="token function">sieve</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    bools <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">True</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token comment"># bools = [True] * (n + 1)</span>
+    bools<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>
+    bools<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>
+
+    primes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> bools<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+            primes<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+
+        j <span class="token operator">=</span> i <span class="token operator">*</span> <span class="token number">2</span>
+
+        <span class="token keyword">while</span> j <span class="token operator">&lt;=</span> n<span class="token punctuation">:</span>
+            bools<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>
+            j <span class="token operator">+=</span> i 
+
+    <span class="token keyword">return</span> primes 
+
+result <span class="token operator">=</span> sieve<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span></code></pre></div>
+<h3>Evaluate the Plan</h3>
+<p>Can we do better?</p>
+<p>We can make an optimization to our program and multiple <code class="language-text">i</code> by itself rather than by <code class="language-text">2</code>:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">INPUT n
+
+SET bools EQUAL TO AN ARRAY OF LENGTH n
+POPULATE EVERY INDEX IN bools WITH A VALUE OF true
+
+SET primes EQUAL TO AN EMPTY ARRAY
+
+
+FOR EVERY NUMBER, i, BETWEEN 2 AND num
+    IF THE VALUE STORED IN bools[i] IS EQUAL TO true
+        PUSH i TO primes
+
+        SET j EQUAL TO i MULTIPLIED BY i
+
+        WHILE j IS LESS THAN OR EQUAL TO n
+            SET THE VALUE STORED IN bools[j] TO false
+            SET THE VALUE OF j TO j PLUS i
+
+RETURN primes</code></pre></div>
+<p>While this solution is more efficient in terms of time complexity, it’s not so great for space because we need to generate an array of boolean values.</p>
+<h4>What is the Big O Of Sieve of Eratosthenes?</h4>
+<p>If you want to learn how to calculate time and space complexity, pick up your copy of <a href="https://gum.co/big-o">The Little Book of Big O</a></p>
+<h2>Reflection</h2>
+<p>Remember those <em>meta</em> questions we asked at the outset? Let’s make it stick and answer them now!</p>
+<ul>
+<li>
+<p>Why do I need to know this?</p>
+</li>
+<li>
+<p>Why is it called the Sieve of Eratosthenes?</p>
+</li>
+<li>
+<p>What is the difference betweed additive and subtractive problem solving?</p>
+</li>
+</ul>
+<h3>Why Do I Need to Know This?</h3>
+<p>Prime numbers are considered the <a href="https://en.wikipedia.org/wiki/Prime_number#Unique_factorization">“basic building blocks”</a> of natural numbers. Every number greater than <code class="language-text">1</code> is a product of one or more prime numbers. In computing, prime numbers are used in encryption and hashing algorithms.</p>
+<h3>Why Is It Called “The Sieve of Eratosthenes”?</h3>
+<p>It’s called a “sieve” because we are washing away the composite numbers and only keeping the primes.</p>
+<h3>What’s the Difference Between Additive and Subtractive Problem Solving?</h3>
+<p>In additive problem solving, we continual add features to a solution. In subtractive problem solving, we look for opportunities to achieve more with less.</p>
+<h2>A is for Algorithms</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="A is for Algorithms"
+        title="A is for Algorithms"
+        src="/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png"
+        srcset="/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+Give yourself an A. Grab your copy of <a href="https://gum.co/algorithms">A is for Algorithms</a></p></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#080808;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/d4bf4/profile-pic.avif 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" data-srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/3faea/profile-pic.webp 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e5610/profile-pic.png" data-srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e5610/profile-pic.png 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/d4bf4/profile-pic.avif 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" srcSet="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/3faea/profile-pic.webp 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e5610/profile-pic.png" srcSet="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e5610/profile-pic.png 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div><p>Want to level up your problem solving skills? I write a bi-weekly newsletter about programming, problem solving and lifelong learning.<!-- --> <a href="http://eepurl.com/cP8CMn" target="_blank" rel="noopener">Join now</a></p></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/algorithm-smallest-divisor/">← <!-- -->Learn How to Code the Smallest Divisor of a Whole Number Algorithm</a></li><li><a rel="next" href="/algorithm-selection-sort/">Learn How to Code the Selection Sort Algorithm<!-- --> →</a></li></ul></nav></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', ' UA-51067359-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/algorithm-sieve-eratosthenes/";window.___webpackCompilationHash="9eacfdfe69a01ab76c64";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-b227d9031ab4094e5021.js"],"app":["/app-301c8cf0cc36be3d4466.js"],"component---src-pages-404-js":["/component---src-pages-404-js-bb1698d01a7f9dde5caa.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-78841202c8510eea95ba.js"],"component---src-pages-index-js":["/component---src-pages-index-js-0b66a8cda36e6c7516ae.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-20f655bfb94bd369e9d3.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-2aec47be4891590b3660.js"]};/*]]>*/</script><script src="/polyfill-b227d9031ab4094e5021.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-2aec47be4891590b3660.js" async=""></script><script src="/commons-0f416e881c5946c9c507.js" async=""></script><script src="/app-301c8cf0cc36be3d4466.js" async=""></script><script src="/framework-e413e527015be9a1bdfd.js" async=""></script><script src="/webpack-runtime-538954c601d21277126a.js" async=""></script></body></html>

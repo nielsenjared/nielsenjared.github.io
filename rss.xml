@@ -1,4 +1,748 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Feb 2022 13:17:57 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Smallest Divisor of a Whole Number Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-smallest-divisor/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-smallest-divisor/</guid><pubDate>Fri, 11 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 10 Apr 2022 18:44:33 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Selection Sort Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-selection-sort/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-selection-sort/</guid><pubDate>Fri, 08 Apr 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6ad99aae14c27bc6e9f1a84c61464795/29007/jarednielsen-algorithm-selection-sort.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVQoz42Rv0vDQBTHD0IXhf41LuLk5OLg4h/k4OCkgpPgoFudLBQdKgriqBX8gZQqtmrSpLkmbRNzSe69e3JJWn918PHh7ob34Xu8x1BhASJkJQFjmSNjTDSQSARQCJPmDDYxdREBEVJeSKRIfd1AiKQUqakypH4Ag5Fn+ueN3vFNWLttVMzdvf7OweO202xKPozf7JT7SKTbMxk0pCBJY4uT616eto11zraxXN0qeYxxY7bB6rdH5MWR44pXW/8G4ZecpIGgj9FF7cnYjNiaWa5ulELG7o2ZB1Z/PqFHJ3L7wuqNZZjIgJAmpovt97uz1sq+s1SRq2eHy+7c4mh++Wbh6rpO/EN0rLiQ5TdZgR62gjiMApPHQtptz7IDuz8w2y3ft8PQH750BPekTADlz2Qto0RIEQSgH8mekF0RWZJ3yXFVP4BAgEggyWVAHcYUgVJQnKp4U8F4S/mCMsZh2bS19ot8BEWTHAN/mSb/m0/yBGBCJuxvagAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; selection sort &quot;
+        title=&quot; selection sort &quot;
+        src=&quot;/static/6ad99aae14c27bc6e9f1a84c61464795/f058b/jarednielsen-algorithm-selection-sort.png&quot;
+        srcset=&quot;/static/6ad99aae14c27bc6e9f1a84c61464795/c26ae/jarednielsen-algorithm-selection-sort.png 158w,
+/static/6ad99aae14c27bc6e9f1a84c61464795/6bdcf/jarednielsen-algorithm-selection-sort.png 315w,
+/static/6ad99aae14c27bc6e9f1a84c61464795/f058b/jarednielsen-algorithm-selection-sort.png 630w,
+/static/6ad99aae14c27bc6e9f1a84c61464795/40601/jarednielsen-algorithm-selection-sort.png 945w,
+/static/6ad99aae14c27bc6e9f1a84c61464795/78612/jarednielsen-algorithm-selection-sort.png 1260w,
+/static/6ad99aae14c27bc6e9f1a84c61464795/29007/jarednielsen-algorithm-selection-sort.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the selection sort algorithm in JavaScript &lt;em&gt;and&lt;/em&gt; Python.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;p&gt;Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How do we swap values in an array?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How Do We Swap Values in an Array?&lt;/h3&gt;
+&lt;p&gt;There are several approaches for swapping values in an array, but in general, we create a temporary variable to hold one of the values we want to swap while we reassign the existing variables. In pseudocode:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;SET temp TO x
+SET x TO y
+SET y TO temp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you’re just joining us, you might want to start with &lt;a href=&quot;https://jarednielsen.com/algorithm-swap/&quot;&gt;Learn How to Code the Swap Algorith in JavaScript and Python&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;p&gt;Ask yourself the following questions and keep them back of mind as you proceed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Why is it called “Selection Sort”?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What’s &lt;em&gt;next&lt;/em&gt;?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Code the Selection Sort Algorithm&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/programming-problem-solving/&quot;&gt;Programming is problem solving&lt;/a&gt;. There are four steps we need to take to solve any programming problem:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Understand the problem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make a plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Understand the Problem&lt;/h3&gt;
+&lt;p&gt;To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;GIVEN an unsorted array of integers
+WHEN we find the lowest unsorted value
+THEN we move that value to its proper ordinal position and repeat until all values are in sequence
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That’s our general outline. We know our input conditions, an unsorted array, and our output requirements, a sorted array, and our goal is to organize the elements in the array in ascending, or non-descending, order, starting with the smallest elements first.&lt;/p&gt;
+&lt;p&gt;Let’s make a plan!&lt;/p&gt;
+&lt;h3&gt;Make a Plan&lt;/h3&gt;
+&lt;p&gt;Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pattern recognition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstraction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithm design&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We need something to sort, so let’s use this “unsorted” array:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[10, 1, 9, 2, 8, 3, 7, 4, 6, 5]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The first step in our process is decomposition, or breaking our problem down into smaller problems. What’s the smallest problem we can solve?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[10, 1]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We see that we simply need to swap the positions of these two values. Let’s pseudocode a solution to this very small problem:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT array
+SET first EQUAL TO THE VALUE STORED IN array[0]
+SET next EQUAL TO THE VALUE STORED IN array[1]
+IF next IS LESS THAN first 
+    SWAP first AND next &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So far so good! Let’s expand our array and add another value:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[10, 1, 9]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We &lt;em&gt;could&lt;/em&gt; hardcode another conditional to check the value stored in the third index, but we’re programmers. We immediately recognize a pattern emerging where we will need to &lt;em&gt;select&lt;/em&gt; the first value and not only compare it to the second value, but to the third value as well. And then &lt;em&gt;select&lt;/em&gt; the second value, and compare it to the third value, all while swapping the location of values when necessary. We need to iterate.&lt;/p&gt;
+&lt;p&gt;Let’s update our pseudocode:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT array
+FOR EACH index IN array:
+    SET first EQUAL TO THE VALUE STORED IN array[0]
+    SET next EQUAL TO THE VALUE STORED IN array[1]
+    IF next IS LESS THAN first
+        SWAP first AND next&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s step through this…&lt;/p&gt;
+&lt;p&gt;On the first iteration, we select the first element, &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;, and compare it to the next element, &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;, which is less than &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;, so we swap their positions. Our array now looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[1, 10, 9]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But! What happens in the next iteration? We again select the first element and compare it to the next element, which is now &lt;code class=&quot;language-text&quot;&gt;9&lt;/code&gt;. &lt;code class=&quot;language-text&quot;&gt;9&lt;/code&gt; is greater than &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;, so we leave it where it is.&lt;/p&gt;
+&lt;p&gt;What’s the solution?&lt;/p&gt;
+&lt;p&gt;Abstraction!&lt;/p&gt;
+&lt;p&gt;We need a means of tracking and updating the index of the “known minimum value”.&lt;/p&gt;
+&lt;p&gt;In this scenario, &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; is our first “known minimum value”, but we can see that &lt;code class=&quot;language-text&quot;&gt;9&lt;/code&gt; is less than &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;, so after we move &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;, the &lt;em&gt;current&lt;/em&gt; “known minimum value” to the 0 index, we need to find the &lt;em&gt;next&lt;/em&gt; “known minimum value” and compare that to the &lt;code class=&quot;language-text&quot;&gt;next&lt;/code&gt; value and swap accordingly.&lt;/p&gt;
+&lt;p&gt;Let’s refer to the “known minimum value” as &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT array
+FOR EACH index IN array:
+    SET min EQUAL TO index 
+    SET next EQUAL TO index + 1
+    IF THE VALUE STORED IN array[next] IS LESS THAN THE VALUE STORED IN array[min]:
+        SET min EQUAL TO next
+        SWAP THE VALUE STORED IN array[index] WITH THE VALUE STORED IN array[min]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s iterate over our array again:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[10, 1, 9]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On the first iteration, we &lt;em&gt;select&lt;/em&gt; &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt; because it’s the first element, and the value stored in&lt;code class=&quot;language-text&quot;&gt;array[min]&lt;/code&gt;. If the value stored in &lt;code class=&quot;language-text&quot;&gt;next&lt;/code&gt;, in this case &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;, is less than the value stored in &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt;, which it is, we reassign &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt; the value of &lt;code class=&quot;language-text&quot;&gt;next&lt;/code&gt;. So &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt; is now equal to &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;. Now we need to swap the value currently stored in &lt;code class=&quot;language-text&quot;&gt;array[index]&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;, with the value stored in &lt;code class=&quot;language-text&quot;&gt;array[min]&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;. After the first iteration, our array looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[1, 10, 9]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On the next iteration, &lt;code class=&quot;language-text&quot;&gt;index&lt;/code&gt; is equal to &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;, so we reassign the value of &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt; with &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;. We then reassign the value of &lt;code class=&quot;language-text&quot;&gt;next&lt;/code&gt; with &lt;code class=&quot;language-text&quot;&gt;index + 1&lt;/code&gt;, or &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;. We compare the value stored in &lt;code class=&quot;language-text&quot;&gt;array[next]&lt;/code&gt;, which is &lt;code class=&quot;language-text&quot;&gt;9&lt;/code&gt;, with the value stored in &lt;code class=&quot;language-text&quot;&gt;array[min]&lt;/code&gt;, which is &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;. Our conditional evalutes as &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;, so we reassign the value of &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt; with the value of &lt;code class=&quot;language-text&quot;&gt;next&lt;/code&gt; and then swap the value stored in &lt;code class=&quot;language-text&quot;&gt;array[index]&lt;/code&gt; with the value stored in &lt;code class=&quot;language-text&quot;&gt;array[min]&lt;/code&gt;. Our array now looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[1, 9, 10]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So far so good. Let’s add another value to our array:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[10, 1, 9, 2]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s fast forward to the fourth iteration, where our array looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[1, 9, 10, 2]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s going to happen here? We’re only going to swap the locations of &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;. Our array will look like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[1, 9, 2, 10]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s wrong with our design?&lt;/p&gt;
+&lt;p&gt;We are only comparing the iterator, &lt;code class=&quot;language-text&quot;&gt;index&lt;/code&gt;, to the &lt;em&gt;next&lt;/em&gt; value.&lt;/p&gt;
+&lt;p&gt;What’s the solution?&lt;/p&gt;
+&lt;p&gt;Nested iteration. We need to compare every index to all of the following values in the array. Let’s update our pseudocode:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT array
+FOR EACH index IN array
+    SET min EQUAL TO index
+    SET next TO index + 1
+    FOR EACH next IN array
+        IF THE VALUE STORED IN array[next] IS LESS THAN THE VALUE STORED IN array[min]
+        SET min EQUAL TO next
+    SWAP THE VALUES STORED IN array[index] WITH THE VALUE STORED IN array[min]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s step through our pseudocode, using this array:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[10, 1, 9, 2]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On the first iteration of our outer loop, we set &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;index&lt;/code&gt;, or &lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;. We then enter our nested loop to iterate over the remaining, or &lt;em&gt;next&lt;/em&gt; elements. The next element is equal to &lt;code class=&quot;language-text&quot;&gt;index + 1&lt;/code&gt;. which in this iteration is &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;. Our conditional checks if the value stored in our array at index &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; is less than the value stored in our array at index &lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;. If this evaluates as &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;, we set the value of &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt; equal to &lt;code class=&quot;language-text&quot;&gt;next&lt;/code&gt;. In this iteration, &lt;code class=&quot;language-text&quot;&gt;array[next]&lt;/code&gt; is equal to &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;array[index]&lt;/code&gt; is equal to &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;, so we set &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt; equal to the value stored in &lt;code class=&quot;language-text&quot;&gt;next&lt;/code&gt;, which is &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;. We are still in our nested loop, so we continue comparing the remaining values to &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt; and discover that &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; is the lowest value in our array. We exit our nested loop and &lt;em&gt;swap&lt;/em&gt; the value in the &lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt; index, which is &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;, with the vale in the &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt; index, which is &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;. Our array now looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;[1, 10, 9, 2]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We are now iterating at the level of our outer loop again, and we select the value in the &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; index, which is now &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;. We assign it to &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt; and enter our nested loop. The next value is &lt;code class=&quot;language-text&quot;&gt;9&lt;/code&gt;, which is less than &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;, so we assign the index of &lt;code class=&quot;language-text&quot;&gt;next&lt;/code&gt;, which is &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt;. We continue iterating over the remaining values in our array and find that the next value, &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;, is less than &lt;code class=&quot;language-text&quot;&gt;9&lt;/code&gt;, so we assign the index of &lt;code class=&quot;language-text&quot;&gt;next&lt;/code&gt;, which is &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;, to &lt;code class=&quot;language-text&quot;&gt;min&lt;/code&gt;. We exit our nested loop and swap the value stored at &lt;code class=&quot;language-text&quot;&gt;array[index]&lt;/code&gt; with the value stored in &lt;code class=&quot;language-text&quot;&gt;array[next]&lt;/code&gt;. Our array now looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;[1, 2, 9, 10]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Looks like a solid plan!&lt;/p&gt;
+&lt;h3&gt;Execute the Plan&lt;/h3&gt;
+&lt;p&gt;Now it’s simply a matter of translating our pseudocode into the syntax of our programming language. Let’s start with JavaScript…&lt;/p&gt;
+&lt;h4&gt;How to Code the Selection Sort Algorithm in JavaScript&lt;/h4&gt;
+&lt;p&gt;Let’s translate our pseudocode to JavaScript:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;selectionSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; min &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;min&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                min &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; j&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; tmp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;min&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;min&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; tmp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;How to Code the Selection Sort Algorithm in Python&lt;/h4&gt;
+&lt;p&gt;Now let’s see it in Python…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;unsorted &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;selection_sort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token builtin&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; i
+
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; j &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;token builtin&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; j
+
+        tmp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; tmp
+    
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Evaluate the Plan&lt;/h3&gt;
+&lt;p&gt;Can we do better? Do we need to go the end of the array? If our nested loop is comparing the value of the &lt;em&gt;next&lt;/em&gt; index to the &lt;em&gt;current&lt;/em&gt; index, our outer loop doesn’t need to include the last index. We can shave off one operation by setting the condition of our &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop to the length of our array &lt;em&gt;minus&lt;/em&gt; 1.&lt;/p&gt;
+&lt;p&gt;Here it is in JavaScript…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;selectionSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; min &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;min&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                min &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; j&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; tmp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;min&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;min&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; tmp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note that we update the second line with the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here it is in Python…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;selection_sort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token builtin&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; i
+
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; j &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;token builtin&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; j
+
+        tmp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; tmp
+    
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As above, note that we simply update the second line with the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note that we don’t &lt;code class=&quot;language-text&quot;&gt;- 1&lt;/code&gt; in the condition of the nested loop. If we did, we would never &lt;em&gt;select&lt;/em&gt; the final value.&lt;/p&gt;
+&lt;h4&gt;What is the Big O Of Selection Sort?&lt;/h4&gt;
+&lt;p&gt;If you want to learn how to calculate time and space complexity, pick up your copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;p&gt;Remember those &lt;em&gt;meta&lt;/em&gt; questions we asked at the outset? Let’s make it stick and answer them now!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Why is it called “Selection Sort”?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What’s &lt;em&gt;next&lt;/em&gt;?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Why Do I Need to Know This?&lt;/h3&gt;
+&lt;p&gt;There are several reasons you need to know this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Selection Sort is a “classic” and, God forbid, some interviewer might ask you to whiteboard it&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Selection Sort belongs to a class of &lt;em&gt;selection&lt;/em&gt; algorithms, in which a &lt;em&gt;k&lt;/em&gt; value is selected. Selection Sort shares the fundamental building blocks with others in this class.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Why Is It Called Selecction Sort?&lt;/h3&gt;
+&lt;p&gt;We use selection sort to sort an array from left to right by repeatedly “selecting” the minimum values in an unsorted array and placing them in their proper ordinal position.&lt;/p&gt;
+&lt;h3&gt;What’s &lt;em&gt;Next&lt;/em&gt;?&lt;/h3&gt;
+&lt;p&gt;This is a &lt;em&gt;very&lt;/em&gt; meta question! In the context of this algorithm, &lt;code class=&quot;language-text&quot;&gt;next&lt;/code&gt; is the index following the current index. In the context of algorithms, &lt;em&gt;next&lt;/em&gt; is more efficient approaces to sorting.&lt;/p&gt;
+&lt;h2&gt;A is for Algorithms&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Sieve of Eratosthenes Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-sieve-eratosthenes/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-sieve-eratosthenes/</guid><pubDate>Fri, 25 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/533c307cecaf0348698a227874d5810a/29007/jarednielsen-algorithm-sieve-eratosthenes.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABFklEQVQoz6WRPUsDQRCG999a+gcERQKigjYWNhErtRSJgmchqRRREJNoERQNBlLdKSa7N7PzIXcb73J6guDyFMOyz8w7rBGlApYpnjNYiIS8oBdkIfmGkplqMyYLqbIqM3sR1vyE+0ILhakzaZDAfufdgvbh5dRedeGJxJf+V1LDuTzbQhkOLoZR83i0tbu3urZwsrkzPJyMP1JwDhyAK3xTLqzl5Lv755tW+2Fl+2hufqm18ToaCHMRrZxckXNUaYxwe37ZXlw/ayxH1xE4J8pSzVyRAyTsiQDwLY4fO91+r5cksQMLmBIjiZfayaFxFoy9R8gWTC04m7oJovOExMhBll8mB8JXab5CqLPYP57Vy3/kX/InD4F67H9TOz8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; graphic of sieve holding prime numbers &quot;
+        title=&quot; graphic of sieve holding prime numbers &quot;
+        src=&quot;/static/533c307cecaf0348698a227874d5810a/f058b/jarednielsen-algorithm-sieve-eratosthenes.png&quot;
+        srcset=&quot;/static/533c307cecaf0348698a227874d5810a/c26ae/jarednielsen-algorithm-sieve-eratosthenes.png 158w,
+/static/533c307cecaf0348698a227874d5810a/6bdcf/jarednielsen-algorithm-sieve-eratosthenes.png 315w,
+/static/533c307cecaf0348698a227874d5810a/f058b/jarednielsen-algorithm-sieve-eratosthenes.png 630w,
+/static/533c307cecaf0348698a227874d5810a/40601/jarednielsen-algorithm-sieve-eratosthenes.png 945w,
+/static/533c307cecaf0348698a227874d5810a/78612/jarednielsen-algorithm-sieve-eratosthenes.png 1260w,
+/static/533c307cecaf0348698a227874d5810a/29007/jarednielsen-algorithm-sieve-eratosthenes.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Eratosthenes in JavaScript &lt;em&gt;and&lt;/em&gt; Python.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Get your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;p&gt;Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What’s a prime number?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What’s a composite number?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What’s the difference between space complexity and time complexity?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What’s a Prime Number?&lt;/h3&gt;
+&lt;p&gt;A prime number is any natural number that is only divisible by itself and 1. Or, in other words, is not the product of two smaller numbers. For example, &lt;code class=&quot;language-text&quot;&gt;7&lt;/code&gt;, is a prime number, where the factors of &lt;code class=&quot;language-text&quot;&gt;7&lt;/code&gt; are only &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; and itself.&lt;/p&gt;
+&lt;h3&gt;What’s a Composite Number?&lt;/h3&gt;
+&lt;p&gt;A composite number is any number that is, well, a composite, or multiple, of two smaller numbers. In other words, a composite numbers is divisible by at least one number other than &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; and itself. For example, &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt; is the first composite number as its factors are  &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;, and &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt;. Fun fact: &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; is neither prime &lt;em&gt;nor&lt;/em&gt; composite. It’s &lt;em&gt;the&lt;/em&gt; unit.&lt;/p&gt;
+&lt;h3&gt;What’s the Difference Between Space and Time Complexity?&lt;/h3&gt;
+&lt;p&gt;Space complexity is the amount of memory an algorithm uses to complete its operations, where time complexity is a measure of the operations themselves.&lt;/p&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;p&gt;Ask yourself the following questions and keep them back of mind as you proceed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is the difference betweed additive and subtractive problem solving?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Why is it called the Sieve of Erasthones?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Learn How to Code the Sieve of Eratosthenes Algorithm&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/programming-problem-solving/&quot;&gt;Programming is problem solving&lt;/a&gt;. There are four steps we need to take to solve any programming problem:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Understand the problem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make a plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Understand the Problem&lt;/h3&gt;
+&lt;p&gt;To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;GIVEN a whole number, &lt;span class=&quot;token italic&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;/span&gt;, greater than 1
+WHEN I pass &lt;span class=&quot;token italic&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;/span&gt; to the Sieve function
+THEN I am returned a an array of the prime numbers between 1 and &lt;span class=&quot;token italic&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That’s our general outline. We know our input conditions, a whole number greater than 1, and our output requirements, an array of prime number between 1 and &lt;em&gt;n&lt;/em&gt;, and our goal is to generate those prime numbers.&lt;/p&gt;
+&lt;p&gt;Let’s make a plan!&lt;/p&gt;
+&lt;h3&gt;Make a Plan&lt;/h3&gt;
+&lt;p&gt;Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pattern recognition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstraction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithm design&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first step is decomposition, or breaking our problem down into smaller problems. What’s the smallest problem we can solve?&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Why not &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;? Because &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; is not a prime number, so we skip it.&lt;/p&gt;
+&lt;p&gt;Like writing, there’s nothing more terrifying than the blank page, so let’s get &lt;em&gt;something&lt;/em&gt; started in our pseudocode:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT n
+SET primes EQUAL TO AN EMPTY ARRAY
+
+IF n IS EQUAL TO 2
+    PUSH n TO primes
+
+RETURN primes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s the &lt;em&gt;next&lt;/em&gt; smallest problem we can solve? &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;We might be tempted to take a brute force approach, and there are at least two:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a dataset of all the prime numbers and return all of the values below n.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check if the remainder of each value in a series is equal to zero when divided by the previous values.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first option isn’t great because it defeats the purpose of programming! We would need an infinite dataset and that’s a lot of data entry!&lt;/p&gt;
+&lt;p&gt;The second option would require us to perform an operation for every value in our series. If our input value was 100, we would need to perform 99 modulo operations in order to find all of the prime numbers.&lt;/p&gt;
+&lt;p&gt;🍻&lt;/p&gt;
+&lt;p&gt;What do we know about prime numbers?&lt;/p&gt;
+&lt;p&gt;A prime number is only divisible by 1 and itself.&lt;/p&gt;
+&lt;p&gt;Let’s take a step back, or up, and look for a pattern. If our input, &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;, is 100, then the array of primes we want to return needs to contain this sequence:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Do you see a pattern?&lt;/p&gt;
+&lt;p&gt;No! The problem with primes is that there’s no pattern.&lt;/p&gt;
+&lt;p&gt;Where &lt;em&gt;do&lt;/em&gt; we see a pattern? Or patterns?&lt;/p&gt;
+&lt;p&gt;All of the composite numbers! Each number that we exclude from our final output is composed of two (or more) factors. Rather than find the primes, can we find everything else? Work like Michaelangelo and carve out a solution?&lt;/p&gt;
+&lt;p&gt;Let’s look at &lt;em&gt;all&lt;/em&gt; of the numbers between 1 and 100:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[
+    1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 
+   11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 
+   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
+   31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 
+   41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 
+   51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 
+   61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 
+   71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 
+   81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 
+   91, 92, 93, 94, 95, 96, 97, 98, 99, 100
+]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We know that &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; is not prime, so we can cross it out. And we immediately see that half of our numbers are multiples of &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;, so we can cross them all out, but keep &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;, as it’s the first prime number:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[
+    X, 2,  3, X,  5, X,  7, X,  9, X, 
+   11, X, 13, X, 15, X, 17, X, 19, X, 
+   21, X, 23, X, 25, X, 27, X, 29, X, 
+   31, X, 33, X, 35, X, 37, X, 39, X, 
+   41, X, 43, X, 45, X, 47, X, 49, X, 
+   51, X, 53, X, 55, X, 57, X, 59, X, 
+   61, X, 63, X, 65, X, 67, X, 69, X, 
+   71, X, 73, X, 75, X, 77, X, 79, X, 
+   81, X, 83, X, 85, X, 87, X, 89, X, 
+   91, X, 93, X, 95, X, 97, X, 99, X
+]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our next prime number is &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;, which we want to keep, but we can proceed and cross out all multiples of &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[
+    X, 2,  3, X,  5, X,  7, X,  X, X, 
+   11, X, 13, X,  X, X, 17, X, 19, X, 
+    X, X, 23, X, 25, X,  X, X, 29, X, 
+   31, X,  X, X, 35, X, 37, X,  X, X, 
+   41, X, 43, X,  X, X, 47, X, 49, X, 
+    X, X, 53, X, 55, X,  X, X, 59, X, 
+   61, X,  X, X, 65, X, 67, X,  X, X, 
+   71, X, 73, X, 75, X, 77, X, 79, X, 
+    X, X, 83, X, 85, X,  X, X, 89, X, 
+   91, X,  X, X, 95, X, 97, X,  X, X
+]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We skip &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt; as it’s not a prime number and we already crossed it out with multiples of &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;. We then cross out multiples of &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[
+    X, 2,  3, X,  5, X,  7, X,  X, X, 
+   11, X, 13, X,  X, X, 17, X, 19, X, 
+    X, X, 23, X,  X, X,  X, X, 29, X, 
+   31, X,  X, X,  X, X, 37, X,  X, X, 
+   41, X, 43, X,  X, X, 47, X, 49, X, 
+    X, X, 53, X,  X, X,  X, X, 59, X, 
+   61, X,  X, X,  X, X, 67, X,  X, X, 
+   71, X, 73, X,  X, X, 77, X, 79, X, 
+    X, X, 83, X,  X, X,  X, X, 89, X, 
+   91, X,  X, X,  X, X, 97, X,  X, X
+]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Next is &lt;code class=&quot;language-text&quot;&gt;7&lt;/code&gt;…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[
+    X, 2,  3, X,  5, X,  7, X,  X, X, 
+   11, X, 13, X,  X, X, 17, X, 19, X, 
+    X, X, 23, X,  X, X,  X, X, 29, X, 
+   31, X,  X, X,  X, X, 37, X,  X, X, 
+   41, X, 43, X,  X, X, 47, X,  X, X, 
+    X, X, 53, X,  X, X,  X, X, 59, X, 
+   61, X,  X, X,  X, X, 67, X,  X, X, 
+   71, X, 73, X,  X, X,  X, X, 79, X, 
+    X, X, 83, X,  X, X,  X, X, 89, X, 
+    X, X,  X, X,  X, X, 97, X,  X, X
+]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Do you see the pattern? We first removed all multiples of &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;, then all multiples of &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;, followed by &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;7&lt;/code&gt;. The next prime is &lt;code class=&quot;language-text&quot;&gt;11&lt;/code&gt;, and if our array was larger, we would cross out &lt;code class=&quot;language-text&quot;&gt;121&lt;/code&gt;, which is only divisible by &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;11&lt;/code&gt;, and itself. We can now abstract a general rule for our algorithm: remove the multiples of the prime numbers, but keep the primes.&lt;/p&gt;
+&lt;p&gt;Now let’s design the algorithm!&lt;/p&gt;
+&lt;p&gt;We need to generate an array, but We don’t need to store the numerical values in the array because we can simply use the index. But, we need to keep in mind that our first index is 0. Because we’re using a process of “subtraction”, we want to set all of our values to &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt; and then mark everyhing that is &lt;em&gt;not&lt;/em&gt; a prime number as &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s update our pseudocode to generate an array of boolean values.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT n
+
+SET bools EQUAL TO AN ARRAY OF LENGTH n
+POPULATE EVERY INDEX IN bools WITH A VALUE OF true
+
+...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We’ll use the word “POPULATE” as we don’t yet know, or need to know, how we will generate an array of boolean values. Maybe we’ll iterate. Maybe we’ll use an array method. We’ll figure that out when we execute the plan. Speaking of iteration, now we need to figure out how we are changing values in our array from &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT n
+
+SET bools EQUAL TO AN ARRAY OF LENGTH n
+POPULATE EVERY INDEX IN bools WITH A VALUE OF true
+
+SET primes EQUAL TO AN EMPTY ARRAY
+
+FOR EVERY NUMBER, i, BETWEEN 2 AND num
+    IF THE VALUE STORED IN bools[i] IS EQUAL TO true
+        PUSH i TO primes
+
+        ...
+
+RETURN primes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we continue to iterate, our conditional will continue to be met and we will push every number to &lt;code class=&quot;language-text&quot;&gt;primes&lt;/code&gt;. How do we avoid this?&lt;/p&gt;
+&lt;p&gt;🤔&lt;/p&gt;
+&lt;p&gt;We need to set all even numbers to false before we exit the conditional. Sounds like we need another loop. Do we want a &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop or a &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loop? Because we don’t know how many times we need the loop to run, let’s use a &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loop. Our nested loop needs an iterator. The convention is to name this variable &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt;. What value do we use to initialize &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;In our first iteration, &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; is equal to &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;, which is prime.&lt;/p&gt;
+&lt;p&gt;In our second iteration, &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; will be equal to &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;, which is also prime.&lt;/p&gt;
+&lt;p&gt;In our thrid iteration, &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; will be equal to &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt;, which is composite.&lt;/p&gt;
+&lt;p&gt;We need to set the value of &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt; in the first iteration.&lt;/p&gt;
+&lt;p&gt;There are two ways we can do this: addition and multiplication. Let’s think through both.&lt;/p&gt;
+&lt;p&gt;If we use addition, our pseudocode would be:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;        SET j EQUAL TO i PLUS 2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will give us &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt; on the first iteration. But on the next iteration, the value of &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; will be &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; plus &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; is &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt;, which is prime. Addition won’t work, so let’s use multiplication.&lt;/p&gt;
+&lt;p&gt;What do we do within our &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loop? We simply reassign the value of &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;j PLUS i&lt;/code&gt;. Our pseudocode now looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT n
+
+SET bools EQUAL TO AN ARRAY OF LENGTH n
+POPULATE EVERY INDEX IN bools WITH A VALUE OF true
+
+SET primes EQUAL TO AN EMPTY ARRAY
+
+
+FOR EVERY NUMBER, i, BETWEEN 2 AND num
+    IF THE VALUE STORED IN bools[i] IS EQUAL TO true
+        PUSH i TO primes
+
+        SET j EQUAL TO i MULTIPLIED BY 2
+
+        WHILE j IS LESS THAN OR EQUAL TO n
+            SET THE VALUE STORED IN bools[j] TO false
+            SET THE VALUE OF j TO j PLUS i
+
+RETURN primes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s step through our pseudocode to fully understand what’s happening before we translate it into syntax.&lt;/p&gt;
+&lt;p&gt;When our &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop increments, &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; will be equal to &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;, and our conditional will evaluate as &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;. We push &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;primes&lt;/code&gt; then set the value of &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; multiplied by &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;, or &lt;code class=&quot;language-text&quot;&gt;6&lt;/code&gt;. Within the &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loop, we set the value stored in the sixth index to &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt; and then add &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt;, which is &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;, to &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt;, which is &lt;code class=&quot;language-text&quot;&gt;6&lt;/code&gt;. The new value of &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; is now &lt;code class=&quot;language-text&quot;&gt;9&lt;/code&gt;. We continue to iterate by multiples of &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; until &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; is greater than or equal to &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When our &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop increments again, &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; will be equal to &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt;. Our conditional will not evaluate as &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;, though, and we will proceed with the next iteration of the &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop.&lt;/p&gt;
+&lt;p&gt;When our &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop increments again, &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; will be equal to &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt;, and our conditional will evaluate as &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;. We push &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;primes&lt;/code&gt; then set the value of &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt; multiplied by &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;, or &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;. Within the &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loop, we set the value stored in the tenth index to &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt; (again) and then add &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt;, which is &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt;, to &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt;, which is &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;. The new value of &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; is now &lt;code class=&quot;language-text&quot;&gt;15&lt;/code&gt;. We continue to iterate by multiples of &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt; until &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; is greater than or equal to &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When our &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop increments again, &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; will be equal to &lt;code class=&quot;language-text&quot;&gt;6&lt;/code&gt;. Our conditional will not evaluate as &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;, though, and we will proceed with the next iteration of the &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop.&lt;/p&gt;
+&lt;p&gt;When our &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop increments again, &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; will be equal to &lt;code class=&quot;language-text&quot;&gt;7&lt;/code&gt;, our conditional will evaluate as &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;, and we repeat the steps above for &lt;code class=&quot;language-text&quot;&gt;7&lt;/code&gt; and all subsequent values.&lt;/p&gt;
+&lt;h3&gt;Execute the Plan&lt;/h3&gt;
+&lt;p&gt;Now it’s simply a matter of translating our pseudocode into the syntax of our programming language.&lt;/p&gt;
+&lt;h4&gt;How to Code the Sieve of Eratosthenes Algorithm in JavaScript&lt;/h4&gt;
+&lt;p&gt;Let’s start with JavaScript…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;sieve&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; bools &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    bools&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; bools&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; primes &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;bools&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            primes&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;j &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                bools&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                j &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; primes&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s step through this solution:&lt;/p&gt;
+&lt;p&gt;Within our &lt;code class=&quot;language-text&quot;&gt;sieve&lt;/code&gt; function, we first declare a &lt;code class=&quot;language-text&quot;&gt;bools&lt;/code&gt; array, using the &lt;code class=&quot;language-text&quot;&gt;Array&lt;/code&gt; constructor. We create the new array with a single parameter, &lt;code class=&quot;language-text&quot;&gt;num + 1&lt;/code&gt;. Why do we add &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;? Because we start counting at &lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;. We then use the &lt;code class=&quot;language-text&quot;&gt;.fill()&lt;/code&gt; method to &lt;em&gt;fill&lt;/em&gt; the &lt;code class=&quot;language-text&quot;&gt;bools&lt;/code&gt; array with elements equal to &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;. Because we know &lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; are &lt;em&gt;not&lt;/em&gt; prime, we assign &lt;code class=&quot;language-text&quot;&gt;bools[0]&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;bools[1]&lt;/code&gt; a value of false. We then declare an empty array, &lt;code class=&quot;language-text&quot;&gt;primes&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Next, we declare a &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop and initialize the iterator with a value of &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;. Why &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;? It’s the first prime number and we already assigned &lt;code class=&quot;language-text&quot;&gt;bools[0]&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;bools[1]&lt;/code&gt; a value of &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;. Within our &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop, we declare a conditional. If the value of &lt;code class=&quot;language-text&quot;&gt;bools[i]&lt;/code&gt; is equal to &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;, we push it to the &lt;code class=&quot;language-text&quot;&gt;primes&lt;/code&gt; array.&lt;/p&gt;
+&lt;p&gt;Here’s the fun part: within our conditional, we declare a variable, &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt;, and assign it the value of &lt;code class=&quot;language-text&quot;&gt;i * 2&lt;/code&gt;. We then initialize a &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loop, and, while &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; is less than or equal to &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;, we set the value of &lt;code class=&quot;language-text&quot;&gt;bools[j]&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt; and increment by &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt;, using &lt;code class=&quot;language-text&quot;&gt;j += i&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Why? With the exception of &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;, none of our prime numbers are even. By multiplying &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; by 2, we create a composite value to then mark &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;While &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; is less than &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;, we continue to iterate. For example, in the first iteration, &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; is 2. Because everything but the first two elements in &lt;code class=&quot;language-text&quot;&gt;bools&lt;/code&gt; is marked &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;, we push &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; to the &lt;code class=&quot;language-text&quot;&gt;primes&lt;/code&gt; array. We then set the value of &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;i * i&lt;/code&gt;, or &lt;code class=&quot;language-text&quot;&gt;2 * 2&lt;/code&gt;, of &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt;. While &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt;, which is currently &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt;, is less than &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;, we set the value of &lt;code class=&quot;language-text&quot;&gt;bools[j]&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt; because it is true, &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt; is not a prime number. We then add &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt;, which is currently &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;, to &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt;, which is currently &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt;, resulting in &lt;code class=&quot;language-text&quot;&gt;6&lt;/code&gt;. Looping again, we set the value of &lt;code class=&quot;language-text&quot;&gt;bools[j]&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;, because it’s true, &lt;code class=&quot;language-text&quot;&gt;6&lt;/code&gt; is not a prime number. The next iteration &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; would be &lt;code class=&quot;language-text&quot;&gt;8&lt;/code&gt;, then &lt;code class=&quot;language-text&quot;&gt;10&lt;/code&gt;, then &lt;code class=&quot;language-text&quot;&gt;12&lt;/code&gt;, and so on until all even values were marked &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; is no longer less than or equal to &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;, we exit the &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loop, exit the &lt;code class=&quot;language-text&quot;&gt;if&lt;/code&gt; block, and then enter the next iteration of our &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop where &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; is equal to &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;. We skipped over &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;, so it is still marked &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;, and we push it to &lt;code class=&quot;language-text&quot;&gt;primes&lt;/code&gt;. We then multiply &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; by &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;, and assign &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; the value of &lt;code class=&quot;language-text&quot;&gt;9&lt;/code&gt;. We set &lt;code class=&quot;language-text&quot;&gt;bools[j]&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt; and then add &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt;, resulting in &lt;code class=&quot;language-text&quot;&gt;12&lt;/code&gt;. This is redundant, because we already marked &lt;code class=&quot;language-text&quot;&gt;12&lt;/code&gt; as &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;, but ¯_(ツ)_/¯. In the next iteration, we mark &lt;code class=&quot;language-text&quot;&gt;15&lt;/code&gt; as &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;. We iterate until all multiples of &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; are marked &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; is no longer less than or equal to &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;, we exit the &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loop, exit the &lt;code class=&quot;language-text&quot;&gt;if&lt;/code&gt; block, and then enter the next iteration of our &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop where &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; is equal to &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt;. We already marked &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt; as &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;, so we don’t enter the conditional block and continue iterating with a value of &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt; assigned to &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt;. It’s still marked as &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;, because we skipped over it in the first and second iteratons, &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; respectively. We then multiply &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt; by &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt;, and assign &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; the value of &lt;code class=&quot;language-text&quot;&gt;25&lt;/code&gt;. We set &lt;code class=&quot;language-text&quot;&gt;bools[j]&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt; and then add &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt;, resulting in &lt;code class=&quot;language-text&quot;&gt;30&lt;/code&gt;. This is redundant, because we already marked &lt;code class=&quot;language-text&quot;&gt;30&lt;/code&gt; as &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;, but again, ¯_(ツ)_/¯. In the next iteration, we mark &lt;code class=&quot;language-text&quot;&gt;35&lt;/code&gt; as &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;. We iterate until all multiples of &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt; are marked &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We continue iterating over &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; until all elements associated with composite numbers in &lt;code class=&quot;language-text&quot;&gt;bools&lt;/code&gt; are marked false. The next prime is &lt;code class=&quot;language-text&quot;&gt;7&lt;/code&gt;, and we set the value of &lt;code class=&quot;language-text&quot;&gt;j&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;7 * 7&lt;/code&gt;, or &lt;code class=&quot;language-text&quot;&gt;49&lt;/code&gt;, and then proceed to mark all multiples of &lt;code class=&quot;language-text&quot;&gt;7&lt;/code&gt; as &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;. The next prime is &lt;code class=&quot;language-text&quot;&gt;11&lt;/code&gt;, when squared is &lt;code class=&quot;language-text&quot;&gt;121&lt;/code&gt;, and so on.&lt;/p&gt;
+&lt;p&gt;Now let’s see it in Python…&lt;/p&gt;
+&lt;h4&gt;How to Code the Sieve of Eratosthenes Algorithm in Python&lt;/h4&gt;
+&lt;p&gt;Let’s see it in Python…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sieve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    bools &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# bools = [True] * (n + 1)&lt;/span&gt;
+    bools&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;
+    bools&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;
+
+    primes &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; bools&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            primes&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+        j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            bools&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;
+            j &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; i 
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; primes 
+
+result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; sieve&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Evaluate the Plan&lt;/h3&gt;
+&lt;p&gt;Can we do better?&lt;/p&gt;
+&lt;p&gt;We can make an optimization to our program and multiple &lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; by itself rather than by &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT n
+
+SET bools EQUAL TO AN ARRAY OF LENGTH n
+POPULATE EVERY INDEX IN bools WITH A VALUE OF true
+
+SET primes EQUAL TO AN EMPTY ARRAY
+
+
+FOR EVERY NUMBER, i, BETWEEN 2 AND num
+    IF THE VALUE STORED IN bools[i] IS EQUAL TO true
+        PUSH i TO primes
+
+        SET j EQUAL TO i MULTIPLIED BY i
+
+        WHILE j IS LESS THAN OR EQUAL TO n
+            SET THE VALUE STORED IN bools[j] TO false
+            SET THE VALUE OF j TO j PLUS i
+
+RETURN primes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;While this solution is more efficient in terms of time complexity, it’s not so great for space because we need to generate an array of boolean values.&lt;/p&gt;
+&lt;h4&gt;What is the Big O Of Sieve of Eratosthenes?&lt;/h4&gt;
+&lt;p&gt;If you want to learn how to calculate time and space complexity, pick up your copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;p&gt;Remember those &lt;em&gt;meta&lt;/em&gt; questions we asked at the outset? Let’s make it stick and answer them now!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Why is it called the Sieve of Eratosthenes?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is the difference betweed additive and subtractive problem solving?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Why Do I Need to Know This?&lt;/h3&gt;
+&lt;p&gt;Prime numbers are considered the &lt;a href=&quot;https://en.wikipedia.org/wiki/Prime_number#Unique_factorization&quot;&gt;“basic building blocks”&lt;/a&gt; of natural numbers. Every number greater than &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; is a product of one or more prime numbers. In computing, prime numbers are used in encryption and hashing algorithms.&lt;/p&gt;
+&lt;h3&gt;Why Is It Called “The Sieve of Eratosthenes”?&lt;/h3&gt;
+&lt;p&gt;It’s called a “sieve” because we are washing away the composite numbers and only keeping the primes.&lt;/p&gt;
+&lt;h3&gt;What’s the Difference Between Additive and Subtractive Problem Solving?&lt;/h3&gt;
+&lt;p&gt;In additive problem solving, we continual add features to a solution. In subtractive problem solving, we look for opportunities to achieve more with less.&lt;/p&gt;
+&lt;h2&gt;A is for Algorithms&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Smallest Divisor of a Whole Number Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-smallest-divisor/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-smallest-divisor/</guid><pubDate>Fri, 11 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -11463,39 +12207,7 @@ stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not &lt;em&gt;just&lt;/em&gt; to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the array data structure in JavaScript.&lt;/p&gt;
 &lt;h2&gt;What is an Array?&lt;/h2&gt;
 &lt;p&gt;An array is the simplest data structure. It is a sequential collection of elements each identified by index.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/46ab957a30e050063841c6263f262559/29007/jarednielsen-javascript-array-data-structure-example.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+ElEQVQoz8VQTUvDQBDN//8znkUPgrdqoXqpJSFQYlAMpLRu0ux8PZlNiqnFixeXd5h5M2925mVm8gs44ZxUnpCq2UX3Cco/Ws/HzcU6E3gqJmxIvCQwXeglm8ZAU9kMZkqmApgJmQn8Oe0pRwf0JFYCEF+2x8U6XN33dyt+a4bl5rhYc9PSZttfPwzPRXe7jEXlwc3j8FT4aOXMlAFQ+SrtPuYVVe8aB2l2VNYmJIdPKmuuP4ZVLru99j03bcwr/xyS+WG+g5qyHoJvhHQzc9pZIawhIJ2hXaehA9RdcMMgkzGjE0Iz59jvF/KY4yhwjMy3+E/4P/EXPxmEnJBnh0cAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jarednielsen javascript array data structure example&quot;
-        title=&quot;jarednielsen javascript array data structure example&quot;
-        src=&quot;/static/46ab957a30e050063841c6263f262559/f058b/jarednielsen-javascript-array-data-structure-example.png&quot;
-        srcset=&quot;/static/46ab957a30e050063841c6263f262559/c26ae/jarednielsen-javascript-array-data-structure-example.png 158w,
-/static/46ab957a30e050063841c6263f262559/6bdcf/jarednielsen-javascript-array-data-structure-example.png 315w,
-/static/46ab957a30e050063841c6263f262559/f058b/jarednielsen-javascript-array-data-structure-example.png 630w,
-/static/46ab957a30e050063841c6263f262559/40601/jarednielsen-javascript-array-data-structure-example.png 945w,
-/static/46ab957a30e050063841c6263f262559/78612/jarednielsen-javascript-array-data-structure-example.png 1260w,
-/static/46ab957a30e050063841c6263f262559/29007/jarednielsen-javascript-array-data-structure-example.png 1600w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./jarednielsen-javascript-array-data-structure-example.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;We can think of our computer as an array of switches. A byte is an array of eight bits. From bytes we build complex layers of abstraction to create memory, characters, and cat videos.&lt;/p&gt;
 &lt;h2&gt;What Problem(s) Do Arrays Solve?&lt;/h2&gt;
 &lt;ul&gt;
@@ -13149,39 +13861,7 @@ DCBA &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;It’s O(2^n).&lt;/p&gt;
 &lt;p&gt;(Actually, it’s O(1.6^n), but who’s counting?)&lt;/p&gt;
 &lt;p&gt;Take a look at this diagram of our recursive call branches.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0366460584660f4431dc6452811a316a/29007/jarednielsen-big-o-recursion-fibonacci-tree.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAnUlEQVQoz72RwQ4CIQxE9/8/1XCABbrdTluMVDcx6sG48Z2A5M00ZRk/sLw+qeq+7wDWdS2lABARVf0ou/sYY9u2lFLvPXxVNbM4EFFKiZnfyESUcxYRM4vOo0pVa60RxMw55yPiJjNza63W2nuPoLgCUNX2IKYTEQB32cwuEwBE5O5EFCWYMLO7H/LT2ADKRERO2PZ3sk/O+ec/yVeciouIo6pm6gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Recursive Fibonacci Tree&quot;
-        title=&quot;Recursive Fibonacci Tree&quot;
-        src=&quot;/static/0366460584660f4431dc6452811a316a/f058b/jarednielsen-big-o-recursion-fibonacci-tree.png&quot;
-        srcset=&quot;/static/0366460584660f4431dc6452811a316a/c26ae/jarednielsen-big-o-recursion-fibonacci-tree.png 158w,
-/static/0366460584660f4431dc6452811a316a/6bdcf/jarednielsen-big-o-recursion-fibonacci-tree.png 315w,
-/static/0366460584660f4431dc6452811a316a/f058b/jarednielsen-big-o-recursion-fibonacci-tree.png 630w,
-/static/0366460584660f4431dc6452811a316a/40601/jarednielsen-big-o-recursion-fibonacci-tree.png 945w,
-/static/0366460584660f4431dc6452811a316a/78612/jarednielsen-big-o-recursion-fibonacci-tree.png 1260w,
-/static/0366460584660f4431dc6452811a316a/29007/jarednielsen-big-o-recursion-fibonacci-tree.png 1600w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./jarednielsen-big-o-recursion-fibonacci-tree.png&quot; alt=&quot;Recursive Fibonacci Tree&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Why is this algorithm inefficient?&lt;/p&gt;
 &lt;p&gt;Overlapping subproblems!&lt;/p&gt;
 &lt;p&gt;We solve the same problems repeatedly in our branches.&lt;/p&gt;
@@ -14891,39 +15571,7 @@ dry()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;With each iteration, the value of &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; becomes smaller until one of our &lt;em&gt;base&lt;/em&gt; conditions is met.&lt;/p&gt;
 &lt;p&gt;So the &lt;em&gt;depth&lt;/em&gt;  of our tree is &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Let’s map out the calls:&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b06dabd59822ebeb8d0c7120e4caf32f/29007/jarednielsen-big-o-recursion-tree.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVQoz82R22oFMQhF8/+fGnIZwzij7tEUTkroQymFcqD7Qbwt3GCaf1D6YaaqIvJbGMB936p6v8TM53le17WbAL6BIwLAGKO1JiIR8XUpIkSk905EAPb0E845E9HKRaTWqqqrNLNa6/Y/xsg5Lz4BKKWICBExs5n13t19HVHV4zjcvbUGgJmJSFVLKWaWluE5p7s/zzPnXNFfiojdjIi9s8ynd73qH8MfubiLH+ShhjUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jarednielsen big o recursion tree&quot;
-        title=&quot;jarednielsen big o recursion tree&quot;
-        src=&quot;/static/b06dabd59822ebeb8d0c7120e4caf32f/f058b/jarednielsen-big-o-recursion-tree.png&quot;
-        srcset=&quot;/static/b06dabd59822ebeb8d0c7120e4caf32f/c26ae/jarednielsen-big-o-recursion-tree.png 158w,
-/static/b06dabd59822ebeb8d0c7120e4caf32f/6bdcf/jarednielsen-big-o-recursion-tree.png 315w,
-/static/b06dabd59822ebeb8d0c7120e4caf32f/f058b/jarednielsen-big-o-recursion-tree.png 630w,
-/static/b06dabd59822ebeb8d0c7120e4caf32f/40601/jarednielsen-big-o-recursion-tree.png 945w,
-/static/b06dabd59822ebeb8d0c7120e4caf32f/78612/jarednielsen-big-o-recursion-tree.png 1260w,
-/static/b06dabd59822ebeb8d0c7120e4caf32f/29007/jarednielsen-big-o-recursion-tree.png 1600w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./jarednielsen-big-o-recursion-tree.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Do you see a pattern?&lt;/p&gt;
 &lt;p&gt;Where have we seen this, or something like it, before?&lt;/p&gt;
 &lt;p&gt;🤔&lt;/p&gt;
