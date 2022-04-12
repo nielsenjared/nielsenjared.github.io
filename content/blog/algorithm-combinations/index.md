@@ -1,15 +1,15 @@
 ---
-title: "Learn How to Code the TODO Algorithm"
+title: "Learn How to Code the Combinations Algorithm"
 date: "2022-TODO-TODO"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO"
-keywords: ['algorithm', 'TODO', 'javascript', 'python']
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to generate combinations in JavaScript and Python."
+keywords: ['algorithm', 'combinations', 'javascript', 'python']
 ---
 
 
 ![ TODO ](./jarednielsen-algorithm-TODO.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to generate combinations in JavaScript _and_ Python.
 
 
 ---
@@ -28,7 +28,7 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * TODO
 
-* TODO 
+* What's a combination? 
 
 
 ### TODO #1
@@ -75,9 +75,9 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN TODO
-WHEN TODO
-THEN TODO
+GIVEN a sequence of integers from 1 to `n`
+WHEN I specify the size of each set of combinations, `k`
+THEN I am returned all possible combinations of the values from 1 to `n` in sets of size `k`
 ```
 
 That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
@@ -98,6 +98,19 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 * Algorithm design
 
 The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
+
+We need to write an algorithm with two inputs, `n` and `k`. 
+
+If `n` is equal to 1, then the only combination is `[1]`.
+
+If `n` is equal to 2, and `k` is equal to 1, then our combinations are `[1], [2]`.
+
+If `n` is equal to 2, and `k` is equal to 2, then our only combination is `[1, 2]`.
+
+If `n` is equal to 3, and `k` is equal to 2, it starts to get interesting. Our combinations are `[1, 2], [1, 3], [2, 3]`. 
+
+
+
 
 TODO
 
