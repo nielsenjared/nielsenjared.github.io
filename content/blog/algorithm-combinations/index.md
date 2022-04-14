@@ -76,8 +76,8 @@ To understand our problem, we first need to define it. Let’s reframe the probl
 
 ```md
 GIVEN a sequence of integers from 1 to `n`
-WHEN I specify the size of each set of combinations, `k`
-THEN I am returned all possible combinations of the values from 1 to `n` in sets of size `k`
+WHEN I specify the size of each set of combinations, `r`
+THEN I am returned all possible combinations of the values from 1 to `n` in sets of size `r`
 ```
 
 That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
@@ -99,17 +99,146 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
 
-We need to write an algorithm with two inputs, `n` and `k`. 
+If `n` is equal to 1, then the only combination is:
+```
+[1]
+```
 
-If `n` is equal to 1, then the only combination is `[1]`.
+If `n` is equal to 2, and `r` is equal to 1, then our combinations are:
+```
+[1], [2]
+```
 
-If `n` is equal to 2, and `k` is equal to 1, then our combinations are `[1], [2]`.
+If `n` is equal to 2, and `r` is equal to 2, then our only combination are:
+```
+[1, 2]
+```
 
-If `n` is equal to 2, and `k` is equal to 2, then our only combination is `[1, 2]`.
+If `n` is equal to 3, and `r` is equal to 2, it starts to get interesting. Our combinations are:
+```
+[1, 2], [1, 3], [2, 3]
+```
 
-If `n` is equal to 3, and `k` is equal to 2, it starts to get interesting. Our combinations are `[1, 2], [1, 3], [2, 3]`. 
+Do you see a pattern emerging? Let's do one more...
+
+If `n` is equal to 4, and `r` is equal to 1, our combinations are: 
+```
+[1], [2], [3], [4]
+```
+
+If `n` is equal to 4, and `r` is equal to 2, our combinations are: 
+```
+[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]
+```
+
+If `n` is equal to 4, and `r` is equal to 3, our combinations are: 
+```
+[1, 2, 3], [1, 2, 4], [1, 3, 4], [2, 3, 4]
+```
+
+For good measure, if `n` is equal to 4, and `r` is equal to 4:
+```
+[1, 2, 3, 4]
+```
+
+We can see that we will need to iterate to generate our combinations, and that those loops will need to be nested, but just how many loops do we need to nest? It depends! 
+
+If `n` is equal to 4, and `r` is equal to 1, how many loops are required to generate the combinations? 
+
+Just 1. If we pseudocode it:
+```
+FOR EVERY VALUE i BETWEEN 1 AND n
+    OUTPUT [i]
+```
+
+Now if `n` is equal to 4, and `r` is equal to 2, how many loops are required to generate the combinations? 
+
+TODO step through this...
+
+Only 2. 
+
+When `i` is equal to 1, we need to run an inner loop to select the _next_ number. We don't want to select 1 again TODO
+
+We create a new iterator, `j` and assign it the value of `i + 1`. When `i` is equal to `1`, `j` is equal to 2, and when `i` is equal to 2, `j` is equal to 3, and so on. 
+
+If we pseudocode this...
+```
+SET n TO 4
+SET r TO 2
+
+SET i EQUAL TO 1
+
+FOR EVERY VALUE BETWEEN i AND n:
+    SET j EQUAL TO i + 1
+    FOR EVERY VALUE BETWEEN j AND n:
+        RETURN [i, j]
+```
+
+Do we need the outer loop to iterator `n`? 
+
+No. The inner loop TODO
+
+🤔
 
 
+
+
+Let's write pseudocode where `n` is equal to 4 and `r` is equal to 2:
+```
+SET n TO 4
+SET r TO 2
+
+SET i EQUAL TO 1
+
+FOR EVERY VALUE BETWEEN i AND n:
+    SET j EQUAL TO i + 1
+    FOR EVERY VALUE BETWEEN j AND n:
+        SET k EQUAL TO j + 1
+        FOR EVERY VALUE BETWEEN k AND n:
+            RETURN [i, j]
+```
+
+
+TODO
+
+
+
+TODO
+We can capture this in an equation: 
+```
+n - r + 1
+```
+
+
+
+
+TODO
+Let's look closer at what's happening when `n` is equal to 5 and `r` is equal to 3. 
+
+Our outer loop will generate the first value in each combination
+
+
+
+
+
+
+
+Let's write pseudocode where `n` is equal to 5 and `r` is equal to `3`:
+```
+SET n TO 5
+SET r TO 3
+
+SET i EQUAL TO 1
+
+FOR EVERY VALUE BETWEEN i AND n:
+    SET j EQUAL TO i + 1
+    FOR EVERY VALUE BETWEEN j AND n:
+        SET k EQUAL TO j + 1
+        FOR EVERY VALUE BETWEEN k AND n:
+            RETURN [i, j]
+```
+
+Let's step through this... In our first iteration, 
 
 
 TODO
