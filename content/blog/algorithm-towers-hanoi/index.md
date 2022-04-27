@@ -1,19 +1,19 @@
 ---
-title: "Learn How to Code the Towers of Hanoi Algorithm in JavaScript"
-date: "2021-TO-DO"
-description: "TODO"
-keywords: ['algorithm', 'towers of hanoi', 'javascript']
+title: "Learn How to Code the Towers of Hanoi Algorithm"
+date: "2022-04-22"
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Towers of Hanoi algorithm in JavaScript and Python."
+keywords: ['algorithm', 'towers of hanoi', 'javascript', 'python']
 ---
 
 
-![ {{ TODO ALT TEXT }} ](./jarednielsen-algorithm-{{ TITLE }}.png)
+![ {{ Towers of Hanoi }} ](./jarednielsen-algorithm-towers-hanoi.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the bubble sort algorithm in JavaScript. 
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Towers of Hanoi algorithm in JavaScript and Python. 
 
 ---
 
-![A is for Algorithms](./../../assets/graphics/algorithms/jarednielsen-algorithms-banner.png)
+![A is for Algorithms](./jarednielsen-algorithms-banner.png)
 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 ---
@@ -30,7 +30,7 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 ### What is Recursion?
 
-TODO 
+To understand recursion, you must first understand recursion. 
 
 
 ### TODO BULLET #2
@@ -45,11 +45,11 @@ TODO
 
 ## Let's Get Meta
 
+* Why do I need to know this? 
+
+* Why is it called the Towers of Hanoi? 
+
 * 
-
-* What Problem(s) Does {{ TODO TITLE }} Solve? 
-
-* What is the Big O of {{ TODO TITLE }}?
 
 
 ## How to Code the {{ TODO TITLE }} Algorithm in JavaScript 
@@ -68,14 +68,16 @@ TODO
 ### Understand the Problem
 
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
+```
+GIVEN a stack of discs in increasing "size" and three towers
+WHEN 
+THEN 
+```
 
-> GIVEN
-> WHEN
-> THEN 
-
-That’s our general outline. We know our input conditions (an unsorted array) and our output requirements (a sorted array), and our goal is to organize the elements in the array in ascending, or non-descending, order.
+That’s our general outline. We know our input conditions (TODO) and our output requirements (TODO), and our goal is to TODO.
 
 Let’s make a plan!
+
 
 ### Make a Plan
 
@@ -87,37 +89,38 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 * Abstraction
 
-* Algorithm
+* Algorithm design
 
-TODO
 
 #### Decomposition
 
-Let's break this down. What's the smallest problem we can solve? One disc.
-
-| Origin | Stage | Goal  |
-| ---    | ---   | ---   |
-| 1      |       |       |
+Let's break the problem down. What's the smallest problem we can solve? One disc. We need to move it from Tower 1 to Tower 3. In a table, this would look like:
 
 
+| Move #| Tower 1   | Tower 2 | Tower 3  |
+| ---   | ---       | ---     | ---      |
+| 0     | 1         |         |          |
+| 1     |           |         | 1        |
 
-```md
-INIT origin, stage, and goal towers
+
+And in pseudocode, this would look like:
+```
+INPUT disc count
+
+INIT tower 1
+INTI tower 2
+INIT tower 3
 
 IF disc count IS EQUAL TO 1
-    MOVE disc FROM origin tower TO goal tower
-    RETURN goal tower
+    MOVE 1 disc FROM tower 1 TO tower 3
+    RETURN tower 3
 ```
 
-
-| Move #| Tower 1 | Tower 2 | Tower 3  |
-| --- | ---    | ---   | ---   |
-|     |        |       | 1     |
-
+TODO?
 
 What if `disc count` is equal to 2?
 
-We now need to use our second tower to _stage_ the first disc so we can move the second disc to the third tower.
+We now need to use our second tower to _stage_ the first disc so we can move the second disc to the third tower. If we map this out in a table...
 
 | Move #    | Tower 1 | Tower 2 | Tower 3  |
 | ---       | ---     | ---     | ---      |
@@ -126,7 +129,40 @@ We now need to use our second tower to _stage_ the first disc so we can move the
 | 2         |         | 1       | 2        |
 | 3         |         |         | 1, 2     |
 
+
+What if `disc count` is equal to 3?
+
+| Move #    | Tower 1 | Tower 2 | Tower 3   |
+| ---       | ---     | ---     | ---       |
+| 0         | 1, 2, 3 |         |           |
+| 1         | 2, 3    |         | 1         |
+| 2         | 3       | 2       | 1         |
+| 3         | 3       | 1, 2    |           |
+| 4         |         | 1, 2    | 3         |
+| 5         | 1       | 2       | 3         |
+| 6         | 1       |         | 2, 3      |
+| 7         |         |         | 1, 2, 3   |
+
+
+Do we see a pattern emerging? 
+
 TODO 
+
+How do we translate this to pseudocode? 
+
+TODO? 
+
+```
+INPUT disc count
+
+INIT tower 1
+INTI tower 2
+INIT tower 3
+
+IF disc count IS EQUAL TO 1
+    MOVE 1 disc FROM tower 1 TO tower 3
+    RETURN tower 3
+``
 
 We want our recursive calls to find their way to our base case. 
 
@@ -257,31 +293,10 @@ TODO
 
 ## Reflection
 
-* TODO
-
-* What Problem(s) Does {{ TODO TITLE }} Solve? 
-
-* What is the Big O of {{ TODO TITLE }}?
+* 
 
 
-### TODO BULLET #1
-
-TODO
-
-
-### What Problem(s) Does {{ TODO TITLE }} Solve?
-
-TODO 
-
-
-### What is the Big O of Insertion Sort? 
-
-TODO
-
-
-## How to Code the {{ TODO }} Algorithm in JavaScript
-
-TODO RECAP FOR SEO
+### 
 
 
 
