@@ -52,7 +52,7 @@ TODO
 * 
 
 
-## How to Code the {{ TODO TITLE }} Algorithm in JavaScript 
+## How to Code the Towers of Hanoi Algorithm in JavaScript 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -146,7 +146,32 @@ What if `disc count` is equal to 3?
 
 Do we see a pattern emerging? 
 
-TODO 
+Let's do one more...
+
+What if `disc count` is equal to 4?
+
+| Move #    | Tower 1       | Tower 2 | Tower 3      |
+| ---       | ---           | ---     | ---          |
+| 0         | 1, 2, 3, 4    |         |              |
+| 1         | 2, 3, 4       | 1       |              |
+| 2         | 3, 4          | 1       | 2            |
+| 3         | 3, 4          |         | 1, 2         |
+| 4         | 4             | 3       | 1, 2         |
+| 5         | 1, 4          | 3       | 2            |
+| 6         | 1, 4          | 2, 3    |              |
+| 7         | 4             | 1, 2, 3 |              |
+| 8         |               | 1, 2, 3 | 4            |
+| 9         |               | 2, 3    | 1, 4         |
+| 10        | 2             | 3       | 1, 4         |
+| 11        | 1, 2          | 3       | 4            |
+| 12        | 1, 2          |         | 3, 4         |
+| 13        | 2             | 1       | 3, 4         |
+| 14        |               | 1       | 2, 3, 4      |
+| 15        |               |         | 1, 2, 3, 4   |
+
+
+
+TODO make the leap to recursion
 
 How do we translate this to pseudocode? 
 
