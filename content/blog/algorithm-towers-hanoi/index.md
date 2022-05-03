@@ -170,6 +170,14 @@ What if `disc count` is equal to 4?
 | 15        |               |         | 1, 2, 3, 4   |
 
 
+What's the pattern, or _patterns_ we see? 
+
+Let's look at The Big Picture first: regardless of the size of `disc count`, the positions of discs required to move from Tower 1 to Tower 3 are mirrored and reversed, with Tower 2 being the pivot at the halfway point. Also note that the number of moves required doubles as `disc count` increases. 
+
+Second, if `disc count` is odd, 1 or 3 in the examples above, our first move is from Tower 1 to Tower 3. But, if `disc count` is even, 2 or 4 above, then our first move is from Tower 1 to Tower 2.  
+
+Third, note that the _origin_ of the disc changes move-to-move, but not with _every_ move. For example, as we saw above, where `disc count` is equal to 4, the _origin_ is naturally Tower 1 and we move `1` and `2` to Towers 1 and 2, respectively. On the _next_ move, the _origin_ is Tower 2 as we move `1` to Tower 3. 
+
 
 TODO make the leap to recursion
 
