@@ -176,12 +176,47 @@ Let's look at The Big Picture first: regardless of the size of `disc count`, the
 
 Second, if `disc count` is odd, 1 or 3 in the examples above, our first move is from Tower 1 to Tower 3. But, if `disc count` is even, 2 or 4 above, then our first move is from Tower 1 to Tower 2.  
 
-Third, note that the _origin_ of the disc changes move-to-move, but not with _every_ move. For example, as we saw above, where `disc count` is equal to 4, the _origin_ is naturally Tower 1 and we move `1` and `2` to Towers 1 and 2, respectively. On the _next_ move, the _origin_ is Tower 2 as we move `1` to Tower 3. 
+Third, note that the _origin_ of the disc changes move-to-move, but not with _every_ move. For example, as we saw above, where `disc count` is equal to 4, the _origin_ is naturally Tower 1 and we move `1` and `2` to Towers 1 and 2, respectively. On the _next_ move, the _origin_ is Tower 2 as we move `1` to Tower 3. But, on the following move, the _origin_ is again Tower 1. And following that, it's Tower 3 for two moves! 
 
+TODO staging
+
+This is starting to get abstract! So let's call if what it is...
+
+
+#### Abstraction
+
+It might be useful to map this out in a table:
+
+| Move #    | Tower 1 | Tower 2 | Tower 3  | `origin`     | `stage`     | `goal`      |
+| ---       | ---     | ---     | ---      | ---          | ---         | ---         |
+| 0         | 1, 2    |         |          |              |             |             |            
+| 1         | 2       | 1       |          | Tower 1      |             | Tower 2     |
+| 2         |         | 1       | 2        | Tower 1      | Tower 2     | Tower 3     |
+| 3         |         |         | 1, 2     | Tower 2      |             | Tower 3     |
+
+
+TODO 
+
+Let's see what it looks like when `disc count` is 3: 
+
+| Move #    | Tower 1 | Tower 2 | Tower 3   | `origin`      | `stage`       | `goal`        |
+| ---       | ---     | ---     | ---       | ---           | ---           | ---           |
+| 0         | 1, 2, 3 |         |           |               |               |               |
+| 1         | 2, 3    |         | 1         | Tower 1       |               | Tower 3       |
+| 2         | 3       | 2       | 1         | Tower 1       | Tower 3       | Tower 2       |
+| 3         | 3       | 1, 2    |           | Tower 3       | Tower 1       | Tower 2       |
+| 4         |         | 1, 2    | 3         | Tower 1       | Tower 2       | Tower 3       |
+| 5         | 1       | 2       | 3         | Tower 2       | Tower 3       | Tower 1       |
+| 6         | 1       |         | 2, 3      | Tower 2       | Tower 1       | Tower 3       |
+| 7         |         |         | 1, 2, 3   | Tower 1       |               | Tower 3       |
+
+
+How do we translate this to pseudocode? 
+
+Where have we seen this or something like it before? 
 
 TODO make the leap to recursion
 
-How do we translate this to pseudocode? 
 
 TODO? 
 
@@ -221,19 +256,9 @@ INIT move discs FUNCTION WITH disc count, origin, stage, and goal PARAMETERS
     CALL move discs WITH disc count MINUS 1, origin, goal, stage
 ```
 
-This is starting to get abstract, so let's call it what it is...
 
 
-#### Abstraction
 
-It might be useful to map this out in a table:
-
-| Move #    | Tower 1 | Tower 2 | Tower 3  | `origin`     | `stage`     | `goal`      |
-| ---       | ---     | ---     | ---      | ---          | ---         | ---         |
-| 0         | 1, 2    |         |          |              |             |             |            
-| 1         | 2       | 1       |          | Tower 1      |             | Tower 2     |
-| 2         |         | 1       | 2        | Tower 1      |             | Tower 3     |
-| 3         |         |         | 1, 2     | Tower 2      |             | Tower 3     |
 
 
 Because our `disc count` is greater than 1, we skip the conditional and recursively call `move discs`, but we change the "position" of the towers. 
