@@ -107,7 +107,7 @@ And in pseudocode, this would look like:
 ```
 INPUT disc count
 
-INIT tower 1
+INIT tower 1 WITH discs EQUAL TO disc count
 INTI tower 2
 INIT tower 3
 
@@ -178,7 +178,43 @@ Second, if `disc count` is odd, 1 or 3 in the examples above, our first move is 
 
 Third, note that the _origin_ of the disc changes move-to-move, but not with _every_ move. For example, as we saw above, where `disc count` is equal to 4, the _origin_ is naturally Tower 1 and we move `1` and `2` to Towers 1 and 2, respectively. On the _next_ move, the _origin_ is Tower 2 as we move `1` to Tower 3. But, on the following move, the _origin_ is again Tower 1. And following that, it's Tower 3 for two moves! 
 
-TODO staging
+Where have we seen this or something like it before? 
+
+Recursion!
+
+We continually move discs off Tower 1 until we reach our base case, where `disc count` is less than or equal to 1 and then we return those discs to Tower 3. Now we just need to figure out all the steps in between ;). 
+
+Let's start sketching this out in pseudocode...
+```
+INPUT disc count
+
+INIT tower 1 WITH discs EQUAL TO disc count
+INTI tower 2
+INIT tower 3
+
+FUNCTION move discs WITH disc count, tower 1, tower 2, and tower 3 PARAMETERS
+    IF disc count IS EQUAL TO 1
+        MOVE 1 disc FROM tower 1 TO tower 3
+        RETURN tower 3
+
+    CALL move discs WITH disc count MINUS 1, tower 1, tower 2, tower 3
+
+CALL move discs WITH disc count MINUS 1, tower 1, tower 2, tower 3
+```
+
+Will this work? 
+
+We want our recursive calls to find their way to our base case. 
+
+But what happens if we recursively call our `move discs` function? 
+
+We'll move all discs from the first tower to the third tower, stacking them in reverse order. 
+
+How do we make recursive calls to our `move discs` function _and_ move the discs to the third tower in order? 
+
+How do we _stage_ discs on our second tower but move them off it?
+
+Is it a matter of moving the disc to the correct tower? Or moving the tower to the correct disc? 
 
 This is starting to get abstract! So let's call if what it is...
 
@@ -196,8 +232,7 @@ It might be useful to map this out in a table:
 
 
 TODO 
-
-Let's see what it looks like when `disc count` is 3: 
+Since we're getting abstract, let's use parameter names for the towers we'll be passing to our `move discs` function: `origin`, `stage`, and `goal`. We can see above that with each move each tower TODO. Let's see what it looks like when `disc count` is 3: 
 
 | Move #    | Tower 1 | Tower 2 | Tower 3   | `origin`      | `stage`       | `goal`        |
 | ---       | ---     | ---     | ---       | ---           | ---           | ---           |
@@ -211,54 +246,23 @@ Let's see what it looks like when `disc count` is 3:
 | 7         |         |         | 1, 2, 3   | Tower 1       |               | Tower 3       |
 
 
-How do we translate this to pseudocode? 
+Our _origin_ is whichever tower we are moving from and our _goal_ is whichever tower we are moving to. These aren't necessarily towers one and three, respectively. With each move, nothing happens with the `stage` tower, it's simply holding the disc(s) from a previous move. 
+ 
 
-Where have we seen this or something like it before? 
-
-TODO make the leap to recursion
-
-
-TODO? 
-
+TODO
+Let's update our pseudocode: 
 ```
-INPUT disc count
-
-INIT tower 1
-INTI tower 2
+INIT tower 1 WITH discs EQUAL TO disc count
+INIT tower 2
 INIT tower 3
 
-IF disc count IS EQUAL TO 1
-    MOVE 1 disc FROM tower 1 TO tower 3
-    RETURN tower 3
-``
-
-We want our recursive calls to find their way to our base case. 
-
-But what happens if we recursively call our `move discs` function? 
-
-We'll move both discs from the first tower to the third tower, stacking them in reverse order. 
-
-How do we make recursive calls to our `move discs` function _and_ move the discs to the third tower in order? 
-
-Is it a matter of moving the disc to the correct tower? Or moving the tower to the correct disc? 
-
-Our _origin_ is whichever tower we are moving from and our _goal_ is whichever tower we are moving to. These aren't necessarily towers one and three, respectively. 
-
-Let's update our pseudocode: 
-```md
-INIT towers one, two, and three
-
-INIT move discs FUNCTION WITH disc count, origin, stage, and goal PARAMETERS
+FUNCTTION move discs WITH disc count, origin, stage, and goal PARAMETERS
     IF disc count IS EQUAL TO 1
         MOVE 1 disc FROM origin TO goal
         RETURN goal
 
     CALL move discs WITH disc count MINUS 1, origin, goal, stage
 ```
-
-
-
-
 
 
 Because our `disc count` is greater than 1, we skip the conditional and recursively call `move discs`, but we change the "position" of the towers. 
