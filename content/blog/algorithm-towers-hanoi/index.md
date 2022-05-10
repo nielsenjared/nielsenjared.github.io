@@ -23,24 +23,10 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 * What is recursion?
 
-* TODO
-
-* TODO 
-
 
 ### What is Recursion?
 
 To understand recursion, you must first understand recursion. 
-
-
-### TODO BULLET #2
-
-TODO
-
-
-### TODO BULLET #3
-
-TODO
 
 
 ## Let's Get Meta
@@ -49,7 +35,6 @@ TODO
 
 * Why is it called the Towers of Hanoi? 
 
-* 
 
 
 ## How to Code the Towers of Hanoi Algorithm in JavaScript 
@@ -192,14 +177,14 @@ INIT tower 1 WITH discs EQUAL TO disc count
 INTI tower 2
 INIT tower 3
 
-FUNCTION move discs WITH disc count, tower 1, tower 2, and tower 3 PARAMETERS
+FUNCTION move discs WITH disc count, tower 1, tower 2, tower 3 
     IF disc count IS EQUAL TO 1
         MOVE 1 disc FROM tower 1 TO tower 3
         RETURN tower 3
 
     CALL move discs WITH disc count MINUS 1, tower 1, tower 2, tower 3
 
-CALL move discs WITH disc count MINUS 1, tower 1, tower 2, tower 3
+CALL move discs WITH disc count, tower 1, tower 2, tower 3
 ```
 
 Will this work? 
@@ -221,7 +206,7 @@ This is starting to get abstract! So let's call if what it is...
 
 #### Abstraction
 
-It might be useful to map this out in a table:
+With each move, there is an `origin` and a `goal`, and, by necessity, a `stage`. But, with each move, each of these "roles" is performed by a different tower. It might be useful to map this out in a table:
 
 | Move #    | Tower 1 | Tower 2 | Tower 3  | `origin`     | `stage`     | `goal`      |
 | ---       | ---     | ---     | ---      | ---          | ---         | ---         |
@@ -231,8 +216,9 @@ It might be useful to map this out in a table:
 | 3         |         |         | 1, 2     | Tower 2      |             | Tower 3     |
 
 
-TODO 
-Since we're getting abstract, let's use parameter names for the towers we'll be passing to our `move discs` function: `origin`, `stage`, and `goal`. We can see above that with each move each tower TODO. Let's see what it looks like when `disc count` is 3: 
+Our _origin_ is whichever tower we are moving from and our _goal_ is whichever tower we are moving to. These aren't necessarily towers one and three, respectively. With each move, nothing happens with the `stage` tower, it's simply holding the disc(s) from a previous move. 
+
+Let's see what it looks like when `disc count` is equal to 3: 
 
 | Move #    | Tower 1 | Tower 2 | Tower 3   | `origin`      | `stage`       | `goal`        |
 | ---       | ---     | ---     | ---       | ---           | ---           | ---           |
@@ -246,24 +232,29 @@ Since we're getting abstract, let's use parameter names for the towers we'll be 
 | 7         |         |         | 1, 2, 3   | Tower 1       |               | Tower 3       |
 
 
-Our _origin_ is whichever tower we are moving from and our _goal_ is whichever tower we are moving to. These aren't necessarily towers one and three, respectively. With each move, nothing happens with the `stage` tower, it's simply holding the disc(s) from a previous move. 
- 
-
-TODO
-Let's update our pseudocode: 
+How do we translate this to pseudocode? 
 ```
+INPUT disc count
+
 INIT tower 1 WITH discs EQUAL TO disc count
-INIT tower 2
+INTI tower 2
 INIT tower 3
 
-FUNCTTION move discs WITH disc count, origin, stage, and goal PARAMETERS
+FUNCTION move discs WITH disc count, origin, stage, goal PARAMETERS
     IF disc count IS EQUAL TO 1
         MOVE 1 disc FROM origin TO goal
         RETURN goal
 
     CALL move discs WITH disc count MINUS 1, origin, goal, stage
+
+    MOVE 1 disc FROM origin TO goal
+
+    CALL move discs WITH disc count MINUS 1, stage, origin, goal
+
+CALL move discs WITH disc count, tower 1, tower 2, tower 3
 ```
 
+TODO explain this ^ 
 
 Because our `disc count` is greater than 1, we skip the conditional and recursively call `move discs`, but we change the "position" of the towers. 
 
@@ -274,43 +265,11 @@ Now our `disc count` is equal to 1, so we enter the conditional and move the fir
 Our function returns, but now we need to move the second disc from tower 1 to tower 3. 
 
 
-Let's update our pseudocode: 
-```md
-INIT towers one, two, and three
-
-INIT move discs FUNCTION WITH disc count, origin, stage, and goal PARAMETERS
-    IF disc count IS EQUAL TO 1
-        MOVE 1 disc FROM origin TO goal
-        RETURN goal
-
-    CALL move discs WITH disc count MINUS 1, origin, goal, stage
-    
-    MOVE 1 disc FROM origin TO goal
-```
-
-TODO
-
-Lastly, we need to move disc 1 from tower 2 to tower 3. 
-
-```md
-INIT towers one, two, and three
-
-INIT move discs FUNCTION WITH disc count, origin, stage, and goal PARAMETERS
-    IF disc count IS EQUAL TO 1
-        MOVE 1 disc FROM origin TO goal
-        RETURN goal
-
-    CALL move discs WITH disc count MINUS 1, origin, goal, stage
-    
-    MOVE 1 disc FROM origin TO goal
-
-    CALL move discs WITH disc count MINUS 1, stage, origin, goal
-```
-
-
 
 
 ### Execute the Plan
+
+#### How to Code the Towers of Hanoi Algorithm in JavaScript
 
 Now let's translate our pseudocode to JavaScript:
 
@@ -341,10 +300,14 @@ const towers = (discCount) => {
     return moveDiscs(discCount, towerOne, towerTwo, towerThree);
 }
 
-console.log(towers(3));
-
-
 ```
+
+#### How to Code the Towers of Hanoi Algorithm in Python
+
+```py
+TODO
+```
+
 
 
 
@@ -353,12 +316,29 @@ console.log(towers(3));
 TODO
 
 
+#### What is the Big O of the Towers of Hanoi Algorithm? 
+
+TODO
+
+
 ## Reflection
 
-* 
+* Why do I need to know this? 
+
+* Why is it called "The Towers of Hanoi"? 
+
+### Why Do I Need to Know This? 
+
+TODO 
+
+### Why is It Called "The Towers of Hanoi"?
+
+TODO 
 
 
-### 
+## A is for Algorithms
+
+
 
 
 
