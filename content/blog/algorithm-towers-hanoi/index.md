@@ -5,7 +5,6 @@ description: "If you want to learn how to code, you need to learn algorithms. Le
 keywords: ['algorithm', 'towers of hanoi', 'javascript', 'python']
 ---
 
-
 ![ {{ Towers of Hanoi }} ](./jarednielsen-algorithm-towers-hanoi.png)
 
 
@@ -323,8 +322,6 @@ const towers = (discCount) => {
 }
 ```
 
-TODO explain the JS
-
 
 #### How to Code the Towers of Hanoi Algorithm in Python
 
@@ -355,12 +352,21 @@ def towers(disc_count):
     return move_discs(disc_count, tower_one, tower_two, tower_three)
 ```
 
-TODO explain the Py
-
 
 ### Evaluate the Plan
 
-TODO
+Can we do better? 
+
+How many moves are required for `n` discs? 
+```
+2^n - 1
+```
+
+For 4 discs, we need to make 15 moves. 
+
+But. For 64 discs? 
+
+We would need to make 18,446,744,073,709,551,615 moves!
 
 
 #### What is the Big O of the Towers of Hanoi Algorithm? 
