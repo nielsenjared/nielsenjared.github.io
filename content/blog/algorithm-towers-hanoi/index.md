@@ -13,7 +13,7 @@ If you want to learn how to code, you need to learn algorithms. Learning algorit
 
 ---
 
-![A is for Algorithms](./jarednielsen-algorithms-banner.png)
+![A is for Algorithms](./jarednielsen-algorithms.png)
 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 ---
