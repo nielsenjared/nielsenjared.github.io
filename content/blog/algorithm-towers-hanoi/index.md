@@ -289,9 +289,11 @@ This call to `move discs` will also continue to call itself untile the condition
 
 ### Execute the Plan
 
+Now it's simply a matter of translating our pseudocode into syntax.
+
 #### How to Code the Towers of Hanoi Algorithm in JavaScript
 
-Now let's translate our pseudocode to JavaScript:
+Let's start with JavaScript:
 
 ```js
 const towers = (discCount) => {
@@ -319,28 +321,51 @@ const towers = (discCount) => {
 
     return moveDiscs(discCount, towerOne, towerTwo, towerThree);
 }
-
 ```
+
+TODO explain the JS
+
 
 #### How to Code the Towers of Hanoi Algorithm in Python
 
+Let's see it in Python:
+
 ```py
-TODO
+def towers(disc_count):
+    tower_one = [i for i in range(1, disc_count + 1)]
+    tower_two = []
+    tower_three = []
+
+    def move_discs(disc_count, origin, stage, goal):
+        if (disc_count == 1):
+            disc = origin.pop(0)
+            goal.insert(0, disc)
+
+            return goal
+
+        move_discs(disc_count - 1, origin, goal, stage)
+
+        disc = origin.pop(0)
+        goal.insert(0, disc)
+
+        move_discs(disc_count - 1, stage, origin, goal)
+
+        return goal
+
+    return move_discs(disc_count, tower_one, tower_two, tower_three)
 ```
 
-
+TODO explain the Py
 
 
 ### Evaluate the Plan
 
-Can we do better? 
-
-
+TODO
 
 
 #### What is the Big O of the Towers of Hanoi Algorithm? 
 
-TODO
+If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
 
 ## Reflection
@@ -352,15 +377,22 @@ TODO
 
 ### Why Do I Need to Know This? 
 
-TODO 
+You don't! There's no practical application for this algorithm. It _is_ useful to know for two reasons: 
+
+1. **Street Cred**: You can impress your friends with your knowledge of obscure algorithms _and_ there's always the (slim) chance you'll get asked to whiteboard it in an interview. 
+
+2. **Practice Makes Practice**: While you will probably never write this algorithm again, it's an excellent exercise in computational thinking, highlighting each of the four stages: decomposition, pattern recognition, abstraction, and design Additionally, it demonstrates what a powerful tool recursion is. 
+
 
 ### Why is It Called "The Towers of Hanoi"?
 
-TODO 
+The algorithm takes its name from its resemblance to a [pagoda](https://en.wikipedia.org/wiki/Pagoda). According to Wikipedia, the problem was first introduced to the West by [Edouard Lucas](https://en.wikipedia.org/wiki/%C3%89douard_Lucas), a French mathematician. He likely used "Hanoi" as the name due to France's colonization of Vietnam during his lifetime. 
 
 
 ## A is for Algorithms
 
+![A is for Algorithms](./jarednielsen-algorithms.png)
+Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 
 
