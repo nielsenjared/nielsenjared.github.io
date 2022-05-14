@@ -1,4 +1,699 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 10 Apr 2022 18:44:33 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Selection Sort Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-selection-sort/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-selection-sort/</guid><pubDate>Fri, 08 Apr 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 14 May 2022 11:58:27 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Towers of Hanoi Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-towers-hanoi/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-towers-hanoi/</guid><pubDate>Fri, 22 Apr 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/78170f3efa19fd2bcdf2f192601296b5/29007/jarednielsen-algorithm-towers-hanoi.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNUlEQVQoz51Ru0oDQRTdn/GHxGihIEhqwVKsFH9CEHx8glgoNjYWIrHQQi1sZLNJNNlkN9mdmfuYI7tuNhGb4HCYufcM587hTOC9VFAuULcLIKgr9SJQXVCJAsFUqcgIg4lnnY1T1t9eqhbzYiEA7xdnd1srg5d7AFowSs46Z4BqHKDGZqLFVSXWku2Tb7TOl653999uC7En9eJsbp2ZJlLseT5hcbOXBQLI0+nNzvLx9urJwdpR+vAMAB7MRExlKR4KwFqjqlNGAnjhPHvdO2w1NlvrzceNZufyioR63agdhe0o/Oz3HJtJlnZ7nTD8iLrt/uCLxQEaeGVlN2Ybk4nJDMU5CJNN0uEoiUdJnI5HouTIJOnwh0zHiSiVgZW251GbrNdfBlXa5aHFF1VYnAnq6P6Bb0NVdmXN26f7AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; {{ Towers of Hanoi }} &quot;
+        title=&quot; {{ Towers of Hanoi }} &quot;
+        src=&quot;/static/78170f3efa19fd2bcdf2f192601296b5/f058b/jarednielsen-algorithm-towers-hanoi.png&quot;
+        srcset=&quot;/static/78170f3efa19fd2bcdf2f192601296b5/c26ae/jarednielsen-algorithm-towers-hanoi.png 158w,
+/static/78170f3efa19fd2bcdf2f192601296b5/6bdcf/jarednielsen-algorithm-towers-hanoi.png 315w,
+/static/78170f3efa19fd2bcdf2f192601296b5/f058b/jarednielsen-algorithm-towers-hanoi.png 630w,
+/static/78170f3efa19fd2bcdf2f192601296b5/40601/jarednielsen-algorithm-towers-hanoi.png 945w,
+/static/78170f3efa19fd2bcdf2f192601296b5/78612/jarednielsen-algorithm-towers-hanoi.png 1260w,
+/static/78170f3efa19fd2bcdf2f192601296b5/29007/jarednielsen-algorithm-towers-hanoi.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Towers of Hanoi algorithm in JavaScript and Python.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;How does the swap algorithm work?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is recursion?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How Does the Swap Algorithm Work?&lt;/h3&gt;
+&lt;p&gt;The classic swap algorithm uses a temporary variable to &lt;em&gt;stage&lt;/em&gt; one of the two values to be swapped while it makes a reassignment.&lt;/p&gt;
+&lt;p&gt;If you’re just joining us, you will want to check out &lt;a href=&quot;https://jarednielsen.com/algorithm-swap/&quot;&gt;How to Code the Swap Algorithm&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;What is Recursion?&lt;/h3&gt;
+&lt;p&gt;To understand recursion, you must first understand recursion.&lt;/p&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Why is it called the Towers of Hanoi?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Code the Towers of Hanoi Algorithm&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/programming-problem-solving/&quot;&gt;Programming is problem solving&lt;/a&gt;. There are four steps we need to take to solve any programming problem:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Understand the problem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make a plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Understand the Problem&lt;/h3&gt;
+&lt;p&gt;To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;GIVEN a stack of discs in increasing &quot;size&quot; and three towers
+WHEN moving the discs from tower one to tower three, larger discs are never stacked on smaller discs
+THEN I am returned all discs stacked in order on the third tower&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That’s our general outline. We know our input conditions (three ‘towers’ and a range of ‘discs’) and our output requirements (the discs stacked largest to smallest on the third tower), and our goal is to move the discs from Tower 1 to Tower 3 without stacking larger discs on smaller discs at any step in the process.&lt;/p&gt;
+&lt;p&gt;Let’s make a plan!&lt;/p&gt;
+&lt;h3&gt;Make a Plan&lt;/h3&gt;
+&lt;p&gt;Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pattern recognition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstraction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithm design&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Decomposition&lt;/h4&gt;
+&lt;p&gt;Let’s break the problem down. What’s the smallest problem we can solve? One disc. We need to move it from Tower 1 to Tower 3. Easy peasy. In a table, this would look like:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Move #&lt;/th&gt;
+&lt;th&gt;Tower 1&lt;/th&gt;
+&lt;th&gt;Tower 2&lt;/th&gt;
+&lt;th&gt;Tower 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And in pseudocode, this would look like:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT disc count
+
+INIT tower 1 WITH discs EQUAL TO disc count
+INTI tower 2
+INIT tower 3
+
+IF disc count IS EQUAL TO 1
+    MOVE 1 disc FROM tower 1 TO tower 3
+    RETURN tower 3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What if &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt; is equal to 2?&lt;/p&gt;
+&lt;p&gt;We now need to use our second tower to &lt;em&gt;stage&lt;/em&gt; the first disc so we can move the second disc to the third tower. If we map this out in a table…&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Move #&lt;/th&gt;
+&lt;th&gt;Tower 1&lt;/th&gt;
+&lt;th&gt;Tower 2&lt;/th&gt;
+&lt;th&gt;Tower 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1, 2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1, 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;What if &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt; is equal to 3?&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Move #&lt;/th&gt;
+&lt;th&gt;Tower 1&lt;/th&gt;
+&lt;th&gt;Tower 2&lt;/th&gt;
+&lt;th&gt;Tower 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1, 2, 3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2, 3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1, 2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1, 2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2, 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1, 2, 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;We can see that as &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt; increases, the moves required become more complex. Do we see a pattern emerging?&lt;/p&gt;
+&lt;p&gt;Let’s do one more…&lt;/p&gt;
+&lt;p&gt;What if &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt; is equal to 4?&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Move #&lt;/th&gt;
+&lt;th&gt;Tower 1&lt;/th&gt;
+&lt;th&gt;Tower 2&lt;/th&gt;
+&lt;th&gt;Tower 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1, 2, 3, 4&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2, 3, 4&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3, 4&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;3, 4&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1, 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1, 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;1, 4&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;1, 4&lt;/td&gt;
+&lt;td&gt;2, 3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;1, 2, 3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1, 2, 3&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2, 3&lt;/td&gt;
+&lt;td&gt;1, 4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1, 4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;1, 2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;1, 2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;3, 4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;3, 4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2, 3, 4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1, 2, 3, 4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;What’s the pattern, or &lt;em&gt;patterns&lt;/em&gt; we see?&lt;/p&gt;
+&lt;p&gt;Let’s look at The Big Picture first: regardless of the size of &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt;, the positions of discs required to move from Tower 1 to Tower 3 are mirrored and reversed, with Tower 2 being the pivot at the halfway point. Also note that the number of moves required doubles (approximately) as &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt; increases.&lt;/p&gt;
+&lt;p&gt;Second, if &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt; is odd, 1 or 3 in the examples above, our first move is from Tower 1 to Tower 3. But, if &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt; is even, 2 or 4 above, then our first move is from Tower 1 to Tower 2.&lt;/p&gt;
+&lt;p&gt;Third, note that the &lt;em&gt;origin&lt;/em&gt; of the disc changes move-to-move, but not with &lt;em&gt;every&lt;/em&gt; move. For example, as we saw above, where &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt; is equal to 4, the &lt;em&gt;origin&lt;/em&gt; is naturally Tower 1 and we move &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt; to Towers 1 and 2, respectively. On the &lt;em&gt;next&lt;/em&gt; move, the &lt;em&gt;origin&lt;/em&gt; is Tower 2 as we move &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt; to Tower 3. But, on the following move, the &lt;em&gt;origin&lt;/em&gt; is again Tower 1. And following that, it’s Tower 3 for two moves!&lt;/p&gt;
+&lt;p&gt;Where have we seen this or something like it before?&lt;/p&gt;
+&lt;p&gt;Recursion!&lt;/p&gt;
+&lt;p&gt;We continually move discs off Tower 1 until we reach our base case, where &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt; is less than or equal to 1 and then we return those discs to Tower 3. Now we just need to figure out all the steps in between ;).&lt;/p&gt;
+&lt;p&gt;Let’s start sketching this out in pseudocode…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT disc count
+
+INIT tower 1 WITH discs EQUAL TO disc count
+INTI tower 2
+INIT tower 3
+
+FUNCTION move discs WITH disc count, tower 1, tower 2, tower 3 
+    IF disc count IS EQUAL TO 1
+        MOVE 1 disc FROM tower 1 TO tower 3
+        RETURN tower 3
+
+    CALL move discs WITH disc count MINUS 1, tower 1, tower 2, tower 3
+
+    RETURN tower 3
+
+CALL move discs WITH disc count, tower 1, tower 2, tower 3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Will this work?&lt;/p&gt;
+&lt;p&gt;We want our recursive calls to find their way to our base case, so we subtract 1 from &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;But what happens if we recursively call our &lt;code class=&quot;language-text&quot;&gt;move discs&lt;/code&gt; function?&lt;/p&gt;
+&lt;p&gt;We’ll move all discs from the first tower to the third tower, stacking them in reverse order.&lt;/p&gt;
+&lt;p&gt;How do we make recursive calls to our &lt;code class=&quot;language-text&quot;&gt;move discs&lt;/code&gt; function &lt;em&gt;and&lt;/em&gt; move the discs to the third tower in order?&lt;/p&gt;
+&lt;p&gt;We need to &lt;em&gt;stage&lt;/em&gt; discs on our second tower.&lt;/p&gt;
+&lt;p&gt;How do we &lt;em&gt;stage&lt;/em&gt; discs on our second tower &lt;em&gt;and&lt;/em&gt; move them off it?&lt;/p&gt;
+&lt;p&gt;Is it a matter of moving the disc to the correct tower? Or moving the tower to the correct disc?&lt;/p&gt;
+&lt;p&gt;This is starting to get abstract! So let’s call if what it is…&lt;/p&gt;
+&lt;h4&gt;Abstraction&lt;/h4&gt;
+&lt;p&gt;With each move, there is an &lt;code class=&quot;language-text&quot;&gt;origin&lt;/code&gt; and a &lt;code class=&quot;language-text&quot;&gt;goal&lt;/code&gt;, and, by necessity, a &lt;code class=&quot;language-text&quot;&gt;stage&lt;/code&gt;. But, with each move, each of these “roles” is performed by a different tower. It might be useful to map this out in a table:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Move #&lt;/th&gt;
+&lt;th&gt;Tower 1&lt;/th&gt;
+&lt;th&gt;Tower 2&lt;/th&gt;
+&lt;th&gt;Tower 3&lt;/th&gt;
+&lt;th&gt;&lt;code class=&quot;language-text&quot;&gt;origin&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code class=&quot;language-text&quot;&gt;stage&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code class=&quot;language-text&quot;&gt;goal&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1, 2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Tower 1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Tower 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Tower 1&lt;/td&gt;
+&lt;td&gt;Tower 2&lt;/td&gt;
+&lt;td&gt;Tower 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1, 2&lt;/td&gt;
+&lt;td&gt;Tower 2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Tower 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Our &lt;em&gt;origin&lt;/em&gt; is whichever tower we are moving from and our &lt;em&gt;goal&lt;/em&gt; is whichever tower we are moving to. These aren’t necessarily towers one and three, respectively. With each move, nothing happens with the &lt;code class=&quot;language-text&quot;&gt;stage&lt;/code&gt; tower, it’s simply holding the disc(s) from a previous move.&lt;/p&gt;
+&lt;p&gt;Let’s see what it looks like when &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt; is equal to 3:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Move #&lt;/th&gt;
+&lt;th&gt;Tower 1&lt;/th&gt;
+&lt;th&gt;Tower 2&lt;/th&gt;
+&lt;th&gt;Tower 3&lt;/th&gt;
+&lt;th&gt;&lt;code class=&quot;language-text&quot;&gt;origin&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code class=&quot;language-text&quot;&gt;stage&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code class=&quot;language-text&quot;&gt;goal&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1, 2, 3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2, 3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Tower 1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Tower 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Tower 1&lt;/td&gt;
+&lt;td&gt;Tower 3&lt;/td&gt;
+&lt;td&gt;Tower 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1, 2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Tower 3&lt;/td&gt;
+&lt;td&gt;Tower 1&lt;/td&gt;
+&lt;td&gt;Tower 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1, 2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Tower 1&lt;/td&gt;
+&lt;td&gt;Tower 2&lt;/td&gt;
+&lt;td&gt;Tower 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Tower 2&lt;/td&gt;
+&lt;td&gt;Tower 3&lt;/td&gt;
+&lt;td&gt;Tower 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2, 3&lt;/td&gt;
+&lt;td&gt;Tower 2&lt;/td&gt;
+&lt;td&gt;Tower 1&lt;/td&gt;
+&lt;td&gt;Tower 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1, 2, 3&lt;/td&gt;
+&lt;td&gt;Tower 1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Tower 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;How do we translate this to pseudocode?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT disc count
+
+INIT tower 1 WITH discs EQUAL TO disc count
+INTI tower 2
+INIT tower 3
+
+FUNCTION move discs WITH disc count, origin, stage, goal PARAMETERS
+    IF disc count IS EQUAL TO 1
+        MOVE 1 disc FROM origin TO goal
+        RETURN goal
+
+    CALL move discs WITH disc count MINUS 1, origin, goal, stage
+
+    MOVE 1 disc FROM origin TO goal
+
+    CALL move discs WITH disc count MINUS 1, stage, origin, goal
+
+    RETURN goal
+
+CALL move discs WITH disc count, tower 1, tower 2, tower 3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s happening here?&lt;/p&gt;
+&lt;p&gt;We declare a &lt;code class=&quot;language-text&quot;&gt;move discs&lt;/code&gt; function with &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;origin&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;stage&lt;/code&gt;, and &lt;code class=&quot;language-text&quot;&gt;goal&lt;/code&gt; parameters. When we calal &lt;code class=&quot;language-text&quot;&gt;move discs&lt;/code&gt;, we pass it &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;tower 1&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;tower 2&lt;/code&gt;, and &lt;code class=&quot;language-text&quot;&gt;tower 3&lt;/code&gt; arguments. Within the &lt;code class=&quot;language-text&quot;&gt;move discs&lt;/code&gt; function is a conditional statement, which returns &lt;code class=&quot;language-text&quot;&gt;goal&lt;/code&gt; when &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt; is equal to 1. Our &lt;code class=&quot;language-text&quot;&gt;move discs&lt;/code&gt; function then calls itself, but note two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;We subtract 1 from &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We &lt;em&gt;swap&lt;/em&gt; the position of the &lt;code class=&quot;language-text&quot;&gt;goal&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;stage&lt;/code&gt; paremeters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This call to &lt;code class=&quot;language-text&quot;&gt;move discs&lt;/code&gt; will continue to call itself until the conditional is met, where it will return &lt;code class=&quot;language-text&quot;&gt;goal&lt;/code&gt;. On the next line, we move 1 disc from &lt;code class=&quot;language-text&quot;&gt;origin&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;goal&lt;/code&gt;. Our &lt;code class=&quot;language-text&quot;&gt;move discs&lt;/code&gt; function then calls itself &lt;em&gt;again&lt;/em&gt;, and again note two thigns:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;We subtract 1 from &lt;code class=&quot;language-text&quot;&gt;disc count&lt;/code&gt;. Standard practice with recursion.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This time, we &lt;em&gt;swap&lt;/em&gt; the position of &lt;code class=&quot;language-text&quot;&gt;origin&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;stage&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This call to &lt;code class=&quot;language-text&quot;&gt;move discs&lt;/code&gt; will also continue to call itself untile the condition is met, at which point it will return &lt;code class=&quot;language-text&quot;&gt;goal&lt;/code&gt;. When our two recursive calls to &lt;code class=&quot;language-text&quot;&gt;move discs&lt;/code&gt; return and the condition is no longer met, then we return &lt;code class=&quot;language-text&quot;&gt;goal&lt;/code&gt; and exit our initial call to &lt;code class=&quot;language-text&quot;&gt;move discs&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Execute the Plan&lt;/h3&gt;
+&lt;p&gt;Now it’s simply a matter of translating our pseudocode into syntax.&lt;/p&gt;
+&lt;h4&gt;How to Code the Towers of Hanoi Algorithm in JavaScript&lt;/h4&gt;
+&lt;p&gt;Let’s start with JavaScript:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;towers&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;discCount&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; towerOne &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;discCount &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; towerTwo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; towerThree &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;moveDiscs&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;discCount&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; origin&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; stage&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; goal&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;discCount &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; disc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; origin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            goal&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;unshift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;disc&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token function&quot;&gt;moveDiscs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;discCount &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; origin&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; stage&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; disc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; origin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        goal&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;unshift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;disc&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token function&quot;&gt;moveDiscs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;discCount &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; stage&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; origin&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;moveDiscs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;discCount&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; towerOne&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; towerTwo&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; towerThree&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;How to Code the Towers of Hanoi Algorithm in Python&lt;/h4&gt;
+&lt;p&gt;Let’s see it in Python:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;towers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;disc_count&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    tower_one &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; disc_count &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    tower_two &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    tower_three &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;move_discs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;disc_count&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; origin&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; stage&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;disc_count &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            disc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; origin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pop&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            goal&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;insert&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; disc&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; goal
+
+        move_discs&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;disc_count &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; origin&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; stage&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+        disc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; origin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pop&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        goal&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;insert&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; disc&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+        move_discs&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;disc_count &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; stage&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; origin&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; goal&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; goal
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; move_discs&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;disc_count&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; tower_one&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; tower_two&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; tower_three&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Evaluate the Plan&lt;/h3&gt;
+&lt;p&gt;Can we do better?&lt;/p&gt;
+&lt;p&gt;How many moves are required for &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; discs?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2^n - 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For 4 discs, we need to make 15 moves.&lt;/p&gt;
+&lt;p&gt;But. For 64 discs?&lt;/p&gt;
+&lt;p&gt;We would need to make 18,446,744,073,709,551,615 moves!&lt;/p&gt;
+&lt;h4&gt;What is the Big O of the Towers of Hanoi Algorithm?&lt;/h4&gt;
+&lt;p&gt;If you want to learn how to calculate time and space complexity, pick up your copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Why is it called “The Towers of Hanoi”?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Why Do I Need to Know This?&lt;/h3&gt;
+&lt;p&gt;You don’t! There’s no practical application for this algorithm. It &lt;em&gt;is&lt;/em&gt; useful to know for two reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Street Cred&lt;/strong&gt;: You can impress your friends with your knowledge of obscure algorithms &lt;em&gt;and&lt;/em&gt; there’s always the (slim) chance you’ll get asked to whiteboard it in an interview.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Practice Makes Practice&lt;/strong&gt;: While you will probably never write this algorithm again, it’s an excellent exercise in computational thinking, highlighting each of the four stages: decomposition, pattern recognition, abstraction, and design Additionally, it demonstrates what a powerful tool recursion is.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Why is It Called “The Towers of Hanoi”?&lt;/h3&gt;
+&lt;p&gt;The algorithm takes its name from its resemblance to a &lt;a href=&quot;https://en.wikipedia.org/wiki/Pagoda&quot;&gt;pagoda&lt;/a&gt;. According to Wikipedia, the problem was first introduced to the West by &lt;a href=&quot;https://en.wikipedia.org/wiki/%C3%89douard_Lucas&quot;&gt;Edouard Lucas&lt;/a&gt;, a French mathematician. He likely used “Hanoi” as the name due to France’s colonization of Vietnam during his lifetime.&lt;/p&gt;
+&lt;h2&gt;A is for Algorithms&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Selection Sort Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-selection-sort/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-selection-sort/</guid><pubDate>Fri, 08 Apr 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -742,7 +1437,89 @@ RETURN primes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         decoding=&quot;async&quot;
       /&gt;
     &lt;/span&gt;
-Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Smallest Divisor of a Whole Number Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-smallest-divisor/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-smallest-divisor/</guid><pubDate>Fri, 11 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Breathe for Your Brain]]></title><description><![CDATA[TODO Your brain needs you to breathe. No oxygen, no brain. Following “The Rule of Threes”, our brains can only survive without oxygen for…]]></description><link>https://jarednielsen.com/breathe-brain/</link><guid isPermaLink="false">https://jarednielsen.com/breathe-brain/</guid><pubDate>Mon, 14 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;TODO.png&quot; alt=&quot;TODO&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Your brain needs you to breathe.&lt;/p&gt;
+&lt;p&gt;No oxygen, no brain.&lt;/p&gt;
+&lt;p&gt;Following “The Rule of Threes”, our brains can only survive without oxygen for 3 minutes. This isn’t a hard and fast rule, though, as there are some members of our species who can and do survive longer without the Big O. For the rest of us, we need to keep those lungs pumping. Lucky for us, our brains will breathe without our thinking about it, &lt;em&gt;and&lt;/em&gt;, we can also control our breathing &lt;em&gt;with our brains&lt;/em&gt;!&lt;/p&gt;
+&lt;p&gt;Win win!&lt;/p&gt;
+&lt;h2&gt;How to Breathe for Your Brain&lt;/h2&gt;
+&lt;p&gt;Here are some general guidelines on how to breathe for improved and optimal cognition:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Breathe through your nose, not your mouth.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Breathe through &lt;em&gt;both&lt;/em&gt; nostrils.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Breathe slowly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Breathe clean, fresh air.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Breathe Through Your Nose, Not Through Your Mouth&lt;/h3&gt;
+&lt;p&gt;In addition to being unattractive, mouth breathing is bad for your health. Mouth breathing causes stress hormones to spike, blood pressure to rise, and heart rate to drop. It can cause loss of moisture due to exhalation of water vapor, a host of dental problems, and perhaps the most unattractive aspect, it makes you snore.&lt;/p&gt;
+&lt;p&gt;And what about mouth breathing and cognition? In &lt;em&gt;Breath&lt;/em&gt;, James Nestor cites two recent Japanese studies on mouth breathing and its effect on the brain. The first, using rats as test subjects, showed that those with their nasal passageways blocked developed fewer brain cells and took twice as long to navigate mazes as the control group. The second study found that mouth breathing increases oxygenation in the prefrontal cortex, a phenomenon related to ADHD.&lt;/p&gt;
+&lt;h3&gt;Breathe Through Both Nostrils&lt;/h3&gt;
+&lt;p&gt;Just like our hands, our nostrils are associated with our brain hemispheres. To maintain equilibrium, we want to breathe through &lt;em&gt;both&lt;/em&gt; nostrils.&lt;/p&gt;
+&lt;p&gt;In &lt;em&gt;The Owner’s Manual for the Brain&lt;/em&gt;, Pierce J. Howard discusses the practice of “forced unilateral nostril breathing”. If you want to increase right hemispheric activity, which is responsible for creativity and abstraction, but also negative emotions, block the right nostril and breathe through the left. If you want to increase left hemispheric activity, which is responsible for language processing and logical reasoning, as well as alertness, block the left nostril and breathe through the right.&lt;/p&gt;
+&lt;p&gt;According to James Nestor in &lt;em&gt;Breath&lt;/em&gt;, the right nostril is “a gas pedal”. Breathing through your right nostril activates the sympathetic nervous system, which is commonly associated with our “fight or flight” response. If the right nostril is a gas pedal, the left is a brake. Breathing through the left nostril activates the parasympathetic nervous system, which is associated with “rest and digest” states.&lt;/p&gt;
+&lt;p&gt;While you can consciously take advantage of this knowledge, the key is to maintain balance between our brain hemispheres. Nestor recounts a patient who was experiencing hallucinations. The doctors working with her discovered she was breathing primarily through her left nostril, thus pushing her brain off kilter.&lt;/p&gt;
+&lt;h3&gt;Breathe Slowly&lt;/h3&gt;
+&lt;p&gt;Is there an ideal way to breathe?&lt;/p&gt;
+&lt;p&gt;Slow and steady.&lt;/p&gt;
+&lt;p&gt;According to Nestor:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The perfect breath is this: Breathe in for about 5.5 seconds, then exhale for 5.5 seconds. That’s 5.5 breaths a minute for a total of about 5.5 liters of air.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When subjects “followed this slow breathing pattern, blood flow to the brain increased and the systems in the body entered a state of coherence, when the functions of heart, circulation, and nervous system are coordinated to peak efficiency.”&lt;/p&gt;
+&lt;p&gt;This is known as resonant or Coherent Breathing.&lt;/p&gt;
+&lt;p&gt;And of course, there’s an app for this: &lt;a href=&quot;https://g.co/kgs/TdprnT&quot;&gt;https://g.co/kgs/TdprnT&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Breathe Clean, Fresh Air&lt;/h3&gt;
+&lt;p&gt;In The Owner’s Manual for the Brain, Pierce J. Howard outlines the correlation between brain function and air quality, specifically high concentrations of negative ions, which are associated with high energy and positive mood. Negative ions suppress serotonin, which is associated with drowsiness and relaxation. According to Howard:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The proportion of negative ions is highest around moving water (storms, oceans, rivers, waterfalls)—it’s no wonder that we feel so energized at the beach. The best ratios of negative to positive ions are associated with waterfalls and the time before, during, and after storms. The worst are found in windowless rooms and closed, moving vehicles.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Few of us have immediate access to a waterfall, but we can always go for a walk around the block or, at the very least, open a window, to get some fresh air for our brains. And you can always simulate a waterfall with the shower, which might explain why some of our best ideas happen there. If you’re tempted to hack this, just know that &lt;a href=&quot;https://en.wikipedia.org/wiki/Negative_air_ionization_therapy&quot;&gt;negative air ionization therapy&lt;/a&gt; is considered a pseudoscience, and many of the related products release cancer-causing ozone.&lt;/p&gt;
+&lt;h2&gt;How to Breathe for Your Brain&lt;/h2&gt;
+&lt;p&gt;You don’t need to take cold showers every day or practice pranayama to make improvements in your breathing. Here are the general guidelines on how to breathe for your brain:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Breathe through your nose, not your mouth.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Breathe through both nostrils.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Breathe slowly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Breathe clean, fresh air.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Breathe Deeply&lt;/h3&gt;
+&lt;p&gt;But wait! There’s more. I hope you weren’t holding your breath…&lt;/p&gt;
+&lt;p&gt;Wim Hof built a career on breathing. That, and taking cold showers.&lt;/p&gt;
+&lt;p&gt;Here’s the Wim Hof Method in a nutshell:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Sit in a meditative posture or lie on your back and close your eyes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Take 30 deep breaths, inhaling to your full capacity. Exhale naturally.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On the 30th breath, exhale fully and hold your breath as long as possible.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When you need to breathe, take a deep inhale and hold it for 15 seconds.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Exhale and repeat two more times.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;According to Hof, this method changes our biochemistry from acidic to alkaline, which reduces inflammation and detoxifies our bodies. According to Nestor, this method will “release the stress hormones of adrenaline, cortisol, and norepinephrine on command,” effectively pushing yourself into a fight-or-flight situation where your body’s resources mobilize for survival. This technique is not for everyone and Hof recommends you not practice this in water or when driving as you may induce light-headedness.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Smallest Divisor of a Whole Number Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-smallest-divisor/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-smallest-divisor/</guid><pubDate>Fri, 11 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
