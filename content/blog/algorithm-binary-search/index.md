@@ -1,15 +1,15 @@
 ---
-title: "Learn How to Code the TODO Algorithm"
-date: "2022-TODO-TODO"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO"
-keywords: ['algorithm', 'TODO', 'javascript', 'python']
+title: "Learn How to Code the Binary Search Algorithm"
+date: "2022-05-06"
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the binary search algorithm in JavaScript and Python."
+keywords: ['algorithm', 'binary search', 'javascript', 'python']
 ---
 
 
-![ TODO ](./jarednielsen-algorithm-TODO.png)
+![ Binary Search ](./jarednielsen-algorithm-binary-search.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the binary search algorithm in JavaScript _and_ Python.
 
 
 ---
@@ -24,14 +24,14 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-* TODO 
+* What is linear search? 
 
 * TODO
 
 * TODO 
 
 
-### TODO #1
+### What is Linear Search? 
 
 TODO
 
@@ -52,12 +52,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* Why is it called _binary search_? 
 
 * TODO
 
 
-## How to Code the TODO Algorithm 
+## How to Code the Binary Search Algorithm 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -110,22 +110,42 @@ DON'T USE ```md FOR PSUEDOCODE SNIPPETS
 
 ### Execute the Plan
 
-Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
+Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
-#### How to Code the TODO Algorithm in JavaScript
+#### How to Code the Binary Search Algorithm in JavaScript
 
-TODO
+Let's start with JavaScript...
 ```js
-TODO
+const powers = [1, 2, 4, 8 ,16, 32, 64, 128, 256, 512];
+ 
+const binarySearch = (arr, num) => {
+ 
+   let startIndex = 0;
+   let endIndex = (arr.length)-1;
+  
+   while (startIndex <= endIndex){
+      
+       let pivot = Math.floor((startIndex + endIndex)/2);
+ 
+       if (arr[pivot] === num){
+            return `Found ${num} at ${pivot}`;
+       } else if (arr[pivot] < num){
+           startIndex = pivot + 1;
+       } else {
+           endIndex = pivot - 1;
+       }
+   }
+   return false;
+}
 ```
+
+
+
+#### How to Code the Binary Search Algorithm in Python
 
 Now let's see it in Python...
 
-
-#### How to Code the TODO Algorithm in Python
-
-TODO
 ```py
 TODO
 ```
