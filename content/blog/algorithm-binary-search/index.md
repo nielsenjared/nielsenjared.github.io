@@ -26,9 +26,9 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * What is linear search? 
 
-* TODO
+* What is binary? 
 
-* TODO 
+* How do you find something in a book? 
 
 
 ### What is Linear Search? 
@@ -36,14 +36,18 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 TODO
 
 
-### TODO #2
+### What is Binary?
 
 TODO
 
 
-### TODO #3
+### How Do You Find Something in a Book? 
+
+In prehistoric times, early humans used a directory to store and retrieve names and their associated phone numbers. It was called, wait for it... the phone book. Yes, it was a _physical_ book! Without a search field! How did our ancestors find they name and number they wanted? 
 
 TODO
+
+Abby Abbot
 
 
 ## Let's Get Meta
@@ -100,12 +104,54 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
 
 TODO
+An array containing _one_ number, for example: `[16]`.
+
+Let's pseudocode this:
+```
+INPUT arr, num
+
+IF arr[0] == num
+    RETURN 'Bingo!'
+ELSE 
+    RETURN FALSE
+```
+
+This is less of a _search_ and more of a guessing game. What's the next smallest problem? An array containing _two_ numbers: `[16, 32]`.
+
+
 
 ```
-DON'T USE ```md FOR PSUEDOCODE SNIPPETS
-    IT WILL RENDER TABBED TEXT 
-        IN ANOTHER COLOR
+INPUT arr, num
+
+IF arr[0] == num
+    RETURN 'Found num in the 0 index`
+ELSE IF arr[1] == num
+    RETURN 'Found num in the 1 index`
+ELSE 
+    RETURN FALSE
 ```
+
+This is still a guessing game, but TODO
+
+But! What did we do when we wrote those two conditionals? We cut the problem in half: `[16]` and `[32]`. 
+
+
+Let's double it: `[8, 16, 32, 64]`. Now what? We _could_ write conditionals for every index, but will it scale? 
+
+If we cut this array in half, we get `[8, 16]` and `[32, 64]`.
+
+
+Let's say we're looking for `32`. 
+
+Let's "cut" our array in half.
+
+There are four elements in the array. If we divide the length by 2, we TODO INTRODUCE PIVOT
+
+The second element in the array is `16`. Do we need to search anymore elements on this side of the array? No. Because `num` is greater than `16`. Now we look at the other side of the array and check if the _next_ index contains our value. What do you know! 
+
+TODO
+
+
 
 
 ### Execute the Plan
