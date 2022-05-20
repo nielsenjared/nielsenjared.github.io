@@ -104,7 +104,7 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
 
 TODO
-An array containing _one_ number, for example: `[16]`.
+An array containing _one_ number, for example: `[1]`.
 
 Let's pseudocode this:
 ```
@@ -116,7 +116,7 @@ ELSE
     RETURN FALSE
 ```
 
-This is less of a _search_ and more of a guessing game. What's the next smallest problem? An array containing _two_ numbers: `[16, 32]`.
+This is less of a _search_ and more of a guessing game. What's the next smallest problem? An array containing _two_ numbers: `[1, 2]`.
 
 
 
@@ -133,23 +133,84 @@ ELSE
 
 This is still a guessing game, but TODO
 
-But! What did we do when we wrote those two conditionals? We cut the problem in half: `[16]` and `[32]`. 
-
-
-Let's double it: `[8, 16, 32, 64]`. Now what? We _could_ write conditionals for every index, but will it scale? 
-
-If we cut this array in half, we get `[8, 16]` and `[32, 64]`.
-
-
-Let's say we're looking for `32`. 
-
-Let's "cut" our array in half.
-
-There are four elements in the array. If we divide the length by 2, we TODO INTRODUCE PIVOT
-
-The second element in the array is `16`. Do we need to search anymore elements on this side of the array? No. Because `num` is greater than `16`. Now we look at the other side of the array and check if the _next_ index contains our value. What do you know! 
+But! What did we do when we wrote those two conditionals? We cut the problem in half: `[1]` and `[2]`. 
 
 TODO
+
+Let's add one more: `[1, 2, 4]`. Now what? We _could_ write conditionals for every index, but will it scale? 
+
+Can we cut this array in half? Not cleanly. 
+
+But we _can_ select the index in the middle and check if it's greater or less than `num`. If `num` is less than the middle index, we will _pivot_ and compare the preceding value. And if `num` is greater than the middle index, we will _pivot_ and check the succeeding value. Hey! Let's call this index _pivot_. 
+
+If our array is `[1, 2, 4]`, the our `pivot` is 2. 
+
+If we are searching for 1, we can start with 
+
+TODO 
+
+
+```
+INPUT arr, num
+
+SET pivot TO arr[1]
+
+IF arr[pivot] == num
+    RETURN 'Found num at pivot'
+ELSE IF arr[pivot] < num
+    RETURN 'Found num in the 0 index'
+ELSE 
+    RETURN 'It's gotta be in the 2 index...'
+```
+
+Let's work with a slightly larger array: `[1, 2, 4, 8]`.
+
+There are a few small problems we need to solve here:
+
+1. In order to scale, we can no longer "hard code" the value stored in `pivot`. 
+
+2. There's no "middle index". So what value do we choose for `pivot`? 
+
+Let's address the first problem first: we can simply divide the array in two.
+```
+SET pivot TO LENGTH OF arr DIVIDED BY 2
+```
+
+Using the example above, our array contains four elements. If we divide the length of our array by two, `pivot` will be equal to 2. 
+
+TODO 
+
+
+
+
+
+
+
+
+Let's update our pseudocode:
+```
+INPUT arr, num
+
+SET pivot TO LENGTH OF arr DIVIDED BY 2
+
+IF arr[pivot] == num
+    RETURN 'Found num at pivot'
+ELSE IF arr[pivot] < num
+    RETURN 'Found num in the 0 index'
+ELSE 
+    RETURN '
+```
+
+
+The second element in the array is `16`. Do we need to search anymore elements on this side of the array? No. Because `num` is greater than `16`. Now we look at the other side of the array and cTODO
+
+`[1, 2, 4, 8, 16, 32, 64, 128. 256]`
+
+
+`[2, 4, 8, 16]` and `[32, 64, 128. 256]`heck if the _next_ index contains our value. What do you know! 
+
+
+
 
 
 
