@@ -178,7 +178,37 @@ SET pivot TO LENGTH OF arr DIVIDED BY 2
 
 Using the example above, our array contains four elements. If we divide the length of our array by two, `pivot` will be equal to 2. 
 
+If `pivot` is equal to 2, the value at that index in our array is `4`. 
+
+TODO INCREASE ARRAY LENGTH BY 1, FLOOR
+
+Previously, we hard coded the conditional checks on either side of the pivot. Will that work here? 
+
+No, because there are now _two_ values we need to check on the left, or lower, side of our pivot. 
+
+It's time to iterate! 
+
+TODO WHY DO WE CHOOSE WHILE?
+
+`while` loops need a conditional. What do we want to use here? 
+
+
+
+If `pivot` is less than `num`, then on the next iteration we need to start with a value greater than `pivot`. But we need to ensure we are still checking all of the values greater than `pivot`. 
+
 TODO 
+```
+ELSE IF arr[pivot] < num
+    START SEARCHING IN THE NEXT ITERATION AT pivot + 1
+```
+
+TODO IF IT'S LESS? 
+
+```
+ELSE
+    SEARCH UP TO pivot - 1 IN THE NEXT ITERATION
+```
+
 
 
 
