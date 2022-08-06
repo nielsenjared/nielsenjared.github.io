@@ -173,52 +173,6 @@ There are a few small problems we need to solve here:
 
 Let's address the first problem first: we can simply divide the array in two.
 ```
-SET pivot TO LENGTH OF arr DIVIDED BY 2
-```
-
-Using the example above, our array contains four elements. If we divide the length of our array by two, `pivot` will be equal to 2. 
-
-If `pivot` is equal to 2, the value at that index in our array is `4`. 
-
-TODO INCREASE ARRAY LENGTH BY 1, FLOOR
-
-Previously, we hard coded the conditional checks on either side of the pivot. Will that work here? 
-
-No, because there are now _two_ values we need to check on the left, or lower, side of our pivot. 
-
-It's time to iterate! 
-
-TODO WHY DO WE CHOOSE WHILE?
-
-`while` loops need a conditional. What do we want to use here? 
-
-
-
-If `pivot` is less than `num`, then on the next iteration we need to start with a value greater than `pivot`. But we need to ensure we are still checking all of the values greater than `pivot`. 
-
-TODO 
-```
-ELSE IF arr[pivot] < num
-    START SEARCHING IN THE NEXT ITERATION AT pivot + 1
-```
-
-TODO IF IT'S LESS? 
-
-```
-ELSE
-    SEARCH UP TO pivot - 1 IN THE NEXT ITERATION
-```
-
-
-
-
-
-
-
-
-
-Let's update our pseudocode:
-```
 INPUT arr, num
 
 SET pivot TO LENGTH OF arr DIVIDED BY 2
@@ -228,16 +182,130 @@ IF arr[pivot] == num
 ELSE IF arr[pivot] < num
     RETURN 'Found num in the 0 index'
 ELSE 
-    RETURN '
+    RETURN 'It's gotta be in the 2 index...'
 ```
 
+Using the example above, our array contains four elements. If we divide the length of our array by two, `pivot` will be equal to 2. 
 
-The second element in the array is `16`. Do we need to search anymore elements on this side of the array? No. Because `num` is greater than `16`. Now we look at the other side of the array and cTODO
+If `pivot` is equal to 2, the value at that index in our array is `4`. 
 
-`[1, 2, 4, 8, 16, 32, 64, 128. 256]`
+But what if there's an odd number of elements in the array? 
+```
+[1, 2, 3, 4, 5]
+```
+
+If we divide the length of the array by 2, we get 2.5. 
+
+We simply need to round up or down. Let's round down. Our pseudocode now reads: 
+```
+INPUT arr, num
+
+SET pivot TO THE FLOOR OF THE LENGTH OF arr DIVIDED BY 2
+
+IF arr[pivot] == num
+    RETURN 'Found num at pivot'
+ELSE IF arr[pivot] < num
+    RETURN 'Found num in the 0 index'
+ELSE 
+    RETURN 'It's gotta be in the 2 index...'
+```
+
+When we divide the length of this array by 2 and floor the returned value, our `pivot` is equal to 2. 
+
+The value stored in the 2 index is `3`. 
+
+Previously, we hard coded the conditional checks on either side of the pivot. Will that work here? 
+
+No, because there are now _two_ values we need to check on either side of our pivot. 
+
+It's time to iterate! 
+
+TODO WHY DO WE CHOOSE WHILE?
+
+Our `while` loops need a conditional. What do we want to use here? 
+
+TODO
+
+If `pivot` is less than `num`, then on the next iteration we need to start with a value greater than `pivot`. But we need to ensure we are still checking _all_ of the values greater than `pivot`. 
+
+And if `pivot` is greater than `num`, then on the next iteration we need to start with a value less than `pivot`. And, as above, we need to ensure we are still checking _all_ of the values less than `pivot`. 
+
+Do you see a pattern? 
+
+Before we address iteration, et's translate these conditionals to pseudocode: 
+```
+INPUT arr, num
+
+SET pivot TO THE FLOOR OF THE LENGTH OF arr DIVIDED BY 2
+
+IF arr[pivot] == num
+    RETURN 'Found num at pivot'
+ELSE IF arr[pivot] < num
+    START SEARCHING IN THE NEXT ITERATION AT pivot + 1
+ELSE 
+    SEARCH UP TO pivot - 1 IN THE NEXT ITERATION
+```
+
+Let's step through a hypothetical scenario using our five element array and searching for `5`. 
+
+On our first iteration, we set `pivot` to `3`. 
+
+TODO GRAPHIC/TABLE
+
+We start our conditional checks and see that `pivot` is not equal to `num`, but that it _is_ less than `num`. We can now ignore the values up to and including `pivot`. 
+
+TODO GRAPHIC
+
+In the next iteration, we'll start searching at `pivot + 1`, which is `4`. 
+
+What happens in the next iteration? 
+
+We set `pivot` to the floor of the length of our array divided by 2, which is 2. 
+
+Hey! Wait! We already checked this value. 
+
+We need a new `pivot`. 
+
+We need to set a `pivot` from the remaining values to be checked. In our case, that's: 
+```
+[4, 5]
+```
+
+If we floor the length of _this_ array divided by 2, we get 1. But we know that's not _actually_ the 1 index. 
+
+What do we do here? 
+
+We get abstract! 
+
+Let's declare variables to store these values iteration to iteration: 
+
+TODO 
 
 
-`[2, 4, 8, 16]` and `[32, 64, 128. 256]`heck if the _next_ index contains our value. What do you know! 
+
+
+
+
+
+
+Let's translate this to pseudocode:
+```
+INPUT arr, num
+
+SET start index TO 0
+SET end index TO THE LENGTH OF THE ARRAY - 1
+
+WHILE
+    SET pivot TO THE FLOOR OF THE LENGTH OF arr DIVIDED BY 2
+
+    IF arr[pivot] == num
+        RETURN 'Found num at pivot'
+    ELSE IF arr[pivot] < num
+        SET start index TO pivot + 1
+    ELSE 
+        SET end index TO pivot - 1 
+RETURN FALSE
+```
 
 
 
