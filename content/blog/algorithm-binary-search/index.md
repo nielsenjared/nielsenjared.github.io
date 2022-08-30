@@ -277,18 +277,15 @@ What do we do here?
 
 We get abstract! 
 
-Let's declare variables to store these values iteration to iteration: 
+Let's declare variables to store these values in each iteration:
 
-TODO 
+```
+SET start index TO 0
+SET end index TO THE LENGTH OF THE ARRAY - 1
+```
 
+Finally, we need to refactor our conditional statements to reassign these values in each iteration: 
 
-
-
-
-
-
-
-Let's translate this to pseudocode:
 ```
 INPUT arr, num
 
@@ -306,11 +303,6 @@ WHILE
         SET end index TO pivot - 1 
 RETURN FALSE
 ```
-
-
-
-
-
 
 
 ### Execute the Plan
@@ -352,7 +344,27 @@ const binarySearch = (arr, num) => {
 Now let's see it in Python...
 
 ```py
-TODO
+import math
+
+powers = [1, 2, 4, 8 ,16, 32, 64, 128, 256, 512]
+ 
+def binarySearch(arr, num):
+ 
+   startIndex = 0
+   endIndex = len(arr)-1
+  
+   while (startIndex <= endIndex):
+      
+       pivot = math.floor((startIndex + endIndex)/2)
+ 
+       if (arr[pivot] == num):
+            return f"Found {num} at index {pivot}"
+       elif (arr[pivot] < num):
+           startIndex = pivot + 1
+       else:
+           endIndex = pivot - 1
+
+   return false
 ```
 
 ### Evaluate the Plan
