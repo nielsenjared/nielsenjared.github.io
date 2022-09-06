@@ -33,21 +33,19 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 ### What is Linear Search? 
 
-TODO
+Linear search is just that, a search that proceeds linearly, checking each element in an array in sequential order. 
 
 
 ### What is Binary?
 
-TODO
+In computer science, binary is the representation of data or instructions using the symbols "0" and "1". 
+
+In general, binary is something composed of two parts. 
 
 
 ### How Do You Find Something in a Book? 
 
-In prehistoric times, early humans used a directory to store and retrieve names and their associated phone numbers. It was called, wait for it... the phone book. Yes, it was a _physical_ book! Without a search field! How did our ancestors find they name and number they wanted? 
-
-TODO
-
-Abby Abbot
+In prehistoric times, early humans used a directory to store and retrieve names and their associated phone numbers. It was called, wait for it... the phone book. Yes, it was a _physical_ book! Without a search field! How did our ancestors find the name and number they wanted? They opened the book to a random page, took note of the information presented on that page, then assessed whether they needed to search forward or back to find their query. 
 
 
 ## Let's Get Meta
@@ -79,12 +77,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN TODO
-WHEN TODO
-THEN TODO
+GIVEN a sorted array
+WHEN I request a specific value
+THEN I am returned the location of that value in the array
 ```
 
-That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
+That’s our general outline. We know our input conditions, a sorted array, and our output requirements, the location of a specific value in the array, and our goal is to improve the performance of a linear search.
 
 Let’s make a plan!
 
@@ -103,7 +101,6 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
 
-TODO
 An array containing _one_ number, for example: `[1]`.
 
 Let's pseudocode this:
@@ -118,8 +115,6 @@ ELSE
 
 This is less of a _search_ and more of a guessing game. What's the next smallest problem? An array containing _two_ numbers: `[1, 2]`.
 
-
-
 ```
 INPUT arr, num
 
@@ -131,11 +126,7 @@ ELSE
     RETURN FALSE
 ```
 
-This is still a guessing game, but TODO
-
-But! What did we do when we wrote those two conditionals? We cut the problem in half: `[1]` and `[2]`. 
-
-TODO
+This is still a guessing game, but now it's binary! What did we do when we wrote those two conditionals? We cut the problem in half: `[1]` and `[2]`. 
 
 Let's add one more: `[1, 2, 4]`. Now what? We _could_ write conditionals for every index, but will it scale? 
 
@@ -143,12 +134,7 @@ Can we cut this array in half? Not cleanly.
 
 But we _can_ select the index in the middle and check if it's greater or less than `num`. If `num` is less than the middle index, we will _pivot_ and compare the preceding value. And if `num` is greater than the middle index, we will _pivot_ and check the succeeding value. Hey! Let's call this index _pivot_. 
 
-If our array is `[1, 2, 4]`, the our `pivot` is 2. 
-
-If we are searching for 1, we can start with 
-
-TODO 
-
+If our array is `[1, 2, 4]`, the our `pivot` is `2`. Let's pseudocode this: 
 
 ```
 INPUT arr, num
@@ -162,6 +148,7 @@ ELSE IF arr[pivot] < num
 ELSE 
     RETURN 'It's gotta be in the 2 index...'
 ```
+
 
 Let's work with a slightly larger array: `[1, 2, 4, 8]`.
 
@@ -220,11 +207,7 @@ No, because there are now _two_ values we need to check on either side of our pi
 
 It's time to iterate! 
 
-TODO WHY DO WE CHOOSE WHILE?
-
-Our `while` loops need a conditional. What do we want to use here? 
-
-TODO
+Because we don't know how long our loop needs to run, let's use a `while`. Our `while` loops need a conditional. What do we want to use here? 
 
 If `pivot` is less than `num`, then on the next iteration we need to start with a value greater than `pivot`. But we need to ensure we are still checking _all_ of the values greater than `pivot`. 
 
@@ -232,7 +215,7 @@ And if `pivot` is greater than `num`, then on the next iteration we need to star
 
 Do you see a pattern? 
 
-Before we address iteration, et's translate these conditionals to pseudocode: 
+Before we implement our `while` iteration, let's translate these conditionals to pseudocode: 
 ```
 INPUT arr, num
 
@@ -250,11 +233,7 @@ Let's step through a hypothetical scenario using our five element array and sear
 
 On our first iteration, we set `pivot` to `3`. 
 
-TODO GRAPHIC/TABLE
-
 We start our conditional checks and see that `pivot` is not equal to `num`, but that it _is_ less than `num`. We can now ignore the values up to and including `pivot`. 
-
-TODO GRAPHIC
 
 In the next iteration, we'll start searching at `pivot + 1`, which is `4`. 
 
@@ -371,10 +350,10 @@ def binarySearch(arr, num):
 
 Can we do better? 
 
-TODO
+Of course! This is just the beginning of our exploration of search algorithms. There are variations on binary search as well as data structures based on binary search that improve the performance. 
 
 
-#### What is the Big O Of TODO?
+#### What is the Big O Of Binary Search?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -385,19 +364,19 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does binary search solve? 
 
 * TODO
 
 
 ### Why Do I Need to Know This? 
 
-TODO
+Binary search is logarithmic. It's a very efficient approach to algorithm design. You'll see (and use!) this pattern elsewhere. 
+ 
 
+### What Problem(s) Does Binary Search Solve? 
 
-### What Problem(s) Does TODO Solve? 
-
-TODO
+Binary search is a performance improvement over linear search, cutting the number of operations nearly in half. But for small arrays, like those we used in the examples above, linear search is is faster as it requires fewer operations to find the value. 
 
 
 ### TODO
