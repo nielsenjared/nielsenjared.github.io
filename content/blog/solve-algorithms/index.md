@@ -1,5 +1,5 @@
 ---
-title: "How to Solve Any Algorithm"
+title: "How to Solve Algorithms"
 date: "2021-05-07"
 description: "Learn how to solve any algorithm using these simple and easy-to-remember techiques."
 keywords: ['algorithms', 'problem solving', 'computational thinking', 'heuristics']
