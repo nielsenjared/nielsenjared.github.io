@@ -1,9 +1,10 @@
 ---
 title: "Learn How to Code the Binary Search Algorithm"
-date: "2022-05-06"
+date: "2022-09-09"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the binary search algorithm in JavaScript and Python."
 keywords: ['algorithm', 'binary search', 'javascript', 'python']
 ---
+
 
 
 ![ Binary Search ](./jarednielsen-algorithm-binary-search.png)
@@ -56,7 +57,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why is it called _binary search_? 
 
-* TODO
+* What does it mean to pivot? 
 
 
 ## How to Code the Binary Search Algorithm 
@@ -366,7 +367,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * What problem(s) does binary search solve? 
 
-* TODO
+* What does it mean to pivot?
 
 
 ### Why Do I Need to Know This? 
@@ -376,12 +377,26 @@ Binary search is logarithmic. It's a very efficient approach to algorithm design
 
 ### What Problem(s) Does Binary Search Solve? 
 
-Binary search is a performance improvement over linear search, cutting the number of operations nearly in half. But for small arrays, like those we used in the examples above, linear search is is faster as it requires fewer operations to find the value. 
+Binary search is a performance improvement over linear search, cutting the number of operations nearly in half. But for small arrays, like those we used in the examples above, linear search is faster as it requires fewer operations to find the value. 
 
 
-### TODO
+### What Does It Mean to Pivot? 
 
-TODO
+There are several definitions of "pivot", according to [dictionary.com](https://www.dictionary.com/browse/pivot). The first, as a noun:
+
+> a pin, point, or short shaft on the end of which something rests and turns, or upon and about which something rotates or oscillates.
+
+And as a verb: 
+
+> to turn on or as on a pivot
+
+> to modify (a policy, opinion, product, etc.) while retaining some continuity with its previous version
+
+The example they provide is: 
+
+> The start-up was able to pivot the app to a new market without losing too many man-hours of coding.
+
+In our binary search algorithm, we create a pivot that allows us to turn "left" or "right". With each pivot we create, we modify the array while retaining some continuity with its previous version until we find our value.
 
 
 ## A is for Algorithms
