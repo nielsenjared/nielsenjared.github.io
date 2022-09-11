@@ -1,7 +1,7 @@
 ---
 title: "The Superlative Guide to Algorithms"
 date: "2022-08-12"
-description: "TODO"
+description: "If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development."
 keywords: ['algorithms', 'problem solving', 'computational thinking', 'heuristics']
 ---
 
