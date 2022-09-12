@@ -1,15 +1,15 @@
 ---
 title: "Learn How to Code the Recursive Factorial Algorithm"
-date: "2022-TODO-TODO"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO"
-keywords: ['algorithm', 'TODO', 'javascript', 'python']
+date: "2022-09-23"
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive factorial algorithm in JavaScript and Python."
+keywords: ['algorithm', 'recursion', 'factorial', 'recursive factorial', 'javascript', 'python']
 ---
 
 
-![ TODO ](./jarednielsen-algorithm-TODO.png)
+![ Illustration of recursive factorial ](./jarednielsen-algorithm-TODO.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive factorial algorithm in JavaScript _and_ Python.
 
 
 ---
@@ -24,22 +24,78 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
+* What is recursion? 
+
+* What is a factorial? 
+
 * TODO 
 
-* TODO
 
-* TODO 
+### What is Recursion? 
+
+TODO 
+In computer science, recursion occurs when a function calls itself within its declaration.
+
+For example:
+
+const loop = () => loop();
+
+If you run this in your browser console or using Node, you’ll get an error.
+
+Why?
+
+Too much recursion!
+
+const loop() is just that, a constant loop.
+
+🔁
+
+We use recursion to solve a large problem by breaking it down into smaller instances of the same problem.
+
+To do that, we need to tell our function what the smallest instance looks like.
+
+If you recall, with proof by induction we need to establish two things:
+
+    base
+    induction
+
+Recursion is similar. We also need to establish a base case but rather than induction, we establish the recursive case.
+
+We use the recursive case to break the problem down into smaller instances.
+
+We use the base case to return when there are no more problems to be solved.
+
+For example. a family on vacation:
+
+const fighting = patience => {
+ if (patience <= 0) {
+   return "If you don’t stop fighting, I will turn this car around!"
+ }
+ return fighting(patience - 1);
+};
+
+The kids are fighting in the backseat.
+
+Dad is driving and quickly losing his patience.
+
+Our recursive case is the constant fighting.
+
+Our base case is dad’s patience when it runs out.
+
+🚗
 
 
-### TODO #1
 
-TODO
+### What is a Factorial? 
 
+A factorial is the product of all positive integers less than or equal to n.
 
-### TODO #2
+We write that as n!.
 
-TODO
-
+For example, 5!:
+```
+5 * 4 * 3 * 2 * 1 = 120
+```
 
 ### TODO #3
 
@@ -57,7 +113,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 * TODO
 
 
-## How to Code the TODO Algorithm 
+## How to Code the Recursive Factorial Algorithm 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -75,7 +131,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN TODO
+GIVEN a number, `n`
 WHEN TODO
 THEN TODO
 ```
@@ -99,13 +155,28 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
 
-TODO
+```
+n = 1
+```
 
+The result of _n!_ where _n_ is equal to 1 is 1. 
+
+
+
+TODO
 ```
-DON'T USE ```md FOR PSUEDOCODE SNIPPETS
-    IT WILL RENDER TABBED TEXT 
-        IN ANOTHER COLOR
+INPUT n
+
+SET p 
+
+
+
+RETURN p
 ```
+
+
+
+
 
 
 ### Execute the Plan
@@ -117,7 +188,13 @@ Now it's simply a matter of translating our pseudocode into the syntax of our pr
 
 TODO
 ```js
-TODO
+const factorial = num => {
+   if (num == 0 || num === 1) {
+       return 1;
+   } else {
+       return (num * factorial(num - 1));
+   }
+};
 ```
 
 Now let's see it in Python...
