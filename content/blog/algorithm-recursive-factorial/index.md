@@ -132,11 +132,11 @@ To understand our problem, we first need to define it. Let’s reframe the probl
 
 ```md
 GIVEN a number, `n`
-WHEN TODO
-THEN TODO
+WHEN I run my `factorial` function
+THEN my product is calculated recursively
 ```
 
-That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
+That’s our general outline. We know our input conditions, a whole number greater than zero, and our output requirements, the factorial product of that whole number, and our goal is to calculate the product recursively.
 
 Let’s make a plan!
 
@@ -160,6 +160,23 @@ n = 1
 ```
 
 The result of _n!_ where _n_ is equal to 1 is 1. 
+
+| n!    | aka               | product   |
+| ---   | ---               | ---       |
+| 1!    | 1                 | 1         |
+| 2!    | 2 X 1             | 2         |
+| 3!    | 3 X 2 X 1         | 6         |
+| 4!    | 4 X 3 X 2 X 1     | 24        |
+| 5!    | 5 X 4 X 3 X 2 X 1 | 120       |
+
+Do you see a pattern? 
+
+
+
+TODO 
+```
+n = n X (n - 1)!
+```
 
 
 
