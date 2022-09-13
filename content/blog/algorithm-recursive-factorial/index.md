@@ -161,6 +161,8 @@ n = 1
 
 The result of _n!_ where _n_ is equal to 1 is 1. 
 
+
+
 | n!    | aka               | product   |
 | ---   | ---               | ---       |
 | 1!    | 1                 | 1         |
