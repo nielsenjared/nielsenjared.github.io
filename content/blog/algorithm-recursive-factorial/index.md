@@ -161,7 +161,7 @@ n = 1
 
 The result of _n!_ where _n_ is equal to 1 is 1. 
 
-
+TODO 
 
 | n!    | aka               | product   |
 | ---   | ---               | ---       |
@@ -173,11 +173,21 @@ The result of _n!_ where _n_ is equal to 1 is 1.
 
 Do you see a pattern? 
 
+Each factorial is composed of the number, _n_, multiplied by the previous factorial. For example, _5!_ can also be expressed as:
+```
+5 * 4!
+```
 
+And _4!_ can also be expressed as:
+```
+4 * 3!
+```
+
+Now we can get abstract! In each iteration, _n!_ is equal to _n * n - 1_. 
 
 TODO 
 ```
-n = n X (n - 1)!
+n! = n * (n - 1)!
 ```
 
 
@@ -194,7 +204,13 @@ RETURN p
 ```
 
 
-
+```
+FUNCTION factorial
+    INPUT n
+    IF n IS EQUAL TO 0 OR 1
+        RETURN 1
+    ELSE
+        RETURN n * factorial(n - 1)
 
 
 
