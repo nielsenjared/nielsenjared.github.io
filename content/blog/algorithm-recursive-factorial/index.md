@@ -24,21 +24,35 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
+* What is iteration? 
+
 * What is recursion? 
 
 * What is a factorial? 
 
-* TODO 
+
+### What is Iteration? 
+
+According to [Wikipedia](https://en.wikipedia.org/wiki/Iteration): 
+
+> Iteration is the repetition of a process in order to generate a (possibly unbounded) sequence of outcomes. Each repetition of the process is a single iteration, and the outcome of each iteration is then the starting point of the next iteration. 
+
+We use `for` and `while` loops to iterate. 
 
 
 ### What is Recursion? 
 
-TODO 
+This is our introduction to recursion in this series, but, as the tired joke goes:
+
+> In order to understand recursion, one must first understand recursion. 
+
 In computer science, recursion occurs when a function calls itself within its declaration.
 
 For example:
 
+```js
 const loop = () => loop();
+```
 
 If you run this in your browser console or using Node, you’ll get an error.
 
@@ -46,7 +60,7 @@ Why?
 
 Too much recursion!
 
-const loop() is just that, a constant loop.
+`const loop()` is just that, a constant loop.
 
 🔁
 
@@ -56,8 +70,9 @@ To do that, we need to tell our function what the smallest instance looks like.
 
 If you recall, with proof by induction we need to establish two things:
 
-    base
-    induction
+* base
+
+* induction
 
 Recursion is similar. We also need to establish a base case but rather than induction, we establish the recursive case.
 
@@ -66,14 +81,14 @@ We use the recursive case to break the problem down into smaller instances.
 We use the base case to return when there are no more problems to be solved.
 
 For example. a family on vacation:
-
+```js
 const fighting = patience => {
  if (patience <= 0) {
    return "If you don’t stop fighting, I will turn this car around!"
  }
  return fighting(patience - 1);
 };
-
+```
 The kids are fighting in the backseat.
 
 Dad is driving and quickly losing his patience.
@@ -85,21 +100,16 @@ Our base case is dad’s patience when it runs out.
 🚗
 
 
-
 ### What is a Factorial? 
 
-A factorial is the product of all positive integers less than or equal to n.
+A factorial is the product of all positive integers less than or equal to _n_.
 
-We write that as n!.
+We write that as _n!_.
 
-For example, 5!:
+For example, _5!_:
 ```
 5 * 4 * 3 * 2 * 1 = 120
 ```
-
-### TODO #3
-
-TODO
 
 
 ## Let's Get Meta
@@ -108,9 +118,9 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does recursion solve? 
 
-* TODO
+* What problem(s) does recursion create? 
 
 
 ## How to Code the Recursive Factorial Algorithm 
@@ -160,8 +170,39 @@ n = 1
 ```
 
 The result of _n!_ where _n_ is equal to 1 is 1. 
+```
+INPUT n
 
-TODO 
+RETURN n
+```
+
+Not much of an algorithm, eh? 
+
+The next smallest problem to solve is 2. The result of _n!_ where _n_ is equal to 2 is 2:
+```
+2 X 1 = 2
+```
+
+Let's hard code this in pseudocode:
+```
+INPUT n
+
+IF n is equal to 1
+    RETURN n
+ELSE
+    RETURN n X 1
+```
+
+This will only return the correct factorial if _n_ is equal to 1 or 2. We'll fix this soon enough. 
+
+The next smallest problem is 3. The result of _n!_ where _n_ is equal to 3 is 6:
+```
+3 X 2 X 1 = 6
+```
+
+How do we pseudocode this? 
+
+We _could_ continue to hard code each increment of _n_ in a conditional statement, but that's not the goal or very pragmatic. It's time to look for a pattern! Let's map out the next few increments of _n!_: 
 
 | n!    | aka               | product   |
 | ---   | ---               | ---       |
@@ -183,27 +224,43 @@ And _4!_ can also be expressed as:
 4 * 3!
 ```
 
-Now we can get abstract! In each iteration, _n!_ is equal to _n * n - 1_. 
+And so on...
 
-TODO 
+Let's look at it another way. Using _5!_ as an example, what is 4 in relation to _n_ when _n_ is equal to 5? 
+```
+n - 1
+```
+
+And what is 3 in relation to _n_ when _n_ is equal to 5? 
+```
+n - 2
+```
+
+So... another way to write _5!_, where _n_ is equal to 5, could be:
+```
+n * (n - 1) * (n - 2) * (n - 3) * (n - 4)
+```
+
+Now we can get abstract! In each iteration, _n!_ is equal to _n_ multiplied by _n - 1_. We can express this in an equation: 
 ```
 n! = n * (n - 1)!
 ```
 
+Where have we seen this or something like it before? 
 
+Recursion!
 
-TODO
+What's our base case? 
 ```
-INPUT n
-
-SET p 
-
-
-
-RETURN p
+1
 ```
 
+What's our recursive case?
+```
+n * (n - 1)!
+```
 
+Let's translate this to pseudocode: 
 ```
 FUNCTION factorial
     INPUT n
@@ -211,42 +268,48 @@ FUNCTION factorial
         RETURN 1
     ELSE
         RETURN n * factorial(n - 1)
-
+```
 
 
 ### Execute the Plan
 
-Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
+Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
 #### How to Code the TODO Algorithm in JavaScript
 
-TODO
+Let's start with JavaScript...
+
 ```js
-const factorial = num => {
-   if (num == 0 || num === 1) {
-       return 1;
-   } else {
-       return (num * factorial(num - 1));
-   }
-};
+const factorial = n => {
+    if (n == 0 || n === 1) {
+        return 1;
+    } else {
+        return (n * factorial(n - 1));
+    }
+ };
 ```
-
-Now let's see it in Python...
-
 
 #### How to Code the TODO Algorithm in Python
 
-TODO
+Now let's see it in Python...
+
 ```py
-TODO
+def factorial(n):
+    if (n == 0) or (n == 1):
+        return 1
+    else: 
+        return n * factorial(n - 1)
 ```
 
 ### Evaluate the Plan
 
 Can we do better? 
 
+It depends. 
+
 TODO
+
 
 
 #### What is the Big O Of TODO?
@@ -260,9 +323,9 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does recursion solve? 
 
-* TODO
+* What problem(s) does recursion create? 
 
 
 ### Why Do I Need to Know This? 
@@ -275,7 +338,7 @@ TODO
 TODO
 
 
-### TODO
+### What Problem(s) Does Recursion Create? 
 
 TODO
 
