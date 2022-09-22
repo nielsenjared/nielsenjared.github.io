@@ -13,7 +13,7 @@ In the previous issue of _The Solution_, we looked at how to cultivate a beginne
 
 What _is_ curiosity? 
 
-If you Google it, you'll find images of question marks, magnifiying glasses, cats, and the Mars rover of the same name. 
+If you Google it, you'll find definitions such as "a strong desire to know or learn something" and images of question marks, magnifiying glasses, cats, and the Mars rover of the same name. 
 
 
 
@@ -26,6 +26,8 @@ In _How Humans Learn_, Joshua R. Eyler, explores the evolutionary underpinnings 
 And then we grow up and go to school, where, according to Eyler, “Though children are curious, students are not.”
 
 Why?
+
+Story time...
 
 If you were lucky, your mathematics teachers were good.
 
@@ -41,7 +43,7 @@ But not in the classroom as mathematics teachers.
 
 They phoned it in. 
 
-This made mathematics hard.
+This made mathematics hard to learn.
 
 Because it was hard to learn, I thought it wasn’t for me.
 
@@ -93,11 +95,7 @@ Perhaps the question to ask is not what or how, but why?
 
 Agarwal used his fun demos to pique curiosity. 
 
-He wanted students to ask ‘why’. 
-
-Why?
-
-Because why questions “really delve into the significance of an issue”.
+He wanted students to ask ‘why’ because 'why' questions “really delve into the significance of an issue”.
 
 In _How Humans Learn_, Joshua R. Eyler writes: 
 
@@ -142,6 +140,37 @@ This is very similar to Polya’s problem solving heuristic:
 4. Examine the solution
 
 The key component for either of these approaches is that last step: _metacognitive reflection_. 
+
+According to Oakley, "the easiest way to become more metacognitive is simply to start asking yourself higher-level questions," such as: 
+
+* What are the resources available to help me when I struggle?
+
+* Do I focus on the right things at the right level? Should I prioritize differently? 
+
+* Can I be more effective? What can I improve? 
+
+* What do I find difficult and why? 
+
+TODO overconfidence
+
+
+A [study conducted by the University of Michigan](https://srcd.onlinelibrary.wiley.com/doi/10.1111/j.1467-8624.2009.01356.x) found that:
+
+> ...young children are motivated to seek causal information actively and use specific conversational strategies to obtain it.
+
+
+> Results indicate that when preschoolers ask "why" questions, they're not merely trying to prolong conversation, they're trying to get to the bottom of things.
+
+In _Thinking Fast and Slow_, Daniel Kahneman refers to overconfidence as “the most significant of the cognitive biases." 
+
+
+The Five Why's
+
+
+
+
+
+
 
 Both programming and problem solving are metacognitive activities. 
 
