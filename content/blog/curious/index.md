@@ -142,13 +142,6 @@ According to Oakley, "the easiest way to become more metacognitive is simply to 
 
 * What do I find difficult and why? 
 
-Oakley also recommends metacognitive reflection to avoid falling into the trap of overconfidence. 
-
-In _Thinking Fast and Slow_, Daniel Kahneman refers to overconfidence as “the most significant of the cognitive biases." 
-
-TODO overconfidence
-
-
 One of my favorite activities to use in Agile retrospectives is [The Five Whys](https://en.wikipedia.org/wiki/Five_whys), which investigates cause-and-effect to get to the root of a problem. Wikipedia offers the following example, where the problem is that "The vehicle will not start":
 
 * Why will the vehicle not start? _The battery is dead._
