@@ -276,7 +276,7 @@ FUNCTION factorial
 Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
-#### How to Code the TODO Algorithm in JavaScript
+#### How to Code the Recursive Factorial Algorithm in JavaScript
 
 Let's start with JavaScript...
 
@@ -290,7 +290,7 @@ const factorial = n => {
  };
 ```
 
-#### How to Code the TODO Algorithm in Python
+#### How to Code the Recursive Factorial Algorithm in Python
 
 Now let's see it in Python...
 
@@ -308,11 +308,10 @@ Can we do better?
 
 It depends. 
 
-TODO
+While recursion might be mind expanding, it's also space expanding. We want to be concerned about both time _and_ space complexity. Each recursive call to `factorial` adds another function to the call stack, increasing our memory usage. 
 
 
-
-#### What is the Big O Of TODO?
+#### What is the Big O Of Recursive Factorial?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -330,17 +329,27 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 ### Why Do I Need to Know This? 
 
-TODO
+We can divide the topic of "recursive factorial" into two key takeaways:
+
+* Factorial: You will probably never write a factorial algorithm professionally, (not intentionally, at any rate), but you need to know factorials for at least two reasons: 
+
+    * Factorials are used to calculate combinations and permutations 
+    
+    * Factorial is a time and space complexity you definitely want to avoid
+
+* Recursion: You may not like it and you may never use it yourself, but you're definitely going to encounter it again in your career (maybe even in the next chapter!). 
 
 
-### What Problem(s) Does TODO Solve? 
+### What Problem(s) Does Recursion Solve?
 
-TODO
+Recursion allows us to write functions that are compact and elegant.
 
 
 ### What Problem(s) Does Recursion Create? 
 
-TODO
+Recursion can easily exceed the maximum size of the call stack. 
+
+Recursion can make the program harder to understand not only for your collaborators, but for your future self.
 
 
 ## A is for Algorithms
