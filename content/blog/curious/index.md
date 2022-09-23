@@ -17,6 +17,7 @@ If you Google it, you'll find definitions such as "a strong desire to know or le
 
 
 
+
 Why are we curious?
 
 In _How Humans Learn_, Joshua R. Eyler, explores the evolutionary underpinnings of curiosity: 
@@ -105,7 +106,7 @@ What Agarwal and Eyler both recognize is the problem with higher education, and 
 
 > The question “Why?” steadily gets replaced by “What do I need to do to achieve X?”
 
-How do we relearn curiosity? 
+So... how do we relearn curiosity? 
 
 Dan Rothstein and Luz Santana outline The Question Formulation Technique, a strategy for developing questions. It...
 
@@ -127,7 +128,7 @@ Oakley outlines the following model for being a _metacognitive learner_:
 
 Where have we seen this or something like it before? 
 
-:thinking-face:
+🤔
 
 This is very similar to Polya’s problem solving heuristic:
 
@@ -151,26 +152,43 @@ According to Oakley, "the easiest way to become more metacognitive is simply to 
 
 * What do I find difficult and why? 
 
-TODO overconfidence
-
-
-A [study conducted by the University of Michigan](https://srcd.onlinelibrary.wiley.com/doi/10.1111/j.1467-8624.2009.01356.x) found that:
-
-> ...young children are motivated to seek causal information actively and use specific conversational strategies to obtain it.
-
-
-> Results indicate that when preschoolers ask "why" questions, they're not merely trying to prolong conversation, they're trying to get to the bottom of things.
+Oakley also recommends metacognitive reflection to avoid falling into the trap of overconfidence. 
 
 In _Thinking Fast and Slow_, Daniel Kahneman refers to overconfidence as “the most significant of the cognitive biases." 
 
+TODO overconfidence
 
-The Five Why's
+One of my favorite activities to use in Agile retrospectives is [The Five Whys](https://en.wikipedia.org/wiki/Five_whys), which investigates cause-and-effect to get to the root of a problem. Wikipedia offers the following example, where the problem is that "The vehicle will not start":
 
+* Why will the vehicle not start? _The battery is dead._
 
+* Why is the battery dead? _The alternator is not functioning._
 
+* Why is the alternator not functioning? _The alternator belt is broken._
 
+* Why is the alternator belt broken? _The alternator belt was well beyond its useful service life and not replaced._
 
+* Why was the alternator belt not replaced? _The vehicle was not maintained according to the recommended service schedule._
 
+Where have we seen this or something like it before? 
+
+Recursion! 
+
+We use the recursive case, "Why?", to break the problem down into smaller instances until we reach the base case, the root cause. 
+
+To bring things full circle, children are adept at getting to the bottom of things. A [study conducted at the University of Michigan](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2784636/) found that:
+
+> ...young children are motivated to seek causal information actively and use specific conversational strategies to obtain it.
+
+We've all been there. We can represent this is a function: 
+```js
+const questioning = moms_patience => {
+ if (moms_patience <= 0) {
+   return "Because! That's why!"
+ }
+ return questioning(moms_patience - 1);
+};
+```
 
 Both programming and problem solving are metacognitive activities. 
 
