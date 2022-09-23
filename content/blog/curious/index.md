@@ -8,16 +8,6 @@ preview_text: “TODO"
 
 ![TODO](./jarednielsen-TODO.png)
 
-TODO 
-In the previous issue of _The Solution_, we looked at how to cultivate a beginner's mind, a key component of which is curiosity. But how does one cultivate curiosity? 
-
-What _is_ curiosity? 
-
-If you Google it, you'll find definitions such as "a strong desire to know or learn something" and images of question marks, magnifiying glasses, cats, and the Mars rover of the same name. 
-
-
-
-
 Why are we curious?
 
 In _How Humans Learn_, Joshua R. Eyler, explores the evolutionary underpinnings of curiosity: 
@@ -157,6 +147,7 @@ Oakley also recommends metacognitive reflection to avoid falling into the trap o
 In _Thinking Fast and Slow_, Daniel Kahneman refers to overconfidence as “the most significant of the cognitive biases." 
 
 TODO overconfidence
+
 
 One of my favorite activities to use in Agile retrospectives is [The Five Whys](https://en.wikipedia.org/wiki/Five_whys), which investigates cause-and-effect to get to the root of a problem. Wikipedia offers the following example, where the problem is that "The vehicle will not start":
 
