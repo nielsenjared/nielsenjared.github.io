@@ -184,4 +184,4 @@ Why?
 
 Exactly.
 
-Looking to improve your _metacognition_? Check out my latest article, [How to Code the Recursive Factorial Algorithm](TODO)
+Looking to improve your _metacognition_? Check out my latest article, [How to Code the Recursive Factorial Algorithm](https://jarednielsen.com/algorithm-recursive-factorial/)
