@@ -1,43 +1,19 @@
 ---
-title: How to Cultivate a Beginner’s Mind
-date: "2022-07-18"
-description: 
+title: "How to Cultivate Beginner’s Mind: A Guide for Experts Who Don't Want to Meditate"
+date: "2022-09-26"
+description: "While you would also benefit from a meditation practice, this article introduces re-enactive empathy, a strategy subject matter experts can use to cultivate beginner's mind."
 tag_line: “In the beginner’s mind there are many possibilities; in the expert’s mind there are few.”
-keywords: ['beginners mind']
+keywords: ['beginners mind', 're-enactive empathy']
 
 ---
 
 ![ beginner's mind ](./jarednielsen-beginners-mind.png)
 
 
-Hey friends! 
-
-The Solution is back after a _long_ hiatus. If you no longer want to receive these emails, here’s the link to unsubscribe. 
-
-Why the long pause? 
-
-Two reasons:
-
-1. Like most people, the pandemic required me to reprioritize and refocus my energy. I hope you and your family are well and emerging from the last two years in good health. 
-
-2. I’m working on [a book of algorithms](https://jarednielsen.gumroad.com/l/algorithms). Most of them are the fundamentals, search and sort, that sort of thing (no pun intended). It’s taking much longer to write than I anticipated. Why? It’s hard work! But it’s not the algorithms that are difficult. It’s maintaining a Beginner's Mind that is proving to be the biggest challenge. 
-
-There are a handful of classic tomes on algorithms out there: 
-
-* Sedgewicks' _Algorithms_
-
-* Cormen's _Introduction to Algorithms_
-
-* Knuth's _The Art of Computer Programming_
-
-None of these are written for beginners and none of them teach you how to think like a programmer, at least not directly. Even _Grokking Algorithms_, which is pretty great, makes a lot of assumptions!
-
-Why? 
-
-Exactly. 
+While you would _also_ benefit from a meditation practice, this article introduces _re-enactive empathy_, a strategy subject matter experts can use to cultivate beginner's mind. It's not just for beginner's anymore.
 
 
-## How To Cultivate a Beginner’s Mind
+## How To Cultivate Beginner’s Mind
 
 My day job is leading a team of Curriculum Engineers. We create learning materials for developers of all stripes. To do this, we collaborate with subject matter experts, AKA SMEs. Our SMEs validate the technical accuracy of our content. While they are brilliant, they operate at a level of abstraction far removed from the beginner, which is where we enter the picture to translate their knowledge into learner-friendly resources. 
 
@@ -47,7 +23,7 @@ _specialization_
 
 They know _too_ much about _one_ thing!
 
-This is The Law of the Instrument, the cognitive bias where, when you’re a hammer, everything looks like a nail. By specializing, experts lose their ability to empathize with a beginner (and sometimes they even behave like tools).
+This is _The Law of the Instrument_, the cognitive bias where, when you’re a hammer, everything looks like a nail. By specializing, experts lose their ability to empathize with a beginner (and sometimes they even behave like tools).
 
 According to Annie Murphy Paul in _The Extended Mind_:
 
@@ -114,7 +90,3 @@ It’s obviously important for educators.
 It’s also important if you’re in a lead or mentoring role, where your reports or mentees will benefit from your ability to effectively transfer knowledge. 
 
 If neither of the above scenarios apply to you, consider how these practices relate to innovation and your career goals. 
-
-Looking to practice re-enactive empathy and cultivate your Beginner's Mind? 
-
-Check out the first chapter of _A Is For Algorithms_: [How to Solve Algorithms](https://jarednielsen.com/algorithms/). 
