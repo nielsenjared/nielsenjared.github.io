@@ -1,7 +1,7 @@
 ---
 title: "Learn How to Code the Recursive Fibonacci Algorithm"
 date: "2022-TODO-TODO"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive fibonacci sequence."
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive Fibonacci sequence."
 keywords: ['algorithm', 'recursive fibonacci', 'recursive', 'fibonacci', 'javascript', 'python']
 ---
 
@@ -9,7 +9,7 @@ keywords: ['algorithm', 'recursive fibonacci', 'recursive', 'fibonacci', 'javasc
 ![ TODO ](./jarednielsen-algorithm-TODO.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive Fibonacci sequence in JavaScript _and_ Python.
 
 
 ---
@@ -26,9 +26,9 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * What is a Fibonacci Sequence? 
 
-* What's the difference between iteration and recursion? 
+* What is Recursion?
 
-* TODO 
+* What's the Recursive Fibonaccidifference between iteration and recursion? 
 
 
 ### What is a Fibonacci Sequence? 
@@ -71,12 +71,12 @@ const fiberative = n => {
 };
 ```
 
-### What's the Difference Between Iteration and Recursion? 
+### What is Recursion? 
 
 TODO
 
 
-### TODO #3
+### What's the Difference Between Iteration and Recursion? 
 
 TODO
 
@@ -110,12 +110,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN an integer, _n_
+GIVEN a number, _n_
 WHEN I call a recursive Fibonacci function
-THEN I am returned the sum of the sequence
+THEN I am returned the _nth_ member of the Fibonaccis sequence
 ```
 
-That’s our general outline. We know our input conditions, an integer _n_, and our output requirements, the sum of the Fibonacci sequence, _0_ to _n_, and our goal is to calculate this recursively.
+That’s our general outline. We know our input conditions, an integer _n_, and our output requirements, the _nth_ member of the Fibonacci sequence, and our goal is to calculate this recursively.
 
 Let’s make a plan!
 
@@ -136,12 +136,85 @@ The first step is decomposition, or breaking our problem down into smaller probl
 
 _0_
 
+Not a lot we can do with this, so what's the next smallest problem? 
+
+_1_
+
+TODO 
+
+```
+FUNCTION fibonacci
+    INPUT n
+
+    IF n IS EQUAL TO 0 OR n IS EQUAL TO 1
+        RETURN n
+```
+
+We just establisehd our base case. Now we need to define our recursive case. 
+
+Let's look at the next smallest problem, _2_.
+
+In the Fibonacci sequence, what is _2_?
+```
+1 + 1
+```
+
+And what is _1_?
+```
+0 + 1
+```
+
+And what is _1_ in relation to _2_? 
+```
+2 - 1
+```
+
+And what is _0_ in relation to _1_?
+```
+1 - 1
+```
+
+Do you see the pattern? 
+
+
+TODO 
+```
+FUNCTION fibonacci
+    INPUT n
+
+    IF n IS EQUAL TO 0 OR n IS EQUAL TO 1
+        RETURN n
+
+    RETURN n + ()
+```
+
+Maybe you already see the pattern, but before we make the leap to abstraction, let's exercise due diligence. If we swap the columns and flip the rows in our table above, what pattern is revealed? 
+
+| n     | TODO                  |
+| ---   | ---                   |
+| 2     | 1 + 1                 |
+| 1     | 0 + 1                 |
+
+| 3     | 1 + 2                 |
+| 5     | 2 + 3                 |
+| 8     | 3 + 5                 |
+| 13    | 5 + 8                 |
+| 21    | 8 + 13                |
+| 34    | 13 + 21               |
+| 55    | 21 + 34               |
+| 89    | 34 + 55               |
+| 144   | 55 + 89               |
+
 
 
 ```
-DON'T USE ```md FOR PSUEDOCODE SNIPPETS
-    IT WILL RENDER TABBED TEXT 
-        IN ANOTHER COLOR
+FUNCTION fibonacci
+    INPUT n
+
+    IF n IS EQUAL TO 0 OR n IS EQUAL TO 1
+        RETURN n
+    
+    RETURN fibonacci(n - 1) + fibonacci(n - 2)
 ```
 
 
@@ -150,7 +223,7 @@ DON'T USE ```md FOR PSUEDOCODE SNIPPETS
 Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
 
 
-#### How to Code the TODO Algorithm in JavaScript
+#### How to Code the Recursive Fibonacci Algorithm in JavaScript
 
 TODO
 ```js
@@ -166,7 +239,7 @@ const fibonaive = n => {
 Now let's see it in Python...
 
 
-#### How to Code the TODO Algorithm in Python
+#### How to Code the Recursive Fibonacci Algorithm in Python
 
 TODO
 ```py
@@ -184,7 +257,7 @@ Our solution above is referred to as a "naive" implementation of Fibonacci.
 Why is it naive? Because the runtime is really bad.
 
 
-#### What is the Big O Of TODO?
+#### What is the Big O Of Recursive Fibonacci Sequence?
 
 It’s O(2^n).
 
