@@ -136,12 +136,42 @@ The first step is decomposition, or breaking our problem down into smaller probl
 
 _0_
 
-Not a lot we can do with this, so what's the next smallest problem? 
+If _n_ is equal to 0, what is the equivalent Fibonacci number? 
+
+_0_
+
+Let's map out the first 10 numbers so we're clear on the goal. 
+
+| n     | nth   |
+| ---   | ---   |
+| 0     | 0     |
+| 1     | 1     |
+| 2     | 1     |
+| 3     | 2     |
+| 4     | 3     |
+| 5     | 5     |
+| 6     | 8     |
+| 7     | 13    |
+| 8     | 21    |
+| 9     | 34    |
+| 10    | 55    |
+
+
+Let's pseudo/hardcode 0: 
+
+```
+FUNCTION fibonacci
+    INPUT n
+
+    IF n IS EQUAL TO 0 
+        RETURN n
+```
+
+What's the next smallest problem? 
 
 _1_
 
-TODO 
-
+If we refer to our table above, we see that the result of _n = 1_ will return _1_. We can simply add this to our conditional: 
 ```
 FUNCTION fibonacci
     INPUT n
@@ -150,9 +180,24 @@ FUNCTION fibonacci
         RETURN n
 ```
 
-We just establisehd our base case. Now we need to define our recursive case. 
+Hey! Look at that. We just establisehd our base case. Now we need to define our recursive case. 
 
 Let's look at the next smallest problem, _2_.
+
+If our input is _2_, what do we expect the return value to be? 
+
+_1_
+
+Let's pseudo/hard-code _2_:
+```
+FUNCTION fibonacci
+    INPUT n
+
+    IF n IS EQUAL TO 0 OR n IS EQUAL TO 1
+        RETURN n
+    
+    RETURN 
+```
 
 In the Fibonacci sequence, what is _2_?
 ```
@@ -176,6 +221,13 @@ And what is _0_ in relation to _1_?
 
 Do you see the pattern? 
 
+Let's map out a few numbers to reveal it:
+
+TODO
+
+Now we can make the leap to abstraction: the Fibonacci of _n_ can be expressed as _(n - 1) + (n - 2)_. 
+
+
 
 TODO 
 ```
@@ -185,7 +237,7 @@ FUNCTION fibonacci
     IF n IS EQUAL TO 0 OR n IS EQUAL TO 1
         RETURN n
 
-    RETURN n + ()
+    RETURN 
 ```
 
 Maybe you already see the pattern, but before we make the leap to abstraction, let's exercise due diligence. If we swap the columns and flip the rows in our table above, what pattern is revealed? 
