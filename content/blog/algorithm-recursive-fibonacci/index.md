@@ -188,77 +188,21 @@ If our input is _2_, what do we expect the return value to be?
 
 _1_
 
-Let's pseudo/hard-code _2_:
-```
-FUNCTION fibonacci
-    INPUT n
 
-    IF n IS EQUAL TO 0 OR n IS EQUAL TO 1
-        RETURN n
-    
-    RETURN 
-```
+TODO 
+What is _1_ in relation to _2_? 
 
-In the Fibonacci sequence, what is _2_?
-```
-1 + 1
-```
-
-And what is _1_?
-```
-0 + 1
-```
-
-And what is _1_ in relation to _2_? 
-```
-2 - 1
-```
-
-And what is _0_ in relation to _1_?
-```
-1 - 1
-```
-
-Do you see the pattern? 
-
-Let's map out a few numbers to reveal it:
-
-TODO
-
-Now we can make the leap to abstraction: the Fibonacci of _n_ can be expressed as _(n - 1) + (n - 2)_. 
 
 
 
 TODO 
-```
-FUNCTION fibonacci
-    INPUT n
+Let's look for a pattern. 
 
-    IF n IS EQUAL TO 0 OR n IS EQUAL TO 1
-        RETURN n
-
-    RETURN 
-```
-
-Maybe you already see the pattern, but before we make the leap to abstraction, let's exercise due diligence. If we swap the columns and flip the rows in our table above, what pattern is revealed? 
-
-| n     | TODO                  |
-| ---   | ---                   |
-| 2     | 1 + 1                 |
-| 1     | 0 + 1                 |
-
-| 3     | 1 + 2                 |
-| 5     | 2 + 3                 |
-| 8     | 3 + 5                 |
-| 13    | 5 + 8                 |
-| 21    | 8 + 13                |
-| 34    | 13 + 21               |
-| 55    | 21 + 34               |
-| 89    | 34 + 55               |
-| 144   | 55 + 89               |
+In order to return a value of 5 when _n_ is equal to 5, we know we need to add 3 and 2, the numbers that precede 5 in the Fibonacci sequence. 
 
 
 
+Now we can make the leap to abstraction: the recursive Fibonacci, or _f()_ of _n_ can be expressed as _f(n - 1) + f(n - 2)_. We can translate this to pseudocode: 
 ```
 FUNCTION fibonacci
     INPUT n
