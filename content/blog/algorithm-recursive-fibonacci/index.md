@@ -186,19 +186,47 @@ Let's look at the next smallest problem, _2_.
 
 If our input is _2_, what do we expect the return value to be? 
 
-_1_
+`1`
 
+How do we arrive at _1_ in the Fibonacci sequence? It's the sum of the two preceding numbers, 0 and 1. 
 
-TODO 
-What is _1_ in relation to _2_? 
+If our input is _3_, what do we expect the return value to be? 
 
+`2`
 
+How do we arrive at 2 in the Fibonacci sequence? It's the sum of the two preceding numbers, 1 and 1.
 
+If our input is 4, what do we expect the return value to be? 
 
-TODO 
-Let's look for a pattern. 
+`3`
 
-In order to return a value of 5 when _n_ is equal to 5, we know we need to add 3 and 2, the numbers that precede 5 in the Fibonacci sequence. 
+In order to return a value of 3 when _n_ is equal to 4, we know we need to add 1 and 2, the numbers that precede 3 in the Fibonacci sequence. 
+
+Do you see a pattern? 
+
+You might be tempated to say that it's simply `n - 1`, but what if our input is 5? What do we expect the return value to be? 
+
+Not 4. 
+
+It's 5!
+
+In order to return a value of 5 when _n_ is equal to 5, we know we need to add 2 and 3, the numbers that precede 5 in the Fibonacci sequence. 
+
+TODO
+```
+f(5) = 3 + 2
+```
+f(4) = 2 + 1
+
+f(3) = 1 + 1
+
+f(2) = 1 + 0
+
+f(1) is our base case. There aren't two preceding numbers to add to arrive at this value. 
+
+Do you see the pattern? 
+
+f(5) = f(4) + f(3)
 
 
 
