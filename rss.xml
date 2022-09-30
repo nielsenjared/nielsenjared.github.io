@@ -1,4 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 23 Sep 2022 14:13:07 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Recursive Factorial Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-recursive-factorial/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-recursive-factorial/</guid><pubDate>Fri, 23 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 30 Sep 2022 14:16:30 GMT</lastBuildDate><item><title><![CDATA[How to Cultivate Beginner’s Mind: A Guide for Experts Who Don't Want to Meditate]]></title><description><![CDATA[While you would also benefit from a meditation practice, this article introduces re-enactive empathy, a strategy subject matter experts can…]]></description><link>https://jarednielsen.com/beginners-mind/</link><guid isPermaLink="false">https://jarednielsen.com/beginners-mind/</guid><pubDate>Mon, 26 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d6019415f7eb5508b00837c539e4646e/29007/jarednielsen-beginners-mind.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAz0lEQVQoz62SQWoCQRBFvZ67CMETBE/gGTxDFu71BC6CAwYMiLss1YVRVETNiEkco11VT9qJ29YZ8uFDN1Q9fld1wcwIWoWrzJRb9YVbBV4umaHuB381k5xADNT4eqkzj8rEw+e7kgYSpk9NBhHjVpF41EB+N7jDOggNAPXSuJs2mXUeWfarLN6eSFa9FKiSfYZe6/ca06jEpP3AvFvBHVZ5EwqYcPxesJ28En902H+OMDlh6rID8Q3qUHGIS+3PKse/TWdNSFi5/2FW/zvwDEc6XKx3VSgTAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; beginner&amp;#39;s mind &quot;
+        title=&quot; beginner&amp;#39;s mind &quot;
+        src=&quot;/static/d6019415f7eb5508b00837c539e4646e/f058b/jarednielsen-beginners-mind.png&quot;
+        srcset=&quot;/static/d6019415f7eb5508b00837c539e4646e/c26ae/jarednielsen-beginners-mind.png 158w,
+/static/d6019415f7eb5508b00837c539e4646e/6bdcf/jarednielsen-beginners-mind.png 315w,
+/static/d6019415f7eb5508b00837c539e4646e/f058b/jarednielsen-beginners-mind.png 630w,
+/static/d6019415f7eb5508b00837c539e4646e/40601/jarednielsen-beginners-mind.png 945w,
+/static/d6019415f7eb5508b00837c539e4646e/78612/jarednielsen-beginners-mind.png 1260w,
+/static/d6019415f7eb5508b00837c539e4646e/29007/jarednielsen-beginners-mind.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;While you would &lt;em&gt;also&lt;/em&gt; benefit from a meditation practice, this article introduces &lt;em&gt;re-enactive empathy&lt;/em&gt;, a strategy subject matter experts can use to cultivate beginner’s mind. It’s not just for beginner’s anymore.&lt;/p&gt;
+&lt;h2&gt;How To Cultivate Beginner’s Mind&lt;/h2&gt;
+&lt;p&gt;My day job is leading a team of Curriculum Engineers. We create learning materials for developers of all stripes. To do this, we collaborate with subject matter experts, AKA SMEs. Our SMEs validate the technical accuracy of our content. While they are brilliant, they operate at a level of abstraction far removed from the beginner, which is where we enter the picture to translate their knowledge into learner-friendly resources.&lt;/p&gt;
+&lt;p&gt;These SMEs are national, nee, international treasures, with fancy degrees and pedigree charts detailing their important contributions to computer science and software development. Our technical infrastructure depends entirely on them. Yet, they share an Achilles’ heel:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;specialization&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;They know &lt;em&gt;too&lt;/em&gt; much about &lt;em&gt;one&lt;/em&gt; thing!&lt;/p&gt;
+&lt;p&gt;This is &lt;em&gt;The Law of the Instrument&lt;/em&gt;, the cognitive bias where, when you’re a hammer, everything looks like a nail. By specializing, experts lose their ability to empathize with a beginner (and sometimes they even behave like tools).&lt;/p&gt;
+&lt;p&gt;According to Annie Murphy Paul in &lt;em&gt;The Extended Mind&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The very individuals who are most expert are often least able to share what they know.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;How does this happen?&lt;/p&gt;
+&lt;p&gt;Maybe the question to ask isn’t ‘how’, but ‘why’.&lt;/p&gt;
+&lt;p&gt;Joshua R. Eyler provides an answer. In &lt;em&gt;How Humans Learn&lt;/em&gt;, he states that:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The question “Why?” steadily gets replaced by “What do I need to do to achieve X?”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Is this scenario familiar to you?&lt;/p&gt;
+&lt;p&gt;You’re debugging an application or implementing a new feature.&lt;/p&gt;
+&lt;p&gt;You feel confident that there’s a clean way to do it so you flex your Google muscles.&lt;/p&gt;
+&lt;p&gt;You read the docs.&lt;/p&gt;
+&lt;p&gt;You &lt;code class=&quot;language-text&quot;&gt;console.log()&lt;/code&gt; every line of code.&lt;/p&gt;
+&lt;p&gt;You create branches off branches…&lt;/p&gt;
+&lt;p&gt;…but the clock is ticking!&lt;/p&gt;
+&lt;p&gt;You finally find some kludgy workaround on Stack Overflow, copy/paste it, and say to yourself “Done is better than perfect.”&lt;/p&gt;
+&lt;p&gt;According to Eyler “[t]he higher the stakes, the higher the potential anxiety.” To counter this, he counsels us:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;…to move deliberately from asking “who”, “what”, “where”, or “when” questions and shift instead to “why” questions — questions that really delve into the significance of the issues….&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In an ideal world, sure!&lt;/p&gt;
+&lt;p&gt;We lose the luxury of time when we begin working professionally. Or perhaps it’s the luxury of curiosity because there are stakeholders expecting us to &lt;em&gt;deliver&lt;/em&gt;. No matter how interesting the problem is to solve, at some point we need to ship a solution, whether or not it’s elegant.&lt;/p&gt;
+&lt;p&gt;We also lose our Beginner’s Mind due to a phenomenon called &lt;em&gt;automatization&lt;/em&gt;, in which you learn something so well you no longer need to think about it.&lt;/p&gt;
+&lt;p&gt;In &lt;em&gt;The Extended Mind&lt;/em&gt;, Annie Murphy Paul explains that “automatization allows experts to work efficiently and effectively, but it also prevents them from offering to others a full account of &lt;em&gt;how&lt;/em&gt; they do what they do.” She cites work by researcher Kenneth Koedinger, who estimates that experts “are able to articulate about 30 percent of what they know,” and:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;… a study of expert computer programmers revealed that they enumerated fewer than half of the tasks they actually carried out when debugging a computer program.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;No wonder it’s so hard to learn this stuff!&lt;/p&gt;
+&lt;p&gt;What’s the solution?&lt;/p&gt;
+&lt;p&gt;In addition to asking ‘why’, we can practice  &lt;em&gt;re-enactive empathy&lt;/em&gt;, which Paul defines as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;an appreciation of the challenges confronting the novice that is produced by reenacting what it was like to have once been a beginner oneself.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Paul outlines three strategies for practicing re-enactive empathy:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Break down agglomerated steps&lt;/strong&gt;: Experts chunk information, that is, they bundle smaller concepts together into larger concepts, making it easier to remember and recall the information as well as freeing up mental space for other tasks. But, chunking conceals the details from the beginner. Experts can help learners by “de-chunking”, that is, breaking processes down into smaller steps, and then breaking those steps down into &lt;em&gt;micro-steps&lt;/em&gt;, if necessary.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Exaggerate salient features&lt;/strong&gt;: Experts know how to filter noise and focus on the relevant details of a problem. They can see the forest for the trees while beginners tend to get lost in the weeds. Experts can help learners by “caricaturing” the problem through amplification of its most important aspects.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Categorize based on function&lt;/strong&gt;: Experts know how to classify information based on its function, whereas the beginner tends to classify based on superficial details. Experts can help learners by sharing these classifications to scaffold the problem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Do you &lt;em&gt;need&lt;/em&gt; to cultivate a Beginner’s Mind?&lt;/p&gt;
+&lt;p&gt;It’s obviously important for educators.&lt;/p&gt;
+&lt;p&gt;It’s also important if you’re in a lead or mentoring role, where your reports or mentees will benefit from your ability to effectively transfer knowledge.&lt;/p&gt;
+&lt;p&gt;If neither of the above scenarios apply to you, consider how these practices relate to innovation and your career goals.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Recursive Factorial Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-recursive-factorial/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-recursive-factorial/</guid><pubDate>Fri, 23 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -13427,7 +13517,39 @@ stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not &lt;em&gt;just&lt;/em&gt; to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the array data structure in JavaScript.&lt;/p&gt;
 &lt;h2&gt;What is an Array?&lt;/h2&gt;
 &lt;p&gt;An array is the simplest data structure. It is a sequential collection of elements each identified by index.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./jarednielsen-javascript-array-data-structure-example.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/46ab957a30e050063841c6263f262559/29007/jarednielsen-javascript-array-data-structure-example.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+ElEQVQoz8VQTUvDQBDN//8znkUPgrdqoXqpJSFQYlAMpLRu0ux8PZlNiqnFixeXd5h5M2925mVm8gs44ZxUnpCq2UX3Cco/Ws/HzcU6E3gqJmxIvCQwXeglm8ZAU9kMZkqmApgJmQn8Oe0pRwf0JFYCEF+2x8U6XN33dyt+a4bl5rhYc9PSZttfPwzPRXe7jEXlwc3j8FT4aOXMlAFQ+SrtPuYVVe8aB2l2VNYmJIdPKmuuP4ZVLru99j03bcwr/xyS+WG+g5qyHoJvhHQzc9pZIawhIJ2hXaehA9RdcMMgkzGjE0Iz59jvF/KY4yhwjMy3+E/4P/EXPxmEnJBnh0cAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;jarednielsen javascript array data structure example&quot;
+        title=&quot;jarednielsen javascript array data structure example&quot;
+        src=&quot;/static/46ab957a30e050063841c6263f262559/f058b/jarednielsen-javascript-array-data-structure-example.png&quot;
+        srcset=&quot;/static/46ab957a30e050063841c6263f262559/c26ae/jarednielsen-javascript-array-data-structure-example.png 158w,
+/static/46ab957a30e050063841c6263f262559/6bdcf/jarednielsen-javascript-array-data-structure-example.png 315w,
+/static/46ab957a30e050063841c6263f262559/f058b/jarednielsen-javascript-array-data-structure-example.png 630w,
+/static/46ab957a30e050063841c6263f262559/40601/jarednielsen-javascript-array-data-structure-example.png 945w,
+/static/46ab957a30e050063841c6263f262559/78612/jarednielsen-javascript-array-data-structure-example.png 1260w,
+/static/46ab957a30e050063841c6263f262559/29007/jarednielsen-javascript-array-data-structure-example.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;We can think of our computer as an array of switches. A byte is an array of eight bits. From bytes we build complex layers of abstraction to create memory, characters, and cat videos.&lt;/p&gt;
 &lt;h2&gt;What Problem(s) Do Arrays Solve?&lt;/h2&gt;
 &lt;ul&gt;
@@ -15081,7 +15203,39 @@ DCBA &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;It’s O(2^n).&lt;/p&gt;
 &lt;p&gt;(Actually, it’s O(1.6^n), but who’s counting?)&lt;/p&gt;
 &lt;p&gt;Take a look at this diagram of our recursive call branches.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./jarednielsen-big-o-recursion-fibonacci-tree.png&quot; alt=&quot;Recursive Fibonacci Tree&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0366460584660f4431dc6452811a316a/29007/jarednielsen-big-o-recursion-fibonacci-tree.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAnUlEQVQoz72RwQ4CIQxE9/8/1XCABbrdTluMVDcx6sG48Z2A5M00ZRk/sLw+qeq+7wDWdS2lABARVf0ou/sYY9u2lFLvPXxVNbM4EFFKiZnfyESUcxYRM4vOo0pVa60RxMw55yPiJjNza63W2nuPoLgCUNX2IKYTEQB32cwuEwBE5O5EFCWYMLO7H/LT2ADKRERO2PZ3sk/O+ec/yVeciouIo6pm6gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Recursive Fibonacci Tree&quot;
+        title=&quot;Recursive Fibonacci Tree&quot;
+        src=&quot;/static/0366460584660f4431dc6452811a316a/f058b/jarednielsen-big-o-recursion-fibonacci-tree.png&quot;
+        srcset=&quot;/static/0366460584660f4431dc6452811a316a/c26ae/jarednielsen-big-o-recursion-fibonacci-tree.png 158w,
+/static/0366460584660f4431dc6452811a316a/6bdcf/jarednielsen-big-o-recursion-fibonacci-tree.png 315w,
+/static/0366460584660f4431dc6452811a316a/f058b/jarednielsen-big-o-recursion-fibonacci-tree.png 630w,
+/static/0366460584660f4431dc6452811a316a/40601/jarednielsen-big-o-recursion-fibonacci-tree.png 945w,
+/static/0366460584660f4431dc6452811a316a/78612/jarednielsen-big-o-recursion-fibonacci-tree.png 1260w,
+/static/0366460584660f4431dc6452811a316a/29007/jarednielsen-big-o-recursion-fibonacci-tree.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Why is this algorithm inefficient?&lt;/p&gt;
 &lt;p&gt;Overlapping subproblems!&lt;/p&gt;
 &lt;p&gt;We solve the same problems repeatedly in our branches.&lt;/p&gt;
@@ -16791,7 +16945,39 @@ dry()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;With each iteration, the value of &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; becomes smaller until one of our &lt;em&gt;base&lt;/em&gt; conditions is met.&lt;/p&gt;
 &lt;p&gt;So the &lt;em&gt;depth&lt;/em&gt;  of our tree is &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Let’s map out the calls:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./jarednielsen-big-o-recursion-tree.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b06dabd59822ebeb8d0c7120e4caf32f/29007/jarednielsen-big-o-recursion-tree.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVQoz82R22oFMQhF8/+fGnIZwzij7tEUTkroQymFcqD7Qbwt3GCaf1D6YaaqIvJbGMB936p6v8TM53le17WbAL6BIwLAGKO1JiIR8XUpIkSk905EAPb0E845E9HKRaTWqqqrNLNa6/Y/xsg5Lz4BKKWICBExs5n13t19HVHV4zjcvbUGgJmJSFVLKWaWluE5p7s/zzPnXNFfiojdjIi9s8ynd73qH8MfubiLH+ShhjUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;jarednielsen big o recursion tree&quot;
+        title=&quot;jarednielsen big o recursion tree&quot;
+        src=&quot;/static/b06dabd59822ebeb8d0c7120e4caf32f/f058b/jarednielsen-big-o-recursion-tree.png&quot;
+        srcset=&quot;/static/b06dabd59822ebeb8d0c7120e4caf32f/c26ae/jarednielsen-big-o-recursion-tree.png 158w,
+/static/b06dabd59822ebeb8d0c7120e4caf32f/6bdcf/jarednielsen-big-o-recursion-tree.png 315w,
+/static/b06dabd59822ebeb8d0c7120e4caf32f/f058b/jarednielsen-big-o-recursion-tree.png 630w,
+/static/b06dabd59822ebeb8d0c7120e4caf32f/40601/jarednielsen-big-o-recursion-tree.png 945w,
+/static/b06dabd59822ebeb8d0c7120e4caf32f/78612/jarednielsen-big-o-recursion-tree.png 1260w,
+/static/b06dabd59822ebeb8d0c7120e4caf32f/29007/jarednielsen-big-o-recursion-tree.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Do you see a pattern?&lt;/p&gt;
 &lt;p&gt;Where have we seen this, or something like it, before?&lt;/p&gt;
 &lt;p&gt;🤔&lt;/p&gt;
