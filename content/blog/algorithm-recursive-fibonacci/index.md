@@ -228,7 +228,13 @@ Do you see the pattern?
 
 f(5) = f(4) + f(3)
 
+And 
 
+f(4) = f(3) + f(2)
+
+And
+
+f(3) = f(2) + f(1)
 
 Now we can make the leap to abstraction: the recursive Fibonacci, or _f()_ of _n_ can be expressed as _f(n - 1) + f(n - 2)_. We can translate this to pseudocode: 
 ```
