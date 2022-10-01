@@ -1,12 +1,12 @@
 ---
 title: "Learn How to Code the Recursive Fibonacci Algorithm"
-date: "2022-TODO-TODO"
+date: "2022-10-07"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive Fibonacci sequence."
 keywords: ['algorithm', 'recursive fibonacci', 'recursive', 'fibonacci', 'javascript', 'python']
 ---
 
 
-![ TODO ](./jarednielsen-algorithm-TODO.png)
+![ Graphic illustration of recursive Fibonacci ](./jarednielsen-algorithm-recursive-fibonacci.png)
 
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive Fibonacci sequence in JavaScript _and_ Python.
@@ -28,7 +28,7 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * What is Recursion?
 
-* What's the Recursive Fibonaccidifference between iteration and recursion? 
+* What's the definition of 'naive'? 
 
 
 ### What is a Fibonacci Sequence? 
@@ -73,12 +73,30 @@ const fiberative = n => {
 
 ### What is Recursion? 
 
-TODO
+In computer science, recursion occurs when a function calls itself within its declaration.
+
+We use recursion to solve a large problem by breaking it down into smaller instances of the same problem.
+
+To do that, we need to tell our function what the smallest instance looks like.
+
+If you recall, with proof by induction we need to establish two things:
+
+* base
+
+* induction
+
+Recursion is similar. We also need to establish a base case but rather than induction, we establish the recursive case.
+
+We use the recursive case to break the problem down into smaller instances.
+
+We use the base case to return when there are no more problems to be solved.
 
 
-### What's the Difference Between Iteration and Recursion? 
+### What's the Definition of 'naive'? 
 
-TODO
+According to dictionary.com, the definition of _naive_ is: 
+
+> having or showing a lack of experience, judgment, or information
 
 
 ## Let's Get Meta
@@ -87,9 +105,9 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does recursion solve? 
 
-* TODO
+* What problem(s) does recursion create? 
 
 
 ## How to Code the Recursive Fibonacci Algorithm 
@@ -212,29 +230,42 @@ It's 5!
 
 In order to return a value of 5 when _n_ is equal to 5, we know we need to add 2 and 3, the numbers that precede 5 in the Fibonacci sequence. 
 
-TODO
+If we call our Fibonacci function _f()_ for short, we know that: 
 ```
 f(5) = 3 + 2
 ```
+And...
+```
 f(4) = 2 + 1
-
+```
+And...
+```
 f(3) = 1 + 1
-
+```
+And...
+```
 f(2) = 1 + 0
+```
 
-f(1) is our base case. There aren't two preceding numbers to add to arrive at this value. 
+And `f(1)` is our base case because there aren't two preceding numbers to add to arrive at this value. 
 
 Do you see the pattern? 
-
+```
 f(5) = f(4) + f(3)
-
-And 
-
+```
+And...
+```
 f(4) = f(3) + f(2)
-
-And
-
+```
+And...
+```
 f(3) = f(2) + f(1)
+```
+_In other words_...
+```
+f(5) = (f(3) + f(2)) + (f(2) + f(1))
+```
+And so on...
 
 Now we can make the leap to abstraction: the recursive Fibonacci, or _f()_ of _n_ can be expressed as _f(n - 1) + f(n - 2)_. We can translate this to pseudocode: 
 ```
@@ -250,12 +281,12 @@ FUNCTION fibonacci
 
 ### Execute the Plan
 
-Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
+Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
 #### How to Code the Recursive Fibonacci Algorithm in JavaScript
 
-TODO
+Let's start with JavaScript...
 ```js
 const fibonaive = n => {
  if (n == 0 || n == 1) {
@@ -266,14 +297,17 @@ const fibonaive = n => {
 };
 ```
 
-Now let's see it in Python...
 
 
 #### How to Code the Recursive Fibonacci Algorithm in Python
 
-TODO
+Now let's see it in Python...
 ```py
-TODO
+def fibonaive(n):
+    if (n ==0) or (n == 1):
+        return n
+    
+    return fibonaive(n - 1) + fibonaive(n - 2)
 ```
 
 ### Evaluate the Plan
@@ -297,13 +331,11 @@ If you want to learn how to calculate time and space complexity, pick up your co
 
 Take a look at this diagram of our recursive call branches.
 
-TODO Recursive Fibonacci Tree
+![Tree diagram of recursive calls to a Fibonacci function](./jarednielsen-recursive-fibonacci-tree.png)
 
 Why is this algorithm inefficient?
 
 Overlapping subproblems! We solve the same problems repeatedly in our branches.
-
-TODO graphic
 
 How many times do we solve f(0)?
 
@@ -319,7 +351,7 @@ What's the solution?
 
 Dynamic programming! 
 
-TODO
+If you want to learn more, check out my article [What is Dynamic Programming? Memoization and Tabulation](https://jarednielsen.com/dynamic-programming-memoization-tabulation/)
 
 
 
@@ -329,26 +361,28 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does recursion solve? 
 
-* TODO
+* What problem(s) does recursion create?
 
 
 ### Why Do I Need to Know This? 
 
 Fibonacci algorithms are standard challenges for beginners and technical interviews. There are many ways to solve a Fibonacci algorithm and each reveals the depth of your knowledge.
 
-TODO 
+The Fibonacci sequence is a pattern that can be found in nature, particularly fractals. 
 
 
-### What Problem(s) Does TODO Solve? 
+### What Problem(s) Does Recursion Solve? 
 
-TODO
+Recursion allows us to write functions that are compact and elegant.
 
 
-### TODO
+### What Problem(s) Does Recursion Create?
 
-TODO
+Recursion can easily exceed the maximum size of the call stack.
+
+Recursion can make the program harder to understand not only for your collaborators, but for your future self.
 
 
 ## A is for Algorithms
