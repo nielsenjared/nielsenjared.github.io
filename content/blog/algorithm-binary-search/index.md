@@ -6,8 +6,7 @@ keywords: ['algorithm', 'binary search', 'javascript', 'python']
 ---
 
 
-
-![ Binary Search ](./jarednielsen-algorithm-binary-search.png)
+![ Graphic of an open book to illustrate Binary Search ](./jarednielsen-algorithm-binary-search.png)
 
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the binary search algorithm in JavaScript _and_ Python.
