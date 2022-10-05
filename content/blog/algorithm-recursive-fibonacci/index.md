@@ -8,7 +8,6 @@ keywords: ['algorithm', 'recursive fibonacci', 'recursive', 'fibonacci', 'javasc
 
 ![ Graphic illustration of recursive Fibonacci ](./jarednielsen-algorithm-recursive-fibonacci.png)
 
-
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive Fibonacci sequence in JavaScript _and_ Python.
 
 
