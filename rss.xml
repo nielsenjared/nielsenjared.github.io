@@ -1,4 +1,453 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 30 Sep 2022 14:16:30 GMT</lastBuildDate><item><title><![CDATA[How to Cultivate Beginner’s Mind: A Guide for Experts Who Don't Want to Meditate]]></title><description><![CDATA[While you would also benefit from a meditation practice, this article introduces re-enactive empathy, a strategy subject matter experts can…]]></description><link>https://jarednielsen.com/beginners-mind/</link><guid isPermaLink="false">https://jarednielsen.com/beginners-mind/</guid><pubDate>Mon, 26 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 06 Oct 2022 00:02:08 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Recursive Fibonacci Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-recursive-fibonacci/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-recursive-fibonacci/</guid><pubDate>Fri, 07 Oct 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f3d4f4ce84ddbcdb62487ed4437b63f9/29007/jarednielsen-algorithm-recursive-fibonacci.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqElEQVQoz8WQ2wqDMBBE/f9PLPSlxqipFxBbNO7MllRLrTd8K8xDEubMbiYihboWf88ItpWiJRayiLoWk0hiJbaSZvB94Be2DVgpNoNznyvwbOUWU/w0f2aewRyoKu6OoqDqbGdF0yB34RHDDqzg0ImxAeBogsQGdU3fi02PYSE8v98DfTdcrni0qCqU5TtU9uFVeSgKMQnyfGpYz8Njq9io6hx8qP/BL0vJigXOagIjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; Graphic illustration of recursive Fibonacci &quot;
+        title=&quot; Graphic illustration of recursive Fibonacci &quot;
+        src=&quot;/static/f3d4f4ce84ddbcdb62487ed4437b63f9/f058b/jarednielsen-algorithm-recursive-fibonacci.png&quot;
+        srcset=&quot;/static/f3d4f4ce84ddbcdb62487ed4437b63f9/c26ae/jarednielsen-algorithm-recursive-fibonacci.png 158w,
+/static/f3d4f4ce84ddbcdb62487ed4437b63f9/6bdcf/jarednielsen-algorithm-recursive-fibonacci.png 315w,
+/static/f3d4f4ce84ddbcdb62487ed4437b63f9/f058b/jarednielsen-algorithm-recursive-fibonacci.png 630w,
+/static/f3d4f4ce84ddbcdb62487ed4437b63f9/40601/jarednielsen-algorithm-recursive-fibonacci.png 945w,
+/static/f3d4f4ce84ddbcdb62487ed4437b63f9/78612/jarednielsen-algorithm-recursive-fibonacci.png 1260w,
+/static/f3d4f4ce84ddbcdb62487ed4437b63f9/29007/jarednielsen-algorithm-recursive-fibonacci.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive Fibonacci sequence in JavaScript &lt;em&gt;and&lt;/em&gt; Python.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;p&gt;Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What is a Fibonacci Sequence?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is Recursion?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What’s the definition of ‘naive’?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What is a Fibonacci Sequence?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Fibonacci_number&quot;&gt;Fibonacci&lt;/a&gt; is a sequence of numbers where each number is the sum of the preceding two.&lt;/p&gt;
+&lt;p&gt;It starts like this…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;0 1 1 2 3 5 8 13 21 34 55 89 144…&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We can map it out in a table, like so:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Preceding numbers&lt;/th&gt;
+&lt;th&gt;Sum&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0 + 1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1 + 1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1 + 2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2 + 3&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3 + 5&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5 + 8&lt;/td&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8 + 13&lt;/td&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;13 + 21&lt;/td&gt;
+&lt;td&gt;34&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;21 + 34&lt;/td&gt;
+&lt;td&gt;55&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;34 + 55&lt;/td&gt;
+&lt;td&gt;89&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;55 + 89&lt;/td&gt;
+&lt;td&gt;144&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And so on…&lt;/p&gt;
+&lt;p&gt;Before we get to recursion, let’s look at an iterative solution to the problem in JavaScript.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;fiberative&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;What is Recursion?&lt;/h3&gt;
+&lt;p&gt;In computer science, recursion occurs when a function calls itself within its declaration.&lt;/p&gt;
+&lt;p&gt;We use recursion to solve a large problem by breaking it down into smaller instances of the same problem.&lt;/p&gt;
+&lt;p&gt;To do that, we need to tell our function what the smallest instance looks like.&lt;/p&gt;
+&lt;p&gt;If you recall, with proof by induction we need to establish two things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;base&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;induction&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Recursion is similar. We also need to establish a base case but rather than induction, we establish the recursive case.&lt;/p&gt;
+&lt;p&gt;We use the recursive case to break the problem down into smaller instances.&lt;/p&gt;
+&lt;p&gt;We use the base case to return when there are no more problems to be solved.&lt;/p&gt;
+&lt;h3&gt;What’s the Definition of ‘naive’?&lt;/h3&gt;
+&lt;p&gt;According to dictionary.com, the definition of &lt;em&gt;naive&lt;/em&gt; is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;having or showing a lack of experience, judgment, or information&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;p&gt;Ask yourself the following questions and keep them back of mind as you proceed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does recursion solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does recursion create?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Code the Recursive Fibonacci Algorithm&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/programming-problem-solving/&quot;&gt;Programming is problem solving&lt;/a&gt;. There are four steps we need to take to solve any programming problem:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Understand the problem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make a plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Understand the Problem&lt;/h3&gt;
+&lt;p&gt;To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;GIVEN a number, &lt;span class=&quot;token italic&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;/span&gt;
+WHEN I call a recursive Fibonacci function
+THEN I am returned the &lt;span class=&quot;token italic&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;nth&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;_&lt;/span&gt;&lt;/span&gt; member of the Fibonaccis sequence&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That’s our general outline. We know our input conditions, an integer &lt;em&gt;n&lt;/em&gt;, and our output requirements, the &lt;em&gt;nth&lt;/em&gt; member of the Fibonacci sequence, and our goal is to calculate this recursively.&lt;/p&gt;
+&lt;p&gt;Let’s make a plan!&lt;/p&gt;
+&lt;h3&gt;Make a Plan&lt;/h3&gt;
+&lt;p&gt;Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pattern recognition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstraction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithm design&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first step is decomposition, or breaking our problem down into smaller problems. What’s the smallest problem we can solve?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;0&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If &lt;em&gt;n&lt;/em&gt; is equal to 0, what is the equivalent Fibonacci number?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;0&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Let’s map out the first 10 numbers so we’re clear on the goal.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;n&lt;/th&gt;
+&lt;th&gt;nth&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;34&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;55&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Let’s pseudo/hardcode 0:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION fibonacci
+    INPUT n
+
+    IF n IS EQUAL TO 0 
+        RETURN n&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s the next smallest problem?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;1&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If we refer to our table above, we see that the result of &lt;em&gt;n = 1&lt;/em&gt; will return &lt;em&gt;1&lt;/em&gt;. We can simply add this to our conditional:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION fibonacci
+    INPUT n
+
+    IF n IS EQUAL TO 0 OR n IS EQUAL TO 1
+        RETURN n&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Hey! Look at that. We just establisehd our base case. Now we need to define our recursive case.&lt;/p&gt;
+&lt;p&gt;Let’s look at the next smallest problem, &lt;em&gt;2&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;If our input is &lt;em&gt;2&lt;/em&gt;, what do we expect the return value to be?&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;How do we arrive at &lt;em&gt;1&lt;/em&gt; in the Fibonacci sequence? It’s the sum of the two preceding numbers, 0 and 1.&lt;/p&gt;
+&lt;p&gt;If our input is &lt;em&gt;3&lt;/em&gt;, what do we expect the return value to be?&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;How do we arrive at 2 in the Fibonacci sequence? It’s the sum of the two preceding numbers, 1 and 1.&lt;/p&gt;
+&lt;p&gt;If our input is 4, what do we expect the return value to be?&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In order to return a value of 3 when &lt;em&gt;n&lt;/em&gt; is equal to 4, we know we need to add 1 and 2, the numbers that precede 3 in the Fibonacci sequence.&lt;/p&gt;
+&lt;p&gt;Do you see a pattern?&lt;/p&gt;
+&lt;p&gt;You might be tempated to say that it’s simply &lt;code class=&quot;language-text&quot;&gt;n - 1&lt;/code&gt;, but what if our input is 5? What do we expect the return value to be?&lt;/p&gt;
+&lt;p&gt;Not 4.&lt;/p&gt;
+&lt;p&gt;It’s 5!&lt;/p&gt;
+&lt;p&gt;In order to return a value of 5 when &lt;em&gt;n&lt;/em&gt; is equal to 5, we know we need to add 2 and 3, the numbers that precede 5 in the Fibonacci sequence.&lt;/p&gt;
+&lt;p&gt;If we call our Fibonacci function &lt;em&gt;f()&lt;/em&gt; for short, we know that:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;f(5) = 3 + 2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;f(4) = 2 + 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;f(3) = 1 + 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;f(2) = 1 + 0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And &lt;code class=&quot;language-text&quot;&gt;f(1)&lt;/code&gt; is our base case because there aren’t two preceding numbers to add to arrive at this value.&lt;/p&gt;
+&lt;p&gt;Do you see the pattern?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;f(5) = f(4) + f(3)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;f(4) = f(3) + f(2)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;f(3) = f(2) + f(1)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;In other words&lt;/em&gt;…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;f(5) = (f(3) + f(2)) + (f(2) + f(1))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And so on…&lt;/p&gt;
+&lt;p&gt;Now we can make the leap to abstraction: the recursive Fibonacci, or &lt;em&gt;f()&lt;/em&gt; of &lt;em&gt;n&lt;/em&gt; can be expressed as &lt;em&gt;f(n - 1) + f(n - 2)&lt;/em&gt;. We can translate this to pseudocode:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION fibonacci
+    INPUT n
+
+    IF n IS EQUAL TO 0 OR n IS EQUAL TO 1
+        RETURN n
+    
+    RETURN fibonacci(n - 1) + fibonacci(n - 2)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Execute the Plan&lt;/h3&gt;
+&lt;p&gt;Now it’s simply a matter of translating our pseudocode into the syntax of our programming language.&lt;/p&gt;
+&lt;h4&gt;How to Code the Recursive Fibonacci Algorithm in JavaScript&lt;/h4&gt;
+&lt;p&gt;Let’s start with JavaScript…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;fibonaive&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ 
+ &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonaive&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonaive&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;How to Code the Recursive Fibonacci Algorithm in Python&lt;/h4&gt;
+&lt;p&gt;Now let’s see it in Python…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonaive&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; n
+    
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; fibonaive&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; fibonaive&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Evaluate the Plan&lt;/h3&gt;
+&lt;p&gt;Can we do better?&lt;/p&gt;
+&lt;p&gt;We sure can!&lt;/p&gt;
+&lt;p&gt;Our solution above is referred to as a “naive” implementation of Fibonacci.&lt;/p&gt;
+&lt;p&gt;Why is it naive? Because the runtime is really bad.&lt;/p&gt;
+&lt;h4&gt;What is the Big O Of Recursive Fibonacci Sequence?&lt;/h4&gt;
+&lt;p&gt;It’s O(2^n).&lt;/p&gt;
+&lt;p&gt;(Actually, it’s O(1.6^n), but who’s counting?)&lt;/p&gt;
+&lt;p&gt;If you want to learn how to calculate time and space complexity, pick up your copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Take a look at this diagram of our recursive call branches.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0366460584660f4431dc6452811a316a/29007/jarednielsen-recursive-fibonacci-tree.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAnUlEQVQoz72RwQ4CIQxE9/8/1XCABbrdTluMVDcx6sG48Z2A5M00ZRk/sLw+qeq+7wDWdS2lABARVf0ou/sYY9u2lFLvPXxVNbM4EFFKiZnfyESUcxYRM4vOo0pVa60RxMw55yPiJjNza63W2nuPoLgCUNX2IKYTEQB32cwuEwBE5O5EFCWYMLO7H/LT2ADKRERO2PZ3sk/O+ec/yVeciouIo6pm6gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Tree diagram of recursive calls to a Fibonacci function&quot;
+        title=&quot;Tree diagram of recursive calls to a Fibonacci function&quot;
+        src=&quot;/static/0366460584660f4431dc6452811a316a/f058b/jarednielsen-recursive-fibonacci-tree.png&quot;
+        srcset=&quot;/static/0366460584660f4431dc6452811a316a/c26ae/jarednielsen-recursive-fibonacci-tree.png 158w,
+/static/0366460584660f4431dc6452811a316a/6bdcf/jarednielsen-recursive-fibonacci-tree.png 315w,
+/static/0366460584660f4431dc6452811a316a/f058b/jarednielsen-recursive-fibonacci-tree.png 630w,
+/static/0366460584660f4431dc6452811a316a/40601/jarednielsen-recursive-fibonacci-tree.png 945w,
+/static/0366460584660f4431dc6452811a316a/78612/jarednielsen-recursive-fibonacci-tree.png 1260w,
+/static/0366460584660f4431dc6452811a316a/29007/jarednielsen-recursive-fibonacci-tree.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Why is this algorithm inefficient?&lt;/p&gt;
+&lt;p&gt;Overlapping subproblems! We solve the same problems repeatedly in our branches.&lt;/p&gt;
+&lt;p&gt;How many times do we solve f(0)?&lt;/p&gt;
+&lt;p&gt;How many times do we solve f(1)?&lt;/p&gt;
+&lt;p&gt;How many times do we solve f(2)?&lt;/p&gt;
+&lt;p&gt;How many times do we solve f(3)?&lt;/p&gt;
+&lt;p&gt;The answer to all of the above is: too many!&lt;/p&gt;
+&lt;p&gt;What’s the solution?&lt;/p&gt;
+&lt;p&gt;Dynamic programming!&lt;/p&gt;
+&lt;p&gt;If you want to learn more, check out my article &lt;a href=&quot;https://jarednielsen.com/dynamic-programming-memoization-tabulation/&quot;&gt;What is Dynamic Programming? Memoization and Tabulation&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;p&gt;Remember those &lt;em&gt;meta&lt;/em&gt; questions we asked at the outset? Let’s make it stick and answer them now!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does recursion solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does recursion create?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Why Do I Need to Know This?&lt;/h3&gt;
+&lt;p&gt;Fibonacci algorithms are standard challenges for beginners and technical interviews. There are many ways to solve a Fibonacci algorithm and each reveals the depth of your knowledge.&lt;/p&gt;
+&lt;p&gt;The Fibonacci sequence is a pattern that can be found in nature, particularly fractals.&lt;/p&gt;
+&lt;h3&gt;What Problem(s) Does Recursion Solve?&lt;/h3&gt;
+&lt;p&gt;Recursion allows us to write functions that are compact and elegant.&lt;/p&gt;
+&lt;h3&gt;What Problem(s) Does Recursion Create?&lt;/h3&gt;
+&lt;p&gt;Recursion can easily exceed the maximum size of the call stack.&lt;/p&gt;
+&lt;p&gt;Recursion can make the program harder to understand not only for your collaborators, but for your future self.&lt;/p&gt;
+&lt;h2&gt;A is for Algorithms&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Cultivate Beginner’s Mind: A Guide for Experts Who Don't Want to Meditate]]></title><description><![CDATA[While you would also benefit from a meditation practice, this article introduces re-enactive empathy, a strategy subject matter experts can…]]></description><link>https://jarednielsen.com/beginners-mind/</link><guid isPermaLink="false">https://jarednielsen.com/beginners-mind/</guid><pubDate>Mon, 26 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -409,6 +858,375 @@ ELSE
 &lt;h3&gt;What Problem(s) Does Recursion Create?&lt;/h3&gt;
 &lt;p&gt;Recursion can easily exceed the maximum size of the call stack.&lt;/p&gt;
 &lt;p&gt;Recursion can make the program harder to understand not only for your collaborators, but for your future self.&lt;/p&gt;
+&lt;h2&gt;A is for Algorithms&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Binary Search Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-binary-search/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-binary-search/</guid><pubDate>Fri, 09 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9ca2a102ebc147b5504449c8eb447c1a/29007/jarednielsen-algorithm-binary-search.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABCUlEQVQoz42S20rEQAyG+/5PIwreeLu04mJ1C+oqYu3iAdlTDzOZziSTyLa92A51Ef6bQL4c/iRioWP5Y/FIQSYLRQFDjAFzgo/GPb0Ic5dHjOSdH2oheSTflZiEWTyi3Zc741qHtnUGWtBGQwtITkRYeBhhamwmUHmcPGWLXbUHo01rGq2qptpsN68vy+8iJ3JefL9guDMLs4Gf2/QhiYvV+/PyMYln8/l1lt19faxA1SxDZx/uzISExjmt4PMmnZ2dX11c3qeL/K2oa2UdOSSkkXMj2HtCa42BRjXb9bosS6WVBg1Gt9Y4tIHnUeC+HAw/eC7SeTSEvf4+1ehVuvP04qn3OAX/U79b2YHo2hPb+gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; Graphic of an open book to illustrate Binary Search &quot;
+        title=&quot; Graphic of an open book to illustrate Binary Search &quot;
+        src=&quot;/static/9ca2a102ebc147b5504449c8eb447c1a/f058b/jarednielsen-algorithm-binary-search.png&quot;
+        srcset=&quot;/static/9ca2a102ebc147b5504449c8eb447c1a/c26ae/jarednielsen-algorithm-binary-search.png 158w,
+/static/9ca2a102ebc147b5504449c8eb447c1a/6bdcf/jarednielsen-algorithm-binary-search.png 315w,
+/static/9ca2a102ebc147b5504449c8eb447c1a/f058b/jarednielsen-algorithm-binary-search.png 630w,
+/static/9ca2a102ebc147b5504449c8eb447c1a/40601/jarednielsen-algorithm-binary-search.png 945w,
+/static/9ca2a102ebc147b5504449c8eb447c1a/78612/jarednielsen-algorithm-binary-search.png 1260w,
+/static/9ca2a102ebc147b5504449c8eb447c1a/29007/jarednielsen-algorithm-binary-search.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the binary search algorithm in JavaScript &lt;em&gt;and&lt;/em&gt; Python.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;p&gt;Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What is linear search?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is binary?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How do you find something in a book?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What is Linear Search?&lt;/h3&gt;
+&lt;p&gt;Linear search is just that, a search that proceeds linearly, checking each element in an array in sequential order.&lt;/p&gt;
+&lt;h3&gt;What is Binary?&lt;/h3&gt;
+&lt;p&gt;In computer science, binary is the representation of data or instructions using the symbols “0” and “1”.&lt;/p&gt;
+&lt;p&gt;In general, binary is something composed of two parts.&lt;/p&gt;
+&lt;h3&gt;How Do You Find Something in a Book?&lt;/h3&gt;
+&lt;p&gt;In prehistoric times, early humans used a directory to store and retrieve names and their associated phone numbers. It was called, wait for it… the phone book. Yes, it was a &lt;em&gt;physical&lt;/em&gt; book! Without a search field! How did our ancestors find the name and number they wanted? They opened the book to a random page, took note of the information presented on that page, then assessed whether they needed to search forward or back to find their query.&lt;/p&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;p&gt;Ask yourself the following questions and keep them back of mind as you proceed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Why is it called &lt;em&gt;binary search&lt;/em&gt;?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What does it mean to pivot?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Code the Binary Search Algorithm&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/programming-problem-solving/&quot;&gt;Programming is problem solving&lt;/a&gt;. There are four steps we need to take to solve any programming problem:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Understand the problem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make a plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Understand the Problem&lt;/h3&gt;
+&lt;p&gt;To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;GIVEN a sorted array
+WHEN I request a specific value
+THEN I am returned the location of that value in the array&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That’s our general outline. We know our input conditions, a sorted array, and our output requirements, the location of a specific value in the array, and our goal is to improve the performance of a linear search.&lt;/p&gt;
+&lt;p&gt;Let’s make a plan!&lt;/p&gt;
+&lt;h3&gt;Make a Plan&lt;/h3&gt;
+&lt;p&gt;Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pattern recognition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstraction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithm design&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first step is decomposition, or breaking our problem down into smaller problems. What’s the smallest problem we can solve?&lt;/p&gt;
+&lt;p&gt;An array containing &lt;em&gt;one&lt;/em&gt; number, for example: &lt;code class=&quot;language-text&quot;&gt;[1]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s pseudocode this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT arr, num
+
+IF arr[0] == num
+    RETURN &apos;Bingo!&apos;
+ELSE 
+    RETURN FALSE&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is less of a &lt;em&gt;search&lt;/em&gt; and more of a guessing game. What’s the next smallest problem? An array containing &lt;em&gt;two&lt;/em&gt; numbers: &lt;code class=&quot;language-text&quot;&gt;[1, 2]&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT arr, num
+
+IF arr[0] == num
+    RETURN &apos;Found num in the 0 index`
+ELSE IF arr[1] == num
+    RETURN &apos;Found num in the 1 index`
+ELSE 
+    RETURN FALSE&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is still a guessing game, but now it’s binary! What did we do when we wrote those two conditionals? We cut the problem in half: &lt;code class=&quot;language-text&quot;&gt;[1]&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;[2]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s add one more: &lt;code class=&quot;language-text&quot;&gt;[1, 2, 4]&lt;/code&gt;. Now what? We &lt;em&gt;could&lt;/em&gt; write conditionals for every index, but will it scale?&lt;/p&gt;
+&lt;p&gt;Can we cut this array in half? Not cleanly.&lt;/p&gt;
+&lt;p&gt;But we &lt;em&gt;can&lt;/em&gt; select the index in the middle and check if it’s greater or less than &lt;code class=&quot;language-text&quot;&gt;num&lt;/code&gt;. If &lt;code class=&quot;language-text&quot;&gt;num&lt;/code&gt; is less than the middle index, we will &lt;em&gt;pivot&lt;/em&gt; and compare the preceding value. And if &lt;code class=&quot;language-text&quot;&gt;num&lt;/code&gt; is greater than the middle index, we will &lt;em&gt;pivot&lt;/em&gt; and check the succeeding value. Hey! Let’s call this index &lt;em&gt;pivot&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;If our array is &lt;code class=&quot;language-text&quot;&gt;[1, 2, 4]&lt;/code&gt;, the our &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt; is &lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;. Let’s pseudocode this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT arr, num
+
+SET pivot TO arr[1]
+
+IF arr[pivot] == num
+    RETURN &apos;Found num at pivot&apos;
+ELSE IF arr[pivot] &amp;lt; num
+    RETURN &apos;Found num in the 0 index&apos;
+ELSE 
+    RETURN &apos;It&apos;s gotta be in the 2 index...&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s work with a slightly larger array: &lt;code class=&quot;language-text&quot;&gt;[1, 2, 4, 8]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;There are a few small problems we need to solve here:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;In order to scale, we can no longer “hard code” the value stored in &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There’s no “middle index”. So what value do we choose for &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt;?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let’s address the first problem first: we can simply divide the array in two.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT arr, num
+
+SET pivot TO LENGTH OF arr DIVIDED BY 2
+
+IF arr[pivot] == num
+    RETURN &apos;Found num at pivot&apos;
+ELSE IF arr[pivot] &amp;lt; num
+    RETURN &apos;Found num in the 0 index&apos;
+ELSE 
+    RETURN &apos;It&apos;s gotta be in the 2 index...&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Using the example above, our array contains four elements. If we divide the length of our array by two, &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt; will be equal to 2.&lt;/p&gt;
+&lt;p&gt;If &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt; is equal to 2, the value at that index in our array is &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;But what if there’s an odd number of elements in the array?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[1, 2, 3, 4, 5]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we divide the length of the array by 2, we get 2.5.&lt;/p&gt;
+&lt;p&gt;We simply need to round up or down. Let’s round down. Our pseudocode now reads:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT arr, num
+
+SET pivot TO THE FLOOR OF THE LENGTH OF arr DIVIDED BY 2
+
+IF arr[pivot] == num
+    RETURN &apos;Found num at pivot&apos;
+ELSE IF arr[pivot] &amp;lt; num
+    RETURN &apos;Found num in the 0 index&apos;
+ELSE 
+    RETURN &apos;It&apos;s gotta be in the 2 index...&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When we divide the length of this array by 2 and floor the returned value, our &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt; is equal to 2.&lt;/p&gt;
+&lt;p&gt;The value stored in the 2 index is &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Previously, we hard coded the conditional checks on either side of the pivot. Will that work here?&lt;/p&gt;
+&lt;p&gt;No, because there are now &lt;em&gt;two&lt;/em&gt; values we need to check on either side of our pivot.&lt;/p&gt;
+&lt;p&gt;It’s time to iterate!&lt;/p&gt;
+&lt;p&gt;Because we don’t know how long our loop needs to run, let’s use a &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt;. Our &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loops need a conditional. What do we want to use here?&lt;/p&gt;
+&lt;p&gt;If &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt; is less than &lt;code class=&quot;language-text&quot;&gt;num&lt;/code&gt;, then on the next iteration we need to start with a value greater than &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt;. But we need to ensure we are still checking &lt;em&gt;all&lt;/em&gt; of the values greater than &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And if &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt; is greater than &lt;code class=&quot;language-text&quot;&gt;num&lt;/code&gt;, then on the next iteration we need to start with a value less than &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt;. And, as above, we need to ensure we are still checking &lt;em&gt;all&lt;/em&gt; of the values less than &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Do you see a pattern?&lt;/p&gt;
+&lt;p&gt;Before we implement our &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; iteration, let’s translate these conditionals to pseudocode:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT arr, num
+
+SET pivot TO THE FLOOR OF THE LENGTH OF arr DIVIDED BY 2
+
+IF arr[pivot] == num
+    RETURN &apos;Found num at pivot&apos;
+ELSE IF arr[pivot] &amp;lt; num
+    START SEARCHING IN THE NEXT ITERATION AT pivot + 1
+ELSE 
+    SEARCH UP TO pivot - 1 IN THE NEXT ITERATION&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s step through a hypothetical scenario using our five element array and searching for &lt;code class=&quot;language-text&quot;&gt;5&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;On our first iteration, we set &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We start our conditional checks and see that &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt; is not equal to &lt;code class=&quot;language-text&quot;&gt;num&lt;/code&gt;, but that it &lt;em&gt;is&lt;/em&gt; less than &lt;code class=&quot;language-text&quot;&gt;num&lt;/code&gt;. We can now ignore the values up to and including &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In the next iteration, we’ll start searching at &lt;code class=&quot;language-text&quot;&gt;pivot + 1&lt;/code&gt;, which is &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;What happens in the next iteration?&lt;/p&gt;
+&lt;p&gt;We set &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt; to the floor of the length of our array divided by 2, which is 2.&lt;/p&gt;
+&lt;p&gt;Hey! Wait! We already checked this value.&lt;/p&gt;
+&lt;p&gt;We need a new &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We need to set a &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt; from the remaining values to be checked. In our case, that’s:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[4, 5]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we floor the length of &lt;em&gt;this&lt;/em&gt; array divided by 2, we get 1. But we know that’s not &lt;em&gt;actually&lt;/em&gt; the 1 index.&lt;/p&gt;
+&lt;p&gt;What do we do here?&lt;/p&gt;
+&lt;p&gt;We get abstract!&lt;/p&gt;
+&lt;p&gt;Let’s declare variables to store these values in each iteration:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;SET start index TO 0
+SET end index TO THE LENGTH OF THE ARRAY - 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Finally, we need to refactor our conditional statements to reassign these values in each iteration:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT arr, num
+
+SET start index TO 0
+SET end index TO THE LENGTH OF THE ARRAY - 1
+
+WHILE
+    SET pivot TO THE FLOOR OF THE LENGTH OF arr DIVIDED BY 2
+
+    IF arr[pivot] == num
+        RETURN &apos;Found num at pivot&apos;
+    ELSE IF arr[pivot] &amp;lt; num
+        SET start index TO pivot + 1
+    ELSE 
+        SET end index TO pivot - 1 
+RETURN FALSE&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Execute the Plan&lt;/h3&gt;
+&lt;p&gt;Now it’s simply a matter of translating our pseudocode into the syntax of our programming language.&lt;/p&gt;
+&lt;h4&gt;How to Code the Binary Search Algorithm in JavaScript&lt;/h4&gt;
+&lt;p&gt;Let’s start with JavaScript…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; powers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;64&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;256&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;512&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;binarySearch&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; num&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ 
+   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; startIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; endIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  
+   &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;startIndex &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; endIndex&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      
+       &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; pivot &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;startIndex &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; endIndex&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;pivot&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Found &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;num&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; at &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;pivot&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;pivot&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+           startIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pivot &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+           endIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pivot &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;How to Code the Binary Search Algorithm in Python&lt;/h4&gt;
+&lt;p&gt;Now let’s see it in Python…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; math
+
+powers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;64&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;256&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;512&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+ 
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;binarySearch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+ 
+   startIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+   endIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+  
+   &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;startIndex &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; endIndex&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      
+       pivot &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;floor&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;startIndex &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; endIndex&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+ 
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;pivot&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string-interpolation&quot;&gt;&lt;span class=&quot;token string&quot;&gt;f&quot;Found &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;num&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; at index &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;pivot&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;pivot&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+           startIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pivot &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+           endIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pivot &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; false&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Evaluate the Plan&lt;/h3&gt;
+&lt;p&gt;Can we do better?&lt;/p&gt;
+&lt;p&gt;Of course! This is just the beginning of our exploration of search algorithms. There are variations on binary search as well as data structures based on binary search that improve the performance.&lt;/p&gt;
+&lt;h4&gt;What is the Big O Of Binary Search?&lt;/h4&gt;
+&lt;p&gt;If you want to learn how to calculate time and space complexity, pick up your copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;p&gt;Remember those &lt;em&gt;meta&lt;/em&gt; questions we asked at the outset? Let’s make it stick and answer them now!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does binary search solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What does it mean to pivot?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Why Do I Need to Know This?&lt;/h3&gt;
+&lt;p&gt;Binary search is logarithmic. It’s a very efficient approach to algorithm design. You’ll see (and use!) this pattern elsewhere.&lt;/p&gt;
+&lt;h3&gt;What Problem(s) Does Binary Search Solve?&lt;/h3&gt;
+&lt;p&gt;Binary search is a performance improvement over linear search, cutting the number of operations nearly in half. But for small arrays, like those we used in the examples above, linear search is faster as it requires fewer operations to find the value.&lt;/p&gt;
+&lt;h3&gt;What Does It Mean to Pivot?&lt;/h3&gt;
+&lt;p&gt;There are several definitions of “pivot”, according to &lt;a href=&quot;https://www.dictionary.com/browse/pivot&quot;&gt;dictionary.com&lt;/a&gt;. The first, as a noun:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a pin, point, or short shaft on the end of which something rests and turns, or upon and about which something rotates or oscillates.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And as a verb:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;to turn on or as on a pivot&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;to modify (a policy, opinion, product, etc.) while retaining some continuity with its previous version&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The example they provide is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The start-up was able to pivot the app to a new market without losing too many man-hours of coding.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In our binary search algorithm, we create a pivot that allows us to turn “left” or “right”. With each pivot we create, we modify the array while retaining some continuity with its previous version until we find our value.&lt;/p&gt;
 &lt;h2&gt;A is for Algorithms&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -13517,39 +14335,7 @@ stack&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;p&gt;At some point in your career (today?!) you will want to learn data structures. It’s not &lt;em&gt;just&lt;/em&gt; to ace the technical interview and land your dream job. Learning data structures will help you understand how software works and improve your problem-solving skills.  In this tutorial, you will learn the array data structure in JavaScript.&lt;/p&gt;
 &lt;h2&gt;What is an Array?&lt;/h2&gt;
 &lt;p&gt;An array is the simplest data structure. It is a sequential collection of elements each identified by index.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/46ab957a30e050063841c6263f262559/29007/jarednielsen-javascript-array-data-structure-example.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+ElEQVQoz8VQTUvDQBDN//8znkUPgrdqoXqpJSFQYlAMpLRu0ux8PZlNiqnFixeXd5h5M2925mVm8gs44ZxUnpCq2UX3Cco/Ws/HzcU6E3gqJmxIvCQwXeglm8ZAU9kMZkqmApgJmQn8Oe0pRwf0JFYCEF+2x8U6XN33dyt+a4bl5rhYc9PSZttfPwzPRXe7jEXlwc3j8FT4aOXMlAFQ+SrtPuYVVe8aB2l2VNYmJIdPKmuuP4ZVLru99j03bcwr/xyS+WG+g5qyHoJvhHQzc9pZIawhIJ2hXaehA9RdcMMgkzGjE0Iz59jvF/KY4yhwjMy3+E/4P/EXPxmEnJBnh0cAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jarednielsen javascript array data structure example&quot;
-        title=&quot;jarednielsen javascript array data structure example&quot;
-        src=&quot;/static/46ab957a30e050063841c6263f262559/f058b/jarednielsen-javascript-array-data-structure-example.png&quot;
-        srcset=&quot;/static/46ab957a30e050063841c6263f262559/c26ae/jarednielsen-javascript-array-data-structure-example.png 158w,
-/static/46ab957a30e050063841c6263f262559/6bdcf/jarednielsen-javascript-array-data-structure-example.png 315w,
-/static/46ab957a30e050063841c6263f262559/f058b/jarednielsen-javascript-array-data-structure-example.png 630w,
-/static/46ab957a30e050063841c6263f262559/40601/jarednielsen-javascript-array-data-structure-example.png 945w,
-/static/46ab957a30e050063841c6263f262559/78612/jarednielsen-javascript-array-data-structure-example.png 1260w,
-/static/46ab957a30e050063841c6263f262559/29007/jarednielsen-javascript-array-data-structure-example.png 1600w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./jarednielsen-javascript-array-data-structure-example.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;We can think of our computer as an array of switches. A byte is an array of eight bits. From bytes we build complex layers of abstraction to create memory, characters, and cat videos.&lt;/p&gt;
 &lt;h2&gt;What Problem(s) Do Arrays Solve?&lt;/h2&gt;
 &lt;ul&gt;
@@ -15203,39 +15989,7 @@ DCBA &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;It’s O(2^n).&lt;/p&gt;
 &lt;p&gt;(Actually, it’s O(1.6^n), but who’s counting?)&lt;/p&gt;
 &lt;p&gt;Take a look at this diagram of our recursive call branches.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0366460584660f4431dc6452811a316a/29007/jarednielsen-big-o-recursion-fibonacci-tree.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAnUlEQVQoz72RwQ4CIQxE9/8/1XCABbrdTluMVDcx6sG48Z2A5M00ZRk/sLw+qeq+7wDWdS2lABARVf0ou/sYY9u2lFLvPXxVNbM4EFFKiZnfyESUcxYRM4vOo0pVa60RxMw55yPiJjNza63W2nuPoLgCUNX2IKYTEQB32cwuEwBE5O5EFCWYMLO7H/LT2ADKRERO2PZ3sk/O+ec/yVeciouIo6pm6gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Recursive Fibonacci Tree&quot;
-        title=&quot;Recursive Fibonacci Tree&quot;
-        src=&quot;/static/0366460584660f4431dc6452811a316a/f058b/jarednielsen-big-o-recursion-fibonacci-tree.png&quot;
-        srcset=&quot;/static/0366460584660f4431dc6452811a316a/c26ae/jarednielsen-big-o-recursion-fibonacci-tree.png 158w,
-/static/0366460584660f4431dc6452811a316a/6bdcf/jarednielsen-big-o-recursion-fibonacci-tree.png 315w,
-/static/0366460584660f4431dc6452811a316a/f058b/jarednielsen-big-o-recursion-fibonacci-tree.png 630w,
-/static/0366460584660f4431dc6452811a316a/40601/jarednielsen-big-o-recursion-fibonacci-tree.png 945w,
-/static/0366460584660f4431dc6452811a316a/78612/jarednielsen-big-o-recursion-fibonacci-tree.png 1260w,
-/static/0366460584660f4431dc6452811a316a/29007/jarednielsen-big-o-recursion-fibonacci-tree.png 1600w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./jarednielsen-big-o-recursion-fibonacci-tree.png&quot; alt=&quot;Recursive Fibonacci Tree&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Why is this algorithm inefficient?&lt;/p&gt;
 &lt;p&gt;Overlapping subproblems!&lt;/p&gt;
 &lt;p&gt;We solve the same problems repeatedly in our branches.&lt;/p&gt;
@@ -16945,39 +17699,7 @@ dry()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;With each iteration, the value of &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; becomes smaller until one of our &lt;em&gt;base&lt;/em&gt; conditions is met.&lt;/p&gt;
 &lt;p&gt;So the &lt;em&gt;depth&lt;/em&gt;  of our tree is &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Let’s map out the calls:&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b06dabd59822ebeb8d0c7120e4caf32f/29007/jarednielsen-big-o-recursion-tree.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVQoz82R22oFMQhF8/+fGnIZwzij7tEUTkroQymFcqD7Qbwt3GCaf1D6YaaqIvJbGMB936p6v8TM53le17WbAL6BIwLAGKO1JiIR8XUpIkSk905EAPb0E845E9HKRaTWqqqrNLNa6/Y/xsg5Lz4BKKWICBExs5n13t19HVHV4zjcvbUGgJmJSFVLKWaWluE5p7s/zzPnXNFfiojdjIi9s8ynd73qH8MfubiLH+ShhjUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jarednielsen big o recursion tree&quot;
-        title=&quot;jarednielsen big o recursion tree&quot;
-        src=&quot;/static/b06dabd59822ebeb8d0c7120e4caf32f/f058b/jarednielsen-big-o-recursion-tree.png&quot;
-        srcset=&quot;/static/b06dabd59822ebeb8d0c7120e4caf32f/c26ae/jarednielsen-big-o-recursion-tree.png 158w,
-/static/b06dabd59822ebeb8d0c7120e4caf32f/6bdcf/jarednielsen-big-o-recursion-tree.png 315w,
-/static/b06dabd59822ebeb8d0c7120e4caf32f/f058b/jarednielsen-big-o-recursion-tree.png 630w,
-/static/b06dabd59822ebeb8d0c7120e4caf32f/40601/jarednielsen-big-o-recursion-tree.png 945w,
-/static/b06dabd59822ebeb8d0c7120e4caf32f/78612/jarednielsen-big-o-recursion-tree.png 1260w,
-/static/b06dabd59822ebeb8d0c7120e4caf32f/29007/jarednielsen-big-o-recursion-tree.png 1600w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./jarednielsen-big-o-recursion-tree.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Do you see a pattern?&lt;/p&gt;
 &lt;p&gt;Where have we seen this, or something like it, before?&lt;/p&gt;
 &lt;p&gt;🤔&lt;/p&gt;
