@@ -255,12 +255,52 @@ DON'T USE ```md FOR PSUEDOCODE SNIPPETS
 Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
 
 
-#### How to Code the TODO Algorithm in JavaScript
+#### How to Code the Combinations Algorithm in JavaScript
 
 TODO
 ```js
-TODO
+const combinations = (n, k) => {
+  const combos = [];
+  
+  let head, tails;
+  
+  if (k > n.length || k < 1) { 
+    return []; 
+  }
+  
+  if (k === n.length) { 
+    return [ n ]; 
+  }
+  
+  if (k === 1) {
+    for (let i = 0; i < n.length; i++) {
+      combos.push([n[i]]);
+    }
+    return combos;
+  }
+
+
+
+  for (let i = 0; i < n.length - k + 1; i++) {
+      head = n.slice(i, i + 1);
+
+      tails = combinations(n.slice(i + 1), k - 1);
+
+      for (let j = 0; j < tails.length; j++) {
+        combos.push(head.concat(tails[j]));
+      }
+  }
+
+  return combos; 
+}
 ```
+
+Within our `combinations` function, we first declare our `combos` array and our `head` and `tails` variables. We then run through series of conditionals to check edge cases. The first checks if `k` is greater than `n` or less than `1` and if it validates, returns an empty array. The second checks if `k` is equal to the length of `n` and returns `n` within an array. The last conditional checks if `k` is equal to `1` and, if it validates, runs a loop that pushes each element of `n` into its own array. 
+
+If none of the conditionals validate, we enter the first `for` loop 
+
+
+
 
 Now let's see it in Python...
 
@@ -277,6 +317,8 @@ TODO
 Can we do better? 
 
 TODO
+
+    return n.map(i => [i]);
 
 
 #### What is the Big O Of TODO?
