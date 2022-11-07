@@ -299,6 +299,20 @@ Within our `combinations` function, we first declare our `combos` array and our 
 
 If none of the conditionals validate, we enter the first `for` loop 
 
+TODO 
+
+Note the conditions of our `for` loop: 
+
+* We start counting at 0
+
+* We count up to the length of our array - `k`, the TODO, plus 1. 
+
+* We increment by 1 in each iteration. 
+
+Why are we counting up to `n.length - k + 1`? 
+
+TODO 
+
 
 
 
