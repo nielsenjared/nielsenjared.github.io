@@ -281,7 +281,7 @@ const combinations = (n, k) => {
 
 
 
-  for (let i = 0; i < n.length - k + 1; i++) {
+  for (let i = 0; i < n.length; i++) {
       head = n.slice(i, i + 1);
 
       tails = combinations(n.slice(i + 1), k - 1);
@@ -295,23 +295,24 @@ const combinations = (n, k) => {
 }
 ```
 
-Within our `combinations` function, we first declare our `combos` array and our `head` and `tails` variables. We then run through series of conditionals to check edge cases. The first checks if `k` is greater than `n` or less than `1` and if it validates, returns an empty array. The second checks if `k` is equal to the length of `n` and returns `n` within an array. The last conditional checks if `k` is equal to `1` and, if it validates, runs a loop that pushes each element of `n` into its own array. 
+Within our `combinations` function, we first declare our `combos` array and our `head` and `tails` variables. We then run through a series of conditionals to check edge cases. The first checks if `k` is greater than `n` or less than `1` and if it validates, returns an empty array. The second checks if `k` is equal to the length of `n` and returns `n` within an array. The last conditional checks if `k` is equal to `1` and, if it validates, runs a loop that pushes each element of `n` into its own array. 
 
 If none of the conditionals validate, we enter the first `for` loop 
 
 TODO 
 
-Note the conditions of our `for` loop: 
+With each iteration of the loop, we slice out a `head`. So, on the first iteration, we slice `[1]`, on the second, `[2]`, and so on. 
 
-* We start counting at 0
 
-* We count up to the length of our array - `k`, the TODO, plus 1. 
+We then recursively call our `combinations` function, passing it the remainder of the array, `n.slice(i + 1)` and `k -1`. We then store this in the variable `tails`. 
 
-* We increment by 1 in each iteration. 
+In each recursive call, we continually slice the `head` off the array and pass the remainder of the array to the `combinations` function. 
 
-Why are we counting up to `n.length - k + 1`? 
+When our base case is met, `k === 1`, TODO and we return `combos`. We then move down the call stack and pick up where we left off with the previous call to `combinations` and enter the nested `for` loop. Now we iterate over the length of `tails`, 
 
 TODO 
+
+
 
 
 
@@ -329,6 +330,15 @@ TODO
 ### Evaluate the Plan
 
 Can we do better? 
+
+TODO
+We can make the algorithm more efficient by only iterating over `n.length - k + 1`: 
+
+```js
+  for (let i = 0; i < n.length - k + 1; i++) {
+```
+
+
 
 TODO
 
