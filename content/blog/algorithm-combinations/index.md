@@ -287,7 +287,11 @@ const combinations = (n, k) => {
       tails = combinations(n.slice(i + 1), k - 1);
 
       for (let j = 0; j < tails.length; j++) {
-        combos.push(head.concat(tails[j]));
+        
+        let combo = head.concat(tails[j]);
+        combos.push(combo);
+
+        // combos.push(head.concat(tails[j]));
       }
   }
 
@@ -308,7 +312,13 @@ We then recursively call our `combinations` function, passing it the remainder o
 
 In each recursive call, we continually slice the `head` off the array and pass the remainder of the array to the `combinations` function. 
 
-When our base case is met, `k === 1`, TODO and we return `combos`. We then move down the call stack and pick up where we left off with the previous call to `combinations` and enter the nested `for` loop. Now we iterate over the length of `tails`, 
+When our base case is met:
+```js
+  if (k === n.length) { 
+    return [ n ]; 
+  }
+```  
+TODO and we return `combos`. We then move down the call stack and pick up where we left off with the previous call to `combinations` and enter the nested `for` loop. Now we iterate over the length of `tails`, 
 
 TODO 
 
