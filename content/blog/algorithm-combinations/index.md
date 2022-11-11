@@ -223,6 +223,8 @@ Our outer loop will generate the first value in each combination
 
 
 
+
+
 Let's write pseudocode where `n` is equal to 5 and `r` is equal to `3`:
 ```
 SET n TO 5
@@ -239,6 +241,13 @@ FOR EVERY VALUE BETWEEN i AND n:
 ```
 
 Let's step through this... In our first iteration, 
+
+TODO WHAT'S THE KERNEL?
+
+
+A tree.
+
+We don't know how many iterations we're going to make and we need a 
 
 
 TODO
@@ -318,10 +327,7 @@ When our base case is met:
     return [ n ]; 
   }
 ```  
-TODO and we return `combos`. We then move down the call stack and pick up where we left off with the previous call to `combinations` and enter the nested `for` loop. Now we iterate over the length of `tails`, 
-
-TODO 
-
+TODO and we return `combos`. We then move down the call stack and pick up where we left off with the previous call to `combinations` and enter the nested `for` loop. Now we iterate over the length of `tails`, We concatenate each value in `tails` with `head`, creating a new `combo`. We then push that `combo` into `combos`. With each recursive call, we return `combos`. 
 
 
 
