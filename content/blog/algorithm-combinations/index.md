@@ -1,12 +1,13 @@
 ---
 title: "Learn How to Code the Combinations Algorithm"
-date: "2022-TODO-TODO"
+date: "2022-11-18"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to generate combinations in JavaScript and Python."
 keywords: ['algorithm', 'combinations', 'javascript', 'python']
 ---
 
 
-![ TODO ](./jarednielsen-algorithm-TODO.png)
+
+![ Illustration of a combination pizza ](./jarednielsen-algorithm-combinations.png)
 
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to generate combinations in JavaScript _and_ Python.
@@ -24,26 +25,50 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-* TODO 
+* What is recursion?  
 
-* TODO
+* What is a factorial? 
 
-* What's a combination? 
-
-
-### TODO #1
-
-TODO
+* What is a combination? 
 
 
-### TODO #2
+### What is Recursion? 
 
-TODO
+In computer science, recursion occurs when a function calls itself within its declaration.
+
+We use recursion to solve a large problem by breaking it down into smaller instances of the same problem. Recursion consists of two things: 
+
+* a base case
+
+* a recursive case
+
+We use the recursive case to break the problem down into smaller instances.
+
+We use the base case to stop when there are no more problems to be solved.
 
 
-### TODO #3
+### What is a Factorial? 
 
-TODO
+A factorial is the product of all positive integers less than or equal to n.
+
+We write that as n!.
+
+For example, 5!:
+```
+5 * 4 * 3 * 2 * 1 = 120
+```
+
+### What is a Combination? 
+
+According to ye olde Wikipedia: 
+> In mathematics, a combination is a selection of items from a set that has distinct members, such that the order of selection does not matter
+
+Here's the formula for combinations: 
+```
+n! / (n - k)! * k!
+```
+
+...where `n` is the length of the set of values, and `k` is the number of values in each combination of `n`.  
 
 
 ## Let's Get Meta
@@ -52,12 +77,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does the combinations algorithm solve? 
 
-* TODO
+* If you could be a tree, what kind of tree would you be? 
 
 
-## How to Code the TODO Algorithm 
+## How to Code the Combinations Algorithm 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -77,10 +102,10 @@ To understand our problem, we first need to define it. Let’s reframe the probl
 ```md
 GIVEN a sequence of integers from 1 to `n`
 WHEN I specify the size of each set of combinations, `k`
-THEN I am returned all possible combinations of the values from 1 to `n` in sets of size `k`
+THEN I am returned all possible combinations of the values from 1 to `n` in sets of size `k` without repetition
 ```
 
-That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
+That’s our general outline. We know our input conditions, an array, and our output requirements, an array of combinations, and our goal is to calculate the number of `k` combinations in `n` without repetition.
 
 Let’s make a plan!
 
@@ -99,17 +124,19 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
 
-If `n` is equal to 1, then the only combination is:
+If the length of `n` is equal to 1, then the only combination is:
 ```
 [1]
 ```
+
+What about `k`? 
 
 If `n` is equal to 2, and `k` is equal to 1, then our combinations are:
 ```
 [1], [2]
 ```
 
-If `n` is equal to 2, and `k` is equal to 2, then our only combination are:
+If `n` is equal to 2, and `k` is equal to 2, then our only combination is:
 ```
 [1, 2]
 ```
@@ -119,7 +146,9 @@ If `n` is equal to 3, and `k` is equal to 2, it starts to get interesting. Our c
 [1, 2], [1, 3], [2, 3]
 ```
 
-Do you see a pattern emerging? Let's do one more...
+Do you see a pattern emerging? 
+
+Let's do one more...
 
 If `n` is equal to 4, and `k` is equal to 1, our combinations are: 
 ```
@@ -141,17 +170,29 @@ For good measure, if `n` is equal to 4, and `k` is equal to 4:
 [1, 2, 3, 4]
 ```
 
-We can see that we will need to iterate to generate our combinations, and that those loops will need to be nested, but just how many loops do we need to nest? It depends! 
+We can see that we will need to iterate to generate our combinations, and that those loops will need to be nested, but just how many loops do we need to nest? 
 
-TODO why?
+It depends! 
+
+We won't be able to hard-code in the nested loops. In the examples above, the number of iterations required to calculate the combinations ranges from 1 to 4. And we're only working with small values.  
 
 What's the solution? 
 
 Recursion! 
 
+As we recalled above, recursion consists of two things:
+
+* base case
+
+* recursive case
+
 What's our base case? 
 
-TODO 
+```
+k == 1
+```
+
+If `k` is equal to 1, then we simply return `n`. 
 
 Let's pseudocode that: 
 ```
@@ -162,14 +203,10 @@ FUNCTION combinations(n, k)
     RETURN n
 ```
 
-Let's run through this using an array, `n`, containing five values: 
+If we pass our `combinations` function an array, `n`, containing five ordinal values, it will return just that: 
 ```
 [1, 2, 3, 4, 5]
 ```
-
-Now what? 
-
-The fun stuff! 
 
 What's the next problem we can solve? 
 
@@ -200,21 +237,35 @@ There are four combinations beginning with 1...
 
 What does this tell us?
 
-TODO 
-With each iteration over `n`, we decrement the next iteration by 1. 
-As we iterate over the array, we generate all of the combinations for each element.
-We're going to need _at least_ two iterations. 
+With each iteration over `n`, we decrement the next iteration by 1. In the first iteration, we are creating all of the combinations that begin with 1. In the second iteration, we are creating all of the combinations that begin with 2, in the third iteration, 3's, and finally 4. 
 
+Regardless of `k`, we're going to need _at least_ two iterations. The first iteration will _set_ the initial value of the combinations. The second iteration will iterate over the remaining values to create the combinations. 
 
 Let's illustrate this...
 
-If `n` is equal to `[1, 2, 3, 4, 5]` and `k` is equal to 2, on our first iteration over `n`, `i` is equal to 1. To build each combination, we'll need a nested loop where we iterate over the remaining elements in `n`, which are `[2, 3, 4, 5]`. How do we start our nested iteration at the next value? We _could_ set `j` equal to 1 rather than 0. 
+In our first iteration over `n`, we set the initial value of our `combo` arrays to 1. 
+```
+[1]
+```
 
-TODO but why would we not want to do this? 
+Let's call this our `head`. 
 
-Or... we could just slice its head off. 
+In a nested loop, we then iterate over the remaining elements in `n`, which are `[2, 3, 4, 5]`. Let's call this our `tail.` We concatenate each of the values in our `head` to create `combo` arrays. 
+```
+[1, 2]
+[1, 3]
+[1, 4]
+[1, 5]
+```
 
-TODO 
+We then return to the outer loop and move to the next value in `n`, which is 2. Our new `head` looks like this: 
+```
+[2]
+```
+
+Again, we iterate over the remaining elements, or `tail`, concatenating each of these values to create `combo` arrays. 
+
+We decrement our iterations by _slicing_ off the first element in `n`, and creating a new array, `head`. 
 
 Let's pseudocode this...
 ```
@@ -241,8 +292,6 @@ FUNCTION combinations(n, k)
   RETURN combos
 ```
 
-TODO 
-
 What's the next smallest problem we can solve? 
 
 Combinations with a length of 3! 
@@ -264,13 +313,31 @@ If `n` is equal to `[1, 2, 3, 4, 5]` and `k` is equal to 3, then our goal is to 
 
 Will the approach we outlined above work? 
 
-Nope. We _could_ add another nested loop. But what do we do when `k` is equal to 4? Add another nested loop? Do we need more loops? 
+Nope. We _could_ add another nested loop. But what do we do when `k` is equal to 4? Add another nested loop? 
+
+Do we need more loops? 
 
 Yes, but not the iterative variety. 
 
 We need to get abstract annd make the leap to recursion. 
 
-TODO 
+But where? 
+
+In the `return` statement? 
+
+If we recursively call `combinations` in the `return`, we would only use one nested loop. 
+
+We know we need _at least_ one nested loop. 
+
+What if we called `combinations` within the first loop, but before the second loop? 
+
+This would allow us to use as many nested loops as necessary to create all of the combinations. 
+
+How are we catching the return value of `combinations`? 
+
+With every recursive call of `combinations`, we will create a new `head` from the next element in the array. We'll continue to make calls to `combinations` until the base case is met, where `n` is equal to 1. 
+
+What if we set the value of `tail` to the recursive calls of the `combinations`? 
 
 Let's pseudocode this...
 ```
@@ -286,7 +353,7 @@ FUNCTION combinations(n, k)
   FOR EVERY VALUE i IN n
     SET head EQUAL TO THE FIRST SLICE OF n
 
-    SET tail EQUAL THE RETURN VALUE OF combinations(THE REMAINDER OF n, k -1) 
+    SET tail EQUAL TO THE RETURN VALUE OF combinations(THE REMAINDER OF n, k - 1) 
 
     FOR EVERY VALUE j IN tail
 
@@ -300,12 +367,12 @@ FUNCTION combinations(n, k)
 
 ### Execute the Plan
 
-Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
+Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
 #### How to Code the Combinations Algorithm in JavaScript
 
-TODO
+Let's start with JavaScript...
 ```js
 const combinations = (n, k) => {
   const combos = [];
@@ -331,37 +398,13 @@ const combinations = (n, k) => {
 }
 ```
 
-Within our `combinations` function, we first declare our `combos` array and our `head` and `tail` variables. We then run through a series of conditionals to check edge cases. The first checks if `k` is greater than `n` or less than `1` and if it validates, returns an empty array. The second checks if `k` is equal to the length of `n` and returns `n` within an array. The last conditional checks if `k` is equal to `1` and, if it validates, runs a loop that pushes each element of `n` into its own array. 
-
-If none of the conditionals validate, we enter the first `for` loop 
-
-TODO 
-
-With each iteration of the loop, we slice out a `head`. So, on the first iteration, we slice `[1]`, on the second, `[2]`, and so on. 
-
-
-We then recursively call our `combinations` function, passing it the remainder of the array, `n.slice(i + 1)` and `k -1`. We then store this in the variable `tail`. 
-
-In each recursive call, we continually slice the `head` off the array and pass the remainder of the array to the `combinations` function. 
-
-When our base case is met:
-```js
-  if (k === n.length) { 
-    return [ n ]; 
-  }
-```  
-TODO and we return `combos`. We then move down the call stack and pick up where we left off with the previous call to `combinations` and enter the nested `for` loop. Now we iterate over the length of `tail`, We concatenate each value in `tail` with `head`, creating a new `combo`. We then push that `combo` into `combos`. With each recursive call, we return `combos`. 
 
 
 
 
+#### How to Code the Combinations Algorithm in Python
 
 Now let's see it in Python...
-
-
-#### How to Code the TODO Algorithm in Python
-
-TODO
 ```py
 TODO
 ```
@@ -384,7 +427,7 @@ TODO
     return n.map(i => [i]);
 
 
-#### What is the Big O Of TODO?
+#### What is the Big O Of Combinations?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -395,9 +438,9 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does the combinations algorithm solve? 
 
-* TODO
+* If you could be a tree, what kind of tree would you be? 
 
 
 ### Why Do I Need to Know This? 
@@ -405,14 +448,14 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 TODO
 
 
-### What Problem(s) Does TODO Solve? 
+### What Problem(s) Does the Combinations Algorithm Solve? 
 
 TODO
 
 
-### TODO
+### If You Could Be a Tree, What Kind of Tree Would You Be? 
 
-TODO
+The combinations algorithm functions very similarly to TODO a tree TODO.
 
 
 ## A is for Algorithms
