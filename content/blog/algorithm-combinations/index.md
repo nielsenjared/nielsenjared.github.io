@@ -76,8 +76,8 @@ To understand our problem, we first need to define it. Let’s reframe the probl
 
 ```md
 GIVEN a sequence of integers from 1 to `n`
-WHEN I specify the size of each set of combinations, `r`
-THEN I am returned all possible combinations of the values from 1 to `n` in sets of size `r`
+WHEN I specify the size of each set of combinations, `k`
+THEN I am returned all possible combinations of the values from 1 to `n` in sets of size `k`
 ```
 
 That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
@@ -104,158 +104,197 @@ If `n` is equal to 1, then the only combination is:
 [1]
 ```
 
-If `n` is equal to 2, and `r` is equal to 1, then our combinations are:
+If `n` is equal to 2, and `k` is equal to 1, then our combinations are:
 ```
 [1], [2]
 ```
 
-If `n` is equal to 2, and `r` is equal to 2, then our only combination are:
+If `n` is equal to 2, and `k` is equal to 2, then our only combination are:
 ```
 [1, 2]
 ```
 
-If `n` is equal to 3, and `r` is equal to 2, it starts to get interesting. Our combinations are:
+If `n` is equal to 3, and `k` is equal to 2, it starts to get interesting. Our combinations are:
 ```
 [1, 2], [1, 3], [2, 3]
 ```
 
 Do you see a pattern emerging? Let's do one more...
 
-If `n` is equal to 4, and `r` is equal to 1, our combinations are: 
+If `n` is equal to 4, and `k` is equal to 1, our combinations are: 
 ```
 [1], [2], [3], [4]
 ```
 
-If `n` is equal to 4, and `r` is equal to 2, our combinations are: 
+If `n` is equal to 4, and `k` is equal to 2, our combinations are: 
 ```
 [1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]
 ```
 
-If `n` is equal to 4, and `r` is equal to 3, our combinations are: 
+If `n` is equal to 4, and `k` is equal to 3, our combinations are: 
 ```
 [1, 2, 3], [1, 2, 4], [1, 3, 4], [2, 3, 4]
 ```
 
-For good measure, if `n` is equal to 4, and `r` is equal to 4:
+For good measure, if `n` is equal to 4, and `k` is equal to 4:
 ```
 [1, 2, 3, 4]
 ```
 
 We can see that we will need to iterate to generate our combinations, and that those loops will need to be nested, but just how many loops do we need to nest? It depends! 
 
-If `n` is equal to 4, and `r` is equal to 1, how many loops are required to generate the combinations? 
+TODO why?
 
-Just 1. If we pseudocode it:
+What's the solution? 
+
+Recursion! 
+
+What's our base case? 
+
+TODO 
+
+Let's pseudocode that: 
 ```
-FOR EVERY VALUE i BETWEEN 1 AND n
-    OUTPUT [i]
-```
+FUNCTION combinations(n, k)
+  SET combos TO AN EMPTY ARRAY
 
-Now if `n` is equal to 4, and `r` is equal to 2, how many loops are required to generate the combinations? 
-
-TODO step through this...
-
-Only 2. 
-
-When `i` is equal to 1, we need to run an inner loop to select the _next_ number. We don't want to select 1 again TODO
-
-We create a new iterator, `j` and assign it the value of `i + 1`. When `i` is equal to `1`, `j` is equal to 2, and when `i` is equal to 2, `j` is equal to 3, and so on. 
-
-If we pseudocode this...
-```
-SET n TO 4
-SET r TO 2
-
-SET i EQUAL TO 1
-
-FOR EVERY VALUE BETWEEN i AND n:
-    SET j EQUAL TO i + 1
-    FOR EVERY VALUE BETWEEN j AND n:
-        RETURN [i, j]
+  IF k IS EQUAL TO 1
+    RETURN n
 ```
 
-Do we need the outer loop to iterator `n`? 
-
-No. The inner loop TODO
-
-🤔
-
-
-
-
-Let's write pseudocode where `n` is equal to 4 and `r` is equal to 2:
+Let's run through this using an array, `n`, containing five values: 
 ```
-SET n TO 4
-SET r TO 2
-
-SET i EQUAL TO 1
-
-FOR EVERY VALUE BETWEEN i AND n:
-    SET j EQUAL TO i + 1
-    FOR EVERY VALUE BETWEEN j AND n:
-        SET k EQUAL TO j + 1
-        FOR EVERY VALUE BETWEEN k AND n:
-            RETURN [i, j]
+[1, 2, 3, 4, 5]
 ```
 
+Now what? 
 
-TODO
+The fun stuff! 
 
+What's the next problem we can solve? 
 
+Combinations with a length of 2! 
 
-TODO
-We can capture this in an equation: 
+If `n` is equal to `[1, 2, 3, 4, 5]` and `k` is equal to 2, then our goal is to return an array with the following combinations:
+```sh
+[ [ 1, 2 ],
+  [ 1, 3 ],
+  [ 1, 4 ],
+  [ 1, 5 ],
+  [ 2, 3 ],
+  [ 2, 4 ],
+  [ 2, 5 ],
+  [ 3, 4 ],
+  [ 3, 5 ],
+  [ 4, 5 ] ]
 ```
-n - r + 1
+Do we see a pattern?
+
+There are four combinations beginning with 1...
+
+...and three combinations beginning with 2...
+
+...and two combinations beginning with 3...
+
+...and only one combination beginning with 4.
+
+What does this tell us?
+
+TODO 
+With each iteration over `n`, we decrement the next iteration by 1. 
+As we iterate over the array, we generate all of the combinations for each element.
+We're going to need _at least_ two iterations. 
+
+
+Let's illustrate this...
+
+If `n` is equal to `[1, 2, 3, 4, 5]` and `k` is equal to 2, on our first iteration over `n`, `i` is equal to 1. To build each combination, we'll need a nested loop where we iterate over the remaining elements in `n`, which are `[2, 3, 4, 5]`. How do we start our nested iteration at the next value? We _could_ set `j` equal to 1 rather than 0. 
+
+TODO but why would we not want to do this? 
+
+Or... we could just slice its head off. 
+
+TODO 
+
+Let's pseudocode this...
+```
+FUNCTION combinations(n, k)
+  SET combos TO AN EMPTY ARRAY
+
+  SET head
+  SET tail
+
+  IF k IS EQUAL TO 1
+    RETURN n
+
+  FOR EVERY VALUE i IN n
+    SET head EQUAL TO THE FIRST SLICE OF n
+
+    SET tail EQUAL TO THE REMAINDER OF n
+
+    FOR EVERY VALUE j IN tail
+
+      SET combo EQUAL TO head CONCATENATED WITH THE VALUE STORED IN tail[j]
+
+      PUSH combo TO combos
+
+  RETURN combos
 ```
 
+TODO 
 
+What's the next smallest problem we can solve? 
 
+Combinations with a length of 3! 
 
-TODO
-Let's look closer at what's happening when `n` is equal to 5 and `r` is equal to 3. 
+If `n` is equal to `[1, 2, 3, 4, 5]` and `k` is equal to 3, then our goal is to return an array with the following combinations:
 
-Our outer loop will generate the first value in each combination
-
-
-
-
-
-
-
-
-
-Let's write pseudocode where `n` is equal to 5 and `r` is equal to `3`:
-```
-SET n TO 5
-SET r TO 3
-
-SET i EQUAL TO 1
-
-FOR EVERY VALUE BETWEEN i AND n:
-    SET j EQUAL TO i + 1
-    FOR EVERY VALUE BETWEEN j AND n:
-        SET k EQUAL TO j + 1
-        FOR EVERY VALUE BETWEEN k AND n:
-            RETURN [i, j]
+```sh
+[ [ 1, 2, 3 ],
+  [ 1, 2, 4 ],
+  [ 1, 2, 5 ],
+  [ 1, 3, 4 ],
+  [ 1, 3, 5 ],
+  [ 1, 4, 5 ],
+  [ 2, 3, 4 ],
+  [ 2, 3, 5 ],
+  [ 2, 4, 5 ],
+  [ 3, 4, 5 ] ]
 ```
 
-Let's step through this... In our first iteration, 
+Will the approach we outlined above work? 
 
-TODO WHAT'S THE KERNEL?
+Nope. We _could_ add another nested loop. But what do we do when `k` is equal to 4? Add another nested loop? Do we need more loops? 
 
+Yes, but not the iterative variety. 
 
-A tree.
+We need to get abstract annd make the leap to recursion. 
 
-We don't know how many iterations we're going to make and we need a 
+TODO 
 
-
-TODO
-
+Let's pseudocode this...
 ```
-DON'T USE ```md FOR PSUEDOCODE SNIPPETS
-    IT WILL RENDER TABBED TEXT 
-        IN ANOTHER COLOR
+FUNCTION combinations(n, k)
+  SET combos TO AN EMPTY ARRAY
+
+  SET head
+  SET tail
+
+  IF k IS EQUAL TO 1
+    RETURN n
+
+  FOR EVERY VALUE i IN n
+    SET head EQUAL TO THE FIRST SLICE OF n
+
+    SET tail EQUAL THE RETURN VALUE OF combinations(THE REMAINDER OF n, k -1) 
+
+    FOR EVERY VALUE j IN tail
+
+      SET combo EQUAL TO head CONCATENATED WITH THE VALUE STORED IN tail[j]
+
+      PUSH combo TO combos
+
+  RETURN combos
 ```
 
 
@@ -271,36 +310,20 @@ TODO
 const combinations = (n, k) => {
   const combos = [];
   
-  let head, tails;
-  
-  if (k > n.length || k < 1) { 
-    return []; 
-  }
-  
-  if (k === n.length) { 
-    return [ n ]; 
-  }
+  let head, tail;
   
   if (k === 1) {
-    for (let i = 0; i < n.length; i++) {
-      combos.push([n[i]]);
-    }
-    return combos;
+    return n;
   }
-
-
 
   for (let i = 0; i < n.length; i++) {
       head = n.slice(i, i + 1);
 
-      tails = combinations(n.slice(i + 1), k - 1);
+      tail = combinations(n.slice(i + 1), k - 1);
 
-      for (let j = 0; j < tails.length; j++) {
-        
-        let combo = head.concat(tails[j]);
+      for (let j = 0; j < tail.length; j++) {
+        let combo = head.concat(tail[j]);
         combos.push(combo);
-
-        // combos.push(head.concat(tails[j]));
       }
   }
 
@@ -308,7 +331,7 @@ const combinations = (n, k) => {
 }
 ```
 
-Within our `combinations` function, we first declare our `combos` array and our `head` and `tails` variables. We then run through a series of conditionals to check edge cases. The first checks if `k` is greater than `n` or less than `1` and if it validates, returns an empty array. The second checks if `k` is equal to the length of `n` and returns `n` within an array. The last conditional checks if `k` is equal to `1` and, if it validates, runs a loop that pushes each element of `n` into its own array. 
+Within our `combinations` function, we first declare our `combos` array and our `head` and `tail` variables. We then run through a series of conditionals to check edge cases. The first checks if `k` is greater than `n` or less than `1` and if it validates, returns an empty array. The second checks if `k` is equal to the length of `n` and returns `n` within an array. The last conditional checks if `k` is equal to `1` and, if it validates, runs a loop that pushes each element of `n` into its own array. 
 
 If none of the conditionals validate, we enter the first `for` loop 
 
@@ -317,7 +340,7 @@ TODO
 With each iteration of the loop, we slice out a `head`. So, on the first iteration, we slice `[1]`, on the second, `[2]`, and so on. 
 
 
-We then recursively call our `combinations` function, passing it the remainder of the array, `n.slice(i + 1)` and `k -1`. We then store this in the variable `tails`. 
+We then recursively call our `combinations` function, passing it the remainder of the array, `n.slice(i + 1)` and `k -1`. We then store this in the variable `tail`. 
 
 In each recursive call, we continually slice the `head` off the array and pass the remainder of the array to the `combinations` function. 
 
@@ -327,7 +350,7 @@ When our base case is met:
     return [ n ]; 
   }
 ```  
-TODO and we return `combos`. We then move down the call stack and pick up where we left off with the previous call to `combinations` and enter the nested `for` loop. Now we iterate over the length of `tails`, We concatenate each value in `tails` with `head`, creating a new `combo`. We then push that `combo` into `combos`. With each recursive call, we return `combos`. 
+TODO and we return `combos`. We then move down the call stack and pick up where we left off with the previous call to `combinations` and enter the nested `for` loop. Now we iterate over the length of `tail`, We concatenate each value in `tail` with `head`, creating a new `combo`. We then push that `combo` into `combos`. With each recursive call, we return `combos`. 
 
 
 
