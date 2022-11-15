@@ -1,15 +1,15 @@
 ---
 title: "Learn How to Code the Permutations Algorithm"
 date: "2022-TODO-TODO"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO"
-keywords: ['algorithm', 'TODO', 'javascript', 'python']
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the permutations algorithm"
+keywords: ['algorithm', 'permutations', 'javascript', 'python']
 ---
 
 
-![ TODO ](./jarednielsen-algorithm-TODO.png)
+![ Illustration of ducks on podium ](./jarednielsen-algorithm-permutations.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the permutations in JavaScript _and_ Python.
 
 
 ---
@@ -24,26 +24,28 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-* TODO 
+* What is recursion? 
 
-* TODO
+* What is a factorial? 
 
-* TODO 
-
-
-### TODO #1
-
-TODO
+* What is a permutation?  
 
 
-### TODO #2
+### What is Recursion? 
 
 TODO
 
 
-### TODO #3
+### What is a Factorial? 
 
 TODO
+
+
+### What is a Permutation? 
+
+Okay, so you might not be familiar with permutations, but we're going to "recall" them anyway. 
+
+TODO 
 
 
 ## Let's Get Meta
@@ -54,10 +56,10 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * What problem(s) does TODO solve? 
 
-* TODO
+* TODO real world permutations? implications for repition an no repitition? 
 
 
-## How to Code the TODO Algorithm 
+## How to Code the Permutations Algorithm 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -101,6 +103,8 @@ The first step is decomposition, or breaking our problem down into smaller probl
 
 TODO
 
+
+
 ```
 DON'T USE ```md FOR PSUEDOCODE SNIPPETS
     IT WILL RENDER TABBED TEXT 
@@ -110,25 +114,49 @@ DON'T USE ```md FOR PSUEDOCODE SNIPPETS
 
 ### Execute the Plan
 
-Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
+Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
-#### How to Code the TODO Algorithm in JavaScript
+#### How to Code the Permutations Algorithm in JavaScript
 
-TODO
+Let's start with JavaScript...
 ```js
-TODO
+const permutations = (n) => {
+    const perms = [];
+
+    let head, tail;
+    
+    if (n.length === 0) {
+        return [];
+    }
+    
+    if (n.length === 1) {
+        return [n];
+    }
+    
+    for (let i = 0; i < n.length; i++) {
+        head = n.slice(i, i + 1);
+        tail = permutations(n.slice(0, i).concat(n.slice(i + 1)));
+
+        for (let j = 0; j < tail.length; j++) {
+            let perm = head.concat(tail[j]);
+        perms.push(perm);
+        }
+    }
+    return perms;
+}
 ```
 
-Now let's see it in Python...
+
 
 
 #### How to Code the TODO Algorithm in Python
 
-TODO
+Now let's see it in Python...
 ```py
 TODO
 ```
+
 
 ### Evaluate the Plan
 
@@ -137,7 +165,7 @@ Can we do better?
 TODO
 
 
-#### What is the Big O Of TODO?
+#### What is the Big O Of the Permutations Algorithm?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -148,7 +176,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does the permutations algorithm solve? 
 
 * TODO
 
@@ -158,7 +186,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 TODO
 
 
-### What Problem(s) Does TODO Solve? 
+### What Problem(s) Does The Permutations Algorithm Solve? 
 
 TODO
 
