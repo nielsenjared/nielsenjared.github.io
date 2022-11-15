@@ -33,19 +33,42 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 ### What is Recursion? 
 
-TODO
+In computer science, recursion occurs when a function calls itself within its declaration.
+
+We use recursion to solve a large problem by breaking it down into smaller instances of the same problem. Recursion consists of two things:
+
+    a base case
+
+    a recursive case
+
+We use the recursive case to break the problem down into smaller instances.
+
+We use the base case to stop when there are no more problems to be solved.
 
 
 ### What is a Factorial? 
 
-TODO
+A factorial is the product of all positive integers less than or equal to n.
 
+We write that as n!.
+
+For example, 5!:
+```
+5 * 4 * 3 * 2 * 1 = 120
+```
 
 ### What is a Permutation? 
 
-Okay, so you might not be familiar with permutations, but we're going to "recall" them anyway. 
+According to ye olde Wikipedia: 
 
-TODO 
+> In mathematics, a permutation of a set is, loosely speaking, an arrangement of its members into a sequence or linear order, or if the set is already ordered, a rearrangement of its elements. 
+
+There are two types of permutations: with and without repitition. 
+
+In this tutorial, we'll work with permutations without repitition. The equation for this is:
+```
+n! / (n - k)!
+```
 
 
 ## Let's Get Meta
@@ -54,7 +77,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does the permutations algorithm solve? 
 
 * TODO real world permutations? implications for repition an no repitition? 
 
@@ -77,9 +100,9 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN TODO
+GIVEN a sequence of integers from 1 to `n`
 WHEN TODO
-THEN TODO
+THEN I am returned all possible permutations of the values from 1 to `n` without repetition
 ```
 
 That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
@@ -101,15 +124,82 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
 
-TODO
-
-
-
+If the length of n is equal to 1, then the only permutation is:
 ```
-DON'T USE ```md FOR PSUEDOCODE SNIPPETS
-    IT WILL RENDER TABBED TEXT 
-        IN ANOTHER COLOR
+[1]
 ```
+
+If n is equal to 2, then our permutations are:
+```
+[1, 2]
+[2, 1]
+```
+If n is equal to 3, then our permutations are:
+```
+[
+  [ 1, 2, 3 ],
+  [ 1, 3, 2 ],
+  [ 2, 1, 3 ],
+  [ 2, 3, 1 ],
+  [ 3, 1, 2 ],
+  [ 3, 2, 1 ]
+]
+```
+
+Do you see a pattern emerging? 
+
+It's definitely factorial! 
+
+We also need to iterate. 
+
+TODO 
+
+What's the solution?
+
+Recursion!
+
+As we recalled above, recursion consists of two things:
+
+* base case
+
+* recursive case
+
+What's our base case?
+```
+n == 1
+```
+
+If `n` is equal to 1, we simply return `n` wrapped in brackets. 
+
+Let's pseudocode that...
+```
+FUNCTION permutations(n)
+  SET perms TO AN EMPTY ARRAY
+
+  IF n IS EQUAL TO 1
+    RETURN [n]
+```
+
+What's the next problem we can solve?
+
+2!
+
+That's 2 _exclamation point_, not 2 _factorial_ :)
+
+TODO our array:
+```
+[1, 2]
+```
+
+We _could_ swap the values, but we know that won't scale. 
+
+We set our `current` value. 
+
+We then slice off everything _before_ `current` and store it in `head`. 
+
+We next slice off everything _after_ `current` and store it in `tail`. 
+
+We then concatenate `head` and `tail` to create a new array _without_ `current`, and pass that to our `permutations` function. We'll catch the results of the `permutations` function in our `remainder` variable and enter the nested loop, where we'll iterate over each value in `remainder` and create a new `perm` by concatenating it with `current`. We push `perm` to `perms`. 
 
 
 ### Execute the Plan
@@ -150,7 +240,7 @@ const permutations = (n) => {
 
 
 
-#### How to Code the TODO Algorithm in Python
+#### How to Code the Permutations Algorithm in Python
 
 Now let's see it in Python...
 ```py
