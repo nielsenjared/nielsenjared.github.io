@@ -423,12 +423,6 @@ def combinations(n, k):
             combos.append(combo)
     
     return combos
-
-list = [1, 2, 3, 4, 5]
-
-result = combinations(list, 3)
-
-print(result)
 ```
 
 FYI, there's a combinations method built-in to Python. You need to import the `itertools` module to use it.
