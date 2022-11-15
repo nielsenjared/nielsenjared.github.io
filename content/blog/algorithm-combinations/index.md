@@ -398,10 +398,6 @@ const combinations = (n, k) => {
 }
 ```
 
-
-
-
-
 #### How to Code the Combinations Algorithm in Python
 
 Now let's see it in Python...
@@ -409,22 +405,80 @@ Now let's see it in Python...
 TODO
 ```
 
+FYI, there's a combinations method built-in to Python. You need to import the `itertools` module to use it.
+```py
+import itertools
+```
+It's use looks like this:
+```py
+result = itertools.combinations(n, k)
+```
+
+Under the hood, it's implementation looks like this: 
+```py
+def combinations(iterable, r):
+    # combinations('ABCD', 2) --> AB AC AD BC BD CD
+    # combinations(range(4), 3) --> 012 013 023 123
+    pool = tuple(iterable)
+    n = len(pool)
+    if r > n:
+        return
+    indices = list(range(r))
+    yield tuple(pool[i] for i in indices)
+    while True:
+        for i in reversed(range(r)):
+            if indices[i] != i + n - r:
+                break
+        else:
+            return
+        indices[i] += 1
+        for j in range(i+1, r):
+            indices[j] = indices[j-1] + 1
+        yield tuple(pool[i] for i in indices)
+```
+
+The more you know!
+
+
 ### Evaluate the Plan
 
 Can we do better? 
 
-TODO
-We can make the algorithm more efficient by only iterating over `n.length - k + 1`: 
+Yes! 
 
+There are a few optimizations we can make to our algorithm. We can make the algorithm more efficient by only iterating over `n.length - k + 1`. In JavaScript, that would look like: 
 ```js
   for (let i = 0; i < n.length - k + 1; i++) {
 ```
 
+This reduces the number of iterations required to generate the combinations, but does not change the output of the algorithm. 
 
+We can make our algorithm more "idiomatic", or, at the very least, idiot proof, by refactoring our conditional to return `combos` rather than `n`. But this will require us to "manually" copy the values stored in `n` to `combos`, which is not necessarily efficient. 
+```js
+  if (k === 1) {
+    for (let i = 0; i < n.length; i++) {
+      combos.push([n[i]]);
+    }
+    return combos;
+  }
+```
 
-TODO
-
+We could also get ES6-y, and map the return. 
+```js
     return n.map(i => [i]);
+```
+
+We can also introduce more conditionals above the first to catch edge cases. 
+```js
+  if (k > n.length || k < 1) { 
+    return []; 
+  }
+  
+  if (k === n.length) { 
+    return [ n ]; 
+  }
+```
+
 
 
 #### What is the Big O Of Combinations?
@@ -445,17 +499,19 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 ### Why Do I Need to Know This? 
 
-TODO
+Understanding combinations will help you order better pizzas. 
+
+It will also help you identify when a problem might require a factorial solution, such as the [knapsack problem](https://en.wikipedia.org/wiki/Knapsack_problem), in which case you would want to use dynamic programming or a heuristic algorithm. 
 
 
 ### What Problem(s) Does the Combinations Algorithm Solve? 
 
-TODO
+Other than generating combinations, it creates more problems than it solves with its time and space complexity! 
 
 
 ### If You Could Be a Tree, What Kind of Tree Would You Be? 
 
-The combinations algorithm functions very similarly to TODO a tree TODO.
+I asked this at the outset to prime your thinkinng about trees. The combinations algorithm functions similarly to tree traversal. 
 
 
 ## A is for Algorithms
