@@ -356,9 +356,65 @@ const permutations = (n) => {
 
 Now let's see it in Python...
 ```py
-TODO
+def permutations(n):
+    perms = []
+
+    if (len(n) == 1):
+        return [n]
+    
+    for i in range(len(n)):
+        current = [n[i]]
+
+        head = n[:i]
+        tail = n[i+1:]
+        shorty = head + tail
+
+        remainder = permutations(shorty)
+
+        for j in range(len(remainder)):
+            perm = current + remainder[j]
+            perms.append(perm)
+        
+    return perms
 ```
 
+Just like combinations, there's a permutations method that ships with Python. We first need to import the `itertools` module. 
+```py
+import itertools
+```
+
+Then it's simply a matter of calling the `permutations` method from `itertools` and pass it our list as an argument. 
+```py
+itertools.permutations(list)
+```
+
+According to [the docs](https://docs.python.org/3/library/itertools.html#itertools.permutations), under the hood, it's roughly equivalent to this:
+```py
+def permutations(iterable, r=None):
+    # permutations('ABCD', 2) --> AB AC AD BA BC BD CA CB CD DA DB DC
+    # permutations(range(3)) --> 012 021 102 120 201 210
+    pool = tuple(iterable)
+    n = len(pool)
+    r = n if r is None else r
+    if r > n:
+        return
+    indices = list(range(n))
+    cycles = list(range(n, n-r, -1))
+    yield tuple(pool[i] for i in indices[:r])
+    while n:
+        for i in reversed(range(r)):
+            cycles[i] -= 1
+            if cycles[i] == 0:
+                indices[i:] = indices[i+1:] + indices[i:i+1]
+                cycles[i] = n - i
+            else:
+                j = cycles[i]
+                indices[i], indices[-j] = indices[-j], indices[i]
+                yield tuple(pool[i] for i in indices[:r])
+                break
+        else:
+            return
+```
 
 ### Evaluate the Plan
 
@@ -366,7 +422,7 @@ Can we do better?
 
 Eh. 
 
-We can add conditionals to catch edge cases and refactor it to look fancy. But hey! This is the last tutorial in this series and as they say, 'Done is better than perfect.`
+We _could_ add conditionals to catch edge cases and refactor it to look fancy. But hey! This is the last tutorial in this series and as they say, 'Done is better than perfect.`
 
 
 #### What is the Big O Of the Permutations Algorithm?
@@ -397,8 +453,13 @@ TODO
 
 ### Where Have We See This Or Something Like It Before? 
 
-TODO
-This algorithm brings us full circle, back to the first algorithm we solved: the swap. I structured this series in this way to demonstrate ...
+This algorithm brings us full circle, back to the first one we solved: the swap. I structured this series in this way to demonstrate a few things:
+
+* learning is an iterative process
+
+* the computational thinking heuristics can be applied at different levels. Now that you are equipped with a toolbox of patterns, you only need to decompose and recompose patterns to solve problems
+
+* every tree was once a seed, or node, if you will
 
 
 ## A is for Algorithms
