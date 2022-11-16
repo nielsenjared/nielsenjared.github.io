@@ -443,12 +443,14 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 ### Why Do I Need to Know This? 
 
-TODO
+Understanding permutations will help you when you're planning seating arrangements at a wedding.  
+
+It will also help you identify when a problem might require a factorial solution, such as the [Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem), in which case you would want to use dynamic programming or a heuristic algorithm. 
 
 
-### What Problem(s) Does The Permutations Algorithm Solve? 
+### What Problem(s) Does the Combinations Algorithm Solve? 
 
-TODO
+Other than generating permutations, it creates more problems than it solves with its time and space complexity! 
 
 
 ### Where Have We See This Or Something Like It Before? 
