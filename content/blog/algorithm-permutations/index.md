@@ -193,6 +193,16 @@ TODO our array:
 
 We _could_ swap the values, but we know that won't scale. 
 
+Or will it? 
+
+:thinking-face:
+
+TODO
+
+But on the second iteration, we need to grab the second value, 2, and then append the first value, 1.
+
+
+
 We set our `current` value. 
 
 We then slice off everything _before_ `current` and store it in `head`. 
@@ -214,9 +224,9 @@ Let's start with JavaScript...
 const permutations = (n) => {
     const perms = [];
 
-    let head, tail;
+    let current, remainder;
     
-    if (n.length === 0) {
+    if (n.length <= 0) {
         return [];
     }
     
@@ -225,11 +235,17 @@ const permutations = (n) => {
     }
     
     for (let i = 0; i < n.length; i++) {
-        head = n.slice(i, i + 1);
-        tail = permutations(n.slice(0, i).concat(n.slice(i + 1)));
+        // current = n.slice(i, i + 1);
+        current = [n[i]];
 
-        for (let j = 0; j < tail.length; j++) {
-            let perm = head.concat(tail[j]);
+        let head = n.slice(0, i);
+        let tail = n.slice(i + 1);
+        let shorty = head.concat(tail);
+
+        remainder = permutations(shorty);
+
+        for (let j = 0; j < remainder.length; j++) {
+            let perm = current.concat(remainder[j]);
         perms.push(perm);
         }
     }
