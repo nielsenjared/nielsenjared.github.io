@@ -4,8 +4,6 @@ date: "2022-11-18"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the permutations algorithm"
 keywords: ['algorithm', 'permutations', 'javascript', 'python']
 ---
-
-
 ![ Illustration of ducks on podium ](./jarednielsen-algorithm-permutations.png)
 
 
