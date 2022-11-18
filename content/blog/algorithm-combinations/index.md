@@ -71,7 +71,7 @@ n! / (n - k)! * k!
 ...where `n` is the length of the set of values, and `k` is the number of values in each combination of `n`.  
 
 
-## Let's Get Meta
+## Let's Get Meta!
 
 Ask yourself the following questions and keep them back of mind as you proceed:
 
@@ -531,7 +531,7 @@ Other than generating combinations, it creates more problems than it solves with
 
 ### If You Could Be a Tree, What Kind of Tree Would You Be? 
 
-I asked this at the outset to prime your thinkinng about trees. The combinations algorithm functions similarly to tree traversal. 
+I asked this at the outset to prime your thinking about trees. The combinations algorithm functions similarly to tree traversal. 
 
 
 ## A is for Algorithms
