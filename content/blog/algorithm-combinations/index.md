@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Combinations Algorithm"
-date: "2022-11-18"
+date: "2022-11-11"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to generate combinations in JavaScript and Python."
 keywords: ['algorithm', 'combinations', 'javascript', 'python']
 ---
