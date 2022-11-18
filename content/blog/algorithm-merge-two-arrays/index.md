@@ -9,7 +9,7 @@ keywords: ['algorithm', 'merge two arrays', 'javascript', 'python']
 ![ merge two arrays ](./jarednielsen-algorithm-merge two arrays.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the merge two arrays in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Merge Two Arrays algorithm in JavaScript _and_ Python.
 
 
 ---
@@ -24,19 +24,19 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
+* How do we add elements to an array? 
+
+* How do we remove elements from an array? 
+
 * TODO 
 
-* TODO
 
-* TODO 
-
-
-### TODO #1
+### How Do We Add Elements To An Array?
 
 TODO
 
 
-### TODO #2
+### How Do We Remove Elements From An Array?
 
 TODO
 
@@ -133,15 +133,75 @@ IF THE FIRST ELEMENT IN left IS LESS THAN THE FIRST ELEMENT IN right
     SHIFT THE FIRST ELEMENT OFF left AND PUSH IT INTO right
 ELSE 
     SHIFT THE FIRST ELEMENT OFF right AND PUSH IT INTO left
+
+RETURN result
 ```
+
+Will this work? If we step through it, we only shift the first value out of `left`. We need to iterate, but what approach to iteration do we take? 
+
+Because we don't know the size of our two arrays in advance and we are "counting down" until both arrays are empty, let's use a `while` loop. 
+
+While _what_? 
+
+While there are still values to evaluate in `left` _or_ `right`. 
+```
+INPUT left, right
+
+SET result TO AN EMPTY ARRAY 
+
+WHILE THERE ARE VALUES IN left OR right
+    IF THE FIRST ELEMENT IN left IS LESS THAN THE FIRST ELEMENT IN right
+        SHIFT THE FIRST ELEMENT OFF left AND PUSH IT INTO right
+    ELSE 
+        SHIFT THE FIRST ELEMENT OFF right AND PUSH IT INTO left
+
+RETURN result
+```
+
+Let's step through it...
+
+On our first iteration, `left` is 1 and `right` is 2. The result of the evaluation in our conditional is that `left` is less than `right`, so we shift 1 off `left` into `result`.  
+
+On the second iteration, `left` is empty and `right` is still 2. The result of the evaluation in our conditional is... what? 
+
+Well... it depends. If your language is JavaScript, then yes, `right`, will evaluate as less than an empty array. But if your language is Python, you are going to get an error. 
+
+Why? 
+
+Types.
+
+JavaScript is weakly typed, meaning we can be sloppy with our operators. 
+
+But Python is strongly typed, so type matters and we can't compare a numerical value to an empty error and get the results we expect.
+
+So... what's the solution? 
+
+More conditions! 
+
+TODO 
+
+```
+INPUT left, right
+
+SET result TO AN EMPTY ARRAY 
+
+WHILE THERE ARE VALUES IN left OR right
+    IF THE FIRST ELEMENT IN left IS LESS THAN THE FIRST ELEMENT IN right
+        SHIFT THE FIRST ELEMENT OFF left AND PUSH IT INTO right
+    ELSE 
+        SHIFT THE FIRST ELEMENT OFF right AND PUSH IT INTO left
+
+RETURN result
+```
+
+
 
 What's the next smallest problem we can solve? 
 ```
 [1, 3], [2]
 ```
 
-
-
+TODO 
 
 ```
 INPUT left, right
