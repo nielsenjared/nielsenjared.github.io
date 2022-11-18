@@ -1,4 +1,430 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Nov 2022 14:13:18 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Combinations Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-combinations/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-combinations/</guid><pubDate>Fri, 11 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Nov 2022 23:41:41 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Permutations Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-permutations/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-permutations/</guid><pubDate>Fri, 25 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/44c1a918b4c424a0862adc0f6a5b1a80/29007/jarednielsen-algorithm-permutations.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABAUlEQVQoz42Qu07DQBBF82P8BT1/QkFJQUFJzV9QIKhQKJB4GBuMBJGQk/U+LZzY3tm5yEqIHCsOGZ1iV1dH8xgxiHkTajj49gH0oyVYMdqWgTlwIO8mgeYMJqIQNrQ/ef1h4uABLMZPzSQDIB9O7ccl2iKg37YjLwPfAJgenWSHxw1YfN3MPq9DXZ5dpaltAAr9sbuTMM2rUowfs9t7aXKhdK6NKezBxfv5nQLYhx0yyDotS6OrQmohlZBqpq36FmIq83LxwwgDO7eLBWVkkrxG0XMUv6yJk+gtja3T2CEzqPaVK4x12nSx2hXWUz187VVzwmDRPzK3J/Vb4X3k/fkFSHV8nZPGsGMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; Illustration of ducks on podium &quot;
+        title=&quot; Illustration of ducks on podium &quot;
+        src=&quot;/static/44c1a918b4c424a0862adc0f6a5b1a80/f058b/jarednielsen-algorithm-permutations.png&quot;
+        srcset=&quot;/static/44c1a918b4c424a0862adc0f6a5b1a80/c26ae/jarednielsen-algorithm-permutations.png 158w,
+/static/44c1a918b4c424a0862adc0f6a5b1a80/6bdcf/jarednielsen-algorithm-permutations.png 315w,
+/static/44c1a918b4c424a0862adc0f6a5b1a80/f058b/jarednielsen-algorithm-permutations.png 630w,
+/static/44c1a918b4c424a0862adc0f6a5b1a80/40601/jarednielsen-algorithm-permutations.png 945w,
+/static/44c1a918b4c424a0862adc0f6a5b1a80/78612/jarednielsen-algorithm-permutations.png 1260w,
+/static/44c1a918b4c424a0862adc0f6a5b1a80/29007/jarednielsen-algorithm-permutations.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the permutations in JavaScript &lt;em&gt;and&lt;/em&gt; Python.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;p&gt;Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What is recursion?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is a factorial?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is a permutation?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What is Recursion?&lt;/h3&gt;
+&lt;p&gt;In computer science, recursion occurs when a function calls itself within its declaration.&lt;/p&gt;
+&lt;p&gt;We use recursion to solve a large problem by breaking it down into smaller instances of the same problem. Recursion consists of two things:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;a base case
+
+a recursive case&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We use the recursive case to break the problem down into smaller instances.&lt;/p&gt;
+&lt;p&gt;We use the base case to stop when there are no more problems to be solved.&lt;/p&gt;
+&lt;h3&gt;What is a Factorial?&lt;/h3&gt;
+&lt;p&gt;A factorial is the product of all positive integers less than or equal to n.&lt;/p&gt;
+&lt;p&gt;We write that as n!.&lt;/p&gt;
+&lt;p&gt;For example, 5!:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;5 * 4 * 3 * 2 * 1 = 120&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;What is a Permutation?&lt;/h3&gt;
+&lt;p&gt;According to ye olde Wikipedia:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In mathematics, a permutation of a set is, loosely speaking, an arrangement of its members into a sequence or linear order, or if the set is already ordered, a rearrangement of its elements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There are two types of permutations: with and without repitition.&lt;/p&gt;
+&lt;p&gt;In this tutorial, we’ll work with permutations without repitition. The equation for this is:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n! / (n - k)!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;p&gt;Ask yourself the following questions and keep them back of mind as you proceed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does the permutations algorithm solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Where have we seen this or something like it before?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Code the Permutations Algorithm&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/programming-problem-solving/&quot;&gt;Programming is problem solving&lt;/a&gt;. There are four steps we need to take to solve any programming problem:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Understand the problem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make a plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Understand the Problem&lt;/h3&gt;
+&lt;p&gt;To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;GIVEN an array, &lt;span class=&quot;token code-snippet code keyword&quot;&gt;`n`&lt;/span&gt;, of values with no duplicates
+WHEN I pass &lt;span class=&quot;token code-snippet code keyword&quot;&gt;`n`&lt;/span&gt; to a &lt;span class=&quot;token code-snippet code keyword&quot;&gt;`permutations`&lt;/span&gt; function
+THEN I am returned an array containing all possible permutations of &lt;span class=&quot;token code-snippet code keyword&quot;&gt;`n`&lt;/span&gt; without repetition&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That’s our general outline. We know our input conditions, an array of values with no duplicates, and our output requirements, an array containing all permutations, and our goal is to generate the permutations of &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; without repitition.&lt;/p&gt;
+&lt;p&gt;Let’s make a plan!&lt;/p&gt;
+&lt;h3&gt;Make a Plan&lt;/h3&gt;
+&lt;p&gt;Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pattern recognition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstraction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithm design&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first step is decomposition, or breaking our problem down into smaller problems. What’s the smallest problem we can solve?&lt;/p&gt;
+&lt;p&gt;If the length of n is equal to 1, then the only permutation is:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[1]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If n is equal to 2, then our permutations are:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[1, 2]
+[2, 1]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If n is equal to 3, then our permutations are:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[
+  [ 1, 2, 3 ],
+  [ 1, 3, 2 ],
+  [ 2, 1, 3 ],
+  [ 2, 3, 1 ],
+  [ 3, 1, 2 ],
+  [ 3, 2, 1 ]
+]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Do you see a pattern emerging?&lt;/p&gt;
+&lt;p&gt;It’s definitely factorial!&lt;/p&gt;
+&lt;p&gt;We will also definitely need to iterate.&lt;/p&gt;
+&lt;p&gt;As we saw with the combinations algorithm, we don’t know in advance how many iterations will be required.&lt;/p&gt;
+&lt;p&gt;What’s the solution?&lt;/p&gt;
+&lt;p&gt;Recursion!&lt;/p&gt;
+&lt;p&gt;As we recalled above, recursion consists of two things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;base case&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;recursive case&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What’s our base case?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n == 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; is equal to 1, we simply return &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; wrapped in brackets.&lt;/p&gt;
+&lt;p&gt;Let’s pseudocode that…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION permutations(n)
+  SET perms TO AN EMPTY ARRAY
+
+  IF n IS EQUAL TO 1
+    RETURN [n]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s the next problem we can solve?&lt;/p&gt;
+&lt;p&gt;2!&lt;/p&gt;
+&lt;p&gt;That’s 2 &lt;em&gt;exclamation point&lt;/em&gt;, not 2 &lt;em&gt;factorial&lt;/em&gt; :)&lt;/p&gt;
+&lt;p&gt;Here’s our input array:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[1, 2]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And we need to output the following permutations:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[1, 2]
+[2, 1]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We don’t see a pattern yet, but can you see the problem we need to solve?&lt;/p&gt;
+&lt;p&gt;We can’t use the same approach as we did with the combinations algorithm because our second permutation is not in sequential order.&lt;/p&gt;
+&lt;p&gt;We &lt;em&gt;could&lt;/em&gt; swap the values, but we know that won’t scale.&lt;/p&gt;
+&lt;p&gt;Or will it?&lt;/p&gt;
+&lt;p&gt;:thinking-face:&lt;/p&gt;
+&lt;p&gt;If you recall, the pseudocode for our swap algorithm looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;SET temp TO x
+SET x TO y
+SET y TO temp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The crux of the swap algorithm is creating a &lt;code class=&quot;language-text&quot;&gt;temp&lt;/code&gt; variable to store one of the values while we make the reassignments. We need to do the same thing here: store one of the values while we reassign the others.&lt;/p&gt;
+&lt;p&gt;Easy peasy!&lt;/p&gt;
+&lt;p&gt;Let’s step through this with our two element array. Because we are returning two permutations, we know we need two iterations. On the first iteration, we &lt;em&gt;select&lt;/em&gt; 1. Let’s store it in a variable, &lt;code class=&quot;language-text&quot;&gt;selected&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION permutations(n)
+    SET perms TO AN EMPTY ARRAY
+
+    IF n IS EQUAL TO 1
+    RETURN [n]
+
+    FOR EACH ELEMENT i IN n
+        SET selected TO THE VALUE STORED IN n[i]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now we need a way to store the &lt;em&gt;remaining&lt;/em&gt; values. But how do we know which values are remaining? On the first iteration, 2 will remain. But on the second iteration, 1 will remain.&lt;/p&gt;
+&lt;p&gt;We &lt;em&gt;could&lt;/em&gt; write a series of conditional statements. But that’s no fun. It would be much more fun to slice it up!&lt;/p&gt;
+&lt;p&gt;We can think of slicing as a conditional. If there are any values that precede the selected value, we’ll slice them off into their own array. If there are no values that preced the selected value, the method will simply return an empty array. The same goes for the values that succeed the selected value. Let’s call these values &lt;code class=&quot;language-text&quot;&gt;head&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;tail&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION permutations(n)
+    SET perms TO AN EMPTY ARRAY
+
+    IF n IS EQUAL TO 1
+    RETURN [n]
+
+    FOR EACH ELEMENT i IN n
+        SET selected TO THE VALUE STORED IN n[i]
+
+        SET head TO VALUES THAT PRECEDE i
+        SET tail TO VALUES THAT SUCCEED i&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There are now &lt;em&gt;two&lt;/em&gt; shorter arrays for us to manage. We know we need to make the leap to recursion at some point, which means calling our &lt;code class=&quot;language-text&quot;&gt;permutations&lt;/code&gt; function. But the function only accepts one parameter. So… when life gives you two arrays, concatenate! J4F, let’s call this shorter array &lt;code class=&quot;language-text&quot;&gt;shorty&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION permutations(n)
+    SET perms TO AN EMPTY ARRAY
+
+    IF n IS EQUAL TO 1
+    RETURN [n]
+
+    FOR EACH ELEMENT i IN n
+        SET selected TO THE VALUE STORED IN n[i]
+
+        SET head TO VALUES THAT PRECEDE i
+        SET tail TO VALUES THAT SUCCEED i
+
+        SET shorty TO head CONCATENATED WITH tail&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We’ll catch the results of the &lt;code class=&quot;language-text&quot;&gt;permutations&lt;/code&gt; function in our &lt;code class=&quot;language-text&quot;&gt;remaining&lt;/code&gt; variable and enter the nested loop, where we’ll iterate over each value in &lt;code class=&quot;language-text&quot;&gt;remaining&lt;/code&gt; and create a new &lt;code class=&quot;language-text&quot;&gt;perm&lt;/code&gt; by concatenating it with &lt;code class=&quot;language-text&quot;&gt;selected&lt;/code&gt;. We push &lt;code class=&quot;language-text&quot;&gt;perm&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;perms&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The next step is to pass &lt;code class=&quot;language-text&quot;&gt;shorty&lt;/code&gt; to our recursive &lt;code class=&quot;language-text&quot;&gt;permutations&lt;/code&gt; function. Let’s catch the return value in a &lt;code class=&quot;language-text&quot;&gt;remaining&lt;/code&gt; variable.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION permutations(n)
+    SET perms TO AN EMPTY ARRAY
+
+    IF n IS EQUAL TO 1
+    RETURN [n]
+
+    FOR EACH ELEMENT i IN n
+        SET selected TO THE VALUE STORED IN n[i]
+
+        SET head TO VALUES THAT PRECEDE i
+        SET tail TO VALUES THAT SUCCEED i
+
+        SET shorty TO head CONCATENATED WITH tail
+
+        SET remaining TO THE RETURN VALUE OF permutations(shorty)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The final step is to iterate over &lt;code class=&quot;language-text&quot;&gt;remaining&lt;/code&gt; and build our permutations. Here’s our final pseudocode:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION permutations(n)
+    SET perms TO AN EMPTY ARRAY
+
+    IF n IS EQUAL TO 1
+    RETURN [n]
+
+    FOR EACH ELEMENT i IN n
+        SET selected TO THE VALUE STORED IN n[i]
+
+        SET head TO VALUES THAT PRECEDE i
+        SET tail TO VALUES THAT SUCCEED i
+
+        SET shorty TO head CONCATENATED WITH tail
+
+        SET remaining TO THE RETURN VALUE OF permutations(shorty)
+
+        FOR EACH ELEMENT j IN remaining
+            SET perm TO selected CONCATENATED WITH remaining[j]
+            PUSH perm TO perms
+
+    RETURN perms&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Execute the Plan&lt;/h3&gt;
+&lt;p&gt;Now it’s simply a matter of translating our pseudocode into the syntax of our programming language.&lt;/p&gt;
+&lt;h4&gt;How to Code the Permutations Algorithm in JavaScript&lt;/h4&gt;
+&lt;p&gt;Let’s start with JavaScript…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;permutations&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; perms &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; selected&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; remaining&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// selected = n.slice(i, i + 1);&lt;/span&gt;
+        selected &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; head &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; tail &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; shorty &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; head&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;tail&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        remaining &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;permutations&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;shorty&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; remaining&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; perm &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; selected&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;remaining&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            perms&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;perm&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; perms&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;How to Code the Permutations Algorithm in Python&lt;/h4&gt;
+&lt;p&gt;Now let’s see it in Python…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;permutations&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    perms &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        current &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+        head &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        tail &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        shorty &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; head &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; tail
+
+        remainder &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; permutations&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;shorty&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; j &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;remainder&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            perm &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; current &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; remainder&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+            perms&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;perm&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; perms&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Just like combinations, there’s a permutations method that ships with Python. We first need to import the &lt;code class=&quot;language-text&quot;&gt;itertools&lt;/code&gt; module.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; itertools&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then it’s simply a matter of calling the &lt;code class=&quot;language-text&quot;&gt;permutations&lt;/code&gt; method from &lt;code class=&quot;language-text&quot;&gt;itertools&lt;/code&gt; and pass it our list as an argument.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;itertools&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;permutations&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;According to &lt;a href=&quot;https://docs.python.org/3/library/itertools.html#itertools.permutations&quot;&gt;the docs&lt;/a&gt;, under the hood, it’s roughly equivalent to this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;permutations&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;iterable&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; r&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# permutations(&apos;ABCD&apos;, 2) --&gt; AB AC AD BA BC BD CA CB CD DA DB DC&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# permutations(range(3)) --&gt; 012 021 102 120 201 210&lt;/span&gt;
+    pool &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;iterable&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    n &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pool&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    r &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; r &lt;span class=&quot;token keyword&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;None&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; r
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; r &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt;
+    indices &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    cycles &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; n&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;r&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pool&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; indices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;r&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;reversed&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;r&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            cycles&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; cycles&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                indices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; indices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; indices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+                cycles&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; i
+            &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; cycles&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+                indices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; indices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; indices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; indices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pool&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; indices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;r&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Evaluate the Plan&lt;/h3&gt;
+&lt;p&gt;Can we do better?&lt;/p&gt;
+&lt;p&gt;Eh.&lt;/p&gt;
+&lt;p&gt;We &lt;em&gt;could&lt;/em&gt; add conditionals to catch edge cases and refactor it to look fancy. But hey! This is the last tutorial in this series and as they say, ‘Done is better than perfect.`&lt;/p&gt;
+&lt;h4&gt;What is the Big O Of the Permutations Algorithm?&lt;/h4&gt;
+&lt;p&gt;If you want to learn how to calculate time and space complexity, pick up your copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;p&gt;Remember those &lt;em&gt;meta&lt;/em&gt; questions we asked at the outset? Let’s make it stick and answer them now!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does the permutations algorithm solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Where have we seen this or something like it before?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Why Do I Need to Know This?&lt;/h3&gt;
+&lt;p&gt;Understanding permutations will help you when you’re planning seating arrangements at a wedding.&lt;/p&gt;
+&lt;p&gt;It will also help you identify when a problem might require a factorial solution, such as the &lt;a href=&quot;https://en.wikipedia.org/wiki/Travelling_salesman_problem&quot;&gt;Traveling Salesman Problem&lt;/a&gt;, in which case you would want to use dynamic programming or a heuristic algorithm.&lt;/p&gt;
+&lt;h3&gt;What Problem(s) Does the Combinations Algorithm Solve?&lt;/h3&gt;
+&lt;p&gt;Other than generating permutations, it creates more problems than it solves with its time and space complexity!&lt;/p&gt;
+&lt;h3&gt;Where Have We See This Or Something Like It Before?&lt;/h3&gt;
+&lt;p&gt;This algorithm brings us full circle, back to the first one we solved: the swap. I structured this series in this way to demonstrate a few things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;learning is an iterative process&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the computational thinking heuristics can be applied at different levels. Now that you are equipped with a toolbox of patterns, you only need to decompose and recompose patterns to solve problems&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;every tree was once a seed, or node, if you will&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;A is for Algorithms&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Combinations Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-combinations/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-combinations/</guid><pubDate>Fri, 11 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -99,7 +525,7 @@ Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms
 &lt;p&gt;Here’s the formula for combinations:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n! / (n - k)! * k!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;…where &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; is the length of the set of values, and &lt;code class=&quot;language-text&quot;&gt;k&lt;/code&gt; is the number of values in each combination of &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;h2&gt;Let’s Get Meta!&lt;/h2&gt;
 &lt;p&gt;Ask yourself the following questions and keep them back of mind as you proceed:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -419,7 +845,7 @@ THEN I am returned all possible combinations of the values from 1 to &lt;span cl
 &lt;h3&gt;What Problem(s) Does the Combinations Algorithm Solve?&lt;/h3&gt;
 &lt;p&gt;Other than generating combinations, it creates more problems than it solves with its time and space complexity!&lt;/p&gt;
 &lt;h3&gt;If You Could Be a Tree, What Kind of Tree Would You Be?&lt;/h3&gt;
-&lt;p&gt;I asked this at the outset to prime your thinkinng about trees. The combinations algorithm functions similarly to tree traversal.&lt;/p&gt;
+&lt;p&gt;I asked this at the outset to prime your thinking about trees. The combinations algorithm functions similarly to tree traversal.&lt;/p&gt;
 &lt;h2&gt;A is for Algorithms&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
