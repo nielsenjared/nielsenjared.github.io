@@ -176,9 +176,17 @@ But Python is strongly typed, so type matters and we can't compare a numerical v
 
 So... what's the solution? 
 
-More conditions! 
+We know we need to compare the values in both arrays. But we now know we only need to compare the values in both arrays _when_ there are values to compare. 
 
-TODO 
+Where have we seen this or something like it before? 
+
+Conditionals! 
+
+And? 
+
+Operators! 
+
+Let's use the logical operator `AND` and only compare both arrays if thec ondition evaluates as true. If we add this to our pseudocode...
 
 ```
 INPUT left, right
@@ -186,23 +194,19 @@ INPUT left, right
 SET result TO AN EMPTY ARRAY 
 
 WHILE THERE ARE VALUES IN left OR right
-    IF THE FIRST ELEMENT IN left IS LESS THAN THE FIRST ELEMENT IN right
-        SHIFT THE FIRST ELEMENT OFF left AND PUSH IT INTO right
-    ELSE 
-        SHIFT THE FIRST ELEMENT OFF right AND PUSH IT INTO left
+
+    IF THERE ARE ELEMENTS IN left AND right
+        IF THE FIRST ELEMENT IN left IS LESS THAN THE FIRST ELEMENT IN right
+            SHIFT THE FIRST ELEMENT OFF left AND PUSH IT INTO right
+        ELSE 
+            SHIFT THE FIRST ELEMENT OFF right AND PUSH IT INTO left
 
 RETURN result
 ```
 
+What do we do when the `AND` operator does not evluate as true? If it's not true, we check if there are any values in `left`. Otherwise, we check if there are any values in `right`. In both cases, we push the value to `result`. 
 
-
-What's the next smallest problem we can solve? 
-```
-[1, 3], [2]
-```
-
-TODO 
-
+Here's our complete pseudocode: 
 ```
 INPUT left, right
 
@@ -280,7 +284,7 @@ def merge(left, right):
 
 Can we do better? 
 
-TODO
+We could get fancy with our conditionals and operators, but we wouldn't get a performance boost in doing so, just bonus points. 
 
 
 #### What is the Big O Of Merge Two Arrays?
