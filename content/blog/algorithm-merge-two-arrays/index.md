@@ -1,12 +1,11 @@
 ---
 title: "Learn How to Code the Merge Two Arrays Algorithm"
-date: "2022-TODO-TODO"
+date: "2022-05-21"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the merge two arrays algorithm."
 keywords: ['algorithm', 'merge two arrays', 'javascript', 'python']
 ---
 
-
-![ merge two arrays ](./jarednielsen-algorithm-merge two arrays.png)
+![ Illustration of merge two arrays ](./jarednielsen-algorithm-merge-two-arrays.png)
 
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Merge Two Arrays algorithm in JavaScript _and_ Python.
@@ -28,7 +27,7 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * How do we remove elements from an array? 
 
-* TODO 
+* What are logical operators?
 
 
 ### How Do We Add Elements To An Array?
@@ -41,7 +40,7 @@ TODO
 TODO
 
 
-### TODO #3
+### What Are Logical Operators?
 
 TODO
 
@@ -54,7 +53,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * What problem(s) does merge two arrays solve? 
 
-* TODO
+* Where have we seen this or something like it before? 
 
 
 ## How to Code the Merge Two Arrays Algorithm 
@@ -313,9 +312,9 @@ TODO
 TODO
 
 
-### TODO
+### Where Have We Seen This Or Something Like It Before? 
 
-TODO
+FizzBuzz! 
 
 
 ## A is for Algorithms
