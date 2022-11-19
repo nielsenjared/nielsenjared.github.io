@@ -1,0 +1,378 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta data-react-helmet="true" name="twitter:description" content="If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the merge sort algorithm in JavaScript and Python."/><meta data-react-helmet="true" name="twitter:title" content="Learn How to Code the Merge Sort Algorithm in JavaScript"/><meta data-react-helmet="true" name="twitter:creator" content="jarednielsen"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:description" content="If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the merge sort algorithm in JavaScript and Python."/><meta data-react-helmet="true" property="og:title" content="Learn How to Code the Merge Sort Algorithm in JavaScript"/><meta data-react-helmet="true" name="description" content="If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the merge sort algorithm in JavaScript and Python."/><meta name="generator" content="Gatsby 4.5.4"/><style data-href="/styles.ce96a3b9b8b83b9d7bde.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{-webkit-text-size-adjust:100%;line-height:1.15}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:"Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5}*,:after,:before{box-sizing:border-box}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:var(--fontSize-root);line-height:var(--lineHeight-normal)}body{color:var(--color-text);font-family:var(--font-body);font-size:var(--fontSize-1)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);border:0;height:1px}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);letter-spacing:-.025em;line-height:var(--lineHeight-tight);margin-bottom:var(--spacing-6);margin-top:var(--spacing-12)}h2,h3,h4,h5,h6{color:var(--color-heading);font-weight:var(--fontWeight-bold)}h1{color:var(--color-heading-black);font-size:var(--fontSize-6);font-weight:var(--fontWeight-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{--baseline-multiplier:0.179;--x-height-multiplier:0.35;line-height:var(--lineHeight-relaxed);margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{list-style-image:none;list-style-position:outside;margin-bottom:var(--spacing-8);margin-left:var(--spacing-0);margin-right:var(--spacing-0)}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{border-left:var(--spacing-1) solid var(--color-primary);color:var(--color-text-light);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{border-collapse:collapse;border-spacing:.25rem;margin-bottom:var(--spacing-8);width:100%}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-5)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-item{margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{color:var(--color-primary);font-size:var(--fontSize-4);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-family:var(--font-heading);font-size:var(--fontSize-2);font-weight:var(--fontWeight-bold);text-decoration:none}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{border-radius:100%;margin-right:var(--spacing-4);min-width:50px}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-family:var(--font-heading);font-size:var(--fontSize-2)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}@media (max-width:42rem){blockquote{margin-left:var(--spacing-0);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4)}ol,ul{list-style-position:inside}}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}h1{font-size:2em!important}#mc_embed_signup form{padding:10px 0;text-align:center}.mc-field-group{display:inline-block}#mc_embed_signup input.email{background-color:#fff;border:1px solid #abb0b2;border-radius:3px;box-sizing:border-box;color:#343434;display:inline-block;font-family:Open Sans,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;font-size:15px;height:32px;margin:0;padding:0 .4em;vertical-align:top;width:350px}#mc_embed_signup label{display:block;font-size:16px;font-weight:700;padding-bottom:10px}#mc_embed_signup .clear{display:inline-block}#mc_embed_signup .button{background-color:#ff007f;border:none;border-radius:3px;box-sizing:border-box;color:#fff;display:inline-block;font-size:13px;height:32px;letter-spacing:.03em;line-height:32px;margin:0;padding:0 18px;transition:all .23s ease-in-out 0s}#mc_embed_signup .button:hover{background-color:#8000ff;cursor:pointer}#mc_embed_signup div#mce-responses{clear:both;float:left;margin:0 5%;overflow:hidden;padding:0 .5em;top:-1.4em;width:90%}#mc_embed_signup div.response{float:left;font-weight:700;margin:1em 0;padding:1em .5em .5em 0;top:-1.5em;width:80%;z-index:1}#mc_embed_signup #mce-error-response{display:none}#mc_embed_signup #mce-success-response{color:#529214;display:none}#mc_embed_signup label.error{display:block;float:none;margin-left:1.05em;padding:.5em 0;text-align:left;width:auto}@media (max-width:768px){#mc_embed_signup input.email{margin-bottom:5px;width:100%}#mc_embed_signup .clear{display:block;width:100%}#mc_embed_signup .button{margin:0;width:100%}}img{max-width:100%}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" title="jarednielsen.com RSS Feed" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=bb72d28bcf1b802df6ea28d2d4bc29bd"/><title data-react-helmet="true">Learn How to Code the Merge Sort Algorithm in JavaScript | jarednielsen.com</title><link as="script" rel="preload" href="/webpack-runtime-538954c601d21277126a.js"/><link as="script" rel="preload" href="/framework-e413e527015be9a1bdfd.js"/><link as="script" rel="preload" href="/app-301c8cf0cc36be3d4466.js"/><link as="script" rel="preload" href="/commons-0f416e881c5946c9c507.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-2aec47be4891590b3660.js"/><link as="fetch" rel="preload" href="/page-data/algorithm-merge-sort/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3257411868.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">jarednielsen.com</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">Learn How to Code the Merge Sort Algorithm in JavaScript</h1><p>May 28, 2022</p></header><section itemProp="articleBody"><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d3eea2c7e873eea6e23b6af8d86b3c34/29007/jarednielsen-algorithm-merge-sort.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA90lEQVQoz42R2W6DMBBF8/9/2LRSCQlrDKTgwZ7VleGRVEU6D9Z4jnyte7EkB9QYFUAxZACMMQ8Pm5e3svolXgt+Onq04eNbfmZLZnZGNpZxgrISvyh4uD14HE3ozMuqjOgGbDoJQTBi3WHvFMMx+RtZwMeyomkiN9LToRviveZ5S/6/vEKs2yyPEw1jlpuOl+WUrIzUu/hZiPcaQvwq8V5rWM/Ezgj4tW5knmVZ1roV7834dFUBqKi46bnt8VpI/rCa8h+ySb4TToyJ0ABkeumGTC8DnzAmwsSYOzPeO79sJzblpJSEdjkxbeAGJaI83BFKkvdN+ReeGYSPepBGyQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" Merge Sort "
+        title=" Merge Sort "
+        src="/static/d3eea2c7e873eea6e23b6af8d86b3c34/f058b/jarednielsen-algorithm-merge-sort.png"
+        srcset="/static/d3eea2c7e873eea6e23b6af8d86b3c34/c26ae/jarednielsen-algorithm-merge-sort.png 158w,
+/static/d3eea2c7e873eea6e23b6af8d86b3c34/6bdcf/jarednielsen-algorithm-merge-sort.png 315w,
+/static/d3eea2c7e873eea6e23b6af8d86b3c34/f058b/jarednielsen-algorithm-merge-sort.png 630w,
+/static/d3eea2c7e873eea6e23b6af8d86b3c34/40601/jarednielsen-algorithm-merge-sort.png 945w,
+/static/d3eea2c7e873eea6e23b6af8d86b3c34/78612/jarednielsen-algorithm-merge-sort.png 1260w,
+/static/d3eea2c7e873eea6e23b6af8d86b3c34/29007/jarednielsen-algorithm-merge-sort.png 1600w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the merge sort algorithm in JavaScript <em>and</em> Python.</p>
+<hr>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="A is for Algorithms"
+        title="A is for Algorithms"
+        src="/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png"
+        srcset="/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+Give yourself an A. Grab your copy of <a href="https://gum.co/algorithms">A is for Algorithms</a></p>
+<hr>
+<h2>Retrieval Practice</h2>
+<p>Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:</p>
+<ul>
+<li>
+<p>What is recursion?</p>
+</li>
+<li>
+<p>What is divide &#x26; conquer?</p>
+</li>
+<li>
+<p>How do we merge two arrays?</p>
+</li>
+</ul>
+<h3>What is Recursion?</h3>
+<p>In computer science, recursion occurs when a function calls itself within its declaration.</p>
+<p>We use recursion to solve a large problem by breaking it down into smaller instances of the same problem. Recursion consists of two things:</p>
+<ul>
+<li>
+<p>a base case</p>
+</li>
+<li>
+<p>a recursive case</p>
+</li>
+</ul>
+<p>We use the recursive case to break the problem down into smaller instances.</p>
+<p>We use the base case to stop when there are no more problems to be solved.</p>
+<h3>What is Divide &#x26; Conquer?</h3>
+<p>As we saw in <a href="https://jarednielsen.com/algorithm-binary-search/">binary search</a>, <a href="https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm">divide &#x26; conquer</a> is an algorithm design paradigm that recursively breaks a problem down into smaller problems and recombines the solutions to the smaller problems.</p>
+<h3>How Do We Merge Two Arrays?</h3>
+<p>As we say in the <a href="TODO">merge two arrays algorithm</a>, we use a series of conditionals to compare the first value in each array and <em>shift</em> the lowest value off to a new array.</p>
+<h2>Let’s Get Meta</h2>
+<p>Ask yourself the following questions and keep them back of mind as you proceed:</p>
+<ul>
+<li>
+<p>Why is it called “Merge Sort”?</p>
+</li>
+<li>
+<p>What Problem(s) Does Merge Sort Solve?</p>
+</li>
+<li>
+<p>What is DRY?</p>
+</li>
+</ul>
+<h2>How to Code the Merge Sort Algorithm in JavaScript</h2>
+<p><a href="https://jarednielsen.com/programming-problem-solving/">Programming is problem solving</a>. There are four steps we need to take to solve any programming problem:</p>
+<ol>
+<li>
+<p>Understand the problem</p>
+</li>
+<li>
+<p>Make a plan</p>
+</li>
+<li>
+<p>Execute the plan</p>
+</li>
+<li>
+<p>Evaluate the plan</p>
+</li>
+</ol>
+<h3>Understand the Problem</h3>
+<p>Why do we need <em>another</em> sorting algorithm? What’s the problem with the Bubble, Insertion, and Selection sorting algorithms? Why is their performance so slow? They each use nested iteration. If our goal is to improve the performance of our sorting algorithm, it follows that we need to do less iteration. But how do we do <em>that</em>?</p>
+<p>To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria, but this time let’s up the ante:</p>
+<blockquote>
+<p>GIVEN an array of unsorted numbers
+WHEN my algorithm sorts the numbers
+THEN the performance is faster than quadratic time complexity</p>
+</blockquote>
+<p>That’s our general outline. We know our input conditions (an unsorted array) and our output requirements (a sorted array), and our goal is to organize the elements in the array in ascending, or non-descending, order with an order better than O(n^2).</p>
+<p>Let’s make a plan!</p>
+<h3>Make a Plan</h3>
+<p>Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are:</p>
+<ul>
+<li>
+<p>Decomposition</p>
+</li>
+<li>
+<p>Pattern recognition</p>
+</li>
+<li>
+<p>Abstraction</p>
+</li>
+<li>
+<p>Algorithm</p>
+</li>
+</ul>
+<p>If we are writing a sorting algorithm, we need to start with something to sort. Let’s declare an array of ‘unsorted’ integers:</p>
+<div class="gatsby-highlight" data-language="md"><pre class="language-md"><code class="language-md">[10, 1, 9, 2, 8, 3, 7, 4, 6, 5]</code></pre></div>
+<p>When we are decomposing a problem, we want to break it into the types of problems that need to be solved. We also want to break it into the smallest problems that can be solved.</p>
+<p>What’s the smallest problem we can solve?</p>
+<p>Two numbers. We can shift the first two off our array…</p>
+<p>[10, 1]</p>
+<p>… and swap them:</p>
+<p>[1, 10]</p>
+<p>What is <em>actually</em> happening when we swap values in an array?</p>
+<p>We need to slice the values into their own arrays, then concatenate the two arrays in sequential order.</p>
+<p>Using our smallest problem as an example, <code class="language-text">[10, 1]</code>, we would break it into the following:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[10], [1]</code></pre></div>
+<p>Then do some conditional checkeroos and concatenate the two arrays back into one:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[1] +  [10] = [1, 10]</code></pre></div>
+<p>Where have we seen this or something like it before?</p>
+<p>Divide and conquer!</p>
+<p>As we recalled above, in divide and conquer algorithms, we choose a <em>pivot</em>, and continuously divide the problem in two until we find a solution.</p>
+<p>If you recall, our <code class="language-text">pivot</code> is the length of the array divided by two. So, for our smallest problem where the length of our array is 2, our <code class="language-text">pivot</code> will be 1.</p>
+<p>Let’s start pseudocoding this:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">IF THE LENGTH OF arr IS LESS THAN OR EQUAL TO 1
+    RETURN arr
+
+SET pivot TO THE LENGTH OF arr DIVIDED BY 2</code></pre></div>
+<p>Once we set our <code class="language-text">pivot</code>, we can divide the array in two.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">IF THE LENGTH OF arr IS LESS THAN OR EQUAL TO 1
+    RETURN arr
+
+SET pivot TO THE LENGTH OF arr DIVIDED BY 2
+
+SET left TO THE ELEMENTS PRECEDING pivot
+SET right TO THE ELEMENTS SUCCEEDING pivot</code></pre></div>
+<p>Now what?</p>
+<p>Now we need to run those conditional checkerinos and merge the two arrays.</p>
+<p>Where have we see this or something like it before?</p>
+<p>Merging two arrays!</p>
+<p>Because we are pragmatic programmers, we are simply going to “import” that algorithm into this one. We’ll do that by wrapping the pseudocode in a “FUNCTION”:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">FUNCTION merge(left, right)
+
+    SET result TO AN EMPTY ARRAY
+
+    WHILE THERE ARE ELEMENTS IN left OR right
+
+        IF THERE ARE ELEMENTS IN BOTH ARRAYS
+            IF THE FIRST VALUE IN left IS LESS THAN THE FIRST VALUE IN right
+                SHIFT THE FIRST VALUE OUT OF left AND PUSH IT INTO result
+            ELSE
+                SHIFT THE FIRST VALUE OUT OF right AND PUSH IT INTO result
+        ELSE IF THERE ARE ONLY ELEMENTS IN left
+            SHIFT THE FIRST VALUE OUT OF left AND PUSH IT INTO result
+        ELSE 
+            SHIFT THE FIRST VALUE OUT OF right AND PUSH IT INTO result
+
+    RETURN result</code></pre></div>
+<p>Now we can simply call our <code class="language-text">merge</code> function in our merge sort algorithm.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">IF THE LENGTH OF arr IS LESS THAN OR EQUAL TO 1
+    RETURN arr
+
+SET pivot TO THE LENGTH OF arr DIVIDED BY 2
+
+SET left TO THE ELEMENTS PRECEDING pivot
+SET right TO THE ELEMENTS SUCCEEDING pivot
+
+RETURN merge(left, right)</code></pre></div>
+<p>Will this work?</p>
+<p>Yes, but only if our array contains two elements.</p>
+<p>What happens if we double our problem?</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[10, 1, 9, 2]</code></pre></div>
+<p>If we follow the logic or our algorithm, we’ll divide the array in two:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">left = [10, 1]
+right = [9, 2]</code></pre></div>
+<p>We’ll then call our <code class="language-text">merge</code> function like so:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">merge(left, right)</code></pre></div>
+<p>Within our <code class="language-text">merge</code> function, we will see that the first value in <code class="language-text">right</code> is less than the first value in <code class="language-text">left</code>, so we’ll push that to <code class="language-text">result</code>:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[9]</code></pre></div>
+<p>Uh oh! We’re already in trouble!</p>
+<p>In the next iteration we’ll see that the first (and only) value in <code class="language-text">right</code> is 2, which is less than the first value in <code class="language-text">left</code>, 10, so we’ll push 2 to <code class="language-text">result</code>:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[9, 2]</code></pre></div>
+<p>If we follow the logic, we’ll end up with a “sorted” array that looks like this:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[9, 2, 10, 1]</code></pre></div>
+<p>Not sorted, but definitely swapped!</p>
+<p>What’s the solution?</p>
+<p>Our <code class="language-text">merge sort</code> algorithm was beautiful when we were only working with two values.</p>
+<p>How do we continually break a problem down into smaller, yet simliar, problems?</p>
+<p>Recursion!</p>
+<p>We can make recursive calls to <code class="language-text">merge sort</code> to continually divide our problem in half until we reach our base case, at which point we’ll return. And conquer!</p>
+<p>Let’s update our pseudocode:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">FUNCTION merge sort
+    IF THE LENGTH OF arr IS LESS THAN OR EQUAL TO 1
+        RETURN arr
+
+    SET pivot TO THE LENGTH OF arr DIVIDED BY 2
+
+    SET left TO THE ELEMENTS PRECEDING pivot
+    SET right TO THE ELEMENTS SUCCEEDING pivot
+
+    RETURN merge(merge sort(left), merge sort(right))</code></pre></div>
+<h3>Execute the Plan</h3>
+<p>Now it’s simply a matter of translating our pseudocode into the syntax of our programming language.</p>
+<h4>How to Code the Merge Sort Algorithm in JavaScript</h4>
+<p>Let’s start with JavaScript…</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">merge</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">left<span class="token punctuation">,</span> right</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  
+    <span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  
+    <span class="token keyword">while</span><span class="token punctuation">(</span>left<span class="token punctuation">.</span>length <span class="token operator">||</span> right<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>left<span class="token punctuation">.</span>length <span class="token operator">&amp;&amp;</span> right<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>left<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> right<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>left<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>right<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>left<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>left<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>right<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">mergeSort</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token operator">=></span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span>length <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> arr<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">const</span> pivot <span class="token operator">=</span> arr<span class="token punctuation">.</span>length <span class="token operator">/</span> <span class="token number">2</span> <span class="token punctuation">;</span>
+    <span class="token keyword">const</span> left <span class="token operator">=</span> arr<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> pivot<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> right <span class="token operator">=</span> arr<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>pivot<span class="token punctuation">,</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token function">merge</span><span class="token punctuation">(</span><span class="token function">mergeSort</span><span class="token punctuation">(</span>left<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">mergeSort</span><span class="token punctuation">(</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<h4>How to Code the Merge Sort Algorithm in Python</h4>
+<p>Now let’s see it in Python…</p>
+<div class="gatsby-highlight" data-language="py"><pre class="language-py"><code class="language-py"><span class="token keyword">def</span> <span class="token function">merge</span><span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>left<span class="token punctuation">)</span> <span class="token keyword">or</span> <span class="token builtin">len</span><span class="token punctuation">(</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>left<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">len</span><span class="token punctuation">(</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>left<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> right<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                result<span class="token punctuation">.</span>append<span class="token punctuation">(</span>left<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                result<span class="token punctuation">.</span>append<span class="token punctuation">(</span>right<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> <span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>left<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            result<span class="token punctuation">.</span>append<span class="token punctuation">(</span>left<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            result<span class="token punctuation">.</span>append<span class="token punctuation">(</span>right<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> result
+
+<span class="token keyword">def</span> <span class="token function">merge_sort</span><span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">)</span> <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token builtin">list</span>
+    
+    pivot <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span>
+    left <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span>pivot<span class="token punctuation">]</span>
+    right <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">[</span>pivot<span class="token punctuation">:</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">return</span> merge<span class="token punctuation">(</span>merge_sort<span class="token punctuation">(</span>left<span class="token punctuation">)</span><span class="token punctuation">,</span>merge_sort<span class="token punctuation">(</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
+<h3>Evaluate the Plan</h3>
+<p>Can we do better?</p>
+<p>It depends!</p>
+<p>This is a standard implementation of merge sort, but there are <em>still</em> more sort algorithms to learn.</p>
+<p>We’ll look at quick sort in the next tutorial.</p>
+<h4>What is the Big O Of Merge Sort Sequence?</h4>
+<p>The order of our <code class="language-text">mergeSort</code> algorithm is O(n log n), or <em>log linear</em>. You can learn more in my article on the topic: <a href="https://jarednielsen.com/big-o-log-linear-time-complexity/">Big O Log Linear Time Complexity</a>.</p>
+<p>If you want to learn how to calculate time and space complexity, pick up your copy of The Little Book of Big O</p>
+<h2>Reflection</h2>
+<p>Remember those meta questions we asked at the outset? Let’s make it stick and answer them now!</p>
+<ul>
+<li>
+<p>Why do I need to know this?</p>
+</li>
+<li>
+<p>What Problem(s) Does Merge Sort Solve?</p>
+</li>
+<li>
+<p>What is DRY?</p>
+</li>
+</ul>
+<h3>Why Do I Need To Know This?</h3>
+<p>Merge sort is one of the “standards”. You’ll probably never write it on your own, but it’s good to know when you’re at a cocktail party and the topic of sorting algorithms comes up.</p>
+<h3>What Problem(s) Does Merge Sort Solve?</h3>
+<p>Merge Sort is efficient, especially compared to the previous sorting algorithms we learned: Bubble, Insertion, and Selection.</p>
+<h3>What is DRY?</h3>
+<p>Dry is my sense of humor. DRY is the programming principle of “Don’t Repeat Yourself”. In this tutorial we repurposed the Merge Two Arrays algorithm from a previous tutorial.</p>
+<h2>A is for Algorithms</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="A is for Algorithms"
+        title="A is for Algorithms"
+        src="/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png"
+        srcset="/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+Give yourself an A. Grab your copy of <a href="https://gum.co/algorithms">A is for Algorithms</a></p></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#080808;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/d4bf4/profile-pic.avif 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" data-srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/3faea/profile-pic.webp 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e5610/profile-pic.png" data-srcset="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e5610/profile-pic.png 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/d4bf4/profile-pic.avif 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" srcSet="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/3faea/profile-pic.webp 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e5610/profile-pic.png" srcSet="/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e5610/profile-pic.png 50w,/static/0cdc03efc5a69bac4bd7922ebc9f22b8/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div><p>Want to level up your problem solving skills? I write a bi-weekly newsletter about programming, problem solving and lifelong learning.<!-- --> <a href="http://eepurl.com/cP8CMn" target="_blank" rel="noopener">Join now</a></p></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/algorithm-towers-hanoi/">← <!-- -->Learn How to Code the Towers of Hanoi Algorithm</a></li><li><a rel="next" href="/algorithms/">The Superlative Guide to Algorithms<!-- --> →</a></li></ul></nav></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', ' UA-51067359-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/algorithm-merge-sort/";window.___webpackCompilationHash="9eacfdfe69a01ab76c64";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-b227d9031ab4094e5021.js"],"app":["/app-301c8cf0cc36be3d4466.js"],"component---src-pages-404-js":["/component---src-pages-404-js-bb1698d01a7f9dde5caa.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-78841202c8510eea95ba.js"],"component---src-pages-index-js":["/component---src-pages-index-js-0b66a8cda36e6c7516ae.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-20f655bfb94bd369e9d3.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-2aec47be4891590b3660.js"]};/*]]>*/</script><script src="/polyfill-b227d9031ab4094e5021.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-2aec47be4891590b3660.js" async=""></script><script src="/commons-0f416e881c5946c9c507.js" async=""></script><script src="/app-301c8cf0cc36be3d4466.js" async=""></script><script src="/framework-e413e527015be9a1bdfd.js" async=""></script><script src="/webpack-runtime-538954c601d21277126a.js" async=""></script></body></html>

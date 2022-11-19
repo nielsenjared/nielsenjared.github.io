@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Nov 2022 23:41:41 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Permutations Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-permutations/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-permutations/</guid><pubDate>Fri, 25 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 19 Nov 2022 15:11:00 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Permutations Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-permutations/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-permutations/</guid><pubDate>Fri, 25 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -2223,7 +2223,365 @@ Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms
       /&gt;
     &lt;/span&gt;
 💯 Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Towers of Hanoi Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-towers-hanoi/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-towers-hanoi/</guid><pubDate>Fri, 22 Apr 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;hr&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Merge Sort Algorithm in JavaScript]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-merge-sort/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-merge-sort/</guid><pubDate>Sat, 28 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d3eea2c7e873eea6e23b6af8d86b3c34/29007/jarednielsen-algorithm-merge-sort.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA90lEQVQoz42R2W6DMBBF8/9/2LRSCQlrDKTgwZ7VleGRVEU6D9Z4jnyte7EkB9QYFUAxZACMMQ8Pm5e3svolXgt+Onq04eNbfmZLZnZGNpZxgrISvyh4uD14HE3ozMuqjOgGbDoJQTBi3WHvFMMx+RtZwMeyomkiN9LToRviveZ5S/6/vEKs2yyPEw1jlpuOl+WUrIzUu/hZiPcaQvwq8V5rWM/Ezgj4tW5knmVZ1roV7834dFUBqKi46bnt8VpI/rCa8h+ySb4TToyJ0ABkeumGTC8DnzAmwsSYOzPeO79sJzblpJSEdjkxbeAGJaI83BFKkvdN+ReeGYSPepBGyQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; Merge Sort &quot;
+        title=&quot; Merge Sort &quot;
+        src=&quot;/static/d3eea2c7e873eea6e23b6af8d86b3c34/f058b/jarednielsen-algorithm-merge-sort.png&quot;
+        srcset=&quot;/static/d3eea2c7e873eea6e23b6af8d86b3c34/c26ae/jarednielsen-algorithm-merge-sort.png 158w,
+/static/d3eea2c7e873eea6e23b6af8d86b3c34/6bdcf/jarednielsen-algorithm-merge-sort.png 315w,
+/static/d3eea2c7e873eea6e23b6af8d86b3c34/f058b/jarednielsen-algorithm-merge-sort.png 630w,
+/static/d3eea2c7e873eea6e23b6af8d86b3c34/40601/jarednielsen-algorithm-merge-sort.png 945w,
+/static/d3eea2c7e873eea6e23b6af8d86b3c34/78612/jarednielsen-algorithm-merge-sort.png 1260w,
+/static/d3eea2c7e873eea6e23b6af8d86b3c34/29007/jarednielsen-algorithm-merge-sort.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the merge sort algorithm in JavaScript &lt;em&gt;and&lt;/em&gt; Python.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;p&gt;Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What is recursion?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is divide &amp;#x26; conquer?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How do we merge two arrays?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What is Recursion?&lt;/h3&gt;
+&lt;p&gt;In computer science, recursion occurs when a function calls itself within its declaration.&lt;/p&gt;
+&lt;p&gt;We use recursion to solve a large problem by breaking it down into smaller instances of the same problem. Recursion consists of two things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;a base case&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a recursive case&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We use the recursive case to break the problem down into smaller instances.&lt;/p&gt;
+&lt;p&gt;We use the base case to stop when there are no more problems to be solved.&lt;/p&gt;
+&lt;h3&gt;What is Divide &amp;#x26; Conquer?&lt;/h3&gt;
+&lt;p&gt;As we saw in &lt;a href=&quot;https://jarednielsen.com/algorithm-binary-search/&quot;&gt;binary search&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm&quot;&gt;divide &amp;#x26; conquer&lt;/a&gt; is an algorithm design paradigm that recursively breaks a problem down into smaller problems and recombines the solutions to the smaller problems.&lt;/p&gt;
+&lt;h3&gt;How Do We Merge Two Arrays?&lt;/h3&gt;
+&lt;p&gt;As we say in the &lt;a href=&quot;TODO&quot;&gt;merge two arrays algorithm&lt;/a&gt;, we use a series of conditionals to compare the first value in each array and &lt;em&gt;shift&lt;/em&gt; the lowest value off to a new array.&lt;/p&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;p&gt;Ask yourself the following questions and keep them back of mind as you proceed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why is it called “Merge Sort”?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What Problem(s) Does Merge Sort Solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is DRY?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Code the Merge Sort Algorithm in JavaScript&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/programming-problem-solving/&quot;&gt;Programming is problem solving&lt;/a&gt;. There are four steps we need to take to solve any programming problem:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Understand the problem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make a plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Understand the Problem&lt;/h3&gt;
+&lt;p&gt;Why do we need &lt;em&gt;another&lt;/em&gt; sorting algorithm? What’s the problem with the Bubble, Insertion, and Selection sorting algorithms? Why is their performance so slow? They each use nested iteration. If our goal is to improve the performance of our sorting algorithm, it follows that we need to do less iteration. But how do we do &lt;em&gt;that&lt;/em&gt;?&lt;/p&gt;
+&lt;p&gt;To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria, but this time let’s up the ante:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GIVEN an array of unsorted numbers
+WHEN my algorithm sorts the numbers
+THEN the performance is faster than quadratic time complexity&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That’s our general outline. We know our input conditions (an unsorted array) and our output requirements (a sorted array), and our goal is to organize the elements in the array in ascending, or non-descending, order with an order better than O(n^2).&lt;/p&gt;
+&lt;p&gt;Let’s make a plan!&lt;/p&gt;
+&lt;h3&gt;Make a Plan&lt;/h3&gt;
+&lt;p&gt;Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pattern recognition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstraction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithm&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If we are writing a sorting algorithm, we need to start with something to sort. Let’s declare an array of ‘unsorted’ integers:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;[10, 1, 9, 2, 8, 3, 7, 4, 6, 5]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When we are decomposing a problem, we want to break it into the types of problems that need to be solved. We also want to break it into the smallest problems that can be solved.&lt;/p&gt;
+&lt;p&gt;What’s the smallest problem we can solve?&lt;/p&gt;
+&lt;p&gt;Two numbers. We can shift the first two off our array…&lt;/p&gt;
+&lt;p&gt;[10, 1]&lt;/p&gt;
+&lt;p&gt;… and swap them:&lt;/p&gt;
+&lt;p&gt;[1, 10]&lt;/p&gt;
+&lt;p&gt;What is &lt;em&gt;actually&lt;/em&gt; happening when we swap values in an array?&lt;/p&gt;
+&lt;p&gt;We need to slice the values into their own arrays, then concatenate the two arrays in sequential order.&lt;/p&gt;
+&lt;p&gt;Using our smallest problem as an example, &lt;code class=&quot;language-text&quot;&gt;[10, 1]&lt;/code&gt;, we would break it into the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[10], [1]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then do some conditional checkeroos and concatenate the two arrays back into one:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[1] +  [10] = [1, 10]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Where have we seen this or something like it before?&lt;/p&gt;
+&lt;p&gt;Divide and conquer!&lt;/p&gt;
+&lt;p&gt;As we recalled above, in divide and conquer algorithms, we choose a &lt;em&gt;pivot&lt;/em&gt;, and continuously divide the problem in two until we find a solution.&lt;/p&gt;
+&lt;p&gt;If you recall, our &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt; is the length of the array divided by two. So, for our smallest problem where the length of our array is 2, our &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt; will be 1.&lt;/p&gt;
+&lt;p&gt;Let’s start pseudocoding this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;IF THE LENGTH OF arr IS LESS THAN OR EQUAL TO 1
+    RETURN arr
+
+SET pivot TO THE LENGTH OF arr DIVIDED BY 2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Once we set our &lt;code class=&quot;language-text&quot;&gt;pivot&lt;/code&gt;, we can divide the array in two.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;IF THE LENGTH OF arr IS LESS THAN OR EQUAL TO 1
+    RETURN arr
+
+SET pivot TO THE LENGTH OF arr DIVIDED BY 2
+
+SET left TO THE ELEMENTS PRECEDING pivot
+SET right TO THE ELEMENTS SUCCEEDING pivot&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now what?&lt;/p&gt;
+&lt;p&gt;Now we need to run those conditional checkerinos and merge the two arrays.&lt;/p&gt;
+&lt;p&gt;Where have we see this or something like it before?&lt;/p&gt;
+&lt;p&gt;Merging two arrays!&lt;/p&gt;
+&lt;p&gt;Because we are pragmatic programmers, we are simply going to “import” that algorithm into this one. We’ll do that by wrapping the pseudocode in a “FUNCTION”:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION merge(left, right)
+
+    SET result TO AN EMPTY ARRAY
+
+    WHILE THERE ARE ELEMENTS IN left OR right
+
+        IF THERE ARE ELEMENTS IN BOTH ARRAYS
+            IF THE FIRST VALUE IN left IS LESS THAN THE FIRST VALUE IN right
+                SHIFT THE FIRST VALUE OUT OF left AND PUSH IT INTO result
+            ELSE
+                SHIFT THE FIRST VALUE OUT OF right AND PUSH IT INTO result
+        ELSE IF THERE ARE ONLY ELEMENTS IN left
+            SHIFT THE FIRST VALUE OUT OF left AND PUSH IT INTO result
+        ELSE 
+            SHIFT THE FIRST VALUE OUT OF right AND PUSH IT INTO result
+
+    RETURN result&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now we can simply call our &lt;code class=&quot;language-text&quot;&gt;merge&lt;/code&gt; function in our merge sort algorithm.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;IF THE LENGTH OF arr IS LESS THAN OR EQUAL TO 1
+    RETURN arr
+
+SET pivot TO THE LENGTH OF arr DIVIDED BY 2
+
+SET left TO THE ELEMENTS PRECEDING pivot
+SET right TO THE ELEMENTS SUCCEEDING pivot
+
+RETURN merge(left, right)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Will this work?&lt;/p&gt;
+&lt;p&gt;Yes, but only if our array contains two elements.&lt;/p&gt;
+&lt;p&gt;What happens if we double our problem?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[10, 1, 9, 2]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we follow the logic or our algorithm, we’ll divide the array in two:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;left = [10, 1]
+right = [9, 2]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We’ll then call our &lt;code class=&quot;language-text&quot;&gt;merge&lt;/code&gt; function like so:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;merge(left, right)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Within our &lt;code class=&quot;language-text&quot;&gt;merge&lt;/code&gt; function, we will see that the first value in &lt;code class=&quot;language-text&quot;&gt;right&lt;/code&gt; is less than the first value in &lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt;, so we’ll push that to &lt;code class=&quot;language-text&quot;&gt;result&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[9]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Uh oh! We’re already in trouble!&lt;/p&gt;
+&lt;p&gt;In the next iteration we’ll see that the first (and only) value in &lt;code class=&quot;language-text&quot;&gt;right&lt;/code&gt; is 2, which is less than the first value in &lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt;, 10, so we’ll push 2 to &lt;code class=&quot;language-text&quot;&gt;result&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[9, 2]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If we follow the logic, we’ll end up with a “sorted” array that looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[9, 2, 10, 1]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Not sorted, but definitely swapped!&lt;/p&gt;
+&lt;p&gt;What’s the solution?&lt;/p&gt;
+&lt;p&gt;Our &lt;code class=&quot;language-text&quot;&gt;merge sort&lt;/code&gt; algorithm was beautiful when we were only working with two values.&lt;/p&gt;
+&lt;p&gt;How do we continually break a problem down into smaller, yet simliar, problems?&lt;/p&gt;
+&lt;p&gt;Recursion!&lt;/p&gt;
+&lt;p&gt;We can make recursive calls to &lt;code class=&quot;language-text&quot;&gt;merge sort&lt;/code&gt; to continually divide our problem in half until we reach our base case, at which point we’ll return. And conquer!&lt;/p&gt;
+&lt;p&gt;Let’s update our pseudocode:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION merge sort
+    IF THE LENGTH OF arr IS LESS THAN OR EQUAL TO 1
+        RETURN arr
+
+    SET pivot TO THE LENGTH OF arr DIVIDED BY 2
+
+    SET left TO THE ELEMENTS PRECEDING pivot
+    SET right TO THE ELEMENTS SUCCEEDING pivot
+
+    RETURN merge(merge sort(left), merge sort(right))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Execute the Plan&lt;/h3&gt;
+&lt;p&gt;Now it’s simply a matter of translating our pseudocode into the syntax of our programming language.&lt;/p&gt;
+&lt;h4&gt;How to Code the Merge Sort Algorithm in JavaScript&lt;/h4&gt;
+&lt;p&gt;Let’s start with JavaScript…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;merge&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;left&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; right&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; right&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; right&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; right&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;mergeSort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; pivot &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; left &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pivot&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; right &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pivot&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;merge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;mergeSort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;mergeSort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;How to Code the Merge Sort Algorithm in Python&lt;/h4&gt;
+&lt;p&gt;Now let’s see it in Python…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;merge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; right&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; right&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pop&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pop&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pop&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pop&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result
+
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;merge_sort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;
+    
+    pivot &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+    left &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;pivot&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    right &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;pivot&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; merge&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;merge_sort&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;merge_sort&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Evaluate the Plan&lt;/h3&gt;
+&lt;p&gt;Can we do better?&lt;/p&gt;
+&lt;p&gt;It depends!&lt;/p&gt;
+&lt;p&gt;This is a standard implementation of merge sort, but there are &lt;em&gt;still&lt;/em&gt; more sort algorithms to learn.&lt;/p&gt;
+&lt;p&gt;We’ll look at quick sort in the next tutorial.&lt;/p&gt;
+&lt;h4&gt;What is the Big O Of Merge Sort Sequence?&lt;/h4&gt;
+&lt;p&gt;The order of our &lt;code class=&quot;language-text&quot;&gt;mergeSort&lt;/code&gt; algorithm is O(n log n), or &lt;em&gt;log linear&lt;/em&gt;. You can learn more in my article on the topic: &lt;a href=&quot;https://jarednielsen.com/big-o-log-linear-time-complexity/&quot;&gt;Big O Log Linear Time Complexity&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to learn how to calculate time and space complexity, pick up your copy of The Little Book of Big O&lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;p&gt;Remember those meta questions we asked at the outset? Let’s make it stick and answer them now!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What Problem(s) Does Merge Sort Solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is DRY?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Why Do I Need To Know This?&lt;/h3&gt;
+&lt;p&gt;Merge sort is one of the “standards”. You’ll probably never write it on your own, but it’s good to know when you’re at a cocktail party and the topic of sorting algorithms comes up.&lt;/p&gt;
+&lt;h3&gt;What Problem(s) Does Merge Sort Solve?&lt;/h3&gt;
+&lt;p&gt;Merge Sort is efficient, especially compared to the previous sorting algorithms we learned: Bubble, Insertion, and Selection.&lt;/p&gt;
+&lt;h3&gt;What is DRY?&lt;/h3&gt;
+&lt;p&gt;Dry is my sense of humor. DRY is the programming principle of “Don’t Repeat Yourself”. In this tutorial we repurposed the Merge Two Arrays algorithm from a previous tutorial.&lt;/p&gt;
+&lt;h2&gt;A is for Algorithms&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Towers of Hanoi Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-towers-hanoi/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-towers-hanoi/</guid><pubDate>Fri, 22 Apr 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
