@@ -32,17 +32,17 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 ### How Do We Add Elements To An Array?
 
-TODO
+To add elements to an array, we _push_ or _append_ those elements. 
 
 
 ### How Do We Remove Elements From An Array?
 
-TODO
+To remove elements from an array, we _shift_  or _slice_ elements out and off. 
 
 
 ### What Are Logical Operators?
 
-TODO
+The logical operators are `AND`, `OR`, and `NOT`. Depending on how you use them, they either return a Boolean value (true / false) or one of the two values being compared.  
 
 
 ## Let's Get Meta
@@ -299,22 +299,22 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * What problem(s) does merge two arrays solve? 
 
-* TODO
+* Where have we seen this or something like it before? 
 
 
 ### Why Do I Need to Know This? 
 
-TODO
+In addition to being a classic interview question, merging two arrays is the kernel of merge sort. 
 
 
 ### What Problem(s) Does Merge Two Arrays Solve? 
 
-TODO
+Just that! Merging two arrays! 
 
 
 ### Where Have We Seen This Or Something Like It Before? 
 
-FizzBuzz! 
+FizzBuzz! The logic and control flow of this algorithm are very similar to those we used in FizzBuzz. Practice makes practice! 
 
 
 ## A is for Algorithms
