@@ -386,7 +386,7 @@ Dry is my sense of humor. DRY is the programming principle of "Don't Repeat Your
 
 
 ## A is for Algorithms
-![A is for Algorithms](./../../assets/graphics/algorithms/jarednielsen-algorithms-banner.png)
+![A is for Algorithms](./jarednielsen-algorithms.png)
 Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
 
 
