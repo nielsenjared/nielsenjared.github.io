@@ -1,12 +1,12 @@
 ---
 title: "Learn How to Code the Quick Sort Algorithm"
 date: "2022-TODO-TODO"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the quick sort algorithm. in JavaScript and Python."
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the quick sort algorithm in JavaScript and Python."
 keywords: ['algorithm', 'quick sort', 'javascript', 'python']
 ---
 
 
-![ TODO ](./jarednielsen-algorithm-quick-sort.png)
+![ Illustration of quick sort ](./jarednielsen-algorithm-quick-sort.png)
 
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the quick sort in JavaScript _and_ Python.
@@ -117,7 +117,53 @@ Now it's simply a matter of translating our pseudocode into the syntax of our pr
 
 TODO
 ```js
-TODO
+
+const swap = (arr, left, right) => {
+    let temp = arr[left];
+    arr[left] = arr[right];
+    arr[right] = temp;
+
+    // [arr[left], arr[right]] = [arr[right], arr[left]];
+
+    return arr;
+}
+
+const partition = (arr, left, right) => {
+    let pivot = arr[ Math.floor((left + right) / 2)];
+
+    while (left <= right) {
+        while (arr[left] < pivot) {
+            left++;
+        }
+        while (arr[right] > pivot) {
+            right--;
+        }
+
+        if (left <= right) {
+            swap(arr, left, right);
+            left++;
+            right--;
+        }
+    }
+    return left;
+}
+
+const quickSort = (arr, left = 0, right = arr.length - 1) => {
+        if (left >= right) {
+            return;
+        }
+        let pivot = partition(arr, left, right);
+
+        quickSort(arr, left, pivot - 1);
+        quickSort(arr, pivot, right);
+    return arr;
+}
+
+const unsorted = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
+
+let result = quickSort(unsorted);
+
+console.log(result);
 ```
 
 Now let's see it in Python...
@@ -127,7 +173,40 @@ Now let's see it in Python...
 
 TODO
 ```py
-TODO
+def swap(arr, left, right):
+    temp = arr[left]
+    arr[left] = arr[right]
+    arr[right] = temp
+
+    return arr
+
+def partition(arr, left, right):
+    pivot = arr[ (left + right) // 2 ]
+
+    while (left <= right):
+        while (arr[left] < pivot):
+            left = left + 1
+        while (arr[right] > pivot):
+            right = right - 1
+        if (left <= right):
+            swap(arr, left, right)
+            left = left + 1
+            right = right - 1
+    return left
+
+def quick_sort(arr, left = 0, right = None):
+    if right == None:
+        right = len(arr) - 1
+
+    if (left >= right):
+        return
+
+    pivot = partition(arr, left, right)
+
+    quick_sort(arr, left, pivot - 1)
+    quick_sort(arr, pivot, right)
+    
+    return arr
 ```
 
 ### Evaluate the Plan
