@@ -141,9 +141,34 @@ But! We didn't partition on a pivot. Let's add another element to our array:
 
 Let's use 2 as our `pivot`. 
 
-Now we need to compare the value stored in `arr[0]` to the pivot. 
+Let's use `left` and `right` for the values we are checking on either side of our `pivot`. 
 
-TODO
+We can immediately see that `left` is greater than `pivot` and `right` is less than `pivot`. 
+
+We _could_ write a series of conditionals, but we already know this won't scale. 
+
+We're going to need to iterate. 
+
+Which iteration? 
+
+Do we need to check _every_ value on the left of `pivot` to _every_ value on its right?
+
+No. 
+
+Why?
+
+Because we are only partitioning the array, not sorting it. We meet our acceptance criteria as long as the values that are less than `pivot` are on its left. 
+
+Let's expand our array: 
+```
+[2, 4, 3, 5, 1]
+```
+
+In this example, we only need to swap 4 and 1 to meet our acceptance criteria.
+
+TODO 
+
+
 
 Let's start pseudocoding this: 
 ```
