@@ -117,7 +117,34 @@ Now it's simply a matter of translating our pseudocode into the syntax of our pr
 
 TODO
 ```js
-TODO
+const swap = (arr, left, right) => {
+    let temp = arr[left];
+    arr[left] = arr[right];
+    arr[right] = temp;
+
+    return arr;
+}
+
+const partition = (arr, pivot) => {
+    let left = 0;
+    let right = arr.length-1;
+
+    while (left <= right) {
+        while (arr[left] < pivot) {
+            left++;
+        }
+        while (arr[right] > pivot) {
+            right--;
+        }
+
+        if (left <= right) {
+            swap(arr, left, right);
+            left++;
+            right--;
+        }
+    }
+    return arr;
+}
 ```
 
 Now let's see it in Python...
