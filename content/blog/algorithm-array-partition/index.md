@@ -1,15 +1,15 @@
 ---
-title: "Learn How to Code the TODO Algorithm"
+title: "Learn How to Code the Array Partition Algorithm"
 date: "2022-TODO-TODO"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO"
-keywords: ['algorithm', 'TODO', 'javascript', 'python']
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the array partition algorithm in JavaScript and Python."
+keywords: ['algorithm', 'Array Partition', 'javascript', 'python']
 ---
 
 
-![ TODO ](./jarednielsen-algorithm-TODO.png)
+![ Illustration of array partition ](./jarednielsen-algorithm-array-partition.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the array partition algorithm in JavaScript _and_ Python.
 
 
 ---
@@ -52,12 +52,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does array partitioning  solve? 
 
 * TODO
 
 
-## How to Code the TODO Algorithm 
+## How to Code the Array Partition Algorithm 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -75,12 +75,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN TODO
-WHEN TODO
-THEN TODO
+GIVEN an unsorted array
+WHEN I specify a pivot value and call the partition function
+THEN the array is partitioned along the pivot, with lower values to its left and higher values to the right 
 ```
 
-That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
+That’s our general outline. We know our input conditions, an unsorted array, and our output requirements, an array with lower values on the left and high values on the right, and our goal is to partition on a pivot value.
 
 Let’s make a plan!
 
@@ -99,23 +99,108 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
 
+An array with two elements:
+```
+[1, 2]
+```
+
+Easy! 
+
+It's already done. 
+
+What if the array was reversed? 
+```
+[2, 1]
+```
+
+Where have we seen this or something like it before? 
+
+Swap! 
+
+Because we are pragmatic programmers, we're going to repurpose our swap algorithm and copy/pasta it right here: 
+```
+FUNCTION swap(arr, left, right)
+    SET temp TO THE VALUE STORED IN arr[left]
+    SET arr[left] TO THE VALUE STORED IN arr[right]
+    SET arr[right] TO THE VALUE STORED IN temp
+
+    RETURN arr
+```
+
+TODO left, right
+
+If we pass our two element array to our `swap` function, the output will be:
+```
+[1, 2]
+```
+
+But! We didn't partition on a pivot. Let's add another element to our array: 
+```
+[3, 2, 1]
+```
+
+Let's use 2 as our `pivot`. 
+
 TODO
+```
+FUNCTION partition(arr, pivot)
+    SET left TO 0
+    SET right TO THE LENGTH OF arr - 1
+
+
+
+    IF left IS LESS THAN OR EQUAL TO right
+        swap(arr, left, right)
+```
+
+
 
 ```
-DON'T USE ```md FOR PSUEDOCODE SNIPPETS
-    IT WILL RENDER TABBED TEXT 
-        IN ANOTHER COLOR
+FUNCTION partition(arr, pivot)
+    SET left TO 0
+    SET right TO THE LENGTH OF arr - 1
+
+    WHILE left IS LESS THAN OR EQUAL TO right
+        WHILE arr[left] IS LESS THAN pivot
+            INCREMENT left BY 1
+        WHILE arr[right] IS GREATER THAN pivot
+            DECREMENT right BY 1
+
+        IF left IS LESS THAN OR EQUAL TO right
+            swap(arr, left, right)
+            INCREMENT left BY 1
+            DECREMENT right BY 1
+
+    RETURN arr
 ```
+
+
+While `left` is less than or equal to `right`, we compare our pivots against the values stored in array at `left` or `right`. 
+
+While the value stored in `arr[left]` is less than `pivot`, 
+
+We iterate forward by checking if all of the elements on the _left_ side of the array are less than `pivot` 
+
+If and when we encounter a value in `arr[left]` that is not less than `pivot`, our condition is no longer `true` and we exit the `while` loop.
+
+We then enter the next `while` loop where we iterate backward by checking if all of the elements on the _right_ side of the array are greater than `pivot`. 
+
+If and when we encounter a value in `arr[right]` that is not greater than `pivot`, our condition is no longer `true` and we exit the `while` loop.
+
+Our final condition checks that `left` and `right` are not the same. If that evaluates as `true`, we swap the values stored in `arr[left]` and `arr[right]`. 
+
+
+        
 
 
 ### Execute the Plan
 
-Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
+Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
+#### How to Code the Array Partition Algorithm in JavaScript
 
-#### How to Code the TODO Algorithm in JavaScript
+Let's start with JavaScript...
 
-TODO
 ```js
 const swap = (arr, left, right) => {
     let temp = arr[left];
@@ -147,12 +232,11 @@ const partition = (arr, pivot) => {
 }
 ```
 
+
+#### How to Code the Array Partition Algorithm in Python
+
 Now let's see it in Python...
 
-
-#### How to Code the TODO Algorithm in Python
-
-TODO
 ```py
 TODO
 ```
@@ -164,7 +248,7 @@ Can we do better?
 TODO
 
 
-#### What is the Big O Of TODO?
+#### What is the Big O Of Array Partition?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -175,7 +259,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does array partitioning solve? 
 
 * TODO
 
@@ -185,7 +269,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 TODO
 
 
-### What Problem(s) Does TODO Solve? 
+### What Problem(s) Does Array Partitioning Solve? 
 
 TODO
 
