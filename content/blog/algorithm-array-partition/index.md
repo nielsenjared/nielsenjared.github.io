@@ -141,7 +141,19 @@ But! We didn't partition on a pivot. Let's add another element to our array:
 
 Let's use 2 as our `pivot`. 
 
+Now we need to compare the value stored in `arr[0]` to the pivot. 
+
 TODO
+
+Let's start pseudocoding this: 
+```
+FUNCTION partition(arr, pivot)
+    IF arr[0] IS LESS THAN pivot
+        swap(arr, left, right)
+```
+
+
+
 ```
 FUNCTION partition(arr, pivot)
     SET left TO 0
@@ -153,7 +165,7 @@ FUNCTION partition(arr, pivot)
         swap(arr, left, right)
 ```
 
-
+TODO 
 
 ```
 FUNCTION partition(arr, pivot)
