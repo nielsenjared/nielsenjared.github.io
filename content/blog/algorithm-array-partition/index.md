@@ -139,19 +139,20 @@ But! We didn't partition on a pivot. Let's add another element to our array:
 [3, 2, 1]
 ```
 
-Let's use 2 as our `pivot`. 
+Let's use 2 as our `pivot`, and `left` and `right` for the values we are checking on either side of `pivot`. We can immediately see that `left` is greater than `pivot` and `right` is less than `pivot`. 
 
-Let's use `left` and `right` for the values we are checking on either side of our `pivot`. 
-
-We can immediately see that `left` is greater than `pivot` and `right` is less than `pivot`. 
-
+TODO
 We _could_ write a series of conditionals, but we already know this won't scale. 
+
+
+
+
 
 We're going to need to iterate. 
 
 Which iteration? 
 
-Do we need to check _every_ value on the left of `pivot` to _every_ value on its right?
+Do we need to check _every_ value on the left of `pivot` against _every_ value on its right?
 
 No. 
 
