@@ -76,8 +76,8 @@ To understand our problem, we first need to define it. Let’s reframe the probl
 
 ```md
 GIVEN an unsorted array
-WHEN I specify a pivot value and call the partition function
-THEN the array is partitioned along the pivot, with lower values to its left and higher values to the right 
+WHEN I select a pivot value from the array and partition the array on the pivot
+THEN I am returned the index of the pivot
 ```
 
 That’s our general outline. We know our input conditions, an unsorted array, and our output requirements, an array with lower values on the left and high values on the right, and our goal is to partition on a pivot value.
@@ -127,105 +127,51 @@ FUNCTION swap(arr, left, right)
     RETURN arr
 ```
 
-TODO left, right
-
 If we pass our two element array to our `swap` function, the output will be:
 ```
 [1, 2]
 ```
 
-But! We didn't partition on a pivot. Let's add another element to our array: 
+But! We didn't partition on a pivot. We could pivot on one of the two existing values, but let's make it more fun and add another element to our array: 
 ```
 [3, 2, 1]
 ```
 
-Let's use 2 as our `pivot`, and `left` and `right` for the values we are checking on either side of `pivot`. We can immediately see that `left` is greater than `pivot` and `right` is less than `pivot`. 
+How do we choose our pivot? 
 
-TODO
-We _could_ write a series of conditionals, but we already know this won't scale. 
-
-
-
-
-
-We're going to need to iterate. 
-
-Which iteration? 
-
-Do we need to check _every_ value on the left of `pivot` against _every_ value on its right?
-
-No. 
-
-Why?
-
-Because we are only partitioning the array, not sorting it. We meet our acceptance criteria as long as the values that are less than `pivot` are on its left. 
-
-Let's expand our array: 
+In our array above, we could simply choose the second element containing the value 2. But what if our array looked like this?
 ```
-[2, 4, 3, 5, 1]
+[3, 1, 2]
 ```
 
-In this example, we only need to swap 4 and 1 to meet our acceptance criteria.
-
-TODO 
-
-
-
-Let's start pseudocoding this: 
+Or this?
 ```
-FUNCTION partition(arr, pivot)
-    IF arr[0] IS LESS THAN pivot
-        swap(arr, left, right)
+[2, 1, 3]
 ```
 
+We don't know what our array will look like, so we need to find a programmatic approach and not try to brute force it. 
+
+We _could_ iterate through the array, get the sum of all of the values, divide by 2, floor that value, and use it as the pivot, but that adds one more step to finding our solution. 
 
 
-```
-FUNCTION partition(arr, pivot)
-    SET left TO 0
-    SET right TO THE LENGTH OF arr - 1
-
-
-
-    IF left IS LESS THAN OR EQUAL TO right
-        swap(arr, left, right)
-```
 
 TODO 
 
 ```
-FUNCTION partition(arr, pivot)
-    SET left TO 0
-    SET right TO THE LENGTH OF arr - 1
+FUNCTION partition(arr, left, right)
+    SET index TO left
+    SET pivot TO arr[right]
 
-    WHILE left IS LESS THAN OR EQUAL TO right
-        WHILE arr[left] IS LESS THAN pivot
-            INCREMENT left BY 1
-        WHILE arr[right] IS GREATER THAN pivot
-            DECREMENT right BY 1
+    FOR EACH VALUE i BETWEEN left AND THE LENGTH OF arr
+        IF arr[i] IS LESS THAN pivot
+            swap(arr, index, i)
+            INCREMENT index
+    
+    swap(arr, index, right)
 
-        IF left IS LESS THAN OR EQUAL TO right
-            swap(arr, left, right)
-            INCREMENT left BY 1
-            DECREMENT right BY 1
-
-    RETURN arr
+    RETURN index
 ```
 
-
-While `left` is less than or equal to `right`, we compare our pivots against the values stored in array at `left` or `right`. 
-
-While the value stored in `arr[left]` is less than `pivot`, 
-
-We iterate forward by checking if all of the elements on the _left_ side of the array are less than `pivot` 
-
-If and when we encounter a value in `arr[left]` that is not less than `pivot`, our condition is no longer `true` and we exit the `while` loop.
-
-We then enter the next `while` loop where we iterate backward by checking if all of the elements on the _right_ side of the array are greater than `pivot`. 
-
-If and when we encounter a value in `arr[right]` that is not greater than `pivot`, our condition is no longer `true` and we exit the `while` loop.
-
-Our final condition checks that `left` and `right` are not the same. If that evaluates as `true`, we swap the values stored in `arr[left]` and `arr[right]`. 
 
 
         
@@ -248,25 +194,20 @@ const swap = (arr, left, right) => {
     return arr;
 }
 
-const partition = (arr, pivot) => {
-    let left = 0;
-    let right = arr.length-1;
+const partition = (arr, left = 0, right = arr.length - 1) => {
 
-    while (left <= right) {
-        while (arr[left] < pivot) {
-            left++;
-        }
-        while (arr[right] > pivot) {
-            right--;
-        }
+    let index = left; 
+    let pivot = arr[right];
 
-        if (left <= right) {
-            swap(arr, left, right);
-            left++;
-            right--;
+    for (let i = left; i < arr.length; i++) {
+        if (arr[i] < pivot) {
+            swap(arr, index, i);
+            index++;
         }
     }
-    return arr;
+    swap(arr, index, right);
+    
+    return index;
 }
 ```
 
