@@ -24,7 +24,7 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-* TODO 
+* TODO linear search
 
 * TODO
 
@@ -153,9 +153,50 @@ We don't know what our array will look like, so we need to find a programmatic a
 
 We _could_ iterate through the array, get the sum of all of the values, divide by 2, floor that value, and use it as the pivot, but that adds one more step to finding our solution. 
 
+What if we just select a random value from the array for the pivot? 
 
+We _could_ use a random number generator, but because we don't know what the array looks like, we can just select any value. 
+
+Which element do we select?
+
+We know we're going to need to iterate and the standard approach to iteration is starting at 0 and incrementing by 1 to _n_. So let's select _n_, the last element in the array. 
+
+TODO explain left and right, partition a partition of an array
+
+
+
+
+```
+FUNCTION partition(arr, left, right)
+    SET index TO left
+    SET pivot TO arr[right]
+
+    ...
+
+    RETURN index
+```
+
+
+We want to start iterating at `left` and only iterate up to `right`, so our `for` loop needs to look something like this: 
+```
+FUNCTION partition(arr, left, right)
+    SET index TO left
+    SET pivot TO arr[right]
+
+    FOR EACH VALUE i BETWEEN left AND THE LENGTH OF arr
+
+        ...
+
+    RETURN index
+```
+
+Now what? 
+
+Now we simply iterate over the array, comparing the value stored in `arr[i]` to our pivot. 
 
 TODO 
+
+
 
 ```
 FUNCTION partition(arr, left, right)
@@ -172,9 +213,68 @@ FUNCTION partition(arr, left, right)
     RETURN index
 ```
 
+TODO 
+Let's step through this using the following array: 
+```
+[5, 1, 4, 2, 3]
+```
 
+When we call our `partition` function, we'll use the default values of the first and last element for `left` and `right`. `left` will be equal to 0 and `right` will be equal to the length of our arrary minus 1. 
 
-        
+We then set our `index` to `left` and our `pivot` to the value stored in `arr[right]`. In this case, that's 3. 
+
+When we begin iterating, `i` is equal to `left`, which is 0. 
+
+The value stored in `arr[i]` is 5. 
+
+5 is not less than 3, so we leave it. 
+
+In the next iteration, `i` is equal to 1. 
+
+The value stored in `arr[i]` is now 1. 
+
+1 _is_ less than 3, so we swap the values in `arr[index]` and `arr[i]`, here that's 5 and 1. 
+
+Now our array looks like this:
+```
+[1, 5, 4, 2, 3]
+```
+
+We increment our `index` by 1, so its value is now 1. 
+
+In the next iteration, `i` is equal to 2. 
+
+The value stored in `arr[i]` is now 4. 
+
+4 is not less than 3, so we leave it. 
+
+In the next iteration, `i` is equal to 3. 
+
+The value stored in `arr[i]` is now 2.
+
+2 _is_ less than 3, so we swap the values in `arr[index]` and `arr[i]`, here that's 5 and 2.
+
+Now our array looks like this:
+```
+[1, 2, 4, 5, 3]
+```
+
+We increment our `index` by 1, so its value is now 2. 
+
+In the next iteration, `i` is equal to 4. 
+
+The value stored in `arr[i]` is now 3.
+
+3 _is not_ less than 3, so we leave it and exit our loop. 
+
+We still need to get our pivot in the right place, and we do this by swapping the value stored in `arr[index]` with the value stored in `arr[right]`, which are 4 and 3 respectively. 
+
+Now our array looks like this:
+```
+[1, 2, 3, 5, 4]
+```
+
+Finally, we return our `index`, which is 2, where the value of our pivot is currently stored in the array. 
 
 
 ### Execute the Plan
@@ -199,7 +299,7 @@ const partition = (arr, left = 0, right = arr.length - 1) => {
     let index = left; 
     let pivot = arr[right];
 
-    for (let i = left; i < arr.length; i++) {
+    for (let i = left; i < right; i++) {
         if (arr[i] < pivot) {
             swap(arr, index, i);
             index++;
