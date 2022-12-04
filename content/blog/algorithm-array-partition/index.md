@@ -155,17 +155,17 @@ We _could_ iterate through the array, get the sum of all of the values, divide b
 
 What if we just select a random value from the array for the pivot? 
 
-We _could_ use a random number generator, but because we don't know what the array looks like, we can just select any value. 
+We _could_ generate a random number, but because we don't know what the array looks like, we can just select any value. 
 
 Which element do we select?
 
 We know we're going to need to iterate and the standard approach to iteration is starting at 0 and incrementing by 1 to _n_. So let's select _n_, the last element in the array. 
 
-TODO explain left and right, partition a partition of an array
+We know we need to return the `index`, so we're going to need to declare an `index` variable. But how do we initialize it? 
 
+If we're starting at `left`, let's set our `index` to `left`. 
 
-
-
+Let's pseudocode what we discussed so far...
 ```
 FUNCTION partition(arr, left, right)
     SET index TO left
@@ -176,8 +176,7 @@ FUNCTION partition(arr, left, right)
     RETURN index
 ```
 
-
-We want to start iterating at `left` and only iterate up to `right`, so our `for` loop needs to look something like this: 
+We want to start iterating at `left` and only iterate up to `right`. Rather than starting at 0, we need to begin our iteration with `left`, which may or may not be 0. Our `for` loop needs to look something like this: 
 ```
 FUNCTION partition(arr, left, right)
     SET index TO left
@@ -192,12 +191,47 @@ FUNCTION partition(arr, left, right)
 
 Now what? 
 
-Now we simply iterate over the array, comparing the value stored in `arr[i]` to our pivot. 
+As we iterate over the array, we need to compare the value stored in `arr[i]` to our pivot. What comparison are we making? 
+
+
+
+TODO 
+If 
+
+
+[3, 1, 2]
+
+Table time! 
+
+| i     | arr[i]    | pivot | index | arr[index]    |
+| ---   | ---       | ---   | ---   | ---           |
+| 0     | 3         | 2     | 0     | 3             |
+
+This is what we know on our first iteration. 
 
 TODO 
 
 
+| i     | arr[i]    | pivot | index | arr[index]    |
+| ---   | ---       | ---   | ---   | ---           |
+| 0     | 3         | 2     | 0     | 3             |
+| 1     | 1         | 2     | 0     | 3             |   
 
+Do you see a pattern? Or at least the emergence of a pattern? 
+
+Note that the value of `arr[i]` is now 1, but the value of `arr[index]` is still 3. 
+
+We need to swap the values stored in `arr[i]` and `arr[index]`, so our comparison is::
+```
+...
+        IF arr[i] IS LESS THAN pivot
+            swap(arr, index, i)
+...
+```
+
+And before we exit the conditional, we need to increment `index`. 
+
+Our pseudocode now looks like this: 
 ```
 FUNCTION partition(arr, left, right)
     SET index TO left
@@ -206,20 +240,50 @@ FUNCTION partition(arr, left, right)
     FOR EACH VALUE i BETWEEN left AND THE LENGTH OF arr
         IF arr[i] IS LESS THAN pivot
             swap(arr, index, i)
-            INCREMENT index
+            INCREMENT index BY 1
+    
+    RETURN index
+```
+
+And our array now looks like this:
+```
+[1, 3, 2]
+```
+
+But in our final iteration, our condition won't be met, so how do we make that final swap? 
+
+Let's look at that table again: 
+
+| i     | arr[i]    | pivot | index | arr[index]    |
+| ---   | ---       | ---   | ---   | ---           |
+| 0     | 3         | 2     | 0     | 3             |
+| 1     | 1         | 2     | 0     | 3             |   
+| 2     | 2         | 2     | 1     | 3             |   
+
+Our `index` value is correct, but the value stored in `arr[index]` is not. Where is that value? At the end, or `right` of the array. So let's swap 'em!
+
+Our final pseudocode looks like this: 
+```
+FUNCTION partition(arr, left, right)
+    SET index TO left
+    SET pivot TO arr[right]
+
+    FOR EACH VALUE i BETWEEN left AND THE LENGTH OF arr
+        IF arr[i] IS LESS THAN pivot
+            swap(arr, index, i)
+            INCREMENT index BY 1
     
     swap(arr, index, right)
 
     RETURN index
 ```
 
-TODO 
-Let's step through this using the following array: 
+Let's step through this using a slightly larger array: 
 ```
 [5, 1, 4, 2, 3]
 ```
 
-When we call our `partition` function, we'll use the default values of the first and last element for `left` and `right`. `left` will be equal to 0 and `right` will be equal to the length of our arrary minus 1. 
+When we call our `partition` function, we'll use the default values of the first and last element for `left` and `right`, so `left` will be equal to 0 and `right` will be equal to the length of our arrary minus 1. 
 
 We then set our `index` to `left` and our `pivot` to the value stored in `arr[right]`. In this case, that's 3. 
 
