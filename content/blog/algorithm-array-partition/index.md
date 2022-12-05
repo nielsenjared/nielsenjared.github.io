@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Array Partition Algorithm"
-date: "2022-TODO-TODO"
+date: "2022-10-03"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the array partition algorithm in JavaScript and Python."
 keywords: ['algorithm', 'Array Partition', 'javascript', 'python']
 ---
@@ -24,26 +24,26 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-* TODO linear search
+* How does the swap algorithm work? 
 
-* TODO
+* How does a linear search work? 
 
-* TODO 
-
-
-### TODO #1
-
-TODO
+* How does a selection algorithm work?  
 
 
-### TODO #2
+### How Does the Swap Algorithm Work? 
 
-TODO
+The swap algorithm uses a temporary variable to store the value of one of the variables to swapped and the reassigns the values accordingly. 
 
 
-### TODO #3
+### How Does a Linear Search Work? 
 
-TODO
+A linear search algorithm iterates over an array and compares the current value to the `n` value. 
+
+
+### How Does a Selection Algorithm Work? 
+
+A selection algorithm finds the index of the `k` element of an array, where `k` is the smallest, largest, or median value. It accomplishes this by tracking the index of the current `k` value and comparing the current `k` value to the index of the iterator. 
 
 
 ## Let's Get Meta
@@ -52,9 +52,9 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does array partitioning  solve? 
+* Where have we seen this or something like it before? 
 
-* TODO
+* What are other approaches for partitioning an array? 
 
 
 ## How to Code the Array Partition Algorithm 
@@ -75,12 +75,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN an unsorted array
+GIVEN an unsorted array and a range of indexes to partition between
 WHEN I select a pivot value from the array and partition the array on the pivot
 THEN I am returned the index of the pivot
 ```
 
-That’s our general outline. We know our input conditions, an unsorted array, and our output requirements, an array with lower values on the left and high values on the right, and our goal is to partition on a pivot value.
+That’s our general outline. We know our input conditions, an unsorted array and starting and ending values for the partition, and our output requirements, the index of the value used to partition the array, and our goal is to partition the array on a pivot with lower values on the left and higher values on the right.
 
 Let’s make a plan!
 
@@ -151,7 +151,7 @@ Or this?
 
 We don't know what our array will look like, so we need to find a programmatic approach and not try to brute force it. 
 
-We _could_ iterate through the array, get the sum of all of the values, divide by 2, floor that value, and use it as the pivot, but that adds one more step to finding our solution. 
+We _could_ iterate through the array, get the sum of all of the values, divide by 2, floor that value, and use it as the pivot, but that adds at least one more step to finding our solution. 
 
 What if we just select a random value from the array for the pivot? 
 
@@ -159,13 +159,13 @@ We _could_ generate a random number, but because we don't know what the array lo
 
 Which element do we select?
 
-We know we're going to need to iterate and the standard approach to iteration is starting at 0 and incrementing by 1 to _n_. So let's select _n_, the last element in the array. 
+We know we're going to need to iterate and the standard approach to iteration is starting at 0 and incrementing by 1 to _n_. So let's take the path of least resistance and select _n_, the last, or `right` element in the array. 
 
 We know we need to return the `index`, so we're going to need to declare an `index` variable. But how do we initialize it? 
 
 If we're starting at `left`, let's set our `index` to `left`. 
 
-Let's pseudocode what we discussed so far...
+Let's pseudocode what we identified so far...
 ```
 FUNCTION partition(arr, left, right)
     SET index TO left
@@ -182,7 +182,7 @@ FUNCTION partition(arr, left, right)
     SET index TO left
     SET pivot TO arr[right]
 
-    FOR EACH VALUE i BETWEEN left AND THE LENGTH OF arr
+    FOR EACH VALUE i BETWEEN left AND right
 
         ...
 
@@ -193,24 +193,25 @@ Now what?
 
 As we iterate over the array, we need to compare the value stored in `arr[i]` to our pivot. What comparison are we making? 
 
+Less than? 
 
-
-TODO 
-If 
-
-
-[3, 1, 2]
+Greater than? 
 
 Table time! 
+
+Let's map each iteration using this array:
+```
+[3, 1, 2]
+```
+
+This is what we know on our first iteration:
 
 | i     | arr[i]    | pivot | index | arr[index]    |
 | ---   | ---       | ---   | ---   | ---           |
 | 0     | 3         | 2     | 0     | 3             |
 
-This is what we know on our first iteration. 
 
-TODO 
-
+Our `index` variable and our iterator, `i`, are both indexing the value 3 in our arry. We can see that this value is greater than our pivot, 2. Let's see what happens in the next iteration:
 
 | i     | arr[i]    | pivot | index | arr[index]    |
 | ---   | ---       | ---   | ---   | ---           |
@@ -221,12 +222,10 @@ Do you see a pattern? Or at least the emergence of a pattern?
 
 Note that the value of `arr[i]` is now 1, but the value of `arr[index]` is still 3. 
 
-We need to swap the values stored in `arr[i]` and `arr[index]`, so our comparison is::
+We need to swap the values stored in `arr[i]` and `arr[index]`, so our comparison is:
 ```
-...
         IF arr[i] IS LESS THAN pivot
             swap(arr, index, i)
-...
 ```
 
 And before we exit the conditional, we need to increment `index`. 
@@ -381,14 +380,38 @@ const partition = (arr, left = 0, right = arr.length - 1) => {
 Now let's see it in Python...
 
 ```py
-TODO
+def swap(arr, left, right):
+    temp = arr[left]
+    arr[left] = arr[right]
+    arr[right] = temp
+
+    return arr
+
+def partitionLomuto(arr, left = 0, right = None):
+
+    if right == None: 
+        right = len(arr) - 1
+        
+    pivot = arr[right]
+    index = left
+
+    for i in range(left, right):
+        if arr[i] < pivot:
+            swap(arr, index, i)
+            index += 1
+    
+    swap(arr, index, right)
+
+    return index 
 ```
 
 ### Evaluate the Plan
 
 Can we do better? 
 
-TODO
+Yes! 
+
+This algorithm is using the Lomuto partition scheme. This approach is perfectly fine and perfect for beginners. There is another approach, the Hoare partition scheme, which is more efficient but slightly more complicated. It works by iterating forward _and_ back through the array.
 
 
 #### What is the Big O Of Array Partition?
@@ -404,22 +427,22 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * What problem(s) does array partitioning solve? 
 
-* TODO
+* What are other approaches for partitioning an array? 
 
 
 ### Why Do I Need to Know This? 
 
-TODO
+Array partitioning is the kernel of quicksort. 
 
 
-### What Problem(s) Does Array Partitioning Solve? 
+### Where Have We Seen This Or Something Like It Before? 
 
-TODO
+Array partitioning combines approaches from several algorithms, swap directly, and elements of selection. 
 
 
-### TODO
+### What Are Other Approaches for Partitioning an Array? 
 
-TODO
+As I mentioned above, there's the Hoare partition scheme that 
 
 
 ## A is for Algorithms
