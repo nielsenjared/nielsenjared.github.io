@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Quick Sort Algorithm"
-date: "2022-TODO-TODO"
+date: "2022-12-02"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the quick sort algorithm in JavaScript and Python."
 keywords: ['algorithm', 'quick sort', 'javascript', 'python']
 ---
@@ -24,24 +24,24 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-* TODO 
+* How does the swap algorithm work? 
 
-* TODO
+* How does the array partition algorithm work? 
 
-* TODO 
-
-
-### TODO #1
-
-TODO
+* How does binary search work? 
 
 
-### TODO #2
+### How Does The Swap Algorithm Work? 
 
 TODO
 
 
-### TODO #3
+### How Does The Array Partition Algorithm Work? 
+
+TODO
+
+
+### How Does Binary Search Work? 
 
 TODO
 
@@ -54,7 +54,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * What problem(s) does quick sort solve? 
 
-* Why is it called 'quick sort'? 
+* What does it mean to 'divide & conquer? 
 
 
 ## How to Code the Quick Sort Algorithm 
@@ -75,12 +75,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN TODO
-WHEN TODO
+GIVEN an unsorted array
+WHEN TODO 
 THEN TODO
 ```
 
-That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
+That’s our general outline. We know our input conditions, an unsorted array, and our output requirements, a sorted array, and our goal is to TODO.
 
 Let’s make a plan!
 
@@ -110,68 +110,54 @@ DON'T USE ```md FOR PSUEDOCODE SNIPPETS
 
 ### Execute the Plan
 
-Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
+Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
-#### How to Code the TODO Algorithm in JavaScript
+#### How to Code the Quick Sort Algorithm in JavaScript
 
-TODO
+Let's start with JavaScript...
 ```js
-
 const swap = (arr, left, right) => {
     let temp = arr[left];
     arr[left] = arr[right];
     arr[right] = temp;
 
-    // [arr[left], arr[right]] = [arr[right], arr[left]];
-
     return arr;
 }
 
-const partition = (arr, left, right) => {
-    let pivot = arr[ Math.floor((left + right) / 2)];
+const partition = (arr, left = 0, right = arr.length - 1) => {
 
-    while (left <= right) {
-        while (arr[left] < pivot) {
-            left++;
-        }
-        while (arr[right] > pivot) {
-            right--;
-        }
+    let pivot = arr[right];
+    let index = left; 
 
-        if (left <= right) {
-            swap(arr, left, right);
-            left++;
-            right--;
+    for (let i = left; i < right; i++) {
+        if (arr[i] < pivot) {
+            swap(arr, index, i);
+            index++;
         }
     }
-    return left;
+    swap(arr, index, right);
+    
+    return index;
 }
 
 const quickSort = (arr, left = 0, right = arr.length - 1) => {
         if (left >= right) {
             return;
         }
-        let pivot = partition(arr, left, right);
 
-        quickSort(arr, left, pivot - 1);
-        quickSort(arr, pivot, right);
+        let index = partition(arr, left, right);
+
+        quickSort(arr, left, index - 1);
+        quickSort(arr, index, right);
     return arr;
 }
-
-const unsorted = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
-
-let result = quickSort(unsorted);
-
-console.log(result);
 ```
+
+#### How to Code the Quick Sort Algorithm in Python
 
 Now let's see it in Python...
 
-
-#### How to Code the TODO Algorithm in Python
-
-TODO
 ```py
 def swap(arr, left, right):
     temp = arr[left]
@@ -180,19 +166,37 @@ def swap(arr, left, right):
 
     return arr
 
-def partition(arr, left, right):
-    pivot = arr[ (left + right) // 2 ]
+def partition(arr, left = 0, right = None):
+
+    if right == None: 
+        right = len(arr) - 1
+        
+    pivot = arr[right]
+    index = left
+
+    for i in range(left, right):
+        if arr[i] < pivot:
+            swap(arr, index, i)
+            index += 1
+    
+    swap(arr, index, right)
+
+    return index 
+
+def partition(arr, pivot):
+    left = 0
+    right = len(arr) - 1
 
     while (left <= right):
         while (arr[left] < pivot):
             left = left + 1
-        while (arr[right] > pivot):
+        while (arr[right] > pivot and right > 0):
             right = right - 1
         if (left <= right):
             swap(arr, left, right)
             left = left + 1
             right = right - 1
-    return left
+    return arr
 
 def quick_sort(arr, left = 0, right = None):
     if right == None:
@@ -200,11 +204,15 @@ def quick_sort(arr, left = 0, right = None):
 
     if (left >= right):
         return
+    
+    pivot = (left + right) // 2
 
-    pivot = partition(arr, left, right)
+    part = partition(arr, pivot)
 
-    quick_sort(arr, left, pivot - 1)
-    quick_sort(arr, pivot, right)
+    index = part[pivot]
+
+    quick_sort(arr, left, index - 1)
+    quick_sort(arr, index, right)
     
     return arr
 ```
@@ -213,10 +221,14 @@ def quick_sort(arr, left = 0, right = None):
 
 Can we do better? 
 
-TODO
+Yes and no.
+
+We could use the Hoare partition scheme, which, while being slightly more complicated to implement, helps us avoid edge case worst-case runtimes. 
+
+Depending on the context, we may not want to use quicksort. For example, if the array is not randomized, quick sort will still divide and conquer _every_ value, which is basically Bubble Sort. 
 
 
-#### What is the Big O Of TODO?
+#### What is the Big O Of Quick Sort?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -227,24 +239,26 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does Quick Sort solve? 
 
-* TODO
+* What does it mean to 'divide & conquer'? 
 
 
 ### Why Do I Need to Know This? 
 
-TODO
+Quicksort is quick! It's a, if not _the_, widely used sorting algorithm. 
 
 
-### What Problem(s) Does TODO Solve? 
+### What Problem(s) Does Quick Sort Solve? 
 
-TODO
+Quicksort improves on the time and space complexity of the previous sort algorithms we learned. 
 
 
-### TODO
+### What Does It Mean To 'Divide & Conquer'? 
 
-TODO
+According to Ye Olde Wikipedia, a divide-and-conquer algorithm: 
+
+> recursively breaks down a problem into two or more sub-problems of the same or related type, until these become simple enough to be solved directly. The solutions to the sub-problems are then combined to give a solution to the original problem. 
 
 
 ## A is for Algorithms
