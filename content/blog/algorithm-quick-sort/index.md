@@ -33,17 +33,17 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 ### How Does The Swap Algorithm Work? 
 
-TODO
+The swap algorithm uses a temporary variable to store the value of one of the two variables to be swapped. The variables are then reassigned accordingly. 
 
 
 ### How Does The Array Partition Algorithm Work? 
 
-TODO
+The array partition algorithm selects a pivot and iteratively compares the other values in the array to the pivot. It then swaps values accordingly so that values lower than the pivot are moved to the left of the pivot and values greater than the pivot are moved to the right of the pivot. 
 
 
 ### How Does Binary Search Work? 
 
-TODO
+Binary search repeatedly divides a sorted array in half until it finds the index of the requested value. 
 
 
 ## Let's Get Meta
@@ -80,7 +80,7 @@ WHEN TODO
 THEN TODO
 ```
 
-That’s our general outline. We know our input conditions, an unsorted array, and our output requirements, a sorted array, and our goal is to TODO.
+That’s our general outline. We know our input conditions, an unsorted array, and our output requirements, a sorted array, and our goal is efficiency.
 
 Let’s make a plan!
 
@@ -98,13 +98,132 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 * Algorithm design
 
 The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
+```
+[2, 1]
+```
+
+Where have we seen this or something like it before? 
+
+We need to _swap_ the values. 
+
+Because we are pragmatic programmers, we're going to _import_ our `swap` algorithm.
+TODO copy/paste swap
+
+
+What's the next smallest problem we can solve?
+```
+[3, 1, 2]
+```
+
+We can't simply pass this to our `swap` algorithm, because we don't know in advance which two values need to be swapped. 
+
+Where have we seen this or something like it before? 
 
 TODO
+We can simply pass this to our `partition` algorithm. 
+
+TODO copy/paste partition
+
+Our `partition` algorithm selects a "random" value from the array as the pivot and then compares the other values in the array TODO
+
+
+The `partition` algorithm doesn't sort the values in the array, it only moves lower values to the left of the pivot and higher values to the right of the pivot.
 
 ```
-DON'T USE ```md FOR PSUEDOCODE SNIPPETS
-    IT WILL RENDER TABBED TEXT 
-        IN ANOTHER COLOR
+[5, 1, 4, 2, 3]
+```
+
+In this example, the value of `pivot` will be 3, and its `index` is 2. 
+```
+[ 1, 2, 3, 5, 4]
+```
+
+So close! 
+
+If only we could pass this array back to our `partition` function...
+
+TODO 
+
+But do we need to pass the entire array? 
+
+No. Just the unsorted part. 
+
+We can describe the unsorted part as the values between our `index` and `right`. 
+
+If we were to call `partition` again...
+```
+partition(arr, index, right)
+```
+
+...the result would be: 
+```
+[ 1, 2, 3, 4, 5]
+```
+
+What if our initial array looked like this? 
+```
+[2, 5, 4, 1, 3]
+```
+
+Our `partition` algorithm would return this:
+```
+[ 2, 1, 3, 5, 4 ]
+```
+
+We would need to make _two_ more calls to `partition`. 
+TODO explain `index`.  
+```
+partition(arr, left, index - 1)
+partition(arr, index, right)
+```
+
+But this creates a different problem for us to solve. Each call to `partition` returns a different array.
+
+How do we make multiple calls to `partition` without making multiple arrays? 
+
+It's time to get abstract. 
+
+TODO 
+```
+FUNCTION quicksort(arr)
+    SET index TO partition(arr, left, right)
+```
+
+TODO 
+But wait! How does `parittion` know what the `left` and `right` values are? 
+
+We need to pass those to `quicksort`, too. 
+
+```
+FUNCTION quicksort(arr, left, right)
+    SET index TO partition(arr, left, right)
+```
+
+Now, rather than calling `partition` again and again, we can recursively call `quicksort`:
+```
+FUNCTION quicksort(arr, left, right)
+    SET index TO partition(arr, left, right)
+
+    quicksort(arr, left, index -1)
+    quicksort(arr, index, right)
+    
+    RETURN arr
+```
+
+How do we know when to stop? 
+
+If each recursive call is dividing the array (roughly) in half, at some point the values of `left` and `right` will both be 0, or in some weird edge case, `left` will be greater than `right`. As long as `left` is less than `right`, we want to continue making recursive calls. 
+
+Our final pseudocode looks like this: 
+```
+FUNCTION quicksort(arr, left, right)
+    if left IS LESS THAN right
+        SET index TO partition(arr, left, right)
+
+        quicksort(arr, left, index -1)
+        quicksort(arr, index, right)
+    
+    RETURN arr
 ```
 
 
@@ -142,14 +261,13 @@ const partition = (arr, left = 0, right = arr.length - 1) => {
 }
 
 const quickSort = (arr, left = 0, right = arr.length - 1) => {
-        if (left >= right) {
-            return;
-        }
-
+    if (left < right) {
         let index = partition(arr, left, right);
 
         quickSort(arr, left, index - 1);
         quickSort(arr, index, right);
+    }
+
     return arr;
 }
 ```
@@ -202,17 +320,15 @@ def quick_sort(arr, left = 0, right = None):
     if right == None:
         right = len(arr) - 1
 
-    if (left >= right):
-        return
-    
-    pivot = (left + right) // 2
+    if (left < right):
+        pivot = (left + right) // 2
 
-    part = partition(arr, pivot)
+        part = partition(arr, pivot)
 
-    index = part[pivot]
+        index = part[pivot]
 
-    quick_sort(arr, left, index - 1)
-    quick_sort(arr, index, right)
+        quick_sort(arr, left, index - 1)
+        quick_sort(arr, index, right)
     
     return arr
 ```
