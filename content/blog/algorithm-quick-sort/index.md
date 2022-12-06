@@ -127,9 +127,20 @@ We can't simply pass this to our `swap` algorithm, because we don't know in adva
 Where have we seen this or something like it before? 
 
 We can simply pass this to our `partition` algorithm. 
+```
+FUNCTION partition(arr, left, right)
+    SET index TO left
+    SET pivot TO arr[right]
 
-TODO copy/paste partition
+    FOR EACH VALUE i BETWEEN left AND THE LENGTH OF arr
+        IF arr[i] IS LESS THAN pivot
+            swap(arr, index, i)
+            INCREMENT index BY 1
+    
+    swap(arr, index, right)
 
+    RETURN index
+```
 Our `partition` algorithm selects a "random" value from the array as the pivot and then compares the other values in the array against it. But, if we recall, the `partition` algorithm doesn't sort the values in the array, it only moves lower values to the left of the pivot and higher values to the right of the pivot. 
 
 Take the following array for example:
