@@ -76,8 +76,8 @@ To understand our problem, we first need to define it. Let’s reframe the probl
 
 ```md
 GIVEN an unsorted array
-WHEN TODO 
-THEN TODO
+WHEN I pass it to my quicksort function
+THEN I am returned a result that takes less time or space than other sorting algorithms 
 ```
 
 That’s our general outline. We know our input conditions, an unsorted array, and our output requirements, a sorted array, and our goal is efficiency.
@@ -107,7 +107,14 @@ Where have we seen this or something like it before?
 We need to _swap_ the values. 
 
 Because we are pragmatic programmers, we're going to _import_ our `swap` algorithm.
-TODO copy/paste swap
+```
+FUNCTION swap(arr, left, right)
+    SET temp TO arr[left]
+    SET arr[left] TO arr[right]
+    SET arr[right] TO temp
+
+    RETURN arr
+```
 
 
 What's the next smallest problem we can solve?
@@ -119,21 +126,18 @@ We can't simply pass this to our `swap` algorithm, because we don't know in adva
 
 Where have we seen this or something like it before? 
 
-TODO
 We can simply pass this to our `partition` algorithm. 
 
 TODO copy/paste partition
 
-Our `partition` algorithm selects a "random" value from the array as the pivot and then compares the other values in the array TODO
+Our `partition` algorithm selects a "random" value from the array as the pivot and then compares the other values in the array against it. But, if we recall, the `partition` algorithm doesn't sort the values in the array, it only moves lower values to the left of the pivot and higher values to the right of the pivot. 
 
-
-The `partition` algorithm doesn't sort the values in the array, it only moves lower values to the left of the pivot and higher values to the right of the pivot.
-
+Take the following array for example:
 ```
 [5, 1, 4, 2, 3]
 ```
 
-In this example, the value of `pivot` will be 3, and its `index` is 2. 
+If we pass this to our `parition` algorithm, the value of `pivot` will be 3, and its `index` will be 2. 
 ```
 [ 1, 2, 3, 5, 4]
 ```
@@ -142,13 +146,9 @@ So close!
 
 If only we could pass this array back to our `partition` function...
 
-TODO 
+But would we need to pass the entire array? 
 
-But do we need to pass the entire array? 
-
-No. Just the unsorted part. 
-
-We can describe the unsorted part as the values between our `index` and `right`. 
+Nope. Just the unsorted part and we can describe the unsorted part as the values between our `index` and `right`. 
 
 If we were to call `partition` again...
 ```
@@ -170,11 +170,16 @@ Our `partition` algorithm would return this:
 [ 2, 1, 3, 5, 4 ]
 ```
 
-We would need to make _two_ more calls to `partition`. 
-TODO explain `index`.  
+We would need to make _two_ more calls to `partition`. Note that, in the first call, we subtract 1 from `index` because we are already passing the indexed value to the next call to `partition`. 
 ```
 partition(arr, left, index - 1)
 partition(arr, index, right)
+```
+
+We could achieve the same with something like this:
+```
+partition(arr, left, index)
+partition(arr, index + 1, right)
 ```
 
 But this creates a different problem for us to solve. Each call to `partition` returns a different array.
@@ -183,17 +188,15 @@ How do we make multiple calls to `partition` without making multiple arrays?
 
 It's time to get abstract. 
 
-TODO 
+Let's start pseudocoding our `quicksort` function. We know we need to call `partition` at least once and that `partition` returns an `index`: 
 ```
 FUNCTION quicksort(arr)
     SET index TO partition(arr, left, right)
 ```
 
-TODO 
 But wait! How does `parittion` know what the `left` and `right` values are? 
 
-We need to pass those to `quicksort`, too. 
-
+We need to pass those to `quicksort`, too, so a quick (pun intended) refactor gives us: 
 ```
 FUNCTION quicksort(arr, left, right)
     SET index TO partition(arr, left, right)
