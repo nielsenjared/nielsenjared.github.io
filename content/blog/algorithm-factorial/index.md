@@ -157,18 +157,30 @@ Table time!
 | _n_   | _n!_  | 1 * ... n         |
 | ---   | ---   | ---               |
 | 2     | 2     | 1 * 2             |
+| 3     | 6     | 1 * 2 * 3         |
+| 4     | 24    | 1 * 2 * 3 * 4     |
+| 5     | 120   | 1 * 2 * 3 * 4 * 5 |
 
+In the table above, we can see our input, `n`, the product of `n!`, and the "long hand" expression of the multiplication of the sequence. 
 
+Where have we seen this or something like it before? 
 
+Iteration!
 
+As `n` increases, so does the number of multiplications required to calcuate the product of `n!`. 
 
+Because we already addressed 0 and 1, we can start our loop at 2. 
 
-TODO
+But what do we do in the loop? 
+
+We need to reassign the value of `result` to the product of `result` multiplied by `i`. 
+
+Our final pseudocode looks like this: 
 ```
 INPUT n
 SET result TO 1
 
-IF n IS LESS THAN OR EQUAL TO 1
+IF n == 0 OR n == 1
     RETURN result
 
 FOR EVERY VALUE i BETWEEN 2 AND n
@@ -247,7 +259,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 ### Why Do I Need to Know This? 
 
-TODO
+While you will probably _never_ code the _factorial_ algorithm professionally, you might code a factorial _algorithm_ accidentally, which is something to be avoided. Understanding the concept of factorial is important when calculating the space and time complexity of algorithms. It's also important when calculating permutations and combinations. Stay tuned! 
 
 
 ### What Problem(s) Does Factorial Solve? 
