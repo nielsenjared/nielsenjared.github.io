@@ -28,23 +28,47 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * How does iteration work? 
 
-* What is variable reassignment? 
+* What is multiplication assignment? 
 
 
 
 ### What Is A Factorial? 
 
-TODO
+A factorial is the product of all positive integers less than or equal to n.
 
+We write that as n!.
+
+For example, 5!:
+```
+5 * 4 * 3 * 2 * 1 = 120
+```
 
 ### How Does Iteration Work? 
 
-TODO
+According to Ye Olde Wikipedia:
+
+> Iteration is the repetition of a process in order to generate a (possibly unbounded) sequence of outcomes. Each repetition of the process is a single iteration, and the outcome of each iteration is then the starting point of the next iteration.
+
+We use `for` and `while` loops to iterate.
 
 
-### What Is Variable Reassignment? 
+### What is Multiplication Assignment? 
 
-TODO
+We can reassign the value of a variable to the product of that variable multiplied by another value using the multiplication assignment. 
+
+Both Python and JavaScript feature the `*=` operator. 
+
+The following expression:
+```
+x = 2
+x *= 2
+```
+
+Is equivalent to:
+```
+x = 2
+x = x * 2
+```
 
 
 ## Let's Get Meta
@@ -53,9 +77,9 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* How can I increment a variable with multiplication? 
 
-* TODO
+* How does a for loop work? 
 
 
 ## How to Code the Factorial Algorithm 
@@ -195,7 +219,7 @@ RETURN result
 Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
-#### How to Code the TODO Algorithm in JavaScript
+#### How to Code the Factorial Algorithm in JavaScript
 
 Let's start with JavaScript...
 ```js
@@ -217,7 +241,7 @@ const factorial = n => {
 
 
 
-#### How to Code the TODO Algorithm in Python
+#### How to Code the Factorial Algorithm in Python
 
 Now let's see it in Python...
 ```py
@@ -238,7 +262,9 @@ def factorial(n):
 
 Can we do better? 
 
-TODO
+This approach does not address negative numbers. In both Python and JavaScript, if we call `factorial` with a value of -5, it will return 1. This is happening because none of our conditions are being met, in both the `if` block and the `for` loop. 
+
+Both Python and JavaScript feature factorial methods in their math modules. 
 
 
 #### What is the Big O Of Factorial?
@@ -252,9 +278,9 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does Factorial solve? 
+* How can I increment a variable with multiplication? 
 
-* TODO
+* How does iteration work? 
 
 
 ### Why Do I Need to Know This? 
@@ -262,14 +288,23 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 While you will probably _never_ code the _factorial_ algorithm professionally, you might code a factorial _algorithm_ accidentally, which is something to be avoided. Understanding the concept of factorial is important when calculating the space and time complexity of algorithms. It's also important when calculating permutations and combinations. Stay tuned! 
 
 
-### What Problem(s) Does Factorial Solve? 
+### How Can I Increment a Variable With Multiplication? 
 
-TODO
+We can increment a variable with multiplication by using the multiplication operator and/or variable reassignment and reassigning the value of our variable to the product of that variable multiplied by an iterator. 
 
 
-### TODO
+### How Does A For Loop Work? 
 
-TODO
+A `for` loop is a control flow statement used for iteration. We declare a `for` loop with 
+
+When using a `for` loop, we specify an iterator, often `i`, and a condition, such as `i < arr.length`, followed by an operator to advance the iteration, often `i++`. We generally initialize a `for` loop with `i = 0`, but, as we saw above, we can start counting with any value. Furthermore, we can increment (or decrement, for that matter) by any value, not just 1. We would simply use the `+= x` operator, where `x` is the value by which we want to increment our loop. In our loop is a statement that is executed with each iteration.
+
+
+Initialization
+
+Condition 
+
+Statement
 
 
 ## A is for Algorithms
