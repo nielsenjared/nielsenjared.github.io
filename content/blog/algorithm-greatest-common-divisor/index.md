@@ -28,20 +28,20 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * How does the swap algorithm work? 
 
-* TODO 
+* What is a greatest common divisor? 
 
 
-### TODO #1
-
-TODO
-
-
-### TODO #2
+### What Is The Modulo Operator?
 
 TODO
 
 
-### TODO #3
+### How Does The Swap Algorithm Work? 
+
+TODO
+
+
+### What Is A Greatest Common Divisor? 
 
 TODO
 
@@ -99,33 +99,136 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
 
-TODO
+2, 1
+
+What's the GCD? 
+
+1
+
+If one of our integers is 1, then the GCD can only be 1. 
+
+And if our smallest integer is either 2 and 3, then the GCD can only be 2 or 3, respectively.  
+
+So let's use larger composite numbers to make things interesting. 
+
+What's the GCD of 6 and 4? 
+
+2
+
+Because `2 * 2 = 4` and `2 * 3 = 6`. 
+
+What's the GCD of 8 and 4? 
+
+Because `1 * 4 = 4` and `2 * 4 = 8`. 
+
+I feel a pattern emerging. Let's start mapping this out in a table: 
+| n     | m     | GCD   |
+| ---   | ---   | ---   |
+| 6     | 4     | 2     |
+| 8     | 4     | 4     |
+| 10    | 4     | 2     |
+| 12    | 4     | 4     |
+| 14    | 4     | 2     |
+| 16    | 4     | 4     |
+
+Do you see a pattern? 
+
+The GCD is greater when `n` is a multiple of `m`. 
+
+For example, 8 is a multiple of 4 and the GCD is 4.
+
+But 6 is not a multiple of 4, so the GCD is only 2. 
+
+How do we programmatically get this number? 
+
+What is the opposite of multiplication? 
+
+If we divide 6 by 4, the quotient is 1. 
+
+And the remainder is... 2! 
+
+How do we calculate remainders? 
+
+With the modulo operator. 
+
+Let's try it! We can calculate the GCD of 6 & 4 like so: 
+```
+6 % 4 = 2
+```
+
+
+TODO 
+
 
 ```
-DON'T USE ```md FOR PSUEDOCODE SNIPPETS
-    IT WILL RENDER TABBED TEXT 
-        IN ANOTHER COLOR
+INPUT n
+INPUT m
+
+SET r
+
+IF THE REMAINDER of n DIVIDED BY m IS GREATER THAN 0
+    SET r EQUAL TO THE REMAINDER OF n DIVIDED BY m
+    
+    ...
+
+RETURN r
 ```
+
+
+But if we try the same calculation with 8 and 4, the remainder is 0. 
+```
+8 % 4 = 0
+```
+
+
+
+
+
+We need to repeatedly calculate the modulo of the two integers 
+
+
+
+
+TODO 
+```
+INPUT n
+INPUT m
+
+WHILE m IS GREATER THAN 0
+    SET r TO m
+    SET m TO THE REMAINDER of n DIVIDED BY m
+    SET n EQUAL TO r
+
+RETURN n
+```
+
 
 
 ### Execute the Plan
 
-Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
+Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
 #### How to Code the Greatest Common Divisor Algorithm in JavaScript
 
-TODO
+Let's start with JavaScript...
 ```js
-TODO
+const gcd = (n, m) => {
+    while (m)  {
+      let r = m;
+      m = n % m;
+      n = r;
+    }
+    return n;
+}
 ```
 
-Now let's see it in Python...
 
 
 #### How to Code the Greatest Common Divisor Algorithm in Python
 
-TODO
+Now let's see it in Python...
+
 ```py
 TODO
 ```
@@ -156,6 +259,11 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 ### Why Do I Need to Know This? 
 
 TODO
+This is the [Euclidean algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm), which, according to Donald Knuth, is the grandaddy of the algorithms because: 
+
+> it is the oldest nontrivial algorithm that has survived to the present day.
+
+
 
 
 ### What Problem(s) Does the Greatest Common Divisor Algorithm Solve? 
