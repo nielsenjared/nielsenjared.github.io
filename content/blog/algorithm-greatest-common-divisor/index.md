@@ -133,11 +133,7 @@ I feel a pattern emerging. Let's start mapping this out in a table:
 
 Do you see a pattern? 
 
-The GCD is greater when `n` is a multiple of `m`. 
-
-For example, 8 is a multiple of 4 and the GCD is 4.
-
-But 6 is not a multiple of 4, so the GCD is only 2. 
+The GCD is a larger value when `n` is a multiple of `m`. For example, 8 is a multiple of 4 and the GCD is 4. But 6 is not a multiple of 4, so the GCD is only 2. 
 
 How do we programmatically get this number? 
 
@@ -149,37 +145,27 @@ And the remainder is... 2!
 
 How do we calculate remainders? 
 
-With the modulo operator. 
+With the modulo operator! 
 
-Let's try it! We can calculate the GCD of 6 & 4 like so: 
+We can calculate the GCD of 6 and 4 with the modulo operator: 
 ```
 6 % 4 = 2
 ```
-
-
-TODO 
-
-
-```
-INPUT n
-INPUT m
-
-SET r
-
-IF THE REMAINDER of n DIVIDED BY m IS GREATER THAN 0
-    SET r EQUAL TO THE REMAINDER OF n DIVIDED BY m
-    
-    ...
-
-RETURN r
-```
-
 
 But if we try the same calculation with 8 and 4, the remainder is 0. 
 ```
 8 % 4 = 0
 ```
 
+TODO How do we return 4 _before_ calculating the remainder? 
+
+TODO 
+
+Where have we seen this or something like it before? 
+
+Swap! 
+
+We simply need to declare a variable to temporarily store the current value of `m` while we calculate the remainder of `n` and `m`. 
 
 
 
@@ -202,6 +188,7 @@ WHILE m IS GREATER THAN 0
 RETURN n
 ```
 
+We input two positive integers, `n` and `m`. We choose one of the values for our condition. It doesn't matter which one, but it can't be the same value we are returning. We'll choose `m`. While `m` evaluates to `true`, meaning it is not 0, we declare a new variable, `r`, and assign `r` the value of `m`. We then reassign `m` the value of `m % n` and reassign `n` the value of `n = r`. When `m` is no longer greater than 0, we exit the `while` loop and return `n`. 
 
 
 ### Execute the Plan
