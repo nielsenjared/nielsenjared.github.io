@@ -1,8 +1,8 @@
 ---
-title: "Learn How to Code the Sum of Fibonacci Sequence Algorithm"
+title: "Learn How to Code the Fibonacci Sequence Algorithm"
 date: "2022-TODO-TODO"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO"
-keywords: ['algorithm', 'Fibonacci', 'javascript', 'python']
+keywords: ['algorithm', 'Fibonacci', 'Fibonacci sequence', javascript', 'python']
 ---
 
 
@@ -32,6 +32,8 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 
 ### What is a Fibonacci Sequence?
+
+You're not expected to know this, so if Fibonacci is new to you, here's a quick introduction, and if it's old hat, a quick refresher. 
 
 Fibonacci is a sequence of numbers where each number is the sum of the preceding two.
 
@@ -139,28 +141,48 @@ What's the next smallest problem?
 
 3
 
+Right about now we would want to start looking for a pattern, but we're in luck! We don't need to look for a pattern because we already know it! 
+
+To calculate the next value in the Fibonacci sequence, we take the first value, 0, and add the second value, 1, to return the third value, which, in this case, is also 1. 
+
 If we look at our Fibonacci sequence again, we can see that the third value is also 1. 
 ```
 0 1 1 2 3 5 8 13 21 34 55 89 144…
 ```
 
-TODO 
+It's time to get abstract. If calculating the next number in the Fibonacci sequence requires us to add the two preceding numbers, then we need a way to reference those numbers. Let's call them `x` and `y`. 
 
-We're in luck! We don't need to look for a pattern because we already know it! 
+Where does our loop start? 
 
-To calculate the third value in the Fibonacci sequence, we take the first value, 0, and add the second value, 1, to return the third value, which, in this case, is also 1. 
+We can't iteratively calculate the first two values because there aren't two values preceding them. 
 
-Cool beans.
+Let's iterate on this. On our first iteration, `x` is 0 and `y` is 1. 
+```
+x y 
+0 1 1 2 3 5 8 13 21 34 55 89 144…
+```
 
-Now what? 
+The sum of `x` and `y` is 1. 
 
-It's time to get abstract! 
+On our next iteration, we want the sum of `x` and `y` to equal 2. To return that value, we need `x` to equal 1 and `y` to equal 1. If we visualize that...
+```
+  x y 
+0 1 1 2 3 5 8 13 21 34 55 89 144…
+```
 
-TODO 
+And on the next iteration, we want the sum of `x` and `y` to equal 3. To retun that value, we need `x` to equal 1 and `y` to equal 2. If we visualize that...
+```
+    x y
+0 1 1 2 3 5 8 13 21 34 55 89 144…
+```
 
+I sense a pattern emerging. With each iteration, we need to assign `x` the next value in the sequence, which is _also_ the value stored in `y`. And we need to assign `y` the next value in the sequence, which is _also_ the value of the previous iteration. 
 
+Where have we see this or something like it before? 
 
-Let's pseudocode this:
+Swap! 
+
+Let's pseudocode this...
 ```
 INPUT n
 
@@ -168,17 +190,26 @@ IF n IS EQUAL TO 1
     RETURN 0
 
 IF n IS EQUAL TO 2
-    RETURN 1
 
 SET x TO 0
 SET y TO 1
+SET sum TO 0
 
-RETURN x + y
+FOR EACH VALUE, i, BETWEEN 0 AND n
+    SET sum TO x + y
+    SET x TO y
+    SET y TO sum
+
+RETURN sum
 ```
 
-TODO 
+There's one last problem we need to solve. If we initialize our `for` loop with 0, it won't return the value we expect. 
 
+How do we solve this problem? 
 
+We start counting at 2. 
+
+Here's our final pseudocode: 
 ```
 INPUT n
 
@@ -199,17 +230,17 @@ FOR EACH VALUE, i, BETWEEN 2 AND n
 RETURN sum
 ```
 
-We pass our function a postiive integer, `n`. We initialize our variables. assigning `x` a value of 0, `y` a value of 1, and `temp` a value of 0. We then enter our `while` loop. While `n` is greater than or equal to 0, we assign the value of `x` to `temp` and reassign `x` the value of `x + y`. This generates the next number in our Fibonacci squence. We then reassign `y` the value stored in `temp` and subtract 1 from `n`. When the condition of our `while` loop is no longer met, we return `y`. 
+Let's review. We pass our function a postiive integer, `n`. We initialize our variables, assigning `x` a value of 0, `y` a value of 1, and `temp` a value of 0. We then enter our `while` loop. While `n` is greater than or equal to 0, we assign the value of `x` to `temp` and reassign `x` the value of `x + y`. This generates the next number in our Fibonacci squence. We then reassign `y` the value stored in `temp` and subtract 1 from `n`. When the condition of our `while` loop is no longer met, we return `y`. 
 
 
 ### Execute the Plan
 
-Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
+Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
 #### How to Code the TODO Algorithm in JavaScript
 
-TODO
+Let's start with JavaScript...
 ```js
 const fibonacci = (n) => {
   
@@ -235,21 +266,34 @@ const fibonacci = (n) => {
 }
 ```
 
-Now let's see it in Python...
-
 
 #### How to Code the TODO Algorithm in Python
 
-TODO
+Now let's see it in Python...
 ```py
-TODO
+def fibonacci(n): 
+    if (n == 1):
+        return 0
+    if (n == 2):
+        return 1
+    
+    x = 0
+    y = 1
+    sum = 0
+
+    for i in range(2, n, 1):
+        sum = x + y
+        x = y
+        y = sum
+    
+    return sum
 ```
 
 ### Evaluate the Plan
 
 Can we do better? 
 
-TODO
+Maybe. We'll look at a recursive implementation of Fibonacci later in this series.
 
 
 #### What is the Big O Of TODO?
