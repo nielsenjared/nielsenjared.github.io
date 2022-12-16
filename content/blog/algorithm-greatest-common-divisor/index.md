@@ -43,7 +43,7 @@ TODO
 
 ### What Is A Greatest Common Divisor? 
 
-TODO
+The greatest common divisor (gcd) of two integers is the largest integer that can be used to divide the two integers without a remainder. 
 
 
 ## Let's Get Meta
@@ -157,25 +157,95 @@ But if we try the same calculation with 8 and 4, the remainder is 0.
 8 % 4 = 0
 ```
 
-TODO How do we return 4 _before_ calculating the remainder? 
+What if the values were reversed? 
+```
+4 % 8 = 4
+```
 
-TODO 
+That works! 
+
+But this doesn't! 
+```
+4 % 6 = 4
+```
+
+What do we know about our two integers? 
+
+The _gcd_ of the two integers is less than or equal to the smaller value. In other words, the _gcd_ of two integers is not greater than the smaller of the two values. 
+
+Let's try pseudocoding a brute force approach: 
+```
+INPUT n
+INPUT m
+
+IF THE REMAINDER OF n DIVIDED by m IS 0
+  RETURN m
+ELSE IF THE REMAINDEER OF m DIVIDED BY n IS 0
+  RETURN n
+ELSE IF n > m
+  RETURN THE REMAINDER OF n DIVIDED BY m
+ELSE
+  RETURN THE REMAINDER OF m DIVIDED BY n
+```
+
+This will work with smaller values, such as 4, 6, and 8. But will it work with larger values? Let's try 12 and 8.
+```
+12 % 8 = 4
+```
+
+So far so good. But...
+```
+8 % 12 = 8
+```
 
 Where have we seen this or something like it before? 
 
-Swap! 
+If only there was some way we could swap the values...
 
-We simply need to declare a variable to temporarily store the current value of `m` while we calculate the remainder of `n` and `m`. 
+We simply need to declare a variable to temporarily store the current value of one of our variables while we calculate the remainder of both of them. Then, if we don't get the results we want, we need to perform the modulo operation again. In other words, we need to iterate. 
 
+It's time to get abstract! 
 
+Which approach to iteration do we want to use? 
 
+Because we are working towards a smaller number, lets use a `while` loop. 
 
-We need to repeatedly calculate the modulo of the two integers 
+What's the condition for our `while` loop? 
 
+We need to continue to calculate the remainder of `n` divided by `m` until the modulo operation returns 0. We don't know which value will be greater, so we can just choose one. Let's use `m`. 
 
+```
+INPUT n
+INPUT m
 
+WHILE m IS GREATER THAN 0
+  ...
+```
 
-TODO 
+Now we just need to do the old switcheroo. To do that, we need to declare a temporary variable. Let's call it `r`. 
+```
+INPUT n
+INPUT m
+
+WHILE m IS GREATER THAN 0
+    SET r TO m
+    ...
+```
+
+Because `m` is the condition of our `while` loop, we want reassign it the value of our modulo operation. 
+
+```
+INPUT n
+INPUT m
+
+WHILE m IS GREATER THAN 0
+    SET r TO m
+    SET m TO THE REMAINDER of n DIVIDED BY m
+    ...
+```
+
+The last thing we need to do is perform the swap. We need to reassign `n` the previous value of `m`, which is not stored in `r`. When `m` is no longer greater than 0, we return `n`. 
+
 ```
 INPUT n
 INPUT m
@@ -188,7 +258,7 @@ WHILE m IS GREATER THAN 0
 RETURN n
 ```
 
-We input two positive integers, `n` and `m`. We choose one of the values for our condition. It doesn't matter which one, but it can't be the same value we are returning. We'll choose `m`. While `m` evaluates to `true`, meaning it is not 0, we declare a new variable, `r`, and assign `r` the value of `m`. We then reassign `m` the value of `m % n` and reassign `n` the value of `n = r`. When `m` is no longer greater than 0, we exit the `while` loop and return `n`. 
+Let's review this. We input two positive integers, `n` and `m`. We choose one of the values for our condition. It doesn't matter which one, but it can't be the same value we are returning. We'll choose `m`. While `m` evaluates to `true`, meaning it is not 0, we declare a new variable, `r`, and assign `r` the value of `m`. We then reassign `m` the value of `m % n` and reassign `n` the value of `n = r`. When `m` is no longer greater than 0, we exit the `while` loop and return `n`. 
 
 
 ### Execute the Plan
@@ -217,8 +287,15 @@ const gcd = (n, m) => {
 Now let's see it in Python...
 
 ```py
-TODO
+def gcd(n, m):
+    while (m > 0):
+        r = m
+        m = n % m
+        n = r
+    
+    return n
 ```
+
 
 ### Evaluate the Plan
 
@@ -245,7 +322,6 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 ### Why Do I Need to Know This? 
 
-TODO
 This is the [Euclidean algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm), which, according to Donald Knuth, is the grandaddy of the algorithms because: 
 
 > it is the oldest nontrivial algorithm that has survived to the present day.
