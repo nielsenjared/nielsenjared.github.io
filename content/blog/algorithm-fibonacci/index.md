@@ -9,7 +9,7 @@ keywords: ['algorithm', 'Fibonacci', 'Fibonacci sequence', javascript', 'python'
 ![ Illustration of Fibonacci ](./jarednielsen-algorithm-fibonacci.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the _nth_ value in the Fibonnacci in JavaScript _and_ Python.
 
 
 ---
@@ -26,9 +26,9 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * What is a Fibonacci sequence? 
 
-* TODO
+* How does the swap algorith work? 
 
-* TODO 
+* How does iteration work? 
 
 
 ### What is a Fibonacci Sequence?
@@ -45,12 +45,11 @@ It starts like this…
 TODO ADD THE TABLE
 
 
-### TODO #2
-
+### How Does The Swap Algorithm Work? 
 TODO
 
 
-### TODO #3
+### How Does Iteration Work? 
 
 TODO
 
@@ -84,12 +83,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN TODO
-WHEN TODO
-THEN TODO
+GIVEN a postiive integer, n
+WHEN I pass it to the the Fibonacci function
+THEN I am returned the nth number in the Fibonacci sequence
 ```
 
-That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
+That’s our general outline. We know our input conditions, a postive integer, _n_, and our output requirements, the _nth_ number in the Fibonacci sequence.
 
 Let’s make a plan!
 
