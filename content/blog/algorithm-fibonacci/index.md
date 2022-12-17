@@ -1,7 +1,7 @@
 ---
 title: "Learn How to Code the Fibonacci Sequence Algorithm"
-date: "2022-TODO-TODO"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO"
+date: "2022-02-25"
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the nth number in the Fibonacci sequence"
 keywords: ['algorithm', 'Fibonacci', 'Fibonacci sequence', javascript', 'python']
 ---
 
@@ -237,7 +237,7 @@ Let's review. We pass our function a postiive integer, `n`. We initialize our va
 Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
-#### How to Code the TODO Algorithm in JavaScript
+#### How to Code the Fibonacci Algorithm in JavaScript
 
 Let's start with JavaScript...
 ```js
@@ -266,7 +266,7 @@ const fibonacci = (n) => {
 ```
 
 
-#### How to Code the TODO Algorithm in Python
+#### How to Code the Fibonacci Algorithm in Python
 
 Now let's see it in Python...
 ```py
@@ -295,7 +295,7 @@ Can we do better?
 Maybe. We'll look at a recursive implementation of Fibonacci later in this series.
 
 
-#### What is the Big O Of TODO?
+#### What is the Big O Of Fibonacci?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -306,7 +306,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does  solve? 
 
 * TODO
 
@@ -316,7 +316,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 TODO
 
 
-### What Problem(s) Does TODO Solve? 
+### What Problem(s) Does Fibonacci Solve? 
 
 TODO
 
