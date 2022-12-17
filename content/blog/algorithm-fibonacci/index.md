@@ -42,8 +42,24 @@ It starts like this…
 0 1 1 2 3 5 8 13 21 34 55 89 144…
 ```
 
-TODO ADD THE TABLE
+We can map it out in a table, like so: 
 
+| Preceding numbers | Sum   |
+| ---               | ---   |
+| 0 + 1             | 1     |
+| 1 + 1             | 2     |
+| 1 + 2             | 3     |
+| 2 + 3             | 5     |
+| 3 + 5             | 8     |
+| 5 + 8             | 13     |
+| 8 + 13             | 21    |
+| 13 + 21             | 34    |
+| 21 + 34             | 55    |
+| 34 + 55             | 89    |
+| 55 + 89             | 144    |
+
+
+And so on...
 
 ### How Does The Swap Algorithm Work? 
 TODO
