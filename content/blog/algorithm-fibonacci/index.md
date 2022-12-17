@@ -62,7 +62,8 @@ We can map it out in a table, like so:
 And so on...
 
 ### How Does The Swap Algorithm Work? 
-TODO
+
+The swap algorithm uses a temporary variable to store the value of one of the variables to swapped and the reassigns the values accordingly. 
 
 
 ### How Does Iteration Work? 
@@ -80,9 +81,9 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does the Fibonacci sequence solve? 
 
-* TODO
+* How would I genenrate an array of Fibonacci numbers? 
 
 
 ## How to Code the Fibonacci Algorithm 
@@ -326,25 +327,33 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does  solve? 
+* What problem(s) does the Fibonacci sequence solve? 
 
-* TODO
+* What is the Golden Ratio? 
 
 
 ### Why Do I Need to Know This? 
 
-TODO
+The Fibonacci sequence is a classic technical interview question. We covered one variant in this tutorial, but there are others you may want to familiarize yourself with, such as calculating the sum of the sequence of `n` Fibonacci numbers and generating an array of Fibonacci numbers. 
 
 
-### What Problem(s) Does Fibonacci Solve? 
+### What Problem(s) Does The Fibonacci Sequence Solve? 
 
-TODO
+The Fibonacci sequence doesn't necessarily solve any problems, but it reveals, or reflects, patterns in nature and is used by mathematicians studying chaos and fractals. You can also use the sequence to calculate the conversion between miles and kilometers. For example, 2 miles is roughly equivalent (but not exactly) 3 kilometers. And 3 miles is roughly 5 kilometers. 
 
 
-### TODO
+### How Do I Genenrate An Array of Fibonacci Numbers? 
 
-TODO
-
+Here's a JavaScript implementation of generation of the Fibonacci sequence: 
+```js
+const fiberative = n => {
+    let arr = [0, 1];
+    for (let i = 2; i < n + 1; i++){
+      arr.push(arr[i - 2] + arr[i -1])
+    }
+   return arr[n];
+};
+```
 
 ## A is for Algorithms
 
