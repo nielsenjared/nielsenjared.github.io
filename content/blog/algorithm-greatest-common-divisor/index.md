@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Greatest Common Divisor Algorithm"
-date: "2022-TODO-TODO"
+date: "2022-04-08"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Greatest Common Divisor algorithm."
 keywords: ['algorithm', 'Greatest Common Divisor', 'gcd' 'javascript', 'python']
 ---
@@ -33,12 +33,12 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 ### What Is The Modulo Operator?
 
-TODO
+In programming, the modulo operation returns the remainder of a division operation.
 
 
 ### How Does The Swap Algorithm Work? 
 
-TODO
+The swap 
 
 
 ### What Is A Greatest Common Divisor? 
