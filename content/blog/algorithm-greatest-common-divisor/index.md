@@ -38,7 +38,7 @@ In programming, the modulo operation returns the remainder of a division operati
 
 ### How Does The Swap Algorithm Work? 
 
-The swap 
+The swap algorithm uses a temporary variable to store the value of one of the variables to swapped and the reassigns the values accordingly. 
 
 
 ### What Is A Greatest Common Divisor? 
@@ -54,7 +54,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * What problem(s) does the Greatest Common Divisor algorithm solve? 
 
-* TODO
+* Do I need to know mathematics?
 
 
 ## How to Code the Greatest Common Divisor Algorithm 
@@ -75,12 +75,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN TODO
-WHEN TODO
-THEN TODO
+GIVEN two positive integers, n and m
+WHEN I pass them to the GCD function
+THEN I am returned the greatest common divisor of n and m
 ```
 
-That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
+That’s our general outline. We know our input conditions, two positive integers, `n` and `m`, and our output requirements, the greatest common divisor of `n` and `m`. 
 
 Let’s make a plan!
 
@@ -301,7 +301,7 @@ def gcd(n, m):
 
 Can we do better? 
 
-TODO
+Maybe. We'll look at a recursive implementation of the greatest common denominator algorithm later in this series. 
 
 
 #### What is the Big O Of Greatest Common Divisor?
@@ -317,7 +317,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * What problem(s) does Greatest Common Divisor solve? 
 
-* TODO
+* Do I need to know mathematics? 
 
 
 ### Why Do I Need to Know This? 
@@ -331,12 +331,16 @@ This is the [Euclidean algorithm](https://en.wikipedia.org/wiki/Euclidean_algori
 
 ### What Problem(s) Does the Greatest Common Divisor Algorithm Solve? 
 
-TODO
+Calculating the greatest common denominator, obviously! 
+
+But why would we do that? Resource distribution, meaning, how can we most effectively divide something up to minimize waste or redundancy. 
+
+The GCD is also used in the [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) public-key cryptosystem. 
 
 
-### TODO
+### Do I Need To Know Mathematics To Be A Programmer? 
 
-TODO
+No! You obviously need to know the basic operations, but you don't need to be a maths whiz to be a good programmer. It's more important to be able to think through a problem by breaking it down, recognizing patterns, forming abstractions, and designing a solution. 
 
 
 ## A is for Algorithms
