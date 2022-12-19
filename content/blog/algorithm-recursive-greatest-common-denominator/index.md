@@ -1,15 +1,15 @@
 ---
-title: "Learn How to Code the TODO Algorithm"
+title: "Learn How to Code the Recursive Greatest Common Denominator Algorithm"
 date: "2022-TODO-TODO"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO"
-keywords: ['algorithm', 'TODO', 'javascript', 'python']
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive greatest common denominator."
+keywords: ['algorithm', 'greatest common denominator', 'gcd', recursive, 'javascript', 'python']
 ---
 
 
-![ TODO ](./jarednielsen-algorithm-TODO.png)
+![ Illustration of the recursive Greatest Common Denominator ](./jarednielsen-algorithm-recursive-greatest-common-denominator.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive Greatest Common Denominator in JavaScript _and_ Python.
 
 
 ---
@@ -24,24 +24,24 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-* TODO 
+* What is a Greatest Common Denominator?
 
-* TODO
+* What is the iterative Greatest Common Denominator?
 
-* TODO 
-
-
-### TODO #1
-
-TODO
+* What is recursion? 
 
 
-### TODO #2
+### What is a Greatest Common Denominator?
 
 TODO
 
 
-### TODO #3
+### What is the Iterative Greatest Common Denominator?
+
+TODO
+
+
+### What is Recursion? 
 
 TODO
 
@@ -57,7 +57,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 * TODO
 
 
-## How to Code the TODO Algorithm 
+## How to Code the Recursive Greatest Common Denominator Algorithm 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -110,24 +110,34 @@ DON'T USE ```md FOR PSUEDOCODE SNIPPETS
 
 ### Execute the Plan
 
-Now it's simply a matter of translating our pseudocode into the syntax of our programming language. Let's start with JavaScript...
+Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
-#### How to Code the TODO Algorithm in JavaScript
+#### How to Code the Recursive Greatest Common Denominator Algorithm in JavaScript
 
-TODO
+Let's start with JavaScript...
 ```js
-TODO
+const gcd = (n, m) => {
+    if (m === 0) {
+        return n;
+    }
+
+    return gcd(m, n % m);
+};
 ```
 
+
+
+
+#### How to Code the Recursive Greatest Common Denominator Algorithm in Python
+
 Now let's see it in Python...
-
-
-#### How to Code the TODO Algorithm in Python
-
-TODO
 ```py
-TODO
+def gcd(n, m):
+    if (m == 0):
+        return n
+    
+    return gcd(m, n % m)
 ```
 
 ### Evaluate the Plan
@@ -137,7 +147,7 @@ Can we do better?
 TODO
 
 
-#### What is the Big O Of TODO?
+#### What is the Big O Of Recursive Greatest Common Denominator?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -155,7 +165,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 ### Why Do I Need to Know This? 
 
-TODO
+For the same reaons we discussed in the iterative solution, with the addition that you will _also_ want to know how to execute this with recursion. 
 
 
 ### What Problem(s) Does TODO Solve? 
