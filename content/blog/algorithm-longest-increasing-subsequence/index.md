@@ -2,7 +2,7 @@
 title: "Learn How to Code the Longest Increasing Subsequence Algorithm"
 date: "2022-TODO-TODO"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the longest increasing subsequence algorithm."
-keywords: ['algorithm', 'TODO', 'javascript', 'python']
+keywords: ['algorithm', 'longest increasing subsequence', 'javascript', 'python']
 ---
 
 
@@ -183,7 +183,7 @@ RETURN result
 
 Let's walk through this. We pass our LIS function an unsorted array, `n`. We first initialize an array of equal length to `n` with the value of 1 in every element. We do this for two reasons: 
 
-1. We know that the longest increasing subsequence is _at least_ 1. It can't be 0. We
+1. We know that the longest increasing subsequence is _at least_ 1. It can't be 0.
 
 2. We need to keep a record of which iteration contained the longest increasing subsquence. 
 
@@ -205,13 +205,20 @@ Before we exit this condition our loops, we check if `current` is greater than `
 Let's just use the first 8 values. The length of the longest increasing subsequence is 4. 
 
 Table time! 
-| i     | j     | lengths                       | current   | result    | 
-| ---   | ---   | ---                           | ---       | ---       |
-| 1     | 0     | [ 1, 2, 1, 1, 1, 1, 1, 1 ]    | 2         | 2         |
-| 3 0 [ 1, 2, 1, 2, 1, 1, 1, 1 ] 2 2
+| i     | j     | current   | lengths                       | result    | 
+| ---   | ---   | ---       | ---                           | ---       |
+| 1     | 0     | 2         | [ 1, 2, 1, 1, 1, 1, 1, 1 ]    | 2         |
+| 2     | 0     | 2         | [ 1, 2, 1, 1, 1, 1, 1, 1 ]    | 2         |
+| 2     | 1     | 3         | [ 1, 2, 1, 1, 1, 1, 1, 1 ]    | 2         |
+| 3     | 0     | 2         | [1, 2, 1, 2, 1, 1, 1, 1]      | 2         |
+| 3     | 1     | 3         | [1, 2, 1, 3, 1, 1, 1, 1]      | 3         |
+| 3     | 2     | 2         | [1, 2, 1, 3, 1, 1, 1, 1]      | 3         |
+| 4     | 0     | 2         | [1, 2, 1, 3, 2, 1, 1, 1]      | 3         |
+| 4     | 1     | 3         | [1, 2, 1, 3, 3, 1, 1, 1]      | 3         |
+| 4     | 2     | 2         | [1, 2, 1, 3, 3, 1, 1, 1]      | 3         |
+| 4     | 3     | 4         | [1, 2, 1, 3, 4, 1, 1, 1]      | 4         |
 
-
-
+And so on... 
 
 
 ### Execute the Plan
@@ -244,14 +251,23 @@ const lis = (n) => {
 }
 ```
 
-
-
-
 #### How to Code the TODO Algorithm in Python
 
 Now let's see it in Python...
 ```py
-TODO
+def longest_increasing_subsequence(n):
+    lengths = [1 for i in range(len(n))]
+    result = 0
+    
+    for i in range(1, len(n)):
+        for j in range(i):
+            current = lengths[j] + 1
+
+            if (n[j] < n[i] and current > lengths[i]):
+                lengths[i] = current
+                if current > result:
+                    result = current
+    return result
 ```
 
 ### Evaluate the Plan
