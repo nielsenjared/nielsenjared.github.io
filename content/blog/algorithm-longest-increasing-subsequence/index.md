@@ -26,7 +26,7 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * What is a longest increasing subsequence?
 
-* TODO
+* How does the select algorithm work? 
 
 * TODO 
 
@@ -45,7 +45,7 @@ This might not be so much retrieval as it is new information, but we need a comm
 
 
 
-### TODO #2
+### How Does The Select Algorithm Work? 
 
 TODO
 
@@ -155,14 +155,55 @@ Let’s revisit our computational thinking heuristics as they will aid and guide
 
 * Algorithm design
 
-The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
-
-TODO
-
-
+The first step is decomposition, or breaking our problem down into smaller problems. Continuing with the first 16 Pi decimals, what's the smallest problem we can solve? 
 ```
-1 4 1 5 9 2 6 5 3 5 8 9 7 9 3 2 
+1
 ```
+
+What's the longest subsequence? 
+
+Also 1. 
+
+What's the next smallest? 
+```
+1 4
+```
+
+And what's the longest subsequence? 
+
+2
+
+And the next smallest? 
+```
+1 4 1
+```
+
+Ah! Now it gets interesting. 
+
+But the longest subsequence is still 2. 
+
+How would we solve this problem? 
+
+Where have we seen this or something like it before? 
+
+The selection algorithm! 
+
+
+
+We need to do two things: 
+
+1. We need to count what we think is the longest increasing subsequence.
+
+2. We need to compare that value against subsequent iterations. 
+
+
+
+
+
+
+
+
+
 TODO 
 ```
 INPUT n
