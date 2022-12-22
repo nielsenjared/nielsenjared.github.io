@@ -173,7 +173,11 @@ And what's the longest subsequence?
 
 2
 
-And the next smallest? 
+How did we calculate that?
+
+We can see that there are two values and the last value is greater than the first, so the LIS is equal to 2. In other words, we made a comparison and tallied up the increasing values. 
+
+So what's the next smallest problem? 
 ```
 1 4 1
 ```
@@ -182,24 +186,136 @@ Ah! Now it gets interesting.
 
 But the longest subsequence is still 2. 
 
-How would we solve this problem? 
+How do we solve this problem? 
+
+Again, we start a tally of increasing values. We know that the LIS is at least 1. We then compare 4 to 1, and, because 4 is greater than 1, we add 1 to our LIS tally. We compare the next value 1 to 4, and, because 1 is less than 4, we do not add 1 to our LIS tally. 
 
 Where have we seen this or something like it before? 
 
 The selection algorithm! 
 
-
-
-We need to do two things: 
-
-1. We need to count what we think is the longest increasing subsequence.
-
-2. We need to compare that value against subsequent iterations. 
+TODO 
 
 
 
+What's the next smallest problem? 
+```
+1 4 1 5
+```
+
+Just when we thought we found the LIS we add a larger value! 
+
+How do we solve this problem? 
+
+We need to compare the current LIS, which is 3, with the previous LIS, which is 2. 
+
+This is starting to get complicated. We need a way to keep track of these values. What if we keep a tally? 
+
+TODO 
+
+```
+            i
+array = [1, 4, 1, 5]
+         j
+
+tally = [1, 2]
+```
+
+Our tally is `[1]`.
+
+On the next iteration, we increment `j`
+```
+            i
+array = [1, 4, 1, 5]
+            j
+
+tally = [1, 2]
+```
+
+TODO 
+```
+               i
+array = [1, 4, 1, 5]
+         j
+
+tally = [1, 2]
+```
+
+TODO 
+```
+               i
+array = [1, 4, 1, 5]
+            j
+
+tally = [1, 2]
+```
+
+TODO 
+```
+               i
+array = [1, 4, 1, 5]
+               j
+
+tally = [1, 2m 2]
+```
+
+1 is less than 4, so we don't increase the number we add to `tally`. 
+
+TODO 
+```
+                  i
+array = [1, 4, 1, 5]
+         j
+
+tally = [1, 2, 2]
+```
+
+TODO 
+```
+                  i
+array = [1, 4, 1, 5]
+            j
+
+tally = [1, 2, 2]
+```
+
+TODO 
+```
+                  i
+array = [1, 4, 1, 5]
+               j
+
+tally = [1, 2, 2]
+```
+
+TODO 
+```
+                  i
+array = [1, 4, 1, 5]
+                  j
+
+tally = [1, 2, 2, 3]
+```
+
+5 is greater than 1, so we increase the number of the previous LIS and add 3 to our `tally`. 
+
+TODO
+
+Let's set up our pseudocode:
+```
+INPUT n
+
+SET tally = [1]
+SET result = 1
 
 
+    WORK SOME MAGIC... 
+
+
+RETURN result
+```
+
+We know we're going to need to iterate, so let's add a `for` loop. But where do we start counting? Do we need to start at 0? 
 
 
 
@@ -208,14 +324,16 @@ TODO
 ```
 INPUT n
 
-SET lengths TO AN ARRAY OF 1s
-SET result TO 0
+SET tally TO AN ARRAY WITH ONE ELEMENT ASSIGNED THE VALUE OF 1
+SET result TO 1
 
 FOR EACH VALUE, i, BETWEEN 1 AND THE LENGTH OF n
+    SET tally[i] TO 1
     FOR EACH VALUE, j, BETWEEN 0 AND i
-        SET current TO THE VALUE STORED IN lengths[j] PLUS 1
+        SET current TO THE VALUE STORED IN tally[j] PLUS 1
 
-        IF THE VALUE STORED IN n[j] IS LESS THAN THE VALUE STORED IN n[i] AND current IS GREATER THAN THE VALUE STORED IN lengths[i]
+        IF THE VALUE STORED IN n[j] IS LESS THAN THE VALUE STORED IN n[i] AND current IS GREATER THAN THE VALUE STORED IN tally[i]
+            SET tally[i] TO THE VALUE STORED IN current
             IF current IS GREATER THAN result
                 SET result TO THE VALUE STORED IN current
 
@@ -228,7 +346,7 @@ Let's walk through this. We pass our LIS function an unsorted array, `n`. We fir
 
 2. We need to keep a record of which iteration contained the longest increasing subsquence. 
 
-We next initialzie a `result` variable and give it a value of 0. We could give it a value of 1 if we wanted, but setting it to 0 makes it clear there is work to do.
+We next initialzie a `result` variable and give it a value of 1 because we know that the result of our LIS calculation will be _at least_ one. 
 
 We initialize our outer `for` loop, beginning the iteration at 1 and iterating up to the length of `n`. We start iterating at 1 because we use `i` as the condition in the nested `for` loop. If we started at 0, the nested loop would not execute its first iteration. 
 
@@ -243,7 +361,7 @@ If the value of `n[j]`is less than `n[i]` _and_ the value of `current` is greate
 Before we exit this condition our loops, we check if `current` is greater than `result`. If so, we need to update `result` with the value stored in `current`. Finally, when our iterations are complete, we return `result`. 
 
 
-Let's just use the first 8 values. The length of the longest increasing subsequence is 4. 
+Let's just use the first 8 values, `[1 4 1 5 9 2 6 5]`. The length of the longest increasing subsequence is 4. 
 
 Table time! 
 | i     | j     | current   | lengths                       | result    | 
