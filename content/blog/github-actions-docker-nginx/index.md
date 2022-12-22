@@ -16,10 +16,18 @@ In this tutorial, you will learn how to do the following:
 
 * ...
 
-The focus of this tutorial is on Actions and Docker, so we will be 
+## Prerequisites
 
-In order to demonstrate Actions, we will need to build a custom Docker image. To keep things simple, we're simply going to extend [the official build of nginx](https://hub.docker.com/_/nginx).   
+TODO 
 
+* Git installed
+
+* A GitHub account
+
+* Docker installed
+
+* A DockerHub account 
+ 
 
 ## Create a Repository on GitHub 
 
@@ -80,7 +88,7 @@ Let's personalize it a bit and change the title and add and `<h1>` to the body.
 
 ### TODO Dockerfile
 
-Now let's edit our Docker file. Because we're keeping this simple so we can get to the Actions, we're simply going to build on the official nginx image. We do so by adding the following to our `Dockerfile`:
+In order to demonstrate Actions, we will need to build a custom Docker image. To keep things simple, we're simply going to extend [the official build of nginx](https://hub.docker.com/_/nginx). We do so by adding the following to our `Dockerfile`:
 ```Dockerfile
 FROM nginx:latest 
 ```
@@ -92,5 +100,13 @@ COPY ./index.html /usr/share/nginx/html/index.html
 ```
 
 
-##
+## Docker Hub
+
+If you're not signed up yet, you'll need an account on [Docker Hub](https://hub.docker.com/).
+
+
+Navigate to DockerHub and click "Create a Repository" on the  welcome page.
+
+
+
 
