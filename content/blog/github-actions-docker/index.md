@@ -22,18 +22,18 @@ In this tutorial, you will learn how to do the following:
 
 To follow along, you will need the following: 
 
-* Git is installed on your machine and you know the basics
+* Git installed on your machine and you know the basics
 
 * If you're not signed up yet, you'll need a GitHub account
 
-* Docker is installed on your machine and you know the basics
+* Docker installed on your machine and you know the basics
 
 * If you're not signed up yet, you'll need an account on [Docker Hub](https://hub.docker.com/).
 
  
 ## Create a Repository on GitHub 
 
-Create a new repository and initialize it with a README. You can name it whatever you want, but I'll be using the name `nginxer` throughout this tutorial. 
+Create a new repository and initialize it with a README. You can name your repository whatever you want, but I'll be using the name `nginxer` throughout this tutorial. 
 
 Then clone the repository and `cd` into it. 
 
@@ -92,16 +92,16 @@ Before we do _that_, add, commit, and push these changes to your repository.
 
 Navigate to [Docker Hub](https://hub.docker.com/) and click "Create a Repository" on the  welcome page. 
 
-The naming convention is `your-username/image`. I'll be using my username thoroughout this tutorial, so my image will be named `nielsenjared/nginxer`. 
+The naming convention is `your-username/image-name`. I'll be using my username thoroughout this tutorial, so my image will be named `nielsenjared/nginxer`. 
 
 #### Access Tokens
 
-If you haven't yet, you will need to set up access tokens with Docker Hub. Do so under settings in the UI, then run: 
+If you haven't yet, you will need to set up access tokens with Docker Hub. Do so under Account Settings > Security in the UI. Click the 'New Access Token' button and, to keep things organized, give the token the same name as your machine. Copy the token to your clipboard. Then, from the command line run: 
 ```
 docker login -u nielsenjared
 ```
 
-And at the `Password` prompt paste in your access token. 
+Replacing my username with yours, obviously, and at the `Password` prompt paste in your access token. 
 
 Keep this tab open as we're going to need to create an access token for GitHub in a moment. 
 
@@ -117,10 +117,14 @@ Don't forget the `.`!
 
 Then run the container:
 ```sh
+docker run -it --rm -d -p 8080:80 --name app nginxer
 docker run nielsenjared/nginxer
 ```
 
 Open your favorite browser and... voila! 
+
+Let's run through the flags in the command above: 
+TODO 
 
 TODO stop the container
 
