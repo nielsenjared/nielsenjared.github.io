@@ -209,162 +209,146 @@ How do we solve this problem?
 
 We need to compare the current LIS, which is 3, with the previous LIS, which is 2. 
 
-This is starting to get complicated. We need a way to keep track of these values. What if we keep a tally? 
+This is starting to get complicated. We need a way to keep track of all these values. What if we keep a tally? There are a two approaches we can take to creating our tally:
 
-TODO 
+1. Generate a new array of `n` length assigning each element a value of 1. On each iteration, reassign the corresponding value with the _tally_. 
 
-```
-            i
-array = [1, 4, 1, 5]
-         j
+2. Initialize an array with only one element assigned a value of 1. On each iteration, add a new element containing the corresponding value of the _tally_. 
 
-tally = [1, 2]
-```
+Let's take the second approach. We can implement it without needing to use any constructors or an additional loop to generate the array.  
 
-Our tally is `[1]`.
-
-On the next iteration, we increment `j`
-```
-            i
-array = [1, 4, 1, 5]
-            j
-
-tally = [1, 2]
-```
-
-TODO 
-```
-               i
-array = [1, 4, 1, 5]
-         j
-
-tally = [1, 2]
-```
-
-TODO 
-```
-               i
-array = [1, 4, 1, 5]
-            j
-
-tally = [1, 2]
-```
-
-TODO 
-```
-               i
-array = [1, 4, 1, 5]
-               j
-
-tally = [1, 2m 2]
-```
-
-1 is less than 4, so we don't increase the number we add to `tally`. 
-
-TODO 
-```
-                  i
-array = [1, 4, 1, 5]
-         j
-
-tally = [1, 2, 2]
-```
-
-TODO 
-```
-                  i
-array = [1, 4, 1, 5]
-            j
-
-tally = [1, 2, 2]
-```
-
-TODO 
-```
-                  i
-array = [1, 4, 1, 5]
-               j
-
-tally = [1, 2, 2]
-```
-
-TODO 
-```
-                  i
-array = [1, 4, 1, 5]
-                  j
-
-tally = [1, 2, 2, 3]
-```
-
-5 is greater than 1, so we increase the number of the previous LIS and add 3 to our `tally`. 
-
-TODO
-
-Let's set up our pseudocode:
+If we start sketching out our pseudocode: 
 ```
 INPUT n
 
-SET tally = [1]
-SET result = 1
+SET result TO 1
+SET tally TO [1]
 
-
-    WORK SOME MAGIC... 
-
+WORK SOME MAGIC! 
 
 RETURN result
 ```
 
-We know we're going to need to iterate, so let's add a `for` loop. But where do we start counting? Do we need to start at 0? 
+Now we need to work some magic. 
+
+We know we're going to need to iterate, and, if we need to calculate a result for every value in the array, we're going to need nested iteration. 
+
+Let's visualize this. Here's our array of four elements and our `tally`.
+```
+tally = [1]
+
+array = [1, 4, 1, 5]
+```
+
+Following convention, we'll use the variables `i` and `j` for our outer and inner loops, respectively. 
 
 
+Let's initialize `i` with a value of 1 and `j` with a value of 0. 
+```
+tally = [1]
 
+            i
+array = [1, 4, 1, 5]
+         j
+```
+Why? 
+
+If we initialize `i` with 0, there's nowhere for `j` to go. We only need to iterate _up to_ `i`. If we iterate beyond `i` in our nested loop, we won't get an accurate result. 
+
+In each iteration, we compare the value indexed by `i` and the value indexed by `j`. In this iteration, we see that 1 is less than 4. We take the value of our previous LIS, add 1, and update our `tally`. The LIS is now 2.
+
+TODO In the next iteration. 
+```
+tally = [1, 2]
+
+               i
+array = [1, 4, 1, 5]
+         j
+```
 
 TODO 
 ```
+tally = [1, 2]
+
+               i
+array = [1, 4, 1, 5]
+            j
+```
+
+We compare the value indexed by `i` and the value indexed by `j` and see that 4 is not less than 1, meaning our subsequence did not increase, so our LIS is unchanged. We still update our `tally` with this value and start the next iteration of the outer loop. 
+```
+tally = [1, 2, 2]
+
+                  i
+array = [1, 4, 1, 5]
+         j
+```
+
+Our nested loop iterates, making the same comparisons as above...
+```
+tally = [1, 2, 2]
+
+                  i
+array = [1, 4, 1, 5]
+            j
+```
+
+...until we reach the condition where the value indexed by `j` is less than the value indexed by `i`, meaning our subsequence is increasing. We update the value in `tally` and exit our loops.  
+```
+tally = [1, 2, 2, 3]
+
+                  i
+array = [1, 4, 1, 5]
+               j
+```
+
+Let's update our pseudocode:
+```
 INPUT n
 
-SET tally TO AN ARRAY WITH ONE ELEMENT ASSIGNED THE VALUE OF 1
 SET result TO 1
+SET tally TO [1]
 
 FOR EACH VALUE, i, BETWEEN 1 AND THE LENGTH OF n
     SET tally[i] TO 1
     FOR EACH VALUE, j, BETWEEN 0 AND i
-        SET current TO THE VALUE STORED IN tally[j] PLUS 1
+        SET lis TO THE VALUE STORED IN tally[j] PLUS 1
 
-        IF THE VALUE STORED IN n[j] IS LESS THAN THE VALUE STORED IN n[i] AND current IS GREATER THAN THE VALUE STORED IN tally[i]
-            SET tally[i] TO THE VALUE STORED IN current
-            IF current IS GREATER THAN result
-                SET result TO THE VALUE STORED IN current
+        IF THE VALUE STORED IN n[j] IS LESS THAN THE VALUE STORED IN n[i] AND lis IS GREATER THAN THE VALUE STORED IN tally[i]
+            SET tally[i] TO THE VALUE STORED IN lis
+            IF lis IS GREATER THAN result
+                SET result TO THE VALUE STORED IN lis
 
 RETURN result 
 ```
 
-Let's walk through this. We pass our LIS function an unsorted array, `n`. We first initialize an array of equal length to `n` with the value of 1 in every element. We do this for two reasons: 
+Let's walk through this. We pass our LIS function an unsorted array, `n`. 
+
+We first initialzie a `result` variable and give it a value of 1 because we know that the result of our LIS calculation will be _at least_ one. 
+
+We next initialize an array, `tally`, with one element assigned a value of 1. We do this for two reasons: 
 
 1. We know that the longest increasing subsequence is _at least_ 1. It can't be 0.
 
 2. We need to keep a record of which iteration contained the longest increasing subsquence. 
 
-We next initialzie a `result` variable and give it a value of 1 because we know that the result of our LIS calculation will be _at least_ one. 
-
 We initialize our outer `for` loop, beginning the iteration at 1 and iterating up to the length of `n`. We start iterating at 1 because we use `i` as the condition in the nested `for` loop. If we started at 0, the nested loop would not execute its first iteration. 
+
+With each iteration of our outer loop, we add another element to our `tally` array with a value of 1.
 
 We then initialize our nested `for` loop, beginning the iteration at 0. As above, note that we are iterating up to `i`. We are only iterating up to `i` to count the subsequence. 
 
-Within the nested loop, we initialize a `current` variable. TODO why? 
+Within the nested loop, we initialize a `lis` variable.
 
-Remember that `j` is one step behind `i`, but counting up to `i`. 
+If the value of `n[j]`is less than `n[i]` _and_ the value of `lis` is greater than the value stored in `lengths[i]`, we set `lengths[i]` to lis. This is how we store our count and increase it with each iteration. 
 
-If the value of `n[j]`is less than `n[i]` _and_ the value of `current` is greater than the value stored in `lengths[i]`, we set `lengths[i]` to current. This is how we store our count and increase it with each iteration. 
-
-Before we exit this condition our loops, we check if `current` is greater than `result`. If so, we need to update `result` with the value stored in `current`. Finally, when our iterations are complete, we return `result`. 
+Before we exit this condition our loops, we check if `lis` is greater than `result`. If so, we need to update `result` with the value stored in `lis`. Finally, when our iterations are complete, we return `result`. 
 
 
 Let's just use the first 8 values, `[1 4 1 5 9 2 6 5]`. The length of the longest increasing subsequence is 4. 
 
 Table time! 
-| i     | j     | current   | lengths                       | result    | 
+| i     | j     | lis   | lengths                       | result    | 
 | ---   | ---   | ---       | ---                           | ---       |
 | 1     | 0     | 2         | [ 1, 2, 1, 1, 1, 1, 1, 1 ]    | 2         |
 | 2     | 0     | 2         | [ 1, 2, 1, 1, 1, 1, 1, 1 ]    | 2         |
@@ -389,23 +373,23 @@ Now it's simply a matter of translating our pseudocode into the syntax of our pr
 
 Let's start with JavaScript...
 ```js
-const lis = (n) => {
-    const lengths = new Array(n.length).fill(1);
-    let result = 0;
-
+const longestIncreasingSubsequence = (n) => {
+    let result = 1;
+    const tally = [1];
+    
     for (let i = 1; i < n.length; i++) {
+        tally[i] = 1;
         for (let j = 0; j < i; j++) {
-            let current = lengths[j] + 1;
-
-            if (n[j] < n[i] && current > lengths[i]) {
-                lengths[i] = current
-                if (current > result) {
-                    result = current;
+            let lis = tally[j] + 1;
+            
+            if (n[j] < n[i] && lis > tally[i]) {
+                tally[i] = lis
+                if (lis > result) {
+                    result = lis;
                 }
             }
         }
     }
-    // return Math.max(...lengths);
     return result; 
 }
 ```
@@ -415,17 +399,20 @@ const lis = (n) => {
 Now let's see it in Python...
 ```py
 def longest_increasing_subsequence(n):
-    lengths = [1 for i in range(len(n))]
-    result = 0
+    result = 1
+    tally = [1]
     
     for i in range(1, len(n)):
+        tally += [1]
         for j in range(i):
-            current = lengths[j] + 1
+            lis = tally[j] + 1
 
-            if (n[j] < n[i] and current > lengths[i]):
-                lengths[i] = current
-                if current > result:
-                    result = current
+            if (n[j] < n[i] and lis > tally[i]):
+                tally[i] = lis
+
+                if lis > result:
+                    result = lis
+                    
     return result
 ```
 
