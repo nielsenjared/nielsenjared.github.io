@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Longest Increasing Subsequence Algorithm"
-date: "2022-TODO-TODO"
+date: "2022-06-17"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the longest increasing subsequence algorithm."
 keywords: ['algorithm', 'longest increasing subsequence', 'javascript', 'python']
 ---
@@ -9,7 +9,7 @@ keywords: ['algorithm', 'longest increasing subsequence', 'javascript', 'python'
 ![ Illustration of longest increasing subsequence ](./jarednielsen-algorithm-longest-increasing-subsequence.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the TODO in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the longest increasing subsequence algorithm in JavaScript _and_ Python.
 
 
 ---
@@ -26,31 +26,26 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * What is a longest increasing subsequence?
 
-* How does the select algorithm work? 
+* How does the selection algorithm work? 
 
-* TODO 
+* TODO
 
 
 ### What Is A Longest Increasing Subsequence? 
 
-TODO 
 This might not be so much retrieval as it is new information, but we need a common (pun intended) starting point. According to Ye Olde Wikipedia, the goal of the [longest increasing subsequence](https://en.wikipedia.org/wiki/Longest_increasing_subsequence) algorithm is to: 
 
 > find a subsequence of a given sequence in which the subsequence's elements are in sorted order, lowest to highest, and in which the subsequence is as long as possible.
 
+Try saying that 10X fast! 
 
 
+### How Does The Selection Algorithm Work? 
+
+A selection algorithm finds the _kth_ number, often largest or smallest, in an unsorted array. It uses a variable to track the requested value and compare to subsequent values. 
 
 
-
-
-
-### How Does The Select Algorithm Work? 
-
-TODO
-
-
-### TODO #3
+### TODO? 
 
 TODO
 
@@ -61,12 +56,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What is a longest _common_ subsequence? 
 
 * TODO
 
 
-## How to Code the TODO Algorithm 
+## How to Code the Longest Increasing Subsequence Algorithm 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -84,22 +79,17 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN a sequence of numbers 
-WHEN TODO
-THEN I am returned the length of the longest increasing subsequence of numbers 
+GIVEN an unsorted array of numbers 
+WHEN I calculate the longest increasing subsequence
+THEN I am returned the length of that sequence 
 ```
 
 Let's use the first 16 digits following the decimal in Pi for an example. 
 ```
-3.1415926535897932
-```
-
-TODO 
-```
 1 4 1 5 9 2 6 5 3 5 8 9 7 9 3 2 
 ```
 
-Let's manually create the longest increasing subsequence. The first value is obviously 1.
+Let's manually find the longest increasing subsequence. We'll place an `X` under the values in the sequence. The first value is obviously 1.
 ```
 1 4 1 5 9 2 6 5 3 5 8 9 7 9 3 2 
 X
@@ -137,7 +127,7 @@ X         X     X X     X X
 
 The length of the longest increasing subsequence of the first 16 digits of Pi is 6. 
 
-That’s our general outline. We know our input conditions, an unsorted array of postiive integers, and our output requirements, an value greater than or equal to 1, and our goal is to find the longest increasing subsequence of values in the array.
+That’s our general outline. We know our input conditions, an unsorted array of postiive integers, and our output requirements, the length of the sequence which is a value greater than or equal to 1, and our goal is to find the longest increasing subsequence of values in the array.
 
 
 Let’s make a plan!
@@ -188,15 +178,7 @@ But the longest subsequence is still 2.
 
 How do we solve this problem? 
 
-Again, we start a tally of increasing values. We know that the LIS is at least 1. We then compare 4 to 1, and, because 4 is greater than 1, we add 1 to our LIS tally. We compare the next value 1 to 4, and, because 1 is less than 4, we do not add 1 to our LIS tally. 
-
-Where have we seen this or something like it before? 
-
-The selection algorithm! 
-
-TODO 
-
-
+Again, we start a tally of increasing values. We know that the LIS is at least 1. We then compare 4 to 1, and, because 4 is greater than 1, we add 1 to our LIS tally. We compare the next value, 1, to 4, and, because 1 is less than 4, we do not add 1 to our LIS tally. 
 
 What's the next smallest problem? 
 ```
@@ -257,7 +239,7 @@ If we initialize `i` with 0, there's nowhere for `j` to go. We only need to iter
 
 In each iteration, we compare the value indexed by `i` and the value indexed by `j`. In this iteration, we see that 1 is less than 4. We take the value of our previous LIS, add 1, and update our `tally`. The LIS is now 2.
 
-TODO In the next iteration. 
+We start the next iteration, making the same comparisons as above...
 ```
 tally = [1, 2]
 
@@ -266,7 +248,7 @@ array = [1, 4, 1, 5]
          j
 ```
 
-TODO 
+...until we reach the condition where we compare the value indexed by `i` and the value indexed by `j` and see that 4 is not less than 1, meaning our subsequence did not increase, so our LIS is unchanged. 
 ```
 tally = [1, 2]
 
@@ -275,7 +257,7 @@ array = [1, 4, 1, 5]
             j
 ```
 
-We compare the value indexed by `i` and the value indexed by `j` and see that 4 is not less than 1, meaning our subsequence did not increase, so our LIS is unchanged. We still update our `tally` with this value and start the next iteration of the outer loop. 
+We still update our `tally` with this value and start the next iteration of the outer loop. 
 ```
 tally = [1, 2, 2]
 
@@ -369,7 +351,7 @@ And so on...
 Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
-#### How to Code the TODO Algorithm in JavaScript
+#### How to Code the Longest Increasing Subsequence Algorithm in JavaScript
 
 Let's start with JavaScript...
 ```js
@@ -394,7 +376,7 @@ const longestIncreasingSubsequence = (n) => {
 }
 ```
 
-#### How to Code the TODO Algorithm in Python
+#### How to Code the Longest Increasing Subsequence Algorithm in Python
 
 Now let's see it in Python...
 ```py
@@ -420,10 +402,10 @@ def longest_increasing_subsequence(n):
 
 Can we do better? 
 
-TODO
+The nested iteration isn't great for performance, but there's no getting around it. There are some refactors we could make. For example, we could use the `max` methods in our Math modules to find the `lis` in place of the `result` reassignment. I prefer this approach as it's more legible. 
 
 
-#### What is the Big O Of TODO?
+#### What is the Big O Of Longest Increasing Subsequence?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
@@ -434,7 +416,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What is a longest _common_ subsequence
 
 * TODO
 
@@ -444,7 +426,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 This is the kernel of the Longest Common Subsequence algorithm, which is a classic computer science problem. This is also the kernel of diffing utilities and version control, such as Git. 
 
 
-### What Problem(s) Does TODO Solve? 
+### What is a Longest Common Subsequence? 
 
 TODO
 
