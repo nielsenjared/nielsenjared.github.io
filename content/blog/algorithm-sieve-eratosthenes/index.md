@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Sieve of Eratosthenes Algorithm"
-date: "2022-03-25"
+date: "2022-06-03"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Sieve of Eratosthones in JavaScript and Python."
 keywords: ['algorithm', 'Sieve of Erasthones', 'javascript', 'python']
 ---

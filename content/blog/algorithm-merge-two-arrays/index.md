@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Merge Two Arrays Algorithm"
-date: "2022-05-21"
+date: "2022-07-15"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the merge two arrays algorithm."
 keywords: ['algorithm', 'merge two arrays', 'javascript', 'python']
 ---

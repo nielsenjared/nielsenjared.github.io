@@ -1,6 +1,6 @@
 ---
 title: "How to Code the Bubble Sort Algorithm in JavaScript"
-date: "2021-05-21"
+date: "2022-07-29"
 description: "If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn how to code the bubble sort algorithm in JavaScript. "
 keywords: ['algorithm', 'bubble sort', 'javascript']
 featuredImage: jarednielsen-algorithm-bubble-sort.png

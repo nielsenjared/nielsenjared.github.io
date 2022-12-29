@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Selection Sort Algorithm"
-date: "2022-04-08"
+date: "2022-08-26"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the selection sort algorithm in JavaScript and Python."
 keywords: ['algorithm', 'selection sort', 'javascript', 'python']
 ---

@@ -1,6 +1,6 @@
 ---
 title: "How to Code the Insertion Sort Algorithm in JavaScript"
-date: "2021-05-14"
+date: "2022-08-12"
 description: "If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. In this tutorial, you will learn how to code the insertion sort algorithm in JavaScript. "
 keywords: ['algorithm', 'insertion sort', 'javascript']
 ---

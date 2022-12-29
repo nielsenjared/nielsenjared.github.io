@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Swap Algorithm in JavaScript & Python"
-date: "2022-01-28"
+date: "2022-01-14"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a swap algorithm in JavaScript and Python."
 keywords: ['algorithm', 'swap', 'javascript', 'python']
 ---

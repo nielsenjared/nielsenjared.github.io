@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Decimal to Binary Algorithm in JavaScript and Python"
-date: "2022-02-11"
+date: "2022-05-06"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code a decimal to binary conversion algorithm in JavaScript."
 keywords: ['algorithm', 'decimal', 'binary', 'conversion', 'javascript', 'learn how to code', 'python']
 ---
