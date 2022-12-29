@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Quick Sort Algorithm"
-date: "2022-12-02"
+date: "2022-11-18"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the quick sort algorithm in JavaScript and Python."
 keywords: ['algorithm', 'quick sort', 'javascript', 'python']
 ---
