@@ -1,15 +1,14 @@
 ---
-title: "Learn How to Code the Recursive Greatest Common Denominator Algorithm"
-date: "2022-TODO-TODO"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive greatest common denominator."
-keywords: ['algorithm', 'greatest common denominator', 'gcd', recursive, 'javascript', 'python']
+title: "Learn How to Code the Recursive Greatest Common Divisor Algorithm"
+date: "2022-09-23"
+description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive greatest common divisor."
+keywords: ['algorithm', 'greatest common divisor', 'gcd', 'recursive', 'javascript', 'python']
 ---
 
+![ Illustration of the recursive Greatest Common Divisor ](./jarednielsen-algorithm-recursive-greatest-common-divisor.png)
 
-![ Illustration of the recursive Greatest Common Denominator ](./jarednielsen-algorithm-recursive-greatest-common-denominator.png)
 
-
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive Greatest Common Denominator in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive Greatest Common Divisor in JavaScript _and_ Python.
 
 
 ---
@@ -24,19 +23,19 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-* What is a Greatest Common Denominator?
+* What is a Greatest Common Divisor?
 
-* What is the iterative Greatest Common Denominator?
+* What is the iterative Greatest Common Divisor?
 
 * What is recursion? 
 
 
-### What is a Greatest Common Denominator?
+### What is a Greatest Common Divisor?
 
 TODO
 
 
-### What is the Iterative Greatest Common Denominator?
+### What is the Iterative Greatest Common Divisor?
 
 TODO
 
@@ -57,7 +56,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 * TODO
 
 
-## How to Code the Recursive Greatest Common Denominator Algorithm 
+## How to Code the Recursive Greatest Common Divisor Algorithm 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -113,7 +112,7 @@ DON'T USE ```md FOR PSUEDOCODE SNIPPETS
 Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
 
 
-#### How to Code the Recursive Greatest Common Denominator Algorithm in JavaScript
+#### How to Code the Recursive Greatest Common Divisor Algorithm in JavaScript
 
 Let's start with JavaScript...
 ```js
@@ -129,7 +128,7 @@ const gcd = (n, m) => {
 
 
 
-#### How to Code the Recursive Greatest Common Denominator Algorithm in Python
+#### How to Code the Recursive Greatest Common Divisor Algorithm in Python
 
 Now let's see it in Python...
 ```py
@@ -147,7 +146,7 @@ Can we do better?
 TODO
 
 
-#### What is the Big O Of Recursive Greatest Common Denominator?
+#### What is the Big O Of Recursive Greatest Common Divisor?
 
 If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
 
