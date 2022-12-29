@@ -236,7 +236,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 ### Why Do I Need to Know This? 
 
-Linear search is a building block of algorithms. 
+Linear search is a standard and one of the building blocks of more complex algorithms.  
 
 
 ### TODO? 
@@ -246,7 +246,7 @@ TODO
 
 ### Why Are Search Algorithms A Big Deal? 
 
-Search is fundamental to any application. Whether you're using a database or hitting an API, your application is performing search operations. When we begin to work with larger datasets, the performance of the search algorithm becomes increasingly important. 
+Search is fundamental to any application. Whether you're using a database or hitting an API, your application is performing search operations. When we begin to work with larger datasets, the performance of the search algorithm becomes increasingly important.      
 
 
 ## A is for Algorithms
