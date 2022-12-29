@@ -1,12 +1,12 @@
 ---
-title: "Learn How to Code the Maximum Value Algorithm"
+title: "Learn How to Code the Find Maximum Value Algorithm"
 date: "2022-03-25"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the maximum value algorithm."
-keywords: ['algorithm', 'min', 'minimum', 'max', 'maximum', 'value', 'array', s'javascript', 'python']
+keywords: ['algorithm', 'min', 'minimum', 'max', 'maximum', 'value', 'array', 'javascript', 'python']
 ---
 
 
-![ Illustration of maximum value algorithm ](./jarednielsen-algorithm-maximum.png)
+![ Illustration of maximum value algorithm ](./jarednielsen-algorithm-find-maximum-value.png)
 
 
 If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Maximum Value in an Array in JavaScript _and_ Python.
@@ -287,6 +287,32 @@ def min_max(list, m="max"):
     return result
 ```
 
+Both JavaScript and Python feature `min` and `max` methods.  in their `Math` modules. 
+
+In JavaScript, the `max` method is included in the `Math` module. Here's how to use the `max` method in JavaScript:
+```js
+Math.max(1, 2, 3);
+```
+This will return 3. 
+
+To pass it an array, we need to use the spread operator. 
+```js
+const arr = [1, 2, 3];
+
+Math.max(...arr);
+```
+
+The `max` method is built-in to Python. Here's how to use the `max` method in Python: 
+```py
+max(1, 2, 3)
+
+list = [1, 2, 3]
+
+max(list)
+```
+
+Both approaches will return 3. 
+
 
 
 #### What is the Big O Of the Maximum Value Algorithm?
@@ -307,7 +333,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 ### Why Do I Need to Know This? 
 
-You will likely never write a minimum or maximum value algorithm because both JavaScript and Python feature `min` and `max` methods in their Math modules. The approach we took is a common pattern in algorithm design and you'll see it and use it time and again. 
+You will likely never write a minimum or maximum value algorithm because both JavaScript and Python feature `min` and `max` methods in their Math modules. The approach we took is a common pattern in algorithm design and you will both see it and use it time and again. 
 
 
 ### TODO? 
