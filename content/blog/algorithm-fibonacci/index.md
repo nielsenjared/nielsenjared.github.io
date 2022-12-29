@@ -1,8 +1,8 @@
 ---
 title: "Learn How to Code the Fibonacci Sequence Algorithm"
-date: "2022-02-25"
+date: "2022-03-11"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the nth number in the Fibonacci sequence"
-keywords: ['algorithm', 'Fibonacci', 'Fibonacci sequence', javascript', 'python']
+keywords: ['algorithm', 'Fibonacci', 'Fibonacci sequence', 'javascript', 'python']
 ---
 
 
