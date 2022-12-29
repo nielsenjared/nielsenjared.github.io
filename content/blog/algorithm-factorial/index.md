@@ -1,9 +1,10 @@
 ---
 title: "Learn How to Code the Factorial Algorithm"
-date: "2022-02-11"
+date: "2022-02-25"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the factorial algorithm in JavaScript and Python."
 keywords: ['algorithm', 'factorial', 'javascript', 'python']
 ---
+
 
 
 ![ Illustration of factorial algorithm ](./jarednielsen-algorithm-factorial.png)
