@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Merge Sort Algorithm in JavaScript"
-date: "2022-05-28"
+date: "2022-11-04"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the merge sort algorithm in JavaScript and Python."
 keywords: ['algorithm', 'merge sort', 'javascript', 'python']
 ---

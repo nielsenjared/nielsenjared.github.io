@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Recursive Fibonacci Algorithm"
-date: "2022-10-07"
+date: "2022-10-21"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive Fibonacci sequence."
 keywords: ['algorithm', 'recursive fibonacci', 'recursive', 'fibonacci', 'javascript', 'python']
 ---

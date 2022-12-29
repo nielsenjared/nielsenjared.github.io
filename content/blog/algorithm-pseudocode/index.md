@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Write Pseudocode by Solving the Classic Fizz Buzz Algorithm"
-date: "2022-01-14"
+date: "2022-02-11"
 description: "If you want to learn how to code, you'll want to learn how to write pseudocode. Writing pseudocode helps you think through the problem before writing any code. In this tutorial, you will learn how to write pseudocode while solving the classic Fizz Buzz algorithm."
 keywords: ['algorithm', 'fizz buzz', 'fizzbuzz', 'learn', 'javascript', 'pseudocode']
 ---

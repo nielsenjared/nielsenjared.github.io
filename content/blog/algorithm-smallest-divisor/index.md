@@ -1,6 +1,6 @@
 ---
 title: "Learn How to Code the Smallest Divisor of a Whole Number Algorithm"
-date: "2022-03-11"
+date: "2022-04-22"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the smallest divisor of a whole number"
 keywords: ['algorithm', 'smallest divisor ', 'javascript', 'whole number', 'python']
 ---
