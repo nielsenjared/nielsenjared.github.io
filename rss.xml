@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 29 Dec 2022 18:37:46 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Permutations Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-permutations/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-permutations/</guid><pubDate>Fri, 30 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 03 Jan 2023 21:01:50 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Permutations Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-permutations/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-permutations/</guid><pubDate>Fri, 30 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -3864,103 +3864,7 @@ FOR EACH index IN array
         decoding=&quot;async&quot;
       /&gt;
     &lt;/span&gt;
-Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Superlative Guide to Algorithms]]></title><description><![CDATA[If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing…]]></description><link>https://jarednielsen.com/algorithms/</link><guid isPermaLink="false">https://jarednielsen.com/algorithms/</guid><pubDate>Fri, 12 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/425a811d8e68ebce6721e5c2095ee221/29007/jarednielsen-algorithms.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMklEQVQoz42RT0sCYRCH/Y59gGChS7c61KVTeC4IMjwYSPYHIQITvVTbqTp5ycBwXQOJNNstdHd935l5Z2IVIV0hh+f4e2aGmRQLzcMobGSmmA3OwDGphIwiQjrQ9Reo1dFx0WnTR48Jkn5qfqYIBN1OccffTcPtU3iQ15X7cP+YOu8sMtNioTzyHPdwdXBWEI3f1rbp9nX5DhuOLCX7rpuxBhenULL7K+vRyRVUbHwdy6j/k79a7ezaTzYb7OVV1Q4yhShXpLdOLE9PxUzM9EdmYqNFOOo1m0fW5+ZWmLvE50Z4XvI30rrZijOg2UBCZhJCAcUqwIE3bNWG5WpYsYPrm8h+UI819DyjIlEj0UpAC4EQJF9FInNPnpSR8bSYaXKBzIKGIV5vAo0RTCYXysvyC0Mmbw+/ljXPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot; algorithms &quot;
-        title=&quot; algorithms &quot;
-        src=&quot;/static/425a811d8e68ebce6721e5c2095ee221/f058b/jarednielsen-algorithms.png&quot;
-        srcset=&quot;/static/425a811d8e68ebce6721e5c2095ee221/c26ae/jarednielsen-algorithms.png 158w,
-/static/425a811d8e68ebce6721e5c2095ee221/6bdcf/jarednielsen-algorithms.png 315w,
-/static/425a811d8e68ebce6721e5c2095ee221/f058b/jarednielsen-algorithms.png 630w,
-/static/425a811d8e68ebce6721e5c2095ee221/40601/jarednielsen-algorithms.png 945w,
-/static/425a811d8e68ebce6721e5c2095ee221/78612/jarednielsen-algorithms.png 1260w,
-/static/425a811d8e68ebce6721e5c2095ee221/29007/jarednielsen-algorithms.png 1600w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. The following is a table of contents of my articles on algorithms. If you think there’s something missing, let me know on Twitter &lt;a href=&quot;https://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;. And there’s more on the way!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/solve-algorithms/&quot;&gt;How to Solve Algorithms&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-pseudocode/&quot;&gt;Learn How to Write Pseudocode by Solving the Classic Fizz Buzz Algorithm&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-swap/&quot;&gt;Learn How to Code the Swap Algorithm in JavaScript &amp;#x26; Python&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-decimal-binary/&quot;&gt;Learn How to Code the Decimal to Binary Algorithm in JavaScript and Python&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-decimal-hexadecimal/&quot;&gt;Learn How to Code the Decimal to Hexadecimal Conversion Algorithm&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-smallest-divisor/&quot;&gt;Learn How to Code the Smallest Divisor of a Whole Number Algorithm&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-bubble-sort/&quot;&gt;How to Code the Bubble Sort Algorithm in JavaScript&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-insertion-sort/&quot;&gt;How to Code the Insertion Sort Algorithm in JavaScript&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-selection-sort/&quot;&gt;Learn How to Code the Selection Sort Algorithm&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-sieve-eratosthenes/&quot;&gt;Learn How to Code the Sieve of Eratosthenes Algorithm&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-towers-hanoi/&quot;&gt;Learn How to Code the Towers of Hanoi Algorithm&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMklEQVQoz42RT0sCYRCH/Y59gGChS7c61KVTeC4IMjwYSPYHIQITvVTbqTp5ycBwXQOJNNstdHd935l5Z2IVIV0hh+f4e2aGmRQLzcMobGSmmA3OwDGphIwiQjrQ9Reo1dFx0WnTR48Jkn5qfqYIBN1OccffTcPtU3iQ15X7cP+YOu8sMtNioTzyHPdwdXBWEI3f1rbp9nX5DhuOLCX7rpuxBhenULL7K+vRyRVUbHwdy6j/k79a7ezaTzYb7OVV1Q4yhShXpLdOLE9PxUzM9EdmYqNFOOo1m0fW5+ZWmLvE50Z4XvI30rrZijOg2UBCZhJCAcUqwIE3bNWG5WpYsYPrm8h+UI819DyjIlEj0UpAC4EQJF9FInNPnpSR8bSYaXKBzIKGIV5vAo0RTCYXysvyC0Mmbw+/ljXPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;A is for Algorithms&quot;
-        title=&quot;A is for Algorithms&quot;
-        src=&quot;/static/425a811d8e68ebce6721e5c2095ee221/f058b/jarednielsen-algorithms.png&quot;
-        srcset=&quot;/static/425a811d8e68ebce6721e5c2095ee221/c26ae/jarednielsen-algorithms.png 158w,
-/static/425a811d8e68ebce6721e5c2095ee221/6bdcf/jarednielsen-algorithms.png 315w,
-/static/425a811d8e68ebce6721e5c2095ee221/f058b/jarednielsen-algorithms.png 630w,
-/static/425a811d8e68ebce6721e5c2095ee221/40601/jarednielsen-algorithms.png 945w,
-/static/425a811d8e68ebce6721e5c2095ee221/78612/jarednielsen-algorithms.png 1260w,
-/static/425a811d8e68ebce6721e5c2095ee221/29007/jarednielsen-algorithms.png 1600w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-    &lt;/span&gt;
-💯 Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;</content:encoded></item><item><title><![CDATA[How to Code the Insertion Sort Algorithm in JavaScript]]></title><description><![CDATA[If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing…]]></description><link>https://jarednielsen.com/algorithm-insertion-sort/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-insertion-sort/</guid><pubDate>Fri, 12 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Code the Insertion Sort Algorithm in JavaScript]]></title><description><![CDATA[If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing…]]></description><link>https://jarednielsen.com/algorithm-insertion-sort/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-insertion-sort/</guid><pubDate>Fri, 12 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -4758,7 +4662,103 @@ Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms
         decoding=&quot;async&quot;
       /&gt;
     &lt;/span&gt;
-💯 Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Code the Bubble Sort Algorithm in JavaScript]]></title><description><![CDATA[If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing…]]></description><link>https://jarednielsen.com/algorithm-bubble-sort/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-bubble-sort/</guid><pubDate>Fri, 29 Jul 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+💯 Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Superlative Guide to Algorithms]]></title><description><![CDATA[If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing…]]></description><link>https://jarednielsen.com/algorithms/</link><guid isPermaLink="false">https://jarednielsen.com/algorithms/</guid><pubDate>Fri, 12 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/425a811d8e68ebce6721e5c2095ee221/29007/jarednielsen-algorithms.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMklEQVQoz42RT0sCYRCH/Y59gGChS7c61KVTeC4IMjwYSPYHIQITvVTbqTp5ycBwXQOJNNstdHd935l5Z2IVIV0hh+f4e2aGmRQLzcMobGSmmA3OwDGphIwiQjrQ9Reo1dFx0WnTR48Jkn5qfqYIBN1OccffTcPtU3iQ15X7cP+YOu8sMtNioTzyHPdwdXBWEI3f1rbp9nX5DhuOLCX7rpuxBhenULL7K+vRyRVUbHwdy6j/k79a7ezaTzYb7OVV1Q4yhShXpLdOLE9PxUzM9EdmYqNFOOo1m0fW5+ZWmLvE50Z4XvI30rrZijOg2UBCZhJCAcUqwIE3bNWG5WpYsYPrm8h+UI819DyjIlEj0UpAC4EQJF9FInNPnpSR8bSYaXKBzIKGIV5vAo0RTCYXysvyC0Mmbw+/ljXPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; algorithms &quot;
+        title=&quot; algorithms &quot;
+        src=&quot;/static/425a811d8e68ebce6721e5c2095ee221/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/425a811d8e68ebce6721e5c2095ee221/c26ae/jarednielsen-algorithms.png 158w,
+/static/425a811d8e68ebce6721e5c2095ee221/6bdcf/jarednielsen-algorithms.png 315w,
+/static/425a811d8e68ebce6721e5c2095ee221/f058b/jarednielsen-algorithms.png 630w,
+/static/425a811d8e68ebce6721e5c2095ee221/40601/jarednielsen-algorithms.png 945w,
+/static/425a811d8e68ebce6721e5c2095ee221/78612/jarednielsen-algorithms.png 1260w,
+/static/425a811d8e68ebce6721e5c2095ee221/29007/jarednielsen-algorithms.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing common patterns in software development. The following is a table of contents of my articles on algorithms. If you think there’s something missing, let me know on Twitter &lt;a href=&quot;https://twitter.com/jarednielsen&quot;&gt;@jarednielsen&lt;/a&gt;. And there’s more on the way!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/solve-algorithms/&quot;&gt;How to Solve Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-pseudocode/&quot;&gt;Learn How to Write Pseudocode by Solving the Classic Fizz Buzz Algorithm&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-swap/&quot;&gt;Learn How to Code the Swap Algorithm in JavaScript &amp;#x26; Python&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-decimal-binary/&quot;&gt;Learn How to Code the Decimal to Binary Algorithm in JavaScript and Python&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-decimal-hexadecimal/&quot;&gt;Learn How to Code the Decimal to Hexadecimal Conversion Algorithm&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-smallest-divisor/&quot;&gt;Learn How to Code the Smallest Divisor of a Whole Number Algorithm&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-bubble-sort/&quot;&gt;How to Code the Bubble Sort Algorithm in JavaScript&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-insertion-sort/&quot;&gt;How to Code the Insertion Sort Algorithm in JavaScript&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-selection-sort/&quot;&gt;Learn How to Code the Selection Sort Algorithm&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-sieve-eratosthenes/&quot;&gt;Learn How to Code the Sieve of Eratosthenes Algorithm&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithm-towers-hanoi/&quot;&gt;Learn How to Code the Towers of Hanoi Algorithm&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMklEQVQoz42RT0sCYRCH/Y59gGChS7c61KVTeC4IMjwYSPYHIQITvVTbqTp5ycBwXQOJNNstdHd935l5Z2IVIV0hh+f4e2aGmRQLzcMobGSmmA3OwDGphIwiQjrQ9Reo1dFx0WnTR48Jkn5qfqYIBN1OccffTcPtU3iQ15X7cP+YOu8sMtNioTzyHPdwdXBWEI3f1rbp9nX5DhuOLCX7rpuxBhenULL7K+vRyRVUbHwdy6j/k79a7ezaTzYb7OVV1Q4yhShXpLdOLE9PxUzM9EdmYqNFOOo1m0fW5+ZWmLvE50Z4XvI30rrZijOg2UBCZhJCAcUqwIE3bNWG5WpYsYPrm8h+UI819DyjIlEj0UpAC4EQJF9FInNPnpSR8bSYaXKBzIKGIV5vAo0RTCYXysvyC0Mmbw+/ljXPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/425a811d8e68ebce6721e5c2095ee221/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/425a811d8e68ebce6721e5c2095ee221/c26ae/jarednielsen-algorithms.png 158w,
+/static/425a811d8e68ebce6721e5c2095ee221/6bdcf/jarednielsen-algorithms.png 315w,
+/static/425a811d8e68ebce6721e5c2095ee221/f058b/jarednielsen-algorithms.png 630w,
+/static/425a811d8e68ebce6721e5c2095ee221/40601/jarednielsen-algorithms.png 945w,
+/static/425a811d8e68ebce6721e5c2095ee221/78612/jarednielsen-algorithms.png 1260w,
+/static/425a811d8e68ebce6721e5c2095ee221/29007/jarednielsen-algorithms.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+💯 Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;</content:encoded></item><item><title><![CDATA[How to Code the Bubble Sort Algorithm in JavaScript]]></title><description><![CDATA[If you want to think like a programmer, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing…]]></description><link>https://jarednielsen.com/algorithm-bubble-sort/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-bubble-sort/</guid><pubDate>Fri, 29 Jul 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -9279,7 +9279,264 @@ FOR EACH number FROM 1 TO whole number
         decoding=&quot;async&quot;
       /&gt;
     &lt;/span&gt;
-💯 Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Swap Algorithm in JavaScript & Python]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-swap/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-swap/</guid><pubDate>Fri, 14 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+💯 Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Linear Search Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-linear-search/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-linear-search/</guid><pubDate>Fri, 28 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/de24eaee35b821d8d3d60fc5c12c976c/29007/jarednielsen-algorithm-linear-search.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBklEQVQoz8WRQUvDQBCF938riAfpxT+gIB49efNY/ANKG0TEIFhFsUJS0iZpk83svCe7Lk0xePAkvMPjMd/szKwBXRS+Jb/L9cVBZoC5HQ35LuaUAG/rYr9g+kaDdrrl/csKWBIhCobhBVJhQUAtXONNIEmo2gDDwLWL2yNbpVK85slIsVm/jIvHU5LL+7N6Piadlu+Ujf1I8ukxKOXDZZGekzSAXdyNqrcraT6zyZ5dpU1+k00P1FWr2UWRnoDE8pmyttVTNtnv6lk9v86SQ5XShAEYp4rDO/pE/EY+6frjEQpRf3Yq/MHE7+YrOtV2xwjUxvVCGPJGYb20VXTmx9f9Sf8HfwGc6IBUdJ3hNwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; Illustration of linear search using duck duck goose game &quot;
+        title=&quot; Illustration of linear search using duck duck goose game &quot;
+        src=&quot;/static/de24eaee35b821d8d3d60fc5c12c976c/f058b/jarednielsen-algorithm-linear-search.png&quot;
+        srcset=&quot;/static/de24eaee35b821d8d3d60fc5c12c976c/c26ae/jarednielsen-algorithm-linear-search.png 158w,
+/static/de24eaee35b821d8d3d60fc5c12c976c/6bdcf/jarednielsen-algorithm-linear-search.png 315w,
+/static/de24eaee35b821d8d3d60fc5c12c976c/f058b/jarednielsen-algorithm-linear-search.png 630w,
+/static/de24eaee35b821d8d3d60fc5c12c976c/40601/jarednielsen-algorithm-linear-search.png 945w,
+/static/de24eaee35b821d8d3d60fc5c12c976c/78612/jarednielsen-algorithm-linear-search.png 1260w,
+/static/de24eaee35b821d8d3d60fc5c12c976c/29007/jarednielsen-algorithm-linear-search.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Linear Search algorithm in JavaScript &lt;em&gt;and&lt;/em&gt; Python.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;p&gt;Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What is linear?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is search?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is iteration?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What Do We Mean By ‘Linear”?&lt;/h3&gt;
+&lt;p&gt;According to Dictionary.com, if something is “linear”, it is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;arranged in or extending along a straight or nearly straight line.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;What Is Search?&lt;/h3&gt;
+&lt;p&gt;This is our first “search” algorithm, so let’s define “search”.&lt;/p&gt;
+&lt;p&gt;According to Dictionary.com, “search” is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;an act of searching for someone or something.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;According to Ye Olde Wikipedia, a search algorithm:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;is an algorithm designed to solve a search problem.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Whoa!&lt;/p&gt;
+&lt;p&gt;We use search algorithms to find and retrieve data in a range of applications, from arrays to databases.&lt;/p&gt;
+&lt;h3&gt;What Is Iteration?&lt;/h3&gt;
+&lt;p&gt;According to Ye Olde Wikipedia, &lt;em&gt;iteration&lt;/em&gt; is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;the repetition of a process in order to generate a (possibly unbounded) sequence of outcomes&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;p&gt;Ask yourself the following questions and keep them back of mind as you proceed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does linear search solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Why are search algorithms a big deal?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Code the Linear Search Algorithm&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/programming-problem-solving/&quot;&gt;Programming is problem solving&lt;/a&gt;. There are four steps we need to take to solve any programming problem:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Understand the problem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make a plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Understand the Problem&lt;/h3&gt;
+&lt;p&gt;To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;GIVEN an array of numbers 
+WHEN I search for a specific number in the array
+THEN I am returned the array index of that number&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That’s our general outline. We know our input conditions, an array of number, and our output requirements, an index, and our goal is to find a specific number in the array.&lt;/p&gt;
+&lt;p&gt;Let’s make a plan!&lt;/p&gt;
+&lt;h3&gt;Make a Plan&lt;/h3&gt;
+&lt;p&gt;Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pattern recognition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstraction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithm design&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first step is decomposition, or breaking our problem down into smaller problems. What’s the smallest problem we can solve?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[1]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We can solve this with a comparison statement, evaluating if the value stored in our array is equal to the value of &lt;em&gt;n&lt;/em&gt;. Let’s pseudocode it:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT array, n
+
+IF array[0] IS EQUAL TO n
+    RETURN &quot;Found it!&quot;
+
+RETURN &quot;Not found...&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What’s the next smallest problem?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[2, 1]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I swapped the values here to keep it interesting. Let’s suppose we’re still searching for the same value, 1. We &lt;em&gt;could&lt;/em&gt; hardcode a coditional, like so:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT array, n
+
+IF array[0] IS EQUAL TO n
+    RETURN &quot;Found it!&quot;
+
+IF array[1] IS EQUAL TO n
+    RETURN &quot;Found it!&quot;
+
+RETURN &quot;Not found...&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Will this scale?&lt;/p&gt;
+&lt;p&gt;Do you see a pattern emerging?&lt;/p&gt;
+&lt;p&gt;The only difference between the two conditional statements is the value used to index the array.&lt;/p&gt;
+&lt;p&gt;It’s time to make the leap to abstraction!&lt;/p&gt;
+&lt;p&gt;Rather than hardcode the index value, we can use a variable. What control flow statement allows us repeat a process while changing the value of a variable?&lt;/p&gt;
+&lt;p&gt;Loops!&lt;/p&gt;
+&lt;p&gt;Which loop do we choose? A &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; or a &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;Because we know the length of the array, or how many iterations we need to perform, we want to choose a &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; loop.&lt;/p&gt;
+&lt;p&gt;We want to choose a &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loop when we don’t know how many times we need to iterate and will instead continue to iterate until a condition is met.&lt;/p&gt;
+&lt;p&gt;Let’s design our algorithm:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT array, n
+
+FOR EACH VALUE BETWEEN i AND THE LENGTH OF array
+    IF THE VALUE OF array[i] IS EQUAL TO n
+        RETURN &quot;Found it!&quot;
+
+RETURN &quot;Not found...&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Execute the Plan&lt;/h3&gt;
+&lt;p&gt;Now it’s simply a matter of translating our pseudocode into the syntax of our programming language.&lt;/p&gt;
+&lt;h4&gt;How to Code the Linear Search Algorithm in JavaScript&lt;/h4&gt;
+&lt;p&gt;Let’s start with JavaScript…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;linearSearch&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Found &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;n&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; at arr[&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;i&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Not found...&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;How to Code the Linear Search Algorithm in Python&lt;/h4&gt;
+&lt;p&gt;Now let’s see it in Python…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;linear_search&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string-interpolation&quot;&gt;&lt;span class=&quot;token string&quot;&gt;f&apos;Found &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; at list[&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;]&apos;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Not found...&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Evaluate the Plan&lt;/h3&gt;
+&lt;p&gt;Can we do better?&lt;/p&gt;
+&lt;p&gt;Absolutely! Later in this series, we’ll learn search algorithms with improved performance.&lt;/p&gt;
+&lt;h4&gt;What is the Big O Of Linear Search?&lt;/h4&gt;
+&lt;p&gt;Linear Search is just that, linear, so it’s time complexity is O(n).&lt;/p&gt;
+&lt;p&gt;If you want to learn how to calculate time and space complexity, pick up your copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;p&gt;Remember those &lt;em&gt;meta&lt;/em&gt; questions we asked at the outset? Let’s make it stick and answer them now!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does solve linear search solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Why are search algorithms a big deal?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Why Do I Need to Know This?&lt;/h3&gt;
+&lt;p&gt;Linear Search is a standard algorithm and one of the building blocks of more complex algorithms.&lt;/p&gt;
+&lt;h3&gt;What Problen(s) Does Linear Search Solve?&lt;/h3&gt;
+&lt;p&gt;Linear Search is practical when your array or list is short.&lt;/p&gt;
+&lt;h3&gt;Why Are Search Algorithms A Big Deal?&lt;/h3&gt;
+&lt;p&gt;Search is fundamental to any application. Whether you’re querying a database or hitting an API, your application is performing search operations. When we begin to work with larger datasets, the performance of the search algorithm becomes increasingly important.&lt;/p&gt;
+&lt;h2&gt;A is for Algorithms&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Swap Algorithm in JavaScript & Python]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-swap/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-swap/</guid><pubDate>Fri, 14 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
