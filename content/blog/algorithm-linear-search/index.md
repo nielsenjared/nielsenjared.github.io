@@ -68,7 +68,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does linear search solve? 
 
 * Why are search algorithms a big deal? 
 
@@ -229,24 +229,24 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* TODO ? 
+* What problem(s) does solve linear search solve? 
 
 * Why are search algorithms a big deal? 
 
 
 ### Why Do I Need to Know This? 
 
-Linear search is a standard and one of the building blocks of more complex algorithms.  
+Linear Search is a standard algorithm and one of the building blocks of more complex algorithms.  
 
 
-### TODO? 
+### What Problen(s) Does Linear Search Solve? 
 
-TODO
+Linear Search is practical when your array or list is short. 
 
 
 ### Why Are Search Algorithms A Big Deal? 
 
-Search is fundamental to any application. Whether you're using a database or hitting an API, your application is performing search operations. When we begin to work with larger datasets, the performance of the search algorithm becomes increasingly important.      
+Search is fundamental to any application. Whether you're querying a database or hitting an API, your application is performing search operations. When we begin to work with larger datasets, the performance of the search algorithm becomes increasingly important.      
 
 
 ## A is for Algorithms
