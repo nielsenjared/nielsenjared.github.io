@@ -9,7 +9,7 @@ keywords: ['algorithm', 'min', 'minimum', 'max', 'maximum', 'value', 'array', 'j
 ![ Illustration of maximum value algorithm ](./jarednielsen-algorithm-find-maximum-value.png)
 
 
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Maximum Value in an Array in JavaScript _and_ Python.
+If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the Finding the Maximum Value in an Array algorithm in JavaScript _and_ Python.
 
 
 ---
@@ -24,26 +24,45 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
+* What are relational operators? 
+
 * How does linear search work?  
 
 * What is variable reassignment? 
 
-* TODO 
+
+### What Are Relational Operators? 
+
+Relational operators are constructs that evaluate a relation between two values. The standard relational operators are: 
+
+* `==`: Equal to
+
+* `!=`: Not equal to
+
+* `>`: Greater than
+
+* `>=` Greater than or equal to
+
+* `<`: Less than
+
+* `<=`: Less than or equal to 
 
 
 ### How Does Linear Search Work? 
 
-TODO 
+Linear Search loops over an array of values checking if each value in the array is equal to the requested value. If the requested value is found in the array, then the function returns the location of that value in the array.
 
 
 ### What Is Variable Reassignment? 
 
-TODO
+Variable reassignment occurs when we first declare and assign a value to a variable and then later in our program assign a new value to that same variable. For example: 
+```
+SET x TO y
 
+WORK SOME MAGIC! 
 
-### TODO #3
-
-TODO
+SET x TO z
+```
 
 
 ## Let's Get Meta
@@ -52,12 +71,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * Why do I need to know this?
 
-* How do we keep a record of the minimum or maximum value? 
+* What is _state_? 
 
-* TODO 
+* How would we find _both_ the minimum or maximum value? 
 
 
-## How to Code the TODO Algorithm 
+## How to Code the Find Maximum Value Algorithm 
 
 [Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
 
@@ -326,9 +345,9 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* TODO? 
+* What is _state_? 
 
-* TODO
+* How would we find _both_ the minimum or maximum value? 
 
 
 ### Why Do I Need to Know This? 
@@ -336,14 +355,15 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 You will likely never write a minimum or maximum value algorithm because both JavaScript and Python feature `min` and `max` methods in their Math modules. The approach we took is a common pattern in algorithm design and you will both see it and use it time and again. 
 
 
-### TODO? 
+### What is State? 
 
-TODO
+According to Ye Olde Wikipedia: 
+>  a computer program stores data in variables, which represent storage locations in the computer's memory. The contents of these memory locations, at any given point in the program's execution, is called the program's state.
 
 
-### TODO
+### How Would We Find Both the Minimum And Maximum Value? 
 
-TODO
+As we saw above, we simply add another parameter to our function to specify whether our query was `min` or `max` and then nest another conditional in the `for` loop. 
 
 
 ## A is for Algorithms
