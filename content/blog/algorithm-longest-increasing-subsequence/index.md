@@ -2,7 +2,7 @@
 title: "Learn How to Code the Longest Increasing Subsequence Algorithm"
 date: "2022-06-17"
 description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the longest increasing subsequence algorithm."
-keywords: ['algorithm', 'longest increasing subsequence', 'javascript', 'python']
+keywords: ['algorithm', 'longest increasing subsequence', 'lis', 'javascript', 'python']
 ---
 
 
@@ -26,9 +26,9 @@ Retrieval practice is the surest way to solidify any new learning. Attempt to an
 
 * What is a longest increasing subsequence?
 
-* How does the selection algorithm work? 
+* How does the swap algorithm work? 
 
-* TODO
+* How do we find the minimum or maximum value in an array? 
 
 
 ### What Is A Longest Increasing Subsequence? 
@@ -40,14 +40,14 @@ This might not be so much retrieval as it is new information, but we need a comm
 Try saying that 10X fast! 
 
 
-### How Does The Selection Algorithm Work? 
+### How Does The Swap Algorithm Work? 
 
-A selection algorithm finds the _kth_ number, often largest or smallest, in an unsorted array. It uses a variable to track the requested value and compare to subsequent values. 
+The swap algorithm uses a temporary variable to store one of the two values to be swapped while the other variables are reassigned. 
 
 
-### TODO? 
+### How Do We Find the Minimum or Maximum Value in an Array? 
 
-TODO
+To find the minimum or maximum value in an array, we first declare a state variable and initialize it with the first value in the array and then iterate over every element in the array, comparing each value to the value in our state variable. 
 
 
 ## Let's Get Meta
@@ -58,7 +58,7 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 
 * What is a longest _common_ subsequence? 
 
-* TODO
+* What is a permutation? 
 
 
 ## How to Code the Longest Increasing Subsequence Algorithm 
@@ -418,7 +418,7 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * What is a longest _common_ subsequence
 
-* TODO
+* What is a permutation? 
 
 
 ### Why Do I Need to Know This? 
@@ -428,12 +428,14 @@ This is the kernel of the Longest Common Subsequence algorithm, which is a class
 
 ### What is a Longest Common Subsequence? 
 
-TODO
+A longest common subsequence (LCS) is the longest increasing subsequence of two (or more!) arrays. 
 
 
-### TODO
+### What is a Permutation? 
 
-TODO
+According to Ye Olde Wikipedia, a _permutation_ is:
+
+> an arrangement of the members of a set into a sequence or linear order, or if the set is already ordered, a rearrangement of its elements.
 
 
 ## A is for Algorithms
