@@ -23,21 +23,16 @@ Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algor
 
 Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
 
-* What is a Greatest Common Divisor?
-
 * What is the iterative Greatest Common Divisor?
+
+* What is proof by induction? 
 
 * What is recursion? 
 
 
-### What is a Greatest Common Divisor?
-
-TODO
-
-
 ### How Does the Iterative Greatest Common Divisor Algorithm Work?
 
-TODO
+The greatest common divisor (GCD) of two integers is the largest positive integer that divides without remainder into each of the two integers. For example, the GCD of 18 and 30 is 6. The iterative GCD algorithm uses the modulo operator to divide one of the integers by the other. The algorithm continues to iterate _while_ the remainder is greater than 0. Here it is in pseudocode for reference: 
 ```
 INPUT n
 INPUT m
@@ -50,10 +45,79 @@ WHILE m IS GREATER THAN 0
 RETURN n
 ```
 
+### What is Proof by Induction? 
+
+Proof by induction is a mathematical method used to prove that a statement is true for all natural numbers. It’s not enough to prove that a statement is true in one or more specific cases. We need to prove it is true for all cases.
+
+There are two metaphors commonly used to describe proof by induction:
+
+* The domino effect
+
+* Climbing a ladder
+
+Given a chain of dominos, if one falls, they will all fall.
+
+Given a sturdy ladder, if one rung holds, they will all hold as we climb higher.
+
 
 ### What is Recursion? 
 
-TODO
+This is our introduction to recursion in this series, but, as the tired joke goes:
+
+> In order to understand recursion, one must first understand recursion.
+
+In computer science, recursion occurs when a function calls itself within its declaration.
+
+For example:
+```js
+const loop = () => loop();
+```
+If you run this in your browser console or using Node, you’ll get an error.
+
+Why?
+
+Too much recursion!
+
+`const loop()` is just that, a constant loop.
+
+🔁
+
+We use recursion to solve a large problem by breaking it down into smaller instances of the same problem.
+
+To do that, we need to tell our function what the smallest instance looks like.
+
+If you recall, with proof by induction we need to establish two things:
+
+* base
+
+* induction
+
+Recursion is similar. We also need to establish a base case but rather than induction, we establish the recursive case.
+
+We use the recursive case to break the problem down into smaller instances.
+
+We use the base case to return when there are no more problems to be solved.
+
+For example. a family on vacation:
+
+```js
+const fighting = patience => {
+ if (patience <= 0) {
+   return "If you don’t stop fighting, I will turn this car around!"
+ }
+ return fighting(patience - 1);
+};
+```
+
+The kids are fighting in the backseat.
+
+Dad is driving and quickly losing his patience.
+
+Our recursive case is the constant fighting.
+
+Our base case is dad’s patience when it runs out.
+
+🚗
 
 
 ## Let's Get Meta
@@ -85,12 +149,12 @@ Ask yourself the following questions and keep them back of mind as you proceed:
 To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
 
 ```md
-GIVEN TODO
-WHEN TODO
-THEN TODO
+GIVEN two positive integers
+WHEN I pass them to my recursive algorithm
+THEN I am returned the greatest common 
 ```
 
-That’s our general outline. We know our input conditions, TODO, and our output requirements, TODO, and our goal is to TODO.
+That’s our general outline. We know our input conditions, two positive integers, and our output requirements, the greatest common divisor of the two integers, and our goal is to calculate it recursively.
 
 Let’s make a plan!
 
@@ -239,7 +303,7 @@ def gcd(n, m):
 
 Can we do better? 
 
-TODO
+Yes and no. Recursive functions are compact, and, as some will argue, elegant, but they are harder to immediately understand if you weren't the author (and sometimes if you were!)
 
 
 #### What is the Big O Of Recursive Greatest Common Divisor?
@@ -253,9 +317,9 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 
 * Why do I need to know this?
 
-* What problem(s) does TODO solve? 
+* What problem(s) does recursion solve? 
 
-* TODO
+* What problem(s) does recursion create?
 
 
 ### Why Do I Need to Know This? 
@@ -263,14 +327,16 @@ Remember those _meta_ questions we asked at the outset? Let’s make it stick an
 For the same reaons we discussed in the iterative solution, with the addition that you will _also_ want to know how to execute this with recursion. 
 
 
-### What Problem(s) Does TODO Solve? 
+### What Problem(s) Does Recursion Solve? 
 
-TODO
+Recursion allows us to write functions that are compact and elegant.
 
 
-### TODO
+### What Problem(s) Does Recursion Create? 
 
-TODO
+Recursion can easily exceed the maximum size of the call stack.
+
+Recursion can make the program harder to understand not only for your collaborators, but for your future self.
 
 
 ## A is for Algorithms
