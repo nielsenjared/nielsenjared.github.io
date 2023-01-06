@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 05 Jan 2023 17:04:40 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Permutations Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-permutations/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-permutations/</guid><pubDate>Fri, 30 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 06 Jan 2023 19:10:44 GMT</lastBuildDate><item><title><![CDATA[Learn How to Code the Permutations Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-permutations/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-permutations/</guid><pubDate>Fri, 30 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -3173,7 +3173,334 @@ Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms
 &lt;p&gt;Do you &lt;em&gt;need&lt;/em&gt; to cultivate a Beginner’s Mind?&lt;/p&gt;
 &lt;p&gt;It’s obviously important for educators.&lt;/p&gt;
 &lt;p&gt;It’s also important if you’re in a lead or mentoring role, where your reports or mentees will benefit from your ability to effectively transfer knowledge.&lt;/p&gt;
-&lt;p&gt;If neither of the above scenarios apply to you, consider how these practices relate to innovation and your career goals.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Binary Search Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-binary-search/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-binary-search/</guid><pubDate>Fri, 09 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;If neither of the above scenarios apply to you, consider how these practices relate to innovation and your career goals.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Recursive Greatest Common Divisor Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-recursive-greatest-common-divisor/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-recursive-greatest-common-divisor/</guid><pubDate>Fri, 23 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/200168b6e10b8e0c5f79ba9b8c7feb5c/29007/jarednielsen-algorithm-recursive-greatest-common-divisor.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABUklEQVQoz5WSIUtEQRSFRxZEkEUwmRTDBrGJySYmQbDZLRsXRDGYDIJF8B+IRSwqgisraDJYTSoo/gKrsm/uPfdcmXlvdcMaHL40b7577tw3gVBCDWIQakYii0iJVkQpFIIoAGBpoYJmtFBqfaakcu4U0N1dzeAOGqzy8+qXqTERC1L58Wnr5z6z+7V91jrh7B43O+yKuZV6GV7KGq00NbJb0N02bjSsem36NEzUx9pDDQ9rOHhIX0RyAfRk/siSkx1cOUZY8tGpw1qtMbJfn/SwrM3LJEcpU6v+AxErNLJIyTx61ND0MH9fXxyfewkLPtyyzltOVvsdW75zQROaJpAHZsqLZ91q8/b9+sl3ruzuNTWkymSwnBZIDdnJaI9CSLM8aKo4jbAYiTTyTFkg3dkwANXUgioARXoGZP5bqVv0wi2k3f+TS+Bv2atDdJgPPvMNJ/FcPUrmJvkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; Illustration of the recursive Greatest Common Divisor &quot;
+        title=&quot; Illustration of the recursive Greatest Common Divisor &quot;
+        src=&quot;/static/200168b6e10b8e0c5f79ba9b8c7feb5c/f058b/jarednielsen-algorithm-recursive-greatest-common-divisor.png&quot;
+        srcset=&quot;/static/200168b6e10b8e0c5f79ba9b8c7feb5c/c26ae/jarednielsen-algorithm-recursive-greatest-common-divisor.png 158w,
+/static/200168b6e10b8e0c5f79ba9b8c7feb5c/6bdcf/jarednielsen-algorithm-recursive-greatest-common-divisor.png 315w,
+/static/200168b6e10b8e0c5f79ba9b8c7feb5c/f058b/jarednielsen-algorithm-recursive-greatest-common-divisor.png 630w,
+/static/200168b6e10b8e0c5f79ba9b8c7feb5c/40601/jarednielsen-algorithm-recursive-greatest-common-divisor.png 945w,
+/static/200168b6e10b8e0c5f79ba9b8c7feb5c/78612/jarednielsen-algorithm-recursive-greatest-common-divisor.png 1260w,
+/static/200168b6e10b8e0c5f79ba9b8c7feb5c/29007/jarednielsen-algorithm-recursive-greatest-common-divisor.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive Greatest Common Divisor in JavaScript &lt;em&gt;and&lt;/em&gt; Python.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Retrieval Practice&lt;/h2&gt;
+&lt;p&gt;Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What is the iterative Greatest Common Divisor?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is proof by induction?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is recursion?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How Does the Iterative Greatest Common Divisor Algorithm Work?&lt;/h3&gt;
+&lt;p&gt;The greatest common divisor (GCD) of two integers is the largest positive integer that divides without remainder into each of the two integers. For example, the GCD of 18 and 30 is 6. The iterative GCD algorithm uses the modulo operator to divide one of the integers by the other. The algorithm continues to iterate &lt;em&gt;while&lt;/em&gt; the remainder is greater than 0. Here it is in pseudocode for reference:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT n
+INPUT m
+
+WHILE m IS GREATER THAN 0
+    SET r TO m
+    SET m TO THE REMAINDER of n DIVIDED BY m
+    SET n EQUAL TO r
+
+RETURN n&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;What is Proof by Induction?&lt;/h3&gt;
+&lt;p&gt;Proof by induction is a mathematical method used to prove that a statement is true for all natural numbers. It’s not enough to prove that a statement is true in one or more specific cases. We need to prove it is true for all cases.&lt;/p&gt;
+&lt;p&gt;There are two metaphors commonly used to describe proof by induction:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The domino effect&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Climbing a ladder&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Given a chain of dominos, if one falls, they will all fall.&lt;/p&gt;
+&lt;p&gt;Given a sturdy ladder, if one rung holds, they will all hold as we climb higher.&lt;/p&gt;
+&lt;h3&gt;What is Recursion?&lt;/h3&gt;
+&lt;p&gt;This is our introduction to recursion in this series, but, as the tired joke goes:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In order to understand recursion, one must first understand recursion.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In computer science, recursion occurs when a function calls itself within its declaration.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;loop&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you run this in your browser console or using Node, you’ll get an error.&lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;p&gt;Too much recursion!&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;const loop()&lt;/code&gt; is just that, a constant loop.&lt;/p&gt;
+&lt;p&gt;🔁&lt;/p&gt;
+&lt;p&gt;We use recursion to solve a large problem by breaking it down into smaller instances of the same problem.&lt;/p&gt;
+&lt;p&gt;To do that, we need to tell our function what the smallest instance looks like.&lt;/p&gt;
+&lt;p&gt;If you recall, with proof by induction we need to establish two things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;base&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;induction&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Recursion is similar. We also need to establish a base case but rather than induction, we establish the recursive case.&lt;/p&gt;
+&lt;p&gt;We use the recursive case to break the problem down into smaller instances.&lt;/p&gt;
+&lt;p&gt;We use the base case to return when there are no more problems to be solved.&lt;/p&gt;
+&lt;p&gt;For example. a family on vacation:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;fighting&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;patience&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;patience &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;If you don’t stop fighting, I will turn this car around!&quot;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fighting&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;patience &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The kids are fighting in the backseat.&lt;/p&gt;
+&lt;p&gt;Dad is driving and quickly losing his patience.&lt;/p&gt;
+&lt;p&gt;Our recursive case is the constant fighting.&lt;/p&gt;
+&lt;p&gt;Our base case is dad’s patience when it runs out.&lt;/p&gt;
+&lt;p&gt;🚗&lt;/p&gt;
+&lt;h2&gt;Let’s Get Meta&lt;/h2&gt;
+&lt;p&gt;Ask yourself the following questions and keep them back of mind as you proceed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does recursion solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does recursion create?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to Code the Recursive Greatest Common Divisor Algorithm&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/programming-problem-solving/&quot;&gt;Programming is problem solving&lt;/a&gt;. There are four steps we need to take to solve any programming problem:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Understand the problem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make a plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate the plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Understand the Problem&lt;/h3&gt;
+&lt;p&gt;To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;md&quot;&gt;&lt;pre class=&quot;language-md&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;GIVEN two positive integers
+WHEN I pass them to my recursive algorithm
+THEN I am returned the greatest common &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That’s our general outline. We know our input conditions, two positive integers, and our output requirements, the greatest common divisor of the two integers, and our goal is to calculate it recursively.&lt;/p&gt;
+&lt;p&gt;Let’s make a plan!&lt;/p&gt;
+&lt;h3&gt;Make a Plan&lt;/h3&gt;
+&lt;p&gt;Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pattern recognition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstraction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithm design&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first step is decomposition, or breaking our problem down into smaller problems. What’s the smallest problem we can solve?&lt;/p&gt;
+&lt;p&gt;Recursion!&lt;/p&gt;
+&lt;p&gt;When writing a recursive algorithm, we need to pull ourselves up by our bootstraps and write a recursive algorithm.&lt;/p&gt;
+&lt;p&gt;We know that a recursive function is a function that calls itself, so let’s start pseudocoding our recursive GCD:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION gcd(n, m)
+
+    RETURN gcd(n, m)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Do we see a pattern?&lt;/p&gt;
+&lt;p&gt;Without something to stop it, our function will make infinite calls to itself.&lt;/p&gt;
+&lt;p&gt;What a crock!&lt;/p&gt;
+&lt;p&gt;Let’s take another look at our iterative GCD:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INPUT n
+INPUT m
+
+WHILE m IS GREATER THAN 0
+    SET r TO m
+    SET m TO THE REMAINDER of n DIVIDED BY m
+    SET n EQUAL TO r
+
+RETURN n&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The kernel of this algorithm occurs inside the &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loop where we perform a swap while calculating the modulo of our two input values.&lt;/p&gt;
+&lt;p&gt;What do we know about &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loops?&lt;/p&gt;
+&lt;p&gt;They iterate &lt;em&gt;until&lt;/em&gt; a condition is met. In our iterative GCD, our &lt;code class=&quot;language-text&quot;&gt;while&lt;/code&gt; loop runs until &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt; is no longer greater than 0. In other words, until &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt; is equal to 0.&lt;/p&gt;
+&lt;p&gt;Let’s translate this to pseudocode in our recursive GCD:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION gcd(n, m)
+    IF m IS EQUAL TO 0
+        RETURN n
+
+    RETURN gcd(n, m)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now there’s a way to break out of our loop.&lt;/p&gt;
+&lt;p&gt;AKA the base case.&lt;/p&gt;
+&lt;p&gt;Now we need to implement the recursive case. There are two problems remaining to be solved:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The swap&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The remainder&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We &lt;em&gt;could&lt;/em&gt; simply copy/paste our swap/modulo from our iterative GCD:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION gcd(n, m)
+    IF m IS EQUAL TO 0
+        RETURN n
+    
+    SET r TO m
+    SET m TO THE REMAINDER of n DIVIDED BY m
+    SET n EQUAL TO r
+
+    RETURN gcd(n, m)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But we can definitely get more abstract. Do you see a pattern?&lt;/p&gt;
+&lt;p&gt;With each recursive call, we pass the previous value of &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt; which is reassigned to &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;, and the new value of &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, which is the remainder of &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; divided by &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, to our function.&lt;/p&gt;
+&lt;p&gt;Rather than hardcode it, we can perform the swap &lt;em&gt;within&lt;/em&gt; the recursive call:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION gcd(n, m)
+    IF m IS EQUAL TO 0
+        RETURN n
+    
+    SET r TO THE REMAINDER of n DIVIDED BY m
+
+    RETURN gcd(m, r)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But we can definitely get more abstract! Do you see a pattern?&lt;/p&gt;
+&lt;p&gt;Rather than declare an &lt;code class=&quot;language-text&quot;&gt;r&lt;/code&gt; variable, we can perform the modulo operation &lt;em&gt;within&lt;/em&gt; the recursive call:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FUNCTION gcd(n, m)
+
+    IF m IS EQUAL TO 0
+        RETURN n
+    
+    RETURN gcd(m, n % m)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Execute the Plan&lt;/h3&gt;
+&lt;p&gt;Now it’s simply a matter of translating our pseudocode into the syntax of our programming language.&lt;/p&gt;
+&lt;h4&gt;How to Code the Recursive Greatest Common Divisor Algorithm in JavaScript&lt;/h4&gt;
+&lt;p&gt;Let’s start with JavaScript…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;gcd&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;n&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; m&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;m &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;gcd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;m&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; m&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;How to Code the Recursive Greatest Common Divisor Algorithm in Python&lt;/h4&gt;
+&lt;p&gt;Now let’s see it in Python…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;gcd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; m&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;m &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; n
+    
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; gcd&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;m&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; m&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Evaluate the Plan&lt;/h3&gt;
+&lt;p&gt;Can we do better?&lt;/p&gt;
+&lt;p&gt;Yes and no. Recursive functions are compact, and, as some will argue, elegant, but they are harder to immediately understand if you weren’t the author (and sometimes if you were!)&lt;/p&gt;
+&lt;h4&gt;What is the Big O Of Recursive Greatest Common Divisor?&lt;/h4&gt;
+&lt;p&gt;If you want to learn how to calculate time and space complexity, pick up your copy of &lt;a href=&quot;https://gum.co/big-o&quot;&gt;The Little Book of Big O&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;p&gt;Remember those &lt;em&gt;meta&lt;/em&gt; questions we asked at the outset? Let’s make it stick and answer them now!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Why do I need to know this?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does recursion solve?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What problem(s) does recursion create?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Why Do I Need to Know This?&lt;/h3&gt;
+&lt;p&gt;For the same reaons we discussed in the iterative solution, with the addition that you will &lt;em&gt;also&lt;/em&gt; want to know how to execute this with recursion.&lt;/p&gt;
+&lt;h3&gt;What Problem(s) Does Recursion Solve?&lt;/h3&gt;
+&lt;p&gt;Recursion allows us to write functions that are compact and elegant.&lt;/p&gt;
+&lt;h3&gt;What Problem(s) Does Recursion Create?&lt;/h3&gt;
+&lt;p&gt;Recursion can easily exceed the maximum size of the call stack.&lt;/p&gt;
+&lt;p&gt;Recursion can make the program harder to understand not only for your collaborators, but for your future self.&lt;/p&gt;
+&lt;h2&gt;A is for Algorithms&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42SPU/DMBCG/YdhZkYwMrKwsjHCxICYkBg6NhkAVZUAUVUtTZU4iWOfH2SHSlGIJSy9yvnu3scfsdput4y12Wzi11qLBEEva2Nu2DOW2u/3TKkoCry1hNHeP9HePcY45EIt5VNaa6ZUlSUiEiG700u+Ty5APOIl1lI+ZYxhSo3WeKCbZRTH5+yOzjAPz3GBptKkfCrsYkqdMRFYX99is1fc8gN9ddMv0nWkfIrEcKGhNXTzF+RzhXv/wszmiK5xXlI2lPeesSLQOXzT4lZr6rcF9WKJXa174O/PmvImgeF54D1t05DnGXmWxRiRvpYCjrc8BIZYnKCrCl3peEchNwT+OXIKGI5clmXU4Ukc5qH2b+C4ceo6UrAA/AFVClZXB07bBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;A is for Algorithms&quot;
+        title=&quot;A is for Algorithms&quot;
+        src=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png&quot;
+        srcset=&quot;/static/9f575ba85d45bde70732b6d52ad2e638/c26ae/jarednielsen-algorithms.png 158w,
+/static/9f575ba85d45bde70732b6d52ad2e638/6bdcf/jarednielsen-algorithms.png 315w,
+/static/9f575ba85d45bde70732b6d52ad2e638/f058b/jarednielsen-algorithms.png 630w,
+/static/9f575ba85d45bde70732b6d52ad2e638/40601/jarednielsen-algorithms.png 945w,
+/static/9f575ba85d45bde70732b6d52ad2e638/78612/jarednielsen-algorithms.png 1260w,
+/static/9f575ba85d45bde70732b6d52ad2e638/29114/jarednielsen-algorithms.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learn How to Code the Binary Search Algorithm]]></title><description><![CDATA[If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design…]]></description><link>https://jarednielsen.com/algorithm-binary-search/</link><guid isPermaLink="false">https://jarednielsen.com/algorithm-binary-search/</guid><pubDate>Fri, 09 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
