@@ -1,12 +1,20 @@
 ---
-title: "How to Be Curious" 
+title: "How to Ask 'Why?': A Guide for the Curious" 
 date: '2022-09-26'
 description: "TODO" 
-subject: How to Be Curious
 preview_text: “TODO"
 ---
 
 ![TODO](./jarednielsen-TODO.png)
+
+As we grow older, the the question “Why?” steadily gets replaced by “What do I need to do to achieve X?”. 
+
+If we want to be curious, we need to improve our ability to ask 'why'? 
+
+Why? 
+
+
+## How to Ask 'Why?'
 
 Why are we curious?
 
@@ -183,5 +191,3 @@ We ask ‘why’ recursively.
 Why? 
 
 Exactly.
-
-Looking to improve your _metacognition_? Check out my latest article, [How to Code the Recursive Factorial Algorithm](TODO)
