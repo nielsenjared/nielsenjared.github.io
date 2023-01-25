@@ -190,4 +190,10 @@ We ask ‘why’ recursively.
 
 Why? 
 
+<<<<<<< HEAD
 Exactly.
+=======
+Exactly.
+
+Looking to improve your _metacognition_? Check out my latest article, [How to Code the Recursive Factorial Algorithm](https://jarednielsen.com/algorithm-recursive-factorial/)
+>>>>>>> 3d148f3c1276d858ac4d2d96b5ba6fc8a158c15d
