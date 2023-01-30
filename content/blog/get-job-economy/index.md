@@ -9,7 +9,7 @@ keywords: ['job', 'economy']
 ![  ](./jarednielsen-get-job-economy.png)
 
 
-What a year! And it’s only January. It seems every day another tech company is laying off a large percentage of its workforce. But unemployment is low and companies are hiring. WTF is going on? What does this mean for someone recently unemployed or just setting foot on their career path? Here is advice on how to get a job in this economy from someone who has been on both sides of the equation, as an applicant and a hiring manager. 
+What a year! And it’s only January. It seems every day another tech company is laying off a large percentage of its workforce. But unemployment is low and companies are hiring. WTF is going on? What does this mean for someone recently unemployed or just setting foot on their career path? Here's some advice on how to get a job in this economy from someone who has been on both sides of the equation, as an applicant and a hiring manager. 
 
 
 ## 1. Talk to your people
@@ -22,15 +22,15 @@ You don’t know anybody?
 
 You know _somebody_! 
 
-Unless, of course, you were raised by wolves. But if that’s the case, why are you reading this? You already know how to survive. 
+Unless, of course, you were raised by wolves. 🐺🐺 
 
-Being woodland creatures, wolves know that the best time to plant a tree is 20 years ago. 
+Being woodland creatures, wolves know that the best time to plant a tree is 20 years ago. 🌳
 
-The next best time is today. 
+The next best time is today. 🌱
 
-Talk to everyone you know. Friends. Neighbors. Former teachers. Your mom. Tell them what you’re interested in. There’s a good chance someone you know knows someone. Or knows someone who knows someone. 
+Talk to everyone you know. Friends. Neighbors. Former teachers. Your mom. Tell them what you’re interested in. There’s a good chance someone you know knows someone. Or knows someone who knows someone. 🥓
 
-If you think networking is a dirty word, start thinking of it as community building. You’ll encounter a lot of insufferable individuals during your career and those people are the icky part of this equation, especially in tech, which, like finance, attracts the best and worst in humanity. Give your attention to the best. This is your community. You want to keep these people close to you and you do so by keeping in touch. Make time to say ‘Hey!’ now and then. Schedule it or you will forget. Seriously. Put it in your calendar right now. 
+If you think networking is a dirty word, start thinking of it as community building. Yes, you’ll encounter a lot of insufferable individuals during your career and those people are the icky part of this equation, especially in tech, which, like finance, attracts the best and worst in humanity. Give your attention to the best. This is your community. You want to keep these people close to you and you do so by keeping in touch. Make time to say ‘Hey!’ now and then. Schedule it or you will forget. Seriously. Put it in your calendar right now. 
 
 💡 Pro Tip: remember their birthdays. 
 
@@ -48,10 +48,10 @@ Whether or not you found a lead through your network, you’re going to need to 
 
 ### Write a resume
 
-There are countless resources out there on writing a good resume, as well as templates you can repurpose. Keep a main copy of your resume and then customize it for each employer. Don’t just submit the same resume to every job. IMHO don’t submit more than one page if you’re not applying for an academic position, though there are those who will debate me. Think of your resume as a big ass business card. You want it to be something that is easy to read and sells the best of you. It’s your 8.5 x 11 (or A4) elevator pitch.
+There are countless resources out there on writing a good resume, as well as templates you can repurpose. Keep a main copy of your resume and then customize it for each employer. Don’t just submit the same resume to every job. And don’t submit more than one page if you’re not applying for an academic position, though there are those who will debate this. Think of your resume as a big ass business card. You want it to be something that is easy to read and sells the best of you. It’s your 8.5 x 11 (or A4) elevator pitch.
 
 
-### Create a cover letter template
+### Write a cover letter
 
 Write a boilerplate cover letter that you can adapt to each job. Your cover letter should be 3 or 4 paragraphs, but no more, and one page max. This is a standard outline: 
 
@@ -66,7 +66,7 @@ Write a boilerplate cover letter that you can adapt to each job. Your cover lett
 As above, there are countless resources and templates available for writing good cover letters. Pick one that resonates with you and adapt it to your personality and professional goals. Above all, tell a good story. This is your one opportunity to craft a narrative and address any gaps in your resume, so make the most of it. _Always_ submit a cover letter. Don’t skip it because it's optional. It's not optional. It's what sets you apart. 
 
 
-### Polish Your Public Profiles
+### Polish your public profiles
 
 There are at least three public profiles you need to prepare and/or polish:
 
@@ -79,7 +79,7 @@ There are at least three public profiles you need to prepare and/or polish:
 
 #### LinkedIn
 
-Love or hate it, LinkedIn is useful in the job hunt, so make sure your profile is complete and up-to-date. If you want to go the extra mile, ask former colleagues for endorsements. Then _use_ the platform. Announce your job-seeking intentions, then post regularly. Connect with people. Set up job notifications. Follow thought leaders, topics, and companies. 
+Love or hate it, LinkedIn is useful in the job hunt, so make sure your profile is complete and up-to-date. If you want to go the extra mile, ask former colleagues for endorsements. Then _use_ the platform. Announce your job-seeking intentions, then post regularly. Connect with people. Set up job notifications. Follow thought leaders, topics, companies, etc.
 
 #### GitHub
 
@@ -93,21 +93,21 @@ Most employers will ask for your GitHub profile to see what, and if, you are act
 
 * Link to your portfolio
 
-Perhaps, most importantly, commit! Keep that chart in the green.
+Perhaps, most importantly, commit! Keep that chart in the green.🟩 🟩 🟩 🟩 🟩 🟩 🟩
 
 
 #### Twitter
 
-Some employers may ask for your Twitter handle. You are not obligated to provide any social media accounts (including LinkedIn, if you consider that social media). But if you're concerned a potential employer might find you anyway, now is the time to start deleting embarrassing posts and cleaning up your public image. 
+Some employers may ask for your Twitter handle. You are not obligated to provide any social media accounts (including LinkedIn, if you consider that social media). But if you're concerned a potential employer might find you anyway, now is the time to start deleting embarrassing posts. 
 
-Here’s a personal example: I was researching an applicant, an internal referral, for a role and I found his Twitter profile. It listed a few accomplishment and stated that "My pronouns are Ace / Dude / Champ". This was a red flag for me as he went out of his way to make this public (at the time of this writing Twitter doesn’t require pronouns) and it signaled an insensitivity to difference. The last thing the tech industry needs is another white man who is unwilling to adapt. With more qualified candidates in the queue, it was easy to pass on this applicant as I was looking for someone with both hard _and_ soft skills. 
+Here’s a personal example: I was researching an applicant, an internal referral, for a role and I found his Twitter profile. It listed a few accomplishments and stated something simliar to "My pronouns are Ace / Buddy / Champ". This was a red flag for me as he went out of his way to make this public (at the time of this writing Twitter doesn’t require pronouns) and it signaled an insensitivity to difference. The last thing the tech industry needs is another white man who is unwilling to adapt. With more qualified candidates in the queue, it was easy to pass on this applicant as I was looking for someone with both hard _and_ soft skills. 
 
 Don’t be this guy. 
 
 For more than one reason.
 
 
-## 3. An Application A Day Keeps Unemployment Away
+## 3. An application a day keeps unemployment away
 
 The job hunt sucks. It’s stressful. It’s draining. It’s demoralizing. You’ll invest significant time and effort in an application only to receive an automated rejection email. You might even get into the interview pipeline only to receive that same automated rejection, as if you’re not human! If your skin isn’t as thick as _The Art of Computer Programming_, you’ll need a strategy to buffer yourself. Try the following strategies: 
 
