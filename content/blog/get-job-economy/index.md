@@ -212,30 +212,28 @@ If you checked the boxes with the recruiter, your next meeting will be with the 
 
 #### Practice answers to stock interview questions
 
-There are countless resources out there listing “The 100 Questions You’ll Get Asked in the Interview”. Copy / paste one or more of these listicles in a Google Doc and spend a morning or afternoon writing answers to them. This will equip you with notes you can quickly review and help calm your nerves going into the interview. 
+There are countless resources out there listing “The 100 Questions You’ll Get Asked in the Interview”. Copy / paste one or more of these listicles in a Google Doc and build it into your schedule to write answers to them. This will equip you with notes you can quickly review and help calm your nerves going into the interview. The goal is to avoid fumbling when one of these questions is thrown at you. 🏈
 
 #### Do (more of) your homework. 
 
-Dig deeper into the company and the role. Revisit the JD. The hiring manager probably wrote it and if it’s not stated clearly, the problems they want you to solve are written between the lines. 
+Dig deeper into the company and the role. Revisit the JD. The hiring manager probably wrote it and if it’s not stated clearly, the value they want you to deliver and the problems they want you to solve are written between the lines. Be prepared to talk to these points and prepare five questions that will help you learn more about the company and the role and sincerely demonstrate your interest in both. 
 
 #### Learn something about the hiring manager. 
 
-Your relationship with your manager will make or break the job for you, so test the waters. Find them on LinkedIn or track down some other public profile. Then prepare a question or two for them based on their professional history. Dont' get personal unless there's some obvious resonance between the two of you. 
+Your relationship with your manager will make or break the job for you, so test the waters. Find them on LinkedIn or track down some other public profile. Then prepare a question or two for them based on their professional history. Don't get personal unless there's some obvious resonance between the two of you. 
 
 You’re not trying to stroke their ego.
 
-You’re testing the waters by emulating a 1:1. 
-
-This will let both of you know if it’s a good fit. 
+You’re emulating a 1:1, where you can (hopefully) talk openly with one another. This will let both of you know if it’s a good fit. 
 
 But only do this if you do it sincerely. Otherwise, you’re trolling. 
 
-Most companies will let you know who your interviewers will be well ahead of time. Take advantage of this! It’s a red flag if they don’t, but not necessarily a deal breaker. If your hiring manager is “Jared Nielsen”, then search for “Jared Nielsen { COMPANY NAME }”. 
+Most companies will let you know who your interviewers will be well ahead of time. Take advantage of this! It’s a red flag if they don’t, but not necessarily a deal breaker. If ther recruiter doesn't offer this information, ask for it. 
 
 
 ### The Panel
 
-Every organization will run you through a gauntlet of subsequent interviews, often referred to as ‘The Panel’. If you make it this far, it’s because the hiring manager likes you but now needs to perform due diligence and allow others to form an opinion. Time is money and the hiring manager doesn’t want to occupy too much team time with interviews. That’s good news for you! It means you are one of a handful of strong candidates remaining in the pipeline. As with the hiring manager above, learn something about each of the individuals you will meet. Sincerely. These interviews will be a combination of teammates and stakeholders. Everybody wants to make the hire, but (almost) nobody enjoys doing these interviews. They make the work week even busier and it gets tiring asking the same questions of each candidate over and over and filling out the HR forms. So use this knowledge to your advantage! You want to get to a place where you can be a little less formal and more conversational. Let the interviewers know what it will be like to work with you. If you get hired, they’re never going to schedule a Zoom call with you and ask ‘Tell me about a time when…’. 
+Every organization will run you through a gauntlet of subsequent interviews, often referred to as ‘The Panel’. If you make it this far, it’s because the hiring manager likes you but now needs to perform due diligence and allow others to form an opinion. Time is money and the hiring manager doesn’t want to occupy too much team time with interviews. That’s good news for you! It means you are one of a handful of strong candidates remaining in the pipeline. As with the hiring manager above, learn something about each of the individuals you will meet. These interviews will be a combination of teammates and stakeholders. Everybody wants to make the hire, but (almost) nobody enjoys doing these interviews. They make the work week even busier and it gets tiring asking the same questions of each candidate and filling out the HR forms. So use this knowledge to your advantage! You want to get to a place where you can be a little less formal and more conversational. Let the interviewers know what it will be like to work with you. If you get hired, they’re never going to schedule a Zoom call with you and ask ‘Tell me about a time when…’. 
 
 Talk shop. 
 
@@ -263,7 +261,7 @@ None of these will be a challenge for you, though, because you were investing 1%
 
 ## 6. Negotiate 
 
-If you get an email from the recruiter asking for a quick call, you’re golden. They want you.
+If you get a message from the recruiter asking for a quick call, you’re golden. They want you.
 
 Now it’s time to discuss salary. 
 
@@ -277,14 +275,14 @@ They expect this.
 
 If you’re new to this or you really need the job, it’s going to feel scary. Don’t be greedy and _do_ be appreciative. The worst that can happen is they say ‘no’ and you still take the job. 
 
-When an offer is being made, there are constraints and calculations being made. For example, here’s some behind-the-scenes context: hiring managers work with a budget. If the role is a backfill, the budget is probably fixed based on the salary of the individual who left. If they advocated for a new hire, they made the case, based on industry benchmarks and comparable roles across the company, for a salary. If they’re hiring for more than one role, they need to divvy that up accordingly. More qualified individuals are going to get a bigger slice of the pie. Say, for example, a hiring manager gets a budget of $240,000. They could hire two devs at $120k each. Or they could hire someone junior at $100k and someone more senior at $140k. Or they could hire three associates at $80k each, or a 10X monster at $240k, but then they’ve got different problems on their hands in those last two scenarios. Good hiring managers often take this strategy: they make a generous offer, but it's just shy of maxing out their budget. This gives both the hiring manager and you, the candidate, some flexibility for negotiation. 
+There are constraints and calculations when an offer is being made. Hiring managers work with a budget. If the role is a backfill, the budget is probably fixed based on the salary of the individual who left. If they advocated for a new hire, they made the case, based on industry benchmarks and comparable roles across the company, for a salary. If they’re hiring for more than one role, they need to divvy that up accordingly. More qualified individuals are going to get a bigger slice of the pie. Say, for example, a hiring manager gets a budget of $240,000. They could hire two devs at $120k each. Or they could hire someone junior at $100k and someone more senior at $140k. Or they could hire three associates at $80k each, or a 10X monster at $240k, but then they’ve got different problems on their hands in those last two scenarios. Good hiring managers often take this strategy: they make a generous offer, but it's just shy of maxing out their budget. This gives both the hiring manager and you, the candidate, some flexibility for negotiation. 
 
 If you feel like you’re being low-balled, trust your gut. _You_ can always say ‘no’. But, as they say, “It’s easier to find a job when you have one.” 
 
 
 ## 7. Help others
 
-You got the job! Congrats! Now let’s bring it full circle. Listen to the people in your community. You needed help yesterday. Today you can offer it. If you see someone needing help in the job hunt, reach out. Or write an article like this! ;)
+You got the job! Congrats! Now let’s bring it full circle. Listen to the people in your community. You needed help yesterday. You can offer help today. Reach out! Or write an article like this! ;)
 
 
 
