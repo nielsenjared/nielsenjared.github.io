@@ -1,12 +1,13 @@
 ---
 title: 'How To Be Confident in Your Confidence: A Guide for Overconfident Experts'
-date: '2022-10-10'
-subject: “Experts are led astray not by what they believe, but by how they think.” 
-description: TODO
-
+date: '2023-02-03'
+description: Overconfidence is a cognitive bias caused by the illusions of understanding, validity, and skill. In this article, you'll learn hwo to be confident in our confidence by using checklists, feedback and practice, and metacognition. 
+keywords: ['confidence', 'overconfidence', 'overconfident', 'checklists', 'metacognition', 'illusions', 'cognitive bias']
 ---
 
-Hey friends! 
+![ TODO ](TODO)
+
+> Experts are led astray not by what they believe, but by how they think.
 
 I was recently heading up a cross-functional initiative and needed to work with a Principal Engineer from another team to accomplish it. Let’s call him Phony Baloney. There were _a lot_ of technical details to work out, and as developers do, we split hairs over all of them. Phony Baloney was the loudest voice in the Zoom, insisting, time and time again, that his way was The Only Way. Sometimes he was right, but we all knew when he was wrong. When we presented evidence contrary to his positions, PB refused to acknowledge it, and instead turned the focus to some other bikeshed to paint or resorted to bullying tactics. 
 
@@ -79,10 +80,6 @@ According to Kahneman, individuals who suffer from the illusion of skill are:
 1.  **Exercising high-level skills**. Subject matter experts are performing “serious work that requires extensive training, and the people who do it have immediate (and valid) experience using these skills.” But following The Law of the Instrument, these skills can lead you to become a hammer and see everything as a nail, overconfident in your abilities and ignorant of your own ignorance. 
 
 2. **Sustained by a community of like-minded believers**. Subject matter experts “believe themselves to be among the chosen few who can do what they believe others cannot.”
-
-
-
-
 
 
 ## How Do We Overcome Overconfidence?
@@ -177,5 +174,3 @@ According to Oakley, "the easiest way to become more metacognitive is simply to 
 ## How To Be Confident In Your Confidence
 
 Overconfidence is a cognitive bias caused by the illusions of understanding, validity, and skill. We can be confident in our confidence by using checklists, feedback and practice, and metacognition. 
-
-Looking to feel confident in your confidence? Check out my latest article, [How To Code the Recursive Fibonacci Algorithm](https://jarednielsen.com/algorithm-recursive-fibonacci/)
