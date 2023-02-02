@@ -1,348 +1,95 @@
 ---
-title: "Learn How to Code the Recursive Greatest Common Divisor Algorithm"
-date: "2022-09-23"
-description: "If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive greatest common divisor."
-keywords: ['algorithm', 'greatest common divisor', 'gcd', 'recursive', 'javascript', 'python']
----
-
-![ Illustration of the recursive Greatest Common Divisor ](./jarednielsen-algorithm-recursive-greatest-common-divisor.png)
-
-
-If you want to learn how to code, you need to learn algorithms. Learning algorithms improves your problem solving skills by revealing design patterns in programming. In this tutorial, you will learn how to code the recursive Greatest Common Divisor in JavaScript _and_ Python.
-
+title: "How To Be A Powerful, Courageous, and Wise Programmer"
+date: "2022-01-16"
+description: "The Legend of Zelda follows the adventures of Link, a young hero who drops out of college to launch a successful startup in a Palo Alto garage and changes the world as we know it. How did Link succeed in his quest? He equipped himself with algorithms, data structures, and Big O."
+keywords: ['computer science', 'programmer', 'legend of zelda', 'powerful', 'courageous', 'wise']
 
 ---
 
-![A is for Algorithms](./jarednielsen-algorithms.png)
-Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
+![ The Triforce ](./jarednielsen-triforce-computer-science.png)
 
----
 
+There are countless programming analogies we can draw from video games. One of the longest running and widely recognized games is _The Legend of Zelda_. The series follows the adventures of Link, a young hero who drops out of college to launch a successful startup in a Palo Alto garage and changes the world as we know it. 
 
-## Retrieval Practice
+How did Link succeed in his quest? 
 
-Retrieval practice is the surest way to solidify any new learning. Attempt to answer the following questions before proceeding:
+He equipped himself with [The Triforce of Computer Science](https://jarednielsen.gumroad.com/l/computerscience): algorithms, data structures, and Big O. 
 
-* What is the iterative Greatest Common Divisor?
+If you’re not familiar with it, the Triforce is an artifact of _The Legend of Zelda_ video game franchise, with much of the game play centered on gathering and recombining its three pieces. According to Ye Olde Wikipedia: 
+> When the three pieces of the Triforce are combined, they create a divine artifact that has the power to grant any wish. For this reason, the combined Triforce has been the main source of struggle for control within the series, due to its limitless power.
+ 
+The pieces of the Triforce represent _power_, _courage_, and _wisdom_.
 
-* What is proof by induction? 
-
-* What is recursion? 
-
-
-### How Does the Iterative Greatest Common Divisor Algorithm Work?
-
-The greatest common divisor (GCD) of two integers is the largest positive integer that divides without remainder into each of the two integers. For example, the GCD of 18 and 30 is 6. The iterative GCD algorithm uses the modulo operator to divide one of the integers by the other. The algorithm continues to iterate _while_ the remainder is greater than 0. Here it is in pseudocode for reference: 
-```
-INPUT n
-INPUT m
-
-WHILE m IS GREATER THAN 0
-    SET r TO m
-    SET m TO THE REMAINDER of n DIVIDED BY m
-    SET n EQUAL TO r
-
-RETURN n
-```
-
-### What is Proof by Induction? 
-
-Proof by induction is a mathematical method used to prove that a statement is true for all natural numbers. It’s not enough to prove that a statement is true in one or more specific cases. We need to prove it is true for all cases.
-
-There are two metaphors commonly used to describe proof by induction:
-
-* The domino effect
-
-* Climbing a ladder
-
-Given a chain of dominos, if one falls, they will all fall.
-
-Given a sturdy ladder, if one rung holds, they will all hold as we climb higher.
-
-
-### What is Recursion? 
-
-This is our introduction to recursion in this series, but, as the tired joke goes:
-
-> In order to understand recursion, one must first understand recursion.
-
-In computer science, recursion occurs when a function calls itself within its declaration.
-
-For example:
-```js
-const loop = () => loop();
-```
-If you run this in your browser console or using Node, you’ll get an error.
-
-Why?
-
-Too much recursion!
-
-`const loop()` is just that, a constant loop.
-
-🔁
-
-We use recursion to solve a large problem by breaking it down into smaller instances of the same problem.
-
-To do that, we need to tell our function what the smallest instance looks like.
-
-If you recall, with proof by induction we need to establish two things:
-
-* base
-
-* induction
-
-Recursion is similar. We also need to establish a base case but rather than induction, we establish the recursive case.
-
-We use the recursive case to break the problem down into smaller instances.
-
-We use the base case to return when there are no more problems to be solved.
-
-For example. a family on vacation:
-
-```js
-const fighting = patience => {
- if (patience <= 0) {
-   return "If you don’t stop fighting, I will turn this car around!"
- }
- return fighting(patience - 1);
-};
-```
-
-The kids are fighting in the backseat.
-
-Dad is driving and quickly losing his patience.
-
-Our recursive case is the constant fighting.
-
-Our base case is dad’s patience when it runs out.
-
-🚗
-
-
-## Let's Get Meta
-
-Ask yourself the following questions and keep them back of mind as you proceed:
-
-* Why do I need to know this?
-
-* What problem(s) does recursion solve? 
-
-* What problem(s) does recursion create? 
-
-
-## How to Code the Recursive Greatest Common Divisor Algorithm 
-
-[Programming is problem solving](https://jarednielsen.com/programming-problem-solving/). There are four steps we need to take to solve any programming problem: 
-
-1. Understand the problem
-
-2. Make a plan
-
-3. Execute the plan
-
-4. Evaluate the plan
-
-
-### Understand the Problem
-
-To understand our problem, we first need to define it. Let’s reframe the problem as acceptance criteria:
-
-```md
-GIVEN two positive integers
-WHEN I pass them to my recursive algorithm
-THEN I am returned the greatest common 
-```
-
-That’s our general outline. We know our input conditions, two positive integers, and our output requirements, the greatest common divisor of the two integers, and our goal is to calculate it recursively.
-
-Let’s make a plan!
-
-
-### Make a Plan
-
-Let’s revisit our computational thinking heuristics as they will aid and guide is in making a plan. They are: 
-
-* Decomposition
-
-* Pattern recognition
-
-* Abstraction
-
-* Algorithm design
-
-The first step is decomposition, or breaking our problem down into smaller problems. What's the smallest problem we can solve? 
-
-Recursion! 
-
-When writing a recursive algorithm, we need to pull ourselves up by our bootstraps and write a recursive algorithm. 
-
-We know that a recursive function is a function that calls itself, so let's start pseudocoding our recursive GCD: 
-```
-FUNCTION gcd(n, m)
-
-    RETURN gcd(n, m)
-```
-
-Do we see a pattern? 
-
-Without something to stop it, our function will make infinite calls to itself. 
-
-What a crock! 
-
-Let's take another look at our iterative GCD: 
-```
-INPUT n
-INPUT m
-
-WHILE m IS GREATER THAN 0
-    SET r TO m
-    SET m TO THE REMAINDER of n DIVIDED BY m
-    SET n EQUAL TO r
-
-RETURN n
-```
-
-The kernel of this algorithm occurs inside the `while` loop where we perform a swap while calculating the modulo of our two input values.
-
-What do we know about `while` loops? 
-
-They iterate _until_ a condition is met. In our iterative GCD, our `while` loop runs until `m` is no longer greater than 0. In other words, until `m` is equal to 0. 
-
-Let's translate this to pseudocode in our recursive GCD: 
-```
-FUNCTION gcd(n, m)
-    IF m IS EQUAL TO 0
-        RETURN n
-
-    RETURN gcd(n, m)
-```
-
-Now there's a way to break out of our loop. 
-
-AKA the base case. 
-
-Now we need to implement the recursive case. There are two problems remaining to be solved: 
-
-1. The swap
-
-2. The remainder 
-
-We _could_ simply copy/paste our swap/modulo from our iterative GCD: 
-```
-FUNCTION gcd(n, m)
-    IF m IS EQUAL TO 0
-        RETURN n
+According to Merriam-Webster, the definitions for each of these attributes are as follows: 
     
-    SET r TO m
-    SET m TO THE REMAINDER of n DIVIDED BY m
-    SET n EQUAL TO r
-
-    RETURN gcd(n, m)
-```
-
-But we can definitely get more abstract. Do you see a pattern?
-
-With each recursive call, we pass the previous value of `m` which is reassigned to `n`, and the new value of `m`, which is the remainder of `n` divided by `m`, to our function. 
-
-Rather than hardcode it, we can perform the swap _within_ the recursive call:
-```
-FUNCTION gcd(n, m)
-    IF m IS EQUAL TO 0
-        RETURN n
+* **Power**: _ability to act or produce an effect_
     
-    SET r TO THE REMAINDER of n DIVIDED BY m
-
-    RETURN gcd(m, r)
-```
-
-But we can definitely get more abstract! Do you see a pattern? 
-
-Rather than declare an `r` variable, we can perform the modulo operation _within_ the recursive call:
-```
-FUNCTION gcd(n, m)
-
-    IF m IS EQUAL TO 0
-        RETURN n
+* **Courage**: _mental or moral strength to venture, persevere, and withstand danger, fear, or difficulty_
     
-    RETURN gcd(m, n % m)
-```
+* **Wisdom**: _ability to discern inner qualities and relationships_
+
+I love a good framework, and these easily map to Algorithms, Big O, and Data Structures. 
+
+Table time! 🏓
+ 
+| Triforce attribute    | Computer science topic    |
+|---                    |---                        |
+| Power                 | Algorithms                |
+| Courage               | Data structures           |
+| Wisdom                | Big O                     |
+
+Like the Triforce, possessing knowledge of these three compsci topics can grant (almost) any wish. Combined, they establish the foundation for solving any programming problem. 
 
 
-### Execute the Plan
+### ⚔️🛡️ Power ↦ Algorithms
 
-Now it's simply a matter of translating our pseudocode into the syntax of our programming language. 
+According to Ye Olde Wikipedia, an _algorithm_ is: 
+> a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation
 
+We can think of algorithms as items in Link’s inventory, equipping our hero with the tools required to crawl dungeon after dungeon, battle bosses, and build apps for villagers. The more algorithms you acquire, the more you can accomplish. You will also want to collect more powerful algorithms. Don't expect to vanquish Ganon with the Bubble Sword. You'll want the Quick Sword for that. But, as we’ve seen over the last few years, algorithms can cause massive societal change, both positive and negative.
 
-#### How to Code the Recursive Greatest Common Divisor Algorithm in JavaScript
+> With great power comes great responsibility.
 
-Let's start with JavaScript...
-```js
-const gcd = (n, m) => {
-    if (m === 0) {
-        return n;
-    }
+Oh, wait. That’s Spider-Man. But still applicable here. 
 
-    return gcd(m, n % m);
-};
-```
+### ❤️ Courage ↦ Data Structures
 
+According to Ye Olde Wikipedia, a _data structure_ is: 
+> a collection of data values, the relationships among them, and the functions or operations that can be applied to the data
 
-#### How to Code the Recursive Greatest Common Divisor Algorithm in Python
+Like heart containers, data structures store the life energy of a program. As the Hero’s Shade says in _Twilight Princess_:
 
-Now let's see it in Python...
-```py
-def gcd(n, m):
-    if (m == 0):
-        return n
-    
-    return gcd(m, n % m)
-```
+> A sword wields no strength unless the hand that holds it has courage.
 
-### Evaluate the Plan
-
-Can we do better? 
-
-Yes and no. Recursive functions are compact, and, as some will argue, elegant, but they are harder to immediately understand if you weren't the author (and sometimes if you were!)
+And an algorithm is only as strong as the data structure that supports it. You can only accomplish so much without an array. Even then, at some point, an array becomes limiting and you need a tree. Or a graph. Or a Link-ed list ;)
 
 
-#### What is the Big O Of Recursive Greatest Common Divisor?
+### 🦉 Wisdom ↦ Big O
 
-If you want to learn how to calculate time and space complexity, pick up your copy of [The Little Book of Big O](https://gum.co/big-o)
+According to Ye Olde Wikipedia, _Big O_ is a a mathematical notation: 
+> used to classify algorithms according to how their run time or space requirements grow as the input size grows
 
+In _The Ocarina of Time_, Zelda tells Link: 
 
-## Reflection
+> The flow of time is always cruel…
 
-Remember those _meta_ questions we asked at the outset? Let’s make it stick and answer them now!
+So is the flow of space! 
 
-* Why do I need to know this?
-
-* What problem(s) does recursion solve? 
-
-* What problem(s) does recursion create?
+With Big O, we demonstrate wisdom by analyzing the performance of our algorithms and asking the question: “Can we do better?” 
 
 
-### Why Do I Need to Know This? 
+## How To Be A Powerful, Courageous, and Wise Programmer
 
-For the same reaons we discussed in the iterative solution, with the addition that you will _also_ want to know how to execute this with recursion. 
+Learning to program is an adventure. 
 
+It's dangerous to go alone! Take this: [The Triforce of Computer Science](https://jarednielsen.gumroad.com/l/computerscience)
 
-### What Problem(s) Does Recursion Solve? 
+It's a bundle featuring the following computer science books: 
 
-Recursion allows us to write functions that are compact and elegant.
+* A is for Algorithms
 
+* The Seven Data Structures of Highly Effective Developers
 
-### What Problem(s) Does Recursion Create? 
+* The Little Book of Big O
 
-Recursion can easily exceed the maximum size of the call stack.
-
-Recursion can make the program harder to understand not only for your collaborators, but for your future self.
-
-
-## A is for Algorithms
-
-![A is for Algorithms](./jarednielsen-algorithms.png)
-Give yourself an A. Grab your copy of [A is for Algorithms](https://gum.co/algorithms)
-
-
-
+May you be a powerful, courageous, and wise programmer.
