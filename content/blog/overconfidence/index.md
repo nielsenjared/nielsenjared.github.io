@@ -5,7 +5,6 @@ description: Overconfidence is a cognitive bias caused by the illusions of under
 keywords: ['confidence', 'overconfidence', 'overconfident', 'checklists', 'metacognition', 'illusions', 'cognitive bias']
 ---
 
-![ TODO ](TODO)
 
 > Experts are led astray not by what they believe, but by how they think.
 
