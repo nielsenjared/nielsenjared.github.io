@@ -1,8 +1,8 @@
 ---
 title: 'How to Be Humble: A Guide for Avoiding Illusions of Competence'
-date: '2022-10-22'
-description: To succeed in software development, it’s important to maintain your humility and avoid illusions of competence. 
-keywords: ['dunning-kruger effect', 'illusions of competence', 'humility']
+date: '2023-02-10'
+description: It's easy to fall into the trap of overestimating our abilities and humbling when we discover we were misled. In this article, you will learn strategies for avoiding illusions of competence.
+keywords: ['dunning-kruger effect', 'illusions of competence', 'humility', 'humble']
 subject_line: “The way you focus your intelligence is more important than how much intelligence you have.”
 
 ---
@@ -10,25 +10,14 @@ subject_line: “The way you focus your intelligence is more important than how 
 
 ![](./jarednielsen-solution-illusions-humility.png)
 
-## Illusions of Competence 
 
-> “The way you focus your intelligence is more important than how much intelligence you have.”
-> -Steve McConnell, _Code Complete_
+After nearly three years of pandemic life, I wanted to break up my routine with something completely different. 
 
-_This article originally published in my newsletter, [The Solution](TODO))_
-
-
-
-
-Hey friends! 
-
-I just joined an axe throwing league and it is kicking my, well, axe. 
+So I joined an axe throwing league and it is kicking my, well, axe. 
 
 🪓
 
-After two plus years of the pandemic, I wanted to break up my routine with something completely different. 
-
-I didn't join thinking I would be good, but I _am_ surprised at just how bad I am. 
+I didn't join thinking I would be good at it, but I _am_ surprised at just how bad I'm doing. 
 
 It's humbling. 
 
@@ -43,6 +32,12 @@ But even our comfort zones aren't safe.
 Why?
 
 Because we're in them! 
+
+
+## Illusions of competence
+
+> “The way you focus your intelligence is more important than how much intelligence you have.”
+> -Steve McConnell, _Code Complete_
 
 In _Make It Stick_, the authors describe the Dunning-Kruger effect, a phenomenon in which “incompetent people overestimate their own competence and, failing to sense a mismatch between their performance and what is desirable, see no need to try to improve.”
 
@@ -100,6 +95,9 @@ The authors outline several common illusions of competence:
 
 * **False consensus effect**: We generally fail to recognize the idiosyncratic nature of our personal understanding of the world and interpretation of events and that ours differ from others’. 
 
+
+## How to be humble
+
 How do we avoid these illusions of competence?
 
 Practice. 
@@ -148,14 +146,8 @@ We can supplement the above list with several ways for maintaining intellectual 
 
 * Providing realistic schedule estimates and holding your ground when management asks you to adjust them
 
-TODO
-In many ways, the items on this list all relate to the first, which is also closely related to the Dunning-Kruger effect and (sometimes willful) illusions of competence and knowing. McConnell offers some sage advice:
+In many ways, the items on this list all relate to the first, which is also closely related to the Dunning-Kruger effect and (sometimes willful) illusions of competence. McConnell offers some sage advice:
 
 > How can you learn anything new if you pretend that you know everything already? You’d be better off pretending that you don’t know anything. Listen to people’s explanations, learn something new from them, and assess whether _they_ know what _they_ are talking about. 
 
 In other words: be humble.
-
-Looking to TODO? 
-
-Check out my latest article TODO
-
