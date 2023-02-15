@@ -1,8 +1,8 @@
 ---
-title: "Flow & Friction"
+title: "How to Get in the Zone: A Guide for Finding Flow in Friction"
 date: "2021-01-18"
 description: TODO
-keywords: ['flow']
+keywords: ['flow', 'Mihaly Csikszentmihalyi', 'friction', 'optimal experience']
 ---
 
 
@@ -10,6 +10,19 @@ keywords: ['flow']
 
 
 @TODO what’s the hook?
+
+One of the best ways to gauge our skill in any domain is whether or not we are able to get in the zone, or find flow. 
+
+But it's fleeting! 
+
+It's hard work. 
+
+How do we reliably and consistently get in the zone? 
+
+Friction. 
+
+Before we answer this question, let's define _flow_...
+
 
 ## What is Flow?
 
@@ -23,7 +36,7 @@ Programmers often refer to this phenomenon as being 'in The Zone'. We can also d
 > The best moments usually occur when a persons’ body or mind is stretched to its limits in a voluntary effort to accomplish something difficult and worthwhile. Optimal experience is thus something we can make happen.”
 
 
-## Why Flow?
+## What Problem Does Flow Solve?
 
 We can use the optimal experience of a flow state to manage our most precious resource: attention. According to Csikszentmihalyi: 
 
@@ -34,7 +47,7 @@ We use our attention, or psychic energy, to Get Things Done (GTD). More than tha
 > ...in the long run, optimal experiences add up to a sense of mastery--or perhaps better, a sense of participation in determining the content of life--that comes as close to what is usually meant by happiness as anything else we can conceivably imagine.
 
 
-## How Do We Flow? 
+## How Do We Find Flow? 
 
 In [Flow](https://amzn.to/35NmVb3), Mihaly Csikszentmihalyi outlines the **The Elements of Enjoyment**, or, the conditions required to achieve flow: 
 
@@ -47,7 +60,7 @@ There's a balance to strike between boredom and anxiety. If the activity is too 
 
 2. **The Merging of Action and Awareness**
 
-This is where we 'get in The Zone' and become wholly immersed in the task at hand. 
+This is where we 'get in The Zone', becoming wholly immersed in the task at hand. According to Csikszentmihalyi: 
 
 > When all a person’s relevant skills are needed to cope with the challenges of a situation, that person’s attention is completely absorbed by the activity. As a result, one of the most universal and distinctive features of optimal experience takes place: people become so involved in what they are doing that the activity becomes spontaneous, almost automatic; they stop being aware of themselves as separate from the actions they are performing.
 
@@ -56,12 +69,16 @@ This is where we 'get in The Zone' and become wholly immersed in the task at han
 
 We also need a clear idea of the problem we are solving (or creating, for that matter), because, again, with no goal, we will feel either bored or anxious, unless we are Zen masters. According to Csikszentmihalyi, “the reason it is possible to achieve such complete involvement in a flow experience is that goals are usually clear, and feedback immediate.”
 
+Which leads us to the next condition...
+
 
 4. **Feedback**
 
 As stated above, immediate feedback is an essential element of enjoyment as it informs, and enables us to continue, our actions. According to Csikszentmihalyi: 
 
 > The kind of feedback we work toward is in and of itself often unimportant... What makes this information valuable is the symbolic message it contains: that I have succeeded in my goal.
+
+We need something or someone to let us know we are on (or off) track. 
 
 
 5. **Concentration on the Task at Hand**
@@ -92,7 +109,7 @@ In a flow state, we don't think about ourselves performing the activity, we just
 Did you ever get so immersed in an activity that you lost track of time? That's _flow_. According to Csikszentmihalyi, “...time no longer seems to pass the way it ordinarily does. The objective, external duration we measure with reference to outside events like night and day, or the orderly progression of clocks, is rendered irrelevant by the rhythms dictated by the activity.”
 
 
-## How does Flow relate to programming?
+## How does flow relate to programming?
 
 In [Code Complete](https://amzn.to/2JCCarc), Steve McConnell states that Software’s Primary Technical Imperative is to _Conquer Complexity_.  
 
@@ -124,4 +141,9 @@ Sustaining effort and focus while learning a formal language is challenging. Bar
 Ah! So we _can_ find flow in friction!
 
 
-## Conclusion
+## How to Get in the Zone
+
+To get in the zone, or find flow, requires us to first learn the necessary skills. But! Once we're in the zone, we need to continually invest our knowledge portfolios or we will become bored with the zone. 
+
+Practice makes practice. 
+
