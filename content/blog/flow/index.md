@@ -1,31 +1,28 @@
 ---
 title: "How to Get in the Zone: A Guide for Finding Flow in Friction"
-date: "2021-01-18"
-description: TODO
-keywords: ['flow', 'Mihaly Csikszentmihalyi', 'friction', 'optimal experience']
+date: "2023-02-17"
+description: "One of the best ways to gauge our skill in any domain is whether or not we are able to get in the zone, or find flow. But it's fleeting! Being in the zone feels easy. Staying in the zone is hard work. This article explains how to reliably and consistently find flow and get in the zone."
+keywords: ['flow', 'Mihaly Csikszentmihalyi', 'friction', 'optimal experience', 'in the zone']
 ---
 
 
 ![](@TODO)
 
 
-@TODO what’s the hook?
+To get in the zone, or find flow, requires us to first learn the prerequisite skills. Once we're in the zone, we need to continually invest in our knowledge portfolios. Otherwise, we will get bored or feel anxious. 
 
 One of the best ways to gauge our skill in any domain is whether or not we are able to get in the zone, or find flow. 
 
 But it's fleeting! 
 
-It's hard work. 
+Being in the zone feels easy. 
+
+Staying in the zone is hard work. 
 
 How do we reliably and consistently get in the zone? 
 
-Friction. 
-
-Before we answer this question, let's define _flow_...
-
 
 ## What is Flow?
-
 
 In [the book of the same title](https://amzn.to/35NmVb3) Mihaly Csikszentmihalyi defines _flow_ as “... the state in which people are so involved in an activity that nothing else seems to matter.” He continues:
 
@@ -143,7 +140,7 @@ Ah! So we _can_ find flow in friction!
 
 ## How to Get in the Zone
 
-To get in the zone, or find flow, requires us to first learn the necessary skills. But! Once we're in the zone, we need to continually invest our knowledge portfolios or we will become bored with the zone. 
+To get in the zone, or find flow, requires us to first acquire the necessary skills. In learning those skills, we will encounter friction, which is a good thing. Once we're in the zone, we need to continually invest our knowledge portfolios or we will become bored or anxious. 
 
 Practice makes practice. 
 
