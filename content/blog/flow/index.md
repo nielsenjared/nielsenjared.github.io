@@ -1,25 +1,34 @@
 ---
-title: "How to Get in the Zone: A Guide for Finding Flow in Friction"
+title: "How to Get in the Zone: A Guide for Finding Flow"
 date: "2023-02-17"
-description: "One of the best ways to gauge our skill in any domain is whether or not we are able to get in the zone, or find flow. But it's fleeting! Being in the zone feels easy. Staying in the zone is hard work. This article explains how to reliably and consistently find flow and get in the zone."
+description: "One of the best ways to measure our skill in any domain is by our ability to get in the zone, or finding flow. Being in the zone feels easy. Staying in the zone is hard work. This article explains how to reliably and consistently find flow and get in the zone."
 keywords: ['flow', 'Mihaly Csikszentmihalyi', 'friction', 'optimal experience', 'in the zone']
 ---
 
 
 ![](@TODO)
 
+When was the last time programming was fun? 
 
-To get in the zone, or find flow, requires us to first learn the prerequisite skills. Once we're in the zone, we need to continually invest in our knowledge portfolios. Otherwise, we will get bored or feel anxious. 
+Perhaps you were building or debugging an app or designing an API or UI and suddenly you felt hungry and realized, hours later, that it was time for lunch or dinner.
 
-One of the best ways to gauge our skill in any domain is whether or not we are able to get in the zone, or find flow. 
+You were in the zone! 
 
-But it's fleeting! 
+But flow is fleeting! 
 
 Being in the zone feels easy. 
 
 Staying in the zone is hard work. 
 
+When was the last time programming was boring? 
+
+Or induced anxiety? 
+
+In those scenarios, the problem was either too easy or to difficult. 
+
 How do we reliably and consistently get in the zone? 
+
+To get in the zone, or find flow, requires us to first learn the prerequisite skills. We need to continually invest in our knowledge portfolios over time. Otherwise, we will get bored or feel anxious when working on a problem. 
 
 
 ## What is Flow?
@@ -140,7 +149,7 @@ Ah! So we _can_ find flow in friction!
 
 ## How to Get in the Zone
 
-To get in the zone, or find flow, requires us to first acquire the necessary skills. In learning those skills, we will encounter friction, which is a good thing. Once we're in the zone, we need to continually invest our knowledge portfolios or we will become bored or anxious. 
+To get in the zone, or find flow, requires us to first acquire the necessary skills. In learning those skills, we will encounter friction, which is a good thing. To stay in the zone over time, we need to continually invest our knowledge portfolios or we will become bored or anxious. 
 
 Practice makes practice. 
 
