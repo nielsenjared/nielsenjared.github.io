@@ -6,7 +6,8 @@ keywords: ['flow', 'Mihaly Csikszentmihalyi', 'friction', 'optimal experience', 
 ---
 
 
-![](@TODO)
+![](./jarednielsen-flow.png)
+
 
 When was the last time programming was fun? 
 
