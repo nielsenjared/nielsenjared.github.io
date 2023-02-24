@@ -1,4 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Feb 2023 12:35:05 GMT</lastBuildDate><item><title><![CDATA[How to Get in the Zone: A Guide for Finding Flow]]></title><description><![CDATA[When was the last time programming was fun? Perhaps you were building or debugging an app or designing an API or UI and suddenly you felt…]]></description><link>https://jarednielsen.com/flow/</link><guid isPermaLink="false">https://jarednielsen.com/flow/</guid><pubDate>Fri, 17 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Feb 2023 15:00:33 GMT</lastBuildDate><item><title><![CDATA[How to Be Antifragile: A Guide for Survival When the Future is Uncertain]]></title><description><![CDATA[This economy is wild. Mass lay-offs. Mass hiring. Two years ago we were all bullish on crypto. Now it’s AI. Meanwhile, wars rage and…]]></description><link>https://jarednielsen.com/antifragile/</link><guid isPermaLink="false">https://jarednielsen.com/antifragile/</guid><pubDate>Fri, 24 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cdb1e32098a4ac89fe578e4dd1b30dd0/29007/jarednielsen-antifragile.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABOUlEQVQoz42RvUoDQRSF9xEstLHQTrFV7KxtbRV8BRUsfACxUBAVhJWAQip/GlEkyZoEfAHRJ5CUYkI0JobszL13juzdZN01TeAUw+F8c++c8Rw4LXbEjgQsjtL68wdyYC/BYsA5dlkslvp6Y2qSl5AsFpBmu/3d7QCSJgH+6XUbrS9AOMUP4H4I1b3Nor+PiDaxSRwCeLo6v91eA1x/kX+TBRG8sbqyu7MFgDiMc4Yi+OzoYH15idg43TED6854eX2enJ6amZu9vrmsVMuloFAKCuVKcP9wN7+4MDY+ETwW9V6TnawP/qi/+/5pLuc3PxvExlLP2NDaXrvTyucvTo4Pa7W3aBIZrZAUjhtmK2KdFstsiAyz0UNINuxnxBKFIlYkgVNK+gDEqaBKPkz9bNvD8Ci+N5wbXb/MO2noErxWoAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; Illustration of ducks on a barbell as analogy for antifragility &quot;
+        title=&quot; Illustration of ducks on a barbell as analogy for antifragility &quot;
+        src=&quot;/static/cdb1e32098a4ac89fe578e4dd1b30dd0/f058b/jarednielsen-antifragile.png&quot;
+        srcset=&quot;/static/cdb1e32098a4ac89fe578e4dd1b30dd0/c26ae/jarednielsen-antifragile.png 158w,
+/static/cdb1e32098a4ac89fe578e4dd1b30dd0/6bdcf/jarednielsen-antifragile.png 315w,
+/static/cdb1e32098a4ac89fe578e4dd1b30dd0/f058b/jarednielsen-antifragile.png 630w,
+/static/cdb1e32098a4ac89fe578e4dd1b30dd0/40601/jarednielsen-antifragile.png 945w,
+/static/cdb1e32098a4ac89fe578e4dd1b30dd0/78612/jarednielsen-antifragile.png 1260w,
+/static/cdb1e32098a4ac89fe578e4dd1b30dd0/29007/jarednielsen-antifragile.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This economy is wild.&lt;/p&gt;
+&lt;p&gt;Mass lay-offs. Mass hiring.&lt;/p&gt;
+&lt;p&gt;Two years ago we were all bullish on crypto.&lt;/p&gt;
+&lt;p&gt;Now it’s AI.&lt;/p&gt;
+&lt;p&gt;Meanwhile, wars rage and temperatures climb.&lt;/p&gt;
+&lt;p&gt;We’re closer to the brink of disaster and further from solutions.&lt;/p&gt;
+&lt;p&gt;There’s a lot of uncertainty in our future.&lt;/p&gt;
+&lt;p&gt;How do we set ourselves up for success when the future is uncertain?&lt;/p&gt;
+&lt;p&gt;We’re not good at it.&lt;/p&gt;
+&lt;p&gt;According to the authors of &lt;em&gt;Make It Stick&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Each of us is an astounding bundle of perceptual and cognitive abilities, coexisting with the seeds of our own undoing. When it comes to learning, what we choose to do is guided by our judgments of what works and what doesn’t, and we are easily misled… by illusions, cognitive biases, and the stories we construct to explain the world around us and our place within it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Why are we easily misled?&lt;/p&gt;
+&lt;p&gt;According to Nassim Nicholas Taleb in &lt;em&gt;The Black Swan&lt;/em&gt;: &lt;strong&gt;we don’t learn&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;More than that: &lt;strong&gt;we don’t learn that we don’t learn&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Taleb explains:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The problem lies in the structure of our minds: we don’t learn rules, just facts, and only facts. Metarules (such as the rule that we have a tendency to not learn rules) we don’t seem to be good at getting.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Programming and problem solving are metacognitive activities. To excel, we need to improve our ability to think about thinking, to learn metarules.&lt;/p&gt;
+&lt;p&gt;Because the future is uncertain and we are fallible, Taleb counsels us to build systems that are &lt;em&gt;antifragile&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;What is antifragility?&lt;/p&gt;
+&lt;p&gt;It’s just that: it’s &lt;em&gt;against&lt;/em&gt; fragility. Something that is fragile is easily broken. Financial, social, and technical systems that are fragile are susceptible to volatility, whether that is market fluctuations, political upheaval, or bugs. Antifragility is more than being the opposite of fragile, which is resilient. A resilient system is unaffected by random events. Antifragility means creating a system that not only survives, but benefits from change.&lt;/p&gt;
+&lt;h2&gt;How to Be Antifragile&lt;/h2&gt;
+&lt;p&gt;How do we become antifragile?&lt;/p&gt;
+&lt;p&gt;In &lt;em&gt;The Black Swan&lt;/em&gt;, Taleb introduces the “barbell strategy”, which is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;…a method that consists of taking both a defensive attitude and an excessively aggressive one at the same time, by protecting assets from all sources of uncertainty while allocating a small portion for high-risk strategies.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Why a barbell? According to Taleb:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The barbell (a bar with weights on both ends that weight lifters use) is meant to illustrate the idea of a combination of extremes, kept separate, with avoidance of the middle. In our context it is not necessarily symmetric: it is just composed of two extremes, with nothing in the center.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In other words: don’t put your eggs in one mediocre basket. Put them in two very different baskets, one that is completely safe and one that is high risk. It’s the safe bets that enable an antifragile system to survive volatility and it’s the risky endeavors that allow it to benefit. The general rule is to invest in 85-90% safe bets and 10-15% risky endeavors.&lt;/p&gt;
+&lt;p&gt;This makes sense for personal finances, but what does this have to do with programming, problem solving, and lifelong learning?&lt;/p&gt;
+&lt;p&gt;Time is our most valuable resource. We want to invest it wisely.&lt;/p&gt;
+&lt;p&gt;We can apply the barbell strategy to building our knowledge portfolios. We can protect against uncertainty with a skill set of “safe bets”. We can set ourselves apart from everyone else with “risky investments”.&lt;/p&gt;
+&lt;p&gt;If you’re a web developer, your safe bets are obviously the Holy Trinity: HTML, CSS, &amp;#x26; JavaScript.&lt;/p&gt;
+&lt;p&gt;By JavaScript, I mean &lt;em&gt;vanilla&lt;/em&gt; JS, although TypeScript is probably a wise investment at this point.&lt;/p&gt;
+&lt;p&gt;If you’re in DevOps, it’s probably Linux, Docker, and Kubernetes.&lt;/p&gt;
+&lt;p&gt;What else?&lt;/p&gt;
+&lt;p&gt;Whether you’re in dev &lt;em&gt;or&lt;/em&gt; ops, your list might include the following:&lt;/p&gt;
+&lt;p&gt;SQL.&lt;/p&gt;
+&lt;p&gt;AWS.&lt;/p&gt;
+&lt;p&gt;Git.&lt;/p&gt;
+&lt;p&gt;These things aren’t sexy. And that’s exactly why you want to master them. They’re safe bets. They’ve been around and are widely used for a reason.&lt;/p&gt;
+&lt;p&gt;So what are the risky investments to make today?&lt;/p&gt;
+&lt;p&gt;You tell me! Anything I write will be obsolete by the time the digital ink dries.&lt;/p&gt;
+&lt;p&gt;What’s the new hotness?&lt;/p&gt;
+&lt;p&gt;What are the thought leaders in your field talking about?&lt;/p&gt;
+&lt;p&gt;What are you excited about?&lt;/p&gt;
+&lt;p&gt;Learn that!&lt;/p&gt;
+&lt;p&gt;You never know, it might pay off big.&lt;/p&gt;
+&lt;p&gt;What’s in the middle?&lt;/p&gt;
+&lt;p&gt;Libraries and frameworks. They come and go. They start off as risky investments. If they prove their worth in the marketplace of ideas, then everybody learns them. Take React, for example. It’s approaching its 10 year birthday. It started off as a risky investment and now it’s a safe bet. Now the kids are all talking about Svelte…&lt;/p&gt;
+&lt;h2&gt;A Guide for Survival When the Future is Uncertain&lt;/h2&gt;
+&lt;p&gt;To set ourselves up for success when the future is uncertain, we want to become &lt;em&gt;antifragile&lt;/em&gt;. We accomplish this with a &lt;em&gt;barbell strategy&lt;/em&gt;, ensuring ~85% of our &lt;a href=&quot;https://jarednielsen.com/invest-knowledge-portfolio/&quot;&gt;knowledge portfolio&lt;/a&gt; is composed of safe bets and the remainder is composed of risky investments with the potential to pay off in the future and, at the very least, set us apart from everyone else.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Get in the Zone: A Guide for Finding Flow]]></title><description><![CDATA[When was the last time programming was fun? Perhaps you were building or debugging an app or designing an API or UI and suddenly you felt…]]></description><link>https://jarednielsen.com/flow/</link><guid isPermaLink="false">https://jarednielsen.com/flow/</guid><pubDate>Fri, 17 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
