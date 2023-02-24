@@ -6,6 +6,8 @@ keywords: ['confidence', 'overconfidence', 'overconfident', 'checklists', 'metac
 ---
 
 
+![ Illustration of hot air baloon as anlogy for overconfidence](./jarednielsen-overconfidence.png)
+
 > Experts are led astray not by what they believe, but by how they think.
 
 I was recently heading up a cross-functional initiative and needed to work with a Principal Engineer from another team to accomplish it. Let’s call him Phony Baloney. There were _a lot_ of technical details to work out, and as developers do, we split hairs over all of them. Phony Baloney was the loudest voice in the Zoom, insisting, time and time again, that his way was The Only Way. Sometimes he was right, but we all knew when he was wrong. When we presented evidence contrary to his positions, PB refused to acknowledge it, and instead turned the focus to some other bikeshed to paint or resorted to bullying tactics. 
