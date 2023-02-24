@@ -1,12 +1,12 @@
 ---
-title: "How to Be Antifragile: A Guide for Success When the Future is Uncertain"
+title: "How to Be Antifragile: A Guide for Survival When the Future is Uncertain"
 date: "2023-02-24"
-description: "To set ourselves up for success when the future is uncertain, we want to make ourselves antifragile. We accomplish this with a barbell strategy, ensuring ~80% of our skills are safe bets and the remainder are risky investments with the potential to pay off and set us apart."
-keywords: ['success', 'antifragile', 'uncertainty', 'uncertain', 'future']
+description: "To set ourselves up for success when the future is uncertain, we want to become antifragile. We accomplish this with a barbell strategy, ensuring ~85% of our knowledge portfolio is safe bets and the remainder is risky investments with the potential to pay off and set us apart."
+keywords: ['success', 'antifragile', 'uncertainty', 'uncertain', 'future', 'antifragility']
 
 ---
 
-![ Illustration of ducks on a barbell ](./jarednielsen-barbell.png)
+![ Illustration of ducks on a barbell as analogy for antifragility ](./jarednielsen-antifragile.png)
 
 This economy is wild. 
 
@@ -15,12 +15,6 @@ Mass lay-offs. Mass hiring.
 Two years ago we were all bullish on crypto. 
 
 Now it's AI. 
-
-What's next?
-
-Feeling FOMO?
-
-Rushing to jump on the bandwagon? 
 
 Meanwhile, wars rage and temperatures climb.
 
@@ -38,9 +32,9 @@ According to the authors of _Make It Stick_:
 
 Why are we easily misled? 
 
-According to Nassim Nicholas Taleb in _The Black Swan_: we don’t learn. 
+According to Nassim Nicholas Taleb in _The Black Swan_: **we don’t learn**. 
 
-More than that: we don’t learn that we don’t learn. 
+More than that: **we don’t learn that we don’t learn**. 
 
 Taleb explains:
 
@@ -59,13 +53,11 @@ It’s just that: it’s _against_ fragility. Something that is fragile is easil
 
 How do we become antifragile? 
 
-In The Black Swan, Taleb introduces the “barbell strategy”, which is:
+In _The Black Swan_, Taleb introduces the “barbell strategy”, which is:
 
 > ...a method that consists of taking both a defensive attitude and an excessively aggressive one at the same time, by protecting assets from all sources of uncertainty while allocating a small portion for high-risk strategies.
 
-Why a barbell? 
-
-Taleb explains in _Antifragile_:
+Why a barbell? According to Taleb:
 
 > The barbell (a bar with weights on both ends that weight lifters use) is meant to illustrate the idea of a combination of extremes, kept separate, with avoidance of the middle. In our context it is not necessarily symmetric: it is just composed of two extremes, with nothing in the center. 
 
@@ -79,11 +71,13 @@ We can apply the barbell strategy to building our knowledge portfolios. We can p
 
 If you’re a web developer, your safe bets are obviously the Holy Trinity: HTML, CSS, & JavaScript. 
 
-By JavaScript, I mean _vanilla_ JS, although TypeScript is probably a wise investment.
+By JavaScript, I mean _vanilla_ JS, although TypeScript is probably a wise investment at this point.
 
-If you're in DevOps, it's probably Kubernetes. 
+If you're in DevOps, it's probably Linux, Docker, and Kubernetes. 
 
 What else?
+
+Whether you're in dev _or_ ops, your list might include the following: 
 
 SQL.
 
@@ -91,9 +85,7 @@ AWS.
 
 Git.
 
-The list goes on...
-
-These things aren't sexy. And that’s exactly why you want to master them. They're very safe bets.
+These things aren't sexy. And that’s exactly why you want to master them. They're safe bets. They've been around and are widely used for a reason. 
 
 So what are the risky investments to make today? 
 
@@ -111,9 +103,9 @@ You never know, it might pay off big.
 
 What’s in the middle? 
 
-Libraries and frameworks. They come and go. They start off as risky investments. If they prove their worth in the marketplace of ideas, then everybody learns them. Take React, for example. It's approaching its 10 year birthday and now it's everywhere. It started off as a risky investment and now it's a safe bet. But the kids are all talking about Svelte...
+Libraries and frameworks. They come and go. They start off as risky investments. If they prove their worth in the marketplace of ideas, then everybody learns them. Take React, for example. It's approaching its 10 year birthday. It started off as a risky investment and now it's a safe bet. Now the kids are all talking about Svelte...
 
 
-## How to Succeed When the Future is Uncertain
+## A Guide for Survival When the Future is Uncertain
 
-To set ourselves up for success when the future is uncertain, we want to make ourselves _antifragile_. We accomplish this with a _barbell strategy_, ensuring ~80% of our skills are safe bets and the remainder are risky investments with the potential to pay off in the future and, at the very least, set us apart from the pack. 
+To set ourselves up for success when the future is uncertain, we want to become _antifragile_. We accomplish this with a _barbell strategy_, ensuring ~85% of our [knowledge portfolio](https://jarednielsen.com/invest-knowledge-portfolio/) is composed of safe bets and the remainder is composed of risky investments with the potential to pay off in the future and, at the very least, set us apart from everyone else. 
