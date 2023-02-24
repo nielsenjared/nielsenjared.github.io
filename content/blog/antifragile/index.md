@@ -1,20 +1,30 @@
 ---
-title: "How to Success TODO: A Guide for TODO"
+title: "How to Be Antifragile: A Guide for Success When the Future is Uncertain"
 date: "2023-02-24"
-description: "TODO"
-keywords: ['success', 'antifragile', ]
+description: "To set ourselves up for success when the future is uncertain, we want to make ourselves antifragile. We accomplish this with a barbell strategy, ensuring ~80% of our skills are safe bets and the remainder are risky investments with the potential to pay off and set us apart."
+keywords: ['success', 'antifragile', 'uncertainty', 'uncertain', 'future']
 
 ---
 
-![ TODO ](./jarednielsen-TODO.png)
+![ Illustration of ducks on a barbell ](./jarednielsen-barbell.png)
 
 This economy is wild. 
 
 Mass lay-offs. Mass hiring. 
 
-Two years ago we were all bullish on crypto. Now it's AI. 
+Two years ago we were all bullish on crypto. 
 
-Meanwhile wars rage and temperatures climb.
+Now it's AI. 
+
+What's next?
+
+Feeling FOMO?
+
+Rushing to jump on the bandwagon? 
+
+Meanwhile, wars rage and temperatures climb.
+
+We're closer to the brink of disaster and further from solutions.
 
 There's a lot of uncertainty in our future.
 
@@ -65,9 +75,13 @@ This makes sense for personal finances, but what does this have to do with progr
 
 Time is our most valuable resource. We want to invest it wisely. 
 
-We can apply the barbell strategy to building our knowledge portfolios.
+We can apply the barbell strategy to building our knowledge portfolios. We can protect against uncertainty with a skill set of "safe bets". We can set ourselves apart from everyone else with "risky investments". 
 
 If you’re a web developer, your safe bets are obviously the Holy Trinity: HTML, CSS, & JavaScript. 
+
+By JavaScript, I mean _vanilla_ JS, although TypeScript is probably a wise investment.
+
+If you're in DevOps, it's probably Kubernetes. 
 
 What else?
 
@@ -77,11 +91,9 @@ AWS.
 
 Git.
 
+The list goes on...
+
 These things aren't sexy. And that’s exactly why you want to master them. They're very safe bets.
-
-What’s in the middle? 
-
-Libraries and frameworks. They come and go. They start off as risky investments. If they prove their worth in the marketplace of ideas, then everybody learns them. 
 
 So what are the risky investments to make today? 
 
@@ -97,9 +109,11 @@ Learn that!
 
 You never know, it might pay off big.
 
-Your risky investments are also what sets you apart from everyone else making the same safe bets.  
+What’s in the middle? 
+
+Libraries and frameworks. They come and go. They start off as risky investments. If they prove their worth in the marketplace of ideas, then everybody learns them. Take React, for example. It's approaching its 10 year birthday and now it's everywhere. It started off as a risky investment and now it's a safe bet. But the kids are all talking about Svelte...
 
 
-## TODO 
+## How to Succeed When the Future is Uncertain
 
-TODO conclusion
+To set ourselves up for success when the future is uncertain, we want to make ourselves _antifragile_. We accomplish this with a _barbell strategy_, ensuring ~80% of our skills are safe bets and the remainder are risky investments with the potential to pay off in the future and, at the very least, set us apart from the pack. 
