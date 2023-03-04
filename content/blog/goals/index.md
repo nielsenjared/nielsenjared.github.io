@@ -6,7 +6,7 @@ keywords: ['goals', 'habits']
 ---
 
 
-![](./jarednielsen-flow.png)
+![](./jarednielsen-goals.png)
 
 
 What are you learning this year?
@@ -23,13 +23,13 @@ Why?
 
 We can boil it down to two factors:
 
-* the resolution is too ambitious or too ambiguous or both
+* the goal is too ambitious or too ambiguous or both
 
-* the resolution focuses on product, not process
+* the goal focuses on product, not process
 
 These are two sides of the same coin.
 
-If we clearly define our goal and determine a realistic scope, we can focus on the process.
+If we clearly define our goals and determine a realistic scope, we can focus on the process.
 
 If we focus on the process, we can achieve amibitious and ambiguous goals.
 
@@ -47,15 +47,17 @@ To do that, we need to make it a habit.
 
 According to a [study conducted in 2009](https://onlinelibrary.wiley.com/doi/abs/10.1002/ejsp.674), it takes the average individual 66 days to form a habit. 
 
-If you set a New Year's resolution and already abandoned it, you quit too soon! 
+Did you already abandon your New Year's resolution? 
 
-And that's okay! 
+If so, you quit too soon.
+
+And that's okay. 
 
 New Year's resolutions are 🐎💩.
 
 But don't wait until January 1st of next year to start again. 
 
-TODO 
+How about now? 
 
 The following are resources to aid you on your journey of setting and achieving your goals: 
 
