@@ -1,12 +1,12 @@
 ---
 title: "The Superlative Guide to Setting and Achieving Goals"
 date: "2023-03-05"
-description: "TODO"
-keywords: ['goals', 'habits']
+description: "The majority of us abandon our goals before making them a habit. The resources in this guide will aid you in setting and achieving goals."
+keywords: ['goals', 'habits', 'resolutions']
 ---
 
 
-![](./jarednielsen-goals.png)
+![Graphic of a duck trophy](./jarednielsen-goals.png)
 
 
 What are you learning this year?
