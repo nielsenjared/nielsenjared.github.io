@@ -7,9 +7,9 @@ keywords: ['golden rule', 'programming', 'human scale']
 
 ![Graphic of an open laptop with a globe on the screen ](./jarednielsen-golden-rule-programming.png)
 
-Everybody is chatting about AI these days, for better or worse. The doomsayers and evangelists both present strong arguments. At the core is the data used to train the models, and there are two issues, which may be sides of the same coin, to consider:   
+Everybody is chatting about AI these days, for better or worse. The doomsayers and evangelists both present strong arguments. At the core of each is the data used to train the models, and there are (at least) two issues to consider:  
 
-* It's not (always) clear (to us, the end users) what data the models were trained on
+* It's not (always) clear what data the models were trained on
 
 * It's (becoming) clear that the developers of the models didn't ask permission to use some of that data
 
