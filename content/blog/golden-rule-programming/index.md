@@ -13,7 +13,9 @@ Everybody is chatting about AI these days, for better or worse. The doomsayers a
 
 * It's (becoming) clear that the developers of the models didn't ask permission to use some of that data
 
-Programmers generally work at two scales of computation: the micro and the macro. 
+Programmers generally work at two scales of computation: the micro and the macro. The effects of an individual data point may not seem consequential (the micro) but their aggregate effects (the macro) can be. 
+
+Between these two extremes is the human scale. 
 
 We structure syntaxes that return big data. We obsess over performance gains and rates of growth. We split code, shake trees, and bikeshed. 
 
