@@ -1,16 +1,17 @@
-
 ---
-title: "How to Work at Human Scale: A Guide to Implementing the Golden Rule of Programming"
+title: "How to Work at Human Scale: A Guide for Living the Golden Rule of Programming"
 date: "2023-03-10"
-description: "Programmers work at two scales of computation: the micro and the macro. How do we ensure we are creating computational systems that relate to humans?"
+description: "Programmers work at two scales of computation: the micro and the macro. How do we ensure we are creating computational systems that relate to humans? By living The Golden Rule of Programming."
 keywords: ['golden rule', 'programming', 'human scale']
 ---
 
+![Graphic of an open laptop with a globe on the screen ](./jarednielsen-golden-rule-programming.png)
 
-![Graphic of a duck trophy](./jarednielsen-goals.png)
+Everybody is chatting about AI these days, for better or worse. The doomsayers and evangelists both present strong arguments. At the core is the data used to train the models, and there are two issues, which may be sides of the same coin, to consider:   
 
+* It's not (always) clear (to us, the end users) what data the models were trained on
 
-Are you working at a human scale? 
+* It's (becoming) clear that the developers of the models didn't ask permission to use some of that data
 
 Programmers generally work at two scales of computation: the micro and the macro. 
 
