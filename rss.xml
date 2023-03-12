@@ -1,4 +1,112 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Mar 2023 13:41:04 GMT</lastBuildDate><item><title><![CDATA[The Superlative Guide to Setting and Achieving Goals]]></title><description><![CDATA[What are you learning this year? Perhaps we need to reframe the question: how are you learning this year? Did you make resolutions to learn…]]></description><link>https://jarednielsen.com/goals/</link><guid isPermaLink="false">https://jarednielsen.com/goals/</guid><pubDate>Sun, 05 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 12 Mar 2023 15:29:51 GMT</lastBuildDate><item><title><![CDATA[How to Work at Human Scale: A Guide for Living the Golden Rule of Programming]]></title><description><![CDATA[Everybody is chatting about AI these days, for better or worse. The doomsayers and evangelists both present strong arguments. At the core is…]]></description><link>https://jarednielsen.com/human-scale/</link><guid isPermaLink="false">https://jarednielsen.com/human-scale/</guid><pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e12fe6734f1d596ea8e8ca305d94492d/29007/jarednielsen-golden-rule-programming.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABQ0lEQVQoz3XRy07CQBQGYB7dZ3AJKBsjaECQlVtdGAIhQstFaClBUSQoATShc65mKuFu8m8m+b+ZyTkxERJGIVACBSNoCA2RIYZNCJhRlDYREsGYglET/kXAoO0RExAZwBDQIBlmJEFiENm5IraWHPWUaTIeNVtup9PudXyv237utOrO03wxYyXrD7GAxRwuVcV165OvMZB5+HysvvWZyQu6g5e+qkD0i0NsBFa44dRGH8P59+LkPntauluGP37g9weBKIOdxRFsPVmsjlN7HQ2n81mt/e70gtli6vW6fuDZlzFk2cfGjo2AIFSVcqWUzecKxdtCMZcv3BSK+etsxm06Gr28g+0AV7FnwLBSLV+mL85TyUQynjiLn6WSmau006jvyQhvby8KRksysNwOkjlsHsGipMp7OVo7jkWJBdf5r/MLycFxXEH7MyEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Graphic of an open laptop with a globe on the screen &quot;
+        title=&quot;Graphic of an open laptop with a globe on the screen &quot;
+        src=&quot;/static/e12fe6734f1d596ea8e8ca305d94492d/f058b/jarednielsen-golden-rule-programming.png&quot;
+        srcset=&quot;/static/e12fe6734f1d596ea8e8ca305d94492d/c26ae/jarednielsen-golden-rule-programming.png 158w,
+/static/e12fe6734f1d596ea8e8ca305d94492d/6bdcf/jarednielsen-golden-rule-programming.png 315w,
+/static/e12fe6734f1d596ea8e8ca305d94492d/f058b/jarednielsen-golden-rule-programming.png 630w,
+/static/e12fe6734f1d596ea8e8ca305d94492d/40601/jarednielsen-golden-rule-programming.png 945w,
+/static/e12fe6734f1d596ea8e8ca305d94492d/78612/jarednielsen-golden-rule-programming.png 1260w,
+/static/e12fe6734f1d596ea8e8ca305d94492d/29007/jarednielsen-golden-rule-programming.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Everybody is chatting about AI these days, for better or worse. The doomsayers and evangelists both present strong arguments. At the core is the data used to train the models, and there are two issues, which may be sides of the same coin, to consider:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;It’s not (always) clear (to us, the end users) what data the models were trained on&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It’s (becoming) clear that the developers of the models didn’t ask permission to use some of that data&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Programmers generally work at two scales of computation: the micro and the macro.&lt;/p&gt;
+&lt;p&gt;We structure syntaxes that return big data. We obsess over performance gains and rates of growth. We split code, shake trees, and bikeshed.&lt;/p&gt;
+&lt;p&gt;Our goal is to find the optimal solution to a problem. But real-world problems are hard! In between the two scales of the micro and macro is the human world. It’s very easy for us to get lost in the weeds and miss the forest for the trees.&lt;/p&gt;
+&lt;p&gt;David Auerbach summarizes this challenge in &lt;em&gt;Bitwise&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The dream…  is to create algorithms of maximum generality while sacrificing as little specificity as possible. In reality, software engineers always compromise, blocking off a certain problem area and finding an expedient path that’s neither too ambitious nor too kludgy. And that sort of heuristic optimization is not so far off from what we do every day in life and language. We lump things into human comprehensible categories while trying to respect special cases, but we never reach perfect abstraction, nor perfect comprehensiveness.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When we communicate with natural language, we can rely on inference and non-verbal cues to get our point across. When we communicate in a formal language, we are required to be exact and specific. There’s no room for ambiguity.&lt;/p&gt;
+&lt;p&gt;Auerbach continues that our use of language…&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;…inevitably carries bias. Computer code itself lacks any such bias. But the computer data our software processes reflects life, and so it reflects our blind spots and prejudices. Once a computer starts to speak the language of human and human practices, it plays out our linguistic biases. To be labeled is to be prejudged. By standardizing classification and making explicit our social classifications, computers have amplified the gaps and biases in our concepts to their breaking point.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Programming is powerful!&lt;/p&gt;
+&lt;p&gt;But with great power comes great responsibility.&lt;/p&gt;
+&lt;p&gt;🕷️&lt;/p&gt;
+&lt;p&gt;According to Auerbach, “Data does not come with a ‘Use Only for Good’ sign attached to it.”&lt;/p&gt;
+&lt;p&gt;In &lt;em&gt;How to Speak Machine&lt;/em&gt;, John Maeda asserts that “losing touch with human scale can make you toxic.” According to Maeda, programmers can easily develop “an unusual relationship with reality” which can affect our relationships with others because, as David Auerbach points out, “…engineers function at a priestly remove from the world.” It’s easy to automate operations at exponential scales. It’s also easy to forget that the real-world does not work the same way.&lt;/p&gt;
+&lt;p&gt;Maeda distinguishes two types of problems, complicated and complex:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;“Complicated” means something that is knowable, and although it may take time, it’s wholly possible to understand.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;“Complex” means something that is not knowable, and even brute force can’t easily tackle it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;He continues:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;How we make systems out of computation is generally complicated, but how we humans relate to the computational systems we make has complex effects that we’re still figuring out.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In &lt;em&gt;Bitwise&lt;/em&gt;, David Auerbach discusses Hanlon’s razor and how it applies to software development. Hanlon’s razor states that we should…&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Never attribute to malice what can adequately be explained by stupidity.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Auerbach rephrases this “law” such that we should…&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Never attribute programmer intent what can adequately be explained by incomprehensible complexity.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;How do we, as programmers, ensure we are creating computational systems that relate to humans? How do we manage incomprehensible complexity?&lt;/p&gt;
+&lt;p&gt;We get agile.&lt;/p&gt;
+&lt;p&gt;The authors of the Agile manifesto outlined four tenets to help us. They are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Individuals and interactions over processes and tools&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Working software over comprehensive documentation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Customer collaboration over contract negotiation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Responding to change over following a plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first and third points are extremely important when considering complexity as it relates to other humans: we need to work together!&lt;/p&gt;
+&lt;p&gt;Say, for example, we want to build a web application that is accessible and inclusive. A lot of us are out of our league here. What do we do?&lt;/p&gt;
+&lt;p&gt;Safiya Noble offers a solution in &lt;em&gt;Algorithms of Oppression&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We need people designing technologies for society to have training and education on the histories of marginalized people, at a minimum, and we need them working alongside people with rigorous training and preparation from the social sciences and humanities.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This form of collaboration will, according to John Maeda, help you “…keep the real-world impacts of your decisions always in view.”&lt;/p&gt;
+&lt;p&gt;This is ideal, but not always possible. What then?&lt;/p&gt;
+&lt;p&gt;In &lt;em&gt;How to Speak Machine&lt;/em&gt;, John Maeda translates the Japanese concept of &lt;em&gt;omotenashi&lt;/em&gt; as “hospitality”, or, “the desire to care for others”. He uses his parents’ tofu shop to illustrate his concept. They ran a very successful business precisely because they made their customers feel welcome and important. This concept can easily be extended to software development…&lt;/p&gt;
+&lt;p&gt;So as you begin to work with your customer’s data, fully embrace the omotenashi approach—and treat their data as you would like your own data to be treated.&lt;/p&gt;
+&lt;p&gt;There it is! The Golden Rule of Programming:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Treat others data as you would like others to treat your data.&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Superlative Guide to Setting and Achieving Goals]]></title><description><![CDATA[What are you learning this year? Perhaps we need to reframe the question: how are you learning this year? Did you make resolutions to learn…]]></description><link>https://jarednielsen.com/goals/</link><guid isPermaLink="false">https://jarednielsen.com/goals/</guid><pubDate>Sun, 05 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
