@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 14 Mar 2023 13:29:43 GMT</lastBuildDate><item><title><![CDATA[How to Blaze a Trail: A Guide for Programmers Who Get Lost]]></title><description><![CDATA[My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah. I taught my charges how to solve…]]></description><link>https://jarednielsen.com/blaze-trail/</link><guid isPermaLink="false">https://jarednielsen.com/blaze-trail/</guid><pubDate>Fri, 17 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 14 Mar 2023 15:35:23 GMT</lastBuildDate><item><title><![CDATA[How to Defeat Impostor Syndrome: A Guide for Gaining Mastery]]></title><description><![CDATA[Are you an impostor? I am. We’re all impostors. This is the dirty secret of software development. The field is too broad and too deep to…]]></description><link>https://jarednielsen.com/impostor-syndrome/</link><guid isPermaLink="false">https://jarednielsen.com/impostor-syndrome/</guid><pubDate>Fri, 24 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/742247cf7f930fae291df516d91d8274/29007/jarednielsen-impostor-syndrome.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABe0lEQVQoz4WSsUoDQRCG8wyCjyOIjShWNrEStBYLG1vBIo0giFiksJGICCm0EBUEUQw2gaAIiorB5DTekbtovLvdnZ0ZmcScOS2Ev9hd5pv5Z2cyxFZEXQERIBq0ylqNnWtavcgOlflFihiJmJmJLPZyEeoUTClYMIuGmVzXyS1OnR/tMLO1BhklkeQCIpOG+2qCVczsvTn55anbyhkYRUzGrftX+Y9aEX8iE9s9zyhlWUWfu1truYVx1K1OEEflk+r2iHu9jIQW437+G+6SjlOdyQ5lhweK63M69BEBiXT07JxNv5WXmjeroXshLaBJ9QwQM/NeYWV2bPBwc77tPXQalsfgvlA7Hn05nayfTCi/8gcWATO3vKeLg43AqxKTBWVREVkTNt6r+63H3bBRSrC+UaH8s9GRUeq2Urq7ulQfgW4HEL1DGJjPpmq9Rn5Ntz0TBxZiGYFMVHqGZDcAFKLkktkmshohRogtxHKWj+iuQ2I7MdO/SfyPvgBx1mpxLbqm4AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Image of a duck encountering a rubber duck&quot;
+        title=&quot;Image of a duck encountering a rubber duck&quot;
+        src=&quot;/static/742247cf7f930fae291df516d91d8274/f058b/jarednielsen-impostor-syndrome.png&quot;
+        srcset=&quot;/static/742247cf7f930fae291df516d91d8274/c26ae/jarednielsen-impostor-syndrome.png 158w,
+/static/742247cf7f930fae291df516d91d8274/6bdcf/jarednielsen-impostor-syndrome.png 315w,
+/static/742247cf7f930fae291df516d91d8274/f058b/jarednielsen-impostor-syndrome.png 630w,
+/static/742247cf7f930fae291df516d91d8274/40601/jarednielsen-impostor-syndrome.png 945w,
+/static/742247cf7f930fae291df516d91d8274/78612/jarednielsen-impostor-syndrome.png 1260w,
+/static/742247cf7f930fae291df516d91d8274/29007/jarednielsen-impostor-syndrome.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Are you an impostor?&lt;/p&gt;
+&lt;p&gt;I am.&lt;/p&gt;
+&lt;p&gt;We’re all impostors.&lt;/p&gt;
+&lt;p&gt;This is the dirty secret of software development.&lt;/p&gt;
+&lt;p&gt;The field is too broad and too deep to know it all and still be an affable dinner guest.&lt;/p&gt;
+&lt;p&gt;Most agencies work this way:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Say ‘yes’ to whatever the client requires to secure the contract&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Scramble to learn how to do it&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In &lt;em&gt;A Mind for Numbers&lt;/em&gt;, Barbara Oakley writes:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Whether you are naturally gifted or you have to struggle to get a solid grasp of the fundamentals, you should realize that you are not alone if you think you are an impostor—that it’s a fluke when you happen to do well on a test, and that on the next test, for sure they are finally going to figure out how incompetent you really are. This feeling is so extraordinarily common that it even has a name—the “impostor phenomenon”. If you suffer from these kinds of feelings of inadequacy, just be aware that many others secretly share them.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;How do you defeat impostor syndrome?&lt;/p&gt;
+&lt;h2&gt;How to defeat impostor syndrome&lt;/h2&gt;
+&lt;p&gt;Put a stake in the ground.&lt;/p&gt;
+&lt;p&gt;Choose one thing and go deep.&lt;/p&gt;
+&lt;p&gt;Then prove you know it: Build something with that new knowledge. Write an article about it. Give a talk at a conference or meetup.&lt;/p&gt;
+&lt;p&gt;Then put another stake in the ground.&lt;/p&gt;
+&lt;p&gt;Eventually you will demarcate your territory. You will carve out a piece of land from which you can stand and shout: “This is what I know!”&lt;/p&gt;
+&lt;p&gt;James Clear explains this process in Atomic Habits:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mastery is the process of narrowing your focus to a tiny element of success, repeating it until you have internalized the skill, and then using this new habit as the foundation to advance to the next frontier of your development. Old tasks become easier the second time around, but it doesn’t get easier overall because now you’re pouring your energy into the next challenge. Each habit unlocks the next level of performance. It’s an endless cycle.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Clear outlines a simple formula for gaining mastery:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Habits + Deliberate Practice = Mastery&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But mastery is more than just habits and practice.&lt;/p&gt;
+&lt;p&gt;Learn how to learn.&lt;/p&gt;
+&lt;p&gt;True mastery is being comfortable not knowing something yet confident in your ability to learn it.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Blaze a Trail: A Guide for Programmers Who Get Lost]]></title><description><![CDATA[My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah. I taught my charges how to solve…]]></description><link>https://jarednielsen.com/blaze-trail/</link><guid isPermaLink="false">https://jarednielsen.com/blaze-trail/</guid><pubDate>Fri, 17 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
