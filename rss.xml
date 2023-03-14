@@ -1,4 +1,108 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 12 Mar 2023 17:08:50 GMT</lastBuildDate><item><title><![CDATA[How to Work at Human Scale: A Guide for Living the Golden Rule of Programming]]></title><description><![CDATA[Everybody is chatting about AI these days, for better or worse. The doomsayers and evangelists both present strong arguments. At the core of…]]></description><link>https://jarednielsen.com/golden-rule-programming/</link><guid isPermaLink="false">https://jarednielsen.com/golden-rule-programming/</guid><pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 14 Mar 2023 13:12:21 GMT</lastBuildDate><item><title><![CDATA[How to Blaze a Trail: A Guide for Programmers Who Get Lost]]></title><description><![CDATA[My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah. I taught my charges how to solve…]]></description><link>https://jarednielsen.com/blaze-trail/</link><guid isPermaLink="false">https://jarednielsen.com/blaze-trail/</guid><pubDate>Fri, 17 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dfeb1e0e4dd0577e3ad96cd0b5bd06f4/29007/jarednielsen-blaze-trail.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAs0lEQVQoz5XSMQqEMBAFUK88goWFhR4gx/AcNkIsLewVLNPHZH52FlaQ4MbV/eUwL5MJySTKK8pVPW7IrpoAzPM8TZP3/h4f1RCCiPR9XxQFES3LIiIhhJvJ+xE7ttYqpeq6NsYkZRoDEJGu64ioLMuqqtq2Tb7IGe83FBGtNRHled40zTAMMT4605iZt20bx1Frva4rMzvnADzCAJxzzOy9t58AiDe/xM/zC3//lj/w7eQ3osF5iFC5dTwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Graphic of rocks stacked in the shape of a duck&quot;
+        title=&quot;Graphic of rocks stacked in the shape of a duck&quot;
+        src=&quot;/static/dfeb1e0e4dd0577e3ad96cd0b5bd06f4/f058b/jarednielsen-blaze-trail.png&quot;
+        srcset=&quot;/static/dfeb1e0e4dd0577e3ad96cd0b5bd06f4/c26ae/jarednielsen-blaze-trail.png 158w,
+/static/dfeb1e0e4dd0577e3ad96cd0b5bd06f4/6bdcf/jarednielsen-blaze-trail.png 315w,
+/static/dfeb1e0e4dd0577e3ad96cd0b5bd06f4/f058b/jarednielsen-blaze-trail.png 630w,
+/static/dfeb1e0e4dd0577e3ad96cd0b5bd06f4/40601/jarednielsen-blaze-trail.png 945w,
+/static/dfeb1e0e4dd0577e3ad96cd0b5bd06f4/78612/jarednielsen-blaze-trail.png 1260w,
+/static/dfeb1e0e4dd0577e3ad96cd0b5bd06f4/29007/jarednielsen-blaze-trail.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah.&lt;/p&gt;
+&lt;p&gt;I taught my charges how to solve problems: starting fires with bow and drill; bear-proofing a campsite; and, perhaps most importantly, working as a team.&lt;/p&gt;
+&lt;p&gt;We hiked a lot.&lt;/p&gt;
+&lt;p&gt;I led the hikes using a map and compass to get us to our destination. But I also used markers left behind by the trailblazers that came before us.&lt;/p&gt;
+&lt;p&gt;These markers were stacks or piles of stones, commonly referred to as cairns, colloquially referred to as rock ducks.&lt;/p&gt;
+&lt;p&gt;Why “rock ducks”?&lt;/p&gt;
+&lt;p&gt;Because the trailblazer would stack an elongated rock near the top to point in the direction of the trail. This stone looked like the beak of a duck.&lt;/p&gt;
+&lt;p&gt;When you’re blazing a trail, you want to create rock ducks in obvious locations. This serves two primary purposes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rock ducks help others find and stay on the trail&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rock ducks help you find your way back home&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How programmers get lost&lt;/h2&gt;
+&lt;p&gt;It’s in our nature as programmers to get lost in the weeds.&lt;/p&gt;
+&lt;p&gt;We miss the forest for the trees.&lt;/p&gt;
+&lt;p&gt;We split hairs.&lt;/p&gt;
+&lt;p&gt;We bikeshed.&lt;/p&gt;
+&lt;p&gt;We overengineer &lt;em&gt;everything&lt;/em&gt; we touch.&lt;/p&gt;
+&lt;p&gt;There are (at least) four strategies we can implement when blazing a trail as a programmer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Keep an engineering daybook&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make it a habit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Keep yourself honest&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Commenting is coding&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Keep an engineering daybook&lt;/h3&gt;
+&lt;p&gt;In &lt;em&gt;The Pragmatic Programmer&lt;/em&gt;, authors Dave Thomas and Andy Hunt promote the idea of keeping an engineering daybook, a paper notebook in which you record what you did, what you learned, and sketch ideas. The daybook has three main benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;It is more reliable than memory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It gives you a place to store ideas that aren’t immediately relevant to the task at hand. That way you can continue to concentrate on what you are doing, knowing that the great idea won’t be forgotten.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It acts as a kind of rubber duck! When you stop to write something down, your brain may switch gears, almost as if talking to someone—a great chance to reflect.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Make it a habit&lt;/h3&gt;
+&lt;p&gt;Entries in an engineering daybook are rock ducks. They serve as markers on your intellectual trail. But maybe you tried keeping a journal or diary in the past and hated it. James Clear addresses this situation in &lt;em&gt;Atomic Habits&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Nearly everyone can benefit from getting their thoughts out of their head and onto paper, but most people give up after a few days or avoid it entirely because journaling feels like a chore. The secret is to always stay below the point where it feels like work.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Keep yourself honest&lt;/h3&gt;
+&lt;p&gt;There’s another benefit to keeping a journal: it keeps us honest. In &lt;em&gt;The Black Swan&lt;/em&gt;, Nassim Nicholas Taleb addresses our innate fallibility and a solution:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While we have a highly unstable memory, a diary provides indelible facts recorded more or less immediately; it thus allows the fixation of an unrevised perception and enables us to later study events in their own context.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;An engineering daybook, or journal, helps us remember what we were thinking when we made a decision.&lt;/p&gt;
+&lt;h3&gt;Commenting is coding&lt;/h3&gt;
+&lt;p&gt;Your code comments are also rock ducks, markers for your collaborators and your future self.&lt;/p&gt;
+&lt;p&gt;While self-documenting code is the Holy Grail of legibility, there are often things that need to be said that can’t be said in the code itself. And sometimes we need to write comments so we can find our way, as Steve McConnell narrates in &lt;em&gt;Code Complete&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Writing a comment makes you think harder about what your code is doing. If it’s hard to comment, either it’s bad code or you don’t understand it well enough. Either way, you need to spend more time on the code, so the time you spent commenting wasn’t wasted because it pointed you to required work.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;How to blaze a trail&lt;/h2&gt;
+&lt;p&gt;Life is a journey.&lt;/p&gt;
+&lt;p&gt;It’s easy to get lost.&lt;/p&gt;
+&lt;p&gt;Leave markers so you can find your way back.&lt;/p&gt;
+&lt;p&gt;And so others can find their way forward.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Work at Human Scale: A Guide for Living the Golden Rule of Programming]]></title><description><![CDATA[Everybody is chatting about AI these days, for better or worse. The doomsayers and evangelists both present strong arguments. At the core of…]]></description><link>https://jarednielsen.com/golden-rule-programming/</link><guid isPermaLink="false">https://jarednielsen.com/golden-rule-programming/</guid><pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
