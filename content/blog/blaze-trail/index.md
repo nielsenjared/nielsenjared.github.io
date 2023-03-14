@@ -1,13 +1,11 @@
 ---
 title: "How to Blaze a Trail: A Guide for Programmers Who Get Lost"
 date: "2023-03-17"
-description: "Life is a journey. It's easy to get lost. TODO"
+description: "Life is a journey. It's easy to get lost. This article will equip you with wayfinding strategies in your career as a programmer."
 keywords: ['trailblazer', 'blazing a trail', 'trail', 'programmers']
 ---
 
-
 ![Graphic of rocks stacked in the shape of a duck](./jarednielsen-blaze-trail.png)
-
 
 My first full-time job was teaching wilderness survival to adjudicated youth in the deserts of Utah.
 
@@ -32,7 +30,15 @@ When you’re blazing a trail, you want to create rock ducks in obvious location
 
 ## How programmers get lost 
 
-TODO 
+It's in our nature as programmers to get lost in the weeds. 
+
+We miss the forest for the trees.  
+
+We split hairs. 
+
+We bikeshed. 
+
+We overengineer _everything_ we touch.
 
 There are (at least) four strategies we can implement when blazing a trail as a programmer: 
 
