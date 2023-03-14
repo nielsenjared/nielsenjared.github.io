@@ -5,7 +5,7 @@ description: "We're all impostors. This article will help you not feel like one 
 keywords: ['impostor syndrome', 'mastery']
 ---
 
-![  ](./jarednielsen-impostor-syndrome.png)
+![Image of a duck encountering a rubber duck](./jarednielsen-impostor-syndrome.png)
 
 
 Are you an impostor?
