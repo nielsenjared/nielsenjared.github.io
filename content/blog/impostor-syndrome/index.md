@@ -1,9 +1,10 @@
 ---
-title: "How to Defeat Impostor Syndrome: A Guide for Gaining Mastery"
+title: "How to Overcome Impostor Syndrome: A Guide for Gaining Mastery"
 date: "2023-03-24"
 description: "We're all impostors. This article will help you not feel like one by gaining mastery in your domain."
 keywords: ['impostor syndrome', 'mastery']
 ---
+
 
 ![Image of a duck encountering a rubber duck](./jarednielsen-impostor-syndrome.png)
 
@@ -18,20 +19,24 @@ This is the dirty secret of software development.
 
 The field is too broad and too deep to know it all and still be an affable dinner guest.
 
-Most agencies work this way:
+Here's how most work gets done, especially at agencies:
 
 * Say ‘yes’ to whatever the client requires to secure the contract
 
 * Scramble to learn how to do it
 
+* Play it cool
+
+😎
+
 In _A Mind for Numbers_, Barbara Oakley writes:
 
 > Whether you are naturally gifted or you have to struggle to get a solid grasp of the fundamentals, you should realize that you are not alone if you think you are an impostor--that it’s a fluke when you happen to do well on a test, and that on the next test, for sure they are finally going to figure out how incompetent you really are. This feeling is so extraordinarily common that it even has a name--the “impostor phenomenon”. If you suffer from these kinds of feelings of inadequacy, just be aware that many others secretly share them.
 
-How do you defeat impostor syndrome? 
+How _do_ you play it cool while scrambling to learn new skills? 
 
 
-## How to defeat impostor syndrome
+## How to overcome impostor syndrome
 
 Put a stake in the ground. 
 
