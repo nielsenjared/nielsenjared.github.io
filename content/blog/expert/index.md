@@ -1,5 +1,5 @@
 ---
-title: "How to Become An Expert: A Guide for TODO"
+title: "How to Become An Expert"
 date: "2023-03-31"
 description: "Expertise is a journey, not a destination. This article outlines three simple steps we can take to become an expert in any domain."
 keywords: ['expert', 'expertise', 'growth mindset', 'practice']
