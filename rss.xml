@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 31 Mar 2023 15:05:41 GMT</lastBuildDate><item><title><![CDATA[How to Become An Expert: A Guide for TODO]]></title><description><![CDATA[Expertise is a journey, not a destination. Like most journeys, there’s a time period where the destiation feels impossibly distant. In…]]></description><link>https://jarednielsen.com/expert/</link><guid isPermaLink="false">https://jarednielsen.com/expert/</guid><pubDate>Fri, 31 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 31 Mar 2023 15:39:22 GMT</lastBuildDate><item><title><![CDATA[How to Become An Expert]]></title><description><![CDATA[Expertise is a journey, not a destination. Like most journeys, there’s a time period where the destiation feels impossibly distant. In…]]></description><link>https://jarednielsen.com/expert/</link><guid isPermaLink="false">https://jarednielsen.com/expert/</guid><pubDate>Fri, 31 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -12432,7 +12432,121 @@ x = x / y&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         decoding=&quot;async&quot;
       /&gt;
     &lt;/span&gt;
-💯 Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Solve Algorithms]]></title><description><![CDATA[In 1992, Mary Oliver published Poem 133: The Summer Day, which ends with a question for the reader: Tell me, what is it you plan to do with…]]></description><link>https://jarednielsen.com/solve-algorithms/</link><guid isPermaLink="false">https://jarednielsen.com/solve-algorithms/</guid><pubDate>Fri, 07 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+💯 Give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How To Be A Powerful, Courageous, and Wise Programmer]]></title><description><![CDATA[There are countless programming analogies we can draw from video games. One of the longest running and widely recognized games is The Legend…]]></description><link>https://jarednielsen.com/computer-science/</link><guid isPermaLink="false">https://jarednielsen.com/computer-science/</guid><pubDate>Thu, 13 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f8e57c38ff6763b25e27e2ec62a48200/29007/jarednielsen-triforce.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA8ElEQVQoz52RMUoEQRBF6zZewNCLaCbLnsIrbCZ4g1FYAxMxMTDSwA0EEWFFMxEFwUBZp7qq/pfu2XWY3VkQ4QVFF4/f/VsQKeMrmCIcbnmYH1omWqRfTgoiHt7w/EEGk/J31coufZlZJkO3DtL2IUnWSkv0xK4vPaYqSb96qjdGurkf09ccrtrKjY+l5EUm3j91p8LXDHcvaXecZSvb7uWl77W0vbNvGdjowobHMxl6NSEJ1U5hyHLdTIAXDJ7i/D6OJnF66yc3Xl3H5SNZmkcHWTjeymEgCygQwFLmOrmQv9fgzTCvZ5U18t8Q0P/NDyFfev+BVoPbAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; The Triforce &quot;
+        title=&quot; The Triforce &quot;
+        src=&quot;/static/f8e57c38ff6763b25e27e2ec62a48200/f058b/jarednielsen-triforce.png&quot;
+        srcset=&quot;/static/f8e57c38ff6763b25e27e2ec62a48200/c26ae/jarednielsen-triforce.png 158w,
+/static/f8e57c38ff6763b25e27e2ec62a48200/6bdcf/jarednielsen-triforce.png 315w,
+/static/f8e57c38ff6763b25e27e2ec62a48200/f058b/jarednielsen-triforce.png 630w,
+/static/f8e57c38ff6763b25e27e2ec62a48200/40601/jarednielsen-triforce.png 945w,
+/static/f8e57c38ff6763b25e27e2ec62a48200/78612/jarednielsen-triforce.png 1260w,
+/static/f8e57c38ff6763b25e27e2ec62a48200/29007/jarednielsen-triforce.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;There are countless programming analogies we can draw from video games. One of the longest running and widely recognized games is &lt;em&gt;The Legend of Zelda&lt;/em&gt;. The series follows the adventures of Link, a young hero who drops out of college to launch a successful startup in a Palo Alto garage and changes the world as we know it.&lt;/p&gt;
+&lt;p&gt;How did Link succeed in his quest?&lt;/p&gt;
+&lt;p&gt;He equipped himself with &lt;a href=&quot;https://jarednielsen.gumroad.com/l/computerscience&quot;&gt;The Triforce of Computer Science&lt;/a&gt;: algorithms, data structures, and Big O.&lt;/p&gt;
+&lt;p&gt;If you’re not familiar with it, the Triforce is an artifact of &lt;em&gt;The Legend of Zelda&lt;/em&gt; video game franchise, with much of the game play centered on gathering and recombining its three pieces. According to Ye Olde Wikipedia:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When the three pieces of the Triforce are combined, they create a divine artifact that has the power to grant any wish. For this reason, the combined Triforce has been the main source of struggle for control within the series, due to its limitless power.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The pieces of the Triforce represent &lt;em&gt;power&lt;/em&gt;, &lt;em&gt;courage&lt;/em&gt;, and &lt;em&gt;wisdom&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;According to Merriam-Webster, the definitions for each of these attributes are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Power&lt;/strong&gt;: &lt;em&gt;ability to act or produce an effect&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Courage&lt;/strong&gt;: &lt;em&gt;mental or moral strength to venture, persevere, and withstand danger, fear, or difficulty&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Wisdom&lt;/strong&gt;: &lt;em&gt;ability to discern inner qualities and relationships&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I love a good framework, and these easily map to Algorithms, Big O, and Data Structures.&lt;/p&gt;
+&lt;p&gt;Table time! 🏓&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Triforce attribute&lt;/th&gt;
+&lt;th&gt;Computer science topic&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Power&lt;/td&gt;
+&lt;td&gt;Algorithms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Courage&lt;/td&gt;
+&lt;td&gt;Data structures&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Wisdom&lt;/td&gt;
+&lt;td&gt;Big O&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Like the Triforce, possessing knowledge of these three compsci topics can grant (almost) any wish. Combined, they establish the foundation for solving any programming problem.&lt;/p&gt;
+&lt;h3&gt;⚔️🛡️ Power ↦ Algorithms&lt;/h3&gt;
+&lt;p&gt;According to Ye Olde Wikipedia, an &lt;em&gt;algorithm&lt;/em&gt; is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We can think of algorithms as items in Link’s inventory, equipping our hero with the tools required to crawl dungeon after dungeon, battle bosses, and build apps for villagers. The more algorithms you acquire, the more you can accomplish. You will also want to collect more powerful algorithms. Don’t expect to vanquish Ganon with the Bubble Sword. You’ll want the Quick Sword for that. But, as we’ve seen over the last few years, algorithms can cause massive societal change, both positive and negative.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;With great power comes great responsibility.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Oh, wait. That’s Spider-Man. But still applicable here.&lt;/p&gt;
+&lt;h3&gt;❤️ Courage ↦ Data Structures&lt;/h3&gt;
+&lt;p&gt;According to Ye Olde Wikipedia, a &lt;em&gt;data structure&lt;/em&gt; is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a collection of data values, the relationships among them, and the functions or operations that can be applied to the data&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Like heart containers, data structures store the life energy of a program. As the Hero’s Shade says in &lt;em&gt;Twilight Princess&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A sword wields no strength unless the hand that holds it has courage.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And an algorithm is only as strong as the data structure that supports it. You can only accomplish so much without an array. Even then, at some point, an array becomes limiting and you need a tree. Or a graph. Or a Link-ed list ;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wisdom: ability to discern inner qualities and relationships&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;🦉 Wisdom ↦ Big O&lt;/h3&gt;
+&lt;p&gt;According to Ye Olde Wikipedia, &lt;em&gt;Big O&lt;/em&gt; is a a mathematical notation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;used to classify algorithms according to how their run time or space requirements grow as the input size grows&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In &lt;em&gt;The Ocarina of Time&lt;/em&gt;, Zelda tells Link:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The flow of time is always cruel…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So is the flow of space!&lt;/p&gt;
+&lt;p&gt;With Big O, we demonstrate wisdom by analyzing the performance of our algorithms and asking the question: “Can we do better?”&lt;/p&gt;
+&lt;h2&gt;How To Be A Powerful, Courageous, and Wise Programmer&lt;/h2&gt;
+&lt;p&gt;Learning to program is an adventure.&lt;/p&gt;
+&lt;p&gt;It’s dangerous to go alone! Take this: &lt;a href=&quot;https://jarednielsen.gumroad.com/l/computerscience&quot;&gt;The Triforce of Computer Science&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Solve Algorithms]]></title><description><![CDATA[In 1992, Mary Oliver published Poem 133: The Summer Day, which ends with a question for the reader: Tell me, what is it you plan to do with…]]></description><link>https://jarednielsen.com/solve-algorithms/</link><guid isPermaLink="false">https://jarednielsen.com/solve-algorithms/</guid><pubDate>Fri, 07 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
