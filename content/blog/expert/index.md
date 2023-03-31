@@ -1,16 +1,16 @@
 ---
-title: "How to Be An Expert: A Guide for TODO"
+title: "How to Become An Expert: A Guide for TODO"
 date: "2023-03-31"
-description: "TODO"
-keywords: ['TODO']
+description: "Expertise is a journey, not a destination. This article outlines three simple steps we can take to become an expert in any domain."
+keywords: ['expert', 'expertise', 'growth mindset', 'practice']
 
 ---
 
 ![ Illustration of golden duck trophy ](./jarednielsen-expert.png)
 
+Expertise is a journey, not a destination. 
 
-TODO Introduction
-
+There are three simple steps we can take to become an expert in any domain: 
 
 * Assume a growth mindset 
 
@@ -222,4 +222,4 @@ In [Conceptual Blockbusting](https://amzn.to/2Io9QrZ), James L. Adams writes:
 
 > For all our education and training as thinkers, we acquire knowledge, perhaps skill, and maybe appreciation, but we could go much further if we just spent more time thinking about the process of thinking. 
 
-Expertise is a journey, not a destination. In order to stay on the path, we need to first decide that it's possible with a growth mindset and then commit to deliberate practice that plays to our strengths. 
+Expertise is a journey, not a destination. To become an expert, we need to first decide that it's possible by assuming a growth mindset and then commit to deliberate practice that plays to our strengths. 
