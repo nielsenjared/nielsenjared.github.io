@@ -8,24 +8,7 @@ keywords: ['expert', 'expertise', 'growth mindset', 'practice']
 
 ![ Illustration of golden duck trophy ](./jarednielsen-expert.png)
 
-Expertise is a journey, not a destination. 
-
-There are three simple steps we can take to become an expert in any domain: 
-
-* Assume a growth mindset 
-
-* Apply deliberate practice 
-
-* Play to your strengths 
-
-
-## How to Be an Expert
-
-Quadratic growth is terrible.
-
-For algorithms.
-
-But it’s desirable when it comes to our personal growth. 
+Expertise is a journey, not a destination. Like most journeys, there's a time period where the destiation feels impossibly distant. 
 
 In _Atomic Habits_, James Clear describes the phenomenon he calls “The Plateau of Latent Potential”. This is the time period in which you are learning a new skill or working on a project and it feels like you are not making progress. You think you should be progressing linearly, but what you don’t realize is that you are progressing quadratically, maybe even exponentially. 
 
@@ -67,31 +50,15 @@ Or worse yet, on the second page of search results!
 
 How do you solve this problem? 
 
-🐰 Habits. 
+There are three simple steps we can take to become an expert in any domain: 
 
-If you want to learn a new skill, such as programming, or improve your problem solving, you must make it a habit. 
+* Assume a growth mindset 
 
-Yeah, yeah. You heard me the first time. TODO
+* Apply deliberate practice 
 
-But really, how do you solve this problem?
+* Play to your strengths 
 
-Talk to the duck.
-
-🦆
-
-Understanding the problem or challenge, framing it clearly and articulately, is the first, and most important step to becoming an expert. It also defines the boundaries of what you are learning or solving in order to prevent scope creep. 
-
-Focus on one thing at a time. If you chase two rabbits, both are going to get away.
-
-Read The Fantastic Manual! Always refer to primary sources and start with the official tutorials. If you’re following a third-party tutorial, make sure it’s recent. Technical tutorials have a short shelf life. (There’s a caveat, though: sometimes the docs are outdated or non-existent and this is an opportunity to contribute to a project!)
-
-Make it a habit. 
-
-Don’t give up.
-
-But do take breaks. 
-
-As with Archimedes in the bathtub, sometimes you need to pull off the highway to see Eureka.
+We'll look at each of them in turn. 
 
 
 ## Assume a Growth Mindset  
@@ -206,7 +173,7 @@ We can do that by building _mental models_. Hunt and Thomas provide a few questi
 * Why is this a problem? 
 
  
-## A Guide for TODO 
+## How to Be An Expert
 
 Do you want to be an expert? 
 
