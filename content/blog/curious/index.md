@@ -2,15 +2,14 @@
 title: "How to Be Curious" 
 date: '2022-09-26'
 description: "TODO" 
-subject: How to Be Curious
-preview_text: “TODO"
+keyword: ['curious', 'curiosity',]
 ---
 
 ![TODO](./jarednielsen-TODO.png)
 
 Why are we curious?
 
-In _How Humans Learn_, Joshua R. Eyler, explores the evolutionary underpinnings of curiosity: 
+In _How Humans Learn_, Joshua R. Eyler explores the evolutionary underpinnings of curiosity: 
 
 > Children seek to know about the world not because they want to, but because they have to. To a certain extent, their survival depends on it, but more broadly their social, intellectual, and emotional worlds are driven by curiosity. Learning then occurs when this innate curiosity leads the child to explore and test the world around her. 
 
@@ -183,5 +182,3 @@ We ask ‘why’ recursively.
 Why? 
 
 Exactly.
-
-Looking to improve your _metacognition_? Check out my latest article, [How to Code the Recursive Factorial Algorithm](https://jarednielsen.com/algorithm-recursive-factorial/)
