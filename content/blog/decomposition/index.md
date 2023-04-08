@@ -1,12 +1,12 @@
 ---
 title: 'How To Break a Problem Down: A Guide for Using Decomposition in Computational Thinking'
 date: '2023-04-07'
-description: Decomposition is the first stage of computational thinking. When we decompose a problem, we break it down into smaller problems. The process of decomposition often reveals patterns that point to the solution. 
+description: "Decomposition is the first stage of computational thinking. When we decompose a problem, we break it down into smaller problems. The process of decomposition often reveals patterns that point to the solution."
 keywords: ['decompoisition', 'metacognition', 'problem', 'solution', 'computational thinking']
 ---
 
 
-![ Illustrationg of a duck breaking into smaller pieces ](./jarednielsen-decomposition.png)
+![ Illustration of a duck breaking into smaller pieces ](./jarednielsen-decomposition.png)
 
 
 Thinking like a programmer means thinking like a computer. If you want to think like a programmer, you'll want to learn computational thinking. There are four stages of computational thinking: 
