@@ -10,7 +10,26 @@ keywords: ['pattern recognition', 'patterns', 'problem solving']
 
 
 
-Once upon a time, there was a young boy named Carl Friedrich Gauss. He lived in the city of Brunswick with his working-class parents and was a precocious child
+* What is pattern recognition? 
+
+* How do we learn how to recognize patterns? 
+
+    * Anti-patterns 
+
+* How do we recognize patterns? 
+    * focused vs. diffuse? 
+    * metapatterns? 
+
+
+
+
+
+
+
+
+## How to Recognize Patterns 
+
+Once upon a time, there was a young boy named Carl Friedrich Gauss. He lived in the city of Brunswick with his working-class parents and was a precocious child.
 
 One day, young Gauss made a legendary discovery.
 
@@ -18,9 +37,7 @@ It happened in math class.
 
 Little Carl was ten years old.
 
-Knowing it would take some time to complete, the teacher gave the students a problem:
- 
-find the sum of the whole numbers between 1 and 100. 
+Knowing it would take some time to complete, the teacher gave the students a problem:  _find the sum of the whole numbers between 1 and 100._
 
 This was the 18th century version of turning on a movie. 
 
@@ -46,9 +63,27 @@ How did ten year-old Gauss do it?
 
 He saw an elegant solution to a rote problem: the relationship between the numbers rather than the numbers themselves. 
 
-Pattern recognition. 
+AKA pattern recognition. 
 
-“Half of mastering mathematics is simply recognizing the type of problem-solving pattern that applies to each problem.”
+
+### What is pattern recognition? 
+
+TODO 
+
+TODO what is pattern recogntion?
+
+
+### How do we learn how to recognize patterns?
+
+
+TODO 
+
+* Learn patterns 
+
+* Learn anti-patterns 
+
+
+> Half of mastering mathematics is simply recognizing the type of problem-solving pattern that applies to each problem. -Barbara Oakley
 
 The same can be said of programming. 
 
@@ -97,6 +132,7 @@ Go play!
 
 
 
+#### Focused vs. diffuse mode
 
 Ever found yourself in this situation? 
 
@@ -134,7 +170,7 @@ There’s the solution.
 
 All you needed to do was get out of your own way.
 
-In A Mind for Numbers, Barbara Oakley outlines two modes of thinking: focused and diffuse.
+In _A Mind for Numbers_, Barbara Oakley outlines two modes of thinking: _focused_ and _diffuse_.
 
 Focused-mode thinking “involves a direct approach to solving problems using rational, sequential, analytical approaches. The focused mode is used to concentrate on something that's already tightly connected in your mind, often because you are familiar and comfortable with the underlying concepts.”
 
@@ -160,9 +196,9 @@ It's Freudian.
 
 “The ego and superego suppress ideas by judging them to be somehow out of order as they try to work their way up to the conscious level.” 
 
-In Conceptual Blockbusting, James L. Adams continues:
+In _Conceptual Blockbusting_, James L. Adams continues:
 
-“Judgment is clearly necessary in life, but it is often automatic. It’s not hard to see why: life becomes simpler if one makes rapid judgments, and a person is rewarded if those judgments are later seen to be right. But premature judgment can be the enemy of creativity. You are undoubtedly familiar with that by the common phenomenon of a better idea that emerges just as soon as you commit to another one.”
+> Judgment is clearly necessary in life, but it is often automatic. It’s not hard to see why: life becomes simpler if one makes rapid judgments, and a person is rewarded if those judgments are later seen to be right. But premature judgment can be the enemy of creativity. You are undoubtedly familiar with that by the common phenomenon of a better idea that emerges just as soon as you commit to another one.
 
 Programming is problem solving. 
 
@@ -207,6 +243,9 @@ But we first need to establish patterns using focused-mode thinking.
 
 
 
+
+
+
 ## Anti-Patterns 
 
 How do you shortcut your way to success? 
@@ -221,7 +260,7 @@ We need to learn design patterns.
 
 A design pattern is a reusable solution for a problem. We’re accustomed to design patterns in terms of computer science, but the concept originates from architecture, and can be applied to any domain.
 
-The opposite of design patterns are anti-patterns. An anti-pattern, as defined by Gabriel Weinberg in Superthinking, is “...a seemingly intuitive but actually ineffective ‘solution’ to a common problem that often already has a known, better solution”. 
+The opposite of design patterns are anti-patterns. An anti-pattern, as defined by Gabriel Weinberg in _Superthinking_, is “...a seemingly intuitive but actually ineffective ‘solution’ to a common problem that often already has a known, better solution”. 
 
 How do we avoid anti-patterns? First, we need to learn them. Then, according to Weinberg, we avoid them by “...explicitly looking for them and then seeking out established patterns instead.” 
 
@@ -229,7 +268,18 @@ This is the #1 reason we want to study algorithms, even the poor performers. We 
 
 When learning algorithms, there are two primary reasons we always start with sorting. The first is that a sorted array is a prerequisite for many other algorithms, such as search. The second is that, according to Donald Knuth in The Art of Computer Programming, “...sorting algorithms make a valuable case study of how to attack computer programming problems in general.” He continues:
 
-Sorting techniques also provide excellent illustrations of the general ideas involved in the analysis of algorithms--the ideas used to determine performance characteristics of algorithms so that an intelligent choice can be made between competing methods. 
+> Sorting techniques also provide excellent illustrations of the general ideas involved in the analysis of algorithms--the ideas used to determine performance characteristics of algorithms so that an intelligent choice can be made between competing methods. 
+
+
+
+
+
+### How to recognize patterns
+
+* Focused vs. diffuse mode 
+
+* Metapatterns 
+
 
 
 ## Metapatterns 
