@@ -68,12 +68,85 @@ AKA pattern recognition.
 
 ### What is pattern recognition? 
 
+According to Ye Olde Wikipedia, _pattern recognition_ is: 
+
+> a cognitive process that matches information from a stimulus with information retrieved from memory.
+
+That's in the [context of human psychology](https://en.wikipedia.org/wiki/Pattern_recognition). In the [context of engineering](https://en.wikipedia.org/wiki/Pattern_recognition), _pattern recognition_ is: 
+
+> the automated recognition of patterns and regularities in data
+
+We want to concern ourselves with the former in order to accomplish the latter. 
+
+TODO what is pattern recogntion? Sparks of Genius? 
+
+
+
+
+### How does pattern recognition work?
+
 TODO 
+In _The Power of Computational Thinking_, authors Curzon and McOwan state that: 
 
-TODO what is pattern recogntion?
+> Often problems turn out to be essentially the same as something you've already seen in a different situation. If you already have a solution for that other problem, then you can just reuse it. 
+
+Great! But how do we get those solutions? 
+
+TODO build our library of patterns 
+
+* Study
+
+* Practice 
 
 
-### How do we learn how to recognize patterns?
+#### TODO Study
+
+How do you shortcut your way to success? 
+
+If success is a ladder, the quickest way to reach the top is to stand on the shoulders of giants. 
+
+Those giants learned things the hard way and, lucky for us, they shared what they learned.
+
+Unfortunately, there’s no shortcut to the shortcut. We need to do the work and learn those lessons, too.
+
+We need to learn design patterns. 
+
+A design pattern is a reusable solution for a problem. We’re accustomed to design patterns in terms of computer science, but the concept originates from architecture, and can be applied to any domain.
+
+We also need to learn what didn't work. 
+
+The opposite of design patterns are anti-patterns. An anti-pattern, as defined by Gabriel Weinberg in _Superthinking_, is “...a seemingly intuitive but actually ineffective ‘solution’ to a common problem that often already has a known, better solution”. 
+
+How do we avoid anti-patterns? First, we need to learn them. Then, according to Weinberg, we avoid them by “...explicitly looking for them and then seeking out established patterns instead.” 
+
+This is the #1 reason we want to study algorithms, even the poor performers. We build a library of mental models that help us quickly recognize design patterns and anti-patterns. 
+
+When learning algorithms, there are two primary reasons we always start with sorting. The first is that a sorted array is a prerequisite for many other algorithms, such as search. The second is that, according to Donald Knuth in The Art of Computer Programming, “...sorting algorithms make a valuable case study of how to attack computer programming problems in general.” He continues:
+
+> Sorting techniques also provide excellent illustrations of the general ideas involved in the analysis of algorithms--the ideas used to determine performance characteristics of algorithms so that an intelligent choice can be made between competing methods. 
+
+
+#### TODO practice 
+
+Practice. 
+
+
+
+
+
+Karl Beecher offers an approach for spotting simple patterns in _Computational Thinking_: 
+
+* Look for nouns that appear repeatedly. These could correspond to objects that your solution deals with. 
+
+* Looks for verbs that appear repeatedly. These could be operations that the solution carries out. 
+
+* Look for concrete descriptions. These could probably be substituted by placeholders that vary in different situations. For example: 
+
+    * adjectives ('red', 'long', 'smooth') which indicate properties of things and could be replaced by the property name (colour, size, texture);
+
+    * actual numbers, which could be replaced with variables. 
+
+
 
 
 TODO 
@@ -101,6 +174,7 @@ Yes, that means learning your data structures, practicing algorithms, and studyi
 
 It also means having fun. 
 
+TODO Sparks of Genius: 
 “Recognizing patterns sometimes requires a certain amount of tolerance for dawdling and play.”
 
 Make up jokes. 
@@ -123,14 +197,24 @@ Or jigsaw puzzles.
 
 Or climb rocks!
 
-“Such nonsense at any age may be a nuisance that reveals new sense.”
+TODO Sparks of Genius
+“Like a good riddle, such nonsense at any age may be a nuisance that reveals new sense.”
 
 No excuse. You now have permission.
 
 Go play!
 
 
+TODO 
 
+
+
+
+### How to recognize patterns
+
+* Focused vs. diffuse mode 
+
+* Metapatterns 
 
 #### Focused vs. diffuse mode
 
@@ -242,47 +326,19 @@ But we first need to establish patterns using focused-mode thinking.
 
 
 
-
-
-
-
-## Anti-Patterns 
-
-How do you shortcut your way to success? 
-
-If success is a ladder, the quickest way to reach the top is to stand on the shoulders of giants. 
-
-Those giants learned things the hard way and, lucky for us, they shared what they learned.
-
-Unfortunately, there’s no shortcut to the shortcut. We need to do the work and learn those lessons, too.
-
-We need to learn design patterns. 
-
-A design pattern is a reusable solution for a problem. We’re accustomed to design patterns in terms of computer science, but the concept originates from architecture, and can be applied to any domain.
-
-The opposite of design patterns are anti-patterns. An anti-pattern, as defined by Gabriel Weinberg in _Superthinking_, is “...a seemingly intuitive but actually ineffective ‘solution’ to a common problem that often already has a known, better solution”. 
-
-How do we avoid anti-patterns? First, we need to learn them. Then, according to Weinberg, we avoid them by “...explicitly looking for them and then seeking out established patterns instead.” 
-
-This is the #1 reason we want to study algorithms, even the poor performers. We build a library of mental models that help us quickly recognize design patterns and anti-patterns. 
-
-When learning algorithms, there are two primary reasons we always start with sorting. The first is that a sorted array is a prerequisite for many other algorithms, such as search. The second is that, according to Donald Knuth in The Art of Computer Programming, “...sorting algorithms make a valuable case study of how to attack computer programming problems in general.” He continues:
-
-> Sorting techniques also provide excellent illustrations of the general ideas involved in the analysis of algorithms--the ideas used to determine performance characteristics of algorithms so that an intelligent choice can be made between competing methods. 
-
-
-
-
-
-### How to recognize patterns
-
-* Focused vs. diffuse mode 
-
-* Metapatterns 
-
-
-
 ## Metapatterns 
+
+TODO patterns of patterns 
+
+Karl Beecher in _Computational Thinking_:
+
+* Patterns among a sequence of instructions can be generalised into loops
+
+* Patterns among separate groups of instructions can be generalised into subroutines 
+
+* Patterns among conditionals or equations can be generalised into rules 
+
+
 
 What is topological sort? 
 
