@@ -2,32 +2,15 @@
 title: 'How to Recognize Patterns: A Guide for TODO'
 date: "2023-04-14"
 description: TODO
-keywords: ['pattern recognition', 'patterns', 'problem solving']
+keywords: ['pattern recognition', 'patterns', 'computational thinking']
 ---
 
 
 ![ TODO ](./jarednielsen-pattern-recognition.png)
 
 
-
-* What is pattern recognition? 
-
-* How do we learn how to recognize patterns? 
-
-    * Anti-patterns 
-
-* How do we recognize patterns? 
-    * focused vs. diffuse? 
-    * metapatterns? 
-
-
-
-
-
-
-
-
-## How to Recognize Patterns 
+TODO introduction 
+computational thinking 
 
 Once upon a time, there was a young boy named Carl Friedrich Gauss. He lived in the city of Brunswick with his working-class parents and was a precocious child.
 
@@ -65,8 +48,20 @@ He saw an elegant solution to a rote problem: the relationship between the numbe
 
 AKA pattern recognition. 
 
+Pattern recognition is the second stage in the four step process of computational thinking: 
 
-### What is pattern recognition? 
+* Decomposition
+
+* Pattern recognition
+
+* Abstraction
+
+* Design, or pattern forming
+
+If you're just joining us, you'll want to start with the first article in this series, [How to Break Down a Problem: A Guide for Decomposition in Computational Thinking](TODO).
+
+
+## What is pattern recognition? 
 
 According to Ye Olde Wikipedia, _pattern recognition_ is: 
 
@@ -81,9 +76,7 @@ We want to concern ourselves with the former in order to accomplish the latter.
 TODO what is pattern recogntion? Sparks of Genius? 
 
 
-
-
-### How does pattern recognition work?
+## How does pattern recognition work?
 
 TODO 
 In _The Power of Computational Thinking_, authors Curzon and McOwan state that: 
@@ -92,14 +85,18 @@ In _The Power of Computational Thinking_, authors Curzon and McOwan state that:
 
 Great! But how do we get those solutions? 
 
-TODO build our library of patterns 
+We build a library of patterns! 
+
+This requires us to do one (but preferably both) of two things: 
 
 * Study
 
 * Practice 
 
+😩
 
-#### TODO Study
+
+### Learn how to recognize patterns and anti-patterns 
 
 How do you shortcut your way to success? 
 
@@ -121,18 +118,16 @@ How do we avoid anti-patterns? First, we need to learn them. Then, according to 
 
 This is the #1 reason we want to study algorithms, even the poor performers. We build a library of mental models that help us quickly recognize design patterns and anti-patterns. 
 
-When learning algorithms, there are two primary reasons we always start with sorting. The first is that a sorted array is a prerequisite for many other algorithms, such as search. The second is that, according to Donald Knuth in The Art of Computer Programming, “...sorting algorithms make a valuable case study of how to attack computer programming problems in general.” He continues:
+When learning algorithms, there are two primary reasons we always start with sorting. The first is that a sorted array is a prerequisite for many other algorithms, such as search. The second is that, according to Donald Knuth in _The Art of Computer Programming_, “...sorting algorithms make a valuable case study of how to attack computer programming problems in general.” He continues:
 
 > Sorting techniques also provide excellent illustrations of the general ideas involved in the analysis of algorithms--the ideas used to determine performance characteristics of algorithms so that an intelligent choice can be made between competing methods. 
 
 
-#### TODO practice 
+### Learn how to recognize patterns through problem solving and play
 
 Practice. 
 
-
-
-
+TODO
 
 Karl Beecher offers an approach for spotting simple patterns in _Computational Thinking_: 
 
@@ -146,17 +141,19 @@ Karl Beecher offers an approach for spotting simple patterns in _Computational T
 
     * actual numbers, which could be replaced with variables. 
 
+TODO Karl Beecher in _Computational Thinking_:
 
+* Patterns among a sequence of instructions can be generalised into loops
 
+* Patterns among separate groups of instructions can be generalised into subroutines 
 
-TODO 
+* Patterns among conditionals or equations can be generalised into rules 
 
-* Learn patterns 
+TODO
 
-* Learn anti-patterns 
+According to Barbara Oakley in _A Mind for Numbers_: 
 
-
-> Half of mastering mathematics is simply recognizing the type of problem-solving pattern that applies to each problem. -Barbara Oakley
+> Half of mastering mathematics is simply recognizing the type of problem-solving pattern that applies to each problem. 
 
 The same can be said of programming. 
 
@@ -204,17 +201,6 @@ No excuse. You now have permission.
 
 Go play!
 
-
-TODO 
-
-
-
-
-### How to recognize patterns
-
-* Focused vs. diffuse mode 
-
-* Metapatterns 
 
 #### Focused vs. diffuse mode
 
@@ -328,19 +314,9 @@ But we first need to establish patterns using focused-mode thinking.
 
 ## Metapatterns 
 
-TODO patterns of patterns 
+Once we build a library of patterns and a TODO ability to recongize them, we can begin to recognize patterns of patterns, or _metapatterns_. 
 
-Karl Beecher in _Computational Thinking_:
-
-* Patterns among a sequence of instructions can be generalised into loops
-
-* Patterns among separate groups of instructions can be generalised into subroutines 
-
-* Patterns among conditionals or equations can be generalised into rules 
-
-
-
-What is topological sort? 
+Take topological sort, for example. 
 
 We use it every day to make decisions and perform actions in sequence, often starting when we get dressed in the morning. Unless you are a superhero, you probably put your underwear on before your pants.
 
@@ -348,4 +324,8 @@ One of the classic analogies for topological sort is academic curriculum. If you
 
 Whether or not you earn a CS degree, there’s a good chance the only time you will ever write a topological sort algorithm is in an interview. But that doesn’t mean you don’t need to learn it! Like topological sort, to understand our field, we sometimes need to traverse all of the paths. Doing so will increase the breadth of our knowledge and put dependencies in context as well as order, but it doesn’t necessarily mean we need to go in-depth on each topic. (See what I did there?) Additionally, and perhaps most importantly, we strengthen our ability to recognize patterns. Topological sort is like DFS experiencing an identity crisis and confusing itself with BFS. But to see that, you would first need to learn DFS and BFS. A visual analogy for this form of pattern recognition is a moiré pattern, where two patterns overlap to reveal a third, new pattern, like this: 
 
+TODO 
 
+## How to Recognize Patterns 
+
+TODO
