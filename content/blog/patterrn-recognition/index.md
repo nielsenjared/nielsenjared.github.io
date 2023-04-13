@@ -48,17 +48,17 @@ He saw an elegant solution to a rote problem: the relationship between the numbe
 
 AKA pattern recognition. 
 
-Pattern recognition is the second stage in the four step process of computational thinking: 
+Pattern recognition is an essential skill in problem solving and is the second stage in the four step process of computational thinking: 
 
 * Decomposition
 
-* Pattern recognition
+* **Pattern recognition**
 
 * Abstraction
 
 * Design, or pattern forming
 
-If you're just joining us, you'll want to start with the first article in this series, [How to Break Down a Problem: A Guide for Decomposition in Computational Thinking](TODO).
+If you're just joining us, you'll want to start with the first article in this series, [How to Break Down a Problem: A Guide for Decomposition in Computational Thinking](https://jarednielsen.com/decomposition/).
 
 
 ## What is pattern recognition? 
@@ -71,14 +71,13 @@ That's in the [context of human psychology](https://en.wikipedia.org/wiki/Patter
 
 > the automated recognition of patterns and regularities in data
 
-We want to concern ourselves with the former in order to accomplish the latter. 
+As programmers, we want to concern ourselves with the former in order to accomplish the latter. 
 
-TODO what is pattern recogntion? Sparks of Genius? 
+How do we do that? 
 
 
-## How does pattern recognition work?
+## TODO How to learn how to recognize patterns
 
-TODO 
 In _The Power of Computational Thinking_, authors Curzon and McOwan state that: 
 
 > Often problems turn out to be essentially the same as something you've already seen in a different situation. If you already have a solution for that other problem, then you can just reuse it. 
@@ -95,6 +94,8 @@ This requires us to do one (but preferably both) of two things:
 
 😩
 
+But wait! Before you despair, there's a third approach we can that puts the fun in function.
+
 
 ### Learn how to recognize patterns and anti-patterns 
 
@@ -106,30 +107,54 @@ Those giants learned things the hard way and, lucky for us, they shared what the
 
 Unfortunately, there’s no shortcut to the shortcut. We need to do the work and learn those lessons, too.
 
-We need to learn design patterns. 
+Those lessons are patterns. 
 
-A design pattern is a reusable solution for a problem. We’re accustomed to design patterns in terms of computer science, but the concept originates from architecture, and can be applied to any domain.
+How do we learn those patterns? 
+
+* 📚 **Read**: Hit the books or the blogs. 
+
+* 👂 **Listen**: Remember that advice your parents gave you about listening to your elders? 👴 Oh, you weren't listening? Queue up podcasts, pay attention to the 
+
+* 👀 **Watch**: Not just watch in the sense of watching YouTube videos, but watch as in _be observant_. 
+
+All of the above requires focus, and we'll see below how this works (and doesn't work) to our advantage. 
+
+On that note... 
 
 We also need to learn what didn't work. 
 
-The opposite of design patterns are anti-patterns. An anti-pattern, as defined by Gabriel Weinberg in _Superthinking_, is “...a seemingly intuitive but actually ineffective ‘solution’ to a common problem that often already has a known, better solution”. 
+The opposite of design patterns are anti-patterns. An anti-pattern, as defined by Gabriel Weinberg in _Superthinking_, is:
 
-How do we avoid anti-patterns? First, we need to learn them. Then, according to Weinberg, we avoid them by “...explicitly looking for them and then seeking out established patterns instead.” 
+> ...a seemingly intuitive but actually ineffective ‘solution’ to a common problem that often already has a known, better solution. 
 
-This is the #1 reason we want to study algorithms, even the poor performers. We build a library of mental models that help us quickly recognize design patterns and anti-patterns. 
+How do we avoid anti-patterns? 
+
+First, we need to learn them. 
+
+Then, according to Weinberg, we avoid them by “explicitly looking for them and then seeking out established patterns instead.” 
+
+This is the #1 reason we want to study algorithms, even the poor performers. We build a library of mental models that help us quickly recognize patterns and anti-patterns. 
 
 When learning algorithms, there are two primary reasons we always start with sorting. The first is that a sorted array is a prerequisite for many other algorithms, such as search. The second is that, according to Donald Knuth in _The Art of Computer Programming_, “...sorting algorithms make a valuable case study of how to attack computer programming problems in general.” He continues:
 
 > Sorting techniques also provide excellent illustrations of the general ideas involved in the analysis of algorithms--the ideas used to determine performance characteristics of algorithms so that an intelligent choice can be made between competing methods. 
 
+According to Barbara Oakley in _A Mind for Numbers_: 
 
-### Learn how to recognize patterns through problem solving and play
+> Half of mastering mathematics is simply recognizing the type of problem-solving pattern that applies to each problem. 
 
-Practice. 
+The same can be said of programming. 
 
-TODO
+An understanding of time complexity, data structures, and algorithms will help you see through a programming problem and immediately identify the order of any function. 
 
-Karl Beecher offers an approach for spotting simple patterns in _Computational Thinking_: 
+For example, any time you encounter a nested loop, you know that’s O(n^2) (or worse) and you know there must be a better way!
+
+
+### Learn how to recognize patterns through practice
+
+TODO 
+
+In _Computational Thinking_, author Karl Beecher offers an approach for spotting simple patterns: 
 
 * Look for nouns that appear repeatedly. These could correspond to objects that your solution deals with. 
 
@@ -141,7 +166,7 @@ Karl Beecher offers an approach for spotting simple patterns in _Computational T
 
     * actual numbers, which could be replaced with variables. 
 
-TODO Karl Beecher in _Computational Thinking_:
+Once we are practiced in recognizing these patterns, we can begin to scale up and generalize our patterns into statements, functions, and blocks, as outlined by Beecher in _Computational Thinking_:
 
 * Patterns among a sequence of instructions can be generalised into loops
 
@@ -151,30 +176,20 @@ TODO Karl Beecher in _Computational Thinking_:
 
 TODO
 
-According to Barbara Oakley in _A Mind for Numbers_: 
 
-> Half of mastering mathematics is simply recognizing the type of problem-solving pattern that applies to each problem. 
+### Learn how to recognize patterns through play
 
-The same can be said of programming. 
+Pattern recognition is a skill you need to develop and maintain if you want to stay sharp in your domain. 
 
-Design patterns are an obvious answer.
-
-And Big O. 
-
-An understanding of time complexity, data structures, and algorithms will help you see through a programming problem and immediately identify the order of any function. 
-
-For example, any time you encounter a nested loop, you know that’s O(n^2) (or worse) and you know there must be a better way!
-
-Pattern recognition is a skill you need to develop and maintain.
-
-Yes, that means learning your data structures, practicing algorithms, and studying Big O.
+Yes, that means study and practice.
 
 It also means having fun. 
 
-TODO Sparks of Genius: 
-“Recognizing patterns sometimes requires a certain amount of tolerance for dawdling and play.”
+The authors of _Sparks of Genius_ counsel us to put the fun in functions: 
 
-Make up jokes. 
+> Recognizing patterns sometimes requires a certain amount of tolerance for dawdling and play.
+
+So make up jokes. 
 
 Pun. 
 
@@ -197,12 +212,12 @@ Or climb rocks!
 TODO Sparks of Genius
 “Like a good riddle, such nonsense at any age may be a nuisance that reveals new sense.”
 
-No excuse. You now have permission.
+No excuse. You now have permission. It's good for your career. 
 
 Go play!
 
 
-#### Focused vs. diffuse mode
+## How does pattern recogntion work? 
 
 Ever found yourself in this situation? 
 
@@ -242,21 +257,27 @@ All you needed to do was get out of your own way.
 
 In _A Mind for Numbers_, Barbara Oakley outlines two modes of thinking: _focused_ and _diffuse_.
 
-Focused-mode thinking “involves a direct approach to solving problems using rational, sequential, analytical approaches. The focused mode is used to concentrate on something that's already tightly connected in your mind, often because you are familiar and comfortable with the underlying concepts.”
+According to Oakely, focused-mode thinking:
 
-Diffuse mode thinking “is what happens when you relax your attention and just let your mind wander. It allows us to suddenly gain a new insight on a problem we’ve been struggling with and is associated with ‘big-picture’ perspectives.”
+> involves a direct approach to solving problems using rational, sequential, analytical approaches. The focused mode is used to concentrate on something that's already tightly connected in your mind, often because you are familiar and comfortable with the underlying concepts.
+
+On the flip-side, diffuse mode thinking:
+
+> ...is what happens when you relax your attention and just let your mind wander. It allows us to suddenly gain a new insight on a problem we’ve been struggling with and is associated with ‘big-picture’ perspectives.
 
 Both modes are essential to problem solving.
 
-“Evidence suggests that to grapple with a difficult problem, we must first put hard, focused-mode effort into it. Here’s the interesting part: The diffuse mode is also often an important part of problem solving, especially when the problem is difficult. But as long as we are consciously focusing on a problem, we are blocking the diffuse mode.”
+According to Oakley: 
+
+> Evidence suggests that to grapple with a difficult problem, we must first put hard, focused-mode effort into it. Here’s the interesting part: The diffuse mode is also often an important part of problem solving, especially when the problem is difficult. But as long as we are consciously focusing on a problem, we are blocking the diffuse mode.
 
 Sometimes trying too hard is part of the problem.
 
 We become our own blocker. 
 
-This is called the Einstellung effect.
+This is called the _Einstellung effect_.
 
-“In this phenomenon, an idea you already have in mind, or your simple initial thought, prevents a better idea or solution from being found.”
+According to Oakely, in this phenomenon “an idea you already have in mind, or your simple initial thought, prevents a better idea or solution from being found.”
 
 Why do we do this to ourselves? 
 
@@ -264,9 +285,11 @@ Ego.
 
 It's Freudian.
 
-“The ego and superego suppress ideas by judging them to be somehow out of order as they try to work their way up to the conscious level.” 
+According to James L. Adams in _Conceptual Blockbusting_: 
 
-In _Conceptual Blockbusting_, James L. Adams continues:
+> The ego and superego suppress ideas by judging them to be somehow out of order as they try to work their way up to the conscious level.” 
+
+Adams continues:
 
 > Judgment is clearly necessary in life, but it is often automatic. It’s not hard to see why: life becomes simpler if one makes rapid judgments, and a person is rewarded if those judgments are later seen to be right. But premature judgment can be the enemy of creativity. You are undoubtedly familiar with that by the common phenomenon of a better idea that emerges just as soon as you commit to another one.
 
@@ -310,6 +333,9 @@ But we first need to establish patterns using focused-mode thinking.
 
 "If you are grappling with a new concept or trying to solve a new problem, you don’t have preexisting neural patterns to help guide your thoughts--there’s no fuzzy underlying pathway to help guide you."
 
+What's the solution? 
+
+Study, practice, and play. 
 
 
 ## Metapatterns 
@@ -325,7 +351,9 @@ One of the classic analogies for topological sort is academic curriculum. If you
 Whether or not you earn a CS degree, there’s a good chance the only time you will ever write a topological sort algorithm is in an interview. But that doesn’t mean you don’t need to learn it! Like topological sort, to understand our field, we sometimes need to traverse all of the paths. Doing so will increase the breadth of our knowledge and put dependencies in context as well as order, but it doesn’t necessarily mean we need to go in-depth on each topic. (See what I did there?) Additionally, and perhaps most importantly, we strengthen our ability to recognize patterns. Topological sort is like DFS experiencing an identity crisis and confusing itself with BFS. But to see that, you would first need to learn DFS and BFS. A visual analogy for this form of pattern recognition is a moiré pattern, where two patterns overlap to reveal a third, new pattern, like this: 
 
 TODO 
+![ Moire pattern ](TODO)
 
 ## How to Recognize Patterns 
 
 TODO
+
