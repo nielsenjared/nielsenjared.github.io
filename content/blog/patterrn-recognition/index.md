@@ -5,8 +5,8 @@ description: Pattern recognition is an essential skill in problem solving and is
 keywords: ['pattern recognition', 'patterns', 'computational thinking']
 ---
 
-
 ![ Illustration of ducks forming a pattern ](./jarednielsen-pattern-recognition.png)
+
 
 Once upon a time, there was a young boy named Carl Friedrich Gauss. He lived in the city of Brunswick with his working-class parents and was a precocious child.
 
@@ -352,6 +352,7 @@ One of the classic analogies for topological sort is academic curriculum. If you
 Whether or not you earn a CS degree, there’s a good chance the only time you will ever write a topological sort algorithm is in an interview. But that doesn’t mean you don’t need to learn it! Like topological sort, to understand our field, we sometimes need to traverse all of the paths. Doing so will increase the breadth of our knowledge and put dependencies in context as well as order, but it doesn’t necessarily mean we need to go in-depth on each topic. (See what I did there?) Additionally, and perhaps most importantly, we strengthen our ability to recognize patterns. Topological sort is like DFS experiencing an identity crisis and confusing itself with BFS. But to see that, you would first need to learn DFS and BFS. A visual analogy for this form of pattern recognition is a moiré pattern, where two patterns overlap to reveal a third, new pattern, like this: 
 
 ![ Moire pattern ](./jarednielsen-pattern-recognition-moire.png)
+
 
 ## How to recognize patterns 
 
