@@ -1,16 +1,12 @@
 ---
-title: 'How to Recognize Patterns: A Guide for TODO'
+title: 'How to Recognize Patterns: A Guide for Putting the Fun in Functions'
 date: "2023-04-14"
-description: TODO
+description: Pattern recognition is an essential skill in problem solving and is the second stage in the four step process of computational thinking. If you want to think like a programmer, you'll want to learn how to recognize patterns. 
 keywords: ['pattern recognition', 'patterns', 'computational thinking']
 ---
 
 
-![ TODO ](./jarednielsen-pattern-recognition.png)
-
-
-TODO introduction 
-computational thinking 
+![ Illustration of ducks forming a pattern ](./jarednielsen-pattern-recognition.png)
 
 Once upon a time, there was a young boy named Carl Friedrich Gauss. He lived in the city of Brunswick with his working-class parents and was a precocious child.
 
@@ -76,7 +72,7 @@ As programmers, we want to concern ourselves with the former in order to accompl
 How do we do that? 
 
 
-## TODO How to learn how to recognize patterns
+## How to put the fun in functions
 
 In _The Power of Computational Thinking_, authors Curzon and McOwan state that: 
 
@@ -94,7 +90,9 @@ This requires us to do one (but preferably both) of two things:
 
 😩
 
-But wait! Before you despair, there's a third approach we can that puts the fun in function.
+This doesn't sound like fun! 
+
+Before you despair, there's a third approach we can take that puts the fun in function.
 
 
 ### Learn how to recognize patterns and anti-patterns 
@@ -152,7 +150,9 @@ For example, any time you encounter a nested loop, you know that’s O(n^2) (or 
 
 ### Learn how to recognize patterns through practice
 
-TODO 
+We want to balance out our academic pursuits by doing the work of practitioners and working through problems on our own. 
+
+How do you know if you're recognizing patterns? 
 
 In _Computational Thinking_, author Karl Beecher offers an approach for spotting simple patterns: 
 
@@ -174,8 +174,6 @@ Once we are practiced in recognizing these patterns, we can begin to scale up an
 
 * Patterns among conditionals or equations can be generalised into rules 
 
-TODO
-
 
 ### Learn how to recognize patterns through play
 
@@ -185,7 +183,7 @@ Yes, that means study and practice.
 
 It also means having fun. 
 
-The authors of _Sparks of Genius_ counsel us to put the fun in functions: 
+In _Sparks of Genius_, Robert and Michele Root-Bernstein counsel us to put the _fun_ in functions: 
 
 > Recognizing patterns sometimes requires a certain amount of tolerance for dawdling and play.
 
@@ -209,12 +207,15 @@ Or jigsaw puzzles.
 
 Or climb rocks!
 
-TODO Sparks of Genius
-“Like a good riddle, such nonsense at any age may be a nuisance that reveals new sense.”
+According to the Root-Bernstein's: 
 
-No excuse. You now have permission. It's good for your career. 
+> Like a good riddle, such nonsense at any age may be a nuisance that reveals new sense.
 
-Go play!
+No excuse. 
+
+You now have permission to play. 
+
+It's good for your career. 
 
 
 ## How does pattern recogntion work? 
@@ -340,9 +341,9 @@ Study, practice, and play.
 
 ## Metapatterns 
 
-Once we build a library of patterns and a TODO ability to recongize them, we can begin to recognize patterns of patterns, or _metapatterns_. 
+Once we build a library of patterns and an aptitude for recongizing them, we can begin to recognize patterns of patterns, or _metapatterns_. 
 
-Take topological sort, for example. 
+Take [topological sort](https://jarednielsen.com/data-structure-graph-topological-sort/), for example. 
 
 We use it every day to make decisions and perform actions in sequence, often starting when we get dressed in the morning. Unless you are a superhero, you probably put your underwear on before your pants.
 
@@ -350,10 +351,11 @@ One of the classic analogies for topological sort is academic curriculum. If you
 
 Whether or not you earn a CS degree, there’s a good chance the only time you will ever write a topological sort algorithm is in an interview. But that doesn’t mean you don’t need to learn it! Like topological sort, to understand our field, we sometimes need to traverse all of the paths. Doing so will increase the breadth of our knowledge and put dependencies in context as well as order, but it doesn’t necessarily mean we need to go in-depth on each topic. (See what I did there?) Additionally, and perhaps most importantly, we strengthen our ability to recognize patterns. Topological sort is like DFS experiencing an identity crisis and confusing itself with BFS. But to see that, you would first need to learn DFS and BFS. A visual analogy for this form of pattern recognition is a moiré pattern, where two patterns overlap to reveal a third, new pattern, like this: 
 
-TODO 
-![ Moire pattern ](TODO)
+![ Moire pattern ](./jarednielsen-pattern-recognition-moire.png)
 
-## How to Recognize Patterns 
+## How to recognize patterns 
 
-TODO
+If you want to think like a programmer, you'll want to learn how to recognize patterns. Pattern recognition is an essential skill in problem solving and is the second stage in the four step process of computational thinking. Building a library of patterns requires study, practice, and, perhaps most importantly, play. In the next article, we'll look at the third stage of computational thinking, forming abstractions. Stay tuned! 
+
+
 
