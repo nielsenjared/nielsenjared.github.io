@@ -1,14 +1,11 @@
 ---
-title: "How to Design Algorithms: A Guide for Forming Patterns in Your Programs" 
-description: 
-keywords: [ '',]
+title: "How to Form Patterns: A Guide for TODO" 
+description: TODO
+keywords: [ '', ]
 --- 
 
-![TODO](./jarednielsen-TODO.png)
 
-
-TODO intro
-
+![ Illustration of a duck formed from smaller ducks ](./jarednielsen-pattern-forming.png)
 
 
 How do you build something out of nothing? 
@@ -21,8 +18,18 @@ How does this ‘pure thought stuff’ become code?
 
 Patterns. 
 
+When we design algorithms, we draw from the library of patterns we collected by solving similar problems. 
+
+Rather than recognize patterns, we _form_ patterns. 
+
+We build structures, or castles if you will, in the air, from air.
+
 
 ## Pattern Forming is Problem Solving 
+
+TODO what is pattern forming? 
+
+
 
 In [Sparks of Genius](https://amzn.to/2UhVpgo), Robert and Michele Root-Bernstein write:
 
@@ -34,6 +41,8 @@ The Root-Bernstein’s outline two lessons learned from their study of pattern f
     
 2. The complexity of the final product doesn’t reside in the complexity of the components but in the cleverness with which a handful of simple elements is used to generate diverse surprises
 
+According to the Root-Bernstein's:
+
 > Learning to create patterns is therefore one of the keys to innovating in every discipline, and it is wise to learn this skill early on.
 
 We want to form a pattern of forming patterns. 
@@ -41,7 +50,7 @@ We want to form a pattern of forming patterns.
 How do we do that?
 
 
-## The Pattern Forming / Habit Forming Feedback Loop
+### The Pattern Forming Feedback Loop
 
 In [Atomic Habits](https://amzn.to/2NZz8jx), James Clear discusses the importance of using habits to form an identity rather than to achieve a goal: 
 
@@ -71,35 +80,6 @@ We recognize a pattern in the problem then we form a pattern to solve it.
 
 
 ## Problem Solving is Pattern Forming
-
-In [How To Solve It](https://amzn.to/33Mp30d), George Polya outlines four steps for solving any problem:
-
-1. Understand the Problem
-
-2. Devise a Plan
-
-3. Execute the Plan
-
-4. Examine the Solution
-
-The last point is the most important. 
-
-"What is the solution? 
-
-"Can it be modified? 
-
-"If so, what could be improved, if anything? 
-
-"Could we use this solution for other problems?"
-
-We gain mastery through this process of reflection and remodeling.
-
-Make it a habit!
-
-
-
-
-## To Succeed, Build Structure 
 
 How do we build structure?
 
@@ -146,6 +126,28 @@ When we learn by rules, we can apply them to new situations. If we learn by exam
 As Barbara Oakley writes in [A Mind for Numbers](https://amzn.to/2UWpClG):
 
 > Once you understand why you do something in math and science, you don’t have to keep reexplaining the how to yourself every time you do it.
+
+In [How To Solve It](https://amzn.to/33Mp30d), George Polya outlines four steps for solving any problem:
+
+1. Understand the Problem
+
+2. Devise a Plan
+
+3. Execute the Plan
+
+4. Examine the Solution
+
+The last point is the most important. 
+
+"What is the solution? 
+
+"Can it be modified? 
+
+"If so, what could be improved, if anything? 
+
+"Could we use this solution for other problems?"
+
+We gain mastery through this process of reflection and remodeling. And, perhaps more importantly, we add to our library of patterns, stockpiling the raw materials required to form our own patterns and build structure.
  
 
 ## Manage Complexity 
@@ -217,6 +219,8 @@ In [Atomic Habits](https://amzn.to/2NZz8jx), James Clear outlines a formula for 
 
 > I will [BEHAVIOR] at [TIME] in [LOCATION].
 
+Looks just like a program, doesn't it?
+
 Just like Software’s Primary Technical Imperative, we need to manage complexity and be specific about what we want and how we will achieve it. 
 
 As Clear explains:
@@ -228,30 +232,7 @@ As in building a structure for learning and software, we can also build structur
 > After [CURRENT HABIT], I will [NEW HABIT].
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## How TODO
+## How to Form Patterns
 
 TODO conclusion
+Designing an algorithm is forming a pattern.
