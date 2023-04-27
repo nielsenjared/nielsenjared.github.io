@@ -1,8 +1,9 @@
 ---
 title: "How to Form Patterns" 
+date: 2023-04-28
 description: Learning how to form patterns is a key to innovation in any field. In this article, you will learn how to form patterns, how to build structure when learning how to form patterns, and how to manage the increasing complexity of patterns. 
 subject: "To understand order, it is often necessary to learn how to create it."
-keywords: [ 'computational thinking', 'algorithm', 'design', 'pattern forming', 'form patterns']
+keywords: [ 'algorithm', 'design', 'pattern forming', 'form patterns', 'structure']
 --- 
 
 
