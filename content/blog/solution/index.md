@@ -1,6 +1,6 @@
 ---
 title: The Solution
-description: TODO
+description: The Solution is a newsletter for problem solvers, lifelong learners, and programmers. 
 date: 2023-05-05
 keywords: ['superlative guide', 'solution']
 ---
