@@ -1,12 +1,12 @@
 ---
 title: "The Superlative Guide to Computational Thinking"
-description: 
+description: Thinking like a programmer means thinking like a computer. If you want to think like a programmer, you'll want to learn computational thinking.
 date: 2023-05-05
 keywords: ['computational thinking']
 ---
 
 
-![ TODO ]( jarednielsen-TODO.png)
+![ Menger sponge ]( jarednielsen-computational-thinking.png)
 
 How do you think like a programmer? 
 
