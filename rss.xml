@@ -1,4 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 27 Apr 2023 16:14:19 GMT</lastBuildDate><item><title><![CDATA[How to Form Patterns]]></title><description><![CDATA[How do you build something out of nothing? In The Mythical Man-Month, Fred Brooks writes: The programmer, like the poet, works only slightly…]]></description><link>https://jarednielsen.com/pattern-forming/</link><guid isPermaLink="false">https://jarednielsen.com/pattern-forming/</guid><pubDate>Fri, 28 Apr 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 02 May 2023 14:25:37 GMT</lastBuildDate><item><title><![CDATA[The Superlative Guide to Computational Thinking]]></title><description><![CDATA[How do you think like a programmer? If programming is problem solving, we need one or more heuristics specific to this domain. And we’re in…]]></description><link>https://jarednielsen.com/computational-thinking/</link><guid isPermaLink="false">https://jarednielsen.com/computational-thinking/</guid><pubDate>Fri, 05 May 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/61a0cb71a5e6d93bb7338a88e62fa180/29007/jarednielsen-computational-thinking.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVQoz2WSz0pCQRTGBxIiaB29QC2ERMhdix7ACHyQiFoUEr1AtamdPUBGUi1SUgiKdhEEUqERaeINKyRR887/OTVzr3e0Lt/iMjO/853zzSAlmBVnilPFKYCCwU8Ks86GJBhSknskcArMSPDWxc3b7pGzk65s7lc3UvTFARDAiC0hPNgYatLAihIAuI0vnaCp05FoNjSbQ9OV1T0AUK6rS3MadIqMp7VVFAPIx0TyEIVT4zOXk/ECihZXtvswsbzkf2DiwQ+L68conB6LXU8sFFDkfnlrCO7zyB9YMN+ZEQB1l1jLotj56HwuNJdHkVoypWGMfVLDQWAmM+3PqCJYYbdTLDfOrmqZ/OtB1skUus9VgXvC7UmCtbkOSJ9HHgOUACWKYOl+804bt75aTv39qdwol5r1WvfzAzebtNNmva4krncYKEEQzBxcFTe1zJ1pmSzsru2cem0zLTEs81oUM+KDW7z/nIKZ/cntv7FlNs5/+g3sB0EsVUfF4FLQAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; Menger sponge &quot;
+        title=&quot; Menger sponge &quot;
+        src=&quot;/static/61a0cb71a5e6d93bb7338a88e62fa180/f058b/jarednielsen-computational-thinking.png&quot;
+        srcset=&quot;/static/61a0cb71a5e6d93bb7338a88e62fa180/c26ae/jarednielsen-computational-thinking.png 158w,
+/static/61a0cb71a5e6d93bb7338a88e62fa180/6bdcf/jarednielsen-computational-thinking.png 315w,
+/static/61a0cb71a5e6d93bb7338a88e62fa180/f058b/jarednielsen-computational-thinking.png 630w,
+/static/61a0cb71a5e6d93bb7338a88e62fa180/40601/jarednielsen-computational-thinking.png 945w,
+/static/61a0cb71a5e6d93bb7338a88e62fa180/78612/jarednielsen-computational-thinking.png 1260w,
+/static/61a0cb71a5e6d93bb7338a88e62fa180/29007/jarednielsen-computational-thinking.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;How do you think like a programmer?&lt;/p&gt;
+&lt;p&gt;If programming is problem solving, we need one or more heuristics specific to this domain.&lt;/p&gt;
+&lt;p&gt;And we’re in luck!&lt;/p&gt;
+&lt;p&gt;There’s a set of methods used for defining and solving a problem in terms that a computer could also perform. It’s called, you’ll never guess…&lt;/p&gt;
+&lt;h2&gt;Computational Thinking&lt;/h2&gt;
+&lt;p&gt;The four stages of computational thinking are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Generalization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstraction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithm&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If composing a function is the process of assembling the various components, such as variables, control flow, and conditions, then decomposition is the opposite: it’s breaking a problem down into smaller parts.&lt;/p&gt;
+&lt;p&gt;When we break a problem down into smaller pieces, we will often recognize patterns. Another way of saying this is that we generalize by inferring from specific cases to make broad statements.&lt;/p&gt;
+&lt;p&gt;Once we recognize patterns, we can remove the details, or form abstractions, in order to focus on the relationships between concepts.&lt;/p&gt;
+&lt;p&gt;Finally, we simply need to write a series of repeatable steps to solve our problem, otherwise known as an algorithm.&lt;/p&gt;
+&lt;p&gt;So how do we put these into practice?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/decomposition/&quot;&gt;How to Break a Problem Down: A Guide to Decomposition in Computational Thinking&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/patterrn-recognition/&quot;&gt;How to Recognize Patterns: A Guide for Putting the Fun in Functions&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/abstraction/&quot;&gt;How to Form Abstractions: A Guide for Getting Abstract with Computational Thinking&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/pattern-forming/&quot;&gt;How to Form Patterns: A Guide to Designing Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to learn how to apply these concepts, give yourself an A. Grab your copy of &lt;a href=&quot;https://gum.co/algorithms&quot;&gt;A is for Algorithms&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Solution]]></title><description><![CDATA[Thanks for being a subscriber to The Solution. Stay tuned for the next issue. In the meantime, check out these superlative guides: The…]]></description><link>https://jarednielsen.com/solution/</link><guid isPermaLink="false">https://jarednielsen.com/solution/</guid><pubDate>Fri, 05 May 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d6019415f7eb5508b00837c539e4646e/29007/jarednielsen-solution.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAz0lEQVQoz62SQWoCQRBFvZ67CMETBE/gGTxDFu71BC6CAwYMiLss1YVRVETNiEkco11VT9qJ29YZ8uFDN1Q9fld1wcwIWoWrzJRb9YVbBV4umaHuB381k5xADNT4eqkzj8rEw+e7kgYSpk9NBhHjVpF41EB+N7jDOggNAPXSuJs2mXUeWfarLN6eSFa9FKiSfYZe6/ca06jEpP3AvFvBHVZ5EwqYcPxesJ28En902H+OMDlh6rID8Q3qUHGIS+3PKse/TWdNSFi5/2FW/zvwDEc6XKx3VSgTAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; Talk to the duck &quot;
+        title=&quot; Talk to the duck &quot;
+        src=&quot;/static/d6019415f7eb5508b00837c539e4646e/f058b/jarednielsen-solution.png&quot;
+        srcset=&quot;/static/d6019415f7eb5508b00837c539e4646e/c26ae/jarednielsen-solution.png 158w,
+/static/d6019415f7eb5508b00837c539e4646e/6bdcf/jarednielsen-solution.png 315w,
+/static/d6019415f7eb5508b00837c539e4646e/f058b/jarednielsen-solution.png 630w,
+/static/d6019415f7eb5508b00837c539e4646e/40601/jarednielsen-solution.png 945w,
+/static/d6019415f7eb5508b00837c539e4646e/78612/jarednielsen-solution.png 1260w,
+/static/d6019415f7eb5508b00837c539e4646e/29007/jarednielsen-solution.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Thanks for being a subscriber to The Solution. Stay tuned for the next issue. In the meantime, check out these superlative guides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/computational-thinking/&quot;&gt;The Superlative Guide to Computational Thinking&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/goals/&quot;&gt;The Superlative Guide to Setting and Achieving Goals&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/algorithms/&quot;&gt;The Superlative Guide to Algorithms&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/data-structures-javascript/&quot;&gt;The Superlative Guide to Data Structures in JavaScript&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jarednielsen.com/big-o/&quot;&gt;The Superlative Guide to Big O&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How to Form Patterns]]></title><description><![CDATA[How do you build something out of nothing? In The Mythical Man-Month, Fred Brooks writes: The programmer, like the poet, works only slightly…]]></description><link>https://jarednielsen.com/pattern-forming/</link><guid isPermaLink="false">https://jarednielsen.com/pattern-forming/</guid><pubDate>Fri, 28 Apr 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
