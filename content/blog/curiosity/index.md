@@ -1,20 +1,13 @@
 ---
-title: "How to Ask 'Why?': A Guide for the Curious" 
+title: "What is Curiosity? A Guide for the Curious" 
 date: '2022-09-26'
-description: "TODO" 
+description: Curiosity is central to learning, but as we grow older we become less curious. This article outlines strategies for regaining and improving our curiosity.
 keyword: ['curious', 'curiosity',]
 ---
 
-![TODO](./jarednielsen-TODO.png)
-
-As we grow older, the the question “Why?” steadily gets replaced by “What do I need to do to achieve X?”. 
+![ rubber duck ](./jarednielsen-curiosity.png)
 
 If we want to be curious, we need to improve our ability to ask 'why'? 
-
-Why? 
-
-
-## How to Ask 'Why?'
 
 Why are we curious?
 
@@ -191,5 +184,3 @@ We ask ‘why’ recursively.
 Why? 
 
 Exactly.
-
-Looking to improve your _metacognition_? Check out my latest article, [How to Code the Recursive Factorial Algorithm](https://jarednielsen.com/algorithm-recursive-factorial/)
