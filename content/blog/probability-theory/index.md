@@ -132,5 +132,3 @@ Collisions.
 If we are implementing a hashing function, we need to address situations where one or more values share an index. The birthday paradox quickly reveals the likelihood of a collision, and, perhaps more importantly, how easily we might not see it. 
 
 ## TODO
-
-TODO 
