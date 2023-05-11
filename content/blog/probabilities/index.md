@@ -1,11 +1,12 @@
 ---
-title: "How To Be Superhuman: Notes on Learning Probability Theory"
-description: If you want superhuman abilities, you can learn how to calculate probabilities. We're not good at it and you will use this skill every day.
+title: "Thinking in Probabilities"
+description: If you want superhuman abilities, learn to think in probabilities. We're not good at it and you will use this skill every day. You'll also be able to impress your friends with mind-blowing party tricks. 
 date: 2023-05-12
-keywords: ['probability theory']
+keywords: ['probability', 'probabilities']
 ---
 
-![ TODO ](./jarednielsen-TODO.png)
+![  ](./jarednielsen-probabilities.png)
+
 
 How does the word mathematics make you feel? 
 
@@ -49,11 +50,9 @@ Will learning some maths chops help?
 
 Immensely. 
 
-TODO 
+But mathematics is a wide field, so where do you focus your attention? 
 
-But mathematics is a field in itself, so where do you focus your attention? 
-
-I'm going to make the argument that probability theory . 
+You could use probability theory to figure that out! 
 
 Do you need to learn probability theory? 
 
@@ -63,17 +62,15 @@ But what is the probability that you would use it?
 
 100%
 
-There are two primary reasons to learn probability theory: 
+There are two primary reasons to improve your ability to think in probabilities: 
 
-* Humans are bad at calculating probabilities
+* We (humans) are bad at calculating probabilities
 
-* You'll use it every day
+* You'll use it every day for decisions big and small
 
-TODO
+If you are programming in one of the two most popular languages, Python or JavaScript, you are using probability every day in dictionaries and objects. It’s baked into the design and history of hash tables. In _The Art of Computer Programming_, Donald Knuth uses the birthday paradox to address one of the problems with hashing: 
 
-If you are programming in one of the two most popular languages, Python or JavaScript, you are using probability every day in dictionaries and objects. It’s baked into the design and history of hash tables. In The Art of Computer Programming, Donald Knuth uses the birthday paradox to address one of the problems with hashing: 
-
-Functions that avoid duplicate values are surprisingly rare, even with a fairly large table. For example, the famous “birthday paradox” asserts that if 23 or more people are present in a room, chances are good that two of them will have the same month and day of birth! In other words, if we select a random function that maps 23 keys into a table of size 365, the probability that no two keys map into the same location is only 0.4927 (less than one-half). 
+> Functions that avoid duplicate values are surprisingly rare, even with a fairly large table. For example, the famous “birthday paradox” asserts that if 23 or more people are present in a room, chances are good that two of them will have the same month and day of birth! In other words, if we select a random function that maps 23 keys into a table of size 365, the probability that no two keys map into the same location is only 0.4927 (less than one-half). 
 
 Wait! 
 
@@ -113,22 +110,13 @@ There’s a 2.7% chance there will be a shared birthday among five individuals.
 
 It scales very quickly. If we are calculating the probability that ten individuals share a birthday, the result is 11.7%. And 20 individuals is 41.1%. We reach 99.9% probability with only 70 individuals. (FWIW, we only hit 100% with 366). 
 
-In Hexaflexagons, Probability Paradoxes, and the Tower of Hanoi, Martin Gardner points out that among U.S. presidents, both Polk and Harding were born on November 2nd, and, if we look at deaths, Jefferson, Adams, and Monroe each died on July 4th and Truman and Ford died on December 26th! 
+In _Hexaflexagons, Probability Paradoxes, and the Tower of Hanoi_, Martin Gardner points out that among U.S. presidents, both Polk and Harding were born on November 2nd, and, if we look at deaths, Jefferson, Adams, and Monroe each died on July 4th and Truman and Ford died on December 26th! 
 
 That’s from a pool of 46. 
 
-Right about now you’re looking for the Unsubscribe link… 
+You're probably thinking, "This is a great party trick, but..." 
 
-Let’s fix that.
 
-What is the correlation between probability and programming? 
+## Thinking Probabilities
 
-(See what I did there?)
 
-Collisions.
-
-💥🚗
-
-If we are implementing a hashing function, we need to address situations where one or more values share an index. The birthday paradox quickly reveals the likelihood of a collision, and, perhaps more importantly, how easily we might not see it. 
-
-## TODO
