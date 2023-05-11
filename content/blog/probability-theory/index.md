@@ -1,8 +1,8 @@
 ---
-title: Mathematics TODO
-description: TODO
-date: TODO
-keywords: ['']
+title: "How To Be Superhuman: Notes on Learning Probability Theory"
+description: If you want superhuman abilities, you can learn how to calculate probabilities. We're not good at it and you will use this skill every day.
+date: 2023-05-12
+keywords: ['probability theory']
 ---
 
 ![ TODO ](./jarednielsen-TODO.png)
@@ -51,6 +51,10 @@ Immensely.
 
 TODO 
 
+But mathematics is a field in itself, so where do you focus your attention? 
+
+I'm going to make the argument that probability theory . 
+
 Do you need to learn probability theory? 
 
 Probably not. 
@@ -58,6 +62,14 @@ Probably not.
 But what is the probability that you would use it? 
 
 100%
+
+There are two primary reasons to learn probability theory: 
+
+* Humans are bad at calculating probabilities
+
+* You'll use it every day
+
+TODO
 
 If you are programming in one of the two most popular languages, Python or JavaScript, you are using probability every day in dictionaries and objects. It’s baked into the design and history of hash tables. In The Art of Computer Programming, Donald Knuth uses the birthday paradox to address one of the problems with hashing: 
 
