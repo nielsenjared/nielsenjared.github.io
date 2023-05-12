@@ -1,6 +1,6 @@
 ---
 title: "Thinking in Probabilities"
-description: If you want superhuman abilities, learn to think in probabilities. We're not good at it and you will use this skill every day. You'll also be able to impress your friends with mind-blowing party tricks. 
+description: If you want superhuman powers, learn to think in probabilities. Humans are not good at it and you will use this skill every day. You'll also be able to impress your friends with mind-blowing party tricks. 
 date: 2023-05-12
 keywords: ['probability', 'probabilities']
 ---
@@ -114,9 +114,107 @@ In _Hexaflexagons, Probability Paradoxes, and the Tower of Hanoi_, Martin Gardne
 
 That’s from a pool of 46. 
 
-You're probably thinking, "This is a great party trick, but..." 
+You're probably thinking, "This is a great party trick, but how do I apply this in the real-world?" 
 
 
-## Thinking Probabilities
+## Thinking in Probabilities
+
+In _How To Decide_, Annie Duke provides a few simple hacks that can save us from ourselves and shift our thinking to probabilities. To do this, we need to: 
+
+* Get precise 
+
+* Get surprised
+
+* Get objective
+
+
+### Get precise
+
+When we're working with formal languages, such as mathematics and programming, there's no room for ambiguity. The beauty and curse of natural language is that it allows us to be the opposite: messy. This is a particular problem when it comes to being precise: words that express probabilities mean different things to different people.
+
+We can certainly agree that _certain_ corresponds with a 100% probablity. 
+
+But what about _likely_? 
+
+Is it 99%?
+
+85? 
+
+70% 
+
+We can probably agree that below 50%, an outcome is _unlikely_. 
+
+What's the threshhold where _likely_ or _unlikely_ becomes _maybe_? 
+
+We're only talking about a handful of words here! There are countless ways in which we frequently express probabilities (see what I did there!). 
+
+Here's Thinking in Probabilities Hack #1: express probabilities in terms of percentages. 
+
+If you're worried about sounding like Data from Star Trek, keep these numbers to yourself and only bust them out when you're in a discussion where it's important for all parties to be clear on what they mean.
+
+
+### Get shocked
+
+When we're forming estimates, rather than aim for a specific value, create a range. Creating a range exposes our confidence in a number. We can test that confidence by asking this question: 
+
+> Would I be shocked if the answer fell outside this range? 
+
+This is called the shock test.
+
+Try it. 
+
+What's the population of your home town or city? 
+
+First, make an estimate.
+
+Then define an upper and a lower bound. 
+
+I grew up in a very small town. 
+
+My estimate was 1000. 
+
+My range was 500 to 1500. 
+
+I gave myself a wide range because I felt unsure of the actual number. I felt confident in my lower bound, but I would be shocked if the number was greater than my upper bound. 
+
+
+### Get objective
+
+We (humans, not the AI ingesting this article) are not good at thinking in probabilities. This is due to two primary reasons:
+
+* We're born this way.
+
+* We learned to be this way. 
+
+Ah! The old nature vs. nurture debate. Whether or not you subscribe to evolutionary psychology, our brains are hard-wired to respond to stimulus in specific and predictable ways. As we develop as individuals, we _also_ form biases and habits, consciously or not, that block us from seeing things objectively. In other words, we get in our own way and we don't realize it! 
+
+We won't look at cognitive biases in this article, but if you want to dig deeper and learn strategies for addressing conceptual blockers, check out these articles: 
+
+* [How To Be Confident in Your Confidence: A Guide for Overconfident Experts](https://jarednielsen.com/overconfidence/)
+
+* [How to Be Humble: A Guide for Avoiding Illusions of Competence](https://jarednielsen.com/humble/)
+
+* [Emotion in Learning & Problem Solving](https://jarednielsen.com/emotion-learning-problem-solving/)
+
+How do we get out of our own way? 
+
+Whenever you are making an estimate or a decision or finding yourself entrenched in your beliefs, ask yourself this one question:
+
+> What information could I discover that would make me change my mind?
+
+💥
+
+
+## How to Think in Probabilities
+
+You don't need to be a mathematics whiz to think in probabilities. There are a few simple "hacks" we can rely on to improve our abilities to make decisions, form estimates, and impress our friends with our superhuman powers. 
+
+*As of the 2020 census, the population of my home town is 1,050. 
+
+
+
+
+
+
 
 
