@@ -1,5 +1,5 @@
 ---
-title: "Thinking in Probabilities"
+title: "How to Think in Probabilities"
 description: If you want superhuman powers, learn to think in probabilities. Humans are not good at it and you will use this skill every day. You'll also be able to impress your friends with mind-blowing party tricks. 
 date: 2023-05-12
 keywords: ['probability', 'probabilities']
