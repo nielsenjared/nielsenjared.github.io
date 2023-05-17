@@ -1,11 +1,11 @@
 ---
-title: "TODO Visual Thinking"
-description: TODO
+title: "The Superlative Guide to Visual Thinking"
+description: If we want to improve our problem solving skills, we will want to improve our ability to think visually. Visual thinking allows you to see the solution, or multiple solutions, to a problem before setting out to solve it. 
 date: 2023-05-19
-keywords: ['visual thinking']
+keywords: ['visual thinking', 'think visually']
 ---
 
-![ TODO ](./jarednielsen-visual-thinking.png)
+![ illustration of a Penrose triangle ](./jarednielsen-visual-thinking.png)
 
 
 Are you seeing the forest for the trees?
@@ -38,28 +38,34 @@ John Maeda makes the case for STEAM in _How to Speak Machine_:
 
 Maeda illustrates STEAM with Stephen Wolfram’s Rule 30, a cellular automaton. Wolfram’s classification scheme generates rows of cells according to eight criteria, where the criteria for cell creation differs from rule to rule. Using binary, Rule 30 states the following:
 
-TODO 
-    If the three cells above the new cell are 000, the new cell is also 0.
-    If the three cells above the new cell are 111, the new cell is 0. 
-    If the three cells above the new cell are 110, the new cell is 0.
-    If the three cells above the new cell are 101, the new cell is 0.
-    If the three cells above the new cell are 100, the new cell is 1.
-    If the three cells above the new cell are 011, the new cell is 1.
-    If the three cells above the new cell are 010, the new cell is 1.
-    If the three cells above the new cell are 001, the new cell is 1.
+* If the three cells above the new cell are 000, the new cell is also 0.
+
+* If the three cells above the new cell are 111, the new cell is 0. 
+
+* If the three cells above the new cell are 110, the new cell is 0.
+
+* If the three cells above the new cell are 101, the new cell is 0.
+
+* If the three cells above the new cell are 100, the new cell is 1.
+
+* If the three cells above the new cell are 011, the new cell is 1.
+
+* If the three cells above the new cell are 010, the new cell is 1.
+
+* If the three cells above the new cell are 001, the new cell is 1.
 
 These criteria can also be visualized:
 
-![TODO](/jarednielsen-visual-thinking-automata-01.png)
+![ cellular automata criteria ](/jarednielsen-visual-thinking-automata-01.png)
 
 Running this program generates the following:
 
-![TODO](jarednielsen-visual-thinking-automata-02.png)
+![ cellular automata ](jarednielsen-visual-thinking-automata-02.png)
 
 
 If we zoom out, it looks like this:
 
-![TODO](jarednielsen-visual-thinking-automata-03.png)
+![ cellular automata ](jarednielsen-visual-thinking-automata-03.png)
 
 
 And?
@@ -89,15 +95,16 @@ Wait for it...
 
 
 
-![TODO](jarednielsen-visual-thinking-conus-textile-snail.png)
+![ conus textile snail ](jarednielsen-visual-thinking-conus-textile-snail.png)
  
-[Pattern forming](TODO) and [pattern recognition](TODO)! 🤯
+[Pattern forming](https://jarednielsen.com/pattern-forming/) and [pattern recognition](https://jarednielsen.com/patterrn-recognition/)! 🤯
 
-This is the Conus textile snail. Wolfram's Rule 30 resembles the pattern on its shell. Or does the shell resemble the Rule?
+This is the Conus textile snail. Wolfram's Rule 30 resembles the pattern on its shell. Or does the shell resemble the rule?
 
 🤔
+
  
-## Ready? Set? Solve!
+## How to Observe
 
 How do the arts prepare you for programming? 
 
@@ -129,14 +136,6 @@ According to painter Jasper Johns:
 
 > Part of the activity of art is one of exercise, and an activity that keeps faculties lively, whatever the discipline touches on: the mind, the ear, whatever. And one hopes that by sharpening such things and by an attempt to see the possibilities that are offered… that the senses we use in dealing with our lives will be in a state of readiness to deal with whatever may happen.
 
-
-TODO 
-
-Are you imaging things?
-
-No, that’s not a typo. 
-
-If we want to improve our problem solving skills, we will want to improve our ability to think visually. Visual thinking allows you to see the solution, or multiple solutions, to a problem before setting out to solve it. But forming images is not limited to visual means. We can also image aurally, tactilely, and olfactorily. 
 
 There are numerous studies that show a direct correlation between the ability to think visually and success as an engineer. Nikola Tesla describes imaging in his memoir:
 
@@ -180,7 +179,7 @@ I splurged and picked up the box set of Donald Knuth's _The Art of Computer Prog
 
 This is a tree:
 
-![TODO](./jarednielsen-visual-thinking-tree-01.png)
+![ tree diagram ](./jarednielsen-visual-thinking-tree-01.png)
 
 This is also a tree:
 ```
@@ -203,14 +202,14 @@ And this is also a tree:
 
 And what’s this? 
 
-![TODO](./jarednielsen-visual-thinking-tree-02.png)
+![ tree diagram ](./jarednielsen-visual-thinking-tree-02.png)
 
 
 You guessed it: a tree! 🤯
 
-## TODO How do we think visually? 
+## How to be a visual thinker
 
-Anyone can think visually. But how do we do it? More importantly, how do we improve our ability to do it? According to the authors of Sparks of Genius, there are four steps we can follow: 
+Anyone can think visually. But how do we do it? More importantly, how do we improve our ability to do it? According to the authors of _Sparks of Genius_, there are four steps we can follow: 
 
 * Recognize your own use of visual, aural, and other images. 
  
@@ -223,9 +222,9 @@ Anyone can think visually. But how do we do it? More importantly, how do we impr
 There you go! Permission to play!
 
 
+## The Superlative Guide to Visual Thinking
 
-
-## TODO Visual Thinking
+If we want to improve our problem solving skills, we will want to improve our ability to think visually. Visual thinking allows you to see the solution, or multiple solutions, to a problem before setting out to solve it. But forming images is not limited to visual means. We can also image aurally, tactilely, and olfactorily. 
 
 
 
