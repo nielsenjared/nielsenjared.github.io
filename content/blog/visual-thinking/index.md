@@ -5,6 +5,7 @@ date: 2023-05-19
 keywords: ['visual thinking', 'think visually']
 ---
 
+
 ![ illustration of a Penrose triangle ](./jarednielsen-visual-thinking.png)
 
 
@@ -71,40 +72,61 @@ If we zoom out, it looks like this:
 And?
 
 Wait for it...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+[Pattern forming](https://jarednielsen.com/pattern-forming/) and [pattern recognition](https://jarednielsen.com/patterrn-recognition/)! 🤯
 
 ![ conus textile snail ](jarednielsen-visual-thinking-conus-textile-snail.png)
  
-[Pattern forming](https://jarednielsen.com/pattern-forming/) and [pattern recognition](https://jarednielsen.com/patterrn-recognition/)! 🤯
 
 This is the Conus textile snail. Wolfram's Rule 30 resembles the pattern on its shell. Or does the shell resemble the rule?
 
 🤔
 
  
-## How to Observe
+## How to observe
 
 How do the arts prepare you for programming? 
 
@@ -225,11 +247,3 @@ There you go! Permission to play!
 ## The Superlative Guide to Visual Thinking
 
 If we want to improve our problem solving skills, we will want to improve our ability to think visually. Visual thinking allows you to see the solution, or multiple solutions, to a problem before setting out to solve it. But forming images is not limited to visual means. We can also image aurally, tactilely, and olfactorily. 
-
-
-
-
-
-
-
-
