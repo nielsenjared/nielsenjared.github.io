@@ -1,4 +1,436 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 12 May 2023 16:01:06 GMT</lastBuildDate><item><title><![CDATA[How to Think in Probabilities]]></title><description><![CDATA[How does the word mathematics make you feel? Excited? Full of dread? Our experience with mathematics colors our perception of it, and for…]]></description><link>https://jarednielsen.com/probabilities/</link><guid isPermaLink="false">https://jarednielsen.com/probabilities/</guid><pubDate>Fri, 12 May 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jarednielsen.com RSS Feed]]></title><description><![CDATA[Jared Nielsen]]></description><link>https://jarednielsen.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 18 May 2023 14:02:26 GMT</lastBuildDate><item><title><![CDATA[The Superlative Guide to Visual Thinking]]></title><description><![CDATA[Are you seeing the forest for the trees? What does that even mean? Missing the forest for the trees means we become too involved in the…]]></description><link>https://jarednielsen.com/visual-thinking/</link><guid isPermaLink="false">https://jarednielsen.com/visual-thinking/</guid><pubDate>Fri, 19 May 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/038386f14ec4759d60d2b5ade6b7e4fc/29007/jarednielsen-visual-thinking.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABLUlEQVQoz42Ru0oDQRSG90HEJ7Cws7S1sFOx8gEUay1EsAs+gFFBRNJIRLSzMGq8lDY2ahAWlIWgu+Jlt9jdOZdfdkyWbBIl8DEMB76Z/5zjKFjB0kKyU0WUGYI4VmIRUeW+OEWZRS1CBihVfH+tBkCYOhwpyFKElAG68NQ5fFufqOL8wQDa7WdPOLnzG4EzCIyxs2DUP5jZ9u4nK9CUtTe8tGLnGPtttQHn8eoObi3C3GwdW9cCKJn+PeedAxRGGLr1po5LvLj/uXK0M77XHF6FFyig0hEeRZmt/PSBkdfL6UZ5/mRj4bS8XN9cutlt+s1scrmMHtn6QjCBfrn4dhE+I3xB9I7YKFmT/oktmaySqhg2Jk3SJEmTOE1iQ0b+2nMX7flLu2IvA8oD8gNvLm5q80xAqAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; illustration of a Penrose triangle &quot;
+        title=&quot; illustration of a Penrose triangle &quot;
+        src=&quot;/static/038386f14ec4759d60d2b5ade6b7e4fc/f058b/jarednielsen-visual-thinking.png&quot;
+        srcset=&quot;/static/038386f14ec4759d60d2b5ade6b7e4fc/c26ae/jarednielsen-visual-thinking.png 158w,
+/static/038386f14ec4759d60d2b5ade6b7e4fc/6bdcf/jarednielsen-visual-thinking.png 315w,
+/static/038386f14ec4759d60d2b5ade6b7e4fc/f058b/jarednielsen-visual-thinking.png 630w,
+/static/038386f14ec4759d60d2b5ade6b7e4fc/40601/jarednielsen-visual-thinking.png 945w,
+/static/038386f14ec4759d60d2b5ade6b7e4fc/78612/jarednielsen-visual-thinking.png 1260w,
+/static/038386f14ec4759d60d2b5ade6b7e4fc/29007/jarednielsen-visual-thinking.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Are you seeing the forest for the trees?&lt;/p&gt;
+&lt;p&gt;What does that even mean?&lt;/p&gt;
+&lt;p&gt;Missing the forest for the trees means we become too involved in the details of a problem to see the situation as a whole.&lt;/p&gt;
+&lt;p&gt;This is the Achilles heel of being a programmer. We’re trained to develop laser focus. Like Cyclops, we can use that laser focus to cut through any problem. Unfortunately, that laser focus often impedes our ability to see the big picture. Like The Law of the Instrument states, when you’re a hammer, all you see is nails. If we are so focused on solving small problems, we will neglect the bigger, societal issues, such as systemic racism and climate change that our work may unwittingly reinforce.&lt;/p&gt;
+&lt;p&gt;We need that laser focus to Get Things Done. ⚡&lt;/p&gt;
+&lt;p&gt;But we also need something else.&lt;/p&gt;
+&lt;p&gt;Rainbow focus?&lt;/p&gt;
+&lt;p&gt;🌈&lt;/p&gt;
+&lt;h2&gt;The STEAM Rainbow&lt;/h2&gt;
+&lt;p&gt;During the Great Recession there was an increased emphasis on the fields of science, technology, engineering, and mathematics, or STEM, as it is commonly known. There were a lot of political motivations behind this but the economic drive was to fill employment gaps. There was more demand for STEM professionals than there were qualified candidates. Another issue was the lack of diversity in STEM professions. The many efforts to solve these problems is known as the STEM pipeline.&lt;/p&gt;
+&lt;p&gt;As a STEM professional, I recognize the importance of the STEM pipeline, but as a graduate of arts programs, I see an important component missing. So did Georgette Yakman, who founded the STEAM initiative which is “a way to teach how all things relate to each other, in school and in life.”&lt;/p&gt;
+&lt;p&gt;But STEAM pipeline doesn’t have the same ring, though, so I propose the STEAM rainbow.&lt;/p&gt;
+&lt;p&gt;John Maeda makes the case for STEAM in &lt;em&gt;How to Speak Machine&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;…the arts are not about what you can just see or sense; they’re about discovering what underlies it all—about understanding what lies at the essential core of anything and everything.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Maeda illustrates STEAM with Stephen Wolfram’s Rule 30, a cellular automaton. Wolfram’s classification scheme generates rows of cells according to eight criteria, where the criteria for cell creation differs from rule to rule. Using binary, Rule 30 states the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If the three cells above the new cell are 000, the new cell is also 0.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the three cells above the new cell are 111, the new cell is 0.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the three cells above the new cell are 110, the new cell is 0.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the three cells above the new cell are 101, the new cell is 0.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the three cells above the new cell are 100, the new cell is 1.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the three cells above the new cell are 011, the new cell is 1.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the three cells above the new cell are 010, the new cell is 1.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the three cells above the new cell are 001, the new cell is 1.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These criteria can also be visualized:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 559px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a203d30969587f2aacf537168ad92f3f/a65ce/jarednielsen-visual-thinking-automata-01.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 11.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAIAAADXZGvcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeElEQVQI1wXB0Q6CIBQAUP//Q1qurdXWq1NbUBOU3nIosMG9eOH+ROc0LyHby1Upfbs/nPNaz8Z8+2FUeq61/Nb1dG69913Xx5gw4zA+QwjMTERNTMm6gIjb5nM+AAAjAMCkFADsu5PvT61VCElE1tplMcxcSmHmP2t/ZL83yIoCAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; cellular automata criteria &quot;
+        title=&quot; cellular automata criteria &quot;
+        src=&quot;/static/a203d30969587f2aacf537168ad92f3f/a65ce/jarednielsen-visual-thinking-automata-01.png&quot;
+        srcset=&quot;/static/a203d30969587f2aacf537168ad92f3f/c26ae/jarednielsen-visual-thinking-automata-01.png 158w,
+/static/a203d30969587f2aacf537168ad92f3f/6bdcf/jarednielsen-visual-thinking-automata-01.png 315w,
+/static/a203d30969587f2aacf537168ad92f3f/a65ce/jarednielsen-visual-thinking-automata-01.png 559w&quot;
+        sizes=&quot;(max-width: 559px) 100vw, 559px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Running this program generates the following:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3dfd06d542bc51450d4628cfb0b9e353/0a47e/jarednielsen-visual-thinking-automata-02.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.89873417721519%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAACDklEQVQoz0WSa1faQBCG8/9/hVUgIZclJCFEgghYrFo9TQJBrW2tHgQVVIiXr0/PbqH9MGf27L777Dszqz0+PnJ3d8fDwwNyfX9/r/JkMuH5+ZkkSdkpV6kYNvl4zHz+V7PRyzybzZhOpzw9PaEtFgslkFnGfD5XsYGVSlWE8PHCFrbwGA5HrFZLBdvoJVQyXl5e0ORFeSizDCl4f39XsHJ5DWu2OD4+RTcFZcPh6uoHq9VKOZIhwZIh9zS5IV/YvFYUBWmWKWeO4xFEMVGrQ6liEsYdTpOMsm5xcXGpnG5gkrFcLv87lAdvb28kaUq1KrBtF8drcPjlhKDeoGq7DI6+0opitbaEp5wWxUrd/+dQgqbTGa+vBWmaoevWume7xO0u29Kp8PH9JkEjwtBtvHqD3Xgf3bCVU9k7ORjVw81AviWJKtM0a5g1j25/gG0KhPDQLZe41aFiCSzhUzEcTKuG4zeV0zzP18NcoMkyJaxcMZWzZtyh2xuwta2rqRqmoHtwiOcGxJ0eYRSjVwXCD7mdTGnv99kuGYzH53x8fKAlacbWpzKuGyC8kNZel7obUHPq7OgWthvQORjg1kN2SgZhM1baRtSmagr8IMJY91SWr/X7n9WXaO/tkw5HHB6dkA7HxO09Ln/+Znz+nWVRcHxyyujyipvrW9Is5/rXDWdnCXl+Tq9/QJqN6Pb6/AEWJKenWEVeLQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; cellular automata &quot;
+        title=&quot; cellular automata &quot;
+        src=&quot;/static/3dfd06d542bc51450d4628cfb0b9e353/0a47e/jarednielsen-visual-thinking-automata-02.png&quot;
+        srcset=&quot;/static/3dfd06d542bc51450d4628cfb0b9e353/c26ae/jarednielsen-visual-thinking-automata-02.png 158w,
+/static/3dfd06d542bc51450d4628cfb0b9e353/6bdcf/jarednielsen-visual-thinking-automata-02.png 315w,
+/static/3dfd06d542bc51450d4628cfb0b9e353/0a47e/jarednielsen-visual-thinking-automata-02.png 600w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If we zoom out, it looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 511px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c5854091e3d973205cf4cf1dd656d012/92e00/jarednielsen-visual-thinking-automata-03.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9UlEQVQoz3XQMY6EMAwF0BwZgShQYjuOEQV3oYGIC1ACQnCfIaMd745WDPMLlOK/OMakj5yvpJS6rpumKaX0eDzSXcw3GWMsy5KIlmX55s1FainGmOe59945BwDHcdx68yn7vs+yjJlFBBGZuaqq2/nm8tphGPI8p78gYl3XAOCc27bt4s2tRMQQgrVWD/r13l/m/+L/ewIAMyNi27YiAgDWWiJyzllr13V9e6Oy73uViOi9Z2Yi0kMIQfcXEd1F/XmeRmVRFG+pbf3P6pm5aRoR0Y61dp7nn8njOGZZhogAQETa0FJ4Ra8QEb00hOCcq6pq3/cnXYC+pLtCHm4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; cellular automata &quot;
+        title=&quot; cellular automata &quot;
+        src=&quot;/static/c5854091e3d973205cf4cf1dd656d012/92e00/jarednielsen-visual-thinking-automata-03.png&quot;
+        srcset=&quot;/static/c5854091e3d973205cf4cf1dd656d012/c26ae/jarednielsen-visual-thinking-automata-03.png 158w,
+/static/c5854091e3d973205cf4cf1dd656d012/6bdcf/jarednielsen-visual-thinking-automata-03.png 315w,
+/static/c5854091e3d973205cf4cf1dd656d012/92e00/jarednielsen-visual-thinking-automata-03.png 511w&quot;
+        sizes=&quot;(max-width: 511px) 100vw, 511px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And?&lt;/p&gt;
+&lt;p&gt;Wait for it…
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;a href=&quot;https://jarednielsen.com/pattern-forming/&quot;&gt;Pattern forming&lt;/a&gt; and &lt;a href=&quot;https://jarednielsen.com/patterrn-recognition/&quot;&gt;pattern recognition&lt;/a&gt;! 🤯&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4bffdda242590b623871d8f97d20cc2c/35252/jarednielsen-visual-thinking-conus-textile-snail.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 63.92405063291139%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC3ElEQVQozz2SWU8TYRiFpy2UskWWdr515psuYd8tLVBEtChFKAUMu1Y07FuwgQIBWwopVRRkR4ogAi5RUaOJt5pIvCL6D/wtZtB4rt9zTvKeh4OQJwQSDDEGhECBYkIgxpBSjAkSBWI06g0GyWSQ9JIgMSIKhBJIKcIIcBDyCAGEeYwhIYgSRAgCkNdqE3mgY0xghE/TU3Nubm5Wpl4SEeJl/18zD7QIA0r/enQQAQi1RkmwFRVfr3ZWWXKG2lom7rjnR70r/vm5sakrF+0CgUwkGAOO57WJyUkAyc1Gg6G4sLDKZnU7HcGxyfW5B9vB+acLS9O3Wnw3Gw4WFr/sH4WDj0vMZoR5ShGHEbDmZ1jP5znsla3O+o7Gdm9n17CjYNU7srewFA74/M12v6twxpl3vLH57e3HT+Fn94cHCAYIQy42PrbLVTZYV15vv9TqqGxz1vY0NU7fqFn09G3Nzm3N+DcnhrenPCuj/TuBmfdr6+HZ4PEDv99dJ4mUU6oUTdXOQK+786q1pcxy2Vxw2Wppr7l2u7Zytq87NDyw7pveuDe17L27Mxt4GQru+u69npvory5lIuXU6oged+fp91+fD498Xe2VeakC5BnmC0yiw1rQUF5akZ/uLDHXWLInO9qXRkc2xz2e5lpythYXFxejUioaalxHu69OT35+efPO299jyc+52VA33lzhykZV5qx8CZv4xNKcjKqSwvryCxkpRkHAgoDlb0dGRnAcp45UZaalD3QPhle3t5bWnjxa+bS9/GKi42Tv4e8fX/fmA3VltqKsVIwBE6koYEIAh+Rh+bj4WKVKwZ1JqVAkJSSYDAabpXiou3cjFPrw/OB4/9A/4rFfsIkiYSKVIcFnhGGZTQih7ty5+OjoKKXyX8p/aTRREhMZkwsZowJFlCIk4wl0Mp5IHl0QEMEwOTkxJlajVkeo1REaTWR8XAwTSYpJb9QziVGZeSzfA6D7A3dZvMdjV0kNAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; conus textile snail &quot;
+        title=&quot; conus textile snail &quot;
+        src=&quot;/static/4bffdda242590b623871d8f97d20cc2c/f058b/jarednielsen-visual-thinking-conus-textile-snail.png&quot;
+        srcset=&quot;/static/4bffdda242590b623871d8f97d20cc2c/c26ae/jarednielsen-visual-thinking-conus-textile-snail.png 158w,
+/static/4bffdda242590b623871d8f97d20cc2c/6bdcf/jarednielsen-visual-thinking-conus-textile-snail.png 315w,
+/static/4bffdda242590b623871d8f97d20cc2c/f058b/jarednielsen-visual-thinking-conus-textile-snail.png 630w,
+/static/4bffdda242590b623871d8f97d20cc2c/40601/jarednielsen-visual-thinking-conus-textile-snail.png 945w,
+/static/4bffdda242590b623871d8f97d20cc2c/35252/jarednielsen-visual-thinking-conus-textile-snail.png 1204w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is the Conus textile snail. Wolfram’s Rule 30 resembles the pattern on its shell. Or does the shell resemble the rule?&lt;/p&gt;
+&lt;p&gt;🤔&lt;/p&gt;
+&lt;h2&gt;How to observe&lt;/h2&gt;
+&lt;p&gt;How do the arts prepare you for programming?&lt;/p&gt;
+&lt;p&gt;In &lt;em&gt;Sparks of Genius&lt;/em&gt;, Robert and Michele Root-Bernstein state that:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;…professors at MIT and California Institute of Technology as well as research directors at major engineering firms have long realized that what eventually separates successful scientists and engineers from the rest of the students in their classes is the ability to feel or see what the equations mean.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;How do you learn to feel or see an equation?&lt;/p&gt;
+&lt;p&gt;The Root-Bernstein’s outline 13 thinking tools of the world’s most creative people. Among them are pattern recognition and pattern forming, as we saw above. But the first, and foremost, is &lt;em&gt;observing&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;What is observing?&lt;/p&gt;
+&lt;p&gt;It’s looking. But not just looking. It’s looking and looking again. And it isn’t limited to the visual realm. It’s also listening and feeling, but doing so with intention.&lt;/p&gt;
+&lt;p&gt;The Root-Bernstein’s recognize that the visual realm is the easiest place to begin and outline a simple process to learn how to observe:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Select an object, notice its form, its lines, its colors, its sounds, its tactile characteristics, its smell, perhaps even its taste.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then remove the object and recall one by one as many details as possible.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Write about what you perceived or draw it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go back and observe it again.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We don’t need to be good at this. We just need to do it. The goal is to keep our minds sharp.&lt;/p&gt;
+&lt;p&gt;According to painter Jasper Johns:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Part of the activity of art is one of exercise, and an activity that keeps faculties lively, whatever the discipline touches on: the mind, the ear, whatever. And one hopes that by sharpening such things and by an attempt to see the possibilities that are offered… that the senses we use in dealing with our lives will be in a state of readiness to deal with whatever may happen.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There are numerous studies that show a direct correlation between the ability to think visually and success as an engineer. Nikola Tesla describes imaging in his memoir:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When I get an idea I start at once building it up in my imagination. I change the construction, make improvements and operate the device in my mind. It is absolutely immaterial to me whether I run my turbine in my thought or test it in my shop. I even note if it is out of balance.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What type of visual thinker are you?&lt;/p&gt;
+&lt;p&gt;Imagine a triangle.&lt;/p&gt;
+&lt;p&gt;How did you see it?&lt;/p&gt;
+&lt;p&gt;Some people need to draw it on paper or trace the outline with their fingers. Some people need to close their eyes to see it. And some people can see the image with their eyes open, like an augmented reality overlay.&lt;/p&gt;
+&lt;p&gt;A triangle is easy. Try these additional problems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What object has a round profile from the top and from the sides?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What object has a square profile from the top and from the sides?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What object has a triangular profile from all sides?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Too easy? Try these:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What object has a round profile from the top and square profiles from the sides?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What object has a square profile from the top and triangular profiles from the sides?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What object has a round profile from the top and triangular profiles from the sides?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Answers below.)&lt;/p&gt;
+&lt;p&gt;What problem(s) does visual thinking solve?&lt;/p&gt;
+&lt;p&gt;So maybe you’re thinking, “This is for engineers. I’m a programmer. Engineers work with concrete things (pun intended), I work with pure thought stuff. I build castles in the cloud.”&lt;/p&gt;
+&lt;p&gt;The authors of &lt;em&gt;Sparks of Genius&lt;/em&gt; would reply:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Not everyone may have the extraordinary potential of a Tesla, but everyone benefits from the development of imaging techniques that comes with hands-on experience in arts or crafts, or with simple mental practice.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;_
+I splurged and picked up the box set of Donald Knuth’s &lt;em&gt;The Art of Computer Programming&lt;/em&gt;. It’s a fascinating and frustrating read. One of the more fascinating things is how Knuth visualized tree data structures.&lt;/p&gt;
+&lt;p&gt;This is a tree:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c0555e86ce4f09e51633715d21d9d702/5a190/jarednielsen-visual-thinking-tree-01.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA0klEQVQoz41SWQqEMAzt/W9kL6BIf+oBFPVHVFBcUdAMCVS0bXQCoSHLy0tSAYyc5/l4OZ8t4h+wYRhgXVcn5gMWb2DGDoIAkiS5/MdxOPleQN9IeZ7DOI6wLAtUVeVteM8XHBi+Ukrouu7BoCxLiOOYBXUYmkDTNDRm3/ePWJqmoLW+Gtm7FD6wKIqgKAqysVgpRXYYhuTPsowUYyi4U4fhvUtd17DvO9m4P8NmmiZSHBvz53l2yLAjc39w2zZo2/b7ynbx1zWN//Uob8I1sBn+AKbDX4OZBmSwAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; tree diagram &quot;
+        title=&quot; tree diagram &quot;
+        src=&quot;/static/c0555e86ce4f09e51633715d21d9d702/f058b/jarednielsen-visual-thinking-tree-01.png&quot;
+        srcset=&quot;/static/c0555e86ce4f09e51633715d21d9d702/c26ae/jarednielsen-visual-thinking-tree-01.png 158w,
+/static/c0555e86ce4f09e51633715d21d9d702/6bdcf/jarednielsen-visual-thinking-tree-01.png 315w,
+/static/c0555e86ce4f09e51633715d21d9d702/f058b/jarednielsen-visual-thinking-tree-01.png 630w,
+/static/c0555e86ce4f09e51633715d21d9d702/5a190/jarednielsen-visual-thinking-tree-01.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is also a tree:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;A(B(C( ), D( )), E(F( ), G(I( )), H( )))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And this is also a tree:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;B
+&lt;ul&gt;
+&lt;li&gt;C&lt;/li&gt;
+&lt;li&gt;D&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;E&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;F&lt;/li&gt;
+&lt;li&gt;G
+&lt;ul&gt;
+&lt;li&gt;I&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;H&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And what’s this?&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a6e96fc08571112be184a517d811d4af/5a190/jarednielsen-visual-thinking-tree-02.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABX0lEQVQoz5WS3UvCUBjG/Z+7KbqobioIifAjyw+w1KwghkpKejFxuY/ThhNEcexKsCs3RwNRcU/sUDBn2Xpu3gPnPb9z3vM8IXjkOM5adWWaJjRNQ6/XQ7/fx3j8jtVq9Wt/CD65m98No9EIgiCg3W7TKooiREnEYDDAcrncgG0AvTDDMChEURSwLEvXXOsVZaaC6nMNuq5vnNkKHA6HqNcbYJgSCCGovzRwFU0ilcggdZlBtVLDfD7fPrL3T4hEkIgncRGO4C5/j6dHBpFwDMl4Grs7ezjYP8R0agUDuup0OijkishmblFiynTUs+MwrmMpnBydInIehf1h/w30GuKawfMCZEUG1+KQTd8gny2imHuAwItfhwK47GqxWEBVVWqGJEmQZRmEvKHJNsFxHEzTCGaKt85mM5o9F8jzPIV3u11MJpM1WKAXepts26YxsixrLX//Drb/9p/M8wf7E+1BNLn/YoAAAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot; tree diagram &quot;
+        title=&quot; tree diagram &quot;
+        src=&quot;/static/a6e96fc08571112be184a517d811d4af/f058b/jarednielsen-visual-thinking-tree-02.png&quot;
+        srcset=&quot;/static/a6e96fc08571112be184a517d811d4af/c26ae/jarednielsen-visual-thinking-tree-02.png 158w,
+/static/a6e96fc08571112be184a517d811d4af/6bdcf/jarednielsen-visual-thinking-tree-02.png 315w,
+/static/a6e96fc08571112be184a517d811d4af/f058b/jarednielsen-visual-thinking-tree-02.png 630w,
+/static/a6e96fc08571112be184a517d811d4af/5a190/jarednielsen-visual-thinking-tree-02.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;You guessed it: a tree! 🤯&lt;/p&gt;
+&lt;h2&gt;How to be a visual thinker&lt;/h2&gt;
+&lt;p&gt;Anyone can think visually. But how do we do it? More importantly, how do we improve our ability to do it? According to the authors of &lt;em&gt;Sparks of Genius&lt;/em&gt;, there are four steps we can follow:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Recognize your own use of visual, aural, and other images.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Indulge yourself! Image on purpose and to your heart’s content.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Take up an art. Learn to make drawings, songs, poems, or gourmet dishes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make up excuses to use your inner eye, your inner ear, your inner nose, your inner sense of touch and of body.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There you go! Permission to play!&lt;/p&gt;
+&lt;h2&gt;The Superlative Guide to Visual Thinking&lt;/h2&gt;
+&lt;p&gt;If we want to improve our problem solving skills, we will want to improve our ability to think visually. Visual thinking allows you to see the solution, or multiple solutions, to a problem before setting out to solve it. But forming images is not limited to visual means. We can also image aurally, tactilely, and olfactorily.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Think in Probabilities]]></title><description><![CDATA[How does the word mathematics make you feel? Excited? Full of dread? Our experience with mathematics colors our perception of it, and for…]]></description><link>https://jarednielsen.com/probabilities/</link><guid isPermaLink="false">https://jarednielsen.com/probabilities/</guid><pubDate>Fri, 12 May 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
